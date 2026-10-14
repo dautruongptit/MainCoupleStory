@@ -86,6 +86,12 @@ export function Family({ d, set }: P) {
 export function Announce({ d, set }: P) {
   return (
     <Section title="Lời báo tin" enabled={d.announceOn} onEnabled={(v) => set({ announceOn: v })}>
+      <Field label="Dòng tiêu đề 1">
+        <Input placeholder="TRÂN TRỌNG BÁO TIN" value={d.announcementLine1} onChange={(e) => set({ announcementLine1: e.target.value })} />
+      </Field>
+      <Field label="Dòng tiêu đề 2">
+        <Input placeholder="LỄ THÀNH HÔN CỦA CON CHÚNG TÔI" value={d.announcementLine2} onChange={(e) => set({ announcementLine2: e.target.value })} />
+      </Field>
       <Field label="Nội dung tùy chỉnh (để trống nếu muốn ẩn)">
         <Textarea rows={2} placeholder="Ví dụ: Chúng tôi trân trọng kính mời bạn đến chứng kiến lễ cưới của con chúng tôi." value={d.announce} onChange={(e) => set({ announce: e.target.value })} />
       </Field>
@@ -207,6 +213,25 @@ export function Dress({ d, set }: P) {
     <Section title="Trang phục" enabled={d.dressOn} onEnabled={(v) => set({ dressOn: v })} enabledLabel={d.dressOn ? "Hiển thị" : "Ẩn"}>
       <Hint>Khi bật, tính năng này có thể gợi ý màu trang phục cho khách dựa trên tông màu chủ đạo của đám cưới.</Hint>
       <Field label="Gợi ý trang phục"><Textarea value={d.dressText} onChange={(e) => set({ dressText: e.target.value })} /></Field>
+      <Field label="Bảng màu trang phục (Dress code colors)">
+        <div style={{ display: "flex", gap: "12px", alignItems: "center", marginTop: "4px" }}>
+          {(d.dressColors || ["#651212", "#8d3a3a", "#ffb2b2"]).map((c, i) => (
+            <div key={i} style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+              <input
+                type="color"
+                value={c}
+                onChange={(e) => {
+                  const updated = [...(d.dressColors || ["#651212", "#8d3a3a", "#ffb2b2"])];
+                  updated[i] = e.target.value;
+                  set({ dressColors: updated });
+                }}
+                style={{ width: "32px", height: "32px", border: "0", borderRadius: "50%", cursor: "pointer", background: "none" }}
+              />
+              <span style={{ fontSize: "11px", opacity: 0.8 }}>{c}</span>
+            </div>
+          ))}
+        </div>
+      </Field>
     </Section>
   );
 }
@@ -240,53 +265,77 @@ export function Guestbook({ d, set }: P) {
   );
 }
 
-const GIFT_SUGGEST = ["Tài khoản ngân hàng", "LINE Pay", "PayPal", "Wise"];
-const GIFT_OTHER = ["Ảnh mã QR", "Venmo", "Cash App", "Revolut", "Danh sách quà tặng", "SEPA", "Ngân hàng", "Tin nhắn văn bản"];
-const WHO: [Gift["who"], string][] = [["groom", "Chú rể"], ["bride", "Cô dâu"], ["custom", "Tùy chọn"]];
+const WHO: [Gift["who"], string][] = [["bride", "Cô dâu"], ["groom", "Chú rể"], ["custom", "Tùy chọn"]];
 
 export function GiftBox({ d, set }: P) {
   const [pick, setPick] = useState(false);
-  const [kind, setKind] = useState<string | null>(null);
-  const [who, setWho] = useState<Gift["who"]>("groom");
-  const [account, setAccount] = useState("");
-  const close = () => { setPick(false); setKind(null); setAccount(""); setWho("groom"); };
+  const [who, setWho] = useState<Gift["who"]>("bride");
+  const [bankName, setBankName] = useState("Vietcombank");
+  const [bankCode, setBankCode] = useState("VCB");
+  const [accountNumber, setAccountNumber] = useState("");
+  const [accountName, setAccountName] = useState("");
+
+  const close = () => {
+    setPick(false);
+    setAccountNumber("");
+    setAccountName("");
+  };
+
   const save = () => {
-    if (!kind || !account.trim()) return;
-    set({ gifts: [...d.gifts, { kind, who, account: account.trim() }] });
+    if (!accountNumber.trim() || !accountName.trim()) return;
+    const qrUrl = `https://api.vietqr.io/image/970436-${accountNumber.trim()}-print.png?accountName=${encodeURIComponent(accountName.trim().toUpperCase())}`;
+    const newGift: Gift = {
+      id: "gift-" + Date.now(),
+      who,
+      bankName: bankName.trim(),
+      bankCode: bankCode.trim(),
+      accountNumber: accountNumber.trim(),
+      accountName: accountName.trim().toUpperCase(),
+      qrUrl,
+    };
+    set({ gifts: [...d.gifts, newGift] });
     close();
   };
-  const whoLabel = (w: Gift["who"]) => WHO.find(([v]) => v === w)![1];
+
+  const whoLabel = (w: Gift["who"]) => WHO.find(([v]) => v === w)?.[1] || "Khác";
+
   return (
     <Section title={d.giftTitle} onTitle={(v) => set({ giftTitle: v })} enabled={d.giftOn} onEnabled={(v) => set({ giftOn: v })}>
-      {d.gifts.length === 0 && <div className="empty-box">Chưa có cách tặng quà nào. Nhấn nút bên dưới để thêm.</div>}
+      {d.gifts.length === 0 && <div className="empty-box">Chưa có tài khoản mừng cưới nào. Nhấn nút bên dưới để thêm.</div>}
       {d.gifts.map((g, i) => (
-        <div className="mini-card" key={i}>
-          <div><strong>{g.kind} · {whoLabel(g.who)}</strong><Helper>{g.account}</Helper></div>
+        <div className="mini-card" key={g.id || i}>
+          <div>
+            <strong>{g.bankName} ({g.bankCode}) · {whoLabel(g.who)}</strong>
+            <Helper>STK: {g.accountNumber} - Chủ TK: {g.accountName}</Helper>
+          </div>
           <button className="icon-ghost sm" aria-label="Xoá" onClick={() => set({ gifts: d.gifts.filter((_, j) => j !== i) })}>{Icon.trash()}</button>
         </div>
       ))}
-      <OutlineButton onClick={() => setPick(true)}>{Icon.plus(16)} Thêm cách tặng quà</OutlineButton>
-      {pick && !kind && (
-        <Modal title="Chọn cách tặng quà" onClose={close}>
-          <div className="lbl">Gợi ý</div>
-          <div className="grid4 g3">{GIFT_SUGGEST.map((k) => <button key={k} onClick={() => setKind(k)}>{k}</button>)}</div>
-          <div className="lbl">Các cách khác</div>
-          <div className="grid4 g3">{GIFT_OTHER.map((k) => <button key={k} onClick={() => setKind(k)}>{k}</button>)}</div>
-          <div className="modal-actions"><button className="btn-outline" onClick={close}>Đóng</button></div>
-        </Modal>
-      )}
-      {pick && kind && (
-        <Modal title={`Thêm ${kind}`} onClose={close}>
+      <OutlineButton onClick={() => setPick(true)}>{Icon.plus(16)} Thêm tài khoản mừng cưới</OutlineButton>
+
+      {pick && (
+        <Modal title="Thêm tài khoản mừng cưới" onClose={close}>
           <div className="lbl">Áp dụng cho</div>
           <div className="chips">
             {WHO.map(([v, l]) => (
               <button key={v} className={who === v ? "chip active" : "chip"} onClick={() => setWho(v)}>{l}</button>
             ))}
           </div>
-          <Field label="Tài khoản / liên kết *"><Input autoFocus value={account} onChange={(e) => setAccount(e.target.value)} /></Field>
+          <Field label="Tên ngân hàng">
+            <Input value={bankName} onChange={(e) => setBankName(e.target.value)} placeholder="Ví dụ: Vietcombank, MB Bank, VietinBank..." />
+          </Field>
+          <Field label="Mã ngân hàng (viết tắt)">
+            <Input value={bankCode} onChange={(e) => setBankCode(e.target.value)} placeholder="Ví dụ: VCB, MB, ICB, TCB..." />
+          </Field>
+          <Field label="Số tài khoản *">
+            <Input autoFocus value={accountNumber} onChange={(e) => setAccountNumber(e.target.value)} placeholder="Số tài khoản ngân hàng" />
+          </Field>
+          <Field label="Tên chủ tài khoản *">
+            <Input value={accountName} onChange={(e) => setAccountName(e.target.value)} placeholder="LÊ NGỌC ÁNH" />
+          </Field>
           <div className="modal-actions">
             <button className="btn-outline" onClick={close}>Hủy</button>
-            <button className="btn-primary" disabled={!account.trim()} onClick={save}>Lưu</button>
+            <button className="btn-primary" disabled={!accountNumber.trim() || !accountName.trim()} onClick={save}>Lưu</button>
           </div>
         </Modal>
       )}
@@ -328,9 +377,14 @@ export function Music({ d, set }: P) {
 
 export function Envelope({ d, set }: P) {
   return (
-    <Section title="Phong bì">
-      <Field label="Lời mời"><Input placeholder="Ví dụ: Thư mời" value={d.envelopeText} onChange={(e) => set({ envelopeText: e.target.value })} /></Field>
-      <Helper>Áp dụng cho mọi khách mời. Để đặt lời mời riêng cho từng khách, hãy chỉnh trong phần quản lý khách mời.</Helper>
+    <Section title="Bì thư & Lời mời">
+      <Field label="Tên khách mời mặc định trên bì thư">
+        <Input placeholder="Ví dụ: Gia đình Anh Mạnh" value={d.envelopeGuest} onChange={(e) => set({ envelopeGuest: e.target.value })} />
+      </Field>
+      <Field label="Lời mời dự tiệc trên bì thư">
+        <Input placeholder="Ví dụ: đến dự buổi tiệc chung vui cùng gia đình" value={d.envelopeInviteMessage} onChange={(e) => set({ envelopeInviteMessage: e.target.value })} />
+      </Field>
+      <Helper>Áp dụng cho mọi khách mời xem thiệp. Mỗi liên kết mời riêng có thể hiển thị tên khách tương ứng.</Helper>
     </Section>
   );
 }

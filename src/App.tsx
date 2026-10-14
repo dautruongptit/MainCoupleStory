@@ -22,7 +22,14 @@ export default function App() {
 
   return (
     <>
-      <Header mode={mode} onMode={setMode} dirty={dirty} onPublish={publish} />
+      <Header
+        mode={mode}
+        onMode={setMode}
+        dirty={dirty}
+        onPublish={publish}
+        templateName={d.templateName}
+        templateThumb={d.templateThumb}
+      />
       <main>
         {mode === "edit" ? (
           <div className="body">
