@@ -96,10 +96,10 @@ export function Section({
   );
 }
 
-export function Field({ label, children, half }: { label?: string; children: ReactNode; half?: boolean }) {
+export function Field({ label, children, half, cap }: { label?: string; children: ReactNode; half?: boolean; cap?: boolean }) {
   return (
     <div className={"field" + (half ? " half" : "")}>
-      {label && <div className="lbl">{label}</div>}
+      {label && <div className={cap ? "lbl cap" : "lbl"}>{label}</div>}
       {children}
     </div>
   );
@@ -136,7 +136,7 @@ export function Segmented<T extends string>({
   onChange,
 }: {
   value: T;
-  options: { value: T; label: string }[];
+  options: { value: T; label: string; icon?: ReactNode }[];
   onChange: (v: T) => void;
 }) {
   const idx = Math.max(0, options.findIndex((o) => o.value === value));
@@ -145,7 +145,8 @@ export function Segmented<T extends string>({
       <div className="seg-thumb" style={{ width: `calc((100% - 8px) / ${options.length})`, transform: `translateX(${idx * 100}%)` }} />
       {options.map((o) => (
         <button type="button" key={o.value} className={o.value === value ? "active" : ""} onClick={() => onChange(o.value)}>
-          {o.label}
+          {o.icon}
+          <span>{o.label}</span>
         </button>
       ))}
     </div>

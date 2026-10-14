@@ -19,12 +19,22 @@ export function Basic({ d, set }: P) {
         <Field label="Danh xưng của chú rể" half><Input placeholder="Ví dụ: Chú rể" value={d.groomRole} onChange={(e) => set({ groomRole: e.target.value })} /></Field>
         <Field label="Danh xưng của cô dâu" half><Input placeholder="Ví dụ: Cô dâu" value={d.brideRole} onChange={(e) => set({ brideRole: e.target.value })} /></Field>
       </Row>
-      <Field label="Thứ tự hiển thị">
+      <Field label="Thứ tự hiển thị" cap>
         <Segmented value={d.order} onChange={(v) => set({ order: v })}
           options={[{ value: "groom", label: "Gia đình chú rể trước" }, { value: "bride", label: "Gia đình cô dâu trước" }]} />
         <Helper>Tên và gia đình của phía được chọn sẽ hiển thị trước trên thiệp mời.</Helper>
       </Field>
     </Section>
+  );
+}
+
+function LayoutIcon({ k }: { k: "grid" | "collage" | "3d" }) {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      {k === "grid" && (<><rect x="2" y="2" width="9" height="9" rx="1.5" /><rect x="13" y="2" width="9" height="9" rx="1.5" /><rect x="2" y="13" width="9" height="9" rx="1.5" /><rect x="13" y="13" width="9" height="9" rx="1.5" /></>)}
+      {k === "collage" && (<><rect x="2" y="2" width="20" height="10" rx="1.5" /><rect x="2" y="14" width="9" height="8" rx="1.5" /><rect x="13" y="14" width="9" height="8" rx="1.5" /></>)}
+      {k === "3d" && <rect x="6" y="3" width="12" height="16" rx="1.5" opacity=".6" />}
+    </svg>
   );
 }
 
@@ -36,9 +46,9 @@ export function Album({ d, set }: P) {
   };
   return (
     <Section title="Album ảnh" enabled={d.albumOn} onEnabled={(v) => set({ albumOn: v })}>
-      <Field label="Bố cục trang">
+      <Field label="Bố cục trang" cap>
         <Segmented value={d.albumLayout} onChange={(v) => set({ albumLayout: v })}
-          options={[{ value: "grid", label: "Lưới" }, { value: "collage", label: "Ghép ảnh" }, { value: "3d", label: "3D" }]} />
+          options={[{ value: "grid", label: "Lưới", icon: <LayoutIcon k="grid" /> }, { value: "collage", label: "Ghép ảnh", icon: <LayoutIcon k="collage" /> }, { value: "3d", label: "3D", icon: <LayoutIcon k="3d" /> }]} />
       </Field>
       <div className="lbl-row"><span className="lbl">Album ảnh</span><span className="helper">{d.photos.length} ảnh</span></div>
       <div className="photos">
@@ -183,11 +193,11 @@ export function Rsvp({ d, set }: P) {
   return (
     <Section title="Xác nhận tham dự" enabled={d.rsvpOn} onEnabled={(v) => set({ rsvpOn: v })}>
       <Hint>Khách mời có thể xác nhận tham dự trực tiếp trên thiệp. Xem danh sách xác nhận ở trang quản lý khách mời.</Hint>
-      <Field label="Kiểu hiển thị">
+      <Field label="Kiểu hiển thị" cap>
         <Segmented value={d.rsvpDisplay} onChange={(v) => set({ rsvpDisplay: v })} options={[{ value: "button", label: "Nút bấm" }, { value: "inline", label: "Hiển thị trực tiếp" }]} />
         <Helper>{d.rsvpDisplay === "button" ? "Khách nhấn nút để mở mẫu xác nhận dạng cửa sổ." : "Mẫu xác nhận hiển thị trực tiếp trên thiệp."}</Helper>
       </Field>
-      <Field label="Số người mỗi thiệp mời">
+      <Field label="Số người mỗi thiệp mời" cap>
         <Segmented value={d.partyMode} onChange={(v) => set({ partyMode: v })} options={[{ value: "free", label: "Khách tự quyết định" }, { value: "limit", label: "Đặt giới hạn" }]} />
         <Helper>{d.partyMode === "free" ? "Khách tự điền số người tham dự." : "Giới hạn số người tối đa cho mỗi thiệp."}</Helper>
       </Field>

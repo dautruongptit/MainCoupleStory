@@ -3,6 +3,7 @@ import { Inv, defaultInv } from "./data";
 import Header, { Mode } from "./Header";
 import Preview from "./Preview";
 import * as S from "./Sections";
+import TopNav from "./TopNav";
 
 export default function App() {
   const [d, setD] = useState<Inv>(defaultInv);
@@ -22,6 +23,7 @@ export default function App() {
 
   return (
     <>
+      <TopNav />
       <Header
         mode={mode}
         onMode={setMode}
