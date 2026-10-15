@@ -56,7 +56,7 @@ export default function Pricing() {
           </div>
         </div>
         <div className="pr-art">
-          <img src="https://chungdoi.com/mockup-thiep-cuoi-online-1.webp" alt="Thiệp cưới online trên điện thoại" />
+          <img src="/images/mockup-right.webp" alt="Thiệp cưới online trên điện thoại" />
           <div className="float-price"><small>Thanh toán một lần cho mỗi thiệp</small><b>199.000đ</b><small>Chuyển khoản ngân hàng hoặc QR</small></div>
         </div>
       </section>

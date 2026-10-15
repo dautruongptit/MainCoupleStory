@@ -97,8 +97,8 @@ export default function Home() {
             <Link href="/vi/mau-thiep" className="btn-pill">Tạo Thiệp Ngay</Link>
           </div>
           <div className="hero-phones">
-            <img className="phone p1" src="https://chungdoi.com/mockup-thiep-cuoi-online-left.webp" alt="Thiệp cưới online trên điện thoại" />
-            <img className="phone p2" src="https://chungdoi.com/mockup-thiep-cuoi-online-1.webp" alt="Thiệp cưới online trên điện thoại" />
+            <img className="phone p1" src="/images/mockup-left.webp" alt="Thiệp cưới online trên điện thoại" />
+            <img className="phone p2" src="/images/mockup-right.webp" alt="Thiệp cưới online trên điện thoại" />
           </div>
         </div>
       </section>
@@ -282,11 +282,6 @@ export default function Home() {
         ))}
       </section>
 
-      <footer className="site-foot">
-        <Link href="/vi">chungdoi.com</Link>
-        <Link href="/vi/bang-gia">Bảng giá</Link>
-        <Link href="/vi/blog">Blog</Link>
-      </footer>
     </main>
   );
 }
