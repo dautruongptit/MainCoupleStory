@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import MusicPicker from "./MusicPicker";
+import { CropModal } from "./HeroPhoto";
 import { Inv, Gift, groomShown, brideShown } from "./data";
 import { Field, Helper, Hint, Input, Modal, OutlineButton, ResetInput, Row, Section, Segmented, Textarea, Toggle, Icon } from "./ui";
 
@@ -6,7 +8,18 @@ type P = { d: Inv; set: (p: Partial<Inv>) => void };
 
 export function Basic({ d, set }: P) {
   return (
-    <Section title="Thông tin cơ bản">
+    <Section title="Thông tin cơ bản" icon={<svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>}>
+      <Field label="Lời mở đầu" cap>
+        <label className="inline-toggle"><span className="inline-r" style={{ marginLeft: "auto" }}><em>Mặc định</em><Toggle on={d.introCustom} onChange={(v) => set({ introCustom: v })} /></span></label>
+        {d.introCustom ? (
+          <Input placeholder="The Wedding Of" value={d.introText} onChange={(e) => set({ introText: e.target.value })} />
+        ) : (
+          <div className="hint intro-hint">
+            <svg width="16" height="16" fill="none" stroke="#fbbd23" viewBox="0 0 24 24" style={{ flex: "none", marginTop: 2 }}><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+            <span>Đang dùng chữ mặc định của mẫu:<b style={{ display: "block", marginTop: 4, fontWeight: 500 }}>“The Wedding Of”</b></span>
+          </div>
+        )}
+      </Field>
       <Row>
         <Field label="Họ tên chú rể" half><Input placeholder="VD: Nguyễn Thế Bảo" value={d.groomFull} onChange={(e) => set({ groomFull: e.target.value })} /></Field>
         <Field label="Họ tên cô dâu" half><Input placeholder="VD: Trần Ngọc Ánh" value={d.brideFull} onChange={(e) => set({ brideFull: e.target.value })} /></Field>
@@ -33,40 +46,102 @@ function LayoutIcon({ k }: { k: "grid" | "collage" | "3d" }) {
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
       {k === "grid" && (<><rect x="2" y="2" width="9" height="9" rx="1.5" /><rect x="13" y="2" width="9" height="9" rx="1.5" /><rect x="2" y="13" width="9" height="9" rx="1.5" /><rect x="13" y="13" width="9" height="9" rx="1.5" /></>)}
       {k === "collage" && (<><rect x="2" y="2" width="20" height="10" rx="1.5" /><rect x="2" y="14" width="9" height="8" rx="1.5" /><rect x="13" y="14" width="9" height="8" rx="1.5" /></>)}
-      {k === "3d" && <rect x="6" y="3" width="12" height="16" rx="1.5" opacity=".6" />}
+      {k === "3d" && (<>
+        <rect x="-3.5" y="-6" width="7" height="12" rx="1" fill="currentColor" opacity=".15" stroke="currentColor" strokeWidth="1" transform="translate(4.5,11) skewY(4)" />
+        <rect x="-3.5" y="-6" width="7" height="12" rx="1" fill="currentColor" opacity=".15" stroke="currentColor" strokeWidth="1" transform="translate(19.5,11) skewY(-4)" />
+        <rect x="6" y="3" width="12" height="16" rx="1.5" fill="currentColor" opacity=".25" stroke="currentColor" strokeWidth="1.5" />
+      </>)}
     </svg>
   );
 }
 
 export function Album({ d, set }: P) {
-  const add = (files: FileList | null) => {
-    if (!files) return;
-    const urls = Array.from(files).map((f) => URL.createObjectURL(f));
-    set({ photos: [...d.photos, ...urls].slice(0, 20) });
+  const [up, setUp] = useState<{ done: number; total: number } | null>(null);
+  const latest = useRef(d.photos);
+  latest.current = d.photos;
+  const add = async (files: FileList | null) => {
+    if (!files || up) return;
+    const list = Array.from(files).slice(0, 20 - d.photos.length);
+    if (!list.length) return;
+    const urls: string[] = [];
+    setUp({ done: 0, total: list.length });
+    for (const f of list) {
+      await new Promise((r) => setTimeout(r, 300));
+      urls.push(URL.createObjectURL(f));
+      setUp({ done: urls.length, total: list.length });
+    }
+    set({ photos: [...latest.current, ...urls].slice(0, 20) });
+    setUp(null);
   };
+  const upText = up ? `Đang tải lên ${Math.min(up.done + 1, up.total)}/${up.total}...` : "";
+  const [menu, setMenu] = useState<number | null>(null);
+  const [drag, setDrag] = useState<number | null>(null);
+  const [crop, setCrop] = useState<number | null>(null);
+  const move = (from: number, to: number) => {
+    if (from === to) return;
+    const next = [...d.photos];
+    next.splice(to, 0, next.splice(from, 1)[0]);
+    set({ photos: next });
+  };
+  const galleryIcon = (
+    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
+  );
   return (
-    <Section title="Thư viện ảnh" enabled={d.albumOn} onEnabled={(v) => set({ albumOn: v })} enabledLabel="Hiện">
+    <Section title="Thư viện ảnh" icon={galleryIcon} enabled={d.albumOn} onEnabled={(v) => set({ albumOn: v })} enabledLabel="Hiện">
       <Field label="Kiểu hiển thị" cap>
         <Segmented value={d.albumLayout} onChange={(v) => set({ albumLayout: v })}
           options={[{ value: "grid", label: "Lưới", icon: <LayoutIcon k="grid" /> }, { value: "collage", label: "Ghép ảnh", icon: <LayoutIcon k="collage" /> }, { value: "3d", label: "3D", icon: <LayoutIcon k="3d" /> }]} />
       </Field>
       <div className="lbl-row"><span className="lbl">Thư viện ảnh</span><span className="helper">{d.photos.length} ảnh</span></div>
+      {up && (
+        <div className="up-prog">
+          <progress value={Math.round((up.done / up.total) * 100)} max={100} />
+          <p>{upText}</p>
+        </div>
+      )}
       <div className="photos">
         {d.photos.map((p, i) => (
-          <div className="photo" key={p}>
-            <img src={p} alt="" />
-            <button aria-label="Xoá ảnh" onClick={() => set({ photos: d.photos.filter((_, j) => j !== i) })}>{Icon.trash(12)}</button>
+          <div className={"photo" + (drag === i ? " drag" : "")} key={p} draggable
+            onDragStart={() => { setDrag(i); setMenu(null); }}
+            onDragOver={(e) => e.preventDefault()}
+            onDrop={() => { if (drag !== null) move(drag, i); setDrag(null); }}
+            onDragEnd={() => setDrag(null)}>
+            <img src={p} alt={`Gallery ${i + 1}`} draggable={false}
+              style={d.photoCrops[p] ? { objectPosition: `${d.photoCrops[p].x}% ${d.photoCrops[p].y}%`, transform: `scale(${d.photoCrops[p].z})`, transformOrigin: `${d.photoCrops[p].x}% ${d.photoCrops[p].y}%` } : undefined} />
+            <button type="button" className="photo-menu" aria-label="Menu" onClick={() => setMenu(menu === i ? null : i)}>
+              <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><circle cx="8" cy="3" r="1.5" /><circle cx="8" cy="8" r="1.5" /><circle cx="8" cy="13" r="1.5" /></svg>
+            </button>
+            {menu === i && (
+              <div className="photo-pop">
+                <button type="button" aria-label="Cắt ảnh" title="Cắt ảnh" onClick={() => { setCrop(i); setMenu(null); }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2v14a2 2 0 0 0 2 2h14M2 6h14a2 2 0 0 1 2 2v14" /></svg>
+                </button>
+                <button type="button" className="del" aria-label="Xóa ảnh" title="Xóa ảnh" onClick={() => { set({ photos: d.photos.filter((_, j) => j !== i) }); setMenu(null); }}>{Icon.trash(20)}</button>
+                <button type="button" aria-label="Chuyển lên trước" title="Chuyển lên trước" disabled={i === 0} onClick={() => { move(i, i - 1); setMenu(null); }}>{Icon.back(20)}</button>
+                <button type="button" aria-label="Chuyển ra sau" title="Chuyển ra sau" disabled={i === d.photos.length - 1} onClick={() => { move(i, i + 1); setMenu(null); }}>{Icon.chevronRight(20)}</button>
+              </div>
+            )}
           </div>
         ))}
-        {d.photos.length < 20 && (
+        {up ? (
+          <div className="add-photo disabled">
+            <span className="spinner" />
+            <span>{upText}</span>
+          </div>
+        ) : d.photos.length < 20 && (
           <label className="add-photo">
-            {Icon.plus(20)}
+            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 4v16m8-8H4" /></svg>
             <span>Thêm ảnh</span>
-            <input type="file" accept="image/*" multiple hidden onChange={(e) => add(e.target.files)} />
+            <input type="file" accept="image/*" multiple hidden onChange={(e) => { add(e.target.files); e.target.value = ""; }} />
           </label>
         )}
       </div>
       <Helper>Hỗ trợ: JPG, PNG, GIF, WebP, HEIC. Tối đa 20 ảnh/lần.</Helper>
+      {crop !== null && d.photos[crop] && (
+        <CropModal title="Điều chỉnh ảnh" aspect={1} src={d.photos[crop]}
+          zoom0={d.photoCrops[d.photos[crop]]?.z ?? 1} x0={d.photoCrops[d.photos[crop]]?.x ?? 50} y0={d.photoCrops[d.photos[crop]]?.y ?? 50}
+          onApply={(z, x, y) => set({ photoCrops: { ...d.photoCrops, [d.photos[crop]]: { z, x, y } } })} onClose={() => setCrop(null)} />
+      )}
     </Section>
   );
 }
@@ -359,24 +434,15 @@ export function Thanks({ d, set }: P) {
 
 export function Music({ d, set }: P) {
   const [pick, setPick] = useState(false);
-  const [name, setName] = useState("");
   return (
     <Section title="Nhạc nền">
       <div className="music-empty">
         <div className="music-dot">{Icon.music(28)}</div>
         <p>{d.musicName || "Chưa chọn nhạc nền"}</p>
-        <button className="btn-primary" style={{ height: 36 }} onClick={() => { setName(d.musicName); setPick(true); }}>{Icon.music(16)} Chọn nhạc</button>
+        <button className="btn-primary" style={{ height: 36 }} onClick={() => setPick(true)}>{Icon.music(16)} Chọn nhạc</button>
         {d.musicName && <button className="link-btn" onClick={() => set({ musicName: "" })}>Bỏ chọn</button>}
       </div>
-      {pick && (
-        <Modal title="Chọn nhạc" onClose={() => setPick(false)}>
-          <Field label="Tên bài hát"><Input autoFocus value={name} onChange={(e) => setName(e.target.value)} /></Field>
-          <div className="modal-actions">
-            <button className="btn-outline" onClick={() => setPick(false)}>Hủy</button>
-            <button className="btn-primary" onClick={() => { set({ musicName: name.trim() }); setPick(false); }}>Lưu</button>
-          </div>
-        </Modal>
-      )}
+      {pick && <MusicPicker current={d.musicName} onPick={(n) => set({ musicName: n })} onClose={() => setPick(false)} />}
     </Section>
   );
 }

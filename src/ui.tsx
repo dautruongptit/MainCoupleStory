@@ -53,7 +53,9 @@ export function Section({
   defaultOpen = true,
   enabledLabel = "Hiển thị",
   onTitle,
+  icon,
 }: {
+  icon?: ReactNode;
   title: string;
   enabled?: boolean;
   onEnabled?: (v: boolean) => void;
@@ -70,6 +72,7 @@ export function Section({
         <button type="button" className="collapse-btn" aria-expanded={open} onClick={() => setOpen(!open)}>
           <span className={"chev" + (open ? " open" : "")}>{Icon.chevronRight(16)}</span>
         </button>
+        {icon && <span className="sec-icon">{icon}</span>}
         {onTitle ? (
           editing ? (
             <input className="input title-edit" autoFocus value={title} onChange={(e) => onTitle(e.target.value)}

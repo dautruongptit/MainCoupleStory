@@ -4,6 +4,7 @@ import Header, { Mode } from "./Header";
 import Preview from "./Preview";
 import * as S from "./Sections";
 import TopNav from "./TopNav";
+import HeroPhoto from "./HeroPhoto";
 
 export default function App() {
   const [d, setD] = useState<Inv>(defaultInv);
@@ -36,6 +37,7 @@ export default function App() {
         {mode === "edit" ? (
           <div className="body">
             <S.Basic d={d} set={set} />
+            <HeroPhoto d={d} set={set} />
             <S.Album d={d} set={set} />
             <S.Family d={d} set={set} />
             <S.Announce d={d} set={set} />

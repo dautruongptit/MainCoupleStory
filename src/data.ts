@@ -25,6 +25,14 @@ export interface Inv {
   templateId: string;
   templateName: string;
   templateThumb: string;
+  photoCrops: Record<string, { z: number; x: number; y: number }>;
+  heroOn: boolean;
+  heroPhoto: string;
+  heroZoom: number;
+  heroX: number;
+  heroY: number;
+  introCustom: boolean;
+  introText: string;
   groomFull: string;
   brideFull: string;
   groomNick: string;
@@ -94,6 +102,14 @@ export const defaultInv: Inv = {
   templateId: "double_phoenix_red",
   templateName: "Song Phụng - Đỏ",
   templateThumb: "https://assets.chungdoi.com/template-previews/vi/landscape/double_phoenix_red.d0f325f5.webp",
+  photoCrops: {},
+  heroOn: true,
+  heroPhoto: "https://assets.chungdoi.com/photo-library/design/2e494e0b7ab193dde9575183fa33982e4df2c2a69e3424edb4864146fcd797c6.webp",
+  heroZoom: 1,
+  heroX: 50,
+  heroY: 50,
+  introCustom: false,
+  introText: "",
   groomFull: "Trần Thế Bảo",
   brideFull: "Lê Ngọc Ánh",
   groomNick: "Thế Bảo",
