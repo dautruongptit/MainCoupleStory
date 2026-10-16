@@ -91,20 +91,6 @@ export default function Demo({ slug }: { slug: string }) {
         set={(p) => setD((prev) => ({ ...prev, ...p }))}
         standalone={true}
       />
-
-      {/* Discrete floating action bar in bottom-right corner */}
-      <div className="demo-floating-bottom">
-        <Link href={`/vi/mau-thiep`} className="demo-float-pill back">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-          Mẫu thiệp
-        </Link>
-        <button
-          className="demo-float-pill choose"
-          onClick={() => navigate(`/edit/${createDraft(tpl)}?template=${tpl.id}`)}
-        >
-          Tạo thiệp bằng mẫu này
-        </button>
-      </div>
     </div>
   );
 }

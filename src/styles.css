@@ -5491,49 +5491,26 @@ button:hover .igb-c8 { animation: igbConfettiFly8 1.1s ease-out 0.55s infinite; 
   position: relative;
 }
 
-.demo-floating-bottom {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  z-index: 100;
+.envelope-screen.min-env-screen {
+  max-width: 100% !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 24px 16px !important;
+  background-color: #efe7dd !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
-.demo-float-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 16px;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 500;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.2s;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
-  border: 0;
-}
-
-.demo-float-pill.back {
-  background: rgba(30, 25, 22, 0.85);
-  color: #ffffff;
-  backdrop-filter: blur(8px);
-}
-.demo-float-pill.back:hover {
-  background: rgba(45, 38, 34, 0.95);
-  transform: translateY(-1px);
-}
-
-.demo-float-pill.choose {
-  background: #fb3570;
-  color: #ffffff;
-  font-weight: 600;
-}
-.demo-float-pill.choose:hover {
-  background: #e02660;
-  transform: translateY(-1px);
+.min-card-wrap {
+  max-width: 520px !important;
+  width: 100% !important;
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
 }
 
 @keyframes ambient-fall {
