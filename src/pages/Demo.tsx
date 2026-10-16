@@ -29,7 +29,7 @@ export default function Demo({ slug }: { slug: string }) {
         groomNick: "Hoàng Nam",
         brideFull: "Thảo Vy",
         brideNick: "Thảo Vy",
-        heroPhoto: "https://assets.chungdoi.com/photo-library/design/1e0986014ff4206f135df254987fb52eb45ae964e8cce6f0dba29a905e0e0b67.webp",
+        heroPhoto: "/images/themes/minimalism-brown/couple.webp",
         date: "2026-01-03",
         time: "18:00",
         welcomeTime: "17:30",

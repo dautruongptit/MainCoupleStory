@@ -236,14 +236,14 @@ export default function Preview({
                 >
                   {/* Top-left dried flower */}
                   <img
-                    src="https://chungdoi.com/images/themes/minimalism-brown/flower2-decoration.webp"
+                    src="/images/themes/minimalism-brown/flower2-decoration.webp"
                     alt=""
                     aria-hidden="true"
                     className="absolute pointer-events-none h-40 md:h-60 w-auto max-w-none top-[-10px] left-[-20px] opacity-80 rotate-[15deg] z-20"
                   />
                   {/* Top-right dried flower */}
                   <img
-                    src="https://chungdoi.com/images/themes/minimalism-brown/flower2-decoration.webp"
+                    src="/images/themes/minimalism-brown/flower2-decoration.webp"
                     alt=""
                     aria-hidden="true"
                     className="absolute pointer-events-none h-40 md:h-60 w-auto max-w-none top-[-10px] right-[-20px] -scale-x-100 opacity-80 -rotate-[15deg] z-20"
@@ -480,7 +480,7 @@ export default function Preview({
                 aria-hidden="true"
                 className="pointer-events-none absolute inset-0 z-0"
                 style={{
-                  backgroundImage: 'url("https://chungdoi.com/images/themes/minimalism-brown/paper.webp")',
+                  backgroundImage: 'url("/images/themes/minimalism-brown/paper.webp")',
                   backgroundSize: "100% auto",
                   backgroundPosition: "top center",
                   mixBlendMode: "multiply",
@@ -488,13 +488,13 @@ export default function Preview({
                 }}
               />
               <img
-                src="https://chungdoi.com/images/themes/minimalism-brown/leaf-background.webp"
+                src="/images/themes/minimalism-brown/leaf-background.webp"
                 alt=""
                 aria-hidden="true"
                 className="pointer-events-none absolute left-[-24%] top-[2%] w-[52%] max-w-none object-contain opacity-[0.15]"
               />
               <img
-                src="https://chungdoi.com/images/themes/minimalism-brown/house-background.webp"
+                src="/images/themes/minimalism-brown/house-background.webp"
                 alt=""
                 aria-hidden="true"
                 className="pointer-events-none absolute left-1/2 top-[30%] w-[130%] max-w-none -translate-x-1/2 object-contain opacity-[0.08] mix-blend-multiply"
@@ -537,13 +537,13 @@ export default function Preview({
               <div className="relative z-10 mt-6 aspect-[1094/1554] w-[88%] max-w-[360px] md:mt-8 md:max-w-[460px]">
                 <div className="absolute left-[11.5%] top-[8%] z-10 h-[77%] w-[72%] rotate-[-4.78deg] overflow-hidden bg-white shadow-inner">
                   <img
-                    src={d.heroPhoto || "https://assets.chungdoi.com/photo-library/design/1e0986014ff4206f135df254987fb52eb45ae964e8cce6f0dba29a905e0e0b67.webp"}
+                    src={d.heroPhoto || "/images/themes/minimalism-brown/couple.webp"}
                     alt={`${gName} & ${bName}`}
                     className="h-full w-full object-cover"
                   />
                 </div>
                 <img
-                  src="https://chungdoi.com/images/themes/minimalism-brown/frame-avatar.webp"
+                  src="/images/themes/minimalism-brown/frame-avatar.webp"
                   alt=""
                   aria-hidden="true"
                   className="pointer-events-none absolute inset-0 z-20 size-full max-w-none drop-shadow-[4px_4px_4px_rgba(0,0,0,0.2)]"
@@ -554,7 +554,7 @@ export default function Preview({
                   style={{ animation: "mbFloat 5s ease-in-out infinite", animationDelay: "0s", willChange: "transform" }}
                 >
                   <img
-                    src="https://chungdoi.com/images/themes/minimalism-brown/flower2-decoration.webp"
+                    src="/images/themes/minimalism-brown/flower2-decoration.webp"
                     alt=""
                     className="block w-full max-w-none object-contain drop-shadow-[4px_4px_2px_rgba(0,0,0,0.25)]"
                   />
