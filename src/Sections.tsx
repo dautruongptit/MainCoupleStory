@@ -590,49 +590,47 @@ export function GiftBox({ d, set }: P) {
       enabledLabel="Hiện"
     >
       <div className="space-y-3 pt-2">
-        <div className="space-y-3">
+        <div className="gift-bank-list">
           {d.gifts.length === 0 ? (
             <div className="empty-box">Chưa có tài khoản nào. Nhấn nút bên dưới để thêm.</div>
           ) : (
             d.gifts.map((g) => (
-              <div className="flex items-start gap-3 rounded-xl border border-base-300 bg-base-100 p-3" key={g.id}>
-                <div
-                  className="w-11 h-11 rounded-lg shrink-0 flex items-center justify-center overflow-hidden"
-                  style={{ backgroundColor: "rgba(225, 29, 72, 0.08)" }}
-                >
+              <div className="gift-bank-card" key={g.id}>
+                <div className="gift-bank-logo">
                   <img
                     alt={g.bankName}
-                    className="w-full h-full object-contain p-1.5"
                     src={g.bankLogo || `https://api.vietqr.io/img/${g.bankCode}.png`}
                     onError={(e) => {
                       (e.currentTarget as HTMLElement).style.display = "none";
                     }}
                   />
                 </div>
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm font-semibold leading-tight break-words">{getWhoTitle(g)}</p>
-                  <p className="text-xs text-base-content/70 mt-1 break-words">{g.accountName}</p>
-                  <p className="text-xs font-mono text-base-content/70 mt-0.5 break-all">{g.accountNumber}</p>
-                  <p className="text-xs text-base-content/50 mt-0.5 break-words">{g.bankName}</p>
+                <div className="gift-bank-info">
+                  <p className="gift-bank-title">{getWhoTitle(g)}</p>
+                  <p className="gift-bank-name">{g.accountName}</p>
+                  <p className="gift-bank-num">{g.accountNumber}</p>
+                  <p className="gift-bank-org">{g.bankName}</p>
                 </div>
-                <div className="flex items-center gap-0.5 shrink-0">
+                <div className="gift-bank-actions">
                   <button
                     type="button"
-                    className="btn btn-xs btn-ghost btn-square"
+                    className="gift-action-btn"
                     aria-label="Sửa"
+                    title="Sửa"
                     onClick={() => handleEdit(g)}
                   >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
                     </svg>
                   </button>
                   <button
                     type="button"
-                    className="btn btn-xs btn-ghost btn-square text-error/80 hover:text-error"
+                    className="gift-action-btn delete"
                     aria-label="Xóa"
+                    title="Xóa"
                     onClick={() => handleDelete(g.id)}
                   >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                     </svg>
                   </button>
@@ -649,7 +647,7 @@ export function GiftBox({ d, set }: P) {
             className="btn-outline-pill-full"
             onClick={handleOpenAdd}
           >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
             </svg>
             Thêm tài khoản ngân hàng
@@ -657,6 +655,7 @@ export function GiftBox({ d, set }: P) {
           <button
             type="button"
             className="btn btn-ghost btn-xs w-full opacity-70 text-center"
+            style={{ display: "block", textAlign: "center", margin: "4px auto 0", cursor: "pointer" }}
             data-bot-screenshot-id="editor-gift-add-method"
             onClick={() => setOpenOtherModal(true)}
           >
@@ -665,77 +664,47 @@ export function GiftBox({ d, set }: P) {
         </div>
 
         {/* Display Mode Selector (3 Tabs) */}
-        <div className="mt-4">
-          <p className="text-xs font-semibold uppercase tracking-wider mb-2 text-base-content/60">KIỂU HIỂN THỊ</p>
-          <div className="flex items-stretch gap-1 p-1 bg-base-200 rounded-lg" style={{ backgroundColor: "#171412" }}>
+        <div className="gift-tabs-wrap">
+          <p className="gift-tabs-title">KIỂU HIỂN THỊ</p>
+          <div className="gift-tabs-bar">
             <button
               type="button"
-              className={`flex-1 flex flex-col items-center justify-center gap-1 px-1.5 py-2 text-[11px] leading-tight text-center rounded-md transition-all sm:flex-row sm:gap-1.5 sm:py-1.5 sm:px-3 sm:text-sm ${
-                d.giftDisplayMode === "gift_box"
-                  ? "shadow-sm font-medium"
-                  : "hover:text-base-content"
-              }`}
-              style={{
-                backgroundColor: d.giftDisplayMode === "gift_box" ? "#26221f" : "transparent",
-                color: d.giftDisplayMode === "gift_box" ? "#fc0081" : "rgba(255, 255, 255, 0.6)",
-              }}
+              className={`gift-tab-btn ${d.giftDisplayMode === "gift_box" ? "active" : ""}`}
               onClick={() => set({ giftDisplayMode: "gift_box" })}
             >
-              <span className="shrink-0" aria-hidden="true">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M20 12v8a1 1 0 01-1 1H5a1 1 0 01-1-1v-8M2 7h20v5H2zM12 21V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z" />
-                </svg>
-              </span>
-              <span className="block text-balance">Hộp quà</span>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M20 12v8a1 1 0 01-1 1H5a1 1 0 01-1-1v-8M2 7h20v5H2zM12 21V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z" />
+              </svg>
+              <span>Hộp quà</span>
             </button>
             <button
               type="button"
-              className={`flex-1 flex flex-col items-center justify-center gap-1 px-1.5 py-2 text-[11px] leading-tight text-center rounded-md transition-all sm:flex-row sm:gap-1.5 sm:py-1.5 sm:px-3 sm:text-sm ${
-                d.giftDisplayMode === "envelope"
-                  ? "shadow-sm font-medium"
-                  : "hover:text-base-content"
-              }`}
-              style={{
-                backgroundColor: d.giftDisplayMode === "envelope" ? "#26221f" : "transparent",
-                color: d.giftDisplayMode === "envelope" ? "#fc0081" : "rgba(255, 255, 255, 0.6)",
-              }}
+              className={`gift-tab-btn ${d.giftDisplayMode === "envelope" ? "active" : ""}`}
               onClick={() => set({ giftDisplayMode: "envelope" })}
             >
-              <span className="shrink-0" aria-hidden="true">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </span>
-              <span className="block text-balance">Phong bì</span>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <span>Phong bì</span>
             </button>
             <button
               type="button"
-              className={`flex-1 flex flex-col items-center justify-center gap-1 px-1.5 py-2 text-[11px] leading-tight text-center rounded-md transition-all sm:flex-row sm:gap-1.5 sm:py-1.5 sm:px-3 sm:text-sm ${
-                d.giftDisplayMode === "qr_inline"
-                  ? "shadow-sm font-medium"
-                  : "hover:text-base-content"
-              }`}
-              style={{
-                backgroundColor: d.giftDisplayMode === "qr_inline" ? "#26221f" : "transparent",
-                color: d.giftDisplayMode === "qr_inline" ? "#fc0081" : "rgba(255, 255, 255, 0.6)",
-              }}
+              className={`gift-tab-btn ${d.giftDisplayMode === "qr_inline" ? "active" : ""}`}
               onClick={() => set({ giftDisplayMode: "qr_inline" })}
             >
-              <span className="shrink-0" aria-hidden="true">
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3 3h8v8H3V3zm2 2v4h4V5H5z" />
-                  <rect x="6" y="6" width="2" height="2" />
-                  <path d="M13 3h8v8h-8V3zm2 2v4h4V5h-4z" />
-                  <rect x="16" y="6" width="2" height="2" />
-                  <path d="M3 13h8v8H3v-8zm2 2v4h4v-4H5z" />
-                  <rect x="6" y="16" width="2" height="2" />
-                  <rect x="13" y="13" width="3" height="3" />
-                  <rect x="18" y="13" width="3" height="3" />
-                  <rect x="13" y="18" width="3" height="3" />
-                  <rect x="18" y="18" width="3" height="3" />
-                </svg>
-              </span>
-              <span className="block text-balance">Hiện QR trực tiếp</span>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3 3h8v8H3V3zm2 2v4h4V5H5z" />
+                <rect x="6" y="6" width="2" height="2" />
+                <path d="M13 3h8v8h-8V3zm2 2v4h4V5h-4z" />
+                <rect x="16" y="6" width="2" height="2" />
+                <path d="M3 13h8v8H3v-8zm2 2v4h4v-4H5z" />
+                <rect x="6" y="16" width="2" height="2" />
+                <rect x="13" y="13" width="3" height="3" />
+                <rect x="18" y="13" width="3" height="3" />
+                <rect x="13" y="18" width="3" height="3" />
+                <rect x="18" y="18" width="3" height="3" />
+              </svg>
+              <span>Hiện QR trực tiếp</span>
             </button>
           </div>
         </div>
