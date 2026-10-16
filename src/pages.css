@@ -2056,3 +2056,39 @@
 .gst-filter-wrap { position: relative; }
 .gst-menu-left { right: auto; left: 0; min-width: 140px; }
 button.gst-chip { border: 0; font-family: inherit; cursor: pointer; }
+
+/* ---- Account: căn theo ảnh chuẩn 233633 ---- */
+.account-page-v2 .account-card { background: #1d1917; border: 0; border-radius: 20px; }
+.account-page-v2 .acct-submit-btn { background: #ff0080; height: 32px; padding: 0 14px; font-size: 11px; font-weight: 700; box-shadow: 0 4px 12px -4px rgba(255, 0, 128, 0.6); }
+.account-page-v2 .acct-submit-btn:hover { background: #e6007a; }
+.account-page-v2 .acct-switch-toggle { width: 38px; height: 22px; background: #26221f; border: 1.5px solid #ff0080; }
+.account-page-v2 .acct-switch-toggle .acct-toggle-thumb { top: 2.5px; left: 3px; width: 14px; height: 14px; background: #6b6b6b; }
+.account-page-v2 .acct-switch-toggle.active { background: #26221f; }
+.account-page-v2 .acct-switch-toggle.active .acct-toggle-thumb { background: #ff0080; transform: translateX(15px); }
+
+/* ---- Căn giữa menu thanh trên và tiêu đề hero theo ảnh chuẩn ---- */
+@media (min-width: 769px) {
+  .topnav-links { position: absolute; left: 50%; transform: translateX(-50%); margin: 0; }
+}
+.hero-copy h1 { max-width: 560px; }
+
+/* ---- Modal chia sẻ / QR: giao diện tối theo ảnh chuẩn 233329, 233350 ---- */
+.share-modal-box, .qr-modal-box { background: #1d1917; border: 0; color: #fff; border-radius: 20px; }
+.share-modal-box { max-width: 384px; }
+.share-modal-close, .qr-modal-close { background: #0f0d0c; color: #fff; }
+.share-modal-title { color: #fff; }
+.share-trial-badge, .share-published-badge { background: #26221f; color: rgba(255, 255, 255, 0.85); }
+.share-url-box { background: transparent; text-align: center; padding: 0; filter: none; opacity: 1; user-select: text; }
+.share-url-text { filter: none !important; color: #ff0080; font-size: 11px; }
+.share-modal-desc p { color: rgba(205, 205, 205, 0.55); }
+.share-btn { background: #0f0d0c; color: #fff; }
+.share-btn:hover { background: #26221f; }
+.share-menu-item { border-top-color: rgba(255, 255, 255, 0.06); color: #fff; }
+.share-menu-item:hover { background: rgba(255, 255, 255, 0.03); }
+.share-menu-ico { background: #0f0d0c; color: rgba(255, 255, 255, 0.85); }
+.share-menu-ico.glowing-pink { background: #ff0080; color: #fff; box-shadow: 0 0 16px rgba(255, 0, 128, 0.55); }
+.share-menu-label { color: #fff; font-weight: 400; }
+.share-menu-label.share-label-pink { color: #e879f9; font-weight: 600; }
+.share-menu-sub { color: rgba(205, 205, 205, 0.5); }
+.qr-slug-val, .qr-slug-label { color: #fff; }
+.share-menu-label-row .share-menu-label { flex: 0 0 auto; }

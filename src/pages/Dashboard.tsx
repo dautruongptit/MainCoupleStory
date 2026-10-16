@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { Link, navigate } from "../router";
-import { loadCards, saveCards, loadInv, saveInv, removeInv, removeGuests, type Card } from "../store";
+import { loadCards, saveCards, loadInv, saveInv, removeInv, removeGuests, loadGuests, type Card } from "../store";
 import { LoginModal, useAuth } from "../TopNav";
 import ShareModal from "../ShareModal";
 
@@ -283,6 +283,7 @@ export default function Dashboard() {
         <ShareModal
           name={sharingCard.name}
           slug="z6dt5xo7"
+          guestsCount={loadGuests(sharingCard.id).length}
           onClose={() => setSharingCard(null)}
         />
       )}

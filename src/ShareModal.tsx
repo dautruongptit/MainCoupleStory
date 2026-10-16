@@ -98,6 +98,7 @@ export default function ShareModal({
   name = "Thiệp 1",
   slug = "z6dt5xo7",
   guestsCount = 0,
+  usedGuests = 0,
   maxGuests = 20,
   daysLeft = 3,
   justPublished = false,
@@ -106,6 +107,8 @@ export default function ShareModal({
   name?: string;
   slug?: string;
   guestsCount?: number;
+  /** số khách đã xem/xác nhận, tính vào hạn mức miễn phí (khác với số khách đã thêm) */
+  usedGuests?: number;
   maxGuests?: number;
   daysLeft?: number;
   justPublished?: boolean;
@@ -180,13 +183,13 @@ export default function ShareModal({
                   <circle cx="12" cy="12" r="10" />
                   <polyline points="12 6 12 12 16 14" />
                 </svg>
-                <span>Còn {maxGuests - guestsCount} khách mời · {daysLeft} ngày dùng thử</span>
+                <span>Còn {maxGuests - usedGuests} khách mời · {daysLeft} ngày dùng thử</span>
               </div>
             </div>
           )}
 
           {/* Blurred / Styled Link Box */}
-          <div className="share-url-box" onClick={copyLink}>
+          <div className="share-url-box" onClick={copyLink} role="button" tabIndex={0} onKeyDown={(e) => e.key === "Enter" && copyLink()}>
             <span className="share-url-text">{fullUrl}</span>
           </div>
 
@@ -284,7 +287,10 @@ export default function ShareModal({
                 </svg>
               </div>
               <div className="share-menu-content">
-                <div className="share-menu-label share-label-pink">Mời khách</div>
+                <div className="share-menu-label-row">
+                  <span className="share-menu-label share-label-pink">Mời khách</span>
+                  {guestsCount > 0 && <span className="share-guest-count-pill">{guestsCount} khách</span>}
+                </div>
                 <div className="share-menu-sub">Ghi tên &amp; tạo link riêng cho từng khách</div>
               </div>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ec4899" strokeWidth="2.5" className="share-chevron">
