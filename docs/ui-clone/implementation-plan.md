@@ -20,7 +20,14 @@ Quyết định đã áp dụng cho 6 câu hỏi mở (bạn duyệt kế hoạc
 | Editor | Thứ tự mục (Thư viện ảnh sau Lễ), Ảnh đầu thiệp rỗng, Hộp Quà Mừng (Kiểu hiển thị xuống dưới, icon cùng hàng), thẻ nhạc, placeholder tên ngắn | Xong | Chụp và so với ảnh 211744, 211852, 221459, 211639, 214544 |
 | Mobile | Dock "Chỉnh sửa/Xem trước" không xuống dòng; Khách Mời ở 390px | Xong cho 2 màn hình | Chụp 390px |
 
-**Còn lại, chưa làm hoặc chưa kiểm tra bằng ảnh chụp:** G11 logo gốc, G12 sáng/tối, G13 font Montserrat, G30 kiểu đăng nhập mật khẩu, G01/G02/G04 nội dung tab Khách Mời, và các màn hình chưa chụp so: Home, Account, Demo, modal (chia sẻ, xuất bản, tour, đổi mẫu, chọn nhạc), mục Thư viện ảnh/Dress Code/RSVP/Share, mobile ngoài hai màn hình trên.
+| Giai đoạn 2 | Account (màu thẻ, nút, công tắc), căn giữa menu thanh trên, tiêu đề hero | Xong | Chụp 1900px và so ảnh 233633, 005707 |
+| Giai đoạn 2 | Modal chia sẻ và QR chuyển sang giao diện tối, link không còn làm mờ, nhãn "N khách" | Xong | Chụp so ảnh 233329 |
+| Giai đoạn 2 | Modal Kiểm tra thông tin giao diện tối | Xong | Chụp so ảnh 224821 |
+| Giai đoạn 2 | Modal đăng nhập theo ảnh 224730 (Google trắng, Apple đen, logo, nút xám khi chưa nhập); thêm bước OTP (suy luận, không có ảnh); đóng modal bằng ✕ không còn tự đăng nhập | Xong | Chạy trình duyệt: ✕, OTP 6 số, đăng nhập |
+| Giai đoạn 2 | Thiệp mới tạo bắt đầu trống (0/9 mục), tên dự phòng "Chú Rể"/"Cô Dâu" | Xong | Chạy trình duyệt: 0/9 → 1/9 khi nhập tên |
+| Giai đoạn 2 | Màu hồng thương hiệu `#ff0080` thống nhất; Montserrat cho tiêu đề trang; chữ script cho cụm nhấn; viền xanh trên thẻ đánh giá; sửa dấu "+" đôi ở modal chi tiết mẫu | Xong | Chụp so ảnh 232649 |
+
+**Còn lại, chưa làm hoặc chưa kiểm tra bằng ảnh chụp:** G11 logo gốc (hoa sen hiện là bản vẽ lại), G12 chế độ sáng/tối thật, G30 kiểu đăng nhập mật khẩu (chưa có ảnh nào chứng tỏ cần), G01/G02/G04 nội dung tab Khách Mời, bước OTP chưa có ảnh chuẩn. Chưa chụp so: Demo, Pricing, modal đổi mẫu/chọn nhạc/tour (chỉ xem tour bước 1), các mục Thư viện ảnh, Dress Code, RSVP, Ảnh xem trước chia sẻ, các phần Home ngoài đánh giá, hero và đổi mẫu, và mobile ngoài editor/Khách Mời.
 
 **Giới hạn môi trường kiểm thử:** `assets.chungdoi.com` trả HTTP 403 khi tải từ môi trường này nên ảnh mẫu thiệp không hiện trong ảnh chụp (hiện chữ alt). Chưa biết trình duyệt của bạn có tải được không.
 
