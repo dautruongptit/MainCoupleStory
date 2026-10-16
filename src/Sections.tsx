@@ -480,62 +480,64 @@ export function GiftBox({ d, set }: P) {
       onEnabled={(v) => set({ giftOn: v })}
       enabledLabel="Hiện"
     >
-      <div className="space-y-3 pt-1">
-        {d.gifts.length === 0 ? (
-          <div className="empty-box">Chưa có tài khoản nào. Nhấn nút bên dưới để thêm.</div>
-        ) : (
-          d.gifts.map((g) => (
-            <div className="gift-bank-item" key={g.id}>
-              <div
-                className="gift-bank-logo-wrap"
-                style={{ backgroundColor: "rgba(225, 29, 72, 0.08)" }}
-              >
-                <img
-                  alt={g.bankName}
-                  className="w-full h-full object-contain p-1.5"
-                  src={g.bankLogo || `https://api.vietqr.io/img/${g.bankCode}.png`}
-                  onError={(e) => {
-                    (e.currentTarget as HTMLElement).style.display = "none";
-                  }}
-                />
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-semibold leading-tight break-words">{getWhoTitle(g)}</p>
-                <p className="text-xs text-base-content/70 mt-1 break-words">{g.accountName}</p>
-                <p className="text-xs font-mono text-base-content/70 mt-0.5 break-all">{g.accountNumber}</p>
-                <p className="text-xs text-base-content/50 mt-0.5 break-words">{g.bankName}</p>
-              </div>
-              <div className="flex items-center gap-0.5 shrink-0">
-                <button
-                  type="button"
-                  className="btn-icon-sq"
-                  aria-label="Sửa"
-                  onClick={() => handleEdit(g)}
+      <div className="space-y-3 pt-2">
+        <div className="space-y-3">
+          {d.gifts.length === 0 ? (
+            <div className="empty-box">Chưa có tài khoản nào. Nhấn nút bên dưới để thêm.</div>
+          ) : (
+            d.gifts.map((g) => (
+              <div className="flex items-start gap-3 rounded-xl border border-base-300 bg-base-100 p-3" key={g.id}>
+                <div
+                  className="w-11 h-11 rounded-lg shrink-0 flex items-center justify-center overflow-hidden"
+                  style={{ backgroundColor: "rgba(225, 29, 72, 0.08)" }}
                 >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                  </svg>
-                </button>
-                <button
-                  type="button"
-                  className="btn-icon-sq text-error"
-                  aria-label="Xóa"
-                  onClick={() => handleDelete(g.id)}
-                >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                  </svg>
-                </button>
+                  <img
+                    alt={g.bankName}
+                    className="w-full h-full object-contain p-1.5"
+                    src={g.bankLogo || `https://api.vietqr.io/img/${g.bankCode}.png`}
+                    onError={(e) => {
+                      (e.currentTarget as HTMLElement).style.display = "none";
+                    }}
+                  />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm font-semibold leading-tight break-words">{getWhoTitle(g)}</p>
+                  <p className="text-xs text-base-content/70 mt-1 break-words">{g.accountName}</p>
+                  <p className="text-xs font-mono text-base-content/70 mt-0.5 break-all">{g.accountNumber}</p>
+                  <p className="text-xs text-base-content/50 mt-0.5 break-words">{g.bankName}</p>
+                </div>
+                <div className="flex items-center gap-0.5 shrink-0">
+                  <button
+                    type="button"
+                    className="btn btn-xs btn-ghost btn-square"
+                    aria-label="Sửa"
+                    onClick={() => handleEdit(g)}
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                    </svg>
+                  </button>
+                  <button
+                    type="button"
+                    className="btn btn-xs btn-ghost btn-square text-error/80 hover:text-error"
+                    aria-label="Xóa"
+                    onClick={() => handleDelete(g.id)}
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                    </svg>
+                  </button>
+                </div>
               </div>
-            </div>
-          ))
-        )}
+            ))
+          )}
+        </div>
 
         {/* Action Buttons */}
-        <div className="space-y-2 mt-2">
+        <div className="space-y-2">
           <button
             type="button"
-            className="btn-outline-full"
+            className="btn btn-outline btn-sm w-full"
             onClick={handleOpenAdd}
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -545,7 +547,7 @@ export function GiftBox({ d, set }: P) {
           </button>
           <button
             type="button"
-            className="btn-ghost-sm"
+            className="btn btn-ghost btn-xs w-full opacity-70"
             data-bot-screenshot-id="editor-gift-add-method"
             onClick={() => setOpenOtherModal(true)}
           >
@@ -555,11 +557,15 @@ export function GiftBox({ d, set }: P) {
 
         {/* Display Mode Selector (3 Tabs) */}
         <div className="mt-4">
-          <p className="text-sm font-medium mb-2" style={{ fontWeight: 600, color: "var(--ink)" }}>Kiểu hiển thị</p>
-          <div className="display-mode-group">
+          <p className="text-sm font-medium mb-2 text-base-content">Kiểu hiển thị</p>
+          <div className="flex items-stretch gap-1 p-1 bg-base-200 rounded-lg">
             <button
               type="button"
-              className={`display-mode-btn ${d.giftDisplayMode === "gift_box" ? "active" : ""}`}
+              className={`flex-1 flex flex-col items-center justify-center gap-1 px-1.5 py-2 text-[11px] leading-tight text-center rounded-md transition-all sm:flex-row sm:gap-1.5 sm:py-1.5 sm:px-3 sm:text-sm ${
+                d.giftDisplayMode === "gift_box"
+                  ? "bg-base-100 shadow-sm font-medium text-primary"
+                  : "text-base-content/60 hover:text-base-content"
+              }`}
               onClick={() => set({ giftDisplayMode: "gift_box" })}
             >
               <span className="shrink-0" aria-hidden="true">
@@ -571,7 +577,11 @@ export function GiftBox({ d, set }: P) {
             </button>
             <button
               type="button"
-              className={`display-mode-btn ${d.giftDisplayMode === "envelope" ? "active" : ""}`}
+              className={`flex-1 flex flex-col items-center justify-center gap-1 px-1.5 py-2 text-[11px] leading-tight text-center rounded-md transition-all sm:flex-row sm:gap-1.5 sm:py-1.5 sm:px-3 sm:text-sm ${
+                d.giftDisplayMode === "envelope"
+                  ? "bg-base-100 shadow-sm font-medium text-primary"
+                  : "text-base-content/60 hover:text-base-content"
+              }`}
               onClick={() => set({ giftDisplayMode: "envelope" })}
             >
               <span className="shrink-0" aria-hidden="true">
@@ -583,7 +593,11 @@ export function GiftBox({ d, set }: P) {
             </button>
             <button
               type="button"
-              className={`display-mode-btn ${d.giftDisplayMode === "qr_inline" ? "active" : ""}`}
+              className={`flex-1 flex flex-col items-center justify-center gap-1 px-1.5 py-2 text-[11px] leading-tight text-center rounded-md transition-all sm:flex-row sm:gap-1.5 sm:py-1.5 sm:px-3 sm:text-sm ${
+                d.giftDisplayMode === "qr_inline"
+                  ? "bg-base-100 shadow-sm font-medium text-primary"
+                  : "text-base-content/60 hover:text-base-content"
+              }`}
               onClick={() => set({ giftDisplayMode: "qr_inline" })}
             >
               <span className="shrink-0" aria-hidden="true">
