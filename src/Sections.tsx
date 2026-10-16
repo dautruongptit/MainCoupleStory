@@ -1027,24 +1027,24 @@ export function Guestbook({ d, set }: P) {
 }
 
 export const VN_BANKS = [
-  { code: "ICB", name: "VietinBank", bin: "970415", shortName: "VietinBank" },
-  { code: "VCB", name: "Vietcombank", bin: "970436", shortName: "Vietcombank" },
-  { code: "BIDV", name: "BIDV", bin: "970418", shortName: "BIDV" },
-  { code: "MB", name: "MB Bank", bin: "970422", shortName: "MB Bank" },
-  { code: "TCB", name: "Techcombank", bin: "970407", shortName: "Techcombank" },
-  { code: "ACB", name: "ACB", bin: "970416", shortName: "ACB" },
-  { code: "VPB", name: "VPBank", bin: "970432", shortName: "VPBank" },
-  { code: "TPB", name: "TPBank", bin: "970423", shortName: "TPBank" },
-  { code: "VBA", name: "Agribank", bin: "970405", shortName: "Agribank" },
-  { code: "STB", name: "Sacombank", bin: "970403", shortName: "Sacombank" },
-  { code: "HDB", name: "HDBank", bin: "970437", shortName: "HDBank" },
-  { code: "VIB", name: "VIB", bin: "970441", shortName: "VIB" },
-  { code: "SHB", name: "SHB", bin: "970443", shortName: "SHB" },
-  { code: "MSB", name: "MSB", bin: "970426", shortName: "MSB" },
-  { code: "OCB", name: "OCB", bin: "970448", shortName: "OCB" },
-  { code: "SEAB", name: "SeABank", bin: "970440", shortName: "SeABank" },
-  { code: "CAKE", name: "Cake by VPBank", bin: "546034", shortName: "Cake" },
-  { code: "TIMO", name: "Timo", bin: "963388", shortName: "Timo" },
+  { code: "VCB", name: "Vietcombank", bin: "970436", shortName: "Vietcombank", fullName: "Ngân hàng TMCP Ngoại Thương Việt Nam" },
+  { code: "ICB", name: "VietinBank", bin: "970415", shortName: "VietinBank", fullName: "Ngân hàng TMCP Công Thương Việt Nam" },
+  { code: "BIDV", name: "BIDV", bin: "970418", shortName: "BIDV", fullName: "Ngân hàng TMCP Đầu tư và Phát triển Việt Nam" },
+  { code: "MB", name: "MB Bank", bin: "970422", shortName: "MB Bank", fullName: "Ngân hàng TMCP Quân Đội" },
+  { code: "TCB", name: "Techcombank", bin: "970407", shortName: "Techcombank", fullName: "Ngân hàng TMCP Kỹ Thương Việt Nam" },
+  { code: "ACB", name: "ACB", bin: "970416", shortName: "ACB", fullName: "Ngân hàng TMCP Á Châu" },
+  { code: "VPB", name: "VPBank", bin: "970432", shortName: "VPBank", fullName: "Ngân hàng TMCP Việt Nam Thịnh Vượng" },
+  { code: "TPB", name: "TPBank", bin: "970423", shortName: "TPBank", fullName: "Ngân hàng TMCP Tiên Phong" },
+  { code: "VBA", name: "Agribank", bin: "970405", shortName: "Agribank", fullName: "Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam" },
+  { code: "STB", name: "Sacombank", bin: "970403", shortName: "Sacombank", fullName: "Ngân hàng TMCP Sài Gòn Thương Tín" },
+  { code: "HDB", name: "HDBank", bin: "970437", shortName: "HDBank", fullName: "Ngân hàng TMCP Phát triển TP.HCM" },
+  { code: "VIB", name: "VIB", bin: "970441", shortName: "VIB", fullName: "Ngân hàng TMCP Quốc tế Việt Nam" },
+  { code: "SHB", name: "SHB", bin: "970443", shortName: "SHB", fullName: "Ngân hàng TMCP Sài Gòn - Hà Nội" },
+  { code: "MSB", name: "MSB", bin: "970426", shortName: "MSB", fullName: "Ngân hàng TMCP Hàng Hải Việt Nam" },
+  { code: "OCB", name: "OCB", bin: "970448", shortName: "OCB", fullName: "Ngân hàng TMCP Phương Đông" },
+  { code: "SEAB", name: "SeABank", bin: "970440", shortName: "SeABank", fullName: "Ngân hàng TMCP Đông Nam Á" },
+  { code: "CAKE", name: "Cake by VPBank", bin: "546034", shortName: "Cake", fullName: "Ngân hàng số Cake by VPBank" },
+  { code: "TIMO", name: "Timo", bin: "963388", shortName: "Timo", fullName: "Ngân hàng số Timo by Ban Viet" },
 ];
 
 export function GiftBox({ d, set }: P) {
@@ -1058,6 +1058,7 @@ export function GiftBox({ d, set }: P) {
   const [bankSearch, setBankSearch] = useState("");
   const [accountNumber, setAccountNumber] = useState("");
   const [accountName, setAccountName] = useState("");
+  const [showBankDropdown, setShowBankDropdown] = useState(false);
 
   const handleOpenAdd = () => {
     setEditId(null);
@@ -1079,6 +1080,7 @@ export function GiftBox({ d, set }: P) {
       name: g.bankName,
       bin: g.bankBin || "970415",
       shortName: g.bankName,
+      fullName: g.bankName,
     };
     setSelectedBank(found);
     setAccountNumber(g.accountNumber);
@@ -1295,31 +1297,32 @@ export function GiftBox({ d, set }: P) {
       {/* MODAL 1: ADD / EDIT VIETQR BANK */}
       {openModal && (
         <Modal
-          title={editId ? "Sửa tài khoản ngân hàng" : "Thêm tài khoản ngân hàng"}
+          title={editId ? `Chỉnh sửa ${selectedBank.shortName || selectedBank.name}` : "Thêm tài khoản ngân hàng"}
           onClose={() => setOpenModal(false)}
+          className="bank-edit-modal-box"
         >
-          <div className="space-y-4 pt-1">
-            {/* For Who */}
-            <div>
-              <label className="lbl">Dành cho</label>
-              <div className="chips">
+          <div className="bank-edit-form">
+            {/* Dành cho */}
+            <div className="bank-form-group">
+              <label className="bank-form-label">Dành cho</label>
+              <div className="bank-who-chips">
                 <button
                   type="button"
-                  className={who === "groom" ? "chip active" : "chip"}
+                  className={`bank-who-chip ${who === "groom" ? "active" : ""}`}
                   onClick={() => setWho("groom")}
                 >
                   Chú Rể
                 </button>
                 <button
                   type="button"
-                  className={who === "bride" ? "chip active" : "chip"}
+                  className={`bank-who-chip ${who === "bride" ? "active" : ""}`}
                   onClick={() => setWho("bride")}
                 >
                   Cô Dâu
                 </button>
                 <button
                   type="button"
-                  className={who === "custom" ? "chip active" : "chip"}
+                  className={`bank-who-chip ${who === "custom" ? "active" : ""}`}
                   onClick={() => setWho("custom")}
                 >
                   Tùy chọn
@@ -1328,80 +1331,110 @@ export function GiftBox({ d, set }: P) {
             </div>
 
             {who === "custom" && (
-              <Field label="Tiêu đề hiển thị">
-                <Input
+              <div className="bank-form-group">
+                <label className="bank-form-label">Tiêu đề hiển thị</label>
+                <input
+                  type="text"
+                  className="bank-form-input"
                   placeholder="VD: Gia đình Chú Rể, Bố Mẹ..."
                   value={customLabel}
                   onChange={(e) => setCustomLabel(e.target.value)}
                 />
-              </Field>
+              </div>
             )}
 
-            {/* Select Bank */}
-            <div>
-              <label className="lbl">Chọn ngân hàng</label>
-              <Input
-                placeholder="Tìm tên hoặc mã ngân hàng..."
+            {/* Ngân hàng */}
+            <div className="bank-form-group" style={{ position: "relative" }}>
+              <label className="bank-form-label">Ngân hàng</label>
+              <input
+                type="text"
+                className="bank-form-input"
+                placeholder="Tìm kiếm ngân hàng..."
                 value={bankSearch}
-                onChange={(e) => setBankSearch(e.target.value)}
-                style={{ marginBottom: 8 }}
+                onChange={(e) => {
+                  setBankSearch(e.target.value);
+                  setShowBankDropdown(true);
+                }}
+                onFocus={() => setShowBankDropdown(true)}
               />
-              <div className="bank-select-grid">
-                {filteredBanks.slice(0, 12).map((b) => {
-                  const sel = selectedBank.code === b.code;
-                  return (
-                    <button
-                      type="button"
-                      key={b.code}
-                      className={`bank-pill ${sel ? "selected" : ""}`}
-                      onClick={() => setSelectedBank(b)}
-                    >
-                      <img
-                        src={`https://api.vietqr.io/img/${b.code}.png`}
-                        alt={b.name}
-                        className="w-5 h-5 object-contain"
-                        onError={(e) => {
-                          (e.currentTarget as HTMLElement).style.display = "none";
-                        }}
-                      />
-                      <span>{b.shortName}</span>
-                    </button>
-                  );
-                })}
+
+              {/* Selected Bank Card (pink container matching media_1792176413994_26d8bd95.png) */}
+              <div className="bank-selected-pink-card">
+                <div className="bank-logo-white-box">
+                  <img
+                    src={`https://api.vietqr.io/img/${selectedBank.code}.png`}
+                    alt={selectedBank.name}
+                    onError={(e) => {
+                      (e.currentTarget as HTMLElement).style.display = "none";
+                    }}
+                  />
+                </div>
+                <div className="bank-selected-text-col">
+                  <div className="bank-selected-short">{selectedBank.shortName || selectedBank.name}</div>
+                  <div className="bank-selected-full">{selectedBank.fullName || selectedBank.name}</div>
+                </div>
               </div>
+
+              {/* Bank dropdown options */}
+              {showBankDropdown && bankSearch.trim() && (
+                <div className="bank-dropdown-menu">
+                  {filteredBanks.map((b) => (
+                    <div
+                      key={b.code}
+                      className="bank-dropdown-row"
+                      onClick={() => {
+                        setSelectedBank(b);
+                        setBankSearch("");
+                        setShowBankDropdown(false);
+                      }}
+                    >
+                      <img src={`https://api.vietqr.io/img/${b.code}.png`} alt={b.name} className="w-6 h-6 object-contain" />
+                      <div>
+                        <div className="bank-row-short">{b.shortName}</div>
+                        <div className="bank-row-full">{b.fullName || b.name}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
 
-            {/* Account Number */}
-            <Field label="Số tài khoản *">
-              <Input
-                autoFocus
-                placeholder="Nhập số tài khoản"
+            {/* Số tài khoản */}
+            <div className="bank-form-group">
+              <label className="bank-form-label">Số tài khoản</label>
+              <input
+                type="text"
+                className="bank-form-input"
+                placeholder="1023456789"
                 value={accountNumber}
                 onChange={(e) => setAccountNumber(e.target.value)}
               />
-            </Field>
+            </div>
 
-            {/* Account Name */}
-            <Field label="Tên chủ tài khoản *">
-              <Input
-                placeholder="VD: NGUYEN VAN A"
+            {/* Tên chủ tài khoản */}
+            <div className="bank-form-group">
+              <label className="bank-form-label">Tên chủ tài khoản</label>
+              <input
+                type="text"
+                className="bank-form-input"
+                placeholder="TRAN TUAN KIET"
                 value={accountName}
                 onChange={(e) => setAccountName(e.target.value.toUpperCase())}
               />
-            </Field>
+            </div>
 
             {/* Actions */}
-            <div className="modal-actions">
+            <div className="bank-form-actions">
               <button
                 type="button"
-                className="btn-outline"
+                className="bank-btn-cancel"
                 onClick={() => setOpenModal(false)}
               >
                 Hủy
               </button>
               <button
                 type="button"
-                className="btn-primary"
+                className="bank-btn-save"
                 disabled={!accountNumber.trim() || !accountName.trim()}
                 onClick={handleSave}
               >

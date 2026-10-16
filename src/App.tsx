@@ -16,6 +16,7 @@ export default function App() {
   const [dirty, setDirty] = useState(0);
   const [toast, setToast] = useState("");
   const [shareOpen, setShareOpen] = useState(false);
+  const [justPublished, setJustPublished] = useState(false);
   const [showPublishCheck, setShowPublishCheck] = useState(false);
 
   const cardId = typeof window !== "undefined" ? window.location.pathname.replace(/^\/edit\//, "").split("?")[0] : "";
@@ -40,9 +41,13 @@ export default function App() {
     saveCards(updated);
     setIsPublished(true);
     setShowPublishCheck(false);
-    setToast("Xuất bản thiệp thành công!");
-    setTimeout(() => setToast(""), 2200);
+    setJustPublished(true);
     setShareOpen(true); // Open sharing & QR modal immediately upon publishing!
+  };
+
+  const handleOpenShare = () => {
+    setJustPublished(false);
+    setShareOpen(true);
   };
 
   return (
@@ -53,7 +58,7 @@ export default function App() {
         onMode={setMode}
         dirty={dirty}
         onPublish={handlePublishRequest}
-        onShare={() => setShareOpen(true)}
+        onShare={handleOpenShare}
         isPublished={isPublished}
         templateId={d.templateId}
         templateName={d.templateName}
@@ -101,8 +106,9 @@ export default function App() {
       )}
       {shareOpen && isPublished && (
         <ShareModal
-          name={d.groomNick && d.brideNick ? `${d.groomNick} & ${d.brideNick}` : "Thiệp 1"}
+          name={d.groomNick && d.brideNick ? `${d.groomNick} & ${d.brideNick}` : "Hoàng Long & Bảo Ngọc"}
           slug="z6dt5xo7"
+          justPublished={justPublished}
           onClose={() => setShareOpen(false)}
         />
       )}
