@@ -12,9 +12,7 @@ export type Card = {
 
 const KEY = "chungdoi.cards";
 
-const SEED: Card[] = [
-  { id: "2b82a57b-0765-4c50-a0c6-89964bc051a4", name: "Thiệp 1", template: "Minimalism", color: "Nâu", status: "published", created: "16/10/2026", tplId: "minimalism_brown" },
-];
+const SEED: Card[] = [];
 
 export function loadCards(): Card[] {
   try {

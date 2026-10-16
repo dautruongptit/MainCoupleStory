@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { Link, navigate } from "../router";
 import { loadCards, saveCards, type Card } from "../store";
-import { LoginModal } from "../TopNav";
+import { LoginModal, useAuth } from "../TopNav";
 import ShareModal from "../ShareModal";
 
 function DeleteModal({ name, onConfirm, onCancel }: { name: string; onConfirm: () => void; onCancel: () => void }) {
@@ -63,6 +63,7 @@ function DeleteModal({ name, onConfirm, onCancel }: { name: string; onConfirm: (
 import PublishCheckModal from "../PublishCheckModal";
 
 export default function Dashboard() {
+  const { loggedIn, login } = useAuth();
   const [cards, setCards] = useState<Card[]>(loadCards);
   const [tab, setTab] = useState<"all" | "published" | "draft">("all");
   const [editing, setEditing] = useState<string | null>(null);
@@ -93,22 +94,50 @@ export default function Dashboard() {
       </div>
 
       <div className="dash-wrap">
-        {/* Tabs Bar */}
-        <div className="dash-tabs-bar">
-          <div className="dash-tabs-group">
-            {tabs.map(([k, l]) => (
-              <button
-                key={k}
-                className={`dash-tab-btn ${tab === k ? "active" : ""}`}
-                onClick={() => setTab(k)}
-              >
-                {l}
-              </button>
-            ))}
+        {/* Blue alert banner when not logged in */}
+        {!loggedIn && (
+          <div className="dash-auth-alert-banner">
+            <div className="dash-auth-alert-left">
+              <div className="dash-auth-alert-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="12" y1="16" x2="12" y2="12" />
+                  <line x1="12" y1="8" x2="12.01" y2="8" />
+                </svg>
+              </div>
+              <div className="dash-auth-alert-text">
+                <h4 className="dash-auth-alert-title">Đăng nhập để bảo vệ thiệp của bạn</h4>
+                <p className="dash-auth-alert-desc">Thiệp hiện chỉ lưu trên thiết bị này. Đăng nhập để truy cập từ mọi nơi và tránh mất dữ liệu.</p>
+              </div>
+            </div>
+            <button
+              type="button"
+              className="dash-auth-alert-btn"
+              onClick={() => setShowLogin(true)}
+            >
+              Đăng nhập ngay
+            </button>
           </div>
-        </div>
+        )}
 
-        {shown.length === 0 ? (
+        {/* Tabs Bar - ONLY show when user has at least 1 card */}
+        {cards.length > 0 && (
+          <div className="dash-tabs-bar">
+            <div className="dash-tabs-group">
+              {tabs.map(([k, l]) => (
+                <button
+                  key={k}
+                  className={`dash-tab-btn ${tab === k ? "active" : ""}`}
+                  onClick={() => setTab(k)}
+                >
+                  {l}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {cards.length === 0 ? (
           <div className="dash-empty-v3">
             <div className="dash-empty-circle">
               <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ec4899" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -121,6 +150,11 @@ export default function Dashboard() {
             <Link href="/vi/mau-thiep" className="dash-empty-btn">
               + Chọn mẫu thiệp
             </Link>
+          </div>
+        ) : shown.length === 0 ? (
+          <div className="dash-empty-v3">
+            <h3 className="dash-empty-title">Không có thiệp nào</h3>
+            <p className="dash-empty-desc">Chưa có thiệp nào thuộc mục này</p>
           </div>
         ) : (
           <div className="card-grid-v2">
@@ -243,7 +277,7 @@ export default function Dashboard() {
           onCancel={() => setPublishing(null)}
         />
       )}
-      {showLogin && <LoginModal onClose={() => setShowLogin(false)} />}
+      {showLogin && <LoginModal onClose={() => { setShowLogin(false); login(); }} />}
     </main>
   );
 }

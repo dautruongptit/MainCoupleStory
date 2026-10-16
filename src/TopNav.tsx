@@ -146,14 +146,32 @@ export function LoginModal({ onClose }: { onClose: () => void }) {
   );
 }
 
-let _loggedIn = true;
+const AUTH_KEY = "chungdoi.logged_in";
+let _loggedIn = typeof window !== "undefined" && localStorage.getItem(AUTH_KEY) === "true";
 
 export function useAuth() {
   const [loggedIn, setLoggedIn] = useState(_loggedIn);
+
+  useEffect(() => {
+    const handleAuth = () => setLoggedIn(_loggedIn);
+    window.addEventListener("auth_change", handleAuth);
+    return () => window.removeEventListener("auth_change", handleAuth);
+  }, []);
+
   return {
     loggedIn,
-    login: () => { _loggedIn = true; setLoggedIn(true); },
-    logout: () => { _loggedIn = false; setLoggedIn(false); },
+    login: () => {
+      _loggedIn = true;
+      try { localStorage.setItem(AUTH_KEY, "true"); } catch {}
+      setLoggedIn(true);
+      window.dispatchEvent(new Event("auth_change"));
+    },
+    logout: () => {
+      _loggedIn = false;
+      try { localStorage.removeItem(AUTH_KEY); } catch {}
+      setLoggedIn(false);
+      window.dispatchEvent(new Event("auth_change"));
+    },
   };
 }
 
