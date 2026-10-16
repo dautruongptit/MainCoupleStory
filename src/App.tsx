@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { Inv, defaultInv } from "./data";
+import { Inv, defaultInv, blankInv } from "./data";
 import Header, { Mode } from "./Header";
 import Preview from "./Preview";
 import * as S from "./Sections";
@@ -22,8 +22,9 @@ export default function App() {
       return { ...defaultInv, ...saved, photos: saved.photos.filter(alive), heroPhoto: alive(saved.heroPhoto) ? saved.heroPhoto : "" };
     }
     const tpl = templateById(loadCards().find((c) => c.id === cardId)?.tplId);
+    // thiệp mới tạo từ mẫu: nội dung trống; vào /edit/... không thuộc thiệp nào thì dùng dữ liệu demo
     return tpl
-      ? { ...defaultInv, templateId: tpl.id, templateName: tpl.name, templateThumb: TPL_CDN + tpl.img }
+      ? { ...blankInv, templateId: tpl.id, templateName: tpl.name, templateThumb: TPL_CDN + tpl.img }
       : defaultInv;
   });
   const [mode, setMode] = useState<Mode>("edit");

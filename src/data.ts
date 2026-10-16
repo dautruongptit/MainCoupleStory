@@ -267,9 +267,46 @@ export const defaultInv: Inv = {
   shareStyle: "envelope",
 };
 
+/**
+ * Nội dung của một thiệp MỚI tạo: để trống các trường cá nhân (tên, ngày, địa chỉ, ảnh, quà, lời chúc)
+ * giống ảnh chuẩn (233133, 214544, 211744, 220211). Các tiêu đề và gợi ý mặc định giữ như `defaultInv`.
+ */
+export const blankInv: Inv = {
+  ...defaultInv,
+  heroPhoto: "",
+  groomFull: "",
+  brideFull: "",
+  groomNick: "",
+  brideNick: "",
+  groomRole: "Trưởng Nam",
+  brideRole: "Út Nữ",
+  order: "groom",
+  photos: [],
+  groomFather: "",
+  groomMother: "",
+  brideFather: "",
+  brideMother: "",
+  groomAddr: "",
+  brideAddr: "",
+  ceremonies: [],
+  date: "",
+  time: "",
+  welcomeTime: "",
+  startTime: "",
+  locTitle: "Tiệc cưới sẽ tổ chức tại",
+  address: "",
+  mapUrl: "",
+  dressText: "Trang phục dự tiệc",
+  dressColors: [],
+  wishes: [],
+  gifts: [],
+  musicName: "",
+  musicUrl: "",
+};
+
 /** Tên hiển thị: biệt danh nếu có, không thì họ tên đầy đủ. */
-export const groomShown = (d: Inv) => d.groomNick || d.groomFull || "Thế Bảo";
-export const brideShown = (d: Inv) => d.brideNick || d.brideFull || "Ngọc Ánh";
+export const groomShown = (d: Inv) => d.groomNick || d.groomFull || "Chú Rể";
+export const brideShown = (d: Inv) => d.brideNick || d.brideFull || "Cô Dâu";
 
 export const WEEKDAYS_FULL = [
   "Chủ Nhật",
