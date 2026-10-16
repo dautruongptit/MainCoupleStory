@@ -6183,3 +6183,9 @@ button:hover .igb-c8 { animation: igbConfettiFly8 1.1s ease-out 0.55s infinite; 
 .seg.inline button { flex-direction: row; gap: 8px; font-size: 13px; font-weight: 500; }
 .seg.inline button svg + span { font-size: 13px; }
 .seg.inline button.active, .seg.inline button.active svg { color: #ff0080; }
+
+/* Dock mobile: không để nhãn xuống dòng khi left:50% làm hẹp khung */
+@media (max-width: 768px) {
+  .mobile-editor-dock { width: max-content; max-width: calc(100vw - 24px); }
+  .mobile-mode-btn { white-space: nowrap; }
+}

@@ -3,6 +3,29 @@
 Tài liệu liên quan: `reference-analysis.md` (ảnh), `gap-analysis.md` (khác biệt, mã G01–G41), `interaction-inventory.md` (hành vi).
 **Chưa sửa mã nguồn ứng dụng theo kế hoạch này. Chờ bạn duyệt.**
 
+## 0. Tiến độ thực hiện (cập nhật sau mỗi giai đoạn)
+
+Quyết định đã áp dụng cho 6 câu hỏi mở (bạn duyệt kế hoạch nhưng chưa trả lời từng câu, nên dùng mặc định trong kế hoạch):
+1. Có lưu nội dung editor theo thiệp (localStorage). 2. Giữ modal đăng nhập hiện có, chưa thêm kiểu mật khẩu. 3. Giữ tab Tổng quan/Lời chúc tự dựng. 4. Chưa có logo/font gốc, logo vẽ lại. 5. Chưa làm chế độ sáng/tối thật. 6. Đã commit đường cơ sở.
+
+| Giai đoạn | Nội dung | Trạng thái | Cách kiểm tra |
+|---|---|---|---|
+| 0 | Đường cơ sở, `.gitignore` cho `.playwright-mcp/` | Xong | `tsc`, `vite build` |
+| G39, G07 | Lưu `Inv` theo thiệp (`chungdoi.inv.<id>`), nhân bản kèm nội dung, xóa thiệp xóa cả nội dung và danh sách khách | Xong | Chạy trình duyệt: sửa, tải lại, giữ nguyên; nhân bản; xóa |
+| G14 | Chữ mở đầu theo mẫu (3 mẫu đã biết) | Xong một phần | Chạy trình duyệt với Song Hỷ - Xanh và Minimalism - Nâu |
+| G38 | Preview dùng chữ mở đầu, cắt ảnh đầu thiệp, cắt từng ảnh | Xong | Chạy trình duyệt: chữ tùy chỉnh hiện trong preview |
+| G31 | Chip "Bộ sưu tập" lọc mẫu (quy tắc lọc là suy đoán từ tag) | Xong | Chạy trình duyệt: số mẫu thay đổi theo chip, bấm lại bỏ lọc |
+| G03 | Thanh thiệp ở Khách Mời có ảnh nền theo mẫu | Xong (chưa thấy ảnh vì CDN trả 403 trong môi trường kiểm thử) | Đọc mã |
+| Khách Mời | Bộ lọc Tất cả/Đã xem/Chưa xem; link riêng gắn theo thiệp; CSV chống công thức | Xong | Chạy trình duyệt |
+| Editor | Thứ tự mục (Thư viện ảnh sau Lễ), Ảnh đầu thiệp rỗng, Hộp Quà Mừng (Kiểu hiển thị xuống dưới, icon cùng hàng), thẻ nhạc, placeholder tên ngắn | Xong | Chụp và so với ảnh 211744, 211852, 221459, 211639, 214544 |
+| Mobile | Dock "Chỉnh sửa/Xem trước" không xuống dòng; Khách Mời ở 390px | Xong cho 2 màn hình | Chụp 390px |
+
+**Còn lại, chưa làm hoặc chưa kiểm tra bằng ảnh chụp:** G11 logo gốc, G12 sáng/tối, G13 font Montserrat, G30 kiểu đăng nhập mật khẩu, G01/G02/G04 nội dung tab Khách Mời, và các màn hình chưa chụp so: Home, Account, Demo, modal (chia sẻ, xuất bản, tour, đổi mẫu, chọn nhạc), mục Thư viện ảnh/Dress Code/RSVP/Share, mobile ngoài hai màn hình trên.
+
+**Giới hạn môi trường kiểm thử:** `assets.chungdoi.com` trả HTTP 403 khi tải từ môi trường này nên ảnh mẫu thiệp không hiện trong ảnh chụp (hiện chữ alt). Chưa biết trình duyệt của bạn có tải được không.
+
+---
+
 ## 1. Hiện trạng project
 
 - Vite 5 + React 18 + TypeScript (strict), không Tailwind, không thư viện UI. Phụ thuộc thật chỉ có `react`, `react-dom`, `qrcode-generator`.
