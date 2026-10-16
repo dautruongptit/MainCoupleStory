@@ -1489,3 +1489,328 @@
     gap: 36px;
   }
 }
+
+/* ---- Coverflow 3D Carousel ---- */
+.coverflow-sec {
+  padding: 60px 0 40px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.coverflow-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coverflow-stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  perspective: 1100px;
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coverflow-card {
+  position: absolute;
+  width: 250px;
+  height: 460px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  transition: transform 0.45s cubic-bezier(0.2, 0.9, 0.4, 1), opacity 0.45s ease, filter 0.45s ease;
+  cursor: pointer;
+  transform-origin: center center;
+  background: #141416;
+  user-select: none;
+}
+.coverflow-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+.coverflow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #111827;
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 50;
+  transition: transform 0.15s, background 0.15s;
+}
+.coverflow-btn:hover {
+  transform: translateY(-50%) scale(1.1);
+  background: #f3f4f6;
+}
+.coverflow-btn.left {
+  left: 32px;
+}
+.coverflow-btn.right {
+  right: 32px;
+}
+@media (max-width: 768px) {
+  .coverflow-wrap {
+    height: 420px;
+  }
+  .coverflow-card {
+    width: 200px;
+    height: 380px;
+  }
+  .coverflow-btn.left {
+    left: 12px;
+  }
+  .coverflow-btn.right {
+    right: 12px;
+  }
+}
+.coverflow-dots-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 24px;
+}
+.coverflow-dot {
+  padding: 0;
+  border: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.coverflow-dot.active {
+  width: 26px;
+  height: 6px;
+  border-radius: 999px;
+  background: #ec4899;
+}
+
+/* ---- Steps Timeline Section ---- */
+.steps-sec-v2 {
+  padding: 60px 24px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+.steps-grid-v2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  margin-top: 40px;
+}
+.steps-timeline {
+  display: flex;
+  flex-direction: column;
+}
+.step-item-v2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.step-icon-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 44px;
+  flex-shrink: 0;
+}
+.step-icon-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ec4899;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(236, 72, 153, 0.4);
+  flex-shrink: 0;
+}
+.step-v-line {
+  width: 2px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.12);
+  margin: 8px 0;
+}
+.step-content-col {
+  padding-top: 2px;
+  padding-bottom: 24px;
+}
+.step-badge-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #ec4899;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 4px;
+}
+.step-heading-main {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 6px 0;
+  line-height: 1.25;
+}
+.step-desc-sub {
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0;
+  line-height: 1.45;
+}
+
+/* Tutorial phone showcase card */
+.tut-card-wrap {
+  display: flex;
+  justify-content: center;
+}
+.tut-card-box {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px 20px 20px;
+  width: 100%;
+  max-width: 330px;
+  box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: #1f2937;
+  position: relative;
+}
+.tut-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 16px;
+}
+.tut-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+.tut-card-sub {
+  font-size: 11px;
+  color: #6b7280;
+  margin: 0;
+}
+.tut-brand-script {
+  font-family: "Pattaya", cursive;
+  color: #ec4899;
+  font-size: 18px;
+  font-weight: normal;
+}
+.tut-start-pill {
+  background: #ec4899;
+  color: #ffffff;
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 3px 14px;
+  border-radius: 999px;
+  display: inline-block;
+  margin-top: 6px;
+}
+.tut-phones-stage {
+  position: relative;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+.tut-phone-back-left {
+  position: absolute;
+  left: 10px;
+  width: 115px;
+  height: 210px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: rotate(-10deg) scale(0.88);
+  border: 3px solid #111827;
+  background: #fdfbf7;
+  z-index: 1;
+}
+.tut-phone-back-right {
+  position: absolute;
+  right: 10px;
+  width: 115px;
+  height: 210px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: rotate(10deg) scale(0.88);
+  border: 3px solid #111827;
+  background: #fdfbf7;
+  z-index: 1;
+}
+.tut-phone-center-main {
+  position: relative;
+  width: 135px;
+  height: 240px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.3);
+  border: 4px solid #111827;
+  background: #fdfbf7;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+.tut-phone-screen-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.tut-yt-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 28px;
+  background: #e11d48;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.5);
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.2s;
+}
+.tut-yt-play:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.tut-card-footer {
+  font-size: 11px;
+  color: #6b7280;
+  margin: 12px 0 0;
+  line-height: 1.45;
+}
+@media (max-width: 800px) {
+  .steps-grid-v2 {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
