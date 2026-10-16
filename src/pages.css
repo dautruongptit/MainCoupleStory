@@ -2092,3 +2092,25 @@ button.gst-chip { border: 0; font-family: inherit; cursor: pointer; }
 .share-menu-sub { color: rgba(205, 205, 205, 0.5); }
 .qr-slug-val, .qr-slug-label { color: #fff; }
 .share-menu-label-row .share-menu-label { flex: 0 0 auto; }
+
+/* ---- Modal Kiểm tra thông tin: giao diện tối theo ảnh chuẩn 224821 ---- */
+.pub-check-box { background: #1d1917; color: #fff; }
+.pub-check-close { background: #0f0d0c; color: #fff; }
+.pub-check-close:hover { background: #26221f; color: #fff; }
+.pub-check-icon.warning { background: #3a2a14; }
+.pub-check-icon.ready { background: #123424; }
+.pub-check-title, .pub-progress-num { color: #fff; }
+.pub-check-sub { color: rgba(205, 205, 205, 0.55); }
+.pub-group-title { color: rgba(205, 205, 205, 0.45); }
+.pub-items-list li { color: rgba(205, 205, 205, 0.6); }
+.pub-items-list li.done { color: #fff; }
+.pub-item-bullet { background: #0f0d0c; }
+.pub-item-bullet::after { background: #6b6b6b; }
+.pub-item-check-icon { background: #123424; color: #34d399; }
+.pub-checklist-wrap::-webkit-scrollbar-thumb { background: #3a3532; }
+.pub-device-warn { background: #0f1a2b; border-color: #1c3557; }
+.pub-device-warn-icon { color: #38bdf8; }
+.pub-device-warn p { color: #38bdf8; }
+.pub-btn-back { color: rgba(205, 205, 205, 0.8); }
+.pub-btn-back:hover { color: #fff; }
+.pub-checklist-wrap { border-top-color: rgba(255, 255, 255, 0.06); border-bottom-color: rgba(255, 255, 255, 0.06); }

@@ -75,7 +75,7 @@ export default function PublishCheckModal({
               cy="34"
               r={radius}
               fill="none"
-              stroke="#f3f4f6"
+              stroke="#302b28"
               strokeWidth="4"
             />
             <circle
