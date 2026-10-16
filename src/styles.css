@@ -2766,18 +2766,153 @@ button:hover .igb-c8 { animation: igbConfettiFly8 1.1s ease-out 0.55s infinite; 
 }
 
 /* ==================== RESPONSIVE ==================== */
+.mobile-editor-dock {
+  display: none;
+}
 @media (max-width: 768px) {
+  .editor-page-root .topnav {
+    display: none !important;
+  }
   .hdr-in {
-    grid-template-columns: 1fr auto;
-    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    gap: 8px;
+  }
+  .hdr-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    min-width: 0;
   }
   .settings-wrap,
-  .mode-toggle {
-    display: none;
+  #mode-toggle-desktop {
+    display: none !important;
   }
   .tpl-btn {
     width: auto;
     flex: 1;
+    max-width: 220px;
+    height: 42px;
+    padding: 3px 8px 3px 4px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .tpl-thumb-img {
+    width: 34px;
+    height: 34px;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+  .tpl-btn-text-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    line-height: 1.2;
+    flex: 1;
+    min-width: 0;
+  }
+  .tpl-btn-sub {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.55);
+  }
+  .tpl-name {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    text-align: left;
+  }
+  .hdr-right {
+    flex-shrink: 0;
+  }
+  .hdr-right .btn-primary {
+    height: 36px;
+    padding: 0 14px;
+    font-size: 12.5px;
+    border-radius: 8px;
+  }
+
+  /* Floating Dock at bottom on mobile */
+  .mobile-editor-dock {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 990;
+    pointer-events: auto;
+  }
+  .mobile-mode-pill {
+    display: flex;
+    align-items: center;
+    background: rgba(24, 24, 27, 0.88);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    padding: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  }
+  .mobile-mode-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 38px;
+    padding: 0 18px;
+    border-radius: 999px;
+    border: none;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.65);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .mobile-mode-btn.active {
+    background: #ffffff;
+    color: #111827;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  .mobile-settings-wrap {
+    position: relative;
+  }
+  .mobile-settings-btn {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: rgba(24, 24, 27, 0.88);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  }
+  .mobile-settings-dd {
+    position: absolute;
+    bottom: 56px;
+    right: 0;
+    width: 260px;
+    background: #1f1f23;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    padding: 8px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
   }
   .sp-hero-names {
     font-size: 32px;
@@ -4049,7 +4184,31 @@ button:hover .igb-c8 { animation: igbConfettiFly8 1.1s ease-out 0.55s infinite; 
 }
 @media (max-width: 640px) {
   .tpl-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .tpl-grid-modal {
+    width: 100vw;
+    max-width: 100vw;
+    max-height: 85vh;
+    border-radius: 20px 20px 0 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+  }
+  .tpl-modal-header {
+    padding: 18px 16px 12px;
+  }
+  .tpl-modal-titles h3 {
+    font-size: 18px;
+  }
+  .tpl-modal-titles p {
+    font-size: 12px;
+  }
+  .tpl-grid-content {
+    padding: 12px 10px 24px;
   }
 }
 .tpl-card {

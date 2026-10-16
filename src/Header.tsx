@@ -81,7 +81,10 @@ export default function Header({
             >
               <img src={templateThumb} alt={templateName} className="tpl-thumb-img" />
               <div className="tpl-thumb-overlay" />
-              <span className="tpl-name">{templateName}</span>
+              <div className="tpl-btn-text-col">
+                <span className="tpl-btn-sub">Đổi mẫu</span>
+                <span className="tpl-name">{templateName}</span>
+              </div>
               <svg
                 className="w-3.5 h-3.5 opacity-80"
                 fill="none"
@@ -266,6 +269,61 @@ export default function Header({
           </div>
         )}
       </header>
+
+      {/* Mobile Floating Bottom Dock (matches media_1792176288652_6afda0f3.png & media_1792176288672_2e938655.png) */}
+      <div className="mobile-editor-dock">
+        <div className="mobile-mode-pill">
+          <button
+            type="button"
+            className={`mobile-mode-btn ${mode === "edit" ? "active" : ""}`}
+            onClick={() => onMode("edit")}
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+            </svg>
+            <span>Chỉnh sửa</span>
+          </button>
+          <button
+            type="button"
+            className={`mobile-mode-btn ${mode === "preview" ? "active" : ""}`}
+            onClick={() => onMode("preview")}
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+            <span>Xem trước</span>
+          </button>
+        </div>
+
+        <div className="mobile-settings-wrap" ref={ref}>
+          <button
+            type="button"
+            className="mobile-settings-btn"
+            aria-label="Cài đặt"
+            onClick={() => setMenu(!menu)}
+          >
+            {Icon.gear()}
+          </button>
+          {menu && (
+            <div className="dropdown mobile-settings-dd">
+              <button onClick={() => setMenu(false)}>
+                <span className="dd-t">
+                  <span>Ngôn ngữ thiệp <em>VI (Tiếng Việt)</em></span>
+                  <small>Đổi hoặc thêm ngôn ngữ hiển thị trên thiệp.</small>
+                </span>
+              </button>
+              <hr />
+              <button onClick={() => setMenu(false)}>
+                <span className="dd-t">
+                  <span>Thành viên</span>
+                  <small>Mời gia đình hoặc người thân cùng chỉnh sửa thiệp.</small>
+                </span>
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
 
       {/* Full 7-column Template Selector Modal (matches media_1792164790175_cb0f3aef.png) */}
       {templateModal && (

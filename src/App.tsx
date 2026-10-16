@@ -46,7 +46,7 @@ export default function App() {
   };
 
   return (
-    <>
+    <div className="editor-page-root">
       <TopNav />
       <Header
         mode={mode}
@@ -107,6 +107,6 @@ export default function App() {
         />
       )}
       <TutorialTour />
-    </>
+    </div>
   );
 }

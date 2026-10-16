@@ -55,15 +55,25 @@ export default function TemplateModal({ tpl, onClose }: { tpl: Tpl; onClose: () 
     <div className="tm-back" onMouseDown={onClose}>
       <div className="tm" role="dialog" aria-modal="true" aria-label={tpl.name} onMouseDown={(e) => e.stopPropagation()}>
         <button ref={closeRef} className="tm-x" aria-label="Đóng" onClick={onClose}>✕</button>
+        
+        {/* Mobile Header (rendered above phone mockup on mobile) */}
+        <div className="tm-header-mobile">
+          <h2>{tpl.name}</h2>
+          <p className="tm-desc">{tpl.desc}</p>
+          <div className="tm-tags">{tpl.tags.map((t) => <span key={t}>{t}</span>)}</div>
+        </div>
+
         <div className="tm-left">
           <div className="tm-phone-frame">
             <img src={TPL_CDN + tpl.full} alt={`Xem trước ${tpl.name}`} />
           </div>
         </div>
         <div className="tm-right">
-          <h2>{tpl.name}</h2>
-          <p className="tm-desc">{tpl.desc}</p>
-          <div className="tm-tags">{tpl.tags.map((t) => <span key={t}>{t}</span>)}</div>
+          <div className="tm-header-desktop">
+            <h2>{tpl.name}</h2>
+            <p className="tm-desc">{tpl.desc}</p>
+            <div className="tm-tags">{tpl.tags.map((t) => <span key={t}>{t}</span>)}</div>
+          </div>
           <h3>Tính năng</h3>
           <ul className="tm-feats">
             {FEATURES.map(([t, d]) => <li key={t}>{ico(d)}{t}</li>)}
