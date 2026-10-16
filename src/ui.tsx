@@ -137,14 +137,17 @@ export function Segmented<T extends string>({
   value,
   options,
   onChange,
+  inline,
 }: {
   value: T;
   options: { value: T; label: string; icon?: ReactNode }[];
   onChange: (v: T) => void;
+  /** icon nằm cùng hàng với chữ (Hộp quà / Phong bì / Hiện QR) */
+  inline?: boolean;
 }) {
   const idx = Math.max(0, options.findIndex((o) => o.value === value));
   return (
-    <div className="seg" style={{ gridTemplateColumns: `repeat(${options.length}, 1fr)` }}>
+    <div className={"seg" + (inline ? " inline" : "")} style={{ gridTemplateColumns: `repeat(${options.length}, 1fr)` }}>
       <div className="seg-thumb" style={{ width: `calc((100% - 8px) / ${options.length})`, transform: `translateX(${idx * 100}%)` }} />
       {options.map((o) => (
         <button type="button" key={o.value} className={o.value === value ? "active" : ""} onClick={() => onChange(o.value)}>

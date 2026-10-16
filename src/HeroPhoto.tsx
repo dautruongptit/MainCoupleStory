@@ -147,6 +147,7 @@ export default function HeroPhoto({ d, set }: P) {
         </div>
       ) : !d.heroPhoto ? (
         <div className="hero-empty-container">
+          <span className="hero-lbl">Ảnh đầu thiệp</span>
           <div className="hero-empty-thumb">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
               <rect x="3" y="3" width="18" height="18" rx="2" strokeLinecap="round" strokeLinejoin="round" />

@@ -258,7 +258,7 @@ export const defaultInv: Inv = {
   ],
   thanksOn: true,
   thanks: "Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi!",
-  musicName: "Beautiful in White - Shane Filan",
+  musicName: "Beautiful In White",
   musicUrl: "https://assets.chungdoi.com/music/romantic-001.mp3",
   musicAutoPlay: true,
   envelopeGuest: "Gia đình Anh Mạnh",

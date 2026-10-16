@@ -14,7 +14,8 @@ import { TPL_CDN, templateById } from "./templates";
 export default function App() {
   const cardId = typeof window !== "undefined" ? window.location.pathname.replace(/^\/edit\//, "").split("?")[0] : "";
   const [d, setD] = useState<Inv>(() => {
-    const saved = loadInv(cardId);
+    const known = loadCards().some((c) => c.id === cardId);
+    const saved = known ? loadInv(cardId) : null;
     if (saved) {
       // blob: URL của ảnh vừa tải lên chỉ sống trong phiên trước, không dùng lại được sau khi tải trang.
       const alive = (u: string) => !u.startsWith("blob:");
@@ -42,7 +43,8 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    if (dirty > 0 && cardId) saveInv(cardId, d);
+    // chỉ ghi cho thiệp có thật trong danh sách, tránh tạo khóa lưu trữ theo id tùy ý trên URL
+    if (dirty > 0 && loadCards().some((c) => c.id === cardId)) saveInv(cardId, d);
   }, [d, dirty, cardId]);
 
   const handlePublishRequest = () => {

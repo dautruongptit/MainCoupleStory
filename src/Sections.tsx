@@ -51,10 +51,10 @@ export function Basic({ d, set }: P) {
 
       <Row>
         <Field label="Tên ngắn chú rể" half>
-          <ResetInput value={d.groomNick} onChange={(v) => set({ groomNick: v })} placeholder={d.groomFull || "VD: Bảo"} />
+          <ResetInput value={d.groomNick} onChange={(v) => set({ groomNick: v })} placeholder={d.groomFull} />
         </Field>
         <Field label="Tên ngắn cô dâu" half>
-          <ResetInput value={d.brideNick} onChange={(v) => set({ brideNick: v })} placeholder={d.brideFull || "VD: Ánh"} />
+          <ResetInput value={d.brideNick} onChange={(v) => set({ brideNick: v })} placeholder={d.brideFull} />
         </Field>
       </Row>
 
@@ -146,7 +146,7 @@ export function Album({ d, set }: P) {
         </div>
       ) : (
         <>
-          <Field label="KIỂU HIỂN THỊ" cap>
+          <Field label="Kiểu hiển thị">
             <Segmented value={d.albumLayout} onChange={(v) => set({ albumLayout: v })}
               options={[{ value: "grid", label: "Lưới", icon: <LayoutIcon k="grid" /> }, { value: "collage", label: "Ghép ảnh", icon: <LayoutIcon k="collage" /> }, { value: "3d", label: "3D", icon: <LayoutIcon k="3d" /> }]} />
           </Field>
@@ -1173,51 +1173,6 @@ export function GiftBox({ d, set }: P) {
       ) : (
         <>
           {/* Display Mode Selector (3 Tabs) */}
-          <Field label="KIỂU HIỂN THỊ" cap>
-            <Segmented
-              value={d.giftDisplayMode || "gift_box"}
-              onChange={(v) => set({ giftDisplayMode: v })}
-              options={[
-                {
-                  value: "gift_box",
-                  label: "Hộp quà",
-                  icon: (
-                    <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M20 12v8a1 1 0 01-1 1H5a1 1 0 01-1-1v-8M2 7h20v5H2zM12 21V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z" />
-                    </svg>
-                  ),
-                },
-                {
-                  value: "envelope",
-                  label: "Phong bì",
-                  icon: (
-                    <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  ),
-                },
-                {
-                  value: "qr_inline",
-                  label: "Hiện QR trực tiếp",
-                  icon: (
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M3 3h8v8H3V3zm2 2v4h4V5H5z" />
-                      <rect x="6" y="6" width="2" height="2" />
-                      <path d="M13 3h8v8h-8V3zm2 2v4h4V5h-4z" />
-                      <rect x="16" y="6" width="2" height="2" />
-                      <path d="M3 13h8v8H3v-8zm2 2v4h4v-4H5z" />
-                      <rect x="6" y="16" width="2" height="2" />
-                      <rect x="13" y="13" width="3" height="3" />
-                      <rect x="18" y="13" width="3" height="3" />
-                      <rect x="13" y="18" width="3" height="3" />
-                      <rect x="18" y="18" width="3" height="3" />
-                    </svg>
-                  ),
-                },
-              ]}
-            />
-          </Field>
-
           <div className="space-y-3 pt-2">
             <div className="gift-bank-list">
               {d.gifts.length === 0 ? (
@@ -1292,6 +1247,51 @@ export function GiftBox({ d, set }: P) {
               </button>
             </div>
           </div>
+
+          <Field label="Kiểu hiển thị">
+            <Segmented inline
+              value={d.giftDisplayMode || "gift_box"}
+              onChange={(v) => set({ giftDisplayMode: v })}
+              options={[
+                {
+                  value: "gift_box",
+                  label: "Hộp quà",
+                  icon: (
+                    <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M20 12v8a1 1 0 01-1 1H5a1 1 0 01-1-1v-8M2 7h20v5H2zM12 21V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z" />
+                    </svg>
+                  ),
+                },
+                {
+                  value: "envelope",
+                  label: "Phong bì",
+                  icon: (
+                    <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  ),
+                },
+                {
+                  value: "qr_inline",
+                  label: "Hiện QR trực tiếp",
+                  icon: (
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M3 3h8v8H3V3zm2 2v4h4V5H5z" />
+                      <rect x="6" y="6" width="2" height="2" />
+                      <path d="M13 3h8v8h-8V3zm2 2v4h4V5h-4z" />
+                      <rect x="16" y="6" width="2" height="2" />
+                      <path d="M3 13h8v8H3v-8zm2 2v4h4v-4H5z" />
+                      <rect x="6" y="16" width="2" height="2" />
+                      <rect x="13" y="13" width="3" height="3" />
+                      <rect x="18" y="13" width="3" height="3" />
+                      <rect x="13" y="18" width="3" height="3" />
+                      <rect x="18" y="18" width="3" height="3" />
+                    </svg>
+                  ),
+                },
+              ]}
+            />
+          </Field>
         </>
       )}
 
@@ -1594,7 +1594,7 @@ export function Thanks({ d, set }: P) {
 export function Music({ d, set }: P) {
   const [pick, setPick] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-  const song = MUSIC_LIBRARY.find((s) => s.title === d.musicName);
+  const song = MUSIC_LIBRARY.find((s) => d.musicName.toLowerCase().startsWith(s.title.toLowerCase()));
 
   return (
     <Section
@@ -1629,9 +1629,9 @@ export function Music({ d, set }: P) {
             </button>
             <div className="music-card-info">
               <h4 className="music-card-title">{song?.title || d.musicName}</h4>
-              <p className="music-card-artist">{song?.artist || "Shane Filan"}</p>
+              <p className="music-card-artist">{song?.artist || "Nhạc của bạn"}</p>
             </div>
-            <span className="music-card-dur">{song?.dur || "3:54"}</span>
+            {song && <span className="music-card-dur">{song.dur}</span>}
           </div>
 
           <button

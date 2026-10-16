@@ -3694,18 +3694,18 @@ button:hover .igb-c8 { animation: igbConfettiFly8 1.1s ease-out 0.55s infinite; 
 .hero-empty-thumb {
   width: 120px;
   aspect-ratio: 0.594595 / 1;
-  border-radius: 12px;
-  background: #26221f;
-  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  background: #050505;
+  border: 3px solid #1d1917;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 16px;
 }
 .hero-empty-thumb svg {
-  width: 36px;
-  height: 36px;
-  color: rgba(255, 255, 255, 0.3);
+  width: 28px;
+  height: 28px;
+  color: rgba(255, 255, 255, 0.25);
 }
 .hero-upload-btn-outline {
   height: 34px;
@@ -6178,3 +6178,8 @@ button:hover .igb-c8 { animation: igbConfettiFly8 1.1s ease-out 0.55s infinite; 
   color: #ffffff !important;
 }
 
+
+/* Segmented: icon cùng hàng với chữ (Hộp Quà Mừng) */
+.seg.inline button { flex-direction: row; gap: 8px; font-size: 13px; font-weight: 500; }
+.seg.inline button svg + span { font-size: 13px; }
+.seg.inline button.active, .seg.inline button.active svg { color: #ff0080; }
