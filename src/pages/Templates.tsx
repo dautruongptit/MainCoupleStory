@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "../router";
 import { TEMPLATES, TPL_CDN, Tpl } from "../templates";
 import TemplateModal from "../TemplateModal";
+import { LoginModal } from "../TopNav";
 
 const COLLECTIONS = ["Màu đỏ", "Màu xanh lá", "Màu xanh dương", "Vàng kim", "Long phụng", "Truyền thống", "Tối giản", "Hoa", "Vườn thiên nhiên", "Hoàng gia châu Âu", "Boho"];
 
@@ -22,6 +23,7 @@ export default function Templates() {
   const [suggest, setSuggest] = useState(false);
   const [note, setNote] = useState("");
   const [sent, setSent] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
 
   useEffect(() => {
     if (!suggest) return;
@@ -53,17 +55,43 @@ export default function Templates() {
       {selected && <TemplateModal tpl={selected} onClose={() => setSelected(null)} />}
 
       <section className="request">
-        <p><b>Chưa thấy mẫu ưng ý?</b></p>
-        <p>Hãy cho chúng mình biết bạn đang tìm gì. Chúng mình thường xuyên thiết kế mẫu thiệp mới theo yêu cầu của các cặp đôi.</p>
-        <button className="btn-primary" onClick={() => { setSuggest(true); setSent(false); }}>Gợi ý mẫu thiệp</button>
+        <div className="request-bulb">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ec4899" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M9 18h6" />
+            <path d="M10 22h4" />
+            <path d="M12 2a7 7 0 0 0-7 7c0 2.5 1.5 4.5 3 6h8c1.5-1.5 3-3.5 3-6a7 7 0 0 0-7-7z" />
+          </svg>
+        </div>
+        <h3 className="request-title">Chưa thấy mẫu ưng ý?</h3>
+        <p className="request-desc">Hãy cho chúng mình biết bạn đang tìm gì. Chúng mình thường xuyên thiết kế mẫu thiệp mới theo yêu cầu của các cặp đôi.</p>
+        <button className="btn-suggest-tpl" onClick={() => { setSuggest(true); setSent(false); }}>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+          </svg>
+          Gợi ý mẫu thiệp
+        </button>
       </section>
 
-      <section className="tpl-block">
+      {/* Sẵn sàng tạo thiệp banner */}
+      <section className="ready-card-section">
+        <div className="ready-banner">
+          <h3 className="ready-title">Sẵn sàng tạo thiệp?</h3>
+          <p className="ready-desc">Đăng ký để tạo thiệp ngay · Dùng thử 3 ngày miễn phí</p>
+          <button className="ready-btn" onClick={() => setShowLogin(true)}>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg>
+            Đăng ký ngay
+          </button>
+        </div>
+      </section>
+
+      <section className="tpl-block collections-section">
         <h2 className="eyebrow-h">BỘ SƯU TẬP THIỆP CƯỚI</h2>
         <div className="chip-wrap">
           {COLLECTIONS.map((c) => <Link key={c} href="/vi/mau-thiep" className="coll-chip">{c}</Link>)}
         </div>
-        <Link href="/vi/mau-thiep" className="link-sm">Xem tất cả bộ sưu tập</Link>
       </section>
 
       <section className="tpl-block two">
@@ -100,6 +128,8 @@ export default function Templates() {
           </div>
         </div>
       )}
+
+      {showLogin && <LoginModal onClose={() => setShowLogin(false)} />}
     </main>
   );
 }

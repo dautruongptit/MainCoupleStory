@@ -59,11 +59,118 @@ function DeleteModal({ name, onConfirm, onCancel }: { name: string; onConfirm: (
   );
 }
 
+function PublishCheckModal({
+  card,
+  onConfirm,
+  onCancel,
+}: {
+  card: Card;
+  onConfirm: () => void;
+  onCancel: () => void;
+}) {
+  useEffect(() => {
+    const h = (e: KeyboardEvent) => e.key === "Escape" && onCancel();
+    window.addEventListener("keydown", h);
+    return () => window.removeEventListener("keydown", h);
+  }, [onCancel]);
+
+  const requiredItems = [
+    { label: "Tên chú rể", done: false },
+    { label: "Tên cô dâu", done: false },
+    { label: "Ngày cưới", done: false },
+    { label: "Giờ cưới", done: false },
+    { label: "Địa chỉ tiệc cưới", done: false },
+  ];
+
+  const optionalItems = [
+    { label: "Bản đồ", done: false },
+    { label: "Thông tin gia đình chú rể", done: false },
+    { label: "Thông tin gia đình cô dâu", done: false },
+    { label: "Ảnh cưới", done: false },
+  ];
+
+  const allItems = [...requiredItems, ...optionalItems];
+  const completed = allItems.filter((x) => x.done).length;
+  const total = allItems.length;
+  const pct = Math.round((completed / total) * 100);
+
+  return (
+    <div className="login-back" onMouseDown={onCancel}>
+      <div className="pub-check-box" role="dialog" aria-modal="true" onMouseDown={(e) => e.stopPropagation()}>
+        <button className="pub-check-close" aria-label="Đóng" onClick={onCancel}>✕</button>
+
+        <div className="pub-check-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+            <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+            <path d="M9 12h6M9 16h6" />
+          </svg>
+        </div>
+
+        <h3 className="pub-check-title">Kiểm tra thông tin</h3>
+        <p className="pub-check-sub">{completed}/{total} mục đã hoàn thành</p>
+
+        <div className="pub-progress-ring">
+          <span className="pub-progress-dot" />
+          <span className="pub-progress-num">{pct}%</span>
+        </div>
+
+        <div className="pub-checklist-wrap">
+          <div className="pub-check-group">
+            <span className="pub-group-title">BẮT BUỘC</span>
+            <ul className="pub-items-list">
+              {requiredItems.map((item, idx) => (
+                <li key={idx} className={item.done ? "done" : ""}>
+                  <span className="pub-item-bullet" />
+                  <span>{item.label}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="pub-check-group">
+            <span className="pub-group-title">TÙY CHỌN</span>
+            <ul className="pub-items-list">
+              {optionalItems.map((item, idx) => (
+                <li key={idx} className={item.done ? "done" : ""}>
+                  <span className="pub-item-bullet" />
+                  <span>{item.label}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="pub-device-warn">
+          <div className="pub-device-warn-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="16" x2="12" y2="12" />
+              <line x1="12" y1="8" x2="12.01" y2="8" />
+            </svg>
+          </div>
+          <p>Thiệp hiện chỉ lưu trên thiết bị này. Bạn sẽ được yêu cầu đăng nhập khi xuất bản để truy cập từ mọi nơi và tránh mất dữ liệu.</p>
+        </div>
+
+        <div className="pub-actions">
+          <button type="button" className="pub-btn-back" onClick={onCancel}>
+            Quay lại
+          </button>
+          <button type="button" className="pub-btn-confirm" onClick={onConfirm}>
+            Vẫn xuất bản
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Dashboard() {
   const [cards, setCards] = useState<Card[]>(loadCards);
   const [tab, setTab] = useState<"all" | "published" | "draft">("all");
   const [editing, setEditing] = useState<string | null>(null);
   const [deleting, setDeleting] = useState<Card | null>(null);
+  const [publishing, setPublishing] = useState<Card | null>(null);
   const [showLogin, setShowLogin] = useState(false);
 
   const persist = useCallback((next: Card[]) => { setCards(next); saveCards(next); }, []);
@@ -175,7 +282,7 @@ export default function Dashboard() {
                 </div>
 
                 <div className="inv-bottom-actions">
-                  <button className="inv-btn-publish" disabled={c.status === "published"} onClick={() => publish(c.id)}>
+                  <button className="inv-btn-publish" disabled={c.status === "published"} onClick={() => setPublishing(c)}>
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="m5 12 7-7 7 7" />
                       <path d="M12 19V5" />
@@ -196,6 +303,16 @@ export default function Dashboard() {
       </div>
 
       {deleting && <DeleteModal name={deleting.name} onConfirm={() => remove(deleting.id)} onCancel={() => setDeleting(null)} />}
+      {publishing && (
+        <PublishCheckModal
+          card={publishing}
+          onConfirm={() => {
+            publish(publishing.id);
+            setPublishing(null);
+          }}
+          onCancel={() => setPublishing(null)}
+        />
+      )}
       {showLogin && <LoginModal onClose={() => setShowLogin(false)} />}
     </main>
   );
