@@ -78,6 +78,11 @@ export default function Dashboard() {
   const count = (s: Card["status"]) => cards.filter((c) => c.status === s).length;
   const rename = (id: string, name: string) => persist(cards.map((c) => (c.id === id ? { ...c, name } : c)));
   const publish = (id: string) => persist(cards.map((c) => (c.id === id ? { ...c, status: "published" } : c)));
+  const duplicate = (c: Card) => {
+    const d = new Date();
+    const created = `${String(d.getDate()).padStart(2, "0")}/${String(d.getMonth() + 1).padStart(2, "0")}/${d.getFullYear()}`;
+    persist([...cards, { ...c, id: crypto.randomUUID(), name: `Thiệp ${cards.length + 1}`, status: "draft", created }]);
+  };
   const remove = (id: string) => { persist(cards.filter((c) => c.id !== id)); setDeleting(null); };
 
   const tabs: [typeof tab, string][] = [
@@ -192,7 +197,7 @@ export default function Dashboard() {
                   {c.status === "published" ? (
                     <>
                       <span className="inv-trial-tag">• Dùng thử</span>
-                      <span className="inv-trial-sub">Còn 3 ngày · 0/20 khách</span>
+                      <span className="inv-trial-sub">Còn 3 ngày • 0/20 khách</span>
                     </>
                   ) : (
                     <span className="inv-status-pill">
@@ -203,7 +208,7 @@ export default function Dashboard() {
 
                 <div className="inv-info-wrap">
                   <div className="inv-tpl-line">
-                    <span>{c.template}{c.color ? ` - ${c.color}` : " - Nâu"}</span>
+                    <span>{c.template} - <span className="inv-tpl-color">{c.color || "Nâu"}</span></span>
                     <span className="inv-views-chip">
                       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
@@ -219,10 +224,11 @@ export default function Dashboard() {
                   {c.status === "published" ? (
                     <>
                       <button className="dash-btn-pay" onClick={() => navigate("/vi/bang-gia")}>
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                          <rect x="2" y="5" width="20" height="14" rx="2" />
-                          <line x1="2" y1="10" x2="22" y2="10" />
-                        </svg>
+                        <span className="dash-pay-ic">
+                          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M12 3l1.9 5.8H20l-4.9 3.6 1.9 5.8-5-3.6-5 3.6 1.9-5.8L4 8.8h6.1z" />
+                          </svg>
+                        </span>
                         <span>Thanh toán</span>
                       </button>
                       <button className="dash-btn-share" onClick={() => setSharingCard(c)}>
@@ -234,6 +240,13 @@ export default function Dashboard() {
                           <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
                         </svg>
                         <span>Chia sẻ</span>
+                      </button>
+                      <button className="dash-btn-dup" onClick={() => duplicate(c)}>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <rect x="9" y="9" width="13" height="13" rx="2" />
+                          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                        </svg>
+                        <span>Nhân bản</span>
                       </button>
                     </>
                   ) : (
@@ -248,10 +261,17 @@ export default function Dashboard() {
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6" />
                     </svg>
+                    {c.status === "published" && <span>Xóa</span>}
                   </button>
                 </div>
               </article>
             ))}
+            {tab === "all" && (
+              <Link href="/vi/mau-thiep" className="inv-new-card">
+                <span className="inv-new-plus">+</span>
+                <span>Tạo thiệp mới</span>
+              </Link>
+            )}
           </div>
         )}
       </div>

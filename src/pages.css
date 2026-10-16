@@ -1949,3 +1949,100 @@
   }
 }
 
+
+/* ---- Khách mời ---- */
+.gst-page { padding: 0 0 80px; max-width: none; }
+.gst-card-bar { display: flex; align-items: center; justify-content: space-between; height: 48px; padding: 0 12px; background: #000; color: #fff; }
+.gst-card-name { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; }
+.gst-dot { width: 7px; height: 7px; border-radius: 50%; background: #6b6b6b; }
+.gst-dot.on { background: #22c55e; }
+.gst-edit { display: inline-flex; align-items: center; gap: 5px; height: 24px; padding: 0 10px; border-radius: 999px; border: 0; background: rgba(255,255,255,.14); color: #fff; font-size: 11px; cursor: pointer; }
+.gst-tabs { display: grid; grid-template-columns: repeat(3, 1fr); background: #1b1816; border-bottom: 1px solid #000; }
+.gst-tabs button { position: relative; height: 44px; background: none; border: 0; color: var(--bc); opacity: .55; font-size: 13px; font-weight: 600; cursor: pointer; }
+.gst-tabs button.on { opacity: 1; }
+.gst-tabs button.on::after { content: ""; position: absolute; left: 50%; bottom: 0; width: 24px; height: 2px; margin-left: -12px; border-radius: 2px; background: var(--p); }
+.gst-body { width: min(1280px, 100%); margin: 0 auto; padding: 12px 16px 0; }
+.gst-warn { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 10px; border: 1px solid #6b4a12; background: #2a1c06; }
+.gst-warn-ic { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: #4a3010; color: #f59e0b; flex: none; }
+.gst-warn b { font-size: 13px; color: #fff; }
+.gst-warn p { margin: 2px 0 0; font-size: 11px; color: rgba(255,255,255,.7); }
+.gst-warn a { color: var(--p); text-decoration: none; }
+.gst-hint { margin: 16px 0; text-align: center; font-size: 11px; color: #5b8fb9; }
+.gst-toolbar { padding: 10px 24px 12px; background: #1b1816; display: flex; flex-direction: column; gap: 8px; }
+.gst-search-row, .gst-filter-row { display: flex; align-items: center; gap: 12px; }
+.gst-filter-row { justify-content: space-between; }
+.gst-search { flex: 1; display: flex; align-items: center; gap: 8px; height: 36px; padding: 0 12px; border-radius: 8px; background: #0f0d0c; border: 1px solid rgba(205,205,205,.12); color: var(--bc); }
+.gst-search input { flex: 1; background: none; border: 0; outline: 0; color: var(--bc); font-size: 12px; }
+.gst-add { display: inline-flex; align-items: center; gap: 6px; background: none; border: 0; color: var(--p); font-size: 13px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.gst-chip { display: inline-flex; align-items: center; gap: 5px; height: 26px; padding: 0 10px; border-radius: 999px; background: var(--p); color: #fff; font-size: 11px; font-weight: 600; }
+.gst-tools-wrap { position: relative; }
+.gst-tools { display: inline-flex; align-items: center; gap: 6px; height: 26px; padding: 0 12px; border-radius: 999px; background: #0f0d0c; border: 1px solid rgba(205,205,205,.18); color: var(--bc); font-size: 11px; cursor: pointer; }
+.gst-menu { position: absolute; right: 0; top: 32px; z-index: 20; min-width: 220px; padding: 6px; border-radius: 10px; background: #1b1816; border: 1px solid #000; box-shadow: 0 10px 24px rgba(0,0,0,.5); display: flex; flex-direction: column; }
+.gst-menu button { text-align: left; padding: 8px 10px; border: 0; border-radius: 6px; background: none; color: var(--bc); font-size: 12px; cursor: pointer; }
+.gst-menu button:hover:not(:disabled) { background: rgba(205,205,205,.08); }
+.gst-menu button:disabled { opacity: .4; cursor: default; }
+.gst-menu .danger { color: #f87171; }
+.gst-empty { display: flex; flex-direction: column; align-items: center; padding: 56px 16px; text-align: center; }
+.gst-empty-ic { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 12px; background: #2a0a1a; color: var(--p); margin-bottom: 16px; }
+.gst-empty h3 { margin: 0; font-size: 13px; font-weight: 600; color: var(--bc); }
+.gst-empty p { margin: 6px 0 0; font-size: 11px; color: rgba(205,205,205,.6); }
+.gst-empty-btns { display: flex; align-items: center; gap: 12px; margin-top: 20px; }
+.gst-primary { display: inline-flex; align-items: center; justify-content: center; height: 40px; padding: 0 16px; border-radius: 10px; border: 0; background: var(--p); color: #fff; font-size: 13px; font-weight: 600; cursor: pointer; text-decoration: none; }
+.gst-primary:disabled { opacity: .5; cursor: default; }
+.gst-ghost { height: 40px; padding: 0 12px; border: 0; background: none; color: var(--bc); font-size: 13px; font-weight: 600; cursor: pointer; }
+.gst-list { list-style: none; margin: 8px 0 0; padding: 0; }
+.gst-list li { display: flex; align-items: center; gap: 12px; padding: 12px 24px; border-bottom: 1px solid rgba(205,205,205,.08); }
+.gst-list li > div { flex: 1; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.gst-list b { font-size: 13px; color: var(--bc); }
+.gst-list span { font-size: 11px; color: rgba(205,205,205,.5); overflow: hidden; text-overflow: ellipsis; }
+.gst-copy { height: 28px; padding: 0 10px; border-radius: 8px; border: 1px solid rgba(205,205,205,.2); background: none; color: var(--bc); font-size: 11px; cursor: pointer; }
+.gst-del { border: 0; background: none; color: rgba(205,205,205,.5); cursor: pointer; }
+.gst-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
+.gst-stats > div { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 20px 12px; border-radius: 12px; background: #1b1816; }
+.gst-stats b { font-size: 24px; color: var(--p); }
+.gst-stats span { font-size: 11px; color: rgba(205,205,205,.6); }
+.gst-modal { width: 420px; max-width: calc(100vw - 32px); padding: 20px; border-radius: 16px; background: #1b1816; box-shadow: 0 24px 48px rgba(0,0,0,.5); display: flex; flex-direction: column; gap: 8px; }
+.gst-modal-h { display: flex; align-items: center; justify-content: space-between; }
+.gst-modal-h h4 { margin: 0; font-size: 15px; color: #fff; }
+.gst-lbl { font-size: 12px; font-weight: 600; color: var(--bc); margin-top: 8px; }
+.gst-input { width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid rgba(205,205,205,.2); background: #0f0d0c; color: var(--bc); font-size: 13px; font-family: inherit; box-sizing: border-box; }
+.gst-modal-f { display: flex; justify-content: flex-end; gap: 8px; margin-top: 12px; }
+
+/* ---- Dashboard: thẻ đã xuất bản + thẻ "Tạo thiệp mới" ---- */
+.card-grid-v2 { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
+@media (max-width: 760px) { .card-grid-v2 { grid-template-columns: 1fr; } }
+.inv-card-v2 .inv-bottom-actions { margin: 6px -20px -18px; padding: 0; }
+.inv-card-v2 .inv-bottom-actions > button { flex: 1; justify-content: center; min-height: 40px; padding: 0 8px; font-size: 12px; border-left: 1px solid rgba(255, 255, 255, 0.06); }
+.inv-card-v2 .inv-bottom-actions > button:first-child { border-left: 0; }
+.dash-btn-pay, .dash-btn-share, .dash-btn-dup { display: inline-flex; align-items: center; gap: 6px; background: transparent; border: 0; color: rgba(255, 255, 255, 0.6); cursor: pointer; }
+.dash-btn-pay { color: #ec4899; font-weight: 600; }
+.dash-btn-share:hover, .dash-btn-dup:hover { color: #fff; }
+.inv-new-card { display: flex; align-items: center; justify-content: center; gap: 12px; min-height: 172px; border: 2px dashed rgba(255, 255, 255, 0.14); border-radius: 16px; color: rgba(255, 255, 255, 0.55); font-size: 13px; font-weight: 600; text-decoration: none; transition: border-color 0.15s, color 0.15s; }
+.inv-new-card:hover { border-color: rgba(236, 72, 153, 0.5); color: #fff; }
+.inv-new-plus { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: rgba(236, 72, 153, 0.14); color: #ec4899; font-size: 22px; line-height: 1; }
+
+/* ---- Dashboard: căn theo ảnh chuẩn ---- */
+.dash-page-v2 .dash-wrap { max-width: 1248px; }
+.dash-page-v2 .dash-tabs-group { gap: 2px; padding: 3px; border-radius: 10px; background: #0f0d0c; }
+.dash-page-v2 .dash-tab-btn { font-size: 11px; font-weight: 600; padding: 5px 11px; border-radius: 7px; color: rgba(205, 205, 205, 0.85); }
+.dash-page-v2 .dash-tab-btn.active { background: #ff0080; color: #fff; }
+.dash-page-v2 .inv-card-v2 { background: #1d1917; border: 0; border-radius: 16px; box-shadow: none; padding: 16px 16px 0; gap: 8px; }
+.dash-page-v2 .inv-card-v2:hover { border: 0; box-shadow: none; }
+.dash-page-v2 .inv-card-name { font-size: 14px; font-weight: 700; color: #fff; }
+.dash-page-v2 .inv-edit-card-link { font-size: 11px; color: rgba(205, 205, 205, 0.4); }
+.dash-page-v2 .inv-badge-wrap { gap: 6px; }
+.dash-page-v2 .inv-trial-tag, .dash-page-v2 .inv-trial-sub { display: inline-flex; align-items: center; margin: 0; padding: 2px 8px; border-radius: 999px; font-size: 10.5px; font-weight: 500; }
+.dash-page-v2 .inv-trial-tag { background: rgba(59, 130, 246, 0.1); color: #3b82f6; }
+.dash-page-v2 .inv-trial-sub { background: rgba(255, 255, 255, 0.06); color: rgba(205, 205, 205, 0.6); }
+.dash-page-v2 .inv-tpl-line { display: flex; align-items: center; gap: 12px; font-size: 11px; color: rgba(205, 205, 205, 0.55); }
+.dash-page-v2 .inv-tpl-color { color: #f59e0b; }
+.dash-page-v2 .inv-views-chip { font-size: 11px; color: rgba(205, 205, 205, 0.55); }
+.dash-page-v2 .inv-date-line { font-size: 11px; color: rgba(205, 205, 205, 0.4); }
+.dash-page-v2 .inv-card-v2 .inv-bottom-actions { margin: 6px -16px 0; border-top: 1px solid rgba(255, 255, 255, 0.05); }
+.dash-page-v2 .inv-card-v2 .inv-bottom-actions > button { min-height: 40px; font-size: 11px; color: rgba(205, 205, 205, 0.5); background: none; border-radius: 0; }
+.dash-page-v2 .inv-card-v2 .inv-bottom-actions > .dash-btn-pay { color: #ff0080; font-weight: 600; border: 0; background: none; }
+.dash-pay-ic { display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: linear-gradient(135deg, #ff4fa3, #ff0080); }
+.dash-page-v2 .inv-new-card { background: transparent; border: 2px dashed rgba(255, 255, 255, 0.1); min-height: 172px; font-size: 12px; color: rgba(205, 205, 205, 0.65); justify-content: flex-start; padding-left: 16px; }
+.dash-page-v2 .inv-new-plus { background: rgba(255, 0, 128, 0.12); color: #ff0080; }
+.dash-page-v2 .inv-card-name { font-size: 16px; }
+.dash-page-v2 .inv-trial-tag, .dash-page-v2 .inv-trial-sub { font-size: 11px; }

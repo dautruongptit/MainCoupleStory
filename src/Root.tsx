@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Pricing from "./pages/Pricing";
 import Dashboard from "./pages/Dashboard";
 import Account from "./pages/Account";
+import Guests from "./pages/Guests";
 import Templates from "./pages/Templates";
 import Demo from "./pages/Demo";
 import { Link, navigate, usePath } from "./router";
@@ -40,6 +41,7 @@ export default function Root() {
   else if (path === "/vi/bang-gia") page = <Pricing />;
   else if (path === "/dashboard") page = <Dashboard />;
   else if (path === "/account") page = <Account />;
+  else if (path === "/guests") page = <Guests />;
   else page = <Stub title="Sắp có" />;
 
   const showFooter = !demoMatch;

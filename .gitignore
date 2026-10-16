@@ -50,3 +50,6 @@ Desktop.ini
 # Agent folders
 .agents/
 .claude/
+
+# Playwright MCP captures
+.playwright-mcp/
