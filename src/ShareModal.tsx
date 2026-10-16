@@ -293,7 +293,7 @@ export default function ShareModal({
                 </div>
                 <div className="share-menu-sub">Ghi tên &amp; tạo link riêng cho từng khách</div>
               </div>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ec4899" strokeWidth="2.5" className="share-chevron">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ff0080" strokeWidth="2.5" className="share-chevron">
                 <polyline points="9 18 15 12 9 6" />
               </svg>
             </button>

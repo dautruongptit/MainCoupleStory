@@ -39,7 +39,7 @@ function DeleteModal({ name, onConfirm, onCancel }: { name: string; onConfirm: (
 
         <div className="del-tip-card">
           <div className="del-tip-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ec4899" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ff0080" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M9 18h6" />
               <path d="M10 22h4" />
               <path d="M12 2a7 7 0 0 0-7 7c0 2.5 1.5 4.5 3 6h8c1.5-1.5 3-3.5 3-6a7 7 0 0 0-7-7z" />
@@ -148,7 +148,7 @@ export default function Dashboard() {
         {cards.length === 0 ? (
           <div className="dash-empty-v3">
             <div className="dash-empty-circle">
-              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ec4899" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ff0080" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="2" y="4" width="20" height="16" rx="2" />
                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
               </svg>
