@@ -16,7 +16,7 @@ const STEPS: StepConfig[] = [
     total: 4,
     title: "Chào mừng! Hãy bắt đầu chỉnh sửa",
     desc: "Nhấn vào bất kỳ ô nào để chỉnh sửa thông tin. Mọi thay đổi được lưu tự động!",
-    targetSelector: ".sec:first-child",
+    targetSelector: ".body > .card:first-of-type, .card:first-of-type, .card",
     arrowPos: "left",
     offset: { x: 0, y: 12 },
   },
@@ -41,9 +41,9 @@ const STEPS: StepConfig[] = [
   {
     stepNum: 4,
     total: 4,
-    title: "Chúc mừng!",
+    title: "Xuất bản thiệp",
     desc: "Khi hoàn tất, nhấn nút này để xuất bản và chia sẻ thiệp với khách mời.",
-    targetSelector: ".hdr-right .btn-primary",
+    targetSelector: ".hdr-right .btn-primary, .hdr-right button",
     arrowPos: "right",
     offset: { x: 0, y: 12 },
   },
@@ -54,14 +54,16 @@ const STORAGE_KEY = "chungdoi_editor_tour_dismissed";
 export default function TutorialTour() {
   const [step, setStep] = useState<number | null>(() => {
     try {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get("tour") === "1" || urlParams.get("guide") === "1") return 1;
       const dismissed = localStorage.getItem(STORAGE_KEY);
-      return dismissed ? null : 1;
+      return dismissed === "true" ? null : 1;
     } catch {
       return 1;
     }
   });
 
-  const [coords, setCoords] = useState<{ top: number; left?: number; right?: number } | null>(null);
+  const [coords, setCoords] = useState<{ top: number; left: number } | null>(null);
 
   const closeTour = () => {
     try {
@@ -70,6 +72,12 @@ export default function TutorialTour() {
     setStep(null);
   };
 
+  useEffect(() => {
+    const handleStartTour = () => setStep(1);
+    window.addEventListener("start_tutorial_tour", handleStartTour);
+    return () => window.removeEventListener("start_tutorial_tour", handleStartTour);
+  }, []);
+
   useLayoutEffect(() => {
     if (step === null) return;
     const current = STEPS[step - 1];
@@ -77,45 +85,61 @@ export default function TutorialTour() {
 
     const updatePosition = () => {
       const el = document.querySelector(current.targetSelector);
-      if (!el) return;
+      const tooltipWidth = 340;
+
+      if (!el) {
+        // Fallback positioning if element not rendered yet
+        if (step === 2) {
+          setCoords({
+            top: 72,
+            left: Math.max(16, (window.innerWidth - tooltipWidth) / 2),
+          });
+        } else {
+          setCoords({
+            top: 140,
+            left: Math.max(16, (window.innerWidth - tooltipWidth) / 2),
+          });
+        }
+        return;
+      }
 
       const rect = el.getBoundingClientRect();
 
       if (step === 1) {
-        // Step 1 sits near the bottom of the first section
-        const secBottom = rect.bottom;
+        // Step 1: sits directly below the basic info section
         setCoords({
-          top: Math.min(window.innerHeight - 200, secBottom - 60),
-          left: Math.max(16, rect.left),
+          top: Math.max(80, rect.bottom + 12),
+          left: Math.max(16, Math.min(window.innerWidth - tooltipWidth - 16, rect.left)),
         });
       } else if (step === 2) {
-        // Step 2 sits centered directly under mode-toggle
-        const tooltipWidth = 340;
+        // Step 2: sits centered directly under mode-toggle
         const centerX = rect.left + rect.width / 2;
         setCoords({
           top: rect.bottom + 12,
-          left: Math.max(16, centerX - tooltipWidth / 2),
+          left: Math.max(16, Math.min(window.innerWidth - tooltipWidth - 16, centerX - tooltipWidth / 2)),
         });
       } else if (step === 3) {
-        // Step 3 sits directly under template button
+        // Step 3: sits directly under template selector button
         setCoords({
           top: rect.bottom + 12,
-          left: Math.max(16, rect.left),
+          left: Math.max(16, Math.min(window.innerWidth - tooltipWidth - 16, rect.left)),
         });
       } else if (step === 4) {
-        // Step 4 sits directly under publish button, aligned to right
-        const tooltipWidth = 340;
+        // Step 4: sits directly under publish button, aligned to right
         setCoords({
           top: rect.bottom + 12,
-          left: Math.max(16, rect.right - tooltipWidth),
+          left: Math.max(16, Math.min(window.innerWidth - tooltipWidth - 16, rect.right - tooltipWidth)),
         });
       }
     };
 
     updatePosition();
+    const timer = setTimeout(updatePosition, 100);
     window.addEventListener("resize", updatePosition);
     window.addEventListener("scroll", updatePosition);
+
     return () => {
+      clearTimeout(timer);
       window.removeEventListener("resize", updatePosition);
       window.removeEventListener("scroll", updatePosition);
     };
@@ -190,3 +214,4 @@ export default function TutorialTour() {
     </>
   );
 }
+
