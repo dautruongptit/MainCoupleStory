@@ -5478,3 +5478,256 @@ button:hover .igb-c8 { animation: igbConfettiFly8 1.1s ease-out 0.55s infinite; 
   font-weight: 700;
 }
 
+/* ==================== STANDALONE DEMO & EXACT MINIMALISM STYLES ==================== */
+.pv-wrapper.is-standalone {
+  min-height: 100vh;
+  background-color: #efe7dd !important;
+}
+
+.demo-standalone-wrap {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #efe7dd;
+  position: relative;
+}
+
+.demo-floating-bottom {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 100;
+}
+
+.demo-float-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  border: 0;
+}
+
+.demo-float-pill.back {
+  background: rgba(30, 25, 22, 0.85);
+  color: #ffffff;
+  backdrop-filter: blur(8px);
+}
+.demo-float-pill.back:hover {
+  background: rgba(45, 38, 34, 0.95);
+  transform: translateY(-1px);
+}
+
+.demo-float-pill.choose {
+  background: #fb3570;
+  color: #ffffff;
+  font-weight: 600;
+}
+.demo-float-pill.choose:hover {
+  background: #e02660;
+  transform: translateY(-1px);
+}
+
+@keyframes ambient-fall {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.75;
+  }
+  90% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateY(105vh) translateX(45px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes seal-pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 4px 20px rgba(124, 106, 96, 0.5), inset 0 2px 4px rgba(255,255,255,0.3);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.06);
+    box-shadow: 0 6px 26px rgba(124, 106, 96, 0.75), inset 0 2px 4px rgba(255,255,255,0.4);
+  }
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.8;
+  }
+  60% {
+    left: 200%;
+    opacity: 0;
+  }
+  100% {
+    left: 200%;
+    opacity: 0;
+  }
+}
+
+@keyframes mbFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Comprehensive Minimalism - Nâu Theme overrides */
+.theme-minimalism .songphung-template,
+.is-minimalism-body {
+  background-color: #fff7f3 !important;
+  color: #7c6a60 !important;
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 20px 60px rgba(124, 106, 96, 0.15) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.is-minimalism-body .sp-section {
+  position: relative;
+  z-index: 10;
+  color: #7c6a60 !important;
+}
+
+.is-minimalism-body .sp-sec-title {
+  color: #7c6a60 !important;
+  font-family: "Cormorant Garamond", "Times New Roman", serif !important;
+  letter-spacing: 0.14em !important;
+  font-weight: 600;
+}
+
+.is-minimalism-body .sp-family-col .sp-fam-title {
+  color: #a49185 !important;
+}
+
+.is-minimalism-body .sp-family-col .sp-fam-name {
+  color: #7c6a60 !important;
+  font-family: "EB Garamond", serif !important;
+}
+
+.is-minimalism-body .sp-family-div {
+  background: rgba(124, 106, 96, 0.2) !important;
+}
+
+.is-minimalism-body .sp-announce {
+  color: #8c776b !important;
+}
+
+.is-minimalism-body .sp-person-name {
+  color: #7c6a60 !important;
+  font-family: "EB Garamond", serif !important;
+}
+
+.is-minimalism-body .sp-person-role {
+  color: #a49185 !important;
+}
+
+.is-minimalism-body .sp-person-amp {
+  color: #b59f91 !important;
+  font-family: "The Nautigal", cursive !important;
+}
+
+.is-minimalism-body .sp-ceremony-card {
+  background: rgba(255, 250, 245, 0.96) !important;
+  border: 1px solid rgba(124, 106, 96, 0.15) !important;
+  color: #7c6a60 !important;
+  box-shadow: 0 8px 24px rgba(124, 106, 96, 0.08) !important;
+}
+
+.is-minimalism-body .sp-ceremony-header {
+  color: #7c6a60 !important;
+  font-family: "Cormorant Garamond", serif !important;
+}
+
+.is-minimalism-body .sp-time-badge {
+  background: #7c6a60 !important;
+  color: #ffffff !important;
+}
+
+.is-minimalism-body .sp-date-row {
+  color: #7c6a60 !important;
+}
+
+.is-minimalism-body .sp-banquet-date {
+  color: #7c6a60 !important;
+}
+
+.is-minimalism-body .sp-countdown-box {
+  background: #7c6a60 !important;
+  color: #ffffff !important;
+  border-radius: 12px;
+}
+
+.is-minimalism-body .sp-calendar {
+  background: rgba(255, 250, 245, 0.96) !important;
+  border: 1px solid rgba(124, 106, 96, 0.15) !important;
+  color: #7c6a60 !important;
+}
+
+.is-minimalism-body .sp-cal-header {
+  color: #7c6a60 !important;
+}
+
+.is-minimalism-body .sp-cal-grid {
+  color: #7c6a60 !important;
+}
+
+.is-minimalism-body .sp-cal-num.is-selected {
+  background: #7c6a60 !important;
+  color: #ffffff !important;
+}
+
+.is-minimalism-body .sp-btn-gold {
+  background: #7c6a60 !important;
+  color: #ffffff !important;
+}
+
+.is-minimalism-body .sp-btn-gold:hover {
+  background: #6b5a51 !important;
+}
+
+.is-minimalism-body .dress-card {
+  background: rgba(255, 250, 245, 0.96) !important;
+  border: 1px solid rgba(124, 106, 96, 0.15) !important;
+  color: #7c6a60 !important;
+}
+
+.is-minimalism-body .gift-btn {
+  background: #7c6a60 !important;
+  color: #ffffff !important;
+}
+
+.is-minimalism-body .wishes-container,
+.is-minimalism-body .rsvp-container {
+  background: rgba(255, 250, 245, 0.96) !important;
+  border: 1px solid rgba(124, 106, 96, 0.15) !important;
+  color: #7c6a60 !important;
+}
+
+.is-minimalism-body .wish-submit-btn,
+.is-minimalism-body .rsvp-submit-btn {
+  background: #7c6a60 !important;
+  color: #ffffff !important;
+}
+

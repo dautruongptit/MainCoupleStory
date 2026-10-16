@@ -30,6 +30,8 @@ export default function Root() {
   if (path.startsWith("/edit/")) return <App />;
 
   const demoMatch = path.match(/^\/vi\/mau-thiep\/(.+)\/demo$/);
+  if (demoMatch) return <Demo slug={demoMatch[1]} />;
+
   let page;
   if (path === "/") page = <Redirect to="/vi" />;
   else if (path === "/vi") page = <Home />;

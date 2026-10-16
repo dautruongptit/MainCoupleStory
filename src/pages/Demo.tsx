@@ -29,6 +29,7 @@ export default function Demo({ slug }: { slug: string }) {
         groomNick: "Hoàng Nam",
         brideFull: "Thảo Vy",
         brideNick: "Thảo Vy",
+        heroPhoto: "https://assets.chungdoi.com/photo-library/design/1e0986014ff4206f135df254987fb52eb45ae964e8cce6f0dba29a905e0e0b67.webp",
         date: "2026-01-03",
         time: "18:00",
         welcomeTime: "17:30",
@@ -85,24 +86,25 @@ export default function Demo({ slug }: { slug: string }) {
 
   return (
     <div className="demo-standalone-wrap">
-      <div className="demo-floating-header">
-        <Link href={`/vi/mau-thiep`} className="demo-float-btn back">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-          {tpl.name}
-        </Link>
-        <button
-          className="demo-float-btn choose"
-          onClick={() => navigate(`/edit/${createDraft(tpl)}?template=${tpl.id}`)}
-        >
-          Tạo thiệp bằng mẫu này
-        </button>
-      </div>
-
       <Preview
         d={d}
         set={(p) => setD((prev) => ({ ...prev, ...p }))}
         standalone={true}
       />
+
+      {/* Discrete floating action bar in bottom-right corner */}
+      <div className="demo-floating-bottom">
+        <Link href={`/vi/mau-thiep`} className="demo-float-pill back">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          Mẫu thiệp
+        </Link>
+        <button
+          className="demo-float-pill choose"
+          onClick={() => navigate(`/edit/${createDraft(tpl)}?template=${tpl.id}`)}
+        >
+          Tạo thiệp bằng mẫu này
+        </button>
+      </div>
     </div>
   );
 }

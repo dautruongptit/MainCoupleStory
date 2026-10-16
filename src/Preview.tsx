@@ -194,89 +194,146 @@ export default function Preview({
       {!isOpen && (
         isMinimalism ? (
           /* Màn hình mở thiệp Minimalism - Nâu (media_1792167825310_9563a55a.png) */
-          <div className="envelope-screen min-env-screen">
-            <div className="min-ambient-petals" aria-hidden="true">
+          <div className="envelope-screen min-env-screen" style={{ backgroundColor: "#efe7dd" }}>
+            {/* Ambient falling leaves */}
+            <div className="min-ambient-petals pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true" style={{ zIndex: 1 }}>
               {[
-                { left: "10%", size: "12px", dur: "14s", delay: "-2s" },
-                { left: "25%", size: "16px", dur: "18s", delay: "-6s" },
-                { left: "38%", size: "10px", dur: "15s", delay: "-10s" },
-                { left: "55%", size: "14px", dur: "20s", delay: "-4s" },
-                { left: "75%", size: "11px", dur: "17s", delay: "-12s" },
-                { left: "88%", size: "15px", dur: "16s", delay: "-8s" },
+                { left: "12%", size: "18px", dur: "22s", delay: "-3s" },
+                { left: "26%", size: "14px", dur: "19s", delay: "-8s" },
+                { left: "42%", size: "20px", dur: "24s", delay: "-14s" },
+                { left: "60%", size: "15px", dur: "21s", delay: "-5s" },
+                { left: "78%", size: "19px", dur: "25s", delay: "-12s" },
+                { left: "88%", size: "16px", dur: "20s", delay: "-7s" },
               ].map((p, i) => (
                 <div
                   key={i}
-                  className="min-petal"
+                  className="min-petal absolute pointer-events-none"
                   style={{
                     left: p.left,
+                    top: "-30px",
+                    color: "#c9a97e",
                     fontSize: p.size,
-                    animationDuration: p.dur,
-                    animationDelay: p.delay,
+                    animation: `ambient-fall ${p.dur} ease-in-out ${p.delay} infinite`,
                   }}
                 >
-                  🍂
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+                    <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8z" />
+                  </svg>
                 </div>
               ))}
             </div>
 
-            <div className="min-card-wrap">
-              <div className="min-card">
-                {/* Dry flower top-left */}
-                <svg className="min-flower-corner tl" viewBox="0 0 100 120" fill="none">
-                  <path d="M10 110 Q 30 60 70 10" stroke="#b89368" strokeWidth="2" strokeLinecap="round" />
-                  <path d="M30 65 Q 15 45 25 30" stroke="#b89368" strokeWidth="1.5" strokeLinecap="round" />
-                  <path d="M45 45 Q 60 30 55 15" stroke="#b89368" strokeWidth="1.5" strokeLinecap="round" />
-                  <circle cx="70" cy="10" r="4" fill="#cbb292" />
-                  <circle cx="76" cy="14" r="3.5" fill="#d8c5ad" />
-                  <circle cx="64" cy="12" r="3" fill="#bfa07e" />
-                  <circle cx="25" cy="30" r="3.5" fill="#cbb292" />
-                  <circle cx="20" cy="25" r="3" fill="#d8c5ad" />
-                  <circle cx="55" cy="15" r="3.5" fill="#cbb292" />
-                  <circle cx="60" cy="20" r="3" fill="#bfa07e" />
-                </svg>
-
-                {/* Dry flower top-right */}
-                <svg className="min-flower-corner tr" viewBox="0 0 100 120" fill="none">
-                  <path d="M90 110 Q 70 60 30 10" stroke="#b89368" strokeWidth="2" strokeLinecap="round" />
-                  <path d="M70 65 Q 85 45 75 30" stroke="#b89368" strokeWidth="1.5" strokeLinecap="round" />
-                  <path d="M55 45 Q 40 30 45 15" stroke="#b89368" strokeWidth="1.5" strokeLinecap="round" />
-                  <circle cx="30" cy="10" r="4" fill="#cbb292" />
-                  <circle cx="24" cy="14" r="3.5" fill="#d8c5ad" />
-                  <circle cx="36" cy="12" r="3" fill="#bfa07e" />
-                  <circle cx="75" cy="30" r="3.5" fill="#cbb292" />
-                  <circle cx="80" cy="25" r="3" fill="#d8c5ad" />
-                  <circle cx="45" cy="15" r="3.5" fill="#cbb292" />
-                  <circle cx="40" cy="20" r="3" fill="#bfa07e" />
-                </svg>
-
-                {/* Wax seal heart circle */}
-                <div className="min-heart-seal" onClick={handleOpenEnvelope} title="Bấm để mở thiệp">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#ffffff">
+            <div className="min-card-wrap relative flex items-center justify-center p-4 w-full" style={{ zIndex: 10 }}>
+              <div className="relative w-[310px] sm:w-[340px] md:w-[480px] lg:w-[520px]">
+                {/* Wax seal on top */}
+                <div
+                  onClick={handleOpenEnvelope}
+                  title="Bấm để mở thiệp"
+                  className="absolute left-1/2 rounded-full flex items-center justify-center cursor-pointer transition-transform hover:scale-105 active:scale-95"
+                  style={{
+                    top: "0px",
+                    width: "56px",
+                    height: "56px",
+                    transform: "translate(-50%, -50%)",
+                    background: "radial-gradient(circle at 30% 30%, #7c6a60, rgb(94, 76, 66))",
+                    boxShadow: "0 4px 20px rgba(124, 106, 96, 0.5), inset 0 2px 4px rgba(255,255,255,0.3)",
+                    zIndex: 30,
+                    animation: "seal-pulse 2s ease-in-out infinite",
+                  }}
+                >
+                  <svg style={{ fill: "#ffffff" }} viewBox="0 0 24 24" className="w-7 h-7">
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                   </svg>
                 </div>
 
-                <h1 className="min-env-names">
-                  <span className="min-name">{gName}</span>
-                  <span className="min-amp">&amp;</span>
-                  <span className="min-name">{bName}</span>
-                </h1>
+                {/* Card Container */}
+                <div
+                  className="relative rounded-lg overflow-hidden"
+                  style={{
+                    boxShadow: "0 25px 60px -12px rgba(0, 0, 0, 0.45), 0 8px 24px rgba(0, 0, 0, 0.2), 0 0 40px rgba(124, 106, 96, 0.15)",
+                  }}
+                >
+                  <div
+                    className="absolute inset-0 rounded-lg overflow-hidden"
+                    style={{
+                      background: "rgba(255, 250, 245, 0.98)",
+                      border: "1px solid rgba(124, 106, 96, 0.15)",
+                      clipPath: "inset(0 round 8px)",
+                    }}
+                  >
+                    <img
+                      src="https://chungdoi.com/images/themes/minimalism-brown/flower2-decoration.webp"
+                      alt=""
+                      aria-hidden="true"
+                      className="absolute pointer-events-none h-40 md:h-72 w-auto max-w-none top-[-3%] md:top-[-7%] left-[-20px] md:left-[-40px] opacity-70 rotate-[25deg]"
+                    />
+                    <img
+                      src="https://chungdoi.com/images/themes/minimalism-brown/flower2-decoration.webp"
+                      alt=""
+                      aria-hidden="true"
+                      className="absolute pointer-events-none h-40 md:h-72 w-auto max-w-none bottom-[-3%] md:bottom-[20%] right-[-20px] md:right-[-40px] -scale-x-100 opacity-70 -rotate-[25deg]"
+                    />
+                  </div>
 
-                <div className="min-env-divider">
-                  <span className="min-line" />
-                  <span className="min-motif">❦</span>
-                  <span className="min-line" />
+                  <div className="relative z-10 text-center px-6 pt-20 pb-12 md:pt-24 md:pb-10">
+                    <h1
+                      style={{ color: "#7c6a60", fontFamily: '"EB Garamond", "Cormorant Garamond", serif' }}
+                      className="mb-2 flex flex-col items-center leading-tight text-3xl sm:text-4xl"
+                    >
+                      <span className="block w-full text-center font-normal">{gName}</span>
+                      <span
+                        style={{ fontFamily: '"Baskerville", "Times New Roman", serif' }}
+                        className="block w-full text-center text-lg leading-none sm:text-xl my-1 opacity-80"
+                      >
+                        &amp;
+                      </span>
+                      <span className="block w-full text-center font-normal">{bName}</span>
+                    </h1>
+
+                    <div className="flex items-center justify-center gap-3 mb-3 mt-2">
+                      <div style={{ background: "linear-gradient(to right, transparent, #7c6a60)" }} className="w-10 h-px" />
+                      <span style={{ color: "#7c6a60", opacity: 0.7 }} className="text-sm">❦</span>
+                      <div style={{ background: "linear-gradient(to left, transparent, #7c6a60)" }} className="w-10 h-px" />
+                    </div>
+
+                    <div
+                      style={{ color: "rgba(124, 106, 96, 0.75)", fontFamily: '"Lora", "Times New Roman", serif' }}
+                      className="text-[17px] mb-4 flex flex-col items-center"
+                    >
+                      <span>{dt.getDate()} tháng {dt.getMonth() + 1}, {dt.getFullYear()}</span>
+                    </div>
+
+                    <div className="mb-6 max-w-[300px] md:max-w-[380px] mx-auto">
+                      <p
+                        style={{ color: "rgba(124, 106, 96, 0.75)", fontFamily: '"Lora", "Times New Roman", serif' }}
+                        className="text-[17px] font-light mb-1"
+                      >
+                        {d.envelopeGuest || "Thân Mời"}
+                      </p>
+                    </div>
+
+                    <button
+                      type="button"
+                      onClick={handleOpenEnvelope}
+                      style={{
+                        backgroundColor: "#7c6a60",
+                        color: "#ffffff",
+                        boxShadow: "0 4px 14px rgba(124, 106, 96, 0.35)",
+                        fontFamily: '"Lora", "Times New Roman", serif',
+                      }}
+                      className="relative px-8 py-2.5 text-base sm:text-lg font-medium rounded-full shadow-lg border-none cursor-pointer flex w-fit items-center justify-center mx-auto overflow-hidden transition-all hover:scale-105 active:scale-95"
+                    >
+                      <span>Mở thiệp</span>
+                      <div
+                        style={{
+                          background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)",
+                          animation: "shine 3s ease-in-out infinite",
+                        }}
+                        className="absolute top-0 h-full w-8 pointer-events-none"
+                      />
+                    </button>
+                  </div>
                 </div>
-
-                <div className="min-env-date">
-                  {dt.getDate()} tháng {dt.getMonth() + 1}, {dt.getFullYear()}
-                </div>
-
-                <div className="min-env-sub">{d.envelopeGuest || "Thân Mời"}</div>
-
-                <button className="min-env-open-btn" onClick={handleOpenEnvelope}>
-                  Mở thiệp
-                </button>
               </div>
             </div>
           </div>
@@ -428,38 +485,91 @@ export default function Preview({
           {/* -------------------- HERO SECTION -------------------- */}
           {isMinimalism ? (
             /* Hero cho Minimalism - Nâu (media_1792167846581_6cfd16e7.png) */
-            <header className="min-hero-sec">
-              <p className="min-hero-eyebrow">THE WEDDING OF</p>
-              <h1 className="min-hero-names">
-                {gName} <i>&amp;</i> {bName}
-              </h1>
+            <header className="relative z-10 flex flex-col items-center px-4 pt-12 pb-20 text-center md:pb-28 overflow-hidden">
+              {/* Paper overlay */}
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 z-0"
+                style={{
+                  backgroundImage: 'url("https://chungdoi.com/images/themes/minimalism-brown/paper.webp")',
+                  backgroundSize: "100% auto",
+                  backgroundPosition: "top center",
+                  mixBlendMode: "multiply",
+                  opacity: 0.4,
+                }}
+              />
+              <img
+                src="https://chungdoi.com/images/themes/minimalism-brown/leaf-background.webp"
+                alt=""
+                aria-hidden="true"
+                className="pointer-events-none absolute left-[-24%] top-[2%] w-[52%] max-w-none object-contain opacity-[0.15]"
+              />
+              <img
+                src="https://chungdoi.com/images/themes/minimalism-brown/house-background.webp"
+                alt=""
+                aria-hidden="true"
+                className="pointer-events-none absolute left-1/2 top-[30%] w-[130%] max-w-none -translate-x-1/2 object-contain opacity-[0.08] mix-blend-multiply"
+              />
 
-              <div className="min-polaroid-wrap">
-                <div className="min-polaroid-card">
-                  <div className="min-polaroid-tape" />
-                  <div className="min-polaroid-img-box">
-                    <img
-                      src={
-                        d.heroPhoto ||
-                        "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80"
-                      }
-                      alt={`${gName} & ${bName}`}
-                    />
-                  </div>
-                  {/* Dried flowers attached bottom-left */}
-                  <svg className="min-polaroid-flower" viewBox="0 0 100 120" fill="none">
-                    <path d="M20 110 Q 40 70 60 20" stroke="#92714c" strokeWidth="2.5" strokeLinecap="round" />
-                    <circle cx="60" cy="20" r="5" fill="#b4936d" />
-                    <circle cx="45" cy="40" r="4" fill="#a4815a" />
-                    <circle cx="35" cy="65" r="4" fill="#b4936d" />
-                  </svg>
-                  {/* Wax seal heart initial bottom-right */}
-                  <div className="min-polaroid-seal">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#78350f" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                    </svg>
-                  </div>
+              <p
+                data-testid="event-heading"
+                className="relative z-10 whitespace-pre-line text-[13px] uppercase md:text-[15px]"
+                style={{
+                  fontFamily: '"Cormorant Garamond", "Times New Roman", serif',
+                  color: "#827771",
+                  letterSpacing: "0.18em",
+                  fontWeight: 600,
+                }}
+              >
+                THE WEDDING OF
+              </p>
+
+              <div className="relative z-10 mt-2 flex items-center justify-center gap-2 md:mt-3 md:gap-3">
+                <span
+                  className="italic text-[clamp(28px,7.5vw,36px)] md:text-[44px]"
+                  style={{ fontFamily: '"Times New Roman", "Playfair Display", serif', color: "#827771" }}
+                >
+                  {gName}
+                </span>
+                <span
+                  className="text-[38px] leading-none md:text-[48px]"
+                  style={{ fontFamily: '"The Nautigal", "Brush Script MT", cursive', color: "#918077" }}
+                >
+                  &amp;
+                </span>
+                <span
+                  className="italic text-[clamp(28px,7.5vw,36px)] md:text-[44px]"
+                  style={{ fontFamily: '"Times New Roman", "Playfair Display", serif', color: "#827771" }}
+                >
+                  {bName}
+                </span>
+              </div>
+
+              <div className="relative z-10 mt-6 aspect-[1094/1554] w-[88%] max-w-[360px] md:mt-8 md:max-w-[460px]">
+                <div className="absolute left-[11.5%] top-[8%] z-10 h-[77%] w-[72%] rotate-[-4.78deg] overflow-hidden bg-white shadow-inner">
+                  <img
+                    src={d.heroPhoto || "https://assets.chungdoi.com/photo-library/design/1e0986014ff4206f135df254987fb52eb45ae964e8cce6f0dba29a905e0e0b67.webp"}
+                    alt={`${gName} & ${bName}`}
+                    className="h-full w-full object-cover"
+                  />
                 </div>
+                <img
+                  src="https://chungdoi.com/images/themes/minimalism-brown/frame-avatar.webp"
+                  alt=""
+                  aria-hidden="true"
+                  className="pointer-events-none absolute inset-0 z-20 size-full max-w-none drop-shadow-[4px_4px_4px_rgba(0,0,0,0.2)]"
+                />
+                <span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute block bottom-[-6%] left-[-5%] z-30 w-[34%]"
+                  style={{ animation: "mbFloat 5s ease-in-out infinite", animationDelay: "0s", willChange: "transform" }}
+                >
+                  <img
+                    src="https://chungdoi.com/images/themes/minimalism-brown/flower2-decoration.webp"
+                    alt=""
+                    className="block w-full max-w-none object-contain drop-shadow-[4px_4px_2px_rgba(0,0,0,0.25)]"
+                  />
+                </span>
               </div>
             </header>
           ) : isSongHy ? (
