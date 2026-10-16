@@ -6,6 +6,21 @@ import { LoginModal } from "../TopNav";
 
 const COLLECTIONS = ["Màu đỏ", "Màu xanh lá", "Màu xanh dương", "Vàng kim", "Long phụng", "Truyền thống", "Tối giản", "Hoa", "Vườn thiên nhiên", "Hoàng gia châu Âu", "Boho"];
 
+/** Quy tắc lọc theo bộ sưu tập (suy ra từ tag của mẫu; trang thật chưa có ảnh nên đây là giả định). */
+const COLLECTION_TAGS: Record<string, (tag: string) => boolean> = {
+  "Màu đỏ": (t) => /^đỏ/i.test(t),
+  "Màu xanh lá": (t) => t === "Xanh lá" || t === "Xanh",
+  "Màu xanh dương": (t) => ["Xanh dương", "Lam", "Lam đậm", "Xanh navy"].includes(t),
+  "Vàng kim": (t) => t === "Vàng kim" || t === "Vàng",
+  "Long phụng": (t) => t === "Rồng phượng",
+  "Truyền thống": (t) => t === "Truyền thống",
+  "Tối giản": (t) => t === "Tối giản",
+  "Hoa": (t) => t.startsWith("Hoa"),
+  "Vườn thiên nhiên": (t) => t === "Vườn" || t === "Thiên nhiên",
+  "Hoàng gia châu Âu": (t) => t === "Châu Âu" || t === "Baroque",
+  "Boho": (t) => t === "Boho",
+};
+
 const FAQ: [string, string][] = [
   ["Chung Đôi có bao nhiêu mẫu thiệp cưới?", "Chung Đôi có rất nhiều mẫu thiệp cưới online với nhiều phong cách: truyền thống (Song Long, Long Phụng), thiên nhiên (Vườn Xuân), hiện đại (Thanh Diệp), lãng mạn (Anh Đào), và dễ thương (Chibi). Mỗi mẫu có nhiều phiên bản màu sắc khác nhau, và bộ sưu tập được cập nhật thường xuyên."],
   ["Làm sao để chọn mẫu thiệp phù hợp với đám cưới của mình?", "Hãy dựa vào phong cách đám cưới: chọn Song Long hoặc Long Phụng cho đám cưới truyền thống, Vườn Xuân cho tiệc sân vườn, Thanh Diệp cho phong cách hiện đại, Anh Đào cho sự lãng mạn, hoặc Chibi cho sự vui nhộn. Bạn có thể xem demo từng mẫu trước khi quyết định."],
@@ -24,6 +39,8 @@ export default function Templates() {
   const [note, setNote] = useState("");
   const [sent, setSent] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
+  const [coll, setColl] = useState<string | null>(null);
+  const shown = coll ? TEMPLATES.filter((t) => t.tags.some(COLLECTION_TAGS[coll])) : TEMPLATES;
 
   useEffect(() => {
     if (!suggest) return;
@@ -41,8 +58,15 @@ export default function Templates() {
         <small>Bạn có thể đổi mẫu bất cứ lúc nào khi chỉnh sửa</small>
       </p>
 
-      <div className="tpl-grid">
-        {TEMPLATES.map((t) => (
+      {coll && (
+        <p className="tpl-filter-note">
+          Bộ sưu tập: <b>{coll}</b> · {shown.length} mẫu
+          <button type="button" onClick={() => setColl(null)}>Xóa bộ lọc</button>
+        </p>
+      )}
+      <div className="tpl-grid" id="tpl-grid">
+        {shown.length === 0 && <p className="page-sub">Chưa có mẫu nào trong bộ sưu tập này.</p>}
+        {shown.map((t) => (
           <button key={t.slug} className="tpl-tile" role="article" onClick={() => setSelected(t)}>
             <div className="tpl-tile-img">
               <img loading="lazy" src={TPL_CDN + t.img} alt={t.name} />
@@ -90,7 +114,20 @@ export default function Templates() {
       <section className="tpl-block collections-section">
         <h2 className="eyebrow-h">BỘ SƯU TẬP THIỆP CƯỚI</h2>
         <div className="chip-wrap">
-          {COLLECTIONS.map((c) => <Link key={c} href="/vi/mau-thiep" className="coll-chip">{c}</Link>)}
+          {COLLECTIONS.map((c) => (
+            <button
+              key={c}
+              type="button"
+              aria-pressed={coll === c}
+              className={"coll-chip" + (coll === c ? " on" : "")}
+              onClick={() => {
+                setColl(coll === c ? null : c);
+                document.getElementById("tpl-grid")?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
+            >
+              {c}
+            </button>
+          ))}
         </div>
       </section>
 

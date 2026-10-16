@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, navigate } from "../router";
 import { loadCards } from "../store";
+import { TPL_CDN, templateById } from "../templates";
 import { LoginModal, useAuth } from "../TopNav";
 
 type Guest = { id: string; name: string; slug: string; views: number; added: string };
@@ -65,7 +66,17 @@ export default function Guests() {
   const [name, setName] = useState("");
   const [bulk, setBulk] = useState("");
   const [tools, setTools] = useState(false);
+  const [filter, setFilter] = useState<"all" | "seen" | "unseen">("all");
+  const [filterOpen, setFilterOpen] = useState(false);
+  const filterRef = useRef<HTMLDivElement>(null);
   const toolsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!filterOpen) return;
+    const h = (e: MouseEvent) => !filterRef.current?.contains(e.target as Node) && setFilterOpen(false);
+    document.addEventListener("mousedown", h);
+    return () => document.removeEventListener("mousedown", h);
+  }, [filterOpen]);
 
   useEffect(() => {
     if (!tools) return;
@@ -112,8 +123,9 @@ export default function Guests() {
     taken.add(slug);
     return { id: crypto.randomUUID(), name: n, slug, views: 0, added: today };
   };
+  const clean = (v: string) => v.replace(/[\u0000-\u001f\u007f]/g, " ").trim().slice(0, 100);
   const addOne = () => {
-    const n = name.trim();
+    const n = clean(name);
     if (!n) return;
     persist([...guests, make(n, new Set(guests.map((g) => g.slug)))]);
     setName(""); setAdding(null);
@@ -125,8 +137,13 @@ export default function Guests() {
     persist([...guests, ...names.map((n) => make(n, taken))]);
     setBulk(""); setAdding(null);
   };
+  // Tên khách do người dùng nhập: chặn công thức Excel/Sheets (=, +, -, @) khi xuất CSV.
+  const csvSafe = (v: string) => {
+    const t = v.replace(/"/g, '""');
+    return /^[=+\-@\t\r]/.test(t) ? `'${t}` : t;
+  };
   const exportCsv = () => {
-    const rows = ["Tên,Link", ...guests.map((g) => `"${g.name.replace(/"/g, '""')}",https://chungdoi.com/i/${g.slug}`)];
+    const rows = ["Tên,Link", ...guests.map((g) => `"${csvSafe(g.name)}",https://chungdoi.com/i/${g.slug}`)];
     const url = URL.createObjectURL(new Blob(["﻿" + rows.join("\n")], { type: "text/csv;charset=utf-8" }));
     const a = document.createElement("a");
     a.href = url; a.download = "khach-moi.csv"; a.click();
@@ -135,13 +152,17 @@ export default function Guests() {
   };
   const clearAll = () => { persist([]); setTools(false); };
 
-  const shown = guests.filter((g) => g.name.toLowerCase().includes(q.trim().toLowerCase()));
+  const shown = guests
+    .filter((g) => g.name.toLowerCase().includes(q.trim().toLowerCase()))
+    .filter((g) => filter === "all" || (filter === "seen" ? g.views > 0 : g.views === 0));
   const published = card.status === "published";
+  const tpl = templateById(card.tplId);
+
   const viewed = guests.filter((g) => g.views > 0).length;
 
   return (
     <main className="page gst-page">
-      <div className="gst-card-bar">
+      <div className="gst-card-bar" style={tpl ? { backgroundImage: `linear-gradient(90deg, #000 45%, rgba(0,0,0,.2)), url(${TPL_CDN + tpl.img})` } : undefined}>
         <div className="gst-card-name">{card.name}<span className={"gst-dot" + (published ? " on" : "")} /></div>
         <button type="button" className="gst-edit" onClick={() => navigate(`/edit/${card.id}`)}>
           <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9" /><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" /></svg>
@@ -183,9 +204,19 @@ export default function Guests() {
                 </button>
               </div>
               <div className="gst-filter-row">
-                <span className="gst-chip">Tất cả {guests.length}
-                  <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="m6 9 6 6 6-6" /></svg>
-                </span>
+                <div className="gst-filter-wrap" ref={filterRef}>
+                  <button type="button" className="gst-chip" aria-haspopup="menu" aria-expanded={filterOpen} onClick={() => setFilterOpen(!filterOpen)}>
+                    {{ all: "Tất cả", seen: "Đã xem", unseen: "Chưa xem" }[filter]} {shown.length}
+                    <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="m6 9 6 6 6-6" /></svg>
+                  </button>
+                  {filterOpen && (
+                    <div className="gst-menu gst-menu-left">
+                      {([["all", "Tất cả"], ["seen", "Đã xem"], ["unseen", "Chưa xem"]] as const).map(([k, l]) => (
+                        <button key={k} type="button" onClick={() => { setFilter(k); setFilterOpen(false); }}>{l}{filter === k ? " ✓" : ""}</button>
+                      ))}
+                    </div>
+                  )}
+                </div>
                 <div className="gst-tools-wrap" ref={toolsRef}>
                   <button type="button" className="gst-tools" onClick={() => setTools(!tools)}>
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.4 2.4-2.6-.6-.6-2.6Z" /></svg>
