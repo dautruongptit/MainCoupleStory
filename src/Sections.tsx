@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import MusicPicker from "./MusicPicker";
+import MusicPicker, { MUSIC_LIBRARY } from "./MusicPicker";
 import { CropModal } from "./HeroPhoto";
 import { Inv, Gift, groomShown, brideShown } from "./data";
 import { Field, Helper, Hint, Input, Modal, OutlineButton, ResetInput, Row, Section, Segmented, Textarea, Toggle, Icon } from "./ui";
@@ -176,17 +176,81 @@ export function Album({ d, set }: P) {
               onDragEnd={() => setDrag(null)}>
               <img src={p} alt={`Gallery ${i + 1}`} draggable={false}
                 style={d.photoCrops[p] ? { objectPosition: `${d.photoCrops[p].x}% ${d.photoCrops[p].y}%`, transform: `scale(${d.photoCrops[p].z})`, transformOrigin: `${d.photoCrops[p].x}% ${d.photoCrops[p].y}%` } : undefined} />
-              <button type="button" className="photo-menu" aria-label="Menu" onClick={() => setMenu(menu === i ? null : i)}>
-                <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><circle cx="8" cy="3" r="1.5" /><circle cx="8" cy="8" r="1.5" /><circle cx="8" cy="13" r="1.5" /></svg>
+              <button
+                type="button"
+                className="photo-menu"
+                aria-label="Tùy chọn ảnh"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setMenu(menu === i ? null : i);
+                }}
+              >
+                <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                  <circle cx="8" cy="3" r="1.5" />
+                  <circle cx="8" cy="8" r="1.5" />
+                  <circle cx="8" cy="13" r="1.5" />
+                </svg>
               </button>
               {menu === i && (
-                <div className="photo-pop">
-                  <button type="button" aria-label="Cắt ảnh" title="Cắt ảnh" onClick={() => { setCrop(i); setMenu(null); }}>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2v14a2 2 0 0 0 2 2h14M2 6h14a2 2 0 0 1 2 2v14" /></svg>
+                <div className="photo-pop-overlay" onClick={(e) => e.stopPropagation()}>
+                  <button
+                    type="button"
+                    className="photo-pop-btn"
+                    aria-label="Cắt ảnh"
+                    title="Cắt ảnh"
+                    onClick={() => {
+                      setCrop(i);
+                      setMenu(null);
+                    }}
+                  >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M6 2v14a2 2 0 0 0 2 2h14M2 6h14a2 2 0 0 1 2 2v14" />
+                    </svg>
                   </button>
-                  <button type="button" className="del" aria-label="Xóa ảnh" title="Xóa ảnh" onClick={() => { set({ photos: d.photos.filter((_, j) => j !== i) }); setMenu(null); }}>{Icon.trash(20)}</button>
-                  <button type="button" aria-label="Chuyển lên trước" title="Chuyển lên trước" disabled={i === 0} onClick={() => { move(i, i - 1); setMenu(null); }}>{Icon.back(20)}</button>
-                  <button type="button" aria-label="Chuyển ra sau" title="Chuyển ra sau" disabled={i === d.photos.length - 1} onClick={() => { move(i, i + 1); setMenu(null); }}>{Icon.chevronRight(20)}</button>
+                  <button
+                    type="button"
+                    className="photo-pop-btn del"
+                    aria-label="Xóa ảnh"
+                    title="Xóa ảnh"
+                    onClick={() => {
+                      set({ photos: d.photos.filter((_, j) => j !== i) });
+                      setMenu(null);
+                    }}
+                  >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6" />
+                    </svg>
+                  </button>
+                  <button
+                    type="button"
+                    className="photo-pop-btn"
+                    aria-label="Chuyển lên trước"
+                    title="Chuyển lên trước"
+                    disabled={i === 0}
+                    onClick={() => {
+                      move(i, i - 1);
+                      setMenu(null);
+                    }}
+                  >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="m15 18-6-6 6-6" />
+                    </svg>
+                  </button>
+                  <button
+                    type="button"
+                    className="photo-pop-btn"
+                    aria-label="Chuyển ra sau"
+                    title="Chuyển ra sau"
+                    disabled={i === d.photos.length - 1}
+                    onClick={() => {
+                      move(i, i + 1);
+                      setMenu(null);
+                    }}
+                  >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                  </button>
                 </div>
               )}
             </div>
@@ -198,9 +262,20 @@ export function Album({ d, set }: P) {
             </div>
           ) : d.photos.length < 20 && (
             <label className="add-photo">
-              <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 4v16m8-8H4" /></svg>
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
+              </svg>
               <span>Thêm ảnh</span>
-              <input type="file" accept="image/*" multiple hidden onChange={(e) => { add(e.target.files); e.target.value = ""; }} />
+              <input
+                type="file"
+                accept="image/*"
+                multiple
+                hidden
+                onChange={(e) => {
+                  add(e.target.files);
+                  e.target.value = "";
+                }}
+              />
             </label>
           )}
         </div>
@@ -544,6 +619,20 @@ const dressIcon = (
 );
 
 export function Dress({ d, set }: P) {
+  const addColor = () => {
+    set({ dressColors: [...(d.dressColors || []), "#d4af37"] });
+  };
+  const updColor = (i: number, val: string) => {
+    const list = [...(d.dressColors || [])];
+    list[i] = val;
+    set({ dressColors: list });
+  };
+  const delColor = (i: number) => {
+    const list = [...(d.dressColors || [])];
+    list.splice(i, 1);
+    set({ dressColors: list });
+  };
+
   return (
     <Section title="Dress Code" icon={dressIcon} enabled={d.dressOn} onEnabled={(v) => set({ dressOn: v })}>
       {!d.dressOn ? (
@@ -555,25 +644,59 @@ export function Dress({ d, set }: P) {
         </div>
       ) : (
         <>
-          <Hint>Bật để gợi ý trang phục cho khách mời theo màu sắc chủ đạo của tiệc cưới.</Hint>
-          <Field label="Gợi ý trang phục"><Textarea value={d.dressText} onChange={(e) => set({ dressText: e.target.value })} /></Field>
-          <Field label="Bảng màu trang phục (Dress code colors)">
-            <div style={{ display: "flex", gap: "12px", alignItems: "center", marginTop: "4px" }}>
-              {(d.dressColors || ["#651212", "#8d3a3a", "#ffb2b2"]).map((c, i) => (
-                <div key={i} style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+          <Field label="Tiêu đề">
+            <Input
+              value={d.dressTitle || "DRESS CODE"}
+              placeholder="DRESS CODE"
+              onChange={(e) => set({ dressTitle: e.target.value })}
+            />
+          </Field>
+          <Field label="Mô tả">
+            <Textarea
+              rows={3}
+              value={d.dressText || "Trang phục dự tiệc"}
+              placeholder="Trang phục dự tiệc"
+              onChange={(e) => set({ dressText: e.target.value })}
+            />
+          </Field>
+          <Field label="Màu sắc">
+            <div className="dress-colors-row">
+              {(d.dressColors || []).map((c, i) => (
+                <div key={i} className="dress-swatch-wrap">
                   <input
                     type="color"
+                    id={`dress-color-${i}`}
                     value={c}
-                    onChange={(e) => {
-                      const updated = [...(d.dressColors || ["#651212", "#8d3a3a", "#ffb2b2"])];
-                      updated[i] = e.target.value;
-                      set({ dressColors: updated });
-                    }}
-                    style={{ width: "32px", height: "32px", border: "0", borderRadius: "50%", cursor: "pointer", background: "none" }}
+                    className="dress-swatch-hidden"
+                    onChange={(e) => updColor(i, e.target.value)}
                   />
-                  <span style={{ fontSize: "11px", opacity: 0.8 }}>{c}</span>
+                  <label
+                    htmlFor={`dress-color-${i}`}
+                    className="dress-swatch-bubble"
+                    style={{ backgroundColor: c }}
+                    title="Bấm để đổi màu"
+                  />
+                  <button
+                    type="button"
+                    className="dress-swatch-del"
+                    aria-label="Xóa màu"
+                    onClick={() => delColor(i)}
+                  >
+                    ✕
+                  </button>
                 </div>
               ))}
+              <button
+                type="button"
+                className="dress-swatch-add"
+                aria-label="Thêm màu sắc"
+                title="Thêm màu"
+                onClick={addColor}
+              >
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+                </svg>
+              </button>
             </div>
           </Field>
         </>
@@ -1268,6 +1391,9 @@ export function Thanks({ d, set }: P) {
 
 export function Music({ d, set }: P) {
   const [pick, setPick] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const song = MUSIC_LIBRARY.find((s) => s.title === d.musicName);
+
   return (
     <Section
       title="Nhạc nền"
@@ -1279,34 +1405,65 @@ export function Music({ d, set }: P) {
         </svg>
       }
     >
-      <div className="music-box-container">
-        <div className="music-disc-large">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M9 18V5l12-2v13" strokeLinecap="round" strokeLinejoin="round" />
-            <circle cx="6" cy="18" r="3" />
-            <circle cx="18" cy="16" r="3" />
-          </svg>
-        </div>
-        <p className="music-track-name">{d.musicName || "Chưa chọn nhạc nền"}</p>
-        <button type="button" className="music-choose-btn" onClick={() => setPick(true)}>
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
-            <path d="M9 18V5l12-2v13" strokeLinecap="round" strokeLinejoin="round" />
-            <circle cx="6" cy="18" r="3" />
-            <circle cx="18" cy="16" r="3" />
-          </svg>
-          Chọn nhạc
-        </button>
-        {d.musicName && (
+      {d.musicName ? (
+        <div className="music-active-container">
+          <div className="music-selected-card">
+            <button
+              type="button"
+              className="music-card-play-btn"
+              onClick={() => setIsPlaying(!isPlaying)}
+              aria-label={isPlaying ? "Dừng" : "Phát"}
+            >
+              {isPlaying ? (
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24">
+                  <rect x="6" y="4" width="4" height="16" rx="1" />
+                  <rect x="14" y="4" width="4" height="16" rx="1" />
+                </svg>
+              ) : (
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24" style={{ marginLeft: 2 }}>
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              )}
+            </button>
+            <div className="music-card-info">
+              <h4 className="music-card-title">{song?.title || d.musicName}</h4>
+              <p className="music-card-artist">{song?.artist || "Shane Filan"}</p>
+            </div>
+            <span className="music-card-dur">{song?.dur || "3:54"}</span>
+          </div>
+
           <button
             type="button"
-            className="link-btn"
-            style={{ marginTop: 10 }}
-            onClick={() => set({ musicName: "" })}
+            className="btn-outline-pill-full"
+            style={{ marginTop: 12 }}
+            onClick={() => setPick(true)}
           >
-            Bỏ chọn
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3z" />
+            </svg>
+            Đổi nhạc khác
           </button>
-        )}
-      </div>
+        </div>
+      ) : (
+        <div className="music-box-container">
+          <div className="music-disc-large">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M9 18V5l12-2v13" strokeLinecap="round" strokeLinejoin="round" />
+              <circle cx="6" cy="18" r="3" />
+              <circle cx="18" cy="16" r="3" />
+            </svg>
+          </div>
+          <p className="music-track-name">Chưa chọn nhạc nền</p>
+          <button type="button" className="music-choose-btn" onClick={() => setPick(true)}>
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+              <path d="M9 18V5l12-2v13" strokeLinecap="round" strokeLinejoin="round" />
+              <circle cx="6" cy="18" r="3" />
+              <circle cx="18" cy="16" r="3" />
+            </svg>
+            Chọn nhạc
+          </button>
+        </div>
+      )}
       {pick && <MusicPicker current={d.musicName} onPick={(n) => set({ musicName: n })} onClose={() => setPick(false)} />}
     </Section>
   );
@@ -1332,6 +1489,7 @@ const shareEnvelopeIcon = (
 
 export function Share({ d, set }: P) {
   const [showCrop, setShowCrop] = useState(false);
+  const [showGalleryModal, setShowGalleryModal] = useState(false);
   const [pendingImg, setPendingImg] = useState<string>("");
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -1367,7 +1525,7 @@ export function Share({ d, set }: P) {
             className="share-action-card"
             onClick={() => {
               if (d.photos && d.photos.length > 0) {
-                set({ customSharePhoto: d.photos[0] });
+                setShowGalleryModal(true);
               } else {
                 alert("Thư viện ảnh hiện chưa có ảnh nào. Vui lòng thêm ảnh vào Thư viện ảnh trước.");
               }
@@ -1471,6 +1629,26 @@ export function Share({ d, set }: P) {
             setShowCrop(false);
           }}
         />
+      )}
+
+      {showGalleryModal && (
+        <Modal title="Chọn ảnh từ thư viện" onClose={() => setShowGalleryModal(false)}>
+          <div className="share-gallery-modal-grid">
+            {d.photos.map((p, i) => (
+              <button
+                key={i}
+                type="button"
+                className="share-gallery-modal-item"
+                onClick={() => {
+                  set({ customSharePhoto: p });
+                  setShowGalleryModal(false);
+                }}
+              >
+                <img src={p} alt={`Ảnh ${i + 1}`} />
+              </button>
+            ))}
+          </div>
+        </Modal>
       )}
     </Section>
   );

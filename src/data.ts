@@ -82,6 +82,7 @@ export interface Inv {
   partyLimit: number;
   questions: string[];
   dressOn: boolean;
+  dressTitle?: string;
   dressText: string;
   dressColors: string[];
   schedOn: boolean;

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
-type Song = { title: string; artist: string; uses: number; dur: string };
+export type Song = { title: string; artist: string; uses: number; dur: string };
 
-const LIBRARY: Song[] = [
+export const MUSIC_LIBRARY: Song[] = [
   { title: "Beautiful In White", artist: "Shane Filan", uses: 18610, dur: "3:54" },
   { title: "Em Đồng Ý (I Do)", artist: "Đức Phúc x 911", uses: 13838, dur: "3:35" },
   { title: "Lễ Đường", artist: "Kai Đinh", uses: 11651, dur: "4:09" },
@@ -32,6 +32,8 @@ const LIBRARY: Song[] = [
   { title: "The Way You Look Tonight", artist: "Frank Sinatra", uses: 28, dur: "3:15" },
   { title: "Unchained Melody", artist: "Righteous Brothers", uses: 27, dur: "3:30" },
 ];
+
+const LIBRARY = MUSIC_LIBRARY;
 
 const WAVE_BARS = [
   35, 60, 25, 75, 45, 90, 50, 95, 70, 40, 80, 55, 88, 45, 80, 60, 90, 65, 98, 75,
