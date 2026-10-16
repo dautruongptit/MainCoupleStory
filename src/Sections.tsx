@@ -216,37 +216,155 @@ export function Ceremony({ d, set }: P) {
   );
 }
 
+const cakeIcon = (
+  <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M2 21h20" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M7 8v2M12 8v2M17 8v2" />
+    <circle cx="7" cy="4" r="1" fill="currentColor" />
+    <circle cx="12" cy="4" r="1" fill="currentColor" />
+    <circle cx="17" cy="4" r="1" fill="currentColor" />
+  </svg>
+);
+
 export function Banquet({ d, set }: P) {
   return (
-    <Section title="Tiệc cưới" enabled={d.partyOn} onEnabled={(v) => set({ partyOn: v })} enabledLabel="Hiện">
-      <Segmented value={d.banquetType} onChange={(v) => set({ banquetType: v })}
-        options={[{ value: "wedding", label: "Tiệc cưới" }, { value: "reception", label: "Tiệc báo hỷ" }, { value: "engagement", label: "Tiệc đính hôn" }]} />
-      <Field label="Tiêu đề mục"><Input value={d.banquetTitle} onChange={(e) => set({ banquetTitle: e.target.value })} /></Field>
-      <Helper>Tiêu đề in phía trên mục này trên thiệp. Để trống nếu bạn muốn bỏ hẳn.</Helper>
-      <Field label="Ngày tổ chức"><Input type="date" value={d.date} onChange={(e) => set({ date: e.target.value })} /></Field>
-      <Field label="Giờ tổ chức"><Input type="time" value={d.time} onChange={(e) => set({ time: e.target.value })} /></Field>
-      <Helper>Giờ chính hiển thị lớn trên thiệp, dùng cho đếm ngược và thêm vào lịch.</Helper>
-      <Field label="Định dạng giờ">
-        <Segmented value={d.clock} onChange={(v) => set({ clock: v })} options={[{ value: "24h", label: "24 giờ" }, { value: "ampm", label: "Sáng/Chiều" }]} />
+    <Section title="Tiệc cưới" icon={cakeIcon} enabled={d.partyOn} onEnabled={(v) => set({ partyOn: v })} enabledLabel="Hiện">
+      <Segmented
+        value={d.banquetType}
+        onChange={(v) => set({ banquetType: v })}
+        options={[
+          { value: "wedding", label: "Tiệc cưới" },
+          { value: "reception", label: "Tiệc báo hỷ" },
+          { value: "engagement", label: "Tiệc đính hôn" },
+        ]}
+      />
+
+      <Field label="Tiêu đề mục">
+        <Input
+          value={d.banquetTitle}
+          placeholder="THÔNG TIN TIỆC CƯỚI"
+          onChange={(e) => set({ banquetTitle: e.target.value })}
+        />
       </Field>
-      <div className="mini-col">
-        <div className="inline-toggle">
-          <div><strong>Giờ Đón khách &amp; Khai tiệc</strong><Helper>Thiệp chỉ hiển thị giờ tổ chức. Bật để thêm giờ đón khách và khai tiệc.</Helper></div>
-          <span className="inline-r"><em>{d.hideWelcomeTimes ? "Ẩn" : "Hiển thị"}</em><Toggle on={!d.hideWelcomeTimes} onChange={(v) => set({ hideWelcomeTimes: !v })} /></span>
+      <Helper>Tiêu đề in phía trên mục này trên thiệp. Để trống nếu bạn muốn bỏ hẳn.</Helper>
+
+      <Field label="Ngày tổ chức">
+        <input
+          type="date"
+          className="input sched-time-input"
+          value={d.date}
+          onChange={(e) => set({ date: e.target.value })}
+          onClick={(e) => {
+            try {
+              (e.currentTarget as any).showPicker?.();
+            } catch {}
+          }}
+        />
+      </Field>
+
+      <Field label="Giờ tổ chức">
+        <input
+          type="time"
+          className="input sched-time-input"
+          value={d.time}
+          onChange={(e) => set({ time: e.target.value })}
+          onClick={(e) => {
+            try {
+              (e.currentTarget as any).showPicker?.();
+            } catch {}
+          }}
+        />
+      </Field>
+      <Helper>Giờ chính hiển thị lớn trên thiệp, dùng cho đếm ngược và thêm vào lịch.</Helper>
+
+      <Field label="Định dạng giờ">
+        <Segmented
+          value={d.clock}
+          onChange={(v) => set({ clock: v })}
+          options={[
+            { value: "24h", label: "24 giờ" },
+            { value: "ampm", label: "Sáng/Chiều" },
+          ]}
+        />
+      </Field>
+
+      <div className="banquet-extra-card">
+        <div className="banquet-extra-header">
+          <span className="banquet-extra-title">Giờ Đón khách &amp; Khai tiệc</span>
+          <div className="banquet-toggle-wrap">
+            <span className="banquet-toggle-status">{d.hideWelcomeTimes ? "Ẩn" : "Hiện"}</span>
+            <Toggle on={!d.hideWelcomeTimes} onChange={(v) => set({ hideWelcomeTimes: !v })} />
+          </div>
         </div>
+        <p className="banquet-extra-help">Thiệp chỉ hiển thị giờ tổ chức. Bật để thêm giờ đón khách và khai tiệc.</p>
         {!d.hideWelcomeTimes && (
           <Row>
-            <Field label="Giờ đón khách" half><Input type="time" value={d.welcomeTime} onChange={(e) => set({ welcomeTime: e.target.value })} /></Field>
-            <Field label="Giờ khai tiệc" half><Input type="time" value={d.startTime} onChange={(e) => set({ startTime: e.target.value })} /></Field>
+            <Field label="Giờ đón khách" half>
+              <input
+                type="time"
+                className="input sched-time-input"
+                value={d.welcomeTime}
+                onChange={(e) => set({ welcomeTime: e.target.value })}
+                onClick={(e) => {
+                  try {
+                    (e.currentTarget as any).showPicker?.();
+                  } catch {}
+                }}
+              />
+            </Field>
+            <Field label="Giờ khai tiệc" half>
+              <input
+                type="time"
+                className="input sched-time-input"
+                value={d.startTime}
+                onChange={(e) => set({ startTime: e.target.value })}
+                onClick={(e) => {
+                  try {
+                    (e.currentTarget as any).showPicker?.();
+                  } catch {}
+                }}
+              />
+            </Field>
           </Row>
         )}
       </div>
-      <label className="inline-toggle"><span className="lbl">Đồng hồ đếm ngược</span><span className="inline-r"><em>{d.countdown ? "Hiện" : "Ẩn"}</em><Toggle on={d.countdown} onChange={(v) => set({ countdown: v })} /></span></label>
-      <hr className="divider" />
-      <Field label="Tiêu đề mục địa điểm"><Input value={d.locTitle} onChange={(e) => set({ locTitle: e.target.value })} /></Field>
-      <Field label="Địa chỉ"><Textarea rows={2} placeholder="Địa chỉ tiệc cưới" value={d.address} onChange={(e) => set({ address: e.target.value })} /></Field>
-      <label className="inline-toggle"><span className="lbl">Bản đồ</span><span className="inline-r"><em>{d.showMap ? "Hiện" : "Ẩn"}</em><Toggle on={d.showMap} onChange={(v) => set({ showMap: v })} /></span></label>
-      <Helper>Bản đồ nằm trong phần này, nên ẩn cả phần thì bản đồ cũng ẩn theo, và công tắc riêng của bản đồ nằm ở đây.</Helper>
+
+      <div className="banquet-row-toggle">
+        <span className="banquet-row-title">Đồng hồ đếm ngược</span>
+        <div className="banquet-toggle-wrap">
+          <span className="banquet-toggle-status">{d.countdown ? "Hiện" : "Ẩn"}</span>
+          <Toggle on={d.countdown} onChange={(v) => set({ countdown: v })} />
+        </div>
+      </div>
+
+      <Field label="Tiêu đề mục địa điểm">
+        <Input
+          value={d.locTitle || "Tiệc cưới sẽ tổ chức tại"}
+          placeholder="Tiệc cưới sẽ tổ chức tại"
+          onChange={(e) => set({ locTitle: e.target.value })}
+        />
+      </Field>
+
+      <Field label="Địa chỉ">
+        <Textarea
+          rows={3}
+          placeholder="Địa chỉ tiệc cưới"
+          value={d.address}
+          onChange={(e) => set({ address: e.target.value })}
+        />
+      </Field>
+
+      <div className="banquet-row-toggle">
+        <span className="banquet-row-title">Bản đồ</span>
+        <div className="banquet-toggle-wrap">
+          <span className="banquet-toggle-status">{d.showMap ? "Hiện" : "Ẩn"}</span>
+          <Toggle on={d.showMap} onChange={(v) => set({ showMap: v })} />
+        </div>
+      </div>
+      <Helper>Bản đồ nằm trong phần này, nên ẩn cả phần thì bản đồ cũng ẩn theo, và công tắc riêng của bản đồ nằm ngay ở đây.</Helper>
+
       <MapBox d={d} set={set} />
     </Section>
   );
@@ -255,13 +373,25 @@ export function Banquet({ d, set }: P) {
 function MapBox({ d, set }: P) {
   const [edit, setEdit] = useState(false);
   return (
-    <div className="mini-col">
-      <div className="mini-row">
-        <p className="helper">Bản đồ tự động hiển thị theo địa chỉ tiệc cưới. Chỉ nên thay đổi nếu vị trí trên bản đồ không chính xác.</p>
-        <button type="button" className="link-btn" onClick={() => setEdit(!edit)}>{edit ? "Xong" : "Thay đổi"}</button>
+    <div className="banquet-map-card">
+      <div className="banquet-map-content">
+        <p className="banquet-map-text">
+          Bản đồ tự động hiển thị theo địa chỉ tiệc cưới. Chỉ nên thay đổi nếu vị trí trên bản đồ không chính xác.
+        </p>
+        <button type="button" className="banquet-map-link" onClick={() => setEdit(!edit)}>
+          {edit ? "Xong" : "Thay đổi"}
+        </button>
       </div>
       {edit && (
-        <Field label="Liên kết bản đồ tùy chỉnh"><Input placeholder="https://maps.google.com/..." value={d.mapUrl} onChange={(e) => set({ mapUrl: e.target.value })} /></Field>
+        <div style={{ marginTop: 12 }}>
+          <Field label="Liên kết bản đồ tùy chỉnh">
+            <Input
+              placeholder="https://maps.google.com/..."
+              value={d.mapUrl}
+              onChange={(e) => set({ mapUrl: e.target.value })}
+            />
+          </Field>
+        </div>
       )}
     </div>
   );

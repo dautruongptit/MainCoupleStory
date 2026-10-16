@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 type Song = { title: string; artist: string; uses: number; dur: string };
 
 const LIBRARY: Song[] = [
-  { title: "Beautiful In White", artist: "Shane Filan", uses: 18376, dur: "3:54" },
-  { title: "Em Đồng Ý (I Do)", artist: "Đức Phúc x 911", uses: 13568, dur: "3:35" },
-  { title: "Lễ Đường", artist: "Kai Đinh", uses: 11453, dur: "4:09" },
-  { title: "Perfect", artist: "Ed Sheeran", uses: 7608, dur: "4:23" },
+  { title: "Beautiful In White", artist: "Shane Filan", uses: 18610, dur: "3:54" },
+  { title: "Em Đồng Ý (I Do)", artist: "Đức Phúc x 911", uses: 13838, dur: "3:35" },
+  { title: "Lễ Đường", artist: "Kai Đinh", uses: 11651, dur: "4:09" },
+  { title: "Perfect", artist: "Ed Sheeran", uses: 7701, dur: "4:23" },
   { title: "Ordinary (Wedding Version)", artist: "Alex Warren", uses: 3274, dur: "3:07" },
   { title: "Marry You", artist: "Bruno Mars", uses: 3086, dur: "3:40" },
   { title: "50 Năm Về Sau", artist: "F47 & meChill & Đặng Thanh Tuyền", uses: 2805, dur: "4:59" },
@@ -33,9 +33,15 @@ const LIBRARY: Song[] = [
   { title: "Unchained Melody", artist: "Righteous Brothers", uses: 27, dur: "3:30" },
 ];
 
+const WAVE_BARS = [
+  35, 60, 25, 75, 45, 90, 50, 95, 70, 40, 80, 55, 88, 45, 80, 60, 90, 65, 98, 75,
+  45, 85, 60, 80, 40, 70, 85, 55, 90, 35, 60, 75, 40, 65,
+];
+
 export default function MusicPicker({ current, onPick, onClose }: { current: string; onPick: (name: string) => void; onClose: () => void }) {
   const [tab, setTab] = useState<"lib" | "mine">("lib");
   const [q, setQ] = useState("");
+  const [selected, setSelected] = useState<string>(current || "Beautiful In White");
   const [playing, setPlaying] = useState<string | null>(null);
   const [mine, setMine] = useState<Song[]>([]);
 
@@ -46,6 +52,7 @@ export default function MusicPicker({ current, onPick, onClose }: { current: str
   }, [onClose]);
 
   const list = (tab === "lib" ? LIBRARY : mine).filter((s) => (s.title + " " + s.artist).toLowerCase().includes(q.trim().toLowerCase()));
+  const activeSong = (tab === "lib" ? LIBRARY : mine).find((s) => s.title === selected) || (list.length > 0 ? list[0] : null);
 
   const addFiles = (files: FileList | null) => {
     if (!files) return;
@@ -62,41 +69,128 @@ export default function MusicPicker({ current, onPick, onClose }: { current: str
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 18 18 6M6 6l12 12" /></svg>
           </button>
           <h2>Chọn Nhạc Nền</h2>
-          <div style={{ width: 32 }} />
+          <div style={{ width: 36 }} />
         </div>
+
         <div className="mp-tabs">
           <button className={"mp-btn" + (tab === "lib" ? " primary" : "")} onClick={() => setTab("lib")}>Thư Viện</button>
           <div style={{ flex: 1 }} />
           <label className={"mp-btn" + (tab === "mine" ? " primary" : "")} style={{ cursor: "pointer" }}>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M12 5v14M5 12h14" /></svg>
             <span>Thêm nhạc</span>
             <input type="file" accept="audio/*" multiple hidden onChange={(e) => addFiles(e.target.files)} />
           </label>
         </div>
+
         <div className="mp-search">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m21 21-6-6m2-5a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" /></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></svg>
           <input placeholder="Tìm kiếm bài hát..." value={q} onChange={(e) => setQ(e.target.value)} />
         </div>
+
         <div className="mp-list">
-          {list.map((s) => (
-            <div className={"mp-row" + (current === s.title ? " sel" : "")} key={s.title + s.artist} onClick={() => { onPick(s.title); onClose(); }}>
-              <button type="button" className="mp-play" aria-label={playing === s.title ? "Dừng" : "Phát"}
-                onClick={(e) => { e.stopPropagation(); setPlaying(playing === s.title ? null : s.title); }}>
-                {playing === s.title ? (
+          {list.map((s) => {
+            const isSel = selected === s.title;
+            const isPlay = playing === s.title;
+            return (
+              <div
+                className={"mp-row" + (isSel ? " sel" : "")}
+                key={s.title + s.artist}
+                onClick={() => setSelected(s.title)}
+              >
+                <button
+                  type="button"
+                  className="mp-play"
+                  aria-label={isPlay ? "Dừng" : "Phát"}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setPlaying(isPlay ? null : s.title);
+                  }}
+                >
+                  {isPlay ? (
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z" /></svg>
+                  ) : (
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
+                  )}
+                </button>
+                <div className="mp-info">
+                  <p className="t">{s.title}</p>
+                  <p className="a">{s.artist}</p>
+                </div>
+                <div className="mp-meta">
+                  {s.uses > 0 && <span className="mp-badge">{s.uses} lượt dùng</span>}
+                  <span>{s.dur}</span>
+                </div>
+              </div>
+            );
+          })}
+          {list.length === 0 && <p className="mp-empty">{tab === "mine" ? "Bạn chưa thêm bài nhạc nào." : "Không tìm thấy bài hát."}</p>}
+        </div>
+
+        {activeSong ? (
+          <div className="mp-player-bar">
+            <div className="mp-player-header">
+              <button
+                type="button"
+                className="mp-bottom-play"
+                aria-label={playing === activeSong.title ? "Dừng" : "Phát"}
+                onClick={() => setPlaying(playing === activeSong.title ? null : activeSong.title)}
+              >
+                {playing === activeSong.title ? (
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z" /></svg>
                 ) : (
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
                 )}
               </button>
-              <div className="mp-info"><p className="t">{s.title}</p><p className="a">{s.artist}</p></div>
-              <div className="mp-meta">{s.uses > 0 && <span className="mp-badge">{s.uses} lượt dùng</span>}<span>{s.dur}</span></div>
+              <div className="mp-bottom-info">
+                <p className="mp-bottom-title">{activeSong.title}</p>
+                <p className="mp-bottom-artist">{activeSong.artist}</p>
+              </div>
+              <div className="mp-bottom-actions">
+                <button
+                  type="button"
+                  className="mp-btn-deselect"
+                  onClick={() => {
+                    setSelected("");
+                    onPick("");
+                  }}
+                >
+                  Bỏ Chọn
+                </button>
+                <button
+                  type="button"
+                  className="mp-btn-confirm"
+                  onClick={() => {
+                    onPick(activeSong.title);
+                    onClose();
+                  }}
+                >
+                  Xác Nhận
+                </button>
+              </div>
             </div>
-          ))}
-          {list.length === 0 && <p className="mp-empty">{tab === "mine" ? "Bạn chưa thêm bài nhạc nào." : "Không tìm thấy bài hát."}</p>}
-        </div>
-        <div className="mp-foot">
-          <button className="mp-none" onClick={() => { onPick(""); onClose(); }}>Không Sử Dụng Nhạc</button>
-        </div>
+
+            <div className="mp-trim-times">
+              <span>0:00 - {activeSong.dur}</span>
+              <span>{activeSong.dur} / {activeSong.dur}</span>
+            </div>
+
+            <div className="mp-trim-box">
+              <div className="mp-trim-handle left" />
+              <div className="mp-waveform">
+                {WAVE_BARS.map((h, i) => (
+                  <span key={i} className="mp-wave-bar" style={{ height: `${h}%` }} />
+                ))}
+              </div>
+              <div className="mp-trim-handle right" />
+            </div>
+
+            <p className="mp-trim-caption">Kéo để chọn đoạn nhạc bắt đầu và kết thúc</p>
+          </div>
+        ) : (
+          <div className="mp-foot">
+            <button className="mp-none" onClick={() => { onPick(""); onClose(); }}>Không Sử Dụng Nhạc</button>
+          </div>
+        )}
       </div>
     </div>
   );
