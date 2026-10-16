@@ -26,10 +26,76 @@ const STEPS = [
 ];
 
 const REVIEWS = [
-  { src: "Google", date: "Tháng 9/2026", name: "Ngọc Mai Vũ", text: "Rất hài lòng với dịch vụ" },
-  { src: "Facebook", date: "Tháng 8/2026", name: "Hoàng Tân", text: "Mẫu mã nhiều tha hồ tự lựa chọn, giá cả phải chăng 😘😘" },
-  { src: "Google", date: "Tháng 8/2026", name: "Huong Pham", text: "Thực sự rất vui vì trải nghiệm làm thiệp tại đây. Không chỉ có kho mẫu đẹp, đa dạng mà dịch vụ chăm sóc khách hàng mới là điểm cộng lớn nhất. Các bạn hỗ trợ cực kỳ nhiệt huyết, giải đáp mọi thắc mắc chi tiết." },
-  { src: "Google", date: "Tháng 9/2026", name: "Leductrung Le", text: "Mẫu mã thiệp của shop rất đẹp và đa dạng. Shop hỗ trợ siêu nhiệt tình và chu đáo. Mình cảm thấy rất hài lòng." },
+  {
+    src: "Facebook",
+    date: "Tháng 7/2026",
+    name: "Đinh Thị Thu Thương",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80",
+    type: "like" as const,
+    text: "Nhanh , đẹp , tiện lợi . 10điểm",
+  },
+  {
+    src: "Google",
+    date: "Tháng 9/2026",
+    name: "vũ duyên",
+    avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&auto=format&fit=crop&q=80",
+    type: "stars" as const,
+    stars: 5,
+    text: "Quá uy tín,nhiệt tình và đa dạng thỏa thích làm thiệp.1 nghìn điểm nha shop ơi.ai sắp muốn làm thiệp online mà bỏ qua App này thì phí lắm ạ.rẻ-đẹp-chất lượng và đúng theo mẫu dâu rể yêu thích và thỏa sức tạo thiệp❤️❤️❤️",
+  },
+  {
+    src: "Facebook",
+    date: "Tháng 7/2026",
+    name: "Hương Vũ",
+    avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&auto=format&fit=crop&q=80",
+    type: "like" as const,
+    text: "Thiệp rất đầy đủ thông tin, đẹp và dễ làm ạ, tư vấn cũng rất nhiệt tình ạ ❤️",
+  },
+  {
+    src: "Google",
+    date: "Tháng 9/2026",
+    name: "Vinh Le",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80",
+    type: "stars" as const,
+    stars: 5,
+    text: "Mẫu đẹp, sang trọng và rất tiện lợi lun",
+  },
+  {
+    src: "Facebook",
+    date: "Tháng 5/2026",
+    name: "Thoại Võ",
+    avatar: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=100&auto=format&fit=crop&q=80",
+    type: "like" as const,
+    text: "Nhanh tiện đẹp thiệp giữ được lâu về sau này\nCảm ơn shop ạ",
+  },
+];
+
+const SWITCH_TEMPLATES = [
+  {
+    name: "Minimalism - Đỏ Đậm",
+    img: "https://assets.chungdoi.com/template-previews/vi/full/minimalism_darkred.4496816d.webp",
+    slug: "minimalism-do-dam",
+  },
+  {
+    name: "Minimalism - Nâu",
+    img: "https://assets.chungdoi.com/template-previews/vi/full/minimalism_brown.b5df2103.webp",
+    slug: "minimalism-nau",
+  },
+  {
+    name: "Song Hỷ - Xanh",
+    img: "https://assets.chungdoi.com/template-previews/vi/full/song_hy_green.1a9c9b7f.webp",
+    slug: "song-hy-xanh",
+  },
+  {
+    name: "Song Hỷ - Đỏ",
+    img: "https://assets.chungdoi.com/template-previews/vi/full/song_hy_red.09106faf.webp",
+    slug: "song-hy-do",
+  },
+  {
+    name: "Song Phụng - Đỏ",
+    img: "https://assets.chungdoi.com/template-previews/vi/full/double_phoenix_red.95412374.webp",
+    slug: "song-phung-do",
+  },
 ];
 
 const BLOG = [
@@ -81,6 +147,9 @@ function TemplateStrip() {
 
 export default function Home() {
   const [faq, setFaq] = useState<number | null>(0);
+  const [activeReviewDot, setActiveReviewDot] = useState(0);
+  const reviewsRef = useRef<HTMLDivElement>(null);
+  const [activeSwitchTpl, setActiveSwitchTpl] = useState(0);
   return (
     <main className="home">
       {/* Hero */}
@@ -131,26 +200,142 @@ export default function Home() {
       </section>
 
       {/* Support */}
-      <section className="sec alt support">
-        <h2 className="sec-title">Khi bạn cần, tụi mình luôn có mặt</h2>
-        <p className="sec-sub">Chung Đôi luôn sẵn sàng hỗ trợ 24/7. Nhắn tụi mình bất cứ khi nào bạn cần.</p>
-        <div className="stat-row">
-          <div><small>Thời gian phản hồi</small><b>Dưới 1 phút</b></div>
-          <div><small>Hỗ trợ chỉnh sửa</small><b>Đến khi bạn hài lòng</b></div>
+      <section className="sec support-sec-v2">
+        <h2 className="sec-title-v2">
+          Khi bạn cần, <span className="hl-pink">tụi mình luôn có mặt</span>
+        </h2>
+        <p className="sec-sub-v2">
+          Chung Đôi luôn sẵn sàng hỗ trợ 24/7.{" "}
+          <a
+            href="https://facebook.com/chungdoicom"
+            target="_blank"
+            rel="noreferrer"
+            className="hl-pink font-semibold hover:underline"
+          >
+            Nhắn tụi mình
+          </a>{" "}
+          bất cứ khi nào bạn cần.
+        </p>
+
+        <div className="home-support-pill">
+          <div className="support-stat-item">
+            <div className="stat-icon-wrap stat-bolt">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+            </div>
+            <div className="stat-info-col">
+              <span className="stat-label-sub">Thời gian phản hồi</span>
+              <span className="stat-val-main">Dưới 1 phút</span>
+            </div>
+          </div>
+
+          <div className="support-stat-div" />
+
+          <div className="support-stat-item">
+            <div className="stat-icon-wrap stat-clock">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <div className="stat-info-col">
+              <span className="stat-label-sub">Hỗ trợ chỉnh sửa</span>
+              <span className="stat-val-main">Đến khi bạn hài lòng</span>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Reviews */}
-      <section className="sec alt">
-        <h2 className="sec-title">Đánh giá từ khách hàng</h2>
-        <p className="sec-sub">Những lời nhắn thật lòng từ các cặp đôi đã tin tưởng Chung Đôi cho ngày trọng đại.</p>
-        <div className="reviews">
+      <section className="sec reviews-sec-v2">
+        <h2 className="sec-title-v2">
+          Đánh giá từ <span className="hl-pink">khách hàng</span>
+        </h2>
+        <p className="sec-sub-v2">
+          Những lời nhắn thật lòng từ các cặp đôi đã tin tưởng Chung Đôi cho ngày trọng đại.
+        </p>
+
+        <div
+          className="reviews-carousel-track"
+          ref={reviewsRef}
+          onScroll={(e) => {
+            const el = e.currentTarget;
+            const scrollLeft = el.scrollLeft;
+            const cardWidth = 320;
+            const idx = Math.round(scrollLeft / cardWidth);
+            setActiveReviewDot(Math.min(REVIEWS.length - 1, Math.max(0, idx)));
+          }}
+        >
           {REVIEWS.map((r) => (
-            <article className="review" key={r.name}>
-              <header><b>{r.src}</b><small>{r.date}</small></header>
-              <h4>{r.name}</h4>
-              <p>“{r.text}”</p>
+            <article className="review-card-v2" key={r.name}>
+              <div className="review-card-head">
+                {r.src === "Facebook" ? (
+                  <span className="rev-badge fb">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="#1877F2">
+                      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                    Facebook
+                  </span>
+                ) : (
+                  <span className="rev-badge gg">
+                    <svg viewBox="0 0 24 24" width="14" height="14">
+                      <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.65v3h3.88c2.27-2.09 3.665-5.17 3.665-9.09z" />
+                      <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.27v3.09C3.31 21.46 7.37 24 12 24z" />
+                      <path fill="#FBBC05" d="M5.28 14.32c-.25-.72-.38-1.49-.38-2.32s.13-1.6.38-2.32V6.59H1.27C.46 8.21 0 10.05 0 12s.46 3.79 1.27 5.41l4.01-3.09z" />
+                      <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.37 0 3.31 2.54 1.27 6.59l4.01 3.09c.95-2.83 3.6-4.93 6.72-4.93z" />
+                    </svg>
+                    Google
+                  </span>
+                )}
+                <span className="rev-date">{r.date}</span>
+              </div>
+
+              <div className="review-user-row">
+                <img src={r.avatar} alt={r.name} className="rev-avatar" />
+                <div className="rev-user-col">
+                  <div className="rev-user-name">{r.name}</div>
+                  {r.type === "like" ? (
+                    <div className="rev-like-wrap">
+                      <svg viewBox="0 0 24 24" width="15" height="15" fill="#3b82f6">
+                        <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" />
+                      </svg>
+                    </div>
+                  ) : (
+                    <div className="rev-stars-wrap">
+                      {"★".repeat(r.stars || 5)}
+                    </div>
+                  )}
+                </div>
+                <div className="rev-ext-ico">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                  </svg>
+                </div>
+              </div>
+
+              <div className="review-quote-body">
+                <span className="rev-quote-mark">“</span> {r.text} <span className="rev-quote-mark">”</span>
+              </div>
             </article>
+          ))}
+        </div>
+
+        {/* Dots Pagination */}
+        <div className="reviews-dots-row">
+          {Array.from({ length: 10 }).map((_, i) => (
+            <button
+              key={i}
+              type="button"
+              className={`rev-dot ${i === activeReviewDot ? "active" : ""}`}
+              onClick={() => {
+                setActiveReviewDot(i);
+                if (reviewsRef.current) {
+                  reviewsRef.current.scrollTo({ left: i * 320, behavior: "smooth" });
+                }
+              }}
+              aria-label={`Trang ${i + 1}`}
+            />
           ))}
         </div>
       </section>
@@ -193,25 +378,94 @@ export default function Home() {
       </section>
 
       {/* Switch template */}
-      <section className="sec split alt rev">
-        <div className="split-copy">
-          <span className="eyebrow">ĐỔI MẪU TỰ DO</span>
-          <h2>Đổi mẫu không cần nhập lại thông tin</h2>
-          <p>Chọn mẫu khác bất cứ lúc nào. Tên cô dâu chú rể, tên bố mẹ hai bên, ngày giờ, địa điểm và ảnh cưới đều được giữ nguyên, chỉ có thiết kế thay đổi.</p>
-          <Features items={[
-            "Mọi thông tin đã nhập được giữ nguyên, bạn không phải gõ lại từ đầu.",
-            "Đổi bao nhiêu lần cũng được, hoàn toàn miễn phí.",
-            "Link thiệp đã gửi cho khách không đổi, khách vẫn xem được bản mới nhất.",
-          ]} />
-          <p className="hero-note">Tạo miễn phí · Thử 3 ngày · Đẹp mới thanh toán</p>
-          <div className="btn-row">
-            <Link href="/vi/tao-thiep-cuoi-online" className="btn-pill">Tạo thiệp miễn phí</Link>
-            <Link href="/vi/mau-thiep" className="btn-outline-pill">Xem tất cả mẫu</Link>
+      <section className="sec switch-tpl-sec">
+        <div className="switch-tpl-grid">
+          <div className="switch-tpl-copy">
+            <div className="badge-free-change">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M21 2v6h-6M3 12a9 9 0 0 1 15-6.7L21 8M3 22v-6h6M21 12a9 9 0 0 1-15 6.7L3 16" />
+              </svg>
+              <span>ĐỔI MẪU TỰ DO</span>
+            </div>
+
+            <h2 className="switch-tpl-title">
+              Đổi mẫu không cần <span className="hl-pink">nhập lại thông tin</span>
+            </h2>
+
+            <p className="switch-tpl-desc">
+              Chọn mẫu khác bất cứ lúc nào. Tên cô dâu chú rể, tên bố mẹ hai bên, ngày giờ, địa điểm và ảnh cưới đều được giữ nguyên, chỉ có thiết kế thay đổi.
+            </p>
+
+            <ul className="switch-tpl-feats">
+              <li>
+                <span className="pink-check-circle">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <span>Mọi thông tin đã nhập được giữ nguyên, bạn không phải gõ lại từ đầu.</span>
+              </li>
+              <li>
+                <span className="pink-check-circle">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <span>Đổi bao nhiêu lần cũng được, hoàn toàn miễn phí.</span>
+              </li>
+              <li>
+                <span className="pink-check-circle">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <span>Link thiệp đã gửi cho khách không đổi, khách vẫn xem được bản mới nhất.</span>
+              </li>
+            </ul>
+
+            <div className="switch-tpl-btns">
+              <Link href="/vi/mau-thiep" className="btn-switch-primary">
+                Tạo thiệp miễn phí
+              </Link>
+              <Link href="/vi/mau-thiep" className="btn-switch-secondary">
+                Xem tất cả mẫu
+              </Link>
+            </div>
+
+            <p className="switch-tpl-subnote">
+              Tạo miễn phí · Thử 3 ngày · Đẹp mới thanh toán
+            </p>
           </div>
-        </div>
-        <div className="split-art tpl-pair">
-          <img src={`${CDN}song_hy_red.197afce7.webp`} alt="" />
-          <img src={`${CDN}double_dragon_red.e3dd75ad.webp`} alt="" />
+
+          <div className="switch-tpl-art">
+            <div className="phone-mockup-wrap">
+              <div className="phone-mockup-frame">
+                <img
+                  src={SWITCH_TEMPLATES[activeSwitchTpl].img}
+                  alt={SWITCH_TEMPLATES[activeSwitchTpl].name}
+                  className="phone-mockup-screen"
+                />
+              </div>
+
+              {/* Dots and Template Name */}
+              <div className="switch-tpl-indicator">
+                <div className="switch-dots-row">
+                  {SWITCH_TEMPLATES.map((tpl, i) => (
+                    <button
+                      key={tpl.slug}
+                      type="button"
+                      className={`switch-dash-dot ${i === activeSwitchTpl ? "active" : ""}`}
+                      onClick={() => setActiveSwitchTpl(i)}
+                      aria-label={tpl.name}
+                    />
+                  ))}
+                </div>
+                <div className="switch-tpl-label">
+                  {SWITCH_TEMPLATES[activeSwitchTpl].name}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
