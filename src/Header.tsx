@@ -10,6 +10,7 @@ export default function Header({
   dirty,
   onPublish,
   onShare,
+  isPublished = false,
   templateId = "double_phoenix_red",
   templateName = "Song Phụng - Đỏ",
   templateThumb = "https://assets.chungdoi.com/template-previews/vi/landscape/double_phoenix_red.d0f325f5.webp",
@@ -20,6 +21,7 @@ export default function Header({
   dirty: number;
   onPublish: () => void;
   onShare?: () => void;
+  isPublished?: boolean;
   templateId?: string;
   templateName?: string;
   templateThumb?: string;
@@ -210,34 +212,59 @@ export default function Header({
                 </svg>
               )}
             </span>
-            <button
-              className="hdr-btn-share"
-              onClick={onShare || onPublish}
-              title="Chia sẻ thiệp cưới"
-            >
-              <svg
-                width="15"
-                height="15"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+            {isPublished ? (
+              <button
+                className="hdr-btn-share"
+                onClick={onShare}
+                title="Chia sẻ thiệp cưới"
               >
-                <circle cx="18" cy="5" r="3" />
-                <circle cx="6" cy="12" r="3" />
-                <circle cx="18" cy="19" r="3" />
-                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
-                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
-              </svg>
-              <span>Chia sẻ</span>
-            </button>
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <circle cx="18" cy="5" r="3" />
+                  <circle cx="6" cy="12" r="3" />
+                  <circle cx="18" cy="19" r="3" />
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                </svg>
+                <span>Chia sẻ</span>
+              </button>
+            ) : (
+              <button
+                className="btn-primary"
+                onClick={onPublish}
+                title="Xuất bản thiệp để chia sẻ và nhận mã QR"
+              >
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+                  />
+                </svg>
+                <span>Xuất bản</span>
+              </button>
+            )}
           </div>
         </div>
-        <div className="editor-sub-banner">
-          0/20 khách mời miễn phí · 3 ngày còn lại
-        </div>
+        {isPublished && (
+          <div className="editor-sub-banner">
+            0/20 khách mời miễn phí · 3 ngày còn lại
+          </div>
+        )}
       </header>
 
       {/* Full 7-column Template Selector Modal (matches media_1792164790175_cb0f3aef.png) */}

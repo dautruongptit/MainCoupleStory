@@ -60,111 +60,7 @@ function DeleteModal({ name, onConfirm, onCancel }: { name: string; onConfirm: (
   );
 }
 
-function PublishCheckModal({
-  card,
-  onConfirm,
-  onCancel,
-}: {
-  card: Card;
-  onConfirm: () => void;
-  onCancel: () => void;
-}) {
-  useEffect(() => {
-    const h = (e: KeyboardEvent) => e.key === "Escape" && onCancel();
-    window.addEventListener("keydown", h);
-    return () => window.removeEventListener("keydown", h);
-  }, [onCancel]);
-
-  const requiredItems = [
-    { label: "Tên chú rể", done: false },
-    { label: "Tên cô dâu", done: false },
-    { label: "Ngày cưới", done: false },
-    { label: "Giờ cưới", done: false },
-    { label: "Địa chỉ tiệc cưới", done: false },
-  ];
-
-  const optionalItems = [
-    { label: "Bản đồ", done: false },
-    { label: "Thông tin gia đình chú rể", done: false },
-    { label: "Thông tin gia đình cô dâu", done: false },
-    { label: "Ảnh cưới", done: false },
-  ];
-
-  const allItems = [...requiredItems, ...optionalItems];
-  const completed = allItems.filter((x) => x.done).length;
-  const total = allItems.length;
-  const pct = Math.round((completed / total) * 100);
-
-  return (
-    <div className="login-back" onMouseDown={onCancel}>
-      <div className="pub-check-box" role="dialog" aria-modal="true" onMouseDown={(e) => e.stopPropagation()}>
-        <button className="pub-check-close" aria-label="Đóng" onClick={onCancel}>✕</button>
-
-        <div className="pub-check-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-            <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
-            <path d="M9 12h6M9 16h6" />
-          </svg>
-        </div>
-
-        <h3 className="pub-check-title">Kiểm tra thông tin</h3>
-        <p className="pub-check-sub">{completed}/{total} mục đã hoàn thành</p>
-
-        <div className="pub-progress-ring">
-          <span className="pub-progress-dot" />
-          <span className="pub-progress-num">{pct}%</span>
-        </div>
-
-        <div className="pub-checklist-wrap">
-          <div className="pub-check-group">
-            <span className="pub-group-title">BẮT BUỘC</span>
-            <ul className="pub-items-list">
-              {requiredItems.map((item, idx) => (
-                <li key={idx} className={item.done ? "done" : ""}>
-                  <span className="pub-item-bullet" />
-                  <span>{item.label}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="pub-check-group">
-            <span className="pub-group-title">TÙY CHỌN</span>
-            <ul className="pub-items-list">
-              {optionalItems.map((item, idx) => (
-                <li key={idx} className={item.done ? "done" : ""}>
-                  <span className="pub-item-bullet" />
-                  <span>{item.label}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        <div className="pub-device-warn">
-          <div className="pub-device-warn-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="12" cy="12" r="10" />
-              <line x1="12" y1="16" x2="12" y2="12" />
-              <line x1="12" y1="8" x2="12.01" y2="8" />
-            </svg>
-          </div>
-          <p>Thiệp hiện chỉ lưu trên thiết bị này. Bạn sẽ được yêu cầu đăng nhập khi xuất bản để truy cập từ mọi nơi và tránh mất dữ liệu.</p>
-        </div>
-
-        <div className="pub-actions">
-          <button type="button" className="pub-btn-back" onClick={onCancel}>
-            Quay lại
-          </button>
-          <button type="button" className="pub-btn-confirm" onClick={onConfirm}>
-            Vẫn xuất bản
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-}
+import PublishCheckModal from "../PublishCheckModal";
 
 export default function Dashboard() {
   const [cards, setCards] = useState<Card[]>(loadCards);
@@ -259,8 +155,16 @@ export default function Dashboard() {
                 </div>
 
                 <div className="inv-badge-wrap">
-                  <span className="inv-trial-tag">• Dùng thử</span>
-                  <span className="inv-trial-sub">Còn 3 ngày · 0/20 khách</span>
+                  {c.status === "published" ? (
+                    <>
+                      <span className="inv-trial-tag">• Dùng thử</span>
+                      <span className="inv-trial-sub">Còn 3 ngày · 0/20 khách</span>
+                    </>
+                  ) : (
+                    <span className="inv-status-pill">
+                      <span className="inv-status-dot">•</span> Bản nháp
+                    </span>
+                  )}
                 </div>
 
                 <div className="inv-info-wrap">
@@ -278,23 +182,34 @@ export default function Dashboard() {
                 </div>
 
                 <div className="inv-bottom-actions">
-                  <button className="dash-btn-pay" onClick={() => navigate("/vi/bang-gia")}>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                      <rect x="2" y="5" width="20" height="14" rx="2" />
-                      <line x1="2" y1="10" x2="22" y2="10" />
-                    </svg>
-                    <span>Thanh toán</span>
-                  </button>
-                  <button className="dash-btn-share" onClick={() => setSharingCard(c)}>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="18" cy="5" r="3" />
-                      <circle cx="6" cy="12" r="3" />
-                      <circle cx="18" cy="19" r="3" />
-                      <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
-                      <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
-                    </svg>
-                    <span>Chia sẻ</span>
-                  </button>
+                  {c.status === "published" ? (
+                    <>
+                      <button className="dash-btn-pay" onClick={() => navigate("/vi/bang-gia")}>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                          <rect x="2" y="5" width="20" height="14" rx="2" />
+                          <line x1="2" y1="10" x2="22" y2="10" />
+                        </svg>
+                        <span>Thanh toán</span>
+                      </button>
+                      <button className="dash-btn-share" onClick={() => setSharingCard(c)}>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <circle cx="18" cy="5" r="3" />
+                          <circle cx="6" cy="12" r="3" />
+                          <circle cx="18" cy="19" r="3" />
+                          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                        </svg>
+                        <span>Chia sẻ</span>
+                      </button>
+                    </>
+                  ) : (
+                    <button className="inv-btn-publish" onClick={() => setPublishing(c)}>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                      </svg>
+                      <span>Xuất bản</span>
+                    </button>
+                  )}
                   <button className="inv-btn-delete" onClick={() => setDeleting(c)} title="Xóa thiệp">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6" />
@@ -321,7 +236,9 @@ export default function Dashboard() {
           card={publishing}
           onConfirm={() => {
             publish(publishing.id);
+            const pub = cards.find((c) => c.id === publishing.id) || publishing;
             setPublishing(null);
+            setSharingCard({ ...pub, status: "published" });
           }}
           onCancel={() => setPublishing(null)}
         />
