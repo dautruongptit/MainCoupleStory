@@ -5,6 +5,7 @@ import Preview from "./Preview";
 import * as S from "./Sections";
 import TopNav from "./TopNav";
 import HeroPhoto from "./HeroPhoto";
+import TutorialTour from "./TutorialTour";
 
 export default function App() {
   const [d, setD] = useState<Inv>(defaultInv);
@@ -66,6 +67,7 @@ export default function App() {
         )}
       </main>
       {toast && <div className="toast">{toast}</div>}
+      <TutorialTour />
     </>
   );
 }
