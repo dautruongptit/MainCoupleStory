@@ -111,14 +111,17 @@ export function Album({ d, set }: P) {
     const urls: string[] = [];
     setUp({ done: 0, total: list.length });
     for (const f of list) {
-      await new Promise((r) => setTimeout(r, 300));
+      await new Promise((r) => setTimeout(r, 200));
       urls.push(URL.createObjectURL(f));
       setUp({ done: urls.length, total: list.length });
     }
     set({ photos: [...latest.current, ...urls].slice(0, 20) });
     setUp(null);
+    setShowSuccess(true);
+    setTimeout(() => setShowSuccess(false), 3500);
   };
   const upText = up ? `Đang tải lên ${Math.min(up.done + 1, up.total)}/${up.total}...` : "";
+  const [showSuccess, setShowSuccess] = useState(false);
   const [menu, setMenu] = useState<number | null>(null);
   const [drag, setDrag] = useState<number | null>(null);
   const [crop, setCrop] = useState<number | null>(null);
@@ -138,13 +141,26 @@ export function Album({ d, set }: P) {
           options={[{ value: "grid", label: "Lưới", icon: <LayoutIcon k="grid" /> }, { value: "collage", label: "Ghép ảnh", icon: <LayoutIcon k="collage" /> }, { value: "3d", label: "3D", icon: <LayoutIcon k="3d" /> }]} />
       </Field>
       <div className="lbl-row"><span className="lbl">Thư viện ảnh</span><span className="helper">{d.photos.length} ảnh</span></div>
+
       {up && (
-        <div className="up-prog">
-          <progress value={Math.round((up.done / up.total) * 100)} max={100} />
-          <p>{upText}</p>
+        <div className="gallery-prog-box">
+          <div className="gallery-prog-track">
+            <div className="gallery-prog-fill" style={{ width: `${Math.round(((up.done + 0.5) / up.total) * 100)}%` }} />
+          </div>
+          <p className="gallery-prog-status">{upText}</p>
         </div>
       )}
-      {d.photos.length === 0 ? (
+
+      {showSuccess && (
+        <div className="gallery-success-pill">
+          <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
+            <path strokeLinecap="round" strokeLinejoin="round" d="m5 13 4 4L19 7" />
+          </svg>
+          <span>Tải ảnh lên thành công!</span>
+        </div>
+      )}
+
+      {d.photos.length === 0 && !up ? (
         <label className="album-empty-add">
           <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 4v16m8-8H4" /></svg>
           <span style={{ fontSize: "13px", fontWeight: 500 }}>Thêm ảnh</span>
@@ -176,9 +192,9 @@ export function Album({ d, set }: P) {
             </div>
           ))}
           {up ? (
-            <div className="add-photo disabled">
-              <span className="spinner" />
-              <span>{upText}</span>
+            <div className="photo gallery-uploading-tile">
+              <span className="spinner" style={{ width: 18, height: 18, borderWidth: 2 }} />
+              <span style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", marginTop: 6 }}>{upText}</span>
             </div>
           ) : d.photos.length < 20 && (
             <label className="add-photo">
@@ -248,8 +264,37 @@ export function Ceremony({ d, set }: P) {
             <button className="icon-ghost sm" aria-label="Xoá lễ" onClick={() => set({ ceremonies: d.ceremonies.filter((_, j) => j !== i) })}>{Icon.trash()}</button>
           </Row>
           <Row>
-            <Field label="Ngày" half><Input type="date" value={c.date} onChange={(e) => upd(i, { date: e.target.value })} /></Field>
-            <Field label="Giờ" half><Input type="time" value={c.time} onChange={(e) => upd(i, { time: e.target.value })} /></Field>
+            <Field label="Ngày" half>
+              <input
+                type="date"
+                className="input sched-time-input"
+                value={c.date}
+                onChange={(e) => upd(i, { date: e.target.value })}
+                onClick={(e) => {
+                  try {
+                    (e.currentTarget as any).showPicker?.();
+                  } catch {}
+                }}
+              />
+            </Field>
+            <Field label="Giờ" half>
+              <input
+                type="time"
+                className="input sched-time-input"
+                value={c.time}
+                onChange={(e) => upd(i, { time: e.target.value })}
+                onClick={(e) => {
+                  try {
+                    (e.currentTarget as any).showPicker?.();
+                  } catch {}
+                }}
+                onKeyDown={(e) => {
+                  if (!/[0-9]/.test(e.key) && !["Backspace", "Delete", "ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Tab", "Enter"].includes(e.key)) {
+                    e.preventDefault();
+                  }
+                }}
+              />
+            </Field>
           </Row>
           <Field label="Địa điểm"><Input value={c.place} onChange={(e) => upd(i, { place: e.target.value })} /></Field>
         </div>
@@ -276,192 +321,187 @@ const cakeIcon = (
 export function Banquet({ d, set }: P) {
   return (
     <Section title="Tiệc cưới" icon={cakeIcon} enabled={d.partyOn} onEnabled={(v) => set({ partyOn: v })} enabledLabel="Hiện">
-      <Segmented
-        value={d.banquetType}
-        onChange={(v) => set({ banquetType: v })}
-        options={[
-          { value: "wedding", label: "Tiệc cưới" },
-          { value: "reception", label: "Tiệc báo hỷ" },
-          { value: "engagement", label: "Tiệc đính hôn" },
-        ]}
-      />
+      {!d.partyOn ? (
+        <div className="section-disabled-hint">
+          <svg width="18" height="18" fill="none" stroke="#f59e0b" viewBox="0 0 24 24" strokeWidth="2" style={{ flex: "none" }}>
+            <circle cx="12" cy="12" r="9" />
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 7v5l3 3" />
+          </svg>
+          <span>Bật để hiển thị thông tin ngày giờ, địa điểm tổ chức tiệc cưới và bản đồ chỉ đường cho khách mời.</span>
+        </div>
+      ) : (
+        <>
+          <Field label="Ngày tổ chức">
+            <input
+              type="date"
+              className="input sched-time-input"
+              value={d.date}
+              onChange={(e) => set({ date: e.target.value })}
+              onClick={(e) => {
+                try {
+                  (e.currentTarget as any).showPicker?.();
+                } catch {}
+              }}
+            />
+          </Field>
 
-      <Field label="Tiêu đề mục">
-        <Input
-          value={d.banquetTitle}
-          placeholder="THÔNG TIN TIỆC CƯỚI"
-          onChange={(e) => set({ banquetTitle: e.target.value })}
-        />
-      </Field>
-      <Helper>Tiêu đề in phía trên mục này trên thiệp. Để trống nếu bạn muốn bỏ hẳn.</Helper>
+          <Field label="Giờ tổ chức">
+            <input
+              type="time"
+              className="input sched-time-input"
+              value={d.time}
+              onChange={(e) => set({ time: e.target.value })}
+              onClick={(e) => {
+                try {
+                  (e.currentTarget as any).showPicker?.();
+                } catch {}
+              }}
+              onKeyDown={(e) => {
+                if (!/[0-9]/.test(e.key) && !["Backspace", "Delete", "ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Tab", "Enter"].includes(e.key)) {
+                  e.preventDefault();
+                }
+              }}
+            />
+          </Field>
+          <Helper>Giờ chính hiển thị lớn trên thiệp, dùng cho đếm ngược và thêm vào lịch.</Helper>
 
-      <Field label="Ngày tổ chức">
-        <input
-          type="date"
-          className="input sched-time-input"
-          value={d.date}
-          onChange={(e) => set({ date: e.target.value })}
-          onClick={(e) => {
-            try {
-              (e.currentTarget as any).showPicker?.();
-            } catch {}
-          }}
-        />
-      </Field>
+          <Field label="Định dạng giờ">
+            <Segmented
+              value={d.clock}
+              onChange={(v) => set({ clock: v })}
+              options={[
+                { value: "24h", label: "24 giờ" },
+                { value: "ampm", label: "Sáng/Chiều" },
+              ]}
+            />
+          </Field>
 
-      <Field label="Giờ tổ chức">
-        <input
-          type="time"
-          className="input sched-time-input"
-          value={d.time}
-          onChange={(e) => set({ time: e.target.value })}
-          onClick={(e) => {
-            try {
-              (e.currentTarget as any).showPicker?.();
-            } catch {}
-          }}
-        />
-      </Field>
-      <Helper>Giờ chính hiển thị lớn trên thiệp, dùng cho đếm ngược và thêm vào lịch.</Helper>
-
-      <Field label="Định dạng giờ">
-        <Segmented
-          value={d.clock}
-          onChange={(v) => set({ clock: v })}
-          options={[
-            { value: "24h", label: "24 giờ" },
-            { value: "ampm", label: "Sáng/Chiều" },
-          ]}
-        />
-      </Field>
-
-      <div className="banquet-extra-card">
-        <div className="banquet-extra-header">
-          <span className="banquet-extra-title">Giờ Đón khách &amp; Khai tiệc</span>
-          <div className="banquet-toggle-wrap">
-            <span className="banquet-toggle-status">{d.hideWelcomeTimes ? "Ẩn" : "Hiện"}</span>
-            <Toggle on={!d.hideWelcomeTimes} onChange={(v) => set({ hideWelcomeTimes: !v })} />
+          <div className="banquet-extra-card">
+            <div className="banquet-extra-header">
+              <span className="banquet-extra-title">Giờ Đón khách &amp; Khai tiệc</span>
+              <div className="banquet-toggle-wrap">
+                <span className="banquet-toggle-status">{d.hideWelcomeTimes ? "Ẩn" : "Hiện"}</span>
+                <Toggle on={!d.hideWelcomeTimes} onChange={(v) => set({ hideWelcomeTimes: !v })} />
+              </div>
+            </div>
+            <p className="banquet-extra-help">Thiệp chỉ hiển thị giờ tổ chức. Bật để thêm giờ đón khách và khai tiệc.</p>
+            {!d.hideWelcomeTimes && (
+              <Row>
+                <Field label="Giờ đón khách" half>
+                  <input
+                    type="time"
+                    className="input sched-time-input"
+                    value={d.welcomeTime}
+                    onChange={(e) => set({ welcomeTime: e.target.value })}
+                    onClick={(e) => {
+                      try {
+                        (e.currentTarget as any).showPicker?.();
+                      } catch {}
+                    }}
+                    onKeyDown={(e) => {
+                      if (!/[0-9]/.test(e.key) && !["Backspace", "Delete", "ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Tab", "Enter"].includes(e.key)) {
+                        e.preventDefault();
+                      }
+                    }}
+                  />
+                </Field>
+                <Field label="Giờ khai tiệc" half>
+                  <input
+                    type="time"
+                    className="input sched-time-input"
+                    value={d.startTime}
+                    onChange={(e) => set({ startTime: e.target.value })}
+                    onClick={(e) => {
+                      try {
+                        (e.currentTarget as any).showPicker?.();
+                      } catch {}
+                    }}
+                    onKeyDown={(e) => {
+                      if (!/[0-9]/.test(e.key) && !["Backspace", "Delete", "ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Tab", "Enter"].includes(e.key)) {
+                        e.preventDefault();
+                      }
+                    }}
+                  />
+                </Field>
+              </Row>
+            )}
           </div>
-        </div>
-        <p className="banquet-extra-help">Thiệp chỉ hiển thị giờ tổ chức. Bật để thêm giờ đón khách và khai tiệc.</p>
-        {!d.hideWelcomeTimes && (
-          <Row>
-            <Field label="Giờ đón khách" half>
-              <input
-                type="time"
-                className="input sched-time-input"
-                value={d.welcomeTime}
-                onChange={(e) => set({ welcomeTime: e.target.value })}
-                onClick={(e) => {
-                  try {
-                    (e.currentTarget as any).showPicker?.();
-                  } catch {}
-                }}
-              />
-            </Field>
-            <Field label="Giờ khai tiệc" half>
-              <input
-                type="time"
-                className="input sched-time-input"
-                value={d.startTime}
-                onChange={(e) => set({ startTime: e.target.value })}
-                onClick={(e) => {
-                  try {
-                    (e.currentTarget as any).showPicker?.();
-                  } catch {}
-                }}
-              />
-            </Field>
-          </Row>
-        )}
-      </div>
 
-      <div className="banquet-row-toggle">
-        <span className="banquet-row-title">Đồng hồ đếm ngược</span>
-        <div className="banquet-toggle-wrap">
-          <span className="banquet-toggle-status">{d.countdown ? "Hiện" : "Ẩn"}</span>
-          <Toggle on={d.countdown} onChange={(v) => set({ countdown: v })} />
-        </div>
-      </div>
+          <div className="banquet-row-toggle">
+            <span className="banquet-row-title">Đồng hồ đếm ngược</span>
+            <div className="banquet-toggle-wrap">
+              <span className="banquet-toggle-status">{d.countdown ? "Hiện" : "Ẩn"}</span>
+              <Toggle on={d.countdown} onChange={(v) => set({ countdown: v })} />
+            </div>
+          </div>
 
-      <Field label="Tiêu đề mục địa điểm">
-        <Input
-          value={d.locTitle || "Tiệc cưới sẽ tổ chức tại"}
-          placeholder="Tiệc cưới sẽ tổ chức tại"
-          onChange={(e) => set({ locTitle: e.target.value })}
-        />
-      </Field>
+          <Field label="Tiêu đề mục địa điểm">
+            <Input
+              value={d.locTitle || "Tiệc cưới sẽ tổ chức tại"}
+              placeholder="Tiệc cưới sẽ tổ chức tại"
+              onChange={(e) => set({ locTitle: e.target.value })}
+            />
+          </Field>
 
-      <Field label="Địa chỉ">
-        <Textarea
-          rows={3}
-          placeholder="Địa chỉ tiệc cưới"
-          value={d.address}
-          onChange={(e) => set({ address: e.target.value })}
-        />
-      </Field>
+          <Field label="Địa chỉ">
+            <Textarea
+              rows={3}
+              placeholder="Địa chỉ tiệc cưới"
+              value={d.address}
+              onChange={(e) => set({ address: e.target.value })}
+            />
+          </Field>
 
-      <div className="banquet-row-toggle">
-        <span className="banquet-row-title">Bản đồ</span>
-        <div className="banquet-toggle-wrap">
-          <span className="banquet-toggle-status">{d.showMap ? "Hiện" : "Ẩn"}</span>
-          <Toggle on={d.showMap} onChange={(v) => set({ showMap: v })} />
-        </div>
-      </div>
-      <Helper>Bản đồ nằm trong phần này, nên ẩn cả phần thì bản đồ cũng ẩn theo, và công tắc riêng của bản đồ nằm ngay ở đây.</Helper>
+          <div className="banquet-row-toggle">
+            <span className="banquet-row-title">Bản đồ</span>
+            <div className="banquet-toggle-wrap">
+              <span className="banquet-toggle-status">{d.showMap ? "Hiện" : "Ẩn"}</span>
+              <Toggle on={d.showMap} onChange={(v) => set({ showMap: v })} />
+            </div>
+          </div>
+          <Helper>Bản đồ nằm trong phần này, nên ẩn cả phần thì bản đồ cũng ẩn theo, và công tắc riêng của bản đồ nằm ngay ở đây.</Helper>
 
-      <MapBox d={d} set={set} />
+          {d.showMap && <MapBox d={d} set={set} />}
+        </>
+      )}
     </Section>
   );
 }
 
 function MapBox({ d, set }: P) {
-  const [edit, setEdit] = useState(false);
-
-  if (edit) {
-    return (
-      <div className="banquet-map-card edit-mode">
-        <div className="banquet-map-edit-header">
-          <span className="banquet-map-edit-title">Địa chỉ bản đồ</span>
-          <button type="button" className="banquet-map-cancel" onClick={() => setEdit(false)}>
-            Hủy
-          </button>
-        </div>
-
-        <textarea
-          className="input banquet-map-textarea"
-          rows={3}
-          placeholder="Nhập địa chỉ hoặc dán link Google Maps / Apple Maps"
-          value={d.mapUrl}
-          onChange={(e) => set({ mapUrl: e.target.value })}
-        />
-
-        <div className="banquet-map-footer">
-          <span>Nhập địa chỉ, tọa độ, hoặc dán link Google Maps / Apple Maps · </span>
-          <a
-            href="#guide"
-            className="banquet-map-guide-link"
-            onClick={(e) => {
-              e.preventDefault();
-              alert("Hướng dẫn: Mở Google Maps / Apple Maps, tìm địa điểm tổ chức của bạn, bấm Chia sẻ -> Sao chép liên kết rồi dán vào đây.");
-            }}
-          >
-            ▷ Xem video hướng dẫn
-          </a>
-        </div>
-      </div>
-    );
-  }
-
   return (
-    <div className="banquet-map-card">
-      <div className="banquet-map-content">
-        <p className="banquet-map-text">
-          Bản đồ tự động hiển thị theo địa chỉ tiệc cưới. Chỉ nên thay đổi nếu vị trí trên bản đồ không chính xác.
-        </p>
-        <button type="button" className="banquet-map-link" onClick={() => setEdit(true)}>
-          Thay đổi
+    <div className="banquet-map-card edit-mode">
+      <div className="banquet-map-edit-header">
+        <span className="banquet-map-edit-title">Địa chỉ bản đồ</span>
+        <button
+          type="button"
+          className="banquet-map-cancel"
+          onClick={() => set({ mapUrl: "" })}
+        >
+          Hủy
         </button>
+      </div>
+
+      <textarea
+        className="input banquet-map-textarea"
+        rows={3}
+        placeholder="Nhập địa chỉ hoặc dán link Google Maps / Apple Maps"
+        value={d.mapUrl}
+        onChange={(e) => set({ mapUrl: e.target.value })}
+      />
+
+      <div className="banquet-map-footer">
+        <span>Nhập địa chỉ, tọa độ, hoặc dán link Google Maps / Apple Maps · </span>
+        <a
+          href="#guide"
+          className="banquet-map-guide-link"
+          onClick={(e) => {
+            e.preventDefault();
+            alert("Hướng dẫn: Mở Google Maps / Apple Maps, tìm địa điểm tổ chức của bạn, bấm Chia sẻ -> Sao chép liên kết rồi dán vào đây.");
+          }}
+        >
+          ▷ Xem video hướng dẫn
+        </a>
       </div>
     </div>
   );
@@ -579,35 +619,44 @@ export function Schedule({ d, set }: P) {
         </div>
       ) : (
         <div className="space-y-3 pt-2">
-        {d.sched.map((s, i) => (
+          <Field label="Tiêu đề">
+            <Input
+              value={d.schedTitle || "LỊCH TRÌNH NGÀY CƯỚI"}
+              placeholder="LỊCH TRÌNH NGÀY CƯỚI"
+              onChange={(e) => set({ schedTitle: e.target.value })}
+            />
+          </Field>
+          {d.sched.map((s, i) => (
           <div className="sched-card" key={i}>
             <div className="sched-card-header">
               <span className="sched-card-title">Hoạt động {i + 1}</span>
               <div className="sched-card-actions">
-                <button
-                  type="button"
-                  className="sched-btn-icon"
-                  disabled={i === 0}
-                  onClick={() => move(i, i - 1)}
-                  aria-label="Di chuyển lên"
-                  title="Di chuyển lên"
-                >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7-7 7 7" />
-                  </svg>
-                </button>
-                <button
-                  type="button"
-                  className="sched-btn-icon"
-                  disabled={i === d.sched.length - 1}
-                  onClick={() => move(i, i + 1)}
-                  aria-label="Di chuyển xuống"
-                  title="Di chuyển xuống"
-                >
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
+                {i > 0 && (
+                  <button
+                    type="button"
+                    className="sched-btn-icon"
+                    onClick={() => move(i, i - 1)}
+                    aria-label="Di chuyển lên"
+                    title="Di chuyển lên"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7-7 7 7" />
+                    </svg>
+                  </button>
+                )}
+                {i < d.sched.length - 1 && (
+                  <button
+                    type="button"
+                    className="sched-btn-icon"
+                    onClick={() => move(i, i + 1)}
+                    aria-label="Di chuyển xuống"
+                    title="Di chuyển xuống"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                )}
                 <button
                   type="button"
                   className="sched-btn-icon delete"
@@ -624,23 +673,22 @@ export function Schedule({ d, set }: P) {
             <div className="sched-card-body">
               <div className="sched-input-group">
                 <label>Giờ</label>
-                <div className="sched-time-input-wrap">
-                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="9" strokeWidth="1.8" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M12 7v5l3 3" />
-                  </svg>
-                  <input
-                    type="time"
-                    className="input sched-time-input"
-                    value={s.time}
-                    onChange={(e) => upd(i, { time: e.target.value })}
-                    onClick={(e) => {
-                      try {
-                        (e.currentTarget as any).showPicker?.();
-                      } catch {}
-                    }}
-                  />
-                </div>
+                <input
+                  type="time"
+                  className="input sched-time-input"
+                  value={s.time}
+                  onChange={(e) => upd(i, { time: e.target.value })}
+                  onClick={(e) => {
+                    try {
+                      (e.currentTarget as any).showPicker?.();
+                    } catch {}
+                  }}
+                  onKeyDown={(e) => {
+                    if (!/[0-9]/.test(e.key) && !["Backspace", "Delete", "ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Tab", "Enter"].includes(e.key)) {
+                      e.preventDefault();
+                    }
+                  }}
+                />
               </div>
               <div className="sched-input-group">
                 <label>Nội dung</label>
@@ -666,7 +714,7 @@ export function Schedule({ d, set }: P) {
           Thêm hoạt động
         </button>
 
-        <Helper>Bật để hiển thị lịch trình các hoạt động trong ngày cưới (đón khách, lễ gia tiên, khai tiệc...) cho khách mời.</Helper>
+        <Helper>Khách mời sẽ yên tâm hơn khi biết: đến lúc nào, các nghi thức diễn ra khi nào, về lúc nào. Chỉ cần 5-7 hoạt động là vừa.</Helper>
         </div>
       )}
     </Section>
@@ -1313,23 +1361,48 @@ export function Share({ d, set }: P) {
       </Helper>
 
       {d.shareStyle === "photo" && (
-        <div className="share-upload-box" onClick={() => fileInputRef.current?.click()}>
-          <input
-            ref={fileInputRef}
-            type="file"
-            accept="image/*"
-            hidden
-            onChange={(e) => {
-              onPick(e.target.files);
-              e.target.value = "";
+        <div className="share-actions-row">
+          <button
+            type="button"
+            className="share-action-card"
+            onClick={() => {
+              if (d.photos && d.photos.length > 0) {
+                set({ customSharePhoto: d.photos[0] });
+              } else {
+                alert("Thư viện ảnh hiện chưa có ảnh nào. Vui lòng thêm ảnh vào Thư viện ảnh trước.");
+              }
             }}
-          />
-          <svg width="22" height="22" fill="none" stroke="#fc0081" viewBox="0 0 24 24" strokeWidth="2">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />
-            <path strokeLinecap="round" strokeLinejoin="round" d="m7 9 5-5 5 5" />
-            <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v12" />
-          </svg>
-          <span className="share-upload-text">Tải ảnh mới</span>
+          >
+            <svg width="22" height="22" fill="none" stroke="#fc0081" viewBox="0 0 24 24" strokeWidth="1.8">
+              <rect x="3" y="3" width="18" height="18" rx="2" strokeLinecap="round" strokeLinejoin="round" />
+              <circle cx="8.5" cy="8.5" r="1.5" fill="#fc0081" />
+              <path d="M21 15l-5-5L5 21" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            <span className="share-action-text">Chọn từ thư viện</span>
+          </button>
+
+          <button
+            type="button"
+            className="share-action-card"
+            onClick={() => fileInputRef.current?.click()}
+          >
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept="image/*"
+              hidden
+              onChange={(e) => {
+                onPick(e.target.files);
+                e.target.value = "";
+              }}
+            />
+            <svg width="22" height="22" fill="none" stroke="#fc0081" viewBox="0 0 24 24" strokeWidth="2">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="m7 9 5-5 5 5" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v12" />
+            </svg>
+            <span className="share-action-text">Tải ảnh mới</span>
+          </button>
         </div>
       )}
 
@@ -1337,8 +1410,13 @@ export function Share({ d, set }: P) {
 
       <div className="share-og-card">
         <div className="share-og-img-box">
-          {d.shareStyle === "photo" && d.customSharePhoto ? (
-            <img src={d.customSharePhoto} alt="Xem trước" className="share-og-img" />
+          {d.shareStyle === "photo" && (d.customSharePhoto || (d.photos && d.photos[0])) ? (
+            <div className="share-og-photo-container">
+              <img src={d.customSharePhoto || d.photos[0]} alt="Xem trước" className="share-og-img" />
+              <div className="share-og-photo-overlay">
+                <span className="share-og-photo-thiep">Thiệp Cưới</span>
+              </div>
+            </div>
           ) : (
             <div className="share-og-envelope-cover">
               <div className="share-og-floral left" />

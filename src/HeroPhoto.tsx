@@ -65,22 +65,80 @@ export function CropModal({ src, zoom0, x0, y0, onApply, onClose, title = "Đi�
 
 export default function HeroPhoto({ d, set }: P) {
   const [crop, setCrop] = useState(false);
+  const [uploading, setUploading] = useState(false);
+  const [uploadProgress, setUploadProgress] = useState(0);
+  const [uploadSuccess, setUploadSuccess] = useState(false);
   const file = useRef<HTMLInputElement>(null);
   const icon = (
     <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
   );
 
-  const pick = (files: FileList | null) => {
+  const pick = async (files: FileList | null) => {
     const f = files?.[0];
     if (!f) return;
-    set({ heroPhoto: URL.createObjectURL(f), heroZoom: 1, heroX: 50, heroY: 50 });
-    setCrop(true);
+    setUploading(true);
+    setUploadProgress(0);
+    setUploadSuccess(false);
+
+    // Realistic upload simulation
+    for (let p = 15; p <= 100; p += 25) {
+      await new Promise((r) => setTimeout(r, 120));
+      setUploadProgress(p);
+    }
+
+    const url = URL.createObjectURL(f);
+    set({ heroPhoto: url, heroZoom: 1, heroX: 50, heroY: 50 });
+    setUploading(false);
+    setUploadSuccess(true);
+    setTimeout(() => {
+      setUploadSuccess(false);
+      setCrop(true);
+    }, 1200);
   };
 
   return (
     <Section title="Ảnh đầu thiệp" icon={icon} enabled={d.heroOn} onEnabled={(v) => set({ heroOn: v })} enabledLabel="Hiện">
       <input ref={file} type="file" accept="image/*" hidden onChange={(e) => { pick(e.target.files); e.target.value = ""; }} />
-      {!d.heroPhoto ? (
+
+      {uploading ? (
+        <div className="hero-ed">
+          <span className="hero-lbl">Ảnh đầu thiệp</span>
+          <div className="hero-thumb hero-thumb-uploading">
+            <svg className="hero-thumb-bg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <path d="M21 15l-5-5L5 21" />
+            </svg>
+            <div className="hero-uploading-overlay">
+              <span className="spinner" style={{ width: 22, height: 22, borderWidth: 2 }} />
+              <span className="hero-up-status">Đang tải lên...</span>
+              <span className="hero-up-pct">{uploadProgress}%</span>
+            </div>
+          </div>
+          <div className="hero-btns">
+            <button type="button" className="hero-btn-disabled" disabled>Tải lên</button>
+          </div>
+          <p className="hero-help">JPG, PNG, GIF, WebP, HEIC</p>
+          <p className="hero-help2">Nên dùng ảnh dọc hoặc ảnh cặp đôi toàn thân</p>
+        </div>
+      ) : uploadSuccess ? (
+        <div className="hero-ed">
+          <span className="hero-lbl">Ảnh đầu thiệp</span>
+          <div className="hero-thumb hero-thumb-success">
+            <div className="hero-success-check">
+              <svg width="32" height="32" fill="none" stroke="#22c55e" viewBox="0 0 24 24" strokeWidth="2.5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="m5 13 4 4L19 7" />
+              </svg>
+            </div>
+          </div>
+          <div className="hero-btns">
+            <button type="button" className="hero-btn primary" onClick={() => file.current?.click()}>Đổi ảnh</button>
+            <button type="button" className="hero-btn danger" onClick={() => { set({ heroPhoto: "" }); setUploadSuccess(false); }}>Xoá</button>
+          </div>
+          <p className="hero-help">JPG, PNG, GIF, WebP, HEIC</p>
+          <p className="hero-help2">Nên dùng ảnh dọc hoặc ảnh cặp đôi toàn thân</p>
+        </div>
+      ) : !d.heroPhoto ? (
         <div className="hero-empty-container">
           <div className="hero-empty-thumb">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -92,8 +150,8 @@ export default function HeroPhoto({ d, set }: P) {
           <button type="button" className="hero-upload-btn-outline" onClick={() => file.current?.click()}>
             Tải lên
           </button>
-          <p className="hero-help">Hỗ trợ: JPG, PNG, GIF, WebP, HEIC. Dung lượng tối đa 10MB.</p>
-          <p className="hero-help2">Nên dùng ảnh chụp dọc tỷ lệ 9:16 hoặc 3:4 để hiển thị đẹp nhất.</p>
+          <p className="hero-help">JPG, PNG, GIF, WebP, HEIC</p>
+          <p className="hero-help2">Nên dùng ảnh dọc hoặc ảnh cặp đôi toàn thân</p>
         </div>
       ) : (
         <div className="hero-ed">
@@ -109,6 +167,7 @@ export default function HeroPhoto({ d, set }: P) {
           <p className="hero-help2">Nên dùng ảnh dọc hoặc ảnh cặp đôi toàn thân</p>
         </div>
       )}
+
       {crop && d.heroPhoto && (
         <CropModal src={d.heroPhoto} zoom0={d.heroZoom} x0={d.heroX} y0={d.heroY}
           onApply={(z, x, y) => set({ heroZoom: z, heroX: x, heroY: y })} onClose={() => setCrop(false)} />
