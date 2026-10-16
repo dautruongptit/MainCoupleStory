@@ -346,77 +346,501 @@ export function Guestbook({ d, set }: P) {
   );
 }
 
-const WHO: [Gift["who"], string][] = [["bride", "Cô dâu"], ["groom", "Chú rể"], ["custom", "Tùy chọn"]];
+export const VN_BANKS = [
+  { code: "ICB", name: "VietinBank", bin: "970415", shortName: "VietinBank" },
+  { code: "VCB", name: "Vietcombank", bin: "970436", shortName: "Vietcombank" },
+  { code: "BIDV", name: "BIDV", bin: "970418", shortName: "BIDV" },
+  { code: "MB", name: "MB Bank", bin: "970422", shortName: "MB Bank" },
+  { code: "TCB", name: "Techcombank", bin: "970407", shortName: "Techcombank" },
+  { code: "ACB", name: "ACB", bin: "970416", shortName: "ACB" },
+  { code: "VPB", name: "VPBank", bin: "970432", shortName: "VPBank" },
+  { code: "TPB", name: "TPBank", bin: "970423", shortName: "TPBank" },
+  { code: "VBA", name: "Agribank", bin: "970405", shortName: "Agribank" },
+  { code: "STB", name: "Sacombank", bin: "970403", shortName: "Sacombank" },
+  { code: "HDB", name: "HDBank", bin: "970437", shortName: "HDBank" },
+  { code: "VIB", name: "VIB", bin: "970441", shortName: "VIB" },
+  { code: "SHB", name: "SHB", bin: "970443", shortName: "SHB" },
+  { code: "MSB", name: "MSB", bin: "970426", shortName: "MSB" },
+  { code: "OCB", name: "OCB", bin: "970448", shortName: "OCB" },
+  { code: "SEAB", name: "SeABank", bin: "970440", shortName: "SeABank" },
+  { code: "CAKE", name: "Cake by VPBank", bin: "546034", shortName: "Cake" },
+  { code: "TIMO", name: "Timo", bin: "963388", shortName: "Timo" },
+];
 
 export function GiftBox({ d, set }: P) {
-  const [pick, setPick] = useState(false);
-  const [who, setWho] = useState<Gift["who"]>("bride");
-  const [bankName, setBankName] = useState("Vietcombank");
-  const [bankCode, setBankCode] = useState("VCB");
+  const [openModal, setOpenModal] = useState(false);
+  const [openOtherModal, setOpenOtherModal] = useState(false);
+  const [editId, setEditId] = useState<string | null>(null);
+
+  const [who, setWho] = useState<Gift["who"]>("groom");
+  const [customLabel, setCustomLabel] = useState("");
+  const [selectedBank, setSelectedBank] = useState(VN_BANKS[0]);
+  const [bankSearch, setBankSearch] = useState("");
   const [accountNumber, setAccountNumber] = useState("");
   const [accountName, setAccountName] = useState("");
 
-  const close = () => {
-    setPick(false);
+  const handleOpenAdd = () => {
+    setEditId(null);
+    setWho("groom");
+    setCustomLabel("");
+    setSelectedBank(VN_BANKS[0]);
     setAccountNumber("");
     setAccountName("");
+    setBankSearch("");
+    setOpenModal(true);
   };
 
-  const save = () => {
-    if (!accountNumber.trim() || !accountName.trim()) return;
-    const qrUrl = `https://api.vietqr.io/image/970436-${accountNumber.trim()}-print.png?accountName=${encodeURIComponent(accountName.trim().toUpperCase())}`;
-    const newGift: Gift = {
-      id: "gift-" + Date.now(),
-      who,
-      bankName: bankName.trim(),
-      bankCode: bankCode.trim(),
-      accountNumber: accountNumber.trim(),
-      accountName: accountName.trim().toUpperCase(),
-      qrUrl,
+  const handleEdit = (g: Gift) => {
+    setEditId(g.id);
+    setWho(g.who);
+    setCustomLabel(g.customLabel || "");
+    const found = VN_BANKS.find((b) => b.code === g.bankCode) || {
+      code: g.bankCode,
+      name: g.bankName,
+      bin: g.bankBin || "970415",
+      shortName: g.bankName,
     };
-    set({ gifts: [...d.gifts, newGift] });
-    close();
+    setSelectedBank(found);
+    setAccountNumber(g.accountNumber);
+    setAccountName(g.accountName);
+    setBankSearch("");
+    setOpenModal(true);
   };
 
-  const whoLabel = (w: Gift["who"]) => WHO.find(([v]) => v === w)?.[1] || "Khác";
+  const handleDelete = (id: string) => {
+    set({ gifts: d.gifts.filter((g) => g.id !== id) });
+  };
+
+  const handleSave = () => {
+    if (!accountNumber.trim() || !accountName.trim()) return;
+    const cleanNum = accountNumber.trim().replace(/[\s-]+/g, "");
+    const cleanName = accountName.trim().toUpperCase();
+    const qrUrl = `https://api.vietqr.io/image/${selectedBank.bin || "970415"}-${cleanNum}-print.png?accountName=${encodeURIComponent(cleanName)}`;
+
+    if (editId) {
+      set({
+        gifts: d.gifts.map((g) =>
+          g.id === editId
+            ? {
+                ...g,
+                who,
+                customLabel: who === "custom" ? customLabel.trim() : undefined,
+                bankName: selectedBank.name,
+                bankCode: selectedBank.code,
+                bankBin: selectedBank.bin,
+                bankLogo: `https://api.vietqr.io/img/${selectedBank.code}.png`,
+                accountNumber: cleanNum,
+                accountName: cleanName,
+                qrUrl,
+              }
+            : g
+        ),
+      });
+    } else {
+      const newGift: Gift = {
+        id: "gift-" + Date.now(),
+        who,
+        customLabel: who === "custom" ? customLabel.trim() : undefined,
+        bankName: selectedBank.name,
+        bankCode: selectedBank.code,
+        bankBin: selectedBank.bin,
+        bankLogo: `https://api.vietqr.io/img/${selectedBank.code}.png`,
+        accountNumber: cleanNum,
+        accountName: cleanName,
+        qrUrl,
+      };
+      set({ gifts: [...d.gifts, newGift] });
+    }
+    setOpenModal(false);
+  };
+
+  const getWhoTitle = (g: Gift) => {
+    if (g.who === "custom" && g.customLabel) return g.customLabel;
+    if (g.who === "groom") return "Chú Rể";
+    if (g.who === "bride") return "Cô Dâu";
+    return "Tùy chọn";
+  };
+
+  const filteredBanks = VN_BANKS.filter(
+    (b) =>
+      b.name.toLowerCase().includes(bankSearch.toLowerCase()) ||
+      b.code.toLowerCase().includes(bankSearch.toLowerCase())
+  );
 
   return (
-    <Section title={d.giftTitle} onTitle={(v) => set({ giftTitle: v })} enabled={d.giftOn} onEnabled={(v) => set({ giftOn: v })} enabledLabel="Hiện">
-      {d.gifts.length === 0 && <div className="empty-box">Chưa có phương thức nào. Nhấn nút bên dưới để thêm.</div>}
-      {d.gifts.map((g, i) => (
-        <div className="mini-card" key={g.id || i}>
-          <div>
-            <strong>{g.bankName} ({g.bankCode}) · {whoLabel(g.who)}</strong>
-            <Helper>STK: {g.accountNumber} - Chủ TK: {g.accountName}</Helper>
-          </div>
-          <button className="icon-ghost sm" aria-label="Xoá" onClick={() => set({ gifts: d.gifts.filter((_, j) => j !== i) })}>{Icon.trash()}</button>
-        </div>
-      ))}
-      <OutlineButton onClick={() => setPick(true)}>{Icon.plus(16)} Thêm tài khoản ngân hàng</OutlineButton>
+    <Section
+      icon={
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+        </svg>
+      }
+      title={d.giftTitle || "Hộp Quà Mừng"}
+      onTitle={(v) => set({ giftTitle: v })}
+      enabled={d.giftOn}
+      onEnabled={(v) => set({ giftOn: v })}
+      enabledLabel="Hiện"
+    >
+      <div className="space-y-3 pt-1">
+        {d.gifts.length === 0 ? (
+          <div className="empty-box">Chưa có tài khoản nào. Nhấn nút bên dưới để thêm.</div>
+        ) : (
+          d.gifts.map((g) => (
+            <div className="gift-bank-item" key={g.id}>
+              <div
+                className="gift-bank-logo-wrap"
+                style={{ backgroundColor: "rgba(225, 29, 72, 0.08)" }}
+              >
+                <img
+                  alt={g.bankName}
+                  className="w-full h-full object-contain p-1.5"
+                  src={g.bankLogo || `https://api.vietqr.io/img/${g.bankCode}.png`}
+                  onError={(e) => {
+                    (e.currentTarget as HTMLElement).style.display = "none";
+                  }}
+                />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-semibold leading-tight break-words">{getWhoTitle(g)}</p>
+                <p className="text-xs text-base-content/70 mt-1 break-words">{g.accountName}</p>
+                <p className="text-xs font-mono text-base-content/70 mt-0.5 break-all">{g.accountNumber}</p>
+                <p className="text-xs text-base-content/50 mt-0.5 break-words">{g.bankName}</p>
+              </div>
+              <div className="flex items-center gap-0.5 shrink-0">
+                <button
+                  type="button"
+                  className="btn-icon-sq"
+                  aria-label="Sửa"
+                  onClick={() => handleEdit(g)}
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  className="btn-icon-sq text-error"
+                  aria-label="Xóa"
+                  onClick={() => handleDelete(g.id)}
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          ))
+        )}
 
-      {pick && (
-        <Modal title="Thêm tài khoản mừng cưới" onClose={close}>
-          <div className="lbl">Áp dụng cho</div>
-          <div className="chips">
-            {WHO.map(([v, l]) => (
-              <button key={v} className={who === v ? "chip active" : "chip"} onClick={() => setWho(v)}>{l}</button>
-            ))}
+        {/* Action Buttons */}
+        <div className="space-y-2 mt-2">
+          <button
+            type="button"
+            className="btn-outline-full"
+            onClick={handleOpenAdd}
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
+            </svg>
+            Thêm tài khoản ngân hàng
+          </button>
+          <button
+            type="button"
+            className="btn-ghost-sm"
+            data-bot-screenshot-id="editor-gift-add-method"
+            onClick={() => setOpenOtherModal(true)}
+          >
+            Phương thức khác
+          </button>
+        </div>
+
+        {/* Display Mode Selector (3 Tabs) */}
+        <div className="mt-4">
+          <p className="text-sm font-medium mb-2" style={{ fontWeight: 600, color: "var(--ink)" }}>Kiểu hiển thị</p>
+          <div className="display-mode-group">
+            <button
+              type="button"
+              className={`display-mode-btn ${d.giftDisplayMode === "gift_box" ? "active" : ""}`}
+              onClick={() => set({ giftDisplayMode: "gift_box" })}
+            >
+              <span className="shrink-0" aria-hidden="true">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M20 12v8a1 1 0 01-1 1H5a1 1 0 01-1-1v-8M2 7h20v5H2zM12 21V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z" />
+                </svg>
+              </span>
+              <span className="block text-balance">Hộp quà</span>
+            </button>
+            <button
+              type="button"
+              className={`display-mode-btn ${d.giftDisplayMode === "envelope" ? "active" : ""}`}
+              onClick={() => set({ giftDisplayMode: "envelope" })}
+            >
+              <span className="shrink-0" aria-hidden="true">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </span>
+              <span className="block text-balance">Phong bì</span>
+            </button>
+            <button
+              type="button"
+              className={`display-mode-btn ${d.giftDisplayMode === "qr_inline" ? "active" : ""}`}
+              onClick={() => set({ giftDisplayMode: "qr_inline" })}
+            >
+              <span className="shrink-0" aria-hidden="true">
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M3 3h8v8H3V3zm2 2v4h4V5H5z" />
+                  <rect x="6" y="6" width="2" height="2" />
+                  <path d="M13 3h8v8h-8V3zm2 2v4h4V5h-4z" />
+                  <rect x="16" y="6" width="2" height="2" />
+                  <path d="M3 13h8v8H3v-8zm2 2v4h4v-4H5z" />
+                  <rect x="6" y="16" width="2" height="2" />
+                  <rect x="13" y="13" width="3" height="3" />
+                  <rect x="18" y="13" width="3" height="3" />
+                  <rect x="13" y="18" width="3" height="3" />
+                  <rect x="18" y="18" width="3" height="3" />
+                </svg>
+              </span>
+              <span className="block text-balance">Hiện QR trực tiếp</span>
+            </button>
           </div>
-          <Field label="Tên ngân hàng">
-            <Input value={bankName} onChange={(e) => setBankName(e.target.value)} placeholder="Ví dụ: Vietcombank, MB Bank, VietinBank..." />
-          </Field>
-          <Field label="Mã ngân hàng (viết tắt)">
-            <Input value={bankCode} onChange={(e) => setBankCode(e.target.value)} placeholder="Ví dụ: VCB, MB, ICB, TCB..." />
-          </Field>
-          <Field label="Số tài khoản *">
-            <Input autoFocus value={accountNumber} onChange={(e) => setAccountNumber(e.target.value)} placeholder="Số tài khoản ngân hàng" />
-          </Field>
-          <Field label="Tên chủ tài khoản *">
-            <Input value={accountName} onChange={(e) => setAccountName(e.target.value)} placeholder="LÊ NGỌC ÁNH" />
-          </Field>
-          <div className="modal-actions">
-            <button className="btn-outline" onClick={close}>Hủy</button>
-            <button className="btn-primary" disabled={!accountNumber.trim() || !accountName.trim()} onClick={save}>Lưu</button>
+        </div>
+      </div>
+
+      {/* MODAL 1: ADD / EDIT VIETQR BANK */}
+      {openModal && (
+        <Modal
+          title={editId ? "Sửa tài khoản ngân hàng" : "Thêm tài khoản ngân hàng"}
+          onClose={() => setOpenModal(false)}
+        >
+          <div className="space-y-4 pt-1">
+            {/* For Who */}
+            <div>
+              <label className="lbl">Dành cho</label>
+              <div className="chips">
+                <button
+                  type="button"
+                  className={who === "groom" ? "chip active" : "chip"}
+                  onClick={() => setWho("groom")}
+                >
+                  Chú Rể
+                </button>
+                <button
+                  type="button"
+                  className={who === "bride" ? "chip active" : "chip"}
+                  onClick={() => setWho("bride")}
+                >
+                  Cô Dâu
+                </button>
+                <button
+                  type="button"
+                  className={who === "custom" ? "chip active" : "chip"}
+                  onClick={() => setWho("custom")}
+                >
+                  Tùy chọn
+                </button>
+              </div>
+            </div>
+
+            {who === "custom" && (
+              <Field label="Tiêu đề hiển thị">
+                <Input
+                  placeholder="VD: Gia đình Chú Rể, Bố Mẹ..."
+                  value={customLabel}
+                  onChange={(e) => setCustomLabel(e.target.value)}
+                />
+              </Field>
+            )}
+
+            {/* Select Bank */}
+            <div>
+              <label className="lbl">Chọn ngân hàng</label>
+              <Input
+                placeholder="Tìm tên hoặc mã ngân hàng..."
+                value={bankSearch}
+                onChange={(e) => setBankSearch(e.target.value)}
+                style={{ marginBottom: 8 }}
+              />
+              <div className="bank-select-grid">
+                {filteredBanks.slice(0, 12).map((b) => {
+                  const sel = selectedBank.code === b.code;
+                  return (
+                    <button
+                      type="button"
+                      key={b.code}
+                      className={`bank-pill ${sel ? "selected" : ""}`}
+                      onClick={() => setSelectedBank(b)}
+                    >
+                      <img
+                        src={`https://api.vietqr.io/img/${b.code}.png`}
+                        alt={b.name}
+                        className="w-5 h-5 object-contain"
+                        onError={(e) => {
+                          (e.currentTarget as HTMLElement).style.display = "none";
+                        }}
+                      />
+                      <span>{b.shortName}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Account Number */}
+            <Field label="Số tài khoản *">
+              <Input
+                autoFocus
+                placeholder="Nhập số tài khoản"
+                value={accountNumber}
+                onChange={(e) => setAccountNumber(e.target.value)}
+              />
+            </Field>
+
+            {/* Account Name */}
+            <Field label="Tên chủ tài khoản *">
+              <Input
+                placeholder="VD: NGUYEN VAN A"
+                value={accountName}
+                onChange={(e) => setAccountName(e.target.value.toUpperCase())}
+              />
+            </Field>
+
+            {/* Actions */}
+            <div className="modal-actions">
+              <button
+                type="button"
+                className="btn-outline"
+                onClick={() => setOpenModal(false)}
+              >
+                Hủy
+              </button>
+              <button
+                type="button"
+                className="btn-primary"
+                disabled={!accountNumber.trim() || !accountName.trim()}
+                onClick={handleSave}
+              >
+                Lưu
+              </button>
+            </div>
+          </div>
+        </Modal>
+      )}
+
+      {/* MODAL 2: OTHER PAYMENT METHODS */}
+      {openOtherModal && (
+        <Modal
+          title="Chọn phương thức nhận quà"
+          onClose={() => setOpenOtherModal(false)}
+        >
+          <div className="space-y-4 pt-1">
+            <p className="text-xs uppercase opacity-60 font-semibold">Phổ biến</p>
+            <div className="payment-methods-grid">
+              <button
+                type="button"
+                className="payment-method-card"
+                onClick={() => {
+                  setOpenOtherModal(false);
+                  handleOpenAdd();
+                }}
+              >
+                <div
+                  className="payment-icon-wrap"
+                  style={{ backgroundColor: "rgba(225, 29, 72, 0.08)" }}
+                >
+                  <img
+                    alt="VietQR"
+                    className="w-full h-full object-contain p-1"
+                    src="https://chungdoi.com/icons/payments/vietqr.svg"
+                  />
+                </div>
+                <span className="payment-title">VietQR</span>
+              </button>
+
+              <button
+                type="button"
+                className="payment-method-card"
+                onClick={() => {
+                  setOpenOtherModal(false);
+                  handleOpenAdd();
+                }}
+              >
+                <div
+                  className="payment-icon-wrap"
+                  style={{ backgroundColor: "rgba(0, 48, 135, 0.08)" }}
+                >
+                  <img
+                    alt="PayPal"
+                    className="w-full h-full object-contain p-1"
+                    src="https://chungdoi.com/icons/payments/paypal.svg"
+                  />
+                </div>
+                <span className="payment-title">PayPal</span>
+              </button>
+
+              <button
+                type="button"
+                className="payment-method-card"
+                onClick={() => {
+                  setOpenOtherModal(false);
+                  handleOpenAdd();
+                }}
+              >
+                <div
+                  className="payment-icon-wrap"
+                  style={{ backgroundColor: "rgba(22, 51, 0, 0.08)" }}
+                >
+                  <img
+                    alt="Wise"
+                    className="w-full h-full object-contain p-1"
+                    src="https://chungdoi.com/icons/payments/wise.svg"
+                  />
+                </div>
+                <span className="payment-title">Wise</span>
+              </button>
+
+              <button
+                type="button"
+                className="payment-method-card"
+                data-bot-screenshot-id="editor-gift-registry"
+                onClick={() => {
+                  setOpenOtherModal(false);
+                  handleOpenAdd();
+                }}
+              >
+                <div
+                  className="payment-icon-wrap"
+                  style={{ backgroundColor: "rgba(124, 58, 237, 0.08)" }}
+                >
+                  <img
+                    alt="Danh sách quà cưới"
+                    className="w-full h-full object-contain p-1"
+                    src="https://chungdoi.com/icons/payments/registry.svg"
+                  />
+                </div>
+                <span className="payment-title">Danh sách quà cưới</span>
+              </button>
+
+              <button
+                type="button"
+                className="payment-method-card"
+                onClick={() => {
+                  setOpenOtherModal(false);
+                  handleOpenAdd();
+                }}
+              >
+                <div
+                  className="payment-icon-wrap"
+                  style={{ backgroundColor: "rgba(15, 118, 110, 0.08)" }}
+                >
+                  <img
+                    alt="Ngân hàng"
+                    className="w-full h-full object-contain p-1"
+                    src="https://api.vietqr.io/img/ICB.png"
+                  />
+                </div>
+                <span className="payment-title">Ngân hàng</span>
+              </button>
+            </div>
           </div>
         </Modal>
       )}

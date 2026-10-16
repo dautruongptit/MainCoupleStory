@@ -2,10 +2,14 @@ export type Wish = { name: string; msg: string; at: string };
 export type GiftMethod = {
   id: string;
   who: "groom" | "bride" | "custom";
+  type?: string;
   bankName: string;
   bankCode: string;
+  bankBin?: string;
+  bankLogo?: string;
   accountNumber: string;
   accountName: string;
+  customLabel?: string;
   qrUrl?: string;
 };
 export type Gift = GiftMethod;
@@ -86,6 +90,7 @@ export interface Inv {
   wishes: Wish[];
   giftOn: boolean;
   giftTitle: string;
+  giftDisplayMode: "gift_box" | "envelope" | "qr_inline";
   gifts: GiftMethod[];
   thanksOn: boolean;
   thanks: string;
@@ -210,24 +215,41 @@ export const defaultInv: Inv = {
   ],
   giftOn: true,
   giftTitle: "HỘP MỪNG CƯỚI",
+  giftDisplayMode: "envelope",
   gifts: [
     {
       id: "g1",
+      who: "groom",
+      bankName: "VietinBank",
+      bankCode: "ICB",
+      bankBin: "970415",
+      bankLogo: "https://api.vietqr.io/img/ICB.png",
+      accountNumber: "0399554682",
+      accountName: "TRẦN THẾ BẢO",
+      qrUrl: "https://api.vietqr.io/image/970415-0399554682-print.png?accountName=TRAN%20THE%20BAO",
+    },
+    {
+      id: "g2",
       who: "bride",
       bankName: "Vietcombank",
       bankCode: "VCB",
+      bankBin: "970436",
+      bankLogo: "https://api.vietqr.io/img/VCB.png",
       accountNumber: "099996586323",
       accountName: "LÊ NGỌC ÁNH",
       qrUrl: "https://api.vietqr.io/image/970436-099996586323-print.png?accountName=LE%20NGOC%20ANH",
     },
     {
-      id: "g2",
-      who: "groom",
-      bankName: "VietinBank",
-      bankCode: "ICB",
-      accountNumber: "0399554682",
-      accountName: "TRẦN THẾ BẢO",
-      qrUrl: "https://api.vietqr.io/image/970415-0399554682-print.png?accountName=TRAN%20THE%20BAO",
+      id: "g3",
+      who: "custom",
+      customLabel: "Gia đình",
+      bankName: "MB Bank",
+      bankCode: "MB",
+      bankBin: "970422",
+      bankLogo: "https://api.vietqr.io/img/MB.png",
+      accountNumber: "888866669999",
+      accountName: "GIA ĐÌNH CHÚ RỂ",
+      qrUrl: "https://api.vietqr.io/image/970422-888866669999-print.png?accountName=GIA%20DINH%20CHU%20RE",
     },
   ],
   thanksOn: true,

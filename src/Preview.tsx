@@ -33,7 +33,8 @@ export default function Preview({
   const [wishName, setWishName] = useState("");
   const [wishMsg, setWishMsg] = useState("");
   const [copiedBank, setCopiedBank] = useState<string | null>(null);
-  const [activeBankTab, setActiveBankTab] = useState<"bride" | "groom">("bride");
+  const [activeBankTab, setActiveBankTab] = useState<"all" | "groom" | "bride" | "custom">("all");
+  const [giftModalOpen, setGiftModalOpen] = useState(false);
   const [isPlayingMusic, setIsPlayingMusic] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -625,51 +626,221 @@ export default function Preview({
             <section className="sp-section sp-gift-sec">
               <h2 className="sp-sec-title">{d.giftTitle || "HỘP MỪNG CƯỚI"}</h2>
 
-              {/* Bank selector tabs */}
-              <div className="sp-gift-tabs">
+              {/* 3 TABS CHO CHỌN KIỂU HIỂN THỊ */}
+              <div className="sp-mode-preview-tabs">
                 <button
-                  className={`sp-gift-tab ${activeBankTab === "bride" ? "active" : ""}`}
-                  onClick={() => setActiveBankTab("bride")}
+                  type="button"
+                  className={`sp-mode-tab ${d.giftDisplayMode === "gift_box" ? "active" : ""}`}
+                  onClick={() => set({ giftDisplayMode: "gift_box" })}
                 >
-                  👰 Mừng cưới Cô dâu
+                  <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M20 12v8a1 1 0 01-1 1H5a1 1 0 01-1-1v-8M2 7h20v5H2zM12 21V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z" />
+                  </svg>
+                  <span>Hộp quà</span>
                 </button>
                 <button
-                  className={`sp-gift-tab ${activeBankTab === "groom" ? "active" : ""}`}
-                  onClick={() => setActiveBankTab("groom")}
+                  type="button"
+                  className={`sp-mode-tab ${d.giftDisplayMode === "envelope" ? "active" : ""}`}
+                  onClick={() => set({ giftDisplayMode: "envelope" })}
                 >
-                  🤵 Mừng cưới Chú rể
+                  <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <span>Phong bì</span>
+                </button>
+                <button
+                  type="button"
+                  className={`sp-mode-tab ${d.giftDisplayMode === "qr_inline" ? "active" : ""}`}
+                  onClick={() => set({ giftDisplayMode: "qr_inline" })}
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3 3h8v8H3V3zm2 2v4h4V5H5z" />
+                    <rect x="6" y="6" width="2" height="2" />
+                    <path d="M13 3h8v8h-8V3zm2 2v4h4V5h-4z" />
+                    <rect x="16" y="6" width="2" height="2" />
+                    <path d="M3 13h8v8H3v-8zm2 2v4h4v-4H5z" />
+                    <rect x="6" y="16" width="2" height="2" />
+                    <rect x="13" y="13" width="3" height="3" />
+                    <rect x="18" y="13" width="3" height="3" />
+                    <rect x="13" y="18" width="3" height="3" />
+                    <rect x="18" y="18" width="3" height="3" />
+                  </svg>
+                  <span>Hiện QR trực tiếp</span>
                 </button>
               </div>
 
-              {/* QR and Account Card */}
-              {currentGift && (
-                <div className="sp-bank-card">
-                  {currentGift.qrUrl && (
-                    <div className="sp-qr-box">
-                      <img src={currentGift.qrUrl} alt="VietQR Mừng cưới" />
-                      <p className="sp-qr-hint">Quét mã QR để mừng cưới qua ngân hàng</p>
-                    </div>
-                  )}
+              {/* MODE 1: QR INLINE */}
+              {d.giftDisplayMode === "qr_inline" && (
+                <>
+                  {/* 3 TABS CHO CHỌN NGƯỜI NHẬN QUÀ */}
+                  <div className="sp-gift-tabs">
+                    <button
+                      type="button"
+                      className={`sp-gift-tab ${activeBankTab === "all" ? "active" : ""}`}
+                      onClick={() => setActiveBankTab("all")}
+                    >
+                      ✨ Tất cả
+                    </button>
+                    <button
+                      type="button"
+                      className={`sp-gift-tab ${activeBankTab === "groom" ? "active" : ""}`}
+                      onClick={() => setActiveBankTab("groom")}
+                    >
+                      🤵 Chú rể
+                    </button>
+                    <button
+                      type="button"
+                      className={`sp-gift-tab ${activeBankTab === "bride" ? "active" : ""}`}
+                      onClick={() => setActiveBankTab("bride")}
+                    >
+                      👰 Cô dâu
+                    </button>
+                    <button
+                      type="button"
+                      className={`sp-gift-tab ${activeBankTab === "custom" ? "active" : ""}`}
+                      onClick={() => setActiveBankTab("custom")}
+                    >
+                      🎁 Tùy chọn / Khác
+                    </button>
+                  </div>
 
-                  <div className="sp-bank-info">
-                    <p>
-                      Ngân hàng: <b>{currentGift.bankName} ({currentGift.bankCode})</b>
-                    </p>
-                    <p>
-                      Chủ tài khoản: <b>{currentGift.accountName}</b>
-                    </p>
-                    <div className="sp-acc-row">
-                      <span>Số tài khoản: <b>{currentGift.accountNumber}</b></span>
-                      <button
-                        className="sp-copy-btn"
-                        onClick={() =>
-                          copyToClipboard(currentGift.accountNumber, currentGift.id)
-                        }
-                      >
-                        {copiedBank === currentGift.id ? "✓ Đã sao chép" : "Sao chép"}
-                      </button>
+                  <div className="sp-qr-inline-wrap">
+                    {(activeBankTab === "all"
+                      ? d.gifts
+                      : d.gifts.filter((g) => g.who === activeBankTab)
+                    ).map((g) => {
+                      const title =
+                        g.who === "custom" && g.customLabel
+                          ? g.customLabel
+                          : g.who === "groom"
+                          ? "Chú Rể"
+                          : "Cô Dâu";
+                      return (
+                        <div className="sp-qr-inline-card" key={g.id}>
+                          <div className="sp-qr-card-title-row">
+                            <img
+                              src={g.bankLogo || `https://api.vietqr.io/img/${g.bankCode}.png`}
+                              alt={g.bankName}
+                              className="sp-qr-bank-logo"
+                              onError={(e) => {
+                                (e.currentTarget as HTMLElement).style.display = "none";
+                              }}
+                            />
+                            <h3 className="sp-qr-card-heading">
+                              {title} - {g.bankName}
+                            </h3>
+                          </div>
+                          {g.qrUrl && (
+                            <div className="sp-qr-img-box">
+                              <img src={g.qrUrl} alt={`QR ${g.bankName}`} />
+                            </div>
+                          )}
+                          <div className="sp-qr-card-texts">
+                            <p className="sp-qr-acc-num">{g.accountNumber}</p>
+                            <p className="sp-qr-acc-name">{g.accountName}</p>
+                          </div>
+                          <div className="sp-qr-action-row">
+                            <button
+                              type="button"
+                              className="sp-copy-btn"
+                              onClick={() => copyToClipboard(g.accountNumber, g.id)}
+                            >
+                              {copiedBank === g.id ? "✓ Đã sao chép" : "Sao chép STK"}
+                            </button>
+                            {g.qrUrl && (
+                              <a
+                                href={g.qrUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                download={`vietqr-${g.bankCode}-${g.accountNumber}.png`}
+                                className="sp-save-qr-btn"
+                              >
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                  <polyline points="7 10 12 15 17 10" />
+                                  <line x1="12" y1="15" x2="12" y2="3" />
+                                </svg>
+                                Lưu QR
+                              </a>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </>
+              )}
+
+              {/* MODE 2: ENVELOPE */}
+              {d.giftDisplayMode === "envelope" && (
+                <div
+                  className="sp-interactive-env-box"
+                  onClick={() => setGiftModalOpen(true)}
+                  role="button"
+                  tabIndex={0}
+                  aria-label="Mở phong bì mừng cưới"
+                >
+                  <div className="sp-ienv-stage">
+                    <span className="sp-ienv-sparkle sp-sparkle-1">✦</span>
+                    <span className="sp-ienv-sparkle sp-sparkle-2">✦</span>
+                    <span className="sp-ienv-sparkle sp-sparkle-3">✦</span>
+                    <span className="sp-ienv-sparkle sp-sparkle-4">✦</span>
+                    <div className="sp-ienv-inner">
+                      <div className="sp-ienv-shadow" />
+                      <img
+                        src="https://chungdoi.com/images/envelope/double_phoenix_red.webp"
+                        alt="Phong bì mừng cưới"
+                        className="sp-ienv-back"
+                      />
+                      <img
+                        src="https://chungdoi.com/images/envelope/double_phoenix_red.webp"
+                        alt="Phong bì mừng cưới"
+                        className="sp-ienv-card"
+                      />
                     </div>
                   </div>
+                  <p className="sp-ienv-hint">Nhấn để mở</p>
+                </div>
+              )}
+
+              {/* MODE 3: GIFT BOX */}
+              {d.giftDisplayMode === "gift_box" && (
+                <div
+                  className="sp-interactive-gift-box"
+                  onClick={() => setGiftModalOpen(true)}
+                  role="button"
+                  tabIndex={0}
+                  aria-label="Mở hộp quà mừng cưới"
+                >
+                  <div className="sp-igb-stage">
+                    <span className="sp-igb-sparkle sp-sparkle-1">✦</span>
+                    <span className="sp-igb-sparkle sp-sparkle-2">✦</span>
+                    <span className="sp-igb-sparkle sp-sparkle-3">✦</span>
+                    <span className="sp-igb-sparkle sp-sparkle-4">✦</span>
+
+                    {/* Confetti particles */}
+                    <div className="sp-igb-confetti-wrap">
+                      <span className="sp-igb-confetti c1" />
+                      <span className="sp-igb-confetti c2" />
+                      <span className="sp-igb-confetti c3" />
+                      <span className="sp-igb-confetti c4" />
+                      <span className="sp-igb-confetti c5" />
+                      <span className="sp-igb-confetti c6" />
+                      <span className="sp-igb-confetti c7" />
+                      <span className="sp-igb-confetti c8" />
+                    </div>
+
+                    {/* Bobbing box */}
+                    <div className="sp-igb-bob">
+                      <div className="sp-igb-shadow" />
+                      <img
+                        src="https://chungdoi.com/images/giftbox/double_phoenix_red.webp"
+                        alt="Hộp quà mừng cưới"
+                        className="sp-igb-main-img"
+                      />
+                    </div>
+                  </div>
+                  <p className="sp-igb-hint">Nhấn để mở</p>
                 </div>
               )}
             </section>
@@ -823,6 +994,130 @@ export default function Preview({
                 </button>
               </form>
             )}
+          </div>
+        </div>
+      )}
+
+      {/* ==================== GIFT MODAL ==================== */}
+      {giftModalOpen && (
+        <div className="lightbox-overlay" onClick={() => setGiftModalOpen(false)}>
+          <div className="gift-modal-dialog" onClick={(e) => e.stopPropagation()}>
+            <div className="gift-modal-top-bar">
+              <button
+                type="button"
+                className="gift-modal-close"
+                onClick={() => setGiftModalOpen(false)}
+                aria-label="Đóng"
+              >
+                ✕
+              </button>
+              <h2 className="gift-modal-title">{d.giftTitle || "HỘP MỪNG CƯỚI"}</h2>
+            </div>
+            <div className="gift-modal-body">
+              {/* 3 TABS CHO CHỌN NGƯỜI NHẬN TRONG MODAL */}
+              <div className="sp-gift-tabs in-modal">
+                <button
+                  type="button"
+                  className={`sp-gift-tab ${activeBankTab === "all" ? "active" : ""}`}
+                  onClick={() => setActiveBankTab("all")}
+                >
+                  ✨ Tất cả
+                </button>
+                <button
+                  type="button"
+                  className={`sp-gift-tab ${activeBankTab === "groom" ? "active" : ""}`}
+                  onClick={() => setActiveBankTab("groom")}
+                >
+                  🤵 Chú rể
+                </button>
+                <button
+                  type="button"
+                  className={`sp-gift-tab ${activeBankTab === "bride" ? "active" : ""}`}
+                  onClick={() => setActiveBankTab("bride")}
+                >
+                  👰 Cô dâu
+                </button>
+                <button
+                  type="button"
+                  className={`sp-gift-tab ${activeBankTab === "custom" ? "active" : ""}`}
+                  onClick={() => setActiveBankTab("custom")}
+                >
+                  🎁 Tùy chọn / Khác
+                </button>
+              </div>
+
+              <div className="gift-modal-cards-row">
+                {(activeBankTab === "all"
+                  ? d.gifts
+                  : d.gifts.filter((g) => g.who === activeBankTab)
+                ).map((g) => {
+                  const title =
+                    g.who === "custom" && g.customLabel
+                      ? g.customLabel
+                      : g.who === "groom"
+                      ? "Chú Rể"
+                      : "Cô Dâu";
+                  return (
+                    <div className="gift-modal-card" key={g.id}>
+                      <div className="gift-modal-card-header">
+                        <img
+                          src={g.bankLogo || `https://api.vietqr.io/img/${g.bankCode}.png`}
+                          alt={g.bankName}
+                          className="gift-modal-bank-icon"
+                          onError={(e) => {
+                            (e.currentTarget as HTMLElement).style.display = "none";
+                          }}
+                        />
+                        <h3 className="gift-modal-card-heading">
+                          {title} - {g.bankName}
+                        </h3>
+                      </div>
+
+                      {g.qrUrl && (
+                        <div className="gift-modal-qr-container">
+                          <img
+                            src={g.qrUrl}
+                            alt={`QR ${g.bankName}`}
+                            className="gift-modal-qr-img"
+                          />
+                        </div>
+                      )}
+
+                      <div className="gift-modal-card-details">
+                        <p className="gift-modal-acc-num">{g.accountNumber}</p>
+                        <p className="gift-modal-acc-name">{g.accountName}</p>
+                      </div>
+
+                      <div className="gift-modal-card-actions">
+                        <button
+                          type="button"
+                          className="sp-copy-btn"
+                          onClick={() => copyToClipboard(g.accountNumber, g.id)}
+                        >
+                          {copiedBank === g.id ? "✓ Đã sao chép" : "Sao chép STK"}
+                        </button>
+                        {g.qrUrl && (
+                          <a
+                            href={g.qrUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            download={`vietqr-${g.bankCode}-${g.accountNumber}.png`}
+                            className="sp-save-qr-btn"
+                          >
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                              <polyline points="7 10 12 15 17 10" />
+                              <line x1="12" y1="15" x2="12" y2="3" />
+                            </svg>
+                            Lưu QR
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
       )}

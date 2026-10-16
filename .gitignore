@@ -46,3 +46,7 @@ dist-ssr
 ehthumbs.db
 Thumbs.db
 Desktop.ini
+
+# Agent folders
+.agents/
+.claude/
