@@ -6,12 +6,14 @@ import * as S from "./Sections";
 import TopNav from "./TopNav";
 import HeroPhoto from "./HeroPhoto";
 import TutorialTour from "./TutorialTour";
+import ShareModal from "./ShareModal";
 
 export default function App() {
   const [d, setD] = useState<Inv>(defaultInv);
   const [mode, setMode] = useState<Mode>("edit");
   const [dirty, setDirty] = useState(0);
   const [toast, setToast] = useState("");
+  const [shareOpen, setShareOpen] = useState(false);
 
   const set = useCallback((p: Partial<Inv>) => {
     setD((prev) => ({ ...prev, ...p }));
@@ -31,6 +33,7 @@ export default function App() {
         onMode={setMode}
         dirty={dirty}
         onPublish={publish}
+        onShare={() => setShareOpen(true)}
         templateId={d.templateId}
         templateName={d.templateName}
         templateThumb={d.templateThumb}
@@ -67,6 +70,13 @@ export default function App() {
         )}
       </main>
       {toast && <div className="toast">{toast}</div>}
+      {shareOpen && (
+        <ShareModal
+          name={d.groomNick && d.brideNick ? `${d.groomNick} & ${d.brideNick}` : "Thiệp 1"}
+          slug="z6dt5xo7"
+          onClose={() => setShareOpen(false)}
+        />
+      )}
       <TutorialTour />
     </>
   );

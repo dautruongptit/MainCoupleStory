@@ -1,92 +1,154 @@
 import { useState } from "react";
-import { Link } from "../router";
-import { Toggle } from "../ui";
 import { loadCards } from "../store";
 
 export default function Account() {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
+  const [name, setName] = useState("Thảo Mộc Linh- Tăng Cân Hiệu Quả");
+  const [email] = useState("jk.jackkey@gmail.com");
+  const [phone, setPhone] = useState("090 123 4567");
   const [mail, setMail] = useState(true);
   const [showHome, setShowHome] = useState(true);
   const [saved, setSaved] = useState(false);
-  const [confirmDel, setConfirmDel] = useState(false);
 
   const cards = loadCards();
   const initial = (name.trim()[0] || "T").toUpperCase();
 
   const save = () => {
     setSaved(true);
-    setTimeout(() => setSaved(false), 1800);
+    setTimeout(() => setSaved(false), 2000);
   };
 
   return (
-    <main className="page acct">
-      <div className="acct-head">
-        <h1 className="page-title left">Cài đặt</h1>
-        <Link href="/dashboard" className="back-link">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6" /></svg>
-          Quay lại
-        </Link>
+    <main className="account-page-v2">
+      <div className="account-cards-wrap">
+        {/* Card 1: User Profile & Form */}
+        <div className="account-card">
+          <div className="account-profile-header">
+            <div className="account-avatar-circle">{initial}</div>
+            <div className="account-identity-info">
+              <h3 className="account-display-name">{name || "Chưa đặt tên"}</h3>
+              <p className="account-email-sub">{email}</p>
+            </div>
+            <div className="account-stats-row">
+              <div className="acct-stat-col">
+                <span className="stat-n num-pink">{cards.length}</span>
+                <span className="stat-t">Thiệp</span>
+              </div>
+              <div className="acct-stat-col">
+                <span className="stat-n num-blue">0</span>
+                <span className="stat-t">Lượt xem</span>
+              </div>
+              <div className="acct-stat-col">
+                <span className="stat-n num-green">0</span>
+                <span className="stat-t">Lời chúc</span>
+              </div>
+              <div className="acct-stat-col">
+                <span className="stat-n num-orange">0</span>
+                <span className="stat-t">RSVP</span>
+              </div>
+            </div>
+          </div>
+
+          <form
+            className="account-form"
+            onSubmit={(e) => {
+              e.preventDefault();
+              save();
+            }}
+          >
+            <div className="acct-field-group">
+              <label className="acct-label">HỌ VÀ TÊN</label>
+              <input
+                type="text"
+                className="acct-input"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Nhập họ và tên"
+              />
+            </div>
+
+            <div className="acct-field-group">
+              <label className="acct-label">EMAIL</label>
+              <input
+                type="email"
+                className="acct-input disabled"
+                value={email}
+                disabled
+                readOnly
+              />
+            </div>
+
+            <div className="acct-field-group">
+              <label className="acct-label">SỐ ĐIỆN THOẠI</label>
+              <input
+                type="tel"
+                className="acct-input"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                placeholder="090 123 4567"
+              />
+            </div>
+
+            <button type="submit" className="acct-submit-btn">
+              {saved ? "Đã lưu thay đổi" : "Lưu thay đổi"}
+            </button>
+          </form>
+        </div>
+
+        {/* Card 2: TÙY CHỈNH */}
+        <div className="account-card">
+          <h4 className="acct-section-title">TÙY CHỈNH</h4>
+
+          <div className="acct-toggle-row">
+            <div className="acct-toggle-copy">
+              <h5>Thông báo email</h5>
+              <p>Thanh toán, đánh giá và tin tức</p>
+            </div>
+            <button
+              type="button"
+              className={`acct-switch-toggle ${mail ? "active" : ""}`}
+              onClick={() => setMail(!mail)}
+              aria-label="Bật/tắt thông báo email"
+            >
+              <span className="acct-toggle-thumb" />
+            </button>
+          </div>
+
+          <div className="acct-toggle-row">
+            <div className="acct-toggle-copy">
+              <h5>Hiển thị trên trang chủ</h5>
+              <p>Thiệp có thể được chọn hiển thị trên trang chủ</p>
+            </div>
+            <button
+              type="button"
+              className={`acct-switch-toggle ${showHome ? "active" : ""}`}
+              onClick={() => setShowHome(!showHome)}
+              aria-label="Bật/tắt hiển thị trên trang chủ"
+            >
+              <span className="acct-toggle-thumb" />
+            </button>
+          </div>
+        </div>
+
+        {/* Card 3: TÀI KHOẢN */}
+        <div className="account-card">
+          <h4 className="acct-section-title">TÀI KHOẢN</h4>
+
+          <div className="acct-meta-row">
+            <span className="acct-meta-label">Loại tài khoản</span>
+            <span className="acct-meta-val bold">Thường</span>
+          </div>
+
+          <div className="acct-meta-row">
+            <span className="acct-meta-label">Bảo mật</span>
+            <span className="acct-meta-val">Magic link</span>
+          </div>
+
+          <div className="acct-meta-row">
+            <span className="acct-meta-label">Thành viên từ</span>
+            <span className="acct-meta-val">16 tháng 10, 2026</span>
+          </div>
+        </div>
       </div>
-
-      <section className="panel">
-        <div className="profile">
-          <div className="avatar lg">{initial}</div>
-          <div className="who">
-            <b>{name || "Tên của bạn"}</b>
-            <small>email@example.com</small>
-          </div>
-          <div className="stats4">
-            <div><b className="c1">{cards.length}</b><small>Thiệp</small></div>
-            <div><b className="c2">0</b><small>Lượt xem</small></div>
-            <div><b className="c3">0</b><small>Lời chúc</small></div>
-            <div><b className="c4">0</b><small>RSVP</small></div>
-          </div>
-        </div>
-        <label className="fld"><span>HỌ VÀ TÊN</span><input className="input" value={name} onChange={(e) => setName(e.target.value)} placeholder="Họ và tên" /></label>
-        <label className="fld"><span>EMAIL</span><input className="input" value="email@example.com" disabled readOnly /></label>
-        <label className="fld"><span>SỐ ĐIỆN THOẠI</span><input className="input" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="090 123 4567" /></label>
-        <button className="btn-primary" onClick={save}>
-          {saved ? (
-            <><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5" /></svg> Đã lưu</>
-          ) : "Lưu thay đổi"}
-        </button>
-      </section>
-
-      <section className="panel">
-        <h3 className="panel-h">TÙY CHỈNH</h3>
-        <div className="pref">
-          <div><b>Thông báo email</b><small>Thanh toán, đánh giá và tin tức</small></div>
-          <Toggle on={mail} onChange={setMail} />
-        </div>
-        <div className="pref">
-          <div><b>Hiển thị trên trang chủ</b><small>Thiệp có thể được chọn hiển thị trên trang chủ</small></div>
-          <Toggle on={showHome} onChange={setShowHome} />
-        </div>
-      </section>
-
-      <section className="panel">
-        <h3 className="panel-h">TÀI KHOẢN</h3>
-        <dl className="kv">
-          <div><dt>Loại tài khoản</dt><dd><span className="acct-badge">Thường</span></dd></div>
-          <div><dt>Bảo mật</dt><dd>Magic link</dd></div>
-          <div><dt>Thành viên từ</dt><dd>14 tháng 10, 2026</dd></div>
-        </dl>
-        <div className="danger">
-          <div>
-            <b>Xóa tài khoản</b>
-            <small>Xóa vĩnh viễn tài khoản và toàn bộ dữ liệu. Không thể khôi phục.</small>
-          </div>
-          {confirmDel ? (
-            <span className="btn-row">
-              <button className="btn-outline-sm" onClick={() => setConfirmDel(false)}>Hủy</button>
-              <button className="btn-danger" onClick={() => setConfirmDel(false)}>Xác nhận xóa</button>
-            </span>
-          ) : (
-            <button className="btn-danger" onClick={() => setConfirmDel(true)}>Xóa tài khoản</button>
-          )}
-        </div>
-      </section>
     </main>
   );
 }

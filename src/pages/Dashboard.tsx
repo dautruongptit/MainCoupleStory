@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { Link, navigate } from "../router";
 import { loadCards, saveCards, type Card } from "../store";
 import { LoginModal } from "../TopNav";
+import ShareModal from "../ShareModal";
 
 function DeleteModal({ name, onConfirm, onCancel }: { name: string; onConfirm: () => void; onCancel: () => void }) {
   useEffect(() => {
@@ -171,6 +172,7 @@ export default function Dashboard() {
   const [editing, setEditing] = useState<string | null>(null);
   const [deleting, setDeleting] = useState<Card | null>(null);
   const [publishing, setPublishing] = useState<Card | null>(null);
+  const [sharingCard, setSharingCard] = useState<Card | null>(null);
   const [showLogin, setShowLogin] = useState(false);
 
   const persist = useCallback((next: Card[]) => { setCards(next); saveCards(next); }, []);
@@ -195,26 +197,6 @@ export default function Dashboard() {
       </div>
 
       <div className="dash-wrap">
-        {/* Blue Protection Banner */}
-        <div className="dash-protect-banner">
-          <div className="dash-protect-left">
-            <div className="dash-protect-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="10" />
-                <line x1="12" y1="16" x2="12" y2="12" />
-                <line x1="12" y1="8" x2="12.01" y2="8" />
-              </svg>
-            </div>
-            <div className="dash-protect-info">
-              <h4>Đăng nhập để bảo vệ thiệp của bạn</h4>
-              <p>Thiệp hiện chỉ lưu trên thiết bị này. Đăng nhập để truy cập từ mọi nơi và tránh mất dữ liệu.</p>
-            </div>
-          </div>
-          <button className="dash-protect-btn" onClick={() => setShowLogin(true)}>
-            Đăng nhập ngay
-          </button>
-        </div>
-
         {/* Tabs Bar */}
         <div className="dash-tabs-bar">
           <div className="dash-tabs-group">
@@ -231,12 +213,18 @@ export default function Dashboard() {
         </div>
 
         {shown.length === 0 ? (
-          <div className="empty-state">
-            <div className="empty-icon">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="18" rx="2" /><path d="M8 7h8M8 11h5" /></svg>
+          <div className="dash-empty-v3">
+            <div className="dash-empty-circle">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#ec4899" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
             </div>
-            <p>Chưa có thiệp nào{tab !== "all" ? ` ở trạng thái "${tab === "draft" ? "nháp" : "xuất bản"}"` : ""}.</p>
-            <Link href="/vi/mau-thiep" className="btn-pill">Tạo thiệp mới</Link>
+            <h3 className="dash-empty-title">Bắt đầu tạo thiệp</h3>
+            <p className="dash-empty-desc">Chọn một mẫu thiệp đẹp và tạo thiệp online miễn phí</p>
+            <Link href="/vi/mau-thiep" className="dash-empty-btn">
+              + Chọn mẫu thiệp
+            </Link>
           </div>
         ) : (
           <div className="card-grid-v2">
@@ -271,29 +259,46 @@ export default function Dashboard() {
                 </div>
 
                 <div className="inv-badge-wrap">
-                  <span className="inv-status-pill">
-                    <span className="inv-status-dot">•</span> {c.status === "draft" ? "Bản nháp" : "Đã xuất bản"}
-                  </span>
+                  <span className="inv-trial-tag">• Dùng thử</span>
+                  <span className="inv-trial-sub">Còn 3 ngày · 0/20 khách</span>
                 </div>
 
                 <div className="inv-info-wrap">
-                  <p className="inv-tpl-line">{c.template}{c.color ? ` - ${c.color}` : ""}</p>
-                  <p className="inv-date-line">Ngày tạo: {c.created}</p>
+                  <div className="inv-tpl-line">
+                    <span>{c.template}{c.color ? ` - ${c.color}` : " - Nâu"}</span>
+                    <span className="inv-views-chip">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                        <circle cx="12" cy="12" r="3" />
+                      </svg>
+                      0
+                    </span>
+                  </div>
+                  <p className="inv-date-line">Ngày tạo: {c.created || "16/10/2026"}</p>
                 </div>
 
                 <div className="inv-bottom-actions">
-                  <button className="inv-btn-publish" disabled={c.status === "published"} onClick={() => setPublishing(c)}>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="m5 12 7-7 7 7" />
-                      <path d="M12 19V5" />
+                  <button className="dash-btn-pay" onClick={() => navigate("/vi/bang-gia")}>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                      <rect x="2" y="5" width="20" height="14" rx="2" />
+                      <line x1="2" y1="10" x2="22" y2="10" />
                     </svg>
-                    {c.status === "published" ? "Đã xuất bản" : "Xuất bản"}
+                    <span>Thanh toán</span>
                   </button>
-                  <button className="inv-btn-delete" onClick={() => setDeleting(c)}>
+                  <button className="dash-btn-share" onClick={() => setSharingCard(c)}>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="18" cy="5" r="3" />
+                      <circle cx="6" cy="12" r="3" />
+                      <circle cx="18" cy="19" r="3" />
+                      <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                      <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+                    </svg>
+                    <span>Chia sẻ</span>
+                  </button>
+                  <button className="inv-btn-delete" onClick={() => setDeleting(c)} title="Xóa thiệp">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6" />
                     </svg>
-                    Xóa
                   </button>
                 </div>
               </article>
@@ -301,6 +306,14 @@ export default function Dashboard() {
           </div>
         )}
       </div>
+
+      {sharingCard && (
+        <ShareModal
+          name={sharingCard.name}
+          slug="z6dt5xo7"
+          onClose={() => setSharingCard(null)}
+        />
+      )}
 
       {deleting && <DeleteModal name={deleting.name} onConfirm={() => remove(deleting.id)} onCancel={() => setDeleting(null)} />}
       {publishing && (
