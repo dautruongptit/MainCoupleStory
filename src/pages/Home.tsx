@@ -158,9 +158,9 @@ export default function Home() {
         <div className="hero-ov" />
         <div className="hero-in">
           <div className="hero-copy">
-            <p className="hero-brand"><b>Chung<i>Đôi</i></b>.com</p>
+            <p className="hero-brand"><span className="hl-script-pink" style={{ fontSize: "28px", verticalAlign: "middle" }}>ChungĐôi</span>.com</p>
             <h1>Làm thiệp cưới online miễn phí</h1>
-            <p className="hero-quote">“Cuộc sống hối hả, nhưng tình người vẫn vẹn nguyên”</p>
+            <p className="hero-quote">“Cuộc sống vội vã, nhưng tình người vẫn vẹn nguyên”</p>
             <p className="hero-desc">Mảnh ghép hiện đại của truyền thống mời cưới – Thiệp cưới online giúp bạn gửi tấm chân tình nhanh hơn, xa hơn, đến nhiều người hơn.</p>
             <p className="hero-note">Tạo miễn phí · Thử 3 ngày · Đẹp mới thanh toán</p>
             <Link href="/vi/mau-thiep" className="btn-pill">Tạo Thiệp Ngay</Link>
@@ -487,32 +487,121 @@ export default function Home() {
       </section>
 
       {/* Video */}
-      <section className="sec split alt rev">
-        <div className="split-copy">
-          <span className="eyebrow">VIDEO THIỆP CƯỚI</span>
-          <h2>Khoe thiệp lên Story và Reels</h2>
-          <p>Cả tấm thiệp của hai bạn gói trong một video, để đăng lên mạng xã hội và lưu giữ dài lâu.</p>
-          <Features items={[
-            "Full HD sắc nét, đăng story, đăng reels hay gửi vào nhóm chat gia đình đều vừa khung.",
-            "Nhạc, ảnh và lời mời y hệt tấm thiệp khách đang xem.",
-            "Bấm một nút là có, không cần biết dựng video.",
-            "Sửa thiệp xong tạo lại, lúc nào cũng là bản mới nhất.",
-            "Tải thiệp về máy dễ dàng.",
-          ]} />
-          <p className="hero-note">Tính năng chỉ có tại Chung Đôi, dành cho thiệp đã thanh toán · Video dài khoảng 1 đến 2 phút, tuỳ độ dài thiệp</p>
-          <div className="btn-row">
-            <Link href="/vi/mau-thiep" className="btn-pill">Tạo thiệp cưới</Link>
-            <Link href="/vi/help/tai-thiep-ve-dang-anh-hoac-video" className="btn-outline-pill">Cách tải video</Link>
+      <section className="video-story-sec">
+        <div className="video-story-grid">
+          <div className="video-story-copy">
+            <div className="badge-video">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2.18" />
+                <path d="M7 4v16M17 4v16M2 12h20M2 8h5M2 16h5M17 8h5M17 16h5" />
+              </svg>
+              <span>VIDEO THIỆP CƯỚI</span>
+            </div>
+
+            <h2 className="switch-tpl-title">
+              Khoe thiệp lên <span className="hl-script-pink">Story và Reels</span>
+            </h2>
+
+            <p className="switch-tpl-desc">
+              Cả tấm thiệp của hai bạn gói trong một video, để đăng lên mạng xã hội và lưu giữ dài lâu.
+            </p>
+
+            <ul className="switch-tpl-feats">
+              <li>
+                <span className="pink-check-circle">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <span>Full HD sắc nét, đăng story, đăng reels hay gửi vào nhóm chat gia đình đều vừa khung.</span>
+              </li>
+              <li>
+                <span className="pink-check-circle">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <span>Nhạc, ảnh và lời mời y hệt tấm thiệp khách đang xem.</span>
+              </li>
+              <li>
+                <span className="pink-check-circle">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <span>Bấm một nút là có, không cần biết dựng video.</span>
+              </li>
+              <li>
+                <span className="pink-check-circle">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <span>Sửa thiệp xong tạo lại, lúc nào cũng là bản mới nhất.</span>
+              </li>
+              <li>
+                <span className="pink-check-circle">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <span>Tải thiệp về máy dễ dàng.</span>
+              </li>
+            </ul>
+
+            <div className="switch-tpl-btns">
+              <Link href="/vi/mau-thiep" className="btn-switch-primary">
+                Tạo thiệp cưới
+              </Link>
+              <Link href="/vi/help/tai-thiep-ve-dang-anh-hoac-video" className="btn-switch-secondary">
+                Cách tải video
+              </Link>
+            </div>
+
+            <p className="switch-tpl-subnote">
+              Tính năng chỉ có tại Chung Đôi, dành cho thiệp đã thanh toán
+            </p>
           </div>
-        </div>
-        <div className="split-art tpl-pair">
-          <img src={`${CDN}double_phoenix_red.3bfb98ec.webp`} alt="" />
+
+          <div className="video-phone-wrap">
+            <div className="video-phone-frame">
+              <div className="video-phone-screen">
+                <div className="video-card-inner">
+                  <div className="video-card-heart-circle">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="#ffffff">
+                      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                    </svg>
+                  </div>
+                  <div className="video-card-names">
+                    <span>Thanh Tùng</span>
+                    <span className="amp">&amp;</span>
+                    <span>Như Hảo</span>
+                  </div>
+                  <div className="video-card-meta">
+                    <div>24 Tháng 03 2024</div>
+                    <div>Thác Mơ</div>
+                  </div>
+                  <div className="video-card-art">
+                    <img src="/images/themes/minimalism-brown/house-background.webp" alt="Thanh Tùng &amp; Như Hảo" />
+                  </div>
+                  <span className="video-card-btn">Mở thiệp</span>
+
+                  <div className="video-play-center" title="Xem video mẫu">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#ffffff" style={{ marginLeft: "2px" }}>
+                      <polygon points="6 4 20 12 6 20 6 4" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p className="video-phone-caption">Video dài khoảng 1 đến 2 phút, tuỳ độ dài thiệp</p>
+          </div>
         </div>
       </section>
 
       {/* Blog */}
       <section className="sec">
-        <h2 className="sec-title">Cẩm nang thiệp cưới online</h2>
+        <h2 className="sec-title">Cẩm nang thiệp cưới <span className="hl-script-pink">online</span></h2>
         <p className="sec-sub">Kinh nghiệm và mẹo hay cho ngày trọng đại</p>
         <div className="blog-grid">
           {BLOG.map((b) => (

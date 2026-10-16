@@ -88,7 +88,7 @@
 .sec.alt { max-width: none; background: var(--b1); }
 .sec.alt > * { max-width: 1100px; margin-left: auto; margin-right: auto; }
 .sec-title { text-align: center; margin: 0; font-size: 28px; font-weight: 600; color: #e9e6e4; }
-.sec-title em { color: var(--p); font-style: italic; }
+.sec-title em { color: #ec4899; font-family: "Pattaya", cursive; font-style: normal; font-weight: normal; margin-left: 4px; }
 .sec-sub { text-align: center; opacity: .65; font-size: 14px; margin: 8px 0 36px; }
 
 .strip-wrap { position: relative; }
@@ -118,6 +118,14 @@
 /* ---- Highlight pink ---- */
 .hl-pink {
   color: #ec4899;
+}
+.hl-script-pink {
+  color: #ec4899;
+  font-family: "Pattaya", cursive;
+  font-style: normal;
+  font-weight: 400;
+  display: inline-block;
+  margin: 0 4px;
 }
 
 /* Titles */
@@ -1322,3 +1330,162 @@
 .footer-bottom { max-width: 1200px; margin: 32px auto 0; padding: 16px 0; border-top: 1px solid rgba(205,205,205,.06); display: flex; justify-content: space-between; font-size: 12px; opacity: .4; }
 @media (max-width: 900px) { .footer-inner { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 600px) { .footer-inner { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; gap: 4px; } }
+
+/* ---- Video Story Section ---- */
+.video-story-sec {
+  padding: 64px 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.video-story-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 52px;
+  align-items: center;
+}
+.badge-video {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: rgba(236, 72, 153, 0.1);
+  border: 1px solid rgba(236, 72, 153, 0.35);
+  color: #ec4899;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+.video-phone-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.video-phone-frame {
+  width: 270px;
+  height: 480px;
+  border-radius: 36px;
+  border: 8px solid #1a2228;
+  background: #0b151b;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.85), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-phone-screen {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 35%, #185a6f 0%, #0d323f 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 18px;
+}
+.video-card-inner {
+  position: relative;
+  width: 184px;
+  background: #fdfbf7;
+  border-radius: 10px;
+  box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 12px 14px;
+  text-align: center;
+}
+.video-card-heart-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #113847;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.video-card-names {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a2e35;
+  line-height: 1.15;
+}
+.video-card-names span {
+  display: block;
+}
+.video-card-names .amp {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 400;
+  margin: 1px 0;
+}
+.video-card-meta {
+  font-size: 9.5px;
+  color: #526e7a;
+  margin-top: 6px;
+  font-family: sans-serif;
+  line-height: 1.35;
+}
+.video-card-art {
+  width: 100%;
+  height: 62px;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.video-card-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-card-btn {
+  margin-top: 10px;
+  background: #164352;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 4px 16px;
+  border-radius: 999px;
+  border: none;
+  display: inline-block;
+}
+.video-play-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.72);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  z-index: 5;
+}
+.video-play-center:hover {
+  transform: translate(-50%, -50%) scale(1.08);
+  background: rgba(15, 23, 42, 0.85);
+}
+.video-phone-caption {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin: 0;
+}
+@media (max-width: 900px) {
+  .video-story-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
