@@ -2129,3 +2129,12 @@ button.gst-chip { border: 0; font-family: inherit; cursor: pointer; }
 .tm-choose { background: #ff0080; }
 .tm-choose:hover { background: #e6007a; }
 .tm-qr p { max-width: 150px; }
+
+/* ---- Font tiêu đề trang theo ảnh chuẩn (Montserrat) ---- */
+.site h1, .site h2, .site .page-title, .site .sec-title { font-family: "Montserrat", ui-sans-serif, system-ui, sans-serif; }
+.site .hl-script-pink, .site .sec-title em { font-family: "Pattaya", cursive; }
+/* Thẻ đánh giá: viền xanh phía trên như ảnh chuẩn */
+.review-card, .rv-card { border-top: 3px solid #2563eb; }
+.review-card-v2 { border-top: 3px solid #2563eb; background: #1d1917; }
+.review-card-v2 { border-top: 0; position: relative; overflow: hidden; }
+.review-card-v2::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: #2563eb; }

@@ -427,7 +427,7 @@ export default function Home() {
       {/* Support */}
       <section className="sec support-sec-v2">
         <h2 className="sec-title-v2">
-          Khi bạn cần, <span className="hl-pink">tụi mình luôn có mặt</span>
+          Khi bạn cần, <span className="hl-script-pink">tụi mình luôn có mặt</span>
         </h2>
         <p className="sec-sub-v2">
           Chung Đôi luôn sẵn sàng hỗ trợ 24/7.{" "}
@@ -475,7 +475,7 @@ export default function Home() {
       {/* Reviews */}
       <section className="sec reviews-sec-v2">
         <h2 className="sec-title-v2">
-          Đánh giá từ <span className="hl-pink">khách hàng</span>
+          Đánh giá từ <span className="hl-script-pink">khách hàng</span>
         </h2>
         <p className="sec-sub-v2">
           Những lời nhắn thật lòng từ các cặp đôi đã tin tưởng Chung Đôi cho ngày trọng đại.
@@ -614,7 +614,7 @@ export default function Home() {
             </div>
 
             <h2 className="switch-tpl-title">
-              Đổi mẫu không cần <span className="hl-pink">nhập lại thông tin</span>
+              Đổi mẫu không cần <span className="hl-script-pink">nhập lại thông tin</span>
             </h2>
 
             <p className="switch-tpl-desc">
