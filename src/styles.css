@@ -2959,6 +2959,66 @@ button:hover .igb-c8 { animation: igbConfettiFly8 1.1s ease-out 0.55s infinite; 
 .banquet-map-link:hover {
   text-decoration: underline;
 }
+.banquet-map-card.edit-mode {
+  padding: 14px 16px;
+  background: #141110;
+  border-radius: 12px;
+}
+.banquet-map-edit-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.banquet-map-edit-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+}
+.banquet-map-cancel {
+  background: transparent;
+  border: 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.15s;
+}
+.banquet-map-cancel:hover {
+  color: #fff;
+}
+.banquet-map-textarea {
+  width: 100% !important;
+  background: #1c1816 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 8px !important;
+  color: #fff !important;
+  font-size: 13px !important;
+  padding: 10px 12px !important;
+  resize: vertical !important;
+  outline: none !important;
+  line-height: 1.5 !important;
+  min-height: 76px !important;
+}
+.banquet-map-textarea:focus {
+  border-color: #fc0081 !important;
+}
+.banquet-map-footer {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.45);
+  margin-top: 8px;
+  line-height: 1.4;
+}
+.banquet-map-guide-link {
+  color: #fc0081;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.banquet-map-guide-link:hover {
+  text-decoration: underline;
+}
 
 /* Gallery tiles (match real editor) */
 .photos { display: grid; grid-template-columns: repeat(auto-fit, minmax(76px, 120px)); gap: 8px; justify-content: center; }

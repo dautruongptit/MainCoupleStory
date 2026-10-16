@@ -372,27 +372,52 @@ export function Banquet({ d, set }: P) {
 
 function MapBox({ d, set }: P) {
   const [edit, setEdit] = useState(false);
+
+  if (edit) {
+    return (
+      <div className="banquet-map-card edit-mode">
+        <div className="banquet-map-edit-header">
+          <span className="banquet-map-edit-title">Địa chỉ bản đồ</span>
+          <button type="button" className="banquet-map-cancel" onClick={() => setEdit(false)}>
+            Hủy
+          </button>
+        </div>
+
+        <textarea
+          className="input banquet-map-textarea"
+          rows={3}
+          placeholder="Nhập địa chỉ hoặc dán link Google Maps / Apple Maps"
+          value={d.mapUrl}
+          onChange={(e) => set({ mapUrl: e.target.value })}
+        />
+
+        <div className="banquet-map-footer">
+          <span>Nhập địa chỉ, tọa độ, hoặc dán link Google Maps / Apple Maps · </span>
+          <a
+            href="#guide"
+            className="banquet-map-guide-link"
+            onClick={(e) => {
+              e.preventDefault();
+              alert("Hướng dẫn: Mở Google Maps / Apple Maps, tìm địa điểm tổ chức của bạn, bấm Chia sẻ -> Sao chép liên kết rồi dán vào đây.");
+            }}
+          >
+            ▷ Xem video hướng dẫn
+          </a>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="banquet-map-card">
       <div className="banquet-map-content">
         <p className="banquet-map-text">
           Bản đồ tự động hiển thị theo địa chỉ tiệc cưới. Chỉ nên thay đổi nếu vị trí trên bản đồ không chính xác.
         </p>
-        <button type="button" className="banquet-map-link" onClick={() => setEdit(!edit)}>
-          {edit ? "Xong" : "Thay đổi"}
+        <button type="button" className="banquet-map-link" onClick={() => setEdit(true)}>
+          Thay đổi
         </button>
       </div>
-      {edit && (
-        <div style={{ marginTop: 12 }}>
-          <Field label="Liên kết bản đồ tùy chỉnh">
-            <Input
-              placeholder="https://maps.google.com/..."
-              value={d.mapUrl}
-              onChange={(e) => set({ mapUrl: e.target.value })}
-            />
-          </Field>
-        </div>
-      )}
     </div>
   );
 }
