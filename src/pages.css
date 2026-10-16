@@ -2114,3 +2114,15 @@ button.gst-chip { border: 0; font-family: inherit; cursor: pointer; }
 .pub-btn-back { color: rgba(205, 205, 205, 0.8); }
 .pub-btn-back:hover { color: #fff; }
 .pub-checklist-wrap { border-top-color: rgba(255, 255, 255, 0.06); border-bottom-color: rgba(255, 255, 255, 0.06); }
+.del-confirm-box { background: #1d1917; border: 0; max-width: 416px; }
+
+/* ---- Modal đăng nhập: theo ảnh chuẩn 224730 ---- */
+.login-modal-box { background: #1d1917; }
+.login-logo-circle { background: transparent !important; width: 50px; height: 50px; border-radius: 0 !important; box-shadow: none !important; }
+.login-social-btn.google { background: #fff; color: #1f2937; border-color: #fff; }
+.login-social-btn.google:hover { background: #f3f4f6; }
+.login-social-btn.apple { background: #000; color: #fff; border: 1px solid rgba(255, 255, 255, 0.85); }
+.login-submit-btn:disabled { background: #7a0f43; color: rgba(255, 255, 255, 0.45); cursor: default; box-shadow: none; }
+.login-error { color: #f87171 !important; }
+.login-link-btn { background: none; border: 0; padding: 0; color: #ff0080; font-size: inherit; cursor: pointer; font-family: inherit; }
+.login-link-btn:disabled { color: rgba(205, 205, 205, 0.45); cursor: default; }

@@ -63,7 +63,7 @@ function DeleteModal({ name, onConfirm, onCancel }: { name: string; onConfirm: (
 import PublishCheckModal from "../PublishCheckModal";
 
 export default function Dashboard() {
-  const { loggedIn, login } = useAuth();
+  const { loggedIn } = useAuth();
   const [cards, setCards] = useState<Card[]>(loadCards);
   const [tab, setTab] = useState<"all" | "published" | "draft">("all");
   const [editing, setEditing] = useState<string | null>(null);
@@ -301,7 +301,7 @@ export default function Dashboard() {
           onCancel={() => setPublishing(null)}
         />
       )}
-      {showLogin && <LoginModal onClose={() => { setShowLogin(false); login(); }} />}
+      {showLogin && <LoginModal onClose={() => setShowLogin(false)} />}
     </main>
   );
 }
