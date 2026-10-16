@@ -85,7 +85,7 @@ export function Section({
         )}
         {onEnabled !== undefined && (
           <label className="card-toggle">
-            <span>{enabledLabel}</span>
+            <span>{enabled ? (enabledLabel || "Hiện") : "Ẩn"}</span>
             <Toggle on={!!enabled} onChange={onEnabled} />
           </label>
         )}

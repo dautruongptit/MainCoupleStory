@@ -6,37 +6,82 @@ import { Field, Helper, Hint, Input, Modal, OutlineButton, ResetInput, Row, Sect
 
 type P = { d: Inv; set: (p: Partial<Inv>) => void };
 
+const basicHeartIcon = (
+  <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+  </svg>
+);
+
 export function Basic({ d, set }: P) {
   return (
-    <Section title="Thông tin cơ bản" icon={<svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>}>
-      <Field label="Lời mở đầu" cap>
-        <label className="inline-toggle"><span className="inline-r" style={{ marginLeft: "auto" }}><em>Mặc định</em><Toggle on={d.introCustom} onChange={(v) => set({ introCustom: v })} /></span></label>
-        {d.introCustom ? (
-          <Input placeholder="The Wedding Of" value={d.introText} onChange={(e) => set({ introText: e.target.value })} />
-        ) : (
-          <div className="hint intro-hint">
-            <svg width="16" height="16" fill="none" stroke="#fbbd23" viewBox="0 0 24 24" style={{ flex: "none", marginTop: 2 }}><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
-            <span>Đang dùng chữ mặc định của mẫu:<b style={{ display: "block", marginTop: 4, fontWeight: 500 }}>“The Wedding Of”</b></span>
+    <Section title="Thông tin cơ bản" icon={basicHeartIcon}>
+      <div className="basic-intro-header">
+        <span className="basic-intro-title">Lời mở đầu</span>
+        <div className="basic-toggle-wrap">
+          <span className="basic-toggle-label">{d.introCustom ? "Tùy chỉnh" : "Mặc định"}</span>
+          <Toggle on={d.introCustom} onChange={(v) => set({ introCustom: v })} />
+        </div>
+      </div>
+
+      {d.introCustom ? (
+        <div style={{ marginTop: 10 }}>
+          <Input placeholder="Save The Date" value={d.introText} onChange={(e) => set({ introText: e.target.value })} />
+        </div>
+      ) : (
+        <div className="basic-intro-hint">
+          <svg width="18" height="18" fill="none" stroke="#f59e0b" viewBox="0 0 24 24" strokeWidth="2" style={{ flex: "none", marginTop: 2 }}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+          <div>
+            <span className="basic-hint-text">Đang dùng chữ mặc định của mẫu:</span>
+            <div className="basic-hint-val">“Save The Date”</div>
           </div>
-        )}
-      </Field>
+        </div>
+      )}
+
       <Row>
-        <Field label="Họ tên chú rể" half><Input placeholder="VD: Nguyễn Thế Bảo" value={d.groomFull} onChange={(e) => set({ groomFull: e.target.value })} /></Field>
-        <Field label="Họ tên cô dâu" half><Input placeholder="VD: Trần Ngọc Ánh" value={d.brideFull} onChange={(e) => set({ brideFull: e.target.value })} /></Field>
+        <Field label="Họ tên chú rể" half>
+          <Input placeholder="VD: Nguyễn Thế Bảo" value={d.groomFull} onChange={(e) => set({ groomFull: e.target.value })} />
+        </Field>
+        <Field label="Họ tên cô dâu" half>
+          <Input placeholder="VD: Trần Ngọc Ánh" value={d.brideFull} onChange={(e) => set({ brideFull: e.target.value })} />
+        </Field>
       </Row>
+
       <Row>
-        <Field label="Tên ngắn chú rể" half><ResetInput value={d.groomNick} onChange={(v) => set({ groomNick: v })} placeholder={d.groomFull} /></Field>
-        <Field label="Tên ngắn cô dâu" half><ResetInput value={d.brideNick} onChange={(v) => set({ brideNick: v })} placeholder={d.brideFull} /></Field>
+        <Field label="Tên ngắn chú rể" half>
+          <ResetInput value={d.groomNick} onChange={(v) => set({ groomNick: v })} placeholder={d.groomFull || "VD: Bảo"} />
+        </Field>
+        <Field label="Tên ngắn cô dâu" half>
+          <ResetInput value={d.brideNick} onChange={(v) => set({ brideNick: v })} placeholder={d.brideFull || "VD: Ánh"} />
+        </Field>
       </Row>
+
       <Row>
-        <Field label="Danh xưng chú rể" half><Input placeholder="VD: Trưởng Nam" value={d.groomRole} onChange={(e) => set({ groomRole: e.target.value })} /></Field>
-        <Field label="Danh xưng cô dâu" half><Input placeholder="VD: Út Nữ" value={d.brideRole} onChange={(e) => set({ brideRole: e.target.value })} /></Field>
+        <Field label="Danh xưng chú rể" half>
+          <Input placeholder="VD: Trưởng Nam" value={d.groomRole || "Trưởng Nam"} onChange={(e) => set({ groomRole: e.target.value })} />
+        </Field>
+        <Field label="Danh xưng cô dâu" half>
+          <Input placeholder="VD: Út Nữ" value={d.brideRole || "Út Nữ"} onChange={(e) => set({ brideRole: e.target.value })} />
+        </Field>
       </Row>
-      <Field label="Thứ tự hiển thị" cap>
-        <Segmented value={d.order} onChange={(v) => set({ order: v })}
-          options={[{ value: "groom", label: "Nhà trai trước" }, { value: "bride", label: "Nhà gái trước" }]} />
-        <Helper>{d.order === "groom" ? "Hiển thị tên chú rể và nhà trai trước trên thiệp" : "Hiển thị tên cô dâu và nhà gái trước trên thiệp"}</Helper>
-      </Field>
+
+      <div className="basic-order-block">
+        <span className="basic-order-heading">THỨ TỰ HIỂN THỊ</span>
+        <Segmented
+          value={d.order || "groom"}
+          onChange={(v) => set({ order: v })}
+          options={[
+            { value: "groom", label: "Nhà trai trước" },
+            { value: "bride", label: "Nhà gái trước" },
+          ]}
+        />
+        <Helper>
+          {d.order === "bride"
+            ? "Hiển thị tên cô dâu và nhà gái trước trên thiệp"
+            : "Hiển thị tên chú rể và nhà trai trước trên thiệp"}
+        </Helper>
+      </div>
     </Section>
   );
 }
@@ -452,30 +497,47 @@ export function Rsvp({ d, set }: P) {
   );
 }
 
+const dressIcon = (
+  <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M8 2h8l-2 7 4 13H6l4-13L8 2z" />
+  </svg>
+);
+
 export function Dress({ d, set }: P) {
   return (
-    <Section title="Dress Code" enabled={d.dressOn} onEnabled={(v) => set({ dressOn: v })} enabledLabel="">
-      <Hint>Bật để gợi ý trang phục cho khách mời theo màu sắc chủ đạo của tiệc cưới.</Hint>
-      <Field label="Gợi ý trang phục"><Textarea value={d.dressText} onChange={(e) => set({ dressText: e.target.value })} /></Field>
-      <Field label="Bảng màu trang phục (Dress code colors)">
-        <div style={{ display: "flex", gap: "12px", alignItems: "center", marginTop: "4px" }}>
-          {(d.dressColors || ["#651212", "#8d3a3a", "#ffb2b2"]).map((c, i) => (
-            <div key={i} style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-              <input
-                type="color"
-                value={c}
-                onChange={(e) => {
-                  const updated = [...(d.dressColors || ["#651212", "#8d3a3a", "#ffb2b2"])];
-                  updated[i] = e.target.value;
-                  set({ dressColors: updated });
-                }}
-                style={{ width: "32px", height: "32px", border: "0", borderRadius: "50%", cursor: "pointer", background: "none" }}
-              />
-              <span style={{ fontSize: "11px", opacity: 0.8 }}>{c}</span>
-            </div>
-          ))}
+    <Section title="Dress Code" icon={dressIcon} enabled={d.dressOn} onEnabled={(v) => set({ dressOn: v })}>
+      {!d.dressOn ? (
+        <div className="section-disabled-hint">
+          <svg width="18" height="18" fill="none" stroke="#f59e0b" viewBox="0 0 24 24" strokeWidth="2" style={{ flex: "none" }}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+          </svg>
+          <span>Bật để gợi ý trang phục cho khách mời theo màu sắc chủ đạo của tiệc cưới.</span>
         </div>
-      </Field>
+      ) : (
+        <>
+          <Hint>Bật để gợi ý trang phục cho khách mời theo màu sắc chủ đạo của tiệc cưới.</Hint>
+          <Field label="Gợi ý trang phục"><Textarea value={d.dressText} onChange={(e) => set({ dressText: e.target.value })} /></Field>
+          <Field label="Bảng màu trang phục (Dress code colors)">
+            <div style={{ display: "flex", gap: "12px", alignItems: "center", marginTop: "4px" }}>
+              {(d.dressColors || ["#651212", "#8d3a3a", "#ffb2b2"]).map((c, i) => (
+                <div key={i} style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                  <input
+                    type="color"
+                    value={c}
+                    onChange={(e) => {
+                      const updated = [...(d.dressColors || ["#651212", "#8d3a3a", "#ffb2b2"])];
+                      updated[i] = e.target.value;
+                      set({ dressColors: updated });
+                    }}
+                    style={{ width: "32px", height: "32px", border: "0", borderRadius: "50%", cursor: "pointer", background: "none" }}
+                  />
+                  <span style={{ fontSize: "11px", opacity: 0.8 }}>{c}</span>
+                </div>
+              ))}
+            </div>
+          </Field>
+        </>
+      )}
     </Section>
   );
 }
@@ -498,19 +560,25 @@ export function Schedule({ d, set }: P) {
 
   return (
     <Section
-      title={d.schedTitle || "LỊCH TRÌNH NGÀY CƯỚI"}
-      onTitle={(v) => set({ schedTitle: v })}
+      title="Lịch trình ngày cưới"
       enabled={d.schedOn}
       onEnabled={(v) => set({ schedOn: v })}
-      enabledLabel="Hiện"
       icon={
-        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <circle cx="12" cy="12" r="9" strokeWidth="1.8" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M12 7v5l3 3" />
+        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" />
         </svg>
       }
     >
-      <div className="space-y-3 pt-2">
+      {!d.schedOn ? (
+        <div className="section-disabled-hint">
+          <svg width="18" height="18" fill="none" stroke="#f59e0b" viewBox="0 0 24 24" strokeWidth="2" style={{ flex: "none" }}>
+            <circle cx="12" cy="12" r="9" />
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 7v5l3 3" />
+          </svg>
+          <span>Bật để hiển thị lịch trình các hoạt động trong ngày cưới (đón khách, lễ gia tiên, khai tiệc...) cho khách dễ theo dõi.</span>
+        </div>
+      ) : (
+        <div className="space-y-3 pt-2">
         {d.sched.map((s, i) => (
           <div className="sched-card" key={i}>
             <div className="sched-card-header">
@@ -599,18 +667,48 @@ export function Schedule({ d, set }: P) {
         </button>
 
         <Helper>Bật để hiển thị lịch trình các hoạt động trong ngày cưới (đón khách, lễ gia tiên, khai tiệc...) cho khách mời.</Helper>
-      </div>
+        </div>
+      )}
     </Section>
   );
 }
 
+const bookOpenIcon = (
+  <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+  </svg>
+);
+
 export function Guestbook({ d, set }: P) {
   return (
-    <Section title="Sổ lưu bút" enabled={d.guestOn} onEnabled={(v) => set({ guestOn: v })} enabledLabel="Hiện">
-      <a className="mini-card link-card" href="#guests">
-        <div><strong>{d.wishes.length} lời chúc</strong><Helper>Xem và quản lý</Helper></div>
-        {Icon.chevronRight(16)}
-      </a>
+    <Section title="Sổ lưu bút" icon={bookOpenIcon} enabled={d.guestOn} onEnabled={(v) => set({ guestOn: v })}>
+      {!d.guestOn ? (
+        <div className="section-disabled-hint">
+          <svg width="18" height="18" fill="none" stroke="#f59e0b" viewBox="0 0 24 24" strokeWidth="2" style={{ flex: "none" }}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          </svg>
+          <span>Bật để khách mời gửi lời chúc đến cô dâu và chú rể trực tiếp trên thiệp.</span>
+        </div>
+      ) : (
+        <div
+          className="guestbook-manage-card"
+          onClick={() => alert("Trang quản lý lời chúc sổ lưu bút.")}
+        >
+          <div className="guestbook-icon-wrap">
+            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+          </div>
+          <div className="guestbook-info">
+            <span className="guestbook-count">{d.wishes?.length || 0} lời chúc</span>
+            <span className="guestbook-sub">Xem và quản lý</span>
+          </div>
+          <svg className="guestbook-arrow" width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+            <path strokeLinecap="round" strokeLinejoin="round" d="m9 18 6-6-6-6" />
+          </svg>
+        </div>
+      )}
     </Section>
   );
 }
