@@ -72,3 +72,36 @@ export function removeInv(cardId: string) {
     /* ignore */
   }
 }
+
+export type Guest = { id: string; name: string; slug: string; views: number; added: string };
+const GUESTS_KEY = (cardId: string) => `chungdoi.guests.${cardId}`;
+
+export function loadGuests(cardId: string): Guest[] {
+  try {
+    const raw = localStorage.getItem(GUESTS_KEY(cardId));
+    if (raw) return JSON.parse(raw) as Guest[];
+  } catch {
+    /* ignore corrupt storage */
+  }
+  return [];
+}
+
+export function saveGuests(cardId: string, guests: Guest[]) {
+  try {
+    localStorage.setItem(GUESTS_KEY(cardId), JSON.stringify(guests));
+  } catch {
+    /* storage unavailable */
+  }
+}
+
+/** Xóa thiệp thì phải xóa luôn danh sách khách (dữ liệu cá nhân) của thiệp đó. */
+export function removeGuests(cardId: string) {
+  try {
+    localStorage.removeItem(GUESTS_KEY(cardId));
+  } catch {
+    /* ignore */
+  }
+}
+
+/** Link riêng của một khách: luôn gắn với thiệp, dùng chung cho hiển thị, sao chép và CSV. */
+export const guestUrl = (cardId: string, g: Guest) => `https://chungdoi.com/i/${cardId.slice(0, 8)}/${g.slug}`;

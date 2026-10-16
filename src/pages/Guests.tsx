@@ -1,30 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, navigate } from "../router";
-import { loadCards } from "../store";
+import { loadCards, loadGuests, saveGuests, guestUrl, type Guest } from "../store";
 import { TPL_CDN, templateById } from "../templates";
 import { LoginModal, useAuth } from "../TopNav";
-
-type Guest = { id: string; name: string; slug: string; views: number; added: string };
-
-const KEY = (cardId: string) => `chungdoi.guests.${cardId}`;
-
-function loadGuests(cardId: string): Guest[] {
-  try {
-    const raw = localStorage.getItem(KEY(cardId));
-    if (raw) return JSON.parse(raw) as Guest[];
-  } catch {
-    /* ignore corrupt storage */
-  }
-  return [];
-}
-
-function saveGuests(cardId: string, guests: Guest[]) {
-  try {
-    localStorage.setItem(KEY(cardId), JSON.stringify(guests));
-  } catch {
-    /* storage unavailable */
-  }
-}
 
 const slugify = (s: string) =>
   s.normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/đ/gi, "d").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -143,7 +121,7 @@ export default function Guests() {
     return /^[=+\-@\t\r]/.test(t) ? `'${t}` : t;
   };
   const exportCsv = () => {
-    const rows = ["Tên,Link", ...guests.map((g) => `"${csvSafe(g.name)}",https://chungdoi.com/i/${g.slug}`)];
+    const rows = ["Tên,Link", ...guests.map((g) => `"${csvSafe(g.name)}",${guestUrl(card.id, g)}`)];
     const url = URL.createObjectURL(new Blob(["﻿" + rows.join("\n")], { type: "text/csv;charset=utf-8" }));
     const a = document.createElement("a");
     a.href = url; a.download = "khach-moi.csv"; a.click();
@@ -253,9 +231,9 @@ export default function Guests() {
                   <li key={g.id}>
                     <div>
                       <b>{g.name}</b>
-                      <span>chungdoi.com/i/{card.id.slice(0, 6)}/{g.slug}</span>
+                      <span>{guestUrl(card.id, g).replace("https://", "")}</span>
                     </div>
-                    <button type="button" className="gst-copy" onClick={() => navigator.clipboard?.writeText(`https://chungdoi.com/i/${g.slug}`)}>Sao chép link</button>
+                    <button type="button" className="gst-copy" onClick={() => navigator.clipboard?.writeText(guestUrl(card.id, g))}>Sao chép link</button>
                     <button type="button" className="gst-del" aria-label={`Xóa ${g.name}`} onClick={() => persist(guests.filter((x) => x.id !== g.id))}>✕</button>
                   </li>
                 ))}

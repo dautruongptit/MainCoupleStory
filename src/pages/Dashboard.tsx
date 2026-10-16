@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { Link, navigate } from "../router";
-import { loadCards, saveCards, loadInv, saveInv, removeInv, type Card } from "../store";
+import { loadCards, saveCards, loadInv, saveInv, removeInv, removeGuests, type Card } from "../store";
 import { LoginModal, useAuth } from "../TopNav";
 import ShareModal from "../ShareModal";
 
@@ -83,10 +83,10 @@ export default function Dashboard() {
     const created = `${String(d.getDate()).padStart(2, "0")}/${String(d.getMonth() + 1).padStart(2, "0")}/${d.getFullYear()}`;
     const id = crypto.randomUUID();
     const inv = loadInv(c.id);
-    if (inv) saveInv(id, inv);
+    if (inv) saveInv(id, inv); // nhân bản nội dung thiệp, KHÔNG nhân bản danh sách khách mời (khách có link riêng theo từng thiệp)
     persist([...cards, { ...c, id, name: `Thiệp ${cards.length + 1}`, status: "draft", created }]);
   };
-  const remove = (id: string) => { persist(cards.filter((c) => c.id !== id)); removeInv(id); setDeleting(null); };
+  const remove = (id: string) => { persist(cards.filter((c) => c.id !== id)); removeInv(id); removeGuests(id); setDeleting(null); };
 
   const tabs: [typeof tab, string][] = [
     ["all", `Tất cả (${cards.length})`],

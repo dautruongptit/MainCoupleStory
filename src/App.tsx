@@ -92,10 +92,10 @@ export default function App() {
           <div className="body">
             <S.Basic d={d} set={set} />
             <HeroPhoto d={d} set={set} />
-            <S.Album d={d} set={set} />
             <S.Family d={d} set={set} />
             <S.Announce d={d} set={set} />
             <S.Ceremony d={d} set={set} />
+            <S.Album d={d} set={set} />
             <S.Banquet d={d} set={set} />
             <S.Rsvp d={d} set={set} />
             <S.Dress d={d} set={set} />
