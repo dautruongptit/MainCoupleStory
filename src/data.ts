@@ -102,6 +102,7 @@ export interface Inv {
   envelopeInviteMessage: string;
   envelopeText: string;
   shareStyle: "envelope" | "photo";
+  customSharePhoto?: string;
 }
 
 export const defaultInv: Inv = {

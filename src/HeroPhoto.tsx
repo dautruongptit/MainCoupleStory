@@ -42,16 +42,21 @@ export function CropModal({ src, zoom0, x0, y0, onApply, onClose, title = "Đi�
         <div className="crop-stage" onPointerDown={down} onPointerMove={move} onPointerUp={() => (start.current = null)}>
           <div className="crop-frame" style={{ aspectRatio: String(aspect) }}>
             <img src={src} alt="" draggable={false} style={{ objectPosition: `${pos.x}% ${pos.y}%`, transform: `scale(${zoom})`, transformOrigin: `${pos.x}% ${pos.y}%` }} />
+            <div className="crop-grid">
+              <div /><div /><div />
+              <div /><div /><div />
+              <div /><div /><div />
+            </div>
           </div>
         </div>
         <div className="crop-zoom">
           <span>Phóng to:</span>
-          <input type="range" min={1} max={3} step={0.1} value={zoom} onChange={(e) => setZoom(Number(e.target.value))} />
+          <input type="range" min={1} max={3} step={0.05} value={zoom} onChange={(e) => setZoom(Number(e.target.value))} />
           <span className="val">{zoom.toFixed(1)}x</span>
         </div>
         <div className="crop-actions">
-          <button type="button" className="btn-outline" onClick={onClose}>Huỷ</button>
-          <button type="button" className="btn-primary" onClick={() => { onApply(zoom, pos.x, pos.y); onClose(); }}>Áp dụng</button>
+          <button type="button" className="crop-cancel-btn" onClick={onClose}>Huỷ</button>
+          <button type="button" className="crop-apply-btn" onClick={() => { onApply(zoom, pos.x, pos.y); onClose(); }}>Áp dụng</button>
         </div>
       </div>
     </div>

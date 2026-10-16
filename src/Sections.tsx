@@ -1177,24 +1177,125 @@ export function Envelope({ d, set }: P) {
   );
 }
 
+const shareEnvelopeIcon = (
+  <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <rect width="20" height="16" x="2" y="4" rx="2" strokeWidth="1.8" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+  </svg>
+);
+
 export function Share({ d, set }: P) {
+  const [showCrop, setShowCrop] = useState(false);
+  const [pendingImg, setPendingImg] = useState<string>("");
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const onPick = (files: FileList | null) => {
+    const f = files?.[0];
+    if (!f) return;
+    const url = URL.createObjectURL(f);
+    setPendingImg(url);
+    setShowCrop(true);
+  };
+
   return (
-    <Section title="Ảnh xem trước khi chia sẻ">
+    <Section title="Ảnh xem trước khi chia sẻ" icon={shareEnvelopeIcon}>
       <Helper>Ảnh hiển thị khi bạn gửi link thiệp qua Zalo, Facebook, Messenger. Chọn 1 trong 2 kiểu bên dưới.</Helper>
-      <Segmented value={d.shareStyle} onChange={(v) => set({ shareStyle: v })} options={[{ value: "envelope", label: "Phong bì thiệp" }, { value: "photo", label: "Ảnh của bạn" }]} />
-      <Helper>{d.shareStyle === "envelope" ? "Phong bì thiệp của bạn. Với link mời riêng, ảnh sẽ hiện tên khách được mời." : "Dùng ảnh đầu tiên trong thư viện làm ảnh chia sẻ."}</Helper>
-      <p className="lbl">Xem trước</p>
-      <div className="share-card">
-        <div className="share-img">
-          {d.shareStyle === "photo" && d.photos[0] ? <img src={d.photos[0]} alt="" /> : <span className="share-env">{d.envelopeText || "Lời mời"}<br />❦</span>}
+      <Segmented
+        value={d.shareStyle || "photo"}
+        onChange={(v) => set({ shareStyle: v })}
+        options={[
+          { value: "envelope", label: "Phong bì thiệp" },
+          { value: "photo", label: "Ảnh của bạn" },
+        ]}
+      />
+      <Helper>
+        {d.shareStyle === "photo"
+          ? "Ảnh bạn chọn, kèm tên cô dâu chú rể và ngày cưới."
+          : "Phong bì thiệp của bạn. Với link mời riêng, ảnh sẽ hiện tên khách được mời."}
+      </Helper>
+
+      {d.shareStyle === "photo" && (
+        <div className="share-upload-box" onClick={() => fileInputRef.current?.click()}>
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept="image/*"
+            hidden
+            onChange={(e) => {
+              onPick(e.target.files);
+              e.target.value = "";
+            }}
+          />
+          <svg width="22" height="22" fill="none" stroke="#fc0081" viewBox="0 0 24 24" strokeWidth="2">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />
+            <path strokeLinecap="round" strokeLinejoin="round" d="m7 9 5-5 5 5" />
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v12" />
+          </svg>
+          <span className="share-upload-text">Tải ảnh mới</span>
         </div>
-        <div className="share-txt">
-          <small>chungdoi.com</small>
-          <strong>{groomShown(d)} &amp; {brideShown(d)}</strong>
-          <span>Thân mời quý khách đến dự lễ cưới của {groomShown(d)} &amp; {brideShown(d)}</span>
+      )}
+
+      <p className="share-preview-heading">XEM TRƯỚC</p>
+
+      <div className="share-og-card">
+        <div className="share-og-img-box">
+          {d.shareStyle === "photo" && d.customSharePhoto ? (
+            <img src={d.customSharePhoto} alt="Xem trước" className="share-og-img" />
+          ) : (
+            <div className="share-og-envelope-cover">
+              <div className="share-og-floral left" />
+              <div className="share-og-env-center">
+                <span className="share-og-env-title">Thiệp Cưới</span>
+                <span className="share-og-env-symbol">❦</span>
+              </div>
+              <div className="share-og-floral right" />
+            </div>
+          )}
+        </div>
+        <div className="share-og-meta">
+          <div className="share-og-domain">CHUNGDOI.COM</div>
+          <h4 className="share-og-title">{groomShown(d)} &amp; {brideShown(d)}</h4>
+          <p className="share-og-desc">Thân mời quý khách đến dự lễ cưới của {groomShown(d)} &amp; {brideShown(d)}</p>
         </div>
       </div>
-      <Helper>Zalo và Facebook lưu tạm ảnh xem trước, nên ảnh có thể chưa cập nhật ngay sau khi bạn chỉnh sửa.</Helper>
+
+      <div className="share-foot-notes">
+        <p className="share-foot-note">
+          {!d.customSharePhoto ? "Chưa chọn ảnh, thiệp đang dùng phong bì." : "Đã chọn ảnh tùy chỉnh cho xem trước."}
+        </p>
+        <p className="share-foot-note">
+          Dòng chữ dưới ảnh gồm lời mời, tên hai bạn, ngày tổ chức và địa chỉ trong phần tiệc. Thiệp chỉ lưu một địa chỉ, nên phần xem trước luôn hiện nơi đó, không hiện nơi làm lễ.
+        </p>
+        <p className="share-foot-note">
+          Zalo và Facebook lưu tạm ảnh xem trước, nên ảnh có thể chưa cập nhật ngay sau khi bạn chỉnh sửa. Nếu cần làm mới,{" "}
+          <a
+            href="#refresh"
+            className="share-foot-link"
+            onClick={(e) => {
+              e.preventDefault();
+              alert("Để Zalo/Facebook cập nhật ảnh xem trước mới, hãy sử dụng công cụ Chia sẻ lại (Facebook Sharing Debugger hoặc gửi lại link trên Zalo).");
+            }}
+          >
+            xem hướng dẫn tại đây.
+          </a>
+        </p>
+      </div>
+
+      {showCrop && pendingImg && (
+        <CropModal
+          title="Cắt ảnh xem trước (1200×630)"
+          aspect={1200 / 630}
+          src={pendingImg}
+          zoom0={1}
+          x0={50}
+          y0={50}
+          onClose={() => setShowCrop(false)}
+          onApply={(z, x, y) => {
+            set({ customSharePhoto: pendingImg });
+            setShowCrop(false);
+          }}
+        />
+      )}
     </Section>
   );
 }
