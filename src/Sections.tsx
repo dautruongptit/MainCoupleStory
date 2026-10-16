@@ -700,8 +700,11 @@ const dressIcon = (
 );
 
 export function Dress({ d, set }: P) {
-  const addColor = () => {
-    set({ dressColors: [...(d.dressColors || []), "#d4af37"] });
+  const [customColor, setCustomColor] = useState("#E8B7B7");
+  const colorInputRef = useRef<HTMLInputElement>(null);
+
+  const addColor = (c: string = "#d4af37") => {
+    set({ dressColors: [...(d.dressColors || []), c] });
   };
   const updColor = (i: number, val: string) => {
     const list = [...(d.dressColors || [])];
@@ -713,6 +716,8 @@ export function Dress({ d, set }: P) {
     list.splice(i, 1);
     set({ dressColors: list });
   };
+
+  const SUGGESTED_COLORS = ["#000000", "#ffffff", "#e0d5be", "#aab99b", "#a4b5be"];
 
   return (
     <Section title="Dress Code" icon={dressIcon} enabled={d.dressOn} onEnabled={(v) => set({ dressOn: v })}>
@@ -772,7 +777,7 @@ export function Dress({ d, set }: P) {
                 className="dress-swatch-add"
                 aria-label="Thêm màu sắc"
                 title="Thêm màu"
-                onClick={addColor}
+                onClick={() => addColor()}
               >
                 <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
@@ -780,6 +785,62 @@ export function Dress({ d, set }: P) {
               </button>
             </div>
           </Field>
+
+          {/* Chọn từ gợi ý */}
+          <div className="dress-suggest-section">
+            <span className="dress-sublabel">Chọn từ gợi ý</span>
+            <div className="dress-suggest-row">
+              {SUGGESTED_COLORS.map((c) => (
+                <button
+                  key={c}
+                  type="button"
+                  className="dress-suggest-bubble"
+                  style={{
+                    backgroundColor: c,
+                    border: c === "#ffffff" ? "1px solid rgba(255, 255, 255, 0.4)" : "none",
+                  }}
+                  title={`Thêm màu ${c}`}
+                  onClick={() => addColor(c)}
+                />
+              ))}
+            </div>
+          </div>
+
+          <hr className="dress-divider" />
+
+          {/* Màu tùy chỉnh */}
+          <div className="dress-custom-section">
+            <span className="dress-sublabel">Màu tùy chỉnh</span>
+            <div className="dress-custom-row">
+              <input
+                ref={colorInputRef}
+                type="color"
+                value={customColor}
+                className="dress-swatch-hidden"
+                onChange={(e) => setCustomColor(e.target.value.toUpperCase())}
+              />
+              <button
+                type="button"
+                className="dress-custom-preview-bubble"
+                style={{ backgroundColor: customColor }}
+                title="Bấm để chọn màu"
+                onClick={() => colorInputRef.current?.click()}
+              />
+              <input
+                type="text"
+                className="input dress-custom-input"
+                value={customColor}
+                onChange={(e) => setCustomColor(e.target.value)}
+              />
+              <button
+                type="button"
+                className="dress-custom-add-btn"
+                onClick={() => addColor(customColor)}
+              >
+                + Thêm
+              </button>
+            </div>
+          </div>
         </>
       )}
     </Section>

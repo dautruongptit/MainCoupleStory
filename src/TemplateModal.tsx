@@ -56,7 +56,9 @@ export default function TemplateModal({ tpl, onClose }: { tpl: Tpl; onClose: () 
       <div className="tm" role="dialog" aria-modal="true" aria-label={tpl.name} onMouseDown={(e) => e.stopPropagation()}>
         <button ref={closeRef} className="tm-x" aria-label="Đóng" onClick={onClose}>✕</button>
         <div className="tm-left">
-          <img src={TPL_CDN + tpl.full} alt={`Xem trước ${tpl.name}`} />
+          <div className="tm-phone-frame">
+            <img src={TPL_CDN + tpl.full} alt={`Xem trước ${tpl.name}`} />
+          </div>
         </div>
         <div className="tm-right">
           <h2>{tpl.name}</h2>
@@ -74,8 +76,8 @@ export default function TemplateModal({ tpl, onClose }: { tpl: Tpl; onClose: () 
           <p className="tm-note">Tạo miễn phí · Thử 3 ngày · Đẹp mới thanh toán<br />Bạn có thể đổi mẫu bất cứ lúc nào khi chỉnh sửa</p>
           <div className="tm-actions">
             <button className="tm-choose" onClick={choose}>
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
-              Chọn mẫu này
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5v14M5 12h14" /></svg>
+              + Tạo thiệp
             </button>
             <Link className="tm-demo" href={`/vi/mau-thiep/${tpl.slug}/demo`}>
               <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z" /><circle cx="12" cy="12" r="3" /></svg>
