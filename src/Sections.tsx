@@ -406,11 +406,16 @@ export function Schedule({ d, set }: P) {
                     <circle cx="12" cy="12" r="9" strokeWidth="1.8" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M12 7v5l3 3" />
                   </svg>
-                  <Input
-                    type="text"
+                  <input
+                    type="time"
+                    className="input sched-time-input"
                     value={s.time}
-                    placeholder="09:00"
                     onChange={(e) => upd(i, { time: e.target.value })}
+                    onClick={(e) => {
+                      try {
+                        (e.currentTarget as any).showPicker?.();
+                      } catch {}
+                    }}
                   />
                 </div>
               </div>

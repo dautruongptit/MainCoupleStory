@@ -98,11 +98,10 @@ export default function HeroPhoto({ d, set }: P) {
           </div>
           <div className="hero-btns">
             <button type="button" className="hero-btn primary" onClick={() => file.current?.click()}>Đổi ảnh</button>
-            <button type="button" className="hero-btn" style={{ border: "1px solid rgba(255,255,255,0.2)" }} onClick={() => setCrop(true)}>Cắt ảnh</button>
             <button type="button" className="hero-btn danger" onClick={() => set({ heroPhoto: "" })}>Xoá</button>
           </div>
-          <p className="hero-help">Hỗ trợ: JPG, PNG, GIF, WebP, HEIC. Dung lượng tối đa 10MB.</p>
-          <p className="hero-help2">Nên dùng ảnh chụp dọc tỷ lệ 9:16 hoặc 3:4 để hiển thị đẹp nhất.</p>
+          <p className="hero-help">JPG, PNG, GIF, WebP, HEIC</p>
+          <p className="hero-help2">Nên dùng ảnh dọc hoặc ảnh cặp đôi toàn thân</p>
         </div>
       )}
       {crop && d.heroPhoto && (
