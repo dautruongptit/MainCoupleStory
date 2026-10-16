@@ -85,6 +85,7 @@ export interface Inv {
   dressText: string;
   dressColors: string[];
   schedOn: boolean;
+  schedTitle?: string;
   sched: TimelineEvent[];
   guestOn: boolean;
   wishes: Wish[];
@@ -178,6 +179,7 @@ export const defaultInv: Inv = {
   dressText: "Trang phục trang nhã, lịch sự",
   dressColors: ["#651212", "#8d3a3a", "#ffb2b2"],
   schedOn: true,
+  schedTitle: "LỊCH TRÌNH NGÀY CƯỚI",
   sched: [
     { time: "17:30", text: "Đón khách" },
     { time: "18:30", text: "Khai tiệc" },

@@ -88,7 +88,7 @@ export function Album({ d, set }: P) {
   );
   return (
     <Section title="Thư viện ảnh" icon={galleryIcon} enabled={d.albumOn} onEnabled={(v) => set({ albumOn: v })} enabledLabel="Hiện">
-      <Field label="Kiểu hiển thị" cap>
+      <Field label="KIỂU HIỂN THỊ" cap>
         <Segmented value={d.albumLayout} onChange={(v) => set({ albumLayout: v })}
           options={[{ value: "grid", label: "Lưới", icon: <LayoutIcon k="grid" /> }, { value: "collage", label: "Ghép ảnh", icon: <LayoutIcon k="collage" /> }, { value: "3d", label: "3D", icon: <LayoutIcon k="3d" /> }]} />
       </Field>
@@ -99,43 +99,51 @@ export function Album({ d, set }: P) {
           <p>{upText}</p>
         </div>
       )}
-      <div className="photos">
-        {d.photos.map((p, i) => (
-          <div className={"photo" + (drag === i ? " drag" : "")} key={p} draggable
-            onDragStart={() => { setDrag(i); setMenu(null); }}
-            onDragOver={(e) => e.preventDefault()}
-            onDrop={() => { if (drag !== null) move(drag, i); setDrag(null); }}
-            onDragEnd={() => setDrag(null)}>
-            <img src={p} alt={`Gallery ${i + 1}`} draggable={false}
-              style={d.photoCrops[p] ? { objectPosition: `${d.photoCrops[p].x}% ${d.photoCrops[p].y}%`, transform: `scale(${d.photoCrops[p].z})`, transformOrigin: `${d.photoCrops[p].x}% ${d.photoCrops[p].y}%` } : undefined} />
-            <button type="button" className="photo-menu" aria-label="Menu" onClick={() => setMenu(menu === i ? null : i)}>
-              <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><circle cx="8" cy="3" r="1.5" /><circle cx="8" cy="8" r="1.5" /><circle cx="8" cy="13" r="1.5" /></svg>
-            </button>
-            {menu === i && (
-              <div className="photo-pop">
-                <button type="button" aria-label="Cắt ảnh" title="Cắt ảnh" onClick={() => { setCrop(i); setMenu(null); }}>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2v14a2 2 0 0 0 2 2h14M2 6h14a2 2 0 0 1 2 2v14" /></svg>
-                </button>
-                <button type="button" className="del" aria-label="Xóa ảnh" title="Xóa ảnh" onClick={() => { set({ photos: d.photos.filter((_, j) => j !== i) }); setMenu(null); }}>{Icon.trash(20)}</button>
-                <button type="button" aria-label="Chuyển lên trước" title="Chuyển lên trước" disabled={i === 0} onClick={() => { move(i, i - 1); setMenu(null); }}>{Icon.back(20)}</button>
-                <button type="button" aria-label="Chuyển ra sau" title="Chuyển ra sau" disabled={i === d.photos.length - 1} onClick={() => { move(i, i + 1); setMenu(null); }}>{Icon.chevronRight(20)}</button>
-              </div>
-            )}
-          </div>
-        ))}
-        {up ? (
-          <div className="add-photo disabled">
-            <span className="spinner" />
-            <span>{upText}</span>
-          </div>
-        ) : d.photos.length < 20 && (
-          <label className="add-photo">
-            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 4v16m8-8H4" /></svg>
-            <span>Thêm ảnh</span>
-            <input type="file" accept="image/*" multiple hidden onChange={(e) => { add(e.target.files); e.target.value = ""; }} />
-          </label>
-        )}
-      </div>
+      {d.photos.length === 0 ? (
+        <label className="album-empty-add">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 4v16m8-8H4" /></svg>
+          <span style={{ fontSize: "13px", fontWeight: 500 }}>Thêm ảnh</span>
+          <input type="file" accept="image/*" multiple hidden onChange={(e) => { add(e.target.files); e.target.value = ""; }} />
+        </label>
+      ) : (
+        <div className="photos">
+          {d.photos.map((p, i) => (
+            <div className={"photo" + (drag === i ? " drag" : "")} key={p} draggable
+              onDragStart={() => { setDrag(i); setMenu(null); }}
+              onDragOver={(e) => e.preventDefault()}
+              onDrop={() => { if (drag !== null) move(drag, i); setDrag(null); }}
+              onDragEnd={() => setDrag(null)}>
+              <img src={p} alt={`Gallery ${i + 1}`} draggable={false}
+                style={d.photoCrops[p] ? { objectPosition: `${d.photoCrops[p].x}% ${d.photoCrops[p].y}%`, transform: `scale(${d.photoCrops[p].z})`, transformOrigin: `${d.photoCrops[p].x}% ${d.photoCrops[p].y}%` } : undefined} />
+              <button type="button" className="photo-menu" aria-label="Menu" onClick={() => setMenu(menu === i ? null : i)}>
+                <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><circle cx="8" cy="3" r="1.5" /><circle cx="8" cy="8" r="1.5" /><circle cx="8" cy="13" r="1.5" /></svg>
+              </button>
+              {menu === i && (
+                <div className="photo-pop">
+                  <button type="button" aria-label="Cắt ảnh" title="Cắt ảnh" onClick={() => { setCrop(i); setMenu(null); }}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2v14a2 2 0 0 0 2 2h14M2 6h14a2 2 0 0 1 2 2v14" /></svg>
+                  </button>
+                  <button type="button" className="del" aria-label="Xóa ảnh" title="Xóa ảnh" onClick={() => { set({ photos: d.photos.filter((_, j) => j !== i) }); setMenu(null); }}>{Icon.trash(20)}</button>
+                  <button type="button" aria-label="Chuyển lên trước" title="Chuyển lên trước" disabled={i === 0} onClick={() => { move(i, i - 1); setMenu(null); }}>{Icon.back(20)}</button>
+                  <button type="button" aria-label="Chuyển ra sau" title="Chuyển ra sau" disabled={i === d.photos.length - 1} onClick={() => { move(i, i + 1); setMenu(null); }}>{Icon.chevronRight(20)}</button>
+                </div>
+              )}
+            </div>
+          ))}
+          {up ? (
+            <div className="add-photo disabled">
+              <span className="spinner" />
+              <span>{upText}</span>
+            </div>
+          ) : d.photos.length < 20 && (
+            <label className="add-photo">
+              <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 4v16m8-8H4" /></svg>
+              <span>Thêm ảnh</span>
+              <input type="file" accept="image/*" multiple hidden onChange={(e) => { add(e.target.files); e.target.value = ""; }} />
+            </label>
+          )}
+        </div>
+      )}
       <Helper>Hỗ trợ: JPG, PNG, GIF, WebP, HEIC. Tối đa 20 ảnh/lần.</Helper>
       {crop !== null && d.photos[crop] && (
         <CropModal title="Điều chỉnh ảnh" aspect={1} src={d.photos[crop]}
@@ -320,17 +328,118 @@ export function Dress({ d, set }: P) {
 export function Schedule({ d, set }: P) {
   const upd = (i: number, p: Partial<{ time: string; text: string }>) =>
     set({ sched: d.sched.map((s, j) => (j === i ? { ...s, ...p } : s)) });
+
+  const move = (from: number, to: number) => {
+    if (to < 0 || to >= d.sched.length) return;
+    const next = [...d.sched];
+    const [item] = next.splice(from, 1);
+    next.splice(to, 0, item);
+    set({ sched: next });
+  };
+
+  const remove = (i: number) => {
+    set({ sched: d.sched.filter((_, j) => j !== i) });
+  };
+
   return (
-    <Section title="Lịch trình ngày cưới" enabled={d.schedOn} onEnabled={(v) => set({ schedOn: v })} enabledLabel="">
-      <Hint>Bật để hiển thị lịch trình các hoạt động trong ngày cưới (đón khách, lễ gia tiên, khai tiệc...) cho khách mời.</Hint>
-      {d.sched.map((s, i) => (
-        <Row key={i}>
-          <Field half><Input type="time" value={s.time} onChange={(e) => upd(i, { time: e.target.value })} /></Field>
-          <Field half><Input value={s.text} onChange={(e) => upd(i, { text: e.target.value })} /></Field>
-          <button className="icon-ghost sm" aria-label="Xoá mục" onClick={() => set({ sched: d.sched.filter((_, j) => j !== i) })}>{Icon.trash()}</button>
-        </Row>
-      ))}
-      <OutlineButton onClick={() => set({ sched: [...d.sched, { time: "12:00", text: "" }] })}>{Icon.plus(16)} Thêm mục</OutlineButton>
+    <Section
+      title={d.schedTitle || "LỊCH TRÌNH NGÀY CƯỚI"}
+      onTitle={(v) => set({ schedTitle: v })}
+      enabled={d.schedOn}
+      onEnabled={(v) => set({ schedOn: v })}
+      enabledLabel="Hiện"
+      icon={
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" strokeWidth="1.8" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M12 7v5l3 3" />
+        </svg>
+      }
+    >
+      <div className="space-y-3 pt-2">
+        {d.sched.map((s, i) => (
+          <div className="sched-card" key={i}>
+            <div className="sched-card-header">
+              <span className="sched-card-title">Hoạt động {i + 1}</span>
+              <div className="sched-card-actions">
+                <button
+                  type="button"
+                  className="sched-btn-icon"
+                  disabled={i === 0}
+                  onClick={() => move(i, i - 1)}
+                  aria-label="Di chuyển lên"
+                  title="Di chuyển lên"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 15l7-7 7 7" />
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  className="sched-btn-icon"
+                  disabled={i === d.sched.length - 1}
+                  onClick={() => move(i, i + 1)}
+                  aria-label="Di chuyển xuống"
+                  title="Di chuyển xuống"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  className="sched-btn-icon delete"
+                  onClick={() => remove(i)}
+                  aria-label="Xóa hoạt động"
+                  title="Xóa"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div className="sched-card-body">
+              <div className="sched-input-group">
+                <label>Giờ</label>
+                <div className="sched-time-input-wrap">
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="9" strokeWidth="1.8" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M12 7v5l3 3" />
+                  </svg>
+                  <Input
+                    type="text"
+                    value={s.time}
+                    placeholder="09:00"
+                    onChange={(e) => upd(i, { time: e.target.value })}
+                  />
+                </div>
+              </div>
+              <div className="sched-input-group">
+                <label>Nội dung</label>
+                <Input
+                  type="text"
+                  value={s.text}
+                  placeholder="VD: Đón khách"
+                  onChange={(e) => upd(i, { text: e.target.value })}
+                />
+              </div>
+            </div>
+          </div>
+        ))}
+
+        <button
+          type="button"
+          className="btn-outline-pill-full"
+          onClick={() => set({ sched: [...d.sched, { time: "18:00", text: "" }] })}
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
+          </svg>
+          Thêm hoạt động
+        </button>
+
+        <Helper>Bật để hiển thị lịch trình các hoạt động trong ngày cưới (đón khách, lễ gia tiên, khai tiệc...) cho khách mời.</Helper>
+      </div>
     </Section>
   );
 }
@@ -537,7 +646,7 @@ export function GiftBox({ d, set }: P) {
         <div className="space-y-2">
           <button
             type="button"
-            className="btn btn-outline btn-sm w-full"
+            className="btn-outline-pill-full"
             onClick={handleOpenAdd}
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -547,7 +656,7 @@ export function GiftBox({ d, set }: P) {
           </button>
           <button
             type="button"
-            className="btn btn-ghost btn-xs w-full opacity-70"
+            className="btn btn-ghost btn-xs w-full opacity-70 text-center"
             data-bot-screenshot-id="editor-gift-add-method"
             onClick={() => setOpenOtherModal(true)}
           >
@@ -557,15 +666,19 @@ export function GiftBox({ d, set }: P) {
 
         {/* Display Mode Selector (3 Tabs) */}
         <div className="mt-4">
-          <p className="text-sm font-medium mb-2 text-base-content">Kiểu hiển thị</p>
-          <div className="flex items-stretch gap-1 p-1 bg-base-200 rounded-lg">
+          <p className="text-xs font-semibold uppercase tracking-wider mb-2 text-base-content/60">KIỂU HIỂN THỊ</p>
+          <div className="flex items-stretch gap-1 p-1 bg-base-200 rounded-lg" style={{ backgroundColor: "#171412" }}>
             <button
               type="button"
               className={`flex-1 flex flex-col items-center justify-center gap-1 px-1.5 py-2 text-[11px] leading-tight text-center rounded-md transition-all sm:flex-row sm:gap-1.5 sm:py-1.5 sm:px-3 sm:text-sm ${
                 d.giftDisplayMode === "gift_box"
-                  ? "bg-base-100 shadow-sm font-medium text-primary"
-                  : "text-base-content/60 hover:text-base-content"
+                  ? "shadow-sm font-medium"
+                  : "hover:text-base-content"
               }`}
+              style={{
+                backgroundColor: d.giftDisplayMode === "gift_box" ? "#26221f" : "transparent",
+                color: d.giftDisplayMode === "gift_box" ? "#fc0081" : "rgba(255, 255, 255, 0.6)",
+              }}
               onClick={() => set({ giftDisplayMode: "gift_box" })}
             >
               <span className="shrink-0" aria-hidden="true">
@@ -579,9 +692,13 @@ export function GiftBox({ d, set }: P) {
               type="button"
               className={`flex-1 flex flex-col items-center justify-center gap-1 px-1.5 py-2 text-[11px] leading-tight text-center rounded-md transition-all sm:flex-row sm:gap-1.5 sm:py-1.5 sm:px-3 sm:text-sm ${
                 d.giftDisplayMode === "envelope"
-                  ? "bg-base-100 shadow-sm font-medium text-primary"
-                  : "text-base-content/60 hover:text-base-content"
+                  ? "shadow-sm font-medium"
+                  : "hover:text-base-content"
               }`}
+              style={{
+                backgroundColor: d.giftDisplayMode === "envelope" ? "#26221f" : "transparent",
+                color: d.giftDisplayMode === "envelope" ? "#fc0081" : "rgba(255, 255, 255, 0.6)",
+              }}
               onClick={() => set({ giftDisplayMode: "envelope" })}
             >
               <span className="shrink-0" aria-hidden="true">
@@ -595,9 +712,13 @@ export function GiftBox({ d, set }: P) {
               type="button"
               className={`flex-1 flex flex-col items-center justify-center gap-1 px-1.5 py-2 text-[11px] leading-tight text-center rounded-md transition-all sm:flex-row sm:gap-1.5 sm:py-1.5 sm:px-3 sm:text-sm ${
                 d.giftDisplayMode === "qr_inline"
-                  ? "bg-base-100 shadow-sm font-medium text-primary"
-                  : "text-base-content/60 hover:text-base-content"
+                  ? "shadow-sm font-medium"
+                  : "hover:text-base-content"
               }`}
+              style={{
+                backgroundColor: d.giftDisplayMode === "qr_inline" ? "#26221f" : "transparent",
+                color: d.giftDisplayMode === "qr_inline" ? "#fc0081" : "rgba(255, 255, 255, 0.6)",
+              }}
               onClick={() => set({ giftDisplayMode: "qr_inline" })}
             >
               <span className="shrink-0" aria-hidden="true">
@@ -865,7 +986,7 @@ export function GiftBox({ d, set }: P) {
 export function Thanks({ d, set }: P) {
   return (
     <Section title="Lời cảm ơn" enabled={d.thanksOn} onEnabled={(v) => set({ thanksOn: v })} enabledLabel="Hiện">
-      <Field label="Lời cảm ơn"><Textarea rows={3} placeholder="Nhập lời cảm ơn" value={d.thanks} onChange={(e) => set({ thanks: e.target.value })} /></Field>
+      <Field label="Lời cảm ơn"><Textarea rows={3} placeholder="Cảm ơn bạn đã đến chung vui cùng chúng tôi!" value={d.thanks} onChange={(e) => set({ thanks: e.target.value })} /></Field>
     </Section>
   );
 }
@@ -873,12 +994,43 @@ export function Thanks({ d, set }: P) {
 export function Music({ d, set }: P) {
   const [pick, setPick] = useState(false);
   return (
-    <Section title="Nhạc nền">
-      <div className="music-empty">
-        <div className="music-dot">{Icon.music(28)}</div>
-        <p>{d.musicName || "Chưa chọn nhạc nền"}</p>
-        <button className="btn-primary" style={{ height: 36 }} onClick={() => setPick(true)}>{Icon.music(16)} Chọn nhạc</button>
-        {d.musicName && <button className="link-btn" onClick={() => set({ musicName: "" })}>Bỏ chọn</button>}
+    <Section
+      title="Nhạc nền"
+      icon={
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+          <path d="M9 18V5l12-2v13" strokeLinecap="round" strokeLinejoin="round" />
+          <circle cx="6" cy="18" r="3" />
+          <circle cx="18" cy="16" r="3" />
+        </svg>
+      }
+    >
+      <div className="music-box-container">
+        <div className="music-disc-large">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M9 18V5l12-2v13" strokeLinecap="round" strokeLinejoin="round" />
+            <circle cx="6" cy="18" r="3" />
+            <circle cx="18" cy="16" r="3" />
+          </svg>
+        </div>
+        <p className="music-track-name">{d.musicName || "Chưa chọn nhạc nền"}</p>
+        <button type="button" className="music-choose-btn" onClick={() => setPick(true)}>
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+            <path d="M9 18V5l12-2v13" strokeLinecap="round" strokeLinejoin="round" />
+            <circle cx="6" cy="18" r="3" />
+            <circle cx="18" cy="16" r="3" />
+          </svg>
+          Chọn nhạc
+        </button>
+        {d.musicName && (
+          <button
+            type="button"
+            className="link-btn"
+            style={{ marginTop: 10 }}
+            onClick={() => set({ musicName: "" })}
+          >
+            Bỏ chọn
+          </button>
+        )}
       </div>
       {pick && <MusicPicker current={d.musicName} onPick={(n) => set({ musicName: n })} onClose={() => setPick(false)} />}
     </Section>

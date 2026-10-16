@@ -589,7 +589,7 @@ export default function Preview({
           {/* -------------------- SECTION 6: LỊCH TRÌNH (TIMELINE) -------------------- */}
           {d.schedOn && d.sched.length > 0 && (
             <section className="sp-section sp-timeline-sec">
-              <h2 className="sp-sec-title">LỊCH TRÌNH NGÀY CƯỚI</h2>
+              <h2 className="sp-sec-title">{d.schedTitle || "LỊCH TRÌNH NGÀY CƯỚI"}</h2>
               <div className="sp-timeline">
                 {d.sched.map((item, i) => (
                   <div className="sp-tl-item" key={i}>
@@ -659,13 +659,12 @@ export default function Preview({
               }}
             >
               <h2
-                className="mb-6 uppercase text-[20px] md:text-[24px]"
+                className="mb-4 text-[21px] md:text-[25px] lg:text-[32px] flex flex-col items-center"
                 style={{
-                  color: "rgb(255, 223, 175)",
-                  fontFamily: '"Times New Roman", serif',
-                  fontWeight: 700,
-                  textAlign: "center",
-                  letterSpacing: "0.05em",
+                  color: d.giftDisplayMode === "gift_box" ? "rgb(84, 46, 8)" : "rgb(255, 223, 175)",
+                  fontFamily: d.giftDisplayMode === "gift_box" ? "Oswald, sans-serif" : '"Times New Roman", serif',
+                  fontWeight: 600,
+                  letterSpacing: "0.02em",
                   marginBottom: d.giftDisplayMode === "qr_inline" ? "24px" : "16px",
                 }}
               >
@@ -786,41 +785,41 @@ export default function Preview({
                     type="button"
                     aria-label="Mở hộp mừng cưới"
                     className="group relative cursor-pointer outline-none border-none bg-transparent"
-                    style={{ width: "220px", height: "235px" }}
+                    style={{ width: "260px", height: "280px" }}
                     onClick={() => setGiftModalOpen(true)}
                   >
                     <div className="relative w-full h-full flex items-end justify-center pb-[26px]">
-                      <span className="igb-sparkle absolute pointer-events-none z-20" style={{ top: "8%", left: "14%", color: "rgb(255, 239, 214)", fontSize: "17.6px" }}>✦</span>
-                      <span className="igb-sparkle-2 absolute pointer-events-none z-20" style={{ top: "18%", right: "10%", color: "rgb(255, 239, 214)", fontSize: "12.8px" }}>✦</span>
-                      <span className="igb-sparkle-3 absolute pointer-events-none z-20" style={{ top: "32%", left: "5%", color: "rgb(255, 239, 214)", fontSize: "11.2px" }}>✦</span>
-                      <span className="igb-sparkle-4 absolute pointer-events-none z-20" style={{ top: "26%", right: "5%", color: "rgb(255, 239, 214)", fontSize: "11.2px" }}>✦</span>
+                      <span className="igb-sparkle absolute pointer-events-none z-20" style={{ top: "8%", left: "14%", color: "rgb(84, 46, 8)", fontSize: "22px" }}>✦</span>
+                      <span className="igb-sparkle-2 absolute pointer-events-none z-20" style={{ top: "18%", right: "10%", color: "rgb(84, 46, 8)", fontSize: "16px" }}>✦</span>
+                      <span className="igb-sparkle-3 absolute pointer-events-none z-20" style={{ top: "32%", left: "5%", color: "rgb(84, 46, 8)", fontSize: "14px" }}>✦</span>
+                      <span className="igb-sparkle-4 absolute pointer-events-none z-20" style={{ top: "26%", right: "5%", color: "rgb(84, 46, 8)", fontSize: "14px" }}>✦</span>
                       
                       {/* 8 Confetti particles */}
-                      <div className="absolute pointer-events-none z-0" style={{ bottom: "148.75px", left: "50%" }}>
-                        <div className="igb-confetti igb-c1" style={{ position: "absolute", left: "50%", top: "0px", opacity: 0, marginLeft: "-4.4px", marginTop: "-2.2px", pointerEvents: "none", willChange: "transform, opacity", width: "8.8px", height: "4.4px", backgroundColor: "rgb(236, 72, 153)", borderRadius: "2px" }} />
-                        <div className="igb-confetti igb-c2" style={{ position: "absolute", left: "50%", top: "0px", opacity: 0, marginLeft: "-4px", marginTop: "-4px", pointerEvents: "none", willChange: "transform, opacity", width: "8px", height: "8px", backgroundColor: "rgb(255, 239, 214)", borderRadius: "50%" }} />
-                        <div className="igb-confetti igb-c3" style={{ position: "absolute", left: "50%", top: "0px", opacity: 0, marginLeft: "-4.4px", marginTop: "-2.2px", pointerEvents: "none", willChange: "transform, opacity", width: "8.8px", height: "4.4px", backgroundColor: "rgb(34, 197, 94)", borderRadius: "2px" }} />
-                        <div className="igb-confetti igb-c4" style={{ position: "absolute", left: "50%", top: "0px", opacity: 0, marginLeft: "-3.6px", marginTop: "-3.6px", pointerEvents: "none", willChange: "transform, opacity", width: "7.2px", height: "7.2px", backgroundColor: "rgb(59, 130, 246)", borderRadius: "50%" }} />
-                        <div className="igb-confetti igb-c5" style={{ position: "absolute", left: "50%", top: "0px", opacity: 0, marginLeft: "-4.8px", marginTop: "-2.4px", pointerEvents: "none", willChange: "transform, opacity", width: "9.6px", height: "4.8px", backgroundColor: "rgb(168, 85, 247)", borderRadius: "2px" }} />
-                        <div className="igb-confetti igb-c6" style={{ position: "absolute", left: "50%", top: "0px", opacity: 0, marginLeft: "-4px", marginTop: "-4px", pointerEvents: "none", willChange: "transform, opacity", width: "0px", height: "0px", borderLeft: "4px solid transparent", borderRight: "4px solid transparent", borderBottom: "8px solid rgb(250, 204, 21)" }} />
-                        <div className="igb-confetti igb-c7" style={{ position: "absolute", left: "50%", top: "0px", opacity: 0, marginLeft: "-4px", marginTop: "-2px", pointerEvents: "none", willChange: "transform, opacity", width: "8px", height: "4px", backgroundColor: "rgb(255, 223, 175)", borderRadius: "2px" }} />
-                        <div className="igb-confetti igb-c8" style={{ position: "absolute", left: "50%", top: "0px", opacity: 0, marginLeft: "-3.6px", marginTop: "-3.6px", pointerEvents: "none", willChange: "transform, opacity", width: "7.2px", height: "7.2px", backgroundColor: "rgb(249, 115, 22)", borderRadius: "50%" }} />
+                      <div className="absolute pointer-events-none z-0" style={{ bottom: "187px", left: "50%" }}>
+                        <div className="igb-confetti igb-c1" style={{ position: "absolute", left: "50%", top: "0px", opacity: 0, marginLeft: "-5.5px", marginTop: "-2.75px", pointerEvents: "none", willChange: "transform, opacity", width: "11px", height: "5.5px", backgroundColor: "rgb(236, 72, 153)", borderRadius: "2px" }} />
+                        <div className="igb-confetti igb-c2" style={{ position: "absolute", left: "50%", top: "0px", opacity: 0, marginLeft: "-5px", marginTop: "-5px", pointerEvents: "none", willChange: "transform, opacity", width: "10px", height: "10px", backgroundColor: "rgb(84, 46, 8)", borderRadius: "50%" }} />
+                        <div className="igb-confetti igb-c3" style={{ position: "absolute", left: "50%", top: "0px", opacity: 0, marginLeft: "-5.5px", marginTop: "-2.75px", pointerEvents: "none", willChange: "transform, opacity", width: "11px", height: "5.5px", backgroundColor: "rgb(34, 197, 94)", borderRadius: "2px" }} />
+                        <div className="igb-confetti igb-c4" style={{ position: "absolute", left: "50%", top: "0px", opacity: 0, marginLeft: "-4.5px", marginTop: "-4.5px", pointerEvents: "none", willChange: "transform, opacity", width: "9px", height: "9px", backgroundColor: "rgb(59, 130, 246)", borderRadius: "50%" }} />
+                        <div className="igb-confetti igb-c5" style={{ position: "absolute", left: "50%", top: "0px", opacity: 0, marginLeft: "-6px", marginTop: "-3px", pointerEvents: "none", willChange: "transform, opacity", width: "12px", height: "6px", backgroundColor: "rgb(168, 85, 247)", borderRadius: "2px" }} />
+                        <div className="igb-confetti igb-c6" style={{ position: "absolute", left: "50%", top: "0px", opacity: 0, marginLeft: "-5px", marginTop: "-5px", pointerEvents: "none", willChange: "transform, opacity", width: "0px", height: "0px", borderLeft: "5px solid transparent", borderRight: "5px solid transparent", borderBottom: "10px solid rgb(250, 204, 21)" }} />
+                        <div className="igb-confetti igb-c7" style={{ position: "absolute", left: "50%", top: "0px", opacity: 0, marginLeft: "-5px", marginTop: "-2.5px", pointerEvents: "none", willChange: "transform, opacity", width: "10px", height: "5px", backgroundColor: "rgb(195, 42, 41)", borderRadius: "2px" }} />
+                        <div className="igb-confetti igb-c8" style={{ position: "absolute", left: "50%", top: "0px", opacity: 0, marginLeft: "-4.5px", marginTop: "-4.5px", pointerEvents: "none", willChange: "transform, opacity", width: "9px", height: "9px", backgroundColor: "rgb(249, 115, 22)", borderRadius: "50%" }} />
                       </div>
 
                       {/* Bobbing Box and 7 Mini Decors */}
-                      <div className="igb-bob relative" style={{ width: "160px", height: "175px" }}>
-                        <div className="igb-shadow absolute pointer-events-none" style={{ left: "50%", bottom: "-8px", width: "115.2px", height: "12px", marginLeft: "-57.6px", borderRadius: "50%", backgroundColor: "rgba(0, 0, 0, 0.45)", filter: "blur(4px)", zIndex: 0, willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-1 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/minimalism_darkblue.webp" style={{ left: "-16px", top: "8px", width: "27.2px", zIndex: 1, transform: "rotate(-22deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-2 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/silk_flora_brown.webp" style={{ left: "134.4px", top: "1.6px", width: "30.4px", zIndex: 1, transform: "rotate(20deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-3 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/baroque_blue.webp" style={{ left: "-12.8px", top: "96px", width: "20.8px", zIndex: 1, transform: "rotate(-18deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-4 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/royal_v2_green.webp" style={{ left: "145.6px", top: "91.2px", width: "19.2px", zIndex: 1, transform: "rotate(14deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-box absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/baroque_v2_darkred.webp" style={{ left: "50%", bottom: "0px", width: "136px", maxHeight: "175px", objectFit: "contain", marginLeft: "-68px", zIndex: 2, filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 10px 18px)", willChange: "transform" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-5 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/lien_hoa_pink.webp" style={{ left: "-6.4px", top: "137.6px", width: "35.2px", zIndex: 3, transform: "rotate(8deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-6 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/minimalism_green.webp" style={{ left: "20.8px", top: "145.6px", width: "20.8px", zIndex: 3, transform: "rotate(-10deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-7 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/riviera_blue.webp" style={{ left: "94.4px", top: "140.8px", width: "32px", zIndex: 3, transform: "rotate(-14deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
+                      <div className="igb-bob relative" style={{ width: "200px", height: "220px" }}>
+                        <div className="igb-shadow absolute pointer-events-none" style={{ left: "50%", bottom: "-8px", width: "144px", height: "12px", marginLeft: "-72px", borderRadius: "50%", backgroundColor: "rgba(0, 0, 0, 0.45)", filter: "blur(4px)", zIndex: 0, willChange: "transform, opacity" }} />
+                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-1 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/baroque_v2_darkgreen.webp" style={{ left: "-20px", top: "10px", width: "34px", zIndex: 1, transform: "rotate(-22deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
+                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-2 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/saraya_gold.webp" style={{ left: "168px", top: "2px", width: "38px", zIndex: 1, transform: "rotate(20deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
+                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-3 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/dragon_phoenix_v2.webp" style={{ left: "-16px", top: "120px", width: "26px", zIndex: 1, transform: "rotate(-18deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
+                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-4 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/spring_garden_red.webp" style={{ left: "182px", top: "114px", width: "24px", zIndex: 1, transform: "rotate(14deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
+                        <img alt="" loading="lazy" decoding="async" className="igb-box absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/nhat_binh_red.webp" style={{ left: "50%", bottom: "0px", width: "170px", maxHeight: "220px", objectFit: "contain", marginLeft: "-85px", zIndex: 2, filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 10px 18px)", willChange: "transform" }} />
+                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-5 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/double_dragon_blue.webp" style={{ left: "-8px", top: "172px", width: "44px", zIndex: 3, transform: "rotate(8deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
+                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-6 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/dragon_phoenix_v3.webp" style={{ left: "26px", top: "182px", width: "26px", zIndex: 3, transform: "rotate(-10deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
+                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-7 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/hoa_kho_orange.webp" style={{ left: "118px", top: "176px", width: "40px", zIndex: 3, transform: "rotate(-14deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
                       </div>
                     </div>
-                    <p className="igb-hint absolute bottom-0 left-1/2 -translate-x-1/2 text-xs whitespace-nowrap font-medium" style={{ color: "rgb(255, 239, 214)" }}>
+                    <p className="igb-hint absolute bottom-0 left-1/2 -translate-x-1/2 text-xs whitespace-nowrap font-medium" style={{ color: "rgb(84, 46, 8)" }}>
                       <span dir="auto">Nhấn để mở</span>
                     </p>
                   </button>
@@ -983,21 +982,47 @@ export default function Preview({
 
       {/* ==================== GIFT MODAL ==================== */}
       {giftModalOpen && (
-        <div className="gift-modal-backdrop" onClick={() => setGiftModalOpen(false)}>
-          <div className="gift-modal-dialog" onClick={(e) => e.stopPropagation()}>
-            <div className="gift-modal-top-bar">
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
+          onClick={() => setGiftModalOpen(false)}
+        >
+          <div
+            className="w-full max-w-lg sm:max-w-xl p-0 max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl relative"
+            style={{ backgroundColor: "rgb(248, 243, 224)" }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div
+              className="relative px-6 pt-6 pb-4 text-center"
+              style={{ backgroundColor: "rgb(195, 42, 41)" }}
+            >
               <button
                 type="button"
-                className="gift-modal-close"
+                className="btn btn-sm btn-circle btn-ghost absolute right-3 top-3 text-white/80 hover:text-white hover:bg-white/20"
                 onClick={() => setGiftModalOpen(false)}
                 aria-label="Đóng"
               >
-                ✕
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
               </button>
-              <h2 className="gift-modal-title">{d.giftTitle || "Hộp Quà Mừng"}</h2>
+              <h2
+                className="text-[21px] md:text-[25px] lg:text-[32px]"
+                style={{
+                  textShadow: "rgba(0, 0, 0, 0.2) 1px 1px 2px",
+                  fontFamily: "Oswald, sans-serif",
+                  fontWeight: 600,
+                  letterSpacing: "0.02em",
+                  color: "white",
+                }}
+              >
+                {d.giftTitle || "Hộp Quà Mừng"}
+              </h2>
             </div>
-            <div className="gift-modal-body">
-              <div className="gift-modal-cards-row">
+            <div className="p-4 sm:p-6">
+              <div
+                className="flex flex-col items-center gap-6 sm:flex-row sm:flex-wrap sm:items-start sm:justify-center"
+                style={{ color: "rgb(84, 46, 8)" }}
+              >
                 {d.gifts.map((g) => {
                   const title =
                     g.who === "custom" && g.customLabel
@@ -1006,28 +1031,48 @@ export default function Preview({
                       ? "Chú Rể"
                       : "Cô Dâu";
                   return (
-                    <div className="sp-qr-card-unified" key={g.id}>
-                      <h3 className="sp-qr-card-unified-title">
+                    <div
+                      className="flex flex-col items-center flex-1 max-w-[200px] sm:max-w-none"
+                      key={g.id}
+                    >
+                      <h3
+                        className="mb-3 text-sm font-medium text-center line-clamp-2"
+                        style={{ color: "rgb(195, 42, 41)" }}
+                      >
                         {title} - {g.accountName}
                       </h3>
-                      <div className="sp-qr-box-unified">
+                      <div
+                        className="w-44 h-44 sm:w-48 sm:h-48 bg-white rounded-xl p-2 shadow-lg flex items-center justify-center"
+                        style={{ border: "2px solid rgba(195, 42, 41, 0.125)" }}
+                      >
                         <img
                           alt={`QR - ${title} - ${g.accountName}`}
+                          className="w-full h-full object-contain"
                           src={g.qrUrl}
                         />
                       </div>
-                      <div className="sp-qr-unified-texts">
-                        <p>{g.bankName}</p>
-                        <p className="acc-num">{g.accountNumber}</p>
-                        <p className="acc-name">{g.accountName}</p>
+                      <div className="mt-3 text-center space-y-0.5">
+                        <p className="text-xs" style={{ color: "rgb(84, 46, 8)" }}>
+                          {g.bankName}
+                        </p>
+                        <p className="text-xs font-mono font-bold" style={{ color: "rgb(84, 46, 8)" }}>
+                          {g.accountNumber}
+                        </p>
+                        <p className="text-xs font-semibold" style={{ color: "rgb(84, 46, 8)" }}>
+                          {g.accountName}
+                        </p>
                       </div>
-                      <div className="sp-qr-unified-actions">
+                      <div className="flex items-center gap-2 mt-3">
                         <button
                           type="button"
-                          className="sp-qr-unified-btn"
+                          className="text-xs px-3 py-1.5 inline-flex items-center gap-1 font-medium rounded-full transition-colors cursor-pointer"
+                          style={{
+                            color: "rgb(195, 42, 41)",
+                            backgroundColor: "rgba(195, 42, 41, 0.082)",
+                          }}
                           onClick={() => copyToClipboard(g.accountNumber, g.id)}
                         >
-                          {copiedBank === g.id ? "✓ Đã sao chép" : "Sao chép STK"}
+                          {copiedBank === g.id ? "✓ Đã chép" : "Sao chép STK"}
                         </button>
                         {g.qrUrl && (
                           <a
@@ -1035,7 +1080,12 @@ export default function Preview({
                             target="_blank"
                             rel="noopener noreferrer"
                             download={`vietqr-${g.bankCode}-${g.accountNumber}.png`}
-                            className="sp-qr-unified-btn"
+                            className="text-xs px-3 py-1.5 inline-flex items-center gap-1 font-medium rounded-full transition-colors cursor-pointer"
+                            style={{
+                              color: "rgb(195, 42, 41)",
+                              backgroundColor: "rgba(195, 42, 41, 0.082)",
+                              textDecoration: "none",
+                            }}
                           >
                             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />

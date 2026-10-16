@@ -74,21 +74,37 @@ export default function HeroPhoto({ d, set }: P) {
 
   return (
     <Section title="Ảnh đầu thiệp" icon={icon} enabled={d.heroOn} onEnabled={(v) => set({ heroOn: v })} enabledLabel="Hiện">
-      <div className="hero-ed">
-        <span className="hero-lbl">Ảnh đầu thiệp</span>
-        <div className="hero-thumb">
-          {d.heroPhoto && (
+      <input ref={file} type="file" accept="image/*" hidden onChange={(e) => { pick(e.target.files); e.target.value = ""; }} />
+      {!d.heroPhoto ? (
+        <div className="hero-empty-container">
+          <div className="hero-empty-thumb">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" strokeLinecap="round" strokeLinejoin="round" />
+              <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor" />
+              <path d="M21 15l-5-5L5 21" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+          <button type="button" className="hero-upload-btn-outline" onClick={() => file.current?.click()}>
+            Tải lên
+          </button>
+          <p className="hero-help">Hỗ trợ: JPG, PNG, GIF, WebP, HEIC. Dung lượng tối đa 10MB.</p>
+          <p className="hero-help2">Nên dùng ảnh chụp dọc tỷ lệ 9:16 hoặc 3:4 để hiển thị đẹp nhất.</p>
+        </div>
+      ) : (
+        <div className="hero-ed">
+          <span className="hero-lbl">Ảnh đầu thiệp</span>
+          <div className="hero-thumb">
             <img src={d.heroPhoto} alt="Ảnh đầu thiệp" style={{ objectPosition: `${d.heroX}% ${d.heroY}%`, transform: `scale(${d.heroZoom})`, transformOrigin: `${d.heroX}% ${d.heroY}%` }} />
-          )}
+          </div>
+          <div className="hero-btns">
+            <button type="button" className="hero-btn primary" onClick={() => file.current?.click()}>Đổi ảnh</button>
+            <button type="button" className="hero-btn" style={{ border: "1px solid rgba(255,255,255,0.2)" }} onClick={() => setCrop(true)}>Cắt ảnh</button>
+            <button type="button" className="hero-btn danger" onClick={() => set({ heroPhoto: "" })}>Xoá</button>
+          </div>
+          <p className="hero-help">Hỗ trợ: JPG, PNG, GIF, WebP, HEIC. Dung lượng tối đa 10MB.</p>
+          <p className="hero-help2">Nên dùng ảnh chụp dọc tỷ lệ 9:16 hoặc 3:4 để hiển thị đẹp nhất.</p>
         </div>
-        <input ref={file} type="file" accept="image/*" hidden onChange={(e) => { pick(e.target.files); e.target.value = ""; }} />
-        <div className="hero-btns">
-          <button type="button" className="hero-btn primary" onClick={() => file.current?.click()}>Đổi ảnh</button>
-          <button type="button" className="hero-btn danger" disabled={!d.heroPhoto} onClick={() => set({ heroPhoto: "" })}>Xoá</button>
-        </div>
-        <p className="hero-help">JPG, PNG, GIF, WebP, HEIC</p>
-        <p className="hero-help2">Nên dùng ảnh dọc hoặc ảnh cặp đôi toàn thân</p>
-      </div>
+      )}
       {crop && d.heroPhoto && (
         <CropModal src={d.heroPhoto} zoom0={d.heroZoom} x0={d.heroX} y0={d.heroY}
           onApply={(z, x, y) => set({ heroZoom: z, heroX: x, heroY: y })} onClose={() => setCrop(false)} />
