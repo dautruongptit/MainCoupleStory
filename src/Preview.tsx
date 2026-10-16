@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { introDefaultFor } from "./templates";
 import {
   Inv,
   brideShown,
@@ -25,6 +26,7 @@ export default function Preview({
   const [rsvpOpen, setRsvpOpen] = useState(false);
   const [rsvpSubmitted, setRsvpSubmitted] = useState(false);
 
+  const intro = d.introCustom && d.introText.trim() ? d.introText.trim() : introDefaultFor(d.templateId);
   const isMinimalism = (d.templateId || "").includes("minimalism") || (d.templateName || "").includes("Minimalism");
   const isSongHy = (d.templateId || "").includes("song_hy") || (d.templateName || "").includes("Song Hỷ");
   const [rsvpForm, setRsvpForm] = useState({
@@ -463,7 +465,7 @@ export default function Preview({
                   fontWeight: 600,
                 }}
               >
-                THE WEDDING OF
+                {intro}
               </p>
 
               <div className="relative z-10 mt-2 flex items-center justify-center gap-2 md:mt-3 md:gap-3">
@@ -493,6 +495,7 @@ export default function Preview({
                     src={d.heroPhoto || "/images/themes/minimalism-brown/couple.webp"}
                     alt={`${gName} & ${bName}`}
                     className="h-full w-full object-cover"
+                    style={{ objectPosition: `${d.heroX}% ${d.heroY}%`, transform: `scale(${d.heroZoom})`, transformOrigin: `${d.heroX}% ${d.heroY}%` }}
                   />
                 </div>
                 <img
@@ -518,7 +521,7 @@ export default function Preview({
             /* Hero cho Song Hỷ - Xanh (media_1792167676918_431db77f.png) */
             <header className="sh-hero-sec">
               <div className="sh-green-arch">
-                <p className="sh-welcome">WELCOME TO OUR WEDDING</p>
+                <p className="sh-welcome">{intro}</p>
                 <div className="sh-couple-row">
                   <div className="sh-groom-col">
                     <span className="sh-role">Chú Rể</span>
@@ -654,7 +657,12 @@ export default function Preview({
                     key={i}
                     onClick={() => setLightboxImg(p)}
                   >
-                    <img src={p} alt={`Ảnh cưới ${i + 1}`} loading="lazy" />
+                    <img
+                      src={p}
+                      alt={`Ảnh cưới ${i + 1}`}
+                      loading="lazy"
+                      style={d.photoCrops[p] ? { objectPosition: `${d.photoCrops[p].x}% ${d.photoCrops[p].y}%`, transform: `scale(${d.photoCrops[p].z})`, transformOrigin: `${d.photoCrops[p].x}% ${d.photoCrops[p].y}%` } : undefined}
+                    />
                     <div className="sp-gallery-overlay">
                       <span>🔍 Xem ảnh</span>
                     </div>
