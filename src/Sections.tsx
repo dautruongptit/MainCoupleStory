@@ -3,6 +3,7 @@ import MusicPicker, { MUSIC_LIBRARY } from "./MusicPicker";
 import { CropModal } from "./HeroPhoto";
 import { Inv, Gift, groomShown, brideShown } from "./data";
 import { Field, Helper, Hint, Input, Modal, OutlineButton, ResetInput, Row, Section, Segmented, Textarea, Toggle, Icon } from "./ui";
+import { introDefaultFor } from "./templates";
 
 type P = { d: Inv; set: (p: Partial<Inv>) => void };
 
@@ -25,7 +26,7 @@ export function Basic({ d, set }: P) {
 
       {d.introCustom ? (
         <div style={{ marginTop: 10 }}>
-          <Input placeholder="Save The Date" value={d.introText} onChange={(e) => set({ introText: e.target.value })} />
+          <Input placeholder={introDefaultFor(d.templateId)} value={d.introText} onChange={(e) => set({ introText: e.target.value })} />
         </div>
       ) : (
         <div className="basic-intro-hint">
@@ -34,7 +35,7 @@ export function Basic({ d, set }: P) {
           </svg>
           <div>
             <span className="basic-hint-text">Đang dùng chữ mặc định của mẫu:</span>
-            <div className="basic-hint-val">“Save The Date”</div>
+            <div className="basic-hint-val">“{introDefaultFor(d.templateId)}”</div>
           </div>
         </div>
       )}

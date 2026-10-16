@@ -8,6 +8,8 @@ export type Tpl = {
   full: string;
   badge?: "hot" | "new";
   tags: string[];
+  /** chữ "Lời mở đầu" mặc định của mẫu (chỉ biết ở một số mẫu, xem ảnh chuẩn) */
+  introDefault?: string;
 };
 
 /** Kho mẫu thiệp (nguồn: chungdoi.com/vi/mau-thiep, đúng thứ tự trên trang). Ảnh lấy từ assets.chungdoi.com. */
@@ -90,3 +92,13 @@ export const TEMPLATES: Tpl[] = [
   {"slug": "hoang-kim-ii-tim", "id": "royal_v2_purple", "name": "Hoàng Kim II - Tím", "desc": "Nền tím hoàng gia với khung vàng kim và hoa mẫu đơn tím sang trọng", "img": "listing/royal_v2_purple.17611c9c.webp", "full": "full/royal_v2_purple.c2950d04.webp", "tags": ["Sang trọng", "Tím", "Hoa mẫu đơn"]},
   {"slug": "hoa-kho-cam", "id": "hoa_kho_orange", "name": "Hoa Khô - Cam", "desc": "Hoa khô cúc vạn thọ vẽ màu nước viền quanh những khung thiệp kem, chữ cam đất trên nền giấy ấm", "img": "listing/hoa_kho_orange.11f1f15d.webp", "full": "full/hoa_kho_orange.14d9d669.webp", "tags": ["Hoa khô", "Cam", "Boho"]},
 ];
+
+/** Chữ mở đầu mặc định theo mẫu, đo từ ảnh chuẩn. Mẫu chưa có ảnh dùng "Save The Date". */
+const INTRO_BY_ID: Record<string, string> = {
+  minimalism_darkred: "Save The Date",
+  song_hy_green: "WELCOME TO OUR WEDDING",
+  minimalism_brown: "The Wedding Of",
+};
+export const introDefaultFor = (templateId: string) =>
+  TEMPLATES.find((t) => t.id === templateId)?.introDefault ?? INTRO_BY_ID[templateId] ?? "Save The Date";
+export const templateById = (id?: string) => TEMPLATES.find((t) => t.id === id);

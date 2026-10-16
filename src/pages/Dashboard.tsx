@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { Link, navigate } from "../router";
-import { loadCards, saveCards, type Card } from "../store";
+import { loadCards, saveCards, loadInv, saveInv, removeInv, type Card } from "../store";
 import { LoginModal, useAuth } from "../TopNav";
 import ShareModal from "../ShareModal";
 
@@ -81,9 +81,12 @@ export default function Dashboard() {
   const duplicate = (c: Card) => {
     const d = new Date();
     const created = `${String(d.getDate()).padStart(2, "0")}/${String(d.getMonth() + 1).padStart(2, "0")}/${d.getFullYear()}`;
-    persist([...cards, { ...c, id: crypto.randomUUID(), name: `Thiệp ${cards.length + 1}`, status: "draft", created }]);
+    const id = crypto.randomUUID();
+    const inv = loadInv(c.id);
+    if (inv) saveInv(id, inv);
+    persist([...cards, { ...c, id, name: `Thiệp ${cards.length + 1}`, status: "draft", created }]);
   };
-  const remove = (id: string) => { persist(cards.filter((c) => c.id !== id)); setDeleting(null); };
+  const remove = (id: string) => { persist(cards.filter((c) => c.id !== id)); removeInv(id); setDeleting(null); };
 
   const tabs: [typeof tab, string][] = [
     ["all", `Tất cả (${cards.length})`],

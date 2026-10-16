@@ -1,4 +1,5 @@
 import { Tpl } from "./templates";
+import type { Inv } from "./data";
 
 export type Card = {
   id: string;
@@ -41,4 +42,33 @@ export function createDraft(t: Tpl): string {
   const created = `${String(d.getDate()).padStart(2, "0")}/${String(d.getMonth() + 1).padStart(2, "0")}/${d.getFullYear()}`;
   saveCards([...cards, { id, name: `Thiệp ${cards.length + 1}`, template, color: rest.join(" - "), status: "draft", created, tplId: t.id }]);
   return id;
+}
+
+const INV_KEY = (cardId: string) => `chungdoi.inv.${cardId}`;
+
+/** Nội dung editor của một thiệp (chỉ lưu trong trình duyệt này). */
+export function loadInv(cardId: string): Inv | null {
+  try {
+    const raw = localStorage.getItem(INV_KEY(cardId));
+    if (raw) return JSON.parse(raw) as Inv;
+  } catch {
+    /* ignore corrupt storage */
+  }
+  return null;
+}
+
+export function saveInv(cardId: string, inv: Inv) {
+  try {
+    localStorage.setItem(INV_KEY(cardId), JSON.stringify(inv));
+  } catch {
+    /* quota hoặc private mode: dữ liệu vẫn nằm trong state */
+  }
+}
+
+export function removeInv(cardId: string) {
+  try {
+    localStorage.removeItem(INV_KEY(cardId));
+  } catch {
+    /* ignore */
+  }
 }

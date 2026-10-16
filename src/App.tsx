@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Inv, defaultInv } from "./data";
 import Header, { Mode } from "./Header";
 import Preview from "./Preview";
@@ -8,10 +8,23 @@ import HeroPhoto from "./HeroPhoto";
 import TutorialTour from "./TutorialTour";
 import ShareModal from "./ShareModal";
 import PublishCheckModal from "./PublishCheckModal";
-import { loadCards, saveCards } from "./store";
+import { loadCards, saveCards, loadInv, saveInv } from "./store";
+import { TPL_CDN, templateById } from "./templates";
 
 export default function App() {
-  const [d, setD] = useState<Inv>(defaultInv);
+  const cardId = typeof window !== "undefined" ? window.location.pathname.replace(/^\/edit\//, "").split("?")[0] : "";
+  const [d, setD] = useState<Inv>(() => {
+    const saved = loadInv(cardId);
+    if (saved) {
+      // blob: URL của ảnh vừa tải lên chỉ sống trong phiên trước, không dùng lại được sau khi tải trang.
+      const alive = (u: string) => !u.startsWith("blob:");
+      return { ...defaultInv, ...saved, photos: saved.photos.filter(alive), heroPhoto: alive(saved.heroPhoto) ? saved.heroPhoto : "" };
+    }
+    const tpl = templateById(loadCards().find((c) => c.id === cardId)?.tplId);
+    return tpl
+      ? { ...defaultInv, templateId: tpl.id, templateName: tpl.name, templateThumb: TPL_CDN + tpl.img }
+      : defaultInv;
+  });
   const [mode, setMode] = useState<Mode>("edit");
   const [dirty, setDirty] = useState(0);
   const [toast, setToast] = useState("");
@@ -19,7 +32,6 @@ export default function App() {
   const [justPublished, setJustPublished] = useState(false);
   const [showPublishCheck, setShowPublishCheck] = useState(false);
 
-  const cardId = typeof window !== "undefined" ? window.location.pathname.replace(/^\/edit\//, "").split("?")[0] : "";
   const cards = loadCards();
   const currentCard = cards.find((c) => c.id === cardId) || cards[0];
   const [isPublished, setIsPublished] = useState<boolean>(() => currentCard?.status === "published");
@@ -28,6 +40,10 @@ export default function App() {
     setD((prev) => ({ ...prev, ...p }));
     setDirty((n) => n + 1);
   }, []);
+
+  useEffect(() => {
+    if (dirty > 0 && cardId) saveInv(cardId, d);
+  }, [d, dirty, cardId]);
 
   const handlePublishRequest = () => {
     setShowPublishCheck(true);
@@ -67,7 +83,7 @@ export default function App() {
           set({
             templateId: tpl.id,
             templateName: tpl.name,
-            templateThumb: "https://assets.chungdoi.com/template-previews/vi/" + tpl.img,
+            templateThumb: TPL_CDN + tpl.img,
           })
         }
       />
