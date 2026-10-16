@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Inv, defaultInv } from "../data";
 import Preview from "../Preview";
 import { createDraft } from "../store";
@@ -7,15 +7,71 @@ import { TEMPLATES } from "../templates";
 
 /** /vi/mau-thiep/<slug>/demo – thiệp mẫu với dữ liệu minh hoạ. */
 export default function Demo({ slug }: { slug: string }) {
-  const tpl = TEMPLATES.find((t) => t.slug === slug);
-  const [d, setD] = useState<Inv>({
-    ...defaultInv,
-    groomFull: "Nguyễn Tuấn Kiệt",
-    brideFull: "Trần Thanh Hà",
-    groomNick: "Tuấn Kiệt",
-    brideNick: "Thanh Hà",
-    date: "2026-12-20",
-    time: "11:00",
+  const tpl = useMemo(() => TEMPLATES.find((t) => t.slug === slug), [slug]);
+
+  const isMinimalism = useMemo(
+    () => (tpl?.id || "").includes("minimalism") || slug.includes("minimalism"),
+    [tpl, slug]
+  );
+  const isSongHy = useMemo(
+    () => (tpl?.id || "").includes("song_hy") || slug.includes("song-hy"),
+    [tpl, slug]
+  );
+
+  const [d, setD] = useState<Inv>(() => {
+    if (isMinimalism) {
+      return {
+        ...defaultInv,
+        templateId: tpl?.id || "minimalism_brown",
+        templateName: tpl?.name || "Minimalism - Nâu",
+        templateThumb: tpl ? "https://assets.chungdoi.com/template-previews/vi/" + tpl.img : "",
+        groomFull: "Hoàng Nam",
+        groomNick: "Hoàng Nam",
+        brideFull: "Thảo Vy",
+        brideNick: "Thảo Vy",
+        date: "2026-01-03",
+        time: "18:00",
+        welcomeTime: "17:30",
+        startTime: "18:00",
+        locTitle: "TIỆC CƯỚI SẼ DIỄN RA VÀO LÚC:",
+        address: "Riverside Palace, 360D Bến Vân Đồn, Phường 1, Quận 4, TP. Hồ Chí Minh",
+        envelopeGuest: "Thân Mời",
+        dressColors: ["#542e08", "#9c7653", "#d6c5b3", "#ece5dd"],
+        musicUrl: "https://assets.chungdoi.com/audio/until_i_found_you.mp3",
+      };
+    }
+    if (isSongHy) {
+      return {
+        ...defaultInv,
+        templateId: tpl?.id || "song_hy_green",
+        templateName: tpl?.name || "Song Hỷ - Xanh",
+        templateThumb: tpl ? "https://assets.chungdoi.com/template-previews/vi/" + tpl.img : "",
+        groomFull: "CHÚ RỂ",
+        groomNick: "Chú Rể",
+        brideFull: "CÔ DÂU",
+        brideNick: "Cô Dâu",
+        date: "2026-10-18",
+        time: "11:00",
+        welcomeTime: "10:30",
+        startTime: "11:00",
+        locTitle: "TIỆC CƯỚI SẼ DIỄN RA VÀO LÚC:",
+        address: "Trung tâm Hội nghị Tiệc cưới White Palace, TP. Hồ Chí Minh",
+        envelopeGuest: "Thân Mời",
+        dressColors: ["#143a29", "#2e684a", "#8db398", "#f3f5f3"],
+      };
+    }
+    return {
+      ...defaultInv,
+      templateId: tpl?.id || "double_phoenix_red",
+      templateName: tpl?.name || "Song Phụng - Đỏ",
+      templateThumb: tpl ? "https://assets.chungdoi.com/template-previews/vi/" + tpl.img : "",
+      groomFull: "Nguyễn Tuấn Kiệt",
+      brideFull: "Trần Thanh Hà",
+      groomNick: "Tuấn Kiệt",
+      brideNick: "Thanh Hà",
+      date: "2026-12-20",
+      time: "11:00",
+    };
   });
 
   if (!tpl) {
@@ -28,13 +84,26 @@ export default function Demo({ slug }: { slug: string }) {
   }
 
   return (
-    <div className="demo-wrap">
-      <div className="demo-bar">
-        <Link href={`/vi/mau-thiep/${tpl.slug}`} className="back-link">← {tpl.name}</Link>
-        <span className="demo-tag">Demo · dữ liệu minh hoạ</span>
-        <button className="btn-primary" onClick={() => navigate(`/edit/${createDraft(tpl)}?template=${tpl.id}`)}>Chọn mẫu này</button>
+    <div className="demo-standalone-wrap">
+      <div className="demo-floating-header">
+        <Link href={`/vi/mau-thiep`} className="demo-float-btn back">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          {tpl.name}
+        </Link>
+        <button
+          className="demo-float-btn choose"
+          onClick={() => navigate(`/edit/${createDraft(tpl)}?template=${tpl.id}`)}
+        >
+          Tạo thiệp bằng mẫu này
+        </button>
       </div>
-      <Preview d={d} set={(p) => setD((prev) => ({ ...prev, ...p }))} />
+
+      <Preview
+        d={d}
+        set={(p) => setD((prev) => ({ ...prev, ...p }))}
+        standalone={true}
+      />
     </div>
   );
 }
+

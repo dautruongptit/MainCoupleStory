@@ -14,14 +14,19 @@ import {
 export default function Preview({
   d,
   set,
+  standalone = false,
 }: {
   d: Inv;
   set: (p: Partial<Inv>) => void;
+  standalone?: boolean;
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const [lightboxImg, setLightboxImg] = useState<string | null>(null);
   const [rsvpOpen, setRsvpOpen] = useState(false);
   const [rsvpSubmitted, setRsvpSubmitted] = useState(false);
+
+  const isMinimalism = (d.templateId || "").includes("minimalism") || (d.templateName || "").includes("Minimalism");
+  const isSongHy = (d.templateId || "").includes("song_hy") || (d.templateName || "").includes("Song Hỷ");
   const [rsvpForm, setRsvpForm] = useState({
     name: d.envelopeGuest || "",
     phone: "",
@@ -137,155 +142,248 @@ export default function Preview({
     d.gifts.find((g) => g.who === activeBankTab) || d.gifts[0] || null;
 
   return (
-    <div className="pv-wrapper">
+    <div className={`pv-wrapper ${standalone ? "is-standalone" : ""} ${isMinimalism ? "theme-minimalism" : isSongHy ? "theme-songhy" : "theme-songphung"}`}>
       {/* View Switcher Bar for testing Envelope vs Full Invitation */}
-      <div className="pv-toolbar">
-        <span className="pv-badge">Giao diện Mẫu thiệp Song Phụng - Đỏ</span>
-        <div className="pv-switch-btns">
-          <button
-            className={`pv-tool-btn ${!isOpen ? "active" : ""}`}
-            onClick={() => setIsOpen(false)}
-          >
-            ✉️ Bì thư mở thiệp
-          </button>
-          <button
-            className={`pv-tool-btn ${isOpen ? "active" : ""}`}
-            onClick={() => setIsOpen(true)}
-          >
-            📜 Nội dung thiệp cưới
-          </button>
-        </div>
-
-        {isOpen && (
-          <div className="pv-switch-btns" style={{ marginLeft: "auto" }}>
+      {!standalone && (
+        <div className="pv-toolbar">
+          <span className="pv-badge">Giao diện Mẫu thiệp {d.templateName || "Song Phụng - Đỏ"}</span>
+          <div className="pv-switch-btns">
             <button
-              type="button"
-              className={`pv-tool-btn ${d.giftDisplayMode === "gift_box" ? "active" : ""}`}
-              onClick={() => set({ giftDisplayMode: "gift_box" })}
+              className={`pv-tool-btn ${!isOpen ? "active" : ""}`}
+              onClick={() => setIsOpen(false)}
             >
-              🎁 Hộp quà
+              ✉️ Bì thư mở thiệp
             </button>
             <button
-              type="button"
-              className={`pv-tool-btn ${d.giftDisplayMode === "envelope" ? "active" : ""}`}
-              onClick={() => set({ giftDisplayMode: "envelope" })}
+              className={`pv-tool-btn ${isOpen ? "active" : ""}`}
+              onClick={() => setIsOpen(true)}
             >
-              ✉️ Phong bì
-            </button>
-            <button
-              type="button"
-              className={`pv-tool-btn ${d.giftDisplayMode === "qr_inline" ? "active" : ""}`}
-              onClick={() => set({ giftDisplayMode: "qr_inline" })}
-            >
-              📱 Hiện QR
+              📜 Nội dung thiệp cưới
             </button>
           </div>
-        )}
-      </div>
+
+          {isOpen && (
+            <div className="pv-switch-btns" style={{ marginLeft: "auto" }}>
+              <button
+                type="button"
+                className={`pv-tool-btn ${d.giftDisplayMode === "gift_box" ? "active" : ""}`}
+                onClick={() => set({ giftDisplayMode: "gift_box" })}
+              >
+                🎁 Hộp quà
+              </button>
+              <button
+                type="button"
+                className={`pv-tool-btn ${d.giftDisplayMode === "envelope" ? "active" : ""}`}
+                onClick={() => set({ giftDisplayMode: "envelope" })}
+              >
+                ✉️ Phong bì
+              </button>
+              <button
+                type="button"
+                className={`pv-tool-btn ${d.giftDisplayMode === "qr_inline" ? "active" : ""}`}
+                onClick={() => set({ giftDisplayMode: "qr_inline" })}
+              >
+                📱 Hiện QR
+              </button>
+            </div>
+          )}
+        </div>
+      )}
 
       {/* ==================== 1. MÀN HÌNH BÌ THƯ (ENVELOPE) ==================== */}
       {!isOpen && (
-        <div className="envelope-screen">
-          {/* Floating ambient 囍 particles */}
-          <div className="ambient-particles" aria-hidden="true">
-            {[
-              { left: "12%", size: "22px", color: "#FFF0E7", dur: "18s", delay: "-3s" },
-              { left: "28%", size: "15px", color: "#710001", dur: "22s", delay: "-7s" },
-              { left: "38%", size: "12px", color: "#FFF0E7", dur: "20s", delay: "-12s" },
-              { left: "48%", size: "24px", color: "#FFF0E7", dur: "19s", delay: "-5s" },
-              { left: "62%", size: "16px", color: "#8B0000", dur: "24s", delay: "-14s" },
-              { left: "76%", size: "14px", color: "#710001", dur: "21s", delay: "-8s" },
-              { left: "88%", size: "18px", color: "#A52A2A", dur: "23s", delay: "-16s" },
-              { left: "20%", size: "13px", color: "#8B0000", dur: "25s", delay: "-10s" },
-              { left: "70%", size: "20px", color: "#8B0000", dur: "17s", delay: "-2s" },
-              { left: "92%", size: "15px", color: "#710001", dur: "22s", delay: "-9s" },
-            ].map((p, i) => (
-              <div
-                key={i}
-                className="ambient-xi"
-                style={{
-                  left: p.left,
-                  fontSize: p.size,
-                  color: p.color,
-                  animationDuration: p.dur,
-                  animationDelay: p.delay,
-                }}
-              >
-                囍
-              </div>
-            ))}
-          </div>
-
-          {/* Envelope Card Container */}
-          <div className="envelope-card-wrap">
-            {/* Wax seal on top */}
-            <div className="wax-seal" onClick={handleOpenEnvelope} title="Bấm để mở thiệp">
-              <div className="wax-seal-inner">囍</div>
+        isMinimalism ? (
+          /* Màn hình mở thiệp Minimalism - Nâu (media_1792167825310_9563a55a.png) */
+          <div className="envelope-screen min-env-screen">
+            <div className="min-ambient-petals" aria-hidden="true">
+              {[
+                { left: "10%", size: "12px", dur: "14s", delay: "-2s" },
+                { left: "25%", size: "16px", dur: "18s", delay: "-6s" },
+                { left: "38%", size: "10px", dur: "15s", delay: "-10s" },
+                { left: "55%", size: "14px", dur: "20s", delay: "-4s" },
+                { left: "75%", size: "11px", dur: "17s", delay: "-12s" },
+                { left: "88%", size: "15px", dur: "16s", delay: "-8s" },
+              ].map((p, i) => (
+                <div
+                  key={i}
+                  className="min-petal"
+                  style={{
+                    left: p.left,
+                    fontSize: p.size,
+                    animationDuration: p.dur,
+                    animationDelay: p.delay,
+                  }}
+                >
+                  🍂
+                </div>
+              ))}
             </div>
 
-            {/* Inner Paper Card */}
-            <div className="envelope-card">
-              {/* Corner Ornaments */}
-              <img
-                src="https://chungdoi.com/images/themes/songphung-red/Phuong.webp"
-                alt=""
-                className="env-deco-phuong-tl"
-              />
-              <img
-                src="https://chungdoi.com/images/themes/songphung-red/Phuong.webp"
-                alt=""
-                className="env-deco-phuong-br"
-              />
-              <img
-                src="https://chungdoi.com/images/themes/songphung-red/HOA.webp"
-                alt=""
-                className="env-deco-hoa-bl"
-              />
-              <img
-                src="https://chungdoi.com/images/themes/songphung-red/HOA.webp"
-                alt=""
-                className="env-deco-hoa-tr"
-              />
+            <div className="min-card-wrap">
+              <div className="min-card">
+                {/* Dry flower top-left */}
+                <svg className="min-flower-corner tl" viewBox="0 0 100 120" fill="none">
+                  <path d="M10 110 Q 30 60 70 10" stroke="#b89368" strokeWidth="2" strokeLinecap="round" />
+                  <path d="M30 65 Q 15 45 25 30" stroke="#b89368" strokeWidth="1.5" strokeLinecap="round" />
+                  <path d="M45 45 Q 60 30 55 15" stroke="#b89368" strokeWidth="1.5" strokeLinecap="round" />
+                  <circle cx="70" cy="10" r="4" fill="#cbb292" />
+                  <circle cx="76" cy="14" r="3.5" fill="#d8c5ad" />
+                  <circle cx="64" cy="12" r="3" fill="#bfa07e" />
+                  <circle cx="25" cy="30" r="3.5" fill="#cbb292" />
+                  <circle cx="20" cy="25" r="3" fill="#d8c5ad" />
+                  <circle cx="55" cy="15" r="3.5" fill="#cbb292" />
+                  <circle cx="60" cy="20" r="3" fill="#bfa07e" />
+                </svg>
 
-              {/* Card Content */}
-              <div className="env-content">
-                <h1 className="env-names">
-                  <span className="env-name">{bName}</span>
-                  <span className="env-amp">&amp;</span>
-                  <span className="env-name">{gName}</span>
-                </h1>
+                {/* Dry flower top-right */}
+                <svg className="min-flower-corner tr" viewBox="0 0 100 120" fill="none">
+                  <path d="M90 110 Q 70 60 30 10" stroke="#b89368" strokeWidth="2" strokeLinecap="round" />
+                  <path d="M70 65 Q 85 45 75 30" stroke="#b89368" strokeWidth="1.5" strokeLinecap="round" />
+                  <path d="M55 45 Q 40 30 45 15" stroke="#b89368" strokeWidth="1.5" strokeLinecap="round" />
+                  <circle cx="30" cy="10" r="4" fill="#cbb292" />
+                  <circle cx="24" cy="14" r="3.5" fill="#d8c5ad" />
+                  <circle cx="36" cy="12" r="3" fill="#bfa07e" />
+                  <circle cx="75" cy="30" r="3.5" fill="#cbb292" />
+                  <circle cx="80" cy="25" r="3" fill="#d8c5ad" />
+                  <circle cx="45" cy="15" r="3.5" fill="#cbb292" />
+                  <circle cx="40" cy="20" r="3" fill="#bfa07e" />
+                </svg>
 
-                <div className="env-divider">
-                  <span className="env-line-l"></span>
-                  <span className="env-ornament">❦</span>
-                  <span className="env-line-r"></span>
+                {/* Wax seal heart circle */}
+                <div className="min-heart-seal" onClick={handleOpenEnvelope} title="Bấm để mở thiệp">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#ffffff">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                  </svg>
                 </div>
 
-                <div className="env-date">
+                <h1 className="min-env-names">
+                  <span className="min-name">{gName}</span>
+                  <span className="min-amp">&amp;</span>
+                  <span className="min-name">{bName}</span>
+                </h1>
+
+                <div className="min-env-divider">
+                  <span className="min-line" />
+                  <span className="min-motif">❦</span>
+                  <span className="min-line" />
+                </div>
+
+                <div className="min-env-date">
                   {dt.getDate()} tháng {dt.getMonth() + 1}, {dt.getFullYear()}
                 </div>
 
-                <div className="env-invite-block">
-                  <p className="env-sub">Thân Mời</p>
-                  <div className="env-guest-badge">
-                    <h2>{d.envelopeGuest}</h2>
-                  </div>
-                  <p className="env-msg">{d.envelopeInviteMessage}</p>
-                </div>
+                <div className="min-env-sub">{d.envelopeGuest || "Thân Mời"}</div>
 
-                <button className="env-open-btn" onClick={handleOpenEnvelope}>
-                  <span>Mở thiệp</span>
-                  <div className="shimmer-glare"></div>
+                <button className="min-env-open-btn" onClick={handleOpenEnvelope}>
+                  Mở thiệp
                 </button>
               </div>
             </div>
           </div>
-        </div>
+        ) : (
+          /* Màn hình mở thiệp truyền thống Song Phụng */
+          <div className="envelope-screen">
+            {/* Floating ambient 囍 particles */}
+            <div className="ambient-particles" aria-hidden="true">
+              {[
+                { left: "12%", size: "22px", color: "#FFF0E7", dur: "18s", delay: "-3s" },
+                { left: "28%", size: "15px", color: "#710001", dur: "22s", delay: "-7s" },
+                { left: "38%", size: "12px", color: "#FFF0E7", dur: "20s", delay: "-12s" },
+                { left: "48%", size: "24px", color: "#FFF0E7", dur: "19s", delay: "-5s" },
+                { left: "62%", size: "16px", color: "#8B0000", dur: "24s", delay: "-14s" },
+                { left: "76%", size: "14px", color: "#710001", dur: "21s", delay: "-8s" },
+                { left: "88%", size: "18px", color: "#A52A2A", dur: "23s", delay: "-16s" },
+                { left: "20%", size: "13px", color: "#8B0000", dur: "25s", delay: "-10s" },
+                { left: "70%", size: "20px", color: "#8B0000", dur: "17s", delay: "-2s" },
+                { left: "92%", size: "15px", color: "#710001", dur: "22s", delay: "-9s" },
+              ].map((p, i) => (
+                <div
+                  key={i}
+                  className="ambient-xi"
+                  style={{
+                    left: p.left,
+                    fontSize: p.size,
+                    color: p.color,
+                    animationDuration: p.dur,
+                    animationDelay: p.delay,
+                  }}
+                >
+                  囍
+                </div>
+              ))}
+            </div>
+
+            {/* Envelope Card Container */}
+            <div className="envelope-card-wrap">
+              {/* Wax seal on top */}
+              <div className="wax-seal" onClick={handleOpenEnvelope} title="Bấm để mở thiệp">
+                <div className="wax-seal-inner">囍</div>
+              </div>
+
+              {/* Inner Paper Card */}
+              <div className="envelope-card">
+                {/* Corner Ornaments */}
+                <img
+                  src="https://chungdoi.com/images/themes/songphung-red/Phuong.webp"
+                  alt=""
+                  className="env-deco-phuong-tl"
+                />
+                <img
+                  src="https://chungdoi.com/images/themes/songphung-red/Phuong.webp"
+                  alt=""
+                  className="env-deco-phuong-br"
+                />
+                <img
+                  src="https://chungdoi.com/images/themes/songphung-red/HOA.webp"
+                  alt=""
+                  className="env-deco-hoa-bl"
+                />
+                <img
+                  src="https://chungdoi.com/images/themes/songphung-red/HOA.webp"
+                  alt=""
+                  className="env-deco-hoa-tr"
+                />
+
+                {/* Card Content */}
+                <div className="env-content">
+                  <h1 className="env-names">
+                    <span className="env-name">{bName}</span>
+                    <span className="env-amp">&amp;</span>
+                    <span className="env-name">{gName}</span>
+                  </h1>
+
+                  <div className="env-divider">
+                    <span className="env-line-l"></span>
+                    <span className="env-ornament">❦</span>
+                    <span className="env-line-r"></span>
+                  </div>
+
+                  <div className="env-date">
+                    {dt.getDate()} tháng {dt.getMonth() + 1}, {dt.getFullYear()}
+                  </div>
+
+                  <div className="env-invite-block">
+                    <p className="env-sub">Thân Mời</p>
+                    <div className="env-guest-badge">
+                      <h2>{d.envelopeGuest}</h2>
+                    </div>
+                    <p className="env-msg">{d.envelopeInviteMessage}</p>
+                  </div>
+
+                  <button className="env-open-btn" onClick={handleOpenEnvelope}>
+                    <span>Mở thiệp</span>
+                    <div className="shimmer-glare"></div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )
       )}
 
       {/* ==================== 2. NỘI DUNG THIỆP ĐÃ MỞ (OPENED) ==================== */}
       {isOpen && (
-        <div className="songphung-template">
+        <div className={`songphung-template ${isMinimalism ? "is-minimalism-body" : isSongHy ? "is-songhy-body" : ""}`}>
           {/* Floating background audio button */}
           {d.musicUrl && (
             <button
@@ -300,56 +398,121 @@ export default function Preview({
           )}
 
           {/* Paper Background Texture Overlay */}
-          <div
-            className="paper-texture"
-            style={{
-              backgroundImage: "url(https://chungdoi.com/images/themes/songphung-red/NENGIAY.jpg)",
-            }}
-          />
-
-          {/* Phoenix Line Side Decorations (Parallax Artwork) */}
-          <div className="line-deco-left" aria-hidden="true">
-            <img
-              src="https://chungdoi.com/images/themes/songphung-red/Phuong%20line.webp"
-              alt=""
+          {!isMinimalism && (
+            <div
+              className="paper-texture"
+              style={{
+                backgroundImage: "url(https://chungdoi.com/images/themes/songphung-red/NENGIAY.jpg)",
+              }}
             />
-          </div>
-          <div className="line-deco-right" aria-hidden="true">
-            <img
-              src="https://chungdoi.com/images/themes/songphung-red/Phuong%20line.webp"
-              alt=""
-            />
-          </div>
+          )}
 
-          {/* -------------------- HERO SECTION -------------------- */}
-          <header className="sp-hero">
-            <div className="sp-hero-names">
-              <div className="sp-name-1">{n1}</div>
-              <div className="sp-name-2">{n2}</div>
-            </div>
-
-            {/* Central Banner with Red Strip, Phoenix Birds and Chữ Hỷ */}
-            <div className="sp-banner-wrap">
-              <div className="sp-banner-bg" />
-              <img
-                src="https://chungdoi.com/images/themes/songphung-red/Phuong%202.webp"
-                alt="Phoenix Left"
-                className="sp-phuong-left"
-              />
-              <div className="sp-chu-hy-box">
+          {/* Phoenix Line Side Decorations (Parallax Artwork for traditional themes) */}
+          {!isMinimalism && !isSongHy && (
+            <>
+              <div className="line-deco-left" aria-hidden="true">
                 <img
-                  src="https://chungdoi.com/images/themes/songphung-red/CHU%20HY.webp"
-                  alt="Chữ Hỷ"
-                  className="sp-chu-hy"
+                  src="https://chungdoi.com/images/themes/songphung-red/Phuong%20line.webp"
+                  alt=""
                 />
               </div>
-              <img
-                src="https://chungdoi.com/images/themes/songphung-red/Phuong.webp"
-                alt="Phoenix Right"
-                className="sp-phuong-right"
-              />
-            </div>
-          </header>
+              <div className="line-deco-right" aria-hidden="true">
+                <img
+                  src="https://chungdoi.com/images/themes/songphung-red/Phuong%20line.webp"
+                  alt=""
+                />
+              </div>
+            </>
+          )}
+
+          {/* -------------------- HERO SECTION -------------------- */}
+          {isMinimalism ? (
+            /* Hero cho Minimalism - Nâu (media_1792167846581_6cfd16e7.png) */
+            <header className="min-hero-sec">
+              <p className="min-hero-eyebrow">THE WEDDING OF</p>
+              <h1 className="min-hero-names">
+                {gName} <i>&amp;</i> {bName}
+              </h1>
+
+              <div className="min-polaroid-wrap">
+                <div className="min-polaroid-card">
+                  <div className="min-polaroid-tape" />
+                  <div className="min-polaroid-img-box">
+                    <img
+                      src={
+                        d.heroPhoto ||
+                        "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80"
+                      }
+                      alt={`${gName} & ${bName}`}
+                    />
+                  </div>
+                  {/* Dried flowers attached bottom-left */}
+                  <svg className="min-polaroid-flower" viewBox="0 0 100 120" fill="none">
+                    <path d="M20 110 Q 40 70 60 20" stroke="#92714c" strokeWidth="2.5" strokeLinecap="round" />
+                    <circle cx="60" cy="20" r="5" fill="#b4936d" />
+                    <circle cx="45" cy="40" r="4" fill="#a4815a" />
+                    <circle cx="35" cy="65" r="4" fill="#b4936d" />
+                  </svg>
+                  {/* Wax seal heart initial bottom-right */}
+                  <div className="min-polaroid-seal">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#78350f" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </header>
+          ) : isSongHy ? (
+            /* Hero cho Song Hỷ - Xanh (media_1792167676918_431db77f.png) */
+            <header className="sh-hero-sec">
+              <div className="sh-green-arch">
+                <p className="sh-welcome">WELCOME TO OUR WEDDING</p>
+                <div className="sh-couple-row">
+                  <div className="sh-groom-col">
+                    <span className="sh-role">Chú Rể</span>
+                    <span className="sh-name">{gName}</span>
+                  </div>
+                  <div className="sh-xi-box">
+                    <span className="sh-xi">囍</span>
+                  </div>
+                  <div className="sh-bride-col">
+                    <span className="sh-role">Cô Dâu</span>
+                    <span className="sh-name">{bName}</span>
+                  </div>
+                </div>
+                <p className="sh-arch-footer">LOVE NEVER FAILS</p>
+              </div>
+            </header>
+          ) : (
+            /* Hero cho Song Phụng - Đỏ */
+            <header className="sp-hero">
+              <div className="sp-hero-names">
+                <div className="sp-name-1">{n1}</div>
+                <div className="sp-name-2">{n2}</div>
+              </div>
+
+              <div className="sp-banner-wrap">
+                <div className="sp-banner-bg" />
+                <img
+                  src="https://chungdoi.com/images/themes/songphung-red/Phuong%202.webp"
+                  alt="Phoenix Left"
+                  className="sp-phuong-left"
+                />
+                <div className="sp-chu-hy-box">
+                  <img
+                    src="https://chungdoi.com/images/themes/songphung-red/CHU%20HY.webp"
+                    alt="Chữ Hỷ"
+                    className="sp-chu-hy"
+                  />
+                </div>
+                <img
+                  src="https://chungdoi.com/images/themes/songphung-red/Phuong.webp"
+                  alt="Phoenix Right"
+                  className="sp-phuong-right"
+                />
+              </div>
+            </header>
+          )}
 
           {/* -------------------- SECTION 1: LỄ CƯỚI & GIA ĐÌNH -------------------- */}
           <section className="sp-section sp-family-sec">

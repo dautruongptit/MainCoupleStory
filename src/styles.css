@@ -4473,3 +4473,370 @@ button:hover .igb-c8 { animation: igbConfettiFly8 1.1s ease-out 0.55s infinite; 
   background: #e11d48;
 }
 
+/* ==================== STANDALONE DEMO VIEW ==================== */
+.demo-standalone-wrap {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+.demo-floating-header {
+  position: fixed;
+  top: 14px;
+  right: 16px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.demo-float-btn {
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+.demo-float-btn.back {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  color: #374151;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.demo-float-btn.back:hover {
+  background: #ffffff;
+  color: #111827;
+}
+.demo-float-btn.choose {
+  background: #ec4899;
+  border: 0;
+  color: #ffffff;
+}
+.demo-float-btn.choose:hover {
+  background: #db2777;
+}
+
+/* ==================== MINIMALISM ENVELOPE COVER (media_1792167825310_9563a55a.png) ==================== */
+.min-env-screen {
+  background-color: #f5eee6 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.min-ambient-petals {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.min-petal {
+  position: absolute;
+  top: -40px;
+  opacity: 0.45;
+  animation: petalFall linear infinite;
+}
+@keyframes petalFall {
+  0% {
+    transform: translateY(0) rotate(0deg) translateX(0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  85% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg) translateX(60px);
+    opacity: 0;
+  }
+}
+.min-card-wrap {
+  position: relative;
+  z-index: 10;
+  padding: 16px;
+  max-width: 440px;
+  width: 100%;
+}
+.min-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px 32px 36px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 20px 45px -10px rgba(110, 80, 60, 0.15), 0 0 0 1px rgba(180, 150, 130, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.min-flower-corner {
+  position: absolute;
+  width: 76px;
+  height: 90px;
+  pointer-events: none;
+  opacity: 0.85;
+}
+.min-flower-corner.tl {
+  top: 14px;
+  left: 14px;
+}
+.min-flower-corner.tr {
+  top: 14px;
+  right: 14px;
+}
+.min-heart-seal {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #543729;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(84, 55, 41, 0.25);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.min-heart-seal:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 16px rgba(84, 55, 41, 0.35);
+}
+.min-env-names {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #543729;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+.min-env-names .min-amp {
+  font-size: 20px;
+  font-style: italic;
+  opacity: 0.7;
+  margin: 2px 0;
+}
+.min-env-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 140px;
+  margin: 16px auto;
+}
+.min-env-divider .min-line {
+  flex: 1;
+  height: 1px;
+  background: #d8c8ba;
+}
+.min-env-divider .min-motif {
+  font-size: 13px;
+  color: #b39b88;
+}
+.min-env-date {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #7a6355;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+.min-env-sub {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  color: #9c8475;
+  margin-bottom: 24px;
+  letter-spacing: 0.04em;
+}
+.min-env-open-btn {
+  background: #543729;
+  color: #ffffff;
+  border: 0;
+  border-radius: 999px;
+  padding: 11px 38px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  box-shadow: 0 6px 20px rgba(84, 55, 41, 0.25);
+  transition: all 0.2s;
+}
+.min-env-open-btn:hover {
+  background: #42291d;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(84, 55, 41, 0.35);
+}
+
+/* ==================== MINIMALISM HERO (media_1792167846581_6cfd16e7.png) ==================== */
+.theme-minimalism .songphung-template,
+.is-minimalism-body {
+  background-color: #fbf8f3 !important;
+  color: #543729 !important;
+  box-shadow: 0 10px 40px rgba(110, 80, 60, 0.12) !important;
+}
+.min-hero-sec {
+  padding: 56px 24px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.min-hero-eyebrow {
+  margin: 0 0 10px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: #8c7b70;
+}
+.min-hero-names {
+  margin: 0 0 32px 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 38px;
+  font-weight: 500;
+  color: #543729;
+  letter-spacing: 0.02em;
+}
+.min-hero-names i {
+  font-style: italic;
+  font-weight: 400;
+  opacity: 0.8;
+  margin: 0 4px;
+}
+.min-polaroid-wrap {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.min-polaroid-card {
+  position: relative;
+  background: #ffffff;
+  padding: 14px 14px 44px;
+  border-radius: 4px;
+  box-shadow: 0 16px 36px rgba(110, 80, 60, 0.15), 0 2px 8px rgba(0, 0, 0, 0.06);
+  transform: rotate(-1.5deg);
+  width: 100%;
+}
+.min-polaroid-tape {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%) rotate(1deg);
+  width: 90px;
+  height: 26px;
+  background: rgba(216, 196, 172, 0.85);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-left: 2px dashed rgba(255, 255, 255, 0.3);
+  border-right: 2px dashed rgba(255, 255, 255, 0.3);
+  z-index: 5;
+}
+.min-polaroid-img-box {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: #f0e6dc;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.min-polaroid-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.min-polaroid-flower {
+  position: absolute;
+  bottom: -16px;
+  left: -20px;
+  width: 70px;
+  height: 85px;
+  pointer-events: none;
+  z-index: 6;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.15));
+}
+.min-polaroid-seal {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #eed8ae 0%, #d8be8d 50%, #ba9861 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(110, 80, 40, 0.25);
+  z-index: 6;
+}
+
+/* ==================== SONG HỶ XANH HERO (media_1792167676918_431db77f.png) ==================== */
+.sh-hero-sec {
+  background-color: #0d281a;
+  padding: 48px 24px 32px;
+  text-align: center;
+  color: #ffffff;
+  border-bottom-left-radius: 50% 30px;
+  border-bottom-right-radius: 50% 30px;
+}
+.sh-welcome {
+  margin: 0 0 24px 0;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  color: #a3c2b0;
+  font-weight: 600;
+}
+.sh-couple-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+.sh-groom-col,
+.sh-bride-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.sh-role {
+  font-size: 13px;
+  color: #a3c2b0;
+  font-weight: 500;
+}
+.sh-name {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.sh-xi-box {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sh-xi {
+  font-size: 48px;
+  color: #d1fae5;
+  line-height: 1;
+  font-family: serif;
+}
+.sh-arch-footer {
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: 0.25em;
+  color: #86a894;
+  font-weight: 600;
+}
