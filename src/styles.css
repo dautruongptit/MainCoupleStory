@@ -592,47 +592,6 @@ p {
   align-items: center;
 }
 
-.pv-toolbar {
-  width: 100%;
-  max-width: 640px;
-  margin: 12px auto;
-  padding: 8px 16px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #1e1b18;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
-  gap: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-}
-
-.pv-badge {
-  font-size: 12px;
-  font-weight: 600;
-  color: #ff9ec6;
-}
-
-.pv-switch-btns {
-  display: flex;
-  gap: 6px;
-}
-
-.pv-tool-btn {
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--bc);
-  background: rgba(255, 255, 255, 0.05);
-  transition: all 0.15s;
-}
-
-.pv-tool-btn.active {
-  background: var(--p);
-  color: #fff;
-  font-weight: 600;
-}
 
 /* ==================== 1. ENVELOPE SCREEN ==================== */
 .envelope-screen {

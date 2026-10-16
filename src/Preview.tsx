@@ -143,53 +143,6 @@ export default function Preview({
 
   return (
     <div className={`pv-wrapper ${standalone ? "is-standalone" : ""} ${isMinimalism ? "theme-minimalism" : isSongHy ? "theme-songhy" : "theme-songphung"}`}>
-      {/* View Switcher Bar for testing Envelope vs Full Invitation */}
-      {!standalone && (
-        <div className="pv-toolbar">
-          <span className="pv-badge">Giao diện Mẫu thiệp {d.templateName || "Song Phụng - Đỏ"}</span>
-          <div className="pv-switch-btns">
-            <button
-              className={`pv-tool-btn ${!isOpen ? "active" : ""}`}
-              onClick={() => setIsOpen(false)}
-            >
-              ✉️ Bì thư mở thiệp
-            </button>
-            <button
-              className={`pv-tool-btn ${isOpen ? "active" : ""}`}
-              onClick={() => setIsOpen(true)}
-            >
-              📜 Nội dung thiệp cưới
-            </button>
-          </div>
-
-          {isOpen && (
-            <div className="pv-switch-btns" style={{ marginLeft: "auto" }}>
-              <button
-                type="button"
-                className={`pv-tool-btn ${d.giftDisplayMode === "gift_box" ? "active" : ""}`}
-                onClick={() => set({ giftDisplayMode: "gift_box" })}
-              >
-                🎁 Hộp quà
-              </button>
-              <button
-                type="button"
-                className={`pv-tool-btn ${d.giftDisplayMode === "envelope" ? "active" : ""}`}
-                onClick={() => set({ giftDisplayMode: "envelope" })}
-              >
-                ✉️ Phong bì
-              </button>
-              <button
-                type="button"
-                className={`pv-tool-btn ${d.giftDisplayMode === "qr_inline" ? "active" : ""}`}
-                onClick={() => set({ giftDisplayMode: "qr_inline" })}
-              >
-                📱 Hiện QR
-              </button>
-            </div>
-          )}
-        </div>
-      )}
-
       {/* ==================== 1. MÀN HÌNH BÌ THƯ (ENVELOPE) ==================== */}
       {!isOpen && (
         isMinimalism ? (
