@@ -218,8 +218,8 @@ export const defaultInv: Inv = {
     },
   ],
   giftOn: true,
-  giftTitle: "HỘP MỪNG CƯỚI",
-  giftDisplayMode: "envelope",
+  giftTitle: "Hộp Quà Mừng",
+  giftDisplayMode: "gift_box",
   gifts: [
     {
       id: "g1",

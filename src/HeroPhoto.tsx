@@ -100,7 +100,14 @@ export default function HeroPhoto({ d, set }: P) {
     <Section title="Ảnh đầu thiệp" icon={icon} enabled={d.heroOn} onEnabled={(v) => set({ heroOn: v })} enabledLabel="Hiện">
       <input ref={file} type="file" accept="image/*" hidden onChange={(e) => { pick(e.target.files); e.target.value = ""; }} />
 
-      {uploading ? (
+      {!d.heroOn ? (
+        <div className="section-disabled-hint">
+          <svg width="18" height="18" fill="none" stroke="#f59e0b" viewBox="0 0 24 24" strokeWidth="2" style={{ flex: "none", marginTop: 2 }}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+          <div>Ảnh lớn ở đầu thiệp. Bật công tắc ở trên nếu bạn muốn hiện phần này trên thiệp!</div>
+        </div>
+      ) : uploading ? (
         <div className="hero-ed">
           <span className="hero-lbl">Ảnh đầu thiệp</span>
           <div className="hero-thumb hero-thumb-uploading">

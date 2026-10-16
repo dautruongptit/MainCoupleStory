@@ -30,8 +30,16 @@ export default function App() {
         onMode={setMode}
         dirty={dirty}
         onPublish={publish}
+        templateId={d.templateId}
         templateName={d.templateName}
         templateThumb={d.templateThumb}
+        onSelectTemplate={(tpl) =>
+          set({
+            templateId: tpl.id,
+            templateName: tpl.name,
+            templateThumb: "https://assets.chungdoi.com/template-previews/vi/" + tpl.img,
+          })
+        }
       />
       <main>
         {mode === "edit" ? (

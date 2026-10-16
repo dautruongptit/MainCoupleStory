@@ -136,10 +136,19 @@ export function Album({ d, set }: P) {
   );
   return (
     <Section title="Thư viện ảnh" icon={galleryIcon} enabled={d.albumOn} onEnabled={(v) => set({ albumOn: v })} enabledLabel="Hiện">
-      <Field label="KIỂU HIỂN THỊ" cap>
-        <Segmented value={d.albumLayout} onChange={(v) => set({ albumLayout: v })}
-          options={[{ value: "grid", label: "Lưới", icon: <LayoutIcon k="grid" /> }, { value: "collage", label: "Ghép ảnh", icon: <LayoutIcon k="collage" /> }, { value: "3d", label: "3D", icon: <LayoutIcon k="3d" /> }]} />
-      </Field>
+      {!d.albumOn ? (
+        <div className="section-disabled-hint">
+          <svg width="18" height="18" fill="none" stroke="#f59e0b" viewBox="0 0 24 24" strokeWidth="2" style={{ flex: "none", marginTop: 2 }}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+          <div>Phần này hiển thị album ảnh cưới trên thiệp. Bật công tắc ở trên nếu bạn muốn hiện phần này trên thiệp!</div>
+        </div>
+      ) : (
+        <>
+          <Field label="KIỂU HIỂN THỊ" cap>
+            <Segmented value={d.albumLayout} onChange={(v) => set({ albumLayout: v })}
+              options={[{ value: "grid", label: "Lưới", icon: <LayoutIcon k="grid" /> }, { value: "collage", label: "Ghép ảnh", icon: <LayoutIcon k="collage" /> }, { value: "3d", label: "3D", icon: <LayoutIcon k="3d" /> }]} />
+          </Field>
       <div className="lbl-row"><span className="lbl">Thư viện ảnh</span><span className="helper">{d.photos.length} ảnh</span></div>
 
       {up && (
@@ -286,52 +295,100 @@ export function Album({ d, set }: P) {
           zoom0={d.photoCrops[d.photos[crop]]?.z ?? 1} x0={d.photoCrops[d.photos[crop]]?.x ?? 50} y0={d.photoCrops[d.photos[crop]]?.y ?? 50}
           onApply={(z, x, y) => set({ photoCrops: { ...d.photoCrops, [d.photos[crop]]: { z, x, y } } })} onClose={() => setCrop(null)} />
       )}
+        </>
+      )}
     </Section>
   );
 }
+
+const familyIcon = (
+  <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+  </svg>
+);
 
 export function Family({ d, set }: P) {
   return (
-    <Section title="Thông tin gia đình" enabled={d.familyOn} onEnabled={(v) => set({ familyOn: v })} enabledLabel="Hiện">
-      <p className="sub">Nhà trai</p>
-      <Field label="Danh xưng"><Input placeholder="VD: Ông Bà" value={d.groomFamTitle} onChange={(e) => set({ groomFamTitle: e.target.value })} /></Field>
-      <Row>
-        <Field label="Ông" half><Input placeholder="VD: Nguyễn Văn Hùng" value={d.groomFather} onChange={(e) => set({ groomFather: e.target.value })} /></Field>
-        <Field label="Bà" half><Input placeholder="VD: Trần Thị Lan" value={d.groomMother} onChange={(e) => set({ groomMother: e.target.value })} /></Field>
-      </Row>
-      <Field label="Địa chỉ nhà trai"><Textarea rows={2} placeholder="Địa chỉ nhà trai" value={d.groomAddr} onChange={(e) => set({ groomAddr: e.target.value })} /></Field>
-      <hr className="divider" />
-      <p className="sub">Nhà gái</p>
-      <Field label="Danh xưng"><Input placeholder="VD: Ông Bà" value={d.brideFamTitle} onChange={(e) => set({ brideFamTitle: e.target.value })} /></Field>
-      <Row>
-        <Field label="Ông" half><Input placeholder="VD: Trần Văn Minh" value={d.brideFather} onChange={(e) => set({ brideFather: e.target.value })} /></Field>
-        <Field label="Bà" half><Input placeholder="VD: Phạm Thị Hoa" value={d.brideMother} onChange={(e) => set({ brideMother: e.target.value })} /></Field>
-      </Row>
-      <Field label="Địa chỉ nhà gái"><Textarea rows={2} placeholder="Địa chỉ nhà gái" value={d.brideAddr} onChange={(e) => set({ brideAddr: e.target.value })} /></Field>
+    <Section title="Thông tin gia đình" icon={familyIcon} enabled={d.familyOn} onEnabled={(v) => set({ familyOn: v })} enabledLabel="Hiện">
+      {!d.familyOn ? (
+        <div className="section-disabled-hint">
+          <svg width="18" height="18" fill="none" stroke="#f59e0b" viewBox="0 0 24 24" strokeWidth="2" style={{ flex: "none", marginTop: 2 }}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+          <div>Phần này hiển thị thông tin gia đình hai bên. Bật công tắc ở trên nếu bạn muốn hiện phần này trên thiệp!</div>
+        </div>
+      ) : (
+        <>
+          <p className="sub">Nhà trai</p>
+          <Field label="Danh xưng"><Input placeholder="VD: Ông Bà" value={d.groomFamTitle} onChange={(e) => set({ groomFamTitle: e.target.value })} /></Field>
+          <Row>
+            <Field label="Ông" half><Input placeholder="VD: Nguyễn Văn Hùng" value={d.groomFather} onChange={(e) => set({ groomFather: e.target.value })} /></Field>
+            <Field label="Bà" half><Input placeholder="VD: Trần Thị Lan" value={d.groomMother} onChange={(e) => set({ groomMother: e.target.value })} /></Field>
+          </Row>
+          <Field label="Địa chỉ nhà trai"><Textarea rows={2} placeholder="Địa chỉ nhà trai" value={d.groomAddr} onChange={(e) => set({ groomAddr: e.target.value })} /></Field>
+          <hr className="divider" />
+          <p className="sub">Nhà gái</p>
+          <Field label="Danh xưng"><Input placeholder="VD: Ông Bà" value={d.brideFamTitle} onChange={(e) => set({ brideFamTitle: e.target.value })} /></Field>
+          <Row>
+            <Field label="Ông" half><Input placeholder="VD: Trần Văn Minh" value={d.brideFather} onChange={(e) => set({ brideFather: e.target.value })} /></Field>
+            <Field label="Bà" half><Input placeholder="VD: Phạm Thị Hoa" value={d.brideMother} onChange={(e) => set({ brideMother: e.target.value })} /></Field>
+          </Row>
+          <Field label="Địa chỉ nhà gái"><Textarea rows={2} placeholder="Địa chỉ nhà gái" value={d.brideAddr} onChange={(e) => set({ brideAddr: e.target.value })} /></Field>
+        </>
+      )}
     </Section>
   );
 }
 
+const announceIcon = (
+  <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M20 2v3h-2V3h-3V1h3a2 2 0 0 1 2 2zm-8-1H9a4 4 0 0 0-4 4v1H3a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2v1a4 4 0 0 0 4 4h3v-2H9a2 2 0 0 1-2-2v-1h5l6 4V4l-6 4H7V7a2 2 0 0 1 2-2h3V1z" />
+  </svg>
+);
+
 export function Announce({ d, set }: P) {
   return (
-    <Section title="Lời thông báo" enabled={d.announceOn} onEnabled={(v) => set({ announceOn: v })} enabledLabel="Hiện">
-      <Field label="Câu thông báo (để trống nếu không muốn hiện)">
-        <Textarea rows={2} placeholder={"VD: TRÂN TRỌNG BÁO TIN\nLỄ THÀNH HÔN CỦA CON CHÚNG TÔI"}
-          value={[d.announcementLine1, d.announcementLine2].filter((x) => x !== undefined).join("\n")}
-          onChange={(e) => { const [a = "", ...r] = e.target.value.split("\n"); set({ announcementLine1: a, announcementLine2: r.join("\n") }); }} />
-      </Field>
+    <Section title="Lời thông báo" icon={announceIcon} enabled={d.announceOn} onEnabled={(v) => set({ announceOn: v })} enabledLabel="Hiện">
+      {!d.announceOn ? (
+        <div className="section-disabled-hint">
+          <svg width="18" height="18" fill="none" stroke="#f59e0b" viewBox="0 0 24 24" strokeWidth="2" style={{ flex: "none", marginTop: 2 }}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+          <div>Phần này hiển thị lời thông báo trên thiệp. Bật công tắc ở trên nếu bạn muốn hiện phần này trên thiệp!</div>
+        </div>
+      ) : (
+        <Field label="Câu thông báo (để trống nếu không muốn hiện)">
+          <Textarea rows={2} placeholder={"VD: TRÂN TRỌNG BÁO TIN\nLỄ THÀNH HÔN CỦA CON CHÚNG TÔI"}
+            value={[d.announcementLine1, d.announcementLine2].filter((x) => x !== undefined).join("\n")}
+            onChange={(e) => { const [a = "", ...r] = e.target.value.split("\n"); set({ announcementLine1: a, announcementLine2: r.join("\n") }); }} />
+        </Field>
+      )}
     </Section>
   );
 }
+
+const ceremonyClockIcon = (
+  <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
+    <circle cx="12" cy="12" r="9" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M12 7v5l3 3" />
+  </svg>
+);
 
 export function Ceremony({ d, set }: P) {
   const upd = (i: number, p: Partial<Inv["ceremonies"][number]>) =>
     set({ ceremonies: d.ceremonies.map((c, j) => (j === i ? { ...c, ...p } : c)) });
   return (
-    <Section title="Lễ" >
+    <Section title="Lễ" icon={ceremonyClockIcon}>
       <Field label="Tiêu đề mục"><Input value={d.ceremonyTitle} onChange={(e) => set({ ceremonyTitle: e.target.value })} /></Field>
       <Helper>Tiêu đề in phía trên mục này trên thiệp. Để trống nếu bạn muốn bỏ hẳn.</Helper>
-      {d.ceremonies.length === 0 && <Hint>Bạn có tổ chức lễ vu quy/lễ thành hôn tại nhà không? Nếu có, hãy bấm nút bên dưới để thêm lễ!</Hint>}
+      {d.ceremonies.length === 0 && (
+        <div className="section-disabled-hint" style={{ margin: "14px 0" }}>
+          <svg width="18" height="18" fill="none" stroke="#f59e0b" viewBox="0 0 24 24" strokeWidth="2" style={{ flex: "none", marginTop: 2 }}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+          <div>Bạn có tổ chức lễ vu quy/lễ thành hôn tại nhà không? Nếu có, hãy bấm nút bên dưới để thêm lễ!</div>
+        </div>
+      )}
       {d.ceremonies.map((c, i) => (
         <div className="mini-col" key={i}>
           <Row>
@@ -374,9 +431,17 @@ export function Ceremony({ d, set }: P) {
           <Field label="Địa điểm"><Input value={c.place} onChange={(e) => upd(i, { place: e.target.value })} /></Field>
         </div>
       ))}
-      <OutlineButton onClick={() => set({ ceremonies: [...d.ceremonies, { title: "", date: "", time: "", place: "" }] })}>
-        {Icon.plus(16)} Thêm lễ
-      </OutlineButton>
+      <button
+        type="button"
+        className="btn-outline-pill-full"
+        style={{ marginTop: 12 }}
+        onClick={() => set({ ceremonies: [...d.ceremonies, { title: "", date: "", time: "", place: "" }] })}
+      >
+        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
+        </svg>
+        Thêm lễ
+      </button>
     </Section>
   );
 }
@@ -398,11 +463,10 @@ export function Banquet({ d, set }: P) {
     <Section title="Tiệc cưới" icon={cakeIcon} enabled={d.partyOn} onEnabled={(v) => set({ partyOn: v })} enabledLabel="Hiện">
       {!d.partyOn ? (
         <div className="section-disabled-hint">
-          <svg width="18" height="18" fill="none" stroke="#f59e0b" viewBox="0 0 24 24" strokeWidth="2" style={{ flex: "none" }}>
-            <circle cx="12" cy="12" r="9" />
-            <path strokeLinecap="round" strokeLinejoin="round" d="M12 7v5l3 3" />
+          <svg width="18" height="18" fill="none" stroke="#f59e0b" viewBox="0 0 24 24" strokeWidth="2" style={{ flex: "none", marginTop: 2 }}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
           </svg>
-          <span>Bật để hiển thị thông tin ngày giờ, địa điểm tổ chức tiệc cưới và bản đồ chỉ đường cho khách mời.</span>
+          <div>Phần này hiển thị thông tin tiệc cưới (ngày, giờ, địa điểm, bản đồ). Bật công tắc ở trên nếu bạn muốn hiện phần này trên thiệp! Ẩn phần này cũng ẩn luôn bản đồ địa điểm, vì công tắc riêng của bản đồ nằm bên trong phần này.</div>
         </div>
       ) : (
         <>
@@ -582,32 +646,49 @@ function MapBox({ d, set }: P) {
   );
 }
 
+const rsvpIcon = (
+  <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+  </svg>
+);
+
 export function Rsvp({ d, set }: P) {
   const upd = (i: number, v: string) => set({ questions: d.questions.map((q, j) => (j === i ? v : q)) });
   return (
-    <Section title="Xác nhận tham dự (RSVP)" enabled={d.rsvpOn} onEnabled={(v) => set({ rsvpOn: v })} enabledLabel="Hiện">
-      <Hint>Khách mời có thể xác nhận tham dự trực tiếp trên thiệp. Xem danh sách xác nhận trong trang Quản lý khách mời</Hint>
-      <Field label="Kiểu hiển thị" cap>
-        <Segmented value={d.rsvpDisplay} onChange={(v) => set({ rsvpDisplay: v })} options={[{ value: "button", label: "Nút bấm" }, { value: "inline", label: "Hiện trực tiếp" }]} />
-        <Helper>{d.rsvpDisplay === "button" ? "Khách bấm nút để mở form xác nhận trong cửa sổ popup" : "Form xác nhận hiển thị trực tiếp trên thiệp"}</Helper>
-      </Field>
-      <Field label="Số người mỗi thiệp" cap>
-        <Segmented value={d.partyMode} onChange={(v) => set({ partyMode: v })} options={[{ value: "free", label: "Khách tự chọn" }, { value: "limit", label: "Giới hạn" }]} />
-        <Helper>{d.partyMode === "free" ? "Khách tự điền số người sẽ đến." : "Giới hạn số người tối đa cho mỗi thiệp."}</Helper>
-      </Field>
-      {d.partyMode === "limit" && (
-        <Field label="Giới hạn tối đa"><Input type="number" min={1} value={d.partyLimit} onChange={(e) => set({ partyLimit: Math.max(1, Number(e.target.value) || 1) })} /></Field>
+    <Section title="Xác nhận tham dự (RSVP)" icon={rsvpIcon} enabled={d.rsvpOn} onEnabled={(v) => set({ rsvpOn: v })} enabledLabel="Hiện">
+      {!d.rsvpOn ? (
+        <div className="section-disabled-hint">
+          <svg width="18" height="18" fill="none" stroke="#f59e0b" viewBox="0 0 24 24" strokeWidth="2" style={{ flex: "none", marginTop: 2 }}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+          <div>Cho phép khách mời xác nhận tham dự và số lượng khách. Bật công tắc ở trên nếu bạn muốn hiện phần này trên thiệp!</div>
+        </div>
+      ) : (
+        <>
+          <Hint>Khách mời có thể xác nhận tham dự trực tiếp trên thiệp. Xem danh sách xác nhận trong trang Quản lý khách mời</Hint>
+          <Field label="Kiểu hiển thị" cap>
+            <Segmented value={d.rsvpDisplay} onChange={(v) => set({ rsvpDisplay: v })} options={[{ value: "button", label: "Nút bấm" }, { value: "inline", label: "Hiện trực tiếp" }]} />
+            <Helper>{d.rsvpDisplay === "button" ? "Khách bấm nút để mở form xác nhận trong cửa sổ popup" : "Form xác nhận hiển thị trực tiếp trên thiệp"}</Helper>
+          </Field>
+          <Field label="Số người mỗi thiệp" cap>
+            <Segmented value={d.partyMode} onChange={(v) => set({ partyMode: v })} options={[{ value: "free", label: "Khách tự chọn" }, { value: "limit", label: "Giới hạn" }]} />
+            <Helper>{d.partyMode === "free" ? "Khách tự điền số người sẽ đến." : "Giới hạn số người tối đa cho mỗi thiệp."}</Helper>
+          </Field>
+          {d.partyMode === "limit" && (
+            <Field label="Giới hạn tối đa"><Input type="number" min={1} value={d.partyLimit} onChange={(e) => set({ partyLimit: Math.max(1, Number(e.target.value) || 1) })} /></Field>
+          )}
+          <Field label="Câu hỏi thêm cho khách mời">
+            <Helper>Khách trả lời khi xác nhận tham dự trên thiệp</Helper>
+            {d.questions.map((q, i) => (
+              <Row key={i}>
+                <Input value={q} placeholder="Nhập câu hỏi" onChange={(e) => upd(i, e.target.value)} />
+                <button className="icon-ghost sm" aria-label="Xoá câu hỏi" onClick={() => set({ questions: d.questions.filter((_, j) => j !== i) })}>{Icon.trash()}</button>
+              </Row>
+            ))}
+            <OutlineButton onClick={() => set({ questions: [...d.questions, ""] })}>{Icon.plus(16)} Thêm câu hỏi</OutlineButton>
+          </Field>
+        </>
       )}
-      <Field label="Câu hỏi thêm cho khách mời">
-        <Helper>Khách trả lời khi xác nhận tham dự trên thiệp</Helper>
-        {d.questions.map((q, i) => (
-          <Row key={i}>
-            <Input value={q} placeholder="Nhập câu hỏi" onChange={(e) => upd(i, e.target.value)} />
-            <button className="icon-ghost sm" aria-label="Xoá câu hỏi" onClick={() => set({ questions: d.questions.filter((_, j) => j !== i) })}>{Icon.trash()}</button>
-          </Row>
-        ))}
-        <OutlineButton onClick={() => set({ questions: [...d.questions, ""] })}>{Icon.plus(16)} Thêm câu hỏi</OutlineButton>
-      </Field>
     </Section>
   );
 }
@@ -856,10 +937,10 @@ export function Guestbook({ d, set }: P) {
     <Section title="Sổ lưu bút" icon={bookOpenIcon} enabled={d.guestOn} onEnabled={(v) => set({ guestOn: v })}>
       {!d.guestOn ? (
         <div className="section-disabled-hint">
-          <svg width="18" height="18" fill="none" stroke="#f59e0b" viewBox="0 0 24 24" strokeWidth="2" style={{ flex: "none" }}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          <svg width="18" height="18" fill="none" stroke="#f59e0b" viewBox="0 0 24 24" strokeWidth="2" style={{ flex: "none", marginTop: 2 }}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
           </svg>
-          <span>Bật để khách mời gửi lời chúc đến cô dâu và chú rể trực tiếp trên thiệp.</span>
+          <div>Phần này cho phép khách gửi lời nhắn. Bật công tắc ở trên nếu bạn muốn hiện phần này trên thiệp!</div>
         </div>
       ) : (
         <div
@@ -1018,126 +1099,137 @@ export function GiftBox({ d, set }: P) {
       onEnabled={(v) => set({ giftOn: v })}
       enabledLabel="Hiện"
     >
-      <div className="space-y-3 pt-2">
-        <div className="gift-bank-list">
-          {d.gifts.length === 0 ? (
-            <div className="empty-box">Chưa có tài khoản nào. Nhấn nút bên dưới để thêm.</div>
-          ) : (
-            d.gifts.map((g) => (
-              <div className="gift-bank-card" key={g.id}>
-                <div className="gift-bank-logo">
-                  <img
-                    alt={g.bankName}
-                    src={g.bankLogo || `https://api.vietqr.io/img/${g.bankCode}.png`}
-                    onError={(e) => {
-                      (e.currentTarget as HTMLElement).style.display = "none";
-                    }}
-                  />
-                </div>
-                <div className="gift-bank-info">
-                  <p className="gift-bank-title">{getWhoTitle(g)}</p>
-                  <p className="gift-bank-name">{g.accountName}</p>
-                  <p className="gift-bank-num">{g.accountNumber}</p>
-                  <p className="gift-bank-org">{g.bankName}</p>
-                </div>
-                <div className="gift-bank-actions">
-                  <button
-                    type="button"
-                    className="gift-action-btn"
-                    aria-label="Sửa"
-                    title="Sửa"
-                    onClick={() => handleEdit(g)}
-                  >
-                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                    </svg>
-                  </button>
-                  <button
-                    type="button"
-                    className="gift-action-btn delete"
-                    aria-label="Xóa"
-                    title="Xóa"
-                    onClick={() => handleDelete(g.id)}
-                  >
-                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            ))
-          )}
+      {!d.giftOn ? (
+        <div className="section-disabled-hint">
+          <svg width="18" height="18" fill="none" stroke="#f59e0b" viewBox="0 0 24 24" strokeWidth="2" style={{ flex: "none", marginTop: 2 }}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+          <div>Phần này hiển thị mã QR ngân hàng để khách gửi mừng cưới. Bật công tắc ở trên nếu bạn muốn hiện phần này trên thiệp!</div>
         </div>
+      ) : (
+        <>
+          {/* Display Mode Selector (3 Tabs) */}
+          <Field label="KIỂU HIỂN THỊ" cap>
+            <Segmented
+              value={d.giftDisplayMode || "gift_box"}
+              onChange={(v) => set({ giftDisplayMode: v })}
+              options={[
+                {
+                  value: "gift_box",
+                  label: "Hộp quà",
+                  icon: (
+                    <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M20 12v8a1 1 0 01-1 1H5a1 1 0 01-1-1v-8M2 7h20v5H2zM12 21V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z" />
+                    </svg>
+                  ),
+                },
+                {
+                  value: "envelope",
+                  label: "Phong bì",
+                  icon: (
+                    <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  ),
+                },
+                {
+                  value: "qr_inline",
+                  label: "Hiện QR trực tiếp",
+                  icon: (
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M3 3h8v8H3V3zm2 2v4h4V5H5z" />
+                      <rect x="6" y="6" width="2" height="2" />
+                      <path d="M13 3h8v8h-8V3zm2 2v4h4V5h-4z" />
+                      <rect x="16" y="6" width="2" height="2" />
+                      <path d="M3 13h8v8H3v-8zm2 2v4h4v-4H5z" />
+                      <rect x="6" y="16" width="2" height="2" />
+                      <rect x="13" y="13" width="3" height="3" />
+                      <rect x="18" y="13" width="3" height="3" />
+                      <rect x="13" y="18" width="3" height="3" />
+                      <rect x="18" y="18" width="3" height="3" />
+                    </svg>
+                  ),
+                },
+              ]}
+            />
+          </Field>
 
-        {/* Action Buttons */}
-        <div className="space-y-2">
-          <button
-            type="button"
-            className="btn-outline-pill-full"
-            onClick={handleOpenAdd}
-          >
-            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
-            </svg>
-            Thêm tài khoản ngân hàng
-          </button>
-          <button
-            type="button"
-            className="btn btn-ghost btn-xs w-full opacity-70 text-center"
-            style={{ display: "block", textAlign: "center", margin: "4px auto 0", cursor: "pointer" }}
-            data-bot-screenshot-id="editor-gift-add-method"
-            onClick={() => setOpenOtherModal(true)}
-          >
-            Phương thức khác
-          </button>
-        </div>
+          <div className="space-y-3 pt-2">
+            <div className="gift-bank-list">
+              {d.gifts.length === 0 ? (
+                <div className="empty-box">Chưa có tài khoản nào. Nhấn nút bên dưới để thêm.</div>
+              ) : (
+                d.gifts.map((g) => (
+                  <div className="gift-bank-card" key={g.id}>
+                    <div className="gift-bank-logo">
+                      <img
+                        alt={g.bankName}
+                        src={g.bankLogo || `https://api.vietqr.io/img/${g.bankCode}.png`}
+                        onError={(e) => {
+                          (e.currentTarget as HTMLElement).style.display = "none";
+                        }}
+                      />
+                    </div>
+                    <div className="gift-bank-info">
+                      <p className="gift-bank-title">{getWhoTitle(g)}</p>
+                      <p className="gift-bank-name">{g.accountName}</p>
+                      <p className="gift-bank-num">{g.accountNumber}</p>
+                      <p className="gift-bank-org">{g.bankName}</p>
+                    </div>
+                    <div className="gift-bank-actions">
+                      <button
+                        type="button"
+                        className="gift-action-btn"
+                        aria-label="Sửa"
+                        title="Sửa"
+                        onClick={() => handleEdit(g)}
+                      >
+                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                        </svg>
+                      </button>
+                      <button
+                        type="button"
+                        className="gift-action-btn delete"
+                        aria-label="Xóa"
+                        title="Xóa"
+                        onClick={() => handleDelete(g.id)}
+                      >
+                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                ))
+              )}
+            </div>
 
-        {/* Display Mode Selector (3 Tabs) */}
-        <div className="gift-tabs-wrap">
-          <p className="gift-tabs-title">KIỂU HIỂN THỊ</p>
-          <div className="gift-tabs-bar">
-            <button
-              type="button"
-              className={`gift-tab-btn ${d.giftDisplayMode === "gift_box" ? "active" : ""}`}
-              onClick={() => set({ giftDisplayMode: "gift_box" })}
-            >
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M20 12v8a1 1 0 01-1 1H5a1 1 0 01-1-1v-8M2 7h20v5H2zM12 21V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z" />
-              </svg>
-              <span>Hộp quà</span>
-            </button>
-            <button
-              type="button"
-              className={`gift-tab-btn ${d.giftDisplayMode === "envelope" ? "active" : ""}`}
-              onClick={() => set({ giftDisplayMode: "envelope" })}
-            >
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.8">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l9 6 9-6M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-              <span>Phong bì</span>
-            </button>
-            <button
-              type="button"
-              className={`gift-tab-btn ${d.giftDisplayMode === "qr_inline" ? "active" : ""}`}
-              onClick={() => set({ giftDisplayMode: "qr_inline" })}
-            >
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M3 3h8v8H3V3zm2 2v4h4V5H5z" />
-                <rect x="6" y="6" width="2" height="2" />
-                <path d="M13 3h8v8h-8V3zm2 2v4h4V5h-4z" />
-                <rect x="16" y="6" width="2" height="2" />
-                <path d="M3 13h8v8H3v-8zm2 2v4h4v-4H5z" />
-                <rect x="6" y="16" width="2" height="2" />
-                <rect x="13" y="13" width="3" height="3" />
-                <rect x="18" y="13" width="3" height="3" />
-                <rect x="13" y="18" width="3" height="3" />
-                <rect x="18" y="18" width="3" height="3" />
-              </svg>
-              <span>Hiện QR trực tiếp</span>
-            </button>
+            {/* Action Buttons */}
+            <div className="space-y-2">
+              <button
+                type="button"
+                className="btn-outline-pill-full"
+                onClick={handleOpenAdd}
+              >
+                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
+                </svg>
+                Thêm tài khoản ngân hàng
+              </button>
+              <button
+                type="button"
+                className="btn btn-ghost btn-xs w-full opacity-70 text-center"
+                style={{ display: "block", textAlign: "center", margin: "4px auto 0", cursor: "pointer" }}
+                data-bot-screenshot-id="editor-gift-add-method"
+                onClick={() => setOpenOtherModal(true)}
+              >
+                Phương thức khác
+              </button>
+            </div>
           </div>
-        </div>
-      </div>
+        </>
+      )}
 
       {/* MODAL 1: ADD / EDIT VIETQR BANK */}
       {openModal && (
@@ -1381,10 +1473,25 @@ export function GiftBox({ d, set }: P) {
   );
 }
 
+const thanksIcon = (
+  <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z" />
+  </svg>
+);
+
 export function Thanks({ d, set }: P) {
   return (
-    <Section title="Lời cảm ơn" enabled={d.thanksOn} onEnabled={(v) => set({ thanksOn: v })} enabledLabel="Hiện">
-      <Field label="Lời cảm ơn"><Textarea rows={3} placeholder="Cảm ơn bạn đã đến chung vui cùng chúng tôi!" value={d.thanks} onChange={(e) => set({ thanks: e.target.value })} /></Field>
+    <Section title="Lời cảm ơn" icon={thanksIcon} enabled={d.thanksOn} onEnabled={(v) => set({ thanksOn: v })} enabledLabel="Hiện">
+      {!d.thanksOn ? (
+        <div className="section-disabled-hint">
+          <svg width="18" height="18" fill="none" stroke="#f59e0b" viewBox="0 0 24 24" strokeWidth="2" style={{ flex: "none", marginTop: 2 }}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+          <div>Phần này hiển thị lời cảm ơn ở cuối thiệp. Bật công tắc ở trên nếu bạn muốn hiện phần này trên thiệp!</div>
+        </div>
+      ) : (
+        <Field label="Lời cảm ơn"><Textarea rows={3} placeholder="Cảm ơn bạn đã đến chung vui cùng chúng tôi!" value={d.thanks} onChange={(e) => set({ thanks: e.target.value })} /></Field>
+      )}
     </Section>
   );
 }

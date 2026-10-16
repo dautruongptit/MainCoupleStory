@@ -1020,7 +1020,7 @@ export default function Preview({
             </div>
             <div className="p-4 sm:p-6">
               <div
-                className="flex flex-col items-center gap-6 sm:flex-row sm:flex-wrap sm:items-start sm:justify-center"
+                className="flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:items-start sm:justify-center"
                 style={{ color: "rgb(84, 46, 8)" }}
               >
                 {d.gifts.map((g) => {
@@ -1032,7 +1032,7 @@ export default function Preview({
                       : "Cô Dâu";
                   return (
                     <div
-                      className="flex flex-col items-center flex-1 max-w-[200px] sm:max-w-none"
+                      className="flex flex-col items-center flex-1 max-w-[180px] sm:max-w-none"
                       key={g.id}
                     >
                       <h3

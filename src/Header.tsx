@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Icon } from "./ui";
+import { TEMPLATES, TPL_CDN, Tpl } from "./templates";
 
 export type Mode = "edit" | "preview";
 
@@ -8,15 +9,19 @@ export default function Header({
   onMode,
   dirty,
   onPublish,
+  templateId = "double_phoenix_red",
   templateName = "Song Phụng - Đỏ",
   templateThumb = "https://assets.chungdoi.com/template-previews/vi/landscape/double_phoenix_red.d0f325f5.webp",
+  onSelectTemplate,
 }: {
   mode: Mode;
   onMode: (m: Mode) => void;
   dirty: number;
   onPublish: () => void;
+  templateId?: string;
   templateName?: string;
   templateThumb?: string;
+  onSelectTemplate?: (tpl: Tpl) => void;
 }) {
   const [menu, setMenu] = useState(false);
   const [templateModal, setTemplateModal] = useState(false);
@@ -223,26 +228,50 @@ export default function Header({
         </div>
       </header>
 
-      {/* Template Selector Modal */}
+      {/* Full 7-column Template Selector Modal (matches media_1792164790175_cb0f3aef.png) */}
       {templateModal && (
         <div className="modal-back" onClick={() => setTemplateModal(false)}>
-          <div className="modal" onClick={(e) => e.stopPropagation()}>
-            <h4>Mẫu thiệp đang chọn</h4>
-            <div className="tpl-modal-preview">
-              <img src={templateThumb} alt={templateName} />
-              <div className="tpl-modal-info">
-                <h5>{templateName}</h5>
-                <p>Cổ điển &amp; thanh lịch với họa tiết đôi phụng hoàng truyền thống</p>
-                <span className="badge-free">Mẫu thiệp miễn phí</span>
+          <div className="tpl-grid-modal" onClick={(e) => e.stopPropagation()}>
+            <div className="tpl-modal-header">
+              <div className="tpl-modal-titles">
+                <h3>Đổi mẫu thiệp</h3>
+                <p>Nội dung thiệp sẽ được giữ nguyên, chỉ thay đổi giao diện</p>
               </div>
-            </div>
-            <div className="modal-actions">
               <button
-                className="btn-outline"
+                type="button"
+                className="tpl-modal-close"
                 onClick={() => setTemplateModal(false)}
+                aria-label="Đóng"
               >
-                Đóng
+                ✕
               </button>
+            </div>
+            <div className="tpl-grid-content">
+              <div className="tpl-grid">
+                {TEMPLATES.map((t) => {
+                  const isSelected = t.id === templateId || t.name === templateName;
+                  return (
+                    <div
+                      key={t.id}
+                      className={`tpl-card ${isSelected ? "selected" : ""}`}
+                      onClick={() => {
+                        onSelectTemplate?.(t);
+                        setTemplateModal(false);
+                      }}
+                    >
+                      <img src={TPL_CDN + t.img} alt={t.name} loading="lazy" />
+                      {isSelected && (
+                        <div className="tpl-card-check">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                          </svg>
+                        </div>
+                      )}
+                      <div className="tpl-card-name">{t.name}</div>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
