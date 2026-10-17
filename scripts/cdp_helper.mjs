@@ -149,8 +149,10 @@ class ChromeController {
   async screenshot(filePath) {
     const res = await this.send("Page.captureScreenshot", { format: "png" });
     const buffer = Buffer.from(res.data, "base64");
-    writeFileSync(filePath, buffer);
-    return filePath;
+    if (filePath) {
+      writeFileSync(filePath, buffer);
+    }
+    return buffer;
   }
 
   async close() {

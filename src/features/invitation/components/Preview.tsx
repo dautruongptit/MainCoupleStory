@@ -4,6 +4,7 @@ import { TEMPLATE_THEMES } from "@/features/invitation/config/templateThemes";
 import { LongPhungHeader } from "@/features/invitation/components/LongPhungV2";
 import { getCoverComponent } from "@/features/invitation/components/covers";
 import { GENERATED_HEADERS } from "@/features/invitation/components/generated/headers";
+import AlbumGallery from "@/features/invitation/components/AlbumGallery";
 import { getThemeBackgroundUrl, getThemeDecorations, getTemplateManifest } from "@/features/templates/data/themeManifest";
 import type { Inv } from "@/types/invitation";
 import { brideShown, groomShown } from "@/utils/format";
@@ -420,34 +421,35 @@ export default function Preview({
                 </span>
               </div>
 
-              <div className="relative z-10 mt-6 aspect-[1094/1554] w-[88%] max-w-[360px] md:mt-8 md:max-w-[460px]">
-                <div className="absolute left-[11.5%] top-[8%] z-10 h-[77%] w-[72%] rotate-[-4.78deg] overflow-hidden bg-white shadow-inner">
+              {d.heroOn && (
+                <div className="relative z-10 mt-6 aspect-[1094/1554] w-[88%] max-w-[360px] md:mt-8 md:max-w-[460px]">
+                  <div className="absolute left-[11.5%] top-[8%] z-10 h-[77%] w-[72%] rotate-[-4.78deg] overflow-hidden bg-white shadow-inner">
+                    <img
+                      src={d.heroPhoto || "/images/themes/minimalism-brown/couple.webp"}
+                      alt={`${gName} & ${bName}`}
+                      className="h-full w-full object-cover"
+                      style={{ objectPosition: `${d.heroX}% ${d.heroY}%`, transform: `scale(${d.heroZoom})`, transformOrigin: `${d.heroX}% ${d.heroY}%` }}
+                    />
+                  </div>
                   <img
-                    hidden={!d.heroOn}
-                    src={d.heroPhoto || "/images/themes/minimalism-brown/couple.webp"}
-                    alt={`${gName} & ${bName}`}
-                    className="h-full w-full object-cover"
-                    style={{ objectPosition: `${d.heroX}% ${d.heroY}%`, transform: `scale(${d.heroZoom})`, transformOrigin: `${d.heroX}% ${d.heroY}%` }}
-                  />
-                </div>
-                <img
-                  src="/images/themes/minimalism-brown/frame-avatar.webp"
-                  alt=""
-                  aria-hidden="true"
-                  className="pointer-events-none absolute inset-0 z-20 size-full max-w-none drop-shadow-[4px_4px_4px_rgba(0,0,0,0.2)]"
-                />
-                <span
-                  aria-hidden="true"
-                  className="pointer-events-none absolute block bottom-[-6%] left-[-5%] z-30 w-[34%]"
-                  style={{ animation: "mbFloat 5s ease-in-out infinite", animationDelay: "0s", willChange: "transform" }}
-                >
-                  <img
-                    src="/images/themes/minimalism-brown/flower2-decoration.webp"
+                    src="/images/themes/minimalism-brown/frame-avatar.webp"
                     alt=""
-                    className="block w-full max-w-none object-contain drop-shadow-[4px_4px_2px_rgba(0,0,0,0.25)]"
+                    aria-hidden="true"
+                    className="pointer-events-none absolute inset-0 z-20 size-full max-w-none drop-shadow-[4px_4px_4px_rgba(0,0,0,0.2)]"
                   />
-                </span>
-              </div>
+                  <span
+                    aria-hidden="true"
+                    className="pointer-events-none absolute block bottom-[-6%] left-[-5%] z-30 w-[34%]"
+                    style={{ animation: "mbFloat 5s ease-in-out infinite", animationDelay: "0s", willChange: "transform" }}
+                  >
+                    <img
+                      src="/images/themes/minimalism-brown/flower2-decoration.webp"
+                      alt=""
+                      className="block w-full max-w-none object-contain drop-shadow-[4px_4px_2px_rgba(0,0,0,0.25)]"
+                    />
+                  </span>
+                </div>
+              )}
             </header>
           ) : isSongHy ? (
             /* Hero cho Song Hỷ - Xanh (media_1792167676918_431db77f.png) */
@@ -503,103 +505,98 @@ export default function Preview({
           )}
 
           {/* -------------------- SECTION 1: LỄ CƯỚI & GIA ĐÌNH -------------------- */}
-          <section className="sp-section sp-family-sec">
-            {/* Flower Accent top-right only for double_phoenix_red */}
-            {d.templateId === "double_phoenix_red" && (
-              <div className="absolute right-0 top-[-220px] md:top-[-270px] lg:top-[-290px] w-[192px] md:w-[360px] lg:w-[360px] h-auto opacity-100 pointer-events-none z-[5]">
-                <img data-art="1" src="/images/themes/songphung-red/HOA.webp" alt="" className="w-full h-auto object-contain" />
-              </div>
-            )}
+          {(d.familyOn || d.announceOn || d.ceremonies.length > 0) && (
+            <section className="sp-section sp-family-sec">
+              {/* Flower Accent top-right only for double_phoenix_red */}
+              {d.templateId === "double_phoenix_red" && (
+                <div className="absolute right-0 top-[-220px] md:top-[-270px] lg:top-[-290px] w-[192px] md:w-[360px] lg:w-[360px] h-auto opacity-100 pointer-events-none z-[5]">
+                  <img data-art="1" src="/images/themes/songphung-red/HOA.webp" alt="" className="w-full h-auto object-contain" />
+                </div>
+              )}
 
-            {d.familyOn && (
-              <>
-                <h2 className="sp-sec-title">{d.ceremonyTitle || "THÔNG TIN LỄ CƯỚI"}</h2>
+              {d.familyOn && (
+                <div className="sp-family-block">
+                  <h2 className="sp-sec-title">{d.ceremonyTitle || "THÔNG TIN LỄ CƯỚI"}</h2>
 
-                <div className="sp-family-grid">
-                  {/* Left Column */}
-                  <div className="sp-family-col">
-                    <p className="sp-fam-title">{fams[0].title}</p>
-                    <p className="sp-fam-name">{fams[0].f}</p>
-                    <p className="sp-fam-name">{fams[0].m}</p>
-                    {fams[0].addr && <p className="sp-fam-addr">{fams[0].addr}</p>}
+                  <div className="sp-family-grid">
+                    {/* Left Column */}
+                    <div className="sp-family-col">
+                      <p className="sp-fam-title">{fams[0].title}</p>
+                      <p className="sp-fam-name">{fams[0].f}</p>
+                      <p className="sp-fam-name">{fams[0].m}</p>
+                      {fams[0].addr && <p className="sp-fam-addr">{fams[0].addr}</p>}
+                    </div>
+
+                    {/* Vertical Divider */}
+                    <div className="sp-family-div" />
+
+                    {/* Right Column */}
+                    <div className="sp-family-col">
+                      <p className="sp-fam-title">{fams[1].title}</p>
+                      <p className="sp-fam-name">{fams[1].f}</p>
+                      <p className="sp-fam-name">{fams[1].m}</p>
+                      {fams[1].addr && <p className="sp-fam-addr">{fams[1].addr}</p>}
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Announcement Lines & Couple Call */}
+              {d.announceOn && (
+                <div className="sp-announce-block">
+                  <div className="sp-announce">
+                    <p className="sp-ann-1">{d.announcementLine1 || "TRÂN TRỌNG BÁO TIN"}</p>
+                    <p className="sp-ann-2">{d.announcementLine2 || "LỄ THÀNH HÔN CỦA CON CHÚNG TÔI"}</p>
                   </div>
 
-                  {/* Vertical Divider */}
-                  <div className="sp-family-div" />
-
-                  {/* Right Column */}
-                  <div className="sp-family-col">
-                    <p className="sp-fam-title">{fams[1].title}</p>
-                    <p className="sp-fam-name">{fams[1].f}</p>
-                    <p className="sp-fam-name">{fams[1].m}</p>
-                    {fams[1].addr && <p className="sp-fam-addr">{fams[1].addr}</p>}
+                  <div className="sp-couple-call">
+                    <div className="sp-person-name">{n1}</div>
+                    <div className="sp-person-role">({r1})</div>
+                    <div className="sp-person-amp">&amp;</div>
+                    <div className="sp-person-name">{n2}</div>
+                    <div className="sp-person-role">({r2})</div>
                   </div>
                 </div>
-              </>
-            )}
+              )}
 
-            {/* Announcement Lines */}
-            {d.announceOn && (
-              <div className="sp-announce">
-                <p className="sp-ann-1">{d.announcementLine1 || "TRÂN TRỌNG BÁO TIN"}</p>
-                <p className="sp-ann-2">{d.announcementLine2 || "LỄ THÀNH HÔN CỦA CON CHÚNG TÔI"}</p>
-              </div>
-            )}
-
-            {/* Couple names & Birth order */}
-            <div className="sp-couple-call">
-              <div className="sp-person-name">{n1}</div>
-              <div className="sp-person-role">({r1})</div>
-              <div className="sp-person-amp">&amp;</div>
-              <div className="sp-person-name">{n2}</div>
-              <div className="sp-person-role">({r2})</div>
-            </div>
-
-            {/* Ceremonies Card */}
-            {d.ceremonies.map((c, i) => (
-              <div className="sp-ceremony-card" key={i}>
-                <h3 className="sp-ceremony-header">{c.title}</h3>
-                <div className="sp-time-badge">
-                  <span>VÀO LÚC {formatTime(c.time, d.clock)}</span>
+              {/* Ceremonies Cards */}
+              {d.ceremonies.length > 0 && (
+                <div className="sp-ceremonies-block">
+                  {!d.familyOn && d.ceremonyTitle && <h2 className="sp-sec-title">{d.ceremonyTitle}</h2>}
+                  {d.ceremonies.map((c, i) => (
+                    <div className="sp-ceremony-card" key={i}>
+                      <h3 className="sp-ceremony-header">{c.title}</h3>
+                      <div className="sp-time-badge">
+                        <span>VÀO LÚC {formatTime(c.time, d.clock)}</span>
+                      </div>
+                      <div className="sp-date-row">
+                        <span>{WEEKDAYS_FULL[parseDate(c.date).getDay()].toUpperCase()}</span>
+                        <span className="sp-date-sep">|</span>
+                        <span className="sp-date-num">
+                          {parseDate(c.date).getDate()} THÁNG {parseDate(c.date).getMonth() + 1}
+                        </span>
+                        <span className="sp-date-sep">|</span>
+                        <span>{parseDate(c.date).getFullYear()}</span>
+                      </div>
+                      {c.lunar && <p className="sp-lunar-date">({c.lunar})</p>}
+                      {c.place && <p className="sp-ceremony-place">Địa điểm: {c.place}</p>}
+                    </div>
+                  ))}
                 </div>
-                <div className="sp-date-row">
-                  <span>{WEEKDAYS_FULL[parseDate(c.date).getDay()].toUpperCase()}</span>
-                  <span className="sp-date-sep">|</span>
-                  <span className="sp-date-num">
-                    {parseDate(c.date).getDate()} THÁNG {parseDate(c.date).getMonth() + 1}
-                  </span>
-                  <span className="sp-date-sep">|</span>
-                  <span>{parseDate(c.date).getFullYear()}</span>
-                </div>
-                {c.lunar && <p className="sp-lunar-date">({c.lunar})</p>}
-                {c.place && <p className="sp-ceremony-place">Địa điểm: {c.place}</p>}
-              </div>
-            ))}
-          </section>
+              )}
+            </section>
+          )}
 
           {/* -------------------- SECTION 2: ALBUM HÌNH CƯỚI -------------------- */}
           {d.albumOn && d.photos.length > 0 && (
             <section className="sp-section sp-gallery-sec">
               <h2 className="sp-sec-title">ALBUM HÌNH CƯỚI</h2>
-              <div className={`sp-gallery-grid layout-${d.albumLayout}`}>
-                {d.photos.map((p, i) => (
-                  <div
-                    className="sp-gallery-item"
-                    key={i}
-                    onClick={() => setLightboxImg(p)}
-                  >
-                    <img
-                      src={p}
-                      alt={`Ảnh cưới ${i + 1}`}
-                      loading="lazy"
-                      style={d.photoCrops[p] ? { objectPosition: `${d.photoCrops[p].x}% ${d.photoCrops[p].y}%`, transform: `scale(${d.photoCrops[p].z})`, transformOrigin: `${d.photoCrops[p].x}% ${d.photoCrops[p].y}%` } : undefined}
-                    />
-                    <div className="sp-gallery-overlay">
-                      <span>🔍 Xem ảnh</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <AlbumGallery
+                photos={d.photos}
+                photoCrops={d.photoCrops}
+                layout={d.albumLayout}
+                onPhotoClick={(url) => setLightboxImg(url)}
+              />
             </section>
           )}
 
@@ -665,6 +662,27 @@ export default function Preview({
               {/* RSVP Button */}
               {d.rsvpOn && d.rsvpDisplay === "inline" && <div className="sp-rsvp-inline">{rsvpBox}</div>}
               {d.rsvpOn && d.rsvpDisplay !== "inline" && (
+                <div className="sp-rsvp-action">
+                  <button
+                    className="sp-btn-primary"
+                    onClick={() => {
+                      setRsvpOpen(true);
+                      setRsvpSubmitted(false);
+                    }}
+                  >
+                    XÁC NHẬN THAM DỰ
+                  </button>
+                </div>
+              )}
+            </section>
+          )}
+
+          {/* Standalone RSVP when party section is disabled */}
+          {!d.partyOn && d.rsvpOn && (
+            <section className="sp-section sp-rsvp-sec flex justify-center py-6">
+              {d.rsvpDisplay === "inline" ? (
+                <div className="sp-rsvp-inline">{rsvpBox}</div>
+              ) : (
                 <div className="sp-rsvp-action">
                   <button
                     className="sp-btn-primary"
