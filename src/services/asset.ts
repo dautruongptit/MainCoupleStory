@@ -4,7 +4,7 @@
  * - Hỗ trợ VITE_ASSET_BASE khi triển khai lên CDN riêng hoặc kho lưu trữ đối tượng (S3 / R2).
  * - Bảo lưu nguyên vẹn blob:, data: và các URL tải lên từ backend của người dùng.
  */
-const ASSET_BASE = (import.meta.env.VITE_ASSET_BASE || "").replace(/\/+$/, "");
+const ASSET_BASE = (import.meta.env?.VITE_ASSET_BASE || "").replace(/\/+$/, "");
 
 export function assetUrl(url?: string | null): string {
   if (!url) return "";
