@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef } from "react";
 import qrcode from "qrcode-generator";
 import { Link, navigate } from "@/app/router";
 import { TPL_CDN, Tpl } from "@/features/templates/data/templates";
+import { getTemplateThemeAssets } from "@/features/templates/data/themeManifest";
 import { createDraft } from "@/services/storage/store";
 
 const ico = (d: string) => (
@@ -51,6 +52,8 @@ export default function TemplateModal({ tpl, onClose }: { tpl: Tpl; onClose: () 
     navigate(`/edit/${id}?template=${tpl.id}`);
   };
 
+  const themeAssets = getTemplateThemeAssets(tpl.id);
+
   return (
     <div className="tm-back" onMouseDown={onClose}>
       <div className="tm" role="dialog" aria-modal="true" aria-label={tpl.name} onMouseDown={(e) => e.stopPropagation()}>
@@ -60,7 +63,10 @@ export default function TemplateModal({ tpl, onClose }: { tpl: Tpl; onClose: () 
         <div className="tm-header-mobile">
           <h2>{tpl.name}</h2>
           <p className="tm-desc">{tpl.desc}</p>
-          <div className="tm-tags">{tpl.tags.map((t) => <span key={t}>{t}</span>)}</div>
+          <div className="tm-tags">
+            {tpl.tags.map((t) => <span key={t}>{t}</span>)}
+            {themeAssets.length > 0 && <span className="tm-tag-asset">✨ {themeAssets.length} họa tiết</span>}
+          </div>
         </div>
 
         <div className="tm-left">
@@ -72,7 +78,10 @@ export default function TemplateModal({ tpl, onClose }: { tpl: Tpl; onClose: () 
           <div className="tm-header-desktop">
             <h2>{tpl.name}</h2>
             <p className="tm-desc">{tpl.desc}</p>
-            <div className="tm-tags">{tpl.tags.map((t) => <span key={t}>{t}</span>)}</div>
+            <div className="tm-tags">
+              {tpl.tags.map((t) => <span key={t}>{t}</span>)}
+              {themeAssets.length > 0 && <span className="tm-tag-asset">✨ {themeAssets.length} họa tiết</span>}
+            </div>
           </div>
           <h3>Tính năng</h3>
           <ul className="tm-feats">
@@ -89,7 +98,7 @@ export default function TemplateModal({ tpl, onClose }: { tpl: Tpl; onClose: () 
               <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5v14M5 12h14" /></svg>
               Tạo thiệp
             </button>
-            <Link className="tm-demo" href={`/vi/mau-thiep/${tpl.slug}/demo`}>
+            <Link className="tm-demo" href={`/vi/mau-thiep/${tpl.slug}/demo`} onClick={onClose}>
               <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z" /><circle cx="12" cy="12" r="3" /></svg>
               Xem demo
             </Link>

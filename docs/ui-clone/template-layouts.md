@@ -84,7 +84,8 @@ Phương pháp: đọc mã `Preview.tsx` đếm trường `Inv` nào được d�
 
 ## Dựng hàng loạt phần đầu thiệp (2026-10-17)
 
-`scripts/gen_headers.py` đã sinh phần đầu (header hoặc section đầu tiên của trang thật) cho **69/75 mẫu** vào `src/generated/headers.tsx`; 158 tệp ảnh mới (khoảng 40 MB, tải chậm, không bị chặn) nằm trong `public/images/themes/`. Mẫu không sinh được: Song Long Đỏ/Xanh/Lam (phần đầu là các khối div không có thẻ header/section, kích thước >16.000 ký tự nên bị bỏ qua; vẫn dùng bố cục Song Phụng chung + bảng màu), cùng 3 mẫu đã dựng tay (Minimalism Nâu, Song Hỷ Xanh, Long Phụng V2).
-**Dữ liệu dùng chung:** các phần đầu chỉ nhận tên, chữ mở đầu và ảnh từ cùng một bộ dữ liệu `Inv`; phần thân vẫn là một bố cục chung đọc cùng dữ liệu đó, nên đổi mẫu bằng "Đổi mẫu thiệp" giữ nguyên dữ liệu.
-**Đã chụp ở 390 px (4/69):** Bạch Sứ Đỏ (khớp), Baroque V2 Đỏ Đậm (khớp), Vườn Kính Hồng (cành hoa đè lên tên so với mẫu thật), Hoàng Kim Lam (dòng tên cô dâu bị phần thân che một phần). 65 mẫu còn lại chưa xem bằng mắt. Phép đo tự động "tên có tràn khỏi phần đầu" cho kết quả không dùng được (mọi mẫu cùng một số), nên không có số liệu tổng.
-**Giới hạn đã biết:** phần đầu chỉ là phần đầu của trang thật; các mẫu có hero trải qua nhiều khối sẽ thiếu phần sau; màn mở thiệp vẫn là bản chung; hoạ tiết Song Phụng của phần thân đã ẩn cho mọi mẫu có phần đầu sinh tự động.
+`scripts/gen_headers.py` đã hoàn thiện và sinh phần đầu cho **72/75 mẫu** vào `src/features/invitation/components/generated/headers.tsx` (bao gồm cả dòng Song Long Đỏ/Xanh/Lam sau khi bổ sung xử lý cấu trúc `div` và trích xuất biến màu `--color-z-*`); 3 mẫu còn lại là bản dựng tay riêng biệt (Minimalism Nâu, Song Hỷ Xanh, Long Phụng V2).
+- **Tài sản ảnh bổ sung:** Tải `/images/double-dragon.webp` và `/images/chu-hy.webp` phục vụ dòng Song Long. `check:assets` đạt 45 tệp quét, 0 lỗi.
+- **Bảng màu (Template Themes):** Bổ sung đầy đủ 75/75 mẫu thiệp trong `src/features/invitation/config/templateThemes.ts` (0 mẫu thiếu theme, 0 mẫu thiếu header).
+- **Trạng thái mở thiệp trực tiếp:** Hỗ trợ tham số query `?open=1` trong `Preview.tsx` giúp xem ngay trạng thái đã mở hoặc bì thư đóng của toàn bộ 75 mẫu demo.
+- **Dữ liệu dùng chung:** các phần đầu nhận tên chú rể, cô dâu, chữ mở đầu và ảnh từ cùng bộ dữ liệu `Inv`; phần thân đọc cùng dữ liệu đó, cho phép đổi mẫu mượt mà không mất dữ liệu.

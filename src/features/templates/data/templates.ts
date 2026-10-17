@@ -103,3 +103,11 @@ const INTRO_BY_ID: Record<string, string> = {
 export const introDefaultFor = (templateId: string) =>
   TEMPLATES.find((t) => t.id === templateId)?.introDefault ?? INTRO_BY_ID[templateId] ?? "Save The Date";
 export const templateById = (id?: string) => TEMPLATES.find((t) => t.id === id);
+export const templateByIdOrSlug = (key?: string): Tpl | undefined => {
+  if (!key) return undefined;
+  const k = key.trim().toLowerCase();
+  return (
+    TEMPLATES.find((t) => t.id === k || t.slug === k) ||
+    TEMPLATES.find((t) => t.id.replace(/_/g, "-") === k || t.slug.replace(/-/g, "_") === k)
+  );
+};

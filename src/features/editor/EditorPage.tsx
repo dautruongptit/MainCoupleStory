@@ -10,23 +10,50 @@ import TutorialTour from "@/features/editor/components/TutorialTour";
 import ShareModal from "@/components/common/ShareModal";
 import PublishCheckModal from "@/features/editor/components/PublishCheckModal";
 import { loadCards, saveCards, loadInv, saveInv } from "@/services/storage/store";
-import { TPL_CDN, templateById } from "@/features/templates/data/templates";
+import { TPL_CDN, templateById, templateByIdOrSlug, introDefaultFor, TEMPLATES } from "@/features/templates/data/templates";
+import { TEMPLATE_THEMES } from "@/features/invitation/config/templateThemes";
 
 export default function EditorPage() {
   const cardId = typeof window !== "undefined" ? window.location.pathname.replace(/^\/edit\//, "").split("?")[0] : "";
   const [d, setD] = useState<Inv>(() => {
-    const known = loadCards().some((c) => c.id === cardId);
-    const saved = known ? loadInv(cardId) : null;
+    const searchParams = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : new URLSearchParams();
+    const queryTplId = searchParams.get("template") || searchParams.get("tpl") || searchParams.get("theme") || undefined;
+    const matchedCard = loadCards().find((c) => c.id === cardId);
+    const tpl = templateByIdOrSlug(queryTplId) || templateByIdOrSlug(matchedCard?.tplId) || templateByIdOrSlug(cardId);
+
+    const saved = cardId ? loadInv(cardId) : null;
     if (saved) {
       // blob: URL của ảnh vừa tải lên chỉ sống trong phiên trước, không dùng lại được sau khi tải trang.
       const alive = (u: string) => !u.startsWith("blob:");
-      return { ...defaultInv, ...saved, photos: saved.photos.filter(alive), heroPhoto: alive(saved.heroPhoto) ? saved.heroPhoto : "" };
+      const curTplId = tpl ? tpl.id : saved.templateId;
+      const curTpl = templateByIdOrSlug(curTplId);
+      return {
+        ...defaultInv,
+        ...saved,
+        templateId: curTplId,
+        templateName: curTpl ? curTpl.name : saved.templateName,
+        templateThumb: curTpl ? TPL_CDN + curTpl.img : saved.templateThumb,
+        photos: (saved.photos || []).filter(alive),
+        heroPhoto: alive(saved.heroPhoto) ? saved.heroPhoto : "",
+      };
     }
-    const tpl = templateById(loadCards().find((c) => c.id === cardId)?.tplId);
-    // thiệp mới tạo từ mẫu: nội dung trống; vào /edit/... không thuộc thiệp nào thì dùng dữ liệu demo
-    return tpl
-      ? { ...blankInv, templateId: tpl.id, templateName: tpl.name, templateThumb: TPL_CDN + tpl.img }
-      : defaultInv;
+
+    if (tpl) {
+      const palette = TEMPLATE_THEMES[tpl.id];
+      const dressColors = palette
+        ? [palette.ink, palette.bg, "#d6c5b3", "#ece5dd"]
+        : ["#542e08", "#9c7653", "#d6c5b3", "#ece5dd"];
+      return {
+        ...blankInv,
+        templateId: tpl.id,
+        templateName: tpl.name,
+        templateThumb: TPL_CDN + tpl.img,
+        introText: introDefaultFor(tpl.id),
+        dressColors,
+      };
+    }
+
+    return defaultInv;
   });
   const [mode, setMode] = useState<Mode>("edit");
   const [dirty, setDirty] = useState(0);
@@ -45,6 +72,17 @@ export default function EditorPage() {
     setD((prev) => ({ ...prev, ...p }));
     setDirty((n) => n + 1);
   }, []);
+
+  useEffect(() => {
+    // Tự động đồng bộ thẻ vào danh sách nếu chưa có (ví dụ truy cập trực tiếp từ route tạo thiệp)
+    if (cardId && !loadCards().some((c) => c.id === cardId)) {
+      const t = templateByIdOrSlug(d.templateId) || TEMPLATES[0];
+      const [template, ...rest] = t.name.split(" - ");
+      const now = new Date();
+      const created = `${String(now.getDate()).padStart(2, "0")}/${String(now.getMonth() + 1).padStart(2, "0")}/${now.getFullYear()}`;
+      saveCards([...loadCards(), { id: cardId, name: `Thiệp ${loadCards().length + 1}`, template, color: rest.join(" - "), status: "draft", created, tplId: t.id }]);
+    }
+  }, [cardId, d.templateId]);
 
   useEffect(() => {
     // chỉ ghi cho thiệp có thật trong danh sách, tránh tạo khóa lưu trữ theo id tùy ý trên URL
@@ -84,15 +122,22 @@ export default function EditorPage() {
         templateName={d.templateName}
         templateThumb={d.templateThumb}
         onSelectTemplate={(tpl) => {
+          const palette = TEMPLATE_THEMES[tpl.id];
+          const dressColors = palette
+            ? [palette.ink, palette.bg, "#d6c5b3", "#ece5dd"]
+            : d.dressColors;
           set({
             templateId: tpl.id,
             templateName: tpl.name,
             templateThumb: TPL_CDN + tpl.img,
+            introText: d.introCustom ? d.introText : introDefaultFor(tpl.id),
+            dressColors,
           });
           // giữ bản ghi thiệp (Dashboard, Khách Mời) khớp với mẫu vừa chọn
           const [template, ...rest] = tpl.name.split(" - ");
-          if (!activeCardId) return;
-          saveCards(loadCards().map((c) => (c.id === activeCardId ? { ...c, template, color: rest.join(" - "), tplId: tpl.id } : c)));
+          if (activeCardId) {
+            saveCards(loadCards().map((c) => (c.id === activeCardId ? { ...c, template, color: rest.join(" - "), tplId: tpl.id } : c)));
+          }
         }}
       />
       <main>
@@ -116,7 +161,7 @@ export default function EditorPage() {
             <S.Share d={d} set={set} />
           </div>
         ) : (
-          <Preview d={d} set={set} />
+          <Preview d={d} set={set} initialOpen={true} />
         )}
       </main>
       {toast && <div className="toast">{toast}</div>}

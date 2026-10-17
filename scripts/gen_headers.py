@@ -1,8 +1,10 @@
-"""Sinh src/generated/headers.tsx từ HTML trang demo thật (đã mở), chỉ phần đầu thiệp (root + header).
-Chạy: python gen_headers.py slug:templateId ...
+"""Sinh src/features/invitation/components/generated/headers.tsx từ HTML trang demo thật (đã mở), chỉ phần đầu thiệp (root + header).
+Chạy: python gen_headers.py [slug:templateId ...]
+Nếu không truyền đối số, tự động sinh cho toàn bộ mẫu từ templates.ts (trừ các mẫu dựng riêng).
 Tên, chữ mở đầu và ảnh đôi được thay bằng tham số; mọi thứ khác giữ nguyên từ HTML thật."""
 import re, sys, os, json
 from html.parser import HTMLParser
+sys.stdout.reconfigure(encoding="utf-8")
 
 TP = os.environ["TEMP"] + "/tp"
 OUT = r"D:\MY PRO\applications\MainCoupleStory\web\src\features\invitation\components\generated"
@@ -15,6 +17,13 @@ def camel(p):
     return re.sub(r"-([a-z])", lambda m: m.group(1).upper(), p)
 
 def style_obj(s):
+    s = s.replace("var(--color-z-linen2)", "236, 232, 214")
+    s = s.replace("var(--color-z-linen)", "236, 223, 214")
+    s = s.replace("var(--color-z-white3)", "232, 236, 214")
+    s = s.replace("var(--color-z-red)", "136, 41, 37")
+    s = s.replace("var(--color-z-green)", "31, 58, 37")
+    s = s.replace("var(--color-z-blue)", "37, 63, 120")
+    s = s.replace("var(--color-z-gray)", "70, 70, 70")
     items = []
     for part in re.split(r";(?![^(]*\))", s):
         if ":" not in part:
@@ -111,6 +120,10 @@ def extract(slug):
     h = open(f"{TP}/{slug}.o.html", encoding="utf-8").read()
     i = h.find("data-showcase-root")
     i = h.rfind("<div", 0, i)
+    if slug.startswith("song-long-"):
+        le_cuoi = h.find("THÔNG TIN LỄ CƯỚI", i)
+        h2_idx = h.rfind("<div", 0, le_cuoi)
+        return h[i:h2_idx], h
     j = h.find("<header", i)
     tag = "header"
     if j < 0:
@@ -127,6 +140,20 @@ def keyframes(h):
     return ks
 
 def main(pairs):
+    if not pairs:
+        # Load from templates.ts
+        tpl_path = r"D:\MY PRO\applications\MainCoupleStory\web\src\features\templates\data\templates.ts"
+        with open(tpl_path, encoding="utf-8") as f:
+            lines = [l.strip() for l in f if l.strip().startswith('{"slug":')]
+        tpls = []
+        for l in lines:
+            if l.endswith(','): l = l[:-1]
+            tpls.append(json.loads(l))
+        # Exclude hand-crafted bespoke templates
+        HANDCRAFTED = {"minimalism_brown", "song_hy_green", "dragon_phoenix_v2_red"}
+        pairs = [f"{t['slug']}:{t['id']}" for t in tpls if t['id'] not in HANDCRAFTED]
+        print(f"Auto-selected {len(pairs)} template pairs from templates.ts")
+
     os.makedirs(OUT, exist_ok=True)
     comps, kf, reg = [], set(), []
     for pair in pairs:
@@ -134,7 +161,7 @@ def main(pairs):
         frag, full = extract(slug)
         # tên: hai text node nằm trong thẻ p/h có cỡ chữ lớn; lấy theo thứ tự trong header (sau chữ mở đầu)
         txts = [t.strip() for t in re.findall(r">([^<>]+)<", re.sub(r"<style.*?</style>", "", frag, flags=re.S)) if t.strip()]
-        cand = [t for t in txts if t != "&amp;" and t != "&" and not re.fullmatch(r"(save the date|the wedding of|welcome to our wedding|the story of love)", t, re.I)]
+        cand = [t for t in txts if t != "&amp;" and t != "&" and not re.fullmatch(r"(save the date|the wedding of|welcome to our wedding|the story of love|trưởng nam.*|út nữ.*|thứ nữ.*)", t, re.I)]
         names = {"groom": {cand[0]} if cand else set(), "bride": {cand[1]} if len(cand) > 1 else set()}
         c = Conv(names)
         c.feed(frag)
@@ -158,5 +185,7 @@ def main(pairs):
            "\nexport const GENERATED_HEADERS: Record<string, (p: P) => ReactElement> = {\n" + "\n".join(reg) + "\n};\n")
     open(OUT + r"\headers.tsx", "w", encoding="utf-8").write(tsx)
     open(OUT + r"\headers.css", "w", encoding="utf-8").write("/* @keyframes lấy từ trang demo thật */\n" + "\n".join(sorted(kf)) + "\n")
+    print(f"\nSuccessfully generated {len(reg)} headers into headers.tsx and {len(kf)} keyframes into headers.css!")
 
-main(sys.argv[1:])
+if __name__ == "__main__":
+    main(sys.argv[1:])

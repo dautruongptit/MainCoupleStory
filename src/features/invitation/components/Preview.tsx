@@ -4,6 +4,7 @@ import { TEMPLATE_THEMES } from "@/features/invitation/config/templateThemes";
 import { LongPhungCover, LongPhungHeader } from "@/features/invitation/components/LongPhungV2";
 import { DarkRedCover } from "@/features/invitation/components/MinimalismDarkRed";
 import { GENERATED_HEADERS } from "@/features/invitation/components/generated/headers";
+import { getThemeBackgroundUrl, getThemeDecorations, getTemplateManifest } from "@/features/templates/data/themeManifest";
 import type { Inv } from "@/types/invitation";
 import { brideShown, groomShown } from "@/utils/format";
 import {
@@ -19,12 +20,21 @@ export default function Preview({
   d,
   set,
   standalone = false,
+  initialOpen,
 }: {
   d: Inv;
   set: (p: Partial<Inv>) => void;
   standalone?: boolean;
+  initialOpen?: boolean;
 }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(() => {
+    if (initialOpen !== undefined) return initialOpen;
+    if (standalone) {
+      return typeof location !== "undefined" && new URLSearchParams(location.search).get("open") === "1";
+    }
+    // Inside editor preview, default to opened immediately (no envelope screen)
+    return true;
+  });
   const [lightboxImg, setLightboxImg] = useState<string | null>(null);
   const [rsvpOpen, setRsvpOpen] = useState(false);
   const [rsvpSubmitted, setRsvpSubmitted] = useState(false);
@@ -42,6 +52,7 @@ export default function Preview({
   const isDarkRed = d.templateId === "minimalism_darkred";
   const isLongPhungV2 = d.templateId === "dragon_phoenix_v2_red";
   const isSongHy = (d.templateId || "").includes("song_hy") || (d.templateName || "").includes("Song Hỷ");
+  const themeBgUrl = getThemeBackgroundUrl(d.templateId);
   const [rsvpForm, setRsvpForm] = useState({
     name: d.envelopeGuest || "",
     phone: "",
@@ -484,27 +495,31 @@ export default function Preview({
 
               {/* Inner Paper Card */}
               <div className="envelope-card">
-                {/* Corner Ornaments */}
-                <img
-                  src="/images/themes/songphung-red/Phuong.webp"
-                  alt=""
-                  className="env-deco-phuong-tl"
-                />
-                <img
-                  src="/images/themes/songphung-red/Phuong.webp"
-                  alt=""
-                  className="env-deco-phuong-br"
-                />
-                <img
-                  src="/images/themes/songphung-red/HOA.webp"
-                  alt=""
-                  className="env-deco-hoa-bl"
-                />
-                <img
-                  src="/images/themes/songphung-red/HOA.webp"
-                  alt=""
-                  className="env-deco-hoa-tr"
-                />
+                {/* Corner Ornaments: only render if double_phoenix_red, never borrow into other themes */}
+                {d.templateId === "double_phoenix_red" && (
+                  <>
+                    <img
+                      src="/images/themes/songphung-red/Phuong.webp"
+                      alt=""
+                      className="env-deco-phuong-tl"
+                    />
+                    <img
+                      src="/images/themes/songphung-red/Phuong.webp"
+                      alt=""
+                      className="env-deco-phuong-br"
+                    />
+                    <img
+                      src="/images/themes/songphung-red/HOA.webp"
+                      alt=""
+                      className="env-deco-hoa-bl"
+                    />
+                    <img
+                      src="/images/themes/songphung-red/HOA.webp"
+                      alt=""
+                      className="env-deco-hoa-tr"
+                    />
+                  </>
+                )}
 
                 {/* Card Content */}
                 <div className="env-content">
@@ -560,17 +575,17 @@ export default function Preview({
           )}
 
           {/* Paper Background Texture Overlay */}
-          {!isMinimalism && (
+          {themeBgUrl && (
             <div
               className="paper-texture"
               style={{
-                backgroundImage: "url(/images/themes/songphung-red/NENGIAY.jpg)",
+                backgroundImage: `url("${themeBgUrl}")`,
               }}
             />
           )}
 
-          {/* Phoenix Line Side Decorations (Parallax Artwork for traditional themes) */}
-          {!isMinimalism && !isSongHy && (
+          {/* Phoenix Line Side Decorations (Parallax Artwork only for double_phoenix_red) */}
+          {d.templateId === "double_phoenix_red" && (
             <>
               <div className="line-deco-left" aria-hidden="true">
                 <img
@@ -600,7 +615,7 @@ export default function Preview({
                 aria-hidden="true"
                 className="pointer-events-none absolute inset-0 z-0"
                 style={{
-                  backgroundImage: 'url("/images/themes/minimalism-brown/paper.webp")',
+                  backgroundImage: `url("${themeBgUrl || '/images/themes/minimalism-brown/paper.webp'}")`,
                   backgroundSize: "100% auto",
                   backgroundPosition: "top center",
                   mixBlendMode: "multiply",
@@ -704,7 +719,7 @@ export default function Preview({
                 <p className="sh-arch-footer">LOVE NEVER FAILS</p>
               </div>
             </header>
-          ) : (
+          ) : d.templateId === "double_phoenix_red" ? (
             /* Hero cho Song Phụng - Đỏ */
             <header className="relative flex flex-col items-center justify-center text-center z-10 pt-12 md:pt-16 pb-[200px] md:pb-[220px] lg:pb-[240px]">
               <div className="w-full text-[36px] md:text-[44px] lg:text-[52px] mb-6 md:mb-8 text-left pl-6 md:pl-8 md:ml-[80px] lg:ml-[80px] uppercase" style={{ color: "var(--inv-ink, #710001)", fontFamily: '"Playfair Display", serif', lineHeight: 1.11, fontWeight: 400 }}>
@@ -724,12 +739,22 @@ export default function Preview({
                 </div>
               </div>
             </header>
+          ) : (
+            /* Clean Generic Fallback for templates without bespoke hero */
+            <header className="relative flex flex-col items-center justify-center text-center z-10 pt-16 pb-16 px-4">
+              <p className="text-[14px] uppercase tracking-[0.2em] mb-4 opacity-80" style={{ color: "var(--inv-ink, #710001)" }}>
+                {intro}
+              </p>
+              <div className="text-[34px] md:text-[48px] uppercase tracking-wide font-normal" style={{ color: "var(--inv-ink, #710001)", fontFamily: '"Playfair Display", serif', lineHeight: 1.2 }}>
+                {gName} &amp; {bName}
+              </div>
+            </header>
           )}
 
           {/* -------------------- SECTION 1: LỄ CƯỚI & GIA ĐÌNH -------------------- */}
           <section className="sp-section sp-family-sec">
-            {/* Flower Accent top-right for traditional theme */}
-            {!isMinimalism && !isSongHy && (
+            {/* Flower Accent top-right only for double_phoenix_red */}
+            {d.templateId === "double_phoenix_red" && (
               <div className="absolute right-0 top-[-220px] md:top-[-270px] lg:top-[-290px] w-[192px] md:w-[360px] lg:w-[360px] h-auto opacity-100 pointer-events-none z-[5]">
                 <img data-art="1" src="/images/themes/songphung-red/HOA.webp" alt="" className="w-full h-auto object-contain" />
               </div>

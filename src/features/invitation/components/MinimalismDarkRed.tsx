@@ -20,7 +20,7 @@ export function DarkRedCover({
   groom, bride, dateText, guest, message, onOpen,
 }: { groom: string; bride: string; dateText: string; guest?: string; message?: string; onOpen: () => void }) {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center overflow-hidden" style={{ background: "linear-gradient(to bottom right, #6e1a20, #511419, #380a0e)" }}>
+    <div className="fixed inset-0 z-50 flex items-center justify-center overflow-hidden envelope-screen darkred-env-screen" style={{ background: "linear-gradient(to bottom right, #6e1a20, #511419, #380a0e)" }}>
       <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true" style={{ zIndex: 1 }}>
         {HEARTS.map((p, i) => (
           <div key={i} className="absolute" style={{ left: p.left, top: -30, color: p.color, fontSize: p.size, animation: `ambient-fall ${p.dur}s ease-in-out ${p.delay}s infinite` }}>
@@ -30,7 +30,7 @@ export function DarkRedCover({
       </div>
       <div className="relative" style={{ zIndex: 10 }}>
         <div className="relative w-[310px] sm:w-[340px] md:w-[520px] lg:w-[600px]">
-          <div className="absolute left-1/2 rounded-full flex items-center justify-center" style={{ top: 50, width: 56, height: 56, transform: "translate(-50%, -50%)", background: "radial-gradient(circle at 30% 30%, #511419, rgb(51, 0, 0))", boxShadow: "0 4px 20px rgba(81, 20, 25, 0.5), inset 0 2px 4px rgba(255,255,255,0.3)", zIndex: 30, animation: "seal-pulse 2s ease-in-out infinite" }}>
+          <div onClick={onOpen} title="Bấm để mở thiệp" className="wax-seal absolute left-1/2 rounded-full flex items-center justify-center cursor-pointer" style={{ top: 50, width: 56, height: 56, transform: "translate(-50%, -50%)", background: "radial-gradient(circle at 30% 30%, #511419, rgb(51, 0, 0))", boxShadow: "0 4px 20px rgba(81, 20, 25, 0.5), inset 0 2px 4px rgba(255,255,255,0.3)", zIndex: 30, animation: "seal-pulse 2s ease-in-out infinite" }}>
             <svg style={{ fill: "#f3e8de" }} viewBox="0 0 24 24" className="w-7 h-7"><path d={HEART} /></svg>
           </div>
           <div className="relative rounded-lg" style={{ boxShadow: "0 25px 60px -12px rgba(0, 0, 0, 0.45), 0 8px 24px rgba(0, 0, 0, 0.2), 0 0 40px rgba(81, 20, 25, 0.15)" }}>
@@ -55,7 +55,7 @@ export function DarkRedCover({
                 {guest && guest !== "Thân Mời" && <p className="text-[18px] font-medium" style={{ color: "#511419", fontFamily: serif }}>{guest}</p>}
                 {guest && guest !== "Thân Mời" && message && <p className="text-[16px] font-light" style={{ color: "rgba(81, 20, 25, 0.72)", fontFamily: serif }}>{message}</p>}
               </div>
-              <button type="button" onClick={onOpen} className="relative px-8 py-2.5 text-lg font-semibold sm:font-medium rounded-full shadow-lg cursor-pointer flex w-fit items-center justify-center mx-auto overflow-hidden border-none" style={{ backgroundColor: "#511419", color: "#f3e8de", boxShadow: "0 4px 14px rgba(81, 20, 25, 0.35)", fontFamily: serif }}>
+              <button type="button" onClick={onOpen} className="wax-seal-btn env-open-btn relative px-8 py-2.5 text-lg font-semibold sm:font-medium rounded-full shadow-lg cursor-pointer flex w-fit items-center justify-center mx-auto overflow-hidden border-none" style={{ backgroundColor: "#511419", color: "#f3e8de", boxShadow: "0 4px 14px rgba(81, 20, 25, 0.35)", fontFamily: serif }}>
                 <span>Mở thiệp</span>
                 <div className="absolute top-0 h-full w-8 pointer-events-none" style={{ background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)", animation: "shine 3s ease-in-out infinite" }} />
               </button>

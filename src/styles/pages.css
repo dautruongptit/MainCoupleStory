@@ -1339,6 +1339,7 @@
 .tm-desc { margin: 0; font-size: 14px; color: rgba(var(--fgrgb), .7); line-height: 1.5; }
 .tm-tags { display: flex; flex-wrap: wrap; gap: 6px; }
 .tm-tags span { padding: 4px 12px; border-radius: 999px; border: 1px solid rgba(var(--fgrgb), .15); background: rgba(var(--fgrgb), .04); font-size: 11px; color: rgba(var(--fgrgb), .8); }
+.tm-tags span.tm-tag-asset { border-color: rgba(255, 0, 128, .35); color: #ff0080; background: rgba(255, 0, 128, .08); font-weight: 500; }
 .tm-right h3 { margin: 10px 0 0; font-size: 13px; font-weight: 600; color: rgba(var(--fgrgb), .6); letter-spacing: .02em; }
 .tm-feats { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; }
 .tm-feats li { display: flex; align-items: center; gap: 8px; font-size: 13px; color: rgba(var(--fgrgb), .85); }

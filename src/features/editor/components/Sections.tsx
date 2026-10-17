@@ -6,6 +6,7 @@ import { groomShown, brideShown } from "@/utils/format";
 import { Field, Helper, Hint, Input, Modal, OutlineButton, ResetInput, Row, Section, Segmented, Textarea, Toggle, Icon } from "@/components/ui/ui";
 import { introDefaultFor } from "@/features/templates/data/templates";
 import { VN_BANKS } from "@/features/editor/constants/banks";
+import { PAYMENT_METHODS } from "@/features/editor/constants/paymentMethods";
 
 type P = { d: Inv; set: (p: Partial<Inv>) => void };
 
@@ -1473,114 +1474,98 @@ export function GiftBox({ d, set }: P) {
           title="Chọn phương thức nhận quà"
           onClose={() => setOpenOtherModal(false)}
         >
-          <div className="space-y-4 pt-1">
-            <p className="text-xs uppercase opacity-60 font-semibold">Phổ biến</p>
-            <div className="payment-methods-grid">
-              <button
-                type="button"
-                className="payment-method-card"
-                onClick={() => {
-                  setOpenOtherModal(false);
-                  handleOpenAdd();
-                }}
-              >
-                <div
-                  className="payment-icon-wrap"
-                  style={{ backgroundColor: "rgba(225, 29, 72, 0.08)" }}
-                >
-                  <img
-                    alt="VietQR"
-                    className="w-full h-full object-contain p-1"
-                    src="/icons/payments/vietqr.svg"
-                  />
-                </div>
-                <span className="payment-title">VietQR</span>
-              </button>
+          <div className="space-y-4 pt-1 max-h-[70vh] overflow-y-auto pr-1">
+            {/* Phổ biến tại Việt Nam */}
+            <div>
+              <p className="text-xs uppercase opacity-60 font-semibold mb-2">Phổ biến tại Việt Nam</p>
+              <div className="payment-methods-grid">
+                {PAYMENT_METHODS.filter((m) => m.category === "vietnam").map((m) => (
+                  <button
+                    key={m.id}
+                    type="button"
+                    className="payment-method-card"
+                    title={m.description}
+                    onClick={() => {
+                      setOpenOtherModal(false);
+                      handleOpenAdd();
+                    }}
+                  >
+                    <div
+                      className="payment-icon-wrap"
+                      style={{ backgroundColor: `${m.accent}14` }}
+                    >
+                      <img
+                        alt={m.name}
+                        className="w-full h-full object-contain p-1"
+                        src={m.icon}
+                      />
+                    </div>
+                    <span className="payment-title">{m.name}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
 
-              <button
-                type="button"
-                className="payment-method-card"
-                onClick={() => {
-                  setOpenOtherModal(false);
-                  handleOpenAdd();
-                }}
-              >
-                <div
-                  className="payment-icon-wrap"
-                  style={{ backgroundColor: "rgba(0, 48, 135, 0.08)" }}
-                >
-                  <img
-                    alt="PayPal"
-                    className="w-full h-full object-contain p-1"
-                    src="/icons/payments/paypal.svg"
-                  />
-                </div>
-                <span className="payment-title">PayPal</span>
-              </button>
+            {/* Phương thức quốc tế */}
+            <div>
+              <p className="text-xs uppercase opacity-60 font-semibold mb-2">Phương thức quốc tế</p>
+              <div className="payment-methods-grid">
+                {PAYMENT_METHODS.filter((m) => m.category === "international").map((m) => (
+                  <button
+                    key={m.id}
+                    type="button"
+                    className="payment-method-card"
+                    title={m.description}
+                    onClick={() => {
+                      setOpenOtherModal(false);
+                      handleOpenAdd();
+                    }}
+                  >
+                    <div
+                      className="payment-icon-wrap"
+                      style={{ backgroundColor: `${m.accent}14` }}
+                    >
+                      <img
+                        alt={m.name}
+                        className="w-full h-full object-contain p-1"
+                        src={m.icon}
+                      />
+                    </div>
+                    <span className="payment-title">{m.name}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
 
-              <button
-                type="button"
-                className="payment-method-card"
-                onClick={() => {
-                  setOpenOtherModal(false);
-                  handleOpenAdd();
-                }}
-              >
-                <div
-                  className="payment-icon-wrap"
-                  style={{ backgroundColor: "rgba(22, 51, 0, 0.08)" }}
-                >
-                  <img
-                    alt="Wise"
-                    className="w-full h-full object-contain p-1"
-                    src="/icons/payments/wise.svg"
-                  />
-                </div>
-                <span className="payment-title">Wise</span>
-              </button>
-
-              <button
-                type="button"
-                className="payment-method-card"
-                data-bot-screenshot-id="editor-gift-registry"
-                onClick={() => {
-                  setOpenOtherModal(false);
-                  handleOpenAdd();
-                }}
-              >
-                <div
-                  className="payment-icon-wrap"
-                  style={{ backgroundColor: "rgba(124, 58, 237, 0.08)" }}
-                >
-                  <img
-                    alt="Danh sách quà cưới"
-                    className="w-full h-full object-contain p-1"
-                    src="/icons/payments/registry.svg"
-                  />
-                </div>
-                <span className="payment-title">Danh sách quà cưới</span>
-              </button>
-
-              <button
-                type="button"
-                className="payment-method-card"
-                onClick={() => {
-                  setOpenOtherModal(false);
-                  handleOpenAdd();
-                }}
-              >
-                <div
-                  className="payment-icon-wrap"
-                  style={{ backgroundColor: "rgba(15, 118, 110, 0.08)" }}
-                >
-                  <img
-                    alt="Ngân hàng"
-                    className="w-full h-full object-contain p-1"
-                    src="https://api.vietqr.io/img/ICB.png"
-                  />
-                </div>
-                <span className="payment-title">Ngân hàng</span>
-              </button>
+            {/* Khác */}
+            <div>
+              <p className="text-xs uppercase opacity-60 font-semibold mb-2">Tùy chọn khác</p>
+              <div className="payment-methods-grid">
+                {PAYMENT_METHODS.filter((m) => m.category === "other").map((m) => (
+                  <button
+                    key={m.id}
+                    type="button"
+                    className="payment-method-card"
+                    title={m.description}
+                    onClick={() => {
+                      setOpenOtherModal(false);
+                      handleOpenAdd();
+                    }}
+                  >
+                    <div
+                      className="payment-icon-wrap"
+                      style={{ backgroundColor: `${m.accent}14` }}
+                    >
+                      <img
+                        alt={m.name}
+                        className="w-full h-full object-contain p-1"
+                        src={m.icon}
+                      />
+                    </div>
+                    <span className="payment-title">{m.name}</span>
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         </Modal>

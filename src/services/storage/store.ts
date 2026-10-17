@@ -1,7 +1,9 @@
-import type { Tpl } from "@/features/templates/data/templates";
+import { TPL_CDN, introDefaultFor, type Tpl } from "@/features/templates/data/templates";
 import type { Inv } from "@/types/invitation";
 import type { Card } from "@/types/card";
 import type { Guest } from "@/types/guest";
+import { blankInv } from "@/features/editor/data/defaultData";
+import { TEMPLATE_THEMES } from "@/features/invitation/config/templateThemes";
 
 export type { Card, Guest };
 
@@ -35,6 +37,19 @@ export function createDraft(t: Tpl): string {
   const d = new Date();
   const created = `${String(d.getDate()).padStart(2, "0")}/${String(d.getMonth() + 1).padStart(2, "0")}/${d.getFullYear()}`;
   saveCards([...cards, { id, name: `Thiệp ${cards.length + 1}`, template, color: rest.join(" - "), status: "draft", created, tplId: t.id }]);
+  const palette = TEMPLATE_THEMES[t.id];
+  const dressColors = palette
+    ? [palette.ink, palette.bg, "#d6c5b3", "#ece5dd"]
+    : ["#542e08", "#9c7653", "#d6c5b3", "#ece5dd"];
+  const initialInv: Inv = {
+    ...blankInv,
+    templateId: t.id,
+    templateName: t.name,
+    templateThumb: TPL_CDN + t.img,
+    introText: introDefaultFor(t.id),
+    dressColors,
+  };
+  saveInv(id, initialInv);
   return id;
 }
 

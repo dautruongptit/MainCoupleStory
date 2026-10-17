@@ -69,4 +69,13 @@ export const TEMPLATE_THEMES: Record<string, InvTheme> = {
   glass_garden_pink: { bg: "#ffffff", ink: "#933845", rgb: "147, 56, 69", cover: "linear-gradient(to bottom right, #933845, #782d38, #5b222a)" },
   glass_garden_blue: { bg: "#3d6cae", ink: "#d9eaff", rgb: "217, 234, 255", cover: "linear-gradient(to bottom right, #d9eaff, #b1bfd1, #86919e)" },
   glass_garden_green: { bg: "#eef3e8", ink: "#35452f", rgb: "53, 69, 47", cover: "linear-gradient(to bottom right, #35452f, #2b3826, #202a1d)" },
+  song_hy_red: { bg: "#fff7eb", ink: "#800000", rgb: "128, 0, 0", cover: "linear-gradient(to bottom right, #5a0000, #400000, #2a0000)" },
+  song_hy_green: { bg: "#e9f2eb", ink: "#143a29", rgb: "20, 58, 41", cover: "linear-gradient(to bottom right, #0d2a1d, #143a29, #081d13)" },
+  double_dragon_red: { bg: "#ecdfd6", ink: "#882925", rgb: "136, 41, 37", cover: "linear-gradient(to bottom right, #4a1212, #3a0e0e, #2a0808)" },
+  double_dragon_green: { bg: "#ece8d6", ink: "#1f3a25", rgb: "31, 58, 37", cover: "linear-gradient(to bottom right, #0f2215, #0a180e, #061008)" },
+  double_dragon_blue: { bg: "#e8ecd6", ink: "#253f78", rgb: "37, 63, 120", cover: "linear-gradient(to bottom right, #0f1a2e, #0a1222, #060d18)" },
+  spring_garden_red: { bg: "#ffffff", ink: "#D25F65", rgb: "210, 95, 101", cover: "linear-gradient(to bottom right, #fff5f5, #ffefef, #ffe8e8)" },
+  spring_garden_green: { bg: "#ffffff", ink: "#5d6a57", rgb: "93, 106, 87", cover: "linear-gradient(to bottom right, #f0f4ef, #e8ede6, #dfe5dd)" },
+  spring_garden_blue: { bg: "#ffffff", ink: "#486C7D", rgb: "72, 108, 125", cover: "linear-gradient(to bottom right, #f0f7fa, #e8f2f6, #dfedf2)" },
 };
+

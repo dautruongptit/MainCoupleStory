@@ -19,20 +19,20 @@ const files = [];
 })(srcDir);
 files.push(join(root, "index.html"));
 
-const IMG = /\.(webp|jpg|jpeg|png|svg|gif)$/i;
+const ASSET_EXT = /\.(webp|jpg|jpeg|png|svg|gif|woff2?|ttf|otf|eot)$/i;
 const problems = [];
 for (const f of files) {
   const text = readFileSync(f, "utf8");
   const lines = text.split(/\r?\n/);
   lines.forEach((line, i) => {
-    for (const m of line.matchAll(/https:\/\/chungdoi\.com\/(?:images|icons)\/[^\s"')]+/g)) {
+    for (const m of line.matchAll(/https:\/\/chungdoi\.com\/(?:images|icons|fonts)\/[^\s"')]+/g)) {
       problems.push(`${f.replace(root, "")}:${i + 1}  hotlink bị chặn: ${m[0]}`);
     }
-    for (const m of line.matchAll(/["'(](\/(?:images|icons)\/[^"')\s?#]+)/g)) {
+    for (const m of line.matchAll(/["'(](\/(?:images|icons|fonts)\/[^"')\s?#]+)/g)) {
       let rel = m[1];
       if (rel.includes("${")) continue; // đường dẫn ghép động, kiểm tra tay
       try { rel = decodeURIComponent(rel); } catch { /* giữ nguyên */ }
-      if (IMG.test(rel) && !existsSync(join(root, "public", rel))) {
+      if (ASSET_EXT.test(rel) && !existsSync(join(root, "public", rel))) {
         problems.push(`${f.replace(root, "")}:${i + 1}  thiếu tệp public${rel}`);
       }
     }

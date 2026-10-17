@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+  <rect x="2" y="2" width="20" height="20" rx="5" fill="#4F46E5"/>
+  <g fill="#fff">
+    <!-- top-left finder -->
+    <rect x="5" y="5" width="5" height="5" rx="1.2"/>
+    <rect x="6.4" y="6.4" width="2.2" height="2.2" rx="0.5" fill="#4F46E5"/>
+    <!-- top-right finder -->
+    <rect x="14" y="5" width="5" height="5" rx="1.2"/>
+    <rect x="15.4" y="6.4" width="2.2" height="2.2" rx="0.5" fill="#4F46E5"/>
+    <!-- bottom-left finder -->
+    <rect x="5" y="14" width="5" height="5" rx="1.2"/>
+    <rect x="6.4" y="15.4" width="2.2" height="2.2" rx="0.5" fill="#4F46E5"/>
+  </g>
+  <!-- upload arrow badge -->
+  <g transform="translate(14.5 14.5)">
+    <circle cx="2.75" cy="2.75" r="3.4" fill="#fff"/>
+    <path d="M2.75 4.4V1.4M2.75 1.4L1.55 2.6M2.75 1.4L3.95 2.6" stroke="#4F46E5" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

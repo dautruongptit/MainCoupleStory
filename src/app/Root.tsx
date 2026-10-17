@@ -10,6 +10,8 @@ import Guests from "@/pages/Guests";
 import Templates from "@/pages/Templates";
 import Demo from "@/pages/Demo";
 import { Link, navigate, usePath } from "@/app/router";
+import { templateByIdOrSlug } from "@/features/templates/data/templates";
+import { createDraft } from "@/services/storage/store";
 
 function Redirect({ to }: { to: string }) {
   useEffect(() => navigate(to), [to]);
@@ -31,8 +33,50 @@ export default function Root() {
   // The editor renders its own TopNav + header.
   if (path.startsWith("/edit/")) return <EditorPage />;
 
-  const demoMatch = path.match(/^\/vi\/mau-thiep\/(.+)\/demo$/);
-  if (demoMatch) return <Demo slug={demoMatch[1]} />;
+  // Tạo thiệp trực tiếp: /invitations/create/:themeId
+  const createMatch = path.match(/^\/invitations\/create\/([^/]+)$/);
+  if (createMatch) {
+    const themeParam = decodeURIComponent(createMatch[1]);
+    const tpl = templateByIdOrSlug(themeParam);
+    if (!tpl) {
+      return (
+        <div className="site">
+          <TopNav />
+          <div className="page narrow" style={{ textAlign: "center", padding: "80px 20px" }}>
+            <h1 className="page-title">Không tìm thấy mẫu thiệp</h1>
+            <p className="page-sub" style={{ marginTop: 12, marginBottom: 24 }}>
+              Không tìm thấy mẫu thiệp cưới phù hợp với mã <code>{themeParam}</code>.
+            </p>
+            <Link href="/vi/mau-thiep" className="btn-pill" style={{ display: "inline-block", padding: "10px 24px" }}>
+              ← Xem danh sách mẫu thiệp
+            </Link>
+          </div>
+          <Footer />
+        </div>
+      );
+    }
+    const draftId = createDraft(tpl);
+    history.replaceState({}, "", `/edit/${draftId}?template=${tpl.id}`);
+    return <EditorPage />;
+  }
+
+  if (path === "/invitations/create") return <Redirect to="/vi/mau-thiep" />;
+
+  // Demo standalone view (supports /vi/mau-thiep/:slug/demo, /demo/:slug, and /demo?template=...)
+  const demoMatch =
+    path.match(/^\/vi\/mau-thiep\/([^/]+)\/demo$/) ||
+    path.match(/^\/demo\/([^/]+)$/);
+
+  if (demoMatch) {
+    const slug = decodeURIComponent(demoMatch[1]);
+    return <Demo key={slug} slug={slug} />;
+  }
+
+  if (path === "/demo") {
+    const params = new URLSearchParams(window.location.search);
+    const slug = params.get("template") || params.get("slug") || "minimalism-do-dam";
+    return <Demo key={slug} slug={slug} />;
+  }
 
   let page;
   if (path === "/") page = <Redirect to="/vi" />;

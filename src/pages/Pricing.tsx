@@ -76,7 +76,17 @@ export default function Pricing() {
           <p className="muted">Tự động áp dụng khi tài khoản của bạn đã có thiệp thanh toán trước đó.</p>
         </article>
       </section>
-      <p className="secure">Thanh toán an toàn, mã hóa bảo mật · Chuyển khoản ngân hàng hoặc QR</p>
+      <div className="secure-wrap my-4 text-center">
+        <p className="secure">Thanh toán an toàn, mã hóa bảo mật · Hỗ trợ chuyển khoản ngân hàng, VietQR, thẻ & quốc tế</p>
+        <div className="flex items-center justify-center gap-3 mt-2 opacity-80 flex-wrap">
+          <img src="/icons/payments/vietqr.svg" alt="VietQR" className="h-6 object-contain inline-block" />
+          <img src="/icons/payments/bank-generic.svg" alt="Ngân hàng" className="h-6 object-contain inline-block" />
+          <img src="/icons/payments/paypal.svg" alt="PayPal" className="h-6 object-contain inline-block" />
+          <img src="/icons/payments/wise.svg" alt="Wise" className="h-6 object-contain inline-block" />
+          <img src="/icons/payments/sepa.svg" alt="SEPA" className="h-6 object-contain inline-block" />
+          <img src="/icons/payments/line-pay.svg" alt="LINE Pay" className="h-6 object-contain inline-block" />
+        </div>
+      </div>
 
       <section className="pr-sec">
         <h2>Mua thiệp cưới online theo 3 bước</h2>
