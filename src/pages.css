@@ -2148,3 +2148,7 @@ button.gst-chip { border: 0; font-family: inherit; cursor: pointer; }
 .tpl-grid-content .tpl-card { width: 100%; }
 .tpl-grid-content .tpl-card img { position: absolute; inset: 0; width: 100%; height: 100%; }
 .tpl-thumb-img { object-fit: cover; object-position: top center; }
+
+/* ---- Màn hình mở thiệp Minimalism - Nâu: nền be như ảnh chuẩn 232343 ---- */
+.envelope-screen.min-env-screen { background: linear-gradient(135deg, #f3e7db 0%, #ead9c8 55%, #e0ccb8 100%) !important; }
+.min-env-screen .min-card-wrap > div { width: 540px; max-width: 92vw; }
