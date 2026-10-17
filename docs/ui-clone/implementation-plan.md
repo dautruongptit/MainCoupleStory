@@ -35,6 +35,10 @@ Quyết định đã áp dụng cho 6 câu hỏi mở (bạn duyệt kế hoạc
 | Giai đoạn 4 | Nhãn công tắc "Hiện/Ẩn" thống nhất; Thư viện ảnh rỗng là một ô vuông giữa; nhãn "KIỂU HIỂN THỊ" viết hoa; popup 4 nút trên ảnh lấp đầy ô; modal chọn nhạc nằm trên dock mobile | Xong | Chụp so ảnh 210307, 221714, 214621; chạy tải ảnh, chuyển ảnh, xóa ảnh, tải ảnh đầu thiệp |
 | Giai đoạn 4 | Đã chụp so, không phát hiện lệch đáng kể: Lễ, Lời cảm ơn, Sổ lưu bút, Dress Code, Hộp Quà Mừng, Lịch trình, Tiệc cưới, Thông tin cơ bản, Ảnh đầu thiệp, modal nhạc, đổi mẫu, chi tiết mẫu | Xong | Chụp |
 
+| Giai đoạn 5 | Ảnh xem trước mặc định "Phong bì thiệp" dùng ảnh hoa thật (cắt từ ảnh chuẩn 220136, lưu `public/images/share-envelope-default.png`; độ phân giải thấp, nên thay bằng ảnh gốc nếu có) | Xong | Chụp so ảnh 220136 |
+| Giai đoạn 5 | Mục RSVP có khung thông tin; nhãn "CÂU HỎI THÊM…" viết hoa; Thông tin gia đình nhãn nhỏ xám và vạch ngăn | Xong | Chụp so ảnh bổ sung |
+| Giai đoạn 5 | Long Phụng V2: màn mở thiệp và phần đầu thiệp dựng lại từ HTML trang demo thật (`src/LongPhungV2.tsx`); tải 6 ảnh về `public/images/themes/longphung-v2-red/` (1,3 MB, bạn đã đồng ý); dữ liệu demo "Trung Hiếu & Minh Nguyệt", khách "Em Toàn" | Xong phần cover và hero. **Phần thân thiệp bên dưới vẫn là bố cục Song Phụng chung**, chưa có khung giấy bốn góc khuyết và mây như ảnh | Chụp so ảnh bổ sung |
+
 **Còn lại, chưa làm hoặc chưa kiểm tra bằng ảnh chụp:** G11 logo gốc (hoa sen hiện là bản vẽ lại), G12 chế độ sáng/tối thật, G30 kiểu đăng nhập mật khẩu (chưa có ảnh nào chứng tỏ cần), G01/G02/G04 nội dung tab Khách Mời, bước OTP chưa có ảnh chuẩn. Chưa chụp so: Demo, Pricing, modal đổi mẫu/chọn nhạc/tour (chỉ xem tour bước 1), các mục Thư viện ảnh, Dress Code, RSVP, Ảnh xem trước chia sẻ, các phần Home ngoài đánh giá, hero và đổi mẫu, và mobile ngoài editor/Khách Mời.
 
 **Giới hạn môi trường kiểm thử:** `assets.chungdoi.com` trả HTTP 403 khi tải từ môi trường này nên ảnh mẫu thiệp không hiện trong ảnh chụp (hiện chữ alt). Chưa biết trình duyệt của bạn có tải được không.

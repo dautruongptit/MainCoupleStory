@@ -61,6 +61,31 @@ export default function Demo({ slug }: { slug: string }) {
         dressColors: ["#143a29", "#2e684a", "#8db398", "#f3f5f3"],
       };
     }
+    if (tpl?.id === "dragon_phoenix_v2_red") {
+      return {
+        ...defaultInv,
+        templateId: tpl.id,
+        templateName: tpl.name,
+        templateThumb: "https://assets.chungdoi.com/template-previews/vi/" + tpl.img,
+        groomFull: "Trung Hiếu",
+        groomNick: "Trung Hiếu",
+        brideFull: "Minh Nguyệt",
+        brideNick: "Minh Nguyệt",
+        date: "2026-05-24",
+        time: "11:00",
+        groomFamTitle: "Ông Bà",
+        brideFamTitle: "Ông Bà",
+        groomFather: "Trần Trung Tiến",
+        groomMother: "Nguyễn Thị Nhung",
+        groomAddr: "64 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh",
+        brideFather: "Lê Văn Tám",
+        brideMother: "Phan Thị Kim Oanh",
+        brideAddr: "456 Lê Lợi, Quận 3, TP. Hồ Chí Minh",
+        order: "groom",
+        envelopeGuest: "Em Toàn",
+        envelopeInviteMessage: "đến dự buổi tiệc chung vui cùng gia đình",
+      };
+    }
     return {
       ...defaultInv,
       templateId: tpl?.id || "double_phoenix_red",

@@ -172,3 +172,20 @@ Icon: nét mảnh 1.5–2px, kiểu Lucide/Heroicons. Logo: hình vuông bo hồ
 - Không có ảnh lỗi/validation, tablet, hover/focus, hoạt ảnh, âm thanh.
 - Mobile chỉ thấy qua ảnh marketing (khung điện thoại + nền hồng), tỉ lệ co và vài chi tiết có thể không đúng với trình duyệt thật.
 - Không có tài sản gốc (logo, ảnh mẫu, font). Ảnh mẫu thiệp đang tải từ `assets.chungdoi.com` theo project hiện có.
+
+## 7. Bổ sung: ảnh tham chiếu gửi thêm (giai đoạn 5)
+
+Năm ảnh bổ sung do bạn gửi trong hội thoại (không nằm trong `design/`):
+
+| Ảnh | Nội dung | Dùng để làm gì |
+|---|---|---|
+| Xem trước trong editor (Song Hỷ - Xanh, dữ liệu trống) | Thiệp xem trước với tên dự phòng "Chú Rể"/"Cô Dâu", vòm xanh, ảnh đại diện xám khi chưa có ảnh, thanh "THÔNG TIN LỄ CƯỚI" xanh đậm, "Họ Tên Cha Chú Rể" | Xác nhận tên dự phòng và trạng thái trống của xem trước |
+| Demo thật `chungdoi.com/vi/mau-thiep/long-phung-v2-do/demo`, đã mở | Nền đỏ `#680e0e`, dải vàng kem có chữ 囍, tên chữ script (The Nautigal), phượng và rồng vàng kem, khung giấy có bốn góc khuyết và mây, "THÔNG TIN LỄ CƯỚI" | Chuẩn cho phần đầu thiệp Long Phụng V2 |
+| Demo thật, màn "Mở thiệp" | Nền giấy kem với chữ 囍 bay lên, thẻ đỏ có phượng, rồng, mây mờ, con dấu vàng, tên, ngày "24 tháng 5, 2026", "Thân Mời", tên khách "Em Toàn" trong ô mờ, "đến dự buổi tiệc chung vui cùng gia đình", nút vàng "Mở thiệp" | Chuẩn cho màn mở thiệp Long Phụng V2 |
+| Editor, mục Xác nhận tham dự (RSVP) | Khung thông tin có icon xanh "Khách mời có thể xác nhận tham dự trực tiếp trên thiệp / Xem danh sách xác nhận trong trang Quản lý khách mời"; "KIỂU HIỂN THỊ", "SỐ NGƯỜI MỖI THIỆP", "CÂU HỎI THÊM CHO KHÁCH MỜI" | Chuẩn cho mục RSVP |
+| Editor, mục Thông tin gia đình | "Nhà trai"/"Nhà gái" nhãn nhỏ xám, "Danh xưng" = "Ông Bà", ô Ông/Bà và địa chỉ, vạch ngăn giữa hai nhà | Chuẩn cho mục Thông tin gia đình |
+
+Phát hiện kỹ thuật khi đối chiếu trang demo thật (dùng làm tài liệu, không phải ảnh):
+- Trang demo thật dựng bằng Tailwind và render phía máy chủ. Thêm `?open=1` vào địa chỉ thì HTML trả về đã là thiệp đã mở, dùng được làm chuẩn cấu trúc từng mẫu.
+- Thẻ `og:image` của mỗi trang demo là ảnh ngang theo mẫu (dạng `landscape/<mã mẫu>.<hash>.webp`), dùng làm ảnh chia sẻ khi gửi link. Đã lấy đủ 75 địa chỉ nhưng **chưa dùng** trong app vì ảnh "Phong bì thiệp" trong ảnh chuẩn là ảnh hoa chung, không phải ảnh theo mẫu.
+- Ảnh trong `chungdoi.com/images/...` bị trình duyệt chặn khi nhúng từ `localhost` (lỗi ORB), nên phải tải về `public/` thay vì liên kết trực tiếp. Các liên kết trực tiếp cũ của mẫu Song Phụng (`songphung-red`) có thể cùng lỗi.

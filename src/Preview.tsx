@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { introDefaultFor } from "./templates";
+import { LongPhungCover, LongPhungHeader } from "./LongPhungV2";
 import {
   Inv,
   brideShown,
@@ -28,6 +29,7 @@ export default function Preview({
 
   const intro = d.introCustom && d.introText.trim() ? d.introText.trim() : introDefaultFor(d.templateId);
   const isMinimalism = (d.templateId || "").includes("minimalism") || (d.templateName || "").includes("Minimalism");
+  const isLongPhungV2 = d.templateId === "dragon_phoenix_v2_red";
   const isSongHy = (d.templateId || "").includes("song_hy") || (d.templateName || "").includes("Song Hỷ");
   const [rsvpForm, setRsvpForm] = useState({
     name: d.envelopeGuest || "",
@@ -144,10 +146,19 @@ export default function Preview({
     d.gifts.find((g) => g.who === activeBankTab) || d.gifts[0] || null;
 
   return (
-    <div className={`pv-wrapper ${standalone ? "is-standalone" : ""} ${isMinimalism ? "theme-minimalism" : isSongHy ? "theme-songhy" : "theme-songphung"}`}>
+    <div className={`pv-wrapper ${standalone ? "is-standalone" : ""} ${isMinimalism ? "theme-minimalism" : isSongHy ? "theme-songhy" : isLongPhungV2 ? "theme-longphung-v2" : "theme-songphung"}`}>
       {/* ==================== 1. MÀN HÌNH BÌ THƯ (ENVELOPE) ==================== */}
       {!isOpen && (
-        isMinimalism ? (
+        isLongPhungV2 ? (
+          <LongPhungCover
+            groom={gName}
+            bride={bName}
+            dateText={`${dt.getDate()} tháng ${dt.getMonth() + 1}, ${dt.getFullYear()}`}
+            guest={d.envelopeGuest}
+            message={d.envelopeInviteMessage}
+            onOpen={handleOpenEnvelope}
+          />
+        ) : isMinimalism ? (
           /* Màn hình mở thiệp Minimalism - Nâu (media_1792167825310_9563a55a.png) */
           <div className="envelope-screen min-env-screen" style={{ backgroundColor: "#efe7dd" }}>
             {/* Ambient falling leaves */}
@@ -427,7 +438,9 @@ export default function Preview({
           )}
 
           {/* -------------------- HERO SECTION -------------------- */}
-          {isMinimalism ? (
+          {isLongPhungV2 ? (
+            <LongPhungHeader groom={gName} bride={bName} />
+          ) : isMinimalism ? (
             /* Hero cho Minimalism - Nâu (media_1792167846581_6cfd16e7.png) */
             <header className="relative z-10 flex flex-col items-center px-4 pt-12 pb-20 text-center md:pb-28 overflow-hidden">
               {/* Paper overlay */}

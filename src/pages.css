@@ -2174,3 +2174,6 @@ button.gst-chip { border: 0; font-family: inherit; cursor: pointer; }
 .card-b .sub { font-size: 12px; font-weight: 600; color: rgba(205, 205, 205, 0.55); margin: 4px 0 8px; }
 .card-b hr.divider { border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 16px 0; height: 0; }
 .btn-outline { gap: 8px; }
+
+/* Long Phụng V2: khung thiệp rộng 900px như trang thật (md:max-w-[900px]) */
+.theme-longphung-v2 .songphung-template { max-width: 900px; }
