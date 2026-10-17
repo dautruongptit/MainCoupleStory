@@ -1,0 +1,26 @@
+{
+  "slug": "to-duyen-do-dam",
+  "templateId": "silk_ribbon_darkred",
+  "name": "Tơ Duyên - Đỏ Đậm",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/silk_ribbon_darkred.webp"
+    ],
+    "opened": [
+      "/images/themes/silk-ribbon-darkred/icon-alcohol.webp",
+      "/images/themes/silk-ribbon-darkred/icon-candle.webp",
+      "/images/themes/silk-ribbon-darkred/icon-ring.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

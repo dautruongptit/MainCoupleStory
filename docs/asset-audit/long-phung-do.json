@@ -1,0 +1,28 @@
+{
+  "slug": "long-phung-do",
+  "templateId": "dragon_phoenix_red",
+  "name": "Long Phụng - Đỏ",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/dragon_phoenix.webp",
+      "/images/giftbox/mini/chibi_red.webp",
+      "/images/giftbox/mini/double_dragon_green.webp",
+      "/images/giftbox/mini/royal_red.webp",
+      "/images/giftbox/mini/song_hy_green.webp",
+      "/images/giftbox/mini/song_hy_red.webp",
+      "/images/giftbox/mini/song_hy_v2_red.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

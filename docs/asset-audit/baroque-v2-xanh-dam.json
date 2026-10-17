@@ -1,0 +1,31 @@
+{
+  "slug": "baroque-v2-xanh-dam",
+  "templateId": "baroque_v2_darkgreen",
+  "name": "Baroque V2 - Xanh Đậm",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/baroque_v2_darkgreen.webp"
+    ],
+    "opened": [
+      "/images/themes/baroque-v2-dark-green/alcohol.webp",
+      "/images/themes/baroque-v2-dark-green/bride-broom.webp",
+      "/images/themes/baroque-v2-dark-green/cake.webp",
+      "/images/themes/baroque-v2-dark-green/flower5-decoration.webp",
+      "/images/themes/baroque-v2-dark-green/golden-line-decoration.webp",
+      "/images/themes/baroque-v2-dark-green/line2-decoration.webp",
+      "/images/themes/baroque-v2-dark-green/line3-decoration.webp",
+      "/images/themes/baroque-v2-dark-green/line4-decoration.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

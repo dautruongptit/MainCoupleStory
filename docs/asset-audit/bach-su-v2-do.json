@@ -1,0 +1,26 @@
+{
+  "slug": "bach-su-v2-do",
+  "templateId": "porcelain_v2_red",
+  "name": "Bạch Sứ II - Đỏ",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/porcelain_v2_red.webp"
+    ],
+    "opened": [
+      "/images/themes/porcelain-v2-red/cake.webp",
+      "/images/themes/porcelain-v2-red/lamp.webp",
+      "/images/themes/porcelain-v2-red/ring.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

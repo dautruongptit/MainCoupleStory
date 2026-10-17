@@ -1,0 +1,26 @@
+{
+  "slug": "to-duyen-hong",
+  "templateId": "silk_ribbon_pink",
+  "name": "Tơ Duyên - Hồng",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/silk_ribbon_pink.webp"
+    ],
+    "opened": [
+      "/images/themes/silk-ribbon-pink/icon-alcohol.webp",
+      "/images/themes/silk-ribbon-pink/icon-candle.webp",
+      "/images/themes/silk-ribbon-pink/icon-ring.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

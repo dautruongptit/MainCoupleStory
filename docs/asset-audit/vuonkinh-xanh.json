@@ -1,0 +1,35 @@
+{
+  "slug": "vuonkinh-xanh",
+  "templateId": "glass_garden_green",
+  "name": "Vườn Kính - Xanh",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/glass_garden_green.webp",
+      "/images/giftbox/mini/boho_floral_pink.webp",
+      "/images/giftbox/mini/hoa_dai_pink.webp",
+      "/images/giftbox/mini/porcelain_brown.webp",
+      "/images/giftbox/mini/porcelain_v2_red.webp",
+      "/images/giftbox/mini/san_miguel_yellow.webp",
+      "/images/giftbox/mini/spring_garden_blue.webp",
+      "/images/themes/glass-garden-green/cake.webp",
+      "/images/themes/glass-garden-green/calendar-heart.webp",
+      "/images/themes/glass-garden-green/dish.webp",
+      "/images/themes/glass-garden-green/flower3-decoration.webp",
+      "/images/themes/glass-garden-green/flower4-decoration.webp",
+      "/images/themes/glass-garden-green/flower5-bottom.webp",
+      "/images/themes/glass-garden-green/welcome.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "long-phung-huyen",
+  "templateId": "dragon_phoenix_black",
+  "name": "Long Phụng - Huyền",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/dragon_phoenix.webp",
+      "/images/giftbox/mini/double_phoenix_red.webp",
+      "/images/giftbox/mini/glass_garden_blue.webp",
+      "/images/giftbox/mini/minimalism_darkblue.webp",
+      "/images/giftbox/mini/minimalism_darkred.webp",
+      "/images/giftbox/mini/minimalism_red.webp",
+      "/images/giftbox/mini/porcelain_blue.webp",
+      "/images/giftbox/mini/song_hac_red.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

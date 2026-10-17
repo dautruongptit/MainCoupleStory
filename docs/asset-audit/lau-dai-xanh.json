@@ -1,0 +1,36 @@
+{
+  "slug": "lau-dai-xanh",
+  "templateId": "chateau_green",
+  "name": "Lâu Đài - Xanh",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/chateau_green.webp",
+      "/images/giftbox/mini/baroque_v2_darkred.webp",
+      "/images/giftbox/mini/boho_floral_brown.webp",
+      "/images/giftbox/mini/cherry_blossom_pink.webp",
+      "/images/giftbox/mini/dragon_phoenix_v4_red.webp",
+      "/images/giftbox/mini/florence_brown.webp",
+      "/images/giftbox/mini/porcelain_blue.webp",
+      "/images/giftbox/mini/royal_v2_purple.webp",
+      "/images/themes/chateau-green/barrier.webp",
+      "/images/themes/chateau-green/brick.webp",
+      "/images/themes/chateau-green/cay1-1.webp",
+      "/images/themes/chateau-green/cay2-1.webp",
+      "/images/themes/chateau-green/cay2-2.webp",
+      "/images/themes/chateau-green/fountain.webp",
+      "/images/themes/chateau-green/frame-lich.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

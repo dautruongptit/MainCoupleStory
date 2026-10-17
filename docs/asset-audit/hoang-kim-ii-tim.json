@@ -1,0 +1,33 @@
+{
+  "slug": "hoang-kim-ii-tim",
+  "templateId": "royal_v2_purple",
+  "name": "Hoàng Kim II - Tím",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/royal_v2_purple.webp"
+    ],
+    "opened": [
+      "/images/themes/royal-v2-purple/cake.webp",
+      "/images/themes/royal-v2-purple/calendar-heart.webp",
+      "/images/themes/royal-v2-purple/decorframe.webp",
+      "/images/themes/royal-v2-purple/decorframe2.webp",
+      "/images/themes/royal-v2-purple/flower4-decoration.webp",
+      "/images/themes/royal-v2-purple/flower5-decoration.webp",
+      "/images/themes/royal-v2-purple/flowerbottom-decoration.webp",
+      "/images/themes/royal-v2-purple/leafline-decoration.webp",
+      "/images/themes/royal-v2-purple/ring.webp",
+      "/images/themes/royal-v2-purple/welcome.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

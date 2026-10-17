@@ -1,0 +1,28 @@
+{
+  "slug": "hoa-kho-cam",
+  "templateId": "hoa_kho_orange",
+  "name": "Hoa Khô - Cam",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/hoa_kho_orange.webp"
+    ],
+    "opened": [
+      "/images/themes/hoa-kho-orange/cake.webp",
+      "/images/themes/hoa-kho-orange/calendar-heart.svg",
+      "/images/themes/hoa-kho-orange/paper.webp",
+      "/images/themes/hoa-kho-orange/ring.webp",
+      "/images/themes/hoa-kho-orange/water.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "long-phung-lam",
+  "templateId": "dragon_phoenix_blue",
+  "name": "Long Phụng - Lam",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/dragon_phoenix.webp",
+      "/images/giftbox/mini/boho_floral_pink.webp",
+      "/images/giftbox/mini/crystal_floral_blue.webp",
+      "/images/giftbox/mini/double_phoenix_red.webp",
+      "/images/giftbox/mini/hoa_dai_pink.webp",
+      "/images/giftbox/mini/porcelain_v2_pink.webp",
+      "/images/giftbox/mini/silk_flora_brown.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

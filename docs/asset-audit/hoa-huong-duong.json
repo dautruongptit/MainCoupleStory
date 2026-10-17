@@ -1,0 +1,27 @@
+{
+  "slug": "hoa-huong-duong",
+  "templateId": "sunflower_yellow",
+  "name": "Hoa Hướng Dương",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/sunflower_yellow.webp"
+    ],
+    "opened": [
+      "/images/themes/sunflower/map.webp",
+      "/images/themes/sunflower/medallion-flower.webp",
+      "/images/themes/sunflower/paper.webp",
+      "/images/themes/sunflower/ring.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

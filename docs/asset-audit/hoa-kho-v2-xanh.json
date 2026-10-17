@@ -1,0 +1,30 @@
+{
+  "slug": "hoa-kho-v2-xanh",
+  "templateId": "dried_flower_v2_green",
+  "name": "Hoa Khô V2 - Xanh",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/dried_flower_v2_green.webp"
+    ],
+    "opened": [
+      "/images/themes/dried-flower-v2-green/cake.webp",
+      "/images/themes/dried-flower-v2-green/calendar-heart.svg",
+      "/images/themes/dried-flower-v2-green/flower2.webp",
+      "/images/themes/dried-flower-v2-green/flower4.webp",
+      "/images/themes/dried-flower-v2-green/letter.webp",
+      "/images/themes/dried-flower-v2-green/paper.webp",
+      "/images/themes/dried-flower-v2-green/ring.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

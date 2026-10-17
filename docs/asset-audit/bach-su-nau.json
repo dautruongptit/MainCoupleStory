@@ -1,0 +1,27 @@
+{
+  "slug": "bach-su-nau",
+  "templateId": "porcelain_brown",
+  "name": "Bạch Sứ - Nâu",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/porcelain_brown.webp"
+    ],
+    "opened": [
+      "/images/themes/porcelain-brown/cake.webp",
+      "/images/themes/porcelain-brown/calendar-texture.webp",
+      "/images/themes/porcelain-brown/home.webp",
+      "/images/themes/porcelain-brown/music.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

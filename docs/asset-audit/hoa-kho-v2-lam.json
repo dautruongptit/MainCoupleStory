@@ -1,0 +1,31 @@
+{
+  "slug": "hoa-kho-v2-lam",
+  "templateId": "hoa_kho_v2_blue",
+  "name": "Hoa Khô V2 - Lam",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/hoa_kho_v2_blue.webp"
+    ],
+    "opened": [
+      "/images/themes/hoa-kho-v2-blue/bird.webp",
+      "/images/themes/hoa-kho-v2-blue/calendar-heart.svg",
+      "/images/themes/hoa-kho-v2-blue/flower3.webp",
+      "/images/themes/hoa-kho-v2-blue/flower4.webp",
+      "/images/themes/hoa-kho-v2-blue/flower5.webp",
+      "/images/themes/hoa-kho-v2-blue/flower6.webp",
+      "/images/themes/hoa-kho-v2-blue/medallion-flower.webp",
+      "/images/themes/hoa-kho-v2-blue/ring.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

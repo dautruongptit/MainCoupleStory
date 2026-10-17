@@ -1,0 +1,30 @@
+{
+  "slug": "hoang-kim-lam",
+  "templateId": "royal_blue",
+  "name": "Hoàng Kim - Lam",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/mini/chateau_green.webp",
+      "/images/giftbox/mini/cherry_blossom_pink.webp",
+      "/images/giftbox/mini/minimalism_purple.webp",
+      "/images/giftbox/mini/royal_red.webp",
+      "/images/giftbox/mini/song_hy_v2_red.webp",
+      "/images/giftbox/royal.webp",
+      "/images/themes/royal-blue/frame-corner-top-left.webp",
+      "/images/themes/royal-blue/frame-middle-horizontal.webp",
+      "/images/themes/royal-blue/frame-middle-vertical.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

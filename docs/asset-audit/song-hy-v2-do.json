@@ -1,0 +1,30 @@
+{
+  "slug": "song-hy-v2-do",
+  "templateId": "song_hy_v2_red",
+  "name": "Song Hỷ V2 - Đỏ",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/song_hy_v2_red.webp"
+    ],
+    "opened": [
+      "/images/themes/song-hy-v2-red/cake.webp",
+      "/images/themes/song-hy-v2-red/cloud-pattern.webp",
+      "/images/themes/song-hy-v2-red/flower1.webp",
+      "/images/themes/song-hy-v2-red/heart.svg",
+      "/images/themes/song-hy-v2-red/panel.webp",
+      "/images/themes/song-hy-v2-red/ring.webp",
+      "/images/themes/song-hy-v2-red/toast.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

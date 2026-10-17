@@ -1,0 +1,30 @@
+{
+  "slug": "hoa-thuy-tinh-xanh",
+  "templateId": "crystal_floral_green",
+  "name": "Hoa Thuỷ Tinh - Xanh",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/crystal_floral_green.webp"
+    ],
+    "opened": [
+      "/images/themes/crystal-floral-green/calendar-frame.webp",
+      "/images/themes/crystal-floral-green/filigree.webp",
+      "/images/themes/crystal-floral-green/flower4.webp",
+      "/images/themes/crystal-floral-green/flower5.webp",
+      "/images/themes/crystal-floral-green/flowericon.webp",
+      "/images/themes/crystal-floral-green/map.webp",
+      "/images/themes/crystal-floral-green/ring.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

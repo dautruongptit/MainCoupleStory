@@ -1,0 +1,26 @@
+{
+  "slug": "to-duyen-xanh",
+  "templateId": "silk_ribbon_green",
+  "name": "Tơ Duyên - Xanh",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/silk_ribbon_green.webp"
+    ],
+    "opened": [
+      "/images/themes/silk-ribbon-green/icon-cake.webp",
+      "/images/themes/silk-ribbon-green/icon-home.webp",
+      "/images/themes/silk-ribbon-green/icon-music.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

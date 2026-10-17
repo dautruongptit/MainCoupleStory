@@ -1,0 +1,41 @@
+{
+  "slug": "minimalism-nau",
+  "templateId": "minimalism_brown",
+  "name": "Minimalism - Nâu",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/mini/boho_floral_pink.webp",
+      "/images/giftbox/mini/chateau_green.webp",
+      "/images/giftbox/mini/chibi_red.webp",
+      "/images/giftbox/mini/dried_flower_v2_green.webp",
+      "/images/giftbox/mini/hoa_kho_v2_blue.webp",
+      "/images/giftbox/mini/minimalism_darkred.webp",
+      "/images/giftbox/mini/sunflower_yellow.webp",
+      "/images/giftbox/minimalism_brown.webp",
+      "/images/themes/minimalism-brown/cake.webp",
+      "/images/themes/minimalism-brown/gate.webp",
+      "/images/themes/minimalism-brown/paper-note.webp",
+      "/images/themes/minimalism-brown/water.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [
+    "/images/giftbox/mini/sunflower_yellow.webp"
+  ],
+  "unreachableAssets": [
+    {
+      "file": "/images/giftbox/mini/sunflower_yellow.webp",
+      "httpStatus": 403,
+      "reason": "HTTP 403 Forbidden on chungdoi.com"
+    }
+  ]
+}

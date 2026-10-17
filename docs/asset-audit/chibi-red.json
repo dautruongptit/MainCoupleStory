@@ -1,0 +1,31 @@
+{
+  "slug": "chibi-red",
+  "templateId": "chibi_red",
+  "name": "Chibi - Đỏ",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/chibi_red.webp",
+      "/images/giftbox/mini/crystal_floral_red.webp",
+      "/images/giftbox/mini/double_dragon_red.webp",
+      "/images/giftbox/mini/glass_garden_green.webp",
+      "/images/giftbox/mini/hoa_dai_pink.webp",
+      "/images/giftbox/mini/minimalism_darkred.webp",
+      "/images/giftbox/mini/nhat_binh_red.webp",
+      "/images/giftbox/mini/song_hy_v2_red.webp",
+      "/images/themes/chibi_red/decorative-dragon.webp",
+      "/images/themes/chibi_red/decorative-header.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

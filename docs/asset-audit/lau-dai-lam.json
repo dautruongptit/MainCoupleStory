@@ -1,0 +1,34 @@
+{
+  "slug": "lau-dai-lam",
+  "templateId": "chateau_blue",
+  "name": "Lâu Đài - Lam",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/chateau_blue.webp",
+      "/images/giftbox/mini/boho_floral_green.webp",
+      "/images/giftbox/mini/chibi_red.webp",
+      "/images/giftbox/mini/crystal_floral_red.webp",
+      "/images/giftbox/mini/double_dragon_green.webp",
+      "/images/giftbox/mini/hoa_tinh_red.webp",
+      "/images/giftbox/mini/song_hac_red.webp",
+      "/images/themes/chateau-blue/ban-tiec.webp",
+      "/images/themes/chateau-blue/chim.webp",
+      "/images/themes/chateau-blue/frame-lich.webp",
+      "/images/themes/chateau-blue/hoa-ngang.webp",
+      "/images/themes/chateau-blue/nen.webp",
+      "/images/themes/chateau-blue/nhan.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

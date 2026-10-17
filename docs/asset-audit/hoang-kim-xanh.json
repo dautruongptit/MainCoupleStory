@@ -1,0 +1,31 @@
+{
+  "slug": "hoang-kim-xanh",
+  "templateId": "royal_green",
+  "name": "Hoàng Kim - Xanh",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/mini/boho_floral_brown.webp",
+      "/images/giftbox/mini/cherry_blossom_pink.webp",
+      "/images/giftbox/mini/hoa_dai_pink.webp",
+      "/images/giftbox/mini/lien_hoa_pink.webp",
+      "/images/giftbox/mini/minimalism_darkblue.webp",
+      "/images/giftbox/mini/riviera_blue.webp",
+      "/images/giftbox/royal.webp",
+      "/images/themes/royal-green/frame-corner-top-left.webp",
+      "/images/themes/royal-green/frame-middle-horizontal.webp",
+      "/images/themes/royal-green/frame-middle-vertical.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

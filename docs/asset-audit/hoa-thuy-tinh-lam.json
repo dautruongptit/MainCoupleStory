@@ -1,0 +1,29 @@
+{
+  "slug": "hoa-thuy-tinh-lam",
+  "templateId": "crystal_floral_blue",
+  "name": "Hoa Thuỷ Tinh - Lam",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/crystal_floral_blue.webp"
+    ],
+    "opened": [
+      "/images/themes/crystal-floral-blue/cake.webp",
+      "/images/themes/crystal-floral-blue/calendar-frame.webp",
+      "/images/themes/crystal-floral-blue/filigree.webp",
+      "/images/themes/crystal-floral-blue/flower4.webp",
+      "/images/themes/crystal-floral-blue/flower5.webp",
+      "/images/themes/crystal-floral-blue/gift.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

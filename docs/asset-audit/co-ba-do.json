@@ -1,0 +1,37 @@
+{
+  "slug": "co-ba-do",
+  "templateId": "co_ba_red",
+  "name": "Cô Ba - Đỏ",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/co_ba_red.webp",
+      "/images/giftbox/mini/brocade_flower_red.webp",
+      "/images/giftbox/mini/chibi_red.webp",
+      "/images/giftbox/mini/crystal_floral_red.webp",
+      "/images/giftbox/mini/lien_hoa_v2_green.webp",
+      "/images/giftbox/mini/minimalism_darkblue.webp",
+      "/images/giftbox/mini/porcelain_blue.webp",
+      "/images/giftbox/mini/sunflower_yellow.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [
+    "/images/giftbox/mini/sunflower_yellow.webp"
+  ],
+  "unreachableAssets": [
+    {
+      "file": "/images/giftbox/mini/sunflower_yellow.webp",
+      "httpStatus": 403,
+      "reason": "HTTP 403 Forbidden on chungdoi.com"
+    }
+  ]
+}

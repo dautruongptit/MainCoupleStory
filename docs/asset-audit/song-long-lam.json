@@ -1,0 +1,29 @@
+{
+  "slug": "song-long-lam",
+  "templateId": "double_dragon_blue",
+  "name": "Song Long - Lam",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/double_dragon_blue.webp",
+      "/images/giftbox/mini/mahal_gold.webp",
+      "/images/giftbox/mini/minimalism_darkbrown.webp",
+      "/images/giftbox/mini/minimalism_darkred.webp",
+      "/images/giftbox/mini/nhat_binh_red.webp",
+      "/images/giftbox/mini/royal_red.webp",
+      "/images/giftbox/mini/silk_flora_brown.webp",
+      "/images/giftbox/mini/spring_garden_blue.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

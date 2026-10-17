@@ -1,0 +1,27 @@
+{
+  "slug": "song-hy-xanh",
+  "templateId": "song_hy_green",
+  "name": "Song Hỷ - Xanh",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/mini/boho_floral_green.webp",
+      "/images/giftbox/mini/crystal_floral_green.webp",
+      "/images/giftbox/mini/elegant_leaf_green.webp",
+      "/images/giftbox/mini/jasmine_white.webp",
+      "/images/giftbox/mini/silk_ribbon_green.webp",
+      "/images/giftbox/song_hy_green.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

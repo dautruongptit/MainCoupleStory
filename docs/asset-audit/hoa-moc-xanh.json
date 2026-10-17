@@ -1,0 +1,29 @@
+{
+  "slug": "hoa-moc-xanh",
+  "templateId": "boho_floral_green",
+  "name": "Hoa Mộc - Xanh",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/boho_floral_green.webp",
+      "/images/giftbox/mini/baroque_gold.webp",
+      "/images/giftbox/mini/boho_floral_pink.webp",
+      "/images/giftbox/mini/crystal_floral_blue.webp",
+      "/images/giftbox/mini/minimalism_brown.webp",
+      "/images/giftbox/mini/san_miguel_yellow.webp",
+      "/images/giftbox/mini/song_hac_red.webp",
+      "/images/giftbox/mini/spring_garden_blue.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "song-long-xanh",
+  "templateId": "double_dragon_green",
+  "name": "Song Long - Xanh",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/double_dragon_green.webp",
+      "/images/giftbox/mini/cherry_blossom_pink.webp",
+      "/images/giftbox/mini/double_dragon_red.webp",
+      "/images/giftbox/mini/hoa_dai_pink.webp",
+      "/images/giftbox/mini/minimalism_purple.webp",
+      "/images/giftbox/mini/royal_v2_green.webp",
+      "/images/giftbox/mini/silk_ribbon_darkred.webp",
+      "/images/giftbox/mini/spring_garden_green.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

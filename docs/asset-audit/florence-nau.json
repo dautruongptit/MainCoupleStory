@@ -1,0 +1,38 @@
+{
+  "slug": "florence-nau",
+  "templateId": "florence_brown",
+  "name": "Florence - Nâu",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/florence_brown.webp"
+    ],
+    "opened": [
+      "/images/themes/florence-brown/bird.webp",
+      "/images/themes/florence-brown/bridge-background.webp",
+      "/images/themes/florence-brown/bridge-decoration.webp",
+      "/images/themes/florence-brown/bridge-decoration3.webp",
+      "/images/themes/florence-brown/cake.webp",
+      "/images/themes/florence-brown/church-decoration.webp",
+      "/images/themes/florence-brown/church2-decoration.webp",
+      "/images/themes/florence-brown/house-decoration.webp",
+      "/images/themes/florence-brown/house2-background.webp",
+      "/images/themes/florence-brown/house2-decoration.webp",
+      "/images/themes/florence-brown/house4-decoration.webp",
+      "/images/themes/florence-brown/ring.webp",
+      "/images/themes/florence-brown/scene-decoration.webp",
+      "/images/themes/florence-brown/scene2-decoration.webp",
+      "/images/themes/florence-brown/tree-decoration.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

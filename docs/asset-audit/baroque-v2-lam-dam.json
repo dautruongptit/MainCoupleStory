@@ -1,0 +1,31 @@
+{
+  "slug": "baroque-v2-lam-dam",
+  "templateId": "baroque_v2_darkblue",
+  "name": "Baroque V2 - Lam Đậm",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/baroque_v2_darkblue.webp"
+    ],
+    "opened": [
+      "/images/themes/baroque-v2-dark-blue/bird.webp",
+      "/images/themes/baroque-v2-dark-blue/cake.webp",
+      "/images/themes/baroque-v2-dark-blue/flower5-decoration.webp",
+      "/images/themes/baroque-v2-dark-blue/golden-line-decoration.webp",
+      "/images/themes/baroque-v2-dark-blue/letter.webp",
+      "/images/themes/baroque-v2-dark-blue/line2-decoration.webp",
+      "/images/themes/baroque-v2-dark-blue/line3-decoration.webp",
+      "/images/themes/baroque-v2-dark-blue/line4-decoration.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

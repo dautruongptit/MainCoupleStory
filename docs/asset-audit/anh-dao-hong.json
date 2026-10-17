@@ -1,0 +1,28 @@
+{
+  "slug": "anh-dao-hong",
+  "templateId": "cherry_blossom_pink",
+  "name": "Anh Đào - Hồng",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/cherry_blossom_pink.webp",
+      "/images/giftbox/mini/baroque_v2_darkblue.webp",
+      "/images/giftbox/mini/crystal_floral_red.webp",
+      "/images/giftbox/mini/double_phoenix_green.webp",
+      "/images/giftbox/mini/hoa_kho_v2_blue.webp",
+      "/images/giftbox/mini/song_hy_green.webp",
+      "/images/themes/anhdao-pink/3.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

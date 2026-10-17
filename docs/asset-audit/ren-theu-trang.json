@@ -1,0 +1,35 @@
+{
+  "slug": "ren-theu-trang",
+  "templateId": "applique_lace_white",
+  "name": "Ren Thêu - Trắng",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/applique_lace_white.webp",
+      "/images/giftbox/mini/boho_floral_brown.webp",
+      "/images/giftbox/mini/crystal_floral_red.webp",
+      "/images/giftbox/mini/jasmine_white.webp",
+      "/images/giftbox/mini/minimalism_darkblue.webp",
+      "/images/giftbox/mini/minimalism_darkred.webp",
+      "/images/giftbox/mini/royal_v2_purple.webp",
+      "/images/themes/applique-lace-white/cake.webp",
+      "/images/themes/applique-lace-white/guestbook-paper.webp",
+      "/images/themes/applique-lace-white/home.webp",
+      "/images/themes/applique-lace-white/lace1.webp",
+      "/images/themes/applique-lace-white/lace2.webp",
+      "/images/themes/applique-lace-white/lace3.webp",
+      "/images/themes/applique-lace-white/music.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

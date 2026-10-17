@@ -1,0 +1,28 @@
+{
+  "slug": "hoa-moc-hong",
+  "templateId": "boho_floral_pink",
+  "name": "Hoa Mộc - Hồng",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/boho_floral_pink.webp",
+      "/images/giftbox/mini/applique_lace_white.webp",
+      "/images/giftbox/mini/baroque_v2_darkred.webp",
+      "/images/giftbox/mini/dragon_phoenix.webp",
+      "/images/giftbox/mini/glass_garden_blue.webp",
+      "/images/giftbox/mini/minimalism_brown.webp",
+      "/images/giftbox/mini/royal_v2_purple.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

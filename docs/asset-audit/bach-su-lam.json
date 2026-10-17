@@ -1,0 +1,30 @@
+{
+  "slug": "bach-su-lam",
+  "templateId": "porcelain_blue",
+  "name": "Bạch Sứ - Lam",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/mini/crystal_floral_blue.webp",
+      "/images/giftbox/mini/porcelain_brown.webp",
+      "/images/giftbox/mini/porcelain_v2_green.webp",
+      "/images/giftbox/mini/qasr_green.webp",
+      "/images/giftbox/mini/silk_ribbon_green.webp",
+      "/images/giftbox/porcelain_blue.webp",
+      "/images/themes/porcelain-blue/cake.webp",
+      "/images/themes/porcelain-blue/home.webp",
+      "/images/themes/porcelain-blue/music.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

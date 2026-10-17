@@ -1,0 +1,29 @@
+{
+  "slug": "vuonkinh-lam",
+  "templateId": "glass_garden_blue",
+  "name": "Vườn Kính - Lam",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/glass_garden_blue.webp"
+    ],
+    "opened": [
+      "/images/themes/glass-garden-blue/calendar-heart.webp",
+      "/images/themes/glass-garden-blue/flower3-decoration.webp",
+      "/images/themes/glass-garden-blue/flower5-bottom.webp",
+      "/images/themes/glass-garden-blue/map.webp",
+      "/images/themes/glass-garden-blue/ring.webp",
+      "/images/themes/glass-garden-blue/song.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

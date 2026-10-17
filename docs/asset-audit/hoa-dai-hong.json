@@ -1,0 +1,30 @@
+{
+  "slug": "hoa-dai-hong",
+  "templateId": "hoa_dai_pink",
+  "name": "Hoa Dại - Hồng",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/hoa_dai_pink.webp"
+    ],
+    "opened": [
+      "/images/themes/hoa-dai-pink/bird.webp",
+      "/images/themes/hoa-dai-pink/cake.webp",
+      "/images/themes/hoa-dai-pink/flower-decoration.webp",
+      "/images/themes/hoa-dai-pink/flower4-decoration.webp",
+      "/images/themes/hoa-dai-pink/flower5-decoration.webp",
+      "/images/themes/hoa-dai-pink/letter.webp",
+      "/images/themes/hoa-dai-pink/water-flowers.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

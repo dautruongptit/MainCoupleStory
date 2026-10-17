@@ -1,0 +1,29 @@
+{
+  "slug": "song-hy-do",
+  "templateId": "song_hy_red",
+  "name": "Song Hỷ - Đỏ",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/mini/dragon_phoenix_v4_red.webp",
+      "/images/giftbox/mini/glass_garden_pink.webp",
+      "/images/giftbox/mini/mahal_gold.webp",
+      "/images/giftbox/mini/minimalism_darkred.webp",
+      "/images/giftbox/mini/porcelain_brown.webp",
+      "/images/giftbox/mini/silk_ribbon_darkred.webp",
+      "/images/giftbox/mini/spring_garden_blue.webp",
+      "/images/giftbox/song_hy_red.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

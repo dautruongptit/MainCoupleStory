@@ -1,0 +1,31 @@
+{
+  "slug": "hoa-moc-nau",
+  "templateId": "boho_floral_brown",
+  "name": "Hoa Mộc - Nâu",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/boho_floral_brown.webp",
+      "/images/giftbox/mini/cherry_blossom_pink.webp",
+      "/images/giftbox/mini/double_dragon_green.webp",
+      "/images/giftbox/mini/hoa_dai_pink.webp",
+      "/images/giftbox/mini/hoa_kho_v2_blue.webp",
+      "/images/giftbox/mini/minimalism_green.webp",
+      "/images/giftbox/mini/nhat_binh_red.webp",
+      "/images/giftbox/mini/riviera_blue.webp",
+      "/images/themes/boho-floral-brown/fixed_flower_2.webp",
+      "/images/themes/boho-floral-brown/flower_mid.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

@@ -278,8 +278,8 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
   "anhdao-pink": {
     "themeId": "anhdao-pink",
     "folder": "anhdao-pink",
-    "assetCount": 2,
-    "totalBytes": 671830,
+    "assetCount": 4,
+    "totalBytes": 785860,
     "assets": [
       {
         "id": "1",
@@ -291,6 +291,32 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "aspectRatio": 0.697,
         "size": 52742,
         "md5": "ba57ddf633f40eb0e9aed50580f3af5c",
+        "type": "decoration",
+        "usage": "Ornamental artwork for anhdao-pink"
+      },
+      {
+        "id": "2",
+        "file": "2.webp",
+        "path": "/images/themes/anhdao-pink/2.webp",
+        "format": "WEBP",
+        "width": 557,
+        "height": 800,
+        "aspectRatio": 0.696,
+        "size": 55006,
+        "md5": "44fa51f1b117c871482147cc4a18bc1d",
+        "type": "decoration",
+        "usage": "Ornamental artwork for anhdao-pink"
+      },
+      {
+        "id": "3",
+        "file": "3.webp",
+        "path": "/images/themes/anhdao-pink/3.webp",
+        "format": "WEBP",
+        "width": 506,
+        "height": 900,
+        "aspectRatio": 0.562,
+        "size": 59024,
+        "md5": "635ef1d18870a4e6de99572c4940a9a6",
         "type": "decoration",
         "usage": "Ornamental artwork for anhdao-pink"
       },
@@ -312,9 +338,22 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
   "applique-lace-white": {
     "themeId": "applique-lace-white",
     "folder": "applique-lace-white",
-    "assetCount": 4,
-    "totalBytes": 511560,
+    "assetCount": 11,
+    "totalBytes": 742702,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/applique-lace-white/cake.webp",
+        "format": "WEBP",
+        "width": 307,
+        "height": 320,
+        "aspectRatio": 0.959,
+        "size": 12454,
+        "md5": "516c7cf97067831f54e4863606fc319a",
+        "type": "divider",
+        "usage": "Decorative divider line for applique-lace-white"
+      },
       {
         "id": "envelope-background",
         "file": "envelope-background.webp",
@@ -355,6 +394,84 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Decorative element (flower) for applique-lace-white"
       },
       {
+        "id": "guestbook-paper",
+        "file": "guestbook-paper.webp",
+        "path": "/images/themes/applique-lace-white/guestbook-paper.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 1350,
+        "aspectRatio": 0.667,
+        "size": 49286,
+        "md5": "908b5133274f1ce9c2c28b70dcc139ba",
+        "type": "background",
+        "usage": "Background paper or ambient texture for applique-lace-white"
+      },
+      {
+        "id": "home",
+        "file": "home.webp",
+        "path": "/images/themes/applique-lace-white/home.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 318,
+        "aspectRatio": 1.006,
+        "size": 13236,
+        "md5": "82929093667bac3d39826d3f511bd902",
+        "type": "decoration",
+        "usage": "Ornamental artwork for applique-lace-white"
+      },
+      {
+        "id": "lace1",
+        "file": "lace1.webp",
+        "path": "/images/themes/applique-lace-white/lace1.webp",
+        "format": "WEBP",
+        "width": 859,
+        "height": 224,
+        "aspectRatio": 3.835,
+        "size": 53864,
+        "md5": "b37e13826b17fdf4bbd1b138d91ee948",
+        "type": "decoration",
+        "usage": "Decorative element (lace1) for applique-lace-white"
+      },
+      {
+        "id": "lace2",
+        "file": "lace2.webp",
+        "path": "/images/themes/applique-lace-white/lace2.webp",
+        "format": "WEBP",
+        "width": 859,
+        "height": 326,
+        "aspectRatio": 2.635,
+        "size": 34150,
+        "md5": "119585e98ae2f0341b5a4f0c7b975070",
+        "type": "decoration",
+        "usage": "Decorative element (lace2) for applique-lace-white"
+      },
+      {
+        "id": "lace3",
+        "file": "lace3.webp",
+        "path": "/images/themes/applique-lace-white/lace3.webp",
+        "format": "WEBP",
+        "width": 859,
+        "height": 238,
+        "aspectRatio": 3.609,
+        "size": 54718,
+        "md5": "431bf49fedb1cef305acba008316a8d6",
+        "type": "decoration",
+        "usage": "Decorative element (lace3) for applique-lace-white"
+      },
+      {
+        "id": "music",
+        "file": "music.webp",
+        "path": "/images/themes/applique-lace-white/music.webp",
+        "format": "WEBP",
+        "width": 314,
+        "height": 320,
+        "aspectRatio": 0.981,
+        "size": 13434,
+        "md5": "cb48db5914de18e1b4b5c088b01e0bec",
+        "type": "decoration",
+        "usage": "Ornamental artwork for applique-lace-white"
+      },
+      {
         "id": "satin-background",
         "file": "satin-background.webp",
         "path": "/images/themes/applique-lace-white/satin-background.webp",
@@ -372,8 +489,8 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
   "baroque-blue": {
     "themeId": "baroque-blue",
     "folder": "baroque-blue",
-    "assetCount": 3,
-    "totalBytes": 429006,
+    "assetCount": 13,
+    "totalBytes": 968148,
     "assets": [
       {
         "id": "bg-pattern",
@@ -389,6 +506,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Background paper or ambient texture for baroque-blue"
       },
       {
+        "id": "calendar-frame",
+        "file": "calendar-frame.webp",
+        "path": "/images/themes/baroque-blue/calendar-frame.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 802,
+        "aspectRatio": 1.122,
+        "size": 91476,
+        "md5": "850eeb440b7b9a0ddc047a1e0eac4266",
+        "type": "frame",
+        "usage": "Framing border or arch for baroque-blue"
+      },
+      {
         "id": "frame-decoration",
         "file": "frame-decoration.webp",
         "path": "/images/themes/baroque-blue/frame-decoration.webp",
@@ -402,6 +532,45 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Framing border or arch for baroque-blue"
       },
       {
+        "id": "gold4-decoration",
+        "file": "gold4-decoration.webp",
+        "path": "/images/themes/baroque-blue/gold4-decoration.webp",
+        "format": "WEBP",
+        "width": 340,
+        "height": 969,
+        "aspectRatio": 0.351,
+        "size": 83594,
+        "md5": "65285aee0d1ee38b34492ef12585c172",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-blue"
+      },
+      {
+        "id": "gold5-decoration",
+        "file": "gold5-decoration.webp",
+        "path": "/images/themes/baroque-blue/gold5-decoration.webp",
+        "format": "WEBP",
+        "width": 300,
+        "height": 1086,
+        "aspectRatio": 0.276,
+        "size": 99816,
+        "md5": "74c6c2f3ddedb2ba2e2cf22612bbe7f8",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-blue"
+      },
+      {
+        "id": "gold6-decoration",
+        "file": "gold6-decoration.webp",
+        "path": "/images/themes/baroque-blue/gold6-decoration.webp",
+        "format": "WEBP",
+        "width": 1088,
+        "height": 343,
+        "aspectRatio": 3.172,
+        "size": 88246,
+        "md5": "112542b4e281c4898b0ca0b8f208b101",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-blue"
+      },
+      {
         "id": "goldline-decoration",
         "file": "goldline-decoration.webp",
         "path": "/images/themes/baroque-blue/goldline-decoration.webp",
@@ -413,14 +582,92 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "3f20e212286f2db1c7acba6011b6f327",
         "type": "divider",
         "usage": "Decorative divider line for baroque-blue"
+      },
+      {
+        "id": "goldline2-decoration",
+        "file": "goldline2-decoration.webp",
+        "path": "/images/themes/baroque-blue/goldline2-decoration.webp",
+        "format": "WEBP",
+        "width": 560,
+        "height": 86,
+        "aspectRatio": 6.512,
+        "size": 15638,
+        "md5": "9fb041301fe1edbf04d3bf0ae6c742f8",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-blue"
+      },
+      {
+        "id": "line-decoration",
+        "file": "line-decoration.webp",
+        "path": "/images/themes/baroque-blue/line-decoration.webp",
+        "format": "WEBP",
+        "width": 168,
+        "height": 650,
+        "aspectRatio": 0.258,
+        "size": 35110,
+        "md5": "0c9f3dc1c22e31353b0fdd95e5639ce1",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-blue"
+      },
+      {
+        "id": "medallion-bird",
+        "file": "medallion-bird.webp",
+        "path": "/images/themes/baroque-blue/medallion-bird.webp",
+        "format": "WEBP",
+        "width": 200,
+        "height": 200,
+        "aspectRatio": 1.0,
+        "size": 25940,
+        "md5": "c1b4a2d245cedd06809f278b11d544ef",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-blue"
+      },
+      {
+        "id": "medallion-cake",
+        "file": "medallion-cake.webp",
+        "path": "/images/themes/baroque-blue/medallion-cake.webp",
+        "format": "WEBP",
+        "width": 200,
+        "height": 250,
+        "aspectRatio": 0.8,
+        "size": 23264,
+        "md5": "c44c703e86f3ea6cd9ceb2a37a11244a",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-blue"
+      },
+      {
+        "id": "medallion-ring",
+        "file": "medallion-ring.webp",
+        "path": "/images/themes/baroque-blue/medallion-ring.webp",
+        "format": "WEBP",
+        "width": 200,
+        "height": 250,
+        "aspectRatio": 0.8,
+        "size": 27266,
+        "md5": "5e04285c2a2c58ff886082f9b67a36c7",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-blue"
+      },
+      {
+        "id": "pillars-decoration",
+        "file": "pillars-decoration.webp",
+        "path": "/images/themes/baroque-blue/pillars-decoration.webp",
+        "format": "WEBP",
+        "width": 280,
+        "height": 930,
+        "aspectRatio": 0.301,
+        "size": 48792,
+        "md5": "dde29e7bc4b8b723d44104bc9cde3f15",
+        "type": "decoration",
+        "usage": "Decorative element (pillars-decoration) for baroque-blue"
       }
     ]
   },
   "baroque-gold": {
     "themeId": "baroque-gold",
     "folder": "baroque-gold",
-    "assetCount": 3,
-    "totalBytes": 1179888,
+    "assetCount": 8,
+    "totalBytes": 2201824,
     "assets": [
       {
         "id": "bg",
@@ -436,6 +683,32 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Background paper or ambient texture for baroque-gold"
       },
       {
+        "id": "hoa-tiet-1",
+        "file": "hoa-tiet-1.webp",
+        "path": "/images/themes/baroque-gold/hoa-tiet-1.webp",
+        "format": "WEBP",
+        "width": 899,
+        "height": 1750,
+        "aspectRatio": 0.514,
+        "size": 469710,
+        "md5": "ba1bd22c85e12ceee07433896f0e4e5a",
+        "type": "decoration",
+        "usage": "Decorative element (hoa-tiet-1) for baroque-gold"
+      },
+      {
+        "id": "hoa-tiet-3",
+        "file": "hoa-tiet-3.webp",
+        "path": "/images/themes/baroque-gold/hoa-tiet-3.webp",
+        "format": "WEBP",
+        "width": 1774,
+        "height": 887,
+        "aspectRatio": 2.0,
+        "size": 366350,
+        "md5": "e5838cf2ce0b723eae82165038c34af9",
+        "type": "decoration",
+        "usage": "Decorative element (hoa-tiet-3) for baroque-gold"
+      },
+      {
         "id": "hoa",
         "file": "hoa.webp",
         "path": "/images/themes/baroque-gold/hoa.webp",
@@ -449,6 +722,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Decorative element (hoa) for baroque-gold"
       },
       {
+        "id": "khung-lich",
+        "file": "khung-lich.webp",
+        "path": "/images/themes/baroque-gold/khung-lich.webp",
+        "format": "WEBP",
+        "width": 1283,
+        "height": 1106,
+        "aspectRatio": 1.16,
+        "size": 84388,
+        "md5": "508526ed9ae22f5375d37c8fff713de1",
+        "type": "frame",
+        "usage": "Framing border or arch for baroque-gold"
+      },
+      {
         "id": "khung",
         "file": "khung.webp",
         "path": "/images/themes/baroque-gold/khung.webp",
@@ -460,15 +746,119 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "c2966d739b19f2f187557681eb76f667",
         "type": "frame",
         "usage": "Framing border or arch for baroque-gold"
+      },
+      {
+        "id": "pattern-decoration",
+        "file": "pattern-decoration.webp",
+        "path": "/images/themes/baroque-gold/pattern-decoration.webp",
+        "format": "WEBP",
+        "width": 1200,
+        "height": 268,
+        "aspectRatio": 4.478,
+        "size": 90656,
+        "md5": "6252852db278cad1e8f98d6be0d527bb",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-gold"
+      },
+      {
+        "id": "tru",
+        "file": "tru.webp",
+        "path": "/images/themes/baroque-gold/tru.webp",
+        "format": "WEBP",
+        "width": 226,
+        "height": 677,
+        "aspectRatio": 0.334,
+        "size": 10832,
+        "md5": "6d28412a5ca3368263f853c1e901d67d",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-gold"
       }
     ]
   },
   "baroque-v2-dark-blue": {
     "themeId": "baroque-v2-dark-blue",
     "folder": "baroque-v2-dark-blue",
-    "assetCount": 1,
-    "totalBytes": 335896,
+    "assetCount": 12,
+    "totalBytes": 1440160,
     "assets": [
+      {
+        "id": "bg",
+        "file": "bg.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/bg.webp",
+        "format": "WEBP",
+        "width": 905,
+        "height": 1738,
+        "aspectRatio": 0.521,
+        "size": 92980,
+        "md5": "6c453718247bc48077f2d94d35aecbc2",
+        "type": "background",
+        "usage": "Background paper or ambient texture for baroque-v2-dark-blue"
+      },
+      {
+        "id": "bird",
+        "file": "bird.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/bird.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 381,
+        "aspectRatio": 1.05,
+        "size": 51288,
+        "md5": "7e6d344312b58e8ffe0d60fa0c7a028e",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-v2-dark-blue"
+      },
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/cake.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 381,
+        "aspectRatio": 1.05,
+        "size": 49412,
+        "md5": "cbf98e780c50668135a3ad6e766a873e",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-blue"
+      },
+      {
+        "id": "flower3-decoration",
+        "file": "flower3-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/flower3-decoration.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 800,
+        "aspectRatio": 1.0,
+        "size": 136610,
+        "md5": "2efd2d588f130469a796c7c9503813a8",
+        "type": "decoration",
+        "usage": "Decorative element (flower3-decoration) for baroque-v2-dark-blue"
+      },
+      {
+        "id": "flower4-decoration",
+        "file": "flower4-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/flower4-decoration.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 800,
+        "aspectRatio": 1.0,
+        "size": 186766,
+        "md5": "5fc25f4f693b23578ccc5c645bab1f16",
+        "type": "decoration",
+        "usage": "Decorative element (flower4-decoration) for baroque-v2-dark-blue"
+      },
+      {
+        "id": "flower5-decoration",
+        "file": "flower5-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/flower5-decoration.webp",
+        "format": "WEBP",
+        "width": 420,
+        "height": 1260,
+        "aspectRatio": 0.333,
+        "size": 256286,
+        "md5": "593f0a2a75ea1fd1310fc7798525a137",
+        "type": "decoration",
+        "usage": "Decorative element (flower5-decoration) for baroque-v2-dark-blue"
+      },
       {
         "id": "frame",
         "file": "frame.webp",
@@ -481,15 +871,171 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "cf9b36a00cdcc69dd480da11ae534791",
         "type": "frame",
         "usage": "Framing border or arch for baroque-v2-dark-blue"
+      },
+      {
+        "id": "golden-line-decoration",
+        "file": "golden-line-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/golden-line-decoration.webp",
+        "format": "WEBP",
+        "width": 1600,
+        "height": 356,
+        "aspectRatio": 4.494,
+        "size": 178262,
+        "md5": "f57c521c66ebf7b00c0b8cb4f97e789c",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-blue"
+      },
+      {
+        "id": "letter",
+        "file": "letter.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/letter.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 438,
+        "aspectRatio": 0.913,
+        "size": 31676,
+        "md5": "6a9738f2e23f26cf1962df514be6b4aa",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-v2-dark-blue"
+      },
+      {
+        "id": "line2-decoration",
+        "file": "line2-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/line2-decoration.webp",
+        "format": "WEBP",
+        "width": 600,
+        "height": 96,
+        "aspectRatio": 6.25,
+        "size": 21146,
+        "md5": "dbace79da2cd3f342d9178b668a33fd8",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-blue"
+      },
+      {
+        "id": "line3-decoration",
+        "file": "line3-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/line3-decoration.webp",
+        "format": "WEBP",
+        "width": 160,
+        "height": 1273,
+        "aspectRatio": 0.126,
+        "size": 34880,
+        "md5": "c45977eb5914fa7dd2d01fa18ae08333",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-blue"
+      },
+      {
+        "id": "line4-decoration",
+        "file": "line4-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/line4-decoration.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 759,
+        "aspectRatio": 0.422,
+        "size": 64958,
+        "md5": "f61e37786e63dff5d51c2dc87b9d8319",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-blue"
       }
     ]
   },
   "baroque-v2-dark-green": {
     "themeId": "baroque-v2-dark-green",
     "folder": "baroque-v2-dark-green",
-    "assetCount": 1,
-    "totalBytes": 305692,
+    "assetCount": 12,
+    "totalBytes": 1245528,
     "assets": [
+      {
+        "id": "alcohol",
+        "file": "alcohol.webp",
+        "path": "/images/themes/baroque-v2-dark-green/alcohol.webp",
+        "format": "WEBP",
+        "width": 460,
+        "height": 307,
+        "aspectRatio": 1.498,
+        "size": 48216,
+        "md5": "b6c08b19489ba6e15701d7f3fae113e7",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-v2-dark-green"
+      },
+      {
+        "id": "bg",
+        "file": "bg.webp",
+        "path": "/images/themes/baroque-v2-dark-green/bg.webp",
+        "format": "WEBP",
+        "width": 724,
+        "height": 2172,
+        "aspectRatio": 0.333,
+        "size": 41184,
+        "md5": "64f79ffd38014c25e4856d8cb9857f2e",
+        "type": "background",
+        "usage": "Background paper or ambient texture for baroque-v2-dark-green"
+      },
+      {
+        "id": "bride-broom",
+        "file": "bride-broom.webp",
+        "path": "/images/themes/baroque-v2-dark-green/bride-broom.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 420,
+        "aspectRatio": 0.952,
+        "size": 60076,
+        "md5": "549feb9062be9bea050ac3f6f9f6d5d6",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-v2-dark-green"
+      },
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/baroque-v2-dark-green/cake.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 400,
+        "aspectRatio": 1.0,
+        "size": 46464,
+        "md5": "58bd23deb3c6dc4d0dca9680387d5aa8",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-green"
+      },
+      {
+        "id": "flower3-decoration",
+        "file": "flower3-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-green/flower3-decoration.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 800,
+        "aspectRatio": 1.0,
+        "size": 129260,
+        "md5": "7e5cd2af88fdb9e13bcce643e0391ad5",
+        "type": "decoration",
+        "usage": "Decorative element (flower3-decoration) for baroque-v2-dark-green"
+      },
+      {
+        "id": "flower4-decoration",
+        "file": "flower4-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-green/flower4-decoration.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 800,
+        "aspectRatio": 1.0,
+        "size": 142852,
+        "md5": "b1fa258f228ef3cd0240f387065d2e11",
+        "type": "decoration",
+        "usage": "Decorative element (flower4-decoration) for baroque-v2-dark-green"
+      },
+      {
+        "id": "flower5-decoration",
+        "file": "flower5-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-green/flower5-decoration.webp",
+        "format": "WEBP",
+        "width": 420,
+        "height": 1260,
+        "aspectRatio": 0.333,
+        "size": 230760,
+        "md5": "baebc50d7b8c574c7ad24eb4a053d2c7",
+        "type": "decoration",
+        "usage": "Decorative element (flower5-decoration) for baroque-v2-dark-green"
+      },
       {
         "id": "frame",
         "file": "frame.webp",
@@ -502,15 +1048,158 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "32535ae75635388e876a5bd5e1504bfb",
         "type": "frame",
         "usage": "Framing border or arch for baroque-v2-dark-green"
+      },
+      {
+        "id": "golden-line-decoration",
+        "file": "golden-line-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-green/golden-line-decoration.webp",
+        "format": "WEBP",
+        "width": 1400,
+        "height": 284,
+        "aspectRatio": 4.93,
+        "size": 120040,
+        "md5": "cdb9901dd7b0e2259e10b60ddfb06b6c",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-green"
+      },
+      {
+        "id": "line2-decoration",
+        "file": "line2-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-green/line2-decoration.webp",
+        "format": "WEBP",
+        "width": 600,
+        "height": 96,
+        "aspectRatio": 6.25,
+        "size": 21146,
+        "md5": "dbace79da2cd3f342d9178b668a33fd8",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-green"
+      },
+      {
+        "id": "line3-decoration",
+        "file": "line3-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-green/line3-decoration.webp",
+        "format": "WEBP",
+        "width": 160,
+        "height": 1273,
+        "aspectRatio": 0.126,
+        "size": 34880,
+        "md5": "c45977eb5914fa7dd2d01fa18ae08333",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-green"
+      },
+      {
+        "id": "line4-decoration",
+        "file": "line4-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-green/line4-decoration.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 759,
+        "aspectRatio": 0.422,
+        "size": 64958,
+        "md5": "f61e37786e63dff5d51c2dc87b9d8319",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-green"
       }
     ]
   },
   "baroque-v2-dark-red": {
     "themeId": "baroque-v2-dark-red",
     "folder": "baroque-v2-dark-red",
-    "assetCount": 1,
-    "totalBytes": 305360,
+    "assetCount": 12,
+    "totalBytes": 1232036,
     "assets": [
+      {
+        "id": "bg",
+        "file": "bg.webp",
+        "path": "/images/themes/baroque-v2-dark-red/bg.webp",
+        "format": "WEBP",
+        "width": 830,
+        "height": 1593,
+        "aspectRatio": 0.521,
+        "size": 102560,
+        "md5": "b7a3d1bf30c9223d575bf2ab5f431f89",
+        "type": "background",
+        "usage": "Background paper or ambient texture for baroque-v2-dark-red"
+      },
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/baroque-v2-dark-red/cake.webp",
+        "format": "WEBP",
+        "width": 340,
+        "height": 488,
+        "aspectRatio": 0.697,
+        "size": 45036,
+        "md5": "3377b6f47f55ee0b300876ed47403ecd",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-red"
+      },
+      {
+        "id": "camera",
+        "file": "camera.webp",
+        "path": "/images/themes/baroque-v2-dark-red/camera.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 424,
+        "aspectRatio": 0.943,
+        "size": 56396,
+        "md5": "ff4839129a9804266e2262766ac90482",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-v2-dark-red"
+      },
+      {
+        "id": "cook",
+        "file": "cook.webp",
+        "path": "/images/themes/baroque-v2-dark-red/cook.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 467,
+        "aspectRatio": 0.857,
+        "size": 53352,
+        "md5": "44d618352844fbb6dc7dd797aa9e87b7",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-v2-dark-red"
+      },
+      {
+        "id": "flower3-decoration",
+        "file": "flower3-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-red/flower3-decoration.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 800,
+        "aspectRatio": 1.0,
+        "size": 111210,
+        "md5": "7fac63c83370b5c1eb3f101720e49805",
+        "type": "decoration",
+        "usage": "Decorative element (flower3-decoration) for baroque-v2-dark-red"
+      },
+      {
+        "id": "flower4-decoration",
+        "file": "flower4-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-red/flower4-decoration.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 800,
+        "aspectRatio": 1.0,
+        "size": 138176,
+        "md5": "065f7490c65a54da3d6eeead14916d69",
+        "type": "decoration",
+        "usage": "Decorative element (flower4-decoration) for baroque-v2-dark-red"
+      },
+      {
+        "id": "flower5-decoration",
+        "file": "flower5-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-red/flower5-decoration.webp",
+        "format": "WEBP",
+        "width": 420,
+        "height": 1208,
+        "aspectRatio": 0.348,
+        "size": 198342,
+        "md5": "7e615a0162d02a0000883dfaf32e3bcf",
+        "type": "decoration",
+        "usage": "Decorative element (flower5-decoration) for baroque-v2-dark-red"
+      },
       {
         "id": "frame",
         "file": "frame.webp",
@@ -523,6 +1212,58 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "3547a272db7e132f269b06bdf38b549a",
         "type": "frame",
         "usage": "Framing border or arch for baroque-v2-dark-red"
+      },
+      {
+        "id": "golden-line-decoration",
+        "file": "golden-line-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-red/golden-line-decoration.webp",
+        "format": "WEBP",
+        "width": 1400,
+        "height": 250,
+        "aspectRatio": 5.6,
+        "size": 100620,
+        "md5": "28b10c741b2e99655decd983cda17503",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-red"
+      },
+      {
+        "id": "line2-decoration",
+        "file": "line2-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-red/line2-decoration.webp",
+        "format": "WEBP",
+        "width": 600,
+        "height": 96,
+        "aspectRatio": 6.25,
+        "size": 21146,
+        "md5": "dbace79da2cd3f342d9178b668a33fd8",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-red"
+      },
+      {
+        "id": "line3-decoration",
+        "file": "line3-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-red/line3-decoration.webp",
+        "format": "WEBP",
+        "width": 160,
+        "height": 1273,
+        "aspectRatio": 0.126,
+        "size": 34880,
+        "md5": "c45977eb5914fa7dd2d01fa18ae08333",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-red"
+      },
+      {
+        "id": "line4-decoration",
+        "file": "line4-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-red/line4-decoration.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 759,
+        "aspectRatio": 0.422,
+        "size": 64958,
+        "md5": "f61e37786e63dff5d51c2dc87b9d8319",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-red"
       }
     ]
   },
@@ -550,8 +1291,8 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
   "boho-floral-brown": {
     "themeId": "boho-floral-brown",
     "folder": "boho-floral-brown",
-    "assetCount": 4,
-    "totalBytes": 513792,
+    "assetCount": 6,
+    "totalBytes": 589600,
     "assets": [
       {
         "id": "decoration_bar",
@@ -580,6 +1321,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Decorative element (fixed_flower) for boho-floral-brown"
       },
       {
+        "id": "fixed_flower_2",
+        "file": "fixed_flower_2.webp",
+        "path": "/images/themes/boho-floral-brown/fixed_flower_2.webp",
+        "format": "WEBP",
+        "width": 603,
+        "height": 624,
+        "aspectRatio": 0.966,
+        "size": 36152,
+        "md5": "ea90f4950a7c864b97fa89af91971815",
+        "type": "decoration",
+        "usage": "Decorative element (fixed_flower_2) for boho-floral-brown"
+      },
+      {
         "id": "flower_bottom",
         "file": "flower_bottom.webp",
         "path": "/images/themes/boho-floral-brown/flower_bottom.webp",
@@ -591,6 +1345,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "2109b04c2973b83e2e548508dee15edf",
         "type": "decoration",
         "usage": "Decorative element (flower_bottom) for boho-floral-brown"
+      },
+      {
+        "id": "flower_mid",
+        "file": "flower_mid.webp",
+        "path": "/images/themes/boho-floral-brown/flower_mid.webp",
+        "format": "WEBP",
+        "width": 687,
+        "height": 507,
+        "aspectRatio": 1.355,
+        "size": 39656,
+        "md5": "9833081b787ab6497e0f9921bdf0ecea",
+        "type": "decoration",
+        "usage": "Decorative element (flower_mid) for boho-floral-brown"
       },
       {
         "id": "flower_top",
@@ -644,8 +1411,8 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
   "boho-floral-pink": {
     "themeId": "boho-floral-pink",
     "folder": "boho-floral-pink",
-    "assetCount": 2,
-    "totalBytes": 107854,
+    "assetCount": 3,
+    "totalBytes": 159544,
     "assets": [
       {
         "id": "asset_1",
@@ -672,14 +1439,27 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "ec7aed8f48ea2032da157f17111d6091",
         "type": "decoration",
         "usage": "Ornamental artwork for boho-floral-pink"
+      },
+      {
+        "id": "asset_3",
+        "file": "asset_3.webp",
+        "path": "/images/themes/boho-floral-pink/asset_3.webp",
+        "format": "WEBP",
+        "width": 500,
+        "height": 937,
+        "aspectRatio": 0.534,
+        "size": 51690,
+        "md5": "37c843f62dcbcb161f6e31c6018977a1",
+        "type": "decoration",
+        "usage": "Ornamental artwork for boho-floral-pink"
       }
     ]
   },
   "chateau-blue": {
     "themeId": "chateau-blue",
     "folder": "chateau-blue",
-    "assetCount": 7,
-    "totalBytes": 946776,
+    "assetCount": 13,
+    "totalBytes": 1815914,
     "assets": [
       {
         "id": "asset-1",
@@ -704,6 +1484,32 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "aspectRatio": 3.805,
         "size": 9962,
         "md5": "9517305ef3353a19d64be8d290189aa1",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chateau-blue"
+      },
+      {
+        "id": "ban-tiec",
+        "file": "ban-tiec.webp",
+        "path": "/images/themes/chateau-blue/ban-tiec.webp",
+        "format": "WEBP",
+        "width": 1435,
+        "height": 742,
+        "aspectRatio": 1.934,
+        "size": 346524,
+        "md5": "4f9cc7d25124f3179cf044f3a50b75e2",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chateau-blue"
+      },
+      {
+        "id": "chim",
+        "file": "chim.webp",
+        "path": "/images/themes/chateau-blue/chim.webp",
+        "format": "WEBP",
+        "width": 1536,
+        "height": 1024,
+        "aspectRatio": 1.5,
+        "size": 259618,
+        "md5": "0a93ec412542e2a58d2817130ea1426f",
         "type": "decoration",
         "usage": "Ornamental artwork for chateau-blue"
       },
@@ -747,6 +1553,32 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Decorative element (cloud-3) for chateau-blue"
       },
       {
+        "id": "frame-lich",
+        "file": "frame-lich.webp",
+        "path": "/images/themes/chateau-blue/frame-lich.webp",
+        "format": "WEBP",
+        "width": 2240,
+        "height": 1770,
+        "aspectRatio": 1.266,
+        "size": 58456,
+        "md5": "79192221a1593010437b8aa88de35cf9",
+        "type": "frame",
+        "usage": "Framing border or arch for chateau-blue"
+      },
+      {
+        "id": "hoa-ngang",
+        "file": "hoa-ngang.webp",
+        "path": "/images/themes/chateau-blue/hoa-ngang.webp",
+        "format": "WEBP",
+        "width": 1408,
+        "height": 358,
+        "aspectRatio": 3.933,
+        "size": 146762,
+        "md5": "14b5b5e13efb089990c2071d2ab879a1",
+        "type": "decoration",
+        "usage": "Decorative element (hoa-ngang) for chateau-blue"
+      },
+      {
         "id": "hoa",
         "file": "hoa.webp",
         "path": "/images/themes/chateau-blue/hoa.webp",
@@ -771,15 +1603,106 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "128e4fc5a016a2b9e5077df6f8c98a91",
         "type": "decoration",
         "usage": "Ornamental artwork for chateau-blue"
+      },
+      {
+        "id": "nen",
+        "file": "nen.webp",
+        "path": "/images/themes/chateau-blue/nen.webp",
+        "format": "WEBP",
+        "width": 137,
+        "height": 312,
+        "aspectRatio": 0.439,
+        "size": 21584,
+        "md5": "cf66af4d2dcc68924938cec900698f50",
+        "type": "background",
+        "usage": "Background paper or ambient texture for chateau-blue"
+      },
+      {
+        "id": "nhan",
+        "file": "nhan.webp",
+        "path": "/images/themes/chateau-blue/nhan.webp",
+        "format": "WEBP",
+        "width": 298,
+        "height": 240,
+        "aspectRatio": 1.242,
+        "size": 36194,
+        "md5": "9cbbd7241eeb923bf743b48edfc5a8d0",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chateau-blue"
       }
     ]
   },
   "chateau-green": {
     "themeId": "chateau-green",
     "folder": "chateau-green",
-    "assetCount": 6,
-    "totalBytes": 1411056,
+    "assetCount": 15,
+    "totalBytes": 2557358,
     "assets": [
+      {
+        "id": "barrier",
+        "file": "barrier.webp",
+        "path": "/images/themes/chateau-green/barrier.webp",
+        "format": "WEBP",
+        "width": 570,
+        "height": 432,
+        "aspectRatio": 1.319,
+        "size": 95064,
+        "md5": "4833bc0a0e81f4163935c9bc49db366c",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chateau-green"
+      },
+      {
+        "id": "brick",
+        "file": "brick.webp",
+        "path": "/images/themes/chateau-green/brick.webp",
+        "format": "WEBP",
+        "width": 759,
+        "height": 204,
+        "aspectRatio": 3.721,
+        "size": 62564,
+        "md5": "7c80fc37b54067a723e49a1b599bbc7f",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chateau-green"
+      },
+      {
+        "id": "cay1-1",
+        "file": "cay1-1.webp",
+        "path": "/images/themes/chateau-green/cay1-1.webp",
+        "format": "WEBP",
+        "width": 843,
+        "height": 1377,
+        "aspectRatio": 0.612,
+        "size": 140702,
+        "md5": "8c9eef00df293145c92713614fe372de",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chateau-green"
+      },
+      {
+        "id": "cay2-1",
+        "file": "cay2-1.webp",
+        "path": "/images/themes/chateau-green/cay2-1.webp",
+        "format": "WEBP",
+        "width": 1182,
+        "height": 1617,
+        "aspectRatio": 0.731,
+        "size": 88874,
+        "md5": "0cbce1b7d2d654a6533271fd58c82790",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chateau-green"
+      },
+      {
+        "id": "cay2-2",
+        "file": "cay2-2.webp",
+        "path": "/images/themes/chateau-green/cay2-2.webp",
+        "format": "WEBP",
+        "width": 130,
+        "height": 195,
+        "aspectRatio": 0.667,
+        "size": 8894,
+        "md5": "576b803860705347a119e8f8888d912f",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chateau-green"
+      },
       {
         "id": "chateau",
         "file": "chateau.webp",
@@ -846,6 +1769,58 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Decorative divider line for chateau-green"
       },
       {
+        "id": "fountain",
+        "file": "fountain.webp",
+        "path": "/images/themes/chateau-green/fountain.webp",
+        "format": "WEBP",
+        "width": 1584,
+        "height": 1059,
+        "aspectRatio": 1.496,
+        "size": 531340,
+        "md5": "f22a6f4116cccfa561a605b22be04f41",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chateau-green"
+      },
+      {
+        "id": "frame-lich",
+        "file": "frame-lich.webp",
+        "path": "/images/themes/chateau-green/frame-lich.webp",
+        "format": "WEBP",
+        "width": 776,
+        "height": 614,
+        "aspectRatio": 1.264,
+        "size": 27018,
+        "md5": "3ca77afd01b65c00db51d6bdc4bcb2f7",
+        "type": "frame",
+        "usage": "Framing border or arch for chateau-green"
+      },
+      {
+        "id": "hoanho2-1",
+        "file": "hoanho2-1.webp",
+        "path": "/images/themes/chateau-green/hoanho2-1.webp",
+        "format": "WEBP",
+        "width": 495,
+        "height": 660,
+        "aspectRatio": 0.75,
+        "size": 102446,
+        "md5": "f03ae6b1390a5d68bd8783f766011d2d",
+        "type": "decoration",
+        "usage": "Decorative element (hoanho2-1) for chateau-green"
+      },
+      {
+        "id": "hoanho3-1",
+        "file": "hoanho3-1.webp",
+        "path": "/images/themes/chateau-green/hoanho3-1.webp",
+        "format": "WEBP",
+        "width": 477,
+        "height": 621,
+        "aspectRatio": 0.768,
+        "size": 89400,
+        "md5": "adf93a33c3e5dc7587662a1bd3fb5f74",
+        "type": "decoration",
+        "usage": "Decorative element (hoanho3-1) for chateau-green"
+      },
+      {
         "id": "ornament",
         "file": "ornament.webp",
         "path": "/images/themes/chateau-green/ornament.webp",
@@ -863,9 +1838,22 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
   "chibi_red": {
     "themeId": "chibi_red",
     "folder": "chibi_red",
-    "assetCount": 3,
-    "totalBytes": 156124,
+    "assetCount": 7,
+    "totalBytes": 303100,
     "assets": [
+      {
+        "id": "cherry-blossom",
+        "file": "cherry-blossom.webp",
+        "path": "/images/themes/chibi_red/cherry-blossom.webp",
+        "format": "WEBP",
+        "width": 650,
+        "height": 566,
+        "aspectRatio": 1.148,
+        "size": 23404,
+        "md5": "8f1b8a7d95de8fd8595104fee4e9a3ef",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chibi_red"
+      },
       {
         "id": "couple-main",
         "file": "couple-main.webp",
@@ -880,6 +1868,32 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Ornamental artwork for chibi_red"
       },
       {
+        "id": "decorative-diamond",
+        "file": "decorative-diamond.webp",
+        "path": "/images/themes/chibi_red/decorative-diamond.webp",
+        "format": "WEBP",
+        "width": 159,
+        "height": 182,
+        "aspectRatio": 0.874,
+        "size": 5148,
+        "md5": "9206d3db2b240ec50fa1bce5ec5319ab",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chibi_red"
+      },
+      {
+        "id": "decorative-dragon",
+        "file": "decorative-dragon.webp",
+        "path": "/images/themes/chibi_red/decorative-dragon.webp",
+        "format": "WEBP",
+        "width": 1023,
+        "height": 1124,
+        "aspectRatio": 0.91,
+        "size": 65200,
+        "md5": "f57a88187c450106ab6967c4e5c72b6c",
+        "type": "decoration",
+        "usage": "Decorative element (decorative-dragon) for chibi_red"
+      },
+      {
         "id": "decorative-flowers",
         "file": "decorative-flowers.webp",
         "path": "/images/themes/chibi_red/decorative-flowers.webp",
@@ -891,6 +1905,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "c02f4c4821ae96bf057e2e788ae2e1e1",
         "type": "decoration",
         "usage": "Decorative element (decorative-flowers) for chibi_red"
+      },
+      {
+        "id": "decorative-header",
+        "file": "decorative-header.webp",
+        "path": "/images/themes/chibi_red/decorative-header.webp",
+        "format": "WEBP",
+        "width": 844,
+        "height": 213,
+        "aspectRatio": 3.962,
+        "size": 53224,
+        "md5": "2b20c15b72d5c1b53be62cb28e4aef1b",
+        "type": "decoration",
+        "usage": "Header ornament for chibi_red"
       },
       {
         "id": "double-happiness",
@@ -944,9 +1971,48 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
   "crystal-floral-blue": {
     "themeId": "crystal-floral-blue",
     "folder": "crystal-floral-blue",
-    "assetCount": 4,
-    "totalBytes": 2199708,
+    "assetCount": 10,
+    "totalBytes": 5116838,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/crystal-floral-blue/cake.webp",
+        "format": "WEBP",
+        "width": 1316,
+        "height": 2318,
+        "aspectRatio": 0.568,
+        "size": 461762,
+        "md5": "c061b3a3f1876be5dec0a90a0012feda",
+        "type": "divider",
+        "usage": "Decorative divider line for crystal-floral-blue"
+      },
+      {
+        "id": "calendar-frame",
+        "file": "calendar-frame.webp",
+        "path": "/images/themes/crystal-floral-blue/calendar-frame.webp",
+        "format": "WEBP",
+        "width": 2642,
+        "height": 2244,
+        "aspectRatio": 1.177,
+        "size": 248596,
+        "md5": "03086cfd6200eb23fd220433440e5d1b",
+        "type": "frame",
+        "usage": "Framing border or arch for crystal-floral-blue"
+      },
+      {
+        "id": "filigree",
+        "file": "filigree.webp",
+        "path": "/images/themes/crystal-floral-blue/filigree.webp",
+        "format": "WEBP",
+        "width": 4040,
+        "height": 742,
+        "aspectRatio": 5.445,
+        "size": 363754,
+        "md5": "6c0d99ebed490d8b5ff1e2446a49b80a",
+        "type": "decoration",
+        "usage": "Ornamental artwork for crystal-floral-blue"
+      },
       {
         "id": "flower-frame",
         "file": "flower-frame.webp",
@@ -998,15 +2064,80 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "7144f814fbfa8cbcac1905bac3c7c7f8",
         "type": "decoration",
         "usage": "Decorative element (flower3) for crystal-floral-blue"
+      },
+      {
+        "id": "flower4",
+        "file": "flower4.webp",
+        "path": "/images/themes/crystal-floral-blue/flower4.webp",
+        "format": "WEBP",
+        "width": 820,
+        "height": 3487,
+        "aspectRatio": 0.235,
+        "size": 545142,
+        "md5": "e40bb420f8416c4856e90f2855c16e0c",
+        "type": "decoration",
+        "usage": "Decorative element (flower4) for crystal-floral-blue"
+      },
+      {
+        "id": "flower5",
+        "file": "flower5.webp",
+        "path": "/images/themes/crystal-floral-blue/flower5.webp",
+        "format": "WEBP",
+        "width": 4096,
+        "height": 964,
+        "aspectRatio": 4.249,
+        "size": 653106,
+        "md5": "46b20eb85aad5b1e402af0dc2a652797",
+        "type": "decoration",
+        "usage": "Decorative element (flower5) for crystal-floral-blue"
+      },
+      {
+        "id": "gift",
+        "file": "gift.webp",
+        "path": "/images/themes/crystal-floral-blue/gift.webp",
+        "format": "WEBP",
+        "width": 1866,
+        "height": 2137,
+        "aspectRatio": 0.873,
+        "size": 644770,
+        "md5": "954ccc62f0c3c89ab9bb3f0de188483b",
+        "type": "decoration",
+        "usage": "Ornamental artwork for crystal-floral-blue"
       }
     ]
   },
   "crystal-floral-green": {
     "themeId": "crystal-floral-green",
     "folder": "crystal-floral-green",
-    "assetCount": 4,
-    "totalBytes": 1315208,
+    "assetCount": 11,
+    "totalBytes": 2736138,
     "assets": [
+      {
+        "id": "calendar-frame",
+        "file": "calendar-frame.webp",
+        "path": "/images/themes/crystal-floral-green/calendar-frame.webp",
+        "format": "WEBP",
+        "width": 1370,
+        "height": 1132,
+        "aspectRatio": 1.21,
+        "size": 105184,
+        "md5": "f0e29deb701386ad04ea256188238bc9",
+        "type": "frame",
+        "usage": "Framing border or arch for crystal-floral-green"
+      },
+      {
+        "id": "filigree",
+        "file": "filigree.webp",
+        "path": "/images/themes/crystal-floral-green/filigree.webp",
+        "format": "WEBP",
+        "width": 2163,
+        "height": 379,
+        "aspectRatio": 5.707,
+        "size": 150852,
+        "md5": "d0258da22176f25d30d54be4e32a5e37",
+        "type": "decoration",
+        "usage": "Ornamental artwork for crystal-floral-green"
+      },
       {
         "id": "flower-frame",
         "file": "flower-frame.webp",
@@ -1058,15 +2189,106 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "9aa21b8daf91eea239edb78b0c893b48",
         "type": "decoration",
         "usage": "Decorative element (flower3) for crystal-floral-green"
+      },
+      {
+        "id": "flower4",
+        "file": "flower4.webp",
+        "path": "/images/themes/crystal-floral-green/flower4.webp",
+        "format": "WEBP",
+        "width": 448,
+        "height": 1928,
+        "aspectRatio": 0.232,
+        "size": 245248,
+        "md5": "2d80ddc0bb1a7818b7255d8a145c6eb6",
+        "type": "decoration",
+        "usage": "Decorative element (flower4) for crystal-floral-green"
+      },
+      {
+        "id": "flower5",
+        "file": "flower5.webp",
+        "path": "/images/themes/crystal-floral-green/flower5.webp",
+        "format": "WEBP",
+        "width": 2172,
+        "height": 501,
+        "aspectRatio": 4.335,
+        "size": 238816,
+        "md5": "25c03e4b0c9c58cd9bbc421addee27da",
+        "type": "decoration",
+        "usage": "Decorative element (flower5) for crystal-floral-green"
+      },
+      {
+        "id": "flowericon",
+        "file": "flowericon.webp",
+        "path": "/images/themes/crystal-floral-green/flowericon.webp",
+        "format": "WEBP",
+        "width": 713,
+        "height": 1501,
+        "aspectRatio": 0.475,
+        "size": 239484,
+        "md5": "006d2107bcd30175f6a6880544b20616",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for crystal-floral-green"
+      },
+      {
+        "id": "map",
+        "file": "map.webp",
+        "path": "/images/themes/crystal-floral-green/map.webp",
+        "format": "WEBP",
+        "width": 938,
+        "height": 1135,
+        "aspectRatio": 0.826,
+        "size": 206850,
+        "md5": "48f9558e769238d51bc0cc6f5e428b5b",
+        "type": "decoration",
+        "usage": "Ornamental artwork for crystal-floral-green"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/crystal-floral-green/ring.webp",
+        "format": "WEBP",
+        "width": 1224,
+        "height": 828,
+        "aspectRatio": 1.478,
+        "size": 234496,
+        "md5": "8bfc4cc884ac0d02bfe16d4688b9c741",
+        "type": "decoration",
+        "usage": "Ornamental artwork for crystal-floral-green"
       }
     ]
   },
   "crystal-floral-red": {
     "themeId": "crystal-floral-red",
     "folder": "crystal-floral-red",
-    "assetCount": 4,
-    "totalBytes": 1239714,
+    "assetCount": 11,
+    "totalBytes": 2989884,
     "assets": [
+      {
+        "id": "calendar-frame",
+        "file": "calendar-frame.webp",
+        "path": "/images/themes/crystal-floral-red/calendar-frame.webp",
+        "format": "WEBP",
+        "width": 1374,
+        "height": 1145,
+        "aspectRatio": 1.2,
+        "size": 110256,
+        "md5": "c9736a7a67c410f4d7bbef7e755b1bd3",
+        "type": "frame",
+        "usage": "Framing border or arch for crystal-floral-red"
+      },
+      {
+        "id": "filigree",
+        "file": "filigree.webp",
+        "path": "/images/themes/crystal-floral-red/filigree.webp",
+        "format": "WEBP",
+        "width": 2172,
+        "height": 374,
+        "aspectRatio": 5.807,
+        "size": 167690,
+        "md5": "1391854d6f8f9dd634f850c01614c14c",
+        "type": "decoration",
+        "usage": "Ornamental artwork for crystal-floral-red"
+      },
       {
         "id": "flower-frame",
         "file": "flower-frame.webp",
@@ -1118,15 +2340,106 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "eece385b005c914575a4925e10adbeea",
         "type": "decoration",
         "usage": "Decorative element (flower3) for crystal-floral-red"
+      },
+      {
+        "id": "flower4",
+        "file": "flower4.webp",
+        "path": "/images/themes/crystal-floral-red/flower4.webp",
+        "format": "WEBP",
+        "width": 518,
+        "height": 2179,
+        "aspectRatio": 0.238,
+        "size": 344452,
+        "md5": "53d96fab2c493c117ed2147808ab7c10",
+        "type": "decoration",
+        "usage": "Decorative element (flower4) for crystal-floral-red"
+      },
+      {
+        "id": "flower5",
+        "file": "flower5.webp",
+        "path": "/images/themes/crystal-floral-red/flower5.webp",
+        "format": "WEBP",
+        "width": 2113,
+        "height": 476,
+        "aspectRatio": 4.439,
+        "size": 412986,
+        "md5": "6eb549a10d08b6d88848f856381ecf59",
+        "type": "decoration",
+        "usage": "Decorative element (flower5) for crystal-floral-red"
+      },
+      {
+        "id": "flowericon",
+        "file": "flowericon.webp",
+        "path": "/images/themes/crystal-floral-red/flowericon.webp",
+        "format": "WEBP",
+        "width": 689,
+        "height": 1453,
+        "aspectRatio": 0.474,
+        "size": 276720,
+        "md5": "359e053f208ba2407bb0e773b58e2329",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for crystal-floral-red"
+      },
+      {
+        "id": "map",
+        "file": "map.webp",
+        "path": "/images/themes/crystal-floral-red/map.webp",
+        "format": "WEBP",
+        "width": 922,
+        "height": 1105,
+        "aspectRatio": 0.834,
+        "size": 198416,
+        "md5": "4d3c4a85d33a93a52c92d012481ed2bb",
+        "type": "decoration",
+        "usage": "Ornamental artwork for crystal-floral-red"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/crystal-floral-red/ring.webp",
+        "format": "WEBP",
+        "width": 1135,
+        "height": 760,
+        "aspectRatio": 1.493,
+        "size": 239650,
+        "md5": "9d96876a12108fce5c53fcd28ed16490",
+        "type": "decoration",
+        "usage": "Ornamental artwork for crystal-floral-red"
       }
     ]
   },
   "dried-flower-v2-green": {
     "themeId": "dried-flower-v2-green",
     "folder": "dried-flower-v2-green",
-    "assetCount": 1,
-    "totalBytes": 386470,
+    "assetCount": 11,
+    "totalBytes": 2783451,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/dried-flower-v2-green/cake.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 268426,
+        "md5": "caa82e0014ec0f41667c7546e80097e5",
+        "type": "divider",
+        "usage": "Decorative divider line for dried-flower-v2-green"
+      },
+      {
+        "id": "calendar-heart",
+        "file": "calendar-heart.svg",
+        "path": "/images/themes/dried-flower-v2-green/calendar-heart.svg",
+        "format": "SVG",
+        "width": 21,
+        "height": 19,
+        "aspectRatio": 1.105,
+        "size": 541,
+        "md5": "c11c08462f4f3366ae61a2a19e5c7e01",
+        "type": "decoration",
+        "usage": "Ornamental artwork for dried-flower-v2-green"
+      },
       {
         "id": "flower",
         "file": "flower.webp",
@@ -1139,15 +2452,223 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "a2e290b48e791f61ce8df0c2673105be",
         "type": "decoration",
         "usage": "Decorative element (flower) for dried-flower-v2-green"
+      },
+      {
+        "id": "flower2",
+        "file": "flower2.webp",
+        "path": "/images/themes/dried-flower-v2-green/flower2.webp",
+        "format": "WEBP",
+        "width": 793,
+        "height": 1983,
+        "aspectRatio": 0.4,
+        "size": 291326,
+        "md5": "3f5a63ae0c2efd86ca205620b9a15c82",
+        "type": "decoration",
+        "usage": "Decorative element (flower2) for dried-flower-v2-green"
+      },
+      {
+        "id": "flower3",
+        "file": "flower3.webp",
+        "path": "/images/themes/dried-flower-v2-green/flower3.webp",
+        "format": "WEBP",
+        "width": 793,
+        "height": 1983,
+        "aspectRatio": 0.4,
+        "size": 339924,
+        "md5": "73b5ff70156356b419437498200d8be8",
+        "type": "decoration",
+        "usage": "Decorative element (flower3) for dried-flower-v2-green"
+      },
+      {
+        "id": "flower4",
+        "file": "flower4.webp",
+        "path": "/images/themes/dried-flower-v2-green/flower4.webp",
+        "format": "WEBP",
+        "width": 927,
+        "height": 1200,
+        "aspectRatio": 0.772,
+        "size": 265152,
+        "md5": "a871a3db35dcf14f48d2d4650a22dd4f",
+        "type": "decoration",
+        "usage": "Decorative element (flower4) for dried-flower-v2-green"
+      },
+      {
+        "id": "flower6",
+        "file": "flower6.webp",
+        "path": "/images/themes/dried-flower-v2-green/flower6.webp",
+        "format": "WEBP",
+        "width": 1916,
+        "height": 821,
+        "aspectRatio": 2.334,
+        "size": 422530,
+        "md5": "2c83f37e983a722aaa75359ce8cf84bc",
+        "type": "decoration",
+        "usage": "Decorative element (flower6) for dried-flower-v2-green"
+      },
+      {
+        "id": "leaf",
+        "file": "leaf.webp",
+        "path": "/images/themes/dried-flower-v2-green/leaf.webp",
+        "format": "WEBP",
+        "width": 282,
+        "height": 453,
+        "aspectRatio": 0.623,
+        "size": 37200,
+        "md5": "2572e6280a79a42363447eae26f984fd",
+        "type": "decoration",
+        "usage": "Decorative element (leaf) for dried-flower-v2-green"
+      },
+      {
+        "id": "letter",
+        "file": "letter.webp",
+        "path": "/images/themes/dried-flower-v2-green/letter.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 239338,
+        "md5": "75a5f4fb20514ae5f13eb77ccc4ab67e",
+        "type": "decoration",
+        "usage": "Ornamental artwork for dried-flower-v2-green"
+      },
+      {
+        "id": "paper",
+        "file": "paper.webp",
+        "path": "/images/themes/dried-flower-v2-green/paper.webp",
+        "format": "WEBP",
+        "width": 1333,
+        "height": 2000,
+        "aspectRatio": 0.666,
+        "size": 172958,
+        "md5": "3b09633b1cd9a11d9d6ceacb6d83c9eb",
+        "type": "background",
+        "usage": "Background paper or ambient texture for dried-flower-v2-green"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/dried-flower-v2-green/ring.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 359586,
+        "md5": "239c22117925b7aaa644b15c1b073b8a",
+        "type": "decoration",
+        "usage": "Ornamental artwork for dried-flower-v2-green"
       }
     ]
   },
   "florence-brown": {
     "themeId": "florence-brown",
     "folder": "florence-brown",
-    "assetCount": 3,
-    "totalBytes": 277330,
+    "assetCount": 19,
+    "totalBytes": 2662538,
     "assets": [
+      {
+        "id": "bird",
+        "file": "bird.webp",
+        "path": "/images/themes/florence-brown/bird.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 461,
+        "aspectRatio": 0.868,
+        "size": 42898,
+        "md5": "971eaa4761bcadec003c89ee410da619",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "bridge-background",
+        "file": "bridge-background.webp",
+        "path": "/images/themes/florence-brown/bridge-background.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 540,
+        "aspectRatio": 1.667,
+        "size": 148296,
+        "md5": "fe0e181c633a5aa2d2b19b97ad7d45d1",
+        "type": "background",
+        "usage": "Background paper or ambient texture for florence-brown"
+      },
+      {
+        "id": "bridge-decoration",
+        "file": "bridge-decoration.webp",
+        "path": "/images/themes/florence-brown/bridge-decoration.webp",
+        "format": "WEBP",
+        "width": 1100,
+        "height": 823,
+        "aspectRatio": 1.337,
+        "size": 273846,
+        "md5": "61305d8fd34435bb23d68d7df556ec72",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "bridge-decoration3",
+        "file": "bridge-decoration3.webp",
+        "path": "/images/themes/florence-brown/bridge-decoration3.webp",
+        "format": "WEBP",
+        "width": 533,
+        "height": 1463,
+        "aspectRatio": 0.364,
+        "size": 184038,
+        "md5": "35c806bcc4e4cf857d2a586394db54f6",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/florence-brown/cake.webp",
+        "format": "WEBP",
+        "width": 420,
+        "height": 619,
+        "aspectRatio": 0.679,
+        "size": 71854,
+        "md5": "3ed8e718c7f8257bb24c1514dafbd5c3",
+        "type": "divider",
+        "usage": "Decorative divider line for florence-brown"
+      },
+      {
+        "id": "cathedral-envelope",
+        "file": "cathedral-envelope.webp",
+        "path": "/images/themes/florence-brown/cathedral-envelope.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 955,
+        "aspectRatio": 0.942,
+        "size": 287846,
+        "md5": "724cbb191998017fdba29a0a6a8af034",
+        "type": "cover",
+        "usage": "Envelope or cover illustration for florence-brown"
+      },
+      {
+        "id": "church-decoration",
+        "file": "church-decoration.webp",
+        "path": "/images/themes/florence-brown/church-decoration.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 674,
+        "aspectRatio": 1.335,
+        "size": 135798,
+        "md5": "2e344ad69d88c1e8868083e44e650be6",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "church2-decoration",
+        "file": "church2-decoration.webp",
+        "path": "/images/themes/florence-brown/church2-decoration.webp",
+        "format": "WEBP",
+        "width": 500,
+        "height": 667,
+        "aspectRatio": 0.75,
+        "size": 127832,
+        "md5": "2af2cf48d68bd6a02feec1949cd0bf7f",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
       {
         "id": "cloud1-background",
         "file": "cloud1-background.webp",
@@ -1186,15 +2707,132 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "bd2024bab48ed5c0063094802ddbd0bc",
         "type": "background",
         "usage": "Background paper or ambient texture for florence-brown"
+      },
+      {
+        "id": "house-decoration",
+        "file": "house-decoration.webp",
+        "path": "/images/themes/florence-brown/house-decoration.webp",
+        "format": "WEBP",
+        "width": 1030,
+        "height": 580,
+        "aspectRatio": 1.776,
+        "size": 171504,
+        "md5": "d780d9b1183d93507be5fbf049c8de1a",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "house2-background",
+        "file": "house2-background.webp",
+        "path": "/images/themes/florence-brown/house2-background.webp",
+        "format": "WEBP",
+        "width": 700,
+        "height": 933,
+        "aspectRatio": 0.75,
+        "size": 221590,
+        "md5": "c9617e5c6bbb6058b8dd29545cda93ef",
+        "type": "background",
+        "usage": "Background paper or ambient texture for florence-brown"
+      },
+      {
+        "id": "house2-decoration",
+        "file": "house2-decoration.webp",
+        "path": "/images/themes/florence-brown/house2-decoration.webp",
+        "format": "WEBP",
+        "width": 660,
+        "height": 880,
+        "aspectRatio": 0.75,
+        "size": 128304,
+        "md5": "a53abf8edcb2cc61f1cc4e06c551b20f",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "house4-decoration",
+        "file": "house4-decoration.webp",
+        "path": "/images/themes/florence-brown/house4-decoration.webp",
+        "format": "WEBP",
+        "width": 1086,
+        "height": 1448,
+        "aspectRatio": 0.75,
+        "size": 212914,
+        "md5": "e3802f030d808d53dc650d137d39d8c0",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/florence-brown/ring.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 407,
+        "aspectRatio": 0.983,
+        "size": 58946,
+        "md5": "2c5338ed27d679eae82ae9c0244ece12",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "scene-decoration",
+        "file": "scene-decoration.webp",
+        "path": "/images/themes/florence-brown/scene-decoration.webp",
+        "format": "WEBP",
+        "width": 1100,
+        "height": 367,
+        "aspectRatio": 2.997,
+        "size": 125398,
+        "md5": "671bdce94578f046336ff026b3029f02",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "scene2-decoration",
+        "file": "scene2-decoration.webp",
+        "path": "/images/themes/florence-brown/scene2-decoration.webp",
+        "format": "WEBP",
+        "width": 1200,
+        "height": 403,
+        "aspectRatio": 2.978,
+        "size": 134658,
+        "md5": "e9f203c77370d844749cedcb90b2ec6f",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "tree-decoration",
+        "file": "tree-decoration.webp",
+        "path": "/images/themes/florence-brown/tree-decoration.webp",
+        "format": "WEBP",
+        "width": 950,
+        "height": 317,
+        "aspectRatio": 2.997,
+        "size": 59486,
+        "md5": "46f8630388e0a4eca8a3cfb6b39ef760",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
       }
     ]
   },
   "glass-garden-blue": {
     "themeId": "glass-garden-blue",
     "folder": "glass-garden-blue",
-    "assetCount": 2,
-    "totalBytes": 639602,
+    "assetCount": 8,
+    "totalBytes": 1222620,
     "assets": [
+      {
+        "id": "calendar-heart",
+        "file": "calendar-heart.webp",
+        "path": "/images/themes/glass-garden-blue/calendar-heart.webp",
+        "format": "WEBP",
+        "width": 226,
+        "height": 200,
+        "aspectRatio": 1.13,
+        "size": 2720,
+        "md5": "d177c98d7f92caf2d258566d6675c60e",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-blue"
+      },
       {
         "id": "floral-background",
         "file": "floral-background.webp",
@@ -1220,15 +2858,119 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "03ba9960b0e18f10eaca09307f9ff85a",
         "type": "decoration",
         "usage": "Decorative element (flower2-decoration) for glass-garden-blue"
+      },
+      {
+        "id": "flower3-decoration",
+        "file": "flower3-decoration.webp",
+        "path": "/images/themes/glass-garden-blue/flower3-decoration.webp",
+        "format": "WEBP",
+        "width": 832,
+        "height": 1438,
+        "aspectRatio": 0.579,
+        "size": 225486,
+        "md5": "09b82f9bdaeb580d9a622c2e53c400d0",
+        "type": "decoration",
+        "usage": "Decorative element (flower3-decoration) for glass-garden-blue"
+      },
+      {
+        "id": "flower5-bottom",
+        "file": "flower5-bottom.webp",
+        "path": "/images/themes/glass-garden-blue/flower5-bottom.webp",
+        "format": "WEBP",
+        "width": 1530,
+        "height": 696,
+        "aspectRatio": 2.198,
+        "size": 247166,
+        "md5": "162b21801640650f3a92c43c9a153055",
+        "type": "decoration",
+        "usage": "Decorative element (flower5-bottom) for glass-garden-blue"
+      },
+      {
+        "id": "map",
+        "file": "map.webp",
+        "path": "/images/themes/glass-garden-blue/map.webp",
+        "format": "WEBP",
+        "width": 300,
+        "height": 317,
+        "aspectRatio": 0.946,
+        "size": 29774,
+        "md5": "23a3a7b8a789e2da6265edeb40d9d14c",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-blue"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/glass-garden-blue/ring.webp",
+        "format": "WEBP",
+        "width": 300,
+        "height": 311,
+        "aspectRatio": 0.965,
+        "size": 40418,
+        "md5": "b9dbd095760ae4cfb6462e329daee80a",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-blue"
+      },
+      {
+        "id": "song",
+        "file": "song.webp",
+        "path": "/images/themes/glass-garden-blue/song.webp",
+        "format": "WEBP",
+        "width": 300,
+        "height": 371,
+        "aspectRatio": 0.809,
+        "size": 37454,
+        "md5": "f38540d8edab644de7d08637c4f11edf",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-blue"
       }
     ]
   },
   "glass-garden-green": {
     "themeId": "glass-garden-green",
     "folder": "glass-garden-green",
-    "assetCount": 2,
-    "totalBytes": 678526,
+    "assetCount": 10,
+    "totalBytes": 2867494,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/glass-garden-green/cake.webp",
+        "format": "WEBP",
+        "width": 1476,
+        "height": 2242,
+        "aspectRatio": 0.658,
+        "size": 179366,
+        "md5": "177af684f878c97b632c0474299e5b35",
+        "type": "divider",
+        "usage": "Decorative divider line for glass-garden-green"
+      },
+      {
+        "id": "calendar-heart",
+        "file": "calendar-heart.webp",
+        "path": "/images/themes/glass-garden-green/calendar-heart.webp",
+        "format": "WEBP",
+        "width": 492,
+        "height": 445,
+        "aspectRatio": 1.106,
+        "size": 5240,
+        "md5": "d7fe7d7e83f3540934caa90748678b02",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-green"
+      },
+      {
+        "id": "dish",
+        "file": "dish.webp",
+        "path": "/images/themes/glass-garden-green/dish.webp",
+        "format": "WEBP",
+        "width": 1562,
+        "height": 1983,
+        "aspectRatio": 0.788,
+        "size": 224230,
+        "md5": "663fe6aeae06844b30c1f54dfaf105c4",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-green"
+      },
       {
         "id": "floral-background",
         "file": "floral-background.webp",
@@ -1254,15 +2996,119 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "b8d704dcdb4dc6b59464a2e79fddd748",
         "type": "decoration",
         "usage": "Decorative element (flower1-decoration) for glass-garden-green"
+      },
+      {
+        "id": "flower2-decoration",
+        "file": "flower2-decoration.webp",
+        "path": "/images/themes/glass-garden-green/flower2-decoration.webp",
+        "format": "WEBP",
+        "width": 2388,
+        "height": 2508,
+        "aspectRatio": 0.952,
+        "size": 374752,
+        "md5": "7426d4302a9b86aba3cac9a7283aa003",
+        "type": "decoration",
+        "usage": "Decorative element (flower2-decoration) for glass-garden-green"
+      },
+      {
+        "id": "flower3-decoration",
+        "file": "flower3-decoration.webp",
+        "path": "/images/themes/glass-garden-green/flower3-decoration.webp",
+        "format": "WEBP",
+        "width": 1938,
+        "height": 2420,
+        "aspectRatio": 0.801,
+        "size": 275836,
+        "md5": "d00c4a5e07bc580fc896b7daf44aa18d",
+        "type": "decoration",
+        "usage": "Decorative element (flower3-decoration) for glass-garden-green"
+      },
+      {
+        "id": "flower4-decoration",
+        "file": "flower4-decoration.webp",
+        "path": "/images/themes/glass-garden-green/flower4-decoration.webp",
+        "format": "WEBP",
+        "width": 2441,
+        "height": 2439,
+        "aspectRatio": 1.001,
+        "size": 393584,
+        "md5": "bce87627a774a289d7b2b96bb2fa287e",
+        "type": "decoration",
+        "usage": "Decorative element (flower4-decoration) for glass-garden-green"
+      },
+      {
+        "id": "flower5-bottom",
+        "file": "flower5-bottom.webp",
+        "path": "/images/themes/glass-garden-green/flower5-bottom.webp",
+        "format": "WEBP",
+        "width": 2821,
+        "height": 1526,
+        "aspectRatio": 1.849,
+        "size": 441638,
+        "md5": "5a8a1862838a46e063d50130fb7c4cb1",
+        "type": "decoration",
+        "usage": "Decorative element (flower5-bottom) for glass-garden-green"
+      },
+      {
+        "id": "welcome",
+        "file": "welcome.webp",
+        "path": "/images/themes/glass-garden-green/welcome.webp",
+        "format": "WEBP",
+        "width": 1726,
+        "height": 2104,
+        "aspectRatio": 0.82,
+        "size": 294322,
+        "md5": "fc789f4fb1a60f6d5e50ba35b01edb0f",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-green"
       }
     ]
   },
   "glass-garden-pink": {
     "themeId": "glass-garden-pink",
     "folder": "glass-garden-pink",
-    "assetCount": 3,
-    "totalBytes": 469600,
+    "assetCount": 10,
+    "totalBytes": 1249360,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/glass-garden-pink/cake.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 88050,
+        "md5": "93939d2d67e9a3825bf70fb64e27db5e",
+        "type": "divider",
+        "usage": "Decorative divider line for glass-garden-pink"
+      },
+      {
+        "id": "calendar-heart",
+        "file": "calendar-heart.webp",
+        "path": "/images/themes/glass-garden-pink/calendar-heart.webp",
+        "format": "WEBP",
+        "width": 93,
+        "height": 83,
+        "aspectRatio": 1.12,
+        "size": 1980,
+        "md5": "f639431d518055ec937e92cf8ceefbc5",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-pink"
+      },
+      {
+        "id": "coming",
+        "file": "coming.webp",
+        "path": "/images/themes/glass-garden-pink/coming.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 116542,
+        "md5": "a7a067b95df8f8154572a2558877874d",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-pink"
+      },
       {
         "id": "floral-background",
         "file": "floral-background.webp",
@@ -1290,6 +3136,45 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Decorative element (flower1-decoration) for glass-garden-pink"
       },
       {
+        "id": "flower2-decoration",
+        "file": "flower2-decoration.webp",
+        "path": "/images/themes/glass-garden-pink/flower2-decoration.webp",
+        "format": "WEBP",
+        "width": 1024,
+        "height": 1384,
+        "aspectRatio": 0.74,
+        "size": 135854,
+        "md5": "7467eaa4dfe91277c11bbf8a7a095d83",
+        "type": "decoration",
+        "usage": "Decorative element (flower2-decoration) for glass-garden-pink"
+      },
+      {
+        "id": "flower4-decoration",
+        "file": "flower4-decoration.webp",
+        "path": "/images/themes/glass-garden-pink/flower4-decoration.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 137746,
+        "md5": "98fb8dcc243fb7e98335f94b7191b476",
+        "type": "decoration",
+        "usage": "Decorative element (flower4-decoration) for glass-garden-pink"
+      },
+      {
+        "id": "flower5-bottom",
+        "file": "flower5-bottom.webp",
+        "path": "/images/themes/glass-garden-pink/flower5-bottom.webp",
+        "format": "WEBP",
+        "width": 1536,
+        "height": 686,
+        "aspectRatio": 2.239,
+        "size": 172614,
+        "md5": "33804377a9d65fd94b8d1ca5d001ee71",
+        "type": "decoration",
+        "usage": "Decorative element (flower5-bottom) for glass-garden-pink"
+      },
+      {
         "id": "leaf1-bloom",
         "file": "leaf1-bloom.webp",
         "path": "/images/themes/glass-garden-pink/leaf1-bloom.webp",
@@ -1301,15 +3186,67 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "6bf81adabf1fa0f0283f6de33611c986",
         "type": "decoration",
         "usage": "Decorative element (leaf1-bloom) for glass-garden-pink"
+      },
+      {
+        "id": "water",
+        "file": "water.webp",
+        "path": "/images/themes/glass-garden-pink/water.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 126974,
+        "md5": "10a7a0d7133c7f39f3d32a90a64ccdcf",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-pink"
       }
     ]
   },
   "hoa-dai-pink": {
     "themeId": "hoa-dai-pink",
     "folder": "hoa-dai-pink",
-    "assetCount": 1,
-    "totalBytes": 250950,
+    "assetCount": 9,
+    "totalBytes": 976854,
     "assets": [
+      {
+        "id": "bird",
+        "file": "bird.webp",
+        "path": "/images/themes/hoa-dai-pink/bird.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 400,
+        "aspectRatio": 1.0,
+        "size": 38512,
+        "md5": "5e617e9846b3ac950b6baa20d1370be2",
+        "type": "decoration",
+        "usage": "Ornamental artwork for hoa-dai-pink"
+      },
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/hoa-dai-pink/cake.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 400,
+        "aspectRatio": 1.0,
+        "size": 42058,
+        "md5": "0f2acadf0274920a87f420f69007c291",
+        "type": "divider",
+        "usage": "Decorative divider line for hoa-dai-pink"
+      },
+      {
+        "id": "flower-decoration",
+        "file": "flower-decoration.webp",
+        "path": "/images/themes/hoa-dai-pink/flower-decoration.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 376,
+        "aspectRatio": 1.064,
+        "size": 34488,
+        "md5": "51e1e5c54faf52af3070629b94dfbe02",
+        "type": "decoration",
+        "usage": "Decorative element (flower-decoration) for hoa-dai-pink"
+      },
       {
         "id": "flower2-decoration",
         "file": "flower2-decoration.webp",
@@ -1322,15 +3259,106 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "eb0ea8d74181a3eb644fc3ab5b82c5f3",
         "type": "decoration",
         "usage": "Decorative element (flower2-decoration) for hoa-dai-pink"
+      },
+      {
+        "id": "flower3-decoration",
+        "file": "flower3-decoration.webp",
+        "path": "/images/themes/hoa-dai-pink/flower3-decoration.webp",
+        "format": "WEBP",
+        "width": 750,
+        "height": 1000,
+        "aspectRatio": 0.75,
+        "size": 144648,
+        "md5": "d15df904dcd5d38623d77e3741fdf482",
+        "type": "decoration",
+        "usage": "Decorative element (flower3-decoration) for hoa-dai-pink"
+      },
+      {
+        "id": "flower4-decoration",
+        "file": "flower4-decoration.webp",
+        "path": "/images/themes/hoa-dai-pink/flower4-decoration.webp",
+        "format": "WEBP",
+        "width": 600,
+        "height": 900,
+        "aspectRatio": 0.667,
+        "size": 101948,
+        "md5": "cdeac9cd0529f90069bb93990f4cd285",
+        "type": "decoration",
+        "usage": "Decorative element (flower4-decoration) for hoa-dai-pink"
+      },
+      {
+        "id": "flower5-decoration",
+        "file": "flower5-decoration.webp",
+        "path": "/images/themes/hoa-dai-pink/flower5-decoration.webp",
+        "format": "WEBP",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": 1.333,
+        "size": 309248,
+        "md5": "32a3c244c6cb4b45f38b9c985b72d8e6",
+        "type": "decoration",
+        "usage": "Decorative element (flower5-decoration) for hoa-dai-pink"
+      },
+      {
+        "id": "letter",
+        "file": "letter.webp",
+        "path": "/images/themes/hoa-dai-pink/letter.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 400,
+        "aspectRatio": 1.0,
+        "size": 28582,
+        "md5": "9ed50e43a1e838ffaad6d001c287ac3e",
+        "type": "decoration",
+        "usage": "Ornamental artwork for hoa-dai-pink"
+      },
+      {
+        "id": "water-flowers",
+        "file": "water-flowers.webp",
+        "path": "/images/themes/hoa-dai-pink/water-flowers.webp",
+        "format": "WEBP",
+        "width": 591,
+        "height": 2660,
+        "aspectRatio": 0.222,
+        "size": 26420,
+        "md5": "a4ef0db34369f62a3948eeea690bbf42",
+        "type": "decoration",
+        "usage": "Decorative element (water-flowers) for hoa-dai-pink"
       }
     ]
   },
   "hoa-kho-orange": {
     "themeId": "hoa-kho-orange",
     "folder": "hoa-kho-orange",
-    "assetCount": 3,
-    "totalBytes": 849982,
+    "assetCount": 8,
+    "totalBytes": 996994,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/hoa-kho-orange/cake.webp",
+        "format": "WEBP",
+        "width": 225,
+        "height": 320,
+        "aspectRatio": 0.703,
+        "size": 35236,
+        "md5": "52133ea3d781b7a2b096e69854ab5450",
+        "type": "divider",
+        "usage": "Decorative divider line for hoa-kho-orange"
+      },
+      {
+        "id": "calendar-heart",
+        "file": "calendar-heart.svg",
+        "path": "/images/themes/hoa-kho-orange/calendar-heart.svg",
+        "format": "SVG",
+        "width": 21,
+        "height": 19,
+        "aspectRatio": 1.105,
+        "size": 546,
+        "md5": "3331d19cfca1de8e07497c5300eca005",
+        "type": "decoration",
+        "usage": "Ornamental artwork for hoa-kho-orange"
+      },
       {
         "id": "flower2",
         "file": "flower2.webp",
@@ -1369,15 +3397,67 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "670b2f05fbfbc83ffb920ce5b47f2e27",
         "type": "decoration",
         "usage": "Decorative element (flower4) for hoa-kho-orange"
+      },
+      {
+        "id": "paper",
+        "file": "paper.webp",
+        "path": "/images/themes/hoa-kho-orange/paper.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 21792,
+        "md5": "07ae44b740d499390a1424fba2d3d984",
+        "type": "background",
+        "usage": "Background paper or ambient texture for hoa-kho-orange"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/hoa-kho-orange/ring.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 320,
+        "aspectRatio": 1.0,
+        "size": 45540,
+        "md5": "575baf11806b9b6ecb2e58531187fc9c",
+        "type": "decoration",
+        "usage": "Ornamental artwork for hoa-kho-orange"
+      },
+      {
+        "id": "water",
+        "file": "water.webp",
+        "path": "/images/themes/hoa-kho-orange/water.webp",
+        "format": "WEBP",
+        "width": 274,
+        "height": 320,
+        "aspectRatio": 0.856,
+        "size": 43898,
+        "md5": "e4774823119ddeea83da13111a90d42a",
+        "type": "decoration",
+        "usage": "Ornamental artwork for hoa-kho-orange"
       }
     ]
   },
   "hoa-kho-v2-blue": {
     "themeId": "hoa-kho-v2-blue",
     "folder": "hoa-kho-v2-blue",
-    "assetCount": 2,
-    "totalBytes": 616192,
+    "assetCount": 11,
+    "totalBytes": 2221977,
     "assets": [
+      {
+        "id": "bird",
+        "file": "bird.webp",
+        "path": "/images/themes/hoa-kho-v2-blue/bird.webp",
+        "format": "WEBP",
+        "width": 160,
+        "height": 160,
+        "aspectRatio": 1.0,
+        "size": 14202,
+        "md5": "a57ea57496e6fd86635cf4687436d24c",
+        "type": "decoration",
+        "usage": "Ornamental artwork for hoa-kho-v2-blue"
+      },
       {
         "id": "butterfly",
         "file": "butterfly.webp",
@@ -1392,6 +3472,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Decorative element (butterfly) for hoa-kho-v2-blue"
       },
       {
+        "id": "calendar-heart",
+        "file": "calendar-heart.svg",
+        "path": "/images/themes/hoa-kho-v2-blue/calendar-heart.svg",
+        "format": "SVG",
+        "width": 21,
+        "height": 19,
+        "aspectRatio": 1.105,
+        "size": 541,
+        "md5": "ab329f4f8a33a821d3d2c7d30c67a2a2",
+        "type": "decoration",
+        "usage": "Ornamental artwork for hoa-kho-v2-blue"
+      },
+      {
         "id": "flower",
         "file": "flower.webp",
         "path": "/images/themes/hoa-kho-v2-blue/flower.webp",
@@ -1403,15 +3496,132 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "348d5fce80e8ecef835ab1d03da03935",
         "type": "decoration",
         "usage": "Decorative element (flower) for hoa-kho-v2-blue"
+      },
+      {
+        "id": "flower3",
+        "file": "flower3.webp",
+        "path": "/images/themes/hoa-kho-v2-blue/flower3.webp",
+        "format": "WEBP",
+        "width": 760,
+        "height": 1013,
+        "aspectRatio": 0.75,
+        "size": 267004,
+        "md5": "5a229a8e4d8693b63cf5618f74d47dea",
+        "type": "decoration",
+        "usage": "Decorative element (flower3) for hoa-kho-v2-blue"
+      },
+      {
+        "id": "flower4",
+        "file": "flower4.webp",
+        "path": "/images/themes/hoa-kho-v2-blue/flower4.webp",
+        "format": "WEBP",
+        "width": 760,
+        "height": 1140,
+        "aspectRatio": 0.667,
+        "size": 200276,
+        "md5": "5ef9b01acb39f103fd118fb599ec5fa9",
+        "type": "decoration",
+        "usage": "Decorative element (flower4) for hoa-kho-v2-blue"
+      },
+      {
+        "id": "flower5",
+        "file": "flower5.webp",
+        "path": "/images/themes/hoa-kho-v2-blue/flower5.webp",
+        "format": "WEBP",
+        "width": 520,
+        "height": 1560,
+        "aspectRatio": 0.333,
+        "size": 306770,
+        "md5": "11de9d2e288c6cc69dec827215f97a99",
+        "type": "decoration",
+        "usage": "Decorative element (flower5) for hoa-kho-v2-blue"
+      },
+      {
+        "id": "flower6",
+        "file": "flower6.webp",
+        "path": "/images/themes/hoa-kho-v2-blue/flower6.webp",
+        "format": "WEBP",
+        "width": 1024,
+        "height": 1536,
+        "aspectRatio": 0.667,
+        "size": 363602,
+        "md5": "8d680ae7b25d5cec7a6c56d3410c9e1f",
+        "type": "decoration",
+        "usage": "Decorative element (flower6) for hoa-kho-v2-blue"
+      },
+      {
+        "id": "flower7",
+        "file": "flower7.webp",
+        "path": "/images/themes/hoa-kho-v2-blue/flower7.webp",
+        "format": "WEBP",
+        "width": 1500,
+        "height": 500,
+        "aspectRatio": 3.0,
+        "size": 423896,
+        "md5": "5a5adeb1dacac5fb9d5aa1d914b7c97c",
+        "type": "decoration",
+        "usage": "Decorative element (flower7) for hoa-kho-v2-blue"
+      },
+      {
+        "id": "medallion-flower",
+        "file": "medallion-flower.webp",
+        "path": "/images/themes/hoa-kho-v2-blue/medallion-flower.webp",
+        "format": "WEBP",
+        "width": 160,
+        "height": 160,
+        "aspectRatio": 1.0,
+        "size": 14986,
+        "md5": "8863935f4f19e205c9b1ee59bfab2ec0",
+        "type": "decoration",
+        "usage": "Decorative element (medallion-flower) for hoa-kho-v2-blue"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/hoa-kho-v2-blue/ring.webp",
+        "format": "WEBP",
+        "width": 160,
+        "height": 160,
+        "aspectRatio": 1.0,
+        "size": 14508,
+        "md5": "c02763a2a5b518ad84ee30a48d91e6f8",
+        "type": "decoration",
+        "usage": "Ornamental artwork for hoa-kho-v2-blue"
       }
     ]
   },
   "lien-hoa-pink": {
     "themeId": "lien-hoa-pink",
     "folder": "lien-hoa-pink",
-    "assetCount": 4,
-    "totalBytes": 477146,
+    "assetCount": 13,
+    "totalBytes": 1838920,
     "assets": [
+      {
+        "id": "calendar-frame",
+        "file": "calendar-frame.webp",
+        "path": "/images/themes/lien-hoa-pink/calendar-frame.webp",
+        "format": "WEBP",
+        "width": 1374,
+        "height": 1145,
+        "aspectRatio": 1.2,
+        "size": 81184,
+        "md5": "128239dc522b8ce16a535d8680600a81",
+        "type": "frame",
+        "usage": "Framing border or arch for lien-hoa-pink"
+      },
+      {
+        "id": "flower-bottom",
+        "file": "flower-bottom.webp",
+        "path": "/images/themes/lien-hoa-pink/flower-bottom.webp",
+        "format": "WEBP",
+        "width": 1448,
+        "height": 1086,
+        "aspectRatio": 1.333,
+        "size": 225330,
+        "md5": "4ec9092d1d6a204e3ef4991be8ed326b",
+        "type": "decoration",
+        "usage": "Decorative element (flower-bottom) for lien-hoa-pink"
+      },
       {
         "id": "flower2",
         "file": "flower2.webp",
@@ -1439,6 +3649,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Decorative element (flower3) for lien-hoa-pink"
       },
       {
+        "id": "flower4",
+        "file": "flower4.webp",
+        "path": "/images/themes/lien-hoa-pink/flower4.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 108878,
+        "md5": "425734e8262434b70f96acde14dee03a",
+        "type": "decoration",
+        "usage": "Decorative element (flower4) for lien-hoa-pink"
+      },
+      {
         "id": "framegold1",
         "file": "framegold1.webp",
         "path": "/images/themes/lien-hoa-pink/framegold1.webp",
@@ -1452,6 +3675,32 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Framing border or arch for lien-hoa-pink"
       },
       {
+        "id": "framegold2",
+        "file": "framegold2.webp",
+        "path": "/images/themes/lien-hoa-pink/framegold2.webp",
+        "format": "WEBP",
+        "width": 2000,
+        "height": 3000,
+        "aspectRatio": 0.667,
+        "size": 60136,
+        "md5": "a780744ffb9fd61b86e6b48451fc427b",
+        "type": "frame",
+        "usage": "Framing border or arch for lien-hoa-pink"
+      },
+      {
+        "id": "golden-line",
+        "file": "golden-line.webp",
+        "path": "/images/themes/lien-hoa-pink/golden-line.webp",
+        "format": "WEBP",
+        "width": 2172,
+        "height": 724,
+        "aspectRatio": 3.0,
+        "size": 55978,
+        "md5": "9973f8dc0e25d985b6143c6290c60668",
+        "type": "divider",
+        "usage": "Decorative divider line for lien-hoa-pink"
+      },
+      {
         "id": "hoa-sen-bg",
         "file": "hoa-sen-bg.webp",
         "path": "/images/themes/lien-hoa-pink/hoa-sen-bg.webp",
@@ -1463,15 +3712,80 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "372df3461c1561c90a81decbbea6fe56",
         "type": "background",
         "usage": "Background paper or ambient texture for lien-hoa-pink"
+      },
+      {
+        "id": "leaf",
+        "file": "leaf.webp",
+        "path": "/images/themes/lien-hoa-pink/leaf.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 228956,
+        "md5": "484ad0097bf500e4c3c7f13f3c322c04",
+        "type": "decoration",
+        "usage": "Decorative element (leaf) for lien-hoa-pink"
+      },
+      {
+        "id": "medallion-alcohol",
+        "file": "medallion-alcohol.webp",
+        "path": "/images/themes/lien-hoa-pink/medallion-alcohol.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 291052,
+        "md5": "46e916ba997aff9dcdca90b89b292ad7",
+        "type": "decoration",
+        "usage": "Ornamental artwork for lien-hoa-pink"
+      },
+      {
+        "id": "medallion-guest",
+        "file": "medallion-guest.webp",
+        "path": "/images/themes/lien-hoa-pink/medallion-guest.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 140114,
+        "md5": "b9bf69eae8d3560390ca30c88fde3bec",
+        "type": "decoration",
+        "usage": "Ornamental artwork for lien-hoa-pink"
+      },
+      {
+        "id": "medallion-opening",
+        "file": "medallion-opening.webp",
+        "path": "/images/themes/lien-hoa-pink/medallion-opening.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 170146,
+        "md5": "70372490931fb70b73cd12d561f07011",
+        "type": "decoration",
+        "usage": "Ornamental artwork for lien-hoa-pink"
       }
     ]
   },
   "lien-hoa-v2-green": {
     "themeId": "lien-hoa-v2-green",
     "folder": "lien-hoa-v2-green",
-    "assetCount": 3,
-    "totalBytes": 732522,
+    "assetCount": 10,
+    "totalBytes": 1476796,
     "assets": [
+      {
+        "id": "flower1",
+        "file": "flower1.webp",
+        "path": "/images/themes/lien-hoa-v2-green/flower1.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 900,
+        "aspectRatio": 1.0,
+        "size": 175462,
+        "md5": "ccae1a3aaf1ce12302d752a2ca083fb5",
+        "type": "decoration",
+        "usage": "Decorative element (flower1) for lien-hoa-v2-green"
+      },
       {
         "id": "flower10",
         "file": "flower10.webp",
@@ -1499,6 +3813,32 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Decorative element (flower3) for lien-hoa-v2-green"
       },
       {
+        "id": "flower4-bottom",
+        "file": "flower4-bottom.webp",
+        "path": "/images/themes/lien-hoa-v2-green/flower4-bottom.webp",
+        "format": "WEBP",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": 1.333,
+        "size": 232116,
+        "md5": "6df096b3150717e05ba4047f30cafd98",
+        "type": "decoration",
+        "usage": "Decorative element (flower4-bottom) for lien-hoa-v2-green"
+      },
+      {
+        "id": "flower5",
+        "file": "flower5.webp",
+        "path": "/images/themes/lien-hoa-v2-green/flower5.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 900,
+        "aspectRatio": 1.0,
+        "size": 144254,
+        "md5": "e2017b6948a73bd9cb6c1533a695c8b3",
+        "type": "decoration",
+        "usage": "Decorative element (flower5) for lien-hoa-v2-green"
+      },
+      {
         "id": "flower6",
         "file": "flower6.webp",
         "path": "/images/themes/lien-hoa-v2-green/flower6.webp",
@@ -1510,6 +3850,58 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "713e9b30ce7211195dc1b404a51090c4",
         "type": "decoration",
         "usage": "Decorative element (flower6) for lien-hoa-v2-green"
+      },
+      {
+        "id": "medallion-cake",
+        "file": "medallion-cake.webp",
+        "path": "/images/themes/lien-hoa-v2-green/medallion-cake.webp",
+        "format": "WEBP",
+        "width": 300,
+        "height": 392,
+        "aspectRatio": 0.765,
+        "size": 43938,
+        "md5": "33dff199f03ddc0638e67f5a8f1b6498",
+        "type": "divider",
+        "usage": "Decorative divider line for lien-hoa-v2-green"
+      },
+      {
+        "id": "medallion-drink",
+        "file": "medallion-drink.webp",
+        "path": "/images/themes/lien-hoa-v2-green/medallion-drink.webp",
+        "format": "WEBP",
+        "width": 300,
+        "height": 300,
+        "aspectRatio": 1.0,
+        "size": 34678,
+        "md5": "b1db8235ddaaa6a2e2f547b7d212d473",
+        "type": "decoration",
+        "usage": "Ornamental artwork for lien-hoa-v2-green"
+      },
+      {
+        "id": "medallion-ring",
+        "file": "medallion-ring.webp",
+        "path": "/images/themes/lien-hoa-v2-green/medallion-ring.webp",
+        "format": "WEBP",
+        "width": 300,
+        "height": 300,
+        "aspectRatio": 1.0,
+        "size": 29944,
+        "md5": "71f016cc1ccb31e3d845fa18e0a78a90",
+        "type": "decoration",
+        "usage": "Ornamental artwork for lien-hoa-v2-green"
+      },
+      {
+        "id": "paper-texture",
+        "file": "paper-texture.webp",
+        "path": "/images/themes/lien-hoa-v2-green/paper-texture.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 1350,
+        "aspectRatio": 0.667,
+        "size": 83882,
+        "md5": "c1fe9be6e6a26d6451b65b36c9cbca93",
+        "type": "background",
+        "usage": "Background paper or ambient texture for lien-hoa-v2-green"
       }
     ]
   },
@@ -1701,8 +4093,8 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
   "longphung-v4-red": {
     "themeId": "longphung-v4-red",
     "folder": "longphung-v4-red",
-    "assetCount": 16,
-    "totalBytes": 1901444,
+    "assetCount": 18,
+    "totalBytes": 1902672,
     "assets": [
       {
         "id": "bg-texture",
@@ -1848,6 +4240,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Framing border or arch for longphung-v4-red"
       },
       {
+        "id": "heart",
+        "file": "heart.svg",
+        "path": "/images/themes/longphung-v4-red/heart.svg",
+        "format": "SVG",
+        "width": 21,
+        "height": 19,
+        "aspectRatio": 1.105,
+        "size": 546,
+        "md5": "506622b0e339e862923c371ff145c52d",
+        "type": "decoration",
+        "usage": "Ornamental artwork for longphung-v4-red"
+      },
+      {
         "id": "home",
         "file": "home.webp",
         "path": "/images/themes/longphung-v4-red/home.webp",
@@ -1911,15 +4316,67 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "b68dc1b14587a4be494e2dc5a9aec891",
         "type": "background",
         "usage": "Background paper or ambient texture for longphung-v4-red"
+      },
+      {
+        "id": "title-frame",
+        "file": "title-frame.svg",
+        "path": "/images/themes/longphung-v4-red/title-frame.svg",
+        "format": "SVG",
+        "width": 314,
+        "height": 53,
+        "aspectRatio": 5.925,
+        "size": 682,
+        "md5": "4b49393f1d26f19788528f455c8d94fc",
+        "type": "frame",
+        "usage": "Framing border or arch for longphung-v4-red"
       }
     ]
   },
   "love-art": {
     "themeId": "love-art",
     "folder": "love-art",
-    "assetCount": 4,
-    "totalBytes": 47062,
+    "assetCount": 13,
+    "totalBytes": 217690,
     "assets": [
+      {
+        "id": "3_tim",
+        "file": "3 tim.webp",
+        "path": "/images/themes/love-art/3 tim.webp",
+        "format": "WEBP",
+        "width": 140,
+        "height": 131,
+        "aspectRatio": 1.069,
+        "size": 4960,
+        "md5": "6b00a38ca5000f83e45f27b89fe342a8",
+        "type": "decoration",
+        "usage": "Ornamental artwork for love-art"
+      },
+      {
+        "id": "bride_frame",
+        "file": "bride frame.webp",
+        "path": "/images/themes/love-art/bride frame.webp",
+        "format": "WEBP",
+        "width": 597,
+        "height": 746,
+        "aspectRatio": 0.8,
+        "size": 21170,
+        "md5": "ead6076edf990ed0bf9be3feeba4c5d3",
+        "type": "frame",
+        "usage": "Framing border or arch for love-art"
+      },
+      {
+        "id": "dau_ly",
+        "file": "dau ly.webp",
+        "path": "/images/themes/love-art/dau ly.webp",
+        "format": "WEBP",
+        "width": 215,
+        "height": 237,
+        "aspectRatio": 0.907,
+        "size": 19624,
+        "md5": "7bfe56aba10ff2f00bc8abb057f73361",
+        "type": "decoration",
+        "usage": "Ornamental artwork for love-art"
+      },
       {
         "id": "dau",
         "file": "dau.webp",
@@ -1932,6 +4389,32 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "3413c03172727626a07ba018a95a46b9",
         "type": "decoration",
         "usage": "Ornamental artwork for love-art"
+      },
+      {
+        "id": "groom_frame",
+        "file": "groom frame.webp",
+        "path": "/images/themes/love-art/groom frame.webp",
+        "format": "WEBP",
+        "width": 607,
+        "height": 758,
+        "aspectRatio": 0.801,
+        "size": 28134,
+        "md5": "95eac485d6e8ae3eb79b85c9ce54c508",
+        "type": "frame",
+        "usage": "Framing border or arch for love-art"
+      },
+      {
+        "id": "hoa_tim",
+        "file": "hoa tim.webp",
+        "path": "/images/themes/love-art/hoa tim.webp",
+        "format": "WEBP",
+        "width": 198,
+        "height": 86,
+        "aspectRatio": 2.302,
+        "size": 6438,
+        "md5": "60b33211175002e6fc797377ef91d475",
+        "type": "decoration",
+        "usage": "Decorative element (hoa tim) for love-art"
       },
       {
         "id": "hy",
@@ -1947,6 +4430,45 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Ornamental artwork for love-art"
       },
       {
+        "id": "lich",
+        "file": "lich.webp",
+        "path": "/images/themes/love-art/lich.webp",
+        "format": "WEBP",
+        "width": 863,
+        "height": 907,
+        "aspectRatio": 0.951,
+        "size": 48956,
+        "md5": "f08e16b6fbd070f2b5cc43ce94cce818",
+        "type": "decoration",
+        "usage": "Ornamental artwork for love-art"
+      },
+      {
+        "id": "love",
+        "file": "love.webp",
+        "path": "/images/themes/love-art/love.webp",
+        "format": "WEBP",
+        "width": 334,
+        "height": 137,
+        "aspectRatio": 2.438,
+        "size": 12784,
+        "md5": "f2e1b1925c5fe985c0db863f9c3719a4",
+        "type": "decoration",
+        "usage": "Ornamental artwork for love-art"
+      },
+      {
+        "id": "re_ly",
+        "file": "re ly.webp",
+        "path": "/images/themes/love-art/re ly.webp",
+        "format": "WEBP",
+        "width": 180,
+        "height": 225,
+        "aspectRatio": 0.8,
+        "size": 14854,
+        "md5": "ae87bc0233641e1772586b927b8e8d6e",
+        "type": "decoration",
+        "usage": "Ornamental artwork for love-art"
+      },
+      {
         "id": "re",
         "file": "re.webp",
         "path": "/images/themes/love-art/re.webp",
@@ -1956,6 +4478,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "aspectRatio": 1.936,
         "size": 10078,
         "md5": "059b983718eab51ed0a3da3cf40cd758",
+        "type": "decoration",
+        "usage": "Ornamental artwork for love-art"
+      },
+      {
+        "id": "thanks",
+        "file": "thanks.webp",
+        "path": "/images/themes/love-art/thanks.webp",
+        "format": "WEBP",
+        "width": 411,
+        "height": 154,
+        "aspectRatio": 2.669,
+        "size": 13708,
+        "md5": "b91e53ee2424cbf10b1d820c345c099a",
         "type": "decoration",
         "usage": "Ornamental artwork for love-art"
       },
@@ -1977,9 +4512,22 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
   "minimalism-brown": {
     "themeId": "minimalism-brown",
     "folder": "minimalism-brown",
-    "assetCount": 6,
-    "totalBytes": 1128314,
+    "assetCount": 10,
+    "totalBytes": 1752188,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/minimalism-brown/cake.webp",
+        "format": "WEBP",
+        "width": 781,
+        "height": 1129,
+        "aspectRatio": 0.692,
+        "size": 104620,
+        "md5": "a3ef755061caf5ca4a9c5ef62760a624",
+        "type": "divider",
+        "usage": "Decorative divider line for minimalism-brown"
+      },
       {
         "id": "couple",
         "file": "couple.webp",
@@ -2020,6 +4568,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Framing border or arch for minimalism-brown"
       },
       {
+        "id": "gate",
+        "file": "gate.webp",
+        "path": "/images/themes/minimalism-brown/gate.webp",
+        "format": "WEBP",
+        "width": 979,
+        "height": 1084,
+        "aspectRatio": 0.903,
+        "size": 246126,
+        "md5": "d351e488e520c13299edfb7adff2fcc7",
+        "type": "decoration",
+        "usage": "Ornamental artwork for minimalism-brown"
+      },
+      {
         "id": "house-background",
         "file": "house-background.webp",
         "path": "/images/themes/minimalism-brown/house-background.webp",
@@ -2046,6 +4607,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Background paper or ambient texture for minimalism-brown"
       },
       {
+        "id": "paper-note",
+        "file": "paper-note.webp",
+        "path": "/images/themes/minimalism-brown/paper-note.webp",
+        "format": "WEBP",
+        "width": 1405,
+        "height": 1033,
+        "aspectRatio": 1.36,
+        "size": 94206,
+        "md5": "853562a1174f25816c0f892e7edf15e9",
+        "type": "background",
+        "usage": "Background paper or ambient texture for minimalism-brown"
+      },
+      {
         "id": "paper",
         "file": "paper.webp",
         "path": "/images/themes/minimalism-brown/paper.webp",
@@ -2057,6 +4631,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "ca2d285c30e0d374bea87efd9bae1f66",
         "type": "background",
         "usage": "Background paper or ambient texture for minimalism-brown"
+      },
+      {
+        "id": "water",
+        "file": "water.webp",
+        "path": "/images/themes/minimalism-brown/water.webp",
+        "format": "WEBP",
+        "width": 736,
+        "height": 1054,
+        "aspectRatio": 0.698,
+        "size": 178922,
+        "md5": "ea1b5df712fab7ca7842e5b4f524845d",
+        "type": "decoration",
+        "usage": "Ornamental artwork for minimalism-brown"
       }
     ]
   },
@@ -2508,9 +5095,35 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
   "minimalism-dark-red": {
     "themeId": "minimalism-dark-red",
     "folder": "minimalism-dark-red",
-    "assetCount": 5,
-    "totalBytes": 904416,
+    "assetCount": 9,
+    "totalBytes": 1514656,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/minimalism-dark-red/cake.webp",
+        "format": "WEBP",
+        "width": 790,
+        "height": 1134,
+        "aspectRatio": 0.697,
+        "size": 149056,
+        "md5": "82d155f7a2b94265d32bb7ce11289d85",
+        "type": "divider",
+        "usage": "Decorative divider line for minimalism-dark-red"
+      },
+      {
+        "id": "camera",
+        "file": "camera.webp",
+        "path": "/images/themes/minimalism-dark-red/camera.webp",
+        "format": "WEBP",
+        "width": 981,
+        "height": 1041,
+        "aspectRatio": 0.942,
+        "size": 197190,
+        "md5": "8bc795a585655c95f3290249a60cbe26",
+        "type": "decoration",
+        "usage": "Ornamental artwork for minimalism-dark-red"
+      },
       {
         "id": "castle-background",
         "file": "castle-background.webp",
@@ -2523,6 +5136,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "5ddf43ce44557a8d06c3f7dc29ad436e",
         "type": "background",
         "usage": "Background paper or ambient texture for minimalism-dark-red"
+      },
+      {
+        "id": "cook",
+        "file": "cook.webp",
+        "path": "/images/themes/minimalism-dark-red/cook.webp",
+        "format": "WEBP",
+        "width": 957,
+        "height": 1117,
+        "aspectRatio": 0.857,
+        "size": 161372,
+        "md5": "351575861bc96df793c15496ea731c43",
+        "type": "decoration",
+        "usage": "Ornamental artwork for minimalism-dark-red"
       },
       {
         "id": "envelope-background",
@@ -2573,6 +5199,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "aspectRatio": 0.666,
         "size": 141098,
         "md5": "ca2d285c30e0d374bea87efd9bae1f66",
+        "type": "background",
+        "usage": "Background paper or ambient texture for minimalism-dark-red"
+      },
+      {
+        "id": "papernote-background",
+        "file": "papernote-background.webp",
+        "path": "/images/themes/minimalism-dark-red/papernote-background.webp",
+        "format": "WEBP",
+        "width": 1513,
+        "height": 1378,
+        "aspectRatio": 1.098,
+        "size": 102622,
+        "md5": "b69da1c47c337a3301aa3e0aaadddc86",
         "type": "background",
         "usage": "Background paper or ambient texture for minimalism-dark-red"
       }
@@ -2985,8 +5624,8 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
   "nhat-binh-red": {
     "themeId": "nhat-binh-red",
     "folder": "nhat-binh-red",
-    "assetCount": 7,
-    "totalBytes": 2226554,
+    "assetCount": 9,
+    "totalBytes": 2540842,
     "assets": [
       {
         "id": "chu-hy",
@@ -3000,6 +5639,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "4e7d029636ed094d9aa686b2ef2da2d8",
         "type": "icon",
         "usage": "Icon or cultural symbol (囍) for nhat-binh-red"
+      },
+      {
+        "id": "corner",
+        "file": "corner.webp",
+        "path": "/images/themes/nhat-binh-red/corner.webp",
+        "format": "WEBP",
+        "width": 854,
+        "height": 854,
+        "aspectRatio": 1.0,
+        "size": 4596,
+        "md5": "8af9b3dda824da116eaf4b4fad8c3a12",
+        "type": "decoration",
+        "usage": "Ornamental artwork for nhat-binh-red"
       },
       {
         "id": "dau-re",
@@ -3054,6 +5706,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Ornamental artwork for nhat-binh-red"
       },
       {
+        "id": "may",
+        "file": "may.webp",
+        "path": "/images/themes/nhat-binh-red/may.webp",
+        "format": "WEBP",
+        "width": 2560,
+        "height": 1311,
+        "aspectRatio": 1.953,
+        "size": 309692,
+        "md5": "d942d97493392e1b25007568dbbac2f5",
+        "type": "decoration",
+        "usage": "Ornamental artwork for nhat-binh-red"
+      },
+      {
         "id": "paper",
         "file": "paper.webp",
         "path": "/images/themes/nhat-binh-red/paper.webp",
@@ -3084,9 +5749,35 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
   "porcelain-blue": {
     "themeId": "porcelain-blue",
     "folder": "porcelain-blue",
-    "assetCount": 1,
-    "totalBytes": 65948,
+    "assetCount": 5,
+    "totalBytes": 348850,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/porcelain-blue/cake.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 417,
+        "aspectRatio": 0.959,
+        "size": 28022,
+        "md5": "30a3882cc21c78430fc18d7ec4192eb1",
+        "type": "divider",
+        "usage": "Decorative divider line for porcelain-blue"
+      },
+      {
+        "id": "floral-tile",
+        "file": "floral-tile.webp",
+        "path": "/images/themes/porcelain-blue/floral-tile.webp",
+        "format": "WEBP",
+        "width": 882,
+        "height": 882,
+        "aspectRatio": 1.0,
+        "size": 195988,
+        "md5": "b681558950738729062d01c852261875",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-blue"
+      },
       {
         "id": "frame-decoration",
         "file": "frame-decoration.webp",
@@ -3099,15 +5790,80 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "049f27a42141976ea5e0ef198c67b181",
         "type": "frame",
         "usage": "Framing border or arch for porcelain-blue"
+      },
+      {
+        "id": "home",
+        "file": "home.webp",
+        "path": "/images/themes/porcelain-blue/home.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 397,
+        "aspectRatio": 1.008,
+        "size": 29226,
+        "md5": "1ad7b42eeedcec77558e821e7f4ba420",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-blue"
+      },
+      {
+        "id": "music",
+        "file": "music.webp",
+        "path": "/images/themes/porcelain-blue/music.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 407,
+        "aspectRatio": 0.983,
+        "size": 29666,
+        "md5": "6856fb7aaf73a1624288b6d5c06ed492",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-blue"
       }
     ]
   },
   "porcelain-brown": {
     "themeId": "porcelain-brown",
     "folder": "porcelain-brown",
-    "assetCount": 1,
-    "totalBytes": 21220,
+    "assetCount": 6,
+    "totalBytes": 380548,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/porcelain-brown/cake.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 417,
+        "aspectRatio": 0.959,
+        "size": 29768,
+        "md5": "f8a73b0484583a19bfa4ea2027d46794",
+        "type": "divider",
+        "usage": "Decorative divider line for porcelain-brown"
+      },
+      {
+        "id": "calendar-texture",
+        "file": "calendar-texture.webp",
+        "path": "/images/themes/porcelain-brown/calendar-texture.webp",
+        "format": "WEBP",
+        "width": 640,
+        "height": 960,
+        "aspectRatio": 0.667,
+        "size": 7472,
+        "md5": "7924c9812b31dba57530da84a4a90f72",
+        "type": "background",
+        "usage": "Background paper or ambient texture for porcelain-brown"
+      },
+      {
+        "id": "floral-tile",
+        "file": "floral-tile.webp",
+        "path": "/images/themes/porcelain-brown/floral-tile.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 260598,
+        "md5": "b337886feaacecebd6d12ee636c205dd",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-brown"
+      },
       {
         "id": "frame-background",
         "file": "frame-background.webp",
@@ -3120,15 +5876,67 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "049de32a197e56f80be50643a5b9d9ff",
         "type": "background",
         "usage": "Background paper or ambient texture for porcelain-brown"
+      },
+      {
+        "id": "home",
+        "file": "home.webp",
+        "path": "/images/themes/porcelain-brown/home.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 397,
+        "aspectRatio": 1.008,
+        "size": 30232,
+        "md5": "b9779f3836137de07c363bb7959ca00b",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-brown"
+      },
+      {
+        "id": "music",
+        "file": "music.webp",
+        "path": "/images/themes/porcelain-brown/music.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 407,
+        "aspectRatio": 0.983,
+        "size": 31258,
+        "md5": "39c84ff0bda20d04e0a2667d781c0721",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-brown"
       }
     ]
   },
   "porcelain-red": {
     "themeId": "porcelain-red",
     "folder": "porcelain-red",
-    "assetCount": 1,
-    "totalBytes": 43422,
+    "assetCount": 5,
+    "totalBytes": 365136,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/porcelain-red/cake.webp",
+        "format": "WEBP",
+        "width": 384,
+        "height": 400,
+        "aspectRatio": 0.96,
+        "size": 29734,
+        "md5": "620b28977a9c6e5b774cebe9181372b6",
+        "type": "divider",
+        "usage": "Decorative divider line for porcelain-red"
+      },
+      {
+        "id": "floral-tile",
+        "file": "floral-tile.webp",
+        "path": "/images/themes/porcelain-red/floral-tile.webp",
+        "format": "WEBP",
+        "width": 882,
+        "height": 882,
+        "aspectRatio": 1.0,
+        "size": 229588,
+        "md5": "0b081849c59d9f9be29cff018f116122",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-red"
+      },
       {
         "id": "frame-decoration",
         "file": "frame-decoration.webp",
@@ -3141,15 +5949,93 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "8fe622bbfe216a8d409f4b4969ff1071",
         "type": "frame",
         "usage": "Framing border or arch for porcelain-red"
+      },
+      {
+        "id": "home",
+        "file": "home.webp",
+        "path": "/images/themes/porcelain-red/home.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 397,
+        "aspectRatio": 1.008,
+        "size": 31252,
+        "md5": "34c4889e6686ebb1530f3d08ebdd2179",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-red"
+      },
+      {
+        "id": "music",
+        "file": "music.webp",
+        "path": "/images/themes/porcelain-red/music.webp",
+        "format": "WEBP",
+        "width": 393,
+        "height": 400,
+        "aspectRatio": 0.983,
+        "size": 31140,
+        "md5": "03641f55931d126e1f62d936755665ec",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-red"
       }
     ]
   },
   "porcelain-v2-green": {
     "themeId": "porcelain-v2-green",
     "folder": "porcelain-v2-green",
-    "assetCount": 1,
-    "totalBytes": 186322,
+    "assetCount": 6,
+    "totalBytes": 1059796,
     "assets": [
+      {
+        "id": "alcohol",
+        "file": "alcohol.webp",
+        "path": "/images/themes/porcelain-v2-green/alcohol.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 320,
+        "aspectRatio": 1.0,
+        "size": 52956,
+        "md5": "26323cb236909f4c1a8d92572b43b75c",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-green"
+      },
+      {
+        "id": "floral-tile",
+        "file": "floral-tile.webp",
+        "path": "/images/themes/porcelain-v2-green/floral-tile.webp",
+        "format": "WEBP",
+        "width": 1134,
+        "height": 2015,
+        "aspectRatio": 0.563,
+        "size": 469102,
+        "md5": "52bcdaee830080e7d886c7f22b0e4cfe",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-green"
+      },
+      {
+        "id": "flower",
+        "file": "flower.webp",
+        "path": "/images/themes/porcelain-v2-green/flower.webp",
+        "format": "WEBP",
+        "width": 554,
+        "height": 1141,
+        "aspectRatio": 0.486,
+        "size": 252724,
+        "md5": "9cf6a8eceace4ef89e605cc655154158",
+        "type": "decoration",
+        "usage": "Decorative element (flower) for porcelain-v2-green"
+      },
+      {
+        "id": "heart",
+        "file": "heart.webp",
+        "path": "/images/themes/porcelain-v2-green/heart.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 320,
+        "aspectRatio": 1.0,
+        "size": 47200,
+        "md5": "6f6c53767218b25490d643fecef9fc62",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-green"
+      },
       {
         "id": "hero-frame",
         "file": "hero-frame.webp",
@@ -3162,15 +6048,80 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "29a66362a71604094974fb9a3858fb89",
         "type": "frame",
         "usage": "Framing border or arch for porcelain-v2-green"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/porcelain-v2-green/ring.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 320,
+        "aspectRatio": 1.0,
+        "size": 51492,
+        "md5": "5a612b9f0201b73920de6d3ba84c53ac",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-green"
       }
     ]
   },
   "porcelain-v2-pink": {
     "themeId": "porcelain-v2-pink",
     "folder": "porcelain-v2-pink",
-    "assetCount": 1,
-    "totalBytes": 89832,
+    "assetCount": 6,
+    "totalBytes": 622068,
     "assets": [
+      {
+        "id": "bell",
+        "file": "bell.webp",
+        "path": "/images/themes/porcelain-v2-pink/bell.webp",
+        "format": "WEBP",
+        "width": 310,
+        "height": 351,
+        "aspectRatio": 0.883,
+        "size": 37924,
+        "md5": "f0f25b4472fc80c098cdfb5abfc034ff",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-pink"
+      },
+      {
+        "id": "bird",
+        "file": "bird.webp",
+        "path": "/images/themes/porcelain-v2-pink/bird.webp",
+        "format": "WEBP",
+        "width": 310,
+        "height": 351,
+        "aspectRatio": 0.883,
+        "size": 38966,
+        "md5": "9a4b5635cf63ad810ba453f8a4c35983",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-pink"
+      },
+      {
+        "id": "floral-tile",
+        "file": "floral-tile.webp",
+        "path": "/images/themes/porcelain-v2-pink/floral-tile.webp",
+        "format": "WEBP",
+        "width": 1120,
+        "height": 1120,
+        "aspectRatio": 1.0,
+        "size": 280562,
+        "md5": "104ea6598e5bc7350d6c10a3acb57ba7",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-pink"
+      },
+      {
+        "id": "flower",
+        "file": "flower.webp",
+        "path": "/images/themes/porcelain-v2-pink/flower.webp",
+        "format": "WEBP",
+        "width": 554,
+        "height": 1066,
+        "aspectRatio": 0.52,
+        "size": 141300,
+        "md5": "47f645515d6d94f1cc7f149a8d134c56",
+        "type": "decoration",
+        "usage": "Decorative element (flower) for porcelain-v2-pink"
+      },
       {
         "id": "hero-frame",
         "file": "hero-frame.webp",
@@ -3183,15 +6134,67 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "91a6b2bd1d6f42670b8596ad5795b89c",
         "type": "frame",
         "usage": "Framing border or arch for porcelain-v2-pink"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/porcelain-v2-pink/ring.webp",
+        "format": "WEBP",
+        "width": 310,
+        "height": 350,
+        "aspectRatio": 0.886,
+        "size": 33484,
+        "md5": "8ac429d523841de7e652bf7ece4523a1",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-pink"
       }
     ]
   },
   "porcelain-v2-red": {
     "themeId": "porcelain-v2-red",
     "folder": "porcelain-v2-red",
-    "assetCount": 1,
-    "totalBytes": 107836,
+    "assetCount": 6,
+    "totalBytes": 750858,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/porcelain-v2-red/cake.webp",
+        "format": "WEBP",
+        "width": 180,
+        "height": 270,
+        "aspectRatio": 0.667,
+        "size": 20810,
+        "md5": "94af9c5eccc5e16c69695034d6603ae8",
+        "type": "divider",
+        "usage": "Decorative divider line for porcelain-v2-red"
+      },
+      {
+        "id": "floral-tile",
+        "file": "floral-tile.webp",
+        "path": "/images/themes/porcelain-v2-red/floral-tile.webp",
+        "format": "WEBP",
+        "width": 941,
+        "height": 1672,
+        "aspectRatio": 0.563,
+        "size": 353142,
+        "md5": "898e66c4063ab5b4b17ef4f0cf9079d4",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-red"
+      },
+      {
+        "id": "flower",
+        "file": "flower.webp",
+        "path": "/images/themes/porcelain-v2-red/flower.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 1067,
+        "aspectRatio": 0.75,
+        "size": 228606,
+        "md5": "f11c418445471ccc9527a0c043f74c0b",
+        "type": "decoration",
+        "usage": "Decorative element (flower) for porcelain-v2-red"
+      },
       {
         "id": "hero-frame",
         "file": "hero-frame.webp",
@@ -3204,6 +6207,32 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "5051c8f6bac23da5e113d137680e7bad",
         "type": "frame",
         "usage": "Framing border or arch for porcelain-v2-red"
+      },
+      {
+        "id": "lamp",
+        "file": "lamp.webp",
+        "path": "/images/themes/porcelain-v2-red/lamp.webp",
+        "format": "WEBP",
+        "width": 200,
+        "height": 223,
+        "aspectRatio": 0.897,
+        "size": 22678,
+        "md5": "93c7fe2ce4d4730f431541716f485dcf",
+        "type": "decoration",
+        "usage": "Decorative element (lamp) for porcelain-v2-red"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/porcelain-v2-red/ring.webp",
+        "format": "WEBP",
+        "width": 220,
+        "height": 220,
+        "aspectRatio": 1.0,
+        "size": 17786,
+        "md5": "04133aee96bec5724880457d3c6b3c8a",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-red"
       }
     ]
   },
@@ -3270,9 +6299,191 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
   "riviera-blue": {
     "themeId": "riviera-blue",
     "folder": "riviera-blue",
-    "assetCount": 3,
-    "totalBytes": 31806,
+    "assetCount": 24,
+    "totalBytes": 3452080,
     "assets": [
+      {
+        "id": "bird",
+        "file": "bird.webp",
+        "path": "/images/themes/riviera-blue/bird.webp",
+        "format": "WEBP",
+        "width": 420,
+        "height": 420,
+        "aspectRatio": 1.0,
+        "size": 48980,
+        "md5": "ddd5acbf4fa77a65d6fbfd36321a50b2",
+        "type": "decoration",
+        "usage": "Ornamental artwork for riviera-blue"
+      },
+      {
+        "id": "bridge",
+        "file": "bridge.webp",
+        "path": "/images/themes/riviera-blue/bridge.webp",
+        "format": "WEBP",
+        "width": 860,
+        "height": 573,
+        "aspectRatio": 1.501,
+        "size": 234688,
+        "md5": "e879e1b1d4b587b597958d23ef746da1",
+        "type": "decoration",
+        "usage": "Ornamental artwork for riviera-blue"
+      },
+      {
+        "id": "calendar-frame",
+        "file": "calendar-frame.webp",
+        "path": "/images/themes/riviera-blue/calendar-frame.webp",
+        "format": "WEBP",
+        "width": 1330,
+        "height": 1182,
+        "aspectRatio": 1.125,
+        "size": 102960,
+        "md5": "c54ce1f563076f13070c38ce60bbce70",
+        "type": "frame",
+        "usage": "Framing border or arch for riviera-blue"
+      },
+      {
+        "id": "cloud-2",
+        "file": "cloud-2.webp",
+        "path": "/images/themes/riviera-blue/cloud-2.webp",
+        "format": "WEBP",
+        "width": 1000,
+        "height": 721,
+        "aspectRatio": 1.387,
+        "size": 120224,
+        "md5": "1f45688ba4cede6bae4b4bd12cdc110e",
+        "type": "decoration",
+        "usage": "Decorative element (cloud-2) for riviera-blue"
+      },
+      {
+        "id": "cloud-3",
+        "file": "cloud-3.webp",
+        "path": "/images/themes/riviera-blue/cloud-3.webp",
+        "format": "WEBP",
+        "width": 1300,
+        "height": 620,
+        "aspectRatio": 2.097,
+        "size": 122174,
+        "md5": "f7cb2669da88423c9158aadb31fe09e3",
+        "type": "decoration",
+        "usage": "Decorative element (cloud-3) for riviera-blue"
+      },
+      {
+        "id": "envelope-scene",
+        "file": "envelope-scene.webp",
+        "path": "/images/themes/riviera-blue/envelope-scene.webp",
+        "format": "WEBP",
+        "width": 1100,
+        "height": 1083,
+        "aspectRatio": 1.016,
+        "size": 202676,
+        "md5": "30833196a383fd60367aaaafa561db38",
+        "type": "cover",
+        "usage": "Envelope or cover illustration for riviera-blue"
+      },
+      {
+        "id": "flower-dress",
+        "file": "flower-dress.webp",
+        "path": "/images/themes/riviera-blue/flower-dress.webp",
+        "format": "WEBP",
+        "width": 620,
+        "height": 827,
+        "aspectRatio": 0.75,
+        "size": 185884,
+        "md5": "18bfda2724051ad23e0df86e7e5e22e1",
+        "type": "decoration",
+        "usage": "Decorative element (flower-dress) for riviera-blue"
+      },
+      {
+        "id": "flower-hero",
+        "file": "flower-hero.webp",
+        "path": "/images/themes/riviera-blue/flower-hero.webp",
+        "format": "WEBP",
+        "width": 620,
+        "height": 827,
+        "aspectRatio": 0.75,
+        "size": 218190,
+        "md5": "3fcdd46b6df45179c2fae15efe82ed9a",
+        "type": "decoration",
+        "usage": "Decorative element (flower-hero) for riviera-blue"
+      },
+      {
+        "id": "flower-spray",
+        "file": "flower-spray.webp",
+        "path": "/images/themes/riviera-blue/flower-spray.webp",
+        "format": "WEBP",
+        "width": 820,
+        "height": 1093,
+        "aspectRatio": 0.75,
+        "size": 292620,
+        "md5": "53743fdfd9df92514af932bb4ac9dc67",
+        "type": "decoration",
+        "usage": "Decorative element (flower-spray) for riviera-blue"
+      },
+      {
+        "id": "fountain",
+        "file": "fountain.webp",
+        "path": "/images/themes/riviera-blue/fountain.webp",
+        "format": "WEBP",
+        "width": 420,
+        "height": 420,
+        "aspectRatio": 1.0,
+        "size": 86666,
+        "md5": "89da93ac36684f22a944c048e24cfbe8",
+        "type": "decoration",
+        "usage": "Ornamental artwork for riviera-blue"
+      },
+      {
+        "id": "gate",
+        "file": "gate.webp",
+        "path": "/images/themes/riviera-blue/gate.webp",
+        "format": "WEBP",
+        "width": 420,
+        "height": 420,
+        "aspectRatio": 1.0,
+        "size": 104090,
+        "md5": "4db21db2904c6069c2af155f21023614",
+        "type": "decoration",
+        "usage": "Ornamental artwork for riviera-blue"
+      },
+      {
+        "id": "guestbook-frame",
+        "file": "guestbook-frame.webp",
+        "path": "/images/themes/riviera-blue/guestbook-frame.webp",
+        "format": "WEBP",
+        "width": 1448,
+        "height": 1086,
+        "aspectRatio": 1.333,
+        "size": 113000,
+        "md5": "a6f68efe20d88be02c79faa3703283ac",
+        "type": "frame",
+        "usage": "Framing border or arch for riviera-blue"
+      },
+      {
+        "id": "lake",
+        "file": "lake.webp",
+        "path": "/images/themes/riviera-blue/lake.webp",
+        "format": "WEBP",
+        "width": 1100,
+        "height": 825,
+        "aspectRatio": 1.333,
+        "size": 232192,
+        "md5": "abf662360254ad88142b2ac74ebab3d0",
+        "type": "divider",
+        "usage": "Decorative divider line for riviera-blue"
+      },
+      {
+        "id": "leaf",
+        "file": "leaf.webp",
+        "path": "/images/themes/riviera-blue/leaf.webp",
+        "format": "WEBP",
+        "width": 640,
+        "height": 853,
+        "aspectRatio": 0.75,
+        "size": 155786,
+        "md5": "fe9981b9f501d7c29f4694db55dab76b",
+        "type": "decoration",
+        "usage": "Decorative element (leaf) for riviera-blue"
+      },
       {
         "id": "line-decoration-2",
         "file": "line-decoration-2.webp",
@@ -3300,6 +6511,32 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Decorative divider line for riviera-blue"
       },
       {
+        "id": "line-decoration",
+        "file": "line-decoration.webp",
+        "path": "/images/themes/riviera-blue/line-decoration.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 107,
+        "aspectRatio": 7.477,
+        "size": 16894,
+        "md5": "de0590a26df0b56113759e0dfd7b499d",
+        "type": "divider",
+        "usage": "Decorative divider line for riviera-blue"
+      },
+      {
+        "id": "mountain",
+        "file": "mountain.webp",
+        "path": "/images/themes/riviera-blue/mountain.webp",
+        "format": "WEBP",
+        "width": 1300,
+        "height": 456,
+        "aspectRatio": 2.851,
+        "size": 124286,
+        "md5": "b3f41bb930e4346f727c73d67898a109",
+        "type": "decoration",
+        "usage": "Ornamental artwork for riviera-blue"
+      },
+      {
         "id": "paper-background",
         "file": "paper-background.webp",
         "path": "/images/themes/riviera-blue/paper-background.webp",
@@ -3311,14 +6548,79 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "01e036bf84adf20ad10997cc9417306e",
         "type": "background",
         "usage": "Background paper or ambient texture for riviera-blue"
+      },
+      {
+        "id": "ship",
+        "file": "ship.webp",
+        "path": "/images/themes/riviera-blue/ship.webp",
+        "format": "WEBP",
+        "width": 1000,
+        "height": 563,
+        "aspectRatio": 1.776,
+        "size": 137866,
+        "md5": "822eb3fa63d7e571b8fed358b0e36ec5",
+        "type": "decoration",
+        "usage": "Ornamental artwork for riviera-blue"
+      },
+      {
+        "id": "stone",
+        "file": "stone.webp",
+        "path": "/images/themes/riviera-blue/stone.webp",
+        "format": "WEBP",
+        "width": 1300,
+        "height": 650,
+        "aspectRatio": 2.0,
+        "size": 255184,
+        "md5": "92555466848d3f8f75c73300a8a6ddae",
+        "type": "decoration",
+        "usage": "Ornamental artwork for riviera-blue"
+      },
+      {
+        "id": "swing",
+        "file": "swing.webp",
+        "path": "/images/themes/riviera-blue/swing.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 859,
+        "aspectRatio": 1.048,
+        "size": 259486,
+        "md5": "e6d8283e9e70ac1e72ebd47e8100690a",
+        "type": "decoration",
+        "usage": "Ornamental artwork for riviera-blue"
+      },
+      {
+        "id": "tree",
+        "file": "tree.webp",
+        "path": "/images/themes/riviera-blue/tree.webp",
+        "format": "WEBP",
+        "width": 620,
+        "height": 1157,
+        "aspectRatio": 0.536,
+        "size": 142002,
+        "md5": "ff817e1e42e8504c4e494126bd476ae6",
+        "type": "decoration",
+        "usage": "Ornamental artwork for riviera-blue"
+      },
+      {
+        "id": "village",
+        "file": "village.webp",
+        "path": "/images/themes/riviera-blue/village.webp",
+        "format": "WEBP",
+        "width": 1100,
+        "height": 825,
+        "aspectRatio": 1.333,
+        "size": 264426,
+        "md5": "9a53ea8600d7484da99bb049c0f9b673",
+        "type": "decoration",
+        "usage": "Decorative element (village) for riviera-blue"
       }
     ]
   },
   "royal-blue": {
     "themeId": "royal-blue",
     "folder": "royal-blue",
-    "assetCount": 2,
-    "totalBytes": 611450,
+    "assetCount": 5,
+    "totalBytes": 620836,
     "assets": [
       {
         "id": "background",
@@ -3345,14 +6647,53 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "94a3e6b1b91a47f929f760df78310d35",
         "type": "decoration",
         "usage": "Decorative element (flower) for royal-blue"
+      },
+      {
+        "id": "frame-corner-top-left",
+        "file": "frame-corner-top-left.webp",
+        "path": "/images/themes/royal-blue/frame-corner-top-left.webp",
+        "format": "WEBP",
+        "width": 91,
+        "height": 91,
+        "aspectRatio": 1.0,
+        "size": 4042,
+        "md5": "887953e191d6f5e2c1abed43a418a091",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-blue"
+      },
+      {
+        "id": "frame-middle-horizontal",
+        "file": "frame-middle-horizontal.webp",
+        "path": "/images/themes/royal-blue/frame-middle-horizontal.webp",
+        "format": "WEBP",
+        "width": 106,
+        "height": 35,
+        "aspectRatio": 3.029,
+        "size": 2652,
+        "md5": "3f242e37547f379c88f5df32a61bc331",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-blue"
+      },
+      {
+        "id": "frame-middle-vertical",
+        "file": "frame-middle-vertical.webp",
+        "path": "/images/themes/royal-blue/frame-middle-vertical.webp",
+        "format": "WEBP",
+        "width": 35,
+        "height": 106,
+        "aspectRatio": 0.33,
+        "size": 2692,
+        "md5": "0f8dbf5fbb39a0b81031fecb235c2964",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-blue"
       }
     ]
   },
   "royal-green": {
     "themeId": "royal-green",
     "folder": "royal-green",
-    "assetCount": 2,
-    "totalBytes": 402886,
+    "assetCount": 5,
+    "totalBytes": 412272,
     "assets": [
       {
         "id": "background",
@@ -3379,14 +6720,53 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "94a3e6b1b91a47f929f760df78310d35",
         "type": "decoration",
         "usage": "Decorative element (flower) for royal-green"
+      },
+      {
+        "id": "frame-corner-top-left",
+        "file": "frame-corner-top-left.webp",
+        "path": "/images/themes/royal-green/frame-corner-top-left.webp",
+        "format": "WEBP",
+        "width": 91,
+        "height": 91,
+        "aspectRatio": 1.0,
+        "size": 4042,
+        "md5": "887953e191d6f5e2c1abed43a418a091",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-green"
+      },
+      {
+        "id": "frame-middle-horizontal",
+        "file": "frame-middle-horizontal.webp",
+        "path": "/images/themes/royal-green/frame-middle-horizontal.webp",
+        "format": "WEBP",
+        "width": 106,
+        "height": 35,
+        "aspectRatio": 3.029,
+        "size": 2652,
+        "md5": "3f242e37547f379c88f5df32a61bc331",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-green"
+      },
+      {
+        "id": "frame-middle-vertical",
+        "file": "frame-middle-vertical.webp",
+        "path": "/images/themes/royal-green/frame-middle-vertical.webp",
+        "format": "WEBP",
+        "width": 35,
+        "height": 106,
+        "aspectRatio": 0.33,
+        "size": 2692,
+        "md5": "0f8dbf5fbb39a0b81031fecb235c2964",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-green"
       }
     ]
   },
   "royal-red": {
     "themeId": "royal-red",
     "folder": "royal-red",
-    "assetCount": 2,
-    "totalBytes": 603466,
+    "assetCount": 5,
+    "totalBytes": 612852,
     "assets": [
       {
         "id": "background",
@@ -3413,14 +6793,53 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "94a3e6b1b91a47f929f760df78310d35",
         "type": "decoration",
         "usage": "Decorative element (flower) for royal-red"
+      },
+      {
+        "id": "frame-corner-top-left",
+        "file": "frame-corner-top-left.webp",
+        "path": "/images/themes/royal-red/frame-corner-top-left.webp",
+        "format": "WEBP",
+        "width": 91,
+        "height": 91,
+        "aspectRatio": 1.0,
+        "size": 4042,
+        "md5": "887953e191d6f5e2c1abed43a418a091",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-red"
+      },
+      {
+        "id": "frame-middle-horizontal",
+        "file": "frame-middle-horizontal.webp",
+        "path": "/images/themes/royal-red/frame-middle-horizontal.webp",
+        "format": "WEBP",
+        "width": 106,
+        "height": 35,
+        "aspectRatio": 3.029,
+        "size": 2652,
+        "md5": "3f242e37547f379c88f5df32a61bc331",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-red"
+      },
+      {
+        "id": "frame-middle-vertical",
+        "file": "frame-middle-vertical.webp",
+        "path": "/images/themes/royal-red/frame-middle-vertical.webp",
+        "format": "WEBP",
+        "width": 35,
+        "height": 106,
+        "aspectRatio": 0.33,
+        "size": 2692,
+        "md5": "0f8dbf5fbb39a0b81031fecb235c2964",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-red"
       }
     ]
   },
   "royal-v2-green": {
     "themeId": "royal-v2-green",
     "folder": "royal-v2-green",
-    "assetCount": 4,
-    "totalBytes": 433220,
+    "assetCount": 12,
+    "totalBytes": 1166690,
     "assets": [
       {
         "id": "background",
@@ -3434,6 +6853,32 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "45fac3c91d2c40e778e6717ba3f2ded1",
         "type": "background",
         "usage": "Background paper or ambient texture for royal-v2-green"
+      },
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/royal-v2-green/cake.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 400,
+        "aspectRatio": 1.0,
+        "size": 28194,
+        "md5": "a2c687c1b7d0702e1c582fac3fa10126",
+        "type": "divider",
+        "usage": "Decorative divider line for royal-v2-green"
+      },
+      {
+        "id": "calendar-heart",
+        "file": "calendar-heart.webp",
+        "path": "/images/themes/royal-v2-green/calendar-heart.webp",
+        "format": "WEBP",
+        "width": 215,
+        "height": 190,
+        "aspectRatio": 1.132,
+        "size": 3188,
+        "md5": "5159a8abb229d61a8a769c229f354452",
+        "type": "decoration",
+        "usage": "Ornamental artwork for royal-v2-green"
       },
       {
         "id": "flower1-decoration",
@@ -3462,6 +6907,45 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Decorative element (flower2-decoration) for royal-v2-green"
       },
       {
+        "id": "flower3-decoration",
+        "file": "flower3-decoration.webp",
+        "path": "/images/themes/royal-v2-green/flower3-decoration.webp",
+        "format": "WEBP",
+        "width": 1600,
+        "height": 381,
+        "aspectRatio": 4.199,
+        "size": 149528,
+        "md5": "322bcf1dab23a35997211ce42d7b3ebb",
+        "type": "decoration",
+        "usage": "Decorative element (flower3-decoration) for royal-v2-green"
+      },
+      {
+        "id": "flower4-bottom",
+        "file": "flower4-bottom.webp",
+        "path": "/images/themes/royal-v2-green/flower4-bottom.webp",
+        "format": "WEBP",
+        "width": 1600,
+        "height": 478,
+        "aspectRatio": 3.347,
+        "size": 157962,
+        "md5": "1a773843e2ba1dbf32ed4d3aa51901d3",
+        "type": "decoration",
+        "usage": "Decorative element (flower4-bottom) for royal-v2-green"
+      },
+      {
+        "id": "flower5-decoration",
+        "file": "flower5-decoration.webp",
+        "path": "/images/themes/royal-v2-green/flower5-decoration.webp",
+        "format": "WEBP",
+        "width": 858,
+        "height": 1774,
+        "aspectRatio": 0.484,
+        "size": 210058,
+        "md5": "a7fd840a9146cf85c0f42ff9fc76a31a",
+        "type": "decoration",
+        "usage": "Decorative element (flower5-decoration) for royal-v2-green"
+      },
+      {
         "id": "golden-line",
         "file": "golden-line.webp",
         "path": "/images/themes/royal-v2-green/golden-line.webp",
@@ -3473,14 +6957,53 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "e35b6f125de0ffaa2a83fd8c13927189",
         "type": "divider",
         "usage": "Decorative divider line for royal-v2-green"
+      },
+      {
+        "id": "leaf-decoration",
+        "file": "leaf-decoration.webp",
+        "path": "/images/themes/royal-v2-green/leaf-decoration.webp",
+        "format": "WEBP",
+        "width": 965,
+        "height": 1063,
+        "aspectRatio": 0.908,
+        "size": 102948,
+        "md5": "a60dd053a95a88c4e4de63e13b32b3b6",
+        "type": "decoration",
+        "usage": "Decorative element (leaf-decoration) for royal-v2-green"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/royal-v2-green/ring.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 400,
+        "aspectRatio": 1.0,
+        "size": 44392,
+        "md5": "afa8409855130427302bfcb9fd1769a5",
+        "type": "decoration",
+        "usage": "Ornamental artwork for royal-v2-green"
+      },
+      {
+        "id": "welcome",
+        "file": "welcome.webp",
+        "path": "/images/themes/royal-v2-green/welcome.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 400,
+        "aspectRatio": 1.0,
+        "size": 37200,
+        "md5": "b55aa6b1f3021adf9c05da06a54d9ed0",
+        "type": "decoration",
+        "usage": "Ornamental artwork for royal-v2-green"
       }
     ]
   },
   "royal-v2-purple": {
     "themeId": "royal-v2-purple",
     "folder": "royal-v2-purple",
-    "assetCount": 5,
-    "totalBytes": 686540,
+    "assetCount": 15,
+    "totalBytes": 2577236,
     "assets": [
       {
         "id": "background",
@@ -3494,6 +7017,58 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "87ca4b5cf77bf45a1d14f21223ebc6c1",
         "type": "background",
         "usage": "Background paper or ambient texture for royal-v2-purple"
+      },
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/royal-v2-purple/cake.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 169276,
+        "md5": "197dc193c9c9fcb30e6edbb4b9872cd6",
+        "type": "divider",
+        "usage": "Decorative divider line for royal-v2-purple"
+      },
+      {
+        "id": "calendar-heart",
+        "file": "calendar-heart.webp",
+        "path": "/images/themes/royal-v2-purple/calendar-heart.webp",
+        "format": "WEBP",
+        "width": 96,
+        "height": 85,
+        "aspectRatio": 1.129,
+        "size": 2334,
+        "md5": "78687c8a1f7b98944ca5cd7372a767f9",
+        "type": "decoration",
+        "usage": "Ornamental artwork for royal-v2-purple"
+      },
+      {
+        "id": "decorframe",
+        "file": "decorframe.webp",
+        "path": "/images/themes/royal-v2-purple/decorframe.webp",
+        "format": "WEBP",
+        "width": 2078,
+        "height": 382,
+        "aspectRatio": 5.44,
+        "size": 53186,
+        "md5": "0f6915cdefccb8a826a9867eac153122",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-v2-purple"
+      },
+      {
+        "id": "decorframe2",
+        "file": "decorframe2.webp",
+        "path": "/images/themes/royal-v2-purple/decorframe2.webp",
+        "format": "WEBP",
+        "width": 1226,
+        "height": 1283,
+        "aspectRatio": 0.956,
+        "size": 153828,
+        "md5": "53461cb3f99390fc67c3a300406c5a99",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-v2-purple"
       },
       {
         "id": "flower-decoration",
@@ -3522,6 +7097,45 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Decorative element (flower2-decoration) for royal-v2-purple"
       },
       {
+        "id": "flower4-decoration",
+        "file": "flower4-decoration.webp",
+        "path": "/images/themes/royal-v2-purple/flower4-decoration.webp",
+        "format": "WEBP",
+        "width": 2000,
+        "height": 2439,
+        "aspectRatio": 0.82,
+        "size": 737384,
+        "md5": "0cd75d0cbe206fc51383bd868cb1b380",
+        "type": "decoration",
+        "usage": "Decorative element (flower4-decoration) for royal-v2-purple"
+      },
+      {
+        "id": "flower5-decoration",
+        "file": "flower5-decoration.webp",
+        "path": "/images/themes/royal-v2-purple/flower5-decoration.webp",
+        "format": "WEBP",
+        "width": 849,
+        "height": 2000,
+        "aspectRatio": 0.424,
+        "size": 303970,
+        "md5": "de6c6bc9993b75c0cd44f3bd22e377db",
+        "type": "decoration",
+        "usage": "Decorative element (flower5-decoration) for royal-v2-purple"
+      },
+      {
+        "id": "flowerbottom-decoration",
+        "file": "flowerbottom-decoration.webp",
+        "path": "/images/themes/royal-v2-purple/flowerbottom-decoration.webp",
+        "format": "WEBP",
+        "width": 1200,
+        "height": 567,
+        "aspectRatio": 2.116,
+        "size": 183780,
+        "md5": "643b1eb2e545d93de345d2ba936b53e6",
+        "type": "decoration",
+        "usage": "Decorative element (flowerbottom-decoration) for royal-v2-purple"
+      },
+      {
         "id": "frame",
         "file": "frame.webp",
         "path": "/images/themes/royal-v2-purple/frame.webp",
@@ -3546,15 +7160,93 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "c5e9be431cd953e42ed42c77527f7282",
         "type": "divider",
         "usage": "Decorative divider line for royal-v2-purple"
+      },
+      {
+        "id": "leafline-decoration",
+        "file": "leafline-decoration.webp",
+        "path": "/images/themes/royal-v2-purple/leafline-decoration.webp",
+        "format": "WEBP",
+        "width": 1824,
+        "height": 292,
+        "aspectRatio": 6.247,
+        "size": 30648,
+        "md5": "60688878aba958b7ca516a59977b8d3a",
+        "type": "divider",
+        "usage": "Decorative divider line for royal-v2-purple"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/royal-v2-purple/ring.webp",
+        "format": "WEBP",
+        "width": 372,
+        "height": 297,
+        "aspectRatio": 1.253,
+        "size": 44658,
+        "md5": "05e51c93a939e9f025027b4394f924ab",
+        "type": "decoration",
+        "usage": "Ornamental artwork for royal-v2-purple"
+      },
+      {
+        "id": "welcome",
+        "file": "welcome.webp",
+        "path": "/images/themes/royal-v2-purple/welcome.webp",
+        "format": "WEBP",
+        "width": 1122,
+        "height": 1402,
+        "aspectRatio": 0.8,
+        "size": 211632,
+        "md5": "240c0abb30e5d6c55d2d54513227b493",
+        "type": "decoration",
+        "usage": "Ornamental artwork for royal-v2-purple"
       }
     ]
   },
   "san-miguel-yellow": {
     "themeId": "san-miguel-yellow",
     "folder": "san-miguel-yellow",
-    "assetCount": 2,
-    "totalBytes": 130660,
+    "assetCount": 20,
+    "totalBytes": 3383904,
     "assets": [
+      {
+        "id": "bird",
+        "file": "bird.webp",
+        "path": "/images/themes/san-miguel-yellow/bird.webp",
+        "format": "WEBP",
+        "width": 420,
+        "height": 391,
+        "aspectRatio": 1.074,
+        "size": 35346,
+        "md5": "f5538e61d2e822428a9f9784cb3edf26",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "church-decoration",
+        "file": "church-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/church-decoration.webp",
+        "format": "WEBP",
+        "width": 1387,
+        "height": 1040,
+        "aspectRatio": 1.334,
+        "size": 208084,
+        "md5": "2ceabc223c6ef5c4ff86727331fc1b76",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "city-envelope",
+        "file": "city-envelope.webp",
+        "path": "/images/themes/san-miguel-yellow/city-envelope.webp",
+        "format": "WEBP",
+        "width": 1200,
+        "height": 1056,
+        "aspectRatio": 1.136,
+        "size": 313940,
+        "md5": "5e8a7e7800bc8e3f68b8986d5a088cca",
+        "type": "cover",
+        "usage": "Envelope or cover illustration for san-miguel-yellow"
+      },
       {
         "id": "cloud-background",
         "file": "cloud-background.webp",
@@ -3580,14 +7272,209 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "0f3663afe05987bfac4e21707fc80376",
         "type": "background",
         "usage": "Background paper or ambient texture for san-miguel-yellow"
+      },
+      {
+        "id": "flower-decoration",
+        "file": "flower-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/flower-decoration.webp",
+        "format": "WEBP",
+        "width": 1000,
+        "height": 750,
+        "aspectRatio": 1.333,
+        "size": 223864,
+        "md5": "da8acb43ac34fd5ca8a8a4e22b0adb7b",
+        "type": "decoration",
+        "usage": "Decorative element (flower-decoration) for san-miguel-yellow"
+      },
+      {
+        "id": "flower-gift",
+        "file": "flower-gift.webp",
+        "path": "/images/themes/san-miguel-yellow/flower-gift.webp",
+        "format": "WEBP",
+        "width": 640,
+        "height": 585,
+        "aspectRatio": 1.094,
+        "size": 161546,
+        "md5": "a7cef56597eb6e4c5292f65a17afdc66",
+        "type": "decoration",
+        "usage": "Decorative element (flower-gift) for san-miguel-yellow"
+      },
+      {
+        "id": "flower",
+        "file": "flower.webp",
+        "path": "/images/themes/san-miguel-yellow/flower.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 461,
+        "aspectRatio": 0.868,
+        "size": 44390,
+        "md5": "f7458e84829013344a4ba20b99d780b5",
+        "type": "decoration",
+        "usage": "Decorative element (flower) for san-miguel-yellow"
+      },
+      {
+        "id": "heart",
+        "file": "heart.webp",
+        "path": "/images/themes/san-miguel-yellow/heart.webp",
+        "format": "WEBP",
+        "width": 383,
+        "height": 426,
+        "aspectRatio": 0.899,
+        "size": 30702,
+        "md5": "96cd9888b5e096acf1f102876eecbd27",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "house-decoration",
+        "file": "house-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/house-decoration.webp",
+        "format": "WEBP",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": 1.333,
+        "size": 379462,
+        "md5": "d29b2a2fb7dcc4df625bf52ccf3668f7",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "light-decoration",
+        "file": "light-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/light-decoration.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 480,
+        "aspectRatio": 0.667,
+        "size": 36192,
+        "md5": "98f78e8c2ade7ac4d79558075f715ff0",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "paper-background",
+        "file": "paper-background.webp",
+        "path": "/images/themes/san-miguel-yellow/paper-background.webp",
+        "format": "WEBP",
+        "width": 724,
+        "height": 2172,
+        "aspectRatio": 0.333,
+        "size": 33264,
+        "md5": "ece1a5d89ad2e46bf101a92e33248ece",
+        "type": "background",
+        "usage": "Background paper or ambient texture for san-miguel-yellow"
+      },
+      {
+        "id": "scene-background",
+        "file": "scene-background.webp",
+        "path": "/images/themes/san-miguel-yellow/scene-background.webp",
+        "format": "WEBP",
+        "width": 700,
+        "height": 1050,
+        "aspectRatio": 0.667,
+        "size": 253246,
+        "md5": "fdfd0c078d4e90992f09bb1189adb22f",
+        "type": "background",
+        "usage": "Background paper or ambient texture for san-miguel-yellow"
+      },
+      {
+        "id": "scene-decoration",
+        "file": "scene-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/scene-decoration.webp",
+        "format": "WEBP",
+        "width": 1180,
+        "height": 393,
+        "aspectRatio": 3.003,
+        "size": 178678,
+        "md5": "d0afb61721842f5eb9d4e7fc2bc07711",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "scene2-decoration",
+        "file": "scene2-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/scene2-decoration.webp",
+        "format": "WEBP",
+        "width": 1600,
+        "height": 533,
+        "aspectRatio": 3.002,
+        "size": 252642,
+        "md5": "4afeabcc2ba7b70a73b41f38bd886e3e",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "stair-background",
+        "file": "stair-background.webp",
+        "path": "/images/themes/san-miguel-yellow/stair-background.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 1067,
+        "aspectRatio": 0.75,
+        "size": 318314,
+        "md5": "b2188390185ef1822275c8e45580bbc2",
+        "type": "background",
+        "usage": "Background paper or ambient texture for san-miguel-yellow"
+      },
+      {
+        "id": "tree-decoration",
+        "file": "tree-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/tree-decoration.webp",
+        "format": "WEBP",
+        "width": 640,
+        "height": 480,
+        "aspectRatio": 1.333,
+        "size": 140128,
+        "md5": "e202cd434505b11c2e5e78e367438ec8",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "wall-decoration",
+        "file": "wall-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/wall-decoration.webp",
+        "format": "WEBP",
+        "width": 580,
+        "height": 870,
+        "aspectRatio": 0.667,
+        "size": 155916,
+        "md5": "d61930daa9fcf817000bb2a8bb12186d",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "wall2-decoration",
+        "file": "wall2-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/wall2-decoration.webp",
+        "format": "WEBP",
+        "width": 840,
+        "height": 1120,
+        "aspectRatio": 0.75,
+        "size": 342894,
+        "md5": "ad15bb24900ba42da63d371d68439825",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "water-decoration",
+        "file": "water-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/water-decoration.webp",
+        "format": "WEBP",
+        "width": 880,
+        "height": 660,
+        "aspectRatio": 1.333,
+        "size": 144636,
+        "md5": "4327191bba675d493a2369d853382828",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
       }
     ]
   },
   "silk-ribbon-darkred": {
     "themeId": "silk-ribbon-darkred",
     "folder": "silk-ribbon-darkred",
-    "assetCount": 3,
-    "totalBytes": 216572,
+    "assetCount": 6,
+    "totalBytes": 263346,
     "assets": [
       {
         "id": "flower-decoration",
@@ -3601,6 +7488,45 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "b295d233f4418f758a8782a3a690bbde",
         "type": "decoration",
         "usage": "Decorative element (flower-decoration) for silk-ribbon-darkred"
+      },
+      {
+        "id": "icon-alcohol",
+        "file": "icon-alcohol.webp",
+        "path": "/images/themes/silk-ribbon-darkred/icon-alcohol.webp",
+        "format": "WEBP",
+        "width": 220,
+        "height": 206,
+        "aspectRatio": 1.068,
+        "size": 20394,
+        "md5": "682e75880c1494b26730ff383978eda9",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for silk-ribbon-darkred"
+      },
+      {
+        "id": "icon-candle",
+        "file": "icon-candle.webp",
+        "path": "/images/themes/silk-ribbon-darkred/icon-candle.webp",
+        "format": "WEBP",
+        "width": 166,
+        "height": 220,
+        "aspectRatio": 0.755,
+        "size": 12678,
+        "md5": "2ca82fb691962580f2a847ca1472cb9e",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for silk-ribbon-darkred"
+      },
+      {
+        "id": "icon-ring",
+        "file": "icon-ring.webp",
+        "path": "/images/themes/silk-ribbon-darkred/icon-ring.webp",
+        "format": "WEBP",
+        "width": 220,
+        "height": 146,
+        "aspectRatio": 1.507,
+        "size": 13702,
+        "md5": "da6c3de07b488b424f83da0cb52eff06",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for silk-ribbon-darkred"
       },
       {
         "id": "line-decoration",
@@ -3633,8 +7559,8 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
   "silk-ribbon-green": {
     "themeId": "silk-ribbon-green",
     "folder": "silk-ribbon-green",
-    "assetCount": 3,
-    "totalBytes": 236432,
+    "assetCount": 6,
+    "totalBytes": 281830,
     "assets": [
       {
         "id": "flower-decoration",
@@ -3648,6 +7574,45 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "baede74db1dc097e521e262e17b351f1",
         "type": "decoration",
         "usage": "Decorative element (flower-decoration) for silk-ribbon-green"
+      },
+      {
+        "id": "icon-cake",
+        "file": "icon-cake.webp",
+        "path": "/images/themes/silk-ribbon-green/icon-cake.webp",
+        "format": "WEBP",
+        "width": 220,
+        "height": 229,
+        "aspectRatio": 0.961,
+        "size": 15194,
+        "md5": "434f43feb80f303126165f0f54393c6e",
+        "type": "divider",
+        "usage": "Decorative divider line for silk-ribbon-green"
+      },
+      {
+        "id": "icon-home",
+        "file": "icon-home.webp",
+        "path": "/images/themes/silk-ribbon-green/icon-home.webp",
+        "format": "WEBP",
+        "width": 220,
+        "height": 219,
+        "aspectRatio": 1.005,
+        "size": 14928,
+        "md5": "5b4b6511fd6670fe1b599d5bee8e4b1d",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for silk-ribbon-green"
+      },
+      {
+        "id": "icon-music",
+        "file": "icon-music.webp",
+        "path": "/images/themes/silk-ribbon-green/icon-music.webp",
+        "format": "WEBP",
+        "width": 220,
+        "height": 224,
+        "aspectRatio": 0.982,
+        "size": 15276,
+        "md5": "92d4bbaff9d9afdcb5cd9abe698b8b8b",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for silk-ribbon-green"
       },
       {
         "id": "line-decoration",
@@ -3680,8 +7645,8 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
   "silk-ribbon-pink": {
     "themeId": "silk-ribbon-pink",
     "folder": "silk-ribbon-pink",
-    "assetCount": 3,
-    "totalBytes": 335698,
+    "assetCount": 6,
+    "totalBytes": 383208,
     "assets": [
       {
         "id": "flower-decoration",
@@ -3695,6 +7660,45 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "2d578dc37f2c73e7f2341f9d15c31a90",
         "type": "decoration",
         "usage": "Decorative element (flower-decoration) for silk-ribbon-pink"
+      },
+      {
+        "id": "icon-alcohol",
+        "file": "icon-alcohol.webp",
+        "path": "/images/themes/silk-ribbon-pink/icon-alcohol.webp",
+        "format": "WEBP",
+        "width": 220,
+        "height": 207,
+        "aspectRatio": 1.063,
+        "size": 20638,
+        "md5": "e3152ef2d84ba502c0d2d26310c54ffc",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for silk-ribbon-pink"
+      },
+      {
+        "id": "icon-candle",
+        "file": "icon-candle.webp",
+        "path": "/images/themes/silk-ribbon-pink/icon-candle.webp",
+        "format": "WEBP",
+        "width": 163,
+        "height": 220,
+        "aspectRatio": 0.741,
+        "size": 13272,
+        "md5": "a168164d9c59b9ec98a999b5eda68040",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for silk-ribbon-pink"
+      },
+      {
+        "id": "icon-ring",
+        "file": "icon-ring.webp",
+        "path": "/images/themes/silk-ribbon-pink/icon-ring.webp",
+        "format": "WEBP",
+        "width": 220,
+        "height": 146,
+        "aspectRatio": 1.507,
+        "size": 13600,
+        "md5": "8e0833b8d7c1c07b1c256508887b84a9",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for silk-ribbon-pink"
       },
       {
         "id": "line-decoration",
@@ -3727,8 +7731,8 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
   "silkflora-brown": {
     "themeId": "silkflora-brown",
     "folder": "silkflora-brown",
-    "assetCount": 2,
-    "totalBytes": 333940,
+    "assetCount": 3,
+    "totalBytes": 469174,
     "assets": [
       {
         "id": "bottom",
@@ -3755,14 +7759,27 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "8aff763aafda68cb9f569779a54bcff1",
         "type": "decoration",
         "usage": "Body or footer illustration for silkflora-brown"
+      },
+      {
+        "id": "top-flower",
+        "file": "top-flower.webp",
+        "path": "/images/themes/silkflora-brown/top-flower.webp",
+        "format": "WEBP",
+        "width": 942,
+        "height": 1688,
+        "aspectRatio": 0.558,
+        "size": 135234,
+        "md5": "cbbf9133f84a3f073d705d1841ea463f",
+        "type": "decoration",
+        "usage": "Decorative element (top-flower) for silkflora-brown"
       }
     ]
   },
   "song-hac-red": {
     "themeId": "song-hac-red",
     "folder": "song-hac-red",
-    "assetCount": 7,
-    "totalBytes": 835162,
+    "assetCount": 16,
+    "totalBytes": 1468377,
     "assets": [
       {
         "id": "bg-texture",
@@ -3778,6 +7795,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Background paper or ambient texture for song-hac-red"
       },
       {
+        "id": "bird-background",
+        "file": "bird-background.webp",
+        "path": "/images/themes/song-hac-red/bird-background.webp",
+        "format": "WEBP",
+        "width": 760,
+        "height": 760,
+        "aspectRatio": 1.0,
+        "size": 209448,
+        "md5": "214de19103637e204156c0aeea38e083",
+        "type": "background",
+        "usage": "Background paper or ambient texture for song-hac-red"
+      },
+      {
         "id": "bird-decoration",
         "file": "bird-decoration.webp",
         "path": "/images/themes/song-hac-red/bird-decoration.webp",
@@ -3789,6 +7819,45 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "1e0cf8f92090741b4b51abfc17df0510",
         "type": "decoration",
         "usage": "Ornamental artwork for song-hac-red"
+      },
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/song-hac-red/cake.webp",
+        "format": "WEBP",
+        "width": 200,
+        "height": 213,
+        "aspectRatio": 0.939,
+        "size": 21340,
+        "md5": "e0d4ce6fce9319ce1efc38559fe0ab29",
+        "type": "divider",
+        "usage": "Decorative divider line for song-hac-red"
+      },
+      {
+        "id": "cloud-pattern",
+        "file": "cloud-pattern.webp",
+        "path": "/images/themes/song-hac-red/cloud-pattern.webp",
+        "format": "WEBP",
+        "width": 1600,
+        "height": 463,
+        "aspectRatio": 3.456,
+        "size": 269920,
+        "md5": "f2cc95a0082fa274c07338a43bcb425a",
+        "type": "decoration",
+        "usage": "Decorative element (cloud-pattern) for song-hac-red"
+      },
+      {
+        "id": "cloud1-bottom",
+        "file": "cloud1-bottom.webp",
+        "path": "/images/themes/song-hac-red/cloud1-bottom.webp",
+        "format": "WEBP",
+        "width": 1100,
+        "height": 367,
+        "aspectRatio": 2.997,
+        "size": 79416,
+        "md5": "dc5cd686ec9ae5f6f7ab096a6f6cf007",
+        "type": "decoration",
+        "usage": "Decorative element (cloud1-bottom) for song-hac-red"
       },
       {
         "id": "cloud1-decoration",
@@ -3843,6 +7912,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Decorative element (flower1-decoration) for song-hac-red"
       },
       {
+        "id": "heart",
+        "file": "heart.svg",
+        "path": "/images/themes/song-hac-red/heart.svg",
+        "format": "SVG",
+        "width": 21,
+        "height": 19,
+        "aspectRatio": 1.105,
+        "size": 546,
+        "md5": "5835db08c2defd7268fe917e575dfc3e",
+        "type": "decoration",
+        "usage": "Ornamental artwork for song-hac-red"
+      },
+      {
         "id": "moon-decoration",
         "file": "moon-decoration.webp",
         "path": "/images/themes/song-hac-red/moon-decoration.webp",
@@ -3854,6 +7936,58 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "88fece4897bbdcb069493ff313d54269",
         "type": "decoration",
         "usage": "Ornamental artwork for song-hac-red"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/song-hac-red/ring.webp",
+        "format": "WEBP",
+        "width": 200,
+        "height": 138,
+        "aspectRatio": 1.449,
+        "size": 18084,
+        "md5": "76fec2343ca0e90daba64c9ea68dfc3a",
+        "type": "decoration",
+        "usage": "Ornamental artwork for song-hac-red"
+      },
+      {
+        "id": "timeline-panel",
+        "file": "timeline-panel.webp",
+        "path": "/images/themes/song-hac-red/timeline-panel.webp",
+        "format": "WEBP",
+        "width": 795,
+        "height": 789,
+        "aspectRatio": 1.008,
+        "size": 7536,
+        "md5": "2a0894d65e0cdcf8c0bce9b6f08c9320",
+        "type": "divider",
+        "usage": "Decorative divider line for song-hac-red"
+      },
+      {
+        "id": "water",
+        "file": "water.webp",
+        "path": "/images/themes/song-hac-red/water.webp",
+        "format": "WEBP",
+        "width": 200,
+        "height": 213,
+        "aspectRatio": 0.939,
+        "size": 26146,
+        "md5": "19f575d1aa1f31b92fef38af33ca22ff",
+        "type": "decoration",
+        "usage": "Ornamental artwork for song-hac-red"
+      },
+      {
+        "id": "white-frame",
+        "file": "white-frame.svg",
+        "path": "/images/themes/song-hac-red/white-frame.svg",
+        "format": "SVG",
+        "width": 220,
+        "height": 220,
+        "aspectRatio": 1.0,
+        "size": 779,
+        "md5": "0aa9c996fdcc4b6b8c085f3895912902",
+        "type": "frame",
+        "usage": "Framing border or arch for song-hac-red"
       }
     ]
   },
@@ -3894,9 +8028,35 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
   "song-hy-v2-red": {
     "themeId": "song-hy-v2-red",
     "folder": "song-hy-v2-red",
-    "assetCount": 4,
-    "totalBytes": 129911,
+    "assetCount": 11,
+    "totalBytes": 558945,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/song-hy-v2-red/cake.webp",
+        "format": "WEBP",
+        "width": 128,
+        "height": 136,
+        "aspectRatio": 0.941,
+        "size": 12576,
+        "md5": "7eb996ff18bc69b3703173796f896af9",
+        "type": "divider",
+        "usage": "Decorative divider line for song-hy-v2-red"
+      },
+      {
+        "id": "cloud-pattern",
+        "file": "cloud-pattern.webp",
+        "path": "/images/themes/song-hy-v2-red/cloud-pattern.webp",
+        "format": "WEBP",
+        "width": 1200,
+        "height": 348,
+        "aspectRatio": 3.448,
+        "size": 157222,
+        "md5": "6b3a1980b8e82c6c247212927dd2cf39",
+        "type": "decoration",
+        "usage": "Decorative element (cloud-pattern) for song-hy-v2-red"
+      },
       {
         "id": "double-happiness-bg",
         "file": "double-happiness-bg.webp",
@@ -3937,6 +8097,32 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "usage": "Ornamental artwork for song-hy-v2-red"
       },
       {
+        "id": "flower1",
+        "file": "flower1.webp",
+        "path": "/images/themes/song-hy-v2-red/flower1.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 909,
+        "aspectRatio": 0.88,
+        "size": 222654,
+        "md5": "4695e0f32012bea4d82534c54aa16d26",
+        "type": "decoration",
+        "usage": "Decorative element (flower1) for song-hy-v2-red"
+      },
+      {
+        "id": "heart",
+        "file": "heart.svg",
+        "path": "/images/themes/song-hy-v2-red/heart.svg",
+        "format": "SVG",
+        "width": 21,
+        "height": 19,
+        "aspectRatio": 1.105,
+        "size": 546,
+        "md5": "f497340a966f8a0d5965a54c847fb710",
+        "type": "decoration",
+        "usage": "Ornamental artwork for song-hy-v2-red"
+      },
+      {
         "id": "hero-shape",
         "file": "hero-shape.svg",
         "path": "/images/themes/song-hy-v2-red/hero-shape.svg",
@@ -3948,6 +8134,45 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "b0824f287211e49a2c4e6f5ed3a3de51",
         "type": "decoration",
         "usage": "Header ornament for song-hy-v2-red"
+      },
+      {
+        "id": "panel",
+        "file": "panel.webp",
+        "path": "/images/themes/song-hy-v2-red/panel.webp",
+        "format": "WEBP",
+        "width": 1203,
+        "height": 2427,
+        "aspectRatio": 0.496,
+        "size": 10228,
+        "md5": "2e285add4eeedf95ab9e332c299d2411",
+        "type": "decoration",
+        "usage": "Ornamental artwork for song-hy-v2-red"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/song-hy-v2-red/ring.webp",
+        "format": "WEBP",
+        "width": 128,
+        "height": 88,
+        "aspectRatio": 1.455,
+        "size": 10592,
+        "md5": "c32d11896d56ec97e626cefa4454e5e0",
+        "type": "decoration",
+        "usage": "Ornamental artwork for song-hy-v2-red"
+      },
+      {
+        "id": "toast",
+        "file": "toast.webp",
+        "path": "/images/themes/song-hy-v2-red/toast.webp",
+        "format": "WEBP",
+        "width": 128,
+        "height": 136,
+        "aspectRatio": 0.941,
+        "size": 15216,
+        "md5": "6edd48ab54b05dfc219c8c13a8fdfd60",
+        "type": "decoration",
+        "usage": "Ornamental artwork for song-hy-v2-red"
       }
     ]
   },
@@ -4040,9 +8265,22 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
   "songphung-green": {
     "themeId": "songphung-green",
     "folder": "songphung-green",
-    "assetCount": 3,
-    "totalBytes": 924597,
+    "assetCount": 6,
+    "totalBytes": 2155427,
     "assets": [
+      {
+        "id": "CHU_HY",
+        "file": "CHU HY.webp",
+        "path": "/images/themes/songphung-green/CHU HY.webp",
+        "format": "WEBP",
+        "width": 1272,
+        "height": 1271,
+        "aspectRatio": 1.001,
+        "size": 17432,
+        "md5": "654b545fa4789229477e1501d68c4b35",
+        "type": "decoration",
+        "usage": "Ornamental artwork for songphung-green"
+      },
       {
         "id": "HOA",
         "file": "HOA.webp",
@@ -4068,6 +8306,32 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "6b466a560f5e6edf8f188a59dfd91cac",
         "type": "background",
         "usage": "Background paper or ambient texture for songphung-green"
+      },
+      {
+        "id": "Phuong_2",
+        "file": "Phuong 2.webp",
+        "path": "/images/themes/songphung-green/Phuong 2.webp",
+        "format": "WEBP",
+        "width": 1952,
+        "height": 4105,
+        "aspectRatio": 0.476,
+        "size": 696074,
+        "md5": "b2e8ccff7df6775766272b7826204184",
+        "type": "decoration",
+        "usage": "Decorative element (phuong 2) for songphung-green"
+      },
+      {
+        "id": "Phuong_line",
+        "file": "Phuong line.webp",
+        "path": "/images/themes/songphung-green/Phuong line.webp",
+        "format": "WEBP",
+        "width": 1966,
+        "height": 4119,
+        "aspectRatio": 0.477,
+        "size": 517324,
+        "md5": "43ca638c136698e686800ac11b76be86",
+        "type": "divider",
+        "usage": "Decorative divider line for songphung-green"
       },
       {
         "id": "Phuong",
@@ -4173,8 +8437,8 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
   "sunflower": {
     "themeId": "sunflower",
     "folder": "sunflower",
-    "assetCount": 2,
-    "totalBytes": 321062,
+    "assetCount": 7,
+    "totalBytes": 680470,
     "assets": [
       {
         "id": "flower2",
@@ -4201,14 +8465,79 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "215f316e57987ea52a34dce62cba53b5",
         "type": "decoration",
         "usage": "Decorative element (flower4) for sunflower"
+      },
+      {
+        "id": "flower5",
+        "file": "flower5.webp",
+        "path": "/images/themes/sunflower/flower5.webp",
+        "format": "WEBP",
+        "width": 820,
+        "height": 1175,
+        "aspectRatio": 0.698,
+        "size": 208860,
+        "md5": "7cef316a931a3b73a18bfb3316d65709",
+        "type": "decoration",
+        "usage": "Decorative element (flower5) for sunflower"
+      },
+      {
+        "id": "map",
+        "file": "map.webp",
+        "path": "/images/themes/sunflower/map.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 343,
+        "aspectRatio": 0.933,
+        "size": 39438,
+        "md5": "f3d360bfdeffe9e500080b477c48d506",
+        "type": "decoration",
+        "usage": "Ornamental artwork for sunflower"
+      },
+      {
+        "id": "medallion-flower",
+        "file": "medallion-flower.webp",
+        "path": "/images/themes/sunflower/medallion-flower.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 358,
+        "aspectRatio": 0.894,
+        "size": 56302,
+        "md5": "2c8c0a21bf0933be858f080b0175d8df",
+        "type": "decoration",
+        "usage": "Decorative element (medallion-flower) for sunflower"
+      },
+      {
+        "id": "paper",
+        "file": "paper.webp",
+        "path": "/images/themes/sunflower/paper.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 900,
+        "aspectRatio": 1.0,
+        "size": 11014,
+        "md5": "efc14bea52b76d4e3e4b8004b674ff1e",
+        "type": "background",
+        "usage": "Background paper or ambient texture for sunflower"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/sunflower/ring.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 256,
+        "aspectRatio": 1.25,
+        "size": 43794,
+        "md5": "cd31f0c55bc8e872a6562678770546c6",
+        "type": "decoration",
+        "usage": "Ornamental artwork for sunflower"
       }
     ]
   },
   "thanhdiep-green": {
     "themeId": "thanhdiep-green",
     "folder": "thanhdiep-green",
-    "assetCount": 3,
-    "totalBytes": 568208,
+    "assetCount": 4,
+    "totalBytes": 801034,
     "assets": [
       {
         "id": "la1",
@@ -4248,6 +8577,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "2148710bac3b1c42469b8d208d55f472",
         "type": "decoration",
         "usage": "Decorative element (la3) for thanhdiep-green"
+      },
+      {
+        "id": "la4",
+        "file": "la4.webp",
+        "path": "/images/themes/thanhdiep-green/la4.webp",
+        "format": "WEBP",
+        "width": 1748,
+        "height": 2480,
+        "aspectRatio": 0.705,
+        "size": 232826,
+        "md5": "c721492ec2e8ebf3a8fa0cee512f2bd3",
+        "type": "decoration",
+        "usage": "Decorative element (la4) for thanhdiep-green"
       }
     ]
   },
@@ -4394,9 +8736,35 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "minimalism-dark-red"
     ],
-    "assetCount": 5,
-    "totalBytes": 904416,
+    "assetCount": 9,
+    "totalBytes": 1514656,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/minimalism-dark-red/cake.webp",
+        "format": "WEBP",
+        "width": 790,
+        "height": 1134,
+        "aspectRatio": 0.697,
+        "size": 149056,
+        "md5": "82d155f7a2b94265d32bb7ce11289d85",
+        "type": "divider",
+        "usage": "Decorative divider line for minimalism-dark-red"
+      },
+      {
+        "id": "camera",
+        "file": "camera.webp",
+        "path": "/images/themes/minimalism-dark-red/camera.webp",
+        "format": "WEBP",
+        "width": 981,
+        "height": 1041,
+        "aspectRatio": 0.942,
+        "size": 197190,
+        "md5": "8bc795a585655c95f3290249a60cbe26",
+        "type": "decoration",
+        "usage": "Ornamental artwork for minimalism-dark-red"
+      },
       {
         "id": "castle-background",
         "file": "castle-background.webp",
@@ -4409,6 +8777,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "5ddf43ce44557a8d06c3f7dc29ad436e",
         "type": "background",
         "usage": "Background paper or ambient texture for minimalism-dark-red"
+      },
+      {
+        "id": "cook",
+        "file": "cook.webp",
+        "path": "/images/themes/minimalism-dark-red/cook.webp",
+        "format": "WEBP",
+        "width": 957,
+        "height": 1117,
+        "aspectRatio": 0.857,
+        "size": 161372,
+        "md5": "351575861bc96df793c15496ea731c43",
+        "type": "decoration",
+        "usage": "Ornamental artwork for minimalism-dark-red"
       },
       {
         "id": "envelope-background",
@@ -4461,11 +8842,24 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "ca2d285c30e0d374bea87efd9bae1f66",
         "type": "background",
         "usage": "Background paper or ambient texture for minimalism-dark-red"
+      },
+      {
+        "id": "papernote-background",
+        "file": "papernote-background.webp",
+        "path": "/images/themes/minimalism-dark-red/papernote-background.webp",
+        "format": "WEBP",
+        "width": 1513,
+        "height": 1378,
+        "aspectRatio": 1.098,
+        "size": 102622,
+        "md5": "b69da1c47c337a3301aa3e0aaadddc86",
+        "type": "background",
+        "usage": "Background paper or ambient texture for minimalism-dark-red"
       }
     ],
     "backgroundPath": "/images/themes/minimalism-dark-red/castle-background.webp",
     "coverPath": "/images/themes/minimalism-dark-red/envelope-cover.webp",
-    "decorationsCount": 1,
+    "decorationsCount": 3,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -4478,9 +8872,22 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "minimalism-brown"
     ],
-    "assetCount": 6,
-    "totalBytes": 1128314,
+    "assetCount": 10,
+    "totalBytes": 1752188,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/minimalism-brown/cake.webp",
+        "format": "WEBP",
+        "width": 781,
+        "height": 1129,
+        "aspectRatio": 0.692,
+        "size": 104620,
+        "md5": "a3ef755061caf5ca4a9c5ef62760a624",
+        "type": "divider",
+        "usage": "Decorative divider line for minimalism-brown"
+      },
       {
         "id": "couple",
         "file": "couple.webp",
@@ -4521,6 +8928,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Framing border or arch for minimalism-brown"
       },
       {
+        "id": "gate",
+        "file": "gate.webp",
+        "path": "/images/themes/minimalism-brown/gate.webp",
+        "format": "WEBP",
+        "width": 979,
+        "height": 1084,
+        "aspectRatio": 0.903,
+        "size": 246126,
+        "md5": "d351e488e520c13299edfb7adff2fcc7",
+        "type": "decoration",
+        "usage": "Ornamental artwork for minimalism-brown"
+      },
+      {
         "id": "house-background",
         "file": "house-background.webp",
         "path": "/images/themes/minimalism-brown/house-background.webp",
@@ -4547,6 +8967,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Background paper or ambient texture for minimalism-brown"
       },
       {
+        "id": "paper-note",
+        "file": "paper-note.webp",
+        "path": "/images/themes/minimalism-brown/paper-note.webp",
+        "format": "WEBP",
+        "width": 1405,
+        "height": 1033,
+        "aspectRatio": 1.36,
+        "size": 94206,
+        "md5": "853562a1174f25816c0f892e7edf15e9",
+        "type": "background",
+        "usage": "Background paper or ambient texture for minimalism-brown"
+      },
+      {
         "id": "paper",
         "file": "paper.webp",
         "path": "/images/themes/minimalism-brown/paper.webp",
@@ -4558,11 +8991,24 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "ca2d285c30e0d374bea87efd9bae1f66",
         "type": "background",
         "usage": "Background paper or ambient texture for minimalism-brown"
+      },
+      {
+        "id": "water",
+        "file": "water.webp",
+        "path": "/images/themes/minimalism-brown/water.webp",
+        "format": "WEBP",
+        "width": 736,
+        "height": 1054,
+        "aspectRatio": 0.698,
+        "size": 178922,
+        "md5": "ea1b5df712fab7ca7842e5b4f524845d",
+        "type": "decoration",
+        "usage": "Ornamental artwork for minimalism-brown"
       }
     ],
     "backgroundPath": "/images/themes/minimalism-brown/house-background.webp",
     "coverPath": null,
-    "decorationsCount": 2,
+    "decorationsCount": 4,
     "framesCount": 1,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -4576,8 +9022,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
       "song-hy-red",
       "songphung-green"
     ],
-    "assetCount": 5,
-    "totalBytes": 936260,
+    "assetCount": 8,
+    "totalBytes": 2167090,
     "assets": [
       {
         "id": "chu-hy",
@@ -4606,6 +9052,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Decorative element (sunburst) for song-hy-red"
       },
       {
+        "id": "CHU_HY",
+        "file": "CHU HY.webp",
+        "path": "/images/themes/songphung-green/CHU HY.webp",
+        "format": "WEBP",
+        "width": 1272,
+        "height": 1271,
+        "aspectRatio": 1.001,
+        "size": 17432,
+        "md5": "654b545fa4789229477e1501d68c4b35",
+        "type": "decoration",
+        "usage": "Ornamental artwork for songphung-green"
+      },
+      {
         "id": "HOA",
         "file": "HOA.webp",
         "path": "/images/themes/songphung-green/HOA.webp",
@@ -4632,6 +9091,32 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Background paper or ambient texture for songphung-green"
       },
       {
+        "id": "Phuong_2",
+        "file": "Phuong 2.webp",
+        "path": "/images/themes/songphung-green/Phuong 2.webp",
+        "format": "WEBP",
+        "width": 1952,
+        "height": 4105,
+        "aspectRatio": 0.476,
+        "size": 696074,
+        "md5": "b2e8ccff7df6775766272b7826204184",
+        "type": "decoration",
+        "usage": "Decorative element (phuong 2) for songphung-green"
+      },
+      {
+        "id": "Phuong_line",
+        "file": "Phuong line.webp",
+        "path": "/images/themes/songphung-green/Phuong line.webp",
+        "format": "WEBP",
+        "width": 1966,
+        "height": 4119,
+        "aspectRatio": 0.477,
+        "size": 517324,
+        "md5": "43ca638c136698e686800ac11b76be86",
+        "type": "divider",
+        "usage": "Decorative divider line for songphung-green"
+      },
+      {
         "id": "Phuong",
         "file": "Phuong.webp",
         "path": "/images/themes/songphung-green/Phuong.webp",
@@ -4647,7 +9132,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     ],
     "backgroundPath": "/images/themes/songphung-green/NENGIAY.jpg",
     "coverPath": null,
-    "decorationsCount": 3,
+    "decorationsCount": 5,
     "framesCount": 0,
     "isSharedTheme": true,
     "sharedWith": [
@@ -4892,9 +9377,35 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "song-hy-v2-red"
     ],
-    "assetCount": 4,
-    "totalBytes": 129911,
+    "assetCount": 11,
+    "totalBytes": 558945,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/song-hy-v2-red/cake.webp",
+        "format": "WEBP",
+        "width": 128,
+        "height": 136,
+        "aspectRatio": 0.941,
+        "size": 12576,
+        "md5": "7eb996ff18bc69b3703173796f896af9",
+        "type": "divider",
+        "usage": "Decorative divider line for song-hy-v2-red"
+      },
+      {
+        "id": "cloud-pattern",
+        "file": "cloud-pattern.webp",
+        "path": "/images/themes/song-hy-v2-red/cloud-pattern.webp",
+        "format": "WEBP",
+        "width": 1200,
+        "height": 348,
+        "aspectRatio": 3.448,
+        "size": 157222,
+        "md5": "6b3a1980b8e82c6c247212927dd2cf39",
+        "type": "decoration",
+        "usage": "Decorative element (cloud-pattern) for song-hy-v2-red"
+      },
       {
         "id": "double-happiness-bg",
         "file": "double-happiness-bg.webp",
@@ -4935,6 +9446,32 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Ornamental artwork for song-hy-v2-red"
       },
       {
+        "id": "flower1",
+        "file": "flower1.webp",
+        "path": "/images/themes/song-hy-v2-red/flower1.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 909,
+        "aspectRatio": 0.88,
+        "size": 222654,
+        "md5": "4695e0f32012bea4d82534c54aa16d26",
+        "type": "decoration",
+        "usage": "Decorative element (flower1) for song-hy-v2-red"
+      },
+      {
+        "id": "heart",
+        "file": "heart.svg",
+        "path": "/images/themes/song-hy-v2-red/heart.svg",
+        "format": "SVG",
+        "width": 21,
+        "height": 19,
+        "aspectRatio": 1.105,
+        "size": 546,
+        "md5": "f497340a966f8a0d5965a54c847fb710",
+        "type": "decoration",
+        "usage": "Ornamental artwork for song-hy-v2-red"
+      },
+      {
         "id": "hero-shape",
         "file": "hero-shape.svg",
         "path": "/images/themes/song-hy-v2-red/hero-shape.svg",
@@ -4946,11 +9483,50 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "b0824f287211e49a2c4e6f5ed3a3de51",
         "type": "decoration",
         "usage": "Header ornament for song-hy-v2-red"
+      },
+      {
+        "id": "panel",
+        "file": "panel.webp",
+        "path": "/images/themes/song-hy-v2-red/panel.webp",
+        "format": "WEBP",
+        "width": 1203,
+        "height": 2427,
+        "aspectRatio": 0.496,
+        "size": 10228,
+        "md5": "2e285add4eeedf95ab9e332c299d2411",
+        "type": "decoration",
+        "usage": "Ornamental artwork for song-hy-v2-red"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/song-hy-v2-red/ring.webp",
+        "format": "WEBP",
+        "width": 128,
+        "height": 88,
+        "aspectRatio": 1.455,
+        "size": 10592,
+        "md5": "c32d11896d56ec97e626cefa4454e5e0",
+        "type": "decoration",
+        "usage": "Ornamental artwork for song-hy-v2-red"
+      },
+      {
+        "id": "toast",
+        "file": "toast.webp",
+        "path": "/images/themes/song-hy-v2-red/toast.webp",
+        "format": "WEBP",
+        "width": 128,
+        "height": 136,
+        "aspectRatio": 0.941,
+        "size": 15216,
+        "md5": "6edd48ab54b05dfc219c8c13a8fdfd60",
+        "type": "decoration",
+        "usage": "Ornamental artwork for song-hy-v2-red"
       }
     ],
     "backgroundPath": "/images/themes/song-hy-v2-red/double-happiness-bg.webp",
     "coverPath": null,
-    "decorationsCount": 3,
+    "decorationsCount": 9,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -4963,8 +9539,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "silk-ribbon-green"
     ],
-    "assetCount": 3,
-    "totalBytes": 236432,
+    "assetCount": 6,
+    "totalBytes": 281830,
     "assets": [
       {
         "id": "flower-decoration",
@@ -4978,6 +9554,45 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "baede74db1dc097e521e262e17b351f1",
         "type": "decoration",
         "usage": "Decorative element (flower-decoration) for silk-ribbon-green"
+      },
+      {
+        "id": "icon-cake",
+        "file": "icon-cake.webp",
+        "path": "/images/themes/silk-ribbon-green/icon-cake.webp",
+        "format": "WEBP",
+        "width": 220,
+        "height": 229,
+        "aspectRatio": 0.961,
+        "size": 15194,
+        "md5": "434f43feb80f303126165f0f54393c6e",
+        "type": "divider",
+        "usage": "Decorative divider line for silk-ribbon-green"
+      },
+      {
+        "id": "icon-home",
+        "file": "icon-home.webp",
+        "path": "/images/themes/silk-ribbon-green/icon-home.webp",
+        "format": "WEBP",
+        "width": 220,
+        "height": 219,
+        "aspectRatio": 1.005,
+        "size": 14928,
+        "md5": "5b4b6511fd6670fe1b599d5bee8e4b1d",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for silk-ribbon-green"
+      },
+      {
+        "id": "icon-music",
+        "file": "icon-music.webp",
+        "path": "/images/themes/silk-ribbon-green/icon-music.webp",
+        "format": "WEBP",
+        "width": 220,
+        "height": 224,
+        "aspectRatio": 0.982,
+        "size": 15276,
+        "md5": "92d4bbaff9d9afdcb5cd9abe698b8b8b",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for silk-ribbon-green"
       },
       {
         "id": "line-decoration",
@@ -5021,9 +9636,48 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "glass-garden-pink"
     ],
-    "assetCount": 3,
-    "totalBytes": 469600,
+    "assetCount": 10,
+    "totalBytes": 1249360,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/glass-garden-pink/cake.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 88050,
+        "md5": "93939d2d67e9a3825bf70fb64e27db5e",
+        "type": "divider",
+        "usage": "Decorative divider line for glass-garden-pink"
+      },
+      {
+        "id": "calendar-heart",
+        "file": "calendar-heart.webp",
+        "path": "/images/themes/glass-garden-pink/calendar-heart.webp",
+        "format": "WEBP",
+        "width": 93,
+        "height": 83,
+        "aspectRatio": 1.12,
+        "size": 1980,
+        "md5": "f639431d518055ec937e92cf8ceefbc5",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-pink"
+      },
+      {
+        "id": "coming",
+        "file": "coming.webp",
+        "path": "/images/themes/glass-garden-pink/coming.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 116542,
+        "md5": "a7a067b95df8f8154572a2558877874d",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-pink"
+      },
       {
         "id": "floral-background",
         "file": "floral-background.webp",
@@ -5051,6 +9705,45 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Decorative element (flower1-decoration) for glass-garden-pink"
       },
       {
+        "id": "flower2-decoration",
+        "file": "flower2-decoration.webp",
+        "path": "/images/themes/glass-garden-pink/flower2-decoration.webp",
+        "format": "WEBP",
+        "width": 1024,
+        "height": 1384,
+        "aspectRatio": 0.74,
+        "size": 135854,
+        "md5": "7467eaa4dfe91277c11bbf8a7a095d83",
+        "type": "decoration",
+        "usage": "Decorative element (flower2-decoration) for glass-garden-pink"
+      },
+      {
+        "id": "flower4-decoration",
+        "file": "flower4-decoration.webp",
+        "path": "/images/themes/glass-garden-pink/flower4-decoration.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 137746,
+        "md5": "98fb8dcc243fb7e98335f94b7191b476",
+        "type": "decoration",
+        "usage": "Decorative element (flower4-decoration) for glass-garden-pink"
+      },
+      {
+        "id": "flower5-bottom",
+        "file": "flower5-bottom.webp",
+        "path": "/images/themes/glass-garden-pink/flower5-bottom.webp",
+        "format": "WEBP",
+        "width": 1536,
+        "height": 686,
+        "aspectRatio": 2.239,
+        "size": 172614,
+        "md5": "33804377a9d65fd94b8d1ca5d001ee71",
+        "type": "decoration",
+        "usage": "Decorative element (flower5-bottom) for glass-garden-pink"
+      },
+      {
         "id": "leaf1-bloom",
         "file": "leaf1-bloom.webp",
         "path": "/images/themes/glass-garden-pink/leaf1-bloom.webp",
@@ -5062,11 +9755,24 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "6bf81adabf1fa0f0283f6de33611c986",
         "type": "decoration",
         "usage": "Decorative element (leaf1-bloom) for glass-garden-pink"
+      },
+      {
+        "id": "water",
+        "file": "water.webp",
+        "path": "/images/themes/glass-garden-pink/water.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 126974,
+        "md5": "10a7a0d7133c7f39f3d32a90a64ccdcf",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-pink"
       }
     ],
     "backgroundPath": "/images/themes/glass-garden-pink/floral-background.webp",
     "coverPath": null,
-    "decorationsCount": 2,
+    "decorationsCount": 8,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -5685,9 +10391,48 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "glass-garden-green"
     ],
-    "assetCount": 2,
-    "totalBytes": 678526,
+    "assetCount": 10,
+    "totalBytes": 2867494,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/glass-garden-green/cake.webp",
+        "format": "WEBP",
+        "width": 1476,
+        "height": 2242,
+        "aspectRatio": 0.658,
+        "size": 179366,
+        "md5": "177af684f878c97b632c0474299e5b35",
+        "type": "divider",
+        "usage": "Decorative divider line for glass-garden-green"
+      },
+      {
+        "id": "calendar-heart",
+        "file": "calendar-heart.webp",
+        "path": "/images/themes/glass-garden-green/calendar-heart.webp",
+        "format": "WEBP",
+        "width": 492,
+        "height": 445,
+        "aspectRatio": 1.106,
+        "size": 5240,
+        "md5": "d7fe7d7e83f3540934caa90748678b02",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-green"
+      },
+      {
+        "id": "dish",
+        "file": "dish.webp",
+        "path": "/images/themes/glass-garden-green/dish.webp",
+        "format": "WEBP",
+        "width": 1562,
+        "height": 1983,
+        "aspectRatio": 0.788,
+        "size": 224230,
+        "md5": "663fe6aeae06844b30c1f54dfaf105c4",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-green"
+      },
       {
         "id": "floral-background",
         "file": "floral-background.webp",
@@ -5713,11 +10458,76 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "b8d704dcdb4dc6b59464a2e79fddd748",
         "type": "decoration",
         "usage": "Decorative element (flower1-decoration) for glass-garden-green"
+      },
+      {
+        "id": "flower2-decoration",
+        "file": "flower2-decoration.webp",
+        "path": "/images/themes/glass-garden-green/flower2-decoration.webp",
+        "format": "WEBP",
+        "width": 2388,
+        "height": 2508,
+        "aspectRatio": 0.952,
+        "size": 374752,
+        "md5": "7426d4302a9b86aba3cac9a7283aa003",
+        "type": "decoration",
+        "usage": "Decorative element (flower2-decoration) for glass-garden-green"
+      },
+      {
+        "id": "flower3-decoration",
+        "file": "flower3-decoration.webp",
+        "path": "/images/themes/glass-garden-green/flower3-decoration.webp",
+        "format": "WEBP",
+        "width": 1938,
+        "height": 2420,
+        "aspectRatio": 0.801,
+        "size": 275836,
+        "md5": "d00c4a5e07bc580fc896b7daf44aa18d",
+        "type": "decoration",
+        "usage": "Decorative element (flower3-decoration) for glass-garden-green"
+      },
+      {
+        "id": "flower4-decoration",
+        "file": "flower4-decoration.webp",
+        "path": "/images/themes/glass-garden-green/flower4-decoration.webp",
+        "format": "WEBP",
+        "width": 2441,
+        "height": 2439,
+        "aspectRatio": 1.001,
+        "size": 393584,
+        "md5": "bce87627a774a289d7b2b96bb2fa287e",
+        "type": "decoration",
+        "usage": "Decorative element (flower4-decoration) for glass-garden-green"
+      },
+      {
+        "id": "flower5-bottom",
+        "file": "flower5-bottom.webp",
+        "path": "/images/themes/glass-garden-green/flower5-bottom.webp",
+        "format": "WEBP",
+        "width": 2821,
+        "height": 1526,
+        "aspectRatio": 1.849,
+        "size": 441638,
+        "md5": "5a8a1862838a46e063d50130fb7c4cb1",
+        "type": "decoration",
+        "usage": "Decorative element (flower5-bottom) for glass-garden-green"
+      },
+      {
+        "id": "welcome",
+        "file": "welcome.webp",
+        "path": "/images/themes/glass-garden-green/welcome.webp",
+        "format": "WEBP",
+        "width": 1726,
+        "height": 2104,
+        "aspectRatio": 0.82,
+        "size": 294322,
+        "md5": "fc789f4fb1a60f6d5e50ba35b01edb0f",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-green"
       }
     ],
     "backgroundPath": "/images/themes/glass-garden-green/floral-background.webp",
     "coverPath": null,
-    "decorationsCount": 1,
+    "decorationsCount": 8,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -5730,9 +10540,100 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "baroque-v2-dark-red"
     ],
-    "assetCount": 1,
-    "totalBytes": 305360,
+    "assetCount": 12,
+    "totalBytes": 1232036,
     "assets": [
+      {
+        "id": "bg",
+        "file": "bg.webp",
+        "path": "/images/themes/baroque-v2-dark-red/bg.webp",
+        "format": "WEBP",
+        "width": 830,
+        "height": 1593,
+        "aspectRatio": 0.521,
+        "size": 102560,
+        "md5": "b7a3d1bf30c9223d575bf2ab5f431f89",
+        "type": "background",
+        "usage": "Background paper or ambient texture for baroque-v2-dark-red"
+      },
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/baroque-v2-dark-red/cake.webp",
+        "format": "WEBP",
+        "width": 340,
+        "height": 488,
+        "aspectRatio": 0.697,
+        "size": 45036,
+        "md5": "3377b6f47f55ee0b300876ed47403ecd",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-red"
+      },
+      {
+        "id": "camera",
+        "file": "camera.webp",
+        "path": "/images/themes/baroque-v2-dark-red/camera.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 424,
+        "aspectRatio": 0.943,
+        "size": 56396,
+        "md5": "ff4839129a9804266e2262766ac90482",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-v2-dark-red"
+      },
+      {
+        "id": "cook",
+        "file": "cook.webp",
+        "path": "/images/themes/baroque-v2-dark-red/cook.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 467,
+        "aspectRatio": 0.857,
+        "size": 53352,
+        "md5": "44d618352844fbb6dc7dd797aa9e87b7",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-v2-dark-red"
+      },
+      {
+        "id": "flower3-decoration",
+        "file": "flower3-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-red/flower3-decoration.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 800,
+        "aspectRatio": 1.0,
+        "size": 111210,
+        "md5": "7fac63c83370b5c1eb3f101720e49805",
+        "type": "decoration",
+        "usage": "Decorative element (flower3-decoration) for baroque-v2-dark-red"
+      },
+      {
+        "id": "flower4-decoration",
+        "file": "flower4-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-red/flower4-decoration.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 800,
+        "aspectRatio": 1.0,
+        "size": 138176,
+        "md5": "065f7490c65a54da3d6eeead14916d69",
+        "type": "decoration",
+        "usage": "Decorative element (flower4-decoration) for baroque-v2-dark-red"
+      },
+      {
+        "id": "flower5-decoration",
+        "file": "flower5-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-red/flower5-decoration.webp",
+        "format": "WEBP",
+        "width": 420,
+        "height": 1208,
+        "aspectRatio": 0.348,
+        "size": 198342,
+        "md5": "7e615a0162d02a0000883dfaf32e3bcf",
+        "type": "decoration",
+        "usage": "Decorative element (flower5-decoration) for baroque-v2-dark-red"
+      },
       {
         "id": "frame",
         "file": "frame.webp",
@@ -5745,11 +10646,63 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "3547a272db7e132f269b06bdf38b549a",
         "type": "frame",
         "usage": "Framing border or arch for baroque-v2-dark-red"
+      },
+      {
+        "id": "golden-line-decoration",
+        "file": "golden-line-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-red/golden-line-decoration.webp",
+        "format": "WEBP",
+        "width": 1400,
+        "height": 250,
+        "aspectRatio": 5.6,
+        "size": 100620,
+        "md5": "28b10c741b2e99655decd983cda17503",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-red"
+      },
+      {
+        "id": "line2-decoration",
+        "file": "line2-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-red/line2-decoration.webp",
+        "format": "WEBP",
+        "width": 600,
+        "height": 96,
+        "aspectRatio": 6.25,
+        "size": 21146,
+        "md5": "dbace79da2cd3f342d9178b668a33fd8",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-red"
+      },
+      {
+        "id": "line3-decoration",
+        "file": "line3-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-red/line3-decoration.webp",
+        "format": "WEBP",
+        "width": 160,
+        "height": 1273,
+        "aspectRatio": 0.126,
+        "size": 34880,
+        "md5": "c45977eb5914fa7dd2d01fa18ae08333",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-red"
+      },
+      {
+        "id": "line4-decoration",
+        "file": "line4-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-red/line4-decoration.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 759,
+        "aspectRatio": 0.422,
+        "size": 64958,
+        "md5": "f61e37786e63dff5d51c2dc87b9d8319",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-red"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/themes/baroque-v2-dark-red/bg.webp",
     "coverPath": null,
-    "decorationsCount": 0,
+    "decorationsCount": 5,
     "framesCount": 1,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -5762,8 +10715,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "silk-ribbon-darkred"
     ],
-    "assetCount": 3,
-    "totalBytes": 216572,
+    "assetCount": 6,
+    "totalBytes": 263346,
     "assets": [
       {
         "id": "flower-decoration",
@@ -5777,6 +10730,45 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "b295d233f4418f758a8782a3a690bbde",
         "type": "decoration",
         "usage": "Decorative element (flower-decoration) for silk-ribbon-darkred"
+      },
+      {
+        "id": "icon-alcohol",
+        "file": "icon-alcohol.webp",
+        "path": "/images/themes/silk-ribbon-darkred/icon-alcohol.webp",
+        "format": "WEBP",
+        "width": 220,
+        "height": 206,
+        "aspectRatio": 1.068,
+        "size": 20394,
+        "md5": "682e75880c1494b26730ff383978eda9",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for silk-ribbon-darkred"
+      },
+      {
+        "id": "icon-candle",
+        "file": "icon-candle.webp",
+        "path": "/images/themes/silk-ribbon-darkred/icon-candle.webp",
+        "format": "WEBP",
+        "width": 166,
+        "height": 220,
+        "aspectRatio": 0.755,
+        "size": 12678,
+        "md5": "2ca82fb691962580f2a847ca1472cb9e",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for silk-ribbon-darkred"
+      },
+      {
+        "id": "icon-ring",
+        "file": "icon-ring.webp",
+        "path": "/images/themes/silk-ribbon-darkred/icon-ring.webp",
+        "format": "WEBP",
+        "width": 220,
+        "height": 146,
+        "aspectRatio": 1.507,
+        "size": 13702,
+        "md5": "da6c3de07b488b424f83da0cb52eff06",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for silk-ribbon-darkred"
       },
       {
         "id": "line-decoration",
@@ -5917,8 +10909,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "longphung-v4-red"
     ],
-    "assetCount": 16,
-    "totalBytes": 1901444,
+    "assetCount": 18,
+    "totalBytes": 1902672,
     "assets": [
       {
         "id": "bg-texture",
@@ -6064,6 +11056,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Framing border or arch for longphung-v4-red"
       },
       {
+        "id": "heart",
+        "file": "heart.svg",
+        "path": "/images/themes/longphung-v4-red/heart.svg",
+        "format": "SVG",
+        "width": 21,
+        "height": 19,
+        "aspectRatio": 1.105,
+        "size": 546,
+        "md5": "506622b0e339e862923c371ff145c52d",
+        "type": "decoration",
+        "usage": "Ornamental artwork for longphung-v4-red"
+      },
+      {
         "id": "home",
         "file": "home.webp",
         "path": "/images/themes/longphung-v4-red/home.webp",
@@ -6127,12 +11132,25 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "b68dc1b14587a4be494e2dc5a9aec891",
         "type": "background",
         "usage": "Background paper or ambient texture for longphung-v4-red"
+      },
+      {
+        "id": "title-frame",
+        "file": "title-frame.svg",
+        "path": "/images/themes/longphung-v4-red/title-frame.svg",
+        "format": "SVG",
+        "width": 314,
+        "height": 53,
+        "aspectRatio": 5.925,
+        "size": 682,
+        "md5": "4b49393f1d26f19788528f455c8d94fc",
+        "type": "frame",
+        "usage": "Framing border or arch for longphung-v4-red"
       }
     ],
     "backgroundPath": "/images/themes/longphung-v4-red/bg-texture.webp",
     "coverPath": null,
-    "decorationsCount": 12,
-    "framesCount": 1,
+    "decorationsCount": 13,
+    "framesCount": 2,
     "isSharedTheme": false,
     "sharedWith": [],
     "status": "active"
@@ -6455,9 +11473,22 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "lien-hoa-v2-green"
     ],
-    "assetCount": 3,
-    "totalBytes": 732522,
+    "assetCount": 10,
+    "totalBytes": 1476796,
     "assets": [
+      {
+        "id": "flower1",
+        "file": "flower1.webp",
+        "path": "/images/themes/lien-hoa-v2-green/flower1.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 900,
+        "aspectRatio": 1.0,
+        "size": 175462,
+        "md5": "ccae1a3aaf1ce12302d752a2ca083fb5",
+        "type": "decoration",
+        "usage": "Decorative element (flower1) for lien-hoa-v2-green"
+      },
       {
         "id": "flower10",
         "file": "flower10.webp",
@@ -6485,6 +11516,32 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Decorative element (flower3) for lien-hoa-v2-green"
       },
       {
+        "id": "flower4-bottom",
+        "file": "flower4-bottom.webp",
+        "path": "/images/themes/lien-hoa-v2-green/flower4-bottom.webp",
+        "format": "WEBP",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": 1.333,
+        "size": 232116,
+        "md5": "6df096b3150717e05ba4047f30cafd98",
+        "type": "decoration",
+        "usage": "Decorative element (flower4-bottom) for lien-hoa-v2-green"
+      },
+      {
+        "id": "flower5",
+        "file": "flower5.webp",
+        "path": "/images/themes/lien-hoa-v2-green/flower5.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 900,
+        "aspectRatio": 1.0,
+        "size": 144254,
+        "md5": "e2017b6948a73bd9cb6c1533a695c8b3",
+        "type": "decoration",
+        "usage": "Decorative element (flower5) for lien-hoa-v2-green"
+      },
+      {
         "id": "flower6",
         "file": "flower6.webp",
         "path": "/images/themes/lien-hoa-v2-green/flower6.webp",
@@ -6496,11 +11553,63 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "713e9b30ce7211195dc1b404a51090c4",
         "type": "decoration",
         "usage": "Decorative element (flower6) for lien-hoa-v2-green"
+      },
+      {
+        "id": "medallion-cake",
+        "file": "medallion-cake.webp",
+        "path": "/images/themes/lien-hoa-v2-green/medallion-cake.webp",
+        "format": "WEBP",
+        "width": 300,
+        "height": 392,
+        "aspectRatio": 0.765,
+        "size": 43938,
+        "md5": "33dff199f03ddc0638e67f5a8f1b6498",
+        "type": "divider",
+        "usage": "Decorative divider line for lien-hoa-v2-green"
+      },
+      {
+        "id": "medallion-drink",
+        "file": "medallion-drink.webp",
+        "path": "/images/themes/lien-hoa-v2-green/medallion-drink.webp",
+        "format": "WEBP",
+        "width": 300,
+        "height": 300,
+        "aspectRatio": 1.0,
+        "size": 34678,
+        "md5": "b1db8235ddaaa6a2e2f547b7d212d473",
+        "type": "decoration",
+        "usage": "Ornamental artwork for lien-hoa-v2-green"
+      },
+      {
+        "id": "medallion-ring",
+        "file": "medallion-ring.webp",
+        "path": "/images/themes/lien-hoa-v2-green/medallion-ring.webp",
+        "format": "WEBP",
+        "width": 300,
+        "height": 300,
+        "aspectRatio": 1.0,
+        "size": 29944,
+        "md5": "71f016cc1ccb31e3d845fa18e0a78a90",
+        "type": "decoration",
+        "usage": "Ornamental artwork for lien-hoa-v2-green"
+      },
+      {
+        "id": "paper-texture",
+        "file": "paper-texture.webp",
+        "path": "/images/themes/lien-hoa-v2-green/paper-texture.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 1350,
+        "aspectRatio": 0.667,
+        "size": 83882,
+        "md5": "c1fe9be6e6a26d6451b65b36c9cbca93",
+        "type": "background",
+        "usage": "Background paper or ambient texture for lien-hoa-v2-green"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/themes/lien-hoa-v2-green/paper-texture.webp",
     "coverPath": null,
-    "decorationsCount": 3,
+    "decorationsCount": 8,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -6558,8 +11667,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "song-hac-red"
     ],
-    "assetCount": 7,
-    "totalBytes": 835162,
+    "assetCount": 16,
+    "totalBytes": 1468377,
     "assets": [
       {
         "id": "bg-texture",
@@ -6575,6 +11684,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Background paper or ambient texture for song-hac-red"
       },
       {
+        "id": "bird-background",
+        "file": "bird-background.webp",
+        "path": "/images/themes/song-hac-red/bird-background.webp",
+        "format": "WEBP",
+        "width": 760,
+        "height": 760,
+        "aspectRatio": 1.0,
+        "size": 209448,
+        "md5": "214de19103637e204156c0aeea38e083",
+        "type": "background",
+        "usage": "Background paper or ambient texture for song-hac-red"
+      },
+      {
         "id": "bird-decoration",
         "file": "bird-decoration.webp",
         "path": "/images/themes/song-hac-red/bird-decoration.webp",
@@ -6586,6 +11708,45 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "1e0cf8f92090741b4b51abfc17df0510",
         "type": "decoration",
         "usage": "Ornamental artwork for song-hac-red"
+      },
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/song-hac-red/cake.webp",
+        "format": "WEBP",
+        "width": 200,
+        "height": 213,
+        "aspectRatio": 0.939,
+        "size": 21340,
+        "md5": "e0d4ce6fce9319ce1efc38559fe0ab29",
+        "type": "divider",
+        "usage": "Decorative divider line for song-hac-red"
+      },
+      {
+        "id": "cloud-pattern",
+        "file": "cloud-pattern.webp",
+        "path": "/images/themes/song-hac-red/cloud-pattern.webp",
+        "format": "WEBP",
+        "width": 1600,
+        "height": 463,
+        "aspectRatio": 3.456,
+        "size": 269920,
+        "md5": "f2cc95a0082fa274c07338a43bcb425a",
+        "type": "decoration",
+        "usage": "Decorative element (cloud-pattern) for song-hac-red"
+      },
+      {
+        "id": "cloud1-bottom",
+        "file": "cloud1-bottom.webp",
+        "path": "/images/themes/song-hac-red/cloud1-bottom.webp",
+        "format": "WEBP",
+        "width": 1100,
+        "height": 367,
+        "aspectRatio": 2.997,
+        "size": 79416,
+        "md5": "dc5cd686ec9ae5f6f7ab096a6f6cf007",
+        "type": "decoration",
+        "usage": "Decorative element (cloud1-bottom) for song-hac-red"
       },
       {
         "id": "cloud1-decoration",
@@ -6640,6 +11801,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Decorative element (flower1-decoration) for song-hac-red"
       },
       {
+        "id": "heart",
+        "file": "heart.svg",
+        "path": "/images/themes/song-hac-red/heart.svg",
+        "format": "SVG",
+        "width": 21,
+        "height": 19,
+        "aspectRatio": 1.105,
+        "size": 546,
+        "md5": "5835db08c2defd7268fe917e575dfc3e",
+        "type": "decoration",
+        "usage": "Ornamental artwork for song-hac-red"
+      },
+      {
         "id": "moon-decoration",
         "file": "moon-decoration.webp",
         "path": "/images/themes/song-hac-red/moon-decoration.webp",
@@ -6651,12 +11825,64 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "88fece4897bbdcb069493ff313d54269",
         "type": "decoration",
         "usage": "Ornamental artwork for song-hac-red"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/song-hac-red/ring.webp",
+        "format": "WEBP",
+        "width": 200,
+        "height": 138,
+        "aspectRatio": 1.449,
+        "size": 18084,
+        "md5": "76fec2343ca0e90daba64c9ea68dfc3a",
+        "type": "decoration",
+        "usage": "Ornamental artwork for song-hac-red"
+      },
+      {
+        "id": "timeline-panel",
+        "file": "timeline-panel.webp",
+        "path": "/images/themes/song-hac-red/timeline-panel.webp",
+        "format": "WEBP",
+        "width": 795,
+        "height": 789,
+        "aspectRatio": 1.008,
+        "size": 7536,
+        "md5": "2a0894d65e0cdcf8c0bce9b6f08c9320",
+        "type": "divider",
+        "usage": "Decorative divider line for song-hac-red"
+      },
+      {
+        "id": "water",
+        "file": "water.webp",
+        "path": "/images/themes/song-hac-red/water.webp",
+        "format": "WEBP",
+        "width": 200,
+        "height": 213,
+        "aspectRatio": 0.939,
+        "size": 26146,
+        "md5": "19f575d1aa1f31b92fef38af33ca22ff",
+        "type": "decoration",
+        "usage": "Ornamental artwork for song-hac-red"
+      },
+      {
+        "id": "white-frame",
+        "file": "white-frame.svg",
+        "path": "/images/themes/song-hac-red/white-frame.svg",
+        "format": "SVG",
+        "width": 220,
+        "height": 220,
+        "aspectRatio": 1.0,
+        "size": 779,
+        "md5": "0aa9c996fdcc4b6b8c085f3895912902",
+        "type": "frame",
+        "usage": "Framing border or arch for song-hac-red"
       }
     ],
     "backgroundPath": "/images/themes/song-hac-red/bg-texture.webp",
     "coverPath": null,
-    "decorationsCount": 6,
-    "framesCount": 0,
+    "decorationsCount": 11,
+    "framesCount": 1,
     "isSharedTheme": false,
     "sharedWith": [],
     "status": "active"
@@ -6668,9 +11894,22 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "chibi_red"
     ],
-    "assetCount": 3,
-    "totalBytes": 156124,
+    "assetCount": 7,
+    "totalBytes": 303100,
     "assets": [
+      {
+        "id": "cherry-blossom",
+        "file": "cherry-blossom.webp",
+        "path": "/images/themes/chibi_red/cherry-blossom.webp",
+        "format": "WEBP",
+        "width": 650,
+        "height": 566,
+        "aspectRatio": 1.148,
+        "size": 23404,
+        "md5": "8f1b8a7d95de8fd8595104fee4e9a3ef",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chibi_red"
+      },
       {
         "id": "couple-main",
         "file": "couple-main.webp",
@@ -6685,6 +11924,32 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Ornamental artwork for chibi_red"
       },
       {
+        "id": "decorative-diamond",
+        "file": "decorative-diamond.webp",
+        "path": "/images/themes/chibi_red/decorative-diamond.webp",
+        "format": "WEBP",
+        "width": 159,
+        "height": 182,
+        "aspectRatio": 0.874,
+        "size": 5148,
+        "md5": "9206d3db2b240ec50fa1bce5ec5319ab",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chibi_red"
+      },
+      {
+        "id": "decorative-dragon",
+        "file": "decorative-dragon.webp",
+        "path": "/images/themes/chibi_red/decorative-dragon.webp",
+        "format": "WEBP",
+        "width": 1023,
+        "height": 1124,
+        "aspectRatio": 0.91,
+        "size": 65200,
+        "md5": "f57a88187c450106ab6967c4e5c72b6c",
+        "type": "decoration",
+        "usage": "Decorative element (decorative-dragon) for chibi_red"
+      },
+      {
         "id": "decorative-flowers",
         "file": "decorative-flowers.webp",
         "path": "/images/themes/chibi_red/decorative-flowers.webp",
@@ -6696,6 +11961,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "c02f4c4821ae96bf057e2e788ae2e1e1",
         "type": "decoration",
         "usage": "Decorative element (decorative-flowers) for chibi_red"
+      },
+      {
+        "id": "decorative-header",
+        "file": "decorative-header.webp",
+        "path": "/images/themes/chibi_red/decorative-header.webp",
+        "format": "WEBP",
+        "width": 844,
+        "height": 213,
+        "aspectRatio": 3.962,
+        "size": 53224,
+        "md5": "2b20c15b72d5c1b53be62cb28e4aef1b",
+        "type": "decoration",
+        "usage": "Header ornament for chibi_red"
       },
       {
         "id": "double-happiness",
@@ -6713,7 +11991,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     ],
     "backgroundPath": null,
     "coverPath": null,
-    "decorationsCount": 3,
+    "decorationsCount": 7,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -6726,8 +12004,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "thanhdiep-green"
     ],
-    "assetCount": 3,
-    "totalBytes": 568208,
+    "assetCount": 4,
+    "totalBytes": 801034,
     "assets": [
       {
         "id": "la1",
@@ -6767,11 +12045,24 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "2148710bac3b1c42469b8d208d55f472",
         "type": "decoration",
         "usage": "Decorative element (la3) for thanhdiep-green"
+      },
+      {
+        "id": "la4",
+        "file": "la4.webp",
+        "path": "/images/themes/thanhdiep-green/la4.webp",
+        "format": "WEBP",
+        "width": 1748,
+        "height": 2480,
+        "aspectRatio": 0.705,
+        "size": 232826,
+        "md5": "c721492ec2e8ebf3a8fa0cee512f2bd3",
+        "type": "decoration",
+        "usage": "Decorative element (la4) for thanhdiep-green"
       }
     ],
     "backgroundPath": null,
     "coverPath": null,
-    "decorationsCount": 3,
+    "decorationsCount": 4,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -6784,8 +12075,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "silk-ribbon-pink"
     ],
-    "assetCount": 3,
-    "totalBytes": 335698,
+    "assetCount": 6,
+    "totalBytes": 383208,
     "assets": [
       {
         "id": "flower-decoration",
@@ -6799,6 +12090,45 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "2d578dc37f2c73e7f2341f9d15c31a90",
         "type": "decoration",
         "usage": "Decorative element (flower-decoration) for silk-ribbon-pink"
+      },
+      {
+        "id": "icon-alcohol",
+        "file": "icon-alcohol.webp",
+        "path": "/images/themes/silk-ribbon-pink/icon-alcohol.webp",
+        "format": "WEBP",
+        "width": 220,
+        "height": 207,
+        "aspectRatio": 1.063,
+        "size": 20638,
+        "md5": "e3152ef2d84ba502c0d2d26310c54ffc",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for silk-ribbon-pink"
+      },
+      {
+        "id": "icon-candle",
+        "file": "icon-candle.webp",
+        "path": "/images/themes/silk-ribbon-pink/icon-candle.webp",
+        "format": "WEBP",
+        "width": 163,
+        "height": 220,
+        "aspectRatio": 0.741,
+        "size": 13272,
+        "md5": "a168164d9c59b9ec98a999b5eda68040",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for silk-ribbon-pink"
+      },
+      {
+        "id": "icon-ring",
+        "file": "icon-ring.webp",
+        "path": "/images/themes/silk-ribbon-pink/icon-ring.webp",
+        "format": "WEBP",
+        "width": 220,
+        "height": 146,
+        "aspectRatio": 1.507,
+        "size": 13600,
+        "md5": "8e0833b8d7c1c07b1c256508887b84a9",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for silk-ribbon-pink"
       },
       {
         "id": "line-decoration",
@@ -6918,8 +12248,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "royal-red"
     ],
-    "assetCount": 2,
-    "totalBytes": 603466,
+    "assetCount": 5,
+    "totalBytes": 612852,
     "assets": [
       {
         "id": "background",
@@ -6946,12 +12276,51 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "94a3e6b1b91a47f929f760df78310d35",
         "type": "decoration",
         "usage": "Decorative element (flower) for royal-red"
+      },
+      {
+        "id": "frame-corner-top-left",
+        "file": "frame-corner-top-left.webp",
+        "path": "/images/themes/royal-red/frame-corner-top-left.webp",
+        "format": "WEBP",
+        "width": 91,
+        "height": 91,
+        "aspectRatio": 1.0,
+        "size": 4042,
+        "md5": "887953e191d6f5e2c1abed43a418a091",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-red"
+      },
+      {
+        "id": "frame-middle-horizontal",
+        "file": "frame-middle-horizontal.webp",
+        "path": "/images/themes/royal-red/frame-middle-horizontal.webp",
+        "format": "WEBP",
+        "width": 106,
+        "height": 35,
+        "aspectRatio": 3.029,
+        "size": 2652,
+        "md5": "3f242e37547f379c88f5df32a61bc331",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-red"
+      },
+      {
+        "id": "frame-middle-vertical",
+        "file": "frame-middle-vertical.webp",
+        "path": "/images/themes/royal-red/frame-middle-vertical.webp",
+        "format": "WEBP",
+        "width": 35,
+        "height": 106,
+        "aspectRatio": 0.33,
+        "size": 2692,
+        "md5": "0f8dbf5fbb39a0b81031fecb235c2964",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-red"
       }
     ],
     "backgroundPath": "/images/themes/royal-red/background.webp",
     "coverPath": null,
     "decorationsCount": 1,
-    "framesCount": 0,
+    "framesCount": 3,
     "isSharedTheme": false,
     "sharedWith": [],
     "status": "active"
@@ -7008,8 +12377,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "baroque-gold"
     ],
-    "assetCount": 3,
-    "totalBytes": 1179888,
+    "assetCount": 8,
+    "totalBytes": 2201824,
     "assets": [
       {
         "id": "bg",
@@ -7025,6 +12394,32 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Background paper or ambient texture for baroque-gold"
       },
       {
+        "id": "hoa-tiet-1",
+        "file": "hoa-tiet-1.webp",
+        "path": "/images/themes/baroque-gold/hoa-tiet-1.webp",
+        "format": "WEBP",
+        "width": 899,
+        "height": 1750,
+        "aspectRatio": 0.514,
+        "size": 469710,
+        "md5": "ba1bd22c85e12ceee07433896f0e4e5a",
+        "type": "decoration",
+        "usage": "Decorative element (hoa-tiet-1) for baroque-gold"
+      },
+      {
+        "id": "hoa-tiet-3",
+        "file": "hoa-tiet-3.webp",
+        "path": "/images/themes/baroque-gold/hoa-tiet-3.webp",
+        "format": "WEBP",
+        "width": 1774,
+        "height": 887,
+        "aspectRatio": 2.0,
+        "size": 366350,
+        "md5": "e5838cf2ce0b723eae82165038c34af9",
+        "type": "decoration",
+        "usage": "Decorative element (hoa-tiet-3) for baroque-gold"
+      },
+      {
         "id": "hoa",
         "file": "hoa.webp",
         "path": "/images/themes/baroque-gold/hoa.webp",
@@ -7038,6 +12433,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Decorative element (hoa) for baroque-gold"
       },
       {
+        "id": "khung-lich",
+        "file": "khung-lich.webp",
+        "path": "/images/themes/baroque-gold/khung-lich.webp",
+        "format": "WEBP",
+        "width": 1283,
+        "height": 1106,
+        "aspectRatio": 1.16,
+        "size": 84388,
+        "md5": "508526ed9ae22f5375d37c8fff713de1",
+        "type": "frame",
+        "usage": "Framing border or arch for baroque-gold"
+      },
+      {
         "id": "khung",
         "file": "khung.webp",
         "path": "/images/themes/baroque-gold/khung.webp",
@@ -7049,12 +12457,38 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "c2966d739b19f2f187557681eb76f667",
         "type": "frame",
         "usage": "Framing border or arch for baroque-gold"
+      },
+      {
+        "id": "pattern-decoration",
+        "file": "pattern-decoration.webp",
+        "path": "/images/themes/baroque-gold/pattern-decoration.webp",
+        "format": "WEBP",
+        "width": 1200,
+        "height": 268,
+        "aspectRatio": 4.478,
+        "size": 90656,
+        "md5": "6252852db278cad1e8f98d6be0d527bb",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-gold"
+      },
+      {
+        "id": "tru",
+        "file": "tru.webp",
+        "path": "/images/themes/baroque-gold/tru.webp",
+        "format": "WEBP",
+        "width": 226,
+        "height": 677,
+        "aspectRatio": 0.334,
+        "size": 10832,
+        "md5": "6d28412a5ca3368263f853c1e901d67d",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-gold"
       }
     ],
     "backgroundPath": "/images/themes/baroque-gold/bg.webp",
     "coverPath": null,
-    "decorationsCount": 1,
-    "framesCount": 1,
+    "decorationsCount": 5,
+    "framesCount": 2,
     "isSharedTheme": false,
     "sharedWith": [],
     "status": "active"
@@ -7066,9 +12500,22 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "songphung-green"
     ],
-    "assetCount": 3,
-    "totalBytes": 924597,
+    "assetCount": 6,
+    "totalBytes": 2155427,
     "assets": [
+      {
+        "id": "CHU_HY",
+        "file": "CHU HY.webp",
+        "path": "/images/themes/songphung-green/CHU HY.webp",
+        "format": "WEBP",
+        "width": 1272,
+        "height": 1271,
+        "aspectRatio": 1.001,
+        "size": 17432,
+        "md5": "654b545fa4789229477e1501d68c4b35",
+        "type": "decoration",
+        "usage": "Ornamental artwork for songphung-green"
+      },
       {
         "id": "HOA",
         "file": "HOA.webp",
@@ -7096,6 +12543,32 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Background paper or ambient texture for songphung-green"
       },
       {
+        "id": "Phuong_2",
+        "file": "Phuong 2.webp",
+        "path": "/images/themes/songphung-green/Phuong 2.webp",
+        "format": "WEBP",
+        "width": 1952,
+        "height": 4105,
+        "aspectRatio": 0.476,
+        "size": 696074,
+        "md5": "b2e8ccff7df6775766272b7826204184",
+        "type": "decoration",
+        "usage": "Decorative element (phuong 2) for songphung-green"
+      },
+      {
+        "id": "Phuong_line",
+        "file": "Phuong line.webp",
+        "path": "/images/themes/songphung-green/Phuong line.webp",
+        "format": "WEBP",
+        "width": 1966,
+        "height": 4119,
+        "aspectRatio": 0.477,
+        "size": 517324,
+        "md5": "43ca638c136698e686800ac11b76be86",
+        "type": "divider",
+        "usage": "Decorative divider line for songphung-green"
+      },
+      {
         "id": "Phuong",
         "file": "Phuong.webp",
         "path": "/images/themes/songphung-green/Phuong.webp",
@@ -7111,7 +12584,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     ],
     "backgroundPath": "/images/themes/songphung-green/NENGIAY.jpg",
     "coverPath": null,
-    "decorationsCount": 2,
+    "decorationsCount": 4,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -7124,8 +12597,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "anhdao-pink"
     ],
-    "assetCount": 2,
-    "totalBytes": 671830,
+    "assetCount": 4,
+    "totalBytes": 785860,
     "assets": [
       {
         "id": "1",
@@ -7137,6 +12610,32 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "aspectRatio": 0.697,
         "size": 52742,
         "md5": "ba57ddf633f40eb0e9aed50580f3af5c",
+        "type": "decoration",
+        "usage": "Ornamental artwork for anhdao-pink"
+      },
+      {
+        "id": "2",
+        "file": "2.webp",
+        "path": "/images/themes/anhdao-pink/2.webp",
+        "format": "WEBP",
+        "width": 557,
+        "height": 800,
+        "aspectRatio": 0.696,
+        "size": 55006,
+        "md5": "44fa51f1b117c871482147cc4a18bc1d",
+        "type": "decoration",
+        "usage": "Ornamental artwork for anhdao-pink"
+      },
+      {
+        "id": "3",
+        "file": "3.webp",
+        "path": "/images/themes/anhdao-pink/3.webp",
+        "format": "WEBP",
+        "width": 506,
+        "height": 900,
+        "aspectRatio": 0.562,
+        "size": 59024,
+        "md5": "635ef1d18870a4e6de99572c4940a9a6",
         "type": "decoration",
         "usage": "Ornamental artwork for anhdao-pink"
       },
@@ -7156,7 +12655,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     ],
     "backgroundPath": "/images/themes/anhdao-pink/bg-full.jpg",
     "coverPath": null,
-    "decorationsCount": 1,
+    "decorationsCount": 3,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -7169,9 +12668,48 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "love-art"
     ],
-    "assetCount": 4,
-    "totalBytes": 47062,
+    "assetCount": 13,
+    "totalBytes": 217690,
     "assets": [
+      {
+        "id": "3_tim",
+        "file": "3 tim.webp",
+        "path": "/images/themes/love-art/3 tim.webp",
+        "format": "WEBP",
+        "width": 140,
+        "height": 131,
+        "aspectRatio": 1.069,
+        "size": 4960,
+        "md5": "6b00a38ca5000f83e45f27b89fe342a8",
+        "type": "decoration",
+        "usage": "Ornamental artwork for love-art"
+      },
+      {
+        "id": "bride_frame",
+        "file": "bride frame.webp",
+        "path": "/images/themes/love-art/bride frame.webp",
+        "format": "WEBP",
+        "width": 597,
+        "height": 746,
+        "aspectRatio": 0.8,
+        "size": 21170,
+        "md5": "ead6076edf990ed0bf9be3feeba4c5d3",
+        "type": "frame",
+        "usage": "Framing border or arch for love-art"
+      },
+      {
+        "id": "dau_ly",
+        "file": "dau ly.webp",
+        "path": "/images/themes/love-art/dau ly.webp",
+        "format": "WEBP",
+        "width": 215,
+        "height": 237,
+        "aspectRatio": 0.907,
+        "size": 19624,
+        "md5": "7bfe56aba10ff2f00bc8abb057f73361",
+        "type": "decoration",
+        "usage": "Ornamental artwork for love-art"
+      },
       {
         "id": "dau",
         "file": "dau.webp",
@@ -7184,6 +12722,32 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "3413c03172727626a07ba018a95a46b9",
         "type": "decoration",
         "usage": "Ornamental artwork for love-art"
+      },
+      {
+        "id": "groom_frame",
+        "file": "groom frame.webp",
+        "path": "/images/themes/love-art/groom frame.webp",
+        "format": "WEBP",
+        "width": 607,
+        "height": 758,
+        "aspectRatio": 0.801,
+        "size": 28134,
+        "md5": "95eac485d6e8ae3eb79b85c9ce54c508",
+        "type": "frame",
+        "usage": "Framing border or arch for love-art"
+      },
+      {
+        "id": "hoa_tim",
+        "file": "hoa tim.webp",
+        "path": "/images/themes/love-art/hoa tim.webp",
+        "format": "WEBP",
+        "width": 198,
+        "height": 86,
+        "aspectRatio": 2.302,
+        "size": 6438,
+        "md5": "60b33211175002e6fc797377ef91d475",
+        "type": "decoration",
+        "usage": "Decorative element (hoa tim) for love-art"
       },
       {
         "id": "hy",
@@ -7199,6 +12763,45 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Ornamental artwork for love-art"
       },
       {
+        "id": "lich",
+        "file": "lich.webp",
+        "path": "/images/themes/love-art/lich.webp",
+        "format": "WEBP",
+        "width": 863,
+        "height": 907,
+        "aspectRatio": 0.951,
+        "size": 48956,
+        "md5": "f08e16b6fbd070f2b5cc43ce94cce818",
+        "type": "decoration",
+        "usage": "Ornamental artwork for love-art"
+      },
+      {
+        "id": "love",
+        "file": "love.webp",
+        "path": "/images/themes/love-art/love.webp",
+        "format": "WEBP",
+        "width": 334,
+        "height": 137,
+        "aspectRatio": 2.438,
+        "size": 12784,
+        "md5": "f2e1b1925c5fe985c0db863f9c3719a4",
+        "type": "decoration",
+        "usage": "Ornamental artwork for love-art"
+      },
+      {
+        "id": "re_ly",
+        "file": "re ly.webp",
+        "path": "/images/themes/love-art/re ly.webp",
+        "format": "WEBP",
+        "width": 180,
+        "height": 225,
+        "aspectRatio": 0.8,
+        "size": 14854,
+        "md5": "ae87bc0233641e1772586b927b8e8d6e",
+        "type": "decoration",
+        "usage": "Ornamental artwork for love-art"
+      },
+      {
         "id": "re",
         "file": "re.webp",
         "path": "/images/themes/love-art/re.webp",
@@ -7208,6 +12811,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "aspectRatio": 1.936,
         "size": 10078,
         "md5": "059b983718eab51ed0a3da3cf40cd758",
+        "type": "decoration",
+        "usage": "Ornamental artwork for love-art"
+      },
+      {
+        "id": "thanks",
+        "file": "thanks.webp",
+        "path": "/images/themes/love-art/thanks.webp",
+        "format": "WEBP",
+        "width": 411,
+        "height": 154,
+        "aspectRatio": 2.669,
+        "size": 13708,
+        "md5": "b91e53ee2424cbf10b1d820c345c099a",
         "type": "decoration",
         "usage": "Ornamental artwork for love-art"
       },
@@ -7227,8 +12843,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     ],
     "backgroundPath": null,
     "coverPath": null,
-    "decorationsCount": 4,
-    "framesCount": 0,
+    "decorationsCount": 11,
+    "framesCount": 2,
     "isSharedTheme": false,
     "sharedWith": [],
     "status": "active"
@@ -7240,8 +12856,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "silkflora-brown"
     ],
-    "assetCount": 2,
-    "totalBytes": 333940,
+    "assetCount": 3,
+    "totalBytes": 469174,
     "assets": [
       {
         "id": "bottom",
@@ -7268,11 +12884,24 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "8aff763aafda68cb9f569779a54bcff1",
         "type": "decoration",
         "usage": "Body or footer illustration for silkflora-brown"
+      },
+      {
+        "id": "top-flower",
+        "file": "top-flower.webp",
+        "path": "/images/themes/silkflora-brown/top-flower.webp",
+        "format": "WEBP",
+        "width": 942,
+        "height": 1688,
+        "aspectRatio": 0.558,
+        "size": 135234,
+        "md5": "cbbf9133f84a3f073d705d1841ea463f",
+        "type": "decoration",
+        "usage": "Decorative element (top-flower) for silkflora-brown"
       }
     ],
     "backgroundPath": null,
     "coverPath": null,
-    "decorationsCount": 2,
+    "decorationsCount": 3,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -7285,8 +12914,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "boho-floral-pink"
     ],
-    "assetCount": 2,
-    "totalBytes": 107854,
+    "assetCount": 3,
+    "totalBytes": 159544,
     "assets": [
       {
         "id": "asset_1",
@@ -7313,11 +12942,24 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "ec7aed8f48ea2032da157f17111d6091",
         "type": "decoration",
         "usage": "Ornamental artwork for boho-floral-pink"
+      },
+      {
+        "id": "asset_3",
+        "file": "asset_3.webp",
+        "path": "/images/themes/boho-floral-pink/asset_3.webp",
+        "format": "WEBP",
+        "width": 500,
+        "height": 937,
+        "aspectRatio": 0.534,
+        "size": 51690,
+        "md5": "37c843f62dcbcb161f6e31c6018977a1",
+        "type": "decoration",
+        "usage": "Ornamental artwork for boho-floral-pink"
       }
     ],
     "backgroundPath": null,
     "coverPath": null,
-    "decorationsCount": 2,
+    "decorationsCount": 3,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -7330,8 +12972,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "nhat-binh-red"
     ],
-    "assetCount": 7,
-    "totalBytes": 2226554,
+    "assetCount": 9,
+    "totalBytes": 2540842,
     "assets": [
       {
         "id": "chu-hy",
@@ -7345,6 +12987,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "4e7d029636ed094d9aa686b2ef2da2d8",
         "type": "icon",
         "usage": "Icon or cultural symbol (囍) for nhat-binh-red"
+      },
+      {
+        "id": "corner",
+        "file": "corner.webp",
+        "path": "/images/themes/nhat-binh-red/corner.webp",
+        "format": "WEBP",
+        "width": 854,
+        "height": 854,
+        "aspectRatio": 1.0,
+        "size": 4596,
+        "md5": "8af9b3dda824da116eaf4b4fad8c3a12",
+        "type": "decoration",
+        "usage": "Ornamental artwork for nhat-binh-red"
       },
       {
         "id": "dau-re",
@@ -7399,6 +13054,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Ornamental artwork for nhat-binh-red"
       },
       {
+        "id": "may",
+        "file": "may.webp",
+        "path": "/images/themes/nhat-binh-red/may.webp",
+        "format": "WEBP",
+        "width": 2560,
+        "height": 1311,
+        "aspectRatio": 1.953,
+        "size": 309692,
+        "md5": "d942d97493392e1b25007568dbbac2f5",
+        "type": "decoration",
+        "usage": "Ornamental artwork for nhat-binh-red"
+      },
+      {
         "id": "paper",
         "file": "paper.webp",
         "path": "/images/themes/nhat-binh-red/paper.webp",
@@ -7427,7 +13095,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     ],
     "backgroundPath": "/images/themes/nhat-binh-red/paper.webp",
     "coverPath": null,
-    "decorationsCount": 5,
+    "decorationsCount": 7,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -7440,8 +13108,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "boho-floral-brown"
     ],
-    "assetCount": 4,
-    "totalBytes": 513792,
+    "assetCount": 6,
+    "totalBytes": 589600,
     "assets": [
       {
         "id": "decoration_bar",
@@ -7470,6 +13138,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Decorative element (fixed_flower) for boho-floral-brown"
       },
       {
+        "id": "fixed_flower_2",
+        "file": "fixed_flower_2.webp",
+        "path": "/images/themes/boho-floral-brown/fixed_flower_2.webp",
+        "format": "WEBP",
+        "width": 603,
+        "height": 624,
+        "aspectRatio": 0.966,
+        "size": 36152,
+        "md5": "ea90f4950a7c864b97fa89af91971815",
+        "type": "decoration",
+        "usage": "Decorative element (fixed_flower_2) for boho-floral-brown"
+      },
+      {
         "id": "flower_bottom",
         "file": "flower_bottom.webp",
         "path": "/images/themes/boho-floral-brown/flower_bottom.webp",
@@ -7481,6 +13162,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "2109b04c2973b83e2e548508dee15edf",
         "type": "decoration",
         "usage": "Decorative element (flower_bottom) for boho-floral-brown"
+      },
+      {
+        "id": "flower_mid",
+        "file": "flower_mid.webp",
+        "path": "/images/themes/boho-floral-brown/flower_mid.webp",
+        "format": "WEBP",
+        "width": 687,
+        "height": 507,
+        "aspectRatio": 1.355,
+        "size": 39656,
+        "md5": "9833081b787ab6497e0f9921bdf0ecea",
+        "type": "decoration",
+        "usage": "Decorative element (flower_mid) for boho-floral-brown"
       },
       {
         "id": "flower_top",
@@ -7498,7 +13192,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     ],
     "backgroundPath": null,
     "coverPath": null,
-    "decorationsCount": 4,
+    "decorationsCount": 6,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -7511,9 +13205,22 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "applique-lace-white"
     ],
-    "assetCount": 4,
-    "totalBytes": 511560,
+    "assetCount": 11,
+    "totalBytes": 742702,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/applique-lace-white/cake.webp",
+        "format": "WEBP",
+        "width": 307,
+        "height": 320,
+        "aspectRatio": 0.959,
+        "size": 12454,
+        "md5": "516c7cf97067831f54e4863606fc319a",
+        "type": "divider",
+        "usage": "Decorative divider line for applique-lace-white"
+      },
       {
         "id": "envelope-background",
         "file": "envelope-background.webp",
@@ -7554,6 +13261,84 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Decorative element (flower) for applique-lace-white"
       },
       {
+        "id": "guestbook-paper",
+        "file": "guestbook-paper.webp",
+        "path": "/images/themes/applique-lace-white/guestbook-paper.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 1350,
+        "aspectRatio": 0.667,
+        "size": 49286,
+        "md5": "908b5133274f1ce9c2c28b70dcc139ba",
+        "type": "background",
+        "usage": "Background paper or ambient texture for applique-lace-white"
+      },
+      {
+        "id": "home",
+        "file": "home.webp",
+        "path": "/images/themes/applique-lace-white/home.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 318,
+        "aspectRatio": 1.006,
+        "size": 13236,
+        "md5": "82929093667bac3d39826d3f511bd902",
+        "type": "decoration",
+        "usage": "Ornamental artwork for applique-lace-white"
+      },
+      {
+        "id": "lace1",
+        "file": "lace1.webp",
+        "path": "/images/themes/applique-lace-white/lace1.webp",
+        "format": "WEBP",
+        "width": 859,
+        "height": 224,
+        "aspectRatio": 3.835,
+        "size": 53864,
+        "md5": "b37e13826b17fdf4bbd1b138d91ee948",
+        "type": "decoration",
+        "usage": "Decorative element (lace1) for applique-lace-white"
+      },
+      {
+        "id": "lace2",
+        "file": "lace2.webp",
+        "path": "/images/themes/applique-lace-white/lace2.webp",
+        "format": "WEBP",
+        "width": 859,
+        "height": 326,
+        "aspectRatio": 2.635,
+        "size": 34150,
+        "md5": "119585e98ae2f0341b5a4f0c7b975070",
+        "type": "decoration",
+        "usage": "Decorative element (lace2) for applique-lace-white"
+      },
+      {
+        "id": "lace3",
+        "file": "lace3.webp",
+        "path": "/images/themes/applique-lace-white/lace3.webp",
+        "format": "WEBP",
+        "width": 859,
+        "height": 238,
+        "aspectRatio": 3.609,
+        "size": 54718,
+        "md5": "431bf49fedb1cef305acba008316a8d6",
+        "type": "decoration",
+        "usage": "Decorative element (lace3) for applique-lace-white"
+      },
+      {
+        "id": "music",
+        "file": "music.webp",
+        "path": "/images/themes/applique-lace-white/music.webp",
+        "format": "WEBP",
+        "width": 314,
+        "height": 320,
+        "aspectRatio": 0.981,
+        "size": 13434,
+        "md5": "cb48db5914de18e1b4b5c088b01e0bec",
+        "type": "decoration",
+        "usage": "Ornamental artwork for applique-lace-white"
+      },
+      {
         "id": "satin-background",
         "file": "satin-background.webp",
         "path": "/images/themes/applique-lace-white/satin-background.webp",
@@ -7569,7 +13354,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     ],
     "backgroundPath": "/images/themes/applique-lace-white/envelope-background.webp",
     "coverPath": "/images/themes/applique-lace-white/envelope-cover.webp",
-    "decorationsCount": 1,
+    "decorationsCount": 6,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -7582,9 +13367,74 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "chateau-green"
     ],
-    "assetCount": 6,
-    "totalBytes": 1411056,
+    "assetCount": 15,
+    "totalBytes": 2557358,
     "assets": [
+      {
+        "id": "barrier",
+        "file": "barrier.webp",
+        "path": "/images/themes/chateau-green/barrier.webp",
+        "format": "WEBP",
+        "width": 570,
+        "height": 432,
+        "aspectRatio": 1.319,
+        "size": 95064,
+        "md5": "4833bc0a0e81f4163935c9bc49db366c",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chateau-green"
+      },
+      {
+        "id": "brick",
+        "file": "brick.webp",
+        "path": "/images/themes/chateau-green/brick.webp",
+        "format": "WEBP",
+        "width": 759,
+        "height": 204,
+        "aspectRatio": 3.721,
+        "size": 62564,
+        "md5": "7c80fc37b54067a723e49a1b599bbc7f",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chateau-green"
+      },
+      {
+        "id": "cay1-1",
+        "file": "cay1-1.webp",
+        "path": "/images/themes/chateau-green/cay1-1.webp",
+        "format": "WEBP",
+        "width": 843,
+        "height": 1377,
+        "aspectRatio": 0.612,
+        "size": 140702,
+        "md5": "8c9eef00df293145c92713614fe372de",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chateau-green"
+      },
+      {
+        "id": "cay2-1",
+        "file": "cay2-1.webp",
+        "path": "/images/themes/chateau-green/cay2-1.webp",
+        "format": "WEBP",
+        "width": 1182,
+        "height": 1617,
+        "aspectRatio": 0.731,
+        "size": 88874,
+        "md5": "0cbce1b7d2d654a6533271fd58c82790",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chateau-green"
+      },
+      {
+        "id": "cay2-2",
+        "file": "cay2-2.webp",
+        "path": "/images/themes/chateau-green/cay2-2.webp",
+        "format": "WEBP",
+        "width": 130,
+        "height": 195,
+        "aspectRatio": 0.667,
+        "size": 8894,
+        "md5": "576b803860705347a119e8f8888d912f",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chateau-green"
+      },
       {
         "id": "chateau",
         "file": "chateau.webp",
@@ -7651,6 +13501,58 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Decorative divider line for chateau-green"
       },
       {
+        "id": "fountain",
+        "file": "fountain.webp",
+        "path": "/images/themes/chateau-green/fountain.webp",
+        "format": "WEBP",
+        "width": 1584,
+        "height": 1059,
+        "aspectRatio": 1.496,
+        "size": 531340,
+        "md5": "f22a6f4116cccfa561a605b22be04f41",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chateau-green"
+      },
+      {
+        "id": "frame-lich",
+        "file": "frame-lich.webp",
+        "path": "/images/themes/chateau-green/frame-lich.webp",
+        "format": "WEBP",
+        "width": 776,
+        "height": 614,
+        "aspectRatio": 1.264,
+        "size": 27018,
+        "md5": "3ca77afd01b65c00db51d6bdc4bcb2f7",
+        "type": "frame",
+        "usage": "Framing border or arch for chateau-green"
+      },
+      {
+        "id": "hoanho2-1",
+        "file": "hoanho2-1.webp",
+        "path": "/images/themes/chateau-green/hoanho2-1.webp",
+        "format": "WEBP",
+        "width": 495,
+        "height": 660,
+        "aspectRatio": 0.75,
+        "size": 102446,
+        "md5": "f03ae6b1390a5d68bd8783f766011d2d",
+        "type": "decoration",
+        "usage": "Decorative element (hoanho2-1) for chateau-green"
+      },
+      {
+        "id": "hoanho3-1",
+        "file": "hoanho3-1.webp",
+        "path": "/images/themes/chateau-green/hoanho3-1.webp",
+        "format": "WEBP",
+        "width": 477,
+        "height": 621,
+        "aspectRatio": 0.768,
+        "size": 89400,
+        "md5": "adf93a33c3e5dc7587662a1bd3fb5f74",
+        "type": "decoration",
+        "usage": "Decorative element (hoanho3-1) for chateau-green"
+      },
+      {
         "id": "ornament",
         "file": "ornament.webp",
         "path": "/images/themes/chateau-green/ornament.webp",
@@ -7666,8 +13568,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     ],
     "backgroundPath": null,
     "coverPath": null,
-    "decorationsCount": 5,
-    "framesCount": 0,
+    "decorationsCount": 13,
+    "framesCount": 1,
     "isSharedTheme": false,
     "sharedWith": [],
     "status": "active"
@@ -7806,9 +13708,35 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "lien-hoa-pink"
     ],
-    "assetCount": 4,
-    "totalBytes": 477146,
+    "assetCount": 13,
+    "totalBytes": 1838920,
     "assets": [
+      {
+        "id": "calendar-frame",
+        "file": "calendar-frame.webp",
+        "path": "/images/themes/lien-hoa-pink/calendar-frame.webp",
+        "format": "WEBP",
+        "width": 1374,
+        "height": 1145,
+        "aspectRatio": 1.2,
+        "size": 81184,
+        "md5": "128239dc522b8ce16a535d8680600a81",
+        "type": "frame",
+        "usage": "Framing border or arch for lien-hoa-pink"
+      },
+      {
+        "id": "flower-bottom",
+        "file": "flower-bottom.webp",
+        "path": "/images/themes/lien-hoa-pink/flower-bottom.webp",
+        "format": "WEBP",
+        "width": 1448,
+        "height": 1086,
+        "aspectRatio": 1.333,
+        "size": 225330,
+        "md5": "4ec9092d1d6a204e3ef4991be8ed326b",
+        "type": "decoration",
+        "usage": "Decorative element (flower-bottom) for lien-hoa-pink"
+      },
       {
         "id": "flower2",
         "file": "flower2.webp",
@@ -7836,6 +13764,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Decorative element (flower3) for lien-hoa-pink"
       },
       {
+        "id": "flower4",
+        "file": "flower4.webp",
+        "path": "/images/themes/lien-hoa-pink/flower4.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 108878,
+        "md5": "425734e8262434b70f96acde14dee03a",
+        "type": "decoration",
+        "usage": "Decorative element (flower4) for lien-hoa-pink"
+      },
+      {
         "id": "framegold1",
         "file": "framegold1.webp",
         "path": "/images/themes/lien-hoa-pink/framegold1.webp",
@@ -7849,6 +13790,32 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Framing border or arch for lien-hoa-pink"
       },
       {
+        "id": "framegold2",
+        "file": "framegold2.webp",
+        "path": "/images/themes/lien-hoa-pink/framegold2.webp",
+        "format": "WEBP",
+        "width": 2000,
+        "height": 3000,
+        "aspectRatio": 0.667,
+        "size": 60136,
+        "md5": "a780744ffb9fd61b86e6b48451fc427b",
+        "type": "frame",
+        "usage": "Framing border or arch for lien-hoa-pink"
+      },
+      {
+        "id": "golden-line",
+        "file": "golden-line.webp",
+        "path": "/images/themes/lien-hoa-pink/golden-line.webp",
+        "format": "WEBP",
+        "width": 2172,
+        "height": 724,
+        "aspectRatio": 3.0,
+        "size": 55978,
+        "md5": "9973f8dc0e25d985b6143c6290c60668",
+        "type": "divider",
+        "usage": "Decorative divider line for lien-hoa-pink"
+      },
+      {
         "id": "hoa-sen-bg",
         "file": "hoa-sen-bg.webp",
         "path": "/images/themes/lien-hoa-pink/hoa-sen-bg.webp",
@@ -7860,12 +13827,64 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "372df3461c1561c90a81decbbea6fe56",
         "type": "background",
         "usage": "Background paper or ambient texture for lien-hoa-pink"
+      },
+      {
+        "id": "leaf",
+        "file": "leaf.webp",
+        "path": "/images/themes/lien-hoa-pink/leaf.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 228956,
+        "md5": "484ad0097bf500e4c3c7f13f3c322c04",
+        "type": "decoration",
+        "usage": "Decorative element (leaf) for lien-hoa-pink"
+      },
+      {
+        "id": "medallion-alcohol",
+        "file": "medallion-alcohol.webp",
+        "path": "/images/themes/lien-hoa-pink/medallion-alcohol.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 291052,
+        "md5": "46e916ba997aff9dcdca90b89b292ad7",
+        "type": "decoration",
+        "usage": "Ornamental artwork for lien-hoa-pink"
+      },
+      {
+        "id": "medallion-guest",
+        "file": "medallion-guest.webp",
+        "path": "/images/themes/lien-hoa-pink/medallion-guest.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 140114,
+        "md5": "b9bf69eae8d3560390ca30c88fde3bec",
+        "type": "decoration",
+        "usage": "Ornamental artwork for lien-hoa-pink"
+      },
+      {
+        "id": "medallion-opening",
+        "file": "medallion-opening.webp",
+        "path": "/images/themes/lien-hoa-pink/medallion-opening.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 170146,
+        "md5": "70372490931fb70b73cd12d561f07011",
+        "type": "decoration",
+        "usage": "Ornamental artwork for lien-hoa-pink"
       }
     ],
     "backgroundPath": "/images/themes/lien-hoa-pink/hoa-sen-bg.webp",
     "coverPath": null,
-    "decorationsCount": 2,
-    "framesCount": 1,
+    "decorationsCount": 8,
+    "framesCount": 3,
     "isSharedTheme": false,
     "sharedWith": [],
     "status": "active"
@@ -8108,9 +14127,100 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "baroque-v2-dark-green"
     ],
-    "assetCount": 1,
-    "totalBytes": 305692,
+    "assetCount": 12,
+    "totalBytes": 1245528,
     "assets": [
+      {
+        "id": "alcohol",
+        "file": "alcohol.webp",
+        "path": "/images/themes/baroque-v2-dark-green/alcohol.webp",
+        "format": "WEBP",
+        "width": 460,
+        "height": 307,
+        "aspectRatio": 1.498,
+        "size": 48216,
+        "md5": "b6c08b19489ba6e15701d7f3fae113e7",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-v2-dark-green"
+      },
+      {
+        "id": "bg",
+        "file": "bg.webp",
+        "path": "/images/themes/baroque-v2-dark-green/bg.webp",
+        "format": "WEBP",
+        "width": 724,
+        "height": 2172,
+        "aspectRatio": 0.333,
+        "size": 41184,
+        "md5": "64f79ffd38014c25e4856d8cb9857f2e",
+        "type": "background",
+        "usage": "Background paper or ambient texture for baroque-v2-dark-green"
+      },
+      {
+        "id": "bride-broom",
+        "file": "bride-broom.webp",
+        "path": "/images/themes/baroque-v2-dark-green/bride-broom.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 420,
+        "aspectRatio": 0.952,
+        "size": 60076,
+        "md5": "549feb9062be9bea050ac3f6f9f6d5d6",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-v2-dark-green"
+      },
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/baroque-v2-dark-green/cake.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 400,
+        "aspectRatio": 1.0,
+        "size": 46464,
+        "md5": "58bd23deb3c6dc4d0dca9680387d5aa8",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-green"
+      },
+      {
+        "id": "flower3-decoration",
+        "file": "flower3-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-green/flower3-decoration.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 800,
+        "aspectRatio": 1.0,
+        "size": 129260,
+        "md5": "7e5cd2af88fdb9e13bcce643e0391ad5",
+        "type": "decoration",
+        "usage": "Decorative element (flower3-decoration) for baroque-v2-dark-green"
+      },
+      {
+        "id": "flower4-decoration",
+        "file": "flower4-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-green/flower4-decoration.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 800,
+        "aspectRatio": 1.0,
+        "size": 142852,
+        "md5": "b1fa258f228ef3cd0240f387065d2e11",
+        "type": "decoration",
+        "usage": "Decorative element (flower4-decoration) for baroque-v2-dark-green"
+      },
+      {
+        "id": "flower5-decoration",
+        "file": "flower5-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-green/flower5-decoration.webp",
+        "format": "WEBP",
+        "width": 420,
+        "height": 1260,
+        "aspectRatio": 0.333,
+        "size": 230760,
+        "md5": "baebc50d7b8c574c7ad24eb4a053d2c7",
+        "type": "decoration",
+        "usage": "Decorative element (flower5-decoration) for baroque-v2-dark-green"
+      },
       {
         "id": "frame",
         "file": "frame.webp",
@@ -8123,11 +14233,63 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "32535ae75635388e876a5bd5e1504bfb",
         "type": "frame",
         "usage": "Framing border or arch for baroque-v2-dark-green"
+      },
+      {
+        "id": "golden-line-decoration",
+        "file": "golden-line-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-green/golden-line-decoration.webp",
+        "format": "WEBP",
+        "width": 1400,
+        "height": 284,
+        "aspectRatio": 4.93,
+        "size": 120040,
+        "md5": "cdb9901dd7b0e2259e10b60ddfb06b6c",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-green"
+      },
+      {
+        "id": "line2-decoration",
+        "file": "line2-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-green/line2-decoration.webp",
+        "format": "WEBP",
+        "width": 600,
+        "height": 96,
+        "aspectRatio": 6.25,
+        "size": 21146,
+        "md5": "dbace79da2cd3f342d9178b668a33fd8",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-green"
+      },
+      {
+        "id": "line3-decoration",
+        "file": "line3-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-green/line3-decoration.webp",
+        "format": "WEBP",
+        "width": 160,
+        "height": 1273,
+        "aspectRatio": 0.126,
+        "size": 34880,
+        "md5": "c45977eb5914fa7dd2d01fa18ae08333",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-green"
+      },
+      {
+        "id": "line4-decoration",
+        "file": "line4-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-green/line4-decoration.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 759,
+        "aspectRatio": 0.422,
+        "size": 64958,
+        "md5": "f61e37786e63dff5d51c2dc87b9d8319",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-green"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/themes/baroque-v2-dark-green/bg.webp",
     "coverPath": null,
-    "decorationsCount": 0,
+    "decorationsCount": 5,
     "framesCount": 1,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -8140,9 +14302,48 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "crystal-floral-blue"
     ],
-    "assetCount": 4,
-    "totalBytes": 2199708,
+    "assetCount": 10,
+    "totalBytes": 5116838,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/crystal-floral-blue/cake.webp",
+        "format": "WEBP",
+        "width": 1316,
+        "height": 2318,
+        "aspectRatio": 0.568,
+        "size": 461762,
+        "md5": "c061b3a3f1876be5dec0a90a0012feda",
+        "type": "divider",
+        "usage": "Decorative divider line for crystal-floral-blue"
+      },
+      {
+        "id": "calendar-frame",
+        "file": "calendar-frame.webp",
+        "path": "/images/themes/crystal-floral-blue/calendar-frame.webp",
+        "format": "WEBP",
+        "width": 2642,
+        "height": 2244,
+        "aspectRatio": 1.177,
+        "size": 248596,
+        "md5": "03086cfd6200eb23fd220433440e5d1b",
+        "type": "frame",
+        "usage": "Framing border or arch for crystal-floral-blue"
+      },
+      {
+        "id": "filigree",
+        "file": "filigree.webp",
+        "path": "/images/themes/crystal-floral-blue/filigree.webp",
+        "format": "WEBP",
+        "width": 4040,
+        "height": 742,
+        "aspectRatio": 5.445,
+        "size": 363754,
+        "md5": "6c0d99ebed490d8b5ff1e2446a49b80a",
+        "type": "decoration",
+        "usage": "Ornamental artwork for crystal-floral-blue"
+      },
       {
         "id": "flower-frame",
         "file": "flower-frame.webp",
@@ -8194,12 +14395,51 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "7144f814fbfa8cbcac1905bac3c7c7f8",
         "type": "decoration",
         "usage": "Decorative element (flower3) for crystal-floral-blue"
+      },
+      {
+        "id": "flower4",
+        "file": "flower4.webp",
+        "path": "/images/themes/crystal-floral-blue/flower4.webp",
+        "format": "WEBP",
+        "width": 820,
+        "height": 3487,
+        "aspectRatio": 0.235,
+        "size": 545142,
+        "md5": "e40bb420f8416c4856e90f2855c16e0c",
+        "type": "decoration",
+        "usage": "Decorative element (flower4) for crystal-floral-blue"
+      },
+      {
+        "id": "flower5",
+        "file": "flower5.webp",
+        "path": "/images/themes/crystal-floral-blue/flower5.webp",
+        "format": "WEBP",
+        "width": 4096,
+        "height": 964,
+        "aspectRatio": 4.249,
+        "size": 653106,
+        "md5": "46b20eb85aad5b1e402af0dc2a652797",
+        "type": "decoration",
+        "usage": "Decorative element (flower5) for crystal-floral-blue"
+      },
+      {
+        "id": "gift",
+        "file": "gift.webp",
+        "path": "/images/themes/crystal-floral-blue/gift.webp",
+        "format": "WEBP",
+        "width": 1866,
+        "height": 2137,
+        "aspectRatio": 0.873,
+        "size": 644770,
+        "md5": "954ccc62f0c3c89ab9bb3f0de188483b",
+        "type": "decoration",
+        "usage": "Ornamental artwork for crystal-floral-blue"
       }
     ],
     "backgroundPath": null,
     "coverPath": null,
-    "decorationsCount": 3,
-    "framesCount": 1,
+    "decorationsCount": 7,
+    "framesCount": 2,
     "isSharedTheme": false,
     "sharedWith": [],
     "status": "active"
@@ -8211,9 +14451,61 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "porcelain-v2-pink"
     ],
-    "assetCount": 1,
-    "totalBytes": 89832,
+    "assetCount": 6,
+    "totalBytes": 622068,
     "assets": [
+      {
+        "id": "bell",
+        "file": "bell.webp",
+        "path": "/images/themes/porcelain-v2-pink/bell.webp",
+        "format": "WEBP",
+        "width": 310,
+        "height": 351,
+        "aspectRatio": 0.883,
+        "size": 37924,
+        "md5": "f0f25b4472fc80c098cdfb5abfc034ff",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-pink"
+      },
+      {
+        "id": "bird",
+        "file": "bird.webp",
+        "path": "/images/themes/porcelain-v2-pink/bird.webp",
+        "format": "WEBP",
+        "width": 310,
+        "height": 351,
+        "aspectRatio": 0.883,
+        "size": 38966,
+        "md5": "9a4b5635cf63ad810ba453f8a4c35983",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-pink"
+      },
+      {
+        "id": "floral-tile",
+        "file": "floral-tile.webp",
+        "path": "/images/themes/porcelain-v2-pink/floral-tile.webp",
+        "format": "WEBP",
+        "width": 1120,
+        "height": 1120,
+        "aspectRatio": 1.0,
+        "size": 280562,
+        "md5": "104ea6598e5bc7350d6c10a3acb57ba7",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-pink"
+      },
+      {
+        "id": "flower",
+        "file": "flower.webp",
+        "path": "/images/themes/porcelain-v2-pink/flower.webp",
+        "format": "WEBP",
+        "width": 554,
+        "height": 1066,
+        "aspectRatio": 0.52,
+        "size": 141300,
+        "md5": "47f645515d6d94f1cc7f149a8d134c56",
+        "type": "decoration",
+        "usage": "Decorative element (flower) for porcelain-v2-pink"
+      },
       {
         "id": "hero-frame",
         "file": "hero-frame.webp",
@@ -8226,11 +14518,24 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "91a6b2bd1d6f42670b8596ad5795b89c",
         "type": "frame",
         "usage": "Framing border or arch for porcelain-v2-pink"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/porcelain-v2-pink/ring.webp",
+        "format": "WEBP",
+        "width": 310,
+        "height": 350,
+        "aspectRatio": 0.886,
+        "size": 33484,
+        "md5": "8ac429d523841de7e652bf7ece4523a1",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-pink"
       }
     ],
     "backgroundPath": null,
     "coverPath": null,
-    "decorationsCount": 0,
+    "decorationsCount": 5,
     "framesCount": 1,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -8243,8 +14548,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "chateau-blue"
     ],
-    "assetCount": 7,
-    "totalBytes": 946776,
+    "assetCount": 13,
+    "totalBytes": 1815914,
     "assets": [
       {
         "id": "asset-1",
@@ -8269,6 +14574,32 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "aspectRatio": 3.805,
         "size": 9962,
         "md5": "9517305ef3353a19d64be8d290189aa1",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chateau-blue"
+      },
+      {
+        "id": "ban-tiec",
+        "file": "ban-tiec.webp",
+        "path": "/images/themes/chateau-blue/ban-tiec.webp",
+        "format": "WEBP",
+        "width": 1435,
+        "height": 742,
+        "aspectRatio": 1.934,
+        "size": 346524,
+        "md5": "4f9cc7d25124f3179cf044f3a50b75e2",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chateau-blue"
+      },
+      {
+        "id": "chim",
+        "file": "chim.webp",
+        "path": "/images/themes/chateau-blue/chim.webp",
+        "format": "WEBP",
+        "width": 1536,
+        "height": 1024,
+        "aspectRatio": 1.5,
+        "size": 259618,
+        "md5": "0a93ec412542e2a58d2817130ea1426f",
         "type": "decoration",
         "usage": "Ornamental artwork for chateau-blue"
       },
@@ -8312,6 +14643,32 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Decorative element (cloud-3) for chateau-blue"
       },
       {
+        "id": "frame-lich",
+        "file": "frame-lich.webp",
+        "path": "/images/themes/chateau-blue/frame-lich.webp",
+        "format": "WEBP",
+        "width": 2240,
+        "height": 1770,
+        "aspectRatio": 1.266,
+        "size": 58456,
+        "md5": "79192221a1593010437b8aa88de35cf9",
+        "type": "frame",
+        "usage": "Framing border or arch for chateau-blue"
+      },
+      {
+        "id": "hoa-ngang",
+        "file": "hoa-ngang.webp",
+        "path": "/images/themes/chateau-blue/hoa-ngang.webp",
+        "format": "WEBP",
+        "width": 1408,
+        "height": 358,
+        "aspectRatio": 3.933,
+        "size": 146762,
+        "md5": "14b5b5e13efb089990c2071d2ab879a1",
+        "type": "decoration",
+        "usage": "Decorative element (hoa-ngang) for chateau-blue"
+      },
+      {
         "id": "hoa",
         "file": "hoa.webp",
         "path": "/images/themes/chateau-blue/hoa.webp",
@@ -8336,12 +14693,38 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "128e4fc5a016a2b9e5077df6f8c98a91",
         "type": "decoration",
         "usage": "Ornamental artwork for chateau-blue"
+      },
+      {
+        "id": "nen",
+        "file": "nen.webp",
+        "path": "/images/themes/chateau-blue/nen.webp",
+        "format": "WEBP",
+        "width": 137,
+        "height": 312,
+        "aspectRatio": 0.439,
+        "size": 21584,
+        "md5": "cf66af4d2dcc68924938cec900698f50",
+        "type": "background",
+        "usage": "Background paper or ambient texture for chateau-blue"
+      },
+      {
+        "id": "nhan",
+        "file": "nhan.webp",
+        "path": "/images/themes/chateau-blue/nhan.webp",
+        "format": "WEBP",
+        "width": 298,
+        "height": 240,
+        "aspectRatio": 1.242,
+        "size": 36194,
+        "md5": "9cbbd7241eeb923bf743b48edfc5a8d0",
+        "type": "decoration",
+        "usage": "Ornamental artwork for chateau-blue"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/themes/chateau-blue/nen.webp",
     "coverPath": null,
-    "decorationsCount": 7,
-    "framesCount": 0,
+    "decorationsCount": 11,
+    "framesCount": 1,
     "isSharedTheme": false,
     "sharedWith": [],
     "status": "active"
@@ -8353,9 +14736,61 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "porcelain-v2-green"
     ],
-    "assetCount": 1,
-    "totalBytes": 186322,
+    "assetCount": 6,
+    "totalBytes": 1059796,
     "assets": [
+      {
+        "id": "alcohol",
+        "file": "alcohol.webp",
+        "path": "/images/themes/porcelain-v2-green/alcohol.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 320,
+        "aspectRatio": 1.0,
+        "size": 52956,
+        "md5": "26323cb236909f4c1a8d92572b43b75c",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-green"
+      },
+      {
+        "id": "floral-tile",
+        "file": "floral-tile.webp",
+        "path": "/images/themes/porcelain-v2-green/floral-tile.webp",
+        "format": "WEBP",
+        "width": 1134,
+        "height": 2015,
+        "aspectRatio": 0.563,
+        "size": 469102,
+        "md5": "52bcdaee830080e7d886c7f22b0e4cfe",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-green"
+      },
+      {
+        "id": "flower",
+        "file": "flower.webp",
+        "path": "/images/themes/porcelain-v2-green/flower.webp",
+        "format": "WEBP",
+        "width": 554,
+        "height": 1141,
+        "aspectRatio": 0.486,
+        "size": 252724,
+        "md5": "9cf6a8eceace4ef89e605cc655154158",
+        "type": "decoration",
+        "usage": "Decorative element (flower) for porcelain-v2-green"
+      },
+      {
+        "id": "heart",
+        "file": "heart.webp",
+        "path": "/images/themes/porcelain-v2-green/heart.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 320,
+        "aspectRatio": 1.0,
+        "size": 47200,
+        "md5": "6f6c53767218b25490d643fecef9fc62",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-green"
+      },
       {
         "id": "hero-frame",
         "file": "hero-frame.webp",
@@ -8368,11 +14803,24 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "29a66362a71604094974fb9a3858fb89",
         "type": "frame",
         "usage": "Framing border or arch for porcelain-v2-green"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/porcelain-v2-green/ring.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 320,
+        "aspectRatio": 1.0,
+        "size": 51492,
+        "md5": "5a612b9f0201b73920de6d3ba84c53ac",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-green"
       }
     ],
     "backgroundPath": null,
     "coverPath": null,
-    "decorationsCount": 0,
+    "decorationsCount": 5,
     "framesCount": 1,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -8385,9 +14833,113 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "florence-brown"
     ],
-    "assetCount": 3,
-    "totalBytes": 277330,
+    "assetCount": 19,
+    "totalBytes": 2662538,
     "assets": [
+      {
+        "id": "bird",
+        "file": "bird.webp",
+        "path": "/images/themes/florence-brown/bird.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 461,
+        "aspectRatio": 0.868,
+        "size": 42898,
+        "md5": "971eaa4761bcadec003c89ee410da619",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "bridge-background",
+        "file": "bridge-background.webp",
+        "path": "/images/themes/florence-brown/bridge-background.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 540,
+        "aspectRatio": 1.667,
+        "size": 148296,
+        "md5": "fe0e181c633a5aa2d2b19b97ad7d45d1",
+        "type": "background",
+        "usage": "Background paper or ambient texture for florence-brown"
+      },
+      {
+        "id": "bridge-decoration",
+        "file": "bridge-decoration.webp",
+        "path": "/images/themes/florence-brown/bridge-decoration.webp",
+        "format": "WEBP",
+        "width": 1100,
+        "height": 823,
+        "aspectRatio": 1.337,
+        "size": 273846,
+        "md5": "61305d8fd34435bb23d68d7df556ec72",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "bridge-decoration3",
+        "file": "bridge-decoration3.webp",
+        "path": "/images/themes/florence-brown/bridge-decoration3.webp",
+        "format": "WEBP",
+        "width": 533,
+        "height": 1463,
+        "aspectRatio": 0.364,
+        "size": 184038,
+        "md5": "35c806bcc4e4cf857d2a586394db54f6",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/florence-brown/cake.webp",
+        "format": "WEBP",
+        "width": 420,
+        "height": 619,
+        "aspectRatio": 0.679,
+        "size": 71854,
+        "md5": "3ed8e718c7f8257bb24c1514dafbd5c3",
+        "type": "divider",
+        "usage": "Decorative divider line for florence-brown"
+      },
+      {
+        "id": "cathedral-envelope",
+        "file": "cathedral-envelope.webp",
+        "path": "/images/themes/florence-brown/cathedral-envelope.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 955,
+        "aspectRatio": 0.942,
+        "size": 287846,
+        "md5": "724cbb191998017fdba29a0a6a8af034",
+        "type": "cover",
+        "usage": "Envelope or cover illustration for florence-brown"
+      },
+      {
+        "id": "church-decoration",
+        "file": "church-decoration.webp",
+        "path": "/images/themes/florence-brown/church-decoration.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 674,
+        "aspectRatio": 1.335,
+        "size": 135798,
+        "md5": "2e344ad69d88c1e8868083e44e650be6",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "church2-decoration",
+        "file": "church2-decoration.webp",
+        "path": "/images/themes/florence-brown/church2-decoration.webp",
+        "format": "WEBP",
+        "width": 500,
+        "height": 667,
+        "aspectRatio": 0.75,
+        "size": 127832,
+        "md5": "2af2cf48d68bd6a02feec1949cd0bf7f",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
       {
         "id": "cloud1-background",
         "file": "cloud1-background.webp",
@@ -8426,11 +14978,115 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "bd2024bab48ed5c0063094802ddbd0bc",
         "type": "background",
         "usage": "Background paper or ambient texture for florence-brown"
+      },
+      {
+        "id": "house-decoration",
+        "file": "house-decoration.webp",
+        "path": "/images/themes/florence-brown/house-decoration.webp",
+        "format": "WEBP",
+        "width": 1030,
+        "height": 580,
+        "aspectRatio": 1.776,
+        "size": 171504,
+        "md5": "d780d9b1183d93507be5fbf049c8de1a",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "house2-background",
+        "file": "house2-background.webp",
+        "path": "/images/themes/florence-brown/house2-background.webp",
+        "format": "WEBP",
+        "width": 700,
+        "height": 933,
+        "aspectRatio": 0.75,
+        "size": 221590,
+        "md5": "c9617e5c6bbb6058b8dd29545cda93ef",
+        "type": "background",
+        "usage": "Background paper or ambient texture for florence-brown"
+      },
+      {
+        "id": "house2-decoration",
+        "file": "house2-decoration.webp",
+        "path": "/images/themes/florence-brown/house2-decoration.webp",
+        "format": "WEBP",
+        "width": 660,
+        "height": 880,
+        "aspectRatio": 0.75,
+        "size": 128304,
+        "md5": "a53abf8edcb2cc61f1cc4e06c551b20f",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "house4-decoration",
+        "file": "house4-decoration.webp",
+        "path": "/images/themes/florence-brown/house4-decoration.webp",
+        "format": "WEBP",
+        "width": 1086,
+        "height": 1448,
+        "aspectRatio": 0.75,
+        "size": 212914,
+        "md5": "e3802f030d808d53dc650d137d39d8c0",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/florence-brown/ring.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 407,
+        "aspectRatio": 0.983,
+        "size": 58946,
+        "md5": "2c5338ed27d679eae82ae9c0244ece12",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "scene-decoration",
+        "file": "scene-decoration.webp",
+        "path": "/images/themes/florence-brown/scene-decoration.webp",
+        "format": "WEBP",
+        "width": 1100,
+        "height": 367,
+        "aspectRatio": 2.997,
+        "size": 125398,
+        "md5": "671bdce94578f046336ff026b3029f02",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "scene2-decoration",
+        "file": "scene2-decoration.webp",
+        "path": "/images/themes/florence-brown/scene2-decoration.webp",
+        "format": "WEBP",
+        "width": 1200,
+        "height": 403,
+        "aspectRatio": 2.978,
+        "size": 134658,
+        "md5": "e9f203c77370d844749cedcb90b2ec6f",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
+      },
+      {
+        "id": "tree-decoration",
+        "file": "tree-decoration.webp",
+        "path": "/images/themes/florence-brown/tree-decoration.webp",
+        "format": "WEBP",
+        "width": 950,
+        "height": 317,
+        "aspectRatio": 2.997,
+        "size": 59486,
+        "md5": "46f8630388e0a4eca8a3cfb6b39ef760",
+        "type": "decoration",
+        "usage": "Ornamental artwork for florence-brown"
       }
     ],
-    "backgroundPath": "/images/themes/florence-brown/cloud1-background.webp",
-    "coverPath": null,
-    "decorationsCount": 0,
+    "backgroundPath": "/images/themes/florence-brown/bridge-background.webp",
+    "coverPath": "/images/themes/florence-brown/cathedral-envelope.webp",
+    "decorationsCount": 12,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -8443,9 +15099,22 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "hoa-kho-v2-blue"
     ],
-    "assetCount": 2,
-    "totalBytes": 616192,
+    "assetCount": 11,
+    "totalBytes": 2221977,
     "assets": [
+      {
+        "id": "bird",
+        "file": "bird.webp",
+        "path": "/images/themes/hoa-kho-v2-blue/bird.webp",
+        "format": "WEBP",
+        "width": 160,
+        "height": 160,
+        "aspectRatio": 1.0,
+        "size": 14202,
+        "md5": "a57ea57496e6fd86635cf4687436d24c",
+        "type": "decoration",
+        "usage": "Ornamental artwork for hoa-kho-v2-blue"
+      },
       {
         "id": "butterfly",
         "file": "butterfly.webp",
@@ -8460,6 +15129,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Decorative element (butterfly) for hoa-kho-v2-blue"
       },
       {
+        "id": "calendar-heart",
+        "file": "calendar-heart.svg",
+        "path": "/images/themes/hoa-kho-v2-blue/calendar-heart.svg",
+        "format": "SVG",
+        "width": 21,
+        "height": 19,
+        "aspectRatio": 1.105,
+        "size": 541,
+        "md5": "ab329f4f8a33a821d3d2c7d30c67a2a2",
+        "type": "decoration",
+        "usage": "Ornamental artwork for hoa-kho-v2-blue"
+      },
+      {
         "id": "flower",
         "file": "flower.webp",
         "path": "/images/themes/hoa-kho-v2-blue/flower.webp",
@@ -8471,11 +15153,102 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "348d5fce80e8ecef835ab1d03da03935",
         "type": "decoration",
         "usage": "Decorative element (flower) for hoa-kho-v2-blue"
+      },
+      {
+        "id": "flower3",
+        "file": "flower3.webp",
+        "path": "/images/themes/hoa-kho-v2-blue/flower3.webp",
+        "format": "WEBP",
+        "width": 760,
+        "height": 1013,
+        "aspectRatio": 0.75,
+        "size": 267004,
+        "md5": "5a229a8e4d8693b63cf5618f74d47dea",
+        "type": "decoration",
+        "usage": "Decorative element (flower3) for hoa-kho-v2-blue"
+      },
+      {
+        "id": "flower4",
+        "file": "flower4.webp",
+        "path": "/images/themes/hoa-kho-v2-blue/flower4.webp",
+        "format": "WEBP",
+        "width": 760,
+        "height": 1140,
+        "aspectRatio": 0.667,
+        "size": 200276,
+        "md5": "5ef9b01acb39f103fd118fb599ec5fa9",
+        "type": "decoration",
+        "usage": "Decorative element (flower4) for hoa-kho-v2-blue"
+      },
+      {
+        "id": "flower5",
+        "file": "flower5.webp",
+        "path": "/images/themes/hoa-kho-v2-blue/flower5.webp",
+        "format": "WEBP",
+        "width": 520,
+        "height": 1560,
+        "aspectRatio": 0.333,
+        "size": 306770,
+        "md5": "11de9d2e288c6cc69dec827215f97a99",
+        "type": "decoration",
+        "usage": "Decorative element (flower5) for hoa-kho-v2-blue"
+      },
+      {
+        "id": "flower6",
+        "file": "flower6.webp",
+        "path": "/images/themes/hoa-kho-v2-blue/flower6.webp",
+        "format": "WEBP",
+        "width": 1024,
+        "height": 1536,
+        "aspectRatio": 0.667,
+        "size": 363602,
+        "md5": "8d680ae7b25d5cec7a6c56d3410c9e1f",
+        "type": "decoration",
+        "usage": "Decorative element (flower6) for hoa-kho-v2-blue"
+      },
+      {
+        "id": "flower7",
+        "file": "flower7.webp",
+        "path": "/images/themes/hoa-kho-v2-blue/flower7.webp",
+        "format": "WEBP",
+        "width": 1500,
+        "height": 500,
+        "aspectRatio": 3.0,
+        "size": 423896,
+        "md5": "5a5adeb1dacac5fb9d5aa1d914b7c97c",
+        "type": "decoration",
+        "usage": "Decorative element (flower7) for hoa-kho-v2-blue"
+      },
+      {
+        "id": "medallion-flower",
+        "file": "medallion-flower.webp",
+        "path": "/images/themes/hoa-kho-v2-blue/medallion-flower.webp",
+        "format": "WEBP",
+        "width": 160,
+        "height": 160,
+        "aspectRatio": 1.0,
+        "size": 14986,
+        "md5": "8863935f4f19e205c9b1ee59bfab2ec0",
+        "type": "decoration",
+        "usage": "Decorative element (medallion-flower) for hoa-kho-v2-blue"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/hoa-kho-v2-blue/ring.webp",
+        "format": "WEBP",
+        "width": 160,
+        "height": 160,
+        "aspectRatio": 1.0,
+        "size": 14508,
+        "md5": "c02763a2a5b518ad84ee30a48d91e6f8",
+        "type": "decoration",
+        "usage": "Ornamental artwork for hoa-kho-v2-blue"
       }
     ],
     "backgroundPath": null,
     "coverPath": null,
-    "decorationsCount": 2,
+    "decorationsCount": 11,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -8489,8 +15262,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
       "coba-red",
       "nhat-binh-red"
     ],
-    "assetCount": 9,
-    "totalBytes": 2780900,
+    "assetCount": 11,
+    "totalBytes": 3095188,
     "assets": [
       {
         "id": "cho-ben-thanh",
@@ -8530,6 +15303,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "4e7d029636ed094d9aa686b2ef2da2d8",
         "type": "icon",
         "usage": "Icon or cultural symbol (囍) for nhat-binh-red"
+      },
+      {
+        "id": "corner",
+        "file": "corner.webp",
+        "path": "/images/themes/nhat-binh-red/corner.webp",
+        "format": "WEBP",
+        "width": 854,
+        "height": 854,
+        "aspectRatio": 1.0,
+        "size": 4596,
+        "md5": "8af9b3dda824da116eaf4b4fad8c3a12",
+        "type": "decoration",
+        "usage": "Ornamental artwork for nhat-binh-red"
       },
       {
         "id": "dau-re",
@@ -8584,6 +15370,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Ornamental artwork for nhat-binh-red"
       },
       {
+        "id": "may",
+        "file": "may.webp",
+        "path": "/images/themes/nhat-binh-red/may.webp",
+        "format": "WEBP",
+        "width": 2560,
+        "height": 1311,
+        "aspectRatio": 1.953,
+        "size": 309692,
+        "md5": "d942d97493392e1b25007568dbbac2f5",
+        "type": "decoration",
+        "usage": "Ornamental artwork for nhat-binh-red"
+      },
+      {
         "id": "paper",
         "file": "paper.webp",
         "path": "/images/themes/nhat-binh-red/paper.webp",
@@ -8612,7 +15411,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     ],
     "backgroundPath": "/images/themes/nhat-binh-red/paper.webp",
     "coverPath": null,
-    "decorationsCount": 7,
+    "decorationsCount": 9,
     "framesCount": 0,
     "isSharedTheme": true,
     "sharedWith": [
@@ -8755,8 +15554,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "royal-green"
     ],
-    "assetCount": 2,
-    "totalBytes": 402886,
+    "assetCount": 5,
+    "totalBytes": 412272,
     "assets": [
       {
         "id": "background",
@@ -8783,12 +15582,51 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "94a3e6b1b91a47f929f760df78310d35",
         "type": "decoration",
         "usage": "Decorative element (flower) for royal-green"
+      },
+      {
+        "id": "frame-corner-top-left",
+        "file": "frame-corner-top-left.webp",
+        "path": "/images/themes/royal-green/frame-corner-top-left.webp",
+        "format": "WEBP",
+        "width": 91,
+        "height": 91,
+        "aspectRatio": 1.0,
+        "size": 4042,
+        "md5": "887953e191d6f5e2c1abed43a418a091",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-green"
+      },
+      {
+        "id": "frame-middle-horizontal",
+        "file": "frame-middle-horizontal.webp",
+        "path": "/images/themes/royal-green/frame-middle-horizontal.webp",
+        "format": "WEBP",
+        "width": 106,
+        "height": 35,
+        "aspectRatio": 3.029,
+        "size": 2652,
+        "md5": "3f242e37547f379c88f5df32a61bc331",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-green"
+      },
+      {
+        "id": "frame-middle-vertical",
+        "file": "frame-middle-vertical.webp",
+        "path": "/images/themes/royal-green/frame-middle-vertical.webp",
+        "format": "WEBP",
+        "width": 35,
+        "height": 106,
+        "aspectRatio": 0.33,
+        "size": 2692,
+        "md5": "0f8dbf5fbb39a0b81031fecb235c2964",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-green"
       }
     ],
     "backgroundPath": "/images/themes/royal-green/background.webp",
     "coverPath": null,
     "decorationsCount": 1,
-    "framesCount": 0,
+    "framesCount": 3,
     "isSharedTheme": false,
     "sharedWith": [],
     "status": "active"
@@ -8988,9 +15826,35 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "dried-flower-v2-green"
     ],
-    "assetCount": 1,
-    "totalBytes": 386470,
+    "assetCount": 11,
+    "totalBytes": 2783451,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/dried-flower-v2-green/cake.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 268426,
+        "md5": "caa82e0014ec0f41667c7546e80097e5",
+        "type": "divider",
+        "usage": "Decorative divider line for dried-flower-v2-green"
+      },
+      {
+        "id": "calendar-heart",
+        "file": "calendar-heart.svg",
+        "path": "/images/themes/dried-flower-v2-green/calendar-heart.svg",
+        "format": "SVG",
+        "width": 21,
+        "height": 19,
+        "aspectRatio": 1.105,
+        "size": 541,
+        "md5": "c11c08462f4f3366ae61a2a19e5c7e01",
+        "type": "decoration",
+        "usage": "Ornamental artwork for dried-flower-v2-green"
+      },
       {
         "id": "flower",
         "file": "flower.webp",
@@ -9003,11 +15867,115 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "a2e290b48e791f61ce8df0c2673105be",
         "type": "decoration",
         "usage": "Decorative element (flower) for dried-flower-v2-green"
+      },
+      {
+        "id": "flower2",
+        "file": "flower2.webp",
+        "path": "/images/themes/dried-flower-v2-green/flower2.webp",
+        "format": "WEBP",
+        "width": 793,
+        "height": 1983,
+        "aspectRatio": 0.4,
+        "size": 291326,
+        "md5": "3f5a63ae0c2efd86ca205620b9a15c82",
+        "type": "decoration",
+        "usage": "Decorative element (flower2) for dried-flower-v2-green"
+      },
+      {
+        "id": "flower3",
+        "file": "flower3.webp",
+        "path": "/images/themes/dried-flower-v2-green/flower3.webp",
+        "format": "WEBP",
+        "width": 793,
+        "height": 1983,
+        "aspectRatio": 0.4,
+        "size": 339924,
+        "md5": "73b5ff70156356b419437498200d8be8",
+        "type": "decoration",
+        "usage": "Decorative element (flower3) for dried-flower-v2-green"
+      },
+      {
+        "id": "flower4",
+        "file": "flower4.webp",
+        "path": "/images/themes/dried-flower-v2-green/flower4.webp",
+        "format": "WEBP",
+        "width": 927,
+        "height": 1200,
+        "aspectRatio": 0.772,
+        "size": 265152,
+        "md5": "a871a3db35dcf14f48d2d4650a22dd4f",
+        "type": "decoration",
+        "usage": "Decorative element (flower4) for dried-flower-v2-green"
+      },
+      {
+        "id": "flower6",
+        "file": "flower6.webp",
+        "path": "/images/themes/dried-flower-v2-green/flower6.webp",
+        "format": "WEBP",
+        "width": 1916,
+        "height": 821,
+        "aspectRatio": 2.334,
+        "size": 422530,
+        "md5": "2c83f37e983a722aaa75359ce8cf84bc",
+        "type": "decoration",
+        "usage": "Decorative element (flower6) for dried-flower-v2-green"
+      },
+      {
+        "id": "leaf",
+        "file": "leaf.webp",
+        "path": "/images/themes/dried-flower-v2-green/leaf.webp",
+        "format": "WEBP",
+        "width": 282,
+        "height": 453,
+        "aspectRatio": 0.623,
+        "size": 37200,
+        "md5": "2572e6280a79a42363447eae26f984fd",
+        "type": "decoration",
+        "usage": "Decorative element (leaf) for dried-flower-v2-green"
+      },
+      {
+        "id": "letter",
+        "file": "letter.webp",
+        "path": "/images/themes/dried-flower-v2-green/letter.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 239338,
+        "md5": "75a5f4fb20514ae5f13eb77ccc4ab67e",
+        "type": "decoration",
+        "usage": "Ornamental artwork for dried-flower-v2-green"
+      },
+      {
+        "id": "paper",
+        "file": "paper.webp",
+        "path": "/images/themes/dried-flower-v2-green/paper.webp",
+        "format": "WEBP",
+        "width": 1333,
+        "height": 2000,
+        "aspectRatio": 0.666,
+        "size": 172958,
+        "md5": "3b09633b1cd9a11d9d6ceacb6d83c9eb",
+        "type": "background",
+        "usage": "Background paper or ambient texture for dried-flower-v2-green"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/dried-flower-v2-green/ring.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 359586,
+        "md5": "239c22117925b7aaa644b15c1b073b8a",
+        "type": "decoration",
+        "usage": "Ornamental artwork for dried-flower-v2-green"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/themes/dried-flower-v2-green/paper.webp",
     "coverPath": null,
-    "decorationsCount": 1,
+    "decorationsCount": 9,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -9020,9 +15988,48 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "hoa-dai-pink"
     ],
-    "assetCount": 1,
-    "totalBytes": 250950,
+    "assetCount": 9,
+    "totalBytes": 976854,
     "assets": [
+      {
+        "id": "bird",
+        "file": "bird.webp",
+        "path": "/images/themes/hoa-dai-pink/bird.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 400,
+        "aspectRatio": 1.0,
+        "size": 38512,
+        "md5": "5e617e9846b3ac950b6baa20d1370be2",
+        "type": "decoration",
+        "usage": "Ornamental artwork for hoa-dai-pink"
+      },
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/hoa-dai-pink/cake.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 400,
+        "aspectRatio": 1.0,
+        "size": 42058,
+        "md5": "0f2acadf0274920a87f420f69007c291",
+        "type": "divider",
+        "usage": "Decorative divider line for hoa-dai-pink"
+      },
+      {
+        "id": "flower-decoration",
+        "file": "flower-decoration.webp",
+        "path": "/images/themes/hoa-dai-pink/flower-decoration.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 376,
+        "aspectRatio": 1.064,
+        "size": 34488,
+        "md5": "51e1e5c54faf52af3070629b94dfbe02",
+        "type": "decoration",
+        "usage": "Decorative element (flower-decoration) for hoa-dai-pink"
+      },
       {
         "id": "flower2-decoration",
         "file": "flower2-decoration.webp",
@@ -9035,11 +16042,76 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "eb0ea8d74181a3eb644fc3ab5b82c5f3",
         "type": "decoration",
         "usage": "Decorative element (flower2-decoration) for hoa-dai-pink"
+      },
+      {
+        "id": "flower3-decoration",
+        "file": "flower3-decoration.webp",
+        "path": "/images/themes/hoa-dai-pink/flower3-decoration.webp",
+        "format": "WEBP",
+        "width": 750,
+        "height": 1000,
+        "aspectRatio": 0.75,
+        "size": 144648,
+        "md5": "d15df904dcd5d38623d77e3741fdf482",
+        "type": "decoration",
+        "usage": "Decorative element (flower3-decoration) for hoa-dai-pink"
+      },
+      {
+        "id": "flower4-decoration",
+        "file": "flower4-decoration.webp",
+        "path": "/images/themes/hoa-dai-pink/flower4-decoration.webp",
+        "format": "WEBP",
+        "width": 600,
+        "height": 900,
+        "aspectRatio": 0.667,
+        "size": 101948,
+        "md5": "cdeac9cd0529f90069bb93990f4cd285",
+        "type": "decoration",
+        "usage": "Decorative element (flower4-decoration) for hoa-dai-pink"
+      },
+      {
+        "id": "flower5-decoration",
+        "file": "flower5-decoration.webp",
+        "path": "/images/themes/hoa-dai-pink/flower5-decoration.webp",
+        "format": "WEBP",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": 1.333,
+        "size": 309248,
+        "md5": "32a3c244c6cb4b45f38b9c985b72d8e6",
+        "type": "decoration",
+        "usage": "Decorative element (flower5-decoration) for hoa-dai-pink"
+      },
+      {
+        "id": "letter",
+        "file": "letter.webp",
+        "path": "/images/themes/hoa-dai-pink/letter.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 400,
+        "aspectRatio": 1.0,
+        "size": 28582,
+        "md5": "9ed50e43a1e838ffaad6d001c287ac3e",
+        "type": "decoration",
+        "usage": "Ornamental artwork for hoa-dai-pink"
+      },
+      {
+        "id": "water-flowers",
+        "file": "water-flowers.webp",
+        "path": "/images/themes/hoa-dai-pink/water-flowers.webp",
+        "format": "WEBP",
+        "width": 591,
+        "height": 2660,
+        "aspectRatio": 0.222,
+        "size": 26420,
+        "md5": "a4ef0db34369f62a3948eeea690bbf42",
+        "type": "decoration",
+        "usage": "Decorative element (water-flowers) for hoa-dai-pink"
       }
     ],
     "backgroundPath": null,
     "coverPath": null,
-    "decorationsCount": 1,
+    "decorationsCount": 8,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -9052,8 +16124,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "baroque-blue"
     ],
-    "assetCount": 3,
-    "totalBytes": 429006,
+    "assetCount": 13,
+    "totalBytes": 968148,
     "assets": [
       {
         "id": "bg-pattern",
@@ -9069,6 +16141,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Background paper or ambient texture for baroque-blue"
       },
       {
+        "id": "calendar-frame",
+        "file": "calendar-frame.webp",
+        "path": "/images/themes/baroque-blue/calendar-frame.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 802,
+        "aspectRatio": 1.122,
+        "size": 91476,
+        "md5": "850eeb440b7b9a0ddc047a1e0eac4266",
+        "type": "frame",
+        "usage": "Framing border or arch for baroque-blue"
+      },
+      {
         "id": "frame-decoration",
         "file": "frame-decoration.webp",
         "path": "/images/themes/baroque-blue/frame-decoration.webp",
@@ -9082,6 +16167,45 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Framing border or arch for baroque-blue"
       },
       {
+        "id": "gold4-decoration",
+        "file": "gold4-decoration.webp",
+        "path": "/images/themes/baroque-blue/gold4-decoration.webp",
+        "format": "WEBP",
+        "width": 340,
+        "height": 969,
+        "aspectRatio": 0.351,
+        "size": 83594,
+        "md5": "65285aee0d1ee38b34492ef12585c172",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-blue"
+      },
+      {
+        "id": "gold5-decoration",
+        "file": "gold5-decoration.webp",
+        "path": "/images/themes/baroque-blue/gold5-decoration.webp",
+        "format": "WEBP",
+        "width": 300,
+        "height": 1086,
+        "aspectRatio": 0.276,
+        "size": 99816,
+        "md5": "74c6c2f3ddedb2ba2e2cf22612bbe7f8",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-blue"
+      },
+      {
+        "id": "gold6-decoration",
+        "file": "gold6-decoration.webp",
+        "path": "/images/themes/baroque-blue/gold6-decoration.webp",
+        "format": "WEBP",
+        "width": 1088,
+        "height": 343,
+        "aspectRatio": 3.172,
+        "size": 88246,
+        "md5": "112542b4e281c4898b0ca0b8f208b101",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-blue"
+      },
+      {
         "id": "goldline-decoration",
         "file": "goldline-decoration.webp",
         "path": "/images/themes/baroque-blue/goldline-decoration.webp",
@@ -9093,12 +16217,90 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "3f20e212286f2db1c7acba6011b6f327",
         "type": "divider",
         "usage": "Decorative divider line for baroque-blue"
+      },
+      {
+        "id": "goldline2-decoration",
+        "file": "goldline2-decoration.webp",
+        "path": "/images/themes/baroque-blue/goldline2-decoration.webp",
+        "format": "WEBP",
+        "width": 560,
+        "height": 86,
+        "aspectRatio": 6.512,
+        "size": 15638,
+        "md5": "9fb041301fe1edbf04d3bf0ae6c742f8",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-blue"
+      },
+      {
+        "id": "line-decoration",
+        "file": "line-decoration.webp",
+        "path": "/images/themes/baroque-blue/line-decoration.webp",
+        "format": "WEBP",
+        "width": 168,
+        "height": 650,
+        "aspectRatio": 0.258,
+        "size": 35110,
+        "md5": "0c9f3dc1c22e31353b0fdd95e5639ce1",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-blue"
+      },
+      {
+        "id": "medallion-bird",
+        "file": "medallion-bird.webp",
+        "path": "/images/themes/baroque-blue/medallion-bird.webp",
+        "format": "WEBP",
+        "width": 200,
+        "height": 200,
+        "aspectRatio": 1.0,
+        "size": 25940,
+        "md5": "c1b4a2d245cedd06809f278b11d544ef",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-blue"
+      },
+      {
+        "id": "medallion-cake",
+        "file": "medallion-cake.webp",
+        "path": "/images/themes/baroque-blue/medallion-cake.webp",
+        "format": "WEBP",
+        "width": 200,
+        "height": 250,
+        "aspectRatio": 0.8,
+        "size": 23264,
+        "md5": "c44c703e86f3ea6cd9ceb2a37a11244a",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-blue"
+      },
+      {
+        "id": "medallion-ring",
+        "file": "medallion-ring.webp",
+        "path": "/images/themes/baroque-blue/medallion-ring.webp",
+        "format": "WEBP",
+        "width": 200,
+        "height": 250,
+        "aspectRatio": 0.8,
+        "size": 27266,
+        "md5": "5e04285c2a2c58ff886082f9b67a36c7",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-blue"
+      },
+      {
+        "id": "pillars-decoration",
+        "file": "pillars-decoration.webp",
+        "path": "/images/themes/baroque-blue/pillars-decoration.webp",
+        "format": "WEBP",
+        "width": 280,
+        "height": 930,
+        "aspectRatio": 0.301,
+        "size": 48792,
+        "md5": "dde29e7bc4b8b723d44104bc9cde3f15",
+        "type": "decoration",
+        "usage": "Decorative element (pillars-decoration) for baroque-blue"
       }
     ],
     "backgroundPath": "/images/themes/baroque-blue/bg-pattern.webp",
     "coverPath": null,
-    "decorationsCount": 0,
-    "framesCount": 1,
+    "decorationsCount": 6,
+    "framesCount": 2,
     "isSharedTheme": false,
     "sharedWith": [],
     "status": "active"
@@ -9110,8 +16312,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "royal-v2-green"
     ],
-    "assetCount": 4,
-    "totalBytes": 433220,
+    "assetCount": 12,
+    "totalBytes": 1166690,
     "assets": [
       {
         "id": "background",
@@ -9125,6 +16327,32 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "45fac3c91d2c40e778e6717ba3f2ded1",
         "type": "background",
         "usage": "Background paper or ambient texture for royal-v2-green"
+      },
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/royal-v2-green/cake.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 400,
+        "aspectRatio": 1.0,
+        "size": 28194,
+        "md5": "a2c687c1b7d0702e1c582fac3fa10126",
+        "type": "divider",
+        "usage": "Decorative divider line for royal-v2-green"
+      },
+      {
+        "id": "calendar-heart",
+        "file": "calendar-heart.webp",
+        "path": "/images/themes/royal-v2-green/calendar-heart.webp",
+        "format": "WEBP",
+        "width": 215,
+        "height": 190,
+        "aspectRatio": 1.132,
+        "size": 3188,
+        "md5": "5159a8abb229d61a8a769c229f354452",
+        "type": "decoration",
+        "usage": "Ornamental artwork for royal-v2-green"
       },
       {
         "id": "flower1-decoration",
@@ -9153,6 +16381,45 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Decorative element (flower2-decoration) for royal-v2-green"
       },
       {
+        "id": "flower3-decoration",
+        "file": "flower3-decoration.webp",
+        "path": "/images/themes/royal-v2-green/flower3-decoration.webp",
+        "format": "WEBP",
+        "width": 1600,
+        "height": 381,
+        "aspectRatio": 4.199,
+        "size": 149528,
+        "md5": "322bcf1dab23a35997211ce42d7b3ebb",
+        "type": "decoration",
+        "usage": "Decorative element (flower3-decoration) for royal-v2-green"
+      },
+      {
+        "id": "flower4-bottom",
+        "file": "flower4-bottom.webp",
+        "path": "/images/themes/royal-v2-green/flower4-bottom.webp",
+        "format": "WEBP",
+        "width": 1600,
+        "height": 478,
+        "aspectRatio": 3.347,
+        "size": 157962,
+        "md5": "1a773843e2ba1dbf32ed4d3aa51901d3",
+        "type": "decoration",
+        "usage": "Decorative element (flower4-bottom) for royal-v2-green"
+      },
+      {
+        "id": "flower5-decoration",
+        "file": "flower5-decoration.webp",
+        "path": "/images/themes/royal-v2-green/flower5-decoration.webp",
+        "format": "WEBP",
+        "width": 858,
+        "height": 1774,
+        "aspectRatio": 0.484,
+        "size": 210058,
+        "md5": "a7fd840a9146cf85c0f42ff9fc76a31a",
+        "type": "decoration",
+        "usage": "Decorative element (flower5-decoration) for royal-v2-green"
+      },
+      {
         "id": "golden-line",
         "file": "golden-line.webp",
         "path": "/images/themes/royal-v2-green/golden-line.webp",
@@ -9164,11 +16431,50 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "e35b6f125de0ffaa2a83fd8c13927189",
         "type": "divider",
         "usage": "Decorative divider line for royal-v2-green"
+      },
+      {
+        "id": "leaf-decoration",
+        "file": "leaf-decoration.webp",
+        "path": "/images/themes/royal-v2-green/leaf-decoration.webp",
+        "format": "WEBP",
+        "width": 965,
+        "height": 1063,
+        "aspectRatio": 0.908,
+        "size": 102948,
+        "md5": "a60dd053a95a88c4e4de63e13b32b3b6",
+        "type": "decoration",
+        "usage": "Decorative element (leaf-decoration) for royal-v2-green"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/royal-v2-green/ring.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 400,
+        "aspectRatio": 1.0,
+        "size": 44392,
+        "md5": "afa8409855130427302bfcb9fd1769a5",
+        "type": "decoration",
+        "usage": "Ornamental artwork for royal-v2-green"
+      },
+      {
+        "id": "welcome",
+        "file": "welcome.webp",
+        "path": "/images/themes/royal-v2-green/welcome.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 400,
+        "aspectRatio": 1.0,
+        "size": 37200,
+        "md5": "b55aa6b1f3021adf9c05da06a54d9ed0",
+        "type": "decoration",
+        "usage": "Ornamental artwork for royal-v2-green"
       }
     ],
     "backgroundPath": "/images/themes/royal-v2-green/background.webp",
     "coverPath": null,
-    "decorationsCount": 2,
+    "decorationsCount": 9,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -9271,8 +16577,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "royal-blue"
     ],
-    "assetCount": 2,
-    "totalBytes": 611450,
+    "assetCount": 5,
+    "totalBytes": 620836,
     "assets": [
       {
         "id": "background",
@@ -9299,12 +16605,51 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "94a3e6b1b91a47f929f760df78310d35",
         "type": "decoration",
         "usage": "Decorative element (flower) for royal-blue"
+      },
+      {
+        "id": "frame-corner-top-left",
+        "file": "frame-corner-top-left.webp",
+        "path": "/images/themes/royal-blue/frame-corner-top-left.webp",
+        "format": "WEBP",
+        "width": 91,
+        "height": 91,
+        "aspectRatio": 1.0,
+        "size": 4042,
+        "md5": "887953e191d6f5e2c1abed43a418a091",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-blue"
+      },
+      {
+        "id": "frame-middle-horizontal",
+        "file": "frame-middle-horizontal.webp",
+        "path": "/images/themes/royal-blue/frame-middle-horizontal.webp",
+        "format": "WEBP",
+        "width": 106,
+        "height": 35,
+        "aspectRatio": 3.029,
+        "size": 2652,
+        "md5": "3f242e37547f379c88f5df32a61bc331",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-blue"
+      },
+      {
+        "id": "frame-middle-vertical",
+        "file": "frame-middle-vertical.webp",
+        "path": "/images/themes/royal-blue/frame-middle-vertical.webp",
+        "format": "WEBP",
+        "width": 35,
+        "height": 106,
+        "aspectRatio": 0.33,
+        "size": 2692,
+        "md5": "0f8dbf5fbb39a0b81031fecb235c2964",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-blue"
       }
     ],
     "backgroundPath": "/images/themes/royal-blue/background.webp",
     "coverPath": null,
     "decorationsCount": 1,
-    "framesCount": 0,
+    "framesCount": 3,
     "isSharedTheme": false,
     "sharedWith": [],
     "status": "active"
@@ -9316,9 +16661,191 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "riviera-blue"
     ],
-    "assetCount": 3,
-    "totalBytes": 31806,
+    "assetCount": 24,
+    "totalBytes": 3452080,
     "assets": [
+      {
+        "id": "bird",
+        "file": "bird.webp",
+        "path": "/images/themes/riviera-blue/bird.webp",
+        "format": "WEBP",
+        "width": 420,
+        "height": 420,
+        "aspectRatio": 1.0,
+        "size": 48980,
+        "md5": "ddd5acbf4fa77a65d6fbfd36321a50b2",
+        "type": "decoration",
+        "usage": "Ornamental artwork for riviera-blue"
+      },
+      {
+        "id": "bridge",
+        "file": "bridge.webp",
+        "path": "/images/themes/riviera-blue/bridge.webp",
+        "format": "WEBP",
+        "width": 860,
+        "height": 573,
+        "aspectRatio": 1.501,
+        "size": 234688,
+        "md5": "e879e1b1d4b587b597958d23ef746da1",
+        "type": "decoration",
+        "usage": "Ornamental artwork for riviera-blue"
+      },
+      {
+        "id": "calendar-frame",
+        "file": "calendar-frame.webp",
+        "path": "/images/themes/riviera-blue/calendar-frame.webp",
+        "format": "WEBP",
+        "width": 1330,
+        "height": 1182,
+        "aspectRatio": 1.125,
+        "size": 102960,
+        "md5": "c54ce1f563076f13070c38ce60bbce70",
+        "type": "frame",
+        "usage": "Framing border or arch for riviera-blue"
+      },
+      {
+        "id": "cloud-2",
+        "file": "cloud-2.webp",
+        "path": "/images/themes/riviera-blue/cloud-2.webp",
+        "format": "WEBP",
+        "width": 1000,
+        "height": 721,
+        "aspectRatio": 1.387,
+        "size": 120224,
+        "md5": "1f45688ba4cede6bae4b4bd12cdc110e",
+        "type": "decoration",
+        "usage": "Decorative element (cloud-2) for riviera-blue"
+      },
+      {
+        "id": "cloud-3",
+        "file": "cloud-3.webp",
+        "path": "/images/themes/riviera-blue/cloud-3.webp",
+        "format": "WEBP",
+        "width": 1300,
+        "height": 620,
+        "aspectRatio": 2.097,
+        "size": 122174,
+        "md5": "f7cb2669da88423c9158aadb31fe09e3",
+        "type": "decoration",
+        "usage": "Decorative element (cloud-3) for riviera-blue"
+      },
+      {
+        "id": "envelope-scene",
+        "file": "envelope-scene.webp",
+        "path": "/images/themes/riviera-blue/envelope-scene.webp",
+        "format": "WEBP",
+        "width": 1100,
+        "height": 1083,
+        "aspectRatio": 1.016,
+        "size": 202676,
+        "md5": "30833196a383fd60367aaaafa561db38",
+        "type": "cover",
+        "usage": "Envelope or cover illustration for riviera-blue"
+      },
+      {
+        "id": "flower-dress",
+        "file": "flower-dress.webp",
+        "path": "/images/themes/riviera-blue/flower-dress.webp",
+        "format": "WEBP",
+        "width": 620,
+        "height": 827,
+        "aspectRatio": 0.75,
+        "size": 185884,
+        "md5": "18bfda2724051ad23e0df86e7e5e22e1",
+        "type": "decoration",
+        "usage": "Decorative element (flower-dress) for riviera-blue"
+      },
+      {
+        "id": "flower-hero",
+        "file": "flower-hero.webp",
+        "path": "/images/themes/riviera-blue/flower-hero.webp",
+        "format": "WEBP",
+        "width": 620,
+        "height": 827,
+        "aspectRatio": 0.75,
+        "size": 218190,
+        "md5": "3fcdd46b6df45179c2fae15efe82ed9a",
+        "type": "decoration",
+        "usage": "Decorative element (flower-hero) for riviera-blue"
+      },
+      {
+        "id": "flower-spray",
+        "file": "flower-spray.webp",
+        "path": "/images/themes/riviera-blue/flower-spray.webp",
+        "format": "WEBP",
+        "width": 820,
+        "height": 1093,
+        "aspectRatio": 0.75,
+        "size": 292620,
+        "md5": "53743fdfd9df92514af932bb4ac9dc67",
+        "type": "decoration",
+        "usage": "Decorative element (flower-spray) for riviera-blue"
+      },
+      {
+        "id": "fountain",
+        "file": "fountain.webp",
+        "path": "/images/themes/riviera-blue/fountain.webp",
+        "format": "WEBP",
+        "width": 420,
+        "height": 420,
+        "aspectRatio": 1.0,
+        "size": 86666,
+        "md5": "89da93ac36684f22a944c048e24cfbe8",
+        "type": "decoration",
+        "usage": "Ornamental artwork for riviera-blue"
+      },
+      {
+        "id": "gate",
+        "file": "gate.webp",
+        "path": "/images/themes/riviera-blue/gate.webp",
+        "format": "WEBP",
+        "width": 420,
+        "height": 420,
+        "aspectRatio": 1.0,
+        "size": 104090,
+        "md5": "4db21db2904c6069c2af155f21023614",
+        "type": "decoration",
+        "usage": "Ornamental artwork for riviera-blue"
+      },
+      {
+        "id": "guestbook-frame",
+        "file": "guestbook-frame.webp",
+        "path": "/images/themes/riviera-blue/guestbook-frame.webp",
+        "format": "WEBP",
+        "width": 1448,
+        "height": 1086,
+        "aspectRatio": 1.333,
+        "size": 113000,
+        "md5": "a6f68efe20d88be02c79faa3703283ac",
+        "type": "frame",
+        "usage": "Framing border or arch for riviera-blue"
+      },
+      {
+        "id": "lake",
+        "file": "lake.webp",
+        "path": "/images/themes/riviera-blue/lake.webp",
+        "format": "WEBP",
+        "width": 1100,
+        "height": 825,
+        "aspectRatio": 1.333,
+        "size": 232192,
+        "md5": "abf662360254ad88142b2ac74ebab3d0",
+        "type": "divider",
+        "usage": "Decorative divider line for riviera-blue"
+      },
+      {
+        "id": "leaf",
+        "file": "leaf.webp",
+        "path": "/images/themes/riviera-blue/leaf.webp",
+        "format": "WEBP",
+        "width": 640,
+        "height": 853,
+        "aspectRatio": 0.75,
+        "size": 155786,
+        "md5": "fe9981b9f501d7c29f4694db55dab76b",
+        "type": "decoration",
+        "usage": "Decorative element (leaf) for riviera-blue"
+      },
       {
         "id": "line-decoration-2",
         "file": "line-decoration-2.webp",
@@ -9346,6 +16873,32 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Decorative divider line for riviera-blue"
       },
       {
+        "id": "line-decoration",
+        "file": "line-decoration.webp",
+        "path": "/images/themes/riviera-blue/line-decoration.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 107,
+        "aspectRatio": 7.477,
+        "size": 16894,
+        "md5": "de0590a26df0b56113759e0dfd7b499d",
+        "type": "divider",
+        "usage": "Decorative divider line for riviera-blue"
+      },
+      {
+        "id": "mountain",
+        "file": "mountain.webp",
+        "path": "/images/themes/riviera-blue/mountain.webp",
+        "format": "WEBP",
+        "width": 1300,
+        "height": 456,
+        "aspectRatio": 2.851,
+        "size": 124286,
+        "md5": "b3f41bb930e4346f727c73d67898a109",
+        "type": "decoration",
+        "usage": "Ornamental artwork for riviera-blue"
+      },
+      {
         "id": "paper-background",
         "file": "paper-background.webp",
         "path": "/images/themes/riviera-blue/paper-background.webp",
@@ -9357,12 +16910,77 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "01e036bf84adf20ad10997cc9417306e",
         "type": "background",
         "usage": "Background paper or ambient texture for riviera-blue"
+      },
+      {
+        "id": "ship",
+        "file": "ship.webp",
+        "path": "/images/themes/riviera-blue/ship.webp",
+        "format": "WEBP",
+        "width": 1000,
+        "height": 563,
+        "aspectRatio": 1.776,
+        "size": 137866,
+        "md5": "822eb3fa63d7e571b8fed358b0e36ec5",
+        "type": "decoration",
+        "usage": "Ornamental artwork for riviera-blue"
+      },
+      {
+        "id": "stone",
+        "file": "stone.webp",
+        "path": "/images/themes/riviera-blue/stone.webp",
+        "format": "WEBP",
+        "width": 1300,
+        "height": 650,
+        "aspectRatio": 2.0,
+        "size": 255184,
+        "md5": "92555466848d3f8f75c73300a8a6ddae",
+        "type": "decoration",
+        "usage": "Ornamental artwork for riviera-blue"
+      },
+      {
+        "id": "swing",
+        "file": "swing.webp",
+        "path": "/images/themes/riviera-blue/swing.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 859,
+        "aspectRatio": 1.048,
+        "size": 259486,
+        "md5": "e6d8283e9e70ac1e72ebd47e8100690a",
+        "type": "decoration",
+        "usage": "Ornamental artwork for riviera-blue"
+      },
+      {
+        "id": "tree",
+        "file": "tree.webp",
+        "path": "/images/themes/riviera-blue/tree.webp",
+        "format": "WEBP",
+        "width": 620,
+        "height": 1157,
+        "aspectRatio": 0.536,
+        "size": 142002,
+        "md5": "ff817e1e42e8504c4e494126bd476ae6",
+        "type": "decoration",
+        "usage": "Ornamental artwork for riviera-blue"
+      },
+      {
+        "id": "village",
+        "file": "village.webp",
+        "path": "/images/themes/riviera-blue/village.webp",
+        "format": "WEBP",
+        "width": 1100,
+        "height": 825,
+        "aspectRatio": 1.333,
+        "size": 264426,
+        "md5": "9a53ea8600d7484da99bb049c0f9b673",
+        "type": "decoration",
+        "usage": "Decorative element (village) for riviera-blue"
       }
     ],
     "backgroundPath": "/images/themes/riviera-blue/paper-background.webp",
-    "coverPath": null,
-    "decorationsCount": 0,
-    "framesCount": 0,
+    "coverPath": "/images/themes/riviera-blue/envelope-scene.webp",
+    "decorationsCount": 16,
+    "framesCount": 2,
     "isSharedTheme": false,
     "sharedWith": [],
     "status": "active"
@@ -9374,9 +16992,87 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "baroque-v2-dark-blue"
     ],
-    "assetCount": 1,
-    "totalBytes": 335896,
+    "assetCount": 12,
+    "totalBytes": 1440160,
     "assets": [
+      {
+        "id": "bg",
+        "file": "bg.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/bg.webp",
+        "format": "WEBP",
+        "width": 905,
+        "height": 1738,
+        "aspectRatio": 0.521,
+        "size": 92980,
+        "md5": "6c453718247bc48077f2d94d35aecbc2",
+        "type": "background",
+        "usage": "Background paper or ambient texture for baroque-v2-dark-blue"
+      },
+      {
+        "id": "bird",
+        "file": "bird.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/bird.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 381,
+        "aspectRatio": 1.05,
+        "size": 51288,
+        "md5": "7e6d344312b58e8ffe0d60fa0c7a028e",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-v2-dark-blue"
+      },
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/cake.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 381,
+        "aspectRatio": 1.05,
+        "size": 49412,
+        "md5": "cbf98e780c50668135a3ad6e766a873e",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-blue"
+      },
+      {
+        "id": "flower3-decoration",
+        "file": "flower3-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/flower3-decoration.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 800,
+        "aspectRatio": 1.0,
+        "size": 136610,
+        "md5": "2efd2d588f130469a796c7c9503813a8",
+        "type": "decoration",
+        "usage": "Decorative element (flower3-decoration) for baroque-v2-dark-blue"
+      },
+      {
+        "id": "flower4-decoration",
+        "file": "flower4-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/flower4-decoration.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 800,
+        "aspectRatio": 1.0,
+        "size": 186766,
+        "md5": "5fc25f4f693b23578ccc5c645bab1f16",
+        "type": "decoration",
+        "usage": "Decorative element (flower4-decoration) for baroque-v2-dark-blue"
+      },
+      {
+        "id": "flower5-decoration",
+        "file": "flower5-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/flower5-decoration.webp",
+        "format": "WEBP",
+        "width": 420,
+        "height": 1260,
+        "aspectRatio": 0.333,
+        "size": 256286,
+        "md5": "593f0a2a75ea1fd1310fc7798525a137",
+        "type": "decoration",
+        "usage": "Decorative element (flower5-decoration) for baroque-v2-dark-blue"
+      },
       {
         "id": "frame",
         "file": "frame.webp",
@@ -9389,11 +17085,76 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "cf9b36a00cdcc69dd480da11ae534791",
         "type": "frame",
         "usage": "Framing border or arch for baroque-v2-dark-blue"
+      },
+      {
+        "id": "golden-line-decoration",
+        "file": "golden-line-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/golden-line-decoration.webp",
+        "format": "WEBP",
+        "width": 1600,
+        "height": 356,
+        "aspectRatio": 4.494,
+        "size": 178262,
+        "md5": "f57c521c66ebf7b00c0b8cb4f97e789c",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-blue"
+      },
+      {
+        "id": "letter",
+        "file": "letter.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/letter.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 438,
+        "aspectRatio": 0.913,
+        "size": 31676,
+        "md5": "6a9738f2e23f26cf1962df514be6b4aa",
+        "type": "decoration",
+        "usage": "Ornamental artwork for baroque-v2-dark-blue"
+      },
+      {
+        "id": "line2-decoration",
+        "file": "line2-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/line2-decoration.webp",
+        "format": "WEBP",
+        "width": 600,
+        "height": 96,
+        "aspectRatio": 6.25,
+        "size": 21146,
+        "md5": "dbace79da2cd3f342d9178b668a33fd8",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-blue"
+      },
+      {
+        "id": "line3-decoration",
+        "file": "line3-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/line3-decoration.webp",
+        "format": "WEBP",
+        "width": 160,
+        "height": 1273,
+        "aspectRatio": 0.126,
+        "size": 34880,
+        "md5": "c45977eb5914fa7dd2d01fa18ae08333",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-blue"
+      },
+      {
+        "id": "line4-decoration",
+        "file": "line4-decoration.webp",
+        "path": "/images/themes/baroque-v2-dark-blue/line4-decoration.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 759,
+        "aspectRatio": 0.422,
+        "size": 64958,
+        "md5": "f61e37786e63dff5d51c2dc87b9d8319",
+        "type": "divider",
+        "usage": "Decorative divider line for baroque-v2-dark-blue"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/themes/baroque-v2-dark-blue/bg.webp",
     "coverPath": null,
-    "decorationsCount": 0,
+    "decorationsCount": 5,
     "framesCount": 1,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -9406,9 +17167,48 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "porcelain-brown"
     ],
-    "assetCount": 1,
-    "totalBytes": 21220,
+    "assetCount": 6,
+    "totalBytes": 380548,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/porcelain-brown/cake.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 417,
+        "aspectRatio": 0.959,
+        "size": 29768,
+        "md5": "f8a73b0484583a19bfa4ea2027d46794",
+        "type": "divider",
+        "usage": "Decorative divider line for porcelain-brown"
+      },
+      {
+        "id": "calendar-texture",
+        "file": "calendar-texture.webp",
+        "path": "/images/themes/porcelain-brown/calendar-texture.webp",
+        "format": "WEBP",
+        "width": 640,
+        "height": 960,
+        "aspectRatio": 0.667,
+        "size": 7472,
+        "md5": "7924c9812b31dba57530da84a4a90f72",
+        "type": "background",
+        "usage": "Background paper or ambient texture for porcelain-brown"
+      },
+      {
+        "id": "floral-tile",
+        "file": "floral-tile.webp",
+        "path": "/images/themes/porcelain-brown/floral-tile.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 260598,
+        "md5": "b337886feaacecebd6d12ee636c205dd",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-brown"
+      },
       {
         "id": "frame-background",
         "file": "frame-background.webp",
@@ -9421,11 +17221,37 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "049de32a197e56f80be50643a5b9d9ff",
         "type": "background",
         "usage": "Background paper or ambient texture for porcelain-brown"
+      },
+      {
+        "id": "home",
+        "file": "home.webp",
+        "path": "/images/themes/porcelain-brown/home.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 397,
+        "aspectRatio": 1.008,
+        "size": 30232,
+        "md5": "b9779f3836137de07c363bb7959ca00b",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-brown"
+      },
+      {
+        "id": "music",
+        "file": "music.webp",
+        "path": "/images/themes/porcelain-brown/music.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 407,
+        "aspectRatio": 0.983,
+        "size": 31258,
+        "md5": "39c84ff0bda20d04e0a2667d781c0721",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-brown"
       }
     ],
-    "backgroundPath": "/images/themes/porcelain-brown/frame-background.webp",
+    "backgroundPath": "/images/themes/porcelain-brown/calendar-texture.webp",
     "coverPath": null,
-    "decorationsCount": 0,
+    "decorationsCount": 3,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -9438,9 +17264,35 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "crystal-floral-green"
     ],
-    "assetCount": 4,
-    "totalBytes": 1315208,
+    "assetCount": 11,
+    "totalBytes": 2736138,
     "assets": [
+      {
+        "id": "calendar-frame",
+        "file": "calendar-frame.webp",
+        "path": "/images/themes/crystal-floral-green/calendar-frame.webp",
+        "format": "WEBP",
+        "width": 1370,
+        "height": 1132,
+        "aspectRatio": 1.21,
+        "size": 105184,
+        "md5": "f0e29deb701386ad04ea256188238bc9",
+        "type": "frame",
+        "usage": "Framing border or arch for crystal-floral-green"
+      },
+      {
+        "id": "filigree",
+        "file": "filigree.webp",
+        "path": "/images/themes/crystal-floral-green/filigree.webp",
+        "format": "WEBP",
+        "width": 2163,
+        "height": 379,
+        "aspectRatio": 5.707,
+        "size": 150852,
+        "md5": "d0258da22176f25d30d54be4e32a5e37",
+        "type": "decoration",
+        "usage": "Ornamental artwork for crystal-floral-green"
+      },
       {
         "id": "flower-frame",
         "file": "flower-frame.webp",
@@ -9492,12 +17344,77 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "9aa21b8daf91eea239edb78b0c893b48",
         "type": "decoration",
         "usage": "Decorative element (flower3) for crystal-floral-green"
+      },
+      {
+        "id": "flower4",
+        "file": "flower4.webp",
+        "path": "/images/themes/crystal-floral-green/flower4.webp",
+        "format": "WEBP",
+        "width": 448,
+        "height": 1928,
+        "aspectRatio": 0.232,
+        "size": 245248,
+        "md5": "2d80ddc0bb1a7818b7255d8a145c6eb6",
+        "type": "decoration",
+        "usage": "Decorative element (flower4) for crystal-floral-green"
+      },
+      {
+        "id": "flower5",
+        "file": "flower5.webp",
+        "path": "/images/themes/crystal-floral-green/flower5.webp",
+        "format": "WEBP",
+        "width": 2172,
+        "height": 501,
+        "aspectRatio": 4.335,
+        "size": 238816,
+        "md5": "25c03e4b0c9c58cd9bbc421addee27da",
+        "type": "decoration",
+        "usage": "Decorative element (flower5) for crystal-floral-green"
+      },
+      {
+        "id": "flowericon",
+        "file": "flowericon.webp",
+        "path": "/images/themes/crystal-floral-green/flowericon.webp",
+        "format": "WEBP",
+        "width": 713,
+        "height": 1501,
+        "aspectRatio": 0.475,
+        "size": 239484,
+        "md5": "006d2107bcd30175f6a6880544b20616",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for crystal-floral-green"
+      },
+      {
+        "id": "map",
+        "file": "map.webp",
+        "path": "/images/themes/crystal-floral-green/map.webp",
+        "format": "WEBP",
+        "width": 938,
+        "height": 1135,
+        "aspectRatio": 0.826,
+        "size": 206850,
+        "md5": "48f9558e769238d51bc0cc6f5e428b5b",
+        "type": "decoration",
+        "usage": "Ornamental artwork for crystal-floral-green"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/crystal-floral-green/ring.webp",
+        "format": "WEBP",
+        "width": 1224,
+        "height": 828,
+        "aspectRatio": 1.478,
+        "size": 234496,
+        "md5": "8bfc4cc884ac0d02bfe16d4688b9c741",
+        "type": "decoration",
+        "usage": "Ornamental artwork for crystal-floral-green"
       }
     ],
     "backgroundPath": null,
     "coverPath": null,
-    "decorationsCount": 3,
-    "framesCount": 1,
+    "decorationsCount": 8,
+    "framesCount": 2,
     "isSharedTheme": false,
     "sharedWith": [],
     "status": "active"
@@ -9509,8 +17426,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "sunflower"
     ],
-    "assetCount": 2,
-    "totalBytes": 321062,
+    "assetCount": 7,
+    "totalBytes": 680470,
     "assets": [
       {
         "id": "flower2",
@@ -9537,11 +17454,76 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "215f316e57987ea52a34dce62cba53b5",
         "type": "decoration",
         "usage": "Decorative element (flower4) for sunflower"
+      },
+      {
+        "id": "flower5",
+        "file": "flower5.webp",
+        "path": "/images/themes/sunflower/flower5.webp",
+        "format": "WEBP",
+        "width": 820,
+        "height": 1175,
+        "aspectRatio": 0.698,
+        "size": 208860,
+        "md5": "7cef316a931a3b73a18bfb3316d65709",
+        "type": "decoration",
+        "usage": "Decorative element (flower5) for sunflower"
+      },
+      {
+        "id": "map",
+        "file": "map.webp",
+        "path": "/images/themes/sunflower/map.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 343,
+        "aspectRatio": 0.933,
+        "size": 39438,
+        "md5": "f3d360bfdeffe9e500080b477c48d506",
+        "type": "decoration",
+        "usage": "Ornamental artwork for sunflower"
+      },
+      {
+        "id": "medallion-flower",
+        "file": "medallion-flower.webp",
+        "path": "/images/themes/sunflower/medallion-flower.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 358,
+        "aspectRatio": 0.894,
+        "size": 56302,
+        "md5": "2c8c0a21bf0933be858f080b0175d8df",
+        "type": "decoration",
+        "usage": "Decorative element (medallion-flower) for sunflower"
+      },
+      {
+        "id": "paper",
+        "file": "paper.webp",
+        "path": "/images/themes/sunflower/paper.webp",
+        "format": "WEBP",
+        "width": 900,
+        "height": 900,
+        "aspectRatio": 1.0,
+        "size": 11014,
+        "md5": "efc14bea52b76d4e3e4b8004b674ff1e",
+        "type": "background",
+        "usage": "Background paper or ambient texture for sunflower"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/sunflower/ring.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 256,
+        "aspectRatio": 1.25,
+        "size": 43794,
+        "md5": "cd31f0c55bc8e872a6562678770546c6",
+        "type": "decoration",
+        "usage": "Ornamental artwork for sunflower"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/themes/sunflower/paper.webp",
     "coverPath": null,
-    "decorationsCount": 2,
+    "decorationsCount": 6,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -9554,9 +17536,48 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "porcelain-v2-red"
     ],
-    "assetCount": 1,
-    "totalBytes": 107836,
+    "assetCount": 6,
+    "totalBytes": 750858,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/porcelain-v2-red/cake.webp",
+        "format": "WEBP",
+        "width": 180,
+        "height": 270,
+        "aspectRatio": 0.667,
+        "size": 20810,
+        "md5": "94af9c5eccc5e16c69695034d6603ae8",
+        "type": "divider",
+        "usage": "Decorative divider line for porcelain-v2-red"
+      },
+      {
+        "id": "floral-tile",
+        "file": "floral-tile.webp",
+        "path": "/images/themes/porcelain-v2-red/floral-tile.webp",
+        "format": "WEBP",
+        "width": 941,
+        "height": 1672,
+        "aspectRatio": 0.563,
+        "size": 353142,
+        "md5": "898e66c4063ab5b4b17ef4f0cf9079d4",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-red"
+      },
+      {
+        "id": "flower",
+        "file": "flower.webp",
+        "path": "/images/themes/porcelain-v2-red/flower.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 1067,
+        "aspectRatio": 0.75,
+        "size": 228606,
+        "md5": "f11c418445471ccc9527a0c043f74c0b",
+        "type": "decoration",
+        "usage": "Decorative element (flower) for porcelain-v2-red"
+      },
       {
         "id": "hero-frame",
         "file": "hero-frame.webp",
@@ -9569,11 +17590,37 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "5051c8f6bac23da5e113d137680e7bad",
         "type": "frame",
         "usage": "Framing border or arch for porcelain-v2-red"
+      },
+      {
+        "id": "lamp",
+        "file": "lamp.webp",
+        "path": "/images/themes/porcelain-v2-red/lamp.webp",
+        "format": "WEBP",
+        "width": 200,
+        "height": 223,
+        "aspectRatio": 0.897,
+        "size": 22678,
+        "md5": "93c7fe2ce4d4730f431541716f485dcf",
+        "type": "decoration",
+        "usage": "Decorative element (lamp) for porcelain-v2-red"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/porcelain-v2-red/ring.webp",
+        "format": "WEBP",
+        "width": 220,
+        "height": 220,
+        "aspectRatio": 1.0,
+        "size": 17786,
+        "md5": "04133aee96bec5724880457d3c6b3c8a",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-v2-red"
       }
     ],
     "backgroundPath": null,
     "coverPath": null,
-    "decorationsCount": 0,
+    "decorationsCount": 4,
     "framesCount": 1,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -9586,9 +17633,35 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "crystal-floral-red"
     ],
-    "assetCount": 4,
-    "totalBytes": 1239714,
+    "assetCount": 11,
+    "totalBytes": 2989884,
     "assets": [
+      {
+        "id": "calendar-frame",
+        "file": "calendar-frame.webp",
+        "path": "/images/themes/crystal-floral-red/calendar-frame.webp",
+        "format": "WEBP",
+        "width": 1374,
+        "height": 1145,
+        "aspectRatio": 1.2,
+        "size": 110256,
+        "md5": "c9736a7a67c410f4d7bbef7e755b1bd3",
+        "type": "frame",
+        "usage": "Framing border or arch for crystal-floral-red"
+      },
+      {
+        "id": "filigree",
+        "file": "filigree.webp",
+        "path": "/images/themes/crystal-floral-red/filigree.webp",
+        "format": "WEBP",
+        "width": 2172,
+        "height": 374,
+        "aspectRatio": 5.807,
+        "size": 167690,
+        "md5": "1391854d6f8f9dd634f850c01614c14c",
+        "type": "decoration",
+        "usage": "Ornamental artwork for crystal-floral-red"
+      },
       {
         "id": "flower-frame",
         "file": "flower-frame.webp",
@@ -9640,12 +17713,77 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "eece385b005c914575a4925e10adbeea",
         "type": "decoration",
         "usage": "Decorative element (flower3) for crystal-floral-red"
+      },
+      {
+        "id": "flower4",
+        "file": "flower4.webp",
+        "path": "/images/themes/crystal-floral-red/flower4.webp",
+        "format": "WEBP",
+        "width": 518,
+        "height": 2179,
+        "aspectRatio": 0.238,
+        "size": 344452,
+        "md5": "53d96fab2c493c117ed2147808ab7c10",
+        "type": "decoration",
+        "usage": "Decorative element (flower4) for crystal-floral-red"
+      },
+      {
+        "id": "flower5",
+        "file": "flower5.webp",
+        "path": "/images/themes/crystal-floral-red/flower5.webp",
+        "format": "WEBP",
+        "width": 2113,
+        "height": 476,
+        "aspectRatio": 4.439,
+        "size": 412986,
+        "md5": "6eb549a10d08b6d88848f856381ecf59",
+        "type": "decoration",
+        "usage": "Decorative element (flower5) for crystal-floral-red"
+      },
+      {
+        "id": "flowericon",
+        "file": "flowericon.webp",
+        "path": "/images/themes/crystal-floral-red/flowericon.webp",
+        "format": "WEBP",
+        "width": 689,
+        "height": 1453,
+        "aspectRatio": 0.474,
+        "size": 276720,
+        "md5": "359e053f208ba2407bb0e773b58e2329",
+        "type": "icon",
+        "usage": "Icon or cultural symbol (囍) for crystal-floral-red"
+      },
+      {
+        "id": "map",
+        "file": "map.webp",
+        "path": "/images/themes/crystal-floral-red/map.webp",
+        "format": "WEBP",
+        "width": 922,
+        "height": 1105,
+        "aspectRatio": 0.834,
+        "size": 198416,
+        "md5": "4d3c4a85d33a93a52c92d012481ed2bb",
+        "type": "decoration",
+        "usage": "Ornamental artwork for crystal-floral-red"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/crystal-floral-red/ring.webp",
+        "format": "WEBP",
+        "width": 1135,
+        "height": 760,
+        "aspectRatio": 1.493,
+        "size": 239650,
+        "md5": "9d96876a12108fce5c53fcd28ed16490",
+        "type": "decoration",
+        "usage": "Ornamental artwork for crystal-floral-red"
       }
     ],
     "backgroundPath": null,
     "coverPath": null,
-    "decorationsCount": 3,
-    "framesCount": 1,
+    "decorationsCount": 8,
+    "framesCount": 2,
     "isSharedTheme": false,
     "sharedWith": [],
     "status": "active"
@@ -9657,9 +17795,35 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "porcelain-blue"
     ],
-    "assetCount": 1,
-    "totalBytes": 65948,
+    "assetCount": 5,
+    "totalBytes": 348850,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/porcelain-blue/cake.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 417,
+        "aspectRatio": 0.959,
+        "size": 28022,
+        "md5": "30a3882cc21c78430fc18d7ec4192eb1",
+        "type": "divider",
+        "usage": "Decorative divider line for porcelain-blue"
+      },
+      {
+        "id": "floral-tile",
+        "file": "floral-tile.webp",
+        "path": "/images/themes/porcelain-blue/floral-tile.webp",
+        "format": "WEBP",
+        "width": 882,
+        "height": 882,
+        "aspectRatio": 1.0,
+        "size": 195988,
+        "md5": "b681558950738729062d01c852261875",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-blue"
+      },
       {
         "id": "frame-decoration",
         "file": "frame-decoration.webp",
@@ -9672,11 +17836,37 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "049f27a42141976ea5e0ef198c67b181",
         "type": "frame",
         "usage": "Framing border or arch for porcelain-blue"
+      },
+      {
+        "id": "home",
+        "file": "home.webp",
+        "path": "/images/themes/porcelain-blue/home.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 397,
+        "aspectRatio": 1.008,
+        "size": 29226,
+        "md5": "1ad7b42eeedcec77558e821e7f4ba420",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-blue"
+      },
+      {
+        "id": "music",
+        "file": "music.webp",
+        "path": "/images/themes/porcelain-blue/music.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 407,
+        "aspectRatio": 0.983,
+        "size": 29666,
+        "md5": "6856fb7aaf73a1624288b6d5c06ed492",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-blue"
       }
     ],
     "backgroundPath": null,
     "coverPath": null,
-    "decorationsCount": 0,
+    "decorationsCount": 3,
     "framesCount": 1,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -9689,9 +17879,35 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "porcelain-red"
     ],
-    "assetCount": 1,
-    "totalBytes": 43422,
+    "assetCount": 5,
+    "totalBytes": 365136,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/porcelain-red/cake.webp",
+        "format": "WEBP",
+        "width": 384,
+        "height": 400,
+        "aspectRatio": 0.96,
+        "size": 29734,
+        "md5": "620b28977a9c6e5b774cebe9181372b6",
+        "type": "divider",
+        "usage": "Decorative divider line for porcelain-red"
+      },
+      {
+        "id": "floral-tile",
+        "file": "floral-tile.webp",
+        "path": "/images/themes/porcelain-red/floral-tile.webp",
+        "format": "WEBP",
+        "width": 882,
+        "height": 882,
+        "aspectRatio": 1.0,
+        "size": 229588,
+        "md5": "0b081849c59d9f9be29cff018f116122",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-red"
+      },
       {
         "id": "frame-decoration",
         "file": "frame-decoration.webp",
@@ -9704,11 +17920,37 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "8fe622bbfe216a8d409f4b4969ff1071",
         "type": "frame",
         "usage": "Framing border or arch for porcelain-red"
+      },
+      {
+        "id": "home",
+        "file": "home.webp",
+        "path": "/images/themes/porcelain-red/home.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 397,
+        "aspectRatio": 1.008,
+        "size": 31252,
+        "md5": "34c4889e6686ebb1530f3d08ebdd2179",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-red"
+      },
+      {
+        "id": "music",
+        "file": "music.webp",
+        "path": "/images/themes/porcelain-red/music.webp",
+        "format": "WEBP",
+        "width": 393,
+        "height": 400,
+        "aspectRatio": 0.983,
+        "size": 31140,
+        "md5": "03641f55931d126e1f62d936755665ec",
+        "type": "decoration",
+        "usage": "Ornamental artwork for porcelain-red"
       }
     ],
     "backgroundPath": null,
     "coverPath": null,
-    "decorationsCount": 0,
+    "decorationsCount": 3,
     "framesCount": 1,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -9721,9 +17963,48 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "san-miguel-yellow"
     ],
-    "assetCount": 2,
-    "totalBytes": 130660,
+    "assetCount": 20,
+    "totalBytes": 3383904,
     "assets": [
+      {
+        "id": "bird",
+        "file": "bird.webp",
+        "path": "/images/themes/san-miguel-yellow/bird.webp",
+        "format": "WEBP",
+        "width": 420,
+        "height": 391,
+        "aspectRatio": 1.074,
+        "size": 35346,
+        "md5": "f5538e61d2e822428a9f9784cb3edf26",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "church-decoration",
+        "file": "church-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/church-decoration.webp",
+        "format": "WEBP",
+        "width": 1387,
+        "height": 1040,
+        "aspectRatio": 1.334,
+        "size": 208084,
+        "md5": "2ceabc223c6ef5c4ff86727331fc1b76",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "city-envelope",
+        "file": "city-envelope.webp",
+        "path": "/images/themes/san-miguel-yellow/city-envelope.webp",
+        "format": "WEBP",
+        "width": 1200,
+        "height": 1056,
+        "aspectRatio": 1.136,
+        "size": 313940,
+        "md5": "5e8a7e7800bc8e3f68b8986d5a088cca",
+        "type": "cover",
+        "usage": "Envelope or cover illustration for san-miguel-yellow"
+      },
       {
         "id": "cloud-background",
         "file": "cloud-background.webp",
@@ -9749,11 +18030,206 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "0f3663afe05987bfac4e21707fc80376",
         "type": "background",
         "usage": "Background paper or ambient texture for san-miguel-yellow"
+      },
+      {
+        "id": "flower-decoration",
+        "file": "flower-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/flower-decoration.webp",
+        "format": "WEBP",
+        "width": 1000,
+        "height": 750,
+        "aspectRatio": 1.333,
+        "size": 223864,
+        "md5": "da8acb43ac34fd5ca8a8a4e22b0adb7b",
+        "type": "decoration",
+        "usage": "Decorative element (flower-decoration) for san-miguel-yellow"
+      },
+      {
+        "id": "flower-gift",
+        "file": "flower-gift.webp",
+        "path": "/images/themes/san-miguel-yellow/flower-gift.webp",
+        "format": "WEBP",
+        "width": 640,
+        "height": 585,
+        "aspectRatio": 1.094,
+        "size": 161546,
+        "md5": "a7cef56597eb6e4c5292f65a17afdc66",
+        "type": "decoration",
+        "usage": "Decorative element (flower-gift) for san-miguel-yellow"
+      },
+      {
+        "id": "flower",
+        "file": "flower.webp",
+        "path": "/images/themes/san-miguel-yellow/flower.webp",
+        "format": "WEBP",
+        "width": 400,
+        "height": 461,
+        "aspectRatio": 0.868,
+        "size": 44390,
+        "md5": "f7458e84829013344a4ba20b99d780b5",
+        "type": "decoration",
+        "usage": "Decorative element (flower) for san-miguel-yellow"
+      },
+      {
+        "id": "heart",
+        "file": "heart.webp",
+        "path": "/images/themes/san-miguel-yellow/heart.webp",
+        "format": "WEBP",
+        "width": 383,
+        "height": 426,
+        "aspectRatio": 0.899,
+        "size": 30702,
+        "md5": "96cd9888b5e096acf1f102876eecbd27",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "house-decoration",
+        "file": "house-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/house-decoration.webp",
+        "format": "WEBP",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": 1.333,
+        "size": 379462,
+        "md5": "d29b2a2fb7dcc4df625bf52ccf3668f7",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "light-decoration",
+        "file": "light-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/light-decoration.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 480,
+        "aspectRatio": 0.667,
+        "size": 36192,
+        "md5": "98f78e8c2ade7ac4d79558075f715ff0",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "paper-background",
+        "file": "paper-background.webp",
+        "path": "/images/themes/san-miguel-yellow/paper-background.webp",
+        "format": "WEBP",
+        "width": 724,
+        "height": 2172,
+        "aspectRatio": 0.333,
+        "size": 33264,
+        "md5": "ece1a5d89ad2e46bf101a92e33248ece",
+        "type": "background",
+        "usage": "Background paper or ambient texture for san-miguel-yellow"
+      },
+      {
+        "id": "scene-background",
+        "file": "scene-background.webp",
+        "path": "/images/themes/san-miguel-yellow/scene-background.webp",
+        "format": "WEBP",
+        "width": 700,
+        "height": 1050,
+        "aspectRatio": 0.667,
+        "size": 253246,
+        "md5": "fdfd0c078d4e90992f09bb1189adb22f",
+        "type": "background",
+        "usage": "Background paper or ambient texture for san-miguel-yellow"
+      },
+      {
+        "id": "scene-decoration",
+        "file": "scene-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/scene-decoration.webp",
+        "format": "WEBP",
+        "width": 1180,
+        "height": 393,
+        "aspectRatio": 3.003,
+        "size": 178678,
+        "md5": "d0afb61721842f5eb9d4e7fc2bc07711",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "scene2-decoration",
+        "file": "scene2-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/scene2-decoration.webp",
+        "format": "WEBP",
+        "width": 1600,
+        "height": 533,
+        "aspectRatio": 3.002,
+        "size": 252642,
+        "md5": "4afeabcc2ba7b70a73b41f38bd886e3e",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "stair-background",
+        "file": "stair-background.webp",
+        "path": "/images/themes/san-miguel-yellow/stair-background.webp",
+        "format": "WEBP",
+        "width": 800,
+        "height": 1067,
+        "aspectRatio": 0.75,
+        "size": 318314,
+        "md5": "b2188390185ef1822275c8e45580bbc2",
+        "type": "background",
+        "usage": "Background paper or ambient texture for san-miguel-yellow"
+      },
+      {
+        "id": "tree-decoration",
+        "file": "tree-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/tree-decoration.webp",
+        "format": "WEBP",
+        "width": 640,
+        "height": 480,
+        "aspectRatio": 1.333,
+        "size": 140128,
+        "md5": "e202cd434505b11c2e5e78e367438ec8",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "wall-decoration",
+        "file": "wall-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/wall-decoration.webp",
+        "format": "WEBP",
+        "width": 580,
+        "height": 870,
+        "aspectRatio": 0.667,
+        "size": 155916,
+        "md5": "d61930daa9fcf817000bb2a8bb12186d",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "wall2-decoration",
+        "file": "wall2-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/wall2-decoration.webp",
+        "format": "WEBP",
+        "width": 840,
+        "height": 1120,
+        "aspectRatio": 0.75,
+        "size": 342894,
+        "md5": "ad15bb24900ba42da63d371d68439825",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
+      },
+      {
+        "id": "water-decoration",
+        "file": "water-decoration.webp",
+        "path": "/images/themes/san-miguel-yellow/water-decoration.webp",
+        "format": "WEBP",
+        "width": 880,
+        "height": 660,
+        "aspectRatio": 1.333,
+        "size": 144636,
+        "md5": "4327191bba675d493a2369d853382828",
+        "type": "decoration",
+        "usage": "Ornamental artwork for san-miguel-yellow"
       }
     ],
     "backgroundPath": "/images/themes/san-miguel-yellow/cloud-background.webp",
-    "coverPath": null,
-    "decorationsCount": 0,
+    "coverPath": "/images/themes/san-miguel-yellow/city-envelope.webp",
+    "decorationsCount": 14,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -9766,9 +18242,22 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "glass-garden-blue"
     ],
-    "assetCount": 2,
-    "totalBytes": 639602,
+    "assetCount": 8,
+    "totalBytes": 1222620,
     "assets": [
+      {
+        "id": "calendar-heart",
+        "file": "calendar-heart.webp",
+        "path": "/images/themes/glass-garden-blue/calendar-heart.webp",
+        "format": "WEBP",
+        "width": 226,
+        "height": 200,
+        "aspectRatio": 1.13,
+        "size": 2720,
+        "md5": "d177c98d7f92caf2d258566d6675c60e",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-blue"
+      },
       {
         "id": "floral-background",
         "file": "floral-background.webp",
@@ -9794,11 +18283,76 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "03ba9960b0e18f10eaca09307f9ff85a",
         "type": "decoration",
         "usage": "Decorative element (flower2-decoration) for glass-garden-blue"
+      },
+      {
+        "id": "flower3-decoration",
+        "file": "flower3-decoration.webp",
+        "path": "/images/themes/glass-garden-blue/flower3-decoration.webp",
+        "format": "WEBP",
+        "width": 832,
+        "height": 1438,
+        "aspectRatio": 0.579,
+        "size": 225486,
+        "md5": "09b82f9bdaeb580d9a622c2e53c400d0",
+        "type": "decoration",
+        "usage": "Decorative element (flower3-decoration) for glass-garden-blue"
+      },
+      {
+        "id": "flower5-bottom",
+        "file": "flower5-bottom.webp",
+        "path": "/images/themes/glass-garden-blue/flower5-bottom.webp",
+        "format": "WEBP",
+        "width": 1530,
+        "height": 696,
+        "aspectRatio": 2.198,
+        "size": 247166,
+        "md5": "162b21801640650f3a92c43c9a153055",
+        "type": "decoration",
+        "usage": "Decorative element (flower5-bottom) for glass-garden-blue"
+      },
+      {
+        "id": "map",
+        "file": "map.webp",
+        "path": "/images/themes/glass-garden-blue/map.webp",
+        "format": "WEBP",
+        "width": 300,
+        "height": 317,
+        "aspectRatio": 0.946,
+        "size": 29774,
+        "md5": "23a3a7b8a789e2da6265edeb40d9d14c",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-blue"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/glass-garden-blue/ring.webp",
+        "format": "WEBP",
+        "width": 300,
+        "height": 311,
+        "aspectRatio": 0.965,
+        "size": 40418,
+        "md5": "b9dbd095760ae4cfb6462e329daee80a",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-blue"
+      },
+      {
+        "id": "song",
+        "file": "song.webp",
+        "path": "/images/themes/glass-garden-blue/song.webp",
+        "format": "WEBP",
+        "width": 300,
+        "height": 371,
+        "aspectRatio": 0.809,
+        "size": 37454,
+        "md5": "f38540d8edab644de7d08637c4f11edf",
+        "type": "decoration",
+        "usage": "Ornamental artwork for glass-garden-blue"
       }
     ],
     "backgroundPath": "/images/themes/glass-garden-blue/floral-background.webp",
     "coverPath": null,
-    "decorationsCount": 1,
+    "decorationsCount": 7,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],
@@ -9811,8 +18365,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "royal-v2-purple"
     ],
-    "assetCount": 5,
-    "totalBytes": 686540,
+    "assetCount": 15,
+    "totalBytes": 2577236,
     "assets": [
       {
         "id": "background",
@@ -9826,6 +18380,58 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "87ca4b5cf77bf45a1d14f21223ebc6c1",
         "type": "background",
         "usage": "Background paper or ambient texture for royal-v2-purple"
+      },
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/royal-v2-purple/cake.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 169276,
+        "md5": "197dc193c9c9fcb30e6edbb4b9872cd6",
+        "type": "divider",
+        "usage": "Decorative divider line for royal-v2-purple"
+      },
+      {
+        "id": "calendar-heart",
+        "file": "calendar-heart.webp",
+        "path": "/images/themes/royal-v2-purple/calendar-heart.webp",
+        "format": "WEBP",
+        "width": 96,
+        "height": 85,
+        "aspectRatio": 1.129,
+        "size": 2334,
+        "md5": "78687c8a1f7b98944ca5cd7372a767f9",
+        "type": "decoration",
+        "usage": "Ornamental artwork for royal-v2-purple"
+      },
+      {
+        "id": "decorframe",
+        "file": "decorframe.webp",
+        "path": "/images/themes/royal-v2-purple/decorframe.webp",
+        "format": "WEBP",
+        "width": 2078,
+        "height": 382,
+        "aspectRatio": 5.44,
+        "size": 53186,
+        "md5": "0f6915cdefccb8a826a9867eac153122",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-v2-purple"
+      },
+      {
+        "id": "decorframe2",
+        "file": "decorframe2.webp",
+        "path": "/images/themes/royal-v2-purple/decorframe2.webp",
+        "format": "WEBP",
+        "width": 1226,
+        "height": 1283,
+        "aspectRatio": 0.956,
+        "size": 153828,
+        "md5": "53461cb3f99390fc67c3a300406c5a99",
+        "type": "frame",
+        "usage": "Framing border or arch for royal-v2-purple"
       },
       {
         "id": "flower-decoration",
@@ -9854,6 +18460,45 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Decorative element (flower2-decoration) for royal-v2-purple"
       },
       {
+        "id": "flower4-decoration",
+        "file": "flower4-decoration.webp",
+        "path": "/images/themes/royal-v2-purple/flower4-decoration.webp",
+        "format": "WEBP",
+        "width": 2000,
+        "height": 2439,
+        "aspectRatio": 0.82,
+        "size": 737384,
+        "md5": "0cd75d0cbe206fc51383bd868cb1b380",
+        "type": "decoration",
+        "usage": "Decorative element (flower4-decoration) for royal-v2-purple"
+      },
+      {
+        "id": "flower5-decoration",
+        "file": "flower5-decoration.webp",
+        "path": "/images/themes/royal-v2-purple/flower5-decoration.webp",
+        "format": "WEBP",
+        "width": 849,
+        "height": 2000,
+        "aspectRatio": 0.424,
+        "size": 303970,
+        "md5": "de6c6bc9993b75c0cd44f3bd22e377db",
+        "type": "decoration",
+        "usage": "Decorative element (flower5-decoration) for royal-v2-purple"
+      },
+      {
+        "id": "flowerbottom-decoration",
+        "file": "flowerbottom-decoration.webp",
+        "path": "/images/themes/royal-v2-purple/flowerbottom-decoration.webp",
+        "format": "WEBP",
+        "width": 1200,
+        "height": 567,
+        "aspectRatio": 2.116,
+        "size": 183780,
+        "md5": "643b1eb2e545d93de345d2ba936b53e6",
+        "type": "decoration",
+        "usage": "Decorative element (flowerbottom-decoration) for royal-v2-purple"
+      },
+      {
         "id": "frame",
         "file": "frame.webp",
         "path": "/images/themes/royal-v2-purple/frame.webp",
@@ -9878,12 +18523,51 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "c5e9be431cd953e42ed42c77527f7282",
         "type": "divider",
         "usage": "Decorative divider line for royal-v2-purple"
+      },
+      {
+        "id": "leafline-decoration",
+        "file": "leafline-decoration.webp",
+        "path": "/images/themes/royal-v2-purple/leafline-decoration.webp",
+        "format": "WEBP",
+        "width": 1824,
+        "height": 292,
+        "aspectRatio": 6.247,
+        "size": 30648,
+        "md5": "60688878aba958b7ca516a59977b8d3a",
+        "type": "divider",
+        "usage": "Decorative divider line for royal-v2-purple"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/royal-v2-purple/ring.webp",
+        "format": "WEBP",
+        "width": 372,
+        "height": 297,
+        "aspectRatio": 1.253,
+        "size": 44658,
+        "md5": "05e51c93a939e9f025027b4394f924ab",
+        "type": "decoration",
+        "usage": "Ornamental artwork for royal-v2-purple"
+      },
+      {
+        "id": "welcome",
+        "file": "welcome.webp",
+        "path": "/images/themes/royal-v2-purple/welcome.webp",
+        "format": "WEBP",
+        "width": 1122,
+        "height": 1402,
+        "aspectRatio": 0.8,
+        "size": 211632,
+        "md5": "240c0abb30e5d6c55d2d54513227b493",
+        "type": "decoration",
+        "usage": "Ornamental artwork for royal-v2-purple"
       }
     ],
     "backgroundPath": "/images/themes/royal-v2-purple/background.webp",
     "coverPath": null,
-    "decorationsCount": 2,
-    "framesCount": 1,
+    "decorationsCount": 8,
+    "framesCount": 3,
     "isSharedTheme": false,
     "sharedWith": [],
     "status": "active"
@@ -9895,9 +18579,35 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "hoa-kho-orange"
     ],
-    "assetCount": 3,
-    "totalBytes": 849982,
+    "assetCount": 8,
+    "totalBytes": 996994,
     "assets": [
+      {
+        "id": "cake",
+        "file": "cake.webp",
+        "path": "/images/themes/hoa-kho-orange/cake.webp",
+        "format": "WEBP",
+        "width": 225,
+        "height": 320,
+        "aspectRatio": 0.703,
+        "size": 35236,
+        "md5": "52133ea3d781b7a2b096e69854ab5450",
+        "type": "divider",
+        "usage": "Decorative divider line for hoa-kho-orange"
+      },
+      {
+        "id": "calendar-heart",
+        "file": "calendar-heart.svg",
+        "path": "/images/themes/hoa-kho-orange/calendar-heart.svg",
+        "format": "SVG",
+        "width": 21,
+        "height": 19,
+        "aspectRatio": 1.105,
+        "size": 546,
+        "md5": "3331d19cfca1de8e07497c5300eca005",
+        "type": "decoration",
+        "usage": "Ornamental artwork for hoa-kho-orange"
+      },
       {
         "id": "flower2",
         "file": "flower2.webp",
@@ -9936,11 +18646,50 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "670b2f05fbfbc83ffb920ce5b47f2e27",
         "type": "decoration",
         "usage": "Decorative element (flower4) for hoa-kho-orange"
+      },
+      {
+        "id": "paper",
+        "file": "paper.webp",
+        "path": "/images/themes/hoa-kho-orange/paper.webp",
+        "format": "WEBP",
+        "width": 1254,
+        "height": 1254,
+        "aspectRatio": 1.0,
+        "size": 21792,
+        "md5": "07ae44b740d499390a1424fba2d3d984",
+        "type": "background",
+        "usage": "Background paper or ambient texture for hoa-kho-orange"
+      },
+      {
+        "id": "ring",
+        "file": "ring.webp",
+        "path": "/images/themes/hoa-kho-orange/ring.webp",
+        "format": "WEBP",
+        "width": 320,
+        "height": 320,
+        "aspectRatio": 1.0,
+        "size": 45540,
+        "md5": "575baf11806b9b6ecb2e58531187fc9c",
+        "type": "decoration",
+        "usage": "Ornamental artwork for hoa-kho-orange"
+      },
+      {
+        "id": "water",
+        "file": "water.webp",
+        "path": "/images/themes/hoa-kho-orange/water.webp",
+        "format": "WEBP",
+        "width": 274,
+        "height": 320,
+        "aspectRatio": 0.856,
+        "size": 43898,
+        "md5": "e4774823119ddeea83da13111a90d42a",
+        "type": "decoration",
+        "usage": "Ornamental artwork for hoa-kho-orange"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/themes/hoa-kho-orange/paper.webp",
     "coverPath": null,
-    "decorationsCount": 3,
+    "decorationsCount": 6,
     "framesCount": 0,
     "isSharedTheme": false,
     "sharedWith": [],

@@ -1,0 +1,29 @@
+{
+  "slug": "hoa-lua-nau",
+  "templateId": "silk_flora_brown",
+  "name": "Hoa Lụa - Nâu",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/mini/baroque_gold.webp",
+      "/images/giftbox/mini/baroque_v2_darkblue.webp",
+      "/images/giftbox/mini/boho_floral_green.webp",
+      "/images/giftbox/mini/double_dragon_red.webp",
+      "/images/giftbox/mini/glass_garden_blue.webp",
+      "/images/giftbox/mini/qasr_gold.webp",
+      "/images/giftbox/mini/silk_ribbon_darkred.webp",
+      "/images/giftbox/silk_flora_brown.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "minimalism-do-dam",
+  "templateId": "minimalism_darkred",
+  "name": "Minimalism - Đỏ Đậm",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/minimalism_darkred.webp"
+    ],
+    "opened": [
+      "/images/themes/minimalism-dark-red/cake.webp",
+      "/images/themes/minimalism-dark-red/camera.webp",
+      "/images/themes/minimalism-dark-red/cook.webp",
+      "/images/themes/minimalism-dark-red/papernote-background.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

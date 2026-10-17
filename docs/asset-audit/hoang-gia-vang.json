@@ -1,0 +1,34 @@
+{
+  "slug": "hoang-gia-vang",
+  "templateId": "baroque_gold",
+  "name": "Baroque - Vàng",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/baroque_gold.webp",
+      "/images/giftbox/mini/crystal_floral_blue.webp",
+      "/images/giftbox/mini/crystal_floral_red.webp",
+      "/images/giftbox/mini/dried_flower_v2_green.webp",
+      "/images/giftbox/mini/hoa_tinh_red.webp",
+      "/images/giftbox/mini/porcelain_brown.webp",
+      "/images/giftbox/mini/royal.webp",
+      "/images/giftbox/mini/royal_v2_purple.webp",
+      "/images/themes/baroque-gold/hoa-tiet-1.webp",
+      "/images/themes/baroque-gold/hoa-tiet-3.webp",
+      "/images/themes/baroque-gold/khung-lich.webp",
+      "/images/themes/baroque-gold/pattern-decoration.webp",
+      "/images/themes/baroque-gold/tru.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

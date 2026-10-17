@@ -1,0 +1,38 @@
+{
+  "slug": "baroque-lam",
+  "templateId": "baroque_blue",
+  "name": "Baroque - Lam",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/baroque_blue.webp",
+      "/images/giftbox/mini/baroque_gold.webp",
+      "/images/giftbox/mini/boho_floral_pink.webp",
+      "/images/giftbox/mini/double_dragon_red.webp",
+      "/images/giftbox/mini/dried_flower_v2_green.webp",
+      "/images/giftbox/mini/glass_garden_blue.webp",
+      "/images/giftbox/mini/silk_ribbon_darkred.webp",
+      "/images/giftbox/mini/song_hac_red.webp",
+      "/images/themes/baroque-blue/calendar-frame.webp",
+      "/images/themes/baroque-blue/gold5-decoration.webp",
+      "/images/themes/baroque-blue/gold6-decoration.webp",
+      "/images/themes/baroque-blue/goldline2-decoration.webp",
+      "/images/themes/baroque-blue/line-decoration.webp",
+      "/images/themes/baroque-blue/medallion-bird.webp",
+      "/images/themes/baroque-blue/medallion-cake.webp",
+      "/images/themes/baroque-blue/medallion-ring.webp",
+      "/images/themes/baroque-blue/pillars-decoration.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

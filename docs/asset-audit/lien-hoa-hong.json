@@ -1,0 +1,31 @@
+{
+  "slug": "lien-hoa-hong",
+  "templateId": "lien_hoa_pink",
+  "name": "Liên Hoa - Hồng",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/lien_hoa_pink.webp"
+    ],
+    "opened": [
+      "/images/themes/lien-hoa-pink/calendar-frame.webp",
+      "/images/themes/lien-hoa-pink/flower-bottom.webp",
+      "/images/themes/lien-hoa-pink/framegold2.webp",
+      "/images/themes/lien-hoa-pink/golden-line.webp",
+      "/images/themes/lien-hoa-pink/leaf.webp",
+      "/images/themes/lien-hoa-pink/medallion-alcohol.webp",
+      "/images/themes/lien-hoa-pink/medallion-guest.webp",
+      "/images/themes/lien-hoa-pink/medallion-opening.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

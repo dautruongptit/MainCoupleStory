@@ -1,0 +1,30 @@
+{
+  "slug": "hoa-thuy-tinh-do",
+  "templateId": "crystal_floral_red",
+  "name": "Hoa Thuỷ Tinh - Đỏ",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/crystal_floral_red.webp"
+    ],
+    "opened": [
+      "/images/themes/crystal-floral-red/calendar-frame.webp",
+      "/images/themes/crystal-floral-red/filigree.webp",
+      "/images/themes/crystal-floral-red/flower4.webp",
+      "/images/themes/crystal-floral-red/flower5.webp",
+      "/images/themes/crystal-floral-red/flowericon.webp",
+      "/images/themes/crystal-floral-red/map.webp",
+      "/images/themes/crystal-floral-red/ring.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

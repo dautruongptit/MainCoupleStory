@@ -1,0 +1,31 @@
+{
+  "slug": "hoang-kim-do",
+  "templateId": "royal_red",
+  "name": "Hoàng Kim - Đỏ",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/mini/crystal_floral_green.webp",
+      "/images/giftbox/mini/double_phoenix_green.webp",
+      "/images/giftbox/mini/hoa_kho_v2_blue.webp",
+      "/images/giftbox/mini/qasr_blue.webp",
+      "/images/giftbox/mini/royal.webp",
+      "/images/giftbox/mini/royal_v2_purple.webp",
+      "/images/giftbox/royal_red.webp",
+      "/images/themes/royal-red/frame-corner-top-left.webp",
+      "/images/themes/royal-red/frame-middle-horizontal.webp",
+      "/images/themes/royal-red/frame-middle-vertical.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

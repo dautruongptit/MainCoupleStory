@@ -1,0 +1,40 @@
+{
+  "slug": "san-miguel-vang",
+  "templateId": "san_miguel_yellow",
+  "name": "San Miguel - Vàng",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [
+      "/images/envelope/san_miguel_yellow.webp"
+    ],
+    "opened": [
+      "/images/themes/san-miguel-yellow/bird.webp",
+      "/images/themes/san-miguel-yellow/church-decoration.webp",
+      "/images/themes/san-miguel-yellow/flower-decoration.webp",
+      "/images/themes/san-miguel-yellow/flower-gift.webp",
+      "/images/themes/san-miguel-yellow/flower.webp",
+      "/images/themes/san-miguel-yellow/heart.webp",
+      "/images/themes/san-miguel-yellow/house-decoration.webp",
+      "/images/themes/san-miguel-yellow/light-decoration.webp",
+      "/images/themes/san-miguel-yellow/paper-background.webp",
+      "/images/themes/san-miguel-yellow/scene-background.webp",
+      "/images/themes/san-miguel-yellow/scene-decoration.webp",
+      "/images/themes/san-miguel-yellow/scene2-decoration.webp",
+      "/images/themes/san-miguel-yellow/stair-background.webp",
+      "/images/themes/san-miguel-yellow/tree-decoration.webp",
+      "/images/themes/san-miguel-yellow/wall-decoration.webp",
+      "/images/themes/san-miguel-yellow/wall2-decoration.webp",
+      "/images/themes/san-miguel-yellow/water-decoration.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "hoa-tinh-do",
+  "templateId": "hoa_tinh_red",
+  "name": "Hoạ Tình - Đỏ",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/hoa_tinh_red.webp",
+      "/images/giftbox/mini/elegant_leaf_green.webp",
+      "/images/giftbox/mini/glass_garden_green.webp",
+      "/images/giftbox/mini/mahal_gold.webp",
+      "/images/giftbox/mini/minimalism_brown.webp",
+      "/images/giftbox/mini/minimalism_darkbrown.webp",
+      "/images/giftbox/mini/porcelain_v2_green.webp",
+      "/images/themes/love-art/3 tim.webp",
+      "/images/themes/love-art/bride frame.webp",
+      "/images/themes/love-art/dau ly.webp",
+      "/images/themes/love-art/groom frame.webp",
+      "/images/themes/love-art/hoa tim.webp",
+      "/images/themes/love-art/lich.webp",
+      "/images/themes/love-art/love.webp",
+      "/images/themes/love-art/re ly.webp",
+      "/images/themes/love-art/thanks.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

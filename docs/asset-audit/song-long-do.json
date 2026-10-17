@@ -1,0 +1,28 @@
+{
+  "slug": "song-long-do",
+  "templateId": "double_dragon_red",
+  "name": "Song Long - Đỏ",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/double_dragon_red.webp",
+      "/images/giftbox/mini/hoa_tinh_red.webp",
+      "/images/giftbox/mini/mahal_gold.webp",
+      "/images/giftbox/mini/porcelain_blue.webp",
+      "/images/giftbox/mini/porcelain_v2_red.webp",
+      "/images/giftbox/mini/royal.webp",
+      "/images/giftbox/mini/royal_v2_purple.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

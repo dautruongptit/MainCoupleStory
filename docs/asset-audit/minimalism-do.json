@@ -1,0 +1,29 @@
+{
+  "slug": "minimalism-do",
+  "templateId": "minimalism_red",
+  "name": "Minimalism - Đỏ",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/mini/baroque_v2_darkblue.webp",
+      "/images/giftbox/mini/boho_floral_pink.webp",
+      "/images/giftbox/mini/double_dragon_green.webp",
+      "/images/giftbox/mini/dried_flower_v2_green.webp",
+      "/images/giftbox/mini/hoa_tinh_red.webp",
+      "/images/giftbox/mini/nhat_binh_red.webp",
+      "/images/giftbox/mini/qasr_green.webp",
+      "/images/giftbox/minimalism_red.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "thanh-diep-xanh",
+  "templateId": "elegant_leaf_green",
+  "name": "Thanh Diệp - Xanh",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/elegant_leaf_green.webp",
+      "/images/giftbox/mini/boho_floral_green.webp",
+      "/images/giftbox/mini/dragon_phoenix.webp",
+      "/images/giftbox/mini/hoa_tinh_red.webp",
+      "/images/giftbox/mini/jasmine_white.webp",
+      "/images/giftbox/mini/minimalism_darkred.webp",
+      "/images/giftbox/mini/song_hy_v2_red.webp",
+      "/images/giftbox/mini/sunflower_yellow.webp",
+      "/images/themes/thanhdiep-green/la4.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [
+    "/images/giftbox/mini/sunflower_yellow.webp"
+  ],
+  "unreachableAssets": [
+    {
+      "file": "/images/giftbox/mini/sunflower_yellow.webp",
+      "httpStatus": 403,
+      "reason": "HTTP 403 Forbidden on chungdoi.com"
+    }
+  ]
+}

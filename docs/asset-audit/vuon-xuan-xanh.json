@@ -1,0 +1,29 @@
+{
+  "slug": "vuon-xuan-xanh",
+  "templateId": "spring_garden_green",
+  "name": "Vườn Xuân - Xanh",
+  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
+  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
+  "stages": {
+    "envelope": [],
+    "opened": [
+      "/images/giftbox/mini/brocade_flower_red.webp",
+      "/images/giftbox/mini/jasmine_white.webp",
+      "/images/giftbox/mini/lien_hoa_v2_green.webp",
+      "/images/giftbox/mini/minimalism_brown.webp",
+      "/images/giftbox/mini/minimalism_purple.webp",
+      "/images/giftbox/mini/porcelain_red.webp",
+      "/images/giftbox/mini/san_miguel_yellow.webp",
+      "/images/giftbox/spring_garden_green.webp"
+    ],
+    "scrolled": [],
+    "album": [],
+    "giftbox": [],
+    "rsvp": [],
+    "calendar": []
+  },
+  "cssBackgrounds": [],
+  "fonts": [],
+  "missingInPublic": [],
+  "unreachableAssets": []
+}
