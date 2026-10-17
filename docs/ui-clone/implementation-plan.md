@@ -27,6 +27,10 @@ Quyết định đã áp dụng cho 6 câu hỏi mở (bạn duyệt kế hoạc
 | Giai đoạn 2 | Thiệp mới tạo bắt đầu trống (0/9 mục), tên dự phòng "Chú Rể"/"Cô Dâu" | Xong | Chạy trình duyệt: 0/9 → 1/9 khi nhập tên |
 | Giai đoạn 2 | Màu hồng thương hiệu `#ff0080` thống nhất; Montserrat cho tiêu đề trang; chữ script cho cụm nhấn; viền xanh trên thẻ đánh giá; sửa dấu "+" đôi ở modal chi tiết mẫu | Xong | Chụp so ảnh 232649 |
 
+| Giai đoạn 3 | Modal Đổi mẫu thiệp 7 cột, ảnh lấy phần đầu thiệp; ảnh nhỏ ở header cắt phần đầu; đổi mẫu cập nhật luôn bản ghi thiệp (Dashboard, Khách Mời) | Xong | Chụp so ảnh 221853 |
+| Giai đoạn 3 | Tour bước 4 đặt tiêu đề "Chúc mừng!"; xác nhận 4 bước khớp ảnh | Xong | Chạy trình duyệt, đọc nội dung 4 bước |
+| Ghi chú bảo mật | Đăng nhập, OTP, Google/Apple chỉ là mô phỏng trong localStorage (đã ghi chú trong `TopNav.tsx`); cờ đăng nhập không bảo vệ dữ liệu vì dữ liệu cũng nằm trong localStorage | Chấp nhận cho bản demo; cần backend thật khi dùng thật | — |
+
 **Còn lại, chưa làm hoặc chưa kiểm tra bằng ảnh chụp:** G11 logo gốc (hoa sen hiện là bản vẽ lại), G12 chế độ sáng/tối thật, G30 kiểu đăng nhập mật khẩu (chưa có ảnh nào chứng tỏ cần), G01/G02/G04 nội dung tab Khách Mời, bước OTP chưa có ảnh chuẩn. Chưa chụp so: Demo, Pricing, modal đổi mẫu/chọn nhạc/tour (chỉ xem tour bước 1), các mục Thư viện ảnh, Dress Code, RSVP, Ảnh xem trước chia sẻ, các phần Home ngoài đánh giá, hero và đổi mẫu, và mobile ngoài editor/Khách Mời.
 
 **Giới hạn môi trường kiểm thử:** `assets.chungdoi.com` trả HTTP 403 khi tải từ môi trường này nên ảnh mẫu thiệp không hiện trong ảnh chụp (hiện chữ alt). Chưa biết trình duyệt của bạn có tải được không.
