@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { Icon } from "./ui";
-import { TEMPLATES, TPL_CDN, Tpl } from "./templates";
+import { Icon } from "@/components/ui/ui";
+import { TEMPLATES, TPL_CDN, type Tpl } from "@/features/templates/data/templates";
 
 export type Mode = "edit" | "preview";
 

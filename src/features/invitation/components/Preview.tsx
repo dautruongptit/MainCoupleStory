@@ -1,20 +1,19 @@
 import { useEffect, useRef, useState } from "react";
-import { introDefaultFor } from "./templates";
-import { TEMPLATE_THEMES } from "./templateThemes";
-import { LongPhungCover, LongPhungHeader } from "./LongPhungV2";
-import { DarkRedCover } from "./MinimalismDarkRed";
-import { GENERATED_HEADERS } from "./generated/headers";
+import { introDefaultFor } from "@/features/templates/data/templates";
+import { TEMPLATE_THEMES } from "@/features/invitation/config/templateThemes";
+import { LongPhungCover, LongPhungHeader } from "@/features/invitation/components/LongPhungV2";
+import { DarkRedCover } from "@/features/invitation/components/MinimalismDarkRed";
+import { GENERATED_HEADERS } from "@/features/invitation/components/generated/headers";
+import type { Inv } from "@/types/invitation";
+import { brideShown, groomShown } from "@/utils/format";
 import {
-  Inv,
-  brideShown,
-  groomShown,
   WEEKDAYS_FULL,
   WEEKDAYS_SHORT,
   buildIcs,
   formatTime,
   monthGrid,
   parseDate,
-} from "./data";
+} from "@/utils/date";
 
 export default function Preview({
   d,

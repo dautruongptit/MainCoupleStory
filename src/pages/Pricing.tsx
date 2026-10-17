@@ -1,4 +1,4 @@
-import { Link } from "../router";
+import { Link } from "@/app/router";
 
 const Ck = () => <svg className="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5" /></svg>;
 const No = () => <span className="dash">–</span>;

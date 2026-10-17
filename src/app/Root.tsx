@@ -1,14 +1,15 @@
 import { useEffect } from "react";
-import App from "./App";
-import TopNav, { Logo } from "./TopNav";
-import Home from "./pages/Home";
-import Pricing from "./pages/Pricing";
-import Dashboard from "./pages/Dashboard";
-import Account from "./pages/Account";
-import Guests from "./pages/Guests";
-import Templates from "./pages/Templates";
-import Demo from "./pages/Demo";
-import { Link, navigate, usePath } from "./router";
+import EditorPage from "@/features/editor/EditorPage";
+import TopNav from "@/components/layout/TopNav";
+import { Logo } from "@/components/layout/Logo";
+import Home from "@/pages/Home";
+import Pricing from "@/pages/Pricing";
+import Dashboard from "@/pages/Dashboard";
+import Account from "@/pages/Account";
+import Guests from "@/pages/Guests";
+import Templates from "@/pages/Templates";
+import Demo from "@/pages/Demo";
+import { Link, navigate, usePath } from "@/app/router";
 
 function Redirect({ to }: { to: string }) {
   useEffect(() => navigate(to), [to]);
@@ -28,7 +29,7 @@ export default function Root() {
   const path = usePath().replace(/\/+$/, "") || "/";
 
   // The editor renders its own TopNav + header.
-  if (path.startsWith("/edit/")) return <App />;
+  if (path.startsWith("/edit/")) return <EditorPage />;
 
   const demoMatch = path.match(/^\/vi\/mau-thiep\/(.+)\/demo$/);
   if (demoMatch) return <Demo slug={demoMatch[1]} />;

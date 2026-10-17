@@ -1,5 +1,4 @@
-import { ReactNode, useEffect } from "react";
-import { useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 
 export const Icon = {
   chevronRight: (s = 16) => (

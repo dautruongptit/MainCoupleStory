@@ -5,7 +5,7 @@ import re, sys, os, json
 from html.parser import HTMLParser
 
 TP = os.environ["TEMP"] + "/tp"
-OUT = r"D:\MY PRO\applications\MainCoupleStory\web\src\generated"
+OUT = r"D:\MY PRO\applications\MainCoupleStory\web\src\features\invitation\components\generated"
 MAXLEN = 16000
 VOID = {"img", "br", "hr", "input", "meta", "link"}
 

@@ -1,9 +1,10 @@
 import { useState, useMemo } from "react";
-import { Inv, defaultInv } from "../data";
-import Preview from "../Preview";
-import { createDraft } from "../store";
-import { Link, navigate } from "../router";
-import { TEMPLATES } from "../templates";
+import type { Inv } from "@/types/invitation";
+import { defaultInv } from "@/features/editor/data/defaultData";
+import Preview from "@/features/invitation/components/Preview";
+import { createDraft } from "@/services/storage/store";
+import { Link, navigate } from "@/app/router";
+import { TEMPLATES } from "@/features/templates/data/templates";
 
 /** /vi/mau-thiep/<slug>/demo – thiệp mẫu với dữ liệu minh hoạ. */
 export default function Demo({ slug }: { slug: string }) {

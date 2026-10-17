@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { loadCards } from "../store";
+import { loadCards } from "@/services/storage/store";
 
 export default function Account() {
   const [name, setName] = useState("Thảo Mộc Linh- Tăng Cân Hiệu Quả");

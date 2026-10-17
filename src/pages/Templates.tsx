@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { Link } from "../router";
-import { TEMPLATES, TPL_CDN, Tpl } from "../templates";
-import TemplateModal from "../TemplateModal";
-import { LoginModal } from "../TopNav";
+import { Link } from "@/app/router";
+import { TEMPLATES, TPL_CDN, type Tpl } from "@/features/templates/data/templates";
+import TemplateModal from "@/features/templates/components/TemplateModal";
+import { LoginModal } from "@/features/auth/components/LoginModal";
 
 const COLLECTIONS = ["Màu đỏ", "Màu xanh lá", "Màu xanh dương", "Vàng kim", "Long phụng", "Truyền thống", "Tối giản", "Hoa", "Vườn thiên nhiên", "Hoàng gia châu Âu", "Boho"];
 

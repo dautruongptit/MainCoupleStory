@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { type Card } from "./store";
-import { type Inv } from "./data";
+import type { Card } from "@/types/card";
+import type { Inv } from "@/types/invitation";
 
 export default function PublishCheckModal({
   card,

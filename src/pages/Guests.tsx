@@ -1,8 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Link, navigate } from "../router";
-import { loadCards, loadGuests, saveGuests, guestUrl, type Guest } from "../store";
-import { TPL_CDN, templateById } from "../templates";
-import { LoginModal, useAuth } from "../TopNav";
+import { Link, navigate } from "@/app/router";
+import { loadCards, loadGuests, saveGuests, guestUrl } from "@/services/storage/store";
+import type { Guest } from "@/types/guest";
+import { TPL_CDN, templateById } from "@/features/templates/data/templates";
+import { LoginModal } from "@/features/auth/components/LoginModal";
+import { useAuth } from "@/features/auth/hooks/useAuth";
 
 const slugify = (s: string) =>
   s.normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/đ/gi, "d").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");

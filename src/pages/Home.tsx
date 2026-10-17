@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { Link } from "../router";
+import { Link } from "@/app/router";
 
 const CDN = "https://assets.chungdoi.com/template-previews/vi/listing/";
 const TEMPLATES: { name: string; file: string; tag?: string }[] = [

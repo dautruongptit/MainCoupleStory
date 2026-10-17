@@ -1,17 +1,18 @@
 import { useCallback, useEffect, useState } from "react";
-import { Inv, defaultInv, blankInv } from "./data";
-import Header, { Mode } from "./Header";
-import Preview from "./Preview";
-import * as S from "./Sections";
-import TopNav from "./TopNav";
-import HeroPhoto from "./HeroPhoto";
-import TutorialTour from "./TutorialTour";
-import ShareModal from "./ShareModal";
-import PublishCheckModal from "./PublishCheckModal";
-import { loadCards, saveCards, loadInv, saveInv } from "./store";
-import { TPL_CDN, templateById } from "./templates";
+import type { Inv } from "@/types/invitation";
+import { defaultInv, blankInv } from "@/features/editor/data/defaultData";
+import Header, { type Mode } from "@/features/editor/components/Header";
+import Preview from "@/features/invitation/components/Preview";
+import * as S from "@/features/editor/components/Sections";
+import TopNav from "@/components/layout/TopNav";
+import HeroPhoto from "@/features/editor/components/HeroPhoto";
+import TutorialTour from "@/features/editor/components/TutorialTour";
+import ShareModal from "@/components/common/ShareModal";
+import PublishCheckModal from "@/features/editor/components/PublishCheckModal";
+import { loadCards, saveCards, loadInv, saveInv } from "@/services/storage/store";
+import { TPL_CDN, templateById } from "@/features/templates/data/templates";
 
-export default function App() {
+export default function EditorPage() {
   const cardId = typeof window !== "undefined" ? window.location.pathname.replace(/^\/edit\//, "").split("?")[0] : "";
   const [d, setD] = useState<Inv>(() => {
     const known = loadCards().some((c) => c.id === cardId);

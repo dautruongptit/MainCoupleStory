@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useRef } from "react";
 import qrcode from "qrcode-generator";
-import { Link, navigate } from "./router";
-import { TPL_CDN, Tpl } from "./templates";
-import { createDraft } from "./store";
+import { Link, navigate } from "@/app/router";
+import { TPL_CDN, Tpl } from "@/features/templates/data/templates";
+import { createDraft } from "@/services/storage/store";
 
 const ico = (d: string) => (
   <svg className="feat-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d={d} /></svg>
@@ -90,7 +90,7 @@ export default function TemplateModal({ tpl, onClose }: { tpl: Tpl; onClose: () 
               Tạo thiệp
             </button>
             <Link className="tm-demo" href={`/vi/mau-thiep/${tpl.slug}/demo`}>
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z" /><circle cx="12" cy="12" r="3" /></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z" /><circle cx="12" cy="12" r="3" /></svg>
               Xem demo
             </Link>
           </div>

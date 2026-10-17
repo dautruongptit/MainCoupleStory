@@ -1,8 +1,11 @@
 import { useState, useEffect, useCallback } from "react";
-import { Link, navigate } from "../router";
-import { loadCards, saveCards, loadInv, saveInv, removeInv, removeGuests, loadGuests, type Card } from "../store";
-import { LoginModal, useAuth } from "../TopNav";
-import ShareModal from "../ShareModal";
+import { Link, navigate } from "@/app/router";
+import { loadCards, saveCards, loadInv, saveInv, removeInv, removeGuests, loadGuests } from "@/services/storage/store";
+import type { Card } from "@/types/card";
+import { LoginModal } from "@/features/auth/components/LoginModal";
+import { useAuth } from "@/features/auth/hooks/useAuth";
+import ShareModal from "@/components/common/ShareModal";
+import PublishCheckModal from "@/features/editor/components/PublishCheckModal";
 
 function DeleteModal({ name, onConfirm, onCancel }: { name: string; onConfirm: () => void; onCancel: () => void }) {
   useEffect(() => {
@@ -59,8 +62,6 @@ function DeleteModal({ name, onConfirm, onCancel }: { name: string; onConfirm: (
     </div>
   );
 }
-
-import PublishCheckModal from "../PublishCheckModal";
 
 export default function Dashboard() {
   const { loggedIn } = useAuth();

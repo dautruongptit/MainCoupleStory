@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import qrcode from "qrcode-generator";
-import { navigate } from "./router";
+import { navigate } from "@/app/router";
 
 export function QrModal({
   slug,

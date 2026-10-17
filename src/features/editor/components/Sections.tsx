@@ -1,9 +1,11 @@
 import { useRef, useState } from "react";
-import MusicPicker, { MUSIC_LIBRARY } from "./MusicPicker";
-import { CropModal } from "./HeroPhoto";
-import { Inv, Gift, groomShown, brideShown } from "./data";
-import { Field, Helper, Hint, Input, Modal, OutlineButton, ResetInput, Row, Section, Segmented, Textarea, Toggle, Icon } from "./ui";
-import { introDefaultFor } from "./templates";
+import MusicPicker, { MUSIC_LIBRARY } from "@/features/editor/components/MusicPicker";
+import { CropModal } from "@/components/common/CropModal";
+import type { Inv, Gift } from "@/types/invitation";
+import { groomShown, brideShown } from "@/utils/format";
+import { Field, Helper, Hint, Input, Modal, OutlineButton, ResetInput, Row, Section, Segmented, Textarea, Toggle, Icon } from "@/components/ui/ui";
+import { introDefaultFor } from "@/features/templates/data/templates";
+import { VN_BANKS } from "@/features/editor/constants/banks";
 
 type P = { d: Inv; set: (p: Partial<Inv>) => void };
 
@@ -1065,26 +1067,7 @@ export function Guestbook({ d, set }: P) {
   );
 }
 
-export const VN_BANKS = [
-  { code: "VCB", name: "Vietcombank", bin: "970436", shortName: "Vietcombank", fullName: "Ngân hàng TMCP Ngoại Thương Việt Nam" },
-  { code: "ICB", name: "VietinBank", bin: "970415", shortName: "VietinBank", fullName: "Ngân hàng TMCP Công Thương Việt Nam" },
-  { code: "BIDV", name: "BIDV", bin: "970418", shortName: "BIDV", fullName: "Ngân hàng TMCP Đầu tư và Phát triển Việt Nam" },
-  { code: "MB", name: "MB Bank", bin: "970422", shortName: "MB Bank", fullName: "Ngân hàng TMCP Quân Đội" },
-  { code: "TCB", name: "Techcombank", bin: "970407", shortName: "Techcombank", fullName: "Ngân hàng TMCP Kỹ Thương Việt Nam" },
-  { code: "ACB", name: "ACB", bin: "970416", shortName: "ACB", fullName: "Ngân hàng TMCP Á Châu" },
-  { code: "VPB", name: "VPBank", bin: "970432", shortName: "VPBank", fullName: "Ngân hàng TMCP Việt Nam Thịnh Vượng" },
-  { code: "TPB", name: "TPBank", bin: "970423", shortName: "TPBank", fullName: "Ngân hàng TMCP Tiên Phong" },
-  { code: "VBA", name: "Agribank", bin: "970405", shortName: "Agribank", fullName: "Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam" },
-  { code: "STB", name: "Sacombank", bin: "970403", shortName: "Sacombank", fullName: "Ngân hàng TMCP Sài Gòn Thương Tín" },
-  { code: "HDB", name: "HDBank", bin: "970437", shortName: "HDBank", fullName: "Ngân hàng TMCP Phát triển TP.HCM" },
-  { code: "VIB", name: "VIB", bin: "970441", shortName: "VIB", fullName: "Ngân hàng TMCP Quốc tế Việt Nam" },
-  { code: "SHB", name: "SHB", bin: "970443", shortName: "SHB", fullName: "Ngân hàng TMCP Sài Gòn - Hà Nội" },
-  { code: "MSB", name: "MSB", bin: "970426", shortName: "MSB", fullName: "Ngân hàng TMCP Hàng Hải Việt Nam" },
-  { code: "OCB", name: "OCB", bin: "970448", shortName: "OCB", fullName: "Ngân hàng TMCP Phương Đông" },
-  { code: "SEAB", name: "SeABank", bin: "970440", shortName: "SeABank", fullName: "Ngân hàng TMCP Đông Nam Á" },
-  { code: "CAKE", name: "Cake by VPBank", bin: "546034", shortName: "Cake", fullName: "Ngân hàng số Cake by VPBank" },
-  { code: "TIMO", name: "Timo", bin: "963388", shortName: "Timo", fullName: "Ngân hàng số Timo by Ban Viet" },
-];
+export { VN_BANKS };
 
 export function GiftBox({ d, set }: P) {
   const [openModal, setOpenModal] = useState(false);

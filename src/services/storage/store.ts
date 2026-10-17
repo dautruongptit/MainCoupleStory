@@ -1,15 +1,9 @@
-import { Tpl } from "./templates";
-import type { Inv } from "./data";
+import type { Tpl } from "@/features/templates/data/templates";
+import type { Inv } from "@/types/invitation";
+import type { Card } from "@/types/card";
+import type { Guest } from "@/types/guest";
 
-export type Card = {
-  id: string;
-  name: string;
-  template: string;
-  color: string;
-  status: "draft" | "published";
-  created: string;
-  tplId?: string;
-};
+export type { Card, Guest };
 
 const KEY = "chungdoi.cards";
 
@@ -73,7 +67,6 @@ export function removeInv(cardId: string) {
   }
 }
 
-export type Guest = { id: string; name: string; slug: string; views: number; added: string };
 const GUESTS_KEY = (cardId: string) => `chungdoi.guests.${cardId}`;
 
 export function loadGuests(cardId: string): Guest[] {
