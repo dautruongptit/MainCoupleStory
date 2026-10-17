@@ -6246,3 +6246,336 @@ html[data-theme="light"] .pv-wrapper, html[data-theme="light"] .demo-standalone-
 .sp-rsvp-inline { margin-top: 16px; }
 .rsvp-modal-box.is-inline { position: static; max-width: 100%; box-shadow: none; margin: 0 auto; }
 .rsvp-modal-box.is-inline .rsvp-close-btn { display: none; }
+
+/* ==================== MINIMALISM - ĐỎ ĐẬM (minimalism_darkred) ==================== */
+@keyframes drFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.theme-minimalism-darkred .songphung-template,
+.is-minimalism-darkred-body {
+  background-color: #fff7eb !important;
+  color: #511419 !important;
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(81, 20, 25, 0.12) !important;
+}
+
+.is-minimalism-darkred-body .paper-texture {
+  background-image: url("/images/themes/minimalism-dark-red/paper.webp") !important;
+  background-size: 100% auto !important;
+  background-position: top center !important;
+  background-repeat: repeat-y !important;
+  mix-blend-mode: multiply !important;
+  opacity: 0.5 !important;
+}
+
+/* Sections on ivory paper */
+.is-minimalism-darkred-body .sp-sec-title {
+  color: #511419 !important;
+  font-family: "Times New Roman", serif !important;
+  letter-spacing: 0.03em !important;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Main Ceremony and Banquet Red Cards */
+.is-minimalism-darkred-body .sp-family-sec,
+.is-minimalism-darkred-body .sp-banquet-sec,
+.is-minimalism-darkred-body .sp-timeline-sec {
+  background-color: rgb(81, 20, 25) !important;
+  color: #ece4d8 !important;
+  border-radius: 13px !important;
+  margin: 20px auto !important;
+  width: 88% !important;
+  max-width: 420px !important;
+  padding: 36px 20px 40px !important;
+  position: relative !important;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25) !important;
+  overflow: visible !important;
+}
+
+/* Card paper overlay */
+.is-minimalism-darkred-body .sp-family-sec::before,
+.is-minimalism-darkred-body .sp-banquet-sec::before,
+.is-minimalism-darkred-body .sp-timeline-sec::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-image: url("/images/themes/minimalism-dark-red/paper.webp");
+  background-size: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Floating Flower on Ceremony Card (bottom-right) */
+.is-minimalism-darkred-body .sp-family-sec::after {
+  content: "";
+  position: absolute;
+  right: -22%;
+  bottom: 25%;
+  width: 40%;
+  aspect-ratio: 811 / 1938;
+  background-image: url("/images/themes/minimalism-dark-red/flower2-decoration.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: drop-shadow(3px 4px 3px rgba(0, 0, 0, 0.3));
+  pointer-events: none;
+  z-index: 20;
+  animation: drFloat 5.5s ease-in-out infinite;
+}
+
+/* Floating Flower on Banquet Card (top-left) */
+.is-minimalism-darkred-body .sp-banquet-sec::after {
+  content: "";
+  position: absolute;
+  left: -18%;
+  top: 10%;
+  width: 24%;
+  aspect-ratio: 811 / 1938;
+  background-image: url("/images/themes/minimalism-dark-red/flower2-decoration.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: drop-shadow(3px 4px 3px rgba(0, 0, 0, 0.3));
+  pointer-events: none;
+  z-index: 20;
+  animation: drFloat 6s ease-in-out infinite;
+}
+
+/* Floating Flower on Timeline Card (top-right) */
+.is-minimalism-darkred-body .sp-timeline-sec::after {
+  content: "";
+  position: absolute;
+  right: -16%;
+  top: -12%;
+  width: 30%;
+  aspect-ratio: 811 / 1938;
+  background-image: url("/images/themes/minimalism-dark-red/flower2-decoration.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: drop-shadow(3px 4px 3px rgba(0, 0, 0, 0.3));
+  pointer-events: none;
+  z-index: 20;
+  animation: drFloat 5.2s ease-in-out infinite;
+}
+
+/* Card inner elements */
+.is-minimalism-darkred-body .sp-family-sec > *,
+.is-minimalism-darkred-body .sp-banquet-sec > *,
+.is-minimalism-darkred-body .sp-timeline-sec > * {
+  position: relative;
+  z-index: 2;
+}
+
+.is-minimalism-darkred-body .sp-family-sec .sp-sec-title,
+.is-minimalism-darkred-body .sp-banquet-sec .sp-sec-title,
+.is-minimalism-darkred-body .sp-timeline-sec .sp-sec-title {
+  color: #ece4d8 !important;
+  font-family: "Times New Roman", serif !important;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  font-size: 20px;
+}
+
+.is-minimalism-darkred-body .sp-family-col .sp-fam-title {
+  color: #c9a24a !important;
+  font-family: "Times New Roman", serif;
+  font-size: 13px;
+}
+
+.is-minimalism-darkred-body .sp-family-col .sp-fam-name {
+  color: #ece4d8 !important;
+  font-family: Baskerville, "Times New Roman", serif !important;
+  font-size: 16px;
+}
+
+.is-minimalism-darkred-body .sp-family-div {
+  background: rgba(236, 228, 216, 0.3) !important;
+}
+
+.is-minimalism-darkred-body .sp-announce {
+  color: #ece4d8 !important;
+  font-family: Baskerville, "Times New Roman", serif;
+}
+
+.is-minimalism-darkred-body .sp-person-name {
+  color: #ece4d8 !important;
+  font-family: "Times New Roman", Cormorant Garamond, serif !important;
+  font-size: 26px;
+}
+
+.is-minimalism-darkred-body .sp-person-role {
+  color: #c9a24a !important;
+  letter-spacing: 0.15em;
+  font-size: 12px;
+}
+
+.is-minimalism-darkred-body .sp-person-amp {
+  color: #ece4d8 !important;
+  opacity: 0.85;
+}
+
+/* Ceremony Cards */
+.is-minimalism-darkred-body .sp-ceremony-card {
+  background: transparent !important;
+  border: 1px solid rgba(236, 228, 216, 0.25) !important;
+  border-radius: 10px !important;
+  color: #ece4d8 !important;
+  box-shadow: none !important;
+  margin-top: 16px;
+  padding: 16px;
+}
+
+.is-minimalism-darkred-body .sp-ceremony-header {
+  color: #ece4d8 !important;
+  font-family: "Times New Roman", serif !important;
+  letter-spacing: 0.05em;
+  font-size: 16px;
+}
+
+.is-minimalism-darkred-body .sp-time-badge {
+  background: rgba(236, 228, 216, 0.15) !important;
+  color: #ece4d8 !important;
+  border: 1px solid rgba(236, 228, 216, 0.3) !important;
+  border-radius: 999px !important;
+}
+
+.is-minimalism-darkred-body .sp-date-row {
+  color: #ece4d8 !important;
+}
+
+.is-minimalism-darkred-body .sp-date-sep {
+  color: rgba(236, 228, 216, 0.4) !important;
+}
+
+.is-minimalism-darkred-body .sp-lunar-date,
+.is-minimalism-darkred-body .sp-ceremony-place {
+  color: rgba(236, 228, 216, 0.85) !important;
+}
+
+/* Banquet Section */
+.is-minimalism-darkred-body .sp-lead {
+  color: #ece4d8 !important;
+  font-family: Baskerville, "Times New Roman", serif;
+}
+
+.is-minimalism-darkred-body .sp-banquet-date {
+  color: #ece4d8 !important;
+}
+
+.is-minimalism-darkred-body .sp-welcome-times {
+  color: #ece4d8 !important;
+}
+
+.is-minimalism-darkred-body .sp-welcome-times b {
+  color: #ffffff !important;
+}
+
+.is-minimalism-darkred-body .sp-countdown-box {
+  background: rgba(236, 228, 216, 0.12) !important;
+  border: 1px solid rgba(236, 228, 216, 0.25) !important;
+  color: #ece4d8 !important;
+}
+
+.is-minimalism-darkred-body .sp-countdown-box .sp-cd-days {
+  color: #ffffff !important;
+}
+
+.is-minimalism-darkred-body .sp-calendar {
+  background: rgba(236, 228, 216, 0.08) !important;
+  border: 1px solid rgba(236, 228, 216, 0.2) !important;
+  color: #ece4d8 !important;
+}
+
+.is-minimalism-darkred-body .sp-cal-header {
+  color: #ece4d8 !important;
+}
+
+.is-minimalism-darkred-body .sp-cal-w {
+  color: rgba(236, 228, 216, 0.6) !important;
+}
+
+.is-minimalism-darkred-body .sp-cal-d {
+  color: #ece4d8 !important;
+}
+
+.is-minimalism-darkred-body .sp-cal-d.selected {
+  background: #ece4d8 !important;
+  color: #511419 !important;
+}
+
+.is-minimalism-darkred-body .sp-btn-link {
+  color: #ece4d8 !important;
+}
+
+.is-minimalism-darkred-body .sp-btn-primary {
+  background: #ece4d8 !important;
+  color: #511419 !important;
+  border: none !important;
+}
+
+.is-minimalism-darkred-body .sp-btn-primary:hover {
+  background: #ffffff !important;
+}
+
+/* Outer sections */
+.is-minimalism-darkred-body .sp-gallery-sec .sp-sec-title,
+.is-minimalism-darkred-body .sp-venue-sec .sp-sec-title,
+.is-minimalism-darkred-body .sp-dress-sec .sp-sec-title,
+.is-minimalism-darkred-body .wishes-header h2,
+.is-minimalism-darkred-body .rsvp-header h2,
+.is-minimalism-darkred-body .igb-wrap h2 {
+  color: #511419 !important;
+  font-family: "Times New Roman", serif !important;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.is-minimalism-darkred-body .sp-address-txt {
+  color: rgba(81, 20, 25, 0.8) !important;
+  font-family: Baskerville, "Times New Roman", serif;
+}
+
+.is-minimalism-darkred-body .sp-map-btn {
+  background: #511419 !important;
+  color: #ece4d8 !important;
+}
+
+.is-minimalism-darkred-body .sp-map-frame iframe {
+  border-color: #511419 !important;
+}
+
+.is-minimalism-darkred-body .sp-dress-sub {
+  color: rgba(81, 20, 25, 0.8) !important;
+}
+
+.is-minimalism-darkred-body .wish-submit-btn,
+.is-minimalism-darkred-body .rsvp-submit-btn,
+.is-minimalism-darkred-body .gift-btn {
+  background: #511419 !important;
+  color: #f3e8de !important;
+}
+
+.is-minimalism-darkred-body .wishes-container,
+.is-minimalism-darkred-body .rsvp-container {
+  border-color: #511419 !important;
+}
+
+.is-minimalism-darkred-body input,
+.is-minimalism-darkred-body textarea,
+.is-minimalism-darkred-body select {
+  border-color: #511419 !important;
+  color: #511419 !important;
+}
+

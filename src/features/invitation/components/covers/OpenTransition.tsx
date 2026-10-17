@@ -24,6 +24,8 @@ export function generateBurstParticles(type: ParticleKind, baseColor: string, co
       ? ["#FF0040", "#CC0033", "#AA0028", "#B80030", "#FFD700"]
       : type === "blossom"
       ? ["#c0524f", "#b03235", "#d14f4a", "#f6f3e7", "#e27370"]
+      : type === "heart"
+      ? ["#a8323b", "#ece4d8", "#c9a24a", "#7a1f26", "#511419"]
       : [baseColor, "#d1db9c", "#ffffff", "#b8c985"];
 
   for (let i = 0; i < count; i++) {

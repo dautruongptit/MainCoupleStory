@@ -8891,7 +8891,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Background paper or ambient texture for minimalism-dark-red"
       }
     ],
-    "backgroundPath": "/images/themes/minimalism-dark-red/castle-background.webp",
+    "backgroundPath": "/images/themes/minimalism-dark-red/paper.webp",
     "coverPath": "/images/themes/minimalism-dark-red/envelope-cover.webp",
     "decorationsCount": 3,
     "framesCount": 0,

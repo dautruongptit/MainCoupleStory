@@ -20,7 +20,7 @@ export interface CoverConfig {
   cardBg: string;
   cardBorder: string;
   imgs: CoverImage[];
-  particleType: "xi" | "petal" | "blossom" | "confetti";
+  particleType: "xi" | "xi-gold" | "petal" | "blossom" | "confetti" | "stars" | "heart";
   sealType: "xi" | "heart" | "none";
   sealBg: string;
   sealColor: string;

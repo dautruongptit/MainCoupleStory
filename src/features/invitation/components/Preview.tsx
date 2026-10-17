@@ -47,7 +47,9 @@ export default function Preview({
   const [rsvpAnswers, setRsvpAnswers] = useState<Record<string, string>>({});
 
   const intro = d.introCustom && d.introText.trim() ? d.introText.trim() : introDefaultFor(d.templateId);
-  const isMinimalism = (d.templateId || "").includes("minimalism") || (d.templateName || "").includes("Minimalism");
+  const isDarkRed = d.templateId === "minimalism_darkred";
+  const isMinimalismBrown = d.templateId === "minimalism_brown";
+  const isMinimalism = isMinimalismBrown;
   // 4 mẫu đã dựng riêng giữ nguyên màu của mình; các mẫu khác lấy bảng màu theo mẫu
   const bespoke = ["minimalism_brown", "minimalism_darkred", "song_hy_green", "dragon_phoenix_v2_red"].includes(d.templateId);
   const palette = bespoke ? undefined : TEMPLATE_THEMES[d.templateId];
@@ -55,7 +57,6 @@ export default function Preview({
   const paletteVars = palette
     ? ({ "--inv-bg": palette.bg, "--inv-ink": palette.ink, "--inv-rgb": palette.rgb, "--inv-cover": palette.cover } as React.CSSProperties)
     : undefined;
-  const isDarkRed = d.templateId === "minimalism_darkred";
   const isLongPhungV2 = d.templateId === "dragon_phoenix_v2_red";
   const isSongHy = (d.templateId || "").includes("song_hy") || (d.templateName || "").includes("Song Hỷ");
   const themeBgUrl = getThemeBackgroundUrl(d.templateId);
@@ -309,7 +310,7 @@ export default function Preview({
   );
 
   return (
-    <div style={paletteVars} className={`pv-wrapper ${red && !GENERATED_HEADERS[d.templateId] ? "" : "palette-plain"} ${standalone ? "is-standalone" : ""} ${isMinimalism ? "theme-minimalism" : isSongHy ? "theme-songhy" : isLongPhungV2 ? "theme-longphung-v2" : "theme-songphung"}`}>
+    <div style={paletteVars} className={`pv-wrapper ${red && !GENERATED_HEADERS[d.templateId] ? "" : "palette-plain"} ${standalone ? "is-standalone" : ""} ${isDarkRed ? "theme-minimalism-darkred" : isMinimalismBrown ? "theme-minimalism" : isSongHy ? "theme-songhy" : isLongPhungV2 ? "theme-longphung-v2" : "theme-songphung"}`}>
       {/* ==================== 1. MÀN HÌNH BÌ THƯ (ENVELOPE) ==================== */}
       {!isOpen && (() => {
         const CoverComponent = getCoverComponent(d.templateId);
@@ -319,7 +320,7 @@ export default function Preview({
       {/* ==================== 2. NỘI DUNG THIỆP ĐÃ MỞ (OPENED) ==================== */}
       {isOpen && (
         <div
-          className={`songphung-template ${isMinimalism ? "is-minimalism-body" : isSongHy ? "is-songhy-body" : ""}`}
+          className={`songphung-template ${isDarkRed ? "is-minimalism-darkred-body" : isMinimalismBrown ? "is-minimalism-body" : isSongHy ? "is-songhy-body" : ""}`}
           style={{ animation: "fadeIn 0.5s ease-out forwards" }}
         >
           {/* Floating background audio button */}

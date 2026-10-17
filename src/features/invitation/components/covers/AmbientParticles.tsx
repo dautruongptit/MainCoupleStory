@@ -1,6 +1,6 @@
 import React from "react";
 
-export type ParticleKind = "xi" | "xi-gold" | "petal" | "blossom" | "confetti" | "stars";
+export type ParticleKind = "xi" | "xi-gold" | "petal" | "blossom" | "confetti" | "stars" | "heart";
 
 interface AmbientParticlesProps {
   type: ParticleKind;
@@ -9,6 +9,47 @@ interface AmbientParticlesProps {
 }
 
 export function AmbientParticles({ type, color, count = 12 }: AmbientParticlesProps) {
+  if (type === "heart") {
+    const hearts = [
+      { left: "30.3%", color: "#a8323b", size: "14px", dur: "24.8s", delay: "-21.6s", sway: "28px" },
+      { left: "17.2%", color: "#ece4d8", size: "22px", dur: "25.9s", delay: "-10.3s", sway: "1px" },
+      { left: "70.2%", color: "#c9a24a", size: "17px", dur: "25.7s", delay: "-8.4s", sway: "-28px" },
+      { left: "33.5%", color: "#a8323b", size: "23px", dur: "20.1s", delay: "-19.7s", sway: "30px" },
+      { left: "26.4%", color: "#c9a24a", size: "23px", dur: "25.5s", delay: "-13.4s", sway: "-13px" },
+      { left: "83.3%", color: "#c9a24a", size: "22px", dur: "25.0s", delay: "-0.1s", sway: "-26px" },
+      { left: "9.0%", color: "#a8323b", size: "18px", dur: "23.0s", delay: "-0.3s", sway: "5px" },
+      { left: "69.7%", color: "#c9a24a", size: "13px", dur: "20.7s", delay: "-7.5s", sway: "24px" },
+      { left: "18.2%", color: "#ece4d8", size: "22px", dur: "21.8s", delay: "-20.7s", sway: "26px" },
+      { left: "51.8%", color: "#7a1f26", size: "21px", dur: "18.0s", delay: "-0.7s", sway: "-16px" },
+      { left: "25.9%", color: "#7a1f26", size: "18px", dur: "24.5s", delay: "-23.2s", sway: "5px" },
+      { left: "91.8%", color: "#c9a24a", size: "13px", dur: "20.1s", delay: "-0.4s", sway: "-11px" },
+    ].slice(0, count);
+
+    return (
+      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true" style={{ zIndex: 1 }}>
+        {hearts.map((p, i) => (
+          <div
+            key={i}
+            className="absolute pointer-events-none select-none"
+            style={{
+              left: p.left,
+              top: "-30px",
+              bottom: "auto",
+              color: p.color,
+              fontSize: p.size,
+              ["--sway" as any]: p.sway,
+              animation: `ambient-fall ${p.dur} ease-in-out ${p.delay} infinite`,
+            }}
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+            </svg>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
   if (type === "stars") {
     const stars = [
       { left: "6.5%", color: "#f5e6c8", size: "22px", dur: "19.0s", delay: "-16.2s", sway: "18px" },
