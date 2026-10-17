@@ -35,7 +35,9 @@ export default function App() {
   const [showPublishCheck, setShowPublishCheck] = useState(false);
 
   const cards = loadCards();
-  const currentCard = cards.find((c) => c.id === cardId) || cards[0];
+  const currentCard = cards.find((c) => c.id === cardId);
+  // Chỉ ghi vào thiệp có id khớp URL; không bao giờ dùng cards[0] làm đích ghi (id lạ trên URL không được sửa thiệp khác).
+  const activeCardId = cards.some((c) => c.id === cardId) ? cardId : null;
   const [isPublished, setIsPublished] = useState<boolean>(() => currentCard?.status === "published");
 
   const set = useCallback((p: Partial<Inv>) => {
@@ -53,11 +55,9 @@ export default function App() {
   };
 
   const handleConfirmPublish = () => {
-    const all = loadCards();
-    const updated = all.map((c) =>
-      c.id === (currentCard?.id || cardId) ? { ...c, status: "published" as const } : c
-    );
-    saveCards(updated);
+    if (activeCardId) {
+      saveCards(loadCards().map((c) => (c.id === activeCardId ? { ...c, status: "published" as const } : c)));
+    }
     setIsPublished(true);
     setShowPublishCheck(false);
     setJustPublished(true);
@@ -90,8 +90,8 @@ export default function App() {
           });
           // giữ bản ghi thiệp (Dashboard, Khách Mời) khớp với mẫu vừa chọn
           const [template, ...rest] = tpl.name.split(" - ");
-          const target = currentCard?.id || cardId;
-          saveCards(loadCards().map((c) => (c.id === target ? { ...c, template, color: rest.join(" - "), tplId: tpl.id } : c)));
+          if (!activeCardId) return;
+          saveCards(loadCards().map((c) => (c.id === activeCardId ? { ...c, template, color: rest.join(" - "), tplId: tpl.id } : c)));
         }}
       />
       <main>
