@@ -146,5 +146,29 @@
     "verified": true,
     "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
     "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
-  }
+  },
+  "localPaths": {
+    "/images/themes/hoa-dai-pink/flower2-decoration.webp": "/images/themes/hoa-dai-pink/flower2-decoration.webp",
+    "/images/themes/hoa-dai-pink/flower-decoration.webp": "/images/themes/hoa-dai-pink/flower-decoration.webp",
+    "/images/themes/hoa-dai-pink/flower3-decoration.webp": "/images/themes/hoa-dai-pink/flower3-decoration.webp",
+    "https://assets.chungdoi.com/photo-library/design/2e4aa1c620cd074236bd032a870e8e156d717a4d5e7235eb6ceb407dfdc9ec50.webp": "/images/photo-library/design/2e4aa1c620cd074236bd032a870e8e156d717a4d5e7235eb6ceb407dfdc9ec50.webp",
+    "https://assets.chungdoi.com/photo-library/design/b6954d30e7df545e03d669613b553252ad5fd9bd276e1990edd095c9ddd97397.webp": "/images/photo-library/design/b6954d30e7df545e03d669613b553252ad5fd9bd276e1990edd095c9ddd97397.webp",
+    "https://assets.chungdoi.com/photo-library/design/4e33e97abc6ae713a27679c028df1b9ff86dd7a40bfa769d822fbfec599dad1e.webp": "/images/photo-library/design/4e33e97abc6ae713a27679c028df1b9ff86dd7a40bfa769d822fbfec599dad1e.webp",
+    "https://assets.chungdoi.com/photo-library/design/67143a0e2908b9cd2288b4a0ede2bf9edf31e6251058ff92e220ba332c044bf6.webp": "/images/photo-library/design/67143a0e2908b9cd2288b4a0ede2bf9edf31e6251058ff92e220ba332c044bf6.webp",
+    "https://assets.chungdoi.com/photo-library/design/4d2d122387d021ae3502aa2b2b073112f7e48adb4114f960c8530c6abe3e8c48.webp": "/images/photo-library/design/4d2d122387d021ae3502aa2b2b073112f7e48adb4114f960c8530c6abe3e8c48.webp",
+    "https://assets.chungdoi.com/photo-library/design/3a3248aa7a9938d30735321a2c85cdfd2f3d578bba8c49b4e2a8c567778ebe16.webp": "/images/photo-library/design/3a3248aa7a9938d30735321a2c85cdfd2f3d578bba8c49b4e2a8c567778ebe16.webp",
+    "https://assets.chungdoi.com/photo-library/design/878b4612f0b72e2d87e1bbacd637cd0989a2503725689169ca3ff61714d32f8a.webp": "/images/photo-library/design/878b4612f0b72e2d87e1bbacd637cd0989a2503725689169ca3ff61714d32f8a.webp",
+    "https://assets.chungdoi.com/photo-library/design/ac57ca637617f5c76b46ebbdd2f617f1c1a91c00ec02d55dabc5daec8a933e9e.webp": "/images/photo-library/design/ac57ca637617f5c76b46ebbdd2f617f1c1a91c00ec02d55dabc5daec8a933e9e.webp",
+    "https://assets.chungdoi.com/photo-library/design/d5d4e7bc7378516a02c98614ec40a6481791cb5831fed30adaa8f54571fd5651.webp": "/images/photo-library/design/d5d4e7bc7378516a02c98614ec40a6481791cb5831fed30adaa8f54571fd5651.webp",
+    "https://assets.chungdoi.com/photo-library/design/53c9677e6cf8258a7fd785fdd5481eaaa3791dfa9c047cc3ba270fa18c152f65.webp": "/images/photo-library/design/53c9677e6cf8258a7fd785fdd5481eaaa3791dfa9c047cc3ba270fa18c152f65.webp",
+    "https://assets.chungdoi.com/photo-library/design/a8f7092b2f83095ef051f2d877236f289bc665d592869ac7cb124b6cfd30d340.webp": "/images/photo-library/design/a8f7092b2f83095ef051f2d877236f289bc665d592869ac7cb124b6cfd30d340.webp",
+    "/images/themes/hoa-dai-pink/flower4-decoration.webp": "/images/themes/hoa-dai-pink/flower4-decoration.webp",
+    "/images/themes/hoa-dai-pink/cake.webp": "/images/themes/hoa-dai-pink/cake.webp",
+    "/images/themes/hoa-dai-pink/bird.webp": "/images/themes/hoa-dai-pink/bird.webp",
+    "/images/themes/hoa-dai-pink/letter.webp": "/images/themes/hoa-dai-pink/letter.webp",
+    "/images/envelope/hoa_dai_pink.webp": "/images/envelope/hoa_dai_pink.webp",
+    "/images/themes/hoa-dai-pink/flower5-decoration.webp": "/images/themes/hoa-dai-pink/flower5-decoration.webp",
+    "/images/themes/hoa-dai-pink/water-flowers.webp": "/images/themes/hoa-dai-pink/water-flowers.webp"
+  },
+  "localMirroredCount": 21
 }

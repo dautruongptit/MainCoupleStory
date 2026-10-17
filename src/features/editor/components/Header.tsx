@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Icon } from "@/components/ui/ui";
 import { TEMPLATES, TPL_CDN, type Tpl } from "@/features/templates/data/templates";
+import { assetUrl } from "@/services/asset";
 
 export type Mode = "edit" | "preview";
 
@@ -13,7 +14,7 @@ export default function Header({
   isPublished = false,
   templateId = "double_phoenix_red",
   templateName = "Song Phụng - Đỏ",
-  templateThumb = "https://assets.chungdoi.com/template-previews/vi/landscape/double_phoenix_red.d0f325f5.webp",
+  templateThumb = assetUrl("/template-previews/vi/landscape/double_phoenix_red.d0f325f5.webp"),
   onSelectTemplate,
 }: {
   mode: Mode;

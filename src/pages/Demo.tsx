@@ -10,6 +10,7 @@ import { getTemplateManifest, getThemeBackgroundUrl } from "@/features/templates
 
 import { REFERENCE_COUPLES } from "@/features/templates/data/referenceCouples";
 import { REFERENCE_COVERS } from "@/features/templates/data/referenceCovers";
+import { assetUrl } from "@/services/asset";
 
 /**
  * Xây dựng dữ liệu thiệp mời mẫu (Demo data) chuẩn mực cho từng mẫu thiệp.
@@ -31,9 +32,9 @@ function buildDemoInv(tpl: Tpl): Inv {
   if (isBrown) {
     heroPhoto = "/images/themes/minimalism-brown/couple.webp";
   } else if (isDarkRed) {
-    heroPhoto = "https://assets.chungdoi.com/photo-library/design/cdecf6cfe2eeb3cfd63829abde62f1066f10a364ec27d4c997c0f51012c8803e.webp";
+    heroPhoto = assetUrl("/images/photo-library/design/cdecf6cfe2eeb3cfd63829abde62f1066f10a364ec27d4c997c0f51012c8803e.webp");
   } else if (tpl.id === "dragon_phoenix_v2_red") {
-    heroPhoto = "https://assets.chungdoi.com/photo-library/design/c0c85699ec961efa2db8747663ff1a34ad9237b8f5c4bc9c18db8e5c33e16f76.webp";
+    heroPhoto = assetUrl("/images/photo-library/design/c0c85699ec961efa2db8747663ff1a34ad9237b8f5c4bc9c18db8e5c33e16f76.webp");
   }
 
   // Tên cặp đôi chính xác theo từng mẫu từ website gốc

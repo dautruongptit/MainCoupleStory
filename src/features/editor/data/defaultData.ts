@@ -1,12 +1,13 @@
 import type { Inv } from "@/types/invitation";
+import { assetUrl } from "@/services/asset";
 
 export const defaultInv: Inv = {
   templateId: "double_phoenix_red",
   templateName: "Song Phụng - Đỏ",
-  templateThumb: "https://assets.chungdoi.com/template-previews/vi/landscape/double_phoenix_red.d0f325f5.webp",
+  templateThumb: assetUrl("/images/templates/double_phoenix_red.webp"),
   photoCrops: {},
   heroOn: true,
-  heroPhoto: "https://assets.chungdoi.com/photo-library/design/2e494e0b7ab193dde9575183fa33982e4df2c2a69e3424edb4864146fcd797c6.webp",
+  heroPhoto: assetUrl("/images/photo-library/design/2e494e0b7ab193dde9575183fa33982e4df2c2a69e3424edb4864146fcd797c6.webp"),
   heroZoom: 1,
   heroX: 50,
   heroY: 50,
@@ -22,12 +23,12 @@ export const defaultInv: Inv = {
   albumOn: true,
   albumLayout: "grid",
   photos: [
-    "https://assets.chungdoi.com/photo-library/design/2e494e0b7ab193dde9575183fa33982e4df2c2a69e3424edb4864146fcd797c6.webp",
-    "https://assets.chungdoi.com/photo-library/design/7f27e96680eccfbd182328d905e010b578c1b76ed0a9ee445b6c3a818ee6da57.webp",
-    "https://assets.chungdoi.com/photo-library/design/596b5a4ff72736f3ae4a8624d4a1573e5f004ff495cf30886c432952f9ffb9fc.webp",
-    "https://assets.chungdoi.com/photo-library/design/97bddbcf70cd875d4db4568f834d4111d3ba12890db5c2b9f5ee70c1727c7357.webp",
-    "https://assets.chungdoi.com/photo-library/design/c71480efa8c5887d03104838aba953649f8a81a10c8627382b6cca402f0bf7e5.webp",
-    "https://assets.chungdoi.com/photo-library/design/401453036f4cd5ae1052719dc61b1caf9e0b51df93614839217ac4a380db3bfd.webp",
+    assetUrl("/images/photo-library/design/2e494e0b7ab193dde9575183fa33982e4df2c2a69e3424edb4864146fcd797c6.webp"),
+    assetUrl("/images/photo-library/design/7f27e96680eccfbd182328d905e010b578c1b76ed0a9ee445b6c3a818ee6da57.webp"),
+    assetUrl("/images/photo-library/design/596b5a4ff72736f3ae4a8624d4a1573e5f004ff495cf30886c432952f9ffb9fc.webp"),
+    assetUrl("/images/photo-library/design/97bddbcf70cd875d4db4568f834d4111d3ba12890db5c2b9f5ee70c1727c7357.webp"),
+    assetUrl("/images/photo-library/design/c71480efa8c5887d03104838aba953649f8a81a10c8627382b6cca402f0bf7e5.webp"),
+    assetUrl("/images/photo-library/design/401453036f4cd5ae1052719dc61b1caf9e0b51df93614839217ac4a380db3bfd.webp"),
   ],
   familyOn: true,
   groomFamTitle: "Ông Bà",
@@ -153,7 +154,7 @@ export const defaultInv: Inv = {
   thanksOn: true,
   thanks: "Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi!",
   musicName: "Beautiful In White",
-  musicUrl: "https://assets.chungdoi.com/music/romantic-001.mp3",
+  musicUrl: assetUrl("/music/romantic-001.mp3"),
   musicAutoPlay: true,
   envelopeGuest: "Gia đình Anh Mạnh",
   envelopeInviteMessage: "đến dự buổi tiệc chung vui cùng gia đình",

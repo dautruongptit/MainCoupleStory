@@ -135,5 +135,24 @@
     "verified": true,
     "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
     "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
-  }
+  },
+  "localPaths": {
+    "/images/themes/boho-floral-pink/asset_1.webp": "/images/themes/boho-floral-pink/asset_1.webp",
+    "/images/themes/boho-floral-pink/asset_2.webp": "/images/themes/boho-floral-pink/asset_2.webp",
+    "https://assets.chungdoi.com/photo-library/design/a0666f1639ce05b0a9478c751fbb2d7c00986fe850d2107b1caf49710ac9e5cf.webp": "/images/photo-library/design/a0666f1639ce05b0a9478c751fbb2d7c00986fe850d2107b1caf49710ac9e5cf.webp",
+    "https://assets.chungdoi.com/photo-library/design/75a2233917e5a0c905f5f1094d7bed67cd0b648ffa0634f13376aec8357bc96e.webp": "/images/photo-library/design/75a2233917e5a0c905f5f1094d7bed67cd0b648ffa0634f13376aec8357bc96e.webp",
+    "/images/themes/boho-floral-pink/asset_3.webp": "/images/themes/boho-floral-pink/asset_3.webp",
+    "https://assets.chungdoi.com/photo-library/design/5e017041b9011bb8714c67e0475e25f6a05b1ded4e112e764b9702739fb6243c.webp": "/images/photo-library/design/5e017041b9011bb8714c67e0475e25f6a05b1ded4e112e764b9702739fb6243c.webp",
+    "https://assets.chungdoi.com/photo-library/design/d7d51af88f8a2f0620420efd751d002a9d1fe1337fb8649176ffd5b699bbfb0b.webp": "/images/photo-library/design/d7d51af88f8a2f0620420efd751d002a9d1fe1337fb8649176ffd5b699bbfb0b.webp",
+    "https://assets.chungdoi.com/photo-library/design/e2f6f2c37a5be6d96ba9eb122f579defdcd185c33bae8f7bfabbe7d23d49c88a.webp": "/images/photo-library/design/e2f6f2c37a5be6d96ba9eb122f579defdcd185c33bae8f7bfabbe7d23d49c88a.webp",
+    "/images/giftbox/mini/baroque_v2_darkgreen.webp": "/images/giftbox/mini/baroque_v2_darkgreen.webp",
+    "/images/giftbox/mini/minimalism_brown.webp": "/images/giftbox/mini/minimalism_brown.webp",
+    "/images/giftbox/mini/dragon_phoenix.webp": "/images/giftbox/mini/dragon_phoenix.webp",
+    "/images/giftbox/mini/royal_v2_purple.webp": "/images/giftbox/mini/royal_v2_purple.webp",
+    "/images/giftbox/boho_floral_pink.webp": "/images/giftbox/boho_floral_pink.webp",
+    "/images/giftbox/mini/applique_lace_white.webp": "/images/giftbox/mini/applique_lace_white.webp",
+    "/images/giftbox/mini/baroque_v2_darkred.webp": "/images/giftbox/mini/baroque_v2_darkred.webp",
+    "/images/giftbox/mini/glass_garden_blue.webp": "/images/giftbox/mini/glass_garden_blue.webp"
+  },
+  "localMirroredCount": 16
 }

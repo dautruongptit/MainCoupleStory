@@ -137,5 +137,25 @@
     "verified": true,
     "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
     "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
-  }
+  },
+  "localPaths": {
+    "/images/themes/lien-hoa-pink/flower3.webp": "/images/themes/lien-hoa-pink/flower3.webp",
+    "/images/themes/lien-hoa-pink/flower2.webp": "/images/themes/lien-hoa-pink/flower2.webp",
+    "/images/themes/lien-hoa-pink/framegold1.webp": "/images/themes/lien-hoa-pink/framegold1.webp",
+    "/images/themes/lien-hoa-pink/framegold2.webp": "/images/themes/lien-hoa-pink/framegold2.webp",
+    "/images/themes/lien-hoa-pink/flower4.webp": "/images/themes/lien-hoa-pink/flower4.webp",
+    "https://assets.chungdoi.com/photo-library/design/5e017041b9011bb8714c67e0475e25f6a05b1ded4e112e764b9702739fb6243c.webp": "/images/photo-library/design/5e017041b9011bb8714c67e0475e25f6a05b1ded4e112e764b9702739fb6243c.webp",
+    "https://assets.chungdoi.com/photo-library/design/d7d51af88f8a2f0620420efd751d002a9d1fe1337fb8649176ffd5b699bbfb0b.webp": "/images/photo-library/design/d7d51af88f8a2f0620420efd751d002a9d1fe1337fb8649176ffd5b699bbfb0b.webp",
+    "https://assets.chungdoi.com/photo-library/design/e2f6f2c37a5be6d96ba9eb122f579defdcd185c33bae8f7bfabbe7d23d49c88a.webp": "/images/photo-library/design/e2f6f2c37a5be6d96ba9eb122f579defdcd185c33bae8f7bfabbe7d23d49c88a.webp",
+    "/images/themes/lien-hoa-pink/leaf.webp": "/images/themes/lien-hoa-pink/leaf.webp",
+    "/images/themes/lien-hoa-pink/calendar-frame.webp": "/images/themes/lien-hoa-pink/calendar-frame.webp",
+    "/images/themes/lien-hoa-pink/golden-line.webp": "/images/themes/lien-hoa-pink/golden-line.webp",
+    "/images/themes/lien-hoa-pink/medallion-guest.webp": "/images/themes/lien-hoa-pink/medallion-guest.webp",
+    "/images/themes/lien-hoa-pink/medallion-alcohol.webp": "/images/themes/lien-hoa-pink/medallion-alcohol.webp",
+    "/images/themes/lien-hoa-pink/medallion-opening.webp": "/images/themes/lien-hoa-pink/medallion-opening.webp",
+    "/images/envelope/lien_hoa_pink.webp": "/images/envelope/lien_hoa_pink.webp",
+    "/images/themes/lien-hoa-pink/flower-bottom.webp": "/images/themes/lien-hoa-pink/flower-bottom.webp",
+    "/images/themes/lien-hoa-pink/hoa-sen-bg.webp": "/images/themes/lien-hoa-pink/hoa-sen-bg.webp"
+  },
+  "localMirroredCount": 17
 }

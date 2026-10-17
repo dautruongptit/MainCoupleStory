@@ -142,5 +142,25 @@
     "verified": true,
     "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
     "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
-  }
+  },
+  "localPaths": {
+    "/images/themes/song-hy-red/sunburst.svg": "/images/themes/song-hy-red/sunburst.svg",
+    "/images/themes/song-hy-red/chu-hy.webp": "/images/themes/song-hy-red/chu-hy.webp",
+    "https://assets.chungdoi.com/photo-library/design/eb107c431fdd4c8d8e292f587e30bf3532753b3b4562fd7f21fa1254a42363b1.webp": "/images/photo-library/design/eb107c431fdd4c8d8e292f587e30bf3532753b3b4562fd7f21fa1254a42363b1.webp",
+    "https://assets.chungdoi.com/photo-library/design/e3d13b58ea92c96a322e9bcc54cfcf6f6a79f08239a0ed9a8d3a3aca48bba341.webp": "/images/photo-library/design/e3d13b58ea92c96a322e9bcc54cfcf6f6a79f08239a0ed9a8d3a3aca48bba341.webp",
+    "https://assets.chungdoi.com/photo-library/design/6f2cc45851be18d1562d9e42510d0e9a00660507e3e9204ee24696cc3925da6d.webp": "/images/photo-library/design/6f2cc45851be18d1562d9e42510d0e9a00660507e3e9204ee24696cc3925da6d.webp",
+    "https://assets.chungdoi.com/photo-library/design/90cfb6aaf7e0fc20d383aa3bcdaa97c9f73c50b384ee1470dac45126ad5f1cff.webp": "/images/photo-library/design/90cfb6aaf7e0fc20d383aa3bcdaa97c9f73c50b384ee1470dac45126ad5f1cff.webp",
+    "https://assets.chungdoi.com/photo-library/design/a9c22284a87f0932e84622c79068eaa687fb1a06b8080fb682b9f8dc6ebf1c80.webp": "/images/photo-library/design/a9c22284a87f0932e84622c79068eaa687fb1a06b8080fb682b9f8dc6ebf1c80.webp",
+    "https://assets.chungdoi.com/photo-library/design/cfd3d6fc4e4e0479502ac5bacfc4ddf3f4c58f71daa8eb6ea393510eae89bca0.webp": "/images/photo-library/design/cfd3d6fc4e4e0479502ac5bacfc4ddf3f4c58f71daa8eb6ea393510eae89bca0.webp",
+    "https://assets.chungdoi.com/photo-library/design/19b783f13d746af8c7448e8b4227fd4fb88de8761ed6d2b6858b80510720160c.webp": "/images/photo-library/design/19b783f13d746af8c7448e8b4227fd4fb88de8761ed6d2b6858b80510720160c.webp",
+    "/images/giftbox/mini/jasmine_white.webp": "/images/giftbox/mini/jasmine_white.webp",
+    "/images/giftbox/mini/crystal_floral_green.webp": "/images/giftbox/mini/crystal_floral_green.webp",
+    "/images/giftbox/mini/saraya_gold.webp": "/images/giftbox/mini/saraya_gold.webp",
+    "/images/giftbox/mini/elegant_leaf_green.webp": "/images/giftbox/mini/elegant_leaf_green.webp",
+    "/images/giftbox/song_hy_green.webp": "/images/giftbox/song_hy_green.webp",
+    "/images/giftbox/mini/boho_floral_green.webp": "/images/giftbox/mini/boho_floral_green.webp",
+    "/images/giftbox/mini/spring_garden_red.webp": "/images/giftbox/mini/spring_garden_red.webp",
+    "/images/giftbox/mini/silk_ribbon_green.webp": "/images/giftbox/mini/silk_ribbon_green.webp"
+  },
+  "localMirroredCount": 17
 }

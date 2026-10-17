@@ -162,5 +162,34 @@
     "verified": true,
     "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
     "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
-  }
+  },
+  "localPaths": {
+    "/images/themes/baroque-blue/frame-decoration.webp": "/images/themes/baroque-blue/frame-decoration.webp",
+    "/images/themes/baroque-blue/goldline-decoration.webp": "/images/themes/baroque-blue/goldline-decoration.webp",
+    "/images/themes/baroque-blue/gold5-decoration.webp": "/images/themes/baroque-blue/gold5-decoration.webp",
+    "/images/themes/baroque-blue/line-decoration.webp": "/images/themes/baroque-blue/line-decoration.webp",
+    "/images/themes/baroque-blue/goldline2-decoration.webp": "/images/themes/baroque-blue/goldline2-decoration.webp",
+    "https://assets.chungdoi.com/photo-library/design/cbf029ed13a63710b491f34444378e0c721ac904a355bc33434f1d6187270bba.webp": "/images/photo-library/design/cbf029ed13a63710b491f34444378e0c721ac904a355bc33434f1d6187270bba.webp",
+    "https://assets.chungdoi.com/photo-library/design/f134c07ce29c9494a15999324657f573638565e804ae94132601f9c2bf4f7fd6.webp": "/images/photo-library/design/f134c07ce29c9494a15999324657f573638565e804ae94132601f9c2bf4f7fd6.webp",
+    "https://assets.chungdoi.com/photo-library/design/c21d21a8be1e85ea7545498eae71e234047d09650e45bdee58b8617f1b794d11.webp": "/images/photo-library/design/c21d21a8be1e85ea7545498eae71e234047d09650e45bdee58b8617f1b794d11.webp",
+    "https://assets.chungdoi.com/photo-library/design/30e1cba2f33b019b3105ad50d759595573135b43a73ae9e4c4a49a83595f58c4.webp": "/images/photo-library/design/30e1cba2f33b019b3105ad50d759595573135b43a73ae9e4c4a49a83595f58c4.webp",
+    "https://assets.chungdoi.com/photo-library/design/5d4773b0a56df2db9e66d3acc3fdaf9cbea3f85b2905ee505d254b1d41d94e8b.webp": "/images/photo-library/design/5d4773b0a56df2db9e66d3acc3fdaf9cbea3f85b2905ee505d254b1d41d94e8b.webp",
+    "/images/themes/baroque-blue/pillars-decoration.webp": "/images/themes/baroque-blue/pillars-decoration.webp",
+    "/images/themes/baroque-blue/calendar-frame.webp": "/images/themes/baroque-blue/calendar-frame.webp",
+    "/images/themes/baroque-blue/gold4-decoration.webp": "/images/themes/baroque-blue/gold4-decoration.webp",
+    "/images/themes/baroque-blue/medallion-ring.webp": "/images/themes/baroque-blue/medallion-ring.webp",
+    "/images/themes/baroque-blue/medallion-bird.webp": "/images/themes/baroque-blue/medallion-bird.webp",
+    "/images/themes/baroque-blue/medallion-cake.webp": "/images/themes/baroque-blue/medallion-cake.webp",
+    "/images/giftbox/mini/baroque_gold.webp": "/images/giftbox/mini/baroque_gold.webp",
+    "/images/giftbox/mini/song_hac_red.webp": "/images/giftbox/mini/song_hac_red.webp",
+    "/images/giftbox/mini/dried_flower_v2_green.webp": "/images/giftbox/mini/dried_flower_v2_green.webp",
+    "/images/giftbox/mini/boho_floral_pink.webp": "/images/giftbox/mini/boho_floral_pink.webp",
+    "/images/giftbox/baroque_blue.webp": "/images/giftbox/baroque_blue.webp",
+    "/images/giftbox/mini/glass_garden_blue.webp": "/images/giftbox/mini/glass_garden_blue.webp",
+    "/images/giftbox/mini/silk_ribbon_darkred.webp": "/images/giftbox/mini/silk_ribbon_darkred.webp",
+    "/images/giftbox/mini/double_dragon_red.webp": "/images/giftbox/mini/double_dragon_red.webp",
+    "/images/themes/baroque-blue/gold6-decoration.webp": "/images/themes/baroque-blue/gold6-decoration.webp",
+    "/images/themes/baroque-blue/bg-pattern.webp": "/images/themes/baroque-blue/bg-pattern.webp"
+  },
+  "localMirroredCount": 26
 }

@@ -125,5 +125,21 @@
     "verified": true,
     "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
     "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
-  }
+  },
+  "localPaths": {
+    "/images/themes/porcelain-v2-pink/hero-frame.webp": "/images/themes/porcelain-v2-pink/hero-frame.webp",
+    "/images/themes/porcelain-v2-pink/flower.webp": "/images/themes/porcelain-v2-pink/flower.webp",
+    "https://assets.chungdoi.com/photo-library/design/53da5c6ae3dfa5d31b6d275b7d56512288571a22f6fcf2f874a3664e18eb2644.webp": "/images/photo-library/design/53da5c6ae3dfa5d31b6d275b7d56512288571a22f6fcf2f874a3664e18eb2644.webp",
+    "https://assets.chungdoi.com/photo-library/design/e278dc1ba0af77ca01744a0cc93412a4e7c4470c34c8ca079f629fe0ac435c48.webp": "/images/photo-library/design/e278dc1ba0af77ca01744a0cc93412a4e7c4470c34c8ca079f629fe0ac435c48.webp",
+    "https://assets.chungdoi.com/photo-library/design/b70239ea4a66e2320d211664a97ea2f49d91f12497f6f36be03329fa868ba6d5.webp": "/images/photo-library/design/b70239ea4a66e2320d211664a97ea2f49d91f12497f6f36be03329fa868ba6d5.webp",
+    "https://assets.chungdoi.com/photo-library/design/31525a53ca60e87b03ce9dcdb8ceabb8e22dc6ac085db20ba039433673532822.webp": "/images/photo-library/design/31525a53ca60e87b03ce9dcdb8ceabb8e22dc6ac085db20ba039433673532822.webp",
+    "https://assets.chungdoi.com/photo-library/design/0a3eb5186e8cbcd50a257c91d2614077927de8c6ac9cc92ca48beda0b44a16d3.webp": "/images/photo-library/design/0a3eb5186e8cbcd50a257c91d2614077927de8c6ac9cc92ca48beda0b44a16d3.webp",
+    "https://assets.chungdoi.com/photo-library/design/352e5ce35b9bd21f83ffb336a585d7d5043563337772af6f56cab0798f46172d.webp": "/images/photo-library/design/352e5ce35b9bd21f83ffb336a585d7d5043563337772af6f56cab0798f46172d.webp",
+    "/images/themes/porcelain-v2-pink/ring.webp": "/images/themes/porcelain-v2-pink/ring.webp",
+    "/images/themes/porcelain-v2-pink/bird.webp": "/images/themes/porcelain-v2-pink/bird.webp",
+    "/images/themes/porcelain-v2-pink/bell.webp": "/images/themes/porcelain-v2-pink/bell.webp",
+    "/images/envelope/porcelain_v2_pink.webp": "/images/envelope/porcelain_v2_pink.webp",
+    "/images/themes/porcelain-v2-pink/floral-tile.webp": "/images/themes/porcelain-v2-pink/floral-tile.webp"
+  },
+  "localMirroredCount": 13
 }

@@ -125,5 +125,21 @@
     "verified": true,
     "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
     "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
-  }
+  },
+  "localPaths": {
+    "/images/themes/songphung-red/Phuong line.webp": "/images/themes/songphung-red/Phuong line.webp",
+    "/images/themes/songphung-red/HOA.webp": "/images/themes/songphung-red/HOA.webp",
+    "/images/themes/songphung-red/Phuong 2.webp": "/images/themes/songphung-red/Phuong 2.webp",
+    "/images/themes/songphung-red/CHU HY.webp": "/images/themes/songphung-red/CHU HY.webp",
+    "/images/themes/songphung-red/Phuong.webp": "/images/themes/songphung-red/Phuong.webp",
+    "https://assets.chungdoi.com/photo-library/design/2e494e0b7ab193dde9575183fa33982e4df2c2a69e3424edb4864146fcd797c6.webp": "/images/photo-library/design/2e494e0b7ab193dde9575183fa33982e4df2c2a69e3424edb4864146fcd797c6.webp",
+    "https://assets.chungdoi.com/photo-library/design/7f27e96680eccfbd182328d905e010b578c1b76ed0a9ee445b6c3a818ee6da57.webp": "/images/photo-library/design/7f27e96680eccfbd182328d905e010b578c1b76ed0a9ee445b6c3a818ee6da57.webp",
+    "https://assets.chungdoi.com/photo-library/design/596b5a4ff72736f3ae4a8624d4a1573e5f004ff495cf30886c432952f9ffb9fc.webp": "/images/photo-library/design/596b5a4ff72736f3ae4a8624d4a1573e5f004ff495cf30886c432952f9ffb9fc.webp",
+    "https://assets.chungdoi.com/photo-library/design/97bddbcf70cd875d4db4568f834d4111d3ba12890db5c2b9f5ee70c1727c7357.webp": "/images/photo-library/design/97bddbcf70cd875d4db4568f834d4111d3ba12890db5c2b9f5ee70c1727c7357.webp",
+    "https://assets.chungdoi.com/photo-library/design/c71480efa8c5887d03104838aba953649f8a81a10c8627382b6cca402f0bf7e5.webp": "/images/photo-library/design/c71480efa8c5887d03104838aba953649f8a81a10c8627382b6cca402f0bf7e5.webp",
+    "https://assets.chungdoi.com/photo-library/design/401453036f4cd5ae1052719dc61b1caf9e0b51df93614839217ac4a380db3bfd.webp": "/images/photo-library/design/401453036f4cd5ae1052719dc61b1caf9e0b51df93614839217ac4a380db3bfd.webp",
+    "/images/envelope/double_phoenix_red.webp": "/images/envelope/double_phoenix_red.webp",
+    "/images/themes/songphung-red/NENGIAY.jpg": "/images/themes/songphung-red/NENGIAY.jpg"
+  },
+  "localMirroredCount": 13
 }

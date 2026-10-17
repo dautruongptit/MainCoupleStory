@@ -1,7 +1,8 @@
 import { useRef, useState } from "react";
 import { Link } from "@/app/router";
+import { assetUrl } from "@/services/asset";
 
-const CDN = "https://assets.chungdoi.com/template-previews/vi/listing/";
+const CDN = assetUrl("/template-previews/vi/listing/");
 const TEMPLATES: { name: string; file: string; tag?: string }[] = [
   { name: "Song Hỷ - Đỏ", file: "song_hy_red.197afce7", tag: "Truyền thống" },
   { name: "Song Hỷ - Xanh", file: "song_hy_green.7f0d10fa", tag: "Mới" },
@@ -73,27 +74,27 @@ const REVIEWS = [
 const SWITCH_TEMPLATES = [
   {
     name: "Minimalism - Đỏ Đậm",
-    img: "https://assets.chungdoi.com/template-previews/vi/full/minimalism_darkred.4496816d.webp",
+    img: assetUrl("/template-previews/vi/full/minimalism_darkred.4496816d.webp"),
     slug: "minimalism-do-dam",
   },
   {
     name: "Minimalism - Nâu",
-    img: "https://assets.chungdoi.com/template-previews/vi/full/minimalism_brown.b5df2103.webp",
+    img: assetUrl("/template-previews/vi/full/minimalism_brown.b5df2103.webp"),
     slug: "minimalism-nau",
   },
   {
     name: "Song Hỷ - Xanh",
-    img: "https://assets.chungdoi.com/template-previews/vi/full/song_hy_green.1a9c9b7f.webp",
+    img: assetUrl("/template-previews/vi/full/song_hy_green.1a9c9b7f.webp"),
     slug: "song-hy-xanh",
   },
   {
     name: "Song Hỷ - Đỏ",
-    img: "https://assets.chungdoi.com/template-previews/vi/full/song_hy_red.09106faf.webp",
+    img: assetUrl("/template-previews/vi/full/song_hy_red.09106faf.webp"),
     slug: "song-hy-do",
   },
   {
     name: "Song Phụng - Đỏ",
-    img: "https://assets.chungdoi.com/template-previews/vi/full/double_phoenix_red.95412374.webp",
+    img: assetUrl("/template-previews/vi/full/double_phoenix_red.95412374.webp"),
     slug: "song-phung-do",
   },
 ];

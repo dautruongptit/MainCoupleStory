@@ -174,5 +174,30 @@
     "verified": true,
     "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
     "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
-  }
+  },
+  "localPaths": {
+    "https://assets.chungdoi.com/photo-library/design/8913d414eb406bb8de514b7db727233ec28f3076138919b63dd84ab6c92cde25.webp": "/images/photo-library/design/8913d414eb406bb8de514b7db727233ec28f3076138919b63dd84ab6c92cde25.webp",
+    "https://assets.chungdoi.com/photo-library/design/81ab5d3c48c0d5f188640e738ac66984cae937c8108f51e44c7ade81fce81049.webp": "/images/photo-library/design/81ab5d3c48c0d5f188640e738ac66984cae937c8108f51e44c7ade81fce81049.webp",
+    "https://assets.chungdoi.com/photo-library/design/64cf9019062d9e2454cc490f6cde3d334ac58aba2c3da484e56e9265c9919a4d.webp": "/images/photo-library/design/64cf9019062d9e2454cc490f6cde3d334ac58aba2c3da484e56e9265c9919a4d.webp",
+    "https://assets.chungdoi.com/photo-library/design/8e4d4ff8ee6c0aac03bdc3ed2163b39a305936ff5af419c9996078ab43d3dd8f.webp": "/images/photo-library/design/8e4d4ff8ee6c0aac03bdc3ed2163b39a305936ff5af419c9996078ab43d3dd8f.webp",
+    "https://assets.chungdoi.com/photo-library/design/bb6f06f89389f61de343949fef2af354c69947ec8c3ed84d5cbe5699c4844dbb.webp": "/images/photo-library/design/bb6f06f89389f61de343949fef2af354c69947ec8c3ed84d5cbe5699c4844dbb.webp",
+    "https://assets.chungdoi.com/photo-library/design/c414835ba5f95a34ebf0730b5a06db8d21630e3025bfd416c8c628a43f5ba704.webp": "/images/photo-library/design/c414835ba5f95a34ebf0730b5a06db8d21630e3025bfd416c8c628a43f5ba704.webp",
+    "https://assets.chungdoi.com/photo-library/design/208bd1646525d47bffe8d72e59de19752c4b146cc6c67494c0cc91de777545d3.webp": "/images/photo-library/design/208bd1646525d47bffe8d72e59de19752c4b146cc6c67494c0cc91de777545d3.webp",
+    "https://assets.chungdoi.com/photo-library/design/5b172de9838710261ce4393ef2f13cb9f04ddf799bb5158192b11ad1b6d34c70.webp": "/images/photo-library/design/5b172de9838710261ce4393ef2f13cb9f04ddf799bb5158192b11ad1b6d34c70.webp",
+    "https://assets.chungdoi.com/photo-library/design/27b0586813066d49c0b655b2e56191f0bf02d45082485b4ee441352201a89c89.webp": "/images/photo-library/design/27b0586813066d49c0b655b2e56191f0bf02d45082485b4ee441352201a89c89.webp",
+    "https://assets.chungdoi.com/photo-library/design/d77b3305f9ab358fe84a8dd88209d25f373dde24d8c1682564d7278834d40580.webp": "/images/photo-library/design/d77b3305f9ab358fe84a8dd88209d25f373dde24d8c1682564d7278834d40580.webp",
+    "https://assets.chungdoi.com/photo-library/design/dc8b7fe63a78379f2633fbd9ce6cb9be751b5da1af86810f10afe700b5061e16.webp": "/images/photo-library/design/dc8b7fe63a78379f2633fbd9ce6cb9be751b5da1af86810f10afe700b5061e16.webp",
+    "https://assets.chungdoi.com/photo-library/design/27ff008d1a9553373dd1aab6bd4ff08ef8d65c26b82278d9873c68439e0bc49d.webp": "/images/photo-library/design/27ff008d1a9553373dd1aab6bd4ff08ef8d65c26b82278d9873c68439e0bc49d.webp",
+    "/images/giftbox/mini/lien_hoa_v2_green.webp": "/images/giftbox/mini/lien_hoa_v2_green.webp",
+    "/images/giftbox/mini/san_miguel_yellow.webp": "/images/giftbox/mini/san_miguel_yellow.webp",
+    "/images/giftbox/mini/minimalism_purple.webp": "/images/giftbox/mini/minimalism_purple.webp",
+    "/images/giftbox/mini/minimalism_brown.webp": "/images/giftbox/mini/minimalism_brown.webp",
+    "/images/giftbox/spring_garden_green.webp": "/images/giftbox/spring_garden_green.webp",
+    "/images/giftbox/mini/porcelain_red.webp": "/images/giftbox/mini/porcelain_red.webp",
+    "/images/giftbox/mini/brocade_flower_red.webp": "/images/giftbox/mini/brocade_flower_red.webp",
+    "/images/giftbox/mini/jasmine_white.webp": "/images/giftbox/mini/jasmine_white.webp",
+    "/images/themes/nature/flower_top.webp": "/images/themes/nature/flower_top.webp",
+    "/images/themes/nature/flower_paralax.webp": "/images/themes/nature/flower_paralax.webp"
+  },
+  "localMirroredCount": 22
 }

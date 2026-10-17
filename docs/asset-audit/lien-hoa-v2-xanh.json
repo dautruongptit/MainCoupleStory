@@ -140,5 +140,26 @@
     "verified": true,
     "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
     "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
-  }
+  },
+  "localPaths": {
+    "/images/themes/lien-hoa-v2-green/flower3.webp": "/images/themes/lien-hoa-v2-green/flower3.webp",
+    "https://assets.chungdoi.com/photo-library/design/455c1838dfc39d415f9919e861f56a1435b9a63ed1137db92328d0d9ed732129.webp": "/images/photo-library/design/455c1838dfc39d415f9919e861f56a1435b9a63ed1137db92328d0d9ed732129.webp",
+    "/images/themes/lien-hoa-v2-green/flower10.webp": "/images/themes/lien-hoa-v2-green/flower10.webp",
+    "/images/themes/lien-hoa-v2-green/flower6.webp": "/images/themes/lien-hoa-v2-green/flower6.webp",
+    "https://assets.chungdoi.com/photo-library/design/2e18f7158e300d1feb550991f463cbffcb83018ab5bcddd9a524b21b4d6dcaed.webp": "/images/photo-library/design/2e18f7158e300d1feb550991f463cbffcb83018ab5bcddd9a524b21b4d6dcaed.webp",
+    "https://assets.chungdoi.com/photo-library/design/00c617c45a73695442601570d9f51aa94890f5add8081a0015acc9f0722f25bc.webp": "/images/photo-library/design/00c617c45a73695442601570d9f51aa94890f5add8081a0015acc9f0722f25bc.webp",
+    "https://assets.chungdoi.com/photo-library/design/9bbeffd8cb524b61bb935d9fe3d3fa1f212bf32edb038e62a22ccbc3ad21b975.webp": "/images/photo-library/design/9bbeffd8cb524b61bb935d9fe3d3fa1f212bf32edb038e62a22ccbc3ad21b975.webp",
+    "https://assets.chungdoi.com/photo-library/design/c89cc0304c63d99c6a85ac4aa4f449e1572c642c652dab6f73812be500d23074.webp": "/images/photo-library/design/c89cc0304c63d99c6a85ac4aa4f449e1572c642c652dab6f73812be500d23074.webp",
+    "https://assets.chungdoi.com/photo-library/design/e5fd18dbf058fc4b6dc43ba0178fc4651558908b352315057531c22c90ee2256.webp": "/images/photo-library/design/e5fd18dbf058fc4b6dc43ba0178fc4651558908b352315057531c22c90ee2256.webp",
+    "https://assets.chungdoi.com/photo-library/design/0563a8254c022cf22e3053d416460a1ff5451fd8a8bc73d9f215ae1b03eadefe.webp": "/images/photo-library/design/0563a8254c022cf22e3053d416460a1ff5451fd8a8bc73d9f215ae1b03eadefe.webp",
+    "/images/themes/lien-hoa-v2-green/flower5.webp": "/images/themes/lien-hoa-v2-green/flower5.webp",
+    "/images/themes/lien-hoa-v2-green/flower1.webp": "/images/themes/lien-hoa-v2-green/flower1.webp",
+    "/images/themes/lien-hoa-v2-green/medallion-ring.webp": "/images/themes/lien-hoa-v2-green/medallion-ring.webp",
+    "/images/themes/lien-hoa-v2-green/medallion-drink.webp": "/images/themes/lien-hoa-v2-green/medallion-drink.webp",
+    "/images/themes/lien-hoa-v2-green/medallion-cake.webp": "/images/themes/lien-hoa-v2-green/medallion-cake.webp",
+    "/images/envelope/lien_hoa_v2_green.webp": "/images/envelope/lien_hoa_v2_green.webp",
+    "/images/themes/lien-hoa-v2-green/flower4-bottom.webp": "/images/themes/lien-hoa-v2-green/flower4-bottom.webp",
+    "/images/themes/lien-hoa-v2-green/paper-texture.webp": "/images/themes/lien-hoa-v2-green/paper-texture.webp"
+  },
+  "localMirroredCount": 18
 }

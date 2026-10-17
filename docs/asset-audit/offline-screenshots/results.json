@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "bach-su-do",
+    "name": "Bạch Sứ - Đỏ",
+    "totalImages": 15,
+    "loadedImages": 7,
+    "brokenImages": 0,
+    "screenshotPath": "docs/asset-audit/offline-screenshots/bach-su-do_offline.png",
+    "status": "PASS"
+  },
+  {
+    "slug": "hoa-tinh-do",
+    "name": "Họa Tình - Đỏ",
+    "totalImages": 23,
+    "loadedImages": 15,
+    "brokenImages": 0,
+    "screenshotPath": "docs/asset-audit/offline-screenshots/hoa-tinh-do_offline.png",
+    "status": "PASS"
+  },
+  {
+    "slug": "song-long-do",
+    "name": "Song Long - Đỏ",
+    "totalImages": 17,
+    "loadedImages": 11,
+    "brokenImages": 0,
+    "screenshotPath": "docs/asset-audit/offline-screenshots/song-long-do_offline.png",
+    "status": "PASS"
+  },
+  {
+    "slug": "hoang-kim-lam",
+    "name": "Hoàng Kim - Lam",
+    "totalImages": 16,
+    "loadedImages": 10,
+    "brokenImages": 0,
+    "screenshotPath": "docs/asset-audit/offline-screenshots/hoang-kim-lam_offline.png",
+    "status": "PASS"
+  },
+  {
+    "slug": "chibi-red",
+    "name": "Chibi - Red",
+    "totalImages": 17,
+    "loadedImages": 11,
+    "brokenImages": 0,
+    "screenshotPath": "docs/asset-audit/offline-screenshots/chibi-red_offline.png",
+    "status": "PASS"
+  },
+  {
+    "slug": "minimalism-nau",
+    "name": "Minimalism - Nâu",
+    "totalImages": 19,
+    "loadedImages": 13,
+    "brokenImages": 0,
+    "screenshotPath": "docs/asset-audit/offline-screenshots/minimalism-nau_offline.png",
+    "status": "PASS"
+  },
+  {
+    "slug": "minimalism-do-dam",
+    "name": "Minimalism - Đỏ Đậm",
+    "totalImages": 19,
+    "loadedImages": 13,
+    "brokenImages": 0,
+    "screenshotPath": "docs/asset-audit/offline-screenshots/minimalism-do-dam_offline.png",
+    "status": "PASS"
+  },
+  {
+    "slug": "song-hy-do",
+    "name": "Song Hỷ - Đỏ",
+    "totalImages": 17,
+    "loadedImages": 11,
+    "brokenImages": 0,
+    "screenshotPath": "docs/asset-audit/offline-screenshots/song-hy-do_offline.png",
+    "status": "PASS"
+  },
+  {
+    "slug": "song-phung-do",
+    "name": "Song Phụng - Đỏ",
+    "totalImages": 24,
+    "loadedImages": 18,
+    "brokenImages": 0,
+    "screenshotPath": "docs/asset-audit/offline-screenshots/song-phung-do_offline.png",
+    "status": "PASS"
+  },
+  {
+    "slug": "long-phung-v2-do",
+    "name": "Long Phụng V2 - Đỏ",
+    "totalImages": 18,
+    "loadedImages": 12,
+    "brokenImages": 0,
+    "screenshotPath": "docs/asset-audit/offline-screenshots/long-phung-v2-do_offline.png",
+    "status": "PASS"
+  }
+]

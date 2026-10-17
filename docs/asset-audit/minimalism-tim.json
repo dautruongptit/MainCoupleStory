@@ -153,5 +153,30 @@
     "verified": true,
     "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
     "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
-  }
+  },
+  "localPaths": {
+    "/images/themes/minimalism-purple/flower-decoration.webp": "/images/themes/minimalism-purple/flower-decoration.webp",
+    "/images/themes/minimalism-purple/house-background.webp": "/images/themes/minimalism-purple/house-background.webp",
+    "/images/themes/minimalism-purple/envelope-background.webp": "/images/themes/minimalism-purple/envelope-background.webp",
+    "https://assets.chungdoi.com/photo-library/design/f9fa4856eabe1fdbef93ea3149f595d5b0b0a61400cdf1ebde7248c8a2eac441.webp": "/images/photo-library/design/f9fa4856eabe1fdbef93ea3149f595d5b0b0a61400cdf1ebde7248c8a2eac441.webp",
+    "/images/themes/minimalism-purple/flower3-decoration.webp": "/images/themes/minimalism-purple/flower3-decoration.webp",
+    "/images/themes/minimalism-purple/envelope-cover.webp": "/images/themes/minimalism-purple/envelope-cover.webp",
+    "/images/themes/minimalism-purple/flower1-decoration.webp": "/images/themes/minimalism-purple/flower1-decoration.webp",
+    "/images/themes/minimalism-purple/flower4-decoration.webp": "/images/themes/minimalism-purple/flower4-decoration.webp",
+    "/images/themes/minimalism-purple/paper.webp": "/images/themes/minimalism-purple/paper.webp",
+    "https://assets.chungdoi.com/photo-library/design/a0c54713c1b4d116eb38767a25b6866668b7de90f1dde33b786b9e071b4c4447.webp": "/images/photo-library/design/a0c54713c1b4d116eb38767a25b6866668b7de90f1dde33b786b9e071b4c4447.webp",
+    "https://assets.chungdoi.com/photo-library/design/18d14524417bf49b6c8695a179ac7ec96289cfbf29b69263f3ae255d8adeefe1.webp": "/images/photo-library/design/18d14524417bf49b6c8695a179ac7ec96289cfbf29b69263f3ae255d8adeefe1.webp",
+    "https://assets.chungdoi.com/photo-library/design/9efd59d14dc864e3f95291698b52b5e3392ac93665a43539d35b9d88b3958615.webp": "/images/photo-library/design/9efd59d14dc864e3f95291698b52b5e3392ac93665a43539d35b9d88b3958615.webp",
+    "https://assets.chungdoi.com/photo-library/design/bbecb4f103023ba59ae9ea19b6bcb62c49519ba26a998f88c80f1b225bd10984.webp": "/images/photo-library/design/bbecb4f103023ba59ae9ea19b6bcb62c49519ba26a998f88c80f1b225bd10984.webp",
+    "https://assets.chungdoi.com/photo-library/design/69c1de1437cfca1807a0f44dd4238abcae9b4cd77acc79fc598e668b55fa3099.webp": "/images/photo-library/design/69c1de1437cfca1807a0f44dd4238abcae9b4cd77acc79fc598e668b55fa3099.webp",
+    "https://assets.chungdoi.com/photo-library/design/c029bacf7bdd173b0244534558d4e0c49df0f9b88555c0648773398e692b1d2d.webp": "/images/photo-library/design/c029bacf7bdd173b0244534558d4e0c49df0f9b88555c0648773398e692b1d2d.webp",
+    "https://assets.chungdoi.com/photo-library/design/6f6476d8c2c994dc2f06ec018d3ba595af7af9ba73338485ad3e2ccb62567dd2.webp": "/images/photo-library/design/6f6476d8c2c994dc2f06ec018d3ba595af7af9ba73338485ad3e2ccb62567dd2.webp",
+    "/images/themes/minimalism-purple/flower4b-decoration.webp": "/images/themes/minimalism-purple/flower4b-decoration.webp",
+    "/images/themes/minimalism-purple/cake.webp": "/images/themes/minimalism-purple/cake.webp",
+    "/images/themes/minimalism-purple/music.webp": "/images/themes/minimalism-purple/music.webp",
+    "/images/themes/minimalism-purple/church.webp": "/images/themes/minimalism-purple/church.webp",
+    "/images/envelope/minimalism_purple.webp": "/images/envelope/minimalism_purple.webp",
+    "/images/themes/minimalism-purple/flowerbottom-decoration.webp": "/images/themes/minimalism-purple/flowerbottom-decoration.webp"
+  },
+  "localMirroredCount": 22
 }

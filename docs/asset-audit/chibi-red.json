@@ -176,5 +176,36 @@
     "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh",
     "buttonText": "XÁC NHẬN / 確認出席",
     "screenshot": "rsvp_chibi-red.png"
-  }
+  },
+  "localPaths": {
+    "/images/themes/chibi_red/couple-main.webp": "/images/themes/chibi_red/couple-main.webp",
+    "/images/themes/chibi_red/decorative-flowers.webp": "/images/themes/chibi_red/decorative-flowers.webp",
+    "/images/themes/chibi_red/double-happiness.webp": "/images/themes/chibi_red/double-happiness.webp",
+    "/images/themes/chibi_red/decorative-header.webp": "/images/themes/chibi_red/decorative-header.webp",
+    "/images/themes/chibi_red/cherry-blossom.webp": "/images/themes/chibi_red/cherry-blossom.webp",
+    "https://assets.chungdoi.com/photo-library/design/a4ff34f28245dd56d68dbeb1c98083fab5e603903f89984a8073a25088944363.webp": "/images/photo-library/design/a4ff34f28245dd56d68dbeb1c98083fab5e603903f89984a8073a25088944363.webp",
+    "https://assets.chungdoi.com/photo-library/design/a3b7218405990166b37eba83ba9960ded1d875a12bba20e82fb76f5a55455ba5.webp": "/images/photo-library/design/a3b7218405990166b37eba83ba9960ded1d875a12bba20e82fb76f5a55455ba5.webp",
+    "https://assets.chungdoi.com/photo-library/design/b779896e150b38e807ad0f6d28107008d6249fbd0c31d61f96b8eac503d0de97.webp": "/images/photo-library/design/b779896e150b38e807ad0f6d28107008d6249fbd0c31d61f96b8eac503d0de97.webp",
+    "https://assets.chungdoi.com/photo-library/design/f35be905529f66a76da9d5c7081a7eaa511c0deaef2629177e90b242ec5f91c8.webp": "/images/photo-library/design/f35be905529f66a76da9d5c7081a7eaa511c0deaef2629177e90b242ec5f91c8.webp",
+    "https://assets.chungdoi.com/photo-library/design/e0c7d0646d5a03b5746148f99663c538d65caabfbfef7cafc1884f3f44f8fe85.webp": "/images/photo-library/design/e0c7d0646d5a03b5746148f99663c538d65caabfbfef7cafc1884f3f44f8fe85.webp",
+    "https://assets.chungdoi.com/photo-library/design/14de455b827730598b4935d35054cb365e3fc20d2193945a203f0b90e8898dec.webp": "/images/photo-library/design/14de455b827730598b4935d35054cb365e3fc20d2193945a203f0b90e8898dec.webp",
+    "https://assets.chungdoi.com/photo-library/design/7299932288a2ec6710a2cf41e39c88245ff5478a33cb981e8724d433dec6b3dc.webp": "/images/photo-library/design/7299932288a2ec6710a2cf41e39c88245ff5478a33cb981e8724d433dec6b3dc.webp",
+    "https://assets.chungdoi.com/photo-library/design/ad250afb44e63b676337f028989d76386ef358cf1b7c7b9d7323690ae19801e0.webp": "/images/photo-library/design/ad250afb44e63b676337f028989d76386ef358cf1b7c7b9d7323690ae19801e0.webp",
+    "https://assets.chungdoi.com/photo-library/design/df783114acd16c236ecd5b43eb97f7e47181edd59505bcbd1cfba8ba35c00d18.webp": "/images/photo-library/design/df783114acd16c236ecd5b43eb97f7e47181edd59505bcbd1cfba8ba35c00d18.webp",
+    "https://assets.chungdoi.com/photo-library/design/ede67bcd65ff00e9bbedd89ecf14b078c25059ed5ba97736795c6c28796f294e.webp": "/images/photo-library/design/ede67bcd65ff00e9bbedd89ecf14b078c25059ed5ba97736795c6c28796f294e.webp",
+    "https://assets.chungdoi.com/photo-library/design/6ce732ca77a287ce4e80e77ed1511121dda66e76883c44bcdf1e648be8c1aa2f.webp": "/images/photo-library/design/6ce732ca77a287ce4e80e77ed1511121dda66e76883c44bcdf1e648be8c1aa2f.webp",
+    "https://assets.chungdoi.com/photo-library/design/6e65338c0ad5e69bd7c77a0d1f7b8eeee482df3261a8ab258a1fdc5fe65d6fec.webp": "/images/photo-library/design/6e65338c0ad5e69bd7c77a0d1f7b8eeee482df3261a8ab258a1fdc5fe65d6fec.webp",
+    "https://assets.chungdoi.com/photo-library/design/3503aff623b64b8b65fdf37385f1f1ff24a18ac47d9ba0d58b2276efa448c26f.webp": "/images/photo-library/design/3503aff623b64b8b65fdf37385f1f1ff24a18ac47d9ba0d58b2276efa448c26f.webp",
+    "/images/themes/chibi_red/decorative-dragon.webp": "/images/themes/chibi_red/decorative-dragon.webp",
+    "/images/themes/chibi_red/decorative-diamond.webp": "/images/themes/chibi_red/decorative-diamond.webp",
+    "/images/giftbox/mini/song_hy_v2_red.webp": "/images/giftbox/mini/song_hy_v2_red.webp",
+    "/images/giftbox/mini/crystal_floral_red.webp": "/images/giftbox/mini/crystal_floral_red.webp",
+    "/images/giftbox/mini/double_dragon_red.webp": "/images/giftbox/mini/double_dragon_red.webp",
+    "/images/giftbox/mini/nhat_binh_red.webp": "/images/giftbox/mini/nhat_binh_red.webp",
+    "/images/giftbox/chibi_red.webp": "/images/giftbox/chibi_red.webp",
+    "/images/giftbox/mini/glass_garden_green.webp": "/images/giftbox/mini/glass_garden_green.webp",
+    "/images/giftbox/mini/hoa_dai_pink.webp": "/images/giftbox/mini/hoa_dai_pink.webp",
+    "/images/giftbox/mini/minimalism_darkred.webp": "/images/giftbox/mini/minimalism_darkred.webp"
+  },
+  "localMirroredCount": 28
 }

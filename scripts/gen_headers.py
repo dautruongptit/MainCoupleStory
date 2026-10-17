@@ -68,8 +68,11 @@ class Conv(HTMLParser):
             v = v or ""
             if k == "style":
                 a.append(f"style={style_obj(v)}")
-            elif k == "src" and v.startswith("https://assets.chungdoi.com/photo-library"):
-                a.append("src={photo}")
+            elif (k in ("src", "href", "xlinkHref", "xlink:href")) and "assets.chungdoi.com/photo-library" in v:
+                a.append(f"{k}={{photo}}")
+            elif "assets.chungdoi.com/" in v:
+                local_v = re.sub(r"^https?://assets\.chungdoi\.com/(photo-library/|template-previews/)", r"/images/\1", v)
+                a.append(f'{attr_name(k)}={{{json.dumps(local_v)}}}')
             elif k == "src" and v.startswith("/"):
                 a.append(f'src={{"{v}"}}')
             elif k in ("data-showcase-root", "data-showcase-keep", "data-video-hide") or k.startswith("data-") or k in ("sizes", "srcset", "loading", "decoding", "fetchpriority", "crossorigin"):

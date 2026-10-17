@@ -120,5 +120,19 @@
     "verified": true,
     "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
     "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
-  }
+  },
+  "localPaths": {
+    "/images/themes/longphung-v2-red/rong-phuong.webp": "/images/themes/longphung-v2-red/rong-phuong.webp",
+    "/images/themes/longphung-v2-red/chu-hy.webp": "/images/themes/longphung-v2-red/chu-hy.webp",
+    "/images/themes/longphung-v2-red/phuong.webp": "/images/themes/longphung-v2-red/phuong.webp",
+    "/images/themes/longphung-v2-red/rong.webp": "/images/themes/longphung-v2-red/rong.webp",
+    "/images/themes/longphung-v2-red/cloud.webp": "/images/themes/longphung-v2-red/cloud.webp",
+    "https://assets.chungdoi.com/photo-library/design/fd01729893ce023ac894c8302b8d16cead8f4c89ce8c7e492d10ce4cea6593f0.webp": "/images/photo-library/design/fd01729893ce023ac894c8302b8d16cead8f4c89ce8c7e492d10ce4cea6593f0.webp",
+    "https://assets.chungdoi.com/photo-library/design/b8a157fcf5347aa5338ddd1f4b0e42573470d239cd52cb8ed2363836c4c2873e.webp": "/images/photo-library/design/b8a157fcf5347aa5338ddd1f4b0e42573470d239cd52cb8ed2363836c4c2873e.webp",
+    "https://assets.chungdoi.com/photo-library/design/a277b0164f5fa8e28aef07b3077418098767273a8f46f75bcda90e123557ad7c.webp": "/images/photo-library/design/a277b0164f5fa8e28aef07b3077418098767273a8f46f75bcda90e123557ad7c.webp",
+    "https://assets.chungdoi.com/photo-library/design/fe753f131f794f09aee4410d4263a740ea31602cbd4402e068e867e0cc4bd7aa.webp": "/images/photo-library/design/fe753f131f794f09aee4410d4263a740ea31602cbd4402e068e867e0cc4bd7aa.webp",
+    "/images/envelope/dragon_phoenix_v2.webp": "/images/envelope/dragon_phoenix_v2.webp",
+    "/images/themes/longphung-v2-red/bg-frame.jpg": "/images/themes/longphung-v2-red/bg-frame.jpg"
+  },
+  "localMirroredCount": 11
 }

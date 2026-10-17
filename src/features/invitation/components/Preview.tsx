@@ -6,6 +6,7 @@ import { getCoverComponent } from "@/features/invitation/components/covers";
 import { GENERATED_HEADERS } from "@/features/invitation/components/generated/headers";
 import AlbumGallery from "@/features/invitation/components/AlbumGallery";
 import { getThemeBackgroundUrl, getThemeDecorations, getTemplateManifest } from "@/features/templates/data/themeManifest";
+import { assetUrl } from "@/services/asset";
 import type { Inv } from "@/types/invitation";
 import { brideShown, groomShown } from "@/utils/format";
 import {
@@ -356,7 +357,7 @@ export default function Preview({
 
           {/* -------------------- HERO SECTION -------------------- */}
           {GENERATED_HEADERS[d.templateId] ? (
-            GENERATED_HEADERS[d.templateId]({ groom: gName, bride: bName, intro, photo: !d.heroOn ? undefined : d.heroPhoto || d.photos[0] || "https://assets.chungdoi.com/photo-library/design/cdecf6cfe2eeb3cfd63829abde62f1066f10a364ec27d4c997c0f51012c8803e.webp" })
+            GENERATED_HEADERS[d.templateId]({ groom: gName, bride: bName, intro, photo: !d.heroOn ? undefined : d.heroPhoto || d.photos[0] || assetUrl("/images/photo-library/design/cdecf6cfe2eeb3cfd63829abde62f1066f10a364ec27d4c997c0f51012c8803e.webp") })
           ) : isLongPhungV2 ? (
             <LongPhungHeader groom={gName} bride={bName} />
           ) : isMinimalism ? (

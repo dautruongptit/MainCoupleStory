@@ -149,5 +149,29 @@
     "verified": true,
     "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
     "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
-  }
+  },
+  "localPaths": {
+    "https://assets.chungdoi.com/photo-library/design/d58f6f7cc781c53023ea0eadc1b357a3674a332eb70552546c61af69f0b221b5.webp": "/images/photo-library/design/d58f6f7cc781c53023ea0eadc1b357a3674a332eb70552546c61af69f0b221b5.webp",
+    "/images/themes/baroque-v2-dark-green/frame.webp": "/images/themes/baroque-v2-dark-green/frame.webp",
+    "/images/themes/baroque-v2-dark-green/golden-line-decoration.webp": "/images/themes/baroque-v2-dark-green/golden-line-decoration.webp",
+    "/images/themes/baroque-v2-dark-green/flower5-decoration.webp": "/images/themes/baroque-v2-dark-green/flower5-decoration.webp",
+    "/images/themes/baroque-v2-dark-green/line3-decoration.webp": "/images/themes/baroque-v2-dark-green/line3-decoration.webp",
+    "/images/themes/baroque-v2-dark-green/line2-decoration.webp": "/images/themes/baroque-v2-dark-green/line2-decoration.webp",
+    "/images/themes/baroque-v2-dark-green/line4-decoration.webp": "/images/themes/baroque-v2-dark-green/line4-decoration.webp",
+    "https://assets.chungdoi.com/photo-library/design/cf6f9bcff1184911ece986d8c4ada988b258ec0dcf655ca18d5bca20d4de4b21.webp": "/images/photo-library/design/cf6f9bcff1184911ece986d8c4ada988b258ec0dcf655ca18d5bca20d4de4b21.webp",
+    "https://assets.chungdoi.com/photo-library/design/b77044ed7b0c90ff4cb15bc94621ecaf0c81622ef6bae2d386d85682a34bccb7.webp": "/images/photo-library/design/b77044ed7b0c90ff4cb15bc94621ecaf0c81622ef6bae2d386d85682a34bccb7.webp",
+    "https://assets.chungdoi.com/photo-library/design/da38d00c9262fd73899fcce5add329960ee6fb88752c262306188049c0cbc013.webp": "/images/photo-library/design/da38d00c9262fd73899fcce5add329960ee6fb88752c262306188049c0cbc013.webp",
+    "https://assets.chungdoi.com/photo-library/design/6064a6cf240e30e3582c5054162d41e3b5b8f2c6b0333f6086361e6a7d954800.webp": "/images/photo-library/design/6064a6cf240e30e3582c5054162d41e3b5b8f2c6b0333f6086361e6a7d954800.webp",
+    "https://assets.chungdoi.com/photo-library/design/a22a6f4d711adbc963b9a21e319427a22eb4c91e92d275e47de749296257c20d.webp": "/images/photo-library/design/a22a6f4d711adbc963b9a21e319427a22eb4c91e92d275e47de749296257c20d.webp",
+    "https://assets.chungdoi.com/photo-library/design/a15c8dccb70e24a5e2295befc004a52b3dae7a7fe38a5094bcc2153f21e052b7.webp": "/images/photo-library/design/a15c8dccb70e24a5e2295befc004a52b3dae7a7fe38a5094bcc2153f21e052b7.webp",
+    "https://assets.chungdoi.com/photo-library/design/bf78ccd84012d6c8cb10db0be587775d0abb5f2798064bf3a2ac6d7afa487f5c.webp": "/images/photo-library/design/bf78ccd84012d6c8cb10db0be587775d0abb5f2798064bf3a2ac6d7afa487f5c.webp",
+    "/images/themes/baroque-v2-dark-green/flower3-decoration.webp": "/images/themes/baroque-v2-dark-green/flower3-decoration.webp",
+    "/images/themes/baroque-v2-dark-green/flower4-decoration.webp": "/images/themes/baroque-v2-dark-green/flower4-decoration.webp",
+    "/images/themes/baroque-v2-dark-green/bride-broom.webp": "/images/themes/baroque-v2-dark-green/bride-broom.webp",
+    "/images/themes/baroque-v2-dark-green/cake.webp": "/images/themes/baroque-v2-dark-green/cake.webp",
+    "/images/themes/baroque-v2-dark-green/alcohol.webp": "/images/themes/baroque-v2-dark-green/alcohol.webp",
+    "/images/envelope/baroque_v2_darkgreen.webp": "/images/envelope/baroque_v2_darkgreen.webp",
+    "/images/themes/baroque-v2-dark-green/bg.webp": "/images/themes/baroque-v2-dark-green/bg.webp"
+  },
+  "localMirroredCount": 21
 }

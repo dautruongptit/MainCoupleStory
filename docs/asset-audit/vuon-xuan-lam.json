@@ -151,5 +151,24 @@
     "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh",
     "buttonText": "XÁC NHẬN / 참석 확인",
     "screenshot": "rsvp_vuon-xuan-lam.png"
-  }
+  },
+  "localPaths": {
+    "https://assets.chungdoi.com/photo-library/design/36aa1ebc2c17266ac8d95f341a54b0129add361a662b834f4e220b5ff821224f.webp": "/images/photo-library/design/36aa1ebc2c17266ac8d95f341a54b0129add361a662b834f4e220b5ff821224f.webp",
+    "https://assets.chungdoi.com/photo-library/design/27398becd17b16dff09deae115115da755c51fc4361fbd9e3982f5ce363d420e.webp": "/images/photo-library/design/27398becd17b16dff09deae115115da755c51fc4361fbd9e3982f5ce363d420e.webp",
+    "https://assets.chungdoi.com/photo-library/design/c6d71c71bb378cb3ad559815bcfc69a9a0ede203f346add30e285f2068e51eef.webp": "/images/photo-library/design/c6d71c71bb378cb3ad559815bcfc69a9a0ede203f346add30e285f2068e51eef.webp",
+    "https://assets.chungdoi.com/photo-library/design/2cf7761e1a82ae21ec1822986ad1911f49bf5c30fb7156d11f6b80b0964d2795.webp": "/images/photo-library/design/2cf7761e1a82ae21ec1822986ad1911f49bf5c30fb7156d11f6b80b0964d2795.webp",
+    "https://assets.chungdoi.com/photo-library/design/e2dbcd209355b97c37755887b8e47a2277af86df8d6e633faee22a8e8cc9ea95.webp": "/images/photo-library/design/e2dbcd209355b97c37755887b8e47a2277af86df8d6e633faee22a8e8cc9ea95.webp",
+    "/images/giftbox/mini/dragon_phoenix.webp": "/images/giftbox/mini/dragon_phoenix.webp",
+    "/images/giftbox/mini/hoa_kho_orange.webp": "/images/giftbox/mini/hoa_kho_orange.webp",
+    "/images/giftbox/mini/applique_lace_white.webp": "/images/giftbox/mini/applique_lace_white.webp",
+    "/images/giftbox/mini/crystal_floral_red.webp": "/images/giftbox/mini/crystal_floral_red.webp",
+    "/images/giftbox/spring_garden_blue.webp": "/images/giftbox/spring_garden_blue.webp",
+    "/images/giftbox/mini/hoa_tinh_red.webp": "/images/giftbox/mini/hoa_tinh_red.webp",
+    "/images/giftbox/mini/song_hy_v2_red.webp": "/images/giftbox/mini/song_hy_v2_red.webp",
+    "/images/giftbox/mini/boho_floral_green.webp": "/images/giftbox/mini/boho_floral_green.webp",
+    "/images/themes/vuon xuan blue/button.webp": "/images/themes/vuon xuan blue/button.webp",
+    "/images/themes/vuon xuan blue/top.webp": "/images/themes/vuon xuan blue/top.webp",
+    "/images/themes/vuon xuan blue/mid.webp": "/images/themes/vuon xuan blue/mid.webp"
+  },
+  "localMirroredCount": 16
 }

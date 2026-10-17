@@ -146,5 +146,26 @@
     "verified": true,
     "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
     "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
-  }
+  },
+  "localPaths": {
+    "/images/themes/song-hy-red/sunburst.svg": "/images/themes/song-hy-red/sunburst.svg",
+    "/images/themes/song-hy-red/chu-hy.webp": "/images/themes/song-hy-red/chu-hy.webp",
+    "https://assets.chungdoi.com/photo-library/design/1a692a10a9d8830800b52d605d08baaf9061c541ffeb16b312b649d4fd03528a.webp": "/images/photo-library/design/1a692a10a9d8830800b52d605d08baaf9061c541ffeb16b312b649d4fd03528a.webp",
+    "https://assets.chungdoi.com/photo-library/design/89cfbef4d47935827e43b1c111f6c95e21b18c0a61559f9caa248db93836604c.webp": "/images/photo-library/design/89cfbef4d47935827e43b1c111f6c95e21b18c0a61559f9caa248db93836604c.webp",
+    "https://assets.chungdoi.com/photo-library/design/e370bd17bc055dce392f7be06f885cc8797232b41af0a0f49b37c6149fd8dead.webp": "/images/photo-library/design/e370bd17bc055dce392f7be06f885cc8797232b41af0a0f49b37c6149fd8dead.webp",
+    "https://assets.chungdoi.com/photo-library/design/388da41a764440ccfe38882e3b861ecddda280967acaa9971618d9c8de91336c.webp": "/images/photo-library/design/388da41a764440ccfe38882e3b861ecddda280967acaa9971618d9c8de91336c.webp",
+    "https://assets.chungdoi.com/photo-library/design/c3721ba4794f99ffa73f705d9a02d1f39e540d588f1a8963365510dbc6462218.webp": "/images/photo-library/design/c3721ba4794f99ffa73f705d9a02d1f39e540d588f1a8963365510dbc6462218.webp",
+    "https://assets.chungdoi.com/photo-library/design/282cf6657c44f30c29c29739120353328a94a875a27c8e24835eae7fed805d4b.webp": "/images/photo-library/design/282cf6657c44f30c29c29739120353328a94a875a27c8e24835eae7fed805d4b.webp",
+    "https://assets.chungdoi.com/photo-library/design/c8ee2f5c55f9de2e7219b6d37390cbd5791a9d82fec9807b8c07017c510f8478.webp": "/images/photo-library/design/c8ee2f5c55f9de2e7219b6d37390cbd5791a9d82fec9807b8c07017c510f8478.webp",
+    "https://assets.chungdoi.com/photo-library/design/34e0630b1ff5ae7f2915361c5100c4dcf7f4956412172728143879df46829091.webp": "/images/photo-library/design/34e0630b1ff5ae7f2915361c5100c4dcf7f4956412172728143879df46829091.webp",
+    "/images/giftbox/mini/porcelain_brown.webp": "/images/giftbox/mini/porcelain_brown.webp",
+    "/images/giftbox/mini/dragon_phoenix_v4_red.webp": "/images/giftbox/mini/dragon_phoenix_v4_red.webp",
+    "/images/giftbox/mini/minimalism_darkred.webp": "/images/giftbox/mini/minimalism_darkred.webp",
+    "/images/giftbox/mini/spring_garden_blue.webp": "/images/giftbox/mini/spring_garden_blue.webp",
+    "/images/giftbox/song_hy_red.webp": "/images/giftbox/song_hy_red.webp",
+    "/images/giftbox/mini/glass_garden_pink.webp": "/images/giftbox/mini/glass_garden_pink.webp",
+    "/images/giftbox/mini/mahal_gold.webp": "/images/giftbox/mini/mahal_gold.webp",
+    "/images/giftbox/mini/silk_ribbon_darkred.webp": "/images/giftbox/mini/silk_ribbon_darkred.webp"
+  },
+  "localMirroredCount": 18
 }

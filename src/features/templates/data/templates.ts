@@ -1,3 +1,5 @@
+import { assetUrl } from "@/services/asset";
+
 export type Tpl = {
   slug: string;
   /** mã mẫu dùng trong ?template= */
@@ -12,8 +14,8 @@ export type Tpl = {
   introDefault?: string;
 };
 
-/** Kho mẫu thiệp (nguồn: chungdoi.com/vi/mau-thiep, đúng thứ tự trên trang). Ảnh lấy từ assets.chungdoi.com. */
-export const TPL_CDN = "https://assets.chungdoi.com/template-previews/vi/";
+/** Kho mẫu thiệp (nguồn: chungdoi.com/vi/mau-thiep, đúng thứ tự trên trang). */
+export const TPL_CDN = assetUrl("/template-previews/vi/");
 
 export const TEMPLATES: Tpl[] = [
   {"slug": "minimalism-do-dam", "id": "minimalism_darkred", "name": "Minimalism - Đỏ Đậm", "desc": "Tối giản sang trọng với nền kem, tông đỏ đô, hoa mẫu đơn và dấu sáp trái tim", "img": "listing/minimalism_darkred.d60d4ed8.webp", "full": "full/minimalism_darkred.4496816d.webp", "badge": "hot", "tags": ["Tối giản", "Đỏ Đậm", "Sang trọng"]},
