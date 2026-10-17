@@ -149,27 +149,17 @@ export function useEnvelopeOpen(onOpen: () => void) {
   const triggerOpen = useCallback(() => {
     if (isOpening) return;
 
-    // Check if user prefers reduced motion
-    const prefersReduced =
-      typeof window !== "undefined" &&
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-    if (prefersReduced) {
-      onOpen();
-      return;
-    }
-
     setIsOpening(true);
 
-    // Phase 2: Seal breaks, card flies away, burst particles erupt at ~450ms
+    // Phase 2: Seal breaks, card flies away, burst particles erupt at ~180ms
     setTimeout(() => {
       setShowBurst(true);
-    }, 450);
+    }, 180);
 
-    // Phase 3: Transition finishes at ~1250ms -> mount opened invitation
+    // Phase 3: Transition finishes at ~850ms -> mount opened invitation
     setTimeout(() => {
       onOpen();
-    }, 1250);
+    }, 850);
   }, [isOpening, onOpen]);
 
   return { isOpening, showBurst, triggerOpen };

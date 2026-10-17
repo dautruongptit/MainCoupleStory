@@ -65,7 +65,6 @@ export default function TemplateModal({ tpl, onClose }: { tpl: Tpl; onClose: () 
           <p className="tm-desc">{tpl.desc}</p>
           <div className="tm-tags">
             {tpl.tags.map((t) => <span key={t}>{t}</span>)}
-            {themeAssets.length > 0 && <span className="tm-tag-asset">✨ {themeAssets.length} họa tiết</span>}
           </div>
         </div>
 
@@ -80,7 +79,6 @@ export default function TemplateModal({ tpl, onClose }: { tpl: Tpl; onClose: () 
             <p className="tm-desc">{tpl.desc}</p>
             <div className="tm-tags">
               {tpl.tags.map((t) => <span key={t}>{t}</span>)}
-              {themeAssets.length > 0 && <span className="tm-tag-asset">✨ {themeAssets.length} họa tiết</span>}
             </div>
           </div>
           <h3>Tính năng</h3>
