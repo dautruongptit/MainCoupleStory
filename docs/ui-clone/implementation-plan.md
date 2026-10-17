@@ -149,3 +149,8 @@ Dùng công cụ sẵn có (`tsc`, `vite build`, trình duyệt tự động). T
 4. Có file logo gốc và font không? (G11, G13)
 5. Có cần chế độ sáng/tối thật không? (G12)
 6. Commit các thay đổi hiện có trước khi bắt đầu bước 1 chứ?
+
+## Giao diện sáng/tối (2026-10-17)
+
+Nút mặt trời/trăng trên thanh trên đổi giao diện, lưu ở localStorage `chungdoi.theme` (mặc định tối). Cách làm: các màu nền/chữ/viền cứng trong `styles.css` và `pages.css` được đổi sang biến CSS (`--s1…--s6`, `--fg`, `--fgrgb`, `--bcrgb`, `--inkrgb`, `--k`, `--b1`, `--b2`, `--bc`, `--nav`) bằng script chuyển đổi một lần; `html[data-theme="light"]` ghi đè bộ biến. Thiệp xem trước/demo giữ bảng màu gốc. Đã chụp so ở chế độ sáng: Home, Dashboard, editor, modal Đổi mẫu; chế độ tối không đổi so với trước.
+Chưa kiểm tra chế độ sáng: Khách Mời, Account, Pricing, modal chia sẻ/QR/đăng nhập/nhạc/cắt ảnh, mobile, tour. Không có ảnh chuẩn cho chế độ sáng trên desktop, nên bảng màu sáng do tôi chọn (nền kem `#f6f2ee`, thẻ trắng).
