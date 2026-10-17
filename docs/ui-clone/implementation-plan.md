@@ -154,3 +154,7 @@ Dùng công cụ sẵn có (`tsc`, `vite build`, trình duyệt tự động). T
 
 Nút mặt trời/trăng trên thanh trên đổi giao diện, lưu ở localStorage `chungdoi.theme` (mặc định tối). Cách làm: các màu nền/chữ/viền cứng trong `styles.css` và `pages.css` được đổi sang biến CSS (`--s1…--s6`, `--fg`, `--fgrgb`, `--bcrgb`, `--inkrgb`, `--k`, `--b1`, `--b2`, `--bc`, `--nav`) bằng script chuyển đổi một lần; `html[data-theme="light"]` ghi đè bộ biến. Thiệp xem trước/demo giữ bảng màu gốc. Đã chụp so ở chế độ sáng: Home, Dashboard, editor, modal Đổi mẫu; chế độ tối không đổi so với trước.
 Chưa kiểm tra chế độ sáng: Khách Mời, Account, Pricing, modal chia sẻ/QR/đăng nhập/nhạc/cắt ảnh, mobile, tour. Không có ảnh chuẩn cho chế độ sáng trên desktop, nên bảng màu sáng do tôi chọn (nền kem `#f6f2ee`, thẻ trắng).
+
+## Bảng màu theo mẫu (2026-10-17)
+
+`src/templateThemes.ts`: nền, màu chữ chính và nền màn mở thiệp của 67/75 mẫu, trích từ HTML trang demo thật; Preview áp qua biến `--inv-bg/--inv-ink/--inv-rgb/--inv-cover`. Mẫu không phải tông đỏ ẩn hoạ tiết phượng/hoa đỏ của Song Phụng nên phần đầu thiệp chỉ còn tên và dải màu. 8 mẫu không trích được màu (Song Hỷ Đỏ, Song Long ×3, Vườn Xuân ×3) giữ màu đỏ mặc định. **Đây không phải bố cục riêng**: hoạ tiết, ảnh nền và bố cục riêng của 67 mẫu vẫn chưa dựng; mỗi mẫu cần dựng từ HTML thật và tải ảnh riêng.

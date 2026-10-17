@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { introDefaultFor } from "./templates";
+import { TEMPLATE_THEMES } from "./templateThemes";
 import { LongPhungCover, LongPhungHeader } from "./LongPhungV2";
 import { DarkRedCover, DarkRedHeader } from "./MinimalismDarkRed";
 import {
@@ -30,6 +31,13 @@ export default function Preview({
 
   const intro = d.introCustom && d.introText.trim() ? d.introText.trim() : introDefaultFor(d.templateId);
   const isMinimalism = (d.templateId || "").includes("minimalism") || (d.templateName || "").includes("Minimalism");
+  // 4 mẫu đã dựng riêng giữ nguyên màu của mình; các mẫu khác lấy bảng màu theo mẫu
+  const bespoke = ["minimalism_brown", "minimalism_darkred", "song_hy_green", "dragon_phoenix_v2_red"].includes(d.templateId);
+  const palette = bespoke ? undefined : TEMPLATE_THEMES[d.templateId];
+  const red = palette ? (() => { const [r, g, b] = palette.rgb.split(",").map(Number); return r > g * 1.5 && r > b * 1.5; })() : true;
+  const paletteVars = palette
+    ? ({ "--inv-bg": palette.bg, "--inv-ink": palette.ink, "--inv-rgb": palette.rgb, "--inv-cover": palette.cover } as React.CSSProperties)
+    : undefined;
   const isDarkRed = d.templateId === "minimalism_darkred";
   const isLongPhungV2 = d.templateId === "dragon_phoenix_v2_red";
   const isSongHy = (d.templateId || "").includes("song_hy") || (d.templateName || "").includes("Song Hỷ");
@@ -148,7 +156,7 @@ export default function Preview({
     d.gifts.find((g) => g.who === activeBankTab) || d.gifts[0] || null;
 
   return (
-    <div className={`pv-wrapper ${standalone ? "is-standalone" : ""} ${isMinimalism ? "theme-minimalism" : isSongHy ? "theme-songhy" : isLongPhungV2 ? "theme-longphung-v2" : "theme-songphung"}`}>
+    <div style={paletteVars} className={`pv-wrapper ${red ? "" : "palette-plain"} ${standalone ? "is-standalone" : ""} ${isMinimalism ? "theme-minimalism" : isSongHy ? "theme-songhy" : isLongPhungV2 ? "theme-longphung-v2" : "theme-songphung"}`}>
       {/* ==================== 1. MÀN HÌNH BÌ THƯ (ENVELOPE) ==================== */}
       {!isOpen && (
         isDarkRed ? (
@@ -567,20 +575,20 @@ export default function Preview({
           ) : (
             /* Hero cho Song Phụng - Đỏ */
             <header className="relative flex flex-col items-center justify-center text-center z-10 pt-12 md:pt-16 pb-[200px] md:pb-[220px] lg:pb-[240px]">
-              <div className="w-full text-[36px] md:text-[44px] lg:text-[52px] mb-6 md:mb-8 text-left pl-6 md:pl-8 md:ml-[80px] lg:ml-[80px] uppercase" style={{ color: "#710001", fontFamily: '"Playfair Display", serif', lineHeight: 1.11, fontWeight: 400 }}>
+              <div className="w-full text-[36px] md:text-[44px] lg:text-[52px] mb-6 md:mb-8 text-left pl-6 md:pl-8 md:ml-[80px] lg:ml-[80px] uppercase" style={{ color: "var(--inv-ink, #710001)", fontFamily: '"Playfair Display", serif', lineHeight: 1.11, fontWeight: 400 }}>
                 <div className="ml-[15px]">{n1}</div>
                 <div className="ml-[50px] mt-[10px]">{n2}</div>
               </div>
               <div className="relative w-full flex items-center justify-center mb-4 md:mb-6 h-[260px] md:h-[488px] lg:h-[488px]">
-                <div className="absolute w-full h-[110px] md:h-[206px] lg:h-[206px] z-0" style={{ backgroundColor: "#710001", top: "50%" }} />
+                <div className="absolute w-full h-[110px] md:h-[206px] lg:h-[206px] z-0" style={{ backgroundColor: "var(--inv-ink, #710001)", top: "50%" }} />
                 <div className="absolute left-[-90px] md:left-[-169px] lg:left-[-169px] top-0 w-[230px] md:w-[431px] lg:w-[431px] h-[480px] md:h-[900px] lg:h-[900px] z-10">
-                  <img src="/images/themes/songphung-red/Phuong%202.webp" alt="Phoenix Left" className="w-full h-full object-contain" style={{ objectPosition: "left center" }} />
+                  <img data-art="1" src="/images/themes/songphung-red/Phuong%202.webp" alt="Phoenix Left" className="w-full h-full object-contain" style={{ objectPosition: "left center" }} />
                 </div>
                 <div className="relative z-20 w-[155px] h-[155px] md:w-[291px] md:h-[291px] lg:w-[291px] lg:h-[291px]">
-                  <img src="/images/themes/songphung-red/CHU%20HY.webp" alt="Chữ Hỷ" className="w-full h-full object-contain" />
+                  <img data-art="1" src="/images/themes/songphung-red/CHU%20HY.webp" alt="Chữ Hỷ" className="w-full h-full object-contain" />
                 </div>
                 <div className="absolute left-[calc(50%+77.5px)] md:left-[calc(50%+145.5px)] lg:left-[calc(50%+145.5px)] top-[-120px] md:top-[-225px] lg:top-[-225px] w-[155px] md:w-[291px] lg:w-[291px] h-[320px] md:h-[600px] lg:h-[600px] z-10">
-                  <img src="/images/themes/songphung-red/Phuong.webp" alt="Phoenix Right" className="w-full h-full object-contain" style={{ objectPosition: "right center" }} />
+                  <img data-art="1" src="/images/themes/songphung-red/Phuong.webp" alt="Phoenix Right" className="w-full h-full object-contain" style={{ objectPosition: "right center" }} />
                 </div>
               </div>
             </header>
@@ -591,7 +599,7 @@ export default function Preview({
             {/* Flower Accent top-right for traditional theme */}
             {!isMinimalism && !isSongHy && (
               <div className="absolute right-0 top-[-220px] md:top-[-270px] lg:top-[-290px] w-[192px] md:w-[360px] lg:w-[360px] h-auto opacity-100 pointer-events-none z-[5]">
-                <img src="/images/themes/songphung-red/HOA.webp" alt="" className="w-full h-auto object-contain" />
+                <img data-art="1" src="/images/themes/songphung-red/HOA.webp" alt="" className="w-full h-auto object-contain" />
               </div>
             )}
 
