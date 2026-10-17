@@ -94,3 +94,10 @@ Tổng 11 tệp tải về, khoảng 1,6 MB, nguồn `https://chungdoi.com/`, t�
 Phát hiện thêm khi kiểm tra: phần đầu thiệp Song Phụng (`.sp-hero`) trước đây được viết khi ảnh chưa từng hiển thị, nên khi ảnh tải được thì bố cục lệch (phượng đè lên chữ). Đã dựng lại phần đầu theo HTML trang thật (`song-phung-do/demo?open=1`) bằng class Tailwind, và đặt khung thiệp rộng 900 px ở màn hình từ 768 px trở lên, 480 px ở mobile. Đã so với trang thật ở 390 px: khớp bố cục tên, dải đỏ, chữ Hỷ và hai phượng. Vị trí đóa hoa trong mục "Thông tin lễ cưới" còn lệch nhẹ so với trang thật.
 
 Còn lại: M10 (72 mẫu dùng bố cục chung), và các màn hình mobile chưa chụp so ở mục 5.
+
+## 9. Kết quả "Bước 1" dọn dở (2026-10-17)
+
+- Thêm `npm run check:assets` (`scripts/check-assets.mjs`): báo lỗi nếu mã nhúng ảnh trực tiếp từ `https://chungdoi.com/(images|icons)/` (bị chặn) hoặc trỏ tới tệp `public/` không tồn tại. Đã thử bằng một tệp giả: bắt được cả hai loại lỗi; hiện 30 tệp quét, 0 vấn đề. Chưa có bộ test trình duyệt tự động.
+- Đóa hoa mục "Thông tin lễ cưới" của Song Phụng dựng lại theo toạ độ HTML trang thật; ở 390 px nằm trên bên phải tiêu đề như trang thật.
+- Chụp so ở 390 px: modal thêm ngân hàng, kiểm tra xuất bản, đổi mẫu (3 cột, không tràn ngang). Nút/nhãn đang chọn của modal ngân hàng đổi từ đỏ `#e11d48` sang hồng thương hiệu `#ff0080`. Modal ngân hàng vẫn dùng nền trắng trong khi modal khác nền tối; ảnh chuẩn modal này (014125) cũng nền trắng nên giữ nguyên.
+- Chưa làm: mẫu Baroque (chưa mở để chụp), 72 mẫu còn lại, giao diện sáng.

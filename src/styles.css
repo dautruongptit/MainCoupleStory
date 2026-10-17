@@ -3775,7 +3775,7 @@ button:hover .igb-c8 { animation: igbConfettiFly8 1.1s ease-out 0.55s infinite; 
   align-items: center !important;
   justify-content: center !important;
   overflow: hidden !important;
-  background-color: rgba(225, 29, 72, 0.08) !important;
+  background-color: rgba(255, 0, 128, 0.08) !important;
 }
 .gift-bank-logo img {
   width: 100% !important;
@@ -5274,7 +5274,7 @@ button:hover .igb-c8 { animation: igbConfettiFly8 1.1s ease-out 0.55s infinite; 
   transition: all 0.15s;
 }
 .bank-who-chip.active {
-  background: #e11d48;
+  background: #ff0080;
   color: #ffffff;
 }
 .bank-form-input {
@@ -5290,7 +5290,7 @@ button:hover .igb-c8 { animation: igbConfettiFly8 1.1s ease-out 0.55s infinite; 
 }
 .bank-form-input:focus {
   outline: none;
-  border-color: #e11d48;
+  border-color: #ff0080;
 }
 .bank-selected-pink-card {
   background: #fdf2f8;
@@ -5385,7 +5385,7 @@ button:hover .igb-c8 { animation: igbConfettiFly8 1.1s ease-out 0.55s infinite; 
   padding: 8px 14px;
 }
 .bank-btn-save {
-  background: #e11d48;
+  background: #ff0080;
   color: #ffffff;
   border: 0;
   border-radius: 10px;
@@ -5396,7 +5396,7 @@ button:hover .igb-c8 { animation: igbConfettiFly8 1.1s ease-out 0.55s infinite; 
   transition: background 0.15s;
 }
 .bank-btn-save:hover {
-  background: #be123c;
+  background: #e6007a;
 }
 .share-menu-content {
   flex: 1;

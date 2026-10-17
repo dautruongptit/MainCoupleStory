@@ -577,11 +577,9 @@ export default function Preview({
           <section className="sp-section sp-family-sec">
             {/* Flower Accent top-right for traditional theme */}
             {!isMinimalism && !isSongHy && (
-              <img
-                src="/images/themes/songphung-red/HOA.webp"
-                alt=""
-                className="sp-flower-corner"
-              />
+              <div className="absolute right-0 top-[-220px] md:top-[-270px] lg:top-[-290px] w-[192px] md:w-[360px] lg:w-[360px] h-auto opacity-100 pointer-events-none z-[5]">
+                <img src="/images/themes/songphung-red/HOA.webp" alt="" className="w-full h-auto object-contain" />
+              </div>
             )}
 
             {d.familyOn && (

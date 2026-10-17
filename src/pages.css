@@ -1923,12 +1923,12 @@
   transform: translate(-50%, -50%);
   width: 40px;
   height: 28px;
-  background: #e11d48;
+  background: #ff0080;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(225, 29, 72, 0.5);
+  box-shadow: 0 4px 12px rgba(255, 0, 128, 0.5);
   cursor: pointer;
   z-index: 10;
   transition: transform 0.2s;
