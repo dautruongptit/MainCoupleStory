@@ -2,7 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { introDefaultFor } from "./templates";
 import { TEMPLATE_THEMES } from "./templateThemes";
 import { LongPhungCover, LongPhungHeader } from "./LongPhungV2";
-import { DarkRedCover, DarkRedHeader } from "./MinimalismDarkRed";
+import { DarkRedCover } from "./MinimalismDarkRed";
+import { GENERATED_HEADERS } from "./generated/headers";
 import {
   Inv,
   brideShown,
@@ -457,8 +458,8 @@ export default function Preview({
           )}
 
           {/* -------------------- HERO SECTION -------------------- */}
-          {isDarkRed ? (
-            <DarkRedHeader groom={gName} bride={bName} intro={intro} photo={d.heroPhoto || d.photos[0]} />
+          {GENERATED_HEADERS[d.templateId] ? (
+            GENERATED_HEADERS[d.templateId]({ groom: gName, bride: bName, intro, photo: d.heroPhoto || d.photos[0] || "https://assets.chungdoi.com/photo-library/design/cdecf6cfe2eeb3cfd63829abde62f1066f10a364ec27d4c997c0f51012c8803e.webp" })
           ) : isLongPhungV2 ? (
             <LongPhungHeader groom={gName} bride={bName} />
           ) : isMinimalism ? (

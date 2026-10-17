@@ -5,6 +5,7 @@ import { initTheme } from "./theme";
 import "./styles.css";
 import "./pages.css";
 import "./tw.css";
+import "./generated/headers.css";
 
 initTheme();
 

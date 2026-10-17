@@ -61,3 +61,11 @@ Trạng thái trong app: 4 mẫu có bố cục riêng (Minimalism Nâu, Minimal
 4. Các dòng đơn lẻ (23 dòng, mỗi dòng 1 mẫu) làm sau cùng.
 
 Mỗi dòng cần: dựng lại từ HTML thật, tải ảnh riêng (khoảng 1 đến 2 MB/biến thể, cần bạn đồng ý), chụp so ở 390 px.
+
+## Tiến độ dựng (2026-10-17)
+
+**Phát hiện:** các biến thể màu của cùng một dòng thiết kế *không* chung bố cục phần đầu thiệp (ví dụ Minimalism Nâu Đậm, Lam Đậm, Tím mỗi mẫu một cách xếp phong bì, hoa, ảnh). Vì vậy dựng theo "dòng" không đủ; phải dựng từng mẫu.
+
+**Công cụ mới:** `scripts/gen_headers.py` chuyển phần đầu thiệp (root + header) trong HTML trang demo thật (`?open=1`) thành component React (`src/generated/headers.tsx`, tệp sinh tự động, không sửa tay) và lấy `@keyframes` về `src/generated/headers.css`. Tên, chữ mở đầu và ảnh đôi được thay bằng tham số. Cần HTML đã tải trong thư mục tạm `%TEMP%/tp/<slug>.o.html` và ảnh của mẫu trong `public/images/themes/<thư mục>/`.
+
+**Đã sinh và chụp so ở 390 px (khớp mẫu thật):** Minimalism Đỏ Đậm, Nâu Đậm, Lam Đậm, Tím (đã xem); Đỏ và Xanh đã sinh nhưng chưa chụp. Màn mở thiệp của các biến thể này vẫn là bản chung. Phần thân vẫn là bố cục chung.
