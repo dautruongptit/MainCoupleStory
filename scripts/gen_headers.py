@@ -56,8 +56,15 @@ class Conv(HTMLParser):
         if tag in ("script", "style", "noscript"):
             self.skip += 1
             return
+        # Chỉ phát ra thẻ/thuộc tính có tên an toàn; HTML nguồn là dữ liệu không tin cậy.
+        if not re.fullmatch(r"[a-zA-Z][a-zA-Z0-9]*", tag):
+            raise SystemExit(f"tên thẻ không hợp lệ: {tag!r}")
         a = []
         for k, v in attrs:
+            if not re.fullmatch(r"[a-zA-Z_][a-zA-Z0-9:_-]*", k):
+                raise SystemExit(f"tên thuộc tính không hợp lệ: {k!r}")
+            if k.lower().startswith("on") or (k == "href" and (v or "").strip().lower().startswith("javascript:")):
+                continue
             v = v or ""
             if k == "style":
                 a.append(f"style={style_obj(v)}")

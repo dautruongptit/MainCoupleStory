@@ -38,6 +38,7 @@ export default function Preview({
   const [lightboxImg, setLightboxImg] = useState<string | null>(null);
   const [rsvpOpen, setRsvpOpen] = useState(false);
   const [rsvpSubmitted, setRsvpSubmitted] = useState(false);
+  const [rsvpPublic, setRsvpPublic] = useState(false);
   const [rsvpAnswers, setRsvpAnswers] = useState<Record<string, string>>({});
 
   const intro = d.introCustom && d.introText.trim() ? d.introText.trim() : introDefaultFor(d.templateId);
@@ -200,18 +201,13 @@ export default function Preview({
                 onSubmit={(e) => {
                   e.preventDefault();
                   setRsvpSubmitted(true);
-                  if (rsvpForm.note.trim() || Object.values(rsvpAnswers).some((v) => v.trim())) {
-                    set({
-                      wishes: [
-                        {
-                          name: rsvpForm.name || "Khách mời",
-                          msg: [rsvpForm.note, ...Object.entries(rsvpAnswers).map(([q, a]) => (a ? `${q}: ${a}` : ""))].filter(Boolean).join(" · "),
-                          at: new Date().toLocaleDateString("vi-VN"),
-                        },
-                        ...d.wishes,
-                      ],
-                    });
-                  }
+                  // Phản hồi RSVP là dữ liệu riêng của khách: lưu vào danh sách phản hồi, không đưa vào sổ lưu bút công khai.
+                  // Chỉ lời nhắn được đăng lên sổ lưu bút khi khách tích đồng ý.
+                  const at = new Date().toLocaleDateString("vi-VN");
+                  set({
+                    rsvps: [{ name: rsvpForm.name || "Khách mời", phone: rsvpForm.phone, attending: rsvpForm.attending, count: rsvpForm.count, answers: rsvpAnswers, note: rsvpForm.note, at }, ...(d.rsvps ?? [])],
+                    ...(rsvpPublic && rsvpForm.note.trim() ? { wishes: [{ name: rsvpForm.name || "Khách mời", msg: rsvpForm.note.trim(), at }, ...d.wishes] } : {}),
+                  });
                 }}
               >
                 <label className="rsvp-field">
@@ -287,6 +283,11 @@ export default function Preview({
                     }
                     placeholder="Ví dụ: Ăn chay, hoặc lời chúc mừng gửi tới dâu rể..."
                   />
+                </label>
+
+                <label className="rsvp-field" style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
+                  <input type="checkbox" checked={rsvpPublic} onChange={(e) => setRsvpPublic(e.target.checked)} style={{ width: "auto" }} />
+                  <span>Đăng lời nhắn của tôi lên sổ lưu bút (hiển thị công khai trên thiệp)</span>
                 </label>
 
                 <button type="submit" className="sp-btn-primary full-w">

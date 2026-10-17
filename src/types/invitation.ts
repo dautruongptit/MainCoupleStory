@@ -29,6 +29,8 @@ export type TimelineEvent = {
   text: string;
 };
 
+export type RsvpResponse = { name: string; phone: string; attending: string; count: string; answers: Record<string, string>; note: string; at: string };
+
 export interface Inv {
   templateId: string;
   templateName: string;
@@ -94,6 +96,8 @@ export interface Inv {
   sched: TimelineEvent[];
   guestOn: boolean;
   wishes: Wish[];
+  /** Phản hồi RSVP của khách (riêng tư, KHÔNG hiển thị trên thiệp); chỉ lưu trong trình duyệt này, chưa có backend. */
+  rsvps?: RsvpResponse[];
   giftOn: boolean;
   giftTitle: string;
   giftDisplayMode: "gift_box" | "envelope" | "qr_inline";
