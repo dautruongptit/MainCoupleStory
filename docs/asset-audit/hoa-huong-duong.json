@@ -64,10 +64,7 @@
       "/api/qr-png?d=00020101021238540010A00000072701240006970416011027481159000208QRIBFTTA53037045802VN63048F36&ec=M",
       "/images/envelope/sunflower_yellow.webp"
     ],
-    "rsvp": [
-      "/api/qr-png?d=00020101021238560010A0000007270126000697041501121038726459100208QRIBFTTA53037045802VN6304A528&ec=M",
-      "/api/qr-png?d=00020101021238540010A00000072701240006970416011027481159000208QRIBFTTA53037045802VN63048F36&ec=M"
-    ],
+    "rsvp": [],
     "calendar": [
       "https://www.google.com/calendar/render?action=TEMPLATE&text=%C4%90%C3%A1m%20c%C6%B0%E1%BB%9Bi%20Tr%E1%BA%A7n%20V%C4%83n%20Ho%C3%A0ng%20%26%20L%C3%BD%20M%E1%BB%B9%20Ng%E1%BB%8Dc&dates=20261114T103000Z/20261114T123000Z&ctz=Asia/Ho_Chi_Minh&details=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20c%E1%BB%A7a%20Tr%E1%BA%A7n%20V%C4%83n%20Ho%C3%A0ng%20%26%20L%C3%BD%20M%E1%BB%B9%20Ng%E1%BB%8Dc%20t%E1%BA%A1i%20Trung%20t%C3%A2m%20h%E1%BB%99i%20ngh%E1%BB%8B%20%C4%90%E1%BA%AFk%20L%E1%BA%AFk%2C%2001%20Nguy%E1%BB%85n%20T%E1%BA%A5t%20Th%C3%A0nh%2C%20TP.%20Bu%C3%B4n%20Ma%20Thu%E1%BB%99t%2C%20%C4%90%E1%BA%AFk%20L%E1%BA%AFk&location=Trung%20t%C3%A2m%20h%E1%BB%99i%20ngh%E1%BB%8B%20%C4%90%E1%BA%AFk%20L%E1%BA%AFk%2C%2001%20Nguy%E1%BB%85n%20T%E1%BA%A5t%20Th%C3%A0nh%2C%20TP.%20Bu%C3%B4n%20Ma%20Thu%E1%BB%99t%2C%20%C4%90%E1%BA%AFk%20L%E1%BA%AFk"
     ]
@@ -132,5 +129,10 @@
     "musicPerformed": true,
     "mapPerformed": true
   },
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
+  }
 }

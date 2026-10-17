@@ -116,9 +116,7 @@
       "/images/giftbox/mini/double_dragon_blue.webp",
       "/images/giftbox/mini/royal_v2_green.webp"
     ],
-    "rsvp": [
-      "/api/qr-png?d=00020101021238540010A00000072701240006970436011000000000000208QRIBFTTA53037045802VN63048C2A&ec=M"
-    ],
+    "rsvp": [],
     "calendar": [
       "https://www.google.com/calendar/render?action=TEMPLATE&text=%C4%90%C3%A1m%20c%C6%B0%E1%BB%9Bi%20B%C3%B9i%20Xu%C3%A2n%20Tr%C6%B0%E1%BB%9Dng%20%26%20Tr%E1%BB%8Bnh%20Di%E1%BB%87u%20Linh&dates=20271117T130000Z/20271117T150000Z&ctz=Asia/Ho_Chi_Minh&details=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20c%E1%BB%A7a%20B%C3%B9i%20Xu%C3%A2n%20Tr%C6%B0%E1%BB%9Dng%20%26%20Tr%E1%BB%8Bnh%20Di%E1%BB%87u%20Linh%20t%E1%BA%A1i%20Uri%20Palace%0AB%E1%BA%AFc%20Ninh&location=Uri%20Palace%0AB%E1%BA%AFc%20Ninh"
     ]
@@ -183,5 +181,10 @@
     "musicPerformed": true,
     "mapPerformed": true
   },
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
+  }
 }

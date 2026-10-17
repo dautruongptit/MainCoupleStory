@@ -136,5 +136,12 @@
   "status": "NOT VERIFIED",
   "unverifiedReasons": [
     "RSVP"
-  ]
+  ],
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh",
+    "buttonText": "XÁC NHẬN / 確認出席",
+    "screenshot": "rsvp_long-phung-do.png"
+  }
 }

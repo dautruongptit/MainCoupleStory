@@ -89,10 +89,7 @@
       "/images/giftbox/mini/hoa_dai_pink.webp",
       "/images/giftbox/mini/porcelain_v2_pink.webp"
     ],
-    "rsvp": [
-      "/api/qr-png?d=00020101021238540010A00000072701240006970436011000000000000208QRIBFTTA53037045802VN63048C2A&ec=M",
-      "/api/qr-png?d=00020101021238540010A00000072701240006970418011080848561450208QRIBFTTA53037045802VN63044CBC&ec=M"
-    ],
+    "rsvp": [],
     "calendar": [
       "https://www.google.com/calendar/render?action=TEMPLATE&text=%C4%90%C3%A1m%20c%C6%B0%E1%BB%9Bi%20Phan%20Thanh%20T%C3%B9ng%20%26%20Ph%E1%BA%A1m%20H%E1%BB%93ng%20Nhung&dates=20260614T033000Z/20260614T053000Z&ctz=Asia/Ho_Chi_Minh&details=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20c%E1%BB%A7a%20Phan%20Thanh%20T%C3%B9ng%20%26%20Ph%E1%BA%A1m%20H%E1%BB%93ng%20Nhung%20t%E1%BA%A1i%20Sun%20Palace%2C%20170%20Kinh%20D%C6%B0%C6%A1ng%20V%C6%B0%C6%A1ng%2C%20Ph%C6%B0%E1%BB%9Dng%2013%2C%20Qu%E1%BA%ADn%206%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%20&location=Sun%20Palace%2C%20170%20Kinh%20D%C6%B0%C6%A1ng%20V%C6%B0%C6%A1ng%2C%20Ph%C6%B0%E1%BB%9Dng%2013%2C%20Qu%E1%BA%ADn%206%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%20"
     ]
@@ -157,5 +154,10 @@
     "musicPerformed": true,
     "mapPerformed": true
   },
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
+  }
 }

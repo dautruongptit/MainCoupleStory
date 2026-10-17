@@ -79,9 +79,7 @@
       "/images/giftbox/mini/royal.webp",
       "/images/giftbox/mini/hoa_tinh_red.webp"
     ],
-    "rsvp": [
-      "/api/qr-png?d=00020101021238530010A0000007270123000697043601097658493020208QRIBFTTA53037045802VN63048AA6&ec=M"
-    ],
+    "rsvp": [],
     "calendar": [
       "https://www.google.com/calendar/render?action=TEMPLATE&text=%C4%90%C3%A1m%20c%C6%B0%E1%BB%9Bi%20Nguy%E1%BB%85n%20Gia%20Huy%20%26%20%20Tr%E1%BA%A7n%20Th%E1%BB%8B%20Ti%E1%BB%83u%20Vy&dates=20260802T043000Z/20260802T063000Z&ctz=Asia/Saigon&details=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20c%E1%BB%A7a%20Nguy%E1%BB%85n%20Gia%20Huy%20%26%20%20Tr%E1%BA%A7n%20Th%E1%BB%8B%20Ti%E1%BB%83u%20Vy%20t%E1%BA%A1i%20Trung%20T%C3%A2m%20Ti%E1%BB%87c%20C%C6%B0%E1%BB%9Bi%20Thung%20L%C5%A9ng%20C%C3%A1%2C%2025%20Phan%20Chu%20Trinh%2C%20%C4%90%C3%A0%20L%E1%BA%A1t&location=Trung%20T%C3%A2m%20Ti%E1%BB%87c%20C%C6%B0%E1%BB%9Bi%20Thung%20L%C5%A9ng%20C%C3%A1%2C%2025%20Phan%20Chu%20Trinh%2C%20%C4%90%C3%A0%20L%E1%BA%A1t"
     ]
@@ -146,5 +144,10 @@
     "musicPerformed": true,
     "mapPerformed": true
   },
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
+  }
 }

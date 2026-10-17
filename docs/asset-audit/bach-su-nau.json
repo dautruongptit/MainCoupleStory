@@ -58,10 +58,7 @@
       "/api/qr-png?d=00020101021238550010A000000727012500069704070111190366889910208QRIBFTTA53037045802VN63043FF0&ec=M",
       "/images/envelope/porcelain_brown.webp"
     ],
-    "rsvp": [
-      "/api/qr-png?d=00020101021238570010A00000072701270006970436011300710008123450208QRIBFTTA53037045802VN6304D2E7&ec=M",
-      "/api/qr-png?d=00020101021238550010A000000727012500069704070111190366889910208QRIBFTTA53037045802VN63043FF0&ec=M"
-    ],
+    "rsvp": [],
     "calendar": [
       "https://www.google.com/calendar/render?action=TEMPLATE&text=%C4%90%C3%A1m%20c%C6%B0%E1%BB%9Bi%20Nguy%E1%BB%85n%20%C4%90%C4%83ng%20Khoa%20%26%20Tr%E1%BA%A7n%20Th%C3%B9y%20D%C6%B0%C6%A1ng&dates=20270116T110000Z/20270116T130000Z&ctz=Asia/Ho_Chi_Minh&details=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20c%E1%BB%A7a%20Nguy%E1%BB%85n%20%C4%90%C4%83ng%20Khoa%20%26%20Tr%E1%BA%A7n%20Th%C3%B9y%20D%C6%B0%C6%A1ng%20t%E1%BA%A1i%20Trung%20t%C3%A2m%20H%E1%BB%99i%20ngh%E1%BB%8B%20Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20Minh%20Anh%2C%20216%20Nguy%E1%BB%85n%20H%E1%BB%AFu%20Th%E1%BB%8D%2C%20ph%C6%B0%E1%BB%9Dng%20H%C3%B2a%20Thu%E1%BA%ADn%20T%C3%A2y%2C%20qu%E1%BA%ADn%20H%E1%BA%A3i%20Ch%C3%A2u%2C%20%C4%90%C3%A0%20N%E1%BA%B5ng&location=Trung%20t%C3%A2m%20H%E1%BB%99i%20ngh%E1%BB%8B%20Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20Minh%20Anh%2C%20216%20Nguy%E1%BB%85n%20H%E1%BB%AFu%20Th%E1%BB%8D%2C%20ph%C6%B0%E1%BB%9Dng%20H%C3%B2a%20Thu%E1%BA%ADn%20T%C3%A2y%2C%20qu%E1%BA%ADn%20H%E1%BA%A3i%20Ch%C3%A2u%2C%20%C4%90%C3%A0%20N%E1%BA%B5ng"
     ]
@@ -127,5 +124,10 @@
     "musicPerformed": true,
     "mapPerformed": true
   },
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
+  }
 }

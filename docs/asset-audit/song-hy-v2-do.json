@@ -76,9 +76,7 @@
       "/api/qr-png?d=00020101021238540010A00000072701240006970436011000000000000208QRIBFTTA53037045802VN63048C2A&ec=M",
       "/images/envelope/song_hy_v2_red.webp"
     ],
-    "rsvp": [
-      "/api/qr-png?d=00020101021238540010A00000072701240006970436011000000000000208QRIBFTTA53037045802VN63048C2A&ec=M"
-    ],
+    "rsvp": [],
     "calendar": [
       "https://www.google.com/calendar/render?action=TEMPLATE&text=%C4%90%C3%A1m%20c%C6%B0%E1%BB%9Bi%20H%E1%BB%93%20Trung%20Hi%E1%BA%BFu%20%26%20%C4%90%E1%BA%B7ng%20Thanh%20H%C3%A0&dates=20270104T120000Z/20270104T140000Z&ctz=Asia/Ho_Chi_Minh&details=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20c%E1%BB%A7a%20H%E1%BB%93%20Trung%20Hi%E1%BA%BFu%20%26%20%C4%90%E1%BA%B7ng%20Thanh%20H%C3%A0%20t%E1%BA%A1i%20Sen%20Vang%20Palace%0APh%C3%BA%20Th%E1%BB%8D&location=Sen%20Vang%20Palace%0APh%C3%BA%20Th%E1%BB%8D"
     ]
@@ -141,5 +139,10 @@
     "musicPerformed": true,
     "mapPerformed": true
   },
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
+  }
 }

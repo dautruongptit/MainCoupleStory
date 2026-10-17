@@ -51,7 +51,27 @@
       "/api/qr-png?d=00020101021238540010A00000072701240006970436011000000000000208QRIBFTTA53037045802VN63048C2A&ec=M",
       "/api/qr-png?d=00020101021238540010A00000072701240006970422011090876543210208QRIBFTTA53037045802VN63042FC3&ec=M"
     ],
-    "scrolled": [],
+    "scrolled": [
+      "/images/chu-hy.webp",
+      "/photo-library/design/a93531ac94629caa1e29207bedbc0bd599ed30f7c3de48639d57dfa4ef6f7594.webp",
+      "/photo-library/design/479aef635830e403ff516c4e6ee1a922c5f0f229cde185615e91c8004e3d5a78.webp",
+      "/photo-library/design/f8271d63365d5ae682b8304b3f22141193edd0571a7203b1fae256ef3caced13.webp",
+      "/photo-library/design/94e8ca8243c6da0d47b497e1e3f83dd51fe009a0e51033843eedf3c0d943e576.webp",
+      "/photo-library/design/0cbd5ff94b722506eb874b478bf12e89863fe6cc16ec5a5359a98ec697c1802b.webp",
+      "/photo-library/design/5cf9ce22824d7c547c2fb4dc45de7426a89654b42b3a710d6a0bdfdb4a491685.webp",
+      "/photo-library/design/302ec5cf4d17abe02614350e46f9dad44acb607594286ef2411ee5ef776cc945.webp",
+      "/photo-library/design/e226fc72e37d596beba60807df8169d1a774077d301a9c5ddcc547fb73469aac.webp",
+      "/images/giftbox/mini/silk_ribbon_darkred.webp",
+      "/images/giftbox/mini/cherry_blossom_pink.webp",
+      "/images/giftbox/mini/royal_v2_green.webp",
+      "/images/giftbox/mini/minimalism_purple.webp",
+      "/images/giftbox/double_dragon_green.webp",
+      "/images/giftbox/mini/double_dragon_red.webp",
+      "/images/giftbox/mini/hoa_dai_pink.webp",
+      "/images/giftbox/mini/spring_garden_green.webp",
+      "/api/qr-png?d=00020101021238540010A00000072701240006970436011000000000000208QRIBFTTA53037045802VN63048C2A&ec=M",
+      "/api/qr-png?d=00020101021238540010A00000072701240006970422011090876543210208QRIBFTTA53037045802VN63042FC3&ec=M"
+    ],
     "album": [
       "https://assets.chungdoi.com/photo-library/design/a93531ac94629caa1e29207bedbc0bd599ed30f7c3de48639d57dfa4ef6f7594.webp",
       "https://assets.chungdoi.com/photo-library/design/479aef635830e403ff516c4e6ee1a922c5f0f229cde185615e91c8004e3d5a78.webp",
@@ -146,5 +166,12 @@
   "status": "NOT VERIFIED",
   "unverifiedReasons": [
     "RSVP"
-  ]
+  ],
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh",
+    "buttonText": "XÁC NHẬN / 참석 확인",
+    "screenshot": "rsvp_song-long-xanh.png"
+  }
 }

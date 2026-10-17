@@ -85,9 +85,7 @@
       "/api/qr-png?d=00020101021238540010A00000072701240006970436011000000000000208QRIBFTTA53037045802VN63048C2A&ec=M",
       "/images/envelope/dried_flower_v2_green.webp"
     ],
-    "rsvp": [
-      "/api/qr-png?d=00020101021238540010A00000072701240006970436011000000000000208QRIBFTTA53037045802VN63048C2A&ec=M"
-    ],
+    "rsvp": [],
     "calendar": [
       "https://www.google.com/calendar/render?action=TEMPLATE&text=%C4%90%C3%A1m%20c%C6%B0%E1%BB%9Bi%20Tr%E1%BA%A7n%20Gia%20Kh%C3%A1nh%20%26%20V%C3%B5%20Ng%E1%BB%8Dc%20H%C3%A2n&dates=20270826T133000Z/20270826T153000Z&ctz=Asia/Ho_Chi_Minh&details=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20c%E1%BB%A7a%20Tr%E1%BA%A7n%20Gia%20Kh%C3%A1nh%20%26%20V%C3%B5%20Ng%E1%BB%8Dc%20H%C3%A2n%20t%E1%BA%A1i%20Trung%20T%C3%A2m%20Ti%E1%BB%87c%20C%C6%B0%E1%BB%9Bi%20Thung%20L%C5%A9ng%20C%C3%A1%0A%C4%90%C3%A0%20L%E1%BA%A1t&location=Trung%20T%C3%A2m%20Ti%E1%BB%87c%20C%C6%B0%E1%BB%9Bi%20Thung%20L%C5%A9ng%20C%C3%A1%0A%C4%90%C3%A0%20L%E1%BA%A1t"
     ]
@@ -152,5 +150,10 @@
     "musicPerformed": true,
     "mapPerformed": true
   },
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
+  }
 }

@@ -70,10 +70,7 @@
       "/api/qr-png?d=00020101021238540010A00000072701240006970416011009124508770208QRIBFTTA53037045802VN63042DB5&ec=M",
       "/images/envelope/silk_ribbon_pink.webp"
     ],
-    "rsvp": [
-      "/api/qr-png?d=00020101021238580010A000000727012800069704070114190388124700160208QRIBFTTA53037045802VN6304C04E&ec=M",
-      "/api/qr-png?d=00020101021238540010A00000072701240006970416011009124508770208QRIBFTTA53037045802VN63042DB5&ec=M"
-    ],
+    "rsvp": [],
     "calendar": [
       "https://www.google.com/calendar/render?action=TEMPLATE&text=%C4%90%C3%A1m%20c%C6%B0%E1%BB%9Bi%20%C4%90%E1%BA%B7ng%20Gia%20B%E1%BA%A3o%20%26%20Tr%E1%BB%8Bnh%20Kh%C3%A1nh%20Vy&dates=20270220T110000Z/20270220T130000Z&ctz=Asia/Ho_Chi_Minh&details=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20c%E1%BB%A7a%20%C4%90%E1%BA%B7ng%20Gia%20B%E1%BA%A3o%20%26%20Tr%E1%BB%8Bnh%20Kh%C3%A1nh%20Vy%20t%E1%BA%A1i%20Trung%20t%C3%A2m%20H%E1%BB%99i%20ngh%E1%BB%8B%20Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20Hoa%20Sen%2C%20118%20%C4%90%E1%BA%A1i%20l%E1%BB%99%20H%C3%B2a%20B%C3%ACnh%2C%20ph%C6%B0%E1%BB%9Dng%20T%C3%A2n%20An%2C%20TP.%20C%E1%BA%A7n%20Th%C6%A1&location=Trung%20t%C3%A2m%20H%E1%BB%99i%20ngh%E1%BB%8B%20Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20Hoa%20Sen%2C%20118%20%C4%90%E1%BA%A1i%20l%E1%BB%99%20H%C3%B2a%20B%C3%ACnh%2C%20ph%C6%B0%E1%BB%9Dng%20T%C3%A2n%20An%2C%20TP.%20C%E1%BA%A7n%20Th%C6%A1"
     ]
@@ -136,5 +133,10 @@
     "musicPerformed": true,
     "mapPerformed": true
   },
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
+  }
 }

@@ -74,14 +74,7 @@
       "/images/giftbox/mini/spring_garden_red.webp",
       "/images/giftbox/mini/silk_ribbon_green.webp"
     ],
-    "rsvp": [
-      "https://assets.chungdoi.com/photo-library/design/e3d13b58ea92c96a322e9bcc54cfcf6f6a79f08239a0ed9a8d3a3aca48bba341.webp",
-      "https://assets.chungdoi.com/photo-library/design/6f2cc45851be18d1562d9e42510d0e9a00660507e3e9204ee24696cc3925da6d.webp",
-      "https://assets.chungdoi.com/photo-library/design/90cfb6aaf7e0fc20d383aa3bcdaa97c9f73c50b384ee1470dac45126ad5f1cff.webp",
-      "https://assets.chungdoi.com/photo-library/design/a9c22284a87f0932e84622c79068eaa687fb1a06b8080fb682b9f8dc6ebf1c80.webp",
-      "https://assets.chungdoi.com/photo-library/design/cfd3d6fc4e4e0479502ac5bacfc4ddf3f4c58f71daa8eb6ea393510eae89bca0.webp",
-      "https://assets.chungdoi.com/photo-library/design/19b783f13d746af8c7448e8b4227fd4fb88de8761ed6d2b6858b80510720160c.webp"
-    ],
+    "rsvp": [],
     "calendar": [
       "https://www.google.com/calendar/render?action=TEMPLATE&text=%C4%90%C3%A1m%20c%C6%B0%E1%BB%9Bi%20V%C3%B5%20H%E1%BA%A3i%20Nam%20%26%20Hu%E1%BB%B3nh%20Kh%C3%A1nh%20Linh&dates=20260730T110000Z/20260730T130000Z&ctz=Asia/Ho_Chi_Minh&details=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20c%E1%BB%A7a%20V%C3%B5%20H%E1%BA%A3i%20Nam%20%26%20Hu%E1%BB%B3nh%20Kh%C3%A1nh%20Linh%20t%E1%BA%A1i%20Gala%20Center%2C%20415%20Ho%C3%A0ng%20V%C4%83n%20Th%E1%BB%A5%2C%20Ph%C6%B0%E1%BB%9Dng%202%2C%20T%C3%A2n%20B%C3%ACnh%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh&location=Gala%20Center%2C%20415%20Ho%C3%A0ng%20V%C4%83n%20Th%E1%BB%A5%2C%20Ph%C6%B0%E1%BB%9Dng%202%2C%20T%C3%A2n%20B%C3%ACnh%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh"
     ]
@@ -144,5 +137,10 @@
     "musicPerformed": true,
     "mapPerformed": true
   },
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
+  }
 }

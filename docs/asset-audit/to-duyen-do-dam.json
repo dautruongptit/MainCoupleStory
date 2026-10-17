@@ -67,10 +67,7 @@
       "/api/qr-png?d=00020101021238540010A00000072701240006970416011009472158030208QRIBFTTA53037045802VN63048293&ec=M",
       "/images/envelope/silk_ribbon_darkred.webp"
     ],
-    "rsvp": [
-      "/api/qr-png?d=00020101021238580010A000000727012800069704070114190366284710150208QRIBFTTA53037045802VN63048F4E&ec=M",
-      "/api/qr-png?d=00020101021238540010A00000072701240006970416011009472158030208QRIBFTTA53037045802VN63048293&ec=M"
-    ],
+    "rsvp": [],
     "calendar": [
       "https://www.google.com/calendar/render?action=TEMPLATE&text=%C4%90%C3%A1m%20c%C6%B0%E1%BB%9Bi%20Ph%E1%BA%A1m%20Minh%20Ho%C3%A0ng%20%26%20H%E1%BB%93%20M%E1%BB%B9%20Ng%E1%BB%8Dc&dates=20261219T113000Z/20261219T133000Z&ctz=Asia/Ho_Chi_Minh&details=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20c%E1%BB%A7a%20Ph%E1%BA%A1m%20Minh%20Ho%C3%A0ng%20%26%20H%E1%BB%93%20M%E1%BB%B9%20Ng%E1%BB%8Dc%20t%E1%BA%A1i%20Nh%C3%A0%20h%C3%A0ng%20Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20Th%E1%BA%A3o%20Nguy%C3%AAn%20Xanh%2C%2027%20Tr%E1%BA%A7n%20Ph%C3%BA%2C%20ph%C6%B0%E1%BB%9Dng%203%2C%20TP.%20%C4%90%C3%A0%20L%E1%BA%A1t%2C%20L%C3%A2m%20%C4%90%E1%BB%93ng&location=Nh%C3%A0%20h%C3%A0ng%20Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20Th%E1%BA%A3o%20Nguy%C3%AAn%20Xanh%2C%2027%20Tr%E1%BA%A7n%20Ph%C3%BA%2C%20ph%C6%B0%E1%BB%9Dng%203%2C%20TP.%20%C4%90%C3%A0%20L%E1%BA%A1t%2C%20L%C3%A2m%20%C4%90%E1%BB%93ng"
     ]
@@ -133,5 +130,10 @@
     "musicPerformed": true,
     "mapPerformed": true
   },
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
+  }
 }

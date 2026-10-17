@@ -76,10 +76,7 @@
       "/api/qr-png?d=00020101021238540010A00000072701240006970422011009087766550208QRIBFTTA53037045802VN63041C95&ec=M",
       "/images/envelope/crystal_floral_red.webp"
     ],
-    "rsvp": [
-      "/api/qr-png?d=00020101021238580010A000000727012800069704180114215100099887760208QRIBFTTA53037045802VN63041679&ec=M",
-      "/api/qr-png?d=00020101021238540010A00000072701240006970422011009087766550208QRIBFTTA53037045802VN63041C95&ec=M"
-    ],
+    "rsvp": [],
     "calendar": [
       "https://www.google.com/calendar/render?action=TEMPLATE&text=Ti%E1%BB%87c%20b%C3%A1o%20h%E1%BB%B7%20L%C3%AA%20Ho%C3%A0ng%20Nam%20%26%20Tr%E1%BA%A7n%20Thu%E1%BB%B3%20D%C6%B0%C6%A1ng&dates=20261219T113000Z/20261219T133000Z&ctz=Asia/Ho_Chi_Minh&details=Ti%E1%BB%87c%20b%C3%A1o%20h%E1%BB%B7%20c%E1%BB%A7a%20L%C3%AA%20Ho%C3%A0ng%20Nam%20%26%20Tr%E1%BA%A7n%20Thu%E1%BB%B3%20D%C6%B0%C6%A1ng%20t%E1%BA%A1i%20Trung%20t%C3%A2m%20H%E1%BB%99i%20ngh%E1%BB%8B%20Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20Adora%2C%20431%20Ho%C3%A0ng%20V%C4%83n%20Th%E1%BB%A5%2C%20ph%C6%B0%E1%BB%9Dng%204%2C%20qu%E1%BA%ADn%20T%C3%A2n%20B%C3%ACnh%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh&location=Trung%20t%C3%A2m%20H%E1%BB%99i%20ngh%E1%BB%8B%20Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20Adora%2C%20431%20Ho%C3%A0ng%20V%C4%83n%20Th%E1%BB%A5%2C%20ph%C6%B0%E1%BB%9Dng%204%2C%20qu%E1%BA%ADn%20T%C3%A2n%20B%C3%ACnh%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh"
     ]
@@ -142,5 +139,10 @@
     "musicPerformed": true,
     "mapPerformed": true
   },
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
+  }
 }

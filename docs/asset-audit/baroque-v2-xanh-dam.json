@@ -79,10 +79,7 @@
       "/api/qr-png?d=00020101021238540010A00000072701240006970407011019038462710208QRIBFTTA53037045802VN63042ED6&ec=M",
       "/images/envelope/baroque_v2_darkgreen.webp"
     ],
-    "rsvp": [
-      "/api/qr-png?d=00020101021238540010A00000072701240006970415011010739205840208QRIBFTTA53037045802VN630433F9&ec=M",
-      "/api/qr-png?d=00020101021238540010A00000072701240006970407011019038462710208QRIBFTTA53037045802VN63042ED6&ec=M"
-    ],
+    "rsvp": [],
     "calendar": [
       "https://www.google.com/calendar/render?action=TEMPLATE&text=%C4%90%C3%A1m%20c%C6%B0%E1%BB%9Bi%20Nguy%E1%BB%85n%20Duy%20Khang%20%26%20Tr%E1%BB%8Bnh%20Mai%20Tr%C3%A2m&dates=20270116T110000Z/20270116T130000Z&ctz=Asia/Ho_Chi_Minh&details=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20c%E1%BB%A7a%20Nguy%E1%BB%85n%20Duy%20Khang%20%26%20Tr%E1%BB%8Bnh%20Mai%20Tr%C3%A2m%20t%E1%BA%A1i%20Trung%20t%C3%A2m%20Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20Ho%C3%A0ng%20Long%20Palace%2C%20108%20H%C3%B9ng%20V%C6%B0%C6%A1ng%2C%20ph%C6%B0%E1%BB%9Dng%20Ph%C3%BA%20Nhu%E1%BA%ADn%2C%20th%C3%A0nh%20ph%E1%BB%91%20Hu%E1%BA%BF&location=Trung%20t%C3%A2m%20Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20Ho%C3%A0ng%20Long%20Palace%2C%20108%20H%C3%B9ng%20V%C6%B0%C6%A1ng%2C%20ph%C6%B0%E1%BB%9Dng%20Ph%C3%BA%20Nhu%E1%BA%ADn%2C%20th%C3%A0nh%20ph%E1%BB%91%20Hu%E1%BA%BF"
     ]
@@ -147,5 +144,10 @@
     "musicPerformed": true,
     "mapPerformed": true
   },
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
+  }
 }

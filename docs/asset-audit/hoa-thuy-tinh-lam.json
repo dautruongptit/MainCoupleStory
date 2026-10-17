@@ -73,9 +73,7 @@
       "/api/qr-png?d=00020101021238470010A0000007270117000697043601035430208QRIBFTTA53037045802VN63049AB9&ec=M",
       "/images/envelope/crystal_floral_blue.webp"
     ],
-    "rsvp": [
-      "/api/qr-png?d=00020101021238470010A0000007270117000697043601035430208QRIBFTTA53037045802VN63049AB9&ec=M"
-    ],
+    "rsvp": [],
     "calendar": [
       "https://www.google.com/calendar/render?action=TEMPLATE&text=%C4%90%C3%A1m%20c%C6%B0%E1%BB%9Bi%20Ph%E1%BA%A1m%20B%E1%BA%A3o%20L%C3%A2m%20%26%20Nguy%E1%BB%85n%20Thanh%20Tr%C3%BAc&dates=20260919T043000Z/20260919T063000Z&ctz=Asia/Ho_Chi_Minh&details=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20c%E1%BB%A7a%20Ph%E1%BA%A1m%20B%E1%BA%A3o%20L%C3%A2m%20%26%20Nguy%E1%BB%85n%20Thanh%20Tr%C3%BAc%20t%E1%BA%A1i%20Trung%20t%C3%A2m%20Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20B%E1%BA%A1ch%20Kim%2C%2058%20Tr%E1%BA%A7n%20H%C6%B0ng%20%C4%90%E1%BA%A1o%2C%20Qu%E1%BA%ADn%201%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh&location=Trung%20t%C3%A2m%20Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20B%E1%BA%A1ch%20Kim%2C%2058%20Tr%E1%BA%A7n%20H%C6%B0ng%20%C4%90%E1%BA%A1o%2C%20Qu%E1%BA%ADn%201%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh"
     ]
@@ -138,5 +136,10 @@
     "musicPerformed": true,
     "mapPerformed": true
   },
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
+  }
 }

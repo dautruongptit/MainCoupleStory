@@ -61,10 +61,7 @@
       "/api/qr-png?d=00020101021238540010A00000072701240006970422011009041188260208QRIBFTTA53037045802VN6304470F&ec=M",
       "/images/envelope/porcelain_v2_green.webp"
     ],
-    "rsvp": [
-      "/api/qr-png?d=00020101021238540010A00000072701240006970418011062100774310208QRIBFTTA53037045802VN6304DA15&ec=M",
-      "/api/qr-png?d=00020101021238540010A00000072701240006970422011009041188260208QRIBFTTA53037045802VN6304470F&ec=M"
-    ],
+    "rsvp": [],
     "calendar": [
       "https://www.google.com/calendar/render?action=TEMPLATE&text=%C4%90%C3%A1m%20c%C6%B0%E1%BB%9Bi%20Nguy%E1%BB%85n%20Duy%20Khang%20%26%20Tr%E1%BA%A7n%20Th%E1%BA%A3o%20Vy&dates=20261114T110000Z/20261114T130000Z&ctz=Asia/Ho_Chi_Minh&details=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20c%E1%BB%A7a%20Nguy%E1%BB%85n%20Duy%20Khang%20%26%20Tr%E1%BA%A7n%20Th%E1%BA%A3o%20Vy%20t%E1%BA%A1i%20Nh%C3%A0%20h%C3%A0ng%20V%C6%B0%E1%BB%9Dn%20Th%C3%B4ng%2C%20145%20Tr%E1%BA%A7n%20Ph%C3%BA%2C%20ph%C6%B0%E1%BB%9Dng%202%2C%20th%C3%A0nh%20ph%E1%BB%91%20B%E1%BA%A3o%20L%E1%BB%99c%2C%20t%E1%BB%89nh%20L%C3%A2m%20%C4%90%E1%BB%93ng&location=Nh%C3%A0%20h%C3%A0ng%20V%C6%B0%E1%BB%9Dn%20Th%C3%B4ng%2C%20145%20Tr%E1%BA%A7n%20Ph%C3%BA%2C%20ph%C6%B0%E1%BB%9Dng%202%2C%20th%C3%A0nh%20ph%E1%BB%91%20B%E1%BA%A3o%20L%E1%BB%99c%2C%20t%E1%BB%89nh%20L%C3%A2m%20%C4%90%E1%BB%93ng"
     ]
@@ -129,5 +126,10 @@
     "musicPerformed": true,
     "mapPerformed": true
   },
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
+  }
 }

@@ -94,10 +94,7 @@
       "/api/qr-png?d=00020101021238580010A000000727012800069704070114190356789123450208QRIBFTTA53037045802VN63049042&ec=M",
       "/images/envelope/dragon_phoenix_v4_red.webp"
     ],
-    "rsvp": [
-      "/api/qr-png?d=00020101021238570010A00000072701270006970436011300710008123450208QRIBFTTA53037045802VN6304D2E7&ec=M",
-      "/api/qr-png?d=00020101021238580010A000000727012800069704070114190356789123450208QRIBFTTA53037045802VN63049042&ec=M"
-    ],
+    "rsvp": [],
     "calendar": [
       "https://www.google.com/calendar/render?action=TEMPLATE&text=%C4%90%C3%A1m%20c%C6%B0%E1%BB%9Bi%20%C4%90%E1%BA%B7ng%20Qu%E1%BB%91c%20B%E1%BA%A3o%20%26%20L%C6%B0u%20Kh%C3%A1nh%20Vy&dates=20270313T110000Z/20270313T130000Z&ctz=Asia/Ho_Chi_Minh&details=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20c%E1%BB%A7a%20%C4%90%E1%BA%B7ng%20Qu%E1%BB%91c%20B%E1%BA%A3o%20%26%20L%C6%B0u%20Kh%C3%A1nh%20Vy%20t%E1%BA%A1i%20Trung%20t%C3%A2m%20H%E1%BB%99i%20ngh%E1%BB%8B%20Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20Ho%C3%A0ng%20Cung%2C%0A108%20H%C3%B9ng%20V%C6%B0%C6%A1ng%2C%20ph%C6%B0%E1%BB%9Dng%20Ph%C3%BA%20Nhu%E1%BA%ADn%2C%20th%C3%A0nh%20ph%E1%BB%91%20Hu%E1%BA%BF&location=Trung%20t%C3%A2m%20H%E1%BB%99i%20ngh%E1%BB%8B%20Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20Ho%C3%A0ng%20Cung%2C%0A108%20H%C3%B9ng%20V%C6%B0%C6%A1ng%2C%20ph%C6%B0%E1%BB%9Dng%20Ph%C3%BA%20Nhu%E1%BA%ADn%2C%20th%C3%A0nh%20ph%E1%BB%91%20Hu%E1%BA%BF"
     ]
@@ -162,5 +159,10 @@
     "musicPerformed": true,
     "mapPerformed": true
   },
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
+  }
 }

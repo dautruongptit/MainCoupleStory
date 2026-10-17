@@ -115,10 +115,7 @@
       "/images/giftbox/mini/minimalism_brown.webp",
       "/images/giftbox/mini/mahal_gold.webp"
     ],
-    "rsvp": [
-      "/api/qr-png?d=00020101021238540010A00000072701240006970407011089787747770208QRIBFTTA53037045802VN630468DF&ec=M",
-      "/api/qr-png?d=00020101021238530010A0000007270123000697041501094576575850208QRIBFTTA53037045802VN6304F588&ec=M"
-    ],
+    "rsvp": [],
     "calendar": [
       "https://www.google.com/calendar/render?action=TEMPLATE&text=%C4%90%C3%A1m%20c%C6%B0%E1%BB%9Bi%20L%C3%AA%20H%E1%BB%AFu%20Tr%C3%AD%20%26%20Nguy%E1%BB%85n%20Thi%C3%AAn%20%C3%9D&dates=20260802T110000Z/20260802T130000Z&ctz=Asia/Ho_Chi_Minh&details=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20c%E1%BB%A7a%20L%C3%AA%20H%E1%BB%AFu%20Tr%C3%AD%20%26%20Nguy%E1%BB%85n%20Thi%C3%AAn%20%C3%9D%20t%E1%BA%A1i%20Ninh%20B%C3%ACnh%20Legend%2C%20177%20%C4%90.%20L%C3%AA%20Th%C3%A1i%20T%E1%BB%95%2C%20Khu%20%C4%90%C3%B4%20Th%E1%BB%8B%20Xu%C3%A2n%20Th%C3%A0nh%2C%20Hoa%20L%C6%B0%2C%20Ninh%20B%C3%ACnh%0A&location=Ninh%20B%C3%ACnh%20Legend%2C%20177%20%C4%90.%20L%C3%AA%20Th%C3%A1i%20T%E1%BB%95%2C%20Khu%20%C4%90%C3%B4%20Th%E1%BB%8B%20Xu%C3%A2n%20Th%C3%A0nh%2C%20Hoa%20L%C6%B0%2C%20Ninh%20B%C3%ACnh%0A"
     ]
@@ -181,5 +178,10 @@
     "musicPerformed": true,
     "mapPerformed": true
   },
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
+  }
 }

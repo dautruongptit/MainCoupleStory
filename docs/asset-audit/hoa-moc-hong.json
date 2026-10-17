@@ -67,10 +67,7 @@
       "/images/giftbox/mini/baroque_v2_darkred.webp",
       "/images/giftbox/mini/glass_garden_blue.webp"
     ],
-    "rsvp": [
-      "/api/qr-png?d=00020101021238540010A00000072701240006970436011000000000000208QRIBFTTA53037045802VN63048C2A&ec=M",
-      "/api/qr-png?d=00020101021238520010A000000727012200069704230108838683860208QRIBFTTA53037045802VN630485D2&ec=M"
-    ],
+    "rsvp": [],
     "calendar": [
       "https://www.google.com/calendar/render?action=TEMPLATE&text=%C4%90%C3%A1m%20c%C6%B0%E1%BB%9Bi%20Tr%E1%BA%A7n%20Thanh%20V%C5%A9%20%26%20L%C3%AA%20Ph%C6%B0%C6%A1ng%20Nh%C3%A3&dates=20260201T033000Z/20260201T053000Z&ctz=Asia/Ho_Chi_Minh&details=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20c%E1%BB%A7a%20Tr%E1%BA%A7n%20Thanh%20V%C5%A9%20%26%20L%C3%AA%20Ph%C6%B0%C6%A1ng%20Nh%C3%A3%20t%E1%BA%A1i%20Queen%20Plaza%20K%E1%BB%B3%20H%C3%B2a%2C%2016A%20L%C3%AA%20H%E1%BB%93ng%20Phong%2C%20Ph%C6%B0%E1%BB%9Dng%2012%2C%20Qu%E1%BA%ADn%2010%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh&location=Queen%20Plaza%20K%E1%BB%B3%20H%C3%B2a%2C%2016A%20L%C3%AA%20H%E1%BB%93ng%20Phong%2C%20Ph%C6%B0%E1%BB%9Dng%2012%2C%20Qu%E1%BA%ADn%2010%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh"
     ]
@@ -133,5 +130,10 @@
     "musicPerformed": true,
     "mapPerformed": true
   },
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
+  }
 }

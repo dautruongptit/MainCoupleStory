@@ -112,10 +112,7 @@
       "/images/giftbox/mini/royal_v2_purple.webp",
       "/images/giftbox/mini/cherry_blossom_pink.webp"
     ],
-    "rsvp": [
-      "/api/qr-png?d=00020101021238540010A00000072701240006970436011000000000000208QRIBFTTA53037045802VN63048C2A&ec=M",
-      "/api/qr-png?d=00020101021238540010A00000072701240006970418011087878677780208QRIBFTTA53037045802VN6304B11A&ec=M"
-    ],
+    "rsvp": [],
     "calendar": [
       "https://www.google.com/calendar/render?action=TEMPLATE&text=%C4%90%C3%A1m%20c%C6%B0%E1%BB%9Bi%20L%C3%AA%20Ho%C3%A0ng%20Long%20%26%20Nguy%E1%BB%85n%20Ph%C6%B0%C6%A1ng%20Linh&dates=20260426T040000Z/20260426T060000Z&ctz=Asia/Saigon&details=Ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20c%E1%BB%A7a%20L%C3%AA%20Ho%C3%A0ng%20Long%20%26%20Nguy%E1%BB%85n%20Ph%C6%B0%C6%A1ng%20Linh%20t%E1%BA%A1i%20Trung%20t%C3%A2m%20ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20Gia%20Vi%C3%AAn%2C%202B%20B%E1%BA%A1ch%20%C4%90%E1%BA%B1ng%2C%20H%E1%BB%93ng%20B%C3%A0ng%2C%20H%E1%BA%A3i%20Ph%C3%B2ng&location=Trung%20t%C3%A2m%20ti%E1%BB%87c%20c%C6%B0%E1%BB%9Bi%20Gia%20Vi%C3%AAn%2C%202B%20B%E1%BA%A1ch%20%C4%90%E1%BA%B1ng%2C%20H%E1%BB%93ng%20B%C3%A0ng%2C%20H%E1%BA%A3i%20Ph%C3%B2ng"
     ]
@@ -178,5 +175,10 @@
     "musicPerformed": true,
     "mapPerformed": true
   },
-  "status": "VERIFIED"
+  "status": "VERIFIED",
+  "rsvpInfo": {
+    "verified": true,
+    "selector": "[data-landing-screenshot-id=\"invite-rsvp\"] button",
+    "note": "Mở form xác nhận tham dự thành công; không có tài nguyên ảnh/tệp mới phát sinh"
+  }
 }
