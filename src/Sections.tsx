@@ -146,7 +146,7 @@ export function Album({ d, set }: P) {
         </div>
       ) : (
         <>
-          <Field label="Kiểu hiển thị">
+          <Field label="KIỂU HIỂN THỊ" cap>
             <Segmented value={d.albumLayout} onChange={(v) => set({ albumLayout: v })}
               options={[{ value: "grid", label: "Lưới", icon: <LayoutIcon k="grid" /> }, { value: "collage", label: "Ghép ảnh", icon: <LayoutIcon k="collage" /> }, { value: "3d", label: "3D", icon: <LayoutIcon k="3d" /> }]} />
           </Field>

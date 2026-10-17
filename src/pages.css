@@ -2152,3 +2152,7 @@ button.gst-chip { border: 0; font-family: inherit; cursor: pointer; }
 /* ---- Màn hình mở thiệp Minimalism - Nâu: nền be như ảnh chuẩn 232343 ---- */
 .envelope-screen.min-env-screen { background: linear-gradient(135deg, #f3e7db 0%, #ead9c8 55%, #e0ccb8 100%) !important; }
 .min-env-screen .min-card-wrap > div { width: 540px; max-width: 92vw; }
+
+/* Thư viện ảnh rỗng: chỉ một ô "Thêm ảnh" vuông ở giữa (ảnh 210307) */
+.album-empty-add { width: 108px; height: 108px; margin: 8px auto 0; border: 0; border-radius: 12px; background: #0f0d0c; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06) inset; flex-direction: column; gap: 6px; color: rgba(205, 205, 205, 0.6); display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.album-empty-add svg { width: 28px; height: 28px; opacity: 0.7; }

@@ -51,7 +51,7 @@ export function Section({
   onEnabled,
   children,
   defaultOpen = true,
-  enabledLabel = "Hiển thị",
+  enabledLabel = "Hiện",
   onTitle,
   icon,
 }: {
