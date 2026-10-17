@@ -1,0 +1,28 @@
+{
+  "slug": "long-phung-v3-do",
+  "id": "dragon_phoenix_v3_red",
+  "name": "Long Phụng V3 - Đỏ",
+  "timestamp": "2026-10-17T20:47:43.812Z",
+  "steps": {
+    "popup": {
+      "status": "PASS",
+      "note": "Popup mở thành công trên Desktop & Mobile 390px với đầy đủ ảnh, tên, tính năng, mã QR và nút hành động."
+    },
+    "demoCover": {
+      "status": "PASS",
+      "note": "Màn hình bì thư hiện đúng theme, có 12 hạt chuyển động nền, thanh điều hướng nổi ẩn đúng quy cách."
+    },
+    "openTransition": {
+      "status": "PASS",
+      "note": "Hiệu ứng mở thiệp diễn ra mượt mà: vỡ sáp, nổ bung hạt, bì thư trượt ra xa và hiển thị thiệp kèm thanh nổi."
+    },
+    "openedContent": {
+      "status": "PASS",
+      "note": "Nội dung thiệp đã mở và thanh header nổi xuất hiện chuẩn mực."
+    }
+  },
+  "networkErrors": [],
+  "consoleErrors": [],
+  "status": "PASS",
+  "notes": []
+}
