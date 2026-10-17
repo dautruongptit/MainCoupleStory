@@ -459,7 +459,23 @@ const cakeIcon = (
   </svg>
 );
 
+const BANQUET_TITLES: Record<Inv["banquetType"], { title: string; loc: string }> = {
+  wedding: { title: "THÔNG TIN TIỆC CƯỚI", loc: "Tiệc cưới sẽ tổ chức tại" },
+  reception: { title: "THÔNG TIN TIỆC BÁO HỶ", loc: "Tiệc báo hỷ sẽ tổ chức tại" },
+  engagement: { title: "THÔNG TIN TIỆC ĐÍNH HÔN", loc: "Tiệc đính hôn sẽ tổ chức tại" },
+};
+
 export function Banquet({ d, set }: P) {
+  // Đổi loại tiệc thì đổi luôn hai tiêu đề mặc định, nhưng không ghi đè tiêu đề người dùng đã tự sửa
+  const changeType = (t: Inv["banquetType"]) => {
+    const prev = BANQUET_TITLES[d.banquetType];
+    const next = BANQUET_TITLES[t];
+    set({
+      banquetType: t,
+      banquetTitle: d.banquetTitle === prev.title || !d.banquetTitle ? next.title : d.banquetTitle,
+      locTitle: d.locTitle === prev.loc || d.locTitle === "ĐỊA ĐIỂM TIỆC CƯỚI" || !d.locTitle ? next.loc : d.locTitle,
+    });
+  };
   return (
     <Section title="Tiệc cưới" icon={cakeIcon} enabled={d.partyOn} onEnabled={(v) => set({ partyOn: v })} enabledLabel="Hiện">
       {!d.partyOn ? (
@@ -471,6 +487,19 @@ export function Banquet({ d, set }: P) {
         </div>
       ) : (
         <>
+          <Segmented
+            value={d.banquetType}
+            onChange={changeType}
+            options={[
+              { value: "wedding", label: "Tiệc cưới" },
+              { value: "reception", label: "Tiệc báo hỷ" },
+              { value: "engagement", label: "Tiệc đính hôn" },
+            ]}
+          />
+          <Field label="Tiêu đề mục">
+            <Input value={d.banquetTitle} onChange={(e) => set({ banquetTitle: e.target.value })} />
+          </Field>
+          <Helper>Tiêu đề in phía trên mục này trên thiệp. Để trống nếu bạn muốn bỏ hẳn.</Helper>
           <Field label="Ngày tổ chức">
             <input
               type="date"

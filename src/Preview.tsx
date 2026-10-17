@@ -90,7 +90,7 @@ export default function Preview({
 
   const handleOpenEnvelope = () => {
     setIsOpen(true);
-    if (d.musicUrl) {
+    if (d.musicUrl && d.musicAutoPlay) {
       if (!audioRef.current) {
         audioRef.current = new Audio(d.musicUrl);
         audioRef.current.loop = true;
@@ -831,7 +831,7 @@ export default function Preview({
           {/* -------------------- SECTION 3: TIỆC CƯỚI (BANQUET) -------------------- */}
           {d.partyOn && (
             <section className="sp-section sp-banquet-sec">
-              <h2 className="sp-sec-title">{d.banquetTitle || "THÔNG TIN TIỆC CƯỚI"}</h2>
+              {d.banquetTitle.trim() && <h2 className="sp-sec-title">{d.banquetTitle}</h2>}
               <p className="sp-lead">Tiệc cưới được tổ chức vào lúc:</p>
 
               <div className="sp-banquet-date">
