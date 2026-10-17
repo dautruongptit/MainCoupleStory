@@ -1,6 +1,7 @@
 import React from "react";
 import type { CoverProps, CoverConfig } from "./types";
 import { AmbientParticles } from "./AmbientParticles";
+import { OpenTransitionBurst, useEnvelopeOpen } from "./OpenTransition";
 import { groomShown, brideShown } from "@/utils/format";
 import { parseDate } from "@/utils/date";
 
@@ -14,6 +15,8 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
   const bName = brideShown(d);
   const dt = parseDate(d.date);
   const dateText = `${dt.getDate()} tháng ${dt.getMonth() + 1}, ${dt.getFullYear()}`;
+
+  const { isOpening, showBurst, triggerOpen } = useEnvelopeOpen(onOpen);
 
   // Seal radial gradient
   const sealBg = config.sealBg || (config.sealType === "xi"
@@ -35,33 +38,66 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
       style={bgStyle}
     >
       {/* Ambient Floating/Falling Particles */}
-      <AmbientParticles type={config.particleType} color={`rgba(${config.rgb}, 0.5)`} />
+      <AmbientParticles type={config.particleType} color={`rgba(${config.rgb}, 0.5)`} count={12} />
+
+      {/* Burst Particles and Ripple Rings during open transition */}
+      {showBurst && (
+        <OpenTransitionBurst type={config.particleType} baseColor={config.accentColor} sealPosition={{ top: 50 }} />
+      )}
 
       {/* Main Card Container */}
-      <div className="relative w-[310px] sm:w-[340px] md:w-[520px] lg:w-[600px]" style={{ zIndex: 10 }}>
+      <div
+        className="relative w-[310px] sm:w-[340px] md:w-[520px] lg:w-[600px]"
+        style={{
+          zIndex: 10,
+          animation: showBurst ? "0.8s ease-in 0s 1 normal forwards running envelope-away" : undefined,
+        }}
+      >
         {/* Seal Button on top */}
         {config.sealType !== "none" && (
           <div
-            onClick={onOpen}
+            onClick={triggerOpen}
+            aria-busy={isOpening ? "true" : undefined}
             title="Bấm để mở thiệp"
-            className="absolute left-1/2 rounded-full flex items-center justify-center cursor-pointer transition-transform hover:scale-105 active:scale-95"
+            className={`absolute left-1/2 rounded-full flex items-center justify-center cursor-pointer transition-transform ${
+              isOpening ? "pointer-events-none" : "hover:scale-105 active:scale-95"
+            }`}
             style={{
               top: 50,
               width: 56,
               height: 56,
               transform: "translate(-50%, -50%)",
               background: sealBg,
-              boxShadow: `0 4px 20px rgba(${config.rgb}, 0.4), inset 0 2px 4px rgba(255,255,255,0.3)`,
+              boxShadow: isOpening ? "none" : `0 4px 20px rgba(${config.rgb}, 0.4), inset 0 2px 4px rgba(255,255,255,0.3)`,
               zIndex: 30,
-              animation: "seal-pulse 2s ease-in-out infinite",
+              animation: isOpening
+                ? "0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s 1 normal forwards running seal-break"
+                : "seal-pulse 2s ease-in-out infinite",
             }}
           >
             {config.sealType === "xi" ? (
-              <span className="text-[26px] leading-none" style={{ color: sealColor, fontFamily: "serif" }} aria-hidden="true">
+              <span
+                className="text-[26px] leading-none"
+                style={{
+                  color: sealColor,
+                  fontFamily: "serif",
+                  transformOrigin: "center center",
+                  animation: isOpening ? "0.36s ease-out 0s 1 normal forwards running seal-flower-bloom" : undefined,
+                }}
+                aria-hidden="true"
+              >
                 囍
               </span>
             ) : (
-              <svg style={{ fill: sealColor }} viewBox="0 0 24 24" className="w-7 h-7">
+              <svg
+                style={{
+                  fill: sealColor,
+                  transformOrigin: "center center",
+                  animation: isOpening ? "0.36s ease-out 0s 1 normal forwards running seal-flower-bloom" : undefined,
+                }}
+                viewBox="0 0 24 24"
+                className="w-7 h-7"
+              >
                 <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
               </svg>
             )}
@@ -159,7 +195,9 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
             {/* Open Envelope Button */}
             <button
               type="button"
-              onClick={onOpen}
+              onClick={triggerOpen}
+              disabled={isOpening}
+              aria-busy={isOpening ? "true" : undefined}
               style={{
                 backgroundColor: config.btnBg,
                 color: config.btnTextColor,

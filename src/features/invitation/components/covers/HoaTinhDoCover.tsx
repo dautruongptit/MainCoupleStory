@@ -1,6 +1,7 @@
 import React from "react";
 import type { CoverProps } from "./types";
 import { AmbientParticles } from "./AmbientParticles";
+import { OpenTransitionBurst, useEnvelopeOpen } from "./OpenTransition";
 import { groomShown, brideShown } from "@/utils/format";
 import { parseDate } from "@/utils/date";
 
@@ -9,6 +10,8 @@ export function HoaTinhDoCover({ d, onOpen }: CoverProps) {
   const bName = brideShown(d) || "Thiên Ý";
   const dt = parseDate(d.date || "2026-08-02");
   const dateText = `${dt.getDate()} tháng ${dt.getMonth() + 1}, ${dt.getFullYear()}`;
+
+  const { isOpening, showBurst, triggerOpen } = useEnvelopeOpen(onOpen);
 
   return (
     <div
@@ -19,15 +22,29 @@ export function HoaTinhDoCover({ d, onOpen }: CoverProps) {
       }}
     >
       {/* Floating 囍 Particles */}
-      <AmbientParticles type="xi-gold" />
+      <AmbientParticles type="xi-gold" count={12} />
+
+      {/* Burst Particles and Ripple Rings during open transition */}
+      {showBurst && (
+        <OpenTransitionBurst type="xi-gold" baseColor="#FFD700" sealPosition={{ top: 50 }} />
+      )}
 
       {/* Main Card Container */}
-      <div className="relative w-[310px] sm:w-[340px] md:w-[520px] lg:w-[600px]" style={{ zIndex: 10 }}>
+      <div
+        className="relative w-[310px] sm:w-[340px] md:w-[520px] lg:w-[600px]"
+        style={{
+          zIndex: 10,
+          animation: showBurst ? "0.8s ease-in 0s 1 normal forwards running envelope-away" : undefined,
+        }}
+      >
         {/* Seal Button on top (hy icon without circle background) */}
         <div
-          onClick={onOpen}
+          onClick={triggerOpen}
+          aria-busy={isOpening ? "true" : undefined}
           title="Bấm để mở thiệp"
-          className="absolute left-1/2 rounded-full flex items-center justify-center cursor-pointer transition-transform hover:scale-105 active:scale-95"
+          className={`absolute left-1/2 rounded-full flex items-center justify-center cursor-pointer transition-transform ${
+            isOpening ? "pointer-events-none" : "hover:scale-105 active:scale-95"
+          }`}
           style={{
             top: 50,
             width: 64,
@@ -36,14 +53,19 @@ export function HoaTinhDoCover({ d, onOpen }: CoverProps) {
             background: "transparent",
             boxShadow: "none",
             zIndex: 30,
-            animation: "seal-pulse 2s ease-in-out infinite",
+            animation: isOpening
+              ? "0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s 1 normal forwards running seal-break"
+              : "seal-pulse 2s ease-in-out infinite",
           }}
         >
           <img
             src="/images/themes/love-art/hy.webp"
             alt=""
             className="w-9 h-9 object-contain"
-            style={{ transformOrigin: "center" }}
+            style={{
+              transformOrigin: "center center",
+              animation: isOpening ? "0.36s ease-out 0s 1 normal forwards running seal-flower-bloom" : undefined,
+            }}
           />
         </div>
 
@@ -58,7 +80,7 @@ export function HoaTinhDoCover({ d, onOpen }: CoverProps) {
           <div
             className="absolute inset-0 rounded-lg overflow-hidden"
             style={{
-              background: "linear-gradient(to bottom right, #FFFFFF, #FFF5F5, #FFFFFF)",
+              background: "#ffffff",
               border: "1px solid rgba(215, 12, 27, 0.15)",
               clipPath: "inset(0 round 8px)",
             }}
@@ -83,17 +105,17 @@ export function HoaTinhDoCover({ d, onOpen }: CoverProps) {
               <span
                 className="block w-full text-center text-3xl sm:text-4xl font-normal"
                 style={{
-                  fontFamily: '"Patrick Hand", "Baloo Bhaijaan", cursive',
-                  color: "#D70C1B",
+                  fontFamily: '"Viaoda Libre", "Times New Roman", serif',
+                  color: "#d70c1b",
                 }}
               >
                 {gName}
               </span>
               <span
-                className="block w-full text-center text-lg leading-none sm:text-xl italic font-normal"
+                className="block w-full text-center text-2xl sm:text-3xl font-normal my-0.5"
                 style={{
-                  color: "#D70C1B",
-                  fontFamily: '"Baskerville", "Times New Roman", serif',
+                  fontFamily: '"The Nautigal", cursive',
+                  color: "#d70c1b",
                 }}
               >
                 &amp;
@@ -101,8 +123,8 @@ export function HoaTinhDoCover({ d, onOpen }: CoverProps) {
               <span
                 className="block w-full text-center text-3xl sm:text-4xl font-normal"
                 style={{
-                  fontFamily: '"Patrick Hand", "Baloo Bhaijaan", cursive',
-                  color: "#D70C1B",
+                  fontFamily: '"Viaoda Libre", "Times New Roman", serif',
+                  color: "#d70c1b",
                 }}
               >
                 {bName}
@@ -113,76 +135,51 @@ export function HoaTinhDoCover({ d, onOpen }: CoverProps) {
             <div className="flex items-center justify-center gap-3 mb-2">
               <div
                 className="w-10 h-px"
-                style={{ background: "linear-gradient(to right, transparent, rgba(215, 12, 27, 0.4))" }}
+                style={{ background: "linear-gradient(to right, transparent, #d70c1b)" }}
               />
-              <span className="text-sm" style={{ color: "rgba(215, 12, 27, 0.4)", opacity: 0.7 }}>
-                ❦
+              <span className="text-xs tracking-[0.25em] uppercase font-light" style={{ color: "#d70c1b" }}>
+                Save Our Date
               </span>
               <div
                 className="w-10 h-px"
-                style={{ background: "linear-gradient(to left, transparent, rgba(215, 12, 27, 0.4))" }}
+                style={{ background: "linear-gradient(to left, transparent, #d70c1b)" }}
               />
             </div>
 
-            {/* Date */}
-            <div
-              className="text-[18px] mb-5 flex flex-col items-center"
+            <p
+              className="text-base sm:text-lg tracking-wide mb-6"
               style={{
-                color: "rgba(215, 12, 27, 0.85)",
-                fontFamily: '"Lora", "Times New Roman", serif',
+                fontFamily: '"EB Garamond", serif',
+                color: "#4a3c31",
               }}
             >
-              <span>{dateText}</span>
-            </div>
+              {dateText}
+            </p>
 
-            {/* Guest Block */}
-            <div className="mb-6 max-w-[300px] md:max-w-[380px] lg:max-w-[440px] mx-auto">
-              <p
-                className="text-[18px] font-light mb-2"
+            {/* Action Button */}
+            <div className="mt-4">
+              <button
+                type="button"
+                onClick={triggerOpen}
+                disabled={isOpening}
+                aria-busy={isOpening ? "true" : undefined}
+                className="relative px-8 py-2.5 text-sm sm:text-base font-medium rounded-full shadow-md transition-all duration-300 hover:shadow-lg active:scale-95 inline-flex items-center gap-2 cursor-pointer"
                 style={{
-                  color: "rgba(215, 12, 27, 0.85)",
-                  fontFamily: '"Lora", "Times New Roman", serif',
+                  background: "linear-gradient(135deg, #d70c1b, #9b0000)",
+                  color: "#ffffff",
+                  border: "1px solid rgba(255, 255, 255, 0.2)",
+                  boxShadow: "0 4px 15px rgba(215, 12, 27, 0.35)",
                 }}
               >
-                {d.envelopeGuest || "Thân Mời"}
-              </p>
-              {d.envelopeInviteMessage && (
-                <p
-                  className="text-[15px] italic mt-1"
-                  style={{
-                    color: "rgba(215, 12, 27, 0.75)",
-                    fontFamily: '"Lora", "Times New Roman", serif',
-                  }}
-                >
-                  {d.envelopeInviteMessage}
-                </p>
-              )}
+                <span>Mở thiệp</span>
+                <span className="text-xs opacity-80" aria-hidden="true">✉</span>
+              </button>
             </div>
-
-            {/* Open Envelope Button */}
-            <button
-              type="button"
-              onClick={onOpen}
-              style={{
-                backgroundColor: "#D70C1B",
-                color: "#FFFFFF",
-                boxShadow: "0 4px 14px rgba(215, 12, 27, 0.35)",
-                fontFamily: '"Lora", "Times New Roman", serif',
-              }}
-              className="relative px-8 py-2.5 text-lg font-semibold sm:font-medium rounded-full shadow-lg border-none cursor-pointer flex w-fit items-center justify-center mx-auto overflow-hidden transition-all hover:scale-105 active:scale-95"
-            >
-              <span>Mở thiệp</span>
-              <div
-                style={{
-                  background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)",
-                  animation: "shine 3s ease-in-out infinite",
-                }}
-                className="absolute top-0 h-full w-8 pointer-events-none"
-              />
-            </button>
           </div>
         </div>
       </div>
     </div>
   );
 }
+
+export default HoaTinhDoCover;

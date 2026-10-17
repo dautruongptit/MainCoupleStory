@@ -105,6 +105,9 @@ export default function Preview({
 
   const handleOpenEnvelope = () => {
     setIsOpen(true);
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "instant" });
+    }
     onEnvelopeOpen?.();
     if (d.musicUrl && d.musicAutoPlay) {
       if (!audioRef.current) {
@@ -313,7 +316,10 @@ export default function Preview({
 
       {/* ==================== 2. NỘI DUNG THIỆP ĐÃ MỞ (OPENED) ==================== */}
       {isOpen && (
-        <div className={`songphung-template ${isMinimalism ? "is-minimalism-body" : isSongHy ? "is-songhy-body" : ""}`}>
+        <div
+          className={`songphung-template ${isMinimalism ? "is-minimalism-body" : isSongHy ? "is-songhy-body" : ""}`}
+          style={{ animation: "fadeIn 0.5s ease-out forwards" }}
+        >
           {/* Floating background audio button */}
           {d.musicUrl && (
             <button

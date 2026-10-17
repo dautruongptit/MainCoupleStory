@@ -1,0 +1,267 @@
+{
+  "bach-su-do": {
+    "name": "Bạch Sứ - Đỏ",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 179,
+        "envelopeMounted": true,
+        "cardStyle": "z-index:10"
+      },
+      {
+        "ms": 100,
+        "elapsed": 464,
+        "envelopeMounted": true,
+        "cardStyle": "z-index:10"
+      },
+      {
+        "ms": 200,
+        "elapsed": 733,
+        "envelopeMounted": true,
+        "cardStyle": "z-index: 10; animation: 0.8s ease-in 0s 1 normal forwards running envelope-away;"
+      },
+      {
+        "ms": 300,
+        "elapsed": 1007,
+        "envelopeMounted": true,
+        "cardStyle": "z-index: 10; animation: 0.8s ease-in 0s 1 normal forwards running envelope-away;"
+      },
+      {
+        "ms": 500,
+        "elapsed": 1479,
+        "envelopeMounted": false,
+        "cardStyle": null
+      },
+      {
+        "ms": 800,
+        "elapsed": 1899,
+        "envelopeMounted": false,
+        "cardStyle": null
+      },
+      {
+        "ms": 1200,
+        "elapsed": 2418,
+        "envelopeMounted": false,
+        "cardStyle": null
+      },
+      {
+        "ms": 2000,
+        "elapsed": 3341,
+        "envelopeMounted": false,
+        "cardStyle": null
+      }
+    ]
+  },
+  "hoa-tinh-do": {
+    "name": "Họa Tình - Đỏ",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 174,
+        "envelopeMounted": true,
+        "cardStyle": "z-index:10"
+      },
+      {
+        "ms": 100,
+        "elapsed": 420,
+        "envelopeMounted": true,
+        "cardStyle": "z-index:10"
+      },
+      {
+        "ms": 200,
+        "elapsed": 835,
+        "envelopeMounted": true,
+        "cardStyle": "z-index: 10; animation: 0.8s ease-in 0s 1 normal forwards running envelope-away;"
+      },
+      {
+        "ms": 300,
+        "elapsed": 1106,
+        "envelopeMounted": true,
+        "cardStyle": "z-index: 10; animation: 0.8s ease-in 0s 1 normal forwards running envelope-away;"
+      },
+      {
+        "ms": 500,
+        "elapsed": 1497,
+        "envelopeMounted": false,
+        "cardStyle": null
+      },
+      {
+        "ms": 800,
+        "elapsed": 1903,
+        "envelopeMounted": false,
+        "cardStyle": null
+      },
+      {
+        "ms": 1200,
+        "elapsed": 2415,
+        "envelopeMounted": false,
+        "cardStyle": null
+      },
+      {
+        "ms": 2000,
+        "elapsed": 3335,
+        "envelopeMounted": false,
+        "cardStyle": null
+      }
+    ]
+  },
+  "song-long-do": {
+    "name": "Song Long - Đỏ",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 174,
+        "envelopeMounted": true,
+        "cardStyle": "z-index:10"
+      },
+      {
+        "ms": 100,
+        "elapsed": 466,
+        "envelopeMounted": true,
+        "cardStyle": "z-index:10"
+      },
+      {
+        "ms": 200,
+        "elapsed": 839,
+        "envelopeMounted": true,
+        "cardStyle": "z-index: 10; animation: 0.8s ease-in 0s 1 normal forwards running envelope-away;"
+      },
+      {
+        "ms": 300,
+        "elapsed": 1181,
+        "envelopeMounted": true,
+        "cardStyle": "z-index: 10; animation: 0.8s ease-in 0s 1 normal forwards running envelope-away;"
+      },
+      {
+        "ms": 500,
+        "elapsed": 1506,
+        "envelopeMounted": false,
+        "cardStyle": null
+      },
+      {
+        "ms": 800,
+        "elapsed": 1939,
+        "envelopeMounted": false,
+        "cardStyle": null
+      },
+      {
+        "ms": 1200,
+        "elapsed": 2491,
+        "envelopeMounted": false,
+        "cardStyle": null
+      },
+      {
+        "ms": 2000,
+        "elapsed": 3436,
+        "envelopeMounted": false,
+        "cardStyle": null
+      }
+    ]
+  },
+  "hoang-kim-lam": {
+    "name": "Hoàng Kim - Lam",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 167,
+        "envelopeMounted": true,
+        "cardStyle": "z-index:10"
+      },
+      {
+        "ms": 100,
+        "elapsed": 447,
+        "envelopeMounted": true,
+        "cardStyle": "z-index:10"
+      },
+      {
+        "ms": 200,
+        "elapsed": 805,
+        "envelopeMounted": true,
+        "cardStyle": "z-index: 10; animation: 0.8s ease-in 0s 1 normal forwards running envelope-away;"
+      },
+      {
+        "ms": 300,
+        "elapsed": 1068,
+        "envelopeMounted": true,
+        "cardStyle": "z-index: 10; animation: 0.8s ease-in 0s 1 normal forwards running envelope-away;"
+      },
+      {
+        "ms": 500,
+        "elapsed": 1462,
+        "envelopeMounted": false,
+        "cardStyle": null
+      },
+      {
+        "ms": 800,
+        "elapsed": 1919,
+        "envelopeMounted": false,
+        "cardStyle": null
+      },
+      {
+        "ms": 1200,
+        "elapsed": 2468,
+        "envelopeMounted": false,
+        "cardStyle": null
+      },
+      {
+        "ms": 2000,
+        "elapsed": 3422,
+        "envelopeMounted": false,
+        "cardStyle": null
+      }
+    ]
+  },
+  "chibi-red": {
+    "name": "Chibi - Red",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 147,
+        "envelopeMounted": true,
+        "cardStyle": "z-index:10"
+      },
+      {
+        "ms": 100,
+        "elapsed": 366,
+        "envelopeMounted": true,
+        "cardStyle": "z-index:10"
+      },
+      {
+        "ms": 200,
+        "elapsed": 587,
+        "envelopeMounted": true,
+        "cardStyle": "z-index: 10; animation: 0.8s ease-in 0s 1 normal forwards running envelope-away;"
+      },
+      {
+        "ms": 300,
+        "elapsed": 823,
+        "envelopeMounted": true,
+        "cardStyle": "z-index: 10; animation: 0.8s ease-in 0s 1 normal forwards running envelope-away;"
+      },
+      {
+        "ms": 500,
+        "elapsed": 1117,
+        "envelopeMounted": true,
+        "cardStyle": "z-index: 10; animation: 0.8s ease-in 0s 1 normal forwards running envelope-away;"
+      },
+      {
+        "ms": 800,
+        "elapsed": 1643,
+        "envelopeMounted": false,
+        "cardStyle": null
+      },
+      {
+        "ms": 1200,
+        "elapsed": 2126,
+        "envelopeMounted": false,
+        "cardStyle": null
+      },
+      {
+        "ms": 2000,
+        "elapsed": 2997,
+        "envelopeMounted": false,
+        "cardStyle": null
+      }
+    ]
+  }
+}

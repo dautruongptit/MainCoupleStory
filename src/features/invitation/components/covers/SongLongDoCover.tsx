@@ -1,6 +1,7 @@
 import React from "react";
 import type { CoverProps } from "./types";
 import { AmbientParticles } from "./AmbientParticles";
+import { OpenTransitionBurst, useEnvelopeOpen } from "./OpenTransition";
 import { groomShown, brideShown } from "@/utils/format";
 import { parseDate } from "@/utils/date";
 
@@ -12,6 +13,8 @@ export function SongLongDoCover({ d, onOpen }: CoverProps) {
   const guestBadge = d.envelopeGuest === "Thân Mời" ? "Anh Tuấn" : (d.envelopeGuest || "Anh Tuấn");
   const inviteMsg = d.envelopeInviteMessage || "đến dự buổi tiệc chung vui cùng gia đình";
 
+  const { isOpening, showBurst, triggerOpen } = useEnvelopeOpen(onOpen);
+
   return (
     <div
       data-landing-screenshot-id="invite-envelope"
@@ -21,30 +24,48 @@ export function SongLongDoCover({ d, onOpen }: CoverProps) {
       }}
     >
       {/* Floating 囍 Particles */}
-      <AmbientParticles type="xi-gold" />
+      <AmbientParticles type="xi-gold" count={12} />
+
+      {/* Burst Particles and Ripple Rings during open transition */}
+      {showBurst && (
+        <OpenTransitionBurst type="xi-gold" baseColor="#FFD700" sealPosition={{ top: 50 }} />
+      )}
 
       {/* Main Card Container */}
-      <div className="relative w-[310px] sm:w-[340px] md:w-[520px] lg:w-[600px]" style={{ zIndex: 10 }}>
+      <div
+        className="relative w-[310px] sm:w-[340px] md:w-[520px] lg:w-[600px]"
+        style={{
+          zIndex: 10,
+          animation: showBurst ? "0.8s ease-in 0s 1 normal forwards running envelope-away" : undefined,
+        }}
+      >
         {/* Seal Button on top with Chinese happiness mask */}
         <div
-          onClick={onOpen}
+          onClick={triggerOpen}
+          aria-busy={isOpening ? "true" : undefined}
           title="Bấm để mở thiệp"
-          className="absolute left-1/2 rounded-full flex items-center justify-center cursor-pointer transition-transform hover:scale-105 active:scale-95"
+          className={`absolute left-1/2 rounded-full flex items-center justify-center cursor-pointer transition-transform ${
+            isOpening ? "pointer-events-none" : "hover:scale-105 active:scale-95"
+          }`}
           style={{
             top: 50,
             width: 56,
             height: 56,
             transform: "translate(-50%, -50%)",
             background: "radial-gradient(circle at 30% 30%, #f0d497, rgb(210, 182, 121))",
-            boxShadow: "0 4px 20px rgba(240, 212, 151, 0.5), inset 0 2px 4px rgba(255,255,255,0.3)",
+            boxShadow: isOpening ? "none" : "0 4px 20px rgba(240, 212, 151, 0.5), inset 0 2px 4px rgba(255,255,255,0.3)",
             zIndex: 30,
-            animation: "seal-pulse 2s ease-in-out infinite",
+            animation: isOpening
+              ? "0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s 1 normal forwards running seal-break"
+              : "seal-pulse 2s ease-in-out infinite",
           }}
         >
           <div
             style={{
               backgroundColor: "#4a1212",
               opacity: 0.9,
+              transformOrigin: "center center",
+              animation: isOpening ? "0.36s ease-out 0s 1 normal forwards running seal-flower-bloom" : undefined,
               WebkitMaskImage: "url('/images/themes/songlong-red/chinese_happiness.webp')",
               WebkitMaskSize: "contain",
               WebkitMaskRepeat: "no-repeat",

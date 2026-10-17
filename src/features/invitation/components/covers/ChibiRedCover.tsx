@@ -1,6 +1,7 @@
 import React from "react";
 import type { CoverProps } from "./types";
 import { AmbientParticles } from "./AmbientParticles";
+import { OpenTransitionBurst, useEnvelopeOpen } from "./OpenTransition";
 import { groomShown, brideShown } from "@/utils/format";
 import { parseDate } from "@/utils/date";
 
@@ -12,6 +13,8 @@ export function ChibiRedCover({ d, onOpen }: CoverProps) {
   const dateZh = `${dt.getFullYear()}年${dt.getMonth() + 1}月${dt.getDate()}日`;
   const guestBadge = d.envelopeGuest === "Thân Mời" ? "em Huy" : (d.envelopeGuest || "em Huy");
 
+  const { isOpening, showBurst, triggerOpen } = useEnvelopeOpen(onOpen);
+
   return (
     <div
       data-landing-screenshot-id="invite-envelope"
@@ -21,15 +24,29 @@ export function ChibiRedCover({ d, onOpen }: CoverProps) {
       }}
     >
       {/* Falling Confetti Particles */}
-      <AmbientParticles type="confetti" />
+      <AmbientParticles type="confetti" count={12} />
+
+      {/* Burst Particles and Ripple Rings during open transition */}
+      {showBurst && (
+        <OpenTransitionBurst type="confetti" baseColor="#FF0040" sealPosition={{ top: 50 }} />
+      )}
 
       {/* Main Card Container */}
-      <div className="relative w-[310px] sm:w-[340px] md:w-[520px] lg:w-[600px]" style={{ zIndex: 10 }}>
+      <div
+        className="relative w-[310px] sm:w-[340px] md:w-[520px] lg:w-[600px]"
+        style={{
+          zIndex: 10,
+          animation: showBurst ? "0.8s ease-in 0s 1 normal forwards running envelope-away" : undefined,
+        }}
+      >
         {/* Seal Button on top (Double happiness image with transparent bg) */}
         <div
-          onClick={onOpen}
+          onClick={triggerOpen}
+          aria-busy={isOpening ? "true" : undefined}
           title="Bấm để mở thiệp"
-          className="absolute left-1/2 rounded-full flex items-center justify-center cursor-pointer transition-transform hover:scale-105 active:scale-95"
+          className={`absolute left-1/2 rounded-full flex items-center justify-center cursor-pointer transition-transform ${
+            isOpening ? "pointer-events-none" : "hover:scale-105 active:scale-95"
+          }`}
           style={{
             top: 50,
             width: 64,
@@ -38,14 +55,19 @@ export function ChibiRedCover({ d, onOpen }: CoverProps) {
             background: "transparent",
             boxShadow: "none",
             zIndex: 30,
-            animation: "seal-pulse 2s ease-in-out infinite",
+            animation: isOpening
+              ? "0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s 1 normal forwards running seal-break"
+              : "seal-pulse 2s ease-in-out infinite",
           }}
         >
           <img
             src="/images/themes/chibi_red/double-happiness.webp"
             alt=""
             className="w-9 h-9 object-contain"
-            style={{ transformOrigin: "center" }}
+            style={{
+              transformOrigin: "center center",
+              animation: isOpening ? "0.36s ease-out 0s 1 normal forwards running seal-flower-bloom" : undefined,
+            }}
           />
         </div>
 
