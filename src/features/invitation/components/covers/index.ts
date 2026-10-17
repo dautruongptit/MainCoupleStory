@@ -32,6 +32,11 @@ import {
   HoaKhoV2XanhCover,
   BaroqueLamCover,
 } from "./SignatureCovers";
+import { HoaTinhDoCover } from "./HoaTinhDoCover";
+import { SongLongDoCover } from "./SongLongDoCover";
+import { HoangKimLamCover } from "./HoangKimLamCover";
+import { ChibiRedCover } from "./ChibiRedCover";
+import { BachSuDoCover } from "./BachSuDoCover";
 
 export const COVER_REGISTRY: Record<string, React.ComponentType<CoverProps>> = {
   "minimalism_darkred": MinimalismCover,
@@ -47,7 +52,7 @@ export const COVER_REGISTRY: Record<string, React.ComponentType<CoverProps>> = {
   "dragon_phoenix_v3_red": TraditionalV2Cover,
   "minimalism_darkbrown": BaroquePorcelainCover,
   "double_phoenix_red": TraditionalRoyalCover,
-  "double_dragon_red": SongLongCover,
+  "double_dragon_red": SongLongDoCover,
   "glass_garden_green": GlassGardenCover,
   "baroque_v2_darkred": BaroquePorcelainCover,
   "silk_ribbon_darkred": BaroquePorcelainCover,
@@ -58,7 +63,7 @@ export const COVER_REGISTRY: Record<string, React.ComponentType<CoverProps>> = {
   "lien_hoa_v2_green": BaroquePorcelainCover,
   "minimalism_red": MinimalismRedCover,
   "song_hac_red": SongHacCover,
-  "chibi_red": ChibiCover,
+  "chibi_red": ChibiRedCover,
   "elegant_leaf_green": ThanhDiepCover,
   "silk_ribbon_pink": BaroquePorcelainCover,
   "dragon_phoenix_green": LongPhungImperialCover,
@@ -67,7 +72,7 @@ export const COVER_REGISTRY: Record<string, React.ComponentType<CoverProps>> = {
   "baroque_gold": BaroquePorcelainCover,
   "double_phoenix_green": TraditionalRoyalCover,
   "cherry_blossom_pink": AnhDaoCover,
-  "hoa_tinh_red": TraditionalV2Cover,
+  "hoa_tinh_red": HoaTinhDoCover,
   "silk_flora_brown": FloralBouquetCover,
   "boho_floral_pink": FloralBouquetCover,
   "nhat_binh_red": TraditionalRoyalCover,
@@ -95,7 +100,7 @@ export const COVER_REGISTRY: Record<string, React.ComponentType<CoverProps>> = {
   "baroque_blue": BaroqueLamCover,
   "royal_v2_green": FloralBouquetCover,
   "dragon_phoenix_black": LongPhungClassicCover,
-  "royal_blue": RoyalGoldCover,
+  "royal_blue": HoangKimLamCover,
   "riviera_blue": ArchitecturalCover,
   "baroque_v2_darkblue": BaroquePorcelainCover,
   "porcelain_brown": PorcelainTileCover,
@@ -104,7 +109,7 @@ export const COVER_REGISTRY: Record<string, React.ComponentType<CoverProps>> = {
   "porcelain_v2_red": BaroquePorcelainCover,
   "crystal_floral_red": BaroquePorcelainCover,
   "porcelain_blue": PorcelainTileCover,
-  "porcelain_red": PorcelainTileCover,
+  "porcelain_red": BachSuDoCover,
   "san_miguel_yellow": ArchitecturalCover,
   "glass_garden_blue": GlassGardenCover,
   "royal_v2_purple": FloralBouquetCover,

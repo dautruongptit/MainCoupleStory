@@ -9,6 +9,7 @@ import { TEMPLATE_THEMES } from "@/features/invitation/config/templateThemes";
 import { getTemplateManifest, getThemeBackgroundUrl } from "@/features/templates/data/themeManifest";
 
 import { REFERENCE_COUPLES } from "@/features/templates/data/referenceCouples";
+import { REFERENCE_COVERS } from "@/features/templates/data/referenceCovers";
 
 /**
  * Xây dựng dữ liệu thiệp mời mẫu (Demo data) chuẩn mực cho từng mẫu thiệp.
@@ -49,6 +50,12 @@ function buildDemoInv(tpl: Tpl): Inv {
     dressColors = [palette.ink, palette.bg, "#d6c5b3", "#ece5dd"];
   }
 
+  // Dữ liệu màn hình mở thiệp chính xác theo từng mẫu
+  const refCover = REFERENCE_COVERS[tpl.id];
+  const coverDate = refCover?.date || "2026-11-28";
+  const coverGuest = refCover?.envelopeGuestBadge || refCover?.envelopeGuest || "Thân Mời";
+  const coverInviteMsg = refCover?.envelopeInviteMessage ?? "đến dự buổi tiệc chung vui cùng gia đình chúng tôi";
+
   return {
     ...defaultInv,
     templateId: tpl.id,
@@ -63,9 +70,9 @@ function buildDemoInv(tpl: Tpl): Inv {
     brideFull: bFull,
     brideNick: bNick,
     dressColors,
-    envelopeGuest: "Thân Mời",
-    envelopeInviteMessage: "đến dự buổi tiệc chung vui cùng gia đình chúng tôi",
-    date: "2026-11-28",
+    envelopeGuest: coverGuest,
+    envelopeInviteMessage: coverInviteMsg,
+    date: coverDate,
     time: "18:00",
     welcomeTime: "17:30",
     startTime: "18:00",
@@ -87,14 +94,19 @@ export default function Demo({ slug }: { slug: string }) {
   // 2. Trạng thái dữ liệu thiệp demo tương ứng với template
   const [d, setD] = useState<Inv>(() => (tpl ? buildDemoInv(tpl) : defaultInv));
 
-  // 3. Xử lý khi bấm nút "Tạo thiệp theo mẫu này"
+  // 3. Trạng thái đã mở thiệp hay chưa (ẩn thanh nổi trên màn hình bì thư)
+  const [isOpened, setIsOpened] = useState(() => {
+    return typeof location !== "undefined" && new URLSearchParams(location.search).get("open") === "1";
+  });
+
+  // 4. Xử lý khi bấm nút "Tạo thiệp theo mẫu này"
   const choose = () => {
     if (!tpl) return;
     const id = createDraft(tpl);
     navigate(`/edit/${id}?template=${tpl.id}`);
   };
 
-  // 4. Nếu không tìm thấy template: hiển thị trang Not Found chuẩn UI, không crash, không fallback âm thầm
+  // 5. Nếu không tìm thấy template: hiển thị trang Not Found chuẩn UI, không crash, không fallback âm thầm
   if (!tpl) {
     return (
       <div className="page narrow text-center" style={{ minHeight: "80vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "60px 20px" }}>
@@ -121,39 +133,42 @@ export default function Demo({ slug }: { slug: string }) {
     );
   }
 
-  // 5. Render bản xem trước trực tiếp với thanh điều hướng nổi (Floating Header)
+  // 6. Render bản xem trước trực tiếp với thanh điều hướng nổi (Floating Header chỉ hiện khi thiệp đã mở)
   return (
     <div className="demo-standalone-wrap">
-      {/* Floating Action Bar */}
-      <div className="demo-floating-header" style={{ position: "fixed", top: "14px", right: "16px", zIndex: 100, display: "flex", alignItems: "center", gap: "10px" }}>
-        <Link
-          href="/vi/mau-thiep"
-          className="demo-float-btn back"
-          title="Quay lại kho mẫu"
-        >
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <polyline points="15 18 9 12 15 6" />
-          </svg>
-          <span>Kho mẫu</span>
-        </Link>
-        <button
-          type="button"
-          className="demo-float-btn choose"
-          onClick={choose}
-          title="Tạo thiệp theo mẫu này"
-        >
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M12 5v14M5 12h14" />
-          </svg>
-          <span>Tạo thiệp</span>
-        </button>
-      </div>
+      {/* Floating Action Bar - Chỉ hiển thị khi thiệp đã mở hoặc khi mở với ?open=1 */}
+      {isOpened && (
+        <div className="demo-floating-header" style={{ position: "fixed", top: "14px", right: "16px", zIndex: 100, display: "flex", alignItems: "center", gap: "10px" }}>
+          <Link
+            href="/vi/mau-thiep"
+            className="demo-float-btn back"
+            title="Quay lại kho mẫu"
+          >
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+            <span>Kho mẫu</span>
+          </Link>
+          <button
+            type="button"
+            className="demo-float-btn choose"
+            onClick={choose}
+            title="Tạo thiệp theo mẫu này"
+          >
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+            <span>Tạo thiệp</span>
+          </button>
+        </div>
+      )}
 
       {/* Invitation Preview Component */}
       <Preview
         d={d}
         set={(p) => setD((prev) => ({ ...prev, ...p }))}
         standalone={true}
+        onEnvelopeOpen={() => setIsOpened(true)}
       />
     </div>
   );

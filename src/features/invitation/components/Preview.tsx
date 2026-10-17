@@ -21,11 +21,13 @@ export default function Preview({
   set,
   standalone = false,
   initialOpen,
+  onEnvelopeOpen,
 }: {
   d: Inv;
   set: (p: Partial<Inv>) => void;
   standalone?: boolean;
   initialOpen?: boolean;
+  onEnvelopeOpen?: () => void;
 }) {
   const [isOpen, setIsOpen] = useState(() => {
     if (initialOpen !== undefined) return initialOpen;
@@ -101,6 +103,7 @@ export default function Preview({
 
   const handleOpenEnvelope = () => {
     setIsOpen(true);
+    onEnvelopeOpen?.();
     if (d.musicUrl && d.musicAutoPlay) {
       if (!audioRef.current) {
         audioRef.current = new Audio(d.musicUrl);

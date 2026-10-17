@@ -1,11 +1,70 @@
 import React from "react";
 
 interface AmbientParticlesProps {
-  type: "xi" | "petal" | "blossom" | "confetti";
+  type: "xi" | "xi-gold" | "petal" | "blossom" | "confetti" | "stars";
   color?: string;
 }
 
 export function AmbientParticles({ type, color }: AmbientParticlesProps) {
+  if (type === "stars") {
+    const stars = [
+      { left: "8%", color: "#f5e6c8", size: "22px", dur: "19s", delay: "-16s" },
+      { left: "28%", color: "#ffffff", size: "16px", dur: "23s", delay: "-8s" },
+      { left: "50%", color: "#f5e6c8", size: "20px", dur: "18s", delay: "-13s" },
+      { left: "68%", color: "#ffffff", size: "14px", dur: "21s", delay: "-3s" },
+      { left: "85%", color: "#d4a85c", size: "18px", dur: "24s", delay: "-7s" },
+      { left: "93%", color: "#f5e6c8", size: "15px", dur: "20s", delay: "-14s" },
+    ];
+    return (
+      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true" style={{ zIndex: 1 }}>
+        {stars.map((p, i) => (
+          <div
+            key={i}
+            className="absolute pointer-events-none"
+            style={{
+              left: p.left,
+              top: "-30px",
+              color: p.color,
+              fontSize: p.size,
+              animation: `ambient-fall ${p.dur} ease-in-out ${p.delay} infinite`,
+            }}
+          >
+            ✦
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  if (type === "xi-gold") {
+    const items = [
+      { left: "10%", size: "14px", color: "#FFD700", dur: "22s", delay: "-7s" },
+      { left: "24%", size: "20px", color: "#FFE066", dur: "24s", delay: "-15s" },
+      { left: "42%", size: "18px", color: "#FFC107", dur: "20s", delay: "-4s" },
+      { left: "64%", size: "15px", color: "#FF6B6B", dur: "21s", delay: "-11s" },
+      { left: "75%", size: "22px", color: "#FFD700", dur: "19s", delay: "-8s" },
+      { left: "88%", size: "16px", color: "#FFE066", dur: "23s", delay: "-12s" },
+    ];
+    return (
+      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true" style={{ zIndex: 1 }}>
+        {items.map((p, i) => (
+          <div
+            key={i}
+            className="absolute pointer-events-none"
+            style={{
+              left: p.left,
+              bottom: "-30px",
+              fontSize: p.size,
+              color: p.color,
+              animation: `ambient-rise ${p.dur} ease-in-out ${p.delay} infinite`,
+            }}
+          >
+            囍
+          </div>
+        ))}
+      </div>
+    );
+  }
   if (type === "xi") {
     const items = [
       { left: "12%", size: "22px", color: color || "#FFF0E7", dur: "18s", delay: "-3s" },

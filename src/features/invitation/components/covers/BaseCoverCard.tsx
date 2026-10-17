@@ -102,17 +102,17 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
           {/* Card Content */}
           <div className="relative z-10 text-center px-6 pt-28 pb-14 md:pt-24 md:pb-8">
             <h1
-              className="mb-2 flex flex-col items-center leading-tight text-3xl sm:text-4xl"
-              style={{ color: textColor, fontFamily: config.nameFont }}
+              className="mb-2 flex flex-col items-center leading-tight text-3xl sm:text-4xl font-normal"
+              style={{ color: textColor, fontFamily: config.nameFont, fontWeight: 400 }}
             >
-              <span className="block w-full text-center">{gName}</span>
+              <span className="block w-full text-center font-normal">{gName}</span>
               <span
                 style={{ fontFamily: '"Baskerville", "Times New Roman", serif' }}
-                className="block w-full text-center text-lg leading-none sm:text-xl my-1 opacity-75 italic"
+                className="block w-full text-center text-lg leading-none sm:text-xl my-1 opacity-75 italic font-normal"
               >
                 &amp;
               </span>
-              <span className="block w-full text-center">{bName}</span>
+              <span className="block w-full text-center font-normal">{bName}</span>
             </h1>
 
             {/* Divider */}
