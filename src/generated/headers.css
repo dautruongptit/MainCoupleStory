@@ -1,7 +1,12 @@
 /* @keyframes lấy từ trang demo thật */
+@keyframes alFloatPhoto{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes alFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 @keyframes dbFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 @keyframes dbrFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(var(--dbr-float,-8px))}}
 @keyframes drFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes hdFall{0%{translate:0 -7px}35%{translate:3px 1px}70%{translate:-2px 9px}100%{translate:0 -7px}}
+@keyframes hkFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 @keyframes mgFloatB{0%,100%{transform:translate(-50%,0) rotate(-12.55deg)}50%{transform:translate(-50%,-8px) rotate(-12.55deg)}}
 @keyframes mgFloatG{0%,100%{transform:translate(-50%,0) rotate(9.59deg)}50%{transform:translate(-50%,-8px) rotate(9.59deg)}}
 @keyframes mpFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes sfFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}

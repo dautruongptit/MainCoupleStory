@@ -288,7 +288,7 @@ export default function Preview({
   );
 
   return (
-    <div style={paletteVars} className={`pv-wrapper ${red ? "" : "palette-plain"} ${standalone ? "is-standalone" : ""} ${isMinimalism ? "theme-minimalism" : isSongHy ? "theme-songhy" : isLongPhungV2 ? "theme-longphung-v2" : "theme-songphung"}`}>
+    <div style={paletteVars} className={`pv-wrapper ${red && !GENERATED_HEADERS[d.templateId] ? "" : "palette-plain"} ${standalone ? "is-standalone" : ""} ${isMinimalism ? "theme-minimalism" : isSongHy ? "theme-songhy" : isLongPhungV2 ? "theme-longphung-v2" : "theme-songphung"}`}>
       {/* ==================== 1. MÀN HÌNH BÌ THƯ (ENVELOPE) ==================== */}
       {!isOpen && (
         isDarkRed ? (

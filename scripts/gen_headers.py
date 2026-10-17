@@ -6,6 +6,7 @@ from html.parser import HTMLParser
 
 TP = os.environ["TEMP"] + "/tp"
 OUT = r"D:\MY PRO\applications\MainCoupleStory\web\src\generated"
+MAXLEN = 16000
 VOID = {"img", "br", "hr", "input", "meta", "link"}
 
 def camel(p):
@@ -62,7 +63,7 @@ class Conv(HTMLParser):
             elif k == "aria-hidden":
                 a.append('aria-hidden="true"')
             else:
-                a.append(f'{attr_name(k)}={json.dumps(v)}')
+                a.append(f'{attr_name(k)}={{{json.dumps(v)}}}')
         tag = SVG_TAGS.get(tag, tag)
         self.out.append(f"<{tag}{(' ' + ' '.join(a)) if a else ''}{' /' if tag in VOID else ''}>")
         if tag not in VOID:
@@ -97,13 +98,27 @@ class Conv(HTMLParser):
         else:
             self.out.append("{" + json.dumps(t, ensure_ascii=False) + "}")
 
+def _close(h, start, tag):
+    """Vị trí ngay sau thẻ đóng khớp với thẻ mở tại start (đếm độ sâu cùng loại thẻ)."""
+    depth, pos = 0, start
+    for m in re.finditer(rf"<(/?){tag}(?=[\s>/])[^>]*>", h[start:]):
+        depth += -1 if m.group(1) else 1
+        if depth == 0:
+            return start + m.end()
+    return -1
+
 def extract(slug):
     h = open(f"{TP}/{slug}.o.html", encoding="utf-8").read()
     i = h.find("data-showcase-root")
     i = h.rfind("<div", 0, i)
     j = h.find("<header", i)
-    k = h.find("</header>", j) + len("</header>")
-    # root start tag only (until first '>') then the children up to end of header
+    tag = "header"
+    if j < 0:
+        j = h.find("<section", i)
+        tag = "section"
+    if j < 0:
+        raise SystemExit(f"{slug}: không có header/section")
+    k = _close(h, j, tag)
     return h[i:k], h
 
 def keyframes(h):
@@ -124,6 +139,9 @@ def main(pairs):
         c = Conv(names)
         c.feed(frag)
         body = "".join(c.out)
+        if len(body) > MAXLEN:
+            print(slug, "BỎ QUA: phần đầu quá lớn (", len(body), "ký tự), có vẻ là cả trang")
+            continue
         # đóng thẻ còn mở (root div) vì ta cắt ngay sau </header>
         for t in reversed(c.stack):
             body += f"</{t}>"
