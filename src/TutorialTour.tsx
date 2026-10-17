@@ -41,7 +41,7 @@ const STEPS: StepConfig[] = [
   {
     stepNum: 4,
     total: 4,
-    title: "Xuất bản thiệp",
+    title: "Chúc mừng!",
     desc: "Khi hoàn tất, nhấn nút này để xuất bản và chia sẻ thiệp với khách mời.",
     targetSelector: ".hdr-right .btn-primary, .hdr-right button",
     arrowPos: "right",

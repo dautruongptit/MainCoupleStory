@@ -207,6 +207,11 @@ export function LoginModal({ onClose }: { onClose: () => void }) {
   );
 }
 
+/**
+ * CHỈ LÀ DEMO: không có backend nên "đăng nhập" chỉ là một cờ trong localStorage, ai sửa được cờ này cũng vào được.
+ * Dữ liệu thiệp và khách cũng nằm ngay trong localStorage của trình duyệt, nên cờ này chỉ điều khiển giao diện,
+ * không bảo vệ dữ liệu. Khi có backend phải thay bằng phiên do máy chủ cấp (cookie HttpOnly) và kiểm tra quyền phía máy chủ.
+ */
 const AUTH_KEY = "chungdoi.logged_in";
 let _loggedIn = typeof window !== "undefined" && localStorage.getItem(AUTH_KEY) === "true";
 
