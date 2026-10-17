@@ -2163,3 +2163,14 @@ button.gst-chip { border: 0; font-family: inherit; cursor: pointer; }
 .photo .photo-pop-overlay .photo-pop-btn { position: static; width: 100%; height: 100%; min-height: 0; }
 .photo .photo-pop-btn { background: rgba(255, 255, 255, 0.16); border-color: rgba(255, 255, 255, 0.22); }
 .add-photo { border: 0; background: #0f0d0c; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) inset; }
+
+/* Ảnh xem trước mặc định "Phong bì thiệp": cắt vùng ảnh hoa từ ảnh chuẩn (578×730, vùng 545×287 tại 14,256) */
+.share-og-envelope-cover { background: #f6efe9 url("/images/share-envelope-default.png") no-repeat 42.4% 57.8% / 106.06% auto; padding: 0; }
+
+/* RSVP: khung thông tin xanh theo ảnh chuẩn; Thông tin gia đình: tiêu đề nhỏ, vạch ngăn */
+.rsvp-info { display: flex; gap: 12px; padding: 14px 16px; border-radius: 12px; background: #131110; margin-bottom: 12px; }
+.rsvp-info b { display: block; font-size: 13px; font-weight: 700; color: #fff; }
+.rsvp-info p { margin: 2px 0 0; font-size: 12px; color: rgba(205, 205, 205, 0.55); }
+.card-b .sub { font-size: 12px; font-weight: 600; color: rgba(205, 205, 205, 0.55); margin: 4px 0 8px; }
+.card-b hr.divider { border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); margin: 16px 0; height: 0; }
+.btn-outline { gap: 8px; }

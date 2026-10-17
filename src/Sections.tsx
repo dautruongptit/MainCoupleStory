@@ -666,7 +666,16 @@ export function Rsvp({ d, set }: P) {
         </div>
       ) : (
         <>
-          <Hint>Khách mời có thể xác nhận tham dự trực tiếp trên thiệp. Xem danh sách xác nhận trong trang Quản lý khách mời</Hint>
+          <div className="rsvp-info">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flex: "none", marginTop: 2 }}>
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 16v-4M12 8h.01" />
+            </svg>
+            <div>
+              <b>Khách mời có thể xác nhận tham dự trực tiếp trên thiệp</b>
+              <p>Xem danh sách xác nhận trong trang Quản lý khách mời</p>
+            </div>
+          </div>
           <Field label="Kiểu hiển thị" cap>
             <Segmented value={d.rsvpDisplay} onChange={(v) => set({ rsvpDisplay: v })} options={[{ value: "button", label: "Nút bấm" }, { value: "inline", label: "Hiện trực tiếp" }]} />
             <Helper>{d.rsvpDisplay === "button" ? "Khách bấm nút để mở form xác nhận trong cửa sổ popup" : "Form xác nhận hiển thị trực tiếp trên thiệp"}</Helper>
@@ -678,7 +687,7 @@ export function Rsvp({ d, set }: P) {
           {d.partyMode === "limit" && (
             <Field label="Giới hạn tối đa"><Input type="number" min={1} value={d.partyLimit} onChange={(e) => set({ partyLimit: Math.max(1, Number(e.target.value) || 1) })} /></Field>
           )}
-          <Field label="Câu hỏi thêm cho khách mời">
+          <Field label="Câu hỏi thêm cho khách mời" cap>
             <Helper>Khách trả lời khi xác nhận tham dự trên thiệp</Helper>
             {d.questions.map((q, i) => (
               <Row key={i}>
@@ -1778,14 +1787,7 @@ export function Share({ d, set }: P) {
               </div>
             </div>
           ) : (
-            <div className="share-og-envelope-cover">
-              <div className="share-og-floral left" />
-              <div className="share-og-env-center">
-                <span className="share-og-env-title">Thiệp Cưới</span>
-                <span className="share-og-env-symbol">❦</span>
-              </div>
-              <div className="share-og-floral right" />
-            </div>
+            <div className="share-og-envelope-cover" role="img" aria-label="Phong bì thiệp" />
           )}
         </div>
         <div className="share-og-meta">
