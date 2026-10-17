@@ -31,6 +31,10 @@ Quyết định đã áp dụng cho 6 câu hỏi mở (bạn duyệt kế hoạc
 | Giai đoạn 3 | Tour bước 4 đặt tiêu đề "Chúc mừng!"; xác nhận 4 bước khớp ảnh | Xong | Chạy trình duyệt, đọc nội dung 4 bước |
 | Ghi chú bảo mật | Đăng nhập, OTP, Google/Apple chỉ là mô phỏng trong localStorage (đã ghi chú trong `TopNav.tsx`); cờ đăng nhập không bảo vệ dữ liệu vì dữ liệu cũng nằm trong localStorage | Chấp nhận cho bản demo; cần backend thật khi dùng thật | — |
 
+| Giai đoạn 4 | Thêm Tailwind 3 (chỉ lớp tiện ích, không preflight, chỉ quét `Preview.tsx`) vì mã xem trước thiệp dùng class Tailwind mà project chưa có, khiến trang Demo và xem trước vỡ layout; màn hình "Mở thiệp" Minimalism nền be như ảnh | Xong (thêm devDependencies: tailwindcss, postcss, autoprefixer) | Chụp so ảnh 232343 |
+| Giai đoạn 4 | Nhãn công tắc "Hiện/Ẩn" thống nhất; Thư viện ảnh rỗng là một ô vuông giữa; nhãn "KIỂU HIỂN THỊ" viết hoa; popup 4 nút trên ảnh lấp đầy ô; modal chọn nhạc nằm trên dock mobile | Xong | Chụp so ảnh 210307, 221714, 214621; chạy tải ảnh, chuyển ảnh, xóa ảnh, tải ảnh đầu thiệp |
+| Giai đoạn 4 | Đã chụp so, không phát hiện lệch đáng kể: Lễ, Lời cảm ơn, Sổ lưu bút, Dress Code, Hộp Quà Mừng, Lịch trình, Tiệc cưới, Thông tin cơ bản, Ảnh đầu thiệp, modal nhạc, đổi mẫu, chi tiết mẫu | Xong | Chụp |
+
 **Còn lại, chưa làm hoặc chưa kiểm tra bằng ảnh chụp:** G11 logo gốc (hoa sen hiện là bản vẽ lại), G12 chế độ sáng/tối thật, G30 kiểu đăng nhập mật khẩu (chưa có ảnh nào chứng tỏ cần), G01/G02/G04 nội dung tab Khách Mời, bước OTP chưa có ảnh chuẩn. Chưa chụp so: Demo, Pricing, modal đổi mẫu/chọn nhạc/tour (chỉ xem tour bước 1), các mục Thư viện ảnh, Dress Code, RSVP, Ảnh xem trước chia sẻ, các phần Home ngoài đánh giá, hero và đổi mẫu, và mobile ngoài editor/Khách Mời.
 
 **Giới hạn môi trường kiểm thử:** `assets.chungdoi.com` trả HTTP 403 khi tải từ môi trường này nên ảnh mẫu thiệp không hiện trong ảnh chụp (hiện chữ alt). Chưa biết trình duyệt của bạn có tải được không.
