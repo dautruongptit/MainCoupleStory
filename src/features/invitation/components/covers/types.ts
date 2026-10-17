@@ -17,11 +17,16 @@ export interface CoverConfig {
   templateName: string;
   sig: string;
   bg: string;
+  cardBg: string;
+  cardBorder: string;
   imgs: CoverImage[];
   particleType: "xi" | "petal" | "blossom" | "confetti";
   sealType: "xi" | "heart" | "none";
+  sealBg: string;
+  sealColor: string;
   nameFont: string;
   accentColor: string;
+  textColor: string;
   rgb: string;
   btnBg: string;
   btnTextColor: string;

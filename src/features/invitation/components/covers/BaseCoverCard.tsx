@@ -16,11 +16,12 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
   const dateText = `${dt.getDate()} tháng ${dt.getMonth() + 1}, ${dt.getFullYear()}`;
 
   // Seal radial gradient
-  const sealBg = config.sealType === "xi"
+  const sealBg = config.sealBg || (config.sealType === "xi"
     ? "radial-gradient(circle at 30% 30%, #e9ce9e, rgb(203, 176, 128))"
-    : `radial-gradient(circle at 30% 30%, ${config.accentColor}, rgba(${config.rgb}, 0.85))`;
+    : `radial-gradient(circle at 30% 30%, ${config.accentColor}, rgba(${config.rgb}, 0.85))`);
 
-  const sealColor = config.sealType === "xi" ? "#4a0808" : "#ffffff";
+  const sealColor = config.sealColor || (config.sealType === "xi" ? "#4a0808" : "#ffffff");
+  const textColor = config.textColor || config.accentColor;
 
   // Outer background style
   const bgStyle: React.CSSProperties = {
@@ -78,8 +79,8 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
           <div
             className="absolute inset-0 rounded-lg overflow-hidden"
             style={{
-              background: "rgba(255, 255, 255, 0.97)",
-              border: `1px solid rgba(${config.rgb}, 0.15)`,
+              background: config.cardBg || "rgba(255, 255, 255, 0.97)",
+              border: `1px solid ${config.cardBorder || `rgba(${config.rgb}, 0.15)`}`,
               clipPath: "inset(0 round 8px)",
             }}
           >
@@ -102,7 +103,7 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
           <div className="relative z-10 text-center px-6 pt-28 pb-14 md:pt-24 md:pb-8">
             <h1
               className="mb-2 flex flex-col items-center leading-tight text-3xl sm:text-4xl"
-              style={{ color: config.accentColor, fontFamily: config.nameFont }}
+              style={{ color: textColor, fontFamily: config.nameFont }}
             >
               <span className="block w-full text-center">{gName}</span>
               <span
@@ -118,21 +119,21 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
             <div className="flex items-center justify-center gap-3 mb-2">
               <div
                 className="w-10 h-px"
-                style={{ background: `linear-gradient(to right, transparent, ${config.accentColor})` }}
+                style={{ background: `linear-gradient(to right, transparent, ${textColor})` }}
               />
-              <span className="text-sm" style={{ color: config.accentColor, opacity: 0.7 }}>
+              <span className="text-sm" style={{ color: textColor, opacity: 0.7 }}>
                 ❦
               </span>
               <div
                 className="w-10 h-px"
-                style={{ background: `linear-gradient(to left, transparent, ${config.accentColor})` }}
+                style={{ background: `linear-gradient(to left, transparent, ${textColor})` }}
               />
             </div>
 
             {/* Date */}
             <div
               className="text-[18px] mb-5 flex flex-col items-center"
-              style={{ color: `rgba(${config.rgb}, 0.8)`, fontFamily: '"Lora", "Times New Roman", serif' }}
+              style={{ color: textColor, opacity: 0.85, fontFamily: '"Lora", "Times New Roman", serif' }}
             >
               <span>{dateText}</span>
             </div>
@@ -141,14 +142,14 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
             <div className="mb-6 max-w-[300px] md:max-w-[380px] lg:max-w-[440px] mx-auto">
               <p
                 className="text-[18px] font-light mb-1"
-                style={{ color: `rgba(${config.rgb}, 0.8)`, fontFamily: '"Lora", "Times New Roman", serif' }}
+                style={{ color: textColor, opacity: 0.85, fontFamily: '"Lora", "Times New Roman", serif' }}
               >
                 {d.envelopeGuest || "Thân Mời"}
               </p>
               {d.envelopeInviteMessage && (
                 <p
                   className="text-[15px] italic mt-1"
-                  style={{ color: `rgba(${config.rgb}, 0.7)`, fontFamily: '"Lora", "Times New Roman", serif' }}
+                  style={{ color: textColor, opacity: 0.75, fontFamily: '"Lora", "Times New Roman", serif' }}
                 >
                   {d.envelopeInviteMessage}
                 </p>
