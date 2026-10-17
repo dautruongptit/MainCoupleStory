@@ -1479,7 +1479,7 @@ export function GiftBox({ d, set }: P) {
                   <img
                     alt="VietQR"
                     className="w-full h-full object-contain p-1"
-                    src="https://chungdoi.com/icons/payments/vietqr.svg"
+                    src="/icons/payments/vietqr.svg"
                   />
                 </div>
                 <span className="payment-title">VietQR</span>
@@ -1500,7 +1500,7 @@ export function GiftBox({ d, set }: P) {
                   <img
                     alt="PayPal"
                     className="w-full h-full object-contain p-1"
-                    src="https://chungdoi.com/icons/payments/paypal.svg"
+                    src="/icons/payments/paypal.svg"
                   />
                 </div>
                 <span className="payment-title">PayPal</span>
@@ -1521,7 +1521,7 @@ export function GiftBox({ d, set }: P) {
                   <img
                     alt="Wise"
                     className="w-full h-full object-contain p-1"
-                    src="https://chungdoi.com/icons/payments/wise.svg"
+                    src="/icons/payments/wise.svg"
                   />
                 </div>
                 <span className="payment-title">Wise</span>
@@ -1543,7 +1543,7 @@ export function GiftBox({ d, set }: P) {
                   <img
                     alt="Danh sách quà cưới"
                     className="w-full h-full object-contain p-1"
-                    src="https://chungdoi.com/icons/payments/registry.svg"
+                    src="/icons/payments/registry.svg"
                   />
                 </div>
                 <span className="payment-title">Danh sách quà cưới</span>

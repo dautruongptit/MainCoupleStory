@@ -336,22 +336,22 @@ export default function Preview({
               <div className="envelope-card">
                 {/* Corner Ornaments */}
                 <img
-                  src="https://chungdoi.com/images/themes/songphung-red/Phuong.webp"
+                  src="/images/themes/songphung-red/Phuong.webp"
                   alt=""
                   className="env-deco-phuong-tl"
                 />
                 <img
-                  src="https://chungdoi.com/images/themes/songphung-red/Phuong.webp"
+                  src="/images/themes/songphung-red/Phuong.webp"
                   alt=""
                   className="env-deco-phuong-br"
                 />
                 <img
-                  src="https://chungdoi.com/images/themes/songphung-red/HOA.webp"
+                  src="/images/themes/songphung-red/HOA.webp"
                   alt=""
                   className="env-deco-hoa-bl"
                 />
                 <img
-                  src="https://chungdoi.com/images/themes/songphung-red/HOA.webp"
+                  src="/images/themes/songphung-red/HOA.webp"
                   alt=""
                   className="env-deco-hoa-tr"
                 />
@@ -414,7 +414,7 @@ export default function Preview({
             <div
               className="paper-texture"
               style={{
-                backgroundImage: "url(https://chungdoi.com/images/themes/songphung-red/NENGIAY.jpg)",
+                backgroundImage: "url(/images/themes/songphung-red/NENGIAY.jpg)",
               }}
             />
           )}
@@ -424,13 +424,13 @@ export default function Preview({
             <>
               <div className="line-deco-left" aria-hidden="true">
                 <img
-                  src="https://chungdoi.com/images/themes/songphung-red/Phuong%20line.webp"
+                  src="/images/themes/songphung-red/Phuong%20line.webp"
                   alt=""
                 />
               </div>
               <div className="line-deco-right" aria-hidden="true">
                 <img
-                  src="https://chungdoi.com/images/themes/songphung-red/Phuong%20line.webp"
+                  src="/images/themes/songphung-red/Phuong%20line.webp"
                   alt=""
                 />
               </div>
@@ -553,31 +553,22 @@ export default function Preview({
             </header>
           ) : (
             /* Hero cho Song Phụng - Đỏ */
-            <header className="sp-hero">
-              <div className="sp-hero-names">
-                <div className="sp-name-1">{n1}</div>
-                <div className="sp-name-2">{n2}</div>
+            <header className="relative flex flex-col items-center justify-center text-center z-10 pt-12 md:pt-16 pb-[200px] md:pb-[220px] lg:pb-[240px]">
+              <div className="w-full text-[36px] md:text-[44px] lg:text-[52px] mb-6 md:mb-8 text-left pl-6 md:pl-8 md:ml-[80px] lg:ml-[80px] uppercase" style={{ color: "#710001", fontFamily: '"Playfair Display", serif', lineHeight: 1.11, fontWeight: 400 }}>
+                <div className="ml-[15px]">{n1}</div>
+                <div className="ml-[50px] mt-[10px]">{n2}</div>
               </div>
-
-              <div className="sp-banner-wrap">
-                <div className="sp-banner-bg" />
-                <img
-                  src="https://chungdoi.com/images/themes/songphung-red/Phuong%202.webp"
-                  alt="Phoenix Left"
-                  className="sp-phuong-left"
-                />
-                <div className="sp-chu-hy-box">
-                  <img
-                    src="https://chungdoi.com/images/themes/songphung-red/CHU%20HY.webp"
-                    alt="Chữ Hỷ"
-                    className="sp-chu-hy"
-                  />
+              <div className="relative w-full flex items-center justify-center mb-4 md:mb-6 h-[260px] md:h-[488px] lg:h-[488px]">
+                <div className="absolute w-full h-[110px] md:h-[206px] lg:h-[206px] z-0" style={{ backgroundColor: "#710001", top: "50%" }} />
+                <div className="absolute left-[-90px] md:left-[-169px] lg:left-[-169px] top-0 w-[230px] md:w-[431px] lg:w-[431px] h-[480px] md:h-[900px] lg:h-[900px] z-10">
+                  <img src="/images/themes/songphung-red/Phuong%202.webp" alt="Phoenix Left" className="w-full h-full object-contain" style={{ objectPosition: "left center" }} />
                 </div>
-                <img
-                  src="https://chungdoi.com/images/themes/songphung-red/Phuong.webp"
-                  alt="Phoenix Right"
-                  className="sp-phuong-right"
-                />
+                <div className="relative z-20 w-[155px] h-[155px] md:w-[291px] md:h-[291px] lg:w-[291px] lg:h-[291px]">
+                  <img src="/images/themes/songphung-red/CHU%20HY.webp" alt="Chữ Hỷ" className="w-full h-full object-contain" />
+                </div>
+                <div className="absolute left-[calc(50%+77.5px)] md:left-[calc(50%+145.5px)] lg:left-[calc(50%+145.5px)] top-[-120px] md:top-[-225px] lg:top-[-225px] w-[155px] md:w-[291px] lg:w-[291px] h-[320px] md:h-[600px] lg:h-[600px] z-10">
+                  <img src="/images/themes/songphung-red/Phuong.webp" alt="Phoenix Right" className="w-full h-full object-contain" style={{ objectPosition: "right center" }} />
+                </div>
               </div>
             </header>
           )}
@@ -587,7 +578,7 @@ export default function Preview({
             {/* Flower Accent top-right for traditional theme */}
             {!isMinimalism && !isSongHy && (
               <img
-                src="https://chungdoi.com/images/themes/songphung-red/HOA.webp"
+                src="/images/themes/songphung-red/HOA.webp"
                 alt=""
                 className="sp-flower-corner"
               />
@@ -996,7 +987,7 @@ export default function Preview({
                           loading="lazy"
                           decoding="async"
                           className="ienv-back absolute inset-0 pointer-events-none"
-                          src="https://chungdoi.com/images/envelope/baroque_v2_darkred.webp"
+                          src="/images/envelope/baroque_v2_darkred.webp"
                           style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center bottom", transformOrigin: "50% 100%", transform: "translateX(20%) translateY(-10%) scale(-0.8, 0.8) rotate(-15deg)", zIndex: 1, filter: "drop-shadow(rgba(0, 0, 0, 0.18) 0px 8px 14px)", willChange: "transform" }}
                         />
                         <img
@@ -1004,7 +995,7 @@ export default function Preview({
                           loading="lazy"
                           decoding="async"
                           className="ienv-card absolute inset-0 pointer-events-none"
-                          src="https://chungdoi.com/images/envelope/baroque_v2_darkred.webp"
+                          src="/images/envelope/baroque_v2_darkred.webp"
                           style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center bottom", rotate: "-10deg", zIndex: 2, filter: "drop-shadow(rgba(0, 0, 0, 0.22) 0px 10px 18px)", willChange: "transform" }}
                         />
                       </div>
@@ -1047,14 +1038,14 @@ export default function Preview({
                       {/* Bobbing Box and 7 Mini Decors */}
                       <div className="igb-bob relative" style={{ width: "200px", height: "220px" }}>
                         <div className="igb-shadow absolute pointer-events-none" style={{ left: "50%", bottom: "-8px", width: "144px", height: "12px", marginLeft: "-72px", borderRadius: "50%", backgroundColor: "rgba(0, 0, 0, 0.45)", filter: "blur(4px)", zIndex: 0, willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-1 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/baroque_v2_darkgreen.webp" style={{ left: "-20px", top: "10px", width: "34px", zIndex: 1, transform: "rotate(-22deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-2 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/saraya_gold.webp" style={{ left: "168px", top: "2px", width: "38px", zIndex: 1, transform: "rotate(20deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-3 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/dragon_phoenix_v2.webp" style={{ left: "-16px", top: "120px", width: "26px", zIndex: 1, transform: "rotate(-18deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-4 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/spring_garden_red.webp" style={{ left: "182px", top: "114px", width: "24px", zIndex: 1, transform: "rotate(14deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-box absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/nhat_binh_red.webp" style={{ left: "50%", bottom: "0px", width: "170px", maxHeight: "220px", objectFit: "contain", marginLeft: "-85px", zIndex: 2, filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 10px 18px)", willChange: "transform" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-5 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/double_dragon_blue.webp" style={{ left: "-8px", top: "172px", width: "44px", zIndex: 3, transform: "rotate(8deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-6 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/dragon_phoenix_v3.webp" style={{ left: "26px", top: "182px", width: "26px", zIndex: 3, transform: "rotate(-10deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-7 absolute pointer-events-none" src="https://chungdoi.com/images/giftbox/mini/hoa_kho_orange.webp" style={{ left: "118px", top: "176px", width: "40px", zIndex: 3, transform: "rotate(-14deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
+                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-1 absolute pointer-events-none" src="/images/giftbox/mini/baroque_v2_darkgreen.webp" style={{ left: "-20px", top: "10px", width: "34px", zIndex: 1, transform: "rotate(-22deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
+                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-2 absolute pointer-events-none" src="/images/giftbox/mini/saraya_gold.webp" style={{ left: "168px", top: "2px", width: "38px", zIndex: 1, transform: "rotate(20deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
+                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-3 absolute pointer-events-none" src="/images/giftbox/mini/dragon_phoenix_v2.webp" style={{ left: "-16px", top: "120px", width: "26px", zIndex: 1, transform: "rotate(-18deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
+                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-4 absolute pointer-events-none" src="/images/giftbox/mini/spring_garden_red.webp" style={{ left: "182px", top: "114px", width: "24px", zIndex: 1, transform: "rotate(14deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
+                        <img alt="" loading="lazy" decoding="async" className="igb-box absolute pointer-events-none" src="/images/giftbox/nhat_binh_red.webp" style={{ left: "50%", bottom: "0px", width: "170px", maxHeight: "220px", objectFit: "contain", marginLeft: "-85px", zIndex: 2, filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 10px 18px)", willChange: "transform" }} />
+                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-5 absolute pointer-events-none" src="/images/giftbox/mini/double_dragon_blue.webp" style={{ left: "-8px", top: "172px", width: "44px", zIndex: 3, transform: "rotate(8deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
+                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-6 absolute pointer-events-none" src="/images/giftbox/mini/dragon_phoenix_v3.webp" style={{ left: "26px", top: "182px", width: "26px", zIndex: 3, transform: "rotate(-10deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
+                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-7 absolute pointer-events-none" src="/images/giftbox/mini/hoa_kho_orange.webp" style={{ left: "118px", top: "176px", width: "40px", zIndex: 3, transform: "rotate(-14deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
                       </div>
                     </div>
                     <p className="igb-hint absolute bottom-0 left-1/2 -translate-x-1/2 text-xs whitespace-nowrap font-medium" style={{ color: "rgb(84, 46, 8)" }}>

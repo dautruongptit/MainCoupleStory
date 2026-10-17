@@ -77,3 +77,20 @@ Không động tới: logic nghiệp vụ, bố cục PC, `.agents/`, `.claude/`
 1. Đồng ý tải 12 tệp ở mục 6.2 (khoảng 1,6 MB) về `public/`?
 2. M10: có muốn dựng riêng thêm mẫu nào ngoài 3 mẫu hiện có không, và là mẫu nào? Mỗi mẫu cần dựng lại từ HTML thật và tải thêm ảnh riêng.
 3. Có cần giao diện sáng cho mobile (các ảnh mobile của bạn đều sáng) không? Hiện app chỉ có giao diện tối.
+
+## 8. Kết quả Giai đoạn B (2026-10-17)
+
+Bạn đã duyệt ("Làm luôn đi"). Hai câu hỏi 2 và 3 ở mục 7 chưa được trả lời nên giữ mặc định: không dựng thêm mẫu, không thêm giao diện sáng.
+
+| ID | Kết quả | Kiểm tra |
+|---|---|---|
+| M05 | Xong: 8 ảnh hộp quà trỏ về `/images/giftbox/...` (có sẵn) | Quét ảnh hỏng ở 390 px: 0 lỗi |
+| M01–M04 | Xong: tải 6 tệp về `public/images/themes/songphung-red/` (Phuong, HOA, Phuong line, Phuong 2, CHU HY, NENGIAY.jpg) | 0 ảnh hỏng ở 390 px và 1900 px |
+| M06 | Xong: `public/images/envelope/baroque_v2_darkred.webp` | Đường dẫn đã đổi; chưa mở riêng mẫu dùng ảnh này để chụp |
+| M07 | Xong: 4 SVG ở `public/icons/payments/` | Mở modal "Phương thức khác": cả 4 biểu tượng tải được |
+
+Tổng 11 tệp tải về, khoảng 1,6 MB, nguồn `https://chungdoi.com/`, tải không kèm `Referer`. Không có ảnh nào phải tạo bằng công cụ sinh ảnh.
+
+Phát hiện thêm khi kiểm tra: phần đầu thiệp Song Phụng (`.sp-hero`) trước đây được viết khi ảnh chưa từng hiển thị, nên khi ảnh tải được thì bố cục lệch (phượng đè lên chữ). Đã dựng lại phần đầu theo HTML trang thật (`song-phung-do/demo?open=1`) bằng class Tailwind, và đặt khung thiệp rộng 900 px ở màn hình từ 768 px trở lên, 480 px ở mobile. Đã so với trang thật ở 390 px: khớp bố cục tên, dải đỏ, chữ Hỷ và hai phượng. Vị trí đóa hoa trong mục "Thông tin lễ cưới" còn lệch nhẹ so với trang thật.
+
+Còn lại: M10 (72 mẫu dùng bố cục chung), và các màn hình mobile chưa chụp so ở mục 5.

@@ -2177,3 +2177,7 @@ button.gst-chip { border: 0; font-family: inherit; cursor: pointer; }
 
 /* Long Phụng V2: khung thiệp rộng 900px như trang thật (md:max-w-[900px]) */
 .theme-longphung-v2 .songphung-template { max-width: 900px; }
+
+/* Song Phụng: khung thiệp rộng 900px ở màn hình md trở lên như trang thật (max-w-[900px]); mobile giữ 480px */
+.theme-songphung .songphung-template { max-width: 900px; }
+@media (max-width: 767px) { .theme-songphung .songphung-template, .theme-longphung-v2 .songphung-template { max-width: 480px; } }
