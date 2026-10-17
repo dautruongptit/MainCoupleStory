@@ -2,27 +2,67 @@
   "slug": "long-phung-do",
   "templateId": "dragon_phoenix_red",
   "name": "Long Phụng - Đỏ",
-  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
-  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
   "stages": {
-    "envelope": [],
-    "opened": [
-      "/images/giftbox/dragon_phoenix.webp",
-      "/images/giftbox/mini/chibi_red.webp",
+    "envelope": [
+      "/images/themes/red-v1/rong.webp",
+      "/images/themes/red-v1/phuong.webp",
+      "/images/themes/red-v1/bg-main.webp",
+      "/images/themes/songlong-red/chinese_happiness.webp",
+      "https://assets.chungdoi.com/photo-library/design/ca9403892afa410dfd6fe38d7d2a3fd391fb151dae527f3a07c7288e8d09d44d.webp",
+      "https://assets.chungdoi.com/photo-library/design/6fe0dc2a01057e3d9fded1c0271c22311a0c89cad26345df5081f676b5d54404.webp",
+      "https://assets.chungdoi.com/photo-library/design/4c64536b5d554f25c05f609100e666deecb4eb37de96bc6469b6be2adc6ab2d3.webp",
+      "https://assets.chungdoi.com/photo-library/design/597a3b1cc78a0ccf22f802007de334e3f429e7fa122967f9f8fac8d217804957.webp",
+      "https://assets.chungdoi.com/photo-library/design/cdfa52665366792a09b0b8792f2ef6a5af8a9a869dc250ad3f2609bb11530655.webp",
+      "/images/themes/red-v1/line6.svg"
+    ],
+    "opened": [],
+    "scrolled": [
+      "/images/giftbox/mini/song_hy_red.webp",
+      "/images/giftbox/mini/song_hy_green.webp",
       "/images/giftbox/mini/double_dragon_green.webp",
       "/images/giftbox/mini/royal_red.webp",
-      "/images/giftbox/mini/song_hy_green.webp",
-      "/images/giftbox/mini/song_hy_red.webp",
-      "/images/giftbox/mini/song_hy_v2_red.webp"
+      "/images/giftbox/dragon_phoenix.webp",
+      "/images/giftbox/mini/baroque_v2_darkgreen.webp",
+      "/images/giftbox/mini/song_hy_v2_red.webp",
+      "/images/giftbox/mini/chibi_red.webp"
     ],
-    "scrolled": [],
     "album": [],
     "giftbox": [],
     "rsvp": [],
     "calendar": []
   },
-  "cssBackgrounds": [],
-  "fonts": [],
+  "cssBackgrounds": [
+    "/images/themes/red-v1/bg-main.webp"
+  ],
+  "fonts": [
+    "/fonts/PinyonScript-latin.woff2",
+    "/fonts/Lora-Regular.ttf",
+    "/fonts/Pattaya-Regular.woff",
+    "/fonts/Roboto-latin.woff2",
+    "/fonts/Roboto-vietnamese.woff2",
+    "/fonts/MsMadiAmpersand-Regular.woff2",
+    "/fonts/TheNautigal-Regular.ttf",
+    "/fonts/TheNautigal-Bold.ttf",
+    "/fonts/AguafinaScript-Regular.ttf",
+    "/fonts/Carattere-Regular.ttf",
+    "/fonts/Whisper-Regular.ttf",
+    "/fonts/Uchen-Regular.ttf",
+    "/fonts/ViaodaLibre-Regular.ttf",
+    "/fonts/AlexBrush-Regular.ttf",
+    "/fonts/CormorantGaramond-Variable.ttf",
+    "/fonts/PlayfairDisplay-Variable.ttf",
+    "/fonts/EBGaramond-Variable.ttf",
+    "/fonts/Fraunces-Soft.woff2",
+    "/fonts/google/montserrat-vietnamese.9e2672d1.woff2",
+    "/fonts/google/montserrat-latin-ext.920711de.woff2",
+    "/fonts/google/montserrat-latin.6438d7b8.woff2",
+    "/fonts/google/playfair-display-vietnamese.8fa67d5f.woff2",
+    "/fonts/google/playfair-display-latin-ext.56285678.woff2",
+    "/fonts/google/playfair-display-latin.5d91eb5d.woff2",
+    "/fonts/PinyonScript-vietnamese.woff2"
+  ],
   "missingInPublic": [],
-  "unreachableAssets": []
+  "unreachableAssets": [],
+  "newInteractionStage": "Không có",
+  "status": "VERIFIED"
 }

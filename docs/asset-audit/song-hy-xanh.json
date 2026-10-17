@@ -2,26 +2,59 @@
   "slug": "song-hy-xanh",
   "templateId": "song_hy_green",
   "name": "Song Hỷ - Xanh",
-  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
-  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
   "stages": {
-    "envelope": [],
+    "envelope": [
+      "/images/themes/song-hy-red/chu-hy.webp",
+      "/images/themes/songlong-red/chinese_happiness.webp",
+      "/images/themes/song-hy-red/sunburst.svg",
+      "https://assets.chungdoi.com/photo-library/design/eb107c431fdd4c8d8e292f587e30bf3532753b3b4562fd7f21fa1254a42363b1.webp",
+      "https://assets.chungdoi.com/photo-library/design/e3d13b58ea92c96a322e9bcc54cfcf6f6a79f08239a0ed9a8d3a3aca48bba341.webp",
+      "https://assets.chungdoi.com/photo-library/design/6f2cc45851be18d1562d9e42510d0e9a00660507e3e9204ee24696cc3925da6d.webp",
+      "https://assets.chungdoi.com/photo-library/design/90cfb6aaf7e0fc20d383aa3bcdaa97c9f73c50b384ee1470dac45126ad5f1cff.webp",
+      "https://assets.chungdoi.com/photo-library/design/a9c22284a87f0932e84622c79068eaa687fb1a06b8080fb682b9f8dc6ebf1c80.webp",
+      "https://assets.chungdoi.com/photo-library/design/cfd3d6fc4e4e0479502ac5bacfc4ddf3f4c58f71daa8eb6ea393510eae89bca0.webp",
+      "https://assets.chungdoi.com/photo-library/design/19b783f13d746af8c7448e8b4227fd4fb88de8761ed6d2b6858b80510720160c.webp"
+    ],
     "opened": [
-      "/images/giftbox/mini/boho_floral_green.webp",
+      "/images/themes/song-hy-green/star.webp"
+    ],
+    "scrolled": [
+      "/images/giftbox/mini/jasmine_white.webp",
       "/images/giftbox/mini/crystal_floral_green.webp",
       "/images/giftbox/mini/elegant_leaf_green.webp",
-      "/images/giftbox/mini/jasmine_white.webp",
-      "/images/giftbox/mini/silk_ribbon_green.webp",
-      "/images/giftbox/song_hy_green.webp"
+      "/images/giftbox/mini/saraya_gold.webp",
+      "/images/giftbox/song_hy_green.webp",
+      "/images/giftbox/mini/boho_floral_green.webp",
+      "/images/giftbox/mini/spring_garden_red.webp",
+      "/images/giftbox/mini/silk_ribbon_green.webp"
     ],
-    "scrolled": [],
     "album": [],
     "giftbox": [],
     "rsvp": [],
     "calendar": []
   },
   "cssBackgrounds": [],
-  "fonts": [],
-  "missingInPublic": [],
-  "unreachableAssets": []
+  "fonts": [
+    "/fonts/PlayfairDisplay-Variable.ttf",
+    "/fonts/Lora-Regular.ttf",
+    "/fonts/Pattaya-Regular.woff",
+    "/fonts/MsMadiAmpersand-Regular.woff2",
+    "/fonts/TheNautigal-Regular.ttf",
+    "/fonts/Uchen-Regular.ttf",
+    "/fonts/ViaodaLibre-Regular.ttf",
+    "/fonts/CormorantGaramond-Variable.ttf",
+    "/fonts/EBGaramond-Variable.ttf",
+    "/fonts/google/montserrat-vietnamese.9e2672d1.woff2",
+    "/fonts/google/montserrat-latin.6438d7b8.woff2",
+    "/fonts/google/playfair-display-latin.5d91eb5d.woff2",
+    "/fonts/google/playfair-display-vietnamese.8fa67d5f.woff2",
+    "/fonts/Roboto-latin.woff2",
+    "/fonts/Roboto-vietnamese.woff2"
+  ],
+  "missingInPublic": [
+    "/images/themes/song-hy-green/star.webp"
+  ],
+  "unreachableAssets": [],
+  "newInteractionStage": "Không có",
+  "status": "VERIFIED"
 }

@@ -7991,11 +7991,32 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
       }
     ]
   },
+  "song-hy-green": {
+    "themeId": "song-hy-green",
+    "folder": "song-hy-green",
+    "assetCount": 1,
+    "totalBytes": 4466,
+    "assets": [
+      {
+        "id": "star",
+        "file": "star.webp",
+        "path": "/images/themes/song-hy-green/star.webp",
+        "format": "WEBP",
+        "width": 552,
+        "height": 553,
+        "aspectRatio": 0.998,
+        "size": 4466,
+        "md5": "5c0095dad12886438f2c55790ba74fed",
+        "type": "decoration",
+        "usage": "Ornamental artwork for song-hy-green"
+      }
+    ]
+  },
   "song-hy-red": {
     "themeId": "song-hy-red",
     "folder": "song-hy-red",
-    "assetCount": 2,
-    "totalBytes": 11663,
+    "assetCount": 3,
+    "totalBytes": 21205,
     "assets": [
       {
         "id": "chu-hy",
@@ -8009,6 +8030,19 @@ export const THEME_MANIFESTS: Record<string, ThemeManifest> = {
         "md5": "18117f9680418383595617285026bb42",
         "type": "icon",
         "usage": "Icon or cultural symbol (囍) for song-hy-red"
+      },
+      {
+        "id": "star",
+        "file": "star.webp",
+        "path": "/images/themes/song-hy-red/star.webp",
+        "format": "PNG",
+        "width": 552,
+        "height": 553,
+        "aspectRatio": 0.998,
+        "size": 9542,
+        "md5": "c9e63abc72d58be4a6f4a26418bcec35",
+        "type": "decoration",
+        "usage": "Ornamental artwork for song-hy-red"
       },
       {
         "id": "sunburst",
@@ -9022,8 +9056,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
       "song-hy-red",
       "songphung-green"
     ],
-    "assetCount": 8,
-    "totalBytes": 2167090,
+    "assetCount": 9,
+    "totalBytes": 2176632,
     "assets": [
       {
         "id": "chu-hy",
@@ -9037,6 +9071,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "18117f9680418383595617285026bb42",
         "type": "icon",
         "usage": "Icon or cultural symbol (囍) for song-hy-red"
+      },
+      {
+        "id": "star",
+        "file": "star.webp",
+        "path": "/images/themes/song-hy-red/star.webp",
+        "format": "PNG",
+        "width": 552,
+        "height": 553,
+        "aspectRatio": 0.998,
+        "size": 9542,
+        "md5": "c9e63abc72d58be4a6f4a26418bcec35",
+        "type": "decoration",
+        "usage": "Ornamental artwork for song-hy-red"
       },
       {
         "id": "sunburst",
@@ -9132,7 +9179,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     ],
     "backgroundPath": "/images/themes/songphung-green/NENGIAY.jpg",
     "coverPath": null,
-    "decorationsCount": 5,
+    "decorationsCount": 6,
     "framesCount": 0,
     "isSharedTheme": true,
     "sharedWith": [
@@ -9193,8 +9240,8 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     "themeFolders": [
       "song-hy-red"
     ],
-    "assetCount": 2,
-    "totalBytes": 11663,
+    "assetCount": 3,
+    "totalBytes": 21205,
     "assets": [
       {
         "id": "chu-hy",
@@ -9208,6 +9255,19 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "md5": "18117f9680418383595617285026bb42",
         "type": "icon",
         "usage": "Icon or cultural symbol (囍) for song-hy-red"
+      },
+      {
+        "id": "star",
+        "file": "star.webp",
+        "path": "/images/themes/song-hy-red/star.webp",
+        "format": "PNG",
+        "width": 552,
+        "height": 553,
+        "aspectRatio": 0.998,
+        "size": 9542,
+        "md5": "c9e63abc72d58be4a6f4a26418bcec35",
+        "type": "decoration",
+        "usage": "Ornamental artwork for song-hy-red"
       },
       {
         "id": "sunburst",
@@ -9225,7 +9285,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
     ],
     "backgroundPath": null,
     "coverPath": null,
-    "decorationsCount": 1,
+    "decorationsCount": 2,
     "framesCount": 0,
     "isSharedTheme": true,
     "sharedWith": [

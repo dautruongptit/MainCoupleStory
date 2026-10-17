@@ -2,28 +2,58 @@
   "slug": "hoa-moc-xanh",
   "templateId": "boho_floral_green",
   "name": "Hoa Mộc - Xanh",
-  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
-  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
   "stages": {
-    "envelope": [],
-    "opened": [
-      "/images/giftbox/boho_floral_green.webp",
-      "/images/giftbox/mini/baroque_gold.webp",
-      "/images/giftbox/mini/boho_floral_pink.webp",
-      "/images/giftbox/mini/crystal_floral_blue.webp",
-      "/images/giftbox/mini/minimalism_brown.webp",
-      "/images/giftbox/mini/san_miguel_yellow.webp",
-      "/images/giftbox/mini/song_hac_red.webp",
-      "/images/giftbox/mini/spring_garden_blue.webp"
+    "envelope": [
+      "/images/themes/boho-floral-green/flower.webp",
+      "/images/themes/boho-floral-green/decoration_bar.webp",
+      "https://assets.chungdoi.com/photo-library/design/5b2fafb74f1aa84ca843acded191b5e4629c62f9b73820281864f27167312b06.webp",
+      "https://assets.chungdoi.com/photo-library/design/3fcfad216695abf4dbd4198edb2ba4d451546d5e1231aafbc66559e164daad27.webp",
+      "https://assets.chungdoi.com/photo-library/design/5019eadee002f02ce6f39d9c5bdb7304d4da683b4e109c41e7ed14e63391d9b0.webp",
+      "https://assets.chungdoi.com/photo-library/design/1f83fb78c75b96a05661eca4cbc50dd771fc37411920623d6d9729eea1daa7c8.webp",
+      "https://assets.chungdoi.com/photo-library/design/a4bacc8760315d26e8660bcd2943d479c968e7e92892d2e367cfab6facb63017.webp",
+      "https://assets.chungdoi.com/photo-library/design/655375b2b2c6edb9772053c6a2150a6247ccf7002f69a1b733f682fa05d6309f.webp",
+      "https://assets.chungdoi.com/photo-library/design/fb57414f47aa2c9189bc9fa20f34d557dd1a4cd13a908fd30633275ca5abaf6d.webp",
+      "https://assets.chungdoi.com/photo-library/design/76763999ecb5db3569cea7991a2ea4fdf32e4a2639daeb28c6f2a9b5fdf6f313.webp",
+      "https://assets.chungdoi.com/photo-library/design/da4ca736067f9572362cd90a28e95274e985ffa76cc58e3c36b23219ebf4f6f7.webp",
+      "https://assets.chungdoi.com/photo-library/design/107e38d720d04da6442122cbe91d47eda6ebc8c962579a14b345ba3ad6dd49a4.webp"
     ],
-    "scrolled": [],
+    "opened": [],
+    "scrolled": [
+      "/images/giftbox/mini/san_miguel_yellow.webp",
+      "/images/giftbox/mini/boho_floral_pink.webp",
+      "/images/giftbox/mini/song_hac_red.webp",
+      "/images/giftbox/mini/crystal_floral_blue.webp",
+      "/images/giftbox/boho_floral_green.webp",
+      "/images/giftbox/mini/minimalism_brown.webp",
+      "/images/giftbox/mini/spring_garden_blue.webp",
+      "/images/giftbox/mini/baroque_gold.webp"
+    ],
     "album": [],
     "giftbox": [],
     "rsvp": [],
     "calendar": []
   },
   "cssBackgrounds": [],
-  "fonts": [],
+  "fonts": [
+    "/fonts/PlayfairDisplay-Variable.ttf",
+    "/fonts/Lora-Regular.ttf",
+    "/fonts/Pattaya-Regular.woff",
+    "/fonts/Roboto-latin.woff2",
+    "/fonts/Roboto-vietnamese.woff2",
+    "/fonts/MsMadiAmpersand-Regular.woff2",
+    "/fonts/TheNautigal-Regular.ttf",
+    "/fonts/Uchen-Regular.ttf",
+    "/fonts/ViaodaLibre-Regular.ttf",
+    "/fonts/CormorantGaramond-Variable.ttf",
+    "/fonts/EBGaramond-Variable.ttf",
+    "/fonts/google/montserrat-vietnamese.9e2672d1.woff2",
+    "/fonts/google/montserrat-latin.6438d7b8.woff2",
+    "/fonts/google/playfair-display-vietnamese.8fa67d5f.woff2",
+    "/fonts/google/playfair-display-latin.5d91eb5d.woff2",
+    "/fonts/google/montserrat-latin-ext.920711de.woff2"
+  ],
   "missingInPublic": [],
-  "unreachableAssets": []
+  "unreachableAssets": [],
+  "newInteractionStage": "Không có",
+  "status": "VERIFIED"
 }

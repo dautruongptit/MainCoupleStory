@@ -2,24 +2,75 @@
   "slug": "long-phung-v4-do",
   "templateId": "dragon_phoenix_v4_red",
   "name": "Long Phụng V4 - Đỏ",
-  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
-  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
   "stages": {
     "envelope": [
-      "/images/envelope/dragon_phoenix_v4_red.webp"
+      "/images/themes/longphung-v4-red/double-happiness.webp",
+      "/images/themes/longphung-v4-red/phoenix.webp",
+      "/images/themes/longphung-v4-red/dragon.webp",
+      "/images/themes/longphung-v4-red/songhy-background.webp",
+      "https://assets.chungdoi.com/photo-library/design/58e369ba11052cdcdea00d593a99b37c2eebf74c2dc827425f655b4056e9253d.webp",
+      "/images/themes/longphung-v4-red/frame-avatar.webp",
+      "/images/themes/longphung-v4-red/cloud1.webp",
+      "/images/themes/longphung-v4-red/phoenix2.webp",
+      "/images/themes/longphung-v4-red/dragon2.webp",
+      "/images/themes/longphung-v4-red/cloud2.webp",
+      "/images/themes/longphung-v4-red/cloud2b.webp",
+      "/images/themes/longphung-v4-red/cloud3.webp",
+      "https://assets.chungdoi.com/photo-library/design/ca73de3af11563646c9912723e3a6d5372ce88b1cb07021b7be859715de14c63.webp",
+      "https://assets.chungdoi.com/photo-library/design/8c8412c785e10feb148b223e0774d4de0a65720dc393d7140730c59abb344ba1.webp",
+      "https://assets.chungdoi.com/photo-library/design/62a524a71aa9ecca750d47804e4b0952ad3a95bfc35b0360f21a1b5a6f23b7ee.webp",
+      "https://assets.chungdoi.com/photo-library/design/da1c4f0f505b645f0f95907b68d2a6881f66c39f3f88eac0ff02a731d5753c27.webp",
+      "https://assets.chungdoi.com/photo-library/design/8c0575c7c346f0ef1bc65219ed7763feda01b9d78f0c6db60918c91770c33b21.webp",
+      "https://assets.chungdoi.com/photo-library/design/2ecb437077817172484fddd6b01c44c0f456449c8529f1614e8593f79b1376f2.webp",
+      "https://assets.chungdoi.com/photo-library/design/834cb0ef687f9f3d282fb624828afc6620e3df7d58a0ac3ba163be578c3ca9d1.webp",
+      "/images/themes/longphung-v4-red/heart.svg",
+      "/images/themes/longphung-v4-red/cake.webp",
+      "/images/themes/longphung-v4-red/home.webp",
+      "/images/themes/longphung-v4-red/music.webp",
+      "/images/themes/longphung-v4-red/cloud4-bottom.webp"
     ],
     "opened": [
-      "/images/themes/longphung-v4-red/heart.svg",
+      "/images/themes/longphung-v4-red/bg-texture.webp",
       "/images/themes/longphung-v4-red/title-frame.svg"
     ],
-    "scrolled": [],
+    "scrolled": [
+      "/images/envelope/dragon_phoenix_v4_red.webp"
+    ],
     "album": [],
     "giftbox": [],
     "rsvp": [],
     "calendar": []
   },
-  "cssBackgrounds": [],
-  "fonts": [],
+  "cssBackgrounds": [
+    "/images/themes/longphung-v4-red/bg-texture.webp"
+  ],
+  "fonts": [
+    "/fonts/Carattere-Regular.ttf",
+    "/fonts/MsMadiAmpersand-Regular.woff2",
+    "/fonts/Lora-Regular.ttf",
+    "/fonts/Pattaya-Regular.woff",
+    "/fonts/Roboto-latin.woff2",
+    "/fonts/Roboto-vietnamese.woff2",
+    "/fonts/TheNautigal-Regular.ttf",
+    "/fonts/TheNautigal-Bold.ttf",
+    "/fonts/AguafinaScript-Regular.ttf",
+    "/fonts/Whisper-Regular.ttf",
+    "/fonts/Uchen-Regular.ttf",
+    "/fonts/ViaodaLibre-Regular.ttf",
+    "/fonts/AlexBrush-Regular.ttf",
+    "/fonts/CormorantGaramond-Variable.ttf",
+    "/fonts/PlayfairDisplay-Variable.ttf",
+    "/fonts/EBGaramond-Variable.ttf",
+    "/fonts/Fraunces-Soft.woff2",
+    "/fonts/google/montserrat-vietnamese.9e2672d1.woff2",
+    "/fonts/google/montserrat-latin-ext.920711de.woff2",
+    "/fonts/google/montserrat-latin.6438d7b8.woff2",
+    "/fonts/google/playfair-display-vietnamese.8fa67d5f.woff2",
+    "/fonts/google/playfair-display-latin-ext.56285678.woff2",
+    "/fonts/google/playfair-display-latin.5d91eb5d.woff2"
+  ],
   "missingInPublic": [],
-  "unreachableAssets": []
+  "unreachableAssets": [],
+  "newInteractionStage": "Không có",
+  "status": "VERIFIED"
 }

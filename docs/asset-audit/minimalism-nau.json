@@ -2,40 +2,61 @@
   "slug": "minimalism-nau",
   "templateId": "minimalism_brown",
   "name": "Minimalism - Nâu",
-  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
-  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
   "stages": {
-    "envelope": [],
-    "opened": [
-      "/images/giftbox/mini/boho_floral_pink.webp",
-      "/images/giftbox/mini/chateau_green.webp",
+    "envelope": [
+      "/images/themes/minimalism-brown/flower2-decoration.webp",
+      "/images/themes/minimalism-brown/leaf-background.webp",
+      "/images/themes/minimalism-brown/house-background.webp",
+      "https://assets.chungdoi.com/photo-library/design/1e0986014ff4206f135df254987fb52eb45ae964e8cce6f0dba29a905e0e0b67.webp",
+      "/images/themes/minimalism-brown/frame-avatar.webp",
+      "/images/themes/minimalism-brown/paper.webp",
+      "https://assets.chungdoi.com/photo-library/design/cea4d58014368af2908a492045ec39a91ab5ed17d4544eb6520733a40beb078a.webp",
+      "https://assets.chungdoi.com/photo-library/design/6c5d0a317cc97ce46cf6798f0248ceb3d97739840e1f27fc5040798c21ad55c6.webp",
+      "https://assets.chungdoi.com/photo-library/design/3f8b94b89026dc3738bb80e625b8ee993ce93949e595ef9539b9c41d17898671.webp",
+      "https://assets.chungdoi.com/photo-library/design/6f6851cc63126158d802563c047297dd76ba3f532c1e3809a556ab617c312000.webp",
+      "https://assets.chungdoi.com/photo-library/design/1c177f9721cd1802abf4fa62e6f22113bb477130cbc30b138c7a42cd995bb670.webp",
+      "https://assets.chungdoi.com/photo-library/design/0c4b3896fb70a7e08523a1299f851735fa4544c530ad41ab5ce1a6dc4677173c.webp",
+      "https://assets.chungdoi.com/photo-library/design/1bbb42e6ee9c2736341c2a79759bae02176bbb899bfca22cc71c0fa860f64a9e.webp",
+      "/images/themes/minimalism-brown/gate.webp",
+      "/images/themes/minimalism-brown/cake.webp",
+      "/images/themes/minimalism-brown/water.webp",
+      "/images/themes/minimalism-brown/paper-note.webp"
+    ],
+    "opened": [],
+    "scrolled": [
       "/images/giftbox/mini/chibi_red.webp",
-      "/images/giftbox/mini/dried_flower_v2_green.webp",
+      "/images/giftbox/mini/chateau_green.webp",
       "/images/giftbox/mini/hoa_kho_v2_blue.webp",
-      "/images/giftbox/mini/minimalism_darkred.webp",
       "/images/giftbox/mini/sunflower_yellow.webp",
       "/images/giftbox/minimalism_brown.webp",
-      "/images/themes/minimalism-brown/cake.webp",
-      "/images/themes/minimalism-brown/gate.webp",
-      "/images/themes/minimalism-brown/paper-note.webp",
-      "/images/themes/minimalism-brown/water.webp"
+      "/images/giftbox/mini/minimalism_darkred.webp",
+      "/images/giftbox/mini/dried_flower_v2_green.webp",
+      "/images/giftbox/mini/boho_floral_pink.webp"
     ],
-    "scrolled": [],
     "album": [],
     "giftbox": [],
     "rsvp": [],
     "calendar": []
   },
-  "cssBackgrounds": [],
-  "fonts": [],
+  "cssBackgrounds": [
+    "/images/themes/minimalism-brown/paper.webp"
+  ],
+  "fonts": [
+    "/fonts/EBGaramond-Variable.ttf",
+    "/fonts/Lora-Regular.ttf",
+    "/fonts/Pattaya-Regular.woff",
+    "/fonts/MsMadiAmpersand-Regular.woff2",
+    "/fonts/TheNautigal-Regular.ttf",
+    "/fonts/Uchen-Regular.ttf",
+    "/fonts/ViaodaLibre-Regular.ttf",
+    "/fonts/CormorantGaramond-Variable.ttf",
+    "/fonts/google/montserrat-vietnamese.9e2672d1.woff2",
+    "/fonts/google/montserrat-latin.6438d7b8.woff2"
+  ],
   "missingInPublic": [
     "/images/giftbox/mini/sunflower_yellow.webp"
   ],
-  "unreachableAssets": [
-    {
-      "file": "/images/giftbox/mini/sunflower_yellow.webp",
-      "httpStatus": 403,
-      "reason": "HTTP 403 Forbidden on chungdoi.com"
-    }
-  ]
+  "unreachableAssets": [],
+  "newInteractionStage": "Không có",
+  "status": "VERIFIED"
 }

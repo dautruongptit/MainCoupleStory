@@ -2,37 +2,74 @@
   "slug": "thanh-diep-xanh",
   "templateId": "elegant_leaf_green",
   "name": "Thanh Diệp - Xanh",
-  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
-  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
   "stages": {
-    "envelope": [],
-    "opened": [
-      "/images/giftbox/elegant_leaf_green.webp",
-      "/images/giftbox/mini/boho_floral_green.webp",
-      "/images/giftbox/mini/dragon_phoenix.webp",
-      "/images/giftbox/mini/hoa_tinh_red.webp",
-      "/images/giftbox/mini/jasmine_white.webp",
+    "envelope": [
+      "/images/themes/thanhdiep-green/la2.webp",
+      "/images/themes/thanhdiep-green/la1.webp",
       "/images/giftbox/mini/minimalism_darkred.webp",
       "/images/giftbox/mini/song_hy_v2_red.webp",
-      "/images/giftbox/mini/sunflower_yellow.webp",
+      "https://assets.chungdoi.com/photo-library/design/b3fdc3e320dc0950f03ff001f93cc9576a3d5e30731f2511c2fd4ea98e604bca.webp",
+      "https://assets.chungdoi.com/photo-library/design/5f35fab95a3f1ea6d4a6a14092dacaaf2ef8cc1c0b784af44f919b014f48641c.webp",
+      "/images/themes/thanhdiep-green/la3.webp",
+      "https://assets.chungdoi.com/photo-library/design/4d38b74c88837aa5b186dfca4de5f0a94925cb48c8764e5eba9b155a5b2b8056.webp",
+      "https://assets.chungdoi.com/photo-library/design/514f079616b133e506c313426e712b6140c34f0d0bce168d6bbe2f3ba726a2a6.webp",
+      "https://assets.chungdoi.com/photo-library/design/771cdc2cc01af32f10cc4f32bfd625668d6f8b19ab0fa350f51c54545a34eca4.webp",
+      "https://assets.chungdoi.com/photo-library/design/ca498bd9920dcee0581456993362d53cf1a05cf4f02692622a8559e6e729655b.webp",
+      "https://assets.chungdoi.com/photo-library/design/89588bb110a69f079b987ea2fc23c064559842bf0f4bc4dab0013c3d218cd53a.webp",
+      "https://assets.chungdoi.com/photo-library/design/3e084af5b414ad1fbc1faa844cdb826b5fea6e576beba86f92b59c6807ff5b56.webp",
+      "https://assets.chungdoi.com/photo-library/design/6ed393074e5ebf6cf489320fe3dac0416aeabd9d81c91430bef80d7c0a2793c8.webp",
+      "https://assets.chungdoi.com/photo-library/design/3e91ac38db141c3add217b5c768eaee8931fb6ce8294fe9aadf715acb04469c2.webp",
+      "https://assets.chungdoi.com/photo-library/design/47b60187cb0ae9c0df8d95a6f4ad703f78cb9810cd0bc5a265efc437272b34bc.webp",
+      "https://assets.chungdoi.com/photo-library/design/ef617075915f30df02c8f6931869dc088d72aa8e3a6fd4e25b771d7b38f22dd8.webp",
       "/images/themes/thanhdiep-green/la4.webp"
     ],
-    "scrolled": [],
+    "opened": [],
+    "scrolled": [
+      "/images/giftbox/mini/hoa_tinh_red.webp",
+      "/images/giftbox/mini/jasmine_white.webp",
+      "/images/giftbox/mini/dragon_phoenix.webp",
+      "/images/giftbox/mini/boho_floral_green.webp",
+      "/images/giftbox/elegant_leaf_green.webp",
+      "/images/giftbox/mini/sunflower_yellow.webp"
+    ],
     "album": [],
     "giftbox": [],
     "rsvp": [],
     "calendar": []
   },
   "cssBackgrounds": [],
-  "fonts": [],
+  "fonts": [
+    "/fonts/EBGaramond-Variable.ttf",
+    "/fonts/Lora-Regular.ttf",
+    "/fonts/Pattaya-Regular.woff",
+    "/fonts/Roboto-latin.woff2",
+    "/fonts/Roboto-vietnamese.woff2",
+    "/fonts/PinyonScript-latin.woff2",
+    "/fonts/PinyonScript-vietnamese.woff2",
+    "/fonts/MsMadiAmpersand-Regular.woff2",
+    "/fonts/TheNautigal-Regular.ttf",
+    "/fonts/TheNautigal-Bold.ttf",
+    "/fonts/AguafinaScript-Regular.ttf",
+    "/fonts/Carattere-Regular.ttf",
+    "/fonts/Whisper-Regular.ttf",
+    "/fonts/Babylonica-Regular.ttf",
+    "/fonts/Uchen-Regular.ttf",
+    "/fonts/ViaodaLibre-Regular.ttf",
+    "/fonts/AlexBrush-Regular.ttf",
+    "/fonts/CormorantGaramond-Variable.ttf",
+    "/fonts/PlayfairDisplay-Variable.ttf",
+    "/fonts/Fraunces-Soft.woff2",
+    "/fonts/google/montserrat-vietnamese.9e2672d1.woff2",
+    "/fonts/google/montserrat-latin-ext.920711de.woff2",
+    "/fonts/google/montserrat-latin.6438d7b8.woff2",
+    "/fonts/google/playfair-display-vietnamese.8fa67d5f.woff2",
+    "/fonts/google/playfair-display-latin-ext.56285678.woff2",
+    "/fonts/google/playfair-display-latin.5d91eb5d.woff2"
+  ],
   "missingInPublic": [
     "/images/giftbox/mini/sunflower_yellow.webp"
   ],
-  "unreachableAssets": [
-    {
-      "file": "/images/giftbox/mini/sunflower_yellow.webp",
-      "httpStatus": 403,
-      "reason": "HTTP 403 Forbidden on chungdoi.com"
-    }
-  ]
+  "unreachableAssets": [],
+  "newInteractionStage": "Không có",
+  "status": "VERIFIED"
 }

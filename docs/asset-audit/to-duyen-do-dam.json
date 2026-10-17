@@ -2,25 +2,61 @@
   "slug": "to-duyen-do-dam",
   "templateId": "silk_ribbon_darkred",
   "name": "Tơ Duyên - Đỏ Đậm",
-  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
-  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
   "stages": {
     "envelope": [
+      "/images/themes/silk-ribbon-darkred/flower-decoration.webp",
+      "/images/themes/silk-ribbon-darkred/line-decoration.webp",
+      "/images/themes/silk-ribbon-darkred/ribbon-decoration.webp",
+      "https://assets.chungdoi.com/photo-library/design/84af6e39b24a59d5d77fb064f3130db82a8ec8548fc5aecab7eec60deb99716f.webp",
+      "https://assets.chungdoi.com/photo-library/design/182963b1200ba7dd821d1f2e8183f4efbdb0dfe024e4353e788aa9f7918c882b.webp",
+      "https://assets.chungdoi.com/photo-library/design/89d84a5daf184eb2276b5e766554d80c60dd9fdd248806550287fc7b8d05d449.webp",
+      "https://assets.chungdoi.com/photo-library/design/8d7a15d97e682621e867ea720a233ec4df911fa1ac6374a7cdb56e849b10b9cf.webp",
+      "https://assets.chungdoi.com/photo-library/design/34e882495d16ca0f997b9dc9cfbba5d84d2c74e80fb8111d819830c517b29e3b.webp",
+      "https://assets.chungdoi.com/photo-library/design/f066a01f3814028777ce313c9d52a22870573a16261e45fad91ab5ed709c5a87.webp",
+      "https://assets.chungdoi.com/photo-library/design/57a236d5604b2d4502746e9ed7adf2458c14ea976e61476656c293ae435d1a4e.webp",
+      "https://assets.chungdoi.com/photo-library/design/0bededa1eb557356006ac023137da39d321374d4ecf4980d2ed52ace9f486907.webp",
+      "https://assets.chungdoi.com/photo-library/design/36c4cdfc1dc4819224b1268e43c4b295667097cd44eab3172005838184ec5d72.webp",
+      "/images/themes/silk-ribbon-darkred/icon-ring.webp",
+      "/images/themes/silk-ribbon-darkred/icon-alcohol.webp",
+      "/images/themes/silk-ribbon-darkred/icon-candle.webp"
+    ],
+    "opened": [],
+    "scrolled": [
       "/images/envelope/silk_ribbon_darkred.webp"
     ],
-    "opened": [
-      "/images/themes/silk-ribbon-darkred/icon-alcohol.webp",
-      "/images/themes/silk-ribbon-darkred/icon-candle.webp",
-      "/images/themes/silk-ribbon-darkred/icon-ring.webp"
-    ],
-    "scrolled": [],
     "album": [],
     "giftbox": [],
     "rsvp": [],
     "calendar": []
   },
   "cssBackgrounds": [],
-  "fonts": [],
+  "fonts": [
+    "/fonts/Carattere-Regular.ttf",
+    "/fonts/Lora-Regular.ttf",
+    "/fonts/Pattaya-Regular.woff",
+    "/fonts/Roboto-latin.woff2",
+    "/fonts/Roboto-vietnamese.woff2",
+    "/fonts/MsMadiAmpersand-Regular.woff2",
+    "/fonts/TheNautigal-Regular.ttf",
+    "/fonts/TheNautigal-Bold.ttf",
+    "/fonts/AguafinaScript-Regular.ttf",
+    "/fonts/Whisper-Regular.ttf",
+    "/fonts/Uchen-Regular.ttf",
+    "/fonts/ViaodaLibre-Regular.ttf",
+    "/fonts/AlexBrush-Regular.ttf",
+    "/fonts/CormorantGaramond-Variable.ttf",
+    "/fonts/PlayfairDisplay-Variable.ttf",
+    "/fonts/EBGaramond-Variable.ttf",
+    "/fonts/Fraunces-Soft.woff2",
+    "/fonts/google/montserrat-vietnamese.9e2672d1.woff2",
+    "/fonts/google/montserrat-latin-ext.920711de.woff2",
+    "/fonts/google/montserrat-latin.6438d7b8.woff2",
+    "/fonts/google/playfair-display-vietnamese.8fa67d5f.woff2",
+    "/fonts/google/playfair-display-latin-ext.56285678.woff2",
+    "/fonts/google/playfair-display-latin.5d91eb5d.woff2"
+  ],
   "missingInPublic": [],
-  "unreachableAssets": []
+  "unreachableAssets": [],
+  "newInteractionStage": "Không có",
+  "status": "VERIFIED"
 }

@@ -2,28 +2,68 @@
   "slug": "lien-hoa-v2-xanh",
   "templateId": "lien_hoa_v2_green",
   "name": "Liên Hoa V2 - Xanh",
-  "auditStatus": "NOT VERIFIED (Cloudflare 403 / Bot Challenge)",
-  "stopReason": "Cloudflare WAF bot detection (HTTP 403 / 'Just a moment...' Turnstile challenge) triggered on chungdoi.com. Dừng theo quy định khi gặp chặn liên tiếp >= 3 lần.",
   "stages": {
     "envelope": [
-      "/images/envelope/lien_hoa_v2_green.webp"
+      "/images/themes/lien-hoa-v2-green/flower6.webp",
+      "/images/themes/lien-hoa-v2-green/paper-texture.webp",
+      "/images/themes/lien-hoa-v2-green/flower3.webp",
+      "https://assets.chungdoi.com/photo-library/design/455c1838dfc39d415f9919e861f56a1435b9a63ed1137db92328d0d9ed732129.webp",
+      "https://assets.chungdoi.com/photo-library/design/2e18f7158e300d1feb550991f463cbffcb83018ab5bcddd9a524b21b4d6dcaed.webp",
+      "https://assets.chungdoi.com/photo-library/design/00c617c45a73695442601570d9f51aa94890f5add8081a0015acc9f0722f25bc.webp",
+      "https://assets.chungdoi.com/photo-library/design/9bbeffd8cb524b61bb935d9fe3d3fa1f212bf32edb038e62a22ccbc3ad21b975.webp",
+      "https://assets.chungdoi.com/photo-library/design/c89cc0304c63d99c6a85ac4aa4f449e1572c642c652dab6f73812be500d23074.webp",
+      "https://assets.chungdoi.com/photo-library/design/e5fd18dbf058fc4b6dc43ba0178fc4651558908b352315057531c22c90ee2256.webp",
+      "https://assets.chungdoi.com/photo-library/design/0563a8254c022cf22e3053d416460a1ff5451fd8a8bc73d9f215ae1b03eadefe.webp",
+      "/images/themes/lien-hoa-v2-green/medallion-ring.webp",
+      "/images/themes/lien-hoa-v2-green/medallion-drink.webp",
+      "/images/themes/lien-hoa-v2-green/medallion-cake.webp"
     ],
     "opened": [
-      "/images/themes/lien-hoa-v2-green/flower1.webp",
-      "/images/themes/lien-hoa-v2-green/flower4-bottom.webp",
-      "/images/themes/lien-hoa-v2-green/flower5.webp",
-      "/images/themes/lien-hoa-v2-green/medallion-cake.webp",
-      "/images/themes/lien-hoa-v2-green/medallion-drink.webp",
-      "/images/themes/lien-hoa-v2-green/medallion-ring.webp"
+      "/images/themes/lien-hoa-v2-green/flower10.webp"
     ],
-    "scrolled": [],
+    "scrolled": [
+      "/images/themes/lien-hoa-v2-green/flower5.webp",
+      "/images/themes/lien-hoa-v2-green/flower1.webp",
+      "/images/envelope/lien_hoa_v2_green.webp",
+      "/images/themes/lien-hoa-v2-green/flower4-bottom.webp"
+    ],
     "album": [],
     "giftbox": [],
     "rsvp": [],
     "calendar": []
   },
-  "cssBackgrounds": [],
-  "fonts": [],
+  "cssBackgrounds": [
+    "/images/themes/lien-hoa-v2-green/paper-texture.webp"
+  ],
+  "fonts": [
+    "/fonts/Carattere-Regular.ttf",
+    "/fonts/MsMadiAmpersand-Regular.woff2",
+    "/fonts/Lora-Regular.ttf",
+    "/fonts/Pattaya-Regular.woff",
+    "/fonts/Roboto-latin.woff2",
+    "/fonts/Roboto-vietnamese.woff2",
+    "/fonts/PinyonScript-latin.woff2",
+    "/fonts/PinyonScript-vietnamese.woff2",
+    "/fonts/TheNautigal-Regular.ttf",
+    "/fonts/TheNautigal-Bold.ttf",
+    "/fonts/AguafinaScript-Regular.ttf",
+    "/fonts/Whisper-Regular.ttf",
+    "/fonts/Uchen-Regular.ttf",
+    "/fonts/ViaodaLibre-Regular.ttf",
+    "/fonts/AlexBrush-Regular.ttf",
+    "/fonts/CormorantGaramond-Variable.ttf",
+    "/fonts/PlayfairDisplay-Variable.ttf",
+    "/fonts/EBGaramond-Variable.ttf",
+    "/fonts/Fraunces-Soft.woff2",
+    "/fonts/google/montserrat-vietnamese.9e2672d1.woff2",
+    "/fonts/google/montserrat-latin-ext.920711de.woff2",
+    "/fonts/google/montserrat-latin.6438d7b8.woff2",
+    "/fonts/google/playfair-display-vietnamese.8fa67d5f.woff2",
+    "/fonts/google/playfair-display-latin-ext.56285678.woff2",
+    "/fonts/google/playfair-display-latin.5d91eb5d.woff2"
+  ],
   "missingInPublic": [],
-  "unreachableAssets": []
+  "unreachableAssets": [],
+  "newInteractionStage": "Không có",
+  "status": "VERIFIED"
 }
