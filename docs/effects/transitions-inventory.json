@@ -263,5 +263,3225 @@
         "cardStyle": null
       }
     ]
+  },
+  "minimalism-do-dam": {
+    "name": "Minimalism - Đỏ Đậm",
+    "id": "minimalism_darkred",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 326,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 701,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1089,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1737,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2225,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2824,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3555,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4718,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "minimalism-nau": {
+    "name": "Minimalism - Nâu",
+    "id": "minimalism_brown",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 241,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 609,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 996,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1308,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 500,
+        "elapsed": 1867,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2517,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3190,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4348,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "song-hy-xanh": {
+    "name": "Song Hỷ - Xanh",
+    "id": "song_hy_green",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 278,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 800,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1321,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 300,
+        "elapsed": 2222,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2610,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 3063,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3669,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4672,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "hoa-moc-xanh": {
+    "name": "Hoa Mộc - Xanh",
+    "id": "boho_floral_green",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 281,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 699,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1203,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1783,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2255,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2802,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3531,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4617,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "song-hy-do": {
+    "name": "Song Hỷ - Đỏ",
+    "id": "song_hy_red",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 245,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 803,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1281,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 2258,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2670,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 3157,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3758,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4750,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "minimalism-xanh": {
+    "name": "Minimalism - Xanh",
+    "id": "minimalism_green",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 296,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 704,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1178,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1857,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2396,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 3025,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3764,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4922,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "song-hy-v2-do": {
+    "name": "Song Hỷ V2 - Đỏ",
+    "id": "song_hy_v2_red",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 188,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 504,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1089,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1687,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2076,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2598,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3214,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4224,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "to-duyen-xanh": {
+    "name": "Tơ Duyên - Xanh",
+    "id": "silk_ribbon_green",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 236,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 625,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1057,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1700,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2085,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2572,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3145,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4120,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "vuonkinh-hong": {
+    "name": "Vườn Kính - Hồng",
+    "id": "glass_garden_pink",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 377,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 924,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1598,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 300,
+        "elapsed": 1943,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2400,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2979,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3660,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4702,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "mai-lan-trang": {
+    "name": "Mai Lan - Trắng",
+    "id": "jasmine_white",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 252,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 722,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1131,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1582,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 1918,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2352,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 2899,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 3820,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "long-phung-v3-do": {
+    "name": "Long Phụng V3 - Đỏ",
+    "id": "dragon_phoenix_v3_red",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 231,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 761,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1241,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1839,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2304,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2844,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3538,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4653,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "minimalism-nau-dam": {
+    "name": "Minimalism - Nâu Đậm",
+    "id": "minimalism_darkbrown",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 279,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 682,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1122,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1612,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2133,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2748,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3453,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4553,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "song-phung-do": {
+    "name": "Song Phụng - Đỏ",
+    "id": "double_phoenix_red",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 240,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 808,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1276,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 2146,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2637,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 3247,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3971,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 5093,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "vuonkinh-xanh": {
+    "name": "Vườn Kính - Xanh",
+    "id": "glass_garden_green",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 379,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 976,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1602,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 300,
+        "elapsed": 2020,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2556,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 3170,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3908,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 5049,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "baroque-v2-do-dam": {
+    "name": "Baroque V2 - Đỏ Đậm",
+    "id": "baroque_v2_darkred",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 311,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 757,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1202,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1993,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2597,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 3268,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 4044,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 5157,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "to-duyen-do-dam": {
+    "name": "Tơ Duyên - Đỏ Đậm",
+    "id": "silk_ribbon_darkred",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 305,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 704,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1110,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1624,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 1988,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2447,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3025,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4001,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "long-phung-v2-do": {
+    "name": "Long Phụng V2 - Đỏ",
+    "id": "dragon_phoenix_v2_red",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 356,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 1052,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1957,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 300,
+        "elapsed": 2325,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2748,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 3238,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3847,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4853,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "long-phung-v4-do": {
+    "name": "Long Phụng V4 - Đỏ",
+    "id": "dragon_phoenix_v4_red",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 231,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 788,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1197,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 2063,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2566,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 3153,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3816,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4872,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "long-phung-do": {
+    "name": "Long Phụng - Đỏ",
+    "id": "dragon_phoenix_red",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 280,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 760,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1224,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1902,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2274,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2741,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3310,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4295,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "minimalism-lam-dam": {
+    "name": "Minimalism - Lam Đậm",
+    "id": "minimalism_darkblue",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 256,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 613,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 977,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1681,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2239,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2863,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3582,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4739,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "lien-hoa-v2-xanh": {
+    "name": "Liên Hoa V2 - Xanh",
+    "id": "lien_hoa_v2_green",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 301,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 689,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1150,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1710,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2313,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2936,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3688,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4787,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "minimalism-do": {
+    "name": "Minimalism - Đỏ",
+    "id": "minimalism_red",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 250,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 647,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1033,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1564,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 1876,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2281,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 2792,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 3696,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "song-hac-do": {
+    "name": "Song Hạc - Đỏ",
+    "id": "song_hac_red",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 238,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 760,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1160,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1713,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2174,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2676,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3305,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4328,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "thanh-diep-xanh": {
+    "name": "Thanh Diệp - Xanh",
+    "id": "elegant_leaf_green",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 292,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 675,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1039,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1645,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2050,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2563,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3185,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4179,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "to-duyen-hong": {
+    "name": "Tơ Duyên - Hồng",
+    "id": "silk_ribbon_pink",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 280,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 635,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1002,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1691,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2102,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2569,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3159,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4141,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "long-phung-xanh": {
+    "name": "Long Phụng - Xanh",
+    "id": "dragon_phoenix_green",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 253,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 781,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1599,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 300,
+        "elapsed": 1886,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2301,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2778,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3379,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4357,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "hoang-kim-do": {
+    "name": "Hoàng Kim - Đỏ",
+    "id": "royal_red",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 240,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 797,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1218,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 2018,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2528,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 3110,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3804,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4948,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "vuon-xuan-xanh": {
+    "name": "Vườn Xuân - Xanh",
+    "id": "spring_garden_green",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 266,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 618,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1026,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1653,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2058,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2545,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3164,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4175,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "hoang-gia-vang": {
+    "name": "Baroque - Vàng",
+    "id": "baroque_gold",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 329,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 795,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1299,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1829,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2246,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2795,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3457,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4526,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "song-phung-xanh": {
+    "name": "Song Phụng - Xanh",
+    "id": "double_phoenix_green",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 247,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 777,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1247,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 2044,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2526,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 3142,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3858,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4960,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "anh-dao-hong": {
+    "name": "Anh Đào - Hồng",
+    "id": "cherry_blossom_pink",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 280,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 777,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1148,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1609,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2105,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2719,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3392,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4468,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "hoa-lua-nau": {
+    "name": "Hoa Lụa - Nâu",
+    "id": "silk_flora_brown",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 311,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 782,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1588,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 300,
+        "elapsed": 1822,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2224,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2657,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3192,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4110,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "hoa-moc-hong": {
+    "name": "Hoa Mộc - Hồng",
+    "id": "boho_floral_pink",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 309,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 739,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1245,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1903,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2401,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2951,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3615,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4629,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "nhat-binh-do": {
+    "name": "Nhật Bình - Đỏ",
+    "id": "nhat_binh_red",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 299,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 773,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1272,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 2142,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2717,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 3373,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 4132,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 5265,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "hoa-moc-nau": {
+    "name": "Hoa Mộc - Nâu",
+    "id": "boho_floral_brown",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 288,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 691,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1170,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1770,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2187,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2719,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3372,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4445,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "ren-theu-trang": {
+    "name": "Ren Thêu - Trắng",
+    "id": "applique_lace_white",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 304,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 652,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 991,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1300,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 500,
+        "elapsed": 1892,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2408,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3041,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4050,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "lau-dai-xanh": {
+    "name": "Lâu Đài - Xanh",
+    "id": "chateau_green",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 322,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 760,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1230,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1680,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2070,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2579,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3172,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4223,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "song-long-xanh": {
+    "name": "Song Long - Xanh",
+    "id": "double_dragon_green",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 286,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 789,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1702,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 300,
+        "elapsed": 2022,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2467,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2996,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3652,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4684,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "lien-hoa-hong": {
+    "name": "Liên Hoa - Hồng",
+    "id": "lien_hoa_pink",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 228,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 726,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1165,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1777,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2230,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2723,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3335,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4367,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "vuon-xuan-do": {
+    "name": "Vườn Xuân - Đỏ",
+    "id": "spring_garden_red",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 188,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 531,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 861,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1148,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 500,
+        "elapsed": 2014,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2524,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3153,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4168,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "long-phung-lam": {
+    "name": "Long Phụng - Lam",
+    "id": "dragon_phoenix_blue",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 269,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 754,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1240,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1995,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2414,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2932,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3567,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4586,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "vuon-xuan-lam": {
+    "name": "Vườn Xuân - Lam",
+    "id": "spring_garden_blue",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 329,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 724,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1081,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1664,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2062,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2505,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3082,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4075,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "baroque-v2-xanh-dam": {
+    "name": "Baroque V2 - Xanh Đậm",
+    "id": "baroque_v2_darkgreen",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 267,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 597,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 970,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1260,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 500,
+        "elapsed": 1915,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2508,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3201,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4313,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "hoa-thuy-tinh-lam": {
+    "name": "Hoa Thuỷ Tinh - Lam",
+    "id": "crystal_floral_blue",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 289,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 663,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1032,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1616,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2019,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2515,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3093,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4030,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "bach-su-v2-hong": {
+    "name": "Bạch Sứ V2 - Hồng",
+    "id": "porcelain_v2_pink",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 285,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 656,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1108,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1719,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2149,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2667,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3266,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4290,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "lau-dai-lam": {
+    "name": "Lâu Đài - Lam",
+    "id": "chateau_blue",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 269,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 673,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1117,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1608,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2025,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2521,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3139,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4185,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "bach-su-v2-xanh": {
+    "name": "Bạch Sứ V2 - Xanh",
+    "id": "porcelain_v2_green",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 280,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 674,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1084,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1737,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2147,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2691,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3318,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4323,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "florence-nau": {
+    "name": "Florence - Nâu",
+    "id": "florence_brown",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 301,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 722,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1196,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1772,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2279,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2854,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3541,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4624,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "hoa-kho-v2-lam": {
+    "name": "Hoa Khô V2 - Lam",
+    "id": "hoa_kho_v2_blue",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 177,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 485,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 780,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1088,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 500,
+        "elapsed": 1918,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2351,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 2894,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 3836,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "co-ba-do": {
+    "name": "Cô Ba - Đỏ",
+    "id": "co_ba_red",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 329,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 713,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1075,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1666,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2300,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2916,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3654,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4800,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "song-long-lam": {
+    "name": "Song Long - Lam",
+    "id": "double_dragon_blue",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 294,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 755,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1300,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1911,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2390,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2899,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3529,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4513,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "hoang-kim-xanh": {
+    "name": "Hoàng Kim - Xanh",
+    "id": "royal_green",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 221,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 820,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1208,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1947,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2350,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2851,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3469,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4461,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "minimalism-tim": {
+    "name": "Minimalism - Tím",
+    "id": "minimalism_purple",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 213,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 617,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1050,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1668,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2173,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2743,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3408,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4480,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "hoa-kho-v2-xanh": {
+    "name": "Hoa Khô V2 - Xanh",
+    "id": "dried_flower_v2_green",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 202,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 471,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 773,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1091,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 500,
+        "elapsed": 1889,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2546,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3264,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4352,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "hoa-dai-hong": {
+    "name": "Hoa Dại - Hồng",
+    "id": "hoa_dai_pink",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 315,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 681,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1048,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1738,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2229,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2803,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3528,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4616,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "baroque-lam": {
+    "name": "Baroque - Lam",
+    "id": "baroque_blue",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 359,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 840,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1687,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 300,
+        "elapsed": 2107,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2635,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 3335,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 4065,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 5185,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "hoang-kim-ii-xanh": {
+    "name": "Hoàng Kim II - Xanh",
+    "id": "royal_v2_green",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 237,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 788,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1167,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1677,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2093,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2586,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3167,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4146,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "long-phung-huyen": {
+    "name": "Long Phụng - Huyền",
+    "id": "dragon_phoenix_black",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 220,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 766,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1224,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1931,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2353,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2875,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3518,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4517,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "riviera-lam": {
+    "name": "Riviera - Lam",
+    "id": "riviera_blue",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 276,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 655,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1022,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1698,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2158,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2748,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3414,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4518,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "baroque-v2-lam-dam": {
+    "name": "Baroque V2 - Lam Đậm",
+    "id": "baroque_v2_darkblue",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 355,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 773,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1143,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1724,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2305,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 3040,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3795,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4952,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "bach-su-nau": {
+    "name": "Bạch Sứ - Nâu",
+    "id": "porcelain_brown",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 287,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 644,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1047,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1752,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2144,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2637,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3189,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4173,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "hoa-thuy-tinh-xanh": {
+    "name": "Hoa Thuỷ Tinh - Xanh",
+    "id": "crystal_floral_green",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 249,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 651,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1034,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1633,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2022,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2501,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3092,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4096,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "hoa-huong-duong": {
+    "name": "Hoa Hướng Dương",
+    "id": "sunflower_yellow",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 169,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 453,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 734,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1049,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 500,
+        "elapsed": 1717,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2239,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 2877,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 3903,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "bach-su-v2-do": {
+    "name": "Bạch Sứ II - Đỏ",
+    "id": "porcelain_v2_red",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 294,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 677,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1095,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1682,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2101,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2631,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3276,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4293,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "hoa-thuy-tinh-do": {
+    "name": "Hoa Thuỷ Tinh - Đỏ",
+    "id": "crystal_floral_red",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 290,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 716,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1105,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1612,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2006,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2509,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3098,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4093,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "bach-su-lam": {
+    "name": "Bạch Sứ - Lam",
+    "id": "porcelain_blue",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 278,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 618,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1019,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1713,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2140,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2657,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3252,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4235,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "san-miguel-vang": {
+    "name": "San Miguel - Vàng",
+    "id": "san_miguel_yellow",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 342,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 712,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1067,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1665,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2222,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2792,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3492,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4566,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "vuonkinh-lam": {
+    "name": "Vườn Kính - Lam",
+    "id": "glass_garden_blue",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 350,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 868,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1623,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 300,
+        "elapsed": 2027,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2499,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 3077,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 3758,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 4845,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "hoang-kim-ii-tim": {
+    "name": "Hoàng Kim II - Tím",
+    "id": "royal_v2_purple",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 342,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 977,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 1561,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 300,
+        "elapsed": 2031,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 500,
+        "elapsed": 2607,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 3292,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 4019,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 5181,
+        "envelopeMounted": false
+      }
+    ]
+  },
+  "hoa-kho-cam": {
+    "name": "Hoa Khô - Cam",
+    "id": "hoa_kho_orange",
+    "logs": [
+      {
+        "ms": 0,
+        "elapsed": 173,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 100,
+        "elapsed": 463,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 200,
+        "elapsed": 753,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 300,
+        "elapsed": 1055,
+        "envelopeMounted": true
+      },
+      {
+        "ms": 500,
+        "elapsed": 1808,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 800,
+        "elapsed": 2303,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 1200,
+        "elapsed": 2869,
+        "envelopeMounted": false
+      },
+      {
+        "ms": 2000,
+        "elapsed": 3826,
+        "envelopeMounted": false
+      }
+    ]
   }
 }
