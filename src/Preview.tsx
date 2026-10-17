@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { introDefaultFor } from "./templates";
 import { LongPhungCover, LongPhungHeader } from "./LongPhungV2";
+import { DarkRedCover, DarkRedHeader } from "./MinimalismDarkRed";
 import {
   Inv,
   brideShown,
@@ -29,6 +30,7 @@ export default function Preview({
 
   const intro = d.introCustom && d.introText.trim() ? d.introText.trim() : introDefaultFor(d.templateId);
   const isMinimalism = (d.templateId || "").includes("minimalism") || (d.templateName || "").includes("Minimalism");
+  const isDarkRed = d.templateId === "minimalism_darkred";
   const isLongPhungV2 = d.templateId === "dragon_phoenix_v2_red";
   const isSongHy = (d.templateId || "").includes("song_hy") || (d.templateName || "").includes("Song Hỷ");
   const [rsvpForm, setRsvpForm] = useState({
@@ -149,7 +151,16 @@ export default function Preview({
     <div className={`pv-wrapper ${standalone ? "is-standalone" : ""} ${isMinimalism ? "theme-minimalism" : isSongHy ? "theme-songhy" : isLongPhungV2 ? "theme-longphung-v2" : "theme-songphung"}`}>
       {/* ==================== 1. MÀN HÌNH BÌ THƯ (ENVELOPE) ==================== */}
       {!isOpen && (
-        isLongPhungV2 ? (
+        isDarkRed ? (
+          <DarkRedCover
+            groom={gName}
+            bride={bName}
+            dateText={`${dt.getDate()} tháng ${dt.getMonth() + 1}, ${dt.getFullYear()}`}
+            guest={d.envelopeGuest}
+            message={d.envelopeInviteMessage}
+            onOpen={handleOpenEnvelope}
+          />
+        ) : isLongPhungV2 ? (
           <LongPhungCover
             groom={gName}
             bride={bName}
@@ -438,7 +449,9 @@ export default function Preview({
           )}
 
           {/* -------------------- HERO SECTION -------------------- */}
-          {isLongPhungV2 ? (
+          {isDarkRed ? (
+            <DarkRedHeader groom={gName} bride={bName} intro={intro} photo={d.heroPhoto || d.photos[0]} />
+          ) : isLongPhungV2 ? (
             <LongPhungHeader groom={gName} bride={bName} />
           ) : isMinimalism ? (
             /* Hero cho Minimalism - Nâu (media_1792167846581_6cfd16e7.png) */

@@ -101,3 +101,9 @@ Còn lại: M10 (72 mẫu dùng bố cục chung), và các màn hình mobile ch
 - Đóa hoa mục "Thông tin lễ cưới" của Song Phụng dựng lại theo toạ độ HTML trang thật; ở 390 px nằm trên bên phải tiêu đề như trang thật.
 - Chụp so ở 390 px: modal thêm ngân hàng, kiểm tra xuất bản, đổi mẫu (3 cột, không tràn ngang). Nút/nhãn đang chọn của modal ngân hàng đổi từ đỏ `#e11d48` sang hồng thương hiệu `#ff0080`. Modal ngân hàng vẫn dùng nền trắng trong khi modal khác nền tối; ảnh chuẩn modal này (014125) cũng nền trắng nên giữ nguyên.
 - Chưa làm: mẫu Baroque (chưa mở để chụp), 72 mẫu còn lại, giao diện sáng.
+
+## 10. Mẫu Minimalism - Đỏ Đậm (2026-10-17)
+
+Bạn đã đồng ý tải 5 ảnh (khoảng 0,9 MB) về `public/images/themes/minimalism-dark-red/`. Đã dựng riêng màn mở thiệp (nền đỏ rượu, thẻ kem, hoa mẫu đơn, con dấu tim) và phần đầu thiệp (SAVE THE DATE, phong bì có ảnh cặp đôi và hoa, tên chữ Viaoda Libre) trong `src/MinimalismDarkRed.tsx`, từ HTML trang demo thật. Chụp ở 390 px khớp ảnh bìa mẫu. Phần thân thiệp bên dưới vẫn dùng bố cục Minimalism chung (nền hồng nhạt thay vì khối đỏ đậm như trang thật).
+
+Còn lại: các mẫu khác ngoài 4 mẫu có bố cục riêng (Minimalism - Nâu, Minimalism - Đỏ Đậm, Song Hỷ - Xanh, Long Phụng V2) và phần thân của các mẫu đó; giao diện sáng (chưa có xác nhận).
