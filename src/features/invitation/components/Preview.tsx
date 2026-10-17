@@ -3,6 +3,7 @@ import { introDefaultFor } from "@/features/templates/data/templates";
 import { TEMPLATE_THEMES } from "@/features/invitation/config/templateThemes";
 import { LongPhungHeader } from "@/features/invitation/components/LongPhungV2";
 import { getCoverComponent } from "@/features/invitation/components/covers";
+import { getGiftboxConfig } from "@/features/invitation/config/giftboxConfigs";
 import { GENERATED_HEADERS } from "@/features/invitation/components/generated/headers";
 import AlbumGallery from "@/features/invitation/components/AlbumGallery";
 import { getThemeBackgroundUrl, getThemeDecorations, getTemplateManifest } from "@/features/templates/data/themeManifest";
@@ -58,6 +59,7 @@ export default function Preview({
   const isLongPhungV2 = d.templateId === "dragon_phoenix_v2_red";
   const isSongHy = (d.templateId || "").includes("song_hy") || (d.templateName || "").includes("Song Hỷ");
   const themeBgUrl = getThemeBackgroundUrl(d.templateId);
+  const giftConfig = getGiftboxConfig(d.templateId);
   const [rsvpForm, setRsvpForm] = useState({
     name: d.envelopeGuest || "",
     phone: "",
@@ -843,14 +845,14 @@ export default function Preview({
               <h2
                 className="mb-4 text-[21px] md:text-[25px] lg:text-[32px] flex flex-col items-center"
                 style={{
-                  color: d.giftDisplayMode === "gift_box" ? "rgb(84, 46, 8)" : "rgb(255, 223, 175)",
-                  fontFamily: d.giftDisplayMode === "gift_box" ? "Oswald, sans-serif" : '"Times New Roman", serif',
+                  color: giftConfig.sectionTitleColor || (d.giftDisplayMode === "gift_box" ? "rgb(84, 46, 8)" : "rgb(255, 223, 175)"),
+                  fontFamily: giftConfig.sectionTitleFont || (d.giftDisplayMode === "gift_box" ? "Oswald, sans-serif" : '"Times New Roman", serif'),
                   fontWeight: 600,
                   letterSpacing: "0.02em",
                   marginBottom: d.giftDisplayMode === "qr_inline" ? "24px" : "16px",
                 }}
               >
-                <span dir="auto">{d.giftTitle || "Hộp Quà Mừng"}</span>
+                <span dir="auto">{d.giftTitle || giftConfig.sectionTitle || "Hộp Quà Mừng"}</span>
               </h2>
 
               {/* MODE 1: QR INLINE */}
@@ -918,29 +920,29 @@ export default function Preview({
                 </div>
               )}
 
-              {/* MODE 2: ENVELOPE */}
-              {d.giftDisplayMode === "envelope" && (
+              {/* MODE: ENVELOPE (Phong bì thư tối giản) */}
+              {(d.giftDisplayMode === "envelope" || (!d.giftDisplayMode && giftConfig.giftboxType === "envelope")) && (
                 <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
                   <button
                     type="button"
                     aria-label="Mở hộp mừng cưới"
-                    className="group relative cursor-pointer outline-none border-none bg-transparent"
-                    style={{ width: "210px", height: "287px" }}
+                    className="group relative cursor-pointer outline-none border-none bg-transparent hover:scale-105 active:scale-95 transition-transform"
+                    style={{ width: "250px", height: "357px" }}
                     onClick={() => setGiftModalOpen(true)}
                   >
                     <div className="relative w-full h-full flex items-end justify-center pb-[48px]">
-                      <span className="ienv-sparkle absolute pointer-events-none z-20" style={{ top: "6%", left: "12%", color: "rgb(255, 239, 214)", fontSize: "16.5px" }}>✦</span>
-                      <span className="ienv-sparkle-2 absolute pointer-events-none z-20" style={{ top: "14%", right: "8%", color: "rgb(255, 239, 214)", fontSize: "12px" }}>✦</span>
-                      <span className="ienv-sparkle-3 absolute pointer-events-none z-20" style={{ top: "34%", left: "3%", color: "rgb(255, 239, 214)", fontSize: "10.5px" }}>✦</span>
-                      <span className="ienv-sparkle-4 absolute pointer-events-none z-20" style={{ top: "24%", right: "3%", color: "rgb(255, 239, 214)", fontSize: "10.5px" }}>✦</span>
-                      <div className="relative" style={{ width: "150px", height: "205px" }}>
-                        <div className="ienv-shadow absolute pointer-events-none" style={{ left: "50%", bottom: "-6px", width: "99px", height: "11px", marginLeft: "-49.5px", borderRadius: "50%", backgroundColor: "rgba(0, 0, 0, 0.45)", filter: "blur(4px)", zIndex: 0, willChange: "transform, opacity" }} />
+                      <span className="ienv-sparkle absolute pointer-events-none z-20" style={{ top: "6%", left: "12%", color: giftConfig.sectionTitleColor || "rgb(181, 139, 47)", fontSize: "20.9px" }}>✦</span>
+                      <span className="ienv-sparkle-2 absolute pointer-events-none z-20" style={{ top: "14%", right: "8%", color: giftConfig.sectionTitleColor || "rgb(181, 139, 47)", fontSize: "15.2px" }}>✦</span>
+                      <span className="ienv-sparkle-3 absolute pointer-events-none z-20" style={{ top: "34%", left: "3%", color: giftConfig.sectionTitleColor || "rgb(181, 139, 47)", fontSize: "13.3px" }}>✦</span>
+                      <span className="ienv-sparkle-4 absolute pointer-events-none z-20" style={{ top: "24%", right: "3%", color: giftConfig.sectionTitleColor || "rgb(181, 139, 47)", fontSize: "13.3px" }}>✦</span>
+                      <div className="relative" style={{ width: "190px", height: "275px" }}>
+                        <div className="ienv-shadow absolute pointer-events-none" style={{ left: "50%", bottom: "-6px", width: "125.4px", height: "11px", marginLeft: "-62.7px", borderRadius: "50%", backgroundColor: "rgba(0, 0, 0, 0.45)", filter: "blur(4px)", zIndex: 0, willChange: "transform, opacity" }} />
                         <img
                           alt=""
                           loading="lazy"
                           decoding="async"
                           className="ienv-back absolute inset-0 pointer-events-none"
-                          src="/images/envelope/baroque_v2_darkred.webp"
+                          src={assetUrl(`/images/envelope/${d.templateId}.webp`)}
                           style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center bottom", transformOrigin: "50% 100%", transform: "translateX(20%) translateY(-10%) scale(-0.8, 0.8) rotate(-15deg)", zIndex: 1, filter: "drop-shadow(rgba(0, 0, 0, 0.18) 0px 8px 14px)", willChange: "transform" }}
                         />
                         <img
@@ -948,33 +950,33 @@ export default function Preview({
                           loading="lazy"
                           decoding="async"
                           className="ienv-card absolute inset-0 pointer-events-none"
-                          src="/images/envelope/baroque_v2_darkred.webp"
+                          src={assetUrl(`/images/envelope/${d.templateId}.webp`)}
                           style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center bottom", rotate: "-10deg", zIndex: 2, filter: "drop-shadow(rgba(0, 0, 0, 0.22) 0px 10px 18px)", willChange: "transform" }}
                         />
                       </div>
                     </div>
-                    <p className="ienv-hint absolute bottom-0 left-1/2 -translate-x-1/2 text-xs whitespace-nowrap font-medium" style={{ color: "rgb(255, 239, 214)" }}>
+                    <p className="ienv-hint absolute bottom-0 left-1/2 -translate-x-1/2 text-xs whitespace-nowrap font-medium" style={{ color: giftConfig.sectionTitleColor || "rgb(81, 20, 25)" }}>
                       <span dir="auto">Nhấn để mở</span>
                     </p>
                   </button>
                 </div>
               )}
 
-              {/* MODE 3: GIFT BOX */}
-              {d.giftDisplayMode === "gift_box" && (
+              {/* MODE: 3D GIFT BOX (Hộp quà 3D chuyển động kèm hộp mini trang trí) */}
+              {(d.giftDisplayMode === "gift_box" || (!d.giftDisplayMode && giftConfig.giftboxType !== "envelope")) && (
                 <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
                   <button
                     type="button"
                     aria-label="Mở hộp mừng cưới"
-                    className="group relative cursor-pointer outline-none border-none bg-transparent"
+                    className="group relative cursor-pointer outline-none border-none bg-transparent hover:scale-105 active:scale-95 transition-transform"
                     style={{ width: "260px", height: "280px" }}
                     onClick={() => setGiftModalOpen(true)}
                   >
                     <div className="relative w-full h-full flex items-end justify-center pb-[26px]">
-                      <span className="igb-sparkle absolute pointer-events-none z-20" style={{ top: "8%", left: "14%", color: "rgb(84, 46, 8)", fontSize: "22px" }}>✦</span>
-                      <span className="igb-sparkle-2 absolute pointer-events-none z-20" style={{ top: "18%", right: "10%", color: "rgb(84, 46, 8)", fontSize: "16px" }}>✦</span>
-                      <span className="igb-sparkle-3 absolute pointer-events-none z-20" style={{ top: "32%", left: "5%", color: "rgb(84, 46, 8)", fontSize: "14px" }}>✦</span>
-                      <span className="igb-sparkle-4 absolute pointer-events-none z-20" style={{ top: "26%", right: "5%", color: "rgb(84, 46, 8)", fontSize: "14px" }}>✦</span>
+                      <span className="igb-sparkle absolute pointer-events-none z-20" style={{ top: "8%", left: "14%", color: giftConfig.sectionTitleColor || "rgb(84, 46, 8)", fontSize: "22px" }}>✦</span>
+                      <span className="igb-sparkle-2 absolute pointer-events-none z-20" style={{ top: "18%", right: "10%", color: giftConfig.sectionTitleColor || "rgb(84, 46, 8)", fontSize: "16px" }}>✦</span>
+                      <span className="igb-sparkle-3 absolute pointer-events-none z-20" style={{ top: "32%", left: "5%", color: giftConfig.sectionTitleColor || "rgb(84, 46, 8)", fontSize: "14px" }}>✦</span>
+                      <span className="igb-sparkle-4 absolute pointer-events-none z-20" style={{ top: "26%", right: "5%", color: giftConfig.sectionTitleColor || "rgb(84, 46, 8)", fontSize: "14px" }}>✦</span>
                       
                       {/* 8 Confetti particles */}
                       <div className="absolute pointer-events-none z-0" style={{ bottom: "187px", left: "50%" }}>
@@ -988,20 +990,37 @@ export default function Preview({
                         <div className="igb-confetti igb-c8" style={{ position: "absolute", left: "50%", top: "0px", opacity: 0, marginLeft: "-4.5px", marginTop: "-4.5px", pointerEvents: "none", willChange: "transform, opacity", width: "9px", height: "9px", backgroundColor: "rgb(249, 115, 22)", borderRadius: "50%" }} />
                       </div>
 
-                      {/* Bobbing Box and 7 Mini Decors */}
+                      {/* Bobbing Box and Mini Decors */}
                       <div className="igb-bob relative" style={{ width: "200px", height: "220px" }}>
                         <div className="igb-shadow absolute pointer-events-none" style={{ left: "50%", bottom: "-8px", width: "144px", height: "12px", marginLeft: "-72px", borderRadius: "50%", backgroundColor: "rgba(0, 0, 0, 0.45)", filter: "blur(4px)", zIndex: 0, willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-1 absolute pointer-events-none" src="/images/giftbox/mini/baroque_v2_darkgreen.webp" style={{ left: "-20px", top: "10px", width: "34px", zIndex: 1, transform: "rotate(-22deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-2 absolute pointer-events-none" src="/images/giftbox/mini/saraya_gold.webp" style={{ left: "168px", top: "2px", width: "38px", zIndex: 1, transform: "rotate(20deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-3 absolute pointer-events-none" src="/images/giftbox/mini/dragon_phoenix_v2.webp" style={{ left: "-16px", top: "120px", width: "26px", zIndex: 1, transform: "rotate(-18deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-4 absolute pointer-events-none" src="/images/giftbox/mini/spring_garden_red.webp" style={{ left: "182px", top: "114px", width: "24px", zIndex: 1, transform: "rotate(14deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-box absolute pointer-events-none" src="/images/giftbox/nhat_binh_red.webp" style={{ left: "50%", bottom: "0px", width: "170px", maxHeight: "220px", objectFit: "contain", marginLeft: "-85px", zIndex: 2, filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 10px 18px)", willChange: "transform" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-5 absolute pointer-events-none" src="/images/giftbox/mini/double_dragon_blue.webp" style={{ left: "-8px", top: "172px", width: "44px", zIndex: 3, transform: "rotate(8deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-6 absolute pointer-events-none" src="/images/giftbox/mini/dragon_phoenix_v3.webp" style={{ left: "26px", top: "182px", width: "26px", zIndex: 3, transform: "rotate(-10deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
-                        <img alt="" loading="lazy" decoding="async" className="igb-decor igb-decor-7 absolute pointer-events-none" src="/images/giftbox/mini/hoa_kho_orange.webp" style={{ left: "118px", top: "176px", width: "40px", zIndex: 3, transform: "rotate(-14deg)", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px)", willChange: "transform, opacity" }} />
+                        {(giftConfig.miniImgs || []).map((m, idx) => (
+                          <img
+                            key={idx}
+                            alt=""
+                            loading="lazy"
+                            decoding="async"
+                            className={m.className}
+                            src={assetUrl(m.src)}
+                            style={Object.fromEntries(
+                              m.style.split(";").filter(Boolean).map((s) => {
+                                const [k, ...v] = s.split(":");
+                                const camel = k.trim().replace(/-([a-z])/g, (_, c) => c.toUpperCase());
+                                return [camel, v.join(":").trim()];
+                              })
+                            )}
+                          />
+                        ))}
+                        <img
+                          alt=""
+                          loading="lazy"
+                          decoding="async"
+                          className="igb-box absolute pointer-events-none"
+                          src={assetUrl(giftConfig.mainBoxSrc || "/images/giftbox/nhat_binh_red.webp")}
+                          style={{ left: "50%", bottom: "0px", width: "170px", maxHeight: "220px", objectFit: "contain", marginLeft: "-85px", zIndex: 2, filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 10px 18px)", willChange: "transform" }}
+                        />
                       </div>
                     </div>
-                    <p className="igb-hint absolute bottom-0 left-1/2 -translate-x-1/2 text-xs whitespace-nowrap font-medium" style={{ color: "rgb(84, 46, 8)" }}>
+                    <p className="igb-hint absolute bottom-0 left-1/2 -translate-x-1/2 text-xs whitespace-nowrap font-medium" style={{ color: giftConfig.sectionTitleColor || "rgb(84, 46, 8)" }}>
                       <span dir="auto">Nhấn để mở</span>
                     </p>
                   </button>
@@ -1053,16 +1072,17 @@ export default function Preview({
         >
           <div
             className="w-full max-w-lg sm:max-w-xl p-0 max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl relative"
-            style={{ backgroundColor: "rgb(248, 243, 224)" }}
+            style={{ backgroundColor: giftConfig.modal.bodyBg || "rgb(248, 243, 224)" }}
             onClick={(e) => e.stopPropagation()}
           >
             <div
               className="relative px-6 pt-6 pb-4 text-center"
-              style={{ backgroundColor: "rgb(195, 42, 41)" }}
+              style={{ backgroundColor: giftConfig.modal.headerBg || "rgb(195, 42, 41)" }}
             >
               <button
                 type="button"
-                className="btn btn-sm btn-circle btn-ghost absolute right-3 top-3 text-white/80 hover:text-white hover:bg-white/20"
+                className="btn btn-sm btn-circle btn-ghost absolute right-3 top-3 hover:bg-white/20"
+                style={{ color: giftConfig.modal.headerColor || "white" }}
                 onClick={() => setGiftModalOpen(false)}
                 aria-label="Đóng"
               >
@@ -1074,13 +1094,13 @@ export default function Preview({
                 className="text-[21px] md:text-[25px] lg:text-[32px]"
                 style={{
                   textShadow: "rgba(0, 0, 0, 0.2) 1px 1px 2px",
-                  fontFamily: "Oswald, sans-serif",
+                  fontFamily: giftConfig.modal.headerFont || "Oswald, sans-serif",
                   fontWeight: 600,
                   letterSpacing: "0.02em",
-                  color: "white",
+                  color: giftConfig.modal.headerColor || "white",
                 }}
               >
-                {d.giftTitle || "Hộp Quà Mừng"}
+                {d.giftTitle || giftConfig.modal.title || "Hộp Quà Mừng"}
               </h2>
             </div>
             <div className="p-4 sm:p-6">
@@ -1102,13 +1122,19 @@ export default function Preview({
                     >
                       <h3
                         className="mb-3 text-sm font-medium text-center line-clamp-2"
-                        style={{ color: "rgb(195, 42, 41)" }}
+                        style={{ color: giftConfig.modal.headerBg || "rgb(195, 42, 41)" }}
                       >
                         {title} - {g.accountName}
                       </h3>
                       <div
                         className="w-44 h-44 sm:w-48 sm:h-48 bg-white rounded-xl p-2 shadow-lg flex items-center justify-center"
-                        style={{ border: "2px solid rgba(195, 42, 41, 0.125)" }}
+                        style={{
+                          border: `2px solid ${
+                            giftConfig.modal.headerBg
+                              ? giftConfig.modal.headerBg.replace("rgb", "rgba").replace(")", ", 0.15)")
+                              : "rgba(195, 42, 41, 0.125)"
+                          }`,
+                        }}
                       >
                         <img
                           alt={`QR - ${title} - ${g.accountName}`}
@@ -1132,8 +1158,10 @@ export default function Preview({
                           type="button"
                           className="text-xs px-3 py-1.5 inline-flex items-center gap-1 font-medium rounded-full transition-colors cursor-pointer"
                           style={{
-                            color: "rgb(195, 42, 41)",
-                            backgroundColor: "rgba(195, 42, 41, 0.082)",
+                            color: giftConfig.modal.headerBg || "rgb(195, 42, 41)",
+                            backgroundColor: giftConfig.modal.headerBg
+                              ? giftConfig.modal.headerBg.replace("rgb", "rgba").replace(")", ", 0.082)")
+                              : "rgba(195, 42, 41, 0.082)",
                           }}
                           onClick={() => copyToClipboard(g.accountNumber, g.id)}
                         >
@@ -1147,8 +1175,10 @@ export default function Preview({
                             download={`vietqr-${g.bankCode}-${g.accountNumber}.png`}
                             className="text-xs px-3 py-1.5 inline-flex items-center gap-1 font-medium rounded-full transition-colors cursor-pointer"
                             style={{
-                              color: "rgb(195, 42, 41)",
-                              backgroundColor: "rgba(195, 42, 41, 0.082)",
+                              color: giftConfig.modal.headerBg || "rgb(195, 42, 41)",
+                              backgroundColor: giftConfig.modal.headerBg
+                                ? giftConfig.modal.headerBg.replace("rgb", "rgba").replace(")", ", 0.082)")
+                                : "rgba(195, 42, 41, 0.082)",
                               textDecoration: "none",
                             }}
                           >

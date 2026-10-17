@@ -1,0 +1,228 @@
+{
+  "slug": "long-phung-xanh",
+  "id": "dragon_phoenix_green",
+  "name": "Long Phụng - Xanh",
+  "timestamp": "2026-10-17T19:20:25.279Z",
+  "giftbox": {
+    "hasGiftbox": true,
+    "giftboxType": "envelope",
+    "mainBox": null,
+    "miniCount": 0,
+    "miniImgs": [],
+    "sectionTitle": "HỘP QUÀ MỪNG",
+    "sectionTitleColor": null,
+    "sectionTitleFont": null,
+    "sectionBg": null,
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "PHOTO GALLERY",
+        "color": "rgb(233, 206, 158)",
+        "fontFamily": "Baskerville, \"Times New Roman\", serif",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "CEREMONY INFO",
+        "color": "rgb(233, 206, 158)",
+        "fontFamily": "Baskerville, \"Times New Roman\", serif",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H3",
+        "text": "Trịnh Đình Khoa",
+        "color": "rgb(233, 206, 158)",
+        "fontFamily": "\"Pinyon Script\", \"Great Vibes\", cursive",
+        "fontSize": "64px",
+        "fontWeight": "400",
+        "textTransform": "none"
+      },
+      {
+        "tag": "H3",
+        "text": "Bùi Thị Lan Anh",
+        "color": "rgb(233, 206, 158)",
+        "fontFamily": "\"Pinyon Script\", \"Great Vibes\", cursive",
+        "fontSize": "64px",
+        "fontWeight": "400",
+        "textTransform": "none"
+      },
+      {
+        "tag": "H2",
+        "text": "RECEPTION INFO",
+        "color": "rgb(233, 206, 158)",
+        "fontFamily": "Baskerville, \"Times New Roman\", serif",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H3",
+        "text": "THE RECEPTION WILL TAKE PLACE AT:",
+        "color": "rgb(233, 206, 158)",
+        "fontFamily": "Baskerville, \"Times New Roman\", serif",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H3",
+        "text": "WEDDING RECEPTION VENUE",
+        "color": "rgb(233, 206, 158)",
+        "fontFamily": "Baskerville, \"Times New Roman\", serif",
+        "fontSize": "26px",
+        "fontWeight": "400",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "DRESS CODE",
+        "color": "rgb(233, 206, 158)",
+        "fontFamily": "Baskerville, \"Times New Roman\", serif",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "WEDDING DAY SCHEDULE",
+        "color": "rgb(233, 206, 158)",
+        "fontFamily": "Baskerville, \"Times New Roman\", serif",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "GUESTBOOK",
+        "color": "rgb(233, 206, 158)",
+        "fontFamily": "Baskerville, \"Times New Roman\", serif",
+        "fontSize": "26px",
+        "fontWeight": "400",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "GIFT BOX",
+        "color": "rgb(233, 206, 158)",
+        "fontFamily": "Baskerville, \"Times New Roman\", serif",
+        "fontSize": "26px",
+        "fontWeight": "400",
+        "textTransform": "uppercase"
+      }
+    ],
+    "modal": {
+      "title": "GIFT BOX",
+      "headerBg": "rgb(233, 206, 158)",
+      "headerColor": "rgb(255, 255, 255)",
+      "headerFont": "Baskerville, \"Times New Roman\", serif",
+      "bodyBg": "rgb(255, 255, 255)"
+    }
+  },
+  "typography": [
+    {
+      "tag": "H2",
+      "text": "PHOTO GALLERY",
+      "color": "rgb(233, 206, 158)",
+      "fontFamily": "Baskerville, \"Times New Roman\", serif",
+      "fontSize": "20px",
+      "fontWeight": "400",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "CEREMONY INFO",
+      "color": "rgb(233, 206, 158)",
+      "fontFamily": "Baskerville, \"Times New Roman\", serif",
+      "fontSize": "20px",
+      "fontWeight": "400",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H3",
+      "text": "Trịnh Đình Khoa",
+      "color": "rgb(233, 206, 158)",
+      "fontFamily": "\"Pinyon Script\", \"Great Vibes\", cursive",
+      "fontSize": "64px",
+      "fontWeight": "400",
+      "textTransform": "none"
+    },
+    {
+      "tag": "H3",
+      "text": "Bùi Thị Lan Anh",
+      "color": "rgb(233, 206, 158)",
+      "fontFamily": "\"Pinyon Script\", \"Great Vibes\", cursive",
+      "fontSize": "64px",
+      "fontWeight": "400",
+      "textTransform": "none"
+    },
+    {
+      "tag": "H2",
+      "text": "RECEPTION INFO",
+      "color": "rgb(233, 206, 158)",
+      "fontFamily": "Baskerville, \"Times New Roman\", serif",
+      "fontSize": "20px",
+      "fontWeight": "400",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H3",
+      "text": "THE RECEPTION WILL TAKE PLACE AT:",
+      "color": "rgb(233, 206, 158)",
+      "fontFamily": "Baskerville, \"Times New Roman\", serif",
+      "fontSize": "20px",
+      "fontWeight": "400",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H3",
+      "text": "WEDDING RECEPTION VENUE",
+      "color": "rgb(233, 206, 158)",
+      "fontFamily": "Baskerville, \"Times New Roman\", serif",
+      "fontSize": "26px",
+      "fontWeight": "400",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "DRESS CODE",
+      "color": "rgb(233, 206, 158)",
+      "fontFamily": "Baskerville, \"Times New Roman\", serif",
+      "fontSize": "20px",
+      "fontWeight": "400",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "WEDDING DAY SCHEDULE",
+      "color": "rgb(233, 206, 158)",
+      "fontFamily": "Baskerville, \"Times New Roman\", serif",
+      "fontSize": "20px",
+      "fontWeight": "400",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "GUESTBOOK",
+      "color": "rgb(233, 206, 158)",
+      "fontFamily": "Baskerville, \"Times New Roman\", serif",
+      "fontSize": "26px",
+      "fontWeight": "400",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "GIFT BOX",
+      "color": "rgb(233, 206, 158)",
+      "fontFamily": "Baskerville, \"Times New Roman\", serif",
+      "fontSize": "26px",
+      "fontWeight": "400",
+      "textTransform": "uppercase"
+    }
+  ],
+  "status": "PASS",
+  "notes": []
+}

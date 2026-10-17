@@ -1,0 +1,246 @@
+{
+  "slug": "hoa-thuy-tinh-do",
+  "id": "crystal_floral_red",
+  "name": "Hoa Thuỷ Tinh - Đỏ",
+  "timestamp": "2026-10-17T19:29:49.986Z",
+  "giftbox": {
+    "hasGiftbox": true,
+    "giftboxType": "envelope",
+    "mainBox": null,
+    "miniCount": 0,
+    "miniImgs": [],
+    "sectionTitle": "HỘP QUÀ MỪNG",
+    "sectionTitleColor": "rgb(86, 2, 7)",
+    "sectionTitleFont": "\"Times New Roman\", Times, serif",
+    "sectionBg": "rgb(251, 248, 243)",
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "THÔNG TIN BUỔI LỄ",
+        "color": "rgb(156, 31, 44)",
+        "fontFamily": "\"Times New Roman\", Times, serif",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H3",
+        "text": "Lê Hoàng Nam",
+        "color": "rgb(156, 31, 44)",
+        "fontFamily": "\"EB Garamond\", serif",
+        "fontSize": "64px",
+        "fontWeight": "400",
+        "textTransform": "none"
+      },
+      {
+        "tag": "H3",
+        "text": "Trần Thuỳ Dương",
+        "color": "rgb(156, 31, 44)",
+        "fontFamily": "\"EB Garamond\", serif",
+        "fontSize": "64px",
+        "fontWeight": "400",
+        "textTransform": "none"
+      },
+      {
+        "tag": "H2",
+        "text": "ALBUM ẢNH",
+        "color": "rgb(156, 31, 44)",
+        "fontFamily": "\"Times New Roman\", Times, serif",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "THÔNG TIN TIỆC BÁO HỶ",
+        "color": "rgb(156, 31, 44)",
+        "fontFamily": "\"Times New Roman\", Times, serif",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H3",
+        "text": "TIỆC BÁO HỶ SẼ DIỄN RA VÀO LÚC:",
+        "color": "rgb(156, 31, 44)",
+        "fontFamily": "Baskerville, \"Libre Baskerville\", \"Times New Roman\", serif",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "CÙNG ĐẾM NGƯỢC",
+        "color": "rgb(156, 31, 44)",
+        "fontFamily": "Baskerville, \"Libre Baskerville\", \"Times New Roman\", serif",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H3",
+        "text": "TIỆC BÁO HỶ SẼ TỔ CHỨC TẠI",
+        "color": "rgb(156, 31, 44)",
+        "fontFamily": "\"Times New Roman\", Times, serif",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "DRESS CODE",
+        "color": "rgb(156, 31, 44)",
+        "fontFamily": "\"Times New Roman\", Times, serif",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "LỊCH TRÌNH TIỆC BÁO HỶ",
+        "color": "rgb(156, 31, 44)",
+        "fontFamily": "\"Times New Roman\", Times, serif",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "SỔ LƯU BÚT",
+        "color": "rgb(156, 31, 44)",
+        "fontFamily": "\"Times New Roman\", Times, serif",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "HỘP QUÀ MỪNG",
+        "color": "rgb(86, 2, 7)",
+        "fontFamily": "\"Times New Roman\", Times, serif",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      }
+    ],
+    "modal": {
+      "title": "HỘP QUÀ MỪNG",
+      "headerBg": "rgb(156, 31, 44)",
+      "headerColor": "rgb(255, 255, 255)",
+      "headerFont": "\"Times New Roman\", Times, serif",
+      "bodyBg": "rgb(255, 255, 255)"
+    }
+  },
+  "typography": [
+    {
+      "tag": "H2",
+      "text": "THÔNG TIN BUỔI LỄ",
+      "color": "rgb(156, 31, 44)",
+      "fontFamily": "\"Times New Roman\", Times, serif",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H3",
+      "text": "Lê Hoàng Nam",
+      "color": "rgb(156, 31, 44)",
+      "fontFamily": "\"EB Garamond\", serif",
+      "fontSize": "64px",
+      "fontWeight": "400",
+      "textTransform": "none"
+    },
+    {
+      "tag": "H3",
+      "text": "Trần Thuỳ Dương",
+      "color": "rgb(156, 31, 44)",
+      "fontFamily": "\"EB Garamond\", serif",
+      "fontSize": "64px",
+      "fontWeight": "400",
+      "textTransform": "none"
+    },
+    {
+      "tag": "H2",
+      "text": "ALBUM ẢNH",
+      "color": "rgb(156, 31, 44)",
+      "fontFamily": "\"Times New Roman\", Times, serif",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "THÔNG TIN TIỆC BÁO HỶ",
+      "color": "rgb(156, 31, 44)",
+      "fontFamily": "\"Times New Roman\", Times, serif",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H3",
+      "text": "TIỆC BÁO HỶ SẼ DIỄN RA VÀO LÚC:",
+      "color": "rgb(156, 31, 44)",
+      "fontFamily": "Baskerville, \"Libre Baskerville\", \"Times New Roman\", serif",
+      "fontSize": "18px",
+      "fontWeight": "600",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "CÙNG ĐẾM NGƯỢC",
+      "color": "rgb(156, 31, 44)",
+      "fontFamily": "Baskerville, \"Libre Baskerville\", \"Times New Roman\", serif",
+      "fontSize": "18px",
+      "fontWeight": "600",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H3",
+      "text": "TIỆC BÁO HỶ SẼ TỔ CHỨC TẠI",
+      "color": "rgb(156, 31, 44)",
+      "fontFamily": "\"Times New Roman\", Times, serif",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "DRESS CODE",
+      "color": "rgb(156, 31, 44)",
+      "fontFamily": "\"Times New Roman\", Times, serif",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "LỊCH TRÌNH TIỆC BÁO HỶ",
+      "color": "rgb(156, 31, 44)",
+      "fontFamily": "\"Times New Roman\", Times, serif",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "SỔ LƯU BÚT",
+      "color": "rgb(156, 31, 44)",
+      "fontFamily": "\"Times New Roman\", Times, serif",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "HỘP QUÀ MỪNG",
+      "color": "rgb(86, 2, 7)",
+      "fontFamily": "\"Times New Roman\", Times, serif",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    }
+  ],
+  "status": "PASS",
+  "notes": []
+}

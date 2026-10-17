@@ -1,0 +1,228 @@
+{
+  "slug": "long-phung-v2-do",
+  "id": "dragon_phoenix_v2_red",
+  "name": "Long Phụng V2 - Đỏ",
+  "timestamp": "2026-10-17T19:18:07.762Z",
+  "giftbox": {
+    "hasGiftbox": true,
+    "giftboxType": "envelope",
+    "mainBox": null,
+    "miniCount": 0,
+    "miniImgs": [],
+    "sectionTitle": "HỘP QUÀ MỪNG",
+    "sectionTitleColor": "rgb(255, 227, 177)",
+    "sectionTitleFont": "\"Times New Roman\", Times, serif",
+    "sectionBg": "rgba(0, 0, 0, 0)",
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "THÔNG TIN LỄ CƯỚI",
+        "color": "rgb(104, 14, 14)",
+        "fontFamily": "\"Times New Roman\", Times, serif",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H3",
+        "text": "Trần Trung Hiếu",
+        "color": "rgb(104, 14, 14)",
+        "fontFamily": "\"EB Garamond\", serif",
+        "fontSize": "64px",
+        "fontWeight": "400",
+        "textTransform": "none"
+      },
+      {
+        "tag": "H3",
+        "text": "Lê Minh Nguyệt",
+        "color": "rgb(104, 14, 14)",
+        "fontFamily": "\"EB Garamond\", serif",
+        "fontSize": "64px",
+        "fontWeight": "400",
+        "textTransform": "none"
+      },
+      {
+        "tag": "H2",
+        "text": "ALBUM ẢNH",
+        "color": "rgb(104, 14, 14)",
+        "fontFamily": "\"Times New Roman\", Times, serif",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "THÔNG TIN TIỆC CƯỚI",
+        "color": "rgb(104, 14, 14)",
+        "fontFamily": "\"Times New Roman\", Times, serif",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H3",
+        "text": "TIỆC CƯỚI SẼ DIỄN RA VÀO LÚC:",
+        "color": "rgb(104, 14, 14)",
+        "fontFamily": "Baskerville, \"Times New Roman\", serif",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H3",
+        "text": "TIỆC CƯỚI SẼ TỔ CHỨC TẠI",
+        "color": "rgb(255, 227, 177)",
+        "fontFamily": "\"Times New Roman\", Times, serif",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "DRESS CODE",
+        "color": "rgb(255, 227, 177)",
+        "fontFamily": "\"Times New Roman\", Times, serif",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "LỊCH TRÌNH NGÀY CƯỚI",
+        "color": "rgb(255, 227, 177)",
+        "fontFamily": "\"Times New Roman\", Times, serif",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "Sổ lưu bút",
+        "color": "rgb(255, 227, 177)",
+        "fontFamily": "Pattaya, cursive",
+        "fontSize": "24px",
+        "fontWeight": "400",
+        "textTransform": "none"
+      },
+      {
+        "tag": "H2",
+        "text": "HỘP QUÀ MỪNG",
+        "color": "rgb(255, 227, 177)",
+        "fontFamily": "\"Times New Roman\", Times, serif",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      }
+    ],
+    "modal": {
+      "title": "HỘP QUÀ MỪNG",
+      "headerBg": "rgb(104, 14, 14)",
+      "headerColor": "rgb(255, 255, 255)",
+      "headerFont": "\"Times New Roman\", Times, serif",
+      "bodyBg": "rgb(255, 255, 255)"
+    }
+  },
+  "typography": [
+    {
+      "tag": "H2",
+      "text": "THÔNG TIN LỄ CƯỚI",
+      "color": "rgb(104, 14, 14)",
+      "fontFamily": "\"Times New Roman\", Times, serif",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H3",
+      "text": "Trần Trung Hiếu",
+      "color": "rgb(104, 14, 14)",
+      "fontFamily": "\"EB Garamond\", serif",
+      "fontSize": "64px",
+      "fontWeight": "400",
+      "textTransform": "none"
+    },
+    {
+      "tag": "H3",
+      "text": "Lê Minh Nguyệt",
+      "color": "rgb(104, 14, 14)",
+      "fontFamily": "\"EB Garamond\", serif",
+      "fontSize": "64px",
+      "fontWeight": "400",
+      "textTransform": "none"
+    },
+    {
+      "tag": "H2",
+      "text": "ALBUM ẢNH",
+      "color": "rgb(104, 14, 14)",
+      "fontFamily": "\"Times New Roman\", Times, serif",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "THÔNG TIN TIỆC CƯỚI",
+      "color": "rgb(104, 14, 14)",
+      "fontFamily": "\"Times New Roman\", Times, serif",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H3",
+      "text": "TIỆC CƯỚI SẼ DIỄN RA VÀO LÚC:",
+      "color": "rgb(104, 14, 14)",
+      "fontFamily": "Baskerville, \"Times New Roman\", serif",
+      "fontSize": "20px",
+      "fontWeight": "400",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H3",
+      "text": "TIỆC CƯỚI SẼ TỔ CHỨC TẠI",
+      "color": "rgb(255, 227, 177)",
+      "fontFamily": "\"Times New Roman\", Times, serif",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "DRESS CODE",
+      "color": "rgb(255, 227, 177)",
+      "fontFamily": "\"Times New Roman\", Times, serif",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "LỊCH TRÌNH NGÀY CƯỚI",
+      "color": "rgb(255, 227, 177)",
+      "fontFamily": "\"Times New Roman\", Times, serif",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "Sổ lưu bút",
+      "color": "rgb(255, 227, 177)",
+      "fontFamily": "Pattaya, cursive",
+      "fontSize": "24px",
+      "fontWeight": "400",
+      "textTransform": "none"
+    },
+    {
+      "tag": "H2",
+      "text": "HỘP QUÀ MỪNG",
+      "color": "rgb(255, 227, 177)",
+      "fontFamily": "\"Times New Roman\", Times, serif",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    }
+  ],
+  "status": "PASS",
+  "notes": []
+}

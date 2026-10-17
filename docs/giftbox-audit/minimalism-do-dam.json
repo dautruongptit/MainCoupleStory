@@ -1,0 +1,228 @@
+{
+  "slug": "minimalism-do-dam",
+  "id": "minimalism_darkred",
+  "name": "Minimalism - Đỏ Đậm",
+  "timestamp": "2026-10-17T19:14:16.738Z",
+  "giftbox": {
+    "hasGiftbox": true,
+    "giftboxType": "envelope",
+    "mainBox": null,
+    "miniCount": 0,
+    "miniImgs": [],
+    "sectionTitle": "HỘP QUÀ MỪNG",
+    "sectionTitleColor": "rgb(81, 20, 25)",
+    "sectionTitleFont": "\"Times New Roman\", serif",
+    "sectionBg": "rgba(0, 0, 0, 0)",
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "THÔNG TIN LỄ CƯỚI",
+        "color": "rgb(236, 228, 216)",
+        "fontFamily": "\"Times New Roman\", serif",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H3",
+        "text": "Đặng Hoàng Long",
+        "color": "rgb(236, 228, 216)",
+        "fontFamily": "\"Viaoda Libre\", \"The Nautigal\", cursive",
+        "fontSize": "32px",
+        "fontWeight": "400",
+        "textTransform": "none"
+      },
+      {
+        "tag": "H3",
+        "text": "Vũ Bảo Ngọc",
+        "color": "rgb(236, 228, 216)",
+        "fontFamily": "\"Viaoda Libre\", \"The Nautigal\", cursive",
+        "fontSize": "32px",
+        "fontWeight": "400",
+        "textTransform": "none"
+      },
+      {
+        "tag": "H2",
+        "text": "ALBUM ẢNH",
+        "color": "rgb(81, 20, 25)",
+        "fontFamily": "\"Times New Roman\", serif",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "THÔNG TIN TIỆC CƯỚI",
+        "color": "rgb(236, 228, 216)",
+        "fontFamily": "\"Times New Roman\", serif",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H3",
+        "text": "TIỆC CƯỚI SẼ DIỄN RA VÀO LÚC:",
+        "color": "rgb(236, 228, 216)",
+        "fontFamily": "Baskerville, \"Times New Roman\", serif",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H3",
+        "text": "TIỆC CƯỚI SẼ TỔ CHỨC TẠI",
+        "color": "rgb(81, 20, 25)",
+        "fontFamily": "\"Times New Roman\", serif",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "DRESS CODE",
+        "color": "rgb(81, 20, 25)",
+        "fontFamily": "\"Times New Roman\", serif",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "LỊCH TRÌNH NGÀY CƯỚI",
+        "color": "rgb(236, 228, 216)",
+        "fontFamily": "\"Times New Roman\", serif",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "SỔ LƯU BÚT",
+        "color": "rgb(81, 20, 25)",
+        "fontFamily": "\"Times New Roman\", serif",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "HỘP QUÀ MỪNG",
+        "color": "rgb(81, 20, 25)",
+        "fontFamily": "\"Times New Roman\", serif",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      }
+    ],
+    "modal": {
+      "title": "HỘP QUÀ MỪNG",
+      "headerBg": "rgb(81, 20, 25)",
+      "headerColor": "rgb(255, 255, 255)",
+      "headerFont": "\"Times New Roman\", serif",
+      "bodyBg": "rgb(255, 255, 255)"
+    }
+  },
+  "typography": [
+    {
+      "tag": "H2",
+      "text": "THÔNG TIN LỄ CƯỚI",
+      "color": "rgb(236, 228, 216)",
+      "fontFamily": "\"Times New Roman\", serif",
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H3",
+      "text": "Đặng Hoàng Long",
+      "color": "rgb(236, 228, 216)",
+      "fontFamily": "\"Viaoda Libre\", \"The Nautigal\", cursive",
+      "fontSize": "32px",
+      "fontWeight": "400",
+      "textTransform": "none"
+    },
+    {
+      "tag": "H3",
+      "text": "Vũ Bảo Ngọc",
+      "color": "rgb(236, 228, 216)",
+      "fontFamily": "\"Viaoda Libre\", \"The Nautigal\", cursive",
+      "fontSize": "32px",
+      "fontWeight": "400",
+      "textTransform": "none"
+    },
+    {
+      "tag": "H2",
+      "text": "ALBUM ẢNH",
+      "color": "rgb(81, 20, 25)",
+      "fontFamily": "\"Times New Roman\", serif",
+      "fontSize": "20px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "THÔNG TIN TIỆC CƯỚI",
+      "color": "rgb(236, 228, 216)",
+      "fontFamily": "\"Times New Roman\", serif",
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H3",
+      "text": "TIỆC CƯỚI SẼ DIỄN RA VÀO LÚC:",
+      "color": "rgb(236, 228, 216)",
+      "fontFamily": "Baskerville, \"Times New Roman\", serif",
+      "fontSize": "20px",
+      "fontWeight": "400",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H3",
+      "text": "TIỆC CƯỚI SẼ TỔ CHỨC TẠI",
+      "color": "rgb(81, 20, 25)",
+      "fontFamily": "\"Times New Roman\", serif",
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "DRESS CODE",
+      "color": "rgb(81, 20, 25)",
+      "fontFamily": "\"Times New Roman\", serif",
+      "fontSize": "20px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "LỊCH TRÌNH NGÀY CƯỚI",
+      "color": "rgb(236, 228, 216)",
+      "fontFamily": "\"Times New Roman\", serif",
+      "fontSize": "20px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "SỔ LƯU BÚT",
+      "color": "rgb(81, 20, 25)",
+      "fontFamily": "\"Times New Roman\", serif",
+      "fontSize": "20px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "HỘP QUÀ MỪNG",
+      "color": "rgb(81, 20, 25)",
+      "fontFamily": "\"Times New Roman\", serif",
+      "fontSize": "20px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    }
+  ],
+  "status": "PASS",
+  "notes": []
+}

@@ -1,0 +1,246 @@
+{
+  "slug": "hoa-huong-duong",
+  "id": "sunflower_yellow",
+  "name": "Hoa Hướng Dương",
+  "timestamp": "2026-10-17T19:29:22.605Z",
+  "giftbox": {
+    "hasGiftbox": true,
+    "giftboxType": "envelope",
+    "mainBox": null,
+    "miniCount": 0,
+    "miniImgs": [],
+    "sectionTitle": "HỘP QUÀ MỪNG",
+    "sectionTitleColor": "rgb(113, 112, 42)",
+    "sectionTitleFont": "\"Times New Roman\", serif",
+    "sectionBg": "rgba(0, 0, 0, 0)",
+    "headings": [
+      {
+        "tag": "H2",
+        "text": "THÔNG TIN LỄ CƯỚI",
+        "color": "rgb(220, 130, 3)",
+        "fontFamily": "\"Times New Roman\", serif",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H3",
+        "text": "Trần Văn Hoàng",
+        "color": "rgb(220, 130, 3)",
+        "fontFamily": "\"EB Garamond\", serif",
+        "fontSize": "38px",
+        "fontWeight": "400",
+        "textTransform": "none"
+      },
+      {
+        "tag": "H3",
+        "text": "Lý Mỹ Ngọc",
+        "color": "rgb(220, 130, 3)",
+        "fontFamily": "\"EB Garamond\", serif",
+        "fontSize": "38px",
+        "fontWeight": "400",
+        "textTransform": "none"
+      },
+      {
+        "tag": "H2",
+        "text": "ALBUM ẢNH",
+        "color": "rgb(220, 130, 3)",
+        "fontFamily": "\"Times New Roman\", serif",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "THÔNG TIN TIỆC CƯỚI",
+        "color": "rgb(220, 130, 3)",
+        "fontFamily": "\"Times New Roman\", serif",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H3",
+        "text": "TIỆC CƯỚI SẼ DIỄN RA VÀO LÚC:",
+        "color": "rgb(220, 130, 3)",
+        "fontFamily": "Baskerville, \"Times New Roman\", serif",
+        "fontSize": "19px",
+        "fontWeight": "600",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "CÙNG ĐẾM NGƯỢC",
+        "color": "rgba(113, 112, 42, 0.72)",
+        "fontFamily": "Baskerville, \"Times New Roman\", serif",
+        "fontSize": "20px",
+        "fontWeight": "400",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H3",
+        "text": "TIỆC CƯỚI SẼ TỔ CHỨC TẠI",
+        "color": "rgb(220, 130, 3)",
+        "fontFamily": "\"Times New Roman\", serif",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "DRESS CODE",
+        "color": "rgb(220, 130, 3)",
+        "fontFamily": "\"Times New Roman\", serif",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "LỊCH TRÌNH NGÀY CƯỚI",
+        "color": "rgb(220, 130, 3)",
+        "fontFamily": "\"Times New Roman\", serif",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "SỔ LƯU BÚT",
+        "color": "rgb(220, 130, 3)",
+        "fontFamily": "\"Times New Roman\", serif",
+        "fontSize": "20px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      },
+      {
+        "tag": "H2",
+        "text": "HỘP QUÀ MỪNG",
+        "color": "rgb(113, 112, 42)",
+        "fontFamily": "\"Times New Roman\", serif",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "textTransform": "uppercase"
+      }
+    ],
+    "modal": {
+      "title": "HỘP QUÀ MỪNG",
+      "headerBg": "rgb(220, 130, 3)",
+      "headerColor": "rgb(255, 255, 255)",
+      "headerFont": "\"Times New Roman\", serif",
+      "bodyBg": "rgb(255, 255, 255)"
+    }
+  },
+  "typography": [
+    {
+      "tag": "H2",
+      "text": "THÔNG TIN LỄ CƯỚI",
+      "color": "rgb(220, 130, 3)",
+      "fontFamily": "\"Times New Roman\", serif",
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H3",
+      "text": "Trần Văn Hoàng",
+      "color": "rgb(220, 130, 3)",
+      "fontFamily": "\"EB Garamond\", serif",
+      "fontSize": "38px",
+      "fontWeight": "400",
+      "textTransform": "none"
+    },
+    {
+      "tag": "H3",
+      "text": "Lý Mỹ Ngọc",
+      "color": "rgb(220, 130, 3)",
+      "fontFamily": "\"EB Garamond\", serif",
+      "fontSize": "38px",
+      "fontWeight": "400",
+      "textTransform": "none"
+    },
+    {
+      "tag": "H2",
+      "text": "ALBUM ẢNH",
+      "color": "rgb(220, 130, 3)",
+      "fontFamily": "\"Times New Roman\", serif",
+      "fontSize": "20px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "THÔNG TIN TIỆC CƯỚI",
+      "color": "rgb(220, 130, 3)",
+      "fontFamily": "\"Times New Roman\", serif",
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H3",
+      "text": "TIỆC CƯỚI SẼ DIỄN RA VÀO LÚC:",
+      "color": "rgb(220, 130, 3)",
+      "fontFamily": "Baskerville, \"Times New Roman\", serif",
+      "fontSize": "19px",
+      "fontWeight": "600",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "CÙNG ĐẾM NGƯỢC",
+      "color": "rgba(113, 112, 42, 0.72)",
+      "fontFamily": "Baskerville, \"Times New Roman\", serif",
+      "fontSize": "20px",
+      "fontWeight": "400",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H3",
+      "text": "TIỆC CƯỚI SẼ TỔ CHỨC TẠI",
+      "color": "rgb(220, 130, 3)",
+      "fontFamily": "\"Times New Roman\", serif",
+      "fontSize": "16px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "DRESS CODE",
+      "color": "rgb(220, 130, 3)",
+      "fontFamily": "\"Times New Roman\", serif",
+      "fontSize": "20px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "LỊCH TRÌNH NGÀY CƯỚI",
+      "color": "rgb(220, 130, 3)",
+      "fontFamily": "\"Times New Roman\", serif",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "SỔ LƯU BÚT",
+      "color": "rgb(220, 130, 3)",
+      "fontFamily": "\"Times New Roman\", serif",
+      "fontSize": "20px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    },
+    {
+      "tag": "H2",
+      "text": "HỘP QUÀ MỪNG",
+      "color": "rgb(113, 112, 42)",
+      "fontFamily": "\"Times New Roman\", serif",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "textTransform": "uppercase"
+    }
+  ],
+  "status": "PASS",
+  "notes": []
+}
