@@ -25,6 +25,13 @@ def style_obj(s):
         items.append(f"{json.dumps(camel(k))}: {json.dumps(v)}")
     return "{{ " + ", ".join(items) + " } as CSSProperties}"
 
+SVG_TAGS = {"clippath": "clipPath", "lineargradient": "linearGradient", "radialgradient": "radialGradient", "foreignobject": "foreignObject", "textpath": "textPath", "fegaussianblur": "feGaussianBlur", "feoffset": "feOffset", "feflood": "feFlood", "fecomposite": "feComposite", "feblend": "feBlend", "fecolormatrix": "feColorMatrix"}
+SVG_ATTRS = {"viewbox": "viewBox", "preserveaspectratio": "preserveAspectRatio", "gradientunits": "gradientUnits", "gradienttransform": "gradientTransform", "clippathunits": "clipPathUnits", "patternunits": "patternUnits", "stddeviation": "stdDeviation", "xlink:href": "xlinkHref", "xmlns:xlink": "xmlnsXlink", "spreadmethod": "spreadMethod", "textlength": "textLength", "startoffset": "startOffset"}
+def attr_name(k):
+    if k in SVG_ATTRS: return SVG_ATTRS[k]
+    if k.startswith(("aria-", "data-")): return k
+    if "-" in k and not k.startswith("--"): return re.sub(r"-([a-z])", lambda m: m.group(1).upper(), k)
+    return ATTR.get(k, k)
 ATTR = {"class": "className", "for": "htmlFor", "tabindex": "tabIndex", "srcset": "srcSet", "fetchpriority": "fetchPriority"}
 
 class Conv(HTMLParser):
@@ -55,7 +62,8 @@ class Conv(HTMLParser):
             elif k == "aria-hidden":
                 a.append('aria-hidden="true"')
             else:
-                a.append(f'{ATTR.get(k, k)}={json.dumps(v)}')
+                a.append(f'{attr_name(k)}={json.dumps(v)}')
+        tag = SVG_TAGS.get(tag, tag)
         self.out.append(f"<{tag}{(' ' + ' '.join(a)) if a else ''}{' /' if tag in VOID else ''}>")
         if tag not in VOID:
             self.stack.append(tag)
@@ -67,9 +75,9 @@ class Conv(HTMLParser):
             return
         if tag in VOID:
             return
-        if self.stack and self.stack[-1] == tag:
+        if self.stack and self.stack[-1] == SVG_TAGS.get(tag, tag):
             self.stack.pop()
-        self.out.append(f"</{tag}>")
+        self.out.append(f"</{SVG_TAGS.get(tag, tag)}>")
     def handle_data(self, d):
         if self.skip:
             return
