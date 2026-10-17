@@ -97,6 +97,7 @@ export const TEMPLATES: Tpl[] = [
 const INTRO_BY_ID: Record<string, string> = {
   minimalism_darkred: "Save The Date",
   song_hy_green: "WELCOME TO OUR WEDDING",
+  song_hy_red: "WELCOME TO OUR WEDDING",
   minimalism_brown: "The Wedding Of",
 };
 export const introDefaultFor = (templateId: string) =>

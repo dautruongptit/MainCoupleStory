@@ -71,3 +71,11 @@ Mỗi dòng cần: dựng lại từ HTML thật, tải ảnh riêng (khoảng 1
 **Đã sinh và chụp so ở 390 px (khớp mẫu thật):** Minimalism Đỏ Đậm, Nâu Đậm, Lam Đậm, Tím (đã xem); Đỏ và Xanh đã sinh nhưng chưa chụp. Màn mở thiệp của các biến thể này vẫn là bản chung. Phần thân vẫn là bố cục chung.
 
 **Nhóm Long Phụng (2026-10-17):** đã sinh phần đầu cho Long Phụng Đỏ, Lam, Xanh, Huyền (cùng một bố cục: tên và hoạ tiết rồng phượng mờ trên nền tối), V3 Đỏ, V4 Đỏ; V2 vẫn là bản dựng tay. Tải 24 tệp ảnh + 4 SVG về `public/images/themes/{red-v1,black-v1,longphung-v3-red,longphung-v4-red}/` (khoảng 2,5 MB, tải chậm từng tệp). Đã chụp V1 Lam, V3, V4 ở 390 px: phần đầu khớp. Phần thân (từ "Thông tin lễ cưới") vẫn là bố cục chung nên màu nền và khung chưa đúng như trang thật (V3 thật có khối thân riêng, V1 thân kiểu khung ảnh).
+
+## Kiểm tra ẩn/hiện và độ đầy đủ dữ liệu editor (2026-10-17)
+
+Phương pháp: đọc mã `Preview.tsx` đếm trường `Inv` nào được dùng; chạy thật với thiệp đặt toàn bộ công tắc Bật rồi toàn bộ Tắt.
+- **Công tắc ẩn/hiện được tôn trọng** ở phần thân thiệp (dùng chung cho mọi mẫu): Thư viện ảnh, Thông tin gia đình, Lời thông báo, Tiệc cưới, RSVP, Dress Code, Lịch trình, Sổ lưu bút, Hộp quà, Lời cảm ơn, đếm ngược, bản đồ, giờ đón khách. Tắt hết thì thiệp chỉ còn phần đầu và tên.
+- **Đã sửa trong lượt này:** "Ảnh đầu thiệp" tắt thì ẩn ảnh (trước đó bị bỏ qua); RSVP nay dùng đúng kiểu hiển thị (nút hoặc hiện trực tiếp), số người (tự điền hoặc giới hạn N), câu hỏi thêm; tiêu đề Dress Code tuỳ chỉnh; giờ khai tiệc (`startTime`) hiển thị; chữ mở đầu của Song Hỷ Đỏ.
+- **Còn thiếu:** `musicAutoPlay` (tự phát nhạc) chưa dùng; `banquetType` (Tiệc cưới/Báo hỷ/Đính hôn) chưa đổi tiêu đề trong thiệp; phần đầu thiệp sinh tự động và 4 mẫu dựng riêng chỉ dùng tên, chữ mở đầu, ảnh (không dùng danh xưng Trưởng Nam/Út Nữ, thứ tự nhà trai/gái ở phần đầu); phần thân của các mẫu chưa dựng vẫn là bố cục Song Phụng chung nên "đầy đủ thông tin" đúng nhưng chưa đúng hình thức của từng mẫu; hộp quà/lưu bút/album ẩn khi chưa có dữ liệu dù công tắc bật (trang thật có thể hiện khung trống).
+- **Chưa kiểm tra:** từng mẫu trong 75 mẫu bằng công tắc (mới chạy trên một mẫu); tác dụng của `order` (nhà trai/gái trước) trong các phần đầu sinh tự động.

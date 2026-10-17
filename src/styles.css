@@ -6218,3 +6218,8 @@ html[data-theme="light"] .pv-wrapper, html[data-theme="light"] .demo-standalone-
 .palette-plain img[data-art], .palette-plain .line-deco-left, .palette-plain .line-deco-right { display: none; }
 .palette-plain .songphung-template header.relative { padding-bottom: 48px; }
 .palette-plain .songphung-template header.relative > div:nth-child(2) { height: 120px; }
+
+/* RSVP hiện trực tiếp trên thiệp (rsvpDisplay = "inline") */
+.sp-rsvp-inline { margin-top: 16px; }
+.rsvp-modal-box.is-inline { position: static; max-width: 100%; box-shadow: none; margin: 0 auto; }
+.rsvp-modal-box.is-inline .rsvp-close-btn { display: none; }

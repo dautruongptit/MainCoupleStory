@@ -29,6 +29,7 @@ export default function Preview({
   const [lightboxImg, setLightboxImg] = useState<string | null>(null);
   const [rsvpOpen, setRsvpOpen] = useState(false);
   const [rsvpSubmitted, setRsvpSubmitted] = useState(false);
+  const [rsvpAnswers, setRsvpAnswers] = useState<Record<string, string>>({});
 
   const intro = d.introCustom && d.introText.trim() ? d.introText.trim() : introDefaultFor(d.templateId);
   const isMinimalism = (d.templateId || "").includes("minimalism") || (d.templateName || "").includes("Minimalism");
@@ -155,6 +156,136 @@ export default function Preview({
 
   const currentGift =
     d.gifts.find((g) => g.who === activeBankTab) || d.gifts[0] || null;
+
+  const rsvpBox = (
+          <div
+            className={"rsvp-modal-box" + (d.rsvpDisplay === "inline" ? " is-inline" : "")}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="rsvp-modal-header">
+              <h3>Xác nhận tham dự</h3>
+              <button
+                className="rsvp-close-btn"
+                onClick={() => setRsvpOpen(false)}
+              >
+                ✕
+              </button>
+            </div>
+
+            {rsvpSubmitted ? (
+              <div className="rsvp-success-state">
+                <span className="rsvp-check-icon">✓</span>
+                <h4>Cảm ơn bạn đã phản hồi!</h4>
+                <p>Chúng tôi rất mong được đón tiếp bạn trong ngày vui.</p>
+                <button
+                  className="sp-btn-primary"
+                  onClick={() => setRsvpOpen(false)}
+                >
+                  Đóng
+                </button>
+              </div>
+            ) : (
+              <form
+                className="rsvp-form"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  setRsvpSubmitted(true);
+                  if (rsvpForm.note.trim() || Object.values(rsvpAnswers).some((v) => v.trim())) {
+                    set({
+                      wishes: [
+                        {
+                          name: rsvpForm.name || "Khách mời",
+                          msg: [rsvpForm.note, ...Object.entries(rsvpAnswers).map(([q, a]) => (a ? `${q}: ${a}` : ""))].filter(Boolean).join(" · "),
+                          at: new Date().toLocaleDateString("vi-VN"),
+                        },
+                        ...d.wishes,
+                      ],
+                    });
+                  }
+                }}
+              >
+                <label className="rsvp-field">
+                  <span>Họ và tên của bạn*</span>
+                  <input
+                    required
+                    type="text"
+                    value={rsvpForm.name}
+                    onChange={(e) =>
+                      setRsvpForm({ ...rsvpForm, name: e.target.value })
+                    }
+                    placeholder="Ví dụ: Nguyễn Văn A"
+                  />
+                </label>
+
+                <label className="rsvp-field">
+                  <span>Số điện thoại</span>
+                  <input
+                    type="tel"
+                    value={rsvpForm.phone}
+                    onChange={(e) =>
+                      setRsvpForm({ ...rsvpForm, phone: e.target.value })
+                    }
+                    placeholder="Ví dụ: 0912 345 678"
+                  />
+                </label>
+
+                <label className="rsvp-field">
+                  <span>Bạn sẽ tham dự chứ?</span>
+                  <select
+                    value={rsvpForm.attending}
+                    onChange={(e) =>
+                      setRsvpForm({ ...rsvpForm, attending: e.target.value })
+                    }
+                  >
+                    <option value="yes">Chắc chắn tham dự</option>
+                    <option value="maybe">Có thể tham dự</option>
+                    <option value="no">Rất tiếc không thể tham dự</option>
+                  </select>
+                </label>
+
+                <label className="rsvp-field">
+                  <span>Số người tham dự</span>
+                  {d.partyMode === "limit" ? (
+                    <select value={rsvpForm.count} onChange={(e) => setRsvpForm({ ...rsvpForm, count: e.target.value })}>
+                      {Array.from({ length: Math.max(1, d.partyLimit) }, (_, i) => (
+                        <option key={i + 1} value={String(i + 1)}>{i + 1} người</option>
+                      ))}
+                    </select>
+                  ) : (
+                    <input type="number" min={1} value={rsvpForm.count} onChange={(e) => setRsvpForm({ ...rsvpForm, count: String(Math.max(1, Number(e.target.value) || 1)) })} />
+                  )}
+                </label>
+
+                {d.questions.filter((q) => q.trim()).map((q, i) => (
+                  <label className="rsvp-field" key={i}>
+                    <span>{q}</span>
+                    <input
+                      type="text"
+                      value={rsvpAnswers[q] || ""}
+                      onChange={(e) => setRsvpAnswers({ ...rsvpAnswers, [q]: e.target.value })}
+                    />
+                  </label>
+                ))}
+
+                <label className="rsvp-field">
+                  <span>Gửi lời nhắn hoặc chế độ ăn uống</span>
+                  <textarea
+                    rows={2}
+                    value={rsvpForm.note}
+                    onChange={(e) =>
+                      setRsvpForm({ ...rsvpForm, note: e.target.value })
+                    }
+                    placeholder="Ví dụ: Ăn chay, hoặc lời chúc mừng gửi tới dâu rể..."
+                  />
+                </label>
+
+                <button type="submit" className="sp-btn-primary full-w">
+                  Gửi phản hồi
+                </button>
+              </form>
+            )}
+          </div>
+  );
 
   return (
     <div style={paletteVars} className={`pv-wrapper ${red ? "" : "palette-plain"} ${standalone ? "is-standalone" : ""} ${isMinimalism ? "theme-minimalism" : isSongHy ? "theme-songhy" : isLongPhungV2 ? "theme-longphung-v2" : "theme-songphung"}`}>
@@ -459,7 +590,7 @@ export default function Preview({
 
           {/* -------------------- HERO SECTION -------------------- */}
           {GENERATED_HEADERS[d.templateId] ? (
-            GENERATED_HEADERS[d.templateId]({ groom: gName, bride: bName, intro, photo: d.heroPhoto || d.photos[0] || "https://assets.chungdoi.com/photo-library/design/cdecf6cfe2eeb3cfd63829abde62f1066f10a364ec27d4c997c0f51012c8803e.webp" })
+            GENERATED_HEADERS[d.templateId]({ groom: gName, bride: bName, intro, photo: !d.heroOn ? undefined : d.heroPhoto || d.photos[0] || "https://assets.chungdoi.com/photo-library/design/cdecf6cfe2eeb3cfd63829abde62f1066f10a364ec27d4c997c0f51012c8803e.webp" })
           ) : isLongPhungV2 ? (
             <LongPhungHeader groom={gName} bride={bName} />
           ) : isMinimalism ? (
@@ -527,6 +658,7 @@ export default function Preview({
               <div className="relative z-10 mt-6 aspect-[1094/1554] w-[88%] max-w-[360px] md:mt-8 md:max-w-[460px]">
                 <div className="absolute left-[11.5%] top-[8%] z-10 h-[77%] w-[72%] rotate-[-4.78deg] overflow-hidden bg-white shadow-inner">
                   <img
+                    hidden={!d.heroOn}
                     src={d.heroPhoto || "/images/themes/minimalism-brown/couple.webp"}
                     alt={`${gName} & ${bName}`}
                     className="h-full w-full object-cover"
@@ -710,11 +842,11 @@ export default function Preview({
                 <span className="sp-b-month">THÁNG {dt.getMonth() + 1}</span>
               </div>
 
-              {!d.hideWelcomeTimes && (d.welcomeTime || d.time) && (
+              {!d.hideWelcomeTimes && (d.welcomeTime || d.startTime || d.time) && (
                 <div className="sp-welcome-times">
                   {d.welcomeTime && <span>Đón khách: <b>{formatTime(d.welcomeTime, d.clock)}</b></span>}
-                  {d.welcomeTime && d.time && <span className="sp-dot">•</span>}
-                  {d.time && <span>Khai tiệc: <b>{formatTime(d.time, d.clock)}</b></span>}
+                  {d.welcomeTime && (d.startTime || d.time) && <span className="sp-dot">•</span>}
+                  {(d.startTime || d.time) && <span>Khai tiệc: <b>{formatTime(d.startTime || d.time, d.clock)}</b></span>}
                 </div>
               )}
 
@@ -756,7 +888,8 @@ export default function Preview({
               </button>
 
               {/* RSVP Button */}
-              {d.rsvpOn && (
+              {d.rsvpOn && d.rsvpDisplay === "inline" && <div className="sp-rsvp-inline">{rsvpBox}</div>}
+              {d.rsvpOn && d.rsvpDisplay !== "inline" && (
                 <div className="sp-rsvp-action">
                   <button
                     className="sp-btn-primary"
@@ -817,7 +950,7 @@ export default function Preview({
           {/* -------------------- SECTION 5: DRESS CODE -------------------- */}
           {d.dressOn && (
             <section className="sp-section sp-dress-sec">
-              <h2 className="sp-sec-title">DRESS CODE</h2>
+              <h2 className="sp-sec-title">{d.dressTitle || "DRESS CODE"}</h2>
               <p className="sp-dress-sub">{d.dressText || "Trang phục dự tiệc"}</p>
               {d.dressColors && d.dressColors.length > 0 && (
                 <div className="sp-color-swatches">
@@ -1108,124 +1241,7 @@ export default function Preview({
       {/* ==================== RSVP MODAL ==================== */}
       {rsvpOpen && (
         <div className="lightbox-overlay" onClick={() => setRsvpOpen(false)}>
-          <div
-            className="rsvp-modal-box"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="rsvp-modal-header">
-              <h3>Xác nhận tham dự</h3>
-              <button
-                className="rsvp-close-btn"
-                onClick={() => setRsvpOpen(false)}
-              >
-                ✕
-              </button>
-            </div>
-
-            {rsvpSubmitted ? (
-              <div className="rsvp-success-state">
-                <span className="rsvp-check-icon">✓</span>
-                <h4>Cảm ơn bạn đã phản hồi!</h4>
-                <p>Chúng tôi rất mong được đón tiếp bạn trong ngày vui.</p>
-                <button
-                  className="sp-btn-primary"
-                  onClick={() => setRsvpOpen(false)}
-                >
-                  Đóng
-                </button>
-              </div>
-            ) : (
-              <form
-                className="rsvp-form"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setRsvpSubmitted(true);
-                  if (rsvpForm.note.trim()) {
-                    set({
-                      wishes: [
-                        {
-                          name: rsvpForm.name || "Khách mời",
-                          msg: rsvpForm.note,
-                          at: new Date().toLocaleDateString("vi-VN"),
-                        },
-                        ...d.wishes,
-                      ],
-                    });
-                  }
-                }}
-              >
-                <label className="rsvp-field">
-                  <span>Họ và tên của bạn*</span>
-                  <input
-                    required
-                    type="text"
-                    value={rsvpForm.name}
-                    onChange={(e) =>
-                      setRsvpForm({ ...rsvpForm, name: e.target.value })
-                    }
-                    placeholder="Ví dụ: Nguyễn Văn A"
-                  />
-                </label>
-
-                <label className="rsvp-field">
-                  <span>Số điện thoại</span>
-                  <input
-                    type="tel"
-                    value={rsvpForm.phone}
-                    onChange={(e) =>
-                      setRsvpForm({ ...rsvpForm, phone: e.target.value })
-                    }
-                    placeholder="Ví dụ: 0912 345 678"
-                  />
-                </label>
-
-                <label className="rsvp-field">
-                  <span>Bạn sẽ tham dự chứ?</span>
-                  <select
-                    value={rsvpForm.attending}
-                    onChange={(e) =>
-                      setRsvpForm({ ...rsvpForm, attending: e.target.value })
-                    }
-                  >
-                    <option value="yes">Chắc chắn tham dự</option>
-                    <option value="maybe">Có thể tham dự</option>
-                    <option value="no">Rất tiếc không thể tham dự</option>
-                  </select>
-                </label>
-
-                <label className="rsvp-field">
-                  <span>Số người tham dự</span>
-                  <select
-                    value={rsvpForm.count}
-                    onChange={(e) =>
-                      setRsvpForm({ ...rsvpForm, count: e.target.value })
-                    }
-                  >
-                    <option value="1">1 người</option>
-                    <option value="2">2 người</option>
-                    <option value="3">3 người</option>
-                    <option value="4">4+ người</option>
-                  </select>
-                </label>
-
-                <label className="rsvp-field">
-                  <span>Gửi lời nhắn hoặc chế độ ăn uống</span>
-                  <textarea
-                    rows={2}
-                    value={rsvpForm.note}
-                    onChange={(e) =>
-                      setRsvpForm({ ...rsvpForm, note: e.target.value })
-                    }
-                    placeholder="Ví dụ: Ăn chay, hoặc lời chúc mừng gửi tới dâu rể..."
-                  />
-                </label>
-
-                <button type="submit" className="sp-btn-primary full-w">
-                  Gửi phản hồi
-                </button>
-              </form>
-            )}
-          </div>
+          {rsvpBox}
         </div>
       )}
 
