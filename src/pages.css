@@ -2138,3 +2138,13 @@ button.gst-chip { border: 0; font-family: inherit; cursor: pointer; }
 .review-card-v2 { border-top: 3px solid #2563eb; background: #1d1917; }
 .review-card-v2 { border-top: 0; position: relative; overflow: hidden; }
 .review-card-v2::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: #2563eb; }
+
+/* ---- Modal Đổi mẫu thiệp: 7 cột, ảnh lấy phần đầu thiệp (ảnh nguồn là ảnh dọc rất dài) ---- */
+.tpl-grid-content .tpl-grid { grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 12px; }
+.tpl-grid-content .tpl-card { min-width: 0; }
+.tpl-card img { object-position: top center; }
+@media (max-width: 1024px) { .tpl-grid-content .tpl-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .tpl-grid-content .tpl-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; } }
+.tpl-grid-content .tpl-card { width: 100%; }
+.tpl-grid-content .tpl-card img { position: absolute; inset: 0; width: 100%; height: 100%; }
+.tpl-thumb-img { object-fit: cover; object-position: top center; }

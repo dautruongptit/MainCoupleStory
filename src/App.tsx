@@ -82,13 +82,17 @@ export default function App() {
         templateId={d.templateId}
         templateName={d.templateName}
         templateThumb={d.templateThumb}
-        onSelectTemplate={(tpl) =>
+        onSelectTemplate={(tpl) => {
           set({
             templateId: tpl.id,
             templateName: tpl.name,
             templateThumb: TPL_CDN + tpl.img,
-          })
-        }
+          });
+          // giữ bản ghi thiệp (Dashboard, Khách Mời) khớp với mẫu vừa chọn
+          const [template, ...rest] = tpl.name.split(" - ");
+          const target = currentCard?.id || cardId;
+          saveCards(loadCards().map((c) => (c.id === target ? { ...c, template, color: rest.join(" - "), tplId: tpl.id } : c)));
+        }}
       />
       <main>
         {mode === "edit" ? (
