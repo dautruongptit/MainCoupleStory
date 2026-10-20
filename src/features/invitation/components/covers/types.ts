@@ -24,6 +24,7 @@ export interface CoverConfig {
   sealType: "xi" | "heart" | "none";
   sealBg: string;
   sealColor: string;
+  sealTop?: number;
   nameFont: string;
   accentColor: string;
   textColor: string;

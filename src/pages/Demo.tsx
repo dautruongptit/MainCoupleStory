@@ -139,7 +139,7 @@ export default function Demo({ slug }: { slug: string }) {
     <div className="demo-standalone-wrap">
       {/* Floating Action Bar - Chỉ hiển thị khi thiệp đã mở hoặc khi mở với ?open=1 */}
       {isOpened && (
-        <div className="demo-floating-header" style={{ position: "fixed", top: "14px", right: "16px", zIndex: 100, display: "flex", alignItems: "center", gap: "10px" }}>
+        <div className="demo-floating-header" style={{ position: "fixed", bottom: "24px", right: "20px", zIndex: 100, display: "flex", alignItems: "center", gap: "10px" }}>
           <Link
             href="/vi/mau-thiep"
             className="demo-float-btn back"

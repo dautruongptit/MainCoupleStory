@@ -42,7 +42,7 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
 
       {/* Burst Particles and Ripple Rings during open transition */}
       {showBurst && (
-        <OpenTransitionBurst type={config.particleType} baseColor={config.accentColor} sealPosition={{ top: 50 }} />
+        <OpenTransitionBurst type={config.particleType} baseColor={config.accentColor} sealPosition={{ top: config.sealTop !== undefined ? config.sealTop : 50 }} />
       )}
 
       {/* Main Card Container */}
@@ -50,6 +50,7 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
         className="relative w-[310px] sm:w-[340px] md:w-[520px] lg:w-[600px]"
         style={{
           zIndex: 10,
+          transform: "translateY(-26px)",
           animation: showBurst ? "0.8s ease-in 0s 1 normal forwards running envelope-away" : undefined,
         }}
       >
@@ -63,7 +64,7 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
               isOpening ? "pointer-events-none" : "hover:scale-105 active:scale-95"
             }`}
             style={{
-              top: 50,
+              top: config.sealTop !== undefined ? config.sealTop : 50,
               width: 56,
               height: 56,
               transform: "translate(-50%, -50%)",
