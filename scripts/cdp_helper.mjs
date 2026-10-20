@@ -14,20 +14,22 @@ class ChromeController {
     this.consoleLogs = [];
   }
 
-  async start() {
-    const dataDir = join(tmpdir(), "chrome_cdp_run_" + Date.now());
+  async start({ headless = true, userDataDir = null } = {}) {
+    const dataDir = userDataDir || join(process.cwd(), ".chrome_profile");
+    const args = [
+      "--remote-debugging-port=9222",
+      "--remote-debugging-address=127.0.0.1",
+      "--user-data-dir=" + dataDir,
+      "--no-first-run",
+      "--window-size=1280,900",
+      "about:blank",
+    ];
+    if (headless) {
+      args.push("--headless=new", "--disable-gpu");
+    }
     this.chrome = spawn(
       "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
-      [
-        "--headless=new",
-        "--remote-debugging-port=9222",
-        "--remote-debugging-address=127.0.0.1",
-        "--user-data-dir=" + dataDir,
-        "--disable-gpu",
-        "--no-first-run",
-        "--window-size=1280,900",
-        "about:blank",
-      ],
+      args,
       { stdio: "ignore" }
     );
 

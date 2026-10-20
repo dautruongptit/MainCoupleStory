@@ -53,3 +53,5 @@ Desktop.ini
 
 # Playwright MCP captures
 .playwright-mcp/
+
+.chrome_profile/
