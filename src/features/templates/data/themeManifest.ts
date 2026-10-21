@@ -8891,7 +8891,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Background paper or ambient texture for minimalism-dark-red"
       }
     ],
-    "backgroundPath": "/images/themes/minimalism-dark-red/paper.webp",
+    "backgroundPath": null,
     "coverPath": "/images/themes/minimalism-dark-red/envelope-cover.webp",
     "decorationsCount": 3,
     "framesCount": 0,
@@ -9040,7 +9040,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Ornamental artwork for minimalism-brown"
       }
     ],
-    "backgroundPath": "/images/themes/minimalism-brown/house-background.webp",
+    "backgroundPath": "/images/themes/minimalism-brown/paper.webp",
     "coverPath": null,
     "decorationsCount": 4,
     "framesCount": 1,
@@ -9177,7 +9177,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Decorative element (phuong) for songphung-green"
       }
     ],
-    "backgroundPath": "/images/themes/songphung-green/NENGIAY.jpg",
+    "backgroundPath": null,
     "coverPath": null,
     "decorationsCount": 6,
     "framesCount": 0,
@@ -9422,7 +9422,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Background paper or ambient texture for minimalism-green"
       }
     ],
-    "backgroundPath": "/images/themes/minimalism-green/flower-background.webp",
+    "backgroundPath": "/images/themes/minimalism-green/paper.webp",
     "coverPath": "/images/themes/minimalism-green/envelope-cut.webp",
     "decorationsCount": 2,
     "framesCount": 0,
@@ -9584,7 +9584,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Ornamental artwork for song-hy-v2-red"
       }
     ],
-    "backgroundPath": "/images/themes/song-hy-v2-red/double-happiness-bg.webp",
+    "backgroundPath": null,
     "coverPath": null,
     "decorationsCount": 9,
     "framesCount": 0,
@@ -9985,7 +9985,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Ornamental artwork for longphung-v3-red"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/themes/longphung-v3-red/frame-calendar.webp",
     "coverPath": null,
     "decorationsCount": 3,
     "framesCount": 3,
@@ -10212,7 +10212,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Ornamental artwork for minimalism-dark-brown"
       }
     ],
-    "backgroundPath": "/images/themes/minimalism-dark-brown/castle-background.webp",
+    "backgroundPath": "/images/themes/minimalism-dark-brown/paper.webp",
     "coverPath": "/images/themes/minimalism-dark-brown/envelope-cover.webp",
     "decorationsCount": 7,
     "framesCount": 0,
@@ -10432,7 +10432,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Chinese happiness symbol (囍)"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/double-dragon.webp",
     "coverPath": null,
     "decorationsCount": 6,
     "framesCount": 0,
@@ -11518,7 +11518,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Background paper or ambient texture for minimalism-dark-blue"
       }
     ],
-    "backgroundPath": "/images/themes/minimalism-dark-blue/castle-background-1.webp",
+    "backgroundPath": "/images/themes/minimalism-dark-blue/paper.webp",
     "coverPath": "/images/themes/minimalism-dark-blue/envelope-cover.webp",
     "decorationsCount": 7,
     "framesCount": 0,
@@ -12377,7 +12377,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Framing border or arch for royal-red"
       }
     ],
-    "backgroundPath": "/images/themes/royal-red/background.webp",
+    "backgroundPath": null,
     "coverPath": null,
     "decorationsCount": 1,
     "framesCount": 3,
@@ -12422,7 +12422,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Decorative element (flower_top) for nature"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/themes/nature/flower_top.webp",
     "coverPath": null,
     "decorationsCount": 2,
     "framesCount": 0,
@@ -13412,7 +13412,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Background paper or ambient texture for applique-lace-white"
       }
     ],
-    "backgroundPath": "/images/themes/applique-lace-white/envelope-background.webp",
+    "backgroundPath": "/images/themes/applique-lace-white/satin-background.webp",
     "coverPath": "/images/themes/applique-lace-white/envelope-cover.webp",
     "decorationsCount": 6,
     "framesCount": 0,
@@ -13749,7 +13749,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Chinese happiness symbol (囍)"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/double-dragon.webp",
     "coverPath": null,
     "decorationsCount": 6,
     "framesCount": 0,
@@ -14038,7 +14038,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Header ornament for vuon xuan red"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/themes/vuon xuan red/top right.webp",
     "coverPath": null,
     "decorationsCount": 6,
     "framesCount": 0,
@@ -14172,7 +14172,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Header ornament for vuon xuan blue"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/themes/vuon xuan blue/top.webp",
     "coverPath": null,
     "decorationsCount": 3,
     "framesCount": 0,
@@ -14593,7 +14593,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Ornamental artwork for porcelain-v2-pink"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/themes/porcelain-v2-pink/floral-tile.webp",
     "coverPath": null,
     "decorationsCount": 5,
     "framesCount": 1,
@@ -14781,7 +14781,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Ornamental artwork for chateau-blue"
       }
     ],
-    "backgroundPath": "/images/themes/chateau-blue/nen.webp",
+    "backgroundPath": null,
     "coverPath": null,
     "decorationsCount": 11,
     "framesCount": 1,
@@ -14878,7 +14878,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Ornamental artwork for porcelain-v2-green"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/themes/porcelain-v2-green/floral-tile.webp",
     "coverPath": null,
     "decorationsCount": 5,
     "framesCount": 1,
@@ -15144,7 +15144,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Ornamental artwork for florence-brown"
       }
     ],
-    "backgroundPath": "/images/themes/florence-brown/bridge-background.webp",
+    "backgroundPath": null,
     "coverPath": "/images/themes/florence-brown/cathedral-envelope.webp",
     "decorationsCount": 12,
     "framesCount": 0,
@@ -15595,7 +15595,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Chinese happiness symbol (囍)"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/double-dragon.webp",
     "coverPath": null,
     "decorationsCount": 6,
     "framesCount": 0,
@@ -15683,7 +15683,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Framing border or arch for royal-green"
       }
     ],
-    "backgroundPath": "/images/themes/royal-green/background.webp",
+    "backgroundPath": null,
     "coverPath": null,
     "decorationsCount": 1,
     "framesCount": 3,
@@ -15871,7 +15871,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Background paper or ambient texture for minimalism-purple"
       }
     ],
-    "backgroundPath": "/images/themes/minimalism-purple/envelope-background.webp",
+    "backgroundPath": "/images/themes/minimalism-purple/paper.webp",
     "coverPath": "/images/themes/minimalism-purple/envelope-cover.webp",
     "decorationsCount": 8,
     "framesCount": 0,
@@ -16169,7 +16169,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Decorative element (water-flowers) for hoa-dai-pink"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/themes/hoa-dai-pink/water-flowers.webp",
     "coverPath": null,
     "decorationsCount": 8,
     "framesCount": 0,
@@ -16532,7 +16532,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Ornamental artwork for royal-v2-green"
       }
     ],
-    "backgroundPath": "/images/themes/royal-v2-green/background.webp",
+    "backgroundPath": null,
     "coverPath": null,
     "decorationsCount": 9,
     "framesCount": 0,
@@ -16706,7 +16706,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Framing border or arch for royal-blue"
       }
     ],
-    "backgroundPath": "/images/themes/royal-blue/background.webp",
+    "backgroundPath": null,
     "coverPath": null,
     "decorationsCount": 1,
     "framesCount": 3,
@@ -17037,7 +17037,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Decorative element (village) for riviera-blue"
       }
     ],
-    "backgroundPath": "/images/themes/riviera-blue/paper-background.webp",
+    "backgroundPath": null,
     "coverPath": "/images/themes/riviera-blue/envelope-scene.webp",
     "decorationsCount": 16,
     "framesCount": 2,
@@ -17309,7 +17309,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Ornamental artwork for porcelain-brown"
       }
     ],
-    "backgroundPath": "/images/themes/porcelain-brown/calendar-texture.webp",
+    "backgroundPath": "/images/themes/porcelain-brown/floral-tile.webp",
     "coverPath": null,
     "decorationsCount": 3,
     "framesCount": 0,
@@ -17678,7 +17678,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Ornamental artwork for porcelain-v2-red"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/themes/porcelain-v2-red/floral-tile.webp",
     "coverPath": null,
     "decorationsCount": 4,
     "framesCount": 1,
@@ -17924,7 +17924,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Ornamental artwork for porcelain-blue"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/themes/porcelain-blue/floral-tile.webp",
     "coverPath": null,
     "decorationsCount": 3,
     "framesCount": 1,
@@ -18008,7 +18008,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Ornamental artwork for porcelain-red"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/themes/porcelain-red/floral-tile.webp",
     "coverPath": null,
     "decorationsCount": 3,
     "framesCount": 1,
@@ -18287,7 +18287,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Ornamental artwork for san-miguel-yellow"
       }
     ],
-    "backgroundPath": "/images/themes/san-miguel-yellow/cloud-background.webp",
+    "backgroundPath": "/images/themes/san-miguel-yellow/paper-background.webp",
     "coverPath": "/images/themes/san-miguel-yellow/city-envelope.webp",
     "decorationsCount": 14,
     "framesCount": 0,

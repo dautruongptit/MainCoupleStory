@@ -134,11 +134,15 @@ export default function Demo({ slug }: { slug: string }) {
     );
   }
 
-  // 6. Render bản xem trước trực tiếp với thanh điều hướng nổi (Floating Header chỉ hiện khi thiệp đã mở)
+  // 6. Render bản xem trước trực tiếp chuẩn 100% như website gốc chungdoi.com
+  // Mặc định giao diện demo hoàn toàn thuần khiết (không có thanh floating navigation đè lên thiệp).
+  // Nếu có tham số ?actions=1, mới hiển thị thanh công cụ tiện ích.
+  const showActions = typeof location !== "undefined" && new URLSearchParams(location.search).get("actions") === "1";
+
   return (
     <div className="demo-standalone-wrap">
-      {/* Floating Action Bar - Chỉ hiển thị khi thiệp đã mở hoặc khi mở với ?open=1 */}
-      {isOpened && (
+      {/* Floating Action Bar - Chỉ hiển thị khi có tham số ?actions=1 */}
+      {showActions && (
         <div className="demo-floating-header" style={{ position: "fixed", bottom: "24px", right: "20px", zIndex: 100, display: "flex", alignItems: "center", gap: "10px" }}>
           <Link
             href="/vi/mau-thiep"

@@ -28,7 +28,7 @@ body {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 button {
@@ -906,25 +906,39 @@ p {
 }
 
 /* Floating Music Player */
-.music-floating-btn {
+.music-floating-wrap {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
+  bottom: 56px;
+  right: 16px;
+  z-index: 90;
+}
+.music-floating-wrap .music-ping-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: var(--inv-ink);
+  opacity: 0.6;
+  animation: ping-slow 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+.music-floating-btn {
+  position: relative;
   width: 48px;
   height: 48px;
-  border-radius: 50%;
+  border-radius: 9999px;
   background: var(--inv-ink);
   color: #fff;
   display: grid;
   place-items: center;
   box-shadow: 0 6px 20px rgba(var(--inv-rgb), 0.5);
-  z-index: 90;
-  border: 2px solid var(--inv-bg);
-  transition: transform 0.2s;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
 }
+.music-floating-btn:hover { transform: scale(1.1); }
+.music-floating-btn:active { transform: scale(0.95); }
 
 .music-floating-btn.playing .music-disc {
-  animation: spin 3s linear infinite;
+  animation: spin-cd 3s linear infinite;
 }
 
 .music-disc {
@@ -1598,6 +1612,32 @@ p {
   font-size: 14px;
   line-height: 1.4;
 }
+
+/* ==================== PING & MUSIC PLAYER ==================== */
+
+@keyframes ping {
+  75%, 100% { opacity: 0; transform: scale(2); }
+}
+@keyframes ping-slow {
+  0% { transform: scale(1); opacity: 0.6; }
+  75%, 100% { transform: scale(1.8); opacity: 0; }
+}
+@keyframes spin-cd {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes dance {
+  0%, 100% { height: 20%; }
+  50% { height: 100%; }
+}
+
+.animate-ping { animation: ping 1s linear infinite; }
+.animate-ping-slow { animation: ping-slow 1.5s cubic-bezier(0, 0, 0.2, 1) infinite; }
+.animate-spin-cd { animation: spin-cd 3s linear infinite; }
+.animate-dance-1 { animation: dance 0.4s ease-in-out infinite; }
+.animate-dance-2 { animation: dance 0.4s ease-in-out 0.1s infinite; }
+.animate-dance-3 { animation: dance 0.4s ease-in-out 0.2s infinite; }
+.animate-dance-4 { animation: dance 0.4s ease-in-out 0.3s infinite; }
 
 /* ==================== GIFT BOX / ENVELOPE / QR INLINE ==================== */
 
@@ -5952,13 +5992,13 @@ button:hover .igb-c8 { animation: igbConfettiFly8 1.1s ease-out 0.55s infinite; 
 /* ==================== STANDALONE DEMO & EXACT MINIMALISM STYLES ==================== */
 .pv-wrapper.is-standalone {
   min-height: 100vh;
-  background-color: #efe7dd !important;
+  background-color: var(--inv-bg, transparent);
 }
 
 .demo-standalone-wrap {
   width: 100%;
   min-height: 100vh;
-  background-color: #efe7dd;
+  background-color: var(--inv-bg, transparent);
   position: relative;
 }
 

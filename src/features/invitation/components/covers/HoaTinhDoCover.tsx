@@ -39,34 +39,37 @@ export function HoaTinhDoCover({ d, onOpen }: CoverProps) {
       >
         {/* Seal Button on top (hy icon without circle background) */}
         <div
-          onClick={triggerOpen}
-          aria-busy={isOpening ? "true" : undefined}
-          title="Bấm để mở thiệp"
-          className={`absolute left-1/2 rounded-full flex items-center justify-center cursor-pointer transition-transform ${
-            isOpening ? "pointer-events-none" : "hover:scale-105 active:scale-95"
-          }`}
-          style={{
-            top: 50,
-            width: 64,
-            height: 64,
-            transform: "translate(-50%, -50%)",
-            background: "transparent",
-            boxShadow: "none",
-            zIndex: 30,
-            animation: isOpening
-              ? "0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s 1 normal forwards running seal-break"
-              : "seal-pulse 2s ease-in-out infinite",
-          }}
+          className="absolute left-1/2"
+          style={{ top: 50, width: 64, height: 64, transform: "translate(-50%, -50%)", zIndex: 30 }}
         >
-          <img
-            src="/images/themes/love-art/hy.webp"
-            alt=""
-            className="w-9 h-9 object-contain"
+          {!isOpening && (
+            <div className="absolute inset-0 rounded-full animate-ping opacity-25" style={{ backgroundColor: "rgba(215, 12, 27, 0.6)" }} />
+          )}
+          <div
+            onClick={triggerOpen}
+            aria-busy={isOpening ? "true" : undefined}
+            title="Bấm để mở thiệp"
+            className={`absolute inset-0 rounded-full flex items-center justify-center cursor-pointer transition-transform ${
+              isOpening ? "pointer-events-none" : "hover:scale-105 active:scale-95"
+            }`}
             style={{
-              transformOrigin: "center center",
-              animation: isOpening ? "0.36s ease-out 0s 1 normal forwards running seal-flower-bloom" : undefined,
+              background: "transparent",
+              boxShadow: "none",
+              animation: isOpening
+                ? "0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s 1 normal forwards running seal-break"
+                : "seal-pulse 2s ease-in-out infinite",
             }}
-          />
+          >
+            <img
+              src="/images/themes/love-art/hy.webp"
+              alt=""
+              className="w-9 h-9 object-contain"
+              style={{
+                transformOrigin: "center center",
+                animation: isOpening ? "0.36s ease-out 0s 1 normal forwards running seal-flower-bloom" : undefined,
+              }}
+            />
+          </div>
         </div>
 
         {/* Paper Card Frame */}

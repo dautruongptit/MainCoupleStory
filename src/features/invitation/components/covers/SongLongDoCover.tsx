@@ -41,25 +41,27 @@ export function SongLongDoCover({ d, onOpen }: CoverProps) {
       >
         {/* Seal Button on top with Chinese happiness mask */}
         <div
-          onClick={triggerOpen}
-          aria-busy={isOpening ? "true" : undefined}
-          title="Bấm để mở thiệp"
-          className={`absolute left-1/2 rounded-full flex items-center justify-center cursor-pointer transition-transform ${
-            isOpening ? "pointer-events-none" : "hover:scale-105 active:scale-95"
-          }`}
-          style={{
-            top: 50,
-            width: 56,
-            height: 56,
-            transform: "translate(-50%, -50%)",
-            background: "radial-gradient(circle at 30% 30%, #f0d497, rgb(210, 182, 121))",
-            boxShadow: isOpening ? "none" : "0 4px 20px rgba(240, 212, 151, 0.5), inset 0 2px 4px rgba(255,255,255,0.3)",
-            zIndex: 30,
-            animation: isOpening
-              ? "0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s 1 normal forwards running seal-break"
-              : "seal-pulse 2s ease-in-out infinite",
-          }}
+          className="absolute left-1/2"
+          style={{ top: 50, width: 56, height: 56, transform: "translate(-50%, -50%)", zIndex: 30 }}
         >
+          {!isOpening && (
+            <div className="absolute inset-0 rounded-full animate-ping opacity-25" style={{ background: "radial-gradient(circle at 30% 30%, #f0d497, rgb(210, 182, 121))" }} />
+          )}
+          <div
+            onClick={triggerOpen}
+            aria-busy={isOpening ? "true" : undefined}
+            title="Bấm để mở thiệp"
+            className={`absolute inset-0 rounded-full flex items-center justify-center cursor-pointer transition-transform ${
+              isOpening ? "pointer-events-none" : "hover:scale-105 active:scale-95"
+            }`}
+            style={{
+              background: "radial-gradient(circle at 30% 30%, #f0d497, rgb(210, 182, 121))",
+              boxShadow: isOpening ? "none" : "0 4px 20px rgba(240, 212, 151, 0.5), inset 0 2px 4px rgba(255,255,255,0.3)",
+              animation: isOpening
+                ? "0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s 1 normal forwards running seal-break"
+                : "seal-pulse 2s ease-in-out infinite",
+            }}
+          >
           <div
             style={{
               backgroundColor: "#4a1212",
@@ -77,6 +79,7 @@ export function SongLongDoCover({ d, onOpen }: CoverProps) {
             }}
             className="w-8 h-8"
           />
+          </div>
         </div>
 
         {/* Paper Card Frame */}
