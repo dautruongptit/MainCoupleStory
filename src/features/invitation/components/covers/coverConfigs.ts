@@ -34,7 +34,16 @@ export const COVER_CONFIGS: Record<string, CoverConfig> = {
     bg: "linear-gradient(to bottom right, #f3e6da, #e8d5c4, #dcc6b2)",
     cardBg: "rgba(255, 255, 255, 0.97)",
     cardBorder: "rgba(124, 106, 96, 0.15)",
-    imgs: [{"src":"/images/themes/minimalism-brown/flower2-decoration.webp","className":"absolute pointer-events-none h-36 md:h-80 lg:h-80 w-auto max-w-none top-[-3%] md:top-[-7%] left-[-20px] md:left-[-40px] -translate-x-[6%] md:-translate-x-[11%] opacity-70 rotate-[25deg]"},{"src":"/images/themes/minimalism-brown/flower2-decoration.webp","className":"absolute pointer-events-none h-36 md:h-80 lg:h-80 w-auto max-w-none bottom-[-3%] md:bottom-[30%] right-[-20px] md:right-[-40px] translate-x-[6%] md:translate-x-[11%] -scale-x-100 opacity-70 -rotate-[25deg]"}],
+    imgs: [
+      {
+        src: "/images/themes/minimalism-brown/flower2-decoration.webp",
+        className: "absolute pointer-events-none h-36 md:h-80 lg:h-80 w-auto max-w-none top-[-3%] md:top-[-7%] left-[-20px] md:left-[-40px] -translate-x-[6%] md:-translate-x-[11%] opacity-70 rotate-[25deg]",
+      },
+      {
+        src: "/images/themes/minimalism-brown/flower2-decoration.webp",
+        className: "absolute pointer-events-none h-36 md:h-80 lg:h-80 w-auto max-w-none bottom-[-3%] md:bottom-[30%] right-[-20px] md:right-[-40px] translate-x-[6%] md:translate-x-[11%] -scale-x-100 opacity-70 -rotate-[25deg]",
+      },
+    ],
     particleType: "petal",
     sealType: "heart",
     sealBg: "radial-gradient(circle at 30% 30%, #7c6a60, rgba(124, 106, 96, 0.85))",

@@ -8891,7 +8891,7 @@ export const TEMPLATE_MANIFESTS: Record<string, TemplateAssetManifest> = {
         "usage": "Background paper or ambient texture for minimalism-dark-red"
       }
     ],
-    "backgroundPath": null,
+    "backgroundPath": "/images/themes/minimalism-dark-red/paper.webp",
     "coverPath": "/images/themes/minimalism-dark-red/envelope-cover.webp",
     "decorationsCount": 3,
     "framesCount": 0,
@@ -18761,7 +18761,7 @@ export const ALL_TEMPLATE_MANIFESTS: TemplateAssetManifest[] = Object.values(TEM
 
 /** Lấy manifest đầy đủ của một mẫu thiệp (theo templateId) */
 export function getTemplateManifest(templateId: string): TemplateAssetManifest | undefined {
-  return TEMPLATE_MANIFESTS[templateId];
+  return TEMPLATE_MANIFESTS[templateId] || ALL_TEMPLATE_MANIFESTS.find((m) => m.slug === templateId || m.templateId === templateId);
 }
 
 /** Lấy manifest theo slug URL */
@@ -18771,13 +18771,13 @@ export function getTemplateManifestBySlug(slug: string): TemplateAssetManifest |
 
 /** Lấy toàn bộ assets của một mẫu thiệp (theo templateId) */
 export function getTemplateThemeAssets(templateId: string): ThemeAsset[] {
-  const m = TEMPLATE_MANIFESTS[templateId];
+  const m = getTemplateManifest(templateId);
   return m ? m.assets : [];
 }
 
 /** Lấy ảnh nền hoặc texture giấy đặc trưng của theme (nếu có) */
 export function getThemeBackgroundUrl(templateId: string): string | undefined {
-  const m = TEMPLATE_MANIFESTS[templateId];
+  const m = getTemplateManifest(templateId);
   return m?.backgroundPath || undefined;
 }
 

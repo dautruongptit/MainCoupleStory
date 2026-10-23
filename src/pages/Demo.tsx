@@ -6,6 +6,7 @@ import { createDraft } from "@/services/storage/store";
 import { Link, navigate } from "@/app/router";
 import { TEMPLATES, Tpl, TPL_CDN, introDefaultFor, templateByIdOrSlug } from "@/features/templates/data/templates";
 import { TEMPLATE_THEMES } from "@/features/invitation/config/templateThemes";
+import { getGiftboxConfig } from "@/features/invitation/config/giftboxConfigs";
 import { getTemplateManifest, getThemeBackgroundUrl } from "@/features/templates/data/themeManifest";
 
 import { REFERENCE_COUPLES } from "@/features/templates/data/referenceCouples";
@@ -57,6 +58,91 @@ function buildDemoInv(tpl: Tpl): Inv {
   const coverGuest = refCover?.envelopeGuestBadge || refCover?.envelopeGuest || "Thân Mời";
   const coverInviteMsg = refCover?.envelopeInviteMessage ?? "đến dự buổi tiệc chung vui cùng gia đình chúng tôi";
 
+  if (tpl.id === "boho_floral_green") {
+    return {
+      ...defaultInv,
+      templateId: "boho_floral_green",
+      templateName: "Hoa Mộc - Xanh",
+      templateThumb: TPL_CDN + tpl.img,
+      heroOn: true,
+      heroPhoto: "/images/photo-library/design/5b2fafb74f1aa84ca843acded191b5e4629c62f9b73820281864f27167312b06.webp",
+      groomFull: "Trần Minh Quân",
+      groomNick: "Minh Quân",
+      groomRole: "Trưởng Nam",
+      brideFull: "Nguyễn Thu Hà",
+      brideNick: "Thu Hà",
+      brideRole: "Út Nữ",
+      groomFamTitle: "Ông Bà",
+      groomFather: "Trần Văn Hùng",
+      groomMother: "Hạm Thị Lan",
+      groomAddr: "25 Ngõ 12 Đặng Văn Ngữ, Đống Đa, Hà Nội",
+      brideFamTitle: "Ông Bà",
+      brideFather: "Nguyễn Văn Bình",
+      brideMother: "Phan Thị Hương",
+      brideAddr: "18 Ngõ 86 Chùa Hà, Cầu Giấy, Hà Nội",
+      announcementLine1: "TRÂN TRỌNG BÁO TIN",
+      announcementLine2: "LỄ THÀNH HÔN CỦA CON CHÚNG TÔI",
+      date: "2026-05-24",
+      time: "18:00",
+      welcomeTime: "17:30",
+      startTime: "18:00",
+      locTitle: "TIỆC CƯỚI SẼ TỔ CHỨC TẠI",
+      address: "Tiệc Cưới Hoàng Gia, Ngõ 74 P. Nguyễn Thị Định, Nhân Chính, Thanh Xuân, Hà Nội",
+      dressColors: ["#224327", "#4a6b4f", "#c2e3c7", "#fffaf7"],
+      envelopeGuest: "Thân Mời",
+      envelopeInviteMessage: "",
+      musicUrl: "/music/my-love-westlife.mp3",
+      musicName: "My Love - Westlife",
+      musicAutoPlay: true,
+      albumLayout: "3d",
+      photos: [
+        "/images/photo-library/design/5019eadee002f02ce6f39d9c5bdb7304d4da683b4e109c41e7ed14e63391d9b0.webp",
+        "/images/photo-library/design/1f83fb78c75b96a05661eca4cbc50dd771fc37411920623d6d9729eea1daa7c8.webp",
+        "/images/photo-library/design/a4bacc8760315d26e8660bcd2943d479c968e7e92892d2e367cfab6facb63017.webp",
+        "/images/photo-library/design/655375b2b2c6edb9772053c6a2150a6247ccf7002f69a1b733f682fa05d6309f.webp",
+        "/images/photo-library/design/fb57414f47aa2c9189bc9fa20f34d557dd1a4cd13a908fd30633275ca5abaf6d.webp",
+        "/images/photo-library/design/76763999ecb5db3569cea7991a2ea4fdf32e4a2639daeb28c6f2a9b5fdf6f313.webp",
+        "/images/photo-library/design/da4ca736067f9572362cd90a28e95274e985ffa76cc58e3c36b23219ebf4f6f7.webp",
+        "/images/photo-library/design/107e38d720d04da6442122cbe91d47eda6ebc8c962579a14b345ba3ad6dd49a4.webp",
+        "/images/photo-library/design/5b2fafb74f1aa84ca843acded191b5e4629c62f9b73820281864f27167312b06.webp",
+        "/images/photo-library/design/3fcfad216695abf4dbd4198edb2ba4d451546d5e1231aafbc66559e164daad27.webp",
+      ],
+      gifts: [
+        {
+          id: "g1",
+          who: "groom",
+          bankName: "Vietcombank",
+          bankCode: "VCB",
+          bankBin: "970436",
+          bankLogo: "",
+          accountNumber: "0000000000",
+          accountName: "THIEP CUOI DEMO",
+          qrUrl: "/images/qr/boho_floral_green_groom.png",
+        },
+        {
+          id: "g2",
+          who: "bride",
+          bankName: "Vietcombank",
+          bankCode: "VCB",
+          bankBin: "970436",
+          bankLogo: "",
+          accountNumber: "6665558888",
+          accountName: "NGUYEN THU HA",
+          qrUrl: "/images/qr/boho_floral_green_bride.png",
+        },
+      ],
+      wishes: [
+        { name: "Bạn Hoàng dev", msg: "Chúc 2 bạn mãi yêu nhau, đầu bạc răng long", at: "13:44:27 7/4/2026" },
+        { name: "Hoài Nam", msg: "Chúc hai bạn luôn nắm tay nhau qua mọi chặng đường!!!", at: "13:43:31 7/4/2026" },
+        { name: "Bạn Linh", msg: "Mừng ngày trọng đại! Chúc hai bạn cười nhiều hơn cãi, yêu nhiều hơn giận nhen!", at: "13:42:43 7/4/2026" },
+        { name: "Chị Hạnh", msg: "Chúc hai em trăm năm hạnh phúc, sớm sinh quý tử nhé!", at: "12:15:00 7/4/2026" },
+      ],
+      ceremonies: [],
+    };
+  }
+
+  const giftConfig = getGiftboxConfig(tpl.id);
+
   return {
     ...defaultInv,
     templateId: tpl.id,
@@ -73,6 +159,7 @@ function buildDemoInv(tpl: Tpl): Inv {
     dressColors,
     envelopeGuest: coverGuest,
     envelopeInviteMessage: coverInviteMsg,
+    giftDisplayMode: giftConfig.giftboxType === "envelope" ? "envelope" : "gift_box",
     date: coverDate,
     time: "18:00",
     welcomeTime: "17:30",

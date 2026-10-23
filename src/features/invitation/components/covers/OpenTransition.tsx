@@ -153,15 +153,15 @@ export function useEnvelopeOpen(onOpen: () => void) {
 
     setIsOpening(true);
 
-    // Phase 2: Seal breaks, card flies away, burst particles erupt at ~180ms
+    // Phase 2: Seal breaks, card flies away at 500ms
     setTimeout(() => {
       setShowBurst(true);
-    }, 180);
+    }, 500);
 
-    // Phase 3: Transition finishes at ~850ms -> mount opened invitation
+    // Phase 3: Transition finishes at 1300ms -> mount opened invitation
     setTimeout(() => {
       onOpen();
-    }, 850);
+    }, 1300);
   }, [isOpening, onOpen]);
 
   return { isOpening, showBurst, triggerOpen };

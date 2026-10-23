@@ -37,12 +37,13 @@ import { SongLongDoCover } from "./SongLongDoCover";
 import { HoangKimLamCover } from "./HoangKimLamCover";
 import { ChibiRedCover } from "./ChibiRedCover";
 import { BachSuDoCover } from "./BachSuDoCover";
+import { HoaMocXanhCover } from "./HoaMocXanhCover";
 
 export const COVER_REGISTRY: Record<string, React.ComponentType<CoverProps>> = {
   "minimalism_darkred": MinimalismCover,
   "minimalism_brown": MinimalismCover,
   "song_hy_green": SongHyClassicCover,
-  "boho_floral_green": MinimalismCover,
+  "boho_floral_green": HoaMocXanhCover,
   "song_hy_red": SongHyClassicCover,
   "minimalism_green": MinimalismCover,
   "song_hy_v2_red": TraditionalV2Cover,

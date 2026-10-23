@@ -6,6 +6,8 @@ import { getCoverComponent } from "@/features/invitation/components/covers";
 import { getGiftboxConfig } from "@/features/invitation/config/giftboxConfigs";
 import { GENERATED_HEADERS } from "@/features/invitation/components/generated/headers";
 import AlbumGallery from "@/features/invitation/components/AlbumGallery";
+import { HoaMocXanh } from "@/features/invitation/components/HoaMocXanh";
+import { MinimalismBrown } from "@/features/invitation/components/MinimalismBrown";
 import { getThemeBackgroundUrl, getThemeDecorations, getTemplateManifest } from "@/features/templates/data/themeManifest";
 import { assetUrl } from "@/services/asset";
 import type { Inv } from "@/types/invitation";
@@ -50,9 +52,7 @@ export default function Preview({
   const isDarkRed = d.templateId === "minimalism_darkred";
   const isMinimalismBrown = d.templateId === "minimalism_brown";
   const isMinimalism = isMinimalismBrown;
-  // 4 mẫu đã dựng riêng giữ nguyên màu của mình; các mẫu khác lấy bảng màu theo mẫu
-  const bespoke = ["minimalism_brown", "minimalism_darkred", "song_hy_green", "dragon_phoenix_v2_red"].includes(d.templateId);
-  const palette = bespoke ? undefined : TEMPLATE_THEMES[d.templateId];
+  const palette = TEMPLATE_THEMES[d.templateId];
   const red = palette ? (() => { const [r, g, b] = palette.rgb.split(",").map(Number); return r > g * 1.5 && r > b * 1.5; })() : true;
   const paletteVars = palette
     ? ({ "--inv-bg": palette.bg, "--inv-ink": palette.ink, "--inv-rgb": palette.rgb, "--inv-cover": palette.cover } as React.CSSProperties)
@@ -60,6 +60,7 @@ export default function Preview({
   const isLongPhungV2 = d.templateId === "dragon_phoenix_v2_red";
   const isSongHy = (d.templateId || "").includes("song_hy") || (d.templateName || "").includes("Song Hỷ");
   const themeBgUrl = getThemeBackgroundUrl(d.templateId);
+  const themeDecos = getThemeDecorations(d.templateId);
   const giftConfig = getGiftboxConfig(d.templateId);
   const [rsvpForm, setRsvpForm] = useState({
     name: d.envelopeGuest || "",
@@ -319,6 +320,11 @@ export default function Preview({
 
       {/* ==================== 2. NỘI DUNG THIỆP ĐÃ MỞ (OPENED) ==================== */}
       {isOpen && (
+        d.templateId === "boho_floral_green" ? (
+          <HoaMocXanh d={d} set={set} standalone={standalone} />
+        ) : d.templateId === "minimalism_brown" ? (
+          <MinimalismBrown d={d} set={set} standalone={standalone} />
+        ) : (
         <div
           className={`songphung-template ${isDarkRed ? "is-minimalism-darkred-body" : isMinimalismBrown ? "is-minimalism-body" : isSongHy ? "is-songhy-body" : ""}`}
           style={{ animation: "fadeIn 0.5s ease-out forwards" }}
@@ -350,6 +356,22 @@ export default function Preview({
                 backgroundImage: `url("${themeBgUrl}")`,
               }}
             />
+          )}
+
+          {/* Theme Decorations Layer */}
+          {themeDecos && themeDecos.length > 0 && (
+            <div className="theme-decorations-layer pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true" style={{ zIndex: 1 }}>
+              {themeDecos.map((deco) => (
+                <img
+                  key={deco.id}
+                  src={deco.path}
+                  alt=""
+                  className={`theme-deco theme-deco-${deco.id} pointer-events-none`}
+                  data-theme-deco={deco.id}
+                  style={{ display: "none" }}
+                />
+              ))}
+            </div>
           )}
 
           {/* Phoenix Line Side Decorations (Parallax Artwork only for double_phoenix_red) */}
@@ -522,7 +544,15 @@ export default function Preview({
 
           {/* -------------------- SECTION 1: LỄ CƯỚI & GIA ĐÌNH -------------------- */}
           {(d.familyOn || d.announceOn || d.ceremonies.length > 0) && (
-            <section className="sp-section sp-family-sec">
+            <section className="sp-section sp-family-sec relative overflow-x-clip">
+              {isDarkRed && (
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  className="pointer-events-none absolute max-w-none object-contain opacity-[0.1] left-1/2 top-[-6%] w-[150%] -translate-x-1/2 z-0"
+                  src="/images/themes/minimalism-dark-red/castle-background.webp"
+                />
+              )}
               {/* Flower Accent top-right only for double_phoenix_red */}
               {d.templateId === "double_phoenix_red" && (
                 <div className="absolute right-0 top-[-220px] md:top-[-270px] lg:top-[-290px] w-[192px] md:w-[360px] lg:w-[360px] h-auto opacity-100 pointer-events-none z-[5]">
@@ -618,7 +648,15 @@ export default function Preview({
 
           {/* -------------------- SECTION 3: TIỆC CƯỚI (BANQUET) -------------------- */}
           {d.partyOn && (
-            <section className="sp-section sp-banquet-sec">
+            <section className="sp-section sp-banquet-sec relative overflow-x-clip">
+              {isDarkRed && (
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  className="pointer-events-none absolute max-w-none object-contain opacity-[0.1] left-1/2 top-[-1%] w-[158%] -translate-x-1/2 z-0"
+                  src="/images/themes/minimalism-dark-red/castle-background.webp"
+                />
+              )}
               {d.banquetTitle.trim() && <h2 className="sp-sec-title">{d.banquetTitle}</h2>}
               <p className="sp-lead">Tiệc cưới được tổ chức vào lúc:</p>
 
@@ -716,7 +754,15 @@ export default function Preview({
 
           {/* -------------------- SECTION 4: ĐỊA ĐIỂM (VENUE & MAP) -------------------- */}
           {d.address && (
-            <section className="sp-section sp-venue-sec">
+            <section className="sp-section sp-venue-sec relative overflow-x-clip">
+              {isDarkRed && (
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  className="pointer-events-none absolute max-w-none object-contain opacity-[0.1] left-1/2 top-[6%] w-[155%] -translate-x-1/2 z-0"
+                  src="/images/themes/minimalism-dark-red/castle-background.webp"
+                />
+              )}
               <h2 className="sp-sec-title">{d.locTitle || "ĐỊA ĐIỂM TIỆC CƯỚI"}</h2>
               <div className="sp-address-box">
                 <p className="sp-address-txt">{d.address}</p>
@@ -799,7 +845,15 @@ export default function Preview({
 
           {/* -------------------- SECTION 7: SỔ LƯU BÚT (GUESTBOOK) -------------------- */}
           {d.guestOn && (
-            <section className="sp-section sp-guestbook-sec">
+            <section className="sp-section sp-guestbook-sec relative overflow-x-clip">
+              {(isDarkRed || isMinimalismBrown) && (
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  className="pointer-events-none absolute left-1/2 top-[-15px] md:top-[-30px] lg:top-[-30px] w-[120%] max-w-[650px] -translate-x-1/2 object-contain opacity-95 drop-shadow-[4px_4px_4px_rgba(0,0,0,0.25)] z-0"
+                  src={isDarkRed ? "/images/themes/minimalism-dark-red/papernote-background.webp" : "/images/themes/minimalism-brown/paper-note.webp"}
+                />
+              )}
               <h2 className="sp-gb-title">Sổ lưu bút</h2>
               <div className="sp-gb-form">
                 <input
@@ -928,7 +982,7 @@ export default function Preview({
               )}
 
               {/* MODE: ENVELOPE (Phong bì thư tối giản) */}
-              {(d.giftDisplayMode === "envelope" || (!d.giftDisplayMode && giftConfig.giftboxType === "envelope")) && (
+              {(d.giftDisplayMode === "envelope" || (!d.giftDisplayMode && giftConfig.giftboxType === "envelope") || (giftConfig.giftboxType === "envelope" && d.giftDisplayMode !== "qr_inline")) && (
                 <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
                   <button
                     type="button"
@@ -970,7 +1024,7 @@ export default function Preview({
               )}
 
               {/* MODE: 3D GIFT BOX (Hộp quà 3D chuyển động kèm hộp mini trang trí) */}
-              {(d.giftDisplayMode === "gift_box" || (!d.giftDisplayMode && giftConfig.giftboxType !== "envelope")) && (
+              {giftConfig.giftboxType !== "envelope" && (d.giftDisplayMode === "gift_box" || !d.giftDisplayMode) && (
                 <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
                   <button
                     type="button"
@@ -1047,6 +1101,7 @@ export default function Preview({
             <span>ChungDoi · Tạo thiệp cưới online miễn phí</span>
           </div>
         </div>
+        )
       )}
 
       {/* ==================== LIGHTBOX MODAL ==================== */}

@@ -57,36 +57,23 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
         {/* Seal Button on top */}
         {config.sealType !== "none" && (
           <div
-            className="absolute left-1/2 relative block"
+            onClick={triggerOpen}
+            aria-busy={isOpening ? "true" : undefined}
+            title="Bấm để mở thiệp"
+            className="wax-seal absolute left-1/2 rounded-full flex items-center justify-center cursor-pointer"
             style={{
               top: config.sealTop !== undefined ? config.sealTop : 50,
               width: 56,
               height: 56,
               transform: "translate(-50%, -50%)",
+              background: sealBg,
+              boxShadow: isOpening ? "none" : `0 4px 20px rgba(${config.rgb}, 0.5), inset 0 2px 4px rgba(255,255,255,0.3)`,
               zIndex: 30,
+              animation: isOpening
+                ? "0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s 1 normal forwards running seal-break"
+                : "seal-pulse 2s ease-in-out infinite",
             }}
           >
-            {!isOpening && (
-              <div
-                className="absolute inset-0 rounded-full animate-ping opacity-25"
-                style={{ backgroundColor: sealBg }}
-              />
-            )}
-            <div
-              onClick={triggerOpen}
-              aria-busy={isOpening ? "true" : undefined}
-              title="Bấm để mở thiệp"
-              className={`absolute inset-0 rounded-full flex items-center justify-center cursor-pointer transition-transform ${
-                isOpening ? "pointer-events-none" : "hover:scale-105 active:scale-95"
-              }`}
-              style={{
-                background: sealBg,
-                boxShadow: isOpening ? "none" : `0 4px 20px rgba(${config.rgb}, 0.4), inset 0 2px 4px rgba(255,255,255,0.3)`,
-                animation: isOpening
-                  ? "0.5s cubic-bezier(0.4, 0, 0.2, 1) 0s 1 normal forwards running seal-break"
-                  : "seal-pulse 2s ease-in-out infinite",
-              }}
-            >
             {config.sealType === "xi" ? (
               <span
                 className="text-[26px] leading-none"
@@ -113,7 +100,6 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
                 <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
               </svg>
             )}
-            </div>
           </div>
         )}
 
@@ -140,7 +126,13 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
                 alt=""
                 aria-hidden="true"
                 className={img.className}
-                style={img.style}
+                style={{
+                  ...img.style,
+                  ...(isOpening ? {
+                    ["--fly-scale-x" as any]: i === 0 ? 1 : -1,
+                    animation: "1.2s ease-in 0s 1 normal forwards running dragon-fly-forward",
+                  } : {}),
+                }}
               />
             ))}
           </div>
@@ -151,13 +143,13 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
           {/* Card Content */}
           <div className="relative z-10 text-center px-6 pt-28 pb-14 md:pt-24 md:pb-8">
             <h1
-              className="mb-2 flex flex-col items-center leading-tight text-3xl sm:text-4xl font-normal"
+              className="mb-2 flex flex-col items-center text-[30px] leading-[37.5px] md:text-[36px] md:leading-[45px] font-normal"
               style={{ color: textColor, fontFamily: config.nameFont, fontWeight: 400 }}
             >
               <span className="block w-full text-center font-normal">{gName}</span>
               <span
                 style={{ fontFamily: '"Baskerville", "Times New Roman", serif' }}
-                className="block w-full text-center text-lg leading-none sm:text-xl my-1 opacity-75 italic font-normal"
+                className="block w-full text-center text-[18px] leading-[18px] md:text-[20px] md:leading-[20px]"
               >
                 &amp;
               </span>
@@ -170,7 +162,7 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
                 className="w-10 h-px"
                 style={{ background: `linear-gradient(to right, transparent, ${textColor})` }}
               />
-              <span className="text-sm" style={{ color: textColor, opacity: 0.7 }}>
+              <span className="text-[14px] leading-[20px]" style={{ color: textColor, opacity: 0.7 }}>
                 ❦
               </span>
               <div
@@ -181,23 +173,23 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
 
             {/* Date */}
             <div
-              className="text-[18px] mb-5 flex flex-col items-center"
+              className="text-[18px] leading-[27px] mb-5 flex flex-col items-center"
               style={{ color: textColor, opacity: 0.85, fontFamily: '"Lora", "Times New Roman", serif' }}
             >
-              <span>{dateText}</span>
+              <span className="inline-block">{dateText}</span>
             </div>
 
             {/* Guest Block */}
             <div className="mb-6 max-w-[300px] md:max-w-[380px] lg:max-w-[440px] mx-auto">
               <p
-                className="text-[18px] font-light mb-1"
-                style={{ color: textColor, opacity: 0.85, fontFamily: '"Lora", "Times New Roman", serif' }}
+                className="text-[18px] leading-[27px] font-light mb-2"
+                style={{ color: "rgba(124, 106, 96, 0.72)", fontFamily: '"Lora", "Times New Roman", serif' }}
               >
-                {d.envelopeGuest || "Thân Mời"}
+                <span dir="auto">{d.envelopeGuest || "Thân Mời"}</span>
               </p>
               {d.envelopeInviteMessage && (
                 <p
-                  className="text-[15px] italic mt-1"
+                  className="text-[15px] italic mt-1 inline-block"
                   style={{ color: textColor, opacity: 0.75, fontFamily: '"Lora", "Times New Roman", serif' }}
                 >
                   {d.envelopeInviteMessage}
@@ -206,20 +198,25 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
             </div>
 
             {/* Open Envelope Button */}
-            <button
-              type="button"
-              onClick={triggerOpen}
-              disabled={isOpening}
-              aria-busy={isOpening ? "true" : undefined}
+            <a
+              href="?open=1"
+              onClick={(e) => {
+                e.preventDefault();
+                triggerOpen();
+              }}
+              rel="nofollow"
+              aria-busy={isOpening ? "true" : "false"}
               style={{
-                backgroundColor: config.btnBg,
-                color: config.btnTextColor,
+                backgroundColor: config.btnBg || "#7c6a60",
+                color: config.btnTextColor || "#ffffff",
                 boxShadow: `0 4px 14px rgba(${config.rgb}, 0.35)`,
                 fontFamily: '"Lora", "Times New Roman", serif',
+                WebkitTouchCallout: "none",
+                userSelect: "none",
               }}
-              className="relative px-8 py-2.5 text-lg font-semibold sm:font-medium rounded-full shadow-lg border-none cursor-pointer flex w-fit items-center justify-center mx-auto overflow-hidden transition-all hover:scale-105 active:scale-95"
+              className="relative px-8 py-2.5 text-lg font-semibold sm:font-medium rounded-full shadow-lg no-underline cursor-pointer flex w-fit items-center justify-center mx-auto overflow-hidden"
             >
-              <span>Mở thiệp</span>
+              <span dir="auto">Mở thiệp</span>
               <div
                 style={{
                   background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)",
@@ -227,7 +224,7 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
                 }}
                 className="absolute top-0 h-full w-8 pointer-events-none"
               />
-            </button>
+            </a>
           </div>
         </div>
       </div>
