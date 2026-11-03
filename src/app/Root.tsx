@@ -33,6 +33,18 @@ export default function Root() {
   // The editor renders its own TopNav + header.
   if (path.startsWith("/edit/")) return <EditorPage />;
 
+  // Chỉnh sửa thiệp theo slug: /vi/mau-thiep/:slug/edit
+  const editSlugMatch = path.match(/^\/vi\/mau-thiep\/([^/]+)\/edit$/);
+  if (editSlugMatch) {
+    const slug = decodeURIComponent(editSlugMatch[1]);
+    const tpl = templateByIdOrSlug(slug);
+    if (tpl) {
+      const draftId = createDraft(tpl);
+      history.replaceState({}, "", `/edit/${draftId}?template=${tpl.id}`);
+      return <EditorPage />;
+    }
+  }
+
   // Tạo thiệp trực tiếp: /invitations/create/:themeId
   const createMatch = path.match(/^\/invitations\/create\/([^/]+)$/);
   if (createMatch) {
@@ -71,6 +83,16 @@ export default function Root() {
   if (demoMatch) {
     const slug = decodeURIComponent(demoMatch[1]);
     return <Demo key={slug} slug={slug} />;
+  }
+
+  // Cover / Detail view: /vi/mau-thiep/:slug
+  const detailMatch = path.match(/^\/vi\/mau-thiep\/([^/]+)$/);
+  if (detailMatch && detailMatch[1] !== "tao-thiep-cuoi-online") {
+    const slug = decodeURIComponent(detailMatch[1]);
+    const tpl = templateByIdOrSlug(slug);
+    if (tpl) {
+      return <Demo key={slug} slug={tpl.slug} />;
+    }
   }
 
   if (path === "/demo") {

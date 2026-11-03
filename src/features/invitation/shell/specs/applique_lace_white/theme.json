@@ -1,13 +1,15 @@
 {
   "assets": "/images/themes/applique-lace-white",
+  "bgImage": "/images/themes/applique-lace-white/satin-background.webp",
   "colors": {
-    "ink": "rgb(0, 0, 0)",
-    "inkRgb": "0, 0, 0",
-    "sub": "rgba(0, 0, 0, 0.6)",
-    "muted": "rgb(0, 0, 0)",
-    "paper": "#ffffff",
-    "line": "rgba(0, 0, 0, 0.2)",
+    "ink": "rgb(255, 255, 255)",
+    "inkRgb": "255, 255, 255",
+    "text": "rgb(255, 255, 255)",
+    "sub": "rgba(255, 255, 255, 0.7)",
+    "muted": "rgba(255, 255, 255, 0.5)",
+    "paper": "rgb(13, 11, 11)",
+    "line": "rgba(255, 255, 255, 0.2)",
     "accent": "#ffffff",
-    "edge": "rgba(0, 0, 0, 0.1)"
+    "edge": "rgba(255, 255, 255, 0.15)"
   }
 }

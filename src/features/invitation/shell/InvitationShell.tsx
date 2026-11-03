@@ -27,7 +27,18 @@ export function InvitationShell({ d, set, spec, active = true }: InvitationShell
         <div
           data-showcase-root=""
           className={"relative w-full max-w-[480px] md:max-w-[900px] md:mx-auto overflow-hidden md:border md:border-[color:var(--inv-edge)] isolate" + (spec.capabilities.rootClass ? " " + spec.capabilities.rootClass : "")}
-          style={{ backgroundColor: t.paper, color: t.text ?? t.ink, ["--inv-edge" as string]: t.edge }}
+          style={{
+            backgroundColor: t.paper,
+            color: t.text ?? t.ink,
+            ["--inv-edge" as string]: t.edge,
+            ["--st-w" as string]: "min(100vw, 480px)",
+            ...(t.bgImage ? {
+              backgroundImage: `url("${t.bgImage}")`,
+              backgroundSize: "100% auto",
+              backgroundRepeat: "repeat-y",
+              backgroundPosition: "center top",
+            } : {})
+          }}
         >
           <style>{`@keyframes mbFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}`}</style>
           {spec.capabilities.innerClass ? (

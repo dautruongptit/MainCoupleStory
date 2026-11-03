@@ -115,6 +115,7 @@ const INTRO_BY_ID: Record<string, string> = {
   song_hy_green: "WELCOME TO OUR WEDDING",
   song_hy_red: "WELCOME TO OUR WEDDING",
   minimalism_brown: "The Wedding Of",
+  lien_hoa_v2_green: "Thân Mời",
 };
 export const introDefaultFor = (templateId: string) =>
   TEMPLATES.find((t) => t.id === templateId)?.introDefault ?? INTRO_BY_ID[templateId] ?? "Save The Date";
