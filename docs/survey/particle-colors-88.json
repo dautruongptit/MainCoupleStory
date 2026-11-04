@@ -1,0 +1,839 @@
+{
+ "minimalism_purple": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#9a8cc0",
+   "#b7a8d6",
+   "#c9a24a",
+   "#efeaf6"
+  ]
+ },
+ "san_miguel_yellow": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#426f38",
+   "#174a27",
+   "#e8699b",
+   "#f2a0c0",
+   "#f7c6d9",
+   "#f3dfc3",
+   "#ffffff"
+  ]
+ },
+ "dragon_phoenix_blue": {
+  "particleType": "happiness",
+  "particleColors": [
+   "#FFD700",
+   "#e9ce9e",
+   "#CD853F",
+   "#FFC107"
+  ]
+ },
+ "mandap_darkred": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#f2c06e",
+   "#ffdfaf",
+   "#c9332e",
+   "#f6e3c1",
+   "#8d1c18",
+   "#e0a94f"
+  ]
+ },
+ "glass_garden_blue": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#cfe2ff",
+   "#a9c8f5",
+   "#ffffff",
+   "#e3eeff"
+  ]
+ },
+ "sunflower_yellow": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#dc8203",
+   "#e3a81c",
+   "#f5e3a8",
+   "#7c8b5e"
+  ]
+ },
+ "baroque_gold": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#B97D3E",
+   "#d8af87",
+   "#e8d2b0",
+   "#8D8F58",
+   "#f3e9d6",
+   "#ffffff"
+  ]
+ },
+ "spring_garden_red": {
+  "particleType": "leaves",
+  "particleColors": [
+   "#FF6B6B",
+   "#FFB6C1",
+   "#FFC0CB",
+   "#f5c4c8"
+  ]
+ },
+ "song_hy_v2_red": {
+  "particleType": "happiness",
+  "particleColors": [
+   "#ffe8a4",
+   "#fdcb9c",
+   "#fff9e6",
+   "#A50000"
+  ]
+ },
+ "boho_floral_pink": {
+  "particleType": "petals",
+  "particleColors": [
+   "#F5C6C9",
+   "#BAB4C7",
+   "#e8a8a0",
+   "#d4b8b4"
+  ]
+ },
+ "dragon_phoenix_v4_red": {
+  "particleType": "happiness",
+  "particleColors": [
+   "#FFD390",
+   "#FFE8C4",
+   "#E23B2B",
+   "#8C0000"
+  ]
+ },
+ "marble_yellow": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#a78555",
+   "#c2a473",
+   "#d7c09a",
+   "#ece0c8",
+   "#f7f1e4",
+   "#ffffff"
+  ]
+ },
+ "minimalism_darkbrown": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#593d2c",
+   "#A97454",
+   "#c9a24a",
+   "#ece4d8"
+  ]
+ },
+ "qasr_gold": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#e7dfc9",
+   "#d8cbab",
+   "#f9f1e6",
+   "#cdbf99"
+  ]
+ },
+ "dragon_phoenix_v3_red": {
+  "particleType": "happiness",
+  "particleColors": [
+   "#FFBE89",
+   "#FFD4A8",
+   "#FF9B4A",
+   "#710001"
+  ]
+ },
+ "porcelain_v2_green": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#464f1e",
+   "#7d8a47",
+   "#bc9b63",
+   "#e8e2cf"
+  ]
+ },
+ "co_ba_red": {
+  "particleType": "happiness",
+  "particleColors": [
+   "#c32a29",
+   "#e8d4a8",
+   "#6b4423",
+   "#f8f3e0"
+  ]
+ },
+ "hoa_kho_orange": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#f26100",
+   "#f0a35c",
+   "#f7e2c4",
+   "#4c611b"
+  ]
+ },
+ "saraya_gold": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#e9d9b8",
+   "#dcc79a",
+   "#f9f1e6",
+   "#cdb587"
+  ]
+ },
+ "double_phoenix_red": {
+  "particleType": "happiness",
+  "particleColors": [
+   "#710001",
+   "#8B0000",
+   "#A52A2A",
+   "#FFF0E7"
+  ]
+ },
+ "double_dragon_blue": {
+  "particleType": "happiness",
+  "particleColors": [
+   "#FFD700",
+   "#FFC107",
+   "#87CEEB",
+   "#FFE066"
+  ]
+ },
+ "lien_hoa_pink": {
+  "particleType": "petals",
+  "particleColors": [
+   "#c9768e",
+   "#d07d95",
+   "#e9b4c4",
+   "#f3d5df",
+   "#ffffff"
+  ]
+ },
+ "minimalism_red": {
+  "particleType": "hearts",
+  "particleColors": [
+   "#7C151A",
+   "#9B1B21",
+   "#B52028",
+   "#FFFFFF"
+  ]
+ },
+ "baroque_v2_darkblue": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#ffdfaf",
+   "#ffefd6",
+   "#c39a5e",
+   "#1b4a86"
+  ]
+ },
+ "minimalism_green": {
+  "particleType": "leaves",
+  "particleColors": [
+   "#87a172",
+   "#a7bd8f",
+   "#6b7b4f",
+   "#cdd9bd"
+  ]
+ },
+ "boho_floral_green": {
+  "particleType": "leaves",
+  "particleColors": [
+   "#8bc34a",
+   "#6B8040",
+   "#a5c862",
+   "#c8dfa0"
+  ]
+ },
+ "royal_v2_purple": {
+  "particleType": "sparkles",
+  "particleColors": [
+   "#c9a1e0",
+   "#d3b0ff",
+   "#ffffff",
+   "#874f22"
+  ]
+ },
+ "chateau_blue": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#123467",
+   "#3a5a8f",
+   "#6f8cbf",
+   "#a8bcd4",
+   "#cfdcec",
+   "#e6eef7",
+   "#ffffff"
+  ]
+ },
+ "florence_brown": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#9c7355",
+   "#6d4e37",
+   "#c9a888",
+   "#e3d2c0",
+   "#8ea97d",
+   "#f1e7db",
+   "#ffffff"
+  ]
+ },
+ "double_phoenix_green": {
+  "particleType": "happiness",
+  "particleColors": [
+   "#19472D",
+   "#2D6A4F",
+   "#52B788",
+   "#FFF0E7"
+  ]
+ },
+ "song_hac_red": {
+  "particleType": "happiness",
+  "particleColors": [
+   "#FFE8A4",
+   "#F6EFEA",
+   "#E23B2B",
+   "#920002"
+  ]
+ },
+ "folk_floral_blue": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#bc2123",
+   "#353786",
+   "#f2b705",
+   "#1f8a4c"
+  ]
+ },
+ "baroque_v2_darkgreen": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#ffdfaf",
+   "#ffefd6",
+   "#c39a5e",
+   "#1f4a22"
+  ]
+ },
+ "royal_v2_green": {
+  "particleType": "sparkles",
+  "particleColors": [
+   "#e5e4d0",
+   "#c9a15a",
+   "#ffffff",
+   "#874f22"
+  ]
+ },
+ "dragon_phoenix_black": {
+  "particleType": "happiness",
+  "particleColors": [
+   "#FFD700",
+   "#FFC662",
+   "#CD853F",
+   "#FFC107"
+  ]
+ },
+ "qasr_green": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#d8e0cd",
+   "#c4d0b4",
+   "#fbf8f3",
+   "#e2e8d5"
+  ]
+ },
+ "brocade_flower_red": {
+  "particleType": "leaves",
+  "particleColors": [
+   "#3c4d20",
+   "#536e3e",
+   "#6b7d3f",
+   "#546c40"
+  ]
+ },
+ "minimalism_darkblue": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#0b3a72",
+   "#3f6ea8",
+   "#c9a24a",
+   "#ece4d8"
+  ]
+ },
+ "spring_garden_blue": {
+  "particleType": "leaves",
+  "particleColors": [
+   "#87CEEB",
+   "#B0E0E6",
+   "#E0FFFF",
+   "#a4c4d4"
+  ]
+ },
+ "elegant_leaf_green": {
+  "particleType": "leaves",
+  "particleColors": [
+   "#90EE90",
+   "#98FB98",
+   "#4E6439",
+   "#bdcdc1"
+  ]
+ },
+ "double_dragon_red": {
+  "particleType": "happiness",
+  "particleColors": [
+   "#FFD700",
+   "#FFC107",
+   "#FF6B6B",
+   "#FFE066"
+  ]
+ },
+ "santorini_blue": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#2d588c",
+   "#5b80ab",
+   "#89a8c7",
+   "#b7cfe3",
+   "#e85d8a",
+   "#f29ab8",
+   "#ffffff"
+  ]
+ },
+ "porcelain_v2_red": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#8f262d",
+   "#b8434a",
+   "#c9b98a",
+   "#654e2f"
+  ]
+ },
+ "chateau_green": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#3a5a2c",
+   "#5a8040",
+   "#7da55c",
+   "#aac98a",
+   "#cfe0b8",
+   "#e8f0dc",
+   "#ffffff"
+  ]
+ },
+ "crystal_floral_blue": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#215589",
+   "#3a6ba0",
+   "#6f8cbf",
+   "#a8bcd4",
+   "#cfdcec",
+   "#e6eef7",
+   "#ffffff"
+  ]
+ },
+ "crystal_floral_red": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#9c1f2c",
+   "#b83244",
+   "#cf5a68",
+   "#e0a86f",
+   "#ecc9a0",
+   "#f5e6d2",
+   "#ffffff"
+  ]
+ },
+ "glass_garden_pink": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#f5d6dc",
+   "#eab8c2",
+   "#ffffff",
+   "#f7e3e8"
+  ]
+ },
+ "spring_garden_green": {
+  "particleType": "leaves",
+  "particleColors": [
+   "#5d6a57",
+   "#697a62",
+   "#8a9e82",
+   "#bdcdc1"
+  ]
+ },
+ "cherry_blossom_pink": {
+  "particleType": "petals",
+  "particleColors": [
+   "#FFB6C1",
+   "#FFC0CB",
+   "#ffffff",
+   "#FF69B4"
+  ]
+ },
+ "royal_blue": {
+  "particleType": "sparkles",
+  "particleColors": [
+   "#E1BC7C",
+   "#d4a85c",
+   "#ffffff",
+   "#f5e6c8"
+  ]
+ },
+ "chibi_red": {
+  "particleType": "confetti",
+  "particleColors": [
+   "#CC0033",
+   "#B80030",
+   "#FF0040",
+   "#AA0028"
+  ]
+ },
+ "silk_ribbon_green": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#d1db9c",
+   "#a8bd7d",
+   "#5e813c",
+   "#f3dfc3"
+  ]
+ },
+ "lien_hoa_v2_green": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#f2b8c6",
+   "#f7d9e0",
+   "#5e813c",
+   "#a8c48a"
+  ]
+ },
+ "applique_lace_white": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#ffffff",
+   "#f6f1ea",
+   "#e8ddd0",
+   "#8f7964",
+   "#c9b9a6",
+   "#fdfcfa"
+  ]
+ },
+ "royal_red": {
+  "particleType": "sparkles",
+  "particleColors": [
+   "#E1BC7C",
+   "#d4a85c",
+   "#ffffff",
+   "#f5e6c8"
+  ]
+ },
+ "song_hy_green": {
+  "particleType": "happiness",
+  "particleColors": [
+   "#a8e6a3",
+   "#7bc47a",
+   "#4CAF50",
+   "#c8e6c9"
+  ]
+ },
+ "minimalism_brown": {
+  "particleType": "leaves",
+  "particleColors": [
+   "#c9a97e",
+   "#b89b78",
+   "#918077",
+   "#e6d6c4"
+  ]
+ },
+ "boho_floral_brown": {
+  "particleType": "leaves",
+  "particleColors": [
+   "#c9a87c",
+   "#846758",
+   "#d4a574",
+   "#e8c9a0"
+  ]
+ },
+ "hoa_kho_v2_blue": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#8f7148",
+   "#556183",
+   "#c7b48d",
+   "#efe7d6"
+  ]
+ },
+ "porcelain_v2_pink": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#dc8599",
+   "#e7a3b2",
+   "#c9b98a",
+   "#776e38"
+  ]
+ },
+ "glass_garden_light_green": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#e3e9d2",
+   "#c9d6a8",
+   "#ffffff",
+   "#eef1e2"
+  ]
+ },
+ "silk_ribbon_pink": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#f7dfe5",
+   "#e66474",
+   "#dda9b8",
+   "#f3dfc3"
+  ]
+ },
+ "dried_flower_v2_green": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#967928",
+   "#6c7e54",
+   "#c9d3b5",
+   "#efe7d6"
+  ]
+ },
+ "nhat_binh_red": {
+  "particleType": "confetti",
+  "particleColors": [
+   "#CC0033",
+   "#B80030",
+   "#FF0040",
+   "#AA0028"
+  ]
+ },
+ "silk_ribbon_darkred": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#e8c4ce",
+   "#b86a7e",
+   "#913b51",
+   "#f3dfc3"
+  ]
+ },
+ "dragon_phoenix_v2_red": {
+  "particleType": "happiness",
+  "particleColors": [
+   "#D4A017",
+   "#C41E3A",
+   "#E8A735",
+   "#B22222"
+  ]
+ },
+ "qasr_blue": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#d8e3ec",
+   "#c3d3e0",
+   "#f8f3e7",
+   "#e4ebf2"
+  ]
+ },
+ "glass_garden_green": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#dbe6d0",
+   "#c4d4b3",
+   "#ffffff",
+   "#e7eede"
+  ]
+ },
+ "crystal_floral_green": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#2D5A13",
+   "#0B2E00",
+   "#0B2E00",
+   "#e0a86f",
+   "#c8dfd0",
+   "#e6f1ea",
+   "#ffffff"
+  ]
+ },
+ "floral_fiesta_yellow": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#7a3f98",
+   "#1f9d4d",
+   "#f7c518",
+   "#e4328e",
+   "#13a2b8",
+   "#f58220"
+  ]
+ },
+ "dragon_phoenix_green": {
+  "particleType": "happiness",
+  "particleColors": [
+   "#FFD700",
+   "#e9ce9e",
+   "#CD853F",
+   "#FFC107"
+  ]
+ },
+ "baroque_v2_darkred": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#ffdfaf",
+   "#ffefd6",
+   "#c39a5e",
+   "#8a1f26"
+  ]
+ },
+ "silk_flora_brown": {
+  "particleType": "petals",
+  "particleColors": [
+   "#e8d4c4",
+   "#dcc4b0",
+   "#faf3e8",
+   "#f0e2d5"
+  ]
+ },
+ "double_dragon_green": {
+  "particleType": "happiness",
+  "particleColors": [
+   "#FFD700",
+   "#FFC107",
+   "#90EE90",
+   "#FFE066"
+  ]
+ },
+ "baroque_blue": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#5e7e9b",
+   "#8ca6be",
+   "#c9b082",
+   "#e8d2b0",
+   "#f3e9d6",
+   "#ffffff"
+  ]
+ },
+ "porcelain_brown": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#8d6f32",
+   "#a9873f",
+   "#c0a45c",
+   "#d9c391"
+  ]
+ },
+ "dragon_phoenix_red": {
+  "particleType": "happiness",
+  "particleColors": [
+   "#FFD700",
+   "#e9ce9e",
+   "#CD853F",
+   "#FFC107"
+  ]
+ },
+ "minimalism_darkred": {
+  "particleType": "hearts",
+  "particleColors": [
+   "#7a1f26",
+   "#a8323b",
+   "#c9a24a",
+   "#ece4d8"
+  ]
+ },
+ "porcelain_red": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#b03235",
+   "#c0524f",
+   "#af3e42",
+   "#d98a86"
+  ]
+ },
+ "hoa_tinh_red": {
+  "particleType": "happiness",
+  "particleColors": [
+   "#FFD700",
+   "#FFC107",
+   "#FF6B6B",
+   "#FFE066"
+  ]
+ },
+ "nomad_brown": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#7d583e",
+   "#a8794f",
+   "#546f7f",
+   "#8ba3b1",
+   "#e3cdaa",
+   "#fffdfa"
+  ]
+ },
+ "riviera_blue": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#005885",
+   "#33799d",
+   "#669bb6",
+   "#99bcce",
+   "#ccdde7",
+   "#f2b8b8",
+   "#ffffff"
+  ]
+ },
+ "porcelain_blue": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#08315a",
+   "#1b4f82",
+   "#2c5f92",
+   "#5b86b3"
+  ]
+ },
+ "mahal_gold": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#d8407a",
+   "#e0698f",
+   "#ab7a45",
+   "#f7e3cd"
+  ]
+ },
+ "song_hy_red": {
+  "particleType": "happiness",
+  "particleColors": [
+   "#FFD700",
+   "#FFC107",
+   "#FF6B6B",
+   "#FFE066"
+  ]
+ },
+ "jasmine_white": {
+  "particleType": "petals",
+  "particleColors": [
+   "#d4e4a0",
+   "#c8d88a",
+   "#ffffff",
+   "#eef4d0"
+  ]
+ },
+ "royal_green": {
+  "particleType": "sparkles",
+  "particleColors": [
+   "#E1BC7C",
+   "#d4a85c",
+   "#ffffff",
+   "#f5e6c8"
+  ]
+ },
+ "hoa_dai_pink": {
+  "particleType": "flowers",
+  "particleColors": [
+   "#b75873",
+   "#e78fa5",
+   "#f6d2dc",
+   "#567c22",
+   "#8fae5a",
+   "#f3c969",
+   "#ffffff"
+  ]
+ }
+}

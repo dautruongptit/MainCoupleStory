@@ -46,6 +46,23 @@ Thứ tự khối trong thiệp: [Header] → THÔNG TIN LỄ CƯỚI (gia đìn
 - Mọi giá trị hiển thị lấy từ `Inv`; không hardcode chữ/ảnh/số của demo trong component (demo = một file dữ liệu).
 - Kích thước/kiểu chữ đo từ computed style của trang gốc; style tĩnh chép ở 390px **không** được dùng làm inline nếu có lớp `md:`/`lg:` tương ứng.
 - Khối số đo: mọi khối ở 390/768/1440 trùng ≤2px; tổng trang ≤2px (sai số làm tròn nửa pixel).
+- **Công tắc Hiện/Ẩn ở editor phải tự ăn vào thiệp xem trước — `InvitationShell` KHÔNG tự lọc khối theo công tắc, mỗi khối tự chịu trách nhiệm.** `InvitationShell.tsx` render vô điều kiện mọi khối có trong `capabilities.json#blocks`; không có chỗ nào kiểm tra `d.xxxOn` ở tầng khuôn chung. Vì vậy **mỗi file khối ứng với 1 thẻ có công tắc trong editor (A3) bắt buộc phải tự kiểm tra cờ tương ứng ở đầu hàm và `return null` khi tắt** — quên bước này là lỗi lặp lại nhiều lần nhất khi dựng họ mới (thường do khối được dán thẳng từ HTML dump, chưa gắn điều kiện). Bảng cờ ↔ thẻ editor (tên trong `Inv`, xem `src/types/invitation.ts`):
+
+  | Thẻ editor | Cờ (`d.<field>`) |
+  |---|---|
+  | Ảnh đầu thiệp | `heroOn` |
+  | Thư viện ảnh | `albumOn` |
+  | Gia đình | `familyOn` |
+  | Lời thông báo | `announceOn` |
+  | Tiệc cưới | `partyOn` |
+  | RSVP | `rsvpOn` |
+  | Dress Code | `dressOn` |
+  | Lịch trình | `schedOn` |
+  | Sổ lưu bút | `guestOn` |
+  | Hộp quà | `giftOn` |
+  | Lời cảm ơn | `thanksOn` |
+
+  Mẫu đúng (xem `blocks/darkred/Family.tsx`): `if (!d.familyOn && !d.announceOn && ...) return null;` ở đầu component, và bọc riêng từng đoạn phụ thuộc cờ khác (`{d.announceOn && (...)}`) nếu khối gộp nhiều phần có cờ khác nhau. **Kiểm khi xong mỗi mẫu:** bật/tắt lần lượt từng công tắc trong editor local, xác nhận đúng khối tương ứng biến mất/xuất hiện ở khung xem trước (không chỉ kiểm bằng mắt 1 lần — nên có bước này trong `editor-sync.mjs`/checklist nghiệm thu, xem mục D).
 
 ---
 
@@ -147,6 +164,7 @@ Công cụ: `scripts/audit.mjs <id>` (khối + console/network), `scripts/editor
 | 12 | Đầu ra công cụ chứa query string bị chặn | `[BLOCKED: Cookie/query string data]` | Không in URL có `?`; ghi dữ liệu vào tệp qua collector |
 | 13 | Vite sập khi quét thư mục profile Chrome | `EBUSY` | `server.watch.ignored: ["**/.chrome_profile/**"]` (đã làm) |
 | 14 | Viewport iframe ≠ viewport thật | Media query theo iframe, đúng; nhưng `vh` theo cửa sổ | Đo ở iframe có chiều rộng cố định, chiều cao 844/900 |
+| 15 | Khối chưa đọc cờ Hiện/Ẩn (`d.xxxOn`) — **lỗi lặp lại nhiều lần nhất** | Bấm "Ẩn" một thẻ trong editor nhưng khối tương ứng vẫn hiện ở xem trước (hoặc ngược lại, "Hiện" mà không ra) | Thêm `if (!d.xxxOn) return null;` đầu khối theo bảng cờ ở A4; `InvitationShell` không tự lọc, phải tự làm trong từng khối |
 
 ---
 
