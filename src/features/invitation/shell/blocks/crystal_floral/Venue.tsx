@@ -4,6 +4,7 @@ import { getCrystalFloralThemeVars } from "./themeVars";
 
 export function Venue({ ctx }: { ctx: InvitationCtx }) {
   const d = ctx.d as any;
+  if (!d.partyOn) return null;
   const vars = getCrystalFloralThemeVars(d?.templateId || "crystal_floral_blue");
   
   const venueTitleRaw = vars.venueTitle || (vars.templateId === "crystal_floral_blue" ? "Tiệc cưới sẽ tổ chức tại" : "Tiệc báo hỷ sẽ tổ chức tại");

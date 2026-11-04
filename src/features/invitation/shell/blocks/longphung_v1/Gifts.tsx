@@ -3,6 +3,7 @@ import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx
 
 export function Gifts({ ctx }: { ctx: InvitationCtx }) {
   const { d, t, giftModalOpen, setGiftModalOpen, giftTitle, saveQr } = ctx;
+  if (!d.giftOn) return null;
   const ink = t.ink || "rgb(233, 206, 158)";
   const muted = t.muted || "rgb(217, 188, 134)";
   const cardBg = t.cardBg || "rgb(104, 14, 14)";

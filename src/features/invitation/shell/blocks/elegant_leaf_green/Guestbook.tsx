@@ -1,6 +1,8 @@
 import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx";
 
 export function Guestbook({ ctx }: { ctx: InvitationCtx }) {
+  const { d } = ctx;
+  if (!d.guestOn) return null;
   return (
     <div className="relative overflow-visible" style={{ backgroundColor: "rgb(255, 255, 255)" }}><style>
             .la2-white-section &#123;

@@ -2,7 +2,8 @@ import React from "react";
 import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx";
 
 export function Dress({ ctx }: { ctx: InvitationCtx }) {
-  const { t, setRsvpOpen } = ctx;
+  const { d, t, setRsvpOpen } = ctx;
+  if (!d.dressOn) return null;
   const isRed = (t.assets || "").includes("red");
   const isPink = (t.assets || "").includes("pink");
 

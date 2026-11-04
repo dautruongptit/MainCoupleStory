@@ -2,7 +2,8 @@ import React from "react";
 import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx";
 
 export function Dress({ ctx }: { ctx: InvitationCtx }) {
-  const { t } = ctx;
+  const { d, t } = ctx;
+  if (!d.dressOn) return null;
   const ink = t.ink || "rgb(210, 95, 101)";
   const fontFam = t.fontFamily || "Baskerville, \"Times New Roman\", ChungDoiIndic, serif";
 

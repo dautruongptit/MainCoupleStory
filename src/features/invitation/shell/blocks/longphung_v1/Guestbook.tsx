@@ -26,6 +26,7 @@ export function Guestbook({ ctx }: { ctx: InvitationCtx }) {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [wishes, setWishes] = useState(DEFAULT_WISHES);
+  if (!d.guestOn) return null;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

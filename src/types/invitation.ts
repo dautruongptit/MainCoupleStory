@@ -45,6 +45,15 @@ export interface Inv {
   heroZoom: number;
   heroX: number;
   heroY: number;
+  /** Ảnh đôi (mẫu dùng 2 ảnh riêng chú rể/cô dâu thay vì 1 ảnh đầu thiệp) — xem capabilities.editor.cards.coupleHero. */
+  groomPhoto: string;
+  groomPhotoZoom: number;
+  groomPhotoX: number;
+  groomPhotoY: number;
+  bridePhoto: string;
+  bridePhotoZoom: number;
+  bridePhotoX: number;
+  bridePhotoY: number;
   introCustom: boolean;
   introText: string;
   groomFull: string;

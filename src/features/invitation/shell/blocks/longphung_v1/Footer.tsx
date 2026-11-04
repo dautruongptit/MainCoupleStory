@@ -2,7 +2,8 @@ import React from "react";
 import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx";
 
 export function Footer({ ctx }: { ctx: InvitationCtx }) {
-  const { t } = ctx;
+  const { d, t } = ctx;
+  if (!d.thanksOn) return null;
   const muted = t.muted || "rgb(217, 188, 134)";
 
   return (

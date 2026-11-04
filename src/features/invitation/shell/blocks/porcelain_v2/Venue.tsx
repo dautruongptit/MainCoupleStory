@@ -3,6 +3,7 @@ import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx
 
 export function Venue({ ctx }: { ctx: InvitationCtx }) {
   const { d, t } = ctx;
+  if (!d.partyOn) return null;
   const anyD = d as any;
   const isRed = (t.assets || "").includes("red");
   const isPink = (t.assets || "").includes("pink");

@@ -23,6 +23,7 @@ export function Guestbook({ ctx }: { ctx: InvitationCtx }) {
   const d = ctx.d as any;
   const [name, setName] = useState("Anh Tuấn");
   const [message, setMessage] = useState("");
+  if (!d.guestOn) return null;
 
   const placeholderName = d.guestNamePlaceholder || "Nhập tên của bạn*";
   const placeholderWish = d.guestWishPlaceholder || "Nhập lời chúc của bạn*";

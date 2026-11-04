@@ -1,6 +1,8 @@
 import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx";
 
 export function Gifts({ ctx }: { ctx: InvitationCtx }) {
+  const { d } = ctx;
+  if (!d.giftOn) return null;
   return (
     <>
       <style>{`

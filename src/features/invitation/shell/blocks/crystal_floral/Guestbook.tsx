@@ -7,6 +7,7 @@ export function Guestbook({ ctx }: { ctx: InvitationCtx }) {
   const vars = getCrystalFloralThemeVars(d?.templateId || "crystal_floral_blue");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  if (!d.guestOn) return null;
 
   const primaryRgba02 = vars.primaryColor.replace("rgb", "rgba").replace(")", ", 0.2)");
   const textRgba04 = (() => {

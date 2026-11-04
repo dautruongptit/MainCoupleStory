@@ -5,6 +5,7 @@ import { getSongHyTheme } from "./themeVars";
 export function Venue({ ctx }: { ctx: InvitationCtx }) {
   const vars = getSongHyTheme(ctx);
   const d = (ctx.d || {}) as any;
+  if (!d.partyOn) return null;
 
   const venueTitle = vars.isGreen
     ? "Tiệc cưới sẽ tổ chức\u00A0tại"

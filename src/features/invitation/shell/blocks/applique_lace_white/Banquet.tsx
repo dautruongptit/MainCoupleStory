@@ -4,6 +4,7 @@ import { lunarLabel } from "@/utils/lunar";
 
 export function Banquet({ ctx }: { ctx: InvitationCtx }) {
   const { d } = ctx;
+  if (!d.partyOn) return null;
   const bDateStr = d.date || "2027-06-12";
   const bDateObj = parseDate(bDateStr);
   const bDay = String(bDateObj.getDate()).padStart(2, "0");

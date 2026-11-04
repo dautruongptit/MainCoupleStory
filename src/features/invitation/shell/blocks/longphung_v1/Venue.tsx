@@ -3,6 +3,7 @@ import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx
 
 export function Venue({ ctx }: { ctx: InvitationCtx }) {
   const { d, t } = ctx;
+  if (!d.partyOn) return null;
   const ink = t.ink || "rgb(233, 206, 158)";
   const muted = t.muted || "rgb(217, 188, 134)";
   const locTitle = d.locTitle || "Tiệc cưới Trống Đồng Cảnh Hồ, 173 Trường Chinh, Quận Thanh Xuân, Hà Nội";

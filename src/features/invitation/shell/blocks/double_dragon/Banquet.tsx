@@ -5,6 +5,7 @@ import { getDoubleDragonTheme } from "./themeVars";
 export function Banquet({ ctx }: { ctx: InvitationCtx }) {
   const theme = getDoubleDragonTheme(ctx);
   const d = ctx.d as any;
+  if (!d.partyOn) return null;
 
   const banquetTime = d.banquetTime || d.time || "10:30";
   const partyStart = d.partyStart || d.banquetTime || "10:30";

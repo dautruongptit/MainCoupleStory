@@ -2,6 +2,7 @@ import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx
 
 export function Venue({ ctx }: { ctx: InvitationCtx }) {
   const { d } = ctx;
+  if (!d.partyOn) return null;
   const venue = d.locTitle || "Trung tâm Hội nghị Tiệc cưới Minh Anh";
   const address = d.address || "Đà Nẵng";
   const fullAddress = `${venue}, ${address}`;

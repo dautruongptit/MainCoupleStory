@@ -31,6 +31,22 @@ const HAS_COUPLE_HERO = new Set([
   "minimalism_darkblue", "boho_floral_brown", "double_dragon_blue", "floral_fiesta_yellow",
 ]);
 
+/** Có thẻ "Lời mở đầu". Đo thật 03/11/2026 (bấm thật nút "Đổi mẫu thiệp" trong editor, không dùng
+ * `?template=` trên URL — cách đó cho kết quả sai, xem docs/survey/editor-intro-line-88.md), 49/88 mẫu.
+ * Không suy ra được từ HAS_HERO_PHOTO/HAS_COUPLE_HERO hay tên/màu mẫu — cờ độc lập. */
+const HAS_INTRO_LINE = new Set([
+  "minimalism_darkred", "minimalism_brown", "song_hy_green", "song_hy_red", "minimalism_green",
+  "jasmine_white", "minimalism_darkbrown", "marble_yellow", "elegant_leaf_green", "chateau_green",
+  "baroque_v2_darkgreen", "baroque_v2_darkred", "applique_lace_white", "silk_flora_brown", "hoa_tinh_red",
+  "minimalism_darkblue", "royal_red", "baroque_gold", "chateau_blue", "co_ba_red", "lien_hoa_pink",
+  "minimalism_purple", "porcelain_v2_green", "dried_flower_v2_green", "porcelain_v2_pink", "hoa_kho_v2_blue",
+  "royal_v2_green", "royal_green", "baroque_blue", "porcelain_brown", "royal_blue", "riviera_blue",
+  "florence_brown", "baroque_v2_darkblue", "sunflower_yellow", "santorini_blue", "porcelain_v2_red",
+  "porcelain_blue", "folk_floral_blue", "porcelain_red", "hoa_dai_pink", "qasr_blue", "san_miguel_yellow",
+  "royal_v2_purple", "hoa_kho_orange", "floral_fiesta_yellow", "nomad_brown", "mandap_darkred",
+  "brocade_flower_red",
+]);
+
 /** Album ngay sau vị trí Hero (có ảnh thật hoặc ô trống khi heroPhoto/coupleHero đều tắt).
  * Đo thật 01/11/2026, 30/88 mẫu. Mặc định (không trong set) = ngay sau Lễ. */
 const ALBUM_AFTER_HERO = new Set([
@@ -45,6 +61,7 @@ const ALBUM_AFTER_HERO = new Set([
 
 export interface EditorSections {
   heroPhoto: boolean;
+  introLine: boolean;
   guestbook: boolean;
   envelope: boolean;
 }
@@ -52,6 +69,7 @@ export interface EditorSections {
 export function editorSections(templateId: string): EditorSections {
   return {
     heroPhoto: HAS_HERO_PHOTO.has(templateId) || HAS_COUPLE_HERO.has(templateId),
+    introLine: HAS_INTRO_LINE.has(templateId),
     guestbook: true,
     envelope: true,
   };

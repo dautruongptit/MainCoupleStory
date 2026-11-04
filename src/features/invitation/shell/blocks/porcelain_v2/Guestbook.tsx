@@ -19,6 +19,7 @@ export function Guestbook({ ctx }: { ctx: InvitationCtx }) {
     : "/images/envelope/porcelain_v2_green.webp";
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  if (!d.guestOn) return null;
 
   const guestbookEntries: Array<{ name: string; createdAt: string; message: string }> =
     anyD.guestbookEntries || [

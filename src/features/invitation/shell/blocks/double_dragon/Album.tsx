@@ -41,6 +41,7 @@ export function Album({ ctx }: { ctx: InvitationCtx }) {
   const [currentIdx, setCurrentIdx] = useState(initialIdx);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalIdx, setModalIdx] = useState(0);
+  if (!d.albumOn || photos.length === 0) return null;
 
   const isDots = d.albumIndicator === "dots" || total === 6;
 

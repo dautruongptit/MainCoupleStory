@@ -11,6 +11,7 @@ function toStr(v: any, fallback = ""): string {
 export function Venue({ ctx }: { ctx: InvitationCtx }) {
   const d = ctx.d || {};
   const theme = getBohoFloralTheme(ctx);
+  if (!(d as any).partyOn) return null;
 
   const address = toStr(
     d.address,

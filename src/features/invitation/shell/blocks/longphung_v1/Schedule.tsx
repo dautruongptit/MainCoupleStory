@@ -17,6 +17,7 @@ const DEFAULT_SCHEDULE: SchedItem[] = [
 
 export function Schedule({ ctx }: { ctx: InvitationCtx }) {
   const { d, t } = ctx;
+  if (!d.schedOn) return null;
   const ink = t.ink || "rgb(233, 206, 158)";
   const muted = t.muted || "rgb(217, 188, 134)";
 

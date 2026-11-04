@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx";
 
 export function Album({ ctx }: { ctx: InvitationCtx }) {
-  const { albumPhotos, t, setLightboxOpen, setActivePhotoIdx } = ctx;
+  const { d, albumPhotos, t, setLightboxOpen, setActivePhotoIdx } = ctx;
   const photos = albumPhotos || [];
   const [currentIdx, setCurrentIdx] = useState(2);
   const total = photos.length;
   const ink = t.ink || "rgb(210, 95, 101)";
 
-  if (total === 0) return null;
+  if (!d.albumOn || total === 0) return null;
 
   const nextPhoto = () => setCurrentIdx((prev) => (prev + 1) % total);
   const prevPhoto = () => setCurrentIdx((prev) => (prev - 1 + total) % total);

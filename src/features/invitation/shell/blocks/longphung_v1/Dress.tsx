@@ -3,6 +3,7 @@ import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx
 
 export function Dress({ ctx }: { ctx: InvitationCtx }) {
   const { d, t } = ctx;
+  if (!d.dressOn) return null;
   const ink = t.ink || "rgb(233, 206, 158)";
   const colors = d.dressColors && d.dressColors.length > 0 ? d.dressColors : ["rgb(101, 18, 18)", "rgb(141, 58, 58)", "rgb(255, 178, 178)"];
 

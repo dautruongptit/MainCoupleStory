@@ -49,6 +49,7 @@
     },
     "sections": {
       "heroPhoto": true,
+      "introLine": false,
       "guestbook": true,
       "envelope": true
     }

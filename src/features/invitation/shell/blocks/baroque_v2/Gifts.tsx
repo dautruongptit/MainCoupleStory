@@ -7,6 +7,7 @@ export function Gifts({ ctx }: { ctx: InvitationCtx }) {
   const d = ctx.d as any;
 
   const [isOpen, setIsOpen] = useState(false);
+  if (!d.giftOn) return null;
 
   const groomName = (d.groomFullName || "Lý Gia Bảo").toUpperCase();
   const brideName = (d.brideFullName || "Phan Ngọc Diệp").toUpperCase();

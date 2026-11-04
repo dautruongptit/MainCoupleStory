@@ -1,5 +1,6 @@
 import type { Inv } from "@/types/invitation";
 import { introDefaultFor } from "@/features/templates/data/templates";
+import { getEditorSections } from "@/features/invitation/shell/specs";
 import { CardV2 } from "@/features/editor/components/v2/CardV2";
 
 type P = { d: Inv; set: (p: Partial<Inv>) => void };
@@ -39,28 +40,31 @@ function NickInput({ value, onChange, placeholder }: { value: string; onChange: 
 
 export function BasicV2({ d, set }: P) {
   const order = d.order || "groom";
+  const hasIntroLine = getEditorSections(d.templateId).introLine;
   return (
     <CardV2 id="basic-info-section" icon={heart} title="Thông tin cơ bản">
-      <fieldset className="fieldset mb-4 w-full">
-        <div className="flex items-center justify-between">
-          <legend className="fieldset-legend text-xs">Lời mở đầu</legend>
-          <label className="flex cursor-pointer items-center gap-2">
-            <span className="select-none text-xs opacity-70">{d.introCustom ? "Tùy chỉnh" : "Mặc định"}</span>
-            <input className="toggle toggle-sm toggle-primary" type="checkbox" checked={d.introCustom} onChange={(e) => set({ introCustom: e.target.checked })} />
-          </label>
-        </div>
-        {d.introCustom ? (
-          <input className="input input-sm w-full text-base sm:text-sm" type="text" placeholder={introDefaultFor(d.templateId)} value={d.introText} onChange={(e) => set({ introText: e.target.value })} />
-        ) : (
-          <div className="flex items-start gap-2.5 rounded-lg bg-base-200/50 p-3 text-sm opacity-80">
-            <svg className="mt-0.5 h-4 w-4 shrink-0 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
-            <span>
-              Đang dùng chữ mặc định của mẫu:
-              <span className="mt-1 block font-medium opacity-90">“{introDefaultFor(d.templateId)}”</span>
-            </span>
+      {hasIntroLine && (
+        <fieldset className="fieldset mb-4 w-full">
+          <div className="flex items-center justify-between">
+            <legend className="fieldset-legend text-xs">Lời mở đầu</legend>
+            <label className="flex cursor-pointer items-center gap-2">
+              <span className="select-none text-xs opacity-70">{d.introCustom ? "Tùy chỉnh" : "Mặc định"}</span>
+              <input className="toggle toggle-sm toggle-primary" type="checkbox" checked={d.introCustom} onChange={(e) => set({ introCustom: e.target.checked })} />
+            </label>
           </div>
-        )}
-      </fieldset>
+          {d.introCustom ? (
+            <input className="input input-sm w-full text-base sm:text-sm" type="text" placeholder={introDefaultFor(d.templateId)} value={d.introText} onChange={(e) => set({ introText: e.target.value })} />
+          ) : (
+            <div className="flex items-start gap-2.5 rounded-lg bg-base-200/50 p-3 text-sm opacity-80">
+              <svg className="mt-0.5 h-4 w-4 shrink-0 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+              <span>
+                Đang dùng chữ mặc định của mẫu:
+                <span className="mt-1 block font-medium opacity-90">“{introDefaultFor(d.templateId)}”</span>
+              </span>
+            </div>
+          )}
+        </fieldset>
+      )}
       <div className="grid grid-cols-2 gap-3">
         <fieldset id="groom-name-field" className="fieldset w-full">
           <legend className="fieldset-legend text-xs">Họ tên chú rể</legend>

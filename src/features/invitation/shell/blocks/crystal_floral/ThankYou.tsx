@@ -4,6 +4,7 @@ import { getCrystalFloralThemeVars } from "./themeVars";
 
 export function ThankYou({ ctx }: { ctx: InvitationCtx }) {
   const d = ctx.d as any;
+  if (!d.thanksOn) return null;
   const vars = getCrystalFloralThemeVars(d?.templateId || "crystal_floral_blue");
   const thankYouText = (typeof d?.thankYouText === "string" ? d.thankYouText : d?.thankYouText?.vi) || "Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi!";
 

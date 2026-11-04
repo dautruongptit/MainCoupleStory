@@ -3,6 +3,7 @@ import type { Wish } from "@/types/invitation";
 
 export function Guestbook({ ctx }: { ctx: InvitationCtx }) {
   const { d, wishName, setWishName, wishMsg, setWishMsg, handleSendWish } = ctx;
+  if (!d.guestOn) return null;
   const wishes: Wish[] = d.wishes && d.wishes.length > 0 ? d.wishes : [
     { name: "Vợ chồng anh Dũng", at: "16:00:00 24/2/2027", msg: "Mong hai bạn luôn có chuyện để kể với nhau." },
     { name: "Cậu mợ Hải Yến", at: "12:00:00 24/2/2027", msg: "Chúc hai cháu trăm năm hạnh phúc, con đàn cháu đống." },

@@ -8,6 +8,7 @@ interface ScheduleItem {
 
 export function Schedule({ ctx }: { ctx: InvitationCtx }) {
   const { d } = ctx;
+  if (!d.schedOn) return null;
   const items: ScheduleItem[] = d.sched && d.sched.length > 0
     ? d.sched.map((s) => ({ time: s.time, title: s.text }))
     : [

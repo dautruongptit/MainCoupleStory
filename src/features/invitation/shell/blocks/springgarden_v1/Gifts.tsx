@@ -5,6 +5,7 @@ export function Gifts({ ctx }: { ctx: InvitationCtx }) {
   const [isOpen, setIsOpen] = useState(false);
   const { d, t } = ctx;
   const anyD = d as any;
+  if (!d.giftOn) return null;
 
   const ink = t.ink || "rgb(210, 95, 101)";
   const muted = t.muted || "rgb(181, 75, 81)";

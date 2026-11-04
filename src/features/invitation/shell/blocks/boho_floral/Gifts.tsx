@@ -13,6 +13,7 @@ export function Gifts({ ctx }: { ctx: InvitationCtx }) {
   const [isOpen, setIsOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<"groom" | "bride">("groom");
   const d = (ctx.d || {}) as any;
+  if (!d.giftOn) return null;
 
   const giftBoxTitle = toStr(d.giftBox, "Hộp Quà\u00A0Mừng");
   const thankYouNote = toStr(

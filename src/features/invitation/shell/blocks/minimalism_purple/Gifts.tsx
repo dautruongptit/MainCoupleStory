@@ -2,7 +2,9 @@ import { useState } from "react";
 import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx";
 
 export function Gifts({ ctx }: { ctx: InvitationCtx }) {
+  const { d } = ctx;
   const [modalOpen, setModalOpen] = useState(false);
+  if (!d.giftOn) return null;
 
   return (
     <div className="relative isolate z-10 overflow-x-clip">

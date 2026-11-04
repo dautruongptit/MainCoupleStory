@@ -15,6 +15,7 @@ export function Album({ ctx }: { ctx: InvitationCtx }) {
   ]);
 
   const [currentIdx, setCurrentIdx] = useState(0);
+  if (!d.albumOn || photos.length === 0) return null;
 
   const prevPhoto = () => {
     setCurrentIdx((prev) => (prev > 0 ? prev - 1 : photos.length - 1));

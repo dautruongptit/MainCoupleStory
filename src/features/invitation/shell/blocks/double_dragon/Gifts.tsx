@@ -6,6 +6,7 @@ export function Gifts({ ctx }: { ctx: InvitationCtx }) {
   const theme = getDoubleDragonTheme(ctx);
   const [isOpen, setIsOpen] = useState(false);
   const d = ctx.d as any;
+  if (!d.giftOn) return null;
 
   const giftBoxTitle = d.giftBox || "Hộp Quà\u00A0Mừng";
   const thankYouNote =

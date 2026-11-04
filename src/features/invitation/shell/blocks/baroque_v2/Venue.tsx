@@ -4,6 +4,7 @@ import { getBaroqueV2Theme, str } from "./themeVars";
 export function Venue({ ctx }: { ctx: InvitationCtx }) {
   const theme = getBaroqueV2Theme(ctx);
   const d = ctx.d as any;
+  if (!d.partyOn) return null;
 
   const address = str(
     d.address,

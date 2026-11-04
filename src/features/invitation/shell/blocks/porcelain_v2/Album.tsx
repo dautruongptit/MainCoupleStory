@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx";
 
 export function Album({ ctx }: { ctx: InvitationCtx }) {
-  const { albumPhotos, t, setLightboxOpen, setActivePhotoIdx } = ctx;
+  const { d, albumPhotos, t, setLightboxOpen, setActivePhotoIdx } = ctx;
   const photos = albumPhotos || [];
   const [currentIdx, setCurrentIdx] = useState(0);
+  if (!d.albumOn || photos.length === 0) return null;
   const total = photos.length;
   const isRed = (t.assets || "").includes("red");
   const isPink = (t.assets || "").includes("pink");

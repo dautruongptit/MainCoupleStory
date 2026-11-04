@@ -8,6 +8,7 @@ export function Guestbook({ ctx }: { ctx: InvitationCtx }) {
 
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+  if (!d.guestOn) return null;
 
   const wishes = (d.wishes && d.wishes.length > 0 ? d.wishes : (ctx as any).wishes || []).slice(0, 6);
 

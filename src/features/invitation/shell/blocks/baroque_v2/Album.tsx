@@ -18,6 +18,7 @@ export function Album({ ctx }: { ctx: InvitationCtx }) {
   const photos: string[] = rawPhotos;
   const total = photos.length || 7;
   const [currentIdx, setCurrentIdx] = useState(0);
+  if (!d.albumOn || photos.length === 0) return null;
 
   const isDots = total <= 7;
 

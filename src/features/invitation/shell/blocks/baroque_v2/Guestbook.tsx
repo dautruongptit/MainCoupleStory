@@ -53,6 +53,7 @@ export function Guestbook({ ctx }: { ctx: InvitationCtx }) {
   const [name, setName] = useState("");
   const [content, setContent] = useState("");
   const [userWishes, setUserWishes] = useState<WishItem[]>([]);
+  if (!ctx.d.guestOn) return null;
 
   const defaultWishes =
     theme.variant === "darkgreen"

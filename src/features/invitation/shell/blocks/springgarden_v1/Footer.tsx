@@ -3,6 +3,7 @@ import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx
 
 export function Footer({ ctx }: { ctx: InvitationCtx }) {
   const { d, t } = ctx;
+  if (!d.thanksOn) return null;
   const anyD = d as any;
   const ink = t.ink || "rgb(210, 95, 101)";
   const edge = t.edge || "rgb(245, 196, 200)";

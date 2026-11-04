@@ -3,6 +3,7 @@ import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx
 
 export function Schedule({ ctx }: { ctx: InvitationCtx }) {
   const { d, t } = ctx;
+  if (!d.schedOn) return null;
   const anyD = d as any;
   const ink = t.ink || "rgb(210, 95, 101)";
   const muted = t.muted || "rgb(181, 75, 81)";

@@ -4,6 +4,7 @@ import { getBohoFloralTheme } from "./themeVars";
 export function Footer({ ctx }: { ctx: InvitationCtx }) {
   const theme = getBohoFloralTheme(ctx);
   const d = (ctx.d || {}) as any;
+  if (!d.thanksOn) return null;
 
   const thankYou =
     d.thankYouNote || "Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi!";

@@ -3,6 +3,7 @@ import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx
 
 export function Schedule({ ctx }: { ctx: InvitationCtx }) {
   const { d, t } = ctx;
+  if (!d.schedOn) return null;
   const anyD = d as any;
   const assets = t.assets || "/images/themes/porcelain-v2-green";
   const isRed = assets.includes("red");

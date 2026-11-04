@@ -15,6 +15,7 @@ export function Album({ ctx }: { ctx: InvitationCtx }) {
 
   const total = photos.length || 1;
   const [currentIdx, setCurrentIdx] = useState(0);
+  if (!d.albumOn || photos.length === 0) return null;
 
   const nextPhoto = () => setCurrentIdx((p) => (p + 1) % total);
   const prevPhoto = () => setCurrentIdx((p) => (p - 1 + total) % total);

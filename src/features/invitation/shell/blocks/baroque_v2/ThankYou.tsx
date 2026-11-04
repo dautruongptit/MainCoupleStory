@@ -4,6 +4,7 @@ import { getBaroqueV2Theme, str } from "./themeVars";
 export function ThankYou({ ctx }: { ctx: InvitationCtx }) {
   const theme = getBaroqueV2Theme(ctx);
   const d = ctx.d as any;
+  if (!d.thanksOn) return null;
   const note = str(d.thankYouNote, "Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi!");
 
   return (

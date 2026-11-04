@@ -4,6 +4,7 @@ import { getBaroqueV2Theme } from "./themeVars";
 export function Schedule({ ctx }: { ctx: InvitationCtx }) {
   const theme = getBaroqueV2Theme(ctx);
   const d = ctx.d as any;
+  if (!d.schedOn) return null;
 
   // Timeline items
   let items = [

@@ -3,6 +3,7 @@ import { getBohoFloralTheme } from "./themeVars";
 
 export function Schedule({ ctx }: { ctx: InvitationCtx }) {
   const theme = getBohoFloralTheme(ctx);
+  if (!ctx.d.schedOn) return null;
 
   const items = [
     { time: "17:30", text: "Đón khách", lineClass: "top-1/2 -bottom-8 md:-bottom-10" },

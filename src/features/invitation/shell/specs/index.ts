@@ -263,7 +263,7 @@ import brocadeFlowerRedCaps from "./brocade_flower_red/capabilities.json";
 import brocadeFlowerRedDemo from "./brocade_flower_red/demo.json";
 import type { Inv } from "@/types/invitation";
 import { buildTheme, type ThemeJson, type ThemeTokens } from "../theme";
-import { editorSections, type EditorSections } from "@/features/editor/config/editorSections";
+import { editorSections, hasCoupleHero, type EditorSections } from "@/features/editor/config/editorSections";
 
 export interface TemplateCapabilities {
   id: string;
@@ -402,3 +402,15 @@ export const getTemplateDemo = (templateId: string): Partial<Inv> | null => SPEC
  */
 export const getEditorSections = (templateId: string): EditorSections =>
   SPECS[templateId]?.capabilities?.editor?.sections ?? editorSections(templateId);
+
+/**
+ * Thẻ ảnh đầu thiệp dùng "Ảnh đôi" (2 ảnh riêng chú rể/cô dâu) hay "Ảnh đầu thiệp" (1 ảnh).
+ * Cùng quy tắc ưu tiên như `getEditorSections`: mẫu đã có `editor.sections` đo thật thì theo
+ * `editor.cards.coupleHero` của chính nó; mẫu chưa có thì theo ma trận đo 88 mẫu (`hasCoupleHero`) —
+ * KHÔNG dùng trực tiếp `capabilities.editor.cards.coupleHero` cho mọi mẫu vì phần lớn giá trị đó
+ * trong các capabilities.json sinh hàng loạt (đợt "upgrade 88 mẫu") là suy đoán, sai so với đo thật.
+ */
+export const getCoupleHero = (templateId: string): boolean =>
+  SPECS[templateId]?.capabilities?.editor?.sections
+    ? SPECS[templateId]!.capabilities.editor.cards.coupleHero
+    : hasCoupleHero(templateId);

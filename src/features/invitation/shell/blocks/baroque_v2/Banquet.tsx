@@ -4,6 +4,7 @@ import { getBaroqueV2Theme } from "./themeVars";
 export function Banquet({ ctx }: { ctx: InvitationCtx }) {
   const theme = getBaroqueV2Theme(ctx);
   const d = ctx.d as any;
+  if (!d.partyOn) return null;
 
   const bTime = d.banquetTime || d.time || "18:00";
   const bDateStr = d.date || "2026-12-19";

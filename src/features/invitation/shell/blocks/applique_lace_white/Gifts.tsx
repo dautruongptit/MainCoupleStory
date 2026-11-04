@@ -3,6 +3,7 @@ import type { GiftMethod } from "@/types/invitation";
 
 export function Gifts({ ctx }: { ctx: InvitationCtx }) {
   const { d, giftModalOpen, setGiftModalOpen, saveQr, copyToClipboard, copiedBank } = ctx;
+  if (!d.giftOn) return null;
   const gifts: GiftMethod[] = d.gifts && d.gifts.length > 0 ? d.gifts : [
     {
       id: "default-groom-gift",

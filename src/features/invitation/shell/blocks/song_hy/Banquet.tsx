@@ -5,6 +5,7 @@ import { getSongHyTheme } from "./themeVars";
 export function Banquet({ ctx }: { ctx: InvitationCtx }) {
   const vars = getSongHyTheme(ctx);
   const d = (ctx.d || {}) as any;
+  if (!d.partyOn) return null;
 
   const banquetTime = d.banquetTime || d.time || "18:00";
   const banquetDateStr = d.date || "2026-07-30";

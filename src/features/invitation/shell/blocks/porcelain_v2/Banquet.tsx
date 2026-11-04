@@ -44,6 +44,7 @@ export function Banquet({ ctx }: { ctx: InvitationCtx }) {
     const interval = setInterval(calc, 1000);
     return () => clearInterval(interval);
   }, [targetDateStr, anyD.countdownText]);
+  if (!d.partyOn) return null;
 
   // Calendar generation for November 2026 (or custom month/year)
   // Day 1 of Nov 2026 is Sunday (index 6 where Monday is index 0)

@@ -30,6 +30,7 @@ export function Guestbook({ ctx }: { ctx: InvitationCtx }) {
           { author: "Linh A4", time: "1:41:18 19/12/2025", content: "Chúc hai bạn trăm năm hạnh phúc, yêu thương nhau mãi mãi." },
         ]
   );
+  if (!d.guestOn) return null;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

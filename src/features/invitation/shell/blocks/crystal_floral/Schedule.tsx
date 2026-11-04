@@ -4,6 +4,7 @@ import { getCrystalFloralThemeVars } from "./themeVars";
 
 export function Schedule({ ctx }: { ctx: InvitationCtx }) {
   const d = ctx.d as any;
+  if (!d.schedOn) return null;
   const vars = getCrystalFloralThemeVars(d?.templateId || "crystal_floral_blue");
 
   const titleRaw = (typeof d?.timelineTitle === "string" ? d.timelineTitle : d?.timelineTitle?.vi) || (vars.templateId === "crystal_floral_blue" ? "LỊCH TRÌNH NGÀY CƯỚI" : "LỊCH TRÌNH TIỆC BÁO HỶ");
