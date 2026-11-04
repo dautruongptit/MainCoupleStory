@@ -41,12 +41,12 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
       style={bgStyle}
     >
       {/* Ambient Floating/Falling Particles */}
-      <AmbientParticles type={config.particleType} color={`rgba(${config.rgb}, 0.5)`} count={12} />
+      <AmbientParticles type={config.particleType} color={`rgba(${config.rgb}, 0.5)`} colors={config.particleColors} count={12} />
 
       {/* Burst Particles and Ripple Rings during open transition */}
       {showBurst && config.openFx === "center-hearts" && <OpenTransitionBurstCenter />}
       {showBurst && config.openFx !== "center-hearts" && (
-        <OpenTransitionBurst type={config.particleType} baseColor={config.accentColor} sealPosition={{ top: config.sealTop !== undefined ? config.sealTop : 50 }} />
+        <OpenTransitionBurst type={config.particleType} baseColor={config.accentColor} colors={config.particleColors} sealPosition={{ top: config.sealTop !== undefined ? config.sealTop : 50 }} />
       )}
 
       {/* Main Card Container */}

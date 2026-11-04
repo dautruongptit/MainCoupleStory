@@ -11,9 +11,9 @@ interface BurstParticle {
   delay: string;
 }
 
-export function generateBurstParticles(type: ParticleKind, baseColor: string, count = 32): BurstParticle[] {
+export function generateBurstParticles(type: ParticleKind, baseColor: string, count = 32, colors?: string[]): BurstParticle[] {
   const particles: BurstParticle[] = [];
-  const palette =
+  const palette = colors && colors.length > 0 ? colors :
     type === "stars"
       ? ["#f5e6c8", "#ffffff", "#d4a85c", "#e8d8b0", "#ffd700"]
       : type === "xi-gold"
@@ -56,11 +56,13 @@ export function generateBurstParticles(type: ParticleKind, baseColor: string, co
 interface OpenTransitionProps {
   type: ParticleKind;
   baseColor: string;
+  /** Bảng màu hạt đo thật theo từng mẫu; có thì thay cho bảng màu mặc định theo loại hạt. */
+  colors?: string[];
   sealPosition?: { top: number };
 }
 
-export function OpenTransitionBurst({ type, baseColor, sealPosition = { top: 50 } }: OpenTransitionProps) {
-  const particles = useMemo(() => generateBurstParticles(type, baseColor, 32), [type, baseColor]);
+export function OpenTransitionBurst({ type, baseColor, colors, sealPosition = { top: 50 } }: OpenTransitionProps) {
+  const particles = useMemo(() => generateBurstParticles(type, baseColor, 32, colors), [type, baseColor, colors]);
 
   return (
     <div

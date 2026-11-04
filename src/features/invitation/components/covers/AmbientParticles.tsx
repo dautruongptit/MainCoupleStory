@@ -4,11 +4,17 @@ export type ParticleKind = "xi" | "xi-gold" | "petal" | "blossom" | "confetti" |
 
 interface AmbientParticlesProps {
   type: ParticleKind;
+  /** Màu đơn (tương thích ngược) — dùng khi chưa có bảng màu đo thật. */
   color?: string;
+  /** Bảng màu hạt đo thật theo từng mẫu (`docs/survey/particle-colors-88.json`); mỗi hạt lấy màu theo thứ tự, lặp vòng. Có ưu tiên hơn `color`. */
+  colors?: string[];
   count?: number;
 }
 
-export function AmbientParticles({ type, color, count = 12 }: AmbientParticlesProps) {
+export function AmbientParticles({ type, color, colors, count = 12 }: AmbientParticlesProps) {
+  /** Màu hạt thứ i: ưu tiên bảng màu đo thật (lặp vòng), rồi tới `color` đơn, rồi tới màu mặc định riêng của hạt. */
+  const colorAt = (i: number, fallback: string) =>
+    colors && colors.length > 0 ? colors[i % colors.length] : color || fallback;
   if (type === "heart") {
     const hearts = [
       { left: "30.3%", color: "#a8323b", size: "14px", dur: "24.8s", delay: "-21.6s", sway: "28px" },
@@ -35,7 +41,7 @@ export function AmbientParticles({ type, color, count = 12 }: AmbientParticlesPr
               left: p.left,
               top: "-30px",
               bottom: "auto",
-              color: p.color,
+              color: colorAt(i, p.color),
               fontSize: p.size,
               ["--sway" as any]: p.sway,
               animation: `ambient-fall ${p.dur} ease-in-out ${p.delay} infinite`,
@@ -76,7 +82,7 @@ export function AmbientParticles({ type, color, count = 12 }: AmbientParticlesPr
               left: p.left,
               top: "-30px",
               bottom: "auto",
-              color: p.color,
+              color: colorAt(i, p.color),
               fontSize: p.size,
               ["--sway" as any]: p.sway,
               animation: `ambient-fall ${p.dur} ease-in-out ${p.delay} infinite`,
@@ -116,7 +122,7 @@ export function AmbientParticles({ type, color, count = 12 }: AmbientParticlesPr
               top: "auto",
               bottom: "-30px",
               fontSize: p.size,
-              color: p.color,
+              color: colorAt(i, p.color),
               fontFamily: "serif",
               ["--sway" as any]: p.sway,
               animation: `ambient-rise ${p.dur} ease-in-out ${p.delay} infinite`,
@@ -131,18 +137,18 @@ export function AmbientParticles({ type, color, count = 12 }: AmbientParticlesPr
 
   if (type === "xi") {
     const items = [
-      { left: "6.8%", size: "22px", color: color || "#C41230", dur: "20.5s", delay: "-4.2s", sway: "18px" },
-      { left: "14.5%", size: "15px", color: color || "#710001", dur: "22.8s", delay: "-14.1s", sway: "-15px" },
-      { left: "23.2%", size: "19px", color: color || "#8B0000", dur: "19.3s", delay: "-8.7s", sway: "22px" },
-      { left: "31.9%", size: "24px", color: color || "#A52A2A", dur: "23.6s", delay: "-16.4s", sway: "-19px" },
-      { left: "40.5%", size: "16px", color: color || "#C41230", dur: "21.1s", delay: "-2.8s", sway: "13px" },
-      { left: "49.0%", size: "20px", color: color || "#710001", dur: "24.4s", delay: "-18.9s", sway: "-24px" },
-      { left: "57.6%", size: "14px", color: color || "#8B0000", dur: "18.8s", delay: "-6.3s", sway: "16px" },
-      { left: "66.2%", size: "21px", color: color || "#C41230", dur: "22.2s", delay: "-12.5s", sway: "-18px" },
-      { left: "74.8%", size: "17px", color: color || "#710001", dur: "20.0s", delay: "-9.1s", sway: "20px" },
-      { left: "82.5%", size: "23px", color: color || "#8B0000", dur: "24.9s", delay: "-17.2s", sway: "-12px" },
-      { left: "89.8%", size: "15px", color: color || "#A52A2A", dur: "19.5s", delay: "-5.0s", sway: "23px" },
-      { left: "95.5%", size: "18px", color: color || "#C41230", dur: "21.7s", delay: "-1.4s", sway: "-16px" },
+      { left: "6.8%", size: "22px", fallback: "#C41230", dur: "20.5s", delay: "-4.2s", sway: "18px" },
+      { left: "14.5%", size: "15px", fallback: "#710001", dur: "22.8s", delay: "-14.1s", sway: "-15px" },
+      { left: "23.2%", size: "19px", fallback: "#8B0000", dur: "19.3s", delay: "-8.7s", sway: "22px" },
+      { left: "31.9%", size: "24px", fallback: "#A52A2A", dur: "23.6s", delay: "-16.4s", sway: "-19px" },
+      { left: "40.5%", size: "16px", fallback: "#C41230", dur: "21.1s", delay: "-2.8s", sway: "13px" },
+      { left: "49.0%", size: "20px", fallback: "#710001", dur: "24.4s", delay: "-18.9s", sway: "-24px" },
+      { left: "57.6%", size: "14px", fallback: "#8B0000", dur: "18.8s", delay: "-6.3s", sway: "16px" },
+      { left: "66.2%", size: "21px", fallback: "#C41230", dur: "22.2s", delay: "-12.5s", sway: "-18px" },
+      { left: "74.8%", size: "17px", fallback: "#710001", dur: "20.0s", delay: "-9.1s", sway: "20px" },
+      { left: "82.5%", size: "23px", fallback: "#8B0000", dur: "24.9s", delay: "-17.2s", sway: "-12px" },
+      { left: "89.8%", size: "15px", fallback: "#A52A2A", dur: "19.5s", delay: "-5.0s", sway: "23px" },
+      { left: "95.5%", size: "18px", fallback: "#C41230", dur: "21.7s", delay: "-1.4s", sway: "-16px" },
     ].slice(0, count);
 
     return (
@@ -156,7 +162,7 @@ export function AmbientParticles({ type, color, count = 12 }: AmbientParticlesPr
               top: "auto",
               bottom: "-30px",
               fontSize: p.size,
-              color: p.color,
+              color: colorAt(i, p.fallback),
               fontFamily: "serif",
               ["--sway" as any]: p.sway,
               animation: `ambient-rise ${p.dur} ease-in-out ${p.delay} infinite`,
@@ -171,18 +177,18 @@ export function AmbientParticles({ type, color, count = 12 }: AmbientParticlesPr
 
   if (type === "blossom") {
     const items = [
-      { left: "7.0%", size: "17px", color: color || "#c0524f", dur: "22.5s", delay: "-16.8s", sway: "14px" },
-      { left: "15.4%", size: "13px", color: color || "#b03235", dur: "23.0s", delay: "-12.7s", sway: "-18px" },
-      { left: "23.8%", size: "22px", color: color || "#d14f4a", dur: "20.2s", delay: "-5.6s", sway: "21px" },
-      { left: "32.2%", size: "16px", color: color || "#a82b28", dur: "24.1s", delay: "-19.3s", sway: "-15px" },
-      { left: "41.0%", size: "19px", color: color || "#c0524f", dur: "19.7s", delay: "-8.4s", sway: "17px" },
-      { left: "49.5%", size: "14px", color: color || "#b03235", dur: "21.9s", delay: "-14.2s", sway: "-22px" },
-      { left: "58.0%", size: "20px", color: color || "#d14f4a", dur: "23.5s", delay: "-3.1s", sway: "16px" },
-      { left: "66.5%", size: "15px", color: color || "#a82b28", dur: "18.9s", delay: "-11.0s", sway: "-19px" },
-      { left: "75.0%", size: "21px", color: color || "#c0524f", dur: "24.6s", delay: "-17.6s", sway: "23px" },
-      { left: "83.2%", size: "14px", color: color || "#b03235", dur: "20.8s", delay: "-6.9s", sway: "-12px" },
-      { left: "90.5%", size: "18px", color: color || "#d14f4a", dur: "22.3s", delay: "-15.1s", sway: "25px" },
-      { left: "96.0%", size: "16px", color: color || "#a82b28", dur: "21.0s", delay: "-2.0s", sway: "-17px" },
+      { left: "7.0%", size: "17px", fallback: "#c0524f", dur: "22.5s", delay: "-16.8s", sway: "14px" },
+      { left: "15.4%", size: "13px", fallback: "#b03235", dur: "23.0s", delay: "-12.7s", sway: "-18px" },
+      { left: "23.8%", size: "22px", fallback: "#d14f4a", dur: "20.2s", delay: "-5.6s", sway: "21px" },
+      { left: "32.2%", size: "16px", fallback: "#a82b28", dur: "24.1s", delay: "-19.3s", sway: "-15px" },
+      { left: "41.0%", size: "19px", fallback: "#c0524f", dur: "19.7s", delay: "-8.4s", sway: "17px" },
+      { left: "49.5%", size: "14px", fallback: "#b03235", dur: "21.9s", delay: "-14.2s", sway: "-22px" },
+      { left: "58.0%", size: "20px", fallback: "#d14f4a", dur: "23.5s", delay: "-3.1s", sway: "16px" },
+      { left: "66.5%", size: "15px", fallback: "#a82b28", dur: "18.9s", delay: "-11.0s", sway: "-19px" },
+      { left: "75.0%", size: "21px", fallback: "#c0524f", dur: "24.6s", delay: "-17.6s", sway: "23px" },
+      { left: "83.2%", size: "14px", fallback: "#b03235", dur: "20.8s", delay: "-6.9s", sway: "-12px" },
+      { left: "90.5%", size: "18px", fallback: "#d14f4a", dur: "22.3s", delay: "-15.1s", sway: "25px" },
+      { left: "96.0%", size: "16px", fallback: "#a82b28", dur: "21.0s", delay: "-2.0s", sway: "-17px" },
     ].slice(0, count);
 
     return (
@@ -195,7 +201,7 @@ export function AmbientParticles({ type, color, count = 12 }: AmbientParticlesPr
               left: p.left,
               top: "-30px",
               bottom: "auto",
-              color: p.color,
+              color: colorAt(i, p.fallback),
               fontSize: p.size,
               ["--sway" as any]: p.sway,
               animation: `ambient-fall ${p.dur} ease-in-out ${p.delay} infinite`,
@@ -244,7 +250,7 @@ export function AmbientParticles({ type, color, count = 12 }: AmbientParticlesPr
               left: p.left,
               top: "-30px",
               bottom: "auto",
-              color: p.color,
+              color: colorAt(i, p.color),
               fontSize: p.size,
               ["--sway" as any]: p.sway,
               animation: `ambient-fall ${p.dur} ease-in-out ${p.delay} infinite`,
@@ -291,7 +297,7 @@ export function AmbientParticles({ type, color, count = 12 }: AmbientParticlesPr
             left: p.left,
             top: "-30px",
             bottom: "auto",
-            color: color || "#d1db9c",
+            color: colorAt(i, "#d1db9c"),
             fontSize: p.size,
             ["--sway" as any]: p.sway,
             animation: `ambient-fall ${p.dur} ease-in-out ${p.delay} infinite`,

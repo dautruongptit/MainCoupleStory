@@ -21,6 +21,8 @@ export interface CoverConfig {
   cardBorder: string;
   imgs: CoverImage[];
   particleType: "xi" | "xi-gold" | "petal" | "blossom" | "confetti" | "stars" | "heart";
+  /** Bảng màu hạt rơi đo thật (mỗi hạt lấy màu theo thứ tự, lặp vòng); chưa có thì dùng `rgb` làm 1 màu chung. */
+  particleColors?: string[];
   sealType: "xi" | "heart" | "none";
   sealBg: string;
   sealColor: string;
