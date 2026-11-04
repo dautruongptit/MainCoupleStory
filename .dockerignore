@@ -1,0 +1,12 @@
+node_modules
+dist
+dist-ssr
+.git
+.chrome_profile
+docs
+*.log
+.env
+.env.local
+*.local
+.vscode
+.idea

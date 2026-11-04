@@ -1,0 +1,21 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mainCouple
+    restart: unless-stopped
+    ports:
+      - "8111:8111"
+    networks:
+      - mainCouple-net
+      - shared-db-network
+
+networks:
+  mainCouple-net:
+    driver: bridge
+  # Mạng dùng chung trên server (vd để gọi backend/DB của dự án khác) —
+  # phải đã được tạo sẵn trên server trước (`docker network create shared-db-network`),
+  # compose này chỉ tham gia (external), không tự tạo.
+  shared-db-network:
+    external: true
