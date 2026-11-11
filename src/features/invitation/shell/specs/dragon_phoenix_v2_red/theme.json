@@ -1,13 +1,9 @@
 {
   "assets": "/images/themes/longphung-v2-red",
   "colors": {
-    "ink": "rgb(0, 0, 0)",
-    "inkRgb": "0, 0, 0",
-    "sub": "rgba(0, 0, 0, 0.6)",
-    "muted": "rgb(0, 0, 0)",
-    "paper": "#ffffff",
-    "line": "rgba(0, 0, 0, 0.2)",
-    "accent": "#ffffff",
-    "edge": "rgba(0, 0, 0, 0.1)"
+    "ink": "rgb(255, 227, 177)",
+    "inkRgb": "255, 227, 177",
+    "paper": "rgb(104, 14, 14)",
+    "edge": "#FFE3B122"
   }
 }

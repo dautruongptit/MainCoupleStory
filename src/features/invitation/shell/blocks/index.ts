@@ -84,6 +84,9 @@ import * as SARAYA_GOLD_BLOCKS from "./saraya_gold";
 import * as QASR_GOLD_BLOCKS from "./qasr_gold";
 import * as QASR_GREEN_BLOCKS from "./qasr_green";
 import * as MANDAP_DARKRED_BLOCKS from "./mandap_darkred";
+import * as CALLA_LILY_WHITE_BLOCKS from "./calla_lily_white";
+import * as MANDAP_YELLOW_BLOCKS from "./mandap_yellow";
+import * as MAHAL_PINK_BLOCKS from "./mahal_pink";
 import * as BROCADE_FLOWER_RED_BLOCKS from "./brocade_flower_red";
 
 export type BlockComponent = ComponentType<{ ctx: InvitationCtx }>;
@@ -240,6 +243,12 @@ export const blocksForFamily = (family: string): Record<string, BlockComponent> 
       ? QASR_GREEN_BLOCKS
       : family === "mandap_darkred"
       ? MANDAP_DARKRED_BLOCKS
+      : family === "calla_lily_white"
+      ? CALLA_LILY_WHITE_BLOCKS
+      : family === "mandap_yellow"
+      ? MANDAP_YELLOW_BLOCKS
+      : family === "mahal_pink"
+      ? MAHAL_PINK_BLOCKS
       : family === "brocade_flower_red"
       ? BROCADE_FLOWER_RED_BLOCKS
       : MINIMALISM_BLOCKS),
