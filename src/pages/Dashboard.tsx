@@ -1,6 +1,8 @@
 import { useState, useEffect, useCallback } from "react";
 import { Link, navigate } from "@/app/router";
 import { loadCards, saveCards, loadInv, saveInv, removeInv, removeGuests, loadGuests } from "@/services/storage/store";
+import { uuid } from "@/utils/uuid";
+import { invitationApi } from "@/services/api/invitationApi";
 import type { Card } from "@/types/card";
 import { LoginModal } from "@/features/auth/components/LoginModal";
 import { useAuth } from "@/features/auth/hooks/useAuth";
@@ -73,21 +75,57 @@ export default function Dashboard() {
   const [sharingCard, setSharingCard] = useState<Card | null>(null);
   const [showLogin, setShowLogin] = useState(false);
 
+  useEffect(() => {
+    if (loggedIn) {
+      invitationApi.list("all").then((serverCards) => {
+        if (serverCards) {
+          setCards(serverCards);
+          saveCards(serverCards);
+        }
+      }).catch(console.warn);
+    }
+  }, [loggedIn]);
+
   const persist = useCallback((next: Card[]) => { setCards(next); saveCards(next); }, []);
 
   const shown = cards.filter((c) => tab === "all" || c.status === tab);
   const count = (s: Card["status"]) => cards.filter((c) => c.status === s).length;
-  const rename = (id: string, name: string) => persist(cards.map((c) => (c.id === id ? { ...c, name } : c)));
-  const publish = (id: string) => persist(cards.map((c) => (c.id === id ? { ...c, status: "published" } : c)));
+  const rename = (id: string, name: string) => {
+    persist(cards.map((c) => (c.id === id ? { ...c, name } : c)));
+    const target = cards.find((c) => c.id === id);
+    const inv = loadInv(id);
+    if (target && inv) {
+      invitationApi.updateContent(id, name, target.status, inv).catch(console.warn);
+    }
+  };
+  const publish = (id: string) => {
+    persist(cards.map((c) => (c.id === id ? { ...c, status: "published" } : c)));
+    const target = cards.find((c) => c.id === id);
+    const inv = loadInv(id);
+    if (target && inv) {
+      invitationApi.updateContent(id, target.name, "published", inv).catch(console.warn);
+    }
+  };
   const duplicate = (c: Card) => {
     const d = new Date();
     const created = `${String(d.getDate()).padStart(2, "0")}/${String(d.getMonth() + 1).padStart(2, "0")}/${d.getFullYear()}`;
-    const id = crypto.randomUUID();
+    const id = uuid();
     const inv = loadInv(c.id);
     if (inv) saveInv(id, inv); // nhân bản nội dung thiệp, KHÔNG nhân bản danh sách khách mời (khách có link riêng theo từng thiệp)
     persist([...cards, { ...c, id, name: `Thiệp ${cards.length + 1}`, status: "draft", created }]);
+    if (c.tplId) {
+      invitationApi.create(c.tplId, `Thiệp ${cards.length + 1}`).then((newServerCard) => {
+        if (inv) invitationApi.updateContent(newServerCard.id, newServerCard.name, "draft", inv).catch(console.warn);
+      }).catch(console.warn);
+    }
   };
-  const remove = (id: string) => { persist(cards.filter((c) => c.id !== id)); removeInv(id); removeGuests(id); setDeleting(null); };
+  const remove = (id: string) => {
+    persist(cards.filter((c) => c.id !== id));
+    removeInv(id);
+    removeGuests(id);
+    setDeleting(null);
+    invitationApi.delete(id).catch(console.warn);
+  };
 
   const tabs: [typeof tab, string][] = [
     ["all", `Tất cả (${cards.length})`],

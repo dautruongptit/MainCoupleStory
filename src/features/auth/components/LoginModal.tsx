@@ -2,31 +2,24 @@ import React, { useEffect, useState } from "react";
 import { useAuth } from "@/features/auth/hooks/useAuth";
 import { navigate } from "@/app/router";
 
-const OTP_LEN = 6;
-const RESEND_SECONDS = 30;
-
-/**
- * Đăng nhập mô phỏng: chưa có backend nên không gửi email thật và không kiểm tra mã.
- * Bước nhập mã (OTP) là suy luận từ dòng "Mã xác thực sẽ được gửi qua email" trong ảnh chuẩn, chưa có ảnh màn hình đó.
- * Chỉ khi hoàn tất (Google/Apple/OTP) mới đặt cờ đăng nhập; đóng modal bằng ✕ hoặc Esc thì KHÔNG đăng nhập.
- */
 export function LoginModal({ onClose }: { onClose: () => void }) {
-  const { login } = useAuth();
+  const { login, register, loginWithGoogle } = useAuth();
+  const [tab, setTab] = useState<"gmail" | "password">("gmail");
+  const [isRegister, setIsRegister] = useState(false);
+
+  // Gmail form state
+  const [gmail, setGmail] = useState("");
+  const [gmailName, setGmailName] = useState("");
+
+  // Email + password form state
   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [fullName, setFullName] = useState("");
+
   const [loading, setLoading] = useState(false);
-  const [step, setStep] = useState<"email" | "code">("email");
-  const [code, setCode] = useState("");
-  const [cooldown, setCooldown] = useState(0);
   const [error, setError] = useState("");
 
-  useEffect(() => {
-    if (cooldown <= 0) return;
-    const t = setTimeout(() => setCooldown(cooldown - 1), 1000);
-    return () => clearTimeout(t);
-  }, [cooldown]);
-
   const finish = (to?: string) => {
-    login();
     onClose();
     if (to) navigate(to);
   };
@@ -42,30 +35,81 @@ export function LoginModal({ onClose }: { onClose: () => void }) {
     };
   }, [onClose]);
 
-  const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
-
-  const handleSubmit = (e: React.FormEvent) => {
+  // Xử lý đăng nhập bằng Gmail / Google
+  const handleGmailSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!validEmail) {
+    const cleanMail = gmail.trim().toLowerCase();
+    if (!cleanMail || !cleanMail.includes("@")) {
+      setError("Vui lòng nhập địa chỉ Gmail hợp lệ (VD: yourname@gmail.com)");
+      return;
+    }
+
+    const fullGmail = cleanMail.endsWith("@gmail.com") ? cleanMail : `${cleanMail}@gmail.com`;
+
+    setError("");
+    setLoading(true);
+
+    try {
+      await loginWithGoogle({
+        email: fullGmail,
+        fullName: gmailName.trim() || undefined,
+      });
+      finish("/dashboard");
+    } catch (err: any) {
+      setError(err?.message || "Đăng nhập bằng Gmail thất bại, vui lòng thử lại");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Xử lý đăng nhập bằng Email + Mật khẩu
+  const handlePasswordSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const cleanEmail = email.trim().toLowerCase();
+    if (!cleanEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(cleanEmail)) {
       setError("Email không hợp lệ");
       return;
     }
-    setError("");
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      setStep("code");
-      setCooldown(RESEND_SECONDS);
-    }, 600);
-  };
-
-  const handleVerify = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (code.length !== OTP_LEN) {
-      setError(`Nhập đủ ${OTP_LEN} chữ số`);
+    if (!password || password.length < 6) {
+      setError("Mật khẩu phải từ 6 ký tự trở lên");
       return;
     }
-    finish("/dashboard");
+
+    setError("");
+    setLoading(true);
+
+    try {
+      if (isRegister) {
+        await register(cleanEmail, password, fullName.trim() || undefined);
+      } else {
+        await login(cleanEmail, password);
+      }
+      finish("/dashboard");
+    } catch (err: any) {
+      setError(err?.message || "Đăng nhập thất bại, vui lòng thử lại");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Đăng nhập nhanh tài khoản mẫu
+  const handleQuickDemo = async () => {
+    setLoading(true);
+    setError("");
+    const demoEmail = "demo@couple.vn";
+    const demoPass = "Password123!";
+    try {
+      try {
+        await login(demoEmail, demoPass);
+      } catch {
+        await register(demoEmail, demoPass, "Chung Đôi Demo");
+      }
+      finish("/dashboard");
+    } catch (err: any) {
+      setError(err?.message || "Không thể đăng nhập tài khoản mẫu");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -85,13 +129,33 @@ export function LoginModal({ onClose }: { onClose: () => void }) {
           </svg>
         </div>
 
-        <h2 className="login-modal-title">Chào mừng bạn</h2>
+        <h2 className="login-modal-title">Chào mừng bạn đến với Chung Đôi</h2>
+        <p style={{ textAlign: "center", color: "#64748b", fontSize: 14, marginTop: -12, marginBottom: 18 }}>
+          Đăng nhập để tạo và quản lý thiệp cưới trực tuyến
+        </p>
 
-        <div className="login-social-group">
+        {/* Tab selection: Gmail vs Mật khẩu */}
+        <div style={{ display: "flex", background: "#f1f5f9", borderRadius: 10, padding: 4, marginBottom: 18 }}>
           <button
             type="button"
-            className="login-social-btn google"
-            onClick={() => finish("/dashboard")}
+            onClick={() => { setTab("gmail"); setError(""); }}
+            style={{
+              flex: 1,
+              padding: "8px 12px",
+              borderRadius: 8,
+              border: "none",
+              cursor: "pointer",
+              fontWeight: 600,
+              fontSize: 14,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: 8,
+              background: tab === "gmail" ? "#fff" : "transparent",
+              color: tab === "gmail" ? "#0f172a" : "#64748b",
+              boxShadow: tab === "gmail" ? "0 1px 3px rgba(0,0,0,0.1)" : "none",
+              transition: "all 0.2s"
+            }}
           >
             <svg width="18" height="18" viewBox="0 0 24 24">
               <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
@@ -99,29 +163,102 @@ export function LoginModal({ onClose }: { onClose: () => void }) {
               <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
               <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
             </svg>
-            <span>Đăng nhập với Google</span>
+            <span>Đăng nhập Gmail</span>
           </button>
 
           <button
             type="button"
-            className="login-social-btn apple"
-            onClick={() => finish("/dashboard")}
+            onClick={() => { setTab("password"); setError(""); }}
+            style={{
+              flex: 1,
+              padding: "8px 12px",
+              borderRadius: 8,
+              border: "none",
+              cursor: "pointer",
+              fontWeight: 600,
+              fontSize: 14,
+              background: tab === "password" ? "#fff" : "transparent",
+              color: tab === "password" ? "#0f172a" : "#64748b",
+              boxShadow: tab === "password" ? "0 1px 3px rgba(0,0,0,0.1)" : "none",
+              transition: "all 0.2s"
+            }}
           >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.38c.62-.75 1.04-1.8 0.92-2.85-.9.04-2 .6-2.65 1.35-.58.67-1.09 1.74-.95 2.77.99.08 2.04-.51 2.68-1.27z" />
-            </svg>
-            <span>Đăng nhập với Apple</span>
+            Email &amp; Mật khẩu
           </button>
         </div>
 
-        <div className="login-divider-row">
-          <span className="login-divider-line" />
-          <span className="login-divider-text">hoặc</span>
-          <span className="login-divider-line" />
-        </div>
+        {/* Tab 1: Đăng nhập bằng Gmail */}
+        {tab === "gmail" && (
+          <form className="login-email-form" onSubmit={handleGmailSubmit}>
+            <label className="login-field-label">Địa chỉ Gmail</label>
+            <div style={{ position: "relative" }}>
+              <input
+                type="text"
+                className="input login-email-input"
+                placeholder="VD: nguyenvana@gmail.com"
+                value={gmail}
+                onChange={(e) => {
+                  setGmail(e.target.value);
+                  setError("");
+                }}
+                autoFocus
+                required
+              />
+            </div>
 
-        {step === "email" ? (
-          <form className="login-email-form" onSubmit={handleSubmit}>
+            <label className="login-field-label" style={{ marginTop: 12 }}>Tên hiển thị (không bắt buộc)</label>
+            <input
+              type="text"
+              className="input login-email-input"
+              placeholder="VD: Nguyễn Văn A"
+              value={gmailName}
+              onChange={(e) => setGmailName(e.target.value)}
+            />
+
+            {error && (
+              <p className="login-email-help login-error" role="alert" style={{ color: "#e53e3e", marginTop: 8 }}>
+                {error}
+              </p>
+            )}
+
+            <button
+              type="submit"
+              className="login-submit-btn"
+              disabled={loading || !gmail.trim()}
+              style={{
+                marginTop: 18,
+                background: "#fc0081",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: 8,
+              }}
+            >
+              {loading ? "Đang xác thực..." : "Tiếp tục với Gmail"}
+            </button>
+
+            <p style={{ textAlign: "center", fontSize: 12, color: "#94a3b8", marginTop: 12 }}>
+              Hệ thống sẽ tự động tạo tài khoản mới nếu Gmail chưa từng đăng ký.
+            </p>
+          </form>
+        )}
+
+        {/* Tab 2: Đăng nhập bằng Email & Mật khẩu */}
+        {tab === "password" && (
+          <form className="login-email-form" onSubmit={handlePasswordSubmit}>
+            {isRegister && (
+              <div style={{ marginBottom: 12 }}>
+                <label className="login-field-label">Họ và tên</label>
+                <input
+                  type="text"
+                  className="input login-email-input"
+                  placeholder="Nguyễn Văn A"
+                  value={fullName}
+                  onChange={(e) => setFullName(e.target.value)}
+                />
+              </div>
+            )}
+
             <label className="login-field-label">Email</label>
             <input
               type="email"
@@ -133,89 +270,77 @@ export function LoginModal({ onClose }: { onClose: () => void }) {
                 setError("");
               }}
               autoFocus
+              required
               aria-invalid={!!error}
             />
-            <button type="submit" className="login-submit-btn" disabled={loading || !email.trim()}>
-              {loading ? "Đang gửi..." : "Tiếp tục"}
-            </button>
-            {error ? (
-              <p className="login-email-help login-error" role="alert">{error}</p>
-            ) : (
-              <p className="login-email-help">Mã xác thực sẽ được gửi qua email</p>
-            )}
-          </form>
-        ) : (
-          <form className="login-email-form" onSubmit={handleVerify}>
-            <label className="login-field-label">Mã xác thực</label>
+
+            <label className="login-field-label" style={{ marginTop: 12 }}>Mật khẩu</label>
             <input
-              inputMode="numeric"
-              autoComplete="one-time-code"
-              maxLength={OTP_LEN}
+              type="password"
               className="input login-email-input"
-              placeholder="000000"
-              value={code}
-              autoFocus
-              aria-invalid={!!error}
+              placeholder="Tối thiểu 6 ký tự"
+              value={password}
               onChange={(e) => {
-                setCode(e.target.value.replace(/\D/g, "").slice(0, OTP_LEN));
+                setPassword(e.target.value);
                 setError("");
               }}
+              required
+              aria-invalid={!!error}
             />
-            <button type="submit" className="login-submit-btn" disabled={code.length !== OTP_LEN}>
-              Xác nhận
-            </button>
-            {error ? (
-              <p className="login-email-help login-error" role="alert">{error}</p>
-            ) : (
-              <p className="login-email-help">
-                Mã đã được gửi tới {email.trim()}. Bản demo: nhập bất kỳ {OTP_LEN} chữ số.
+
+            {error && (
+              <p className="login-email-help login-error" role="alert" style={{ color: "#e53e3e", marginTop: 8 }}>
+                {error}
               </p>
             )}
-            <p className="login-email-help">
+
+            <button type="submit" className="login-submit-btn" disabled={loading || !email.trim() || !password} style={{ marginTop: 16 }}>
+              {loading ? "Đang xử lý..." : isRegister ? "Tạo tài khoản" : "Đăng nhập"}
+            </button>
+
+            <div style={{ textAlign: "center", marginTop: 16, fontSize: 14 }}>
+              <span style={{ color: "#718096" }}>
+                {isRegister ? "Đã có tài khoản? " : "Chưa có tài khoản? "}
+              </span>
               <button
                 type="button"
-                className="login-link-btn"
-                disabled={cooldown > 0}
-                onClick={() => setCooldown(RESEND_SECONDS)}
-              >
-                {cooldown > 0 ? `Gửi lại mã sau ${cooldown}s` : "Gửi lại mã"}
-              </button>
-              {" · "}
-              <button
-                type="button"
-                className="login-link-btn"
                 onClick={() => {
-                  setStep("email");
-                  setCode("");
+                  setIsRegister(!isRegister);
                   setError("");
                 }}
+                style={{ color: "#fc0081", fontWeight: 600, background: "none", border: "none", cursor: "pointer" }}
               >
-                Đổi email
+                {isRegister ? "Đăng nhập ngay" : "Đăng ký miễn phí"}
               </button>
-            </p>
+            </div>
           </form>
         )}
 
-        <ul className="login-perks">
-          <li>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#22c55e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 13l4 4L19 7" />
-            </svg>
-            <span>Không cần mật khẩu</span>
-          </li>
-          <li>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#22c55e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 13l4 4L19 7" />
-            </svg>
-            <span>Đăng nhập an toàn với mã OTP</span>
-          </li>
-          <li>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#22c55e" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 13l4 4L19 7" />
-            </svg>
-            <span>Hoàn toàn miễn phí</span>
-          </li>
-        </ul>
+        <div className="login-divider-row" style={{ marginTop: 20 }}>
+          <span className="login-divider-line" />
+          <span className="login-divider-text">hoặc</span>
+          <span className="login-divider-line" />
+        </div>
+
+        <button
+          type="button"
+          onClick={handleQuickDemo}
+          disabled={loading}
+          style={{
+            width: "100%",
+            padding: "10px 16px",
+            border: "1px dashed #cbd5e1",
+            borderRadius: 10,
+            background: "#f8fafc",
+            color: "#475569",
+            fontSize: 13,
+            fontWeight: 500,
+            cursor: "pointer",
+            marginTop: 4,
+          }}
+        >
+          ⚡ Vào nhanh bằng tài khoản thử nghiệm (Demo)
+        </button>
       </div>
     </div>
   );

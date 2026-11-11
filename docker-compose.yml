@@ -12,8 +12,14 @@ services:
       - shared-db-network
 
 networks:
+  # external: phải cùng mạng vật lý với api/docker-compose.yml (service mainCouple-api)
+  # để nginx trong container này proxy /api/ sang backend bằng tên service. Nếu mỗi
+  # compose tự "driver: bridge" riêng, Compose thêm tiền tố thư mục vào tên mạng
+  # (web_mainCouple-net ≠ api_mainCouple-net) — trùng tên nhưng khác mạng thật, 2
+  # container sẽ không gọi được nhau. Tạo 1 lần trên server:
+  #   docker network create mainCouple-net
   mainCouple-net:
-    driver: bridge
+    external: true
   # Mạng dùng chung trên server (vd để gọi backend/DB của dự án khác) —
   # phải đã được tạo sẵn trên server trước (`docker network create shared-db-network`),
   # compose này chỉ tham gia (external), không tự tạo.

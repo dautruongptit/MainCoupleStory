@@ -1,3 +1,6 @@
+import { mediaApi } from "@/services/api/mediaApi";
+import { uuid } from "@/utils/uuid";
+
 const DB_NAME = "chungdoi-images";
 const STORE_NAME = "blobs";
 
@@ -11,7 +14,7 @@ function openDB(): Promise<IDBDatabase> {
 }
 
 async function putBlob(blob: Blob): Promise<string> {
-  const id = crypto.randomUUID();
+  const id = uuid();
   const db = await openDB();
   return new Promise((resolve, reject) => {
     const tx = db.transaction(STORE_NAME, "readwrite");
@@ -41,45 +44,69 @@ function dataUrlToBlob(dataUrl: string): Blob {
   return new Blob([arr], { type: mime });
 }
 
-const blobToIdb = new Map<string, string>();
+const uploadedUrlCache = new Map<string, string>();
 const idbToBlobUrl = new Map<string, string>();
 
 /**
- * Chuyển một URL tạm (blob: hoặc data:) thành khoá bền `idb:<uuid>` trong IndexedDB.
- * Trả nguyên nếu URL đã là idb:, http(s):, đường dẫn tương đối, hoặc rỗng.
+ * Chuyển một URL tạm (blob: hoặc data:) thành file lưu trong DB của máy chủ backend qua /api/v1/media/upload.
+ * Trả về đường dẫn /api/v1/media/{uuid}.webp được đọc trực tiếp từ DB.
+ * Nếu chưa đăng nhập hoặc lỗi mạng, fallback an toàn vào IndexedDB.
  */
 export async function persistUrl(url: string): Promise<string> {
   if (!url) return url;
-  if (url.startsWith("idb:") || url.startsWith("http") || url.startsWith("/")) return url;
-  if (blobToIdb.has(url)) return blobToIdb.get(url)!;
+  if (url.startsWith("/api/v1/media/") || url.startsWith("http") || url.startsWith("idb:")) return url;
+  if (uploadedUrlCache.has(url)) return uploadedUrlCache.get(url)!;
 
   let blob: Blob;
   if (url.startsWith("blob:")) {
-    const resp = await fetch(url);
-    blob = await resp.blob();
+    try {
+      const resp = await fetch(url);
+      blob = await resp.blob();
+    } catch {
+      return url;
+    }
   } else if (url.startsWith("data:")) {
     blob = dataUrlToBlob(url);
   } else {
     return url;
   }
 
+  // Thử tải lên backend để lưu vào PostgreSQL DB (dạng BYTEA)
+  try {
+    const ext = blob.type.includes("png") ? ".png" : blob.type.includes("jpeg") ? ".jpg" : ".webp";
+    const filename = `img_${Date.now()}${ext}`;
+    const result = await mediaApi.upload(blob, filename);
+    if (result && result.url) {
+      uploadedUrlCache.set(url, result.url);
+      return result.url;
+    }
+  } catch (err) {
+    console.warn("Upload lên DB thất bại, fallback vào IndexedDB tạm thời:", err);
+  }
+
+  // Fallback sang IndexedDB nếu backend chưa sẵn sàng hoặc chưa đăng nhập
   const key = await putBlob(blob);
-  blobToIdb.set(url, key);
+  uploadedUrlCache.set(url, key);
   idbToBlobUrl.set(key, url);
   return key;
 }
 
 /**
- * Chuyển khoá `idb:<uuid>` thành object URL hiển thị được; cache trong bộ nhớ.
+ * Chuyển khoá ảnh thành URL hiển thị được.
+ * Nếu đã là URL từ Backend DB (/api/v1/media/...) hoặc HTTP URL thì trả về nguyên bản.
+ * Nếu là khoá idb: thì chuyển thành object URL từ IndexedDB.
  */
 export async function resolveUrl(url: string): Promise<string> {
-  if (!url || !url.startsWith("idb:")) return url;
+  if (!url) return url;
+  if (url.startsWith("/api/v1/media/") || url.startsWith("http") || url.startsWith("/")) return url;
+  if (!url.startsWith("idb:")) return url;
+
   if (idbToBlobUrl.has(url)) return idbToBlobUrl.get(url)!;
   const blob = await getBlob(url);
   if (!blob) return "";
   const objUrl = URL.createObjectURL(blob);
   idbToBlobUrl.set(url, objUrl);
-  blobToIdb.set(objUrl, url);
+  uploadedUrlCache.set(objUrl, url);
   return objUrl;
 }
 
@@ -87,7 +114,7 @@ import type { Inv } from "@/types/invitation";
 
 async function mapUrls(inv: Inv, fn: (u: string) => Promise<string>): Promise<Inv> {
   const out = { ...inv };
-  out.heroPhoto = await fn(inv.heroPhoto);
+  if (inv.heroPhoto) out.heroPhoto = await fn(inv.heroPhoto);
   out.photos = await Promise.all((inv.photos || []).map(fn));
   if (inv.customSharePhoto) out.customSharePhoto = await fn(inv.customSharePhoto);
   if (inv.gifts?.length) {
@@ -103,12 +130,49 @@ async function mapUrls(inv: Inv, fn: (u: string) => Promise<string>): Promise<In
   return out;
 }
 
-/** Trước khi ghi localStorage: blob:/data: → idb: */
+/** Trước khi lưu: blob:/data: → upload lên DB qua API hoặc fallback idb: */
 export function persistInvImages(inv: Inv): Promise<Inv> {
   return mapUrls(inv, persistUrl);
 }
 
-/** Sau khi đọc localStorage: idb: → object URL */
+/** Sau khi tải: idb: → object URL */
 export function resolveInvImages(inv: Inv): Promise<Inv> {
   return mapUrls(inv, resolveUrl);
+}
+
+/**
+ * Thử tải lại 1 ảnh đang ở dạng idb: (lưu tạm cục bộ, từ lần upload trước khi đăng nhập/do lỗi
+ * mạng) lên server. idb: chỉ tồn tại trong IndexedDB của đúng trình duyệt đã tải lên — khách xem
+ * thiệp đã xuất bản trên thiết bị khác sẽ thấy ảnh hỏng nếu nó chưa từng lên được server.
+ *
+ * `inv.photos` thường đã được `resolveInvImages` chuyển idb:xxx → object URL (blob:) để hiển thị,
+ * nên không còn chuỗi "idb:" literal nữa — phải tra ngược qua uploadedUrlCache (resolveUrl đã ghi
+ * objectURL -> "idb:xxx" vào đó) để biết object URL nào thật ra là lưu tạm, rồi đọc blob gốc từ
+ * IndexedDB (không fetch() lại chính blob: URL, vì nó không có trên mạng).
+ */
+async function retryPersistIdbUrl(url: string): Promise<string> {
+  const cached = uploadedUrlCache.get(url);
+  const idbKey = url.startsWith("idb:") ? url : cached && cached.startsWith("idb:") ? cached : null;
+  if (!idbKey) return url;
+
+  const blob = await getBlob(idbKey);
+  if (!blob) return url;
+  try {
+    const ext = blob.type.includes("png") ? ".png" : blob.type.includes("jpeg") ? ".jpg" : ".webp";
+    const filename = `img_${Date.now()}${ext}`;
+    const result = await mediaApi.upload(blob, filename);
+    if (result && result.url) {
+      uploadedUrlCache.set(url, result.url);
+      uploadedUrlCache.set(idbKey, result.url);
+      return result.url;
+    }
+  } catch (err) {
+    console.warn("Đồng bộ ảnh tạm (idb:) lên server thất bại, giữ nguyên bản lưu cục bộ:", err);
+  }
+  return url;
+}
+
+/** Gọi khi vừa đăng nhập hoặc trước khi xuất bản: thử đưa mọi ảnh idb: còn sót lên server. */
+export function retryPersistIdbImages(inv: Inv): Promise<Inv> {
+  return mapUrls(inv, retryPersistIdbUrl);
 }

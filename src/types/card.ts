@@ -6,4 +6,5 @@ export type Card = {
   status: "draft" | "published";
   created: string;
   tplId?: string;
+  slug?: string;
 };

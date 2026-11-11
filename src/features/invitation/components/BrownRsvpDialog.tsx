@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import type { Inv, RsvpResponse } from "@/types/invitation";
+import { publicApi } from "@/services/api/publicApi";
 
 /**
- * Hộp thoại "Xác nhận tham dự" của mẫu Nâu — dựng theo HTML đo từ trang gốc (chungdoi.com, ?open=1):
+ * Hộp thoại "Xác nhận tham dự" của mẫu Nâu:
  * lớp phủ fixed + hộp trắng bo 2xl, form: tên → "Bạn sẽ đến chứ?" (2 lựa chọn) → [số khách + lời nhắn khi chọn "đến"] → nút gửi.
- * Màu nút lấy từ chủ đề của mẫu (btnBg / btnText).
+ * Lưu vào local state và gửi trực tiếp tới API PostgreSQL DB của Backend.
  */
 export function BrownRsvpDialog({
   d,
@@ -20,19 +21,50 @@ export function BrownRsvpDialog({
   btnText?: string;
 }) {
   const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
   const [attending, setAttending] = useState<"" | "yes" | "no">("");
   const [count, setCount] = useState(1);
   const [note, setNote] = useState("");
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
   const maxCount = d.partyMode === "limit" ? Math.max(1, d.partyLimit || 1) : 20;
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim() || !attending) return;
+    setLoading(true);
+
     const now = new Date();
     const at = `${String(now.getHours()).padStart(2, "0")}:${String(now.getMinutes()).padStart(2, "0")}:${String(now.getSeconds()).padStart(2, "0")} ${now.getDate()}/${now.getMonth() + 1}/${now.getFullYear()}`;
-    const rec: RsvpResponse = { name: name.trim(), phone: "", attending, count: String(attending === "yes" ? count : 0), answers: {}, note: note.trim(), at };
+    const rec: RsvpResponse = {
+      name: name.trim(),
+      phone: phone.trim(),
+      attending,
+      count: String(attending === "yes" ? count : 0),
+      answers: {},
+      note: note.trim(),
+      at,
+    };
     set({ rsvps: [rec, ...(d.rsvps || [])] });
+
+    // Gửi lên Backend DB nếu có slug thiệp
+    const pathParts = typeof window !== "undefined" ? window.location.pathname.split("/").filter(Boolean) : [];
+    const slug = (d as any).customSlug || pathParts[pathParts.length - 1] || d.templateId;
+    if (slug) {
+      try {
+        await publicApi.submitRsvp(slug, {
+          name: name.trim(),
+          phone: phone.trim() || undefined,
+          attending,
+          guestCount: attending === "yes" ? count : 0,
+          note: note.trim() || undefined,
+        });
+      } catch (err) {
+        console.warn("Gửi RSVP lên server DB không thành công (đã lưu local):", err);
+      }
+    }
+
+    setLoading(false);
     setSent(true);
   };
 
@@ -66,6 +98,10 @@ export function BrownRsvpDialog({
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1.5"><span dir="auto">Tên của bạn</span></label>
                   <input required placeholder="Nhập tên của bạn" className="w-full px-4 py-3 border border-gray-200 rounded-xl text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-shadow placeholder:text-gray-400 bg-white text-gray-900" type="text" value={name} onChange={(e) => setName(e.target.value)} />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1.5"><span dir="auto">Số điện thoại (không bắt buộc)</span></label>
+                  <input placeholder="Nhập số điện thoại" className="w-full px-4 py-3 border border-gray-200 rounded-xl text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-shadow placeholder:text-gray-400 bg-white text-gray-900" type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2"><span dir="auto">Bạn sẽ đến chứ?</span></label>
@@ -104,8 +140,8 @@ export function BrownRsvpDialog({
                     </div>
                   </>
                 )}
-                <button type="submit" disabled={!name.trim() || !attending} className="w-full py-3.5 text-sm font-semibold rounded-xl transition-all duration-200 hover:scale-[1.02] hover:shadow-lg active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:shadow-none" style={{ backgroundColor: btnBg, color: btnText, boxShadow: "rgba(0, 0, 0, 0.2) 0px 4px 12px -2px" }}>
-                  <span dir="auto">Gửi xác nhận</span>
+                <button type="submit" disabled={!name.trim() || !attending || loading} className="w-full py-3.5 text-sm font-semibold rounded-xl transition-all duration-200 hover:scale-[1.02] hover:shadow-lg active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:shadow-none" style={{ backgroundColor: btnBg, color: btnText, boxShadow: "rgba(0, 0, 0, 0.2) 0px 4px 12px -2px" }}>
+                  <span dir="auto">{loading ? "Đang gửi..." : "Gửi xác nhận"}</span>
                 </button>
               </form>
             </div>

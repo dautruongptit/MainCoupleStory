@@ -27,6 +27,14 @@ export default defineConfig({
     },
   ],
   server: {
+    port: 8111,
+    host: '0.0.0.0',
+    proxy: {
+      "/api": {
+        target: "http://localhost:8112",
+        changeOrigin: true,
+      },
+    },
     // profile Chrome của script chụp ảnh nằm trong repo; Chrome khóa file nên watcher sẽ crash (EBUSY).
     watch: { ignored: ["**/.chrome_profile/**"] },
   },

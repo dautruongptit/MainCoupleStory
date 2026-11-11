@@ -1,39 +1,46 @@
 import { useState, useEffect } from "react";
-
-/**
- * CHỈ LÀ DEMO: không có backend nên "đăng nhập" chỉ là một cờ trong localStorage, ai sửa được cờ này cũng vào được.
- * Dữ liệu thiệp và khách cũng nằm ngay trong localStorage của trình duyệt, nên cờ này chỉ điều khiển giao diện,
- * không bảo vệ dữ liệu. Khi có backend phải thay bằng phiên do máy chủ cấp (cookie HttpOnly) và kiểm tra quyền phía máy chủ.
- */
-export const AUTH_KEY = "chungdoi.logged_in";
-let _loggedIn = typeof window !== "undefined" && localStorage.getItem(AUTH_KEY) === "true";
+import { authApi, type GoogleLoginPayload } from "@/services/api/authApi";
+import { getCurrentUser, getAccessToken, type ApiUser } from "@/services/api/client";
 
 export function useAuth() {
-  const [loggedIn, setLoggedIn] = useState(_loggedIn);
+  const [user, setUser] = useState<ApiUser | null>(getCurrentUser);
+  const [loggedIn, setLoggedIn] = useState<boolean>(() => !!getAccessToken());
 
   useEffect(() => {
-    const handleAuth = () => setLoggedIn(_loggedIn);
-    window.addEventListener("auth_change", handleAuth);
-    return () => window.removeEventListener("auth_change", handleAuth);
+    const handleAuthChange = () => {
+      setUser(getCurrentUser());
+      setLoggedIn(!!getAccessToken());
+    };
+
+    window.addEventListener("auth_change", handleAuthChange);
+    return () => window.removeEventListener("auth_change", handleAuthChange);
   }, []);
 
   return {
     loggedIn,
-    login: () => {
-      _loggedIn = true;
-      try {
-        localStorage.setItem(AUTH_KEY, "true");
-      } catch {}
+    user,
+    async login(email: string, password: string) {
+      const resp = await authApi.login(email, password);
+      setUser(resp.user);
       setLoggedIn(true);
-      window.dispatchEvent(new Event("auth_change"));
+      return resp;
     },
-    logout: () => {
-      _loggedIn = false;
-      try {
-        localStorage.removeItem(AUTH_KEY);
-      } catch {}
+    async register(email: string, password: string, fullName?: string) {
+      const resp = await authApi.register(email, password, fullName);
+      setUser(resp.user);
+      setLoggedIn(true);
+      return resp;
+    },
+    async loginWithGoogle(payload: GoogleLoginPayload) {
+      const resp = await authApi.loginWithGoogle(payload);
+      setUser(resp.user);
+      setLoggedIn(true);
+      return resp;
+    },
+    logout() {
+      authApi.logout();
+      setUser(null);
       setLoggedIn(false);
-      window.dispatchEvent(new Event("auth_change"));
     },
   };
 }

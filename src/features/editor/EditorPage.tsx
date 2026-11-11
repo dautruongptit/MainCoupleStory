@@ -20,7 +20,7 @@ import { loadCards, saveCards, loadInv, saveInv, templatePatch } from "@/service
 import { TPL_CDN, templateById, templateByIdOrSlug, introDefaultFor, TEMPLATES } from "@/features/templates/data/templates";
 import { TEMPLATE_THEMES } from "@/features/invitation/config/templateThemes";
 import { getGiftboxConfig } from "@/features/invitation/config/giftboxConfigs";
-import { persistInvImages, resolveInvImages } from "@/services/storage/imageStore";
+import { persistInvImages, resolveInvImages, retryPersistIdbImages } from "@/services/storage/imageStore";
 import { albumCardAfter } from "@/features/editor/config/editorSections";
 
 export default function EditorPage() {
@@ -86,6 +86,8 @@ export default function EditorPage() {
   }, []);
 
   const saveSeq = useRef(0);
+  const latestD = useRef(d);
+  latestD.current = d;
 
   // Sau mount: resolve idb: → object URL để hiển thị ảnh đã lưu
   useEffect(() => {
@@ -96,6 +98,20 @@ export default function EditorPage() {
     return () => { cancelled = true; };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // Vừa đăng nhập: thử đưa mọi ảnh đang lưu tạm cục bộ (idb:, từ lúc chưa đăng nhập) lên server —
+  // nếu không, thiệp xuất bản sẽ hỏng ảnh khi khách xem trên thiết bị khác (idb: chỉ có ở trình
+  // duyệt đã tải lên).
+  const wasLoggedIn = useRef(loggedIn);
+  useEffect(() => {
+    if (!wasLoggedIn.current && loggedIn && cardId) {
+      retryPersistIdbImages(latestD.current).then((synced) => {
+        setD(synced);
+        saveInv(cardId, synced);
+      });
+    }
+    wasLoggedIn.current = loggedIn;
+  }, [loggedIn, cardId]);
 
   useEffect(() => {
     if (cardId && !loadCards().some((c) => c.id === cardId)) {
@@ -125,8 +141,13 @@ export default function EditorPage() {
     setShowPublishCheck(true);
   };
 
-  const handleConfirmPublish = () => {
+  const handleConfirmPublish = async () => {
+    // Thử đồng bộ nốt ảnh idb: (lưu tạm vì tải lên lúc chưa đăng nhập) lên server trước khi công
+    // bố link — nếu không, khách xem thiệp trên thiết bị khác sẽ thấy ảnh hỏng.
     if (activeCardId) {
+      const synced = await retryPersistIdbImages(latestD.current);
+      setD(synced);
+      saveInv(activeCardId, synced);
       saveCards(loadCards().map((c) => (c.id === activeCardId ? { ...c, status: "published" as const } : c)));
     }
     setIsPublished(true);
