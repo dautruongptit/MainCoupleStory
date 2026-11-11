@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { Link, navigate } from "@/app/router";
-import { loadCards, saveCards, loadInv, saveInv, removeInv, removeGuests, loadGuests } from "@/services/storage/store";
+import { loadCards, saveCards, loadInv, saveInv, removeInv, removeGuests, loadGuests, collapseDrafts, getDraftCard } from "@/services/storage/store";
 import { uuid } from "@/utils/uuid";
 import { invitationApi } from "@/services/api/invitationApi";
 import type { Card } from "@/types/card";
@@ -67,7 +67,13 @@ function DeleteModal({ name, onConfirm, onCancel }: { name: string; onConfirm: (
 
 export default function Dashboard() {
   const { loggedIn } = useAuth();
-  const [cards, setCards] = useState<Card[]>(loadCards);
+  const [cards, setCards] = useState<Card[]>(() => {
+    const all = loadCards();
+    const kept = collapseDrafts(all, false);
+    if (kept.length !== all.length) saveCards(kept);
+    return kept;
+  });
+  const [notice, setNotice] = useState("");
   const [tab, setTab] = useState<"all" | "published" | "draft">("all");
   const [editing, setEditing] = useState<string | null>(null);
   const [deleting, setDeleting] = useState<Card | null>(null);
@@ -79,8 +85,9 @@ export default function Dashboard() {
     if (loggedIn) {
       invitationApi.list("all").then((serverCards) => {
         if (serverCards) {
-          setCards(serverCards);
-          saveCards(serverCards);
+          const kept = collapseDrafts(serverCards, true);
+          setCards(kept);
+          saveCards(kept);
         }
       }).catch(console.warn);
     }
@@ -107,6 +114,10 @@ export default function Dashboard() {
     }
   };
   const duplicate = (c: Card) => {
+    if (getDraftCard()) {
+      setNotice("Bạn đang có một thiệp nháp. Mỗi lúc chỉ giữ một thiệp nháp — hãy xuất bản hoặc xóa nháp hiện tại trước khi nhân bản.");
+      return;
+    }
     const d = new Date();
     const created = `${String(d.getDate()).padStart(2, "0")}/${String(d.getMonth() + 1).padStart(2, "0")}/${d.getFullYear()}`;
     const id = uuid();
@@ -141,6 +152,12 @@ export default function Dashboard() {
       </div>
 
       <div className="dash-wrap">
+        {notice && (
+          <div role="alert" style={{ margin: "0 0 16px", padding: "12px 16px", borderRadius: 10, background: "#fff4e5", color: "#7a4b00", display: "flex", justifyContent: "space-between", gap: 12, fontSize: 14 }}>
+            <span>{notice}</span>
+            <button type="button" onClick={() => setNotice("")} aria-label="Đóng" style={{ background: "none", border: 0, cursor: "pointer", fontSize: 16, color: "inherit" }}>✕</button>
+          </div>
+        )}
         {/* Blue alert banner when not logged in */}
         {!loggedIn && (
           <div className="dash-auth-alert-banner">

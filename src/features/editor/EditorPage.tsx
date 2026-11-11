@@ -16,10 +16,8 @@ import HeroPhoto from "@/features/editor/components/v2/HeroV2";
 import TutorialTour from "@/features/editor/components/TutorialTour";
 import ShareModal from "@/components/common/ShareModal";
 import PublishCheckModal from "@/features/editor/components/PublishCheckModal";
-import { loadCards, saveCards, loadInv, saveInv, templatePatch } from "@/services/storage/store";
+import { loadCards, saveCards, loadInv, saveInv, templatePatch, getDraftCard, applyTemplateToDraft, defaultDressColors, defaultGiftMode } from "@/services/storage/store";
 import { TPL_CDN, templateById, templateByIdOrSlug, introDefaultFor, TEMPLATES } from "@/features/templates/data/templates";
-import { TEMPLATE_THEMES } from "@/features/invitation/config/templateThemes";
-import { getGiftboxConfig } from "@/features/invitation/config/giftboxConfigs";
 import { persistInvImages, resolveInvImages, retryPersistIdbImages } from "@/services/storage/imageStore";
 import { albumCardAfter } from "@/features/editor/config/editorSections";
 
@@ -49,18 +47,14 @@ export default function EditorPage() {
     }
 
     if (tpl) {
-      const palette = TEMPLATE_THEMES[tpl.id];
-      const dressColors = palette
-        ? [palette.ink, palette.bg, "#d6c5b3", "#ece5dd"]
-        : ["#542e08", "#9c7653", "#d6c5b3", "#ece5dd"];
       return {
         ...blankInv,
         templateId: tpl.id,
         templateName: tpl.name,
         templateThumb: TPL_CDN + tpl.img,
         introText: introDefaultFor(tpl.id),
-        dressColors,
-        giftDisplayMode: getGiftboxConfig(tpl.id).giftboxType === "envelope" ? "envelope" : "gift_box",
+        dressColors: defaultDressColors(tpl.id),
+        giftDisplayMode: defaultGiftMode(tpl.id),
       };
     }
 
@@ -116,6 +110,13 @@ export default function EditorPage() {
   useEffect(() => {
     if (cardId && !loadCards().some((c) => c.id === cardId)) {
       const t = templateByIdOrSlug(d.templateId) || TEMPLATES[0];
+      // Luôn chỉ một thiệp nháp: id lạ trên URL mà đã có nháp → mở nháp đó (áp mẫu vào nháp), không tạo thêm.
+      const draft = getDraftCard();
+      if (draft) {
+        if (draft.tplId !== t.id) applyTemplateToDraft(draft, t);
+        window.location.replace(`/edit/${draft.id}?template=${t.id}`);
+        return;
+      }
       const [template, ...rest] = t.name.split(" - ");
       const now = new Date();
       const created = `${String(now.getDate()).padStart(2, "0")}/${String(now.getMonth() + 1).padStart(2, "0")}/${now.getFullYear()}`;

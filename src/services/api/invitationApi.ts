@@ -77,7 +77,7 @@ export const invitationApi = {
 
   async changeTemplate(id: string, templateId: string): Promise<InvitationDetailResponse> {
     return apiFetch<InvitationDetailResponse>(`/invitations/${id}/template`, {
-      method: "PUT",
+      method: "PATCH",
       body: JSON.stringify({ templateId }),
     });
   },

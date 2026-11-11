@@ -36,7 +36,7 @@ export function saveCards(cards: Card[]) {
 export async function syncCardsFromApi(): Promise<Card[]> {
   if (!getAccessToken()) return loadCards();
   try {
-    const serverCards = await invitationApi.list("all");
+    const serverCards = collapseDrafts(await invitationApi.list("all"), true);
     saveCards(serverCards);
     return serverCards;
   } catch (err) {
@@ -45,8 +45,33 @@ export async function syncCardsFromApi(): Promise<Card[]> {
   }
 }
 
-/** Tạo thiệp nháp từ một mẫu và trả về id để mở editor. */
+/**
+ * Luôn chỉ tồn tại MỘT thiệp nháp. Danh sách có nhiều hơn một nháp (dữ liệu cũ / đồng bộ từ server) thì
+ * giữ bản mới nhất, xóa các bản nháp thừa (nội dung, khách mời ở local và bản ghi trên server).
+ * `newestFirst`: true với danh sách từ server (mới nhất đứng đầu), false với danh sách local (mới nhất đứng cuối).
+ */
+export function collapseDrafts(cards: Card[], newestFirst: boolean): Card[] {
+  const drafts = cards.filter((c) => c.status === "draft");
+  if (drafts.length <= 1) return cards;
+  const keep = newestFirst ? drafts[0] : drafts[drafts.length - 1];
+  for (const c of drafts) {
+    if (c.id === keep.id) continue;
+    removeInv(c.id);
+    removeGuests(c.id);
+    if (getAccessToken()) invitationApi.delete(c.id).catch(console.warn);
+  }
+  return cards.filter((c) => c.status !== "draft" || c.id === keep.id);
+}
+
+/**
+ * Mở thiệp nháp cho một mẫu và trả về id để mở editor.
+ * Đã có thiệp nháp: KHÔNG tạo thêm, áp mẫu mới vào nháp đó (giữ nguyên dữ liệu đã nhập).
+ * Chưa có: tạo mới.
+ */
 export function createDraft(t: Tpl): string {
+  const existing = getDraftCard();
+  if (existing) return applyTemplateToDraft(existing, t);
+
   const id = uuid();
   const cards = loadCards();
   const [template, ...rest] = t.name.split(" - ");
@@ -63,19 +88,14 @@ export function createDraft(t: Tpl): string {
   };
   saveCards([...cards, newCard]);
 
-  const palette = TEMPLATE_THEMES[t.id];
-  const dressColors = palette
-    ? [palette.ink, palette.bg, "#d6c5b3", "#ece5dd"]
-    : ["#542e08", "#9c7653", "#d6c5b3", "#ece5dd"];
-
   const initialInv: Inv = {
     ...blankInv,
     templateId: t.id,
     templateName: t.name,
     templateThumb: TPL_CDN + t.img,
     introText: introDefaultFor(t.id),
-    dressColors,
-    giftDisplayMode: getGiftboxConfig(t.id).giftboxType === "envelope" ? "envelope" : "gift_box",
+    dressColors: defaultDressColors(t.id),
+    giftDisplayMode: defaultGiftMode(t.id),
   };
 
   saveInv(id, initialInv);
@@ -85,10 +105,23 @@ export function createDraft(t: Tpl): string {
     invitationApi.create(t.id, newCard.name).then((serverCard) => {
       // Cập nhật card ID và nội dung nếu backend sinh ID mới
       if (serverCard && serverCard.id !== id) {
-        const currentCards = loadCards().filter((c) => c.id !== id);
-        saveCards([...currentCards, serverCard]);
-        saveInv(serverCard.id, initialInv);
-        removeInv(id);
+        // Server chỉ cho một nháp: nếu user đã có nháp ở server (vd tạo từ thiết bị khác) thì server trả về
+        // nháp đó (đã áp mẫu). Lấy nội dung thật của nháp, chỉ dùng initialInv khi nháp còn trống.
+        const adopt = (content: Inv) => {
+          const currentCards = loadCards().filter((c) => c.id !== id && c.id !== serverCard.id);
+          saveCards([...currentCards, serverCard]);
+          saveInv(serverCard.id, content);
+          removeInv(id);
+          if (window.location.pathname === `/edit/${id}`) {
+            window.location.replace(`/edit/${serverCard.id}?template=${t.id}`);
+          }
+        };
+        invitationApi.getById(serverCard.id)
+          .then((detail) => {
+            const c = detail?.content as Inv | undefined;
+            adopt(c && Object.keys(c).length > 0 ? { ...initialInv, ...c, templateId: t.id, templateName: t.name, templateThumb: TPL_CDN + t.img } : initialInv);
+          })
+          .catch(() => adopt(initialInv));
       }
     }).catch(console.warn);
   }
@@ -210,18 +243,44 @@ export const guestUrl = (cardId: string, g: Guest) => {
 
 /** Thiệp nháp hiện có */
 export function getDraftCard(): Card | undefined {
-  return loadCards().find((c) => c.status === "draft");
+  const cards = loadCards();
+  const kept = collapseDrafts(cards, false);
+  if (kept.length !== cards.length) saveCards(kept);
+  return kept.filter((c) => c.status === "draft")[0];
 }
 
-/** Phần dữ liệu đổi theo mẫu khi chuyển mẫu */
-export function templatePatch(t: Tpl, d: Pick<Inv, "introCustom" | "introText" | "dressColors">): Partial<Inv> {
-  const palette = TEMPLATE_THEMES[t.id];
+/** Bảng màu Dress code mặc định của một mẫu (khi tạo thiệp hoặc khi chưa chỉnh). */
+export function defaultDressColors(templateId: string): string[] {
+  const palette = TEMPLATE_THEMES[templateId];
+  return palette ? [palette.ink, palette.bg, "#d6c5b3", "#ece5dd"] : ["#542e08", "#9c7653", "#d6c5b3", "#ece5dd"];
+}
+
+/** Kiểu hiển thị hộp quà mặc định theo mẫu (phong bì hay hộp 3D). */
+export function defaultGiftMode(templateId: string): Inv["giftDisplayMode"] {
+  return getGiftboxConfig(templateId).giftboxType === "envelope" ? "envelope" : "gift_box";
+}
+
+const sameColors = (a: string[] | undefined, b: string[]) =>
+  !!a && a.length === b.length && a.every((c, i) => c.toLowerCase() === b[i].toLowerCase());
+
+/**
+ * Phần dữ liệu đổi theo mẫu khi chuyển mẫu. Mọi thông tin người dùng đã nhập được giữ nguyên.
+ * Kiểu hộp quà (phong bì / hộp 3D / ...) luôn được giữ suốt khi đổi mẫu (chỉ lấy mặc định của mẫu khi chưa có).
+ * Dress code chỉ đổi sang mặc định của mẫu mới khi đang là mặc định của mẫu cũ (người dùng chưa tự chỉnh).
+ */
+export function templatePatch(
+  t: Tpl,
+  d: Pick<Inv, "introCustom" | "introText" | "dressColors" | "templateId" | "giftDisplayMode">,
+): Partial<Inv> {
+  const prevId = d.templateId;
+  const dressUntouched = !d.dressColors?.length || (!!prevId && sameColors(d.dressColors, defaultDressColors(prevId)));
   return {
     templateId: t.id,
     templateName: t.name,
     templateThumb: TPL_CDN + t.img,
     introText: d.introCustom ? d.introText : introDefaultFor(t.id),
-    dressColors: palette ? [palette.ink, palette.bg, "#d6c5b3", "#ece5dd"] : d.dressColors,
+    dressColors: dressUntouched ? defaultDressColors(t.id) : d.dressColors,
+    giftDisplayMode: d.giftDisplayMode || defaultGiftMode(t.id),
   };
 }
 
