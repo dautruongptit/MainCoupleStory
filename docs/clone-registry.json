@@ -1,9 +1,9 @@
 {
  "_doc": "Sổ đăng ký clone. Sinh bởi scripts/clone/registry.mjs — đừng sửa tay trừ trường verified/notes.",
- "generatedAt": "2026-11-11T08:35:50.827Z",
+ "generatedAt": "2026-11-11T12:52:52.931Z",
  "totals": {
-  "templates": 91,
-  "đã clone": 42,
+  "templates": 92,
+  "đã clone": 43,
   "dở dang": 49,
   "chưa clone": 0
  },
@@ -82,6 +82,31 @@
     "mandap_yellow: file đã cập nhật",
     "mahal_pink: file đã cập nhật"
    ]
+  },
+  {
+   "at": "2026-11-11T08:49:33.536Z",
+   "changes": 0,
+   "summary": []
+  },
+  {
+   "at": "2026-11-11T12:43:52.260Z",
+   "changes": 2,
+   "summary": [
+    "jasmine_green: mẫu mới vào sổ",
+    "mahal_pink: file đã cập nhật"
+   ]
+  },
+  {
+   "at": "2026-11-11T12:45:10.858Z",
+   "changes": 1,
+   "summary": [
+    "jasmine_green: file đã cập nhật"
+   ]
+  },
+  {
+   "at": "2026-11-11T12:52:52.931Z",
+   "changes": 0,
+   "summary": []
   }
  ],
  "templates": [
@@ -12588,6 +12613,391 @@
   },
   {
    "order": 68,
+   "id": "jasmine_green",
+   "slug": "mai-lan-xanh",
+   "name": "Mai Lan - Xanh",
+   "source": "https://chungdoi.com/vi/mau-thiep/mai-lan-xanh/demo",
+   "status": "đã clone",
+   "issues": [],
+   "family": "jasmine_green",
+   "sharedBlocks": false,
+   "generator": "scripts/clone/gen_jasmine_green.cjs",
+   "themeAssetsDir": "public/images/themes/jasmine-green",
+   "cover": {
+    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "key": "jasmine_green",
+    "sha": "2470cf00ff85e06c"
+   },
+   "files": {
+    "spec": [
+     {
+      "path": "src/features/invitation/shell/specs/jasmine_green/capabilities.json",
+      "size": 957,
+      "sha": "3e1767c872a94bef"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/jasmine_green/demo.json",
+      "size": 5892,
+      "sha": "4fc8ea64f1f75e9a"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/jasmine_green/theme.json",
+      "size": 416,
+      "sha": "73b2dd8baf0cfc11"
+     }
+    ],
+    "blocks": [
+     {
+      "path": "src/features/invitation/shell/blocks/jasmine_green/Album.tsx",
+      "size": 3794,
+      "sha": "72cb7ad16d96a11d"
+     },
+     {
+      "path": "src/features/invitation/shell/blocks/jasmine_green/Banquet.tsx",
+      "size": 11109,
+      "sha": "495a222145786d12"
+     },
+     {
+      "path": "src/features/invitation/shell/blocks/jasmine_green/Dress.tsx",
+      "size": 1807,
+      "sha": "792aad6ef687a5c3"
+     },
+     {
+      "path": "src/features/invitation/shell/blocks/jasmine_green/Family.tsx",
+      "size": 8731,
+      "sha": "0f7fabc9de4afa59"
+     },
+     {
+      "path": "src/features/invitation/shell/blocks/jasmine_green/Footer.tsx",
+      "size": 873,
+      "sha": "9c1ed354b08085ec"
+     },
+     {
+      "path": "src/features/invitation/shell/blocks/jasmine_green/Gifts.tsx",
+      "size": 10705,
+      "sha": "f83a47ba699b2e90"
+     },
+     {
+      "path": "src/features/invitation/shell/blocks/jasmine_green/Guestbook.tsx",
+      "size": 3615,
+      "sha": "e8fbe5a800fff2f2"
+     },
+     {
+      "path": "src/features/invitation/shell/blocks/jasmine_green/Hero.tsx",
+      "size": 5706,
+      "sha": "a993cf7309246ce6"
+     },
+     {
+      "path": "src/features/invitation/shell/blocks/jasmine_green/index.ts",
+      "size": 455,
+      "sha": "a61edc92f3d2611c"
+     },
+     {
+      "path": "src/features/invitation/shell/blocks/jasmine_green/Paper.tsx",
+      "size": 1970,
+      "sha": "a26b3759896288eb"
+     },
+     {
+      "path": "src/features/invitation/shell/blocks/jasmine_green/Schedule.tsx",
+      "size": 3708,
+      "sha": "4c2fa114a7632004"
+     },
+     {
+      "path": "src/features/invitation/shell/blocks/jasmine_green/Venue.tsx",
+      "size": 2523,
+      "sha": "705a22db80f84680"
+     }
+    ],
+    "themeAssets": [
+     {
+      "path": "public/images/themes/jasmine-green/alcohol.webp",
+      "size": 25626,
+      "sha": "f1290c6eac46d6c3"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/bird.webp",
+      "size": 23036,
+      "sha": "14473c88180f0e75"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/calendar-heart.webp",
+      "size": 2470,
+      "sha": "72d5de08941c5e78"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/flower-decoration.webp",
+      "size": 131054,
+      "sha": "28ec17f120cd874e"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/flower10.webp",
+      "size": 103808,
+      "sha": "66b96c591cfeaf7c"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/flower11.webp",
+      "size": 105988,
+      "sha": "7a6dda1426268459"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/flower2.webp",
+      "size": 204874,
+      "sha": "67122da4eb7684dd"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/flower3.webp",
+      "size": 85216,
+      "sha": "2437fbad46c333f5"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/flower4.webp",
+      "size": 83898,
+      "sha": "e72531452bfe3bae"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/flower5.webp",
+      "size": 123934,
+      "sha": "c1d0ea1bda42c6ab"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/flower6.webp",
+      "size": 102432,
+      "sha": "68263127589a6064"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/frame.webp",
+      "size": 52132,
+      "sha": "58335df7840c7333"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/goldheart.webp",
+      "size": 43478,
+      "sha": "f1a4d108cb7a3ca6"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/goldheart3.webp",
+      "size": 30670,
+      "sha": "31669445a06c8865"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/goldline.webp",
+      "size": 9122,
+      "sha": "4b45a5335ecc8ece"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/goldline2.webp",
+      "size": 43026,
+      "sha": "d3226d884d1d11fd"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/leaf.webp",
+      "size": 147180,
+      "sha": "b80fd4ddb91f68d8"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/leaf1.webp",
+      "size": 110122,
+      "sha": "7427bed69c3da229"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/leaf2.webp",
+      "size": 163986,
+      "sha": "746c98acdf7e0b06"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/leaf3.webp",
+      "size": 83752,
+      "sha": "a66278aa1da98cce"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/leaf4.webp",
+      "size": 121608,
+      "sha": "237f47d2e7e58458"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/leaf5.webp",
+      "size": 120434,
+      "sha": "cb7389f073ac4058"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/paper.webp",
+      "size": 17102,
+      "sha": "bc18efc2bc10579f"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/ribbon.webp",
+      "size": 48116,
+      "sha": "8dc97a6f25ccccae"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/ribbon2.webp",
+      "size": 63682,
+      "sha": "35e2c2aa0652fea4"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/ribbon3.webp",
+      "size": 86810,
+      "sha": "f574549f73bc9fb7"
+     },
+     {
+      "path": "public/images/themes/jasmine-green/ring.webp",
+      "size": 22008,
+      "sha": "ab19b7096a8525a5"
+     }
+    ],
+    "envelope": [
+     {
+      "path": "public/images/envelope/jasmine_green.webp",
+      "size": 55384,
+      "sha": "2710c5313780f19d"
+     }
+    ],
+    "survey": [
+     {
+      "path": "docs/survey/blocks/jasmine_green/00.jsx",
+      "size": 232,
+      "sha": "53bbaa6f57e9677b"
+     },
+     {
+      "path": "docs/survey/blocks/jasmine_green/01.jsx",
+      "size": 196,
+      "sha": "faf268d71af28c71"
+     },
+     {
+      "path": "docs/survey/blocks/jasmine_green/02.jsx",
+      "size": 1522,
+      "sha": "474a015d28989a0e"
+     },
+     {
+      "path": "docs/survey/blocks/jasmine_green/03.jsx",
+      "size": 68122,
+      "sha": "cd1fd85c8644dd5c"
+     },
+     {
+      "path": "docs/survey/blocks/jasmine_green/04.jsx",
+      "size": 5790,
+      "sha": "254cc77ccddfa7fd"
+     },
+     {
+      "path": "docs/survey/blocks/jasmine_green/main/00.jsx",
+      "size": 5295,
+      "sha": "c19b332200873f5b"
+     },
+     {
+      "path": "docs/survey/blocks/jasmine_green/main/01.jsx",
+      "size": 8044,
+      "sha": "45c27363e77f6e4a"
+     },
+     {
+      "path": "docs/survey/blocks/jasmine_green/main/02.jsx",
+      "size": 6700,
+      "sha": "3539ca99e0c05bc3"
+     },
+     {
+      "path": "docs/survey/blocks/jasmine_green/main/03.jsx",
+      "size": 13959,
+      "sha": "8b21b90904d68c5b"
+     },
+     {
+      "path": "docs/survey/blocks/jasmine_green/main/04.jsx",
+      "size": 529,
+      "sha": "5aa722651a056128"
+     },
+     {
+      "path": "docs/survey/blocks/jasmine_green/main/05.jsx",
+      "size": 2404,
+      "sha": "0f22fd9ed510e5f8"
+     },
+     {
+      "path": "docs/survey/blocks/jasmine_green/main/06.jsx",
+      "size": 1861,
+      "sha": "9ee8078f6b15e48b"
+     },
+     {
+      "path": "docs/survey/blocks/jasmine_green/main/07.jsx",
+      "size": 11007,
+      "sha": "73a8eca861322ee3"
+     },
+     {
+      "path": "docs/survey/blocks/jasmine_green/main/08.jsx",
+      "size": 7681,
+      "sha": "bb83a6d8f9914409"
+     },
+     {
+      "path": "docs/survey/blocks/jasmine_green/main/09.jsx",
+      "size": 9788,
+      "sha": "5cb5c0ae71221ce1"
+     },
+     {
+      "path": "docs/survey/blocks/jasmine_green/main/10.jsx",
+      "size": 742,
+      "sha": "3b103de46ea29cd0"
+     },
+     {
+      "path": "docs/survey/raw/jasmine_green_cover_html.json",
+      "size": 16378,
+      "sha": "7d6e84ba2bf7079c"
+     },
+     {
+      "path": "docs/survey/raw/jasmine_green_dump_cover_1280.json",
+      "size": 8087,
+      "sha": "6bfa88673583c0b1"
+     },
+     {
+      "path": "docs/survey/raw/jasmine_green_dump_cover_390.json",
+      "size": 8095,
+      "sha": "f28eb324069349b2"
+     },
+     {
+      "path": "docs/survey/raw/jasmine_green_dump_gift_390.json",
+      "size": 3729,
+      "sha": "480fe20a4a02bc56"
+     },
+     {
+      "path": "docs/survey/raw/jasmine_green_dump_openfull_390.json",
+      "size": 67127,
+      "sha": "19c52f14b2eac8a2"
+     },
+     {
+      "path": "docs/survey/raw/jasmine_green_dump_open_1280.json",
+      "size": 67939,
+      "sha": "7bcd4831acccdc4e"
+     },
+     {
+      "path": "docs/survey/raw/jasmine_green_dump_open_390.json",
+      "size": 67128,
+      "sha": "2bb140ee9a7fcce9"
+     },
+     {
+      "path": "docs/survey/raw/jasmine_green_dump_open_768.json",
+      "size": 68311,
+      "sha": "366767ae6c164d99"
+     },
+     {
+      "path": "docs/survey/raw/jasmine_green_open_html.json",
+      "size": 76554,
+      "sha": "9bdbad3e3bb4dd5b"
+     },
+     {
+      "path": "docs/survey/raw/jasmine_green_open_html_390.json",
+      "size": 76555,
+      "sha": "b857bc75b6c15597"
+     }
+    ]
+   },
+   "verified": {
+    "cover": false,
+    "opened": false,
+    "gift": false,
+    "rsvp": false,
+    "editor": false,
+    "geometryDiff0": false
+   },
+   "notes": "",
+   "clonedAt": "2026-11-11"
+  },
+  {
+   "order": 69,
    "id": "sunflower_yellow",
    "slug": "hoa-huong-duong",
    "name": "Hoa Hướng Dương",
@@ -12753,7 +13163,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 69,
+   "order": 70,
    "id": "crystal_floral_green",
    "slug": "hoa-thuy-tinh-xanh",
    "name": "Hoa Thuỷ Tinh - Xanh",
@@ -13043,7 +13453,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 70,
+   "order": 71,
    "id": "santorini_blue",
    "slug": "santorini-lam",
    "name": "Santorini - Lam",
@@ -13260,7 +13670,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 71,
+   "order": 72,
    "id": "porcelain_v2_red",
    "slug": "bach-su-v2-do",
    "name": "Bạch Sứ II - Đỏ",
@@ -13415,7 +13825,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 72,
+   "order": 73,
    "id": "porcelain_blue",
    "slug": "bach-su-lam",
    "name": "Bạch Sứ - Lam",
@@ -13515,7 +13925,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 73,
+   "order": 74,
    "id": "folk_floral_blue",
    "slug": "hoa-mau-lam",
    "name": "Hoa Màu - Lam",
@@ -13648,7 +14058,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 74,
+   "order": 75,
    "id": "porcelain_red",
    "slug": "bach-su-do",
    "name": "Bạch Sứ - Đỏ",
@@ -13754,7 +14164,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 75,
+   "order": 76,
    "id": "hoa_dai_pink",
    "slug": "hoa-dai-hong",
    "name": "Hoa Dại - Hồng",
@@ -13930,7 +14340,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 76,
+   "order": 77,
    "id": "qasr_blue",
    "slug": "thanhcung-lam",
    "name": "Thanh Cung - Lam",
@@ -14143,7 +14553,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 77,
+   "order": 78,
    "id": "san_miguel_yellow",
    "slug": "san-miguel-vang",
    "name": "San Miguel - Vàng",
@@ -14374,7 +14784,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 78,
+   "order": 79,
    "id": "glass_garden_blue",
    "slug": "vuonkinh-lam",
    "name": "Vườn Kính - Lam",
@@ -14500,7 +14910,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 79,
+   "order": 80,
    "id": "royal_v2_purple",
    "slug": "hoang-kim-ii-tim",
    "name": "Hoàng Kim II - Tím",
@@ -14706,7 +15116,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 80,
+   "order": 81,
    "id": "hoa_kho_orange",
    "slug": "hoa-kho-cam",
    "name": "Hoa Khô - Cam",
@@ -14872,7 +15282,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 81,
+   "order": 82,
    "id": "mahal_gold",
    "slug": "mahal-vang",
    "name": "Mahal - Vàng",
@@ -15081,7 +15491,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 82,
+   "order": 83,
    "id": "floral_fiesta_yellow",
    "slug": "floral-fiesta-vang",
    "name": "Lễ Hội Hoa - Vàng",
@@ -15374,7 +15784,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 83,
+   "order": 84,
    "id": "nomad_brown",
    "slug": "du-muc-nau",
    "name": "Du Mục - Nâu",
@@ -15586,7 +15996,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 84,
+   "order": 85,
    "id": "saraya_gold",
    "slug": "kim-dien-vang",
    "name": "Kim Điện - Vàng",
@@ -15789,7 +16199,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 85,
+   "order": 86,
    "id": "qasr_gold",
    "slug": "thanhcung-vang",
    "name": "Thanh Cung - Vàng",
@@ -15932,7 +16342,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 86,
+   "order": 87,
    "id": "qasr_green",
    "slug": "thanhcung-xanh",
    "name": "Thanh Cung - Xanh",
@@ -16110,7 +16520,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 87,
+   "order": 88,
    "id": "mandap_darkred",
    "slug": "mandap-do-dam",
    "name": "Mandap - Đỏ đậm",
@@ -16324,7 +16734,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 88,
+   "order": 89,
    "id": "brocade_flower_red",
    "slug": "gam-hoa-do",
    "name": "Gấm Hoa - Đỏ",
@@ -16496,7 +16906,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 89,
+   "order": 90,
    "id": "calla_lily_white",
    "slug": "hoa-rum-trang",
    "name": "Hoa Rum - Trắng",
@@ -16666,7 +17076,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 90,
+   "order": 91,
    "id": "mandap_yellow",
    "slug": "mandap-vang",
    "name": "Mandap - Vàng",
@@ -16961,7 +17371,7 @@
    "clonedAt": "2026-11-11"
   },
   {
-   "order": 91,
+   "order": 92,
    "id": "mahal_pink",
    "slug": "mahal-hong",
    "name": "Mahal - Hồng",
@@ -16975,7 +17385,7 @@
    "cover": {
     "file": "src/features/invitation/components/covers/coverConfigs.ts",
     "key": "mahal_pink",
-    "sha": "cf917dfac2659988"
+    "sha": "745a0e6441a5ce35"
    },
    "files": {
     "spec": [

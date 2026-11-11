@@ -2,7 +2,7 @@
 
 > Sinh tự động bởi `node scripts/clone/registry.mjs` — **chạy lại sau mỗi lần clone/sửa mẫu rồi commit cùng**. Chi tiết máy đọc (hash từng file): `docs/clone-registry.json`.
 
-Cập nhật: 2026-11-11 · Tổng **91** mẫu: ✅ đã clone **42** · 🟡 dở dang **49** · ⬜ chưa clone **0**
+Cập nhật: 2026-11-11 · Tổng **92** mẫu: ✅ đã clone **43** · 🟡 dở dang **49** · ⬜ chưa clone **0**
 
 ## Ý nghĩa trạng thái
 
@@ -90,30 +90,31 @@ Cập nhật: 2026-11-11 · Tổng **91** mẫu: ✅ đã clone **42** · 🟡 d
 | 65 | ✅ | `riviera_blue` | riviera-lam | Riviera - Lam | riviera | 24 | ✓ | `gen_riviera.cjs` | 6/6 | — |
 | 66 | 🟡 | `florence_brown` | florence-nau | Florence - Nâu | florence_brown | 19 | ✓ | — | — | theme |
 | 67 | ✅ | `baroque_v2_darkblue` | baroque-v2-lam-dam | Baroque V2 - Lam Đậm | baroque_v2 | 12 | ✓ | — | — | — |
-| 68 | 🟡 | `sunflower_yellow` | hoa-huong-duong | Hoa Hướng Dương | sunflower_yellow | 7 | ✓ | — | — | theme |
-| 69 | ✅ | `crystal_floral_green` | hoa-thuy-tinh-xanh | Hoa Thuỷ Tinh - Xanh | crystal_floral | 11 | ✓ | — | — | — |
-| 70 | 🟡 | `santorini_blue` | santorini-lam | Santorini - Lam | santorini_blue | 18 | — | — | — | theme, bìa |
-| 71 | ✅ | `porcelain_v2_red` | bach-su-v2-do | Bạch Sứ II - Đỏ | porcelain_v2 | 6 | ✓ | — | — | — |
-| 72 | 🟡 | `porcelain_blue` | bach-su-lam | Bạch Sứ - Lam | porcelain_blue | 5 | — | — | — | theme |
-| 73 | 🟡 | `folk_floral_blue` | hoa-mau-lam | Hoa Màu - Lam | folk_floral_blue | 11 | ✓ | — | — | theme, bìa |
-| 74 | 🟡 | `porcelain_red` | bach-su-do | Bạch Sứ - Đỏ | porcelain_red | 5 | ✓ | — | — | theme |
-| 75 | 🟡 | `hoa_dai_pink` | hoa-dai-hong | Hoa Dại - Hồng | hoa_dai_pink | 9 | ✓ | — | — | theme |
-| 76 | 🟡 | `qasr_blue` | thanhcung-lam | Thanh Cung - Lam | qasr_blue | 19 | ✓ | — | — | theme, bìa |
-| 77 | 🟡 | `san_miguel_yellow` | san-miguel-vang | San Miguel - Vàng | san_miguel_yellow | 20 | ✓ | — | — | theme |
-| 78 | 🟡 | `glass_garden_blue` | vuonkinh-lam | Vườn Kính - Lam | glass_garden_blue | 8 | ✓ | — | — | theme |
-| 79 | 🟡 | `royal_v2_purple` | hoang-kim-ii-tim | Hoàng Kim II - Tím | royal_v2_purple | 15 | ✓ | — | — | theme |
-| 80 | 🟡 | `hoa_kho_orange` | hoa-kho-cam | Hoa Khô - Cam | hoa_kho_orange | 8 | ✓ | — | — | theme |
-| 81 | ✅ | `mahal_gold` | mahal-vang | Mahal - Vàng | mahal_gold | 18 | ✓ | — | 1/6 | — |
-| 82 | 🟡 | `floral_fiesta_yellow` | floral-fiesta-vang | Lễ Hội Hoa - Vàng | floral_fiesta_yellow | 31 | ✓ | — | — | theme, bìa |
-| 83 | 🟡 | `nomad_brown` | du-muc-nau | Du Mục - Nâu | nomad_brown | 18 | — | — | — | theme, bìa |
-| 84 | 🟡 | `saraya_gold` | kim-dien-vang | Kim Điện - Vàng | saraya_gold | 17 | ✓ | — | — | theme, bìa |
-| 85 | 🟡 | `qasr_gold` | thanhcung-vang | Thanh Cung - Vàng | qasr_gold | 5 | ✓ | — | — | theme, bìa |
-| 86 | 🟡 | `qasr_green` | thanhcung-xanh | Thanh Cung - Xanh | qasr_green | 12 | ✓ | — | — | theme, bìa |
-| 87 | ✅ | `mandap_darkred` | mandap-do-dam | Mandap - Đỏ đậm | mandap_darkred | 17 | ✓ | — | 1/6 | — |
-| 88 | 🟡 | `brocade_flower_red` | gam-hoa-do | Gấm Hoa - Đỏ | brocade_flower_red | 12 | — | — | — | theme, bìa |
-| 89 | ✅ | `calla_lily_white` | hoa-rum-trang | Hoa Rum - Trắng | calla_lily_white | 8 | ✓ | `gen_calla_lily_white.cjs` | 2/6 | — |
-| 90 | ✅ | `mandap_yellow` | mandap-vang | Mandap - Vàng | mandap_yellow | 20 | ✓ | `gen_mandap_yellow.cjs` | 2/6 | — |
-| 91 | ✅ | `mahal_pink` | mahal-hong | Mahal - Hồng | mahal_pink | 24 | ✓ | `gen_mahal_pink.cjs` | 2/6 | — |
+| 68 | ✅ | `jasmine_green` | mai-lan-xanh | Mai Lan - Xanh | jasmine_green | 27 | ✓ | `gen_jasmine_green.cjs` | — | — |
+| 69 | 🟡 | `sunflower_yellow` | hoa-huong-duong | Hoa Hướng Dương | sunflower_yellow | 7 | ✓ | — | — | theme |
+| 70 | ✅ | `crystal_floral_green` | hoa-thuy-tinh-xanh | Hoa Thuỷ Tinh - Xanh | crystal_floral | 11 | ✓ | — | — | — |
+| 71 | 🟡 | `santorini_blue` | santorini-lam | Santorini - Lam | santorini_blue | 18 | — | — | — | theme, bìa |
+| 72 | ✅ | `porcelain_v2_red` | bach-su-v2-do | Bạch Sứ II - Đỏ | porcelain_v2 | 6 | ✓ | — | — | — |
+| 73 | 🟡 | `porcelain_blue` | bach-su-lam | Bạch Sứ - Lam | porcelain_blue | 5 | — | — | — | theme |
+| 74 | 🟡 | `folk_floral_blue` | hoa-mau-lam | Hoa Màu - Lam | folk_floral_blue | 11 | ✓ | — | — | theme, bìa |
+| 75 | 🟡 | `porcelain_red` | bach-su-do | Bạch Sứ - Đỏ | porcelain_red | 5 | ✓ | — | — | theme |
+| 76 | 🟡 | `hoa_dai_pink` | hoa-dai-hong | Hoa Dại - Hồng | hoa_dai_pink | 9 | ✓ | — | — | theme |
+| 77 | 🟡 | `qasr_blue` | thanhcung-lam | Thanh Cung - Lam | qasr_blue | 19 | ✓ | — | — | theme, bìa |
+| 78 | 🟡 | `san_miguel_yellow` | san-miguel-vang | San Miguel - Vàng | san_miguel_yellow | 20 | ✓ | — | — | theme |
+| 79 | 🟡 | `glass_garden_blue` | vuonkinh-lam | Vườn Kính - Lam | glass_garden_blue | 8 | ✓ | — | — | theme |
+| 80 | 🟡 | `royal_v2_purple` | hoang-kim-ii-tim | Hoàng Kim II - Tím | royal_v2_purple | 15 | ✓ | — | — | theme |
+| 81 | 🟡 | `hoa_kho_orange` | hoa-kho-cam | Hoa Khô - Cam | hoa_kho_orange | 8 | ✓ | — | — | theme |
+| 82 | ✅ | `mahal_gold` | mahal-vang | Mahal - Vàng | mahal_gold | 18 | ✓ | — | 1/6 | — |
+| 83 | 🟡 | `floral_fiesta_yellow` | floral-fiesta-vang | Lễ Hội Hoa - Vàng | floral_fiesta_yellow | 31 | ✓ | — | — | theme, bìa |
+| 84 | 🟡 | `nomad_brown` | du-muc-nau | Du Mục - Nâu | nomad_brown | 18 | — | — | — | theme, bìa |
+| 85 | 🟡 | `saraya_gold` | kim-dien-vang | Kim Điện - Vàng | saraya_gold | 17 | ✓ | — | — | theme, bìa |
+| 86 | 🟡 | `qasr_gold` | thanhcung-vang | Thanh Cung - Vàng | qasr_gold | 5 | ✓ | — | — | theme, bìa |
+| 87 | 🟡 | `qasr_green` | thanhcung-xanh | Thanh Cung - Xanh | qasr_green | 12 | ✓ | — | — | theme, bìa |
+| 88 | ✅ | `mandap_darkred` | mandap-do-dam | Mandap - Đỏ đậm | mandap_darkred | 17 | ✓ | — | 1/6 | — |
+| 89 | 🟡 | `brocade_flower_red` | gam-hoa-do | Gấm Hoa - Đỏ | brocade_flower_red | 12 | — | — | — | theme, bìa |
+| 90 | ✅ | `calla_lily_white` | hoa-rum-trang | Hoa Rum - Trắng | calla_lily_white | 8 | ✓ | `gen_calla_lily_white.cjs` | 2/6 | — |
+| 91 | ✅ | `mandap_yellow` | mandap-vang | Mandap - Vàng | mandap_yellow | 20 | ✓ | `gen_mandap_yellow.cjs` | 2/6 | — |
+| 92 | ✅ | `mahal_pink` | mahal-hong | Mahal - Hồng | mahal_pink | 24 | ✓ | `gen_mahal_pink.cjs` | 2/6 | — |
 
 ## Chi tiết file theo mẫu
 
@@ -3472,6 +3473,100 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 </details>
 
+<details><summary>✅ <b>Mai Lan - Xanh</b> — <code>jasmine_green</code></summary>
+
+- Nguồn: https://chungdoi.com/vi/mau-thiep/mai-lan-xanh/demo
+- Họ khối: `jasmine_green`
+- Bộ sinh: `scripts/clone/gen_jasmine_green.cjs`
+- Bìa: `src/features/invitation/components/covers/coverConfigs.ts` → khóa `jasmine_green`
+- Thư mục ảnh theme: `public/images/themes/jasmine-green/` (27 file)
+
+**Spec** (3)
+
+- `src/features/invitation/shell/specs/jasmine_green/capabilities.json`
+- `src/features/invitation/shell/specs/jasmine_green/demo.json`
+- `src/features/invitation/shell/specs/jasmine_green/theme.json`
+
+**Khối** (12)
+
+- `src/features/invitation/shell/blocks/jasmine_green/Album.tsx`
+- `src/features/invitation/shell/blocks/jasmine_green/Banquet.tsx`
+- `src/features/invitation/shell/blocks/jasmine_green/Dress.tsx`
+- `src/features/invitation/shell/blocks/jasmine_green/Family.tsx`
+- `src/features/invitation/shell/blocks/jasmine_green/Footer.tsx`
+- `src/features/invitation/shell/blocks/jasmine_green/Gifts.tsx`
+- `src/features/invitation/shell/blocks/jasmine_green/Guestbook.tsx`
+- `src/features/invitation/shell/blocks/jasmine_green/Hero.tsx`
+- `src/features/invitation/shell/blocks/jasmine_green/index.ts`
+- `src/features/invitation/shell/blocks/jasmine_green/Paper.tsx`
+- `src/features/invitation/shell/blocks/jasmine_green/Schedule.tsx`
+- `src/features/invitation/shell/blocks/jasmine_green/Venue.tsx`
+
+**Ảnh theme** (27)
+
+- `public/images/themes/jasmine-green/alcohol.webp`
+- `public/images/themes/jasmine-green/bird.webp`
+- `public/images/themes/jasmine-green/calendar-heart.webp`
+- `public/images/themes/jasmine-green/flower-decoration.webp`
+- `public/images/themes/jasmine-green/flower10.webp`
+- `public/images/themes/jasmine-green/flower11.webp`
+- `public/images/themes/jasmine-green/flower2.webp`
+- `public/images/themes/jasmine-green/flower3.webp`
+- `public/images/themes/jasmine-green/flower4.webp`
+- `public/images/themes/jasmine-green/flower5.webp`
+- `public/images/themes/jasmine-green/flower6.webp`
+- `public/images/themes/jasmine-green/frame.webp`
+- `public/images/themes/jasmine-green/goldheart.webp`
+- `public/images/themes/jasmine-green/goldheart3.webp`
+- `public/images/themes/jasmine-green/goldline.webp`
+- `public/images/themes/jasmine-green/goldline2.webp`
+- `public/images/themes/jasmine-green/leaf.webp`
+- `public/images/themes/jasmine-green/leaf1.webp`
+- `public/images/themes/jasmine-green/leaf2.webp`
+- `public/images/themes/jasmine-green/leaf3.webp`
+- `public/images/themes/jasmine-green/leaf4.webp`
+- `public/images/themes/jasmine-green/leaf5.webp`
+- `public/images/themes/jasmine-green/paper.webp`
+- `public/images/themes/jasmine-green/ribbon.webp`
+- `public/images/themes/jasmine-green/ribbon2.webp`
+- `public/images/themes/jasmine-green/ribbon3.webp`
+- `public/images/themes/jasmine-green/ring.webp`
+
+**Phong bì** (1)
+
+- `public/images/envelope/jasmine_green.webp`
+
+**Dữ liệu khảo sát** (26)
+
+- `docs/survey/blocks/jasmine_green/00.jsx`
+- `docs/survey/blocks/jasmine_green/01.jsx`
+- `docs/survey/blocks/jasmine_green/02.jsx`
+- `docs/survey/blocks/jasmine_green/03.jsx`
+- `docs/survey/blocks/jasmine_green/04.jsx`
+- `docs/survey/blocks/jasmine_green/main/00.jsx`
+- `docs/survey/blocks/jasmine_green/main/01.jsx`
+- `docs/survey/blocks/jasmine_green/main/02.jsx`
+- `docs/survey/blocks/jasmine_green/main/03.jsx`
+- `docs/survey/blocks/jasmine_green/main/04.jsx`
+- `docs/survey/blocks/jasmine_green/main/05.jsx`
+- `docs/survey/blocks/jasmine_green/main/06.jsx`
+- `docs/survey/blocks/jasmine_green/main/07.jsx`
+- `docs/survey/blocks/jasmine_green/main/08.jsx`
+- `docs/survey/blocks/jasmine_green/main/09.jsx`
+- `docs/survey/blocks/jasmine_green/main/10.jsx`
+- `docs/survey/raw/jasmine_green_cover_html.json`
+- `docs/survey/raw/jasmine_green_dump_cover_1280.json`
+- `docs/survey/raw/jasmine_green_dump_cover_390.json`
+- `docs/survey/raw/jasmine_green_dump_gift_390.json`
+- `docs/survey/raw/jasmine_green_dump_openfull_390.json`
+- `docs/survey/raw/jasmine_green_dump_open_1280.json`
+- `docs/survey/raw/jasmine_green_dump_open_390.json`
+- `docs/survey/raw/jasmine_green_dump_open_768.json`
+- `docs/survey/raw/jasmine_green_open_html.json`
+- `docs/survey/raw/jasmine_green_open_html_390.json`
+
+</details>
+
 <details><summary>🟡 <b>Hoa Hướng Dương</b> — <code>sunflower_yellow</code></summary>
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoa-huong-duong/demo
@@ -4743,17 +4838,14 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 ## Thay đổi ở lần quét gần nhất
 
-- **calla_lily_white** — file đã cập nhật
-  - `docs/survey/raw/hoa_rum_trang_open_html.json`
-- **mandap_yellow** — file đã cập nhật
-  - `docs/survey/blocks/mandap_yellow/06.jsx`
-  - `docs/survey/raw/mandap_yellow_open_html.json`
-- **mahal_pink** — file đã cập nhật
-  - `docs/survey/blocks/mahal_pink/05.jsx`
-  - `docs/survey/raw/mahal_pink_open_html.json`
+_Không có thay đổi so với lần quét trước._
 
 ## Lịch sử các lần quét
 
+- 2026-11-11 12:52 — 0 thay đổi
+- 2026-11-11 12:45 — 1 thay đổi: jasmine_green: file đã cập nhật
+- 2026-11-11 12:43 — 2 thay đổi: jasmine_green: mẫu mới vào sổ; mahal_pink: file đã cập nhật
+- 2026-11-11 08:49 — 0 thay đổi
 - 2026-11-11 08:35 — 3 thay đổi: calla_lily_white: file đã cập nhật; mandap_yellow: file đã cập nhật; mahal_pink: file đã cập nhật
 - 2026-11-11 08:35 — 0 thay đổi
 - 2026-11-11 08:35 — 0 thay đổi
