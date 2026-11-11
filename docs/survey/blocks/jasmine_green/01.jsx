@@ -1,0 +1,1 @@
+<div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 opacity-60" style={{ background: "url(\"/images/themes/jasmine-green/paper.webp\") 0px 0px / 100% auto repeat" }}></div>

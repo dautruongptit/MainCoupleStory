@@ -1,0 +1,9 @@
+import React from "react";
+import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx";
+
+export function Paper({ ctx }: { ctx: InvitationCtx }) {
+  const { t } = ctx;
+  return (
+    <><div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 opacity-60" style={{ background: `url("${t.assets}/paper.webp") 0px 0px / 100% auto repeat` }}></div><div aria-hidden="true" className="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-0"><span aria-hidden="true" className="pointer-events-none absolute left-[-5%] block w-[110.2%]" style={{ bottom: "-56px" }}><span className="block w-full" style={{ animation: "7s ease-in-out 0.2s infinite normal none running mgFloat", willChange: "transform" }}><img alt="" aria-hidden="true" className="block h-auto w-full max-w-none object-contain" loading="eager" decoding="async" src={`${t.assets}/ribbon3.webp`} style={{ aspectRatio: "486 / 431" }} /></span></span><span aria-hidden="true" className="pointer-events-none absolute left-[-9.3%] block w-[27.7%]" style={{ bottom: "42px" }}><span className="block w-full" style={{ animation: "6.5s ease-in-out 0.9s infinite normal none running mgFloat", willChange: "transform" }}><img alt="" aria-hidden="true" className="block h-auto w-full max-w-none object-contain" loading="eager" decoding="async" src={`${t.assets}/flower11.webp`} style={{ aspectRatio: "122 / 184" }} /></span></span><span aria-hidden="true" className="pointer-events-none absolute left-[89.3%] block w-[43.5%]" style={{ bottom: "55.3px", transform: "translate(-50%, 50%)" }}><span className="block w-full" style={{ animation: "6.8s ease-in-out 0.5s infinite normal none running mgFloat", willChange: "transform" }}><img alt="" aria-hidden="true" className="block h-auto w-full max-w-none object-contain" loading="eager" decoding="async" src={`${t.assets}/flower10.webp`} style={{ aspectRatio: "192 / 288", transform: "rotate(22.33deg)" }} /></span></span></div></>
+  );
+}

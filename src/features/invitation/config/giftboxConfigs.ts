@@ -201,6 +201,22 @@ export const GIFTBOX_CONFIGS: Record<string, GiftboxConfig> = {
       bodyBg: "rgb(255, 255, 255)",
     },
   },
+  "jasmine_green": {
+    giftboxType: "3d-box",
+    mainBoxSrc: "/images/giftbox/jasmine_green.webp",
+    miniImgs: [{"src":"/images/giftbox/mini/baroque_v2_darkred.webp","style":"left: -16px; top: 8px; width: 27.2px; z-index: 1; transform: rotate(-22deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;","className":"igb-decor igb-decor-1 absolute pointer-events-none"},{"src":"/images/giftbox/mini/qasr_blue.webp","style":"left: 134.4px; top: 1.6px; width: 30.4px; z-index: 1; transform: rotate(20deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;","className":"igb-decor igb-decor-2 absolute pointer-events-none"},{"src":"/images/giftbox/mini/saraya_gold.webp","style":"left: -12.8px; top: 96px; width: 20.8px; z-index: 1; transform: rotate(-18deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;","className":"igb-decor igb-decor-3 absolute pointer-events-none"},{"src":"/images/giftbox/mini/song_hy_green.webp","style":"left: 145.6px; top: 91.2px; width: 19.2px; z-index: 1; transform: rotate(14deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;","className":"igb-decor igb-decor-4 absolute pointer-events-none"},{"src":"/images/giftbox/mini/lien_hoa_pink.webp","style":"left: -6.4px; top: 137.6px; width: 35.2px; z-index: 3; transform: rotate(8deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;","className":"igb-decor igb-decor-5 absolute pointer-events-none"},{"src":"/images/giftbox/mini/jasmine_white.webp","style":"left: 20.8px; top: 145.6px; width: 20.8px; z-index: 3; transform: rotate(-10deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;","className":"igb-decor igb-decor-6 absolute pointer-events-none"},{"src":"/images/giftbox/mini/glass_garden_blue.webp","style":"left: 94.4px; top: 140.8px; width: 32px; z-index: 3; transform: rotate(-14deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;","className":"igb-decor igb-decor-7 absolute pointer-events-none"}],
+    sectionTitle: "HỘP QUÀ MỪNG",
+    sectionTitleColor: "rgb(46, 71, 51)",
+    sectionTitleFont: "\"Times New Roman\", ChungDoiIndic, serif",
+    sectionBg: "rgba(0, 0, 0, 0)",
+    modal: {
+      title: "HỘP QUÀ MỪNG",
+      headerBg: "rgb(46, 71, 51)",
+      headerColor: "rgb(255, 255, 255)",
+      headerFont: "\"Times New Roman\", ChungDoiIndic, serif",
+      bodyBg: "rgb(251, 250, 248)",
+    },
+  },
   "dragon_phoenix_v3_red": {
     giftboxType: "3d-box",
     mainBoxSrc: "/images/giftbox/dragon_phoenix_v3.webp",

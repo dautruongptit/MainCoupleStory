@@ -7,6 +7,7 @@ import { ChromeController } from "../cdp_helper.mjs";
 const [id, state, widthArg] = process.argv.slice(2);
 if (!id || !state || !widthArg) { console.error("Cách dùng: node scripts/survey/local_dump.mjs <templateId> <cover|open|gift|rsvp> <width>"); process.exit(1); }
 const width = Number(widthArg);
+const BASE = process.env.LOCAL_BASE || "http://localhost:5173"; // đổi cổng dev: LOCAL_BASE=http://localhost:8111
 let slug = process.argv.includes("--slug") ? process.argv[process.argv.indexOf("--slug") + 1] : "";
 if (!slug) {
   const tplContent = fs.readFileSync(new URL("../../src/features/templates/data/templates.ts", import.meta.url), "utf8");
@@ -19,7 +20,7 @@ const c = new ChromeController();
 await c.start({ headless: true });
 await c.newPage();
 await c.setViewport({ width, height: width === 390 ? 844 : 900 });
-const url = state === "editor" ? `http://localhost:5173/edit/dump-${id}-${width}?template=${id}` : `http://localhost:5173/vi/mau-thiep/${slug}/demo` + (state === "cover" ? "?autoscroll=0" : "?open=1&autoscroll=0");
+const url = state === "editor" ? `${BASE}/edit/dump-${id}-${width}?template=${id}` : `${BASE}/vi/mau-thiep/${slug}/demo` + (state === "cover" ? "?autoscroll=0" : "?open=1&autoscroll=0");
 console.log("Navigating local:", url);
 await c.navigate(url, state === "cover" ? 4500 : 6500);
 if (process.argv.includes("--css")) { const css = fs.readFileSync(process.argv[process.argv.indexOf("--css") + 1], "utf8"); await c.eval(`(()=>{const s=document.createElement("style");s.textContent=${JSON.stringify(css)};document.head.appendChild(s)})()`); await new Promise((r) => setTimeout(r, 400)); }

@@ -147,7 +147,7 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
         <div
           className="relative rounded-lg"
           style={{
-            boxShadow: `0 25px 60px -12px rgba(0, 0, 0, 0.45), 0 8px 24px rgba(0, 0, 0, 0.2), 0 0 40px rgba(${config.rgb}, 0.15)`,
+            boxShadow: `0 25px 60px -12px rgba(0, 0, 0, 0.45), 0 8px 24px rgba(0, 0, 0, 0.2), 0 0 40px rgba(${config.glowRgb || config.rgb}, 0.15)`,
           }}
         >
           {/* Card Inner Background with Corner Ornaments */}
@@ -213,14 +213,14 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
             <div className="flex items-center justify-center gap-3 mb-2">
               <div
                 className="w-10 h-px"
-                style={{ background: `linear-gradient(to right, transparent, ${textColor})` }}
+                style={{ background: `linear-gradient(to right, transparent, ${config.ornamentColor || textColor})` }}
               />
-              <span className="text-[14px] leading-[20px]" style={{ color: textColor, opacity: 0.7 }}>
+              <span className="text-[14px] leading-[20px]" style={{ color: config.ornamentColor || textColor, opacity: 0.7 }}>
                 ❦
               </span>
               <div
                 className="w-10 h-px"
-                style={{ background: `linear-gradient(to left, transparent, ${textColor})` }}
+                style={{ background: `linear-gradient(to left, transparent, ${config.ornamentColor || textColor})` }}
               />
             </div>
 

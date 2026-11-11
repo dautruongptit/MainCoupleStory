@@ -87,6 +87,7 @@ import * as MANDAP_DARKRED_BLOCKS from "./mandap_darkred";
 import * as CALLA_LILY_WHITE_BLOCKS from "./calla_lily_white";
 import * as MANDAP_YELLOW_BLOCKS from "./mandap_yellow";
 import * as MAHAL_PINK_BLOCKS from "./mahal_pink";
+import * as JASMINE_GREEN_BLOCKS from "./jasmine_green";
 import * as BROCADE_FLOWER_RED_BLOCKS from "./brocade_flower_red";
 
 export type BlockComponent = ComponentType<{ ctx: InvitationCtx }>;
@@ -249,6 +250,8 @@ export const blocksForFamily = (family: string): Record<string, BlockComponent> 
       ? MANDAP_YELLOW_BLOCKS
       : family === "mahal_pink"
       ? MAHAL_PINK_BLOCKS
+      : family === "jasmine_green"
+      ? JASMINE_GREEN_BLOCKS
       : family === "brocade_flower_red"
       ? BROCADE_FLOWER_RED_BLOCKS
       : MINIMALISM_BLOCKS),

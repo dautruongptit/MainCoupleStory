@@ -1,0 +1,17 @@
+{
+  "assets": "/images/themes/jasmine-green",
+  "colors": {
+    "ink": "rgb(46, 71, 51)",
+    "inkRgb": "46, 71, 51",
+    "sub": "rgb(169, 135, 78)",
+    "muted": "rgb(169, 135, 78)",
+    "paper": "rgb(245, 244, 242)",
+    "text": "rgb(169, 135, 78)",
+    "line": "rgba(169, 135, 78, 0.4)",
+    "accent": "rgb(169, 135, 78)",
+    "edge": "#2e473322"
+  },
+  "tokens": {
+    "scheduleIcons": "bird,alcohol,ring"
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "_note": "Dữ liệu demo của jasmine_green (Mai Lan - Xanh) đo từ chungdoi.com/vi/mau-thiep/mai-lan-xanh/demo",
+  "order": "groom",
+  "envelopeInviteMessage": "",
+  "groomNick": "Quốc Bảo",
+  "brideNick": "Tuệ Anh",
+  "groomFull": "Ngô Quốc Bảo",
+  "brideFull": "Dương Tuệ Anh",
+  "groomRole": "",
+  "brideRole": "",
+  "heroOn": false,
+  "heroPhoto": "",
+  "introCustom": false,
+  "albumOn": true,
+  "photos": [
+    "https://assets.chungdoi.com/photo-library/design/19eba65a0981ee0799bd879d4c40e50b6c649b7df20f4039568af0d18d0f43a6.webp",
+    "https://assets.chungdoi.com/photo-library/design/426d75b69fd3bd0d1e714b6d1e5eea2fb2b9794301539d3a4963837f427f3a94.webp",
+    "https://assets.chungdoi.com/photo-library/design/6652e5d1abe2d8bb3699567490cd437d4ca89562513ca89baedd09fe10394e55.webp",
+    "https://assets.chungdoi.com/photo-library/design/ff37d5c9206502102df93dea592ef498b359398e38a5370d5bd7bf06d2b82fc9.webp",
+    "https://assets.chungdoi.com/photo-library/design/1ca47988fe0403b115e8c15b331e9685d9c860a04f6b69c8ccbc5255e520fac6.webp",
+    "https://assets.chungdoi.com/photo-library/design/eda05ae50caf225892588b7acdb0f53c9ba7667a478b530e246ac10158bbaf09.webp",
+    "https://assets.chungdoi.com/photo-library/design/a3df7a999ad2a83edd620443fdde285d1adebcc89932af95998bf654a326f487.webp",
+    "https://assets.chungdoi.com/photo-library/design/4b2ffc55f0be4772c0cfbd1691531e2542c64f159bb977f9d0c75e177fe5d5cb.webp",
+    "https://assets.chungdoi.com/photo-library/design/a481705b3f37548e7bcfcf76481cb1a11c8a2e3e7535d8f3302572d3cae5d119.webp"
+  ],
+  "familyOn": true,
+  "groomFamTitle": "Ông Bà",
+  "brideFamTitle": "Ông Bà",
+  "groomFather": "Ngô Thanh Tùng",
+  "groomMother": "Ngô Minh Nguyệt",
+  "groomAddr": "Số 86 Núi Thành,\nphường Hòa Cường, Đà Nẵng",
+  "brideFather": "Dương Quang Huy",
+  "brideMother": "Dương Như Khuê",
+  "brideAddr": "Số 31 Lê Văn Hiến,\nphường Ngũ Hành Sơn, Đà Nẵng",
+  "announceOn": true,
+  "announcementLine1": "TRÂN TRỌNG BÁO TIN",
+  "announcementLine2": "LỄ THÀNH HÔN CỦA CON CHÚNG TÔI",
+  "ceremonyTitle": "",
+  "ceremonies": [
+    {
+      "title": "LỄ THÀNH HÔN",
+      "date": "2027-08-02",
+      "time": "19:00",
+      "place": "Trung tâm Tiệc cưới Sun Palace",
+      "lunar": "Tức ngày 1 tháng 7 năm Đinh Mùi"
+    }
+  ],
+  "partyOn": true,
+  "banquetTitle": "",
+  "date": "2027-08-02",
+  "time": "19:00",
+  "hideWelcomeTimes": false,
+  "welcomeTime": "18:00",
+  "startTime": "20:30",
+  "countdown": true,
+  "locTitle": "Tiệc cưới sẽ tổ chức tại",
+  "address": "Trung tâm Tiệc cưới Sun Palace\nĐà Nẵng",
+  "showMap": true,
+  "mapUrl": "",
+  "rsvpOn": true,
+  "dressOn": true,
+  "dressText": "Trang phục dự tiệc",
+  "dressColors": [
+    "#2f2a26",
+    "#a08b74",
+    "#f4efe7"
+  ],
+  "schedOn": true,
+  "sched": [
+    {
+      "time": "15:00",
+      "text": "Lễ gia tiên tại nhà gái"
+    },
+    {
+      "time": "16:30",
+      "text": "Đón dâu"
+    },
+    {
+      "time": "18:00",
+      "text": "Lễ gia tiên tại nhà trai"
+    },
+    {
+      "time": "19:00",
+      "text": "Đón khách"
+    },
+    {
+      "time": "19:30",
+      "text": "Nghi thức thành hôn"
+    },
+    {
+      "time": "20:00",
+      "text": "Rót rượu giao bôi và cắt bánh"
+    },
+    {
+      "time": "20:30",
+      "text": "Khai tiệc"
+    },
+    {
+      "time": "21:30",
+      "text": "Cô dâu chú rể chúc mừng từng bàn"
+    },
+    {
+      "time": "23:00",
+      "text": "Kết thúc tiệc"
+    }
+  ],
+  "guestOn": true,
+  "wishes": [
+    {
+      "name": "Hoàng Gia Huy",
+      "msg": "Chúc hai bạn bắt đầu bằng tình yêu, đi tiếp bằng sự thấu hiểu và giữ nhau lại bằng lòng bao dung.",
+      "at": "16:00:00 20/6/2027"
+    },
+    {
+      "name": "Chị Thảo",
+      "msg": "Rất vui và bất ngờ khi nhận được lời mời. Chúc hai em hạnh phúc viên mãn, cảm ơn cuộc đời đã đưa hai em đến với nhau.",
+      "at": "17:00:00 19/6/2027"
+    },
+    {
+      "name": "Cô Mai và gia đình",
+      "msg": "Chúc hai cháu trăm năm hạnh phúc. Mừng cho đại gia đình có thêm rể hiền, dâu thảo nhé!",
+      "at": "18:00:00 18/6/2027"
+    },
+    {
+      "name": "Gia đình chú Phong",
+      "msg": "Chúc đôi bạn trẻ mãi gắn bó, sẻ chia mọi điều trong cuộc sống. Sinh nhiều nhiều cháu cho cả nhà mỗi người bế một đứa nha 🤩",
+      "at": "19:00:00 1/8/2027"
+    },
+    {
+      "name": "Trịnh Nhật Nam",
+      "msg": "Phải thật hạnh phúc nha. Hôm nay bạn là cô dâu đẹp nhất mà tui từng thấy 🌹",
+      "at": "20:00:00 31/7/2027"
+    },
+    {
+      "name": "Cao Bảo Ngọc",
+      "msg": "Chúc hai bạn trăm năm hạnh phúc ❤️",
+      "at": "21:00:00 30/7/2027"
+    },
+    {
+      "name": "Anh Tuấn phòng kế toán",
+      "msg": "Chúc mừng hạnh phúc hai em nhé!",
+      "at": "22:00:00 29/7/2027"
+    },
+    {
+      "name": "Em Khang",
+      "msg": "Trăm năm hạnh phúc nha anh chị 🥰",
+      "at": "23:00:00 28/7/2027"
+    },
+    {
+      "name": "Phan Thanh Tùng",
+      "msg": "Happy wedding hai bạn ❤️",
+      "at": "0:00:00 28/7/2027"
+    },
+    {
+      "name": "Ngọc Ánh",
+      "msg": "Chúc anh chị đầu bạc răng long.",
+      "at": "1:00:00 27/7/2027"
+    }
+  ],
+  "giftOn": true,
+  "giftTitle": "",
+  "giftDisplayMode": "gift_box",
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "0000000000",
+      "accountName": "THIEP CUOI DEMO",
+      "qrUrl": ""
+    }
+  ],
+  "thanksOn": true,
+  "thanks": "Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi!"
+}

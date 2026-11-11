@@ -249,6 +249,9 @@ import mandapYellowDemo from "./mandap_yellow/demo.json";
 import mahalPinkTheme from "./mahal_pink/theme.json";
 import mahalPinkCaps from "./mahal_pink/capabilities.json";
 import mahalPinkDemo from "./mahal_pink/demo.json";
+import jasmineGreenTheme from "./jasmine_green/theme.json";
+import jasmineGreenCaps from "./jasmine_green/capabilities.json";
+import jasmineGreenDemo from "./jasmine_green/demo.json";
 import floralFiestaYellowTheme from "./floral_fiesta_yellow/theme.json";
 import floralFiestaYellowCaps from "./floral_fiesta_yellow/capabilities.json";
 import floralFiestaYellowDemo from "./floral_fiesta_yellow/demo.json";
@@ -395,6 +398,7 @@ const SPECS: Record<string, TemplateSpec> = {
   calla_lily_white: { id: "calla_lily_white", theme: buildTheme(callaLilyWhiteTheme as unknown as ThemeJson), capabilities: callaLilyWhiteCaps as unknown as TemplateCapabilities, demo: callaLilyWhiteDemo as unknown as Partial<Inv> },
   mandap_yellow: { id: "mandap_yellow", theme: buildTheme(mandapYellowTheme as unknown as ThemeJson), capabilities: mandapYellowCaps as unknown as TemplateCapabilities, demo: mandapYellowDemo as unknown as Partial<Inv> },
   mahal_pink: { id: "mahal_pink", theme: buildTheme(mahalPinkTheme as unknown as ThemeJson), capabilities: mahalPinkCaps as unknown as TemplateCapabilities, demo: mahalPinkDemo as unknown as Partial<Inv> },
+  jasmine_green: { id: "jasmine_green", theme: buildTheme(jasmineGreenTheme as unknown as ThemeJson), capabilities: jasmineGreenCaps as unknown as TemplateCapabilities, demo: jasmineGreenDemo as unknown as Partial<Inv> },
   floral_fiesta_yellow: { id: "floral_fiesta_yellow", theme: buildTheme(floralFiestaYellowTheme as unknown as ThemeJson), capabilities: floralFiestaYellowCaps as unknown as TemplateCapabilities, demo: floralFiestaYellowDemo as unknown as Partial<Inv> },
   nomad_brown: { id: "nomad_brown", theme: buildTheme(nomadBrownTheme as unknown as ThemeJson), capabilities: nomadBrownCaps as unknown as TemplateCapabilities, demo: nomadBrownDemo as unknown as Partial<Inv> },
   saraya_gold: { id: "saraya_gold", theme: buildTheme(sarayaGoldTheme as unknown as ThemeJson), capabilities: sarayaGoldCaps as unknown as TemplateCapabilities, demo: sarayaGoldDemo as unknown as Partial<Inv> },

@@ -46,6 +46,7 @@ export const TEMPLATE_THEMES: Record<string, InvTheme> = {
   dragon_phoenix_v3_red: { bg: "#7A0014", ink: "#FFBE89", rgb: "255, 190, 137", cover: "linear-gradient(to bottom right, #710001, #5a0001, #450001)" },
   dragon_phoenix_v4_red: { bg: "#8c0000", ink: "#FFD390", rgb: "255, 211, 144", cover: "linear-gradient(to bottom right, #A50000, #8C0000, #5A0000)" },
   dragon_phoenix_green: { bg: "#162614", ink: "#e9ce9e", rgb: "233, 206, 158", cover: "linear-gradient(to bottom right, #080e07, #050905, #020402)" },
+  jasmine_green: { bg: "#F5F4F2", ink: "#2E4733", rgb: "46, 71, 51", cover: "linear-gradient(to bottom right, rgb(255, 255, 255), rgba(29, 80, 48, 0.96))" },
   jasmine_white: { bg: "#FFFAF7", ink: "#404A1D", rgb: "64, 74, 29", cover: "linear-gradient(to bottom right, #404A1D, #5a6628, #404A1D)" },
   minimalism_darkred: { bg: "#fff7eb", ink: "#511419", rgb: "81, 20, 25", cover: "linear-gradient(to bottom right, #6e1a20, #511419, #380a0e)" },
   minimalism_red: { bg: "#FFFAF7", ink: "#7C151A", rgb: "124, 21, 26", cover: "linear-gradient(to bottom right, #7C151A, #5a0e12, #3d090d)" },

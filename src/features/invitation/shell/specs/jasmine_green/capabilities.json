@@ -1,0 +1,52 @@
+{
+  "id": "jasmine_green",
+  "family": "jasmine_green",
+  "testId": "jasmine-green-template",
+  "innerClass": "relative z-10 flex flex-col items-center gap-[23px] py-[34px] md:gap-[30px] md:py-[44px]",
+  "blocks": [
+    "Paper",
+    "Hero",
+    "Family",
+    "Album",
+    "Banquet",
+    "Venue",
+    "Dress",
+    "Schedule",
+    "Guestbook",
+    "Gifts",
+    "Footer",
+    "Lightbox"
+  ],
+  "cover": {
+    "seal": "heart",
+    "ambient": "fall",
+    "particle": "blossom",
+    "skin": "card"
+  },
+  "gift": {
+    "widget": "box3d"
+  },
+  "hero": {
+    "kind": "none",
+    "introLine": false,
+    "shape": "none"
+  },
+  "album": {
+    "indicator": "counter",
+    "defaultLayout": "3d"
+  },
+  "countdown": true,
+  "layout": {
+    "contentMaxMd": 900,
+    "behaviorMd": "padded",
+    "parallaxDecor": false
+  },
+  "editor": {
+    "albumCardAfter": "ceremony",
+    "cards": {
+      "hero": false,
+      "coupleHero": false,
+      "introLine": false
+    }
+  }
+}

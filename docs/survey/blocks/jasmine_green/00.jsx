@@ -1,0 +1,1 @@
+<style>@keyframes mgFloat&#123;0%,100%&#123;transform:translateY(0)&#125;50%&#123;transform:translateY(-10px)&#125;&#125;@media(prefers-reduced-motion:reduce)&#123;[style*="mgFloat"]&#123;animation:none!important&#125;&#125;</style>

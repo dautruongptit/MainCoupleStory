@@ -50,4 +50,8 @@ export interface CoverConfig {
   sealImg?: string;
   /** Đường kính con dấu (mặc định 56) */
   sealSize?: number;
+  /** Màu vạch chia + ký tự ❦ khi khác màu tên (mặc định: textColor). */
+  ornamentColor?: string;
+  /** rgb của quầng sáng quanh thẻ khi khác `rgb` (mặc định: rgb). */
+  glowRgb?: string;
 }
