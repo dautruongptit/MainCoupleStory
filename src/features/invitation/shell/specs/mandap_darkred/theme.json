@@ -1,13 +1,13 @@
 {
   "assets": "/images/themes/mandap-darkred",
   "colors": {
-    "ink": "rgb(0, 0, 0)",
-    "inkRgb": "0, 0, 0",
-    "sub": "rgba(0, 0, 0, 0.6)",
-    "muted": "rgb(0, 0, 0)",
-    "paper": "#ffffff",
-    "line": "rgba(0, 0, 0, 0.2)",
-    "accent": "#ffffff",
-    "edge": "rgba(0, 0, 0, 0.1)"
+    "ink": "rgb(242, 192, 110)",
+    "inkRgb": "242, 192, 110",
+    "sub": "rgb(255, 223, 175)",
+    "muted": "rgb(255, 223, 175)",
+    "paper": "rgb(107, 5, 8)",
+    "line": "rgba(242, 192, 110, 0.45)",
+    "accent": "rgb(242, 192, 110)",
+    "edge": "#F2C06E22"
   }
 }

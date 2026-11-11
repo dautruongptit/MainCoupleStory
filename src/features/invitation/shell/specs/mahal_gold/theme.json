@@ -1,13 +1,13 @@
 {
   "assets": "/images/themes/mahal-gold",
   "colors": {
-    "ink": "rgb(0, 0, 0)",
-    "inkRgb": "0, 0, 0",
-    "sub": "rgba(0, 0, 0, 0.6)",
-    "muted": "rgb(0, 0, 0)",
-    "paper": "#ffffff",
-    "line": "rgba(0, 0, 0, 0.2)",
-    "accent": "#ffffff",
-    "edge": "rgba(0, 0, 0, 0.1)"
+    "ink": "rgb(100, 14, 27)",
+    "inkRgb": "100, 14, 27",
+    "sub": "rgb(171, 122, 69)",
+    "muted": "rgb(171, 122, 69)",
+    "paper": "rgb(247, 227, 205)",
+    "line": "rgba(171, 122, 69, 0.35)",
+    "accent": "rgb(100, 14, 27)",
+    "edge": "#640E1B22"
   }
 }
