@@ -3,6 +3,7 @@
 Dự án: **clone giao diện thiệp cưới chungdoi.com sang bản chạy localhost**, khớp từng px (hình học + kiểu) theo từng mẫu. Ngôn ngữ làm việc với chủ dự án: tiếng Việt.
 
 ## 1. Việc đang làm
+- **Sổ đăng ký clone**: `docs/clone-registry.md` (đọc) + `docs/clone-registry.json` (hash từng file) cho biết mẫu nào đã/dở dang/chưa clone và file nào đã lưu. **Sau mỗi lần clone hoặc sửa mẫu: chạy `node scripts/clone/registry.mjs` rồi commit cùng.** Khi chủ dự án bảo "đồng bộ lại toàn bộ mẫu": chạy `--check` trước để thấy file mới/đã đổi/mất, rồi làm theo mục "Quy trình đồng bộ" trong sổ.
 - Nhánh `fix/clone-match`. Đã đạt: **minimalism_brown** (Nâu), **riviera_blue** (Riviera - Lam) và **dragon_phoenix_v4_red** (Long Phụng V4 - Đỏ) ở bìa, thiệp đã mở, hộp quà, RSVP; editor đã dựng theo markup gốc (16 thẻ) và khớp mẫu Nâu ở 390/768/1280.
 - Còn lại (xem `docs/clone-playbook.md` mục 8): đo editor thật của Riviera; parallax khi cuộn của Riviera; nối `getCapabilities()` vào editor; 71 mẫu chưa clone (đang đi đường `Preview.tsx` cũ, lệch lớn).
 - Đọc theo thứ tự: `docs/clone-playbook.md` (quy trình) → `docs/clone-rules.md` (rule, capabilities) → `docs/clone-plan-88.md` (kế hoạch 88 mẫu, thay `clone-plan.md` cũ) → `docs/brown-fix-plan.md` (ví dụ làm hết một mẫu).
@@ -48,4 +49,6 @@ Tiêu chí đạt một màn: lệch hình học **0** (dung sai 1px) và lệch
 4. CSS cũ cộng dồn (`.space-y-*`, rule `!important` theo `data-bot-screenshot-id`) → xem playbook mục 5.
 5. Ảnh `loading="lazy"` có chiều cao 0 khi chưa tải → so sánh bằng trạng thái `openfull`.
 6. `npm run css:inv` dò Tailwind v4 theo phiên bản vì vị trí trong `node_modules` đổi theo máy; nếu báo không thấy, chạy `npm install`.
-7. Font: gốc không nạp Libre Baskerville; thêm font vào `index.html` làm chữ rộng hơn gốc.
+7. Mẫu mới thêm họ khối: chạy `npm run css:inv` (class Tailwind arbitrary mới), đăng ký ở `blocks/index.ts` **và** `specs/index.ts` (SPECS), thêm `coverConfigs.ts` + `templates.ts`; thiếu `specs/index.ts` thì thiệp lặng lẽ rơi về `Preview.tsx` cũ.
+8. Thu dữ liệu từ trang gốc về `localhost:5199/5299` cần Chrome cho phép truy cập mạng nội bộ (chrome://settings/content/all); nếu `fetch` lỗi ngay lập tức, đó là chặn này. Dump không được chứa khóa API: che `AIzaSy…` thành `AIzaSy_REDACTED` trước khi commit.
+9. Font: gốc không nạp Libre Baskerville; thêm font vào `index.html` làm chữ rộng hơn gốc.
