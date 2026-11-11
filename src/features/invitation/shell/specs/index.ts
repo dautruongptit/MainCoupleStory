@@ -240,6 +240,15 @@ import hoaKhoOrangeDemo from "./hoa_kho_orange/demo.json";
 import mahalGoldTheme from "./mahal_gold/theme.json";
 import mahalGoldCaps from "./mahal_gold/capabilities.json";
 import mahalGoldDemo from "./mahal_gold/demo.json";
+import callaLilyWhiteTheme from "./calla_lily_white/theme.json";
+import callaLilyWhiteCaps from "./calla_lily_white/capabilities.json";
+import callaLilyWhiteDemo from "./calla_lily_white/demo.json";
+import mandapYellowTheme from "./mandap_yellow/theme.json";
+import mandapYellowCaps from "./mandap_yellow/capabilities.json";
+import mandapYellowDemo from "./mandap_yellow/demo.json";
+import mahalPinkTheme from "./mahal_pink/theme.json";
+import mahalPinkCaps from "./mahal_pink/capabilities.json";
+import mahalPinkDemo from "./mahal_pink/demo.json";
 import floralFiestaYellowTheme from "./floral_fiesta_yellow/theme.json";
 import floralFiestaYellowCaps from "./floral_fiesta_yellow/capabilities.json";
 import floralFiestaYellowDemo from "./floral_fiesta_yellow/demo.json";
@@ -272,6 +281,8 @@ export interface TemplateCapabilities {
   rootClass?: string;
   /** Class bọc các khối nội dung bên trong (khi decor nằm ngoài root thiệp) */
   innerClass?: string;
+  /** Giá trị biến --st-w (mặc định "min(100vw, 480px)"); vài mẫu gốc dùng min(100vw, 900px) */
+  stWidth?: string;
   testId: string;
   /** Thứ tự và tập khối được vẽ (tên khớp `blocks/index.ts`) */
   blocks: string[];
@@ -381,6 +392,9 @@ const SPECS: Record<string, TemplateSpec> = {
   san_miguel_yellow: { id: "san_miguel_yellow", theme: buildTheme(sanMiguelYellowTheme as unknown as ThemeJson), capabilities: sanMiguelYellowCaps as unknown as TemplateCapabilities, demo: sanMiguelYellowDemo as unknown as Partial<Inv> },
   hoa_kho_orange: { id: "hoa_kho_orange", theme: buildTheme(hoaKhoOrangeTheme as unknown as ThemeJson), capabilities: hoaKhoOrangeCaps as unknown as TemplateCapabilities, demo: hoaKhoOrangeDemo as unknown as Partial<Inv> },
   mahal_gold: { id: "mahal_gold", theme: buildTheme(mahalGoldTheme as unknown as ThemeJson), capabilities: mahalGoldCaps as unknown as TemplateCapabilities, demo: mahalGoldDemo as unknown as Partial<Inv> },
+  calla_lily_white: { id: "calla_lily_white", theme: buildTheme(callaLilyWhiteTheme as unknown as ThemeJson), capabilities: callaLilyWhiteCaps as unknown as TemplateCapabilities, demo: callaLilyWhiteDemo as unknown as Partial<Inv> },
+  mandap_yellow: { id: "mandap_yellow", theme: buildTheme(mandapYellowTheme as unknown as ThemeJson), capabilities: mandapYellowCaps as unknown as TemplateCapabilities, demo: mandapYellowDemo as unknown as Partial<Inv> },
+  mahal_pink: { id: "mahal_pink", theme: buildTheme(mahalPinkTheme as unknown as ThemeJson), capabilities: mahalPinkCaps as unknown as TemplateCapabilities, demo: mahalPinkDemo as unknown as Partial<Inv> },
   floral_fiesta_yellow: { id: "floral_fiesta_yellow", theme: buildTheme(floralFiestaYellowTheme as unknown as ThemeJson), capabilities: floralFiestaYellowCaps as unknown as TemplateCapabilities, demo: floralFiestaYellowDemo as unknown as Partial<Inv> },
   nomad_brown: { id: "nomad_brown", theme: buildTheme(nomadBrownTheme as unknown as ThemeJson), capabilities: nomadBrownCaps as unknown as TemplateCapabilities, demo: nomadBrownDemo as unknown as Partial<Inv> },
   saraya_gold: { id: "saraya_gold", theme: buildTheme(sarayaGoldTheme as unknown as ThemeJson), capabilities: sarayaGoldCaps as unknown as TemplateCapabilities, demo: sarayaGoldDemo as unknown as Partial<Inv> },

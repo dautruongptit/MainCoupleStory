@@ -1,0 +1,16 @@
+{
+  "assets": "/images/themes/mandap-yellow",
+  "colors": {
+    "ink": "rgb(59, 86, 0)",
+    "inkRgb": "59, 86, 0",
+    "sub": "rgb(129, 0, 0)",
+    "muted": "rgb(129, 0, 0)",
+    "paper": "rgb(253, 240, 205)",
+    "line": "rgba(103, 21, 19, 0.3)",
+    "accent": "rgb(59, 86, 0)",
+    "edge": "#3B560022"
+  },
+  "tokens": {
+    "scheduleIcons": "jar,wreath,drum"
+  }
+}

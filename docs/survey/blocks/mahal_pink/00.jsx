@@ -1,0 +1,1 @@
+<div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-20" style={{ backgroundImage: "url(\"/images/themes/mahal-pink/paper.webp\")", backgroundSize: "100% auto", backgroundRepeat: "repeat-y", opacity: "0.6" }}></div>

@@ -1,0 +1,30 @@
+{
+  "_note": "Dữ liệu demo của calla_lily_white đo từ chungdoi.com",
+  "order": "groom",
+  "heroOn": true,
+  "albumOn": true,
+  "photos": [
+    "https://assets.chungdoi.com/photo-library/design/2da21468b5df4593edd6d0c98ff7e59e97be6e4feca3d70b770896bea42af60e.webp",
+    "https://assets.chungdoi.com/photo-library/design/3408b63d4775347efaefa803aca17296e0ff2e42af093be24a5a3c3b278aa503.webp",
+    "https://assets.chungdoi.com/photo-library/design/a39e91a16c1ccee48614263d66329da4e9f74161dcdcf1663e0a5817b600145d.webp",
+    "https://assets.chungdoi.com/photo-library/design/f4c75ef657dc3e39b46e8d0d9c2650e138a3fb65959c3340b77bf60e62f85260.webp",
+    "https://assets.chungdoi.com/photo-library/design/3ac0ac20c552fca45de09834feb7b8c48afe27269e1ce611a1c8b46feba4d0ed.webp",
+    "https://assets.chungdoi.com/photo-library/design/8b3363a0ed3668f96ac8b94740aeed2db547a4f9b5c7781080b8c58e83f06d3c.webp",
+    "https://assets.chungdoi.com/photo-library/design/70a06c14cf04d06cde7b67ea63d85a426e76c746d71428981dda02b68204ff57.webp"
+  ],
+  "familyOn": true,
+  "announceOn": true,
+  "partyOn": true,
+  "locTitle": "Tiệc cưới sẽ tổ chức tại",
+  "wishes": [
+    { "name": "Chị Hai và các cháu", "msg": "Chúc gia đình nhỏ luôn ấm êm.", "at": "16:00:00 28/4/2027" },
+    { "name": "Hải Đăng", "msg": "Mừng hạnh phúc hai bạn, cùng nhau đi hết đoạn đường đời nhé.", "at": "17:00:00 27/4/2027" },
+    { "name": "em Trinh", "msg": "Chúc anh chị bách niên giai lão.", "at": "18:00:00 26/4/2027" },
+    { "name": "Anh Tuấn phòng kế toán", "msg": "Trăm năm tình viên mãn, bạc đầu nghĩa phu thê.", "at": "19:00:00 25/4/2027" },
+    { "name": "Duy Khánh", "msg": "Chúc mừng ngày trọng đại của hai bạn!", "at": "20:00:00 24/4/2027" },
+    { "name": "Anh Hưng", "msg": "Nhất định phải thật hạnh phúc nhé!", "at": "21:00:00 23/4/2027" },
+    { "name": "Khánh Vy", "msg": "Chúc bạn tui một đời bình an.", "at": "22:00:00 22/4/2027" },
+    { "name": "Bé Thỏ", "msg": "Chúc mừng anh chị, sớm có tin vui nha 🎉", "at": "23:00:00 21/4/2027" }
+  ],
+  "gifts": []
+}

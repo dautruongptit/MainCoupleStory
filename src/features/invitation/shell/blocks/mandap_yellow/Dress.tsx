@@ -1,0 +1,10 @@
+import React from "react";
+import { isLightColor } from "@/features/invitation/shell/useInvitationCtx";
+import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx";
+
+export function Dress({ ctx }: { ctx: InvitationCtx }) {
+  const { d, t } = ctx;
+  return (
+    d.dressOn && (<section className="relative isolate w-full" style={{ marginTop: "calc(0.05215 * var(--st-w))", paddingInline: "8.503%" }}><img alt="" aria-hidden="true" className="pointer-events-none absolute left-[-18.338%] top-10 z-[1] h-auto w-[35.943%] max-w-none object-contain md:top-12" loading="lazy" decoding="async" src={`${t.assets}/flower2-decoration.webp`} style={{ transform: "translateY(-238.162px) rotate(23.39deg)", willChange: "transform" }} /><img alt="" aria-hidden="true" className="pointer-events-none absolute left-[82.621%] top-10 z-[1] h-auto w-[35.943%] max-w-none object-contain md:top-12" loading="lazy" decoding="async" src={`${t.assets}/flower2-decoration.webp`} style={{ transform: "translateY(-238.162px) rotate(-23.39deg) scaleX(-1)", willChange: "transform" }} /><div className="relative z-10 flex flex-col items-center gap-5 px-6 md:px-10 py-10 md:py-12 "><div className="flex flex-col items-center gap-1"><h2 className="uppercase font-bold text-[20px] md:text-[26px] text-center relative z-10" style={{ color: t.ink, fontFamily: "\"Times New Roman\", Times, ChungDoiIndic, serif", fontWeight: "700", letterSpacing: "0.04em" }}><span>{d.dressTitle || "DRESS CODE"}</span></h2><p className="whitespace-pre-line relative z-10 text-[13px] md:text-[16px] text-center" style={{ color: t.sub, fontFamily: "\"Times New Roman\", Times, ChungDoiIndic, serif" }}><span>{d.dressText}</span></p></div><div className="flex flex-wrap justify-center gap-4 md:gap-6">{d.dressColors.map((c, i) => (<div key={i} className="w-10 h-10 md:w-12 md:h-12 rounded-full shadow-md" style={{ backgroundColor: c, ...(isLightColor(c) ? { border: `1.5px solid rgba(59, 86, 0, 0.19)` } : {}) }}></div>))}</div></div></section>)
+  );
+}

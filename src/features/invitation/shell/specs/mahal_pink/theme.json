@@ -1,0 +1,16 @@
+{
+  "assets": "/images/themes/mahal-pink",
+  "colors": {
+    "ink": "rgb(125, 39, 50)",
+    "inkRgb": "125, 39, 50",
+    "sub": "rgb(102, 112, 73)",
+    "muted": "rgb(102, 112, 73)",
+    "paper": "rgb(252, 241, 224)",
+    "line": "rgba(125, 39, 50, 0.28)",
+    "accent": "rgb(125, 39, 50)",
+    "edge": "#7D273226"
+  },
+  "tokens": {
+    "scheduleIcons": "medallion-candle,medallion-pen,medallion-gate"
+  }
+}

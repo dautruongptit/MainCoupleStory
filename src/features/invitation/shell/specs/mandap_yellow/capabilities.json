@@ -1,0 +1,52 @@
+{
+  "id": "mandap_yellow",
+  "family": "mandap_yellow",
+  "testId": "mandap-yellow-template",
+  "stWidth": "min(100vw, 900px)",
+  "blocks": [
+    "Paper",
+    "Hero",
+    "Family",
+    "Album",
+    "Banquet",
+    "Venue",
+    "Dress",
+    "Schedule",
+    "Guestbook",
+    "Gifts",
+    "Footer",
+    "Lightbox"
+  ],
+  "cover": {
+    "seal": "heart",
+    "ambient": "fall",
+    "particle": "blossom",
+    "skin": "card"
+  },
+  "gift": {
+    "widget": "envelope"
+  },
+  "hero": {
+    "kind": "photo",
+    "introLine": true,
+    "shape": "portrait"
+  },
+  "album": {
+    "indicator": "counter",
+    "defaultLayout": "3d"
+  },
+  "countdown": true,
+  "layout": {
+    "contentMaxMd": 900,
+    "behaviorMd": "padded",
+    "parallaxDecor": false
+  },
+  "editor": {
+    "albumCardAfter": "ceremony",
+    "cards": {
+      "hero": true,
+      "coupleHero": false,
+      "introLine": true
+    }
+  }
+}

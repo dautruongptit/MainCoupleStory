@@ -1,0 +1,9 @@
+import React from "react";
+import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx";
+
+export function Hero({ ctx }: { ctx: InvitationCtx }) {
+  const { t, n1, n2 } = ctx;
+  return (
+    <header className="relative isolate w-full overflow-x-clip"><div className="relative mx-auto w-full max-w-[441px] md:max-w-[600px]"><div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10"><img alt="" aria-hidden="true" className="pointer-events-none absolute -z-10 max-w-none object-contain will-change-transform right-[-120px] top-[-178px] h-[732px] w-[488px] md:right-[-274px] md:top-[-202px] md:h-[996px] md:w-[664px]" loading="eager" decoding="async" src={`${t.assets}/rum-background.webp`} style={{ opacity: "0.7", transform: "translateY(35.4px) rotate(2.1deg)" }} /></div><div className="relative z-10 flex w-full flex-col pt-[86.9%] pb-[12.7%]"><p className="whitespace-pre-line text-center text-[15px] uppercase leading-[1.35] tracking-[0.06em] md:text-[20px]" style={{ color: t.sub, fontFamily: "\"EB Garamond\", \"Cormorant Garamond\", \"Times New Roman\", ChungDoiIndic, serif", fontWeight: "500" }}>SAVE THE DATE</p><div className="mt-[7.7%] flex w-full flex-col pl-[12.5%] pr-[17.2%]"><div className="w-full"><p className="text-start leading-[1.35]" style={{ fontFamily: "\"Beau Rivage\", ChungDoiIndic, cursive", color: t.ink, fontSize: "clamp(24px, 9.07vw, 40px)" }}>{n1}</p></div><p className="mt-[4px] text-center leading-[1.33]" style={{ fontFamily: "\"Clicker Script\", ChungDoiIndic, cursive", color: t.ink, fontSize: "clamp(18px, 6.8vw, 41px)", marginInlineStart: "4.7%" }}>&amp;</p><div className="w-full"><p className="text-end leading-[1.35]" style={{ fontFamily: "\"Beau Rivage\", ChungDoiIndic, cursive", color: t.ink, fontSize: "clamp(24px, 9.07vw, 40px)" }}>{n2}</p></div></div></div></div></header>
+  );
+}

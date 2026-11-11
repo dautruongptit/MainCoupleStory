@@ -1,0 +1,16 @@
+{
+  "assets": "/images/themes/calla-lily-white",
+  "colors": {
+    "ink": "rgb(92, 95, 62)",
+    "inkRgb": "92, 95, 62",
+    "sub": "rgb(167, 133, 85)",
+    "muted": "rgb(167, 133, 85)",
+    "paper": "rgb(244, 243, 238)",
+    "line": "rgba(167, 133, 85, 0.333)",
+    "accent": "rgb(92, 95, 62)",
+    "edge": "#5C5F3E22"
+  },
+  "tokens": {
+    "scheduleIcons": "letter,cake,ring"
+  }
+}

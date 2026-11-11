@@ -31,7 +31,7 @@ export function InvitationShell({ d, set, spec, active = true }: InvitationShell
             backgroundColor: t.paper,
             color: t.text ?? t.ink,
             ["--inv-edge" as string]: t.edge,
-            ["--st-w" as string]: "min(100vw, 480px)",
+            ["--st-w" as string]: spec.capabilities.stWidth ?? "min(100vw, 480px)",
             ...(t.bgImage ? {
               backgroundImage: `url("${t.bgImage}")`,
               backgroundSize: "100% auto",

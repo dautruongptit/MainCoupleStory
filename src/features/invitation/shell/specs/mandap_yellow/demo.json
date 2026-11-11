@@ -1,0 +1,34 @@
+{
+  "_note": "Dữ liệu demo của mandap_yellow đo từ chungdoi.com",
+  "order": "groom",
+  "heroOn": true,
+  "albumOn": true,
+  "photos": [
+    "https://assets.chungdoi.com/photo-library/design/5019eadee002f02ce6f39d9c5bdb7304d4da683b4e109c41e7ed14e63391d9b0.webp",
+    "https://assets.chungdoi.com/photo-library/design/1f83fb78c75b96a05661eca4cbc50dd771fc37411920623d6d9729eea1daa7c8.webp",
+    "https://assets.chungdoi.com/photo-library/design/fb57414f47aa2c9189bc9fa20f34d557dd1a4cd13a908fd30633275ca5abaf6d.webp",
+    "https://assets.chungdoi.com/photo-library/design/76763999ecb5db3569cea7991a2ea4fdf32e4a2639daeb28c6f2a9b5fdf6f313.webp",
+    "https://assets.chungdoi.com/photo-library/design/da4ca736067f9572362cd90a28e95274e985ffa76cc58e3c36b23219ebf4f6f7.webp",
+    "https://assets.chungdoi.com/photo-library/design/107e38d720d04da6442122cbe91d47eda6ebc8c962579a14b345ba3ad6dd49a4.webp",
+    "https://assets.chungdoi.com/photo-library/design/5b2fafb74f1aa84ca843acded191b5e4629c62f9b73820281864f27167312b06.webp",
+    "https://assets.chungdoi.com/photo-library/design/3fcfad216695abf4dbd4198edb2ba4d451546d5e1231aafbc66559e164daad27.webp",
+    "https://assets.chungdoi.com/photo-library/design/a4bacc8760315d26e8660bcd2943d479c968e7e92892d2e367cfab6facb63017.webp",
+    "https://assets.chungdoi.com/photo-library/design/655375b2b2c6edb9772053c6a2150a6247ccf7002f69a1b733f682fa05d6309f.webp"
+  ],
+  "familyOn": true,
+  "announceOn": true,
+  "partyOn": true,
+  "locTitle": "Tiệc cưới sẽ tổ chức tại",
+  "wishes": [
+    { "name": "Hải Đăng", "msg": "Bạn cùng phòng ký túc của tui lên xe hoa rồi. Từ nay có người khác nắm tay bạn đi tiếp, phải thật hạnh phúc nhé.", "at": "16:00:00 18/7/2027" },
+    { "name": "Ngọc Ánh", "msg": "Chúc anh chị một đời một kiếp, chỉ một người thương.", "at": "17:00:00 17/7/2027" },
+    { "name": "Chị Mai Phương", "msg": "Thấy hai đứa từ hồi còn yêu nhau ríu rít ở công ty, nay về chung một nhà, vui ghê! Chúc mừng nhé.", "at": "18:00:00 16/7/2027" },
+    { "name": "Duy Khánh", "msg": "Chúc hôn nhân của hai bạn là câu chuyện cổ tích kéo dài mãi mãi.", "at": "19:00:00 15/7/2027" },
+    { "name": "Linh Đan", "msg": "Mình bị ốm nên không đến được, tiếc lắm luôn. Chúc vợ chồng bạn trăm năm hạnh phúc, hẹn gặp sớm nha!", "at": "20:00:00 14/7/2027" },
+    { "name": "Anh chị Minh Thư", "msg": "Chúc hai em trăm năm hạnh phúc, nắm chặt tay nhau và cùng nhau già đi.", "at": "21:00:00 13/7/2027" },
+    { "name": "Em Duy", "msg": "Chúc anh chị đầu năm sinh con trai, cuối năm sinh con gái 🤣", "at": "22:00:00 12/7/2027" },
+    { "name": "Phương Thảo", "msg": "Nhận được thiệp mà mình xúc động muốn khóc luôn. Chúc mừng hạnh phúc bạn nha ❤️", "at": "23:00:00 11/7/2027" },
+    { "name": "Đức Anh", "msg": "Chúc hai bạn chân cứng đá mềm, cùng nhau đi qua những ngày nắng và cả những ngày mưa.", "at": "0:00:00 11/7/2027" }
+  ],
+  "gifts": []
+}
