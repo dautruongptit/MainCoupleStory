@@ -183,7 +183,7 @@ L.push("- ⬜ **chưa clone**: chưa có spec — đang chạy đường `Previe
 L.push("- Cột **Đã kiểm** là ô tích tay trong JSON (`verified`): bìa / mở thiệp / hộp quà / RSVP / editor / lệch hình học = 0. `clone` ≠ đã kiểm đủ.", "");
 L.push("## Quy trình đồng bộ lại toàn bộ mẫu", "");
 L.push("1. `node scripts/clone/registry.mjs --check` — so sổ đã lưu với code hiện tại (file nào mới / đã cập nhật / mất).");
-L.push("2. Lọc mẫu ⬜ và 🟡 trong bảng dưới → clone theo `docs/clone-playbook.md`.");
+L.push("2. Lọc mẫu ⬜ và 🟡 trong bảng dưới → clone theo `docs/playbook/clone-playbook.md`.");
 L.push("3. Mẫu ✅: đo lại trang gốc, so với hash trong JSON để biết file nào thay đổi (ảnh theme mới tải về có hash khác → đã cập nhật).");
 L.push("4. Mỗi lần clone: lưu ảnh vào `public/images/themes/<thư mục theo tên gốc>/`, ảnh phong bì vào `public/images/envelope/<id>.webp`, HTML thô vào `docs/survey/raw/<id>_*.json`, khối tách vào `docs/survey/blocks/<id>/`; sau đó chạy lại registry và commit.");
 L.push("5. Ảnh xem trước `public/images/template-previews/` bị gitignore (bản quyền, chỉ localhost) nên **không** nằm trong sổ; tải lại bằng script khi cần.", "");

@@ -1,4 +1,4 @@
-// Bộ kiểm tra chung trước khi gộp mỗi giai đoạn tái cấu trúc (docs/refactor-plan.md mục 4.0).
+// Bộ kiểm tra chung trước khi gộp mỗi giai đoạn tái cấu trúc (docs/playbook/refactor-plan.md mục 4.0).
 // Dùng (cần dev server đang chạy, mặc định http://localhost:8111):
 //   npm run check                  nhanh: tsc + số đo mốc 3 mẫu chuẩn + hộp quà 6 mẫu + editor-sync 2 mẫu
 //   npm run check -- --full        đầy đủ: thêm build + hộp quà 92 mẫu (~30 phút) + hình học hộp quà

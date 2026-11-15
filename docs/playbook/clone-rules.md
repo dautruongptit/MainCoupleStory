@@ -176,7 +176,7 @@ Công cụ: `scripts/check/audit.mjs <id>` (khối + console/network), `scripts/
 
 ---
 
-## G. Công thức sửa dùng cho mọi mẫu (rút từ kiểm tra từng phần tử mẫu Nâu — xem `docs/brown-fix-plan.md`)
+## G. Công thức sửa dùng cho mọi mẫu (rút từ kiểm tra từng phần tử mẫu Nâu — xem `docs/archive/brown-fix-plan.md`)
 
 **Phát hiện nền tảng:** trang gốc = **Tailwind v4 + daisyUI v5** (preflight v4 zero `margin/padding`; `@layer daisyui…`; màu `oklch`; `rounded-full` = `3.35544e+07px`; `rotate/translate/scale` là thuộc tính riêng nên `transform` tính toán = `none`; editor dùng theme `halloween`). Bản local dùng Tailwind v3 chỉ phát `utilities`.
 

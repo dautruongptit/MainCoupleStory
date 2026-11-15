@@ -1,6 +1,6 @@
 # scripts/
 
-Sắp lại ở giai đoạn A4 (docs/refactor-plan.md). Chạy mọi lệnh từ thư mục gốc `web/`.
+Sắp lại ở giai đoạn A4 (docs/playbook/refactor-plan.md). Chạy mọi lệnh từ thư mục gốc `web/`.
 
 | Thư mục | Dùng để | Ví dụ |
 |---|---|---|

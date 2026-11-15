@@ -1,4 +1,4 @@
-// Phase 6: kiểm tra tổng hợp mẫu Nâu (không sửa gì). Ghi kết quả JSON ra docs/phase6-results.json
+// Phase 6: kiểm tra tổng hợp mẫu Nâu (không sửa gì). Ghi kết quả JSON ra docs/archive/phase6-results.json
 import fs from "node:fs";
 import { ChromeController } from "../lib/cdp_helper.mjs";
 
@@ -91,6 +91,6 @@ await c.navigate(URL_E, 4000);
 E.mobileOverflow = await ev(`()=>document.documentElement.scrollWidth-document.documentElement.clientWidth`);
 await c.screenshot("docs/reference/brown_local_390_editor.png");
 
-fs.writeFileSync("docs/phase6-results.json", JSON.stringify(out, null, 1));
+fs.writeFileSync("docs/archive/phase6-results.json", JSON.stringify(out, null, 1));
 console.log(JSON.stringify(out, null, 1).slice(0, 6000));
 process.exit(0);

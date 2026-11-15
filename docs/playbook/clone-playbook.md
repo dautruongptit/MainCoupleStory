@@ -1,7 +1,7 @@
 # Playbook: clone 1 mẫu thiệp cho khớp trang gốc (chungdoi.com)
 
 Dùng cho **bất kỳ `<templateId>`** (vd `song_hy_red`). Làm lần lượt; mỗi bước có lệnh kiểm tra và tiêu chí qua.
-Tài liệu liên quan: `docs/clone-rules.md` (rule + capabilities), `docs/clone-plan.md` (kế hoạch 75 mẫu), `docs/brown-fix-plan.md` (ví dụ làm hết mẫu Nâu).
+Tài liệu liên quan: `docs/playbook/clone-rules.md` (rule + capabilities), `docs/archive/clone-plan.md` (kế hoạch 75 mẫu), `docs/archive/brown-fix-plan.md` (ví dụ làm hết mẫu Nâu).
 Mẫu tham chiếu đã đạt: `minimalism_brown`.
 
 > Trạng thái: engine mở thiệp, hộp thoại RSVP, editor (khung + 16 thẻ) và khuôn thiệp đã mở (`shell/`: theme.json + capabilities.json + block) dùng chung. Khuôn hiện có một họ bố cục (minimalism); xem mục 4.2 và 8.
@@ -69,7 +69,7 @@ Cấu trúc:
 - `useInvitationCtx.ts`: toàn bộ phần tính toán/trạng thái dùng chung (tên, gia đình, lịch, album, quà, lời chúc, nhạc...). Trả về `ctx` cho các khối.
 - `blocks/*.tsx`: một khối = một đoạn thiệp (Backdrop, Hero, Family, Album, Banquet, Venue, Dress, Schedule, Guestbook, Gifts, Thanks, RsvpButton, RsvpDialogHost, Lightbox, MusicPlayer). Đăng ký trong `blocks/index.ts` (họ "minimalism").
 - `specs/<id>/theme.json`: màu (ink, sub, muted, paper, line, accent, edge, cream) + thư mục ảnh (`assets`). Khối **không** chứa màu / đường dẫn ảnh cố định, chỉ đọc `t.ink`, `t.assets`...
-- `specs/<id>/capabilities.json`: danh sách & thứ tự khối, cờ cover/gift/hero/album/countdown/layout/editor/music (schema ở `docs/clone-rules.md` mục B1).
+- `specs/<id>/capabilities.json`: danh sách & thứ tự khối, cờ cover/gift/hero/album/countdown/layout/editor/music (schema ở `docs/playbook/clone-rules.md` mục B1).
 - `specs/index.ts`: đăng ký mẫu (`getTemplateSpec(id)`, `getCapabilities(id)`). `Preview.tsx` tự dùng khuôn khi mẫu có spec.
 
 Thêm mẫu cùng họ bố cục (minimalism: Nâu, Xanh lá, Tím, Đỏ... chỉ khác màu/ảnh):
@@ -112,7 +112,7 @@ Engine bìa hỗ trợ thêm `sealImg`/`sealSize` (con dấu là ảnh, vd song 
 ### 4.3 Editor (đã dùng chung cho mọi mẫu)
 - Khung: `EditorPage.tsx` (wrapper `inv-root > div.min-h-screen.bg-base-200.pb-14.lg:pb-0` chứa `Header` + `main.max-w-4xl > .body`), `Header.tsx`, `EditorTopBar.tsx`.
 - Thẻ: `components/v2/` — `CardV2` (vỏ thẻ), `ui2.tsx` (`Field2`, `Row2`, `Input2`, `Textarea2`, `Seg2`, `Hint2`, `Helper2`, `Toggle2`, `OutlineButton2`, `Divider2`), `BasicV2`, `HeroV2`, `AlbumV2`, `BanquetV2`, `SectionsV2` (các thẻ còn lại).
-- Chỉ khác theo mẫu: thẻ ảnh đầu thiệp (Ảnh đầu thiệp / Ảnh đôi / không có), công tắc intro, vị trí thẻ album — khai báo bằng cờ capabilities (`docs/clone-rules.md` mục B).
+- Chỉ khác theo mẫu: thẻ ảnh đầu thiệp (Ảnh đầu thiệp / Ảnh đôi / không có), công tắc intro, vị trí thẻ album — khai báo bằng cờ capabilities (`docs/playbook/clone-rules.md` mục B).
 - Thẻ mới/khác: lấy HTML thẻ từ `*_editor_html.json` (`cards[i]`), bỏ SVG để đọc cấu trúc, dựng lại **đúng class**, đo lại.
 - Kiểm tra: `diff_dump … editor 390`, `768`, `1280` = 0; `node scripts/check/editor-sync.mjs <id>` không FAIL (sửa field → preview đổi; công tắc ẩn/hiện; hành động; tải lại còn dữ liệu).
 
@@ -153,7 +153,7 @@ Mẫu Nâu phải **giữ nguyên số đo** (open: 3 phần tử coverflow ản
 - [ ] hộp quà + RSVP: 0 lệch
 - [ ] editor: 0 lệch ở 390 / 768 / 1280; `editor-sync` không FAIL
 - [ ] hồi quy mẫu Nâu không đổi; `tsc` + `build` sạch
-- [ ] báo cáo `docs/survey/diff-<id>-*.md` đính kèm; ghi mục tồn đọng (nếu có) vào `docs/clone-plan.md`
+- [ ] báo cáo `docs/survey/diff-<id>-*.md` đính kèm; ghi mục tồn đọng (nếu có) vào `docs/archive/clone-plan.md`
 - [ ] chưa commit — xin duyệt, rồi tách commit: (a) CSS nền, (b) component mẫu + demo, (c) editor, (d) docs + scripts, (e) `.gitignore` (không đưa `_reference/`, `.chrome_profile`, ảnh chụp màn hình)
 
 ## 8. Việc chưa làm (ảnh hưởng playbook)

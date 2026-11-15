@@ -14,7 +14,7 @@ Cập nhật: 2026-11-15 · Tổng **92** mẫu: ✅ đã clone **43** · 🟡 d
 ## Quy trình đồng bộ lại toàn bộ mẫu
 
 1. `node scripts/clone/registry.mjs --check` — so sổ đã lưu với code hiện tại (file nào mới / đã cập nhật / mất).
-2. Lọc mẫu ⬜ và 🟡 trong bảng dưới → clone theo `docs/clone-playbook.md`.
+2. Lọc mẫu ⬜ và 🟡 trong bảng dưới → clone theo `docs/playbook/clone-playbook.md`.
 3. Mẫu ✅: đo lại trang gốc, so với hash trong JSON để biết file nào thay đổi (ảnh theme mới tải về có hash khác → đã cập nhật).
 4. Mỗi lần clone: lưu ảnh vào `public/images/themes/<thư mục theo tên gốc>/`, ảnh phong bì vào `public/images/envelope/<id>.webp`, HTML thô vào `docs/survey/raw/<id>_*.json`, khối tách vào `docs/survey/blocks/<id>/`; sau đó chạy lại registry và commit.
 5. Ảnh xem trước `public/images/template-previews/` bị gitignore (bản quyền, chỉ localhost) nên **không** nằm trong sổ; tải lại bằng script khi cần.

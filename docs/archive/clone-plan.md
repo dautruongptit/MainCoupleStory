@@ -1,6 +1,6 @@
 # Kế hoạch chung clone 75 mẫu
 
-Dựa trên: `docs/clone-rules.md` và khảo sát 5 mẫu (`docs/survey/`). Mọi con số dưới đây là **ước lượng từ 5/75 mẫu** — phải được xác nhận bằng quét tự động (mục 3) trước khi làm hàng loạt.
+Dựa trên: `docs/playbook/clone-rules.md` và khảo sát 5 mẫu (`docs/survey/`). Mọi con số dưới đây là **ước lượng từ 5/75 mẫu** — phải được xác nhận bằng quét tự động (mục 3) trước khi làm hàng loạt.
 
 ## 1. Ước lượng số "loại" thực tế
 
@@ -76,7 +76,7 @@ Cần viết thêm:
 
 ## 7. Cập nhật sau kiểm tra từng phần tử mẫu Nâu (ưu tiên hơn mục 2–3 khi xung đột)
 
-Kết quả (`docs/brown-fix-plan.md`): mẫu Nâu **chưa** đúng từng px — thiệp mở 56 phần tử lệch hình học (còn 33 sau khi chỉ thêm biến `--tw-*`), bìa 0 lệch hình học, hộp thoại quà/RSVP/editor còn lệch, chuỗi mở thiệp lệch. Nguyên nhân gốc là **hệ CSS khác** (gốc: Tailwind v4 + daisyUI v5; local: Tailwind v3 chỉ `utilities`), không phải từng mẫu.
+Kết quả (`docs/archive/brown-fix-plan.md`): mẫu Nâu **chưa** đúng từng px — thiệp mở 56 phần tử lệch hình học (còn 33 sau khi chỉ thêm biến `--tw-*`), bìa 0 lệch hình học, hộp thoại quà/RSVP/editor còn lệch, chuỗi mở thiệp lệch. Nguyên nhân gốc là **hệ CSS khác** (gốc: Tailwind v4 + daisyUI v5; local: Tailwind v3 chỉ `utilities`), không phải từng mẫu.
 
 **Giai đoạn 0 bổ sung (làm trước mọi mẫu mới):**
 1. Công thức R1–R4, R8, R10 (engine) → chạy lại `diff_dump` mẫu Nâu, mục tiêu 0 lệch ở 4 trạng thái × 3 khổ.

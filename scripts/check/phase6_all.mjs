@@ -17,7 +17,7 @@ for (const slug of slugs) {
   }
   res.push(r);
 }
-fs.writeFileSync("docs/phase6-all-templates.json", JSON.stringify(res, null, 1));
+fs.writeFileSync("docs/archive/phase6-all-templates.json", JSON.stringify(res, null, 1));
 const bad = res.filter((r) => ["cover", "open"].some((k) => r[k].net.length || r[k].err.length || r[k].ov > 0 || r[k].len < 50 || r[k].broken || r[k].openDlg));
 console.log("templates", res.length, "with issues", bad.length);
 for (const b of bad) console.log(b.slug, JSON.stringify({ cover: b.cover, open: b.open }).slice(0, 420));
