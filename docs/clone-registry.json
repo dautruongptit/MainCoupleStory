@@ -1,6 +1,6 @@
 {
  "_doc": "Sổ đăng ký clone. Sinh bởi scripts/clone/registry.mjs — đừng sửa tay trừ trường verified/notes.",
- "generatedAt": "2026-11-11T12:52:52.931Z",
+ "generatedAt": "2026-11-15T14:38:51.937Z",
  "totals": {
   "templates": 92,
   "đã clone": 43,
@@ -107,6 +107,101 @@
    "at": "2026-11-11T12:52:52.931Z",
    "changes": 0,
    "summary": []
+  },
+  {
+   "at": "2026-11-11T18:08:09.910Z",
+   "changes": 91,
+   "summary": [
+    "minimalism_darkred: file đã cập nhật",
+    "song_hy_green: file đã cập nhật",
+    "boho_floral_green: file đã cập nhật",
+    "song_hy_v2_red: file đã cập nhật",
+    "song_hy_red: file đã cập nhật",
+    "silk_ribbon_green: file đã cập nhật",
+    "minimalism_green: file đã cập nhật",
+    "jasmine_white: file đã cập nhật",
+    "dragon_phoenix_v3_red: file đã cập nhật",
+    "dragon_phoenix_red: file đã cập nhật",
+    "silk_ribbon_darkred: file đã cập nhật",
+    "minimalism_darkbrown: file đã cập nhật",
+    "dragon_phoenix_v2_red: file đã cập nhật",
+    "double_dragon_red: file đã cập nhật",
+    "glass_garden_green: file đã cập nhật",
+    "double_phoenix_red: file đã cập nhật",
+    "double_dragon_green: file đã cập nhật",
+    "glass_garden_pink: file đã cập nhật",
+    "marble_yellow: file đã cập nhật",
+    "elegant_leaf_green: file đã cập nhật",
+    "silk_ribbon_pink: file đã cập nhật",
+    "dragon_phoenix_v4_red: file đã cập nhật",
+    "lien_hoa_v2_green: file đã cập nhật",
+    "chateau_green: file đã cập nhật",
+    "spring_garden_green: file đã cập nhật",
+    "chibi_red: file đã cập nhật",
+    "song_hac_red: file đã cập nhật",
+    "nhat_binh_red: file đã cập nhật",
+    "baroque_v2_darkgreen: file đã cập nhật",
+    "baroque_v2_darkred: file đã cập nhật",
+    "cherry_blossom_pink: file đã cập nhật",
+    "boho_floral_pink: file đã cập nhật",
+    "applique_lace_white: file đã cập nhật",
+    "silk_flora_brown: file đã cập nhật",
+    "hoa_tinh_red: file đã cập nhật",
+    "spring_garden_blue: file đã cập nhật",
+    "minimalism_darkblue: file đã cập nhật",
+    "royal_red: file đã cập nhật",
+    "minimalism_red: file đã cập nhật",
+    "spring_garden_red: file đã cập nhật",
+    "dragon_phoenix_green: file đã cập nhật",
+    "baroque_gold: file đã cập nhật",
+    "chateau_blue: file đã cập nhật",
+    "double_phoenix_green: file đã cập nhật",
+    "boho_floral_brown: file đã cập nhật",
+    "double_dragon_blue: file đã cập nhật",
+    "glass_garden_light_green: file đã cập nhật",
+    "crystal_floral_blue: file đã cập nhật",
+    "dragon_phoenix_blue: file đã cập nhật",
+    "co_ba_red: file đã cập nhật"
+   ]
+  },
+  {
+   "at": "2026-11-15T14:38:51.937Z",
+   "changes": 33,
+   "summary": [
+    "minimalism_brown: file mới",
+    "song_hy_green: file mới",
+    "boho_floral_green: file mới",
+    "song_hy_red: file mới",
+    "minimalism_darkbrown: file mới",
+    "double_dragon_red: file mới",
+    "glass_garden_green: file mới",
+    "double_dragon_green: file mới",
+    "glass_garden_pink: file mới",
+    "elegant_leaf_green: file mới",
+    "chateau_green: file mới",
+    "spring_garden_green: file mới",
+    "chibi_red: file mới",
+    "nhat_binh_red: file mới",
+    "cherry_blossom_pink: file mới",
+    "boho_floral_pink: file mới",
+    "applique_lace_white: file mới",
+    "silk_flora_brown: file mới",
+    "hoa_tinh_red: file mới",
+    "spring_garden_blue: file mới",
+    "minimalism_red: file mới",
+    "baroque_gold: file mới",
+    "chateau_blue: file mới",
+    "double_phoenix_green: file mới",
+    "boho_floral_brown: file mới",
+    "double_dragon_blue: file mới",
+    "glass_garden_light_green: file mới",
+    "co_ba_red: file mới",
+    "royal_v2_green: file mới",
+    "baroque_blue: file mới",
+    "porcelain_blue: file mới",
+    "nomad_brown: file mới",
+    "brocade_flower_red: file mới"
+   ]
   }
  ],
  "templates": [
@@ -136,8 +231,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkred/demo.json",
-      "size": 5773,
-      "sha": "6b8c9c34fa12c420"
+      "size": 5893,
+      "sha": "18bb8f96fee03942"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkred/theme.json",
@@ -173,8 +268,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/darkred/Gifts.tsx",
-      "size": 11414,
-      "sha": "c8ce9062c4dcbb3c"
+      "size": 3766,
+      "sha": "834986af04869abb"
      },
      {
       "path": "src/features/invitation/shell/blocks/darkred/Guestbook.tsx",
@@ -443,7 +538,13 @@
       "sha": "f938871f0aea7940"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/minimalism_brown.webp",
+      "size": 27830,
+      "sha": "742319af3bba54ce"
+     }
+    ],
     "survey": [
      {
       "path": "docs/survey/raw/minimalism_brown_cover390.json",
@@ -629,8 +730,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_green/demo.json",
-      "size": 12759,
-      "sha": "f32c4eb41b5b12a1"
+      "size": 13489,
+      "sha": "1fd6b8a551495e21"
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_green/theme.json",
@@ -681,8 +782,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/song_hy/Gifts.tsx",
-      "size": 23678,
-      "sha": "920414f11dd7510e"
+      "size": 2268,
+      "sha": "510be2cf70bd3656"
      },
      {
       "path": "src/features/invitation/shell/blocks/song_hy/Guestbook.tsx",
@@ -716,7 +817,13 @@
      }
     ],
     "themeAssets": [],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/song_hy_green.webp",
+      "size": 27696,
+      "sha": "5abe6bcba2d00e81"
+     }
+    ],
     "survey": [
      {
       "path": "docs/survey/blocks/song_hy_green/00.html",
@@ -837,8 +944,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_green/demo.json",
-      "size": 13615,
-      "sha": "3de1bfc63794c7cd"
+      "size": 14354,
+      "sha": "bb2f6f5097403954"
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_green/theme.json",
@@ -889,8 +996,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/boho_floral/Gifts.tsx",
-      "size": 21414,
-      "sha": "e3c5bf87bce6a2a2"
+      "size": 1815,
+      "sha": "a791d13d0a50350c"
      },
      {
       "path": "src/features/invitation/shell/blocks/boho_floral/Guestbook.tsx",
@@ -949,7 +1056,13 @@
      }
     ],
     "themeAssets": [],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/boho_floral_green.webp",
+      "size": 25674,
+      "sha": "78733161a212db2c"
+     }
+    ],
     "survey": [
      {
       "path": "docs/survey/raw/boho_floral_green_cover390.json",
@@ -1025,8 +1138,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_v2_red/demo.json",
-      "size": 1581,
-      "sha": "1c972c1b68e47828"
+      "size": 1992,
+      "sha": "ae7ff2f0e4bef433"
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_v2_red/theme.json",
@@ -1062,8 +1175,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/song_hy_v2_red/Gifts.tsx",
-      "size": 6225,
-      "sha": "fa32a748b627bfff"
+      "size": 846,
+      "sha": "1f764d19427e6376"
      },
      {
       "path": "src/features/invitation/shell/blocks/song_hy_v2_red/Guestbook.tsx",
@@ -1199,8 +1312,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_red/demo.json",
-      "size": 12759,
-      "sha": "d2a2e916fe91183f"
+      "size": 13500,
+      "sha": "4b1383c5661ee338"
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_red/theme.json",
@@ -1251,8 +1364,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/song_hy/Gifts.tsx",
-      "size": 23678,
-      "sha": "920414f11dd7510e"
+      "size": 2268,
+      "sha": "510be2cf70bd3656"
      },
      {
       "path": "src/features/invitation/shell/blocks/song_hy/Guestbook.tsx",
@@ -1286,7 +1399,13 @@
      }
     ],
     "themeAssets": [],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/song_hy_red.webp",
+      "size": 30090,
+      "sha": "28d16876a6201ef0"
+     }
+    ],
     "survey": [
      {
       "path": "docs/survey/blocks/song_hy_red/00.html",
@@ -1444,8 +1563,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_green/demo.json",
-      "size": 1584,
-      "sha": "46047ea432140dc6"
+      "size": 2345,
+      "sha": "dbb7b687d9a6f002"
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_green/theme.json",
@@ -1486,8 +1605,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/silk_ribbon_green/Gifts.tsx",
-      "size": 8083,
-      "sha": "28d467d7f0714e73"
+      "size": 1223,
+      "sha": "885ca31802c72f2b"
      },
      {
       "path": "src/features/invitation/shell/blocks/silk_ribbon_green/Guestbook.tsx",
@@ -1608,8 +1727,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_green/demo.json",
-      "size": 3335,
-      "sha": "65fed9191791f39b"
+      "size": 3745,
+      "sha": "d8d61a350104f44d"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_green/theme.json",
@@ -1650,8 +1769,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/minimalism_green/Gifts.tsx",
-      "size": 6254,
-      "sha": "2ecbd85931e29423"
+      "size": 997,
+      "sha": "cff7bef4e35e254b"
      },
      {
       "path": "src/features/invitation/shell/blocks/minimalism_green/Guestbook.tsx",
@@ -1790,8 +1909,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/jasmine_white/demo.json",
-      "size": 1580,
-      "sha": "356c03780ee2507e"
+      "size": 2345,
+      "sha": "0063437b10845276"
      },
      {
       "path": "src/features/invitation/shell/specs/jasmine_white/theme.json",
@@ -1822,8 +1941,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/jasmine_white/Gifts.tsx",
-      "size": 7098,
-      "sha": "120bf225a93cc166"
+      "size": 338,
+      "sha": "4e8de63648e224dd"
      },
      {
       "path": "src/features/invitation/shell/blocks/jasmine_white/Guestbook.tsx",
@@ -1926,8 +2045,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v3_red/demo.json",
-      "size": 1715,
-      "sha": "152fd688ad224cc0"
+      "size": 2470,
+      "sha": "c8e380d96d3e0092"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v3_red/theme.json",
@@ -1958,8 +2077,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/dragon_phoenix_v3_red/Gifts.tsx",
-      "size": 11525,
-      "sha": "e09954eb56bd7133"
+      "size": 338,
+      "sha": "4e8de63648e224dd"
      },
      {
       "path": "src/features/invitation/shell/blocks/dragon_phoenix_v3_red/Guestbook.tsx",
@@ -2069,8 +2188,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_red/demo.json",
-      "size": 3390,
-      "sha": "52ef9e2dd99b241a"
+      "size": 4262,
+      "sha": "0b919818322dc827"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_red/theme.json",
@@ -2101,8 +2220,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/longphung_v1/Gifts.tsx",
-      "size": 17852,
-      "sha": "a556522535631099"
+      "size": 1388,
+      "sha": "8d15b5be46c0c4b7"
      },
      {
       "path": "src/features/invitation/shell/blocks/longphung_v1/Guestbook.tsx",
@@ -2285,8 +2404,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_darkred/demo.json",
-      "size": 1586,
-      "sha": "3e10c532d5fe586e"
+      "size": 2347,
+      "sha": "df8a79f056353990"
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_darkred/theme.json",
@@ -2327,8 +2446,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/silk_ribbon_darkred/Gifts.tsx",
-      "size": 8107,
-      "sha": "69fa1b02c9a852db"
+      "size": 1251,
+      "sha": "6166597323882757"
      },
      {
       "path": "src/features/invitation/shell/blocks/silk_ribbon_darkred/Guestbook.tsx",
@@ -2449,8 +2568,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkbrown/demo.json",
-      "size": 1714,
-      "sha": "fb7f6931fff37941"
+      "size": 2015,
+      "sha": "34738f51b4151b7d"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkbrown/theme.json",
@@ -2491,8 +2610,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/minimalism_darkbrown/Gifts.tsx",
-      "size": 10204,
-      "sha": "260b3497b333f70f"
+      "size": 626,
+      "sha": "77d0357d6d5ec4df"
      },
      {
       "path": "src/features/invitation/shell/blocks/minimalism_darkbrown/Guestbook.tsx",
@@ -2531,7 +2650,13 @@
      }
     ],
     "themeAssets": [],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/minimalism_darkbrown.webp",
+      "size": 66470,
+      "sha": "c073a9fa37622865"
+     }
+    ],
     "survey": [
      {
       "path": "docs/survey/raw/minimalism_darkbrown_dump_open_390.json",
@@ -2577,8 +2702,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v2_red/demo.json",
-      "size": 953,
-      "sha": "481985b0379df785"
+      "size": 1254,
+      "sha": "285b9f9193deec90"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v2_red/theme.json",
@@ -2614,8 +2739,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/dragon_phoenix_v2_red/Venue.tsx",
-      "size": 14760,
-      "sha": "e62945874892d232"
+      "size": 9158,
+      "sha": "ca440d0d7aab0f7e"
      }
     ],
     "themeAssets": [
@@ -2690,8 +2815,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_red/demo.json",
-      "size": 9856,
-      "sha": "71737a8eb146abb4"
+      "size": 10171,
+      "sha": "4bcd734dbec20c95"
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_red/theme.json",
@@ -2747,8 +2872,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/double_dragon/Gifts.tsx",
-      "size": 22562,
-      "sha": "0666aaf9fbeadbe6"
+      "size": 3289,
+      "sha": "af8c30fdb897b460"
      },
      {
       "path": "src/features/invitation/shell/blocks/double_dragon/Guestbook.tsx",
@@ -2787,7 +2912,13 @@
      }
     ],
     "themeAssets": [],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/double_dragon_red.webp",
+      "size": 35796,
+      "sha": "f0263c85b2329cd5"
+     }
+    ],
     "survey": [
      {
       "path": "docs/survey/blocks/double_dragon_red/00.html",
@@ -2925,8 +3056,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_green/demo.json",
-      "size": 1585,
-      "sha": "b6f5280d2a6c83e5"
+      "size": 1886,
+      "sha": "171d01bff934db2f"
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_green/theme.json",
@@ -2937,8 +3068,8 @@
     "blocks": [
      {
       "path": "src/features/invitation/shell/blocks/glass_garden_green/Ceremony.tsx",
-      "size": 52292,
-      "sha": "9ce0a579c0a8e210"
+      "size": 42647,
+      "sha": "6e57e8d6d2625150"
      },
      {
       "path": "src/features/invitation/shell/blocks/glass_garden_green/index.ts",
@@ -3013,7 +3144,13 @@
       "sha": "3e585a9eef0746b5"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/glass_garden_green.webp",
+      "size": 105514,
+      "sha": "4ba82a56f21d0290"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -3055,8 +3192,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/double_phoenix_red/demo.json",
-      "size": 1204,
-      "sha": "d95273bfa93aad4d"
+      "size": 1505,
+      "sha": "f7754498383319b9"
      },
      {
       "path": "src/features/invitation/shell/specs/double_phoenix_red/theme.json",
@@ -3087,8 +3224,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/double_phoenix_red/Gifts.tsx",
-      "size": 7109,
-      "sha": "45b8b3574fe230b6"
+      "size": 338,
+      "sha": "4e8de63648e224dd"
      },
      {
       "path": "src/features/invitation/shell/blocks/double_phoenix_red/Guestbook.tsx",
@@ -3219,8 +3356,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_green/demo.json",
-      "size": 4836,
-      "sha": "aa82a82d102da493"
+      "size": 5143,
+      "sha": "220a25b1824fc3bb"
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_green/theme.json",
@@ -3276,8 +3413,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/double_dragon/Gifts.tsx",
-      "size": 22562,
-      "sha": "0666aaf9fbeadbe6"
+      "size": 3289,
+      "sha": "af8c30fdb897b460"
      },
      {
       "path": "src/features/invitation/shell/blocks/double_dragon/Guestbook.tsx",
@@ -3316,7 +3453,13 @@
      }
     ],
     "themeAssets": [],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/double_dragon_green.webp",
+      "size": 30912,
+      "sha": "e0d9f44b5365431d"
+     }
+    ],
     "survey": [
      {
       "path": "docs/survey/blocks/double_dragon_green/00.html",
@@ -3444,8 +3587,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_pink/demo.json",
-      "size": 1838,
-      "sha": "2fe7ea6001789e2c"
+      "size": 2139,
+      "sha": "8fb2ef155379c07c"
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_pink/theme.json",
@@ -3456,8 +3599,8 @@
     "blocks": [
      {
       "path": "src/features/invitation/shell/blocks/glass_garden_pink/Ceremony.tsx",
-      "size": 58574,
-      "sha": "740c519246bf1f8d"
+      "size": 47488,
+      "sha": "526ce7bf5bc17588"
      },
      {
       "path": "src/features/invitation/shell/blocks/glass_garden_pink/index.ts",
@@ -3532,7 +3675,13 @@
       "sha": "d081bdf750a30946"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/glass_garden_pink.webp",
+      "size": 132800,
+      "sha": "c95ec719de171c76"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -3571,8 +3720,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/marble_yellow/demo.json",
-      "size": 1580,
-      "sha": "34b1dc086e3736b4"
+      "size": 1881,
+      "sha": "54f9b7993297adfb"
      },
      {
       "path": "src/features/invitation/shell/specs/marble_yellow/theme.json",
@@ -3608,8 +3757,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/marble_yellow/Gifts.tsx",
-      "size": 10106,
-      "sha": "5e02d0ae1f539b45"
+      "size": 457,
+      "sha": "efdbda00285af397"
      },
      {
       "path": "src/features/invitation/shell/blocks/marble_yellow/Guestbook.tsx",
@@ -3721,8 +3870,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/elegant_leaf_green/demo.json",
-      "size": 1966,
-      "sha": "f59e4cfa22461c50"
+      "size": 2267,
+      "sha": "460150fd5afa1e36"
      },
      {
       "path": "src/features/invitation/shell/specs/elegant_leaf_green/theme.json",
@@ -3748,8 +3897,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/elegant_leaf_green/Guestbook.tsx",
-      "size": 20650,
-      "sha": "97a0791ab938af7e"
+      "size": 9290,
+      "sha": "0960c8c3d1124609"
      },
      {
       "path": "src/features/invitation/shell/blocks/elegant_leaf_green/Hero.tsx",
@@ -3799,7 +3948,13 @@
       "sha": "e814cd082bc753f5"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/elegant_leaf_green.webp",
+      "size": 20526,
+      "sha": "5322bf47f242cc37"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -3841,8 +3996,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_pink/demo.json",
-      "size": 1710,
-      "sha": "8edc198c47d51a82"
+      "size": 2011,
+      "sha": "00c780746c4f04bc"
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_pink/theme.json",
@@ -3883,8 +4038,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/silk_ribbon_pink/Gifts.tsx",
-      "size": 8138,
-      "sha": "0e8cf6713d2b61b2"
+      "size": 1247,
+      "sha": "b5e2b7ff81fc8c9f"
      },
      {
       "path": "src/features/invitation/shell/blocks/silk_ribbon_pink/Guestbook.tsx",
@@ -4042,8 +4197,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/traditional/Gifts.tsx",
-      "size": 9721,
-      "sha": "8a989588ed1566f5"
+      "size": 3933,
+      "sha": "a7e879febc9ef2be"
      },
      {
       "path": "src/features/invitation/shell/blocks/traditional/Guestbook.tsx",
@@ -4402,8 +4557,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/lien_hoa_v2/Gifts.tsx",
-      "size": 9704,
-      "sha": "06cbf9bd44539b4e"
+      "size": 3026,
+      "sha": "05c4d1977e5183ce"
      },
      {
       "path": "src/features/invitation/shell/blocks/lien_hoa_v2/Guestbook.tsx",
@@ -4642,8 +4797,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/chateau_green/demo.json",
-      "size": 1453,
-      "sha": "1c0ce9bfcb6d033e"
+      "size": 1754,
+      "sha": "bec05f273b6f73c0"
      },
      {
       "path": "src/features/invitation/shell/specs/chateau_green/theme.json",
@@ -4674,8 +4829,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/chateau_green/Gifts.tsx",
-      "size": 11546,
-      "sha": "bbff36feccf2eaaf"
+      "size": 621,
+      "sha": "18318a18f6a78650"
      },
      {
       "path": "src/features/invitation/shell/blocks/chateau_green/Guestbook.tsx",
@@ -4790,7 +4945,13 @@
       "sha": "a99c3f69385054bc"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/chateau_green.webp",
+      "size": 57134,
+      "sha": "ab67c798eb257df8"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -4830,8 +4991,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_green/demo.json",
-      "size": 4568,
-      "sha": "b5fd35d0bc2b240a"
+      "size": 5238,
+      "sha": "2ce96dc78f115b7c"
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_green/theme.json",
@@ -4862,8 +5023,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/springgarden_v1/Gifts.tsx",
-      "size": 11148,
-      "sha": "a6b0e6ecc799986d"
+      "size": 1703,
+      "sha": "85367142273ded6f"
      },
      {
       "path": "src/features/invitation/shell/blocks/springgarden_v1/Guestbook.tsx",
@@ -4913,7 +5074,13 @@
       "sha": "8573ad3d21cccbb0"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/spring_garden_green.webp",
+      "size": 22808,
+      "sha": "f2b250c131a28160"
+     }
+    ],
     "survey": [
      {
       "path": "docs/survey/raw/spring_garden_green_dump_open_390.json",
@@ -4961,8 +5128,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/chibi_red/demo.json",
-      "size": 2084,
-      "sha": "780ea3d421960b03"
+      "size": 2385,
+      "sha": "60d18a8d1a676be9"
      },
      {
       "path": "src/features/invitation/shell/specs/chibi_red/theme.json",
@@ -5003,8 +5170,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/chibi_red/Gifts.tsx",
-      "size": 11699,
-      "sha": "af9e244c4bfbadc3"
+      "size": 338,
+      "sha": "4e8de63648e224dd"
      },
      {
       "path": "src/features/invitation/shell/blocks/chibi_red/Guestbook.tsx",
@@ -5079,7 +5246,13 @@
       "sha": "7c68ebf30e13cc6d"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/chibi_red.webp",
+      "size": 31228,
+      "sha": "6e67f1ae6ff3da0e"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -5121,8 +5294,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/song_hac_red/demo.json",
-      "size": 1325,
-      "sha": "0d1dd92ce2d0cd55"
+      "size": 1626,
+      "sha": "a288c3ebf12ffec2"
      },
      {
       "path": "src/features/invitation/shell/specs/song_hac_red/theme.json",
@@ -5158,8 +5331,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/song_hac_red/Gifts.tsx",
-      "size": 7744,
-      "sha": "aae0d4ef2689d2fa"
+      "size": 880,
+      "sha": "3e2756fcaba6d9de"
      },
      {
       "path": "src/features/invitation/shell/blocks/song_hac_red/Guestbook.tsx",
@@ -5322,8 +5495,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/nhat_binh_red/demo.json",
-      "size": 1707,
-      "sha": "3e16a3eb45f7b79e"
+      "size": 2008,
+      "sha": "d37b4607b37bdfe6"
      },
      {
       "path": "src/features/invitation/shell/specs/nhat_binh_red/theme.json",
@@ -5334,8 +5507,8 @@
     "blocks": [
      {
       "path": "src/features/invitation/shell/blocks/nhat_binh_red/Ceremony.tsx",
-      "size": 52637,
-      "sha": "66759fac2c6b70cc"
+      "size": 41555,
+      "sha": "0c33c8c5fb28b115"
      },
      {
       "path": "src/features/invitation/shell/blocks/nhat_binh_red/Credit.tsx",
@@ -5410,7 +5583,13 @@
       "sha": "97dc4fc6c3ca6768"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/nhat_binh_red.webp",
+      "size": 70556,
+      "sha": "d024617e63b94827"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -5450,8 +5629,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkgreen/demo.json",
-      "size": 11779,
-      "sha": "88936dbe3d8cb9d8"
+      "size": 12060,
+      "sha": "9bbf9658344e1276"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkgreen/theme.json",
@@ -5492,8 +5671,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/baroque_v2/Gifts.tsx",
-      "size": 15280,
-      "sha": "35a3eb0078138e45"
+      "size": 2202,
+      "sha": "962f64a929d11c07"
      },
      {
       "path": "src/features/invitation/shell/blocks/baroque_v2/Guestbook.tsx",
@@ -5725,8 +5904,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkred/demo.json",
-      "size": 11618,
-      "sha": "5488b9fbf4785a0c"
+      "size": 11899,
+      "sha": "39e5543d91c12490"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkred/theme.json",
@@ -5767,8 +5946,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/baroque_v2/Gifts.tsx",
-      "size": 15280,
-      "sha": "35a3eb0078138e45"
+      "size": 2202,
+      "sha": "962f64a929d11c07"
      },
      {
       "path": "src/features/invitation/shell/blocks/baroque_v2/Guestbook.tsx",
@@ -6037,8 +6216,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/cherry_blossom_pink/demo.json",
-      "size": 1840,
-      "sha": "07d0776c5f3e4d7c"
+      "size": 2141,
+      "sha": "bcea1db5f0e052ff"
      },
      {
       "path": "src/features/invitation/shell/specs/cherry_blossom_pink/theme.json",
@@ -6074,8 +6253,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/cherry_blossom_pink/Gifts.tsx",
-      "size": 11449,
-      "sha": "b19d8f914ce0a7c7"
+      "size": 338,
+      "sha": "4e8de63648e224dd"
      },
      {
       "path": "src/features/invitation/shell/blocks/cherry_blossom_pink/Guestbook.tsx",
@@ -6160,7 +6339,13 @@
       "sha": "fe3b9ede43c4b9f5"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/cherry_blossom_pink.webp",
+      "size": 36808,
+      "sha": "cc00a7c2ecd9f484"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -6200,8 +6385,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_pink/demo.json",
-      "size": 12260,
-      "sha": "c6f836f326ede53e"
+      "size": 12541,
+      "sha": "5d0b08e9a244371f"
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_pink/theme.json",
@@ -6252,8 +6437,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/boho_floral/Gifts.tsx",
-      "size": 21414,
-      "sha": "e3c5bf87bce6a2a2"
+      "size": 1815,
+      "sha": "a791d13d0a50350c"
      },
      {
       "path": "src/features/invitation/shell/blocks/boho_floral/Guestbook.tsx",
@@ -6312,7 +6497,13 @@
      }
     ],
     "themeAssets": [],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/boho_floral_pink.webp",
+      "size": 34740,
+      "sha": "410f3a0760c213ea"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -6352,8 +6543,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/applique_lace_white/demo.json",
-      "size": 1459,
-      "sha": "2f6d9e0a209c9af7"
+      "size": 1760,
+      "sha": "c60fd83c7d10d9ac"
      },
      {
       "path": "src/features/invitation/shell/specs/applique_lace_white/theme.json",
@@ -6394,8 +6585,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/applique_lace_white/Gifts.tsx",
-      "size": 7355,
-      "sha": "b3e198bf624fdd6f"
+      "size": 1045,
+      "sha": "a77ff49e680ca512"
      },
      {
       "path": "src/features/invitation/shell/blocks/applique_lace_white/Guestbook.tsx",
@@ -6490,7 +6681,13 @@
       "sha": "cd050c62946201e1"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/applique_lace_white.webp",
+      "size": 52652,
+      "sha": "314258c9f0e78e2c"
+     }
+    ],
     "survey": [
      {
       "path": "docs/survey/raw/ren_theu_trang_real_cover.json",
@@ -6538,8 +6735,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/silk_flora_brown/demo.json",
-      "size": 1583,
-      "sha": "039528138f3dee2c"
+      "size": 1884,
+      "sha": "4eb24d15f943cafb"
      },
      {
       "path": "src/features/invitation/shell/specs/silk_flora_brown/theme.json",
@@ -6570,8 +6767,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/silk_flora_brown/Gifts.tsx",
-      "size": 9970,
-      "sha": "a2882fbea91945e9"
+      "size": 338,
+      "sha": "4e8de63648e224dd"
      },
      {
       "path": "src/features/invitation/shell/blocks/silk_flora_brown/Guestbook.tsx",
@@ -6631,7 +6828,13 @@
       "sha": "9cb37f68b005ce51"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/silk_flora_brown.webp",
+      "size": 31902,
+      "sha": "ed9c7de53d040405"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -6673,8 +6876,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_tinh_red/demo.json",
-      "size": 1833,
-      "sha": "d3df98db98f355c4"
+      "size": 2134,
+      "sha": "7cb25a50e1a1c70e"
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_tinh_red/theme.json",
@@ -6685,8 +6888,8 @@
     "blocks": [
      {
       "path": "src/features/invitation/shell/blocks/hoa_tinh_red/Ceremony.tsx",
-      "size": 51880,
-      "sha": "5cdd791aaa4794ad"
+      "size": 40821,
+      "sha": "4efc9854995f336a"
      },
      {
       "path": "src/features/invitation/shell/blocks/hoa_tinh_red/Hero.tsx",
@@ -6776,7 +6979,13 @@
       "sha": "009f237aa1f7eb91"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/hoa_tinh_red.webp",
+      "size": 28908,
+      "sha": "f2bd10cfc597e3ec"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -6816,8 +7025,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_blue/demo.json",
-      "size": 4566,
-      "sha": "bd6caa476ca939a7"
+      "size": 5236,
+      "sha": "0f42eedd131ab92c"
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_blue/theme.json",
@@ -6848,8 +7057,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/springgarden_v1/Gifts.tsx",
-      "size": 11148,
-      "sha": "a6b0e6ecc799986d"
+      "size": 1703,
+      "sha": "85367142273ded6f"
      },
      {
       "path": "src/features/invitation/shell/blocks/springgarden_v1/Guestbook.tsx",
@@ -6904,7 +7113,13 @@
       "sha": "3c6d3e4270908a93"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/spring_garden_blue.webp",
+      "size": 31808,
+      "sha": "166853e70040a926"
+     }
+    ],
     "survey": [
      {
       "path": "docs/survey/raw/spring_garden_blue_dump_open_390.json",
@@ -6950,8 +7165,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkblue/demo.json",
-      "size": 1840,
-      "sha": "58b6dc18ce545f0c"
+      "size": 2141,
+      "sha": "07e103f10988fef0"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkblue/theme.json",
@@ -6992,8 +7207,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/minimalism_darkblue/Gifts.tsx",
-      "size": 7541,
-      "sha": "c20b15da850b0be8"
+      "size": 838,
+      "sha": "26f7d4e8eda90be8"
      },
      {
       "path": "src/features/invitation/shell/blocks/minimalism_darkblue/Guestbook.tsx",
@@ -7091,8 +7306,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/royal_red/demo.json",
-      "size": 1703,
-      "sha": "7789e8eb8058519b"
+      "size": 2004,
+      "sha": "c0cb59d02b671e03"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_red/theme.json",
@@ -7123,8 +7338,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/royal_red/Gifts.tsx",
-      "size": 11515,
-      "sha": "9230b7340f0d0250"
+      "size": 338,
+      "sha": "4e8de63648e224dd"
      },
      {
       "path": "src/features/invitation/shell/blocks/royal_red/Guestbook.tsx",
@@ -7234,8 +7449,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_red/demo.json",
-      "size": 1454,
-      "sha": "73ccfc4b507ac689"
+      "size": 1755,
+      "sha": "fb43653d3eab1302"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_red/theme.json",
@@ -7286,8 +7501,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/minimalism_red/Gifts.tsx",
-      "size": 11471,
-      "sha": "9edf564fd6ee81a0"
+      "size": 338,
+      "sha": "4e8de63648e224dd"
      },
      {
       "path": "src/features/invitation/shell/blocks/minimalism_red/Guestbook.tsx",
@@ -7332,7 +7547,13 @@
       "sha": "4acc231c129c5ab1"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/minimalism_red.webp",
+      "size": 14940,
+      "sha": "17d1ac8c3a375a6e"
+     }
+    ],
     "survey": [
      {
       "path": "docs/survey/raw/minimalism_red_dump_open_390.json",
@@ -7378,8 +7599,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_red/demo.json",
-      "size": 4567,
-      "sha": "a155448d35e42c22"
+      "size": 5237,
+      "sha": "074da0f9cc1f6cb5"
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_red/theme.json",
@@ -7410,8 +7631,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/springgarden_v1/Gifts.tsx",
-      "size": 11148,
-      "sha": "a6b0e6ecc799986d"
+      "size": 1703,
+      "sha": "85367142273ded6f"
      },
      {
       "path": "src/features/invitation/shell/blocks/springgarden_v1/Guestbook.tsx",
@@ -7628,8 +7849,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_green/demo.json",
-      "size": 3390,
-      "sha": "52ef9e2dd99b241a"
+      "size": 3800,
+      "sha": "70bf5c597f2cf342"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_green/theme.json",
@@ -7660,8 +7881,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/longphung_v1/Gifts.tsx",
-      "size": 17852,
-      "sha": "a556522535631099"
+      "size": 1388,
+      "sha": "8d15b5be46c0c4b7"
      },
      {
       "path": "src/features/invitation/shell/blocks/longphung_v1/Guestbook.tsx",
@@ -7769,8 +7990,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_gold/demo.json",
-      "size": 1198,
-      "sha": "6bad8ea5dc75e818"
+      "size": 1499,
+      "sha": "1c16a26f4d189e8e"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_gold/theme.json",
@@ -7801,8 +8022,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/baroque_gold/Guestbook.tsx",
-      "size": 15417,
-      "sha": "10cd2c6e2b1e21dd"
+      "size": 5676,
+      "sha": "b6c187ca0fb820e4"
      },
      {
       "path": "src/features/invitation/shell/blocks/baroque_gold/index.ts",
@@ -7877,7 +8098,13 @@
       "sha": "a597cf1019123b68"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/baroque_gold.webp",
+      "size": 33960,
+      "sha": "110cd4da22f794d2"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -7919,8 +8146,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/chateau_blue/demo.json",
-      "size": 1071,
-      "sha": "efe180f5a7db4a96"
+      "size": 1372,
+      "sha": "6b42f60181d2c076"
      },
      {
       "path": "src/features/invitation/shell/specs/chateau_blue/theme.json",
@@ -7951,8 +8178,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/chateau_blue/Gifts.tsx",
-      "size": 11487,
-      "sha": "ecde91edeb5b69cf"
+      "size": 338,
+      "sha": "4e8de63648e224dd"
      },
      {
       "path": "src/features/invitation/shell/blocks/chateau_blue/Guestbook.tsx",
@@ -8067,7 +8294,13 @@
       "sha": "6420bee30d368f9d"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/chateau_blue.webp",
+      "size": 38174,
+      "sha": "a840a83d25f71646"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -8109,8 +8342,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/double_phoenix_green/demo.json",
-      "size": 1714,
-      "sha": "0eee907b4503955a"
+      "size": 2015,
+      "sha": "e11e2558feb6a0c1"
      },
      {
       "path": "src/features/invitation/shell/specs/double_phoenix_green/theme.json",
@@ -8141,8 +8374,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/double_phoenix_green/Gifts.tsx",
-      "size": 11440,
-      "sha": "40dc00a4f0eabb32"
+      "size": 338,
+      "sha": "4e8de63648e224dd"
      },
      {
       "path": "src/features/invitation/shell/blocks/double_phoenix_green/Guestbook.tsx",
@@ -8227,7 +8460,13 @@
       "sha": "a0c000cea3ffd67d"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/double_phoenix_green.webp",
+      "size": 43838,
+      "sha": "d55d2d65b2e5c474"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -8267,8 +8506,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_brown/demo.json",
-      "size": 14006,
-      "sha": "8a85a5ecf9662bd3"
+      "size": 14287,
+      "sha": "d2857e51db72efca"
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_brown/theme.json",
@@ -8319,8 +8558,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/boho_floral/Gifts.tsx",
-      "size": 21414,
-      "sha": "e3c5bf87bce6a2a2"
+      "size": 1815,
+      "sha": "a791d13d0a50350c"
      },
      {
       "path": "src/features/invitation/shell/blocks/boho_floral/Guestbook.tsx",
@@ -8379,7 +8618,13 @@
      }
     ],
     "themeAssets": [],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/boho_floral_brown.webp",
+      "size": 38982,
+      "sha": "402d0fa9a7c45a67"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -8419,8 +8664,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_blue/demo.json",
-      "size": 8098,
-      "sha": "7f4d476b398b5b9e"
+      "size": 8415,
+      "sha": "c8ff1830fe0e3852"
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_blue/theme.json",
@@ -8476,8 +8721,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/double_dragon/Gifts.tsx",
-      "size": 22562,
-      "sha": "0666aaf9fbeadbe6"
+      "size": 3289,
+      "sha": "af8c30fdb897b460"
      },
      {
       "path": "src/features/invitation/shell/blocks/double_dragon/Guestbook.tsx",
@@ -8516,7 +8761,13 @@
      }
     ],
     "themeAssets": [],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/double_dragon_blue.webp",
+      "size": 38740,
+      "sha": "74c7004f9ba21016"
+     }
+    ],
     "survey": [
      {
       "path": "docs/survey/blocks/double_dragon_blue/00.html",
@@ -8641,8 +8892,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_light_green/demo.json",
-      "size": 1337,
-      "sha": "36508946c30befce"
+      "size": 1638,
+      "sha": "89235dddf1d3bf7f"
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_light_green/theme.json",
@@ -8653,8 +8904,8 @@
     "blocks": [
      {
       "path": "src/features/invitation/shell/blocks/glass_garden_light_green/Ceremony.tsx",
-      "size": 60142,
-      "sha": "9f05901cea78bd07"
+      "size": 50513,
+      "sha": "8f8cda10c13e2a3e"
      },
      {
       "path": "src/features/invitation/shell/blocks/glass_garden_light_green/index.ts",
@@ -8724,7 +8975,13 @@
       "sha": "20f9dc63d93755d0"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/glass_garden_light_green.webp",
+      "size": 53696,
+      "sha": "cb4eef7577eecfea"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -8764,8 +9021,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_blue/demo.json",
-      "size": 10897,
-      "sha": "b2a2613ef50a1f0a"
+      "size": 11178,
+      "sha": "823f91b69f924612"
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_blue/theme.json",
@@ -8796,8 +9053,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/crystal_floral/Gifts.tsx",
-      "size": 11997,
-      "sha": "148d717ec501fb58"
+      "size": 696,
+      "sha": "d815cb0995f68ae9"
      },
      {
       "path": "src/features/invitation/shell/blocks/crystal_floral/Guestbook.tsx",
@@ -9049,8 +9306,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_blue/demo.json",
-      "size": 3390,
-      "sha": "52ef9e2dd99b241a"
+      "size": 3800,
+      "sha": "835e3aaf41e38de2"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_blue/theme.json",
@@ -9081,8 +9338,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/longphung_v1/Gifts.tsx",
-      "size": 17852,
-      "sha": "a556522535631099"
+      "size": 1388,
+      "sha": "8d15b5be46c0c4b7"
      },
      {
       "path": "src/features/invitation/shell/blocks/longphung_v1/Guestbook.tsx",
@@ -9190,8 +9447,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/co_ba_red/demo.json",
-      "size": 1957,
-      "sha": "8aee475ea2376994"
+      "size": 2258,
+      "sha": "ac03215db46e2757"
      },
      {
       "path": "src/features/invitation/shell/specs/co_ba_red/theme.json",
@@ -9202,8 +9459,8 @@
     "blocks": [
      {
       "path": "src/features/invitation/shell/blocks/co_ba_red/Ceremony.tsx",
-      "size": 46529,
-      "sha": "d5b37c7d063996e0"
+      "size": 35450,
+      "sha": "b7cc3d9c09c2a70b"
      },
      {
       "path": "src/features/invitation/shell/blocks/co_ba_red/Credit.tsx",
@@ -9243,7 +9500,13 @@
       "sha": "1af982073f97c71b"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/co_ba_red.webp",
+      "size": 40934,
+      "sha": "397efa207b218bb5"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -9285,8 +9548,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/lien_hoa_pink/demo.json",
-      "size": 818,
-      "sha": "2e1258979514b0d3"
+      "size": 1119,
+      "sha": "3583e40e0faa74b4"
      },
      {
       "path": "src/features/invitation/shell/specs/lien_hoa_pink/theme.json",
@@ -9317,8 +9580,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/lien_hoa_pink/Gifts.tsx",
-      "size": 7234,
-      "sha": "2d861c35acd61fc7"
+      "size": 338,
+      "sha": "4e8de63648e224dd"
      },
      {
       "path": "src/features/invitation/shell/blocks/lien_hoa_pink/Guestbook.tsx",
@@ -9516,8 +9779,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/minimalism_purple/Gifts.tsx",
-      "size": 13522,
-      "sha": "f8279fc32e5f5b17"
+      "size": 2754,
+      "sha": "544d9bf781de01e9"
      },
      {
       "path": "src/features/invitation/shell/blocks/minimalism_purple/Guestbook.tsx",
@@ -9673,8 +9936,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_green/demo.json",
-      "size": 6994,
-      "sha": "127b210cf590538b"
+      "size": 7706,
+      "sha": "49d10c2fecf18bf5"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_green/theme.json",
@@ -9705,8 +9968,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/porcelain_v2/Guestbook.tsx",
-      "size": 19637,
-      "sha": "91f156655b15b291"
+      "size": 10827,
+      "sha": "665dea804437f8d7"
      },
      {
       "path": "src/features/invitation/shell/blocks/porcelain_v2/Hero.tsx",
@@ -9930,8 +10193,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dried_flower_v2_green/demo.json",
-      "size": 1969,
-      "sha": "0a3478c3d30f22ea"
+      "size": 2270,
+      "sha": "891ba813f30b1b16"
      },
      {
       "path": "src/features/invitation/shell/specs/dried_flower_v2_green/theme.json",
@@ -9967,8 +10230,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/dried_flower_v2_green/Gifts.tsx",
-      "size": 6236,
-      "sha": "391921af6da011c8"
+      "size": 946,
+      "sha": "81c7b57002d0b6d3"
      },
      {
       "path": "src/features/invitation/shell/blocks/dried_flower_v2_green/Guestbook.tsx",
@@ -10109,8 +10372,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_pink/demo.json",
-      "size": 5889,
-      "sha": "c99f0f3eec7cdec1"
+      "size": 6601,
+      "sha": "75e621c81b396467"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_pink/theme.json",
@@ -10141,8 +10404,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/porcelain_v2/Guestbook.tsx",
-      "size": 19637,
-      "sha": "91f156655b15b291"
+      "size": 10827,
+      "sha": "665dea804437f8d7"
      },
      {
       "path": "src/features/invitation/shell/blocks/porcelain_v2/Hero.tsx",
@@ -10266,8 +10529,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_kho_v2_blue/demo.json",
-      "size": 1709,
-      "sha": "d35c86f71f22d93f"
+      "size": 2010,
+      "sha": "6362ac0409e01d91"
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_kho_v2_blue/theme.json",
@@ -10303,8 +10566,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/hoa_kho_v2_blue/Gifts.tsx",
-      "size": 6261,
-      "sha": "a3de228745d83524"
+      "size": 994,
+      "sha": "48004438bb6f00e5"
      },
      {
       "path": "src/features/invitation/shell/blocks/hoa_kho_v2_blue/Guestbook.tsx",
@@ -10445,8 +10708,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_black/demo.json",
-      "size": 3390,
-      "sha": "52ef9e2dd99b241a"
+      "size": 3800,
+      "sha": "835e3aaf41e38de2"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_black/theme.json",
@@ -10477,8 +10740,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/longphung_v1/Gifts.tsx",
-      "size": 17852,
-      "sha": "a556522535631099"
+      "size": 1388,
+      "sha": "8d15b5be46c0c4b7"
      },
      {
       "path": "src/features/invitation/shell/blocks/longphung_v1/Guestbook.tsx",
@@ -10586,8 +10849,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/royal_v2_green/demo.json",
-      "size": 1327,
-      "sha": "9689bfe373c047b8"
+      "size": 1628,
+      "sha": "c45315054caeaaee"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_v2_green/theme.json",
@@ -10623,8 +10886,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/royal_v2_green/Gifts.tsx",
-      "size": 11799,
-      "sha": "12bf0316bbcdd93e"
+      "size": 689,
+      "sha": "9247f1bbe2db6b43"
      },
      {
       "path": "src/features/invitation/shell/blocks/royal_v2_green/Guestbook.tsx",
@@ -10729,7 +10992,13 @@
       "sha": "8de57cb2a11ec687"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/royal_v2_green.webp",
+      "size": 38140,
+      "sha": "4e6d6a04266afc3e"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -10771,8 +11040,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/royal_green/demo.json",
-      "size": 1705,
-      "sha": "c4e27da97414bd28"
+      "size": 2006,
+      "sha": "f22427d5b0dcb34a"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_green/theme.json",
@@ -10803,8 +11072,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/royal_green/Gifts.tsx",
-      "size": 11478,
-      "sha": "8c4cae686c0e013a"
+      "size": 338,
+      "sha": "4e8de63648e224dd"
      },
      {
       "path": "src/features/invitation/shell/blocks/royal_green/Guestbook.tsx",
@@ -10916,8 +11185,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_blue/demo.json",
-      "size": 1071,
-      "sha": "ca7fb91475e33ad0"
+      "size": 1372,
+      "sha": "f6abcd1ad7b7af57"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_blue/theme.json",
@@ -10953,8 +11222,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/baroque_blue/Gifts.tsx",
-      "size": 10141,
-      "sha": "e27d63f275afe82c"
+      "size": 471,
+      "sha": "406c997dd0ca03d3"
      },
      {
       "path": "src/features/invitation/shell/blocks/baroque_blue/Guestbook.tsx",
@@ -11059,7 +11328,13 @@
       "sha": "6fe3a0120a78b8c5"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/baroque_blue.webp",
+      "size": 80978,
+      "sha": "a353a08599593d9c"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -11101,8 +11376,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_brown/demo.json",
-      "size": 1455,
-      "sha": "1e590e3c770aa356"
+      "size": 1756,
+      "sha": "6958b4fa4178d4fa"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_brown/theme.json",
@@ -11113,8 +11388,8 @@
     "blocks": [
      {
       "path": "src/features/invitation/shell/blocks/porcelain_brown/Ceremony.tsx",
-      "size": 47244,
-      "sha": "ad026f580e4264a4"
+      "size": 40503,
+      "sha": "aef31acd5c3cf447"
      },
      {
       "path": "src/features/invitation/shell/blocks/porcelain_brown/index.ts",
@@ -11210,8 +11485,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_red/demo.json",
-      "size": 11449,
-      "sha": "31f1f2b9343dbc52"
+      "size": 11730,
+      "sha": "5fb4add14eb94fe1"
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_red/theme.json",
@@ -11242,8 +11517,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/crystal_floral/Gifts.tsx",
-      "size": 11997,
-      "sha": "148d717ec501fb58"
+      "size": 696,
+      "sha": "d815cb0995f68ae9"
      },
      {
       "path": "src/features/invitation/shell/blocks/crystal_floral/Guestbook.tsx",
@@ -11502,8 +11777,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/royal_blue/demo.json",
-      "size": 1577,
-      "sha": "16bb63d38c286bd2"
+      "size": 1878,
+      "sha": "02b1358222b97876"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_blue/theme.json",
@@ -11534,8 +11809,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/royal_blue/Gifts.tsx",
-      "size": 11485,
-      "sha": "897db0b4ee71f011"
+      "size": 338,
+      "sha": "4e8de63648e224dd"
      },
      {
       "path": "src/features/invitation/shell/blocks/royal_blue/Guestbook.tsx",
@@ -11682,8 +11957,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/riviera/Gifts.tsx",
-      "size": 9889,
-      "sha": "29cd0c9d385fb878"
+      "size": 4354,
+      "sha": "277b27451e1080b9"
      },
      {
       "path": "src/features/invitation/shell/blocks/riviera/Guestbook.tsx",
@@ -12102,8 +12377,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/florence_brown/demo.json",
-      "size": 1708,
-      "sha": "e9dca90b67589bd6"
+      "size": 2009,
+      "sha": "4075e651eba16397"
      },
      {
       "path": "src/features/invitation/shell/specs/florence_brown/theme.json",
@@ -12144,8 +12419,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/florence_brown/Gifts.tsx",
-      "size": 5791,
-      "sha": "d7b66e167f3c6111"
+      "size": 472,
+      "sha": "c5feea0df76f896b"
      },
      {
       "path": "src/features/invitation/shell/blocks/florence_brown/Guestbook.tsx",
@@ -12362,8 +12637,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkblue/demo.json",
-      "size": 11764,
-      "sha": "d837a74341741856"
+      "size": 12045,
+      "sha": "e6a63dd60ac53c49"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkblue/theme.json",
@@ -12404,8 +12679,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/baroque_v2/Gifts.tsx",
-      "size": 15280,
-      "sha": "35a3eb0078138e45"
+      "size": 2202,
+      "sha": "962f64a929d11c07"
      },
      {
       "path": "src/features/invitation/shell/blocks/baroque_v2/Guestbook.tsx",
@@ -12674,8 +12949,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/jasmine_green/Gifts.tsx",
-      "size": 10705,
-      "sha": "f83a47ba699b2e90"
+      "size": 517,
+      "sha": "f39abfd684719d79"
      },
      {
       "path": "src/features/invitation/shell/blocks/jasmine_green/Guestbook.tsx",
@@ -13024,8 +13299,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/sunflower_yellow/demo.json",
-      "size": 1456,
-      "sha": "cc4ced03f73273ca"
+      "size": 1757,
+      "sha": "98dea24bb2ac3997"
      },
      {
       "path": "src/features/invitation/shell/specs/sunflower_yellow/theme.json",
@@ -13066,8 +13341,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/sunflower_yellow/Gifts.tsx",
-      "size": 7353,
-      "sha": "66824c75e1b34e57"
+      "size": 633,
+      "sha": "80cd7d0dfbccd02f"
      },
      {
       "path": "src/features/invitation/shell/blocks/sunflower_yellow/Guestbook.tsx",
@@ -13188,8 +13463,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_green/demo.json",
-      "size": 12156,
-      "sha": "3b1e8e6022cfaae6"
+      "size": 12437,
+      "sha": "491d8616fd75a6be"
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_green/theme.json",
@@ -13220,8 +13495,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/crystal_floral/Gifts.tsx",
-      "size": 11997,
-      "sha": "148d717ec501fb58"
+      "size": 696,
+      "sha": "d815cb0995f68ae9"
      },
      {
       "path": "src/features/invitation/shell/blocks/crystal_floral/Guestbook.tsx",
@@ -13477,8 +13752,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/santorini_blue/demo.json",
-      "size": 1454,
-      "sha": "7c2a712fc1003482"
+      "size": 1755,
+      "sha": "6b180586bbd4be6b"
      },
      {
       "path": "src/features/invitation/shell/specs/santorini_blue/theme.json",
@@ -13519,8 +13794,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/santorini_blue/Gifts.tsx",
-      "size": 9982,
-      "sha": "8737ec188483e9b4"
+      "size": 458,
+      "sha": "da2c0cbf27a63623"
      },
      {
       "path": "src/features/invitation/shell/blocks/santorini_blue/Guestbook.tsx",
@@ -13695,8 +13970,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_red/demo.json",
-      "size": 6307,
-      "sha": "cb683228d6d3bfd1"
+      "size": 7019,
+      "sha": "f455485acbcdab9e"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_red/theme.json",
@@ -13727,8 +14002,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/porcelain_v2/Guestbook.tsx",
-      "size": 19637,
-      "sha": "91f156655b15b291"
+      "size": 10827,
+      "sha": "665dea804437f8d7"
      },
      {
       "path": "src/features/invitation/shell/blocks/porcelain_v2/Hero.tsx",
@@ -13852,8 +14127,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_blue/demo.json",
-      "size": 1581,
-      "sha": "a459c1807b5a1784"
+      "size": 1882,
+      "sha": "ee88d55dffc67f3c"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_blue/theme.json",
@@ -13864,8 +14139,8 @@
     "blocks": [
      {
       "path": "src/features/invitation/shell/blocks/porcelain_blue/Ceremony.tsx",
-      "size": 50895,
-      "sha": "989a8b3191d64491"
+      "size": 39867,
+      "sha": "61d80b11c5166261"
      },
      {
       "path": "src/features/invitation/shell/blocks/porcelain_blue/index.ts",
@@ -13910,7 +14185,13 @@
       "sha": "64607de927de2981"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/porcelain_blue.webp",
+      "size": 58882,
+      "sha": "50acfcdbb451d0fb"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -13949,8 +14230,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/folk_floral_blue/demo.json",
-      "size": 1710,
-      "sha": "bbea786f84d2b7ac"
+      "size": 2011,
+      "sha": "cc949866c08c30b4"
      },
      {
       "path": "src/features/invitation/shell/specs/folk_floral_blue/theme.json",
@@ -13961,8 +14242,8 @@
     "blocks": [
      {
       "path": "src/features/invitation/shell/blocks/folk_floral_blue/Ceremony.tsx",
-      "size": 56564,
-      "sha": "b96008afc2792cce"
+      "size": 51243,
+      "sha": "3d2505d5b411fe3b"
      },
      {
       "path": "src/features/invitation/shell/blocks/folk_floral_blue/index.ts",
@@ -14085,8 +14366,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_red/demo.json",
-      "size": 1326,
-      "sha": "e139e8b7bd3dfd15"
+      "size": 1627,
+      "sha": "10d4c2d64c2e09e2"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_red/theme.json",
@@ -14097,8 +14378,8 @@
     "blocks": [
      {
       "path": "src/features/invitation/shell/blocks/porcelain_red/Ceremony.tsx",
-      "size": 46772,
-      "sha": "ae6da6495975914c"
+      "size": 40086,
+      "sha": "0976a25eb555f2ed"
      },
      {
       "path": "src/features/invitation/shell/blocks/porcelain_red/index.ts",
@@ -14191,8 +14472,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_dai_pink/demo.json",
-      "size": 1833,
-      "sha": "7f1d8ad83047b7c6"
+      "size": 2134,
+      "sha": "2a26c784421a2eaf"
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_dai_pink/theme.json",
@@ -14233,8 +14514,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/hoa_dai_pink/Gifts.tsx",
-      "size": 6907,
-      "sha": "1a0550f7b56b18b0"
+      "size": 1575,
+      "sha": "db9e01cb84f51130"
      },
      {
       "path": "src/features/invitation/shell/blocks/hoa_dai_pink/Guestbook.tsx",
@@ -14364,8 +14645,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/qasr_blue/demo.json",
-      "size": 1703,
-      "sha": "1a854c00284db2f1"
+      "size": 2004,
+      "sha": "5935ff884a7934c2"
      },
      {
       "path": "src/features/invitation/shell/specs/qasr_blue/theme.json",
@@ -14401,8 +14682,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/qasr_blue/Guestbook.tsx",
-      "size": 12481,
-      "sha": "ddccbeffd5e1a6ce"
+      "size": 7207,
+      "sha": "7b2ef0a548715d9b"
      },
      {
       "path": "src/features/invitation/shell/blocks/qasr_blue/index.ts",
@@ -14580,8 +14861,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/san_miguel_yellow/demo.json",
-      "size": 1330,
-      "sha": "03ba60229d53b844"
+      "size": 1631,
+      "sha": "eeac366332475c68"
      },
      {
       "path": "src/features/invitation/shell/specs/san_miguel_yellow/theme.json",
@@ -14622,8 +14903,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/san_miguel_yellow/Gifts.tsx",
-      "size": 6273,
-      "sha": "71a8fbbfe8bf2cd3"
+      "size": 947,
+      "sha": "43a32446b86ba2d0"
      },
      {
       "path": "src/features/invitation/shell/blocks/san_miguel_yellow/Guestbook.tsx",
@@ -14811,8 +15092,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_blue/demo.json",
-      "size": 1457,
-      "sha": "f13ab0a1f70a8733"
+      "size": 1758,
+      "sha": "4c1549272febc16c"
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_blue/theme.json",
@@ -14823,8 +15104,8 @@
     "blocks": [
      {
       "path": "src/features/invitation/shell/blocks/glass_garden_blue/Ceremony.tsx",
-      "size": 52281,
-      "sha": "dd0e9baf242059d5"
+      "size": 45510,
+      "sha": "8101b4cb632899bb"
      },
      {
       "path": "src/features/invitation/shell/blocks/glass_garden_blue/index.ts",
@@ -14937,8 +15218,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/royal_v2_purple/demo.json",
-      "size": 1201,
-      "sha": "a98143cf3be9374e"
+      "size": 1502,
+      "sha": "b6ced52de57a5917"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_v2_purple/theme.json",
@@ -14974,8 +15255,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/royal_v2_purple/Gifts.tsx",
-      "size": 7206,
-      "sha": "a36dab3a228a8083"
+      "size": 385,
+      "sha": "bb7d07961f4dbebc"
      },
      {
       "path": "src/features/invitation/shell/blocks/royal_v2_purple/Guestbook.tsx",
@@ -15143,8 +15424,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_kho_orange/demo.json",
-      "size": 1454,
-      "sha": "9dc285cb4b52819b"
+      "size": 1755,
+      "sha": "c97edfab8be3f53e"
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_kho_orange/theme.json",
@@ -15185,8 +15466,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/hoa_kho_orange/Gifts.tsx",
-      "size": 7085,
-      "sha": "8d03b0b32b62f4c6"
+      "size": 399,
+      "sha": "913250c897ea1956"
      },
      {
       "path": "src/features/invitation/shell/blocks/hoa_kho_orange/Hero.tsx",
@@ -15307,8 +15588,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/mahal_gold/demo.json",
-      "size": 1577,
-      "sha": "6cb9e4c4b61652a9"
+      "size": 1878,
+      "sha": "6813f04cb7c449ad"
      },
      {
       "path": "src/features/invitation/shell/specs/mahal_gold/theme.json",
@@ -15344,8 +15625,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/mahal_gold/Guestbook.tsx",
-      "size": 14644,
-      "sha": "03cd5a54f6bb6b83"
+      "size": 7866,
+      "sha": "fa8a440bb45e1f78"
      },
      {
       "path": "src/features/invitation/shell/blocks/mahal_gold/index.ts",
@@ -15515,8 +15796,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/floral_fiesta_yellow/demo.json",
-      "size": 1206,
-      "sha": "6e3135f98ca8d5e6"
+      "size": 1507,
+      "sha": "95fa763ef0c1e19e"
      },
      {
       "path": "src/features/invitation/shell/specs/floral_fiesta_yellow/theme.json",
@@ -15557,8 +15838,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/floral_fiesta_yellow/Gifts.tsx",
-      "size": 6980,
-      "sha": "97ffb63c2861f681"
+      "size": 1680,
+      "sha": "d6bd7787dc8250a7"
      },
      {
       "path": "src/features/invitation/shell/blocks/floral_fiesta_yellow/Guestbook.tsx",
@@ -15808,8 +16089,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/nomad_brown/demo.json",
-      "size": 1451,
-      "sha": "d2863f374e3f82cc"
+      "size": 1752,
+      "sha": "5c541a25eb6fe89d"
      },
      {
       "path": "src/features/invitation/shell/specs/nomad_brown/theme.json",
@@ -15845,8 +16126,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/nomad_brown/Gifts.tsx",
-      "size": 10140,
-      "sha": "817935fad92db821"
+      "size": 471,
+      "sha": "406c997dd0ca03d3"
      },
      {
       "path": "src/features/invitation/shell/blocks/nomad_brown/Guestbook.tsx",
@@ -15981,7 +16262,13 @@
       "sha": "535ff3fd280b0559"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/nomad_brown.webp",
+      "size": 70902,
+      "sha": "cdfe920355a0c174"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -16020,8 +16307,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/saraya_gold/demo.json",
-      "size": 1578,
-      "sha": "0ca15576b71d9b79"
+      "size": 1879,
+      "sha": "5dd9a6114d5ba1f9"
      },
      {
       "path": "src/features/invitation/shell/specs/saraya_gold/theme.json",
@@ -16057,8 +16344,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/saraya_gold/Guestbook.tsx",
-      "size": 12794,
-      "sha": "fa2aa771afa90bdf"
+      "size": 7462,
+      "sha": "d80763d4e3e1c55b"
      },
      {
       "path": "src/features/invitation/shell/blocks/saraya_gold/index.ts",
@@ -16223,8 +16510,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/qasr_gold/demo.json",
-      "size": 1449,
-      "sha": "c5fe4d30f5b8942c"
+      "size": 1750,
+      "sha": "9dcff17230ea8f83"
      },
      {
       "path": "src/features/invitation/shell/specs/qasr_gold/theme.json",
@@ -16260,8 +16547,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/qasr_gold/Guestbook.tsx",
-      "size": 12406,
-      "sha": "bac4c252d648a8b1"
+      "size": 7140,
+      "sha": "791d7d5ad53a26e3"
      },
      {
       "path": "src/features/invitation/shell/blocks/qasr_gold/index.ts",
@@ -16366,8 +16653,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/qasr_green/demo.json",
-      "size": 1323,
-      "sha": "272551623642ee33"
+      "size": 1624,
+      "sha": "c9e70fb3cb31f597"
      },
      {
       "path": "src/features/invitation/shell/specs/qasr_green/theme.json",
@@ -16403,8 +16690,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/qasr_green/Guestbook.tsx",
-      "size": 13022,
-      "sha": "ef33ecf64269d095"
+      "size": 7658,
+      "sha": "428b57ab72bd58df"
      },
      {
       "path": "src/features/invitation/shell/blocks/qasr_green/index.ts",
@@ -16545,8 +16832,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/mandap_darkred/demo.json",
-      "size": 1073,
-      "sha": "e549ec97f4782197"
+      "size": 1374,
+      "sha": "5e0429390cd6e7e0"
      },
      {
       "path": "src/features/invitation/shell/specs/mandap_darkred/theme.json",
@@ -16582,8 +16869,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/mandap_darkred/Gifts.tsx",
-      "size": 5839,
-      "sha": "8a27031541e2bee4"
+      "size": 471,
+      "sha": "406c997dd0ca03d3"
      },
      {
       "path": "src/features/invitation/shell/blocks/mandap_darkred/Guestbook.tsx",
@@ -16758,8 +17045,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/brocade_flower_red/demo.json",
-      "size": 1458,
-      "sha": "069ad6a3eb57101a"
+      "size": 1759,
+      "sha": "96b5f0873d5a1254"
      },
      {
       "path": "src/features/invitation/shell/specs/brocade_flower_red/theme.json",
@@ -16790,8 +17077,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/brocade_flower_red/Gifts.tsx",
-      "size": 11469,
-      "sha": "36e828ea3a2ebad3"
+      "size": 338,
+      "sha": "4e8de63648e224dd"
      },
      {
       "path": "src/features/invitation/shell/blocks/brocade_flower_red/Guestbook.tsx",
@@ -16891,7 +17178,13 @@
       "sha": "3fafd1c336f0e45e"
      }
     ],
-    "envelope": [],
+    "envelope": [
+     {
+      "path": "public/images/envelope/brocade_flower_red.webp",
+      "size": 54220,
+      "sha": "6ef3d0345fc1eae9"
+     }
+    ],
     "survey": []
    },
    "verified": {
@@ -16931,8 +17224,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/calla_lily_white/demo.json",
-      "size": 2167,
-      "sha": "5b85b04466956563"
+      "size": 2629,
+      "sha": "233033fcd13a49b1"
      },
      {
       "path": "src/features/invitation/shell/specs/calla_lily_white/theme.json",
@@ -16968,8 +17261,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/calla_lily_white/Gifts.tsx",
-      "size": 6176,
-      "sha": "fca43ffeb85f9df0"
+      "size": 666,
+      "sha": "4d1621d2fe168bbd"
      },
      {
       "path": "src/features/invitation/shell/blocks/calla_lily_white/Guestbook.tsx",
@@ -17101,8 +17394,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/mandap_yellow/demo.json",
-      "size": 3135,
-      "sha": "7a649cbbe346346c"
+      "size": 3619,
+      "sha": "aba39d3085a5c732"
      },
      {
       "path": "src/features/invitation/shell/specs/mandap_yellow/theme.json",
@@ -17138,8 +17431,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/mandap_yellow/Gifts.tsx",
-      "size": 6186,
-      "sha": "b16b7347a0822e64"
+      "size": 650,
+      "sha": "4c6dee0a68161ef3"
      },
      {
       "path": "src/features/invitation/shell/blocks/mandap_yellow/Guestbook.tsx",
@@ -17396,8 +17689,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/mahal_pink/demo.json",
-      "size": 2834,
-      "sha": "c0733fb59a051095"
+      "size": 3121,
+      "sha": "b605da5480f16215"
      },
      {
       "path": "src/features/invitation/shell/specs/mahal_pink/theme.json",
@@ -17433,8 +17726,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/mahal_pink/Gifts.tsx",
-      "size": 6073,
-      "sha": "5f34f19c8ed51755"
+      "size": 557,
+      "sha": "8b534a7232734e0a"
      },
      {
       "path": "src/features/invitation/shell/blocks/mahal_pink/Guestbook.tsx",

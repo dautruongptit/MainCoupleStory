@@ -2,7 +2,7 @@
 
 > Sinh tự động bởi `node scripts/clone/registry.mjs` — **chạy lại sau mỗi lần clone/sửa mẫu rồi commit cùng**. Chi tiết máy đọc (hash từng file): `docs/clone-registry.json`.
 
-Cập nhật: 2026-11-11 · Tổng **92** mẫu: ✅ đã clone **43** · 🟡 dở dang **49** · ⬜ chưa clone **0**
+Cập nhật: 2026-11-15 · Tổng **92** mẫu: ✅ đã clone **43** · 🟡 dở dang **49** · ⬜ chưa clone **0**
 
 ## Ý nghĩa trạng thái
 
@@ -24,56 +24,56 @@ Cập nhật: 2026-11-11 · Tổng **92** mẫu: ✅ đã clone **43** · 🟡 d
 | # | | id | slug | Tên | Họ khối | Ảnh theme | Phong bì | Generator | Đã kiểm | Còn thiếu |
 |--:|:-:|---|---|---|---|--:|:-:|---|---|---|
 | 1 | ✅ | `minimalism_darkred` | minimalism-do-dam | Minimalism - Đỏ Đậm | darkred | 9 | ✓ | — | — | — |
-| 2 | ✅ | `minimalism_brown` | minimalism-nau | Minimalism - Nâu | minimalism (khối chung) | 10 | — | — | 6/6 | — |
-| 3 | ✅ | `song_hy_green` | song-hy-xanh | Song Hỷ - Xanh | song_hy | — | — | — | — | — |
-| 4 | ✅ | `boho_floral_green` | hoa-moc-xanh | Hoa Mộc - Xanh | boho_floral | — | — | — | — | — |
+| 2 | ✅ | `minimalism_brown` | minimalism-nau | Minimalism - Nâu | minimalism (khối chung) | 10 | ✓ | — | 6/6 | — |
+| 3 | ✅ | `song_hy_green` | song-hy-xanh | Song Hỷ - Xanh | song_hy | — | ✓ | — | — | — |
+| 4 | ✅ | `boho_floral_green` | hoa-moc-xanh | Hoa Mộc - Xanh | boho_floral | — | ✓ | — | — | — |
 | 5 | ✅ | `song_hy_v2_red` | song-hy-v2-do | Song Hỷ V2 - Đỏ | song_hy_v2_red | 11 | ✓ | — | — | — |
-| 6 | ✅ | `song_hy_red` | song-hy-do | Song Hỷ - Đỏ | song_hy | — | — | — | — | — |
+| 6 | ✅ | `song_hy_red` | song-hy-do | Song Hỷ - Đỏ | song_hy | — | ✓ | — | — | — |
 | 7 | 🟡 | `silk_ribbon_green` | to-duyen-xanh | Tơ Duyên - Xanh | silk_ribbon_green | 6 | ✓ | — | — | theme |
 | 8 | ✅ | `minimalism_green` | minimalism-xanh | Minimalism - Xanh | minimalism_green | 9 | ✓ | — | — | — |
 | 9 | 🟡 | `jasmine_white` | mai-lan-trang | Mai Lan - Trắng | jasmine_white | 2 | ✓ | — | — | theme |
 | 10 | 🟡 | `dragon_phoenix_v3_red` | long-phung-v3-do | Long Phụng V3 - Đỏ | dragon_phoenix_v3_red | 7 | — | — | — | theme |
 | 11 | ✅ | `dragon_phoenix_red` | long-phung-do | Long Phụng - Đỏ | longphung_v1 | 4 | — | — | — | — |
 | 12 | 🟡 | `silk_ribbon_darkred` | to-duyen-do-dam | Tơ Duyên - Đỏ Đậm | silk_ribbon_darkred | 6 | ✓ | — | — | theme |
-| 13 | ✅ | `minimalism_darkbrown` | minimalism-nau-dam | Minimalism - Nâu Đậm | minimalism_darkbrown | — | — | — | — | — |
+| 13 | ✅ | `minimalism_darkbrown` | minimalism-nau-dam | Minimalism - Nâu Đậm | minimalism_darkbrown | — | ✓ | — | — | — |
 | 14 | ✅ | `dragon_phoenix_v2_red` | long-phung-v2-do | Long Phụng V2 - Đỏ | dragon_phoenix_v2_red | 6 | — | — | 2/6 | — |
-| 15 | ✅ | `double_dragon_red` | song-long-do | Song Long - Đỏ | double_dragon | — | — | — | — | — |
-| 16 | 🟡 | `glass_garden_green` | vuonkinh-xanh | Vườn Kính - Xanh | glass_garden_green | 10 | — | — | — | theme |
+| 15 | ✅ | `double_dragon_red` | song-long-do | Song Long - Đỏ | double_dragon | — | ✓ | — | — | — |
+| 16 | 🟡 | `glass_garden_green` | vuonkinh-xanh | Vườn Kính - Xanh | glass_garden_green | 10 | ✓ | — | — | theme |
 | 17 | 🟡 | `double_phoenix_red` | song-phung-do | Song Phụng - Đỏ | double_phoenix_red | 6 | ✓ | — | — | theme |
-| 18 | ✅ | `double_dragon_green` | song-long-xanh | Song Long - Xanh | double_dragon | — | — | — | — | — |
-| 19 | 🟡 | `glass_garden_pink` | vuonkinh-hong | Vườn Kính - Hồng | glass_garden_pink | 10 | — | — | — | theme |
+| 18 | ✅ | `double_dragon_green` | song-long-xanh | Song Long - Xanh | double_dragon | — | ✓ | — | — | — |
+| 19 | 🟡 | `glass_garden_pink` | vuonkinh-hong | Vườn Kính - Hồng | glass_garden_pink | 10 | ✓ | — | — | theme |
 | 20 | 🟡 | `marble_yellow` | cam-thach-vang | Cẩm Thạch - Vàng | marble_yellow | 5 | — | — | — | theme, bìa |
-| 21 | 🟡 | `elegant_leaf_green` | thanh-diep-xanh | Thanh Diệp - Xanh | elegant_leaf_green | 4 | — | — | — | theme |
+| 21 | 🟡 | `elegant_leaf_green` | thanh-diep-xanh | Thanh Diệp - Xanh | elegant_leaf_green | 4 | ✓ | — | — | theme |
 | 22 | 🟡 | `silk_ribbon_pink` | to-duyen-hong | Tơ Duyên - Hồng | silk_ribbon_pink | 6 | ✓ | — | — | theme |
 | 23 | ✅ | `dragon_phoenix_v4_red` | long-phung-v4-do | Long Phụng V4 - Đỏ | traditional | 18 | ✓ | `gen_traditional.cjs` | 6/6 | — |
 | 24 | ✅ | `lien_hoa_v2_green` | lien-hoa-v2-xanh | Liên Hoa V2 - Xanh | lien_hoa_v2 | 10 | ✓ | — | — | — |
-| 25 | 🟡 | `chateau_green` | lau-dai-xanh | Lâu Đài - Xanh | chateau_green | 15 | — | — | — | theme |
-| 26 | ✅ | `spring_garden_green` | vuon-xuan-xanh | Vườn Xuân - Xanh | springgarden_v1 | 2 | — | — | — | — |
-| 27 | 🟡 | `chibi_red` | chibi-red | Chibi - Đỏ | chibi_red | 7 | — | — | — | theme |
+| 25 | 🟡 | `chateau_green` | lau-dai-xanh | Lâu Đài - Xanh | chateau_green | 15 | ✓ | — | — | theme |
+| 26 | ✅ | `spring_garden_green` | vuon-xuan-xanh | Vườn Xuân - Xanh | springgarden_v1 | 2 | ✓ | — | — | — |
+| 27 | 🟡 | `chibi_red` | chibi-red | Chibi - Đỏ | chibi_red | 7 | ✓ | — | — | theme |
 | 28 | 🟡 | `song_hac_red` | song-hac-do | Song Hạc - Đỏ | song_hac_red | 16 | ✓ | — | — | theme |
-| 29 | 🟡 | `nhat_binh_red` | nhat-binh-do | Nhật Bình - Đỏ | nhat_binh_red | 9 | — | — | — | theme |
+| 29 | 🟡 | `nhat_binh_red` | nhat-binh-do | Nhật Bình - Đỏ | nhat_binh_red | 9 | ✓ | — | — | theme |
 | 30 | ✅ | `baroque_v2_darkgreen` | baroque-v2-xanh-dam | Baroque V2 - Xanh Đậm | baroque_v2 | 12 | ✓ | — | — | — |
 | 31 | ✅ | `baroque_v2_darkred` | baroque-v2-do-dam | Baroque V2 - Đỏ Đậm | baroque_v2 | 12 | ✓ | — | — | — |
-| 32 | 🟡 | `cherry_blossom_pink` | anh-dao-hong | Anh Đào - Hồng | cherry_blossom_pink | 4 | — | — | — | theme |
-| 33 | ✅ | `boho_floral_pink` | hoa-moc-hong | Hoa Mộc - Hồng | boho_floral | — | — | — | — | — |
-| 34 | ✅ | `applique_lace_white` | ren-theu-trang | Ren Thêu - Trắng | applique_lace_white | 11 | — | — | — | — |
-| 35 | 🟡 | `silk_flora_brown` | hoa-lua-nau | Hoa Lụa - Nâu | silk_flora_brown | 3 | — | — | — | theme |
-| 36 | 🟡 | `hoa_tinh_red` | hoa-tinh-do | Hoạ Tình - Đỏ | hoa_tinh_red | 13 | — | — | — | theme |
-| 37 | ✅ | `spring_garden_blue` | vuon-xuan-lam | Vườn Xuân - Lam | springgarden_v1 | 3 | — | — | — | — |
+| 32 | 🟡 | `cherry_blossom_pink` | anh-dao-hong | Anh Đào - Hồng | cherry_blossom_pink | 4 | ✓ | — | — | theme |
+| 33 | ✅ | `boho_floral_pink` | hoa-moc-hong | Hoa Mộc - Hồng | boho_floral | — | ✓ | — | — | — |
+| 34 | ✅ | `applique_lace_white` | ren-theu-trang | Ren Thêu - Trắng | applique_lace_white | 11 | ✓ | — | — | — |
+| 35 | 🟡 | `silk_flora_brown` | hoa-lua-nau | Hoa Lụa - Nâu | silk_flora_brown | 3 | ✓ | — | — | theme |
+| 36 | 🟡 | `hoa_tinh_red` | hoa-tinh-do | Hoạ Tình - Đỏ | hoa_tinh_red | 13 | ✓ | — | — | theme |
+| 37 | ✅ | `spring_garden_blue` | vuon-xuan-lam | Vườn Xuân - Lam | springgarden_v1 | 3 | ✓ | — | — | — |
 | 38 | ✅ | `minimalism_darkblue` | minimalism-lam-dam | Minimalism - Lam Đậm | minimalism_darkblue | — | ✓ | — | — | — |
 | 39 | 🟡 | `royal_red` | hoang-kim-do | Hoàng Kim - Đỏ | royal_red | 5 | — | — | — | theme |
-| 40 | ✅ | `minimalism_red` | minimalism-do | Minimalism - Đỏ | minimalism_red | 2 | — | — | — | — |
+| 40 | ✅ | `minimalism_red` | minimalism-do | Minimalism - Đỏ | minimalism_red | 2 | ✓ | — | — | — |
 | 41 | ✅ | `spring_garden_red` | vuon-xuan-do | Vườn Xuân - Đỏ | springgarden_v1 | 6 | ✓ | — | — | — |
 | 42 | ✅ | `dragon_phoenix_green` | long-phung-xanh | Long Phụng - Xanh | longphung_v1 | 4 | — | — | — | — |
-| 43 | 🟡 | `baroque_gold` | hoang-gia-vang | Baroque - Vàng | baroque_gold | 8 | — | — | — | theme |
-| 44 | 🟡 | `chateau_blue` | lau-dai-lam | Lâu Đài - Lam | chateau_blue | 13 | — | — | — | theme |
-| 45 | 🟡 | `double_phoenix_green` | song-phung-xanh | Song Phụng - Xanh | double_phoenix_green | 6 | — | — | — | theme |
-| 46 | ✅ | `boho_floral_brown` | hoa-moc-nau | Hoa Mộc - Nâu | boho_floral | — | — | — | — | — |
-| 47 | ✅ | `double_dragon_blue` | song-long-lam | Song Long - Lam | double_dragon | — | — | — | — | — |
-| 48 | 🟡 | `glass_garden_light_green` | vuonkinh-xanh-nhat | Vườn Kính - Xanh Nhạt | glass_garden_light_green | 9 | — | — | — | theme, bìa |
+| 43 | 🟡 | `baroque_gold` | hoang-gia-vang | Baroque - Vàng | baroque_gold | 8 | ✓ | — | — | theme |
+| 44 | 🟡 | `chateau_blue` | lau-dai-lam | Lâu Đài - Lam | chateau_blue | 13 | ✓ | — | — | theme |
+| 45 | 🟡 | `double_phoenix_green` | song-phung-xanh | Song Phụng - Xanh | double_phoenix_green | 6 | ✓ | — | — | theme |
+| 46 | ✅ | `boho_floral_brown` | hoa-moc-nau | Hoa Mộc - Nâu | boho_floral | — | ✓ | — | — | — |
+| 47 | ✅ | `double_dragon_blue` | song-long-lam | Song Long - Lam | double_dragon | — | ✓ | — | — | — |
+| 48 | 🟡 | `glass_garden_light_green` | vuonkinh-xanh-nhat | Vườn Kính - Xanh Nhạt | glass_garden_light_green | 9 | ✓ | — | — | theme, bìa |
 | 49 | ✅ | `crystal_floral_blue` | hoa-thuy-tinh-lam | Hoa Thuỷ Tinh - Lam | crystal_floral | 10 | ✓ | — | — | — |
 | 50 | ✅ | `dragon_phoenix_blue` | long-phung-lam | Long Phụng - Lam | longphung_v1 | 4 | — | — | — | — |
-| 51 | 🟡 | `co_ba_red` | co-ba-do | Cô Ba - Đỏ | co_ba_red | 2 | — | — | — | theme |
+| 51 | 🟡 | `co_ba_red` | co-ba-do | Cô Ba - Đỏ | co_ba_red | 2 | ✓ | — | — | theme |
 | 52 | 🟡 | `lien_hoa_pink` | lien-hoa-hong | Liên Hoa - Hồng | lien_hoa_pink | 13 | ✓ | — | — | theme |
 | 53 | ✅ | `minimalism_purple` | minimalism-tim | Minimalism - Tím | minimalism_purple | 13 | ✓ | — | — | — |
 | 54 | ✅ | `porcelain_v2_green` | bach-su-v2-xanh | Bạch Sứ V2 - Xanh | porcelain_v2 | 6 | ✓ | — | — | — |
@@ -81,9 +81,9 @@ Cập nhật: 2026-11-11 · Tổng **92** mẫu: ✅ đã clone **43** · 🟡 d
 | 56 | ✅ | `porcelain_v2_pink` | bach-su-v2-hong | Bạch Sứ V2 - Hồng | porcelain_v2 | 6 | ✓ | — | — | — |
 | 57 | 🟡 | `hoa_kho_v2_blue` | hoa-kho-v2-lam | Hoa Khô V2 - Lam | hoa_kho_v2_blue | 11 | ✓ | — | — | theme |
 | 58 | ✅ | `dragon_phoenix_black` | long-phung-huyen | Long Phụng - Huyền | longphung_v1 | 4 | — | — | — | — |
-| 59 | 🟡 | `royal_v2_green` | hoang-kim-ii-xanh | Hoàng Kim II - Xanh | royal_v2_green | 12 | — | — | — | theme |
+| 59 | 🟡 | `royal_v2_green` | hoang-kim-ii-xanh | Hoàng Kim II - Xanh | royal_v2_green | 12 | ✓ | — | — | theme |
 | 60 | 🟡 | `royal_green` | hoang-kim-xanh | Hoàng Kim - Xanh | royal_green | 5 | — | — | — | theme |
-| 61 | 🟡 | `baroque_blue` | baroque-lam | Baroque - Lam | baroque_blue | 13 | — | — | — | theme |
+| 61 | 🟡 | `baroque_blue` | baroque-lam | Baroque - Lam | baroque_blue | 13 | ✓ | — | — | theme |
 | 62 | 🟡 | `porcelain_brown` | bach-su-nau | Bạch Sứ - Nâu | porcelain_brown | 6 | ✓ | — | — | theme |
 | 63 | ✅ | `crystal_floral_red` | hoa-thuy-tinh-do | Hoa Thuỷ Tinh - Đỏ | crystal_floral | 11 | ✓ | — | — | — |
 | 64 | 🟡 | `royal_blue` | hoang-kim-lam | Hoàng Kim - Lam | royal_blue | 5 | — | — | — | theme |
@@ -95,7 +95,7 @@ Cập nhật: 2026-11-11 · Tổng **92** mẫu: ✅ đã clone **43** · 🟡 d
 | 70 | ✅ | `crystal_floral_green` | hoa-thuy-tinh-xanh | Hoa Thuỷ Tinh - Xanh | crystal_floral | 11 | ✓ | — | — | — |
 | 71 | 🟡 | `santorini_blue` | santorini-lam | Santorini - Lam | santorini_blue | 18 | — | — | — | theme, bìa |
 | 72 | ✅ | `porcelain_v2_red` | bach-su-v2-do | Bạch Sứ II - Đỏ | porcelain_v2 | 6 | ✓ | — | — | — |
-| 73 | 🟡 | `porcelain_blue` | bach-su-lam | Bạch Sứ - Lam | porcelain_blue | 5 | — | — | — | theme |
+| 73 | 🟡 | `porcelain_blue` | bach-su-lam | Bạch Sứ - Lam | porcelain_blue | 5 | ✓ | — | — | theme |
 | 74 | 🟡 | `folk_floral_blue` | hoa-mau-lam | Hoa Màu - Lam | folk_floral_blue | 11 | ✓ | — | — | theme, bìa |
 | 75 | 🟡 | `porcelain_red` | bach-su-do | Bạch Sứ - Đỏ | porcelain_red | 5 | ✓ | — | — | theme |
 | 76 | 🟡 | `hoa_dai_pink` | hoa-dai-hong | Hoa Dại - Hồng | hoa_dai_pink | 9 | ✓ | — | — | theme |
@@ -106,12 +106,12 @@ Cập nhật: 2026-11-11 · Tổng **92** mẫu: ✅ đã clone **43** · 🟡 d
 | 81 | 🟡 | `hoa_kho_orange` | hoa-kho-cam | Hoa Khô - Cam | hoa_kho_orange | 8 | ✓ | — | — | theme |
 | 82 | ✅ | `mahal_gold` | mahal-vang | Mahal - Vàng | mahal_gold | 18 | ✓ | — | 1/6 | — |
 | 83 | 🟡 | `floral_fiesta_yellow` | floral-fiesta-vang | Lễ Hội Hoa - Vàng | floral_fiesta_yellow | 31 | ✓ | — | — | theme, bìa |
-| 84 | 🟡 | `nomad_brown` | du-muc-nau | Du Mục - Nâu | nomad_brown | 18 | — | — | — | theme, bìa |
+| 84 | 🟡 | `nomad_brown` | du-muc-nau | Du Mục - Nâu | nomad_brown | 18 | ✓ | — | — | theme, bìa |
 | 85 | 🟡 | `saraya_gold` | kim-dien-vang | Kim Điện - Vàng | saraya_gold | 17 | ✓ | — | — | theme, bìa |
 | 86 | 🟡 | `qasr_gold` | thanhcung-vang | Thanh Cung - Vàng | qasr_gold | 5 | ✓ | — | — | theme, bìa |
 | 87 | 🟡 | `qasr_green` | thanhcung-xanh | Thanh Cung - Xanh | qasr_green | 12 | ✓ | — | — | theme, bìa |
 | 88 | ✅ | `mandap_darkred` | mandap-do-dam | Mandap - Đỏ đậm | mandap_darkred | 17 | ✓ | — | 1/6 | — |
-| 89 | 🟡 | `brocade_flower_red` | gam-hoa-do | Gấm Hoa - Đỏ | brocade_flower_red | 12 | — | — | — | theme, bìa |
+| 89 | 🟡 | `brocade_flower_red` | gam-hoa-do | Gấm Hoa - Đỏ | brocade_flower_red | 12 | ✓ | — | — | theme, bìa |
 | 90 | ✅ | `calla_lily_white` | hoa-rum-trang | Hoa Rum - Trắng | calla_lily_white | 8 | ✓ | `gen_calla_lily_white.cjs` | 2/6 | — |
 | 91 | ✅ | `mandap_yellow` | mandap-vang | Mandap - Vàng | mandap_yellow | 20 | ✓ | `gen_mandap_yellow.cjs` | 2/6 | — |
 | 92 | ✅ | `mahal_pink` | mahal-hong | Mahal - Hồng | mahal_pink | 24 | ✓ | `gen_mahal_pink.cjs` | 2/6 | — |
@@ -212,6 +212,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/minimalism-brown/paper.webp`
 - `public/images/themes/minimalism-brown/water.webp`
 
+**Phong bì** (1)
+
+- `public/images/envelope/minimalism_brown.webp`
+
 **Dữ liệu khảo sát** (29)
 
 - `docs/survey/raw/minimalism_brown_cover390.json`
@@ -277,6 +281,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `src/features/invitation/shell/blocks/song_hy/themeVars.ts`
 - `src/features/invitation/shell/blocks/song_hy/Venue.tsx`
 
+**Phong bì** (1)
+
+- `public/images/envelope/song_hy_green.webp`
+
 **Dữ liệu khảo sát** (16)
 
 - `docs/survey/blocks/song_hy_green/00.html`
@@ -333,6 +341,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `src/features/invitation/shell/blocks/boho_floral/TopDecor.tsx`
 - `src/features/invitation/shell/blocks/boho_floral/Venue.tsx`
 - `src/features/invitation/shell/blocks/boho_floral/VenueDecor.tsx`
+
+**Phong bì** (1)
+
+- `public/images/envelope/boho_floral_green.webp`
 
 **Dữ liệu khảo sát** (7)
 
@@ -424,6 +436,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `src/features/invitation/shell/blocks/song_hy/index.ts`
 - `src/features/invitation/shell/blocks/song_hy/themeVars.ts`
 - `src/features/invitation/shell/blocks/song_hy/Venue.tsx`
+
+**Phong bì** (1)
+
+- `public/images/envelope/song_hy_red.webp`
 
 **Dữ liệu khảo sát** (23)
 
@@ -766,6 +782,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `src/features/invitation/shell/blocks/minimalism_darkbrown/Schedule.tsx`
 - `src/features/invitation/shell/blocks/minimalism_darkbrown/Venue.tsx`
 
+**Phong bì** (1)
+
+- `public/images/envelope/minimalism_darkbrown.webp`
+
 **Dữ liệu khảo sát** (1)
 
 - `docs/survey/raw/minimalism_darkbrown_dump_open_390.json`
@@ -839,6 +859,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `src/features/invitation/shell/blocks/double_dragon/themeVars.ts`
 - `src/features/invitation/shell/blocks/double_dragon/Venue.tsx`
 
+**Phong bì** (1)
+
+- `public/images/envelope/double_dragon_red.webp`
+
 **Dữ liệu khảo sát** (19)
 
 - `docs/survey/blocks/double_dragon_red/00.html`
@@ -897,6 +921,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/glass-garden-green/flower4-decoration.webp`
 - `public/images/themes/glass-garden-green/flower5-bottom.webp`
 - `public/images/themes/glass-garden-green/welcome.webp`
+
+**Phong bì** (1)
+
+- `public/images/envelope/glass_garden_green.webp`
 
 </details>
 
@@ -980,6 +1008,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `src/features/invitation/shell/blocks/double_dragon/themeVars.ts`
 - `src/features/invitation/shell/blocks/double_dragon/Venue.tsx`
 
+**Phong bì** (1)
+
+- `public/images/envelope/double_dragon_green.webp`
+
 **Dữ liệu khảo sát** (17)
 
 - `docs/survey/blocks/double_dragon_green/00.html`
@@ -1036,6 +1068,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/glass-garden-pink/flower5-bottom.webp`
 - `public/images/themes/glass-garden-pink/leaf1-bloom.webp`
 - `public/images/themes/glass-garden-pink/water.webp`
+
+**Phong bì** (1)
+
+- `public/images/envelope/glass_garden_pink.webp`
 
 </details>
 
@@ -1111,6 +1147,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/thanhdiep-green/la2.webp`
 - `public/images/themes/thanhdiep-green/la3.webp`
 - `public/images/themes/thanhdiep-green/la4.webp`
+
+**Phong bì** (1)
+
+- `public/images/envelope/elegant_leaf_green.webp`
 
 </details>
 
@@ -1369,6 +1409,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/chateau-green/hoanho3-1.webp`
 - `public/images/themes/chateau-green/ornament.webp`
 
+**Phong bì** (1)
+
+- `public/images/envelope/chateau_green.webp`
+
 </details>
 
 <details><summary>✅ <b>Vườn Xuân - Xanh</b> — <code>spring_garden_green</code></summary>
@@ -1403,6 +1447,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - `public/images/themes/nature/flower_paralax.webp`
 - `public/images/themes/nature/flower_top.webp`
+
+**Phong bì** (1)
+
+- `public/images/envelope/spring_garden_green.webp`
 
 **Dữ liệu khảo sát** (1)
 
@@ -1450,6 +1498,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/chibi_red/decorative-flowers.webp`
 - `public/images/themes/chibi_red/decorative-header.webp`
 - `public/images/themes/chibi_red/double-happiness.webp`
+
+**Phong bì** (1)
+
+- `public/images/envelope/chibi_red.webp`
 
 </details>
 
@@ -1541,6 +1593,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/nhat-binh-red/may.webp`
 - `public/images/themes/nhat-binh-red/paper.webp`
 - `public/images/themes/nhat-binh-red/quat.webp`
+
+**Phong bì** (1)
+
+- `public/images/envelope/nhat_binh_red.webp`
 
 </details>
 
@@ -1735,6 +1791,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/anhdao-pink/3.webp`
 - `public/images/themes/anhdao-pink/bg-full.jpg`
 
+**Phong bì** (1)
+
+- `public/images/envelope/cherry_blossom_pink.webp`
+
 </details>
 
 <details><summary>✅ <b>Hoa Mộc - Hồng</b> — <code>boho_floral_pink</code></summary>
@@ -1772,6 +1832,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `src/features/invitation/shell/blocks/boho_floral/TopDecor.tsx`
 - `src/features/invitation/shell/blocks/boho_floral/Venue.tsx`
 - `src/features/invitation/shell/blocks/boho_floral/VenueDecor.tsx`
+
+**Phong bì** (1)
+
+- `public/images/envelope/boho_floral_pink.webp`
 
 </details>
 
@@ -1819,6 +1883,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/applique-lace-white/music.webp`
 - `public/images/themes/applique-lace-white/satin-background.webp`
 
+**Phong bì** (1)
+
+- `public/images/envelope/applique_lace_white.webp`
+
 **Dữ liệu khảo sát** (1)
 
 - `docs/survey/raw/ren_theu_trang_real_cover.json`
@@ -1861,6 +1929,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/silkflora-brown/middle.webp`
 - `public/images/themes/silkflora-brown/top-flower.webp`
 
+**Phong bì** (1)
+
+- `public/images/envelope/silk_flora_brown.webp`
+
 </details>
 
 <details><summary>🟡 <b>Hoạ Tình - Đỏ</b> — <code>hoa_tinh_red</code></summary>
@@ -1901,6 +1973,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/love-art/thanks.webp`
 - `public/images/themes/love-art/tim.webp`
 
+**Phong bì** (1)
+
+- `public/images/envelope/hoa_tinh_red.webp`
+
 </details>
 
 <details><summary>✅ <b>Vườn Xuân - Lam</b> — <code>spring_garden_blue</code></summary>
@@ -1936,6 +2012,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/vuon xuan blue/button.webp`
 - `public/images/themes/vuon xuan blue/mid.webp`
 - `public/images/themes/vuon xuan blue/top.webp`
+
+**Phong bì** (1)
+
+- `public/images/envelope/spring_garden_blue.webp`
 
 **Dữ liệu khảo sát** (1)
 
@@ -2059,6 +2139,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - `public/images/themes/minimalism-red/header-bottom-01.png`
 - `public/images/themes/minimalism-red/header-top-01.png`
+
+**Phong bì** (1)
+
+- `public/images/envelope/minimalism_red.webp`
 
 **Dữ liệu khảo sát** (1)
 
@@ -2212,6 +2296,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/baroque-gold/pattern-decoration.webp`
 - `public/images/themes/baroque-gold/tru.webp`
 
+**Phong bì** (1)
+
+- `public/images/envelope/baroque_gold.webp`
+
 </details>
 
 <details><summary>🟡 <b>Lâu Đài - Lam</b> — <code>chateau_blue</code></summary>
@@ -2261,6 +2349,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/chateau-blue/nen.webp`
 - `public/images/themes/chateau-blue/nhan.webp`
 
+**Phong bì** (1)
+
+- `public/images/envelope/chateau_blue.webp`
+
 </details>
 
 <details><summary>🟡 <b>Song Phụng - Xanh</b> — <code>double_phoenix_green</code></summary>
@@ -2304,6 +2396,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/songphung-green/Phuong line.webp`
 - `public/images/themes/songphung-green/Phuong.webp`
 
+**Phong bì** (1)
+
+- `public/images/envelope/double_phoenix_green.webp`
+
 </details>
 
 <details><summary>✅ <b>Hoa Mộc - Nâu</b> — <code>boho_floral_brown</code></summary>
@@ -2342,6 +2438,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `src/features/invitation/shell/blocks/boho_floral/Venue.tsx`
 - `src/features/invitation/shell/blocks/boho_floral/VenueDecor.tsx`
 
+**Phong bì** (1)
+
+- `public/images/envelope/boho_floral_brown.webp`
+
 </details>
 
 <details><summary>✅ <b>Song Long - Lam</b> — <code>double_dragon_blue</code></summary>
@@ -2376,6 +2476,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `src/features/invitation/shell/blocks/double_dragon/index.ts`
 - `src/features/invitation/shell/blocks/double_dragon/themeVars.ts`
 - `src/features/invitation/shell/blocks/double_dragon/Venue.tsx`
+
+**Phong bì** (1)
+
+- `public/images/envelope/double_dragon_blue.webp`
 
 **Dữ liệu khảo sát** (17)
 
@@ -2431,6 +2535,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/glass-garden-light-green/leaf4-decoration.webp`
 - `public/images/themes/glass-garden-light-green/leaf5-bottom.webp`
 - `public/images/themes/glass-garden-light-green/water.webp`
+
+**Phong bì** (1)
+
+- `public/images/envelope/glass_garden_light_green.webp`
 
 </details>
 
@@ -2575,6 +2683,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - `public/images/themes/coba-red/cho-ben-thanh.webp`
 - `public/images/themes/coba-red/dau-re.webp`
+
+**Phong bì** (1)
+
+- `public/images/envelope/co_ba_red.webp`
 
 </details>
 
@@ -2984,6 +3096,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/royal-v2-green/ring.webp`
 - `public/images/themes/royal-v2-green/welcome.webp`
 
+**Phong bì** (1)
+
+- `public/images/envelope/royal_v2_green.webp`
+
 </details>
 
 <details><summary>🟡 <b>Hoàng Kim - Xanh</b> — <code>royal_green</code></summary>
@@ -3071,6 +3187,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/baroque-blue/medallion-cake.webp`
 - `public/images/themes/baroque-blue/medallion-ring.webp`
 - `public/images/themes/baroque-blue/pillars-decoration.webp`
+
+**Phong bì** (1)
+
+- `public/images/envelope/baroque_blue.webp`
 
 </details>
 
@@ -3818,6 +3938,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/porcelain-blue/home.webp`
 - `public/images/themes/porcelain-blue/music.webp`
 
+**Phong bì** (1)
+
+- `public/images/envelope/porcelain_blue.webp`
+
 </details>
 
 <details><summary>🟡 <b>Hoa Màu - Lam</b> — <code>folk_floral_blue</code></summary>
@@ -4380,6 +4504,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/nomad-brown/towel2-decoration.webp`
 - `public/images/themes/nomad-brown/tussock-decoration.webp`
 
+**Phong bì** (1)
+
+- `public/images/envelope/nomad_brown.webp`
+
 </details>
 
 <details><summary>🟡 <b>Kim Điện - Vàng</b> — <code>saraya_gold</code></summary>
@@ -4627,6 +4755,10 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - `public/images/themes/brocade-flower-red/seal.webp`
 - `public/images/themes/brocade-flower-red/tru.webp`
 
+**Phong bì** (1)
+
+- `public/images/envelope/brocade_flower_red.webp`
+
 </details>
 
 <details><summary>✅ <b>Hoa Rum - Trắng</b> — <code>calla_lily_white</code></summary>
@@ -4838,10 +4970,77 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 ## Thay đổi ở lần quét gần nhất
 
-_Không có thay đổi so với lần quét trước._
+- **minimalism_brown** — file mới
+  - `public/images/envelope/minimalism_brown.webp`
+- **song_hy_green** — file mới
+  - `public/images/envelope/song_hy_green.webp`
+- **boho_floral_green** — file mới
+  - `public/images/envelope/boho_floral_green.webp`
+- **song_hy_red** — file mới
+  - `public/images/envelope/song_hy_red.webp`
+- **minimalism_darkbrown** — file mới
+  - `public/images/envelope/minimalism_darkbrown.webp`
+- **double_dragon_red** — file mới
+  - `public/images/envelope/double_dragon_red.webp`
+- **glass_garden_green** — file mới
+  - `public/images/envelope/glass_garden_green.webp`
+- **double_dragon_green** — file mới
+  - `public/images/envelope/double_dragon_green.webp`
+- **glass_garden_pink** — file mới
+  - `public/images/envelope/glass_garden_pink.webp`
+- **elegant_leaf_green** — file mới
+  - `public/images/envelope/elegant_leaf_green.webp`
+- **chateau_green** — file mới
+  - `public/images/envelope/chateau_green.webp`
+- **spring_garden_green** — file mới
+  - `public/images/envelope/spring_garden_green.webp`
+- **chibi_red** — file mới
+  - `public/images/envelope/chibi_red.webp`
+- **nhat_binh_red** — file mới
+  - `public/images/envelope/nhat_binh_red.webp`
+- **cherry_blossom_pink** — file mới
+  - `public/images/envelope/cherry_blossom_pink.webp`
+- **boho_floral_pink** — file mới
+  - `public/images/envelope/boho_floral_pink.webp`
+- **applique_lace_white** — file mới
+  - `public/images/envelope/applique_lace_white.webp`
+- **silk_flora_brown** — file mới
+  - `public/images/envelope/silk_flora_brown.webp`
+- **hoa_tinh_red** — file mới
+  - `public/images/envelope/hoa_tinh_red.webp`
+- **spring_garden_blue** — file mới
+  - `public/images/envelope/spring_garden_blue.webp`
+- **minimalism_red** — file mới
+  - `public/images/envelope/minimalism_red.webp`
+- **baroque_gold** — file mới
+  - `public/images/envelope/baroque_gold.webp`
+- **chateau_blue** — file mới
+  - `public/images/envelope/chateau_blue.webp`
+- **double_phoenix_green** — file mới
+  - `public/images/envelope/double_phoenix_green.webp`
+- **boho_floral_brown** — file mới
+  - `public/images/envelope/boho_floral_brown.webp`
+- **double_dragon_blue** — file mới
+  - `public/images/envelope/double_dragon_blue.webp`
+- **glass_garden_light_green** — file mới
+  - `public/images/envelope/glass_garden_light_green.webp`
+- **co_ba_red** — file mới
+  - `public/images/envelope/co_ba_red.webp`
+- **royal_v2_green** — file mới
+  - `public/images/envelope/royal_v2_green.webp`
+- **baroque_blue** — file mới
+  - `public/images/envelope/baroque_blue.webp`
+- **porcelain_blue** — file mới
+  - `public/images/envelope/porcelain_blue.webp`
+- **nomad_brown** — file mới
+  - `public/images/envelope/nomad_brown.webp`
+- **brocade_flower_red** — file mới
+  - `public/images/envelope/brocade_flower_red.webp`
 
 ## Lịch sử các lần quét
 
+- 2026-11-15 14:38 — 33 thay đổi: minimalism_brown: file mới; song_hy_green: file mới; boho_floral_green: file mới; song_hy_red: file mới; minimalism_darkbrown: file mới; double_dragon_red: file mới…
+- 2026-11-11 18:08 — 91 thay đổi: minimalism_darkred: file đã cập nhật; song_hy_green: file đã cập nhật; boho_floral_green: file đã cập nhật; song_hy_v2_red: file đã cập nhật; song_hy_red: file đã cập nhật; silk_ribbon_green: file đã cập nhật…
 - 2026-11-11 12:52 — 0 thay đổi
 - 2026-11-11 12:45 — 1 thay đổi: jasmine_green: file đã cập nhật
 - 2026-11-11 12:43 — 2 thay đổi: jasmine_green: mẫu mới vào sổ; mahal_pink: file đã cập nhật
