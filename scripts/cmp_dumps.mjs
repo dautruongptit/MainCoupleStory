@@ -8,6 +8,9 @@ for (const sw of specs) {
   const f = `local_${id}_dump_${s}_${w}.json`;
   const a = JSON.parse(fs.readFileSync(`${base}/${f}`, "utf8"));
   const b = JSON.parse(fs.readFileSync(`docs/survey/raw/${f}`, "utf8"));
+  // bỏ phần tử đổi theo thời gian (đếm ngược "x ngày y giờ z phút t giây") — AGENTS.md: tiêu chí đạt trừ phần tử thời gian
+  const timeVar = (r) => /\d+ ngày \d+ giờ/.test(r.k);
+  a.recs = a.recs.filter((r) => !timeVar(r)); b.recs = b.recs.filter((r) => !timeVar(r));
   const ka = new Map(a.recs.map((r) => [r.k, r]));
   let diff = 0, added = 0;
   const shown = [];

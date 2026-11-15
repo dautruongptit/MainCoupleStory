@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "check:assets": "node scripts/check-assets.mjs",
     "css:inv": "node scripts/build-invitation-css.mjs",
-    "css:inv:watch": "node scripts/build-invitation-css.mjs --watch"
+    "css:inv:watch": "node scripts/build-invitation-css.mjs --watch",
+    "check": "node scripts/check/run-all.mjs"
   },
   "dependencies": {
     "qrcode-generator": "^2.0.4",
