@@ -1,6 +1,6 @@
 # Editor ↔ xem trước — jasmine_green
 
-Bản local, 2026-11-11. **23 đạt, 0 lỗi, 17 bỏ qua.**
+Bản local, 2026-11-15. **23 đạt, 0 lỗi, 17 bỏ qua.**
 
 | Thẻ | Kiểm tra | Kết quả | Ghi chú |
 |---|---|---|---|

@@ -1,6 +1,6 @@
 {
  "_doc": "Sổ đăng ký clone. Sinh bởi scripts/clone/registry.mjs — đừng sửa tay trừ trường verified/notes.",
- "generatedAt": "2026-11-15T14:38:51.937Z",
+ "generatedAt": "2026-11-15T15:30:21.012Z",
  "totals": {
   "templates": 92,
   "đã clone": 43,
@@ -201,6 +201,13 @@
     "porcelain_blue: file mới",
     "nomad_brown: file mới",
     "brocade_flower_red: file mới"
+   ]
+  },
+  {
+   "at": "2026-11-15T15:30:21.012Z",
+   "changes": 1,
+   "summary": [
+    "jasmine_green: file đã cập nhật"
    ]
   }
  ],
@@ -12949,8 +12956,8 @@
      },
      {
       "path": "src/features/invitation/shell/blocks/jasmine_green/Gifts.tsx",
-      "size": 517,
-      "sha": "f39abfd684719d79"
+      "size": 506,
+      "sha": "1a0f6cc8ee481e41"
      },
      {
       "path": "src/features/invitation/shell/blocks/jasmine_green/Guestbook.tsx",

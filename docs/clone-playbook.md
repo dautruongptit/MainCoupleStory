@@ -82,9 +82,9 @@ Khi cấu trúc khác (họ bố cục mới, vd song_hy / baroque / florence / 
 - Khối mới: lấy HTML từ dump gốc (`html2jsx`), dựng JSX với class đúng, màu/ảnh đi qua `t.*`.
 
 Nguyên tắc: không `if (templateId === ...)` trong khối; mọi khác biệt là dữ liệu trong `theme.json`/`capabilities.json` hoặc là một khối khác.
-Chứng minh refactor không đổi số đo: `node scripts/cmp_dumps.mjs <thư mục mốc> <id> cover:390 open:390 open:768 open:1440 gift:390 rsvp:390` (so từng thuộc tính từng phần tử với dump local đã lưu trước khi sửa).
+Chứng minh refactor không đổi số đo: `node scripts/check/cmp_dumps.mjs <thư mục mốc> <id> cover:390 open:390 open:768 open:1440 gift:390 rsvp:390` (so từng thuộc tính từng phần tử với dump local đã lưu trước khi sửa).
 Ghi chú còn lại: hộp thoại RSVP dùng `BrownRsvpDialog.tsx` (khớp 18/18); dữ liệu demo ở `src/pages/Demo.tsx`.
-- Kiểm tra: `diff_dump … open 390/768/1440` = 0; `node scripts/audit.mjs <id>` Δ0 ở 390/768/1440.
+- Kiểm tra: `diff_dump … open 390/768/1440` = 0; `node scripts/check/audit.mjs <id>` Δ0 ở 390/768/1440.
 
 ### 4.2b Họ bố cục mới (đã làm thử với Riviera Lam, `riviera_blue`)
 Khi mẫu có cấu trúc khác (không chỉ khác màu), dựng bộ khối mới theo các bước sau. Công cụ ở `scripts/clone/`:
@@ -114,7 +114,7 @@ Engine bìa hỗ trợ thêm `sealImg`/`sealSize` (con dấu là ảnh, vd song 
 - Thẻ: `components/v2/` — `CardV2` (vỏ thẻ), `ui2.tsx` (`Field2`, `Row2`, `Input2`, `Textarea2`, `Seg2`, `Hint2`, `Helper2`, `Toggle2`, `OutlineButton2`, `Divider2`), `BasicV2`, `HeroV2`, `AlbumV2`, `BanquetV2`, `SectionsV2` (các thẻ còn lại).
 - Chỉ khác theo mẫu: thẻ ảnh đầu thiệp (Ảnh đầu thiệp / Ảnh đôi / không có), công tắc intro, vị trí thẻ album — khai báo bằng cờ capabilities (`docs/clone-rules.md` mục B).
 - Thẻ mới/khác: lấy HTML thẻ từ `*_editor_html.json` (`cards[i]`), bỏ SVG để đọc cấu trúc, dựng lại **đúng class**, đo lại.
-- Kiểm tra: `diff_dump … editor 390`, `768`, `1280` = 0; `node scripts/editor-sync.mjs <id>` không FAIL (sửa field → preview đổi; công tắc ẩn/hiện; hành động; tải lại còn dữ liệu).
+- Kiểm tra: `diff_dump … editor 390`, `768`, `1280` = 0; `node scripts/check/editor-sync.mjs <id>` không FAIL (sửa field → preview đổi; công tắc ẩn/hiện; hành động; tải lại còn dữ liệu).
 
 ## 5. Bẫy đã gặp (kiểm tra đầu tiên khi số đo kỳ lạ)
 
@@ -137,9 +137,9 @@ Engine bìa hỗ trợ thêm `sealImg`/`sealSize` (con dấu là ảnh, vd song 
 npx tsc --noEmit -p .
 npm run css:inv
 for s in cover open gift rsvp: node scripts/survey/local_dump.mjs minimalism_brown $s 390 && node scripts/survey/diff_dump.mjs minimalism_brown $s 390
-node scripts/audit.mjs minimalism_brown
-node scripts/editor-sync.mjs minimalism_brown
-node scripts/phase6_all.mjs        # quét 75 mẫu (lâu)
+node scripts/check/audit.mjs minimalism_brown
+node scripts/check/editor-sync.mjs minimalism_brown
+node scripts/check/phase6_all.mjs        # quét 75 mẫu (lâu)
 npm run build
 ```
 

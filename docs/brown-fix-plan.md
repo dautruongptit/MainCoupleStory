@@ -95,7 +95,7 @@ Khảo sát phần tử cho thấy editor local giống bố cục nhưng **khá
 ## 6. Kết quả sau khi làm Phương án B (Tailwind v4 + daisyUI v5 cô lập trong `.inv-root`)
 
 Đã làm (mẫu Nâu, trang xem trước vẫn nằm trong trang như hiện nay):
-- `src/features/invitation/styles/invitation.src.css` → `npm run css:inv` (`scripts/build-invitation-css.mjs`) biên dịch bằng Tailwind v4.3 + daisyUI 5.7 (theme `halloween`, `--font-sans` như gốc), **gỡ `@layer`** (CSS app không nằm trong layer sẽ thắng CSS trong layer) và **gắn tiền tố `.inv-root`** cho mọi selector → `invitation.generated.css` (đã `.gitignore`; `npm run dev/build` tự chạy).
+- `src/features/invitation/styles/invitation.src.css` → `npm run css:inv` (`scripts/tools/build-invitation-css.mjs`) biên dịch bằng Tailwind v4.3 + daisyUI 5.7 (theme `halloween`, `--font-sans` như gốc), **gỡ `@layer`** (CSS app không nằm trong layer sẽ thắng CSS trong layer) và **gắn tiền tố `.inv-root`** cho mọi selector → `invitation.generated.css` (đã `.gitignore`; `npm run dev/build` tự chạy).
 - `postcss.config.js`: tiện ích Tailwind v3 của app **không áp dụng trong `.inv-root`** (`:not(:where(.inv-root *))`, độ ưu tiên 0) — nếu không, biến `--tw-*` của v3 đè v4 (vòng sáng `ring-2` mất).
 - `styles.css`: `.modal` của editor không áp dụng trong `.inv-root`; xóa toàn bộ CSS thủ công theo mẫu Nâu (modal, preflight cục bộ, `mb-*`).
 - `MinimalismBrown.tsx`: gốc có class `inv-root`; sửa lỗi dump HTML (`[&&gt;div:last-child]` → `[&>div:last-child]`, vốn làm mất khoảng cách 65/130px của danh sách lời chúc); tên cặp đôi dùng `text-[27px] md:text-[46px] font-normal`; bản đồ nạp iframe ngay; tiêu đề thẻ quà dùng `Gotham, Montserrat`.

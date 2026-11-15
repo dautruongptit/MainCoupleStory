@@ -1,6 +1,6 @@
 # Phase 6 — Báo cáo kiểm tra (mẫu `minimalism_brown`)
 
-Chạy bằng `scripts/phase6_audit.mjs` (mẫu Nâu ở 390/768/1440 + editor) và `scripts/phase6_all.mjs` (75 mẫu, bìa + thiệp mở, 390px).
+Chạy bằng `scripts/check/phase6_audit.mjs` (mẫu Nâu ở 390/768/1440 + editor) và `scripts/check/phase6_all.mjs` (75 mẫu, bìa + thiệp mở, 390px).
 Số liệu thô: `docs/phase6-results.json`, `docs/phase6-all-templates.json`. Không sửa mã trong phase này.
 
 ## Đạt

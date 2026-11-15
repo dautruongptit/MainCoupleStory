@@ -2,7 +2,7 @@
 // Dùng: node scripts/survey/local_dump.mjs <templateId> <state: cover|open|gift|rsvp> <width> [--slug <slug>]
 // Ghi: docs/survey/raw/local_<id>_dump_<state>_<width>.json
 import fs from "node:fs";
-import { ChromeController } from "../cdp_helper.mjs";
+import { ChromeController } from "../lib/cdp_helper.mjs";
 
 const [id, state, widthArg] = process.argv.slice(2);
 if (!id || !state || !widthArg) { console.error("Cách dùng: node scripts/survey/local_dump.mjs <templateId> <cover|open|gift|rsvp> <width>"); process.exit(1); }

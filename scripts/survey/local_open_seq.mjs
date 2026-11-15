@@ -1,7 +1,7 @@
 // So chuỗi animation khi bấm "Mở thiệp" của bản local với số đo gốc. Dùng: node scripts/survey/local_open_seq.mjs <templateId>
 // Ghi docs/survey/open-seq-compare-<id>.md
 import fs from "node:fs";
-import { ChromeController } from "../cdp_helper.mjs";
+import { ChromeController } from "../lib/cdp_helper.mjs";
 
 const id = process.argv[2];
 if (!id) { console.error("thiếu <templateId>"); process.exit(1); }

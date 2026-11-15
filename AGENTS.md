@@ -4,7 +4,7 @@ Dự án: **clone giao diện thiệp cưới chungdoi.com sang bản chạy loc
 
 ## 1. Việc đang làm
 - **Sổ đăng ký clone**: `docs/clone-registry.md` (đọc) + `docs/clone-registry.json` (hash từng file) cho biết mẫu nào đã/dở dang/chưa clone và file nào đã lưu. **Sau mỗi lần clone hoặc sửa mẫu: chạy `node scripts/clone/registry.mjs` rồi commit cùng.** Khi chủ dự án bảo "đồng bộ lại toàn bộ mẫu": chạy `--check` trước để thấy file mới/đã đổi/mất, rồi làm theo mục "Quy trình đồng bộ" trong sổ.
-- **Sổ ảnh Hộp Mừng Quà**: `docs/survey/gift-assets.md` (+ `.json`, lịch sử ở `docs/survey/gift-asset-results/`) ghi ảnh hộp 3D/hộp nhỏ/phong bì từng mẫu cần, đã có, trang gốc không có, mẫu dùng ảnh tên chung của họ (giống trang gốc: vd `dragon_phoenix_red` → `dragon_phoenix.webp`, lưu đúng tên thật, không nhân bản theo id; code tra `config/giftAssets.generated.ts`) và file thừa. **Sau mỗi lần tải ảnh hộp quà: chạy `node scripts/clone/gift_assets.mjs --result <kết quả>` rồi commit cùng.** Lấy danh sách cần tải: `--todo`. Dữ liệu khối hộp quà của 92 mẫu: `docs/survey/raw/gift_<id>.json` (thu bằng `scripts/survey/gift_crawl.js`, giãn ≥35 giây/mẫu — tải nhanh sẽ bị 403) → `node scripts/clone/gen_gift_sections.cjs` → khối dùng chung `blocks/shared/GiftsGeneric.tsx`. Kiểm tra: `node scripts/gift-modes.mjs --all`, `node scripts/gift-geometry.mjs`.
+- **Sổ ảnh Hộp Mừng Quà**: `docs/survey/gift-assets.md` (+ `.json`, lịch sử ở `docs/survey/gift-asset-results/`) ghi ảnh hộp 3D/hộp nhỏ/phong bì từng mẫu cần, đã có, trang gốc không có, mẫu dùng ảnh tên chung của họ (giống trang gốc: vd `dragon_phoenix_red` → `dragon_phoenix.webp`, lưu đúng tên thật, không nhân bản theo id; code tra `config/giftAssets.generated.ts`) và file thừa. **Sau mỗi lần tải ảnh hộp quà: chạy `node scripts/clone/gift_assets.mjs --result <kết quả>` rồi commit cùng.** Lấy danh sách cần tải: `--todo`. Dữ liệu khối hộp quà của 92 mẫu: `docs/survey/raw/gift_<id>.json` (thu bằng `scripts/survey/gift_crawl.js`, giãn ≥35 giây/mẫu — tải nhanh sẽ bị 403) → `node scripts/clone/gen_gift_sections.cjs` → khối dùng chung `blocks/shared/GiftsGeneric.tsx`. Kiểm tra: `node scripts/check/gift-modes.mjs --all`, `node scripts/check/gift-geometry.mjs`.
 - Nhánh `fix/clone-match`. Đã đạt: **minimalism_brown** (Nâu), **riviera_blue** (Riviera - Lam) và **dragon_phoenix_v4_red** (Long Phụng V4 - Đỏ) ở bìa, thiệp đã mở, hộp quà, RSVP; editor đã dựng theo markup gốc (16 thẻ) và khớp mẫu Nâu ở 390/768/1280.
 - Còn lại (xem `docs/clone-playbook.md` mục 8): đo editor thật của Riviera; parallax khi cuộn của Riviera; nối `getCapabilities()` vào editor; 71 mẫu chưa clone (đang đi đường `Preview.tsx` cũ, lệch lớn).
 - Đọc theo thứ tự: `docs/clone-playbook.md` (quy trình) → `docs/clone-rules.md` (rule, capabilities) → `docs/clone-plan-88.md` (kế hoạch 88 mẫu, thay `clone-plan.md` cũ) → `docs/brown-fix-plan.md` (ví dụ làm hết một mẫu).
@@ -17,15 +17,16 @@ Dự án: **clone giao diện thiệp cưới chungdoi.com sang bản chạy loc
 
 ## 3. Lệnh
 ```
+npm run check            # bộ kiểm tra chung (tsc, số đo so mốc, hộp quà, editor-sync); --full / --baseline xem scripts/README.md
 npm install
 npm run dev            # tự chạy css:inv rồi vite (cổng 5173)
 npx tsc --noEmit -p .  # kiểm kiểu
 npm run build
 node scripts/survey/local_dump.mjs <id> <cover|open|openfull|gift|rsvp|editor> <390|768|1280|1440>
 node scripts/survey/diff_dump.mjs  <id> <state> <width>     # ghi docs/survey/diff-<id>-<state>-<width>.md
-node scripts/cmp_dumps.mjs <thư mục mốc> <id> open:390 ...   # chứng minh refactor không đổi số đo
-node scripts/editor-sync.mjs <id>   # sửa field → xem trước đổi; bật/tắt; tải lại giữ dữ liệu
-node scripts/audit.mjs <id>
+node scripts/check/cmp_dumps.mjs <thư mục mốc> <id> open:390 ...   # chứng minh refactor không đổi số đo
+node scripts/check/editor-sync.mjs <id>   # sửa field → xem trước đổi; bật/tắt; tải lại giữ dữ liệu
+node scripts/check/audit.mjs <id>
 node scripts/clone/gen_riviera.cjs      # sinh lại block Riviera từ docs/survey/blocks/riviera_blue
 node scripts/clone/gen_traditional.cjs  # sinh lại block họ traditional (Long Phụng V4) — dùng scripts/clone/genkit.cjs
 ```

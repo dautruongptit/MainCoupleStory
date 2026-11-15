@@ -71,9 +71,9 @@ Mỗi giai đoạn: tạo nhánh riêng từ `fix/clone-match` → làm theo cá
 |---|---|---|
 | Kiểu | `npx tsc --noEmit -p .` | 0 lỗi |
 | Build | `npm run build` | build thành công |
-| Hộp quà 3 kiểu | `node scripts/gift-modes.mjs --all` | 92/92 pass |
-| Hình học hộp quà | `node scripts/gift-geometry.mjs` | ≥ 91/92 khớp (chibi_red đã biết) |
-| Editor ↔ xem trước | `node scripts/editor-sync.mjs <id>` cho Nâu, Riviera, Long Phụng V4, Mai Lan - Xanh | 0 fail |
+| Hộp quà 3 kiểu | `node scripts/check/gift-modes.mjs --all` | 92/92 pass |
+| Hình học hộp quà | `node scripts/check/gift-geometry.mjs` | ≥ 91/92 khớp (chibi_red đã biết) |
+| Editor ↔ xem trước | `node scripts/check/editor-sync.mjs <id>` cho Nâu, Riviera, Long Phụng V4, Mai Lan - Xanh | 0 fail |
 | Số đo không đổi | trước giai đoạn: `local_dump` mốc 3 mẫu chuẩn × 390/768/1280 × open/openfull; sau: `cmp_dumps <mốc>` | 0 khác biệt |
 | Bằng mắt | mở demo + editor 5 mẫu đại diện (Nâu, Riviera, Long Phụng V4, Hoa Mộc, Mai Lan - Xanh) | không vỡ giao diện |
 

@@ -53,16 +53,16 @@ const latest = fs.existsSync(path.join(BASE_DIR, "LATEST")) ? fs.readFileSync(pa
 if (!latest) { console.log("⚠ chưa có mốc số đo — chạy: npm run check -- --baseline"); results.push({ name: "mốc số đo", ok: false }); }
 else {
   dumpAll();
-  for (const id of STD) run(`số đo ${id} so mốc ${latest}`, "node", ["scripts/cmp_dumps.mjs", path.join(BASE_DIR, latest), id, ...SPECS]);
+  for (const id of STD) run(`số đo ${id} so mốc ${latest}`, "node", ["scripts/check/cmp_dumps.mjs", path.join(BASE_DIR, latest), id, ...SPECS]);
 }
 
 // 3. hộp quà 3 kiểu
-run(full ? "hộp quà 3 kiểu (92 mẫu)" : "hộp quà 3 kiểu (mẫu đại diện)", "node", ["scripts/gift-modes.mjs", ...(full ? ["--all"] : GIFT_SAMPLE), "--base", base]);
-if (full) run("hình học hộp quà", "node", ["scripts/gift-geometry.mjs", "--base", base]);
+run(full ? "hộp quà 3 kiểu (92 mẫu)" : "hộp quà 3 kiểu (mẫu đại diện)", "node", ["scripts/check/gift-modes.mjs", ...(full ? ["--all"] : GIFT_SAMPLE), "--base", base]);
+if (full) run("hình học hộp quà", "node", ["scripts/check/gift-geometry.mjs", "--base", base]);
 
 // 4. editor <-> xem trước
 for (const id of SYNC_SAMPLE) {
-  const r = run(`editor-sync ${id}`, "node", ["scripts/editor-sync.mjs", id, "--base", base]);
+  const r = run(`editor-sync ${id}`, "node", ["scripts/check/editor-sync.mjs", id, "--base", base]);
   // chỉ tính FAIL chức năng; FAIL "(cấu trúc)" là khác biệt có sẵn so với editor gốc, không phải hồi quy
   const md = fs.existsSync(`docs/survey/editor-sync-${id}.md`) ? fs.readFileSync(`docs/survey/editor-sync-${id}.md`, "utf8") : "";
   const fails = md.split("\n").filter((l) => /FAIL/.test(l) && !/\(cấu trúc\)/.test(l));

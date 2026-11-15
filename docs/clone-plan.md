@@ -23,7 +23,7 @@ Kết luận tạm: nên làm **1 engine + ~15 họ bố cục + 75 bộ theme/d
 2. Engine bìa/mở thiệp theo bảng A1 (một component, tham số theo `cover.*`, `gift.widget`).
 3. Editor đọc `capabilities` (B2). Kiểm `editor-sync` mẫu Nâu 0 FAIL.
 4. Quyết định phạm vi preflight/tiện ích (mục 5) — làm một lần.
-5. Công cụ: gom `scripts/audit.mjs`, `editor-sync.mjs`, `phase6_all.mjs` vào một lệnh `npm run audit -- <id>` / `--all`.
+5. Công cụ: gom `scripts/check/audit.mjs`, `editor-sync.mjs`, `phase6_all.mjs` vào một lệnh `npm run audit -- <id>` / `--all`.
 
 **Giai đoạn 1 — Quét 75 mẫu để chốt "loại"** (mục 3). Không viết mẫu nào trước khi có kết quả.
 
@@ -53,9 +53,9 @@ Cần viết thêm:
 
 **Chạy lại audit để chắc không hồi quy (sau mỗi lô và trước khi merge):**
 1. `tsc --noEmit`, `vite build`.
-2. `scripts/audit.mjs` cho **mọi mẫu đã xong** (3 khổ) → 0 khối lệch >2px.
-3. `scripts/editor-sync.mjs` cho mẫu mới + 3 mẫu xoay vòng đã xong → 0 FAIL.
-4. `scripts/phase6_all.mjs` (quét 75 mẫu, console/network) → 0 mẫu có lỗi.
+2. `scripts/check/audit.mjs` cho **mọi mẫu đã xong** (3 khổ) → 0 khối lệch >2px.
+3. `scripts/check/editor-sync.mjs` cho mẫu mới + 3 mẫu xoay vòng đã xong → 0 FAIL.
+4. `scripts/check/phase6_all.mjs` (quét 75 mẫu, console/network) → 0 mẫu có lỗi.
 5. So ảnh bìa + 3 khối (pixelmatch ≤3%) cho mẫu mới.
 
 ## 5. Việc cần bạn quyết định

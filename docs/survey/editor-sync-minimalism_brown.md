@@ -1,11 +1,11 @@
 # Editor ↔ xem trước — minimalism_brown
 
-Bản local, 2026-10-31. **27 đạt, 0 lỗi, 16 bỏ qua.**
+Bản local, 2026-11-15. **25 đạt, 2 lỗi, 16 bỏ qua.**
 
 | Thẻ | Kiểm tra | Kết quả | Ghi chú |
 |---|---|---|---|
-| (cấu trúc) | Số thẻ local = gốc | pass | local 16 / gốc 16 |
-| (cấu trúc) | Không thiếu thẻ so với gốc | pass |  |
+| (cấu trúc) | Số thẻ local = gốc | FAIL | local 15 / gốc 16 |
+| (cấu trúc) | Không thiếu thẻ so với gốc | FAIL | phong bì |
 | (cấu trúc) | Không thừa thẻ so với gốc | pass |  |
 | (cấu trúc) | Thứ tự thẻ khớp gốc | pass | gốc: Thông tin cơ bản > Ảnh đầu thiệp > Thư viện ảnh > Thông tin gia đình > Lời thông báo > Lễ > Tiệc cưới > Xác nhận tham dự (RSVP) > Dress Code > Lịch trình ngày cưới > Sổ lưu bút > Hộp Quà Mừng > Lời cảm ơn > Nhạc nền > Phong bì > Ảnh xem trước khi chia sẻ |
 | Thông tin cơ bản | Sửa "Họ tên chú rể" -> xem trước | pass | Phạm Quang Huy |

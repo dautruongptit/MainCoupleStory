@@ -109,7 +109,7 @@ Giá trị thực đo được:
 2. Bộ thẻ = danh sách chuẩn 16 thẻ **lọc** theo `editor.cards` và **sắp xếp** theo `editor.albumCardAfter`.
 3. Thẻ có công tắc nhưng khối không tồn tại ở mẫu (vd `countdown:false`): ẩn tùy chọn "Đếm ngược" (không để công tắc không có tác dụng).
 4. Tùy chọn người dùng chọn được (kiểu album Lưới/Ghép/3D, RSVP nút/inline, kiểu hộp quà) hiện đủ; phần xem trước **phải** vẽ được mọi lựa chọn đó, hoặc lựa chọn bị ẩn cho mẫu đó.
-5. Kiểm thử bắt buộc: `scripts/editor-sync.mjs <id>` (xem thang kiểm bên dưới).
+5. Kiểm thử bắt buộc: `scripts/check/editor-sync.mjs <id>` (xem thang kiểm bên dưới).
 
 ### B3. Khác biệt editor đã đo (chỉ 3 điểm)
 - Thẻ ảnh đầu: "Ảnh đầu thiệp" (brown, song_hy, baroque) / "Ảnh đôi" (boho) / không có (florence → 15 thẻ).
@@ -142,7 +142,7 @@ Giá trị thực đo được:
 | Tương tác: mở bìa, album, hộp quà, RSVP, lời chúc, `?guest=` | đạt |
 | `editor-sync` | 0 FAIL (SKIP chỉ khi ghi rõ lý do) |
 
-Công cụ: `scripts/audit.mjs <id>` (khối + console/network), `scripts/editor-sync.mjs <id>`, `scripts/phase6_all.mjs` (quét 75 mẫu).
+Công cụ: `scripts/check/audit.mjs <id>` (khối + console/network), `scripts/check/editor-sync.mjs <id>`, `scripts/check/phase6_all.mjs` (quét 75 mẫu).
 
 ---
 

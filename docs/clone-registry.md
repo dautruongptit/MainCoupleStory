@@ -4970,75 +4970,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 ## Thay đổi ở lần quét gần nhất
 
-- **minimalism_brown** — file mới
-  - `public/images/envelope/minimalism_brown.webp`
-- **song_hy_green** — file mới
-  - `public/images/envelope/song_hy_green.webp`
-- **boho_floral_green** — file mới
-  - `public/images/envelope/boho_floral_green.webp`
-- **song_hy_red** — file mới
-  - `public/images/envelope/song_hy_red.webp`
-- **minimalism_darkbrown** — file mới
-  - `public/images/envelope/minimalism_darkbrown.webp`
-- **double_dragon_red** — file mới
-  - `public/images/envelope/double_dragon_red.webp`
-- **glass_garden_green** — file mới
-  - `public/images/envelope/glass_garden_green.webp`
-- **double_dragon_green** — file mới
-  - `public/images/envelope/double_dragon_green.webp`
-- **glass_garden_pink** — file mới
-  - `public/images/envelope/glass_garden_pink.webp`
-- **elegant_leaf_green** — file mới
-  - `public/images/envelope/elegant_leaf_green.webp`
-- **chateau_green** — file mới
-  - `public/images/envelope/chateau_green.webp`
-- **spring_garden_green** — file mới
-  - `public/images/envelope/spring_garden_green.webp`
-- **chibi_red** — file mới
-  - `public/images/envelope/chibi_red.webp`
-- **nhat_binh_red** — file mới
-  - `public/images/envelope/nhat_binh_red.webp`
-- **cherry_blossom_pink** — file mới
-  - `public/images/envelope/cherry_blossom_pink.webp`
-- **boho_floral_pink** — file mới
-  - `public/images/envelope/boho_floral_pink.webp`
-- **applique_lace_white** — file mới
-  - `public/images/envelope/applique_lace_white.webp`
-- **silk_flora_brown** — file mới
-  - `public/images/envelope/silk_flora_brown.webp`
-- **hoa_tinh_red** — file mới
-  - `public/images/envelope/hoa_tinh_red.webp`
-- **spring_garden_blue** — file mới
-  - `public/images/envelope/spring_garden_blue.webp`
-- **minimalism_red** — file mới
-  - `public/images/envelope/minimalism_red.webp`
-- **baroque_gold** — file mới
-  - `public/images/envelope/baroque_gold.webp`
-- **chateau_blue** — file mới
-  - `public/images/envelope/chateau_blue.webp`
-- **double_phoenix_green** — file mới
-  - `public/images/envelope/double_phoenix_green.webp`
-- **boho_floral_brown** — file mới
-  - `public/images/envelope/boho_floral_brown.webp`
-- **double_dragon_blue** — file mới
-  - `public/images/envelope/double_dragon_blue.webp`
-- **glass_garden_light_green** — file mới
-  - `public/images/envelope/glass_garden_light_green.webp`
-- **co_ba_red** — file mới
-  - `public/images/envelope/co_ba_red.webp`
-- **royal_v2_green** — file mới
-  - `public/images/envelope/royal_v2_green.webp`
-- **baroque_blue** — file mới
-  - `public/images/envelope/baroque_blue.webp`
-- **porcelain_blue** — file mới
-  - `public/images/envelope/porcelain_blue.webp`
-- **nomad_brown** — file mới
-  - `public/images/envelope/nomad_brown.webp`
-- **brocade_flower_red** — file mới
-  - `public/images/envelope/brocade_flower_red.webp`
+- **jasmine_green** — file đã cập nhật
+  - `src/features/invitation/shell/blocks/jasmine_green/Gifts.tsx`
 
 ## Lịch sử các lần quét
 
+- 2026-11-15 15:30 — 1 thay đổi: jasmine_green: file đã cập nhật
 - 2026-11-15 14:38 — 33 thay đổi: minimalism_brown: file mới; song_hy_green: file mới; boho_floral_green: file mới; song_hy_red: file mới; minimalism_darkbrown: file mới; double_dragon_red: file mới…
 - 2026-11-11 18:08 — 91 thay đổi: minimalism_darkred: file đã cập nhật; song_hy_green: file đã cập nhật; boho_floral_green: file đã cập nhật; song_hy_v2_red: file đã cập nhật; song_hy_red: file đã cập nhật; silk_ribbon_green: file đã cập nhật…
 - 2026-11-11 12:52 — 0 thay đổi

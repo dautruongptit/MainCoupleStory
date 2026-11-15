@@ -2,7 +2,7 @@
 // scripts/survey/gift_crawl.js. Dùng khi trang gốc đang chặn (403) hoặc chưa thu kịp; khi có số đo thật thì ghi đè (nguồn: "real").
 // Dùng: node scripts/clone/capture_gifts_local.mjs [<id> ...] [--base http://localhost:5173] [--force]
 import fs from "node:fs";
-import { ChromeController } from "../cdp_helper.mjs";
+import { ChromeController } from "../lib/cdp_helper.mjs";
 
 const args = process.argv.slice(2);
 const base = args.includes("--base") ? args[args.indexOf("--base") + 1] : "http://localhost:5173";
