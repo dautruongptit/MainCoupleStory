@@ -1010,39 +1010,7 @@
   .mobile-menu { display: none !important; }
 }
 
-.mobile-bottom-nav {
-  display: none;
-}
 @media (max-width: 768px) {
-  .mobile-bottom-nav {
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 56px;
-    background: rgba(var(--inkrgb), 0.95);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border-top: 1px solid rgba(var(--fgrgb), 0.08);
-    align-items: center;
-    justify-content: center;
-    z-index: 150;
-  }
-  .mobile-bottom-nav-item {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3px;
-    color: rgba(var(--fgrgb), 0.7);
-    text-decoration: none;
-    font-size: 11px;
-    font-weight: 500;
-  }
-  .mobile-bottom-nav-item:hover,
-  .mobile-bottom-nav-item.active {
-    color: #fc0081;
-  }
   .site {
     padding-bottom: 64px;
   }
@@ -2194,3 +2162,10 @@ button.gst-chip { border: 0; font-family: inherit; cursor: pointer; }
 @media (max-width: 768px) {
   .topnav { height: 64px; }
 }
+
+/* Thiệp của tôi: thanh điều hướng cao 64px (đo từ dashboard gốc), nút Đăng Nhập chữ trắng + viền 1px */
+.site[data-page="dashboard"] .topnav { height: 64px; }
+.site[data-page="dashboard"] .btn-login { color: #fff; border: 1px solid oklab(0.608 0.246894 0.00724138); }
+.site[data-page="dashboard"] { padding-bottom: 0; }
+.topnav .brand-logo { border: 1px solid transparent; }
+.topnav .brand-logo span { line-height: 28px; }

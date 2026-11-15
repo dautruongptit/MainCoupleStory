@@ -112,10 +112,10 @@ export default function Root() {
   else if (path === "/guests") page = <Guests />;
   else page = <Stub title="Sắp có" />;
 
-  const showFooter = !demoMatch;
+  const showFooter = !demoMatch && path !== "/dashboard"; // trang gốc không có chân trang ở Thiệp của tôi
 
   return (
-    <div className="site">
+    <div className="site" data-page={path === "/dashboard" ? "dashboard" : undefined}>
       <TopNav />
       {page}
       {showFooter && <Footer />}

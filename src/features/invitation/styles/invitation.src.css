@@ -6,6 +6,8 @@
   themes: halloween --default;
 }
 @source "../../invitation/shell";
+@source "../../../pages/Dashboard.tsx";
+@source "../../../components/layout/TopNav.tsx";
 @source "../components/BrownRsvpDialog.tsx";
 @source "../../editor/components";
 @source "../../templates/components/DraftPrompt.tsx";
