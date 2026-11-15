@@ -318,5 +318,18 @@
   ],
   "giftDisplayMode": "envelope",
   "invitationId": "e6297025-99ff-4f05-a31f-8a3a3971b5ae",
-  "invitationSlug": "hoangnam-thuyduong-baroquev2lam"
+  "invitationSlug": "hoangnam-thuyduong-baroquev2lam",
+  "giftOn": true,
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "0000000000",
+      "accountName": "THIEP CUOI DEMO",
+      "qrUrl": ""
+    }
+  ]
 }

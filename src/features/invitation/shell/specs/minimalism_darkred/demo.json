@@ -55,15 +55,35 @@
   "dressOn": true,
   "dressTitle": "DRESS CODE",
   "dressText": "Trang phục dự tiệc",
-  "dressColors": ["#511419", "#8c3a3f", "#c9a24a", "#ece4d8"],
+  "dressColors": [
+    "#511419",
+    "#8c3a3f",
+    "#c9a24a",
+    "#ece4d8"
+  ],
   "schedOn": true,
   "schedTitle": "LỊCH TRÌNH NGÀY CƯỚI",
   "sched": [
-    { "time": "17:00", "text": "Đón khách" },
-    { "time": "18:00", "text": "Khai tiệc" },
-    { "time": "18:30", "text": "Nghi thức cưới" },
-    { "time": "19:00", "text": "Cắt bánh & nâng ly" },
-    { "time": "20:30", "text": "Kết thúc tiệc" }
+    {
+      "time": "17:00",
+      "text": "Đón khách"
+    },
+    {
+      "time": "18:00",
+      "text": "Khai tiệc"
+    },
+    {
+      "time": "18:30",
+      "text": "Nghi thức cưới"
+    },
+    {
+      "time": "19:00",
+      "text": "Cắt bánh & nâng ly"
+    },
+    {
+      "time": "20:30",
+      "text": "Kết thúc tiệc"
+    }
   ],
   "guestOn": true,
   "wishes": [

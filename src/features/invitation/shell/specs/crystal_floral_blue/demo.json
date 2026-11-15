@@ -306,5 +306,18 @@
   "groomLinePayUrl": "",
   "galleryLayout": "cards",
   "invitationId": "d8d27849-6ffe-4cdb-b950-3934aa4a7ddd",
-  "invitationSlug": "baolam-thanhtruc-crystal"
+  "invitationSlug": "baolam-thanhtruc-crystal",
+  "giftOn": true,
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "0000000000",
+      "accountName": "THIEP CUOI DEMO",
+      "qrUrl": ""
+    }
+  ]
 }

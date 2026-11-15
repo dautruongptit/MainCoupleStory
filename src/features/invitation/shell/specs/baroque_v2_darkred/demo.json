@@ -306,5 +306,18 @@
   ],
   "giftDisplayMode": "envelope",
   "invitationId": "735cc823-c0d5-40dd-ae84-6ad1d65bd322",
-  "invitationSlug": "giabao-ngocdiep-baroquev2"
+  "invitationSlug": "giabao-ngocdiep-baroquev2",
+  "giftOn": true,
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "0000000000",
+      "accountName": "THIEP CUOI DEMO",
+      "qrUrl": ""
+    }
+  ]
 }

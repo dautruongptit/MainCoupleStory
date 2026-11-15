@@ -17,14 +17,59 @@
   "partyOn": true,
   "locTitle": "Tiệc cưới sẽ tổ chức tại",
   "wishes": [
-    { "name": "Chị Hai và các cháu", "msg": "Chúc gia đình nhỏ luôn ấm êm.", "at": "16:00:00 28/4/2027" },
-    { "name": "Hải Đăng", "msg": "Mừng hạnh phúc hai bạn, cùng nhau đi hết đoạn đường đời nhé.", "at": "17:00:00 27/4/2027" },
-    { "name": "em Trinh", "msg": "Chúc anh chị bách niên giai lão.", "at": "18:00:00 26/4/2027" },
-    { "name": "Anh Tuấn phòng kế toán", "msg": "Trăm năm tình viên mãn, bạc đầu nghĩa phu thê.", "at": "19:00:00 25/4/2027" },
-    { "name": "Duy Khánh", "msg": "Chúc mừng ngày trọng đại của hai bạn!", "at": "20:00:00 24/4/2027" },
-    { "name": "Anh Hưng", "msg": "Nhất định phải thật hạnh phúc nhé!", "at": "21:00:00 23/4/2027" },
-    { "name": "Khánh Vy", "msg": "Chúc bạn tui một đời bình an.", "at": "22:00:00 22/4/2027" },
-    { "name": "Bé Thỏ", "msg": "Chúc mừng anh chị, sớm có tin vui nha 🎉", "at": "23:00:00 21/4/2027" }
+    {
+      "name": "Chị Hai và các cháu",
+      "msg": "Chúc gia đình nhỏ luôn ấm êm.",
+      "at": "16:00:00 28/4/2027"
+    },
+    {
+      "name": "Hải Đăng",
+      "msg": "Mừng hạnh phúc hai bạn, cùng nhau đi hết đoạn đường đời nhé.",
+      "at": "17:00:00 27/4/2027"
+    },
+    {
+      "name": "em Trinh",
+      "msg": "Chúc anh chị bách niên giai lão.",
+      "at": "18:00:00 26/4/2027"
+    },
+    {
+      "name": "Anh Tuấn phòng kế toán",
+      "msg": "Trăm năm tình viên mãn, bạc đầu nghĩa phu thê.",
+      "at": "19:00:00 25/4/2027"
+    },
+    {
+      "name": "Duy Khánh",
+      "msg": "Chúc mừng ngày trọng đại của hai bạn!",
+      "at": "20:00:00 24/4/2027"
+    },
+    {
+      "name": "Anh Hưng",
+      "msg": "Nhất định phải thật hạnh phúc nhé!",
+      "at": "21:00:00 23/4/2027"
+    },
+    {
+      "name": "Khánh Vy",
+      "msg": "Chúc bạn tui một đời bình an.",
+      "at": "22:00:00 22/4/2027"
+    },
+    {
+      "name": "Bé Thỏ",
+      "msg": "Chúc mừng anh chị, sớm có tin vui nha 🎉",
+      "at": "23:00:00 21/4/2027"
+    }
   ],
-  "gifts": []
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "0000000000",
+      "accountName": "THIEP CUOI DEMO",
+      "qrUrl": ""
+    }
+  ],
+  "giftOn": true,
+  "giftDisplayMode": "envelope"
 }

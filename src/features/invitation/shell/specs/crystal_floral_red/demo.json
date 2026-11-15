@@ -304,5 +304,18 @@
   ],
   "giftDisplayMode": "envelope",
   "invitationId": "2d1fd784-c693-475f-8f6f-1ac2219c3640",
-  "invitationSlug": "hoangnam-thuyduong-crystal-red"
+  "invitationSlug": "hoangnam-thuyduong-crystal-red",
+  "giftOn": true,
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "0000000000",
+      "accountName": "THIEP CUOI DEMO",
+      "qrUrl": ""
+    }
+  ]
 }

@@ -24,5 +24,18 @@
       "at": "18:31:14 9/7/2026"
     }
   ],
-  "gifts": []
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "0000000000",
+      "accountName": "THIEP CUOI DEMO",
+      "qrUrl": "/api/qr-png?d=00020101021238540010A00000072701240006970436011000000000000208QRIBFTTA53037045802VN63048C2A&ec=M"
+    }
+  ],
+  "giftDisplayMode": "envelope",
+  "giftOn": true
 }

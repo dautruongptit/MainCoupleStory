@@ -24,5 +24,28 @@
       "at": "18:31:14 9/7/2026"
     }
   ],
-  "gifts": []
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Techcombank",
+      "bankCode": "TCB",
+      "bankBin": "970407",
+      "accountNumber": "19036628471015",
+      "accountName": "DANG HOAI NAM",
+      "qrUrl": "/api/qr-png?d=00020101021238580010A000000727012800069704070114190366284710150208QRIBFTTA53037045802VN63048F4E&ec=M"
+    },
+    {
+      "id": "g2",
+      "who": "bride",
+      "bankName": "ACB",
+      "bankCode": "ACB",
+      "bankBin": "970416",
+      "accountNumber": "0947215803",
+      "accountName": "NGO THANH TRUC",
+      "qrUrl": "/api/qr-png?d=00020101021238540010A00000072701240006970416011009472158030208QRIBFTTA53037045802VN63048293&ec=M"
+    }
+  ],
+  "giftDisplayMode": "envelope",
+  "giftOn": true
 }

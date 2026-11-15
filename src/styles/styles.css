@@ -6859,3 +6859,19 @@ html[data-theme="light"] .pv-wrapper, html[data-theme="light"] .demo-standalone-
 .field > .lbl:not(.cap) { width: fit-content; padding: 8px 0; margin-bottom: -6px; }
 .seg:not(.seg-row):not(:has(svg)) button { height: auto; padding: 6px 0; font-size: 14px; line-height: 20px; border-radius: 8px; }
 .seg.sm button { height: 27px; padding: 6px 0; font-size: 12px; line-height: 15px; border-radius: 8px; }
+
+/* Hộp quà 3D: ảnh nhỏ bay lên khi rê chuột (CSS đo thật từ trang gốc, docs/survey/gift-css.json) */
+@keyframes igbDecorFlyUp1{0%{translate:0 0;opacity:1}55%{translate:-6px -28px;opacity:1}80%{translate:-14px -55px;opacity:0}81%{translate:0 0;opacity:0}100%{translate:0 0;opacity:1}}
+@keyframes igbDecorFlyUp2{0%{translate:0 0;opacity:1}55%{translate:6px -30px;opacity:1}80%{translate:14px -60px;opacity:0}81%{translate:0 0;opacity:0}100%{translate:0 0;opacity:1}}
+@keyframes igbDecorFlyUp3{0%{translate:0 0;opacity:1}55%{translate:-4px -32px;opacity:1}80%{translate:-10px -65px;opacity:0}81%{translate:0 0;opacity:0}100%{translate:0 0;opacity:1}}
+@keyframes igbDecorFlyUp4{0%{translate:0 0;opacity:1}55%{translate:5px -35px;opacity:1}80%{translate:12px -70px;opacity:0}81%{translate:0 0;opacity:0}100%{translate:0 0;opacity:1}}
+@keyframes igbDecorFlyUp5{0%{translate:0 0;opacity:1}55%{translate:-3px -40px;opacity:1}80%{translate:-8px -80px;opacity:0}81%{translate:0 0;opacity:0}100%{translate:0 0;opacity:1}}
+@keyframes igbDecorFlyUp6{0%{translate:0 0;opacity:1}55%{translate:4px -38px;opacity:1}80%{translate:10px -75px;opacity:0}81%{translate:0 0;opacity:0}100%{translate:0 0;opacity:1}}
+@keyframes igbDecorFlyUp7{0%{translate:0 0;opacity:1}55%{translate:6px -36px;opacity:1}80%{translate:14px -72px;opacity:0}81%{translate:0 0;opacity:0}100%{translate:0 0;opacity:1}}
+.group:hover .igb-decor-1,.group:focus-visible .igb-decor-1{animation:igbDecorFlyUp1 1.6s ease-in-out 0s infinite}
+.group:hover .igb-decor-2,.group:focus-visible .igb-decor-2{animation:igbDecorFlyUp2 1.8s ease-in-out.15s infinite}
+.group:hover .igb-decor-3,.group:focus-visible .igb-decor-3{animation:igbDecorFlyUp3 1.4s ease-in-out.3s infinite}
+.group:hover .igb-decor-4,.group:focus-visible .igb-decor-4{animation:igbDecorFlyUp4 1.7s ease-in-out.45s infinite}
+.group:hover .igb-decor-5,.group:focus-visible .igb-decor-5{animation:igbDecorFlyUp5 1.9s ease-in-out.1s infinite}
+.group:hover .igb-decor-6,.group:focus-visible .igb-decor-6{animation:igbDecorFlyUp6 1.3s ease-in-out.35s infinite}
+.group:hover .igb-decor-7,.group:focus-visible .igb-decor-7{animation:igbDecorFlyUp7 1.7s ease-in-out.2s infinite}

@@ -1,9 +1,10 @@
 import React from "react";
 import { getGiftboxConfig } from "@/features/invitation/config/giftboxConfigs";
+import { GIFT_ASSETS } from "@/features/invitation/config/giftAssets.generated";
 import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx";
 
 /** "left: 1px; top: 2px" -> { left: "1px", top: "2px" } (cấu hình ảnh nhỏ của hộp quà lưu dạng chuỗi CSS) */
-const cssObj = (s: string): React.CSSProperties => {
+export const cssObj = (s: string): React.CSSProperties => {
   const o: Record<string, string> = {};
   for (const part of s.split(";")) {
     const i = part.indexOf(":");
@@ -14,7 +15,7 @@ const cssObj = (s: string): React.CSSProperties => {
   return o as React.CSSProperties;
 };
 
-const ENVELOPE_CSS = `@keyframes rv-ienvFloat { 0%, 100% { translate: 0px; } 50% { translate: 0px -7px; } }
+export const ENVELOPE_CSS = `@keyframes rv-ienvFloat { 0%, 100% { translate: 0px; } 50% { translate: 0px -7px; } }
     @keyframes rv-ienvFloatMain { 0%, 100% { translate: -15%; } 50% { translate: -15% -7px; } }
     @keyframes rv-ienvShadowPulse { 0%, 100% { transform: scaleX(1); opacity: 0.28; } 50% { transform: scaleX(0.9); opacity: 0.16; } }
     @keyframes rv-ienvSparkleAnim { 0%, 100% { opacity: 0; transform: scale(0.4); } 50% { opacity: 1; transform: scale(1.15); } }
@@ -73,7 +74,8 @@ export function AltGiftWidget({ ctx, mode }: { ctx: InvitationCtx; mode: string 
   }
 
   if (mode === "envelope") {
-    const envSrc = `/images/envelope/${d.templateId}.webp`;
+    // ảnh đúng tên trên trang gốc (có mẫu dùng tên chung của họ); mẫu gốc không có phong bì thì dùng ảnh dự phòng
+    const envSrc = GIFT_ASSETS[d.templateId]?.envelope ?? "/images/envelope/minimalism_darkred.webp";
     const fallbackEnv = (e: React.SyntheticEvent<HTMLImageElement>) => { e.currentTarget.onerror = null; e.currentTarget.src = "/images/envelope/minimalism_darkred.webp"; };
     return (
       <>
@@ -86,7 +88,7 @@ export function AltGiftWidget({ ctx, mode }: { ctx: InvitationCtx; mode: string 
   // "gift_box": hộp quà 3D; mẫu mặc định phong bì có thể thiếu ảnh hộp -> dùng ảnh hộp của chính mẫu hoặc ảnh dự phòng
   const cfg = getGiftboxConfig(d.templateId);
   const minis = cfg.miniImgs && cfg.miniImgs.length ? cfg.miniImgs : (getGiftboxConfig("minimalism_brown").miniImgs ?? []);
-  const mainBox = cfg.mainBoxSrc || `/images/giftbox/${d.templateId}.webp`;
+  const mainBox = GIFT_ASSETS[d.templateId]?.box || cfg.mainBoxSrc || "/images/giftbox/minimalism_brown.webp";
   return (
     <button type="button" aria-label="Mở hộp mừng cưới" onClick={() => setGiftModalOpen(true)} className="jsx-dd7f1ef62680a11c group relative cursor-pointer outline-none border-none bg-transparent " style={{"width":"260px","height":"280px"}}><div className="jsx-dd7f1ef62680a11c relative w-full h-full flex items-end justify-center pb-[26px]"><span className="jsx-dd7f1ef62680a11c igb-sparkle absolute pointer-events-none z-20" style={{"top":"8%","left":"14%","color":sub,"fontSize":"22px"}}>✦</span><span className="jsx-dd7f1ef62680a11c igb-sparkle-2 absolute pointer-events-none z-20" style={{"top":"18%","right":"10%","color":sub,"fontSize":"16px"}}>✦</span><span className="jsx-dd7f1ef62680a11c igb-sparkle-3 absolute pointer-events-none z-20" style={{"top":"32%","left":"5%","color":sub,"fontSize":"14px"}}>✦</span><span className="jsx-dd7f1ef62680a11c igb-sparkle-4 absolute pointer-events-none z-20" style={{"top":"26%","right":"5%","color":sub,"fontSize":"14px"}}>✦</span><div className="jsx-dd7f1ef62680a11c absolute pointer-events-none z-0" style={{"bottom":"187px","left":"50%"}}><div className="igb-confetti igb-c1" style={{"position":"absolute","left":"50%","top":"0px","opacity":"0","marginLeft":"-5.5px","marginTop":"-2.75px","pointerEvents":"none","willChange":"transform, opacity","width":"11px","height":"5.5px","backgroundColor":"rgb(236, 72, 153)","borderRadius":"2px"}}></div><div className="igb-confetti igb-c2" style={{"position":"absolute","left":"50%","top":"0px","opacity":"0","marginLeft":"-5px","marginTop":"-5px","pointerEvents":"none","willChange":"transform, opacity","width":"10px","height":"10px","backgroundColor":sub,"borderRadius":"50%"}}></div><div className="igb-confetti igb-c3" style={{"position":"absolute","left":"50%","top":"0px","opacity":"0","marginLeft":"-5.5px","marginTop":"-2.75px","pointerEvents":"none","willChange":"transform, opacity","width":"11px","height":"5.5px","backgroundColor":"rgb(34, 197, 94)","borderRadius":"2px"}}></div><div className="igb-confetti igb-c4" style={{"position":"absolute","left":"50%","top":"0px","opacity":"0","marginLeft":"-4.5px","marginTop":"-4.5px","pointerEvents":"none","willChange":"transform, opacity","width":"9px","height":"9px","backgroundColor":"rgb(59, 130, 246)","borderRadius":"50%"}}></div><div className="igb-confetti igb-c5" style={{"position":"absolute","left":"50%","top":"0px","opacity":"0","marginLeft":"-6px","marginTop":"-3px","pointerEvents":"none","willChange":"transform, opacity","width":"12px","height":"6px","backgroundColor":"rgb(168, 85, 247)","borderRadius":"2px"}}></div><div className="igb-confetti igb-c6" style={{"position":"absolute","left":"50%","top":"0px","opacity":"0","marginLeft":"-5px","marginTop":"-5px","pointerEvents":"none","willChange":"transform, opacity","width":"0px","height":"0px","borderLeft":"5px solid transparent","borderRight":"5px solid transparent","borderBottom":"10px solid rgb(250, 204, 21)"}}></div><div className="igb-confetti igb-c7" style={{"position":"absolute","left":"50%","top":"0px","opacity":"0","marginLeft":"-5px","marginTop":"-2.5px","pointerEvents":"none","willChange":"transform, opacity","width":"10px","height":"5px","backgroundColor":ink,"borderRadius":"2px"}}></div><div className="igb-confetti igb-c8" style={{"position":"absolute","left":"50%","top":"0px","opacity":"0","marginLeft":"-4.5px","marginTop":"-4.5px","pointerEvents":"none","willChange":"transform, opacity","width":"9px","height":"9px","backgroundColor":"rgb(249, 115, 22)","borderRadius":"50%"}}></div></div><div className="jsx-dd7f1ef62680a11c igb-bob relative" style={{"width":"200px","height":"220px"}}><div className="jsx-dd7f1ef62680a11c igb-shadow absolute pointer-events-none" style={{"left":"50%","bottom":"-8px","width":"144px","height":"12px","marginLeft":"-72px","borderRadius":"50%","backgroundColor":"rgba(0, 0, 0, 0.45)","filter":"blur(4px)","zIndex":"0","willChange":"transform, opacity"}}></div>{minis.map((m, i) => (<img key={i} alt="" loading="lazy" decoding="async" className={m.className} src={m.src} style={cssObj(m.style)} />))}<img alt="" loading="lazy" decoding="async" className="jsx-dd7f1ef62680a11c igb-box absolute pointer-events-none" src={mainBox} onError={(e) => { (e.currentTarget as HTMLImageElement).src = "/images/giftbox/minimalism_brown.webp"; }} style={{ left: "50%", bottom: "0px", width: "170px", maxHeight: "220px", objectFit: "contain", marginLeft: "-85px", zIndex: "2", filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 10px 18px)", willChange: "transform" }} /></div></div><p className="jsx-dd7f1ef62680a11c igb-hint absolute bottom-0 left-1/2 -translate-x-1/2 text-xs whitespace-nowrap font-medium" style={{"color":ink}}><span dir="auto">Nhấn để mở</span></p></button>
   );

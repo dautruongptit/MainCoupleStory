@@ -346,5 +346,28 @@
   "ceremonyType": "thanh_hon",
   "showQRInline": false,
   "childRelation": "CON",
-  "engagementHeader": "LỄ NẠP TÀI ĐƯỢC CỬ HÀNH TẠI\nTƯ GIA"
+  "engagementHeader": "LỄ NẠP TÀI ĐƯỢC CỬ HÀNH TẠI\nTƯ GIA",
+  "giftOn": true,
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "0000000000",
+      "accountName": "THIEP CUOI DEMO",
+      "qrUrl": "/api/qr-png?d=00020101021238540010A00000072701240006970436011000000000000208QRIBFTTA53037045802VN63048C2A&ec=M"
+    },
+    {
+      "id": "g2",
+      "who": "bride",
+      "bankName": "BIDV",
+      "bankCode": "BIDV",
+      "bankBin": "970418",
+      "accountNumber": "6665558888",
+      "accountName": "Nguyễn Thu Hà",
+      "qrUrl": "/api/qr-png?d=00020101021238540010A00000072701240006970418011066655588880208QRIBFTTA53037045802VN6304086E&ec=M"
+    }
+  ]
 }

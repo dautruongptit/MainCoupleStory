@@ -102,7 +102,21 @@
   "groomBirthOrder": "Trưởng Nam",
   "brideBirthOrder": "Thứ Nữ",
   "banquetDayName": "THỨ BẢY",
-  "banquetLunar": "( Tức ngày 2 tháng 3 năm Bính Ngọ / 음력 3월\u00A02일)",
+  "banquetLunar": "( Tức ngày 2 tháng 3 năm Bính Ngọ / 음력 3월 2일)",
   "ceremonyDayName": "THỨ BẢY",
-  "ceremonyLunar": "( Tức ngày 2 tháng 3 năm Bính Ngọ / 음력 3월\u00A02일)"
+  "ceremonyLunar": "( Tức ngày 2 tháng 3 năm Bính Ngọ / 음력 3월 2일)",
+  "giftDisplayMode": "gift_box",
+  "giftOn": true,
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "0000000000",
+      "accountName": "THIEP CUOI DEMO",
+      "qrUrl": ""
+    }
+  ]
 }

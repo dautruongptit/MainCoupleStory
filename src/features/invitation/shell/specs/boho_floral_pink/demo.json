@@ -313,5 +313,18 @@
   ],
   "bridePhoto": "https://assets.chungdoi.com/photo-library/design/75a2233917e5a0c905f5f1094d7bed67cd0b648ffa0634f13376aec8357bc96e.webp",
   "groomPhoto": "https://assets.chungdoi.com/photo-library/design/a0666f1639ce05b0a9478c751fbb2d7c00986fe850d2107b1caf49710ac9e5cf.webp",
-  "showQRInline": false
+  "showQRInline": false,
+  "giftOn": true,
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "0000000000",
+      "accountName": "THIEP CUOI DEMO",
+      "qrUrl": ""
+    }
+  ]
 }

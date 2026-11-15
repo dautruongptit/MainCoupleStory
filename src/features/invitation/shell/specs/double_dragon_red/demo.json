@@ -236,5 +236,19 @@
       "time": "1:05:15 12/12/2025",
       "msg": "chúc hai bạn trăm năm hạnh phúc nhá🥰"
     }
+  ],
+  "giftDisplayMode": "gift_box",
+  "giftOn": true,
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "0000000000",
+      "accountName": "THIEP CUOI DEMO",
+      "qrUrl": ""
+    }
   ]
 }

@@ -203,5 +203,19 @@
   "banquetLunar": "( Tức ngày 12 tháng 9 năm Ất Tỵ)",
   "ceremonyDayName": "CHỦ NHẬT",
   "ceremonyLunar": "( Tức ngày 23 tháng 9 năm Bính Ngọ)",
-  "partyStart": "11:00"
+  "partyStart": "11:00",
+  "giftDisplayMode": "gift_box",
+  "giftOn": true,
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "0000000000",
+      "accountName": "THIEP CUOI DEMO",
+      "qrUrl": ""
+    }
+  ]
 }

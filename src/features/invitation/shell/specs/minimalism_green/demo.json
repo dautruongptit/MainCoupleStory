@@ -60,5 +60,18 @@
       "at": "18:31:14 9/7/2026"
     }
   ],
-  "gifts": []
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "1023456789",
+      "accountName": "TRAN DANG KHOA",
+      "qrUrl": "/api/qr-png?d=00020101021238540010A00000072701240006970436011010234567890208QRIBFTTA53037045802VN63049B81&ec=M"
+    }
+  ],
+  "giftDisplayMode": "envelope",
+  "giftOn": true
 }

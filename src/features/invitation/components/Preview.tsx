@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { GIFT_ASSETS } from "@/features/invitation/config/giftAssets.generated";
 import { introDefaultFor } from "@/features/templates/data/templates";
 import { TEMPLATE_THEMES } from "@/features/invitation/config/templateThemes";
 import { LongPhungHeader } from "@/features/invitation/components/LongPhungV2";
@@ -1119,7 +1120,7 @@ export default function Preview({
                           loading="lazy"
                           decoding="async"
                           className="ienv-back absolute inset-0 pointer-events-none"
-                          src={assetUrl(`/images/envelope/${d.templateId}.webp`)}
+                          src={assetUrl(GIFT_ASSETS[d.templateId]?.envelope ?? "/images/envelope/minimalism_darkred.webp")}
                           style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center bottom", transformOrigin: "50% 100%", transform: "translateX(20%) translateY(-10%) scale(-0.8, 0.8) rotate(-15deg)", zIndex: 1, filter: "drop-shadow(rgba(0, 0, 0, 0.18) 0px 8px 14px)", willChange: "transform" }}
                         />
                         <img
@@ -1127,7 +1128,7 @@ export default function Preview({
                           loading="lazy"
                           decoding="async"
                           className="ienv-card absolute inset-0 pointer-events-none"
-                          src={assetUrl(`/images/envelope/${d.templateId}.webp`)}
+                          src={assetUrl(GIFT_ASSETS[d.templateId]?.envelope ?? "/images/envelope/minimalism_darkred.webp")}
                           style={{ width: "100%", height: "100%", objectFit: "contain", objectPosition: "center bottom", rotate: "-10deg", zIndex: 2, filter: "drop-shadow(rgba(0, 0, 0, 0.22) 0px 10px 18px)", willChange: "transform" }}
                         />
                       </div>
@@ -1192,7 +1193,7 @@ export default function Preview({
                           loading="lazy"
                           decoding="async"
                           className="igb-box absolute pointer-events-none"
-                          src={assetUrl(giftConfig.mainBoxSrc || `/images/giftbox/${d.templateId}.webp`)}
+                          src={assetUrl(GIFT_ASSETS[d.templateId]?.box || giftConfig.mainBoxSrc || "/images/giftbox/minimalism_brown.webp")}
                           style={{ left: "50%", bottom: "0px", width: "170px", maxHeight: "220px", objectFit: "contain", marginLeft: "-85px", zIndex: 2, filter: "drop-shadow(rgba(0, 0, 0, 0.25) 0px 10px 18px)", willChange: "transform" }}
                         />
                       </div>

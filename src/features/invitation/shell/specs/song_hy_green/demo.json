@@ -335,5 +335,28 @@
       "time": "20:36:55 14/7/2026",
       "msg": "Mong hai bạn xây dựng một mái ấm tràn đầy tiếng cười và niềm vui."
     }
+  ],
+  "giftOn": true,
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "123456789",
+      "accountName": "Vo Hai Nam",
+      "qrUrl": "/api/qr-png?d=00020101021238530010A0000007270123000697043601091234567890208QRIBFTTA53037045802VN63045653&ec=M"
+    },
+    {
+      "id": "g2",
+      "who": "bride",
+      "bankName": "BIDV",
+      "bankCode": "BIDV",
+      "bankBin": "970418",
+      "accountNumber": "123456789",
+      "accountName": "Huynh Khanh Linh",
+      "qrUrl": "/api/qr-png?d=00020101021238530010A0000007270123000697041801091234567890208QRIBFTTA53037045802VN6304D2A5&ec=M"
+    }
   ]
 }

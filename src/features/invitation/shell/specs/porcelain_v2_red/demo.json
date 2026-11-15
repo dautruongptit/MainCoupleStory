@@ -53,23 +53,84 @@
   "locAddress": "Nhà hàng Bạch Vân, 128 Hùng Vương, phường Hải Châu 1, TP. Đà Nẵng",
   "mapIframe": "https://www.google.com/maps/embed/v1/place?key=AIzaSyAY8WQxGig6axA_jZil94btO9G6dhsFEKg&q=Nh%C3%A0%20h%C3%A0ng%20B%E1%BA%A1ch%20V%C3%A2n%2C%20128%20H%C3%B9ng%20V%C6%B0%C6%A1ng%2C%20ph%C6%B0%E1%BB%9Dng%20H%E1%BA%A3i%20Ch%C3%A2u%201%2C%20qu%E1%BA%ADn%20H%E1%BA%A3i%20Ch%C3%A2u%2C%20th%C3%A0nh%20ph%E1%BB%91%20%C4%90%C3%A0%20N%E1%BA%B5ng",
   "timelineEvents": [
-    { "time": "17:30", "title": "Đón khách" },
-    { "time": "18:30", "title": "Khai tiệc", "icon": "/images/themes/porcelain-v2-red/ring.webp", "iconSize": "h-[35px] w-[35px]" },
-    { "time": "18:45", "title": "Rót rượu, cắt bánh", "icon": "/images/themes/porcelain-v2-red/cake.webp", "iconSize": "h-[52px] w-[34px]" },
-    { "time": "19:00", "title": "Phục vụ món chính", "icon": "/images/themes/porcelain-v2-red/lamp.webp", "iconSize": "h-[43px] w-[39px]" },
-    { "time": "21:00", "title": "Kết thúc tiệc" }
+    {
+      "time": "17:30",
+      "title": "Đón khách"
+    },
+    {
+      "time": "18:30",
+      "title": "Khai tiệc",
+      "icon": "/images/themes/porcelain-v2-red/ring.webp",
+      "iconSize": "h-[35px] w-[35px]"
+    },
+    {
+      "time": "18:45",
+      "title": "Rót rượu, cắt bánh",
+      "icon": "/images/themes/porcelain-v2-red/cake.webp",
+      "iconSize": "h-[52px] w-[34px]"
+    },
+    {
+      "time": "19:00",
+      "title": "Phục vụ món chính",
+      "icon": "/images/themes/porcelain-v2-red/lamp.webp",
+      "iconSize": "h-[43px] w-[39px]"
+    },
+    {
+      "time": "21:00",
+      "title": "Kết thúc tiệc"
+    }
   ],
   "guestbookEntries": [
-    { "name": "Nguyễn Thu Trang", "createdAt": "15:11:34 24/8/2026", "message": "Chúc mừng Gia Bảo và Khánh Vy!\nChúc hai bạn trăm năm hạnh phúc,\nsớm có tin vui nhé." },
-    { "name": "Lê Hoàng Nam", "createdAt": "15:11:34 24/8/2026", "message": "Nhìn thiệp mà đã thấy ấm áp rồi. Chúc hai bạn một đám cưới thật trọn vẹn và đáng nhớ!" },
-    { "name": "Phạm Minh Châu", "createdAt": "15:11:34 24/8/2026", "message": "Chúc hai bạn luôn giữ được nụ cười như bây giờ, mãi mãi yêu thương nhau." },
-    { "name": "Trần Quốc Việt", "createdAt": "15:11:34 24/8/2026", "message": "Bao nhiêu năm rồi mới thấy Bảo cưới vợ! Chúc hai bạn trăm năm viên mãn nhé." },
-    { "name": "Đỗ Thị Ngọc Ánh", "createdAt": "15:11:34 24/8/2026", "message": "Chúc mừng hạnh phúc! Mong hai bạn cùng nhau xây dựng tổ ấm ngập tràn tiếng cười." },
-    { "name": "Vũ Anh Tuấn", "createdAt": "15:11:34 24/8/2026", "message": "Chúc anh chị sớm có tin vui, gia đình luôn hòa thuận và hạnh phúc đong đầy." },
-    { "name": "Hoàng Kim Ngân", "createdAt": "15:11:34 24/8/2026", "message": "Vy ơi, làm cô dâu xinh nhất nhé! Chúc hai bạn cuộc sống hôn nhân ngọt ngào." },
-    { "name": "Bùi Đức Long", "createdAt": "15:11:34 24/8/2026", "message": "Chúc hai bạn một hành trình dài vững vàng bên nhau, cùng nhau vượt qua mọi thử thách." },
-    { "name": "Ngô Thanh Hằng", "createdAt": "15:11:34 24/8/2026", "message": "Mong ngày cưới trời thật đẹp. Chúc mừng anh chị bước sang trang mới của cuộc đời!" },
-    { "name": "Lý Gia Hân", "createdAt": "15:11:34 24/8/2026", "message": "Chúc mừng đám cưới! Hẹn gặp cả nhà ở Đà Nẵng nha." }
+    {
+      "name": "Nguyễn Thu Trang",
+      "createdAt": "15:11:34 24/8/2026",
+      "message": "Chúc mừng Gia Bảo và Khánh Vy!\nChúc hai bạn trăm năm hạnh phúc,\nsớm có tin vui nhé."
+    },
+    {
+      "name": "Lê Hoàng Nam",
+      "createdAt": "15:11:34 24/8/2026",
+      "message": "Nhìn thiệp mà đã thấy ấm áp rồi. Chúc hai bạn một đám cưới thật trọn vẹn và đáng nhớ!"
+    },
+    {
+      "name": "Phạm Minh Châu",
+      "createdAt": "15:11:34 24/8/2026",
+      "message": "Chúc hai bạn luôn giữ được nụ cười như bây giờ, mãi mãi yêu thương nhau."
+    },
+    {
+      "name": "Trần Quốc Việt",
+      "createdAt": "15:11:34 24/8/2026",
+      "message": "Bao nhiêu năm rồi mới thấy Bảo cưới vợ! Chúc hai bạn trăm năm viên mãn nhé."
+    },
+    {
+      "name": "Đỗ Thị Ngọc Ánh",
+      "createdAt": "15:11:34 24/8/2026",
+      "message": "Chúc mừng hạnh phúc! Mong hai bạn cùng nhau xây dựng tổ ấm ngập tràn tiếng cười."
+    },
+    {
+      "name": "Vũ Anh Tuấn",
+      "createdAt": "15:11:34 24/8/2026",
+      "message": "Chúc anh chị sớm có tin vui, gia đình luôn hòa thuận và hạnh phúc đong đầy."
+    },
+    {
+      "name": "Hoàng Kim Ngân",
+      "createdAt": "15:11:34 24/8/2026",
+      "message": "Vy ơi, làm cô dâu xinh nhất nhé! Chúc hai bạn cuộc sống hôn nhân ngọt ngào."
+    },
+    {
+      "name": "Bùi Đức Long",
+      "createdAt": "15:11:34 24/8/2026",
+      "message": "Chúc hai bạn một hành trình dài vững vàng bên nhau, cùng nhau vượt qua mọi thử thách."
+    },
+    {
+      "name": "Ngô Thanh Hằng",
+      "createdAt": "15:11:34 24/8/2026",
+      "message": "Mong ngày cưới trời thật đẹp. Chúc mừng anh chị bước sang trang mới của cuộc đời!"
+    },
+    {
+      "name": "Lý Gia Hân",
+      "createdAt": "15:11:34 24/8/2026",
+      "message": "Chúc mừng đám cưới! Hẹn gặp cả nhà ở Đà Nẵng nha."
+    }
   ],
   "bankAccounts": [
     {
@@ -87,5 +148,19 @@
       "qrUrl": "/api/qr-png?d=00020101021238540010A00000072701240006970407011019034567890208QRIBFTTA53037045802VN63044CBC&ec=M"
     }
   ],
-  "thankText": "Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi!"
+  "thankText": "Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi!",
+  "giftDisplayMode": "envelope",
+  "giftOn": true,
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "0000000000",
+      "accountName": "THIEP CUOI DEMO",
+      "qrUrl": ""
+    }
+  ]
 }

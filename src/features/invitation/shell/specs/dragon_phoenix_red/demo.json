@@ -60,11 +60,26 @@
   "schedOn": true,
   "schedTitle": "LỊCH TRÌNH NGÀY CƯỚI",
   "sched": [
-    { "time": "17:30", "title": "Đón khách" },
-    { "time": "18:30", "title": "Khai tiệc" },
-    { "time": "18:45", "title": "Rót rượu, cắt bánh" },
-    { "time": "19:00", "title": "Phục vụ món chính" },
-    { "time": "21:00", "title": "Kết thúc tiệc" }
+    {
+      "time": "17:30",
+      "title": "Đón khách"
+    },
+    {
+      "time": "18:30",
+      "title": "Khai tiệc"
+    },
+    {
+      "time": "18:45",
+      "title": "Rót rượu, cắt bánh"
+    },
+    {
+      "time": "19:00",
+      "title": "Phục vụ món chính"
+    },
+    {
+      "time": "21:00",
+      "title": "Kết thúc tiệc"
+    }
   ],
   "guestbookOn": true,
   "giftsOn": true,
@@ -77,5 +92,29 @@
   "brideAcc": "8084856145",
   "brideQr": "https://chungdoi.com/api/qr-png?d=00020101021238540010A00000072701240006970415011080848561450208QRIBFTTA53037045802VN63041BE3&ec=M",
   "rsvpOn": true,
-  "rsvpTitle": "XÁC NHẬN THAM DỰ"
+  "rsvpTitle": "XÁC NHẬN THAM DỰ",
+  "giftDisplayMode": "gift_box",
+  "giftOn": true,
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "0000000000",
+      "accountName": "THIEP CUOI DEMO",
+      "qrUrl": "/api/qr-png?d=00020101021238540010A00000072701240006970436011000000000000208QRIBFTTA53037045802VN63048C2A&ec=M"
+    },
+    {
+      "id": "g2",
+      "who": "bride",
+      "bankName": "VietinBank",
+      "bankCode": "ICB",
+      "bankBin": "970415",
+      "accountNumber": "8084856145",
+      "accountName": "Lê Ngọc Linh",
+      "qrUrl": "/api/qr-png?d=00020101021238540010A00000072701240006970415011080848561450208QRIBFTTA53037045802VN63041BE3&ec=M"
+    }
+  ]
 }

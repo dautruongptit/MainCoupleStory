@@ -1,0 +1,4588 @@
+{
+ "updated": "2026-11-15T14:29:11.719Z",
+ "summary": {
+  "total": 263,
+  "co": 261,
+  "thieu": 0,
+  "gocKhongCo": 2,
+  "loi": 0,
+  "thua": 0
+ },
+ "remote": {
+  "/images/envelope/applique_lace_white.webp": {
+   "status": 200,
+   "bytes": 52652,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/baroque_blue.webp": {
+   "status": 200,
+   "bytes": 80978,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/baroque_gold.webp": {
+   "status": 200,
+   "bytes": 33960,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/boho_floral_brown.webp": {
+   "status": 200,
+   "bytes": 38982,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/boho_floral_green.webp": {
+   "status": 200,
+   "bytes": 25674,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/boho_floral_pink.webp": {
+   "status": 200,
+   "bytes": 34740,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/brocade_flower_red.webp": {
+   "status": 200,
+   "bytes": 54220,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/chateau_blue.webp": {
+   "status": 200,
+   "bytes": 38174,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/chateau_green.webp": {
+   "status": 200,
+   "bytes": 57134,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/cherry_blossom_pink.webp": {
+   "status": 200,
+   "bytes": 36808,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/chibi_red.webp": {
+   "status": 200,
+   "bytes": 31228,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/co_ba_red.webp": {
+   "status": 200,
+   "bytes": 40934,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/double_dragon_blue.webp": {
+   "status": 200,
+   "bytes": 38740,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/double_dragon_green.webp": {
+   "status": 200,
+   "bytes": 30912,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/double_dragon_red.webp": {
+   "status": 200,
+   "bytes": 35796,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/double_phoenix_green.webp": {
+   "status": 200,
+   "bytes": 43838,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/dragon_phoenix_black.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/envelope/dragon_phoenix.webp"
+  },
+  "/images/envelope/dragon_phoenix_blue.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/envelope/dragon_phoenix.webp"
+  },
+  "/images/envelope/dragon_phoenix_green.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/envelope/dragon_phoenix.webp"
+  },
+  "/images/envelope/dragon_phoenix_red.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/envelope/dragon_phoenix.webp"
+  },
+  "/images/envelope/dragon_phoenix_v2_red.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/envelope/dragon_phoenix_v2.webp"
+  },
+  "/images/envelope/dragon_phoenix_v3_red.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/envelope/dragon_phoenix_v3.webp"
+  },
+  "/images/envelope/elegant_leaf_green.webp": {
+   "status": 200,
+   "bytes": 20526,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/glass_garden_green.webp": {
+   "status": 200,
+   "bytes": 105514,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/glass_garden_light_green.webp": {
+   "status": 200,
+   "bytes": 53696,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/glass_garden_pink.webp": {
+   "status": 200,
+   "bytes": 132800,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/hoa_tinh_red.webp": {
+   "status": 200,
+   "bytes": 28908,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/marble_yellow.webp": {
+   "status": 404,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/envelope/marble.webp"
+  },
+  "/images/envelope/minimalism_brown.webp": {
+   "status": 200,
+   "bytes": 27830,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/minimalism_darkbrown.webp": {
+   "status": 200,
+   "bytes": 66470,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/minimalism_red.webp": {
+   "status": 200,
+   "bytes": 14940,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/nhat_binh_red.webp": {
+   "status": 200,
+   "bytes": 70556,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/nomad_brown.webp": {
+   "status": 200,
+   "bytes": 70902,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/porcelain_blue.webp": {
+   "status": 200,
+   "bytes": 58882,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/royal_blue.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/envelope/royal.webp"
+  },
+  "/images/envelope/royal_green.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/envelope/royal.webp"
+  },
+  "/images/envelope/royal_red.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/envelope/royal.webp"
+  },
+  "/images/envelope/royal_v2_green.webp": {
+   "status": 200,
+   "bytes": 38140,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/santorini_blue.webp": {
+   "status": 404,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/envelope/santorini.webp"
+  },
+  "/images/envelope/silk_flora_brown.webp": {
+   "status": 200,
+   "bytes": 31902,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/song_hy_green.webp": {
+   "status": 200,
+   "bytes": 27696,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/song_hy_red.webp": {
+   "status": 200,
+   "bytes": 30090,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/spring_garden_blue.webp": {
+   "status": 200,
+   "bytes": 31808,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/envelope/spring_garden_green.webp": {
+   "status": 200,
+   "bytes": 22808,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/baroque_v2_darkblue.webp": {
+   "status": 200,
+   "bytes": 50226,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/baroque_v2_darkgreen.webp": {
+   "status": 200,
+   "bytes": 50116,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/baroque_v2_darkred.webp": {
+   "status": 200,
+   "bytes": 45556,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/brocade_flower_red.webp": {
+   "status": 200,
+   "bytes": 61242,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/calla_lily_white.webp": {
+   "status": 200,
+   "bytes": 34486,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/crystal_floral_blue.webp": {
+   "status": 200,
+   "bytes": 91568,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/crystal_floral_green.webp": {
+   "status": 200,
+   "bytes": 100628,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/crystal_floral_red.webp": {
+   "status": 200,
+   "bytes": 96890,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/double_phoenix_red.webp": {
+   "status": 200,
+   "bytes": 46046,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/dragon_phoenix_black.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/giftbox/dragon_phoenix.webp"
+  },
+  "/images/giftbox/dragon_phoenix_blue.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/giftbox/dragon_phoenix.webp"
+  },
+  "/images/giftbox/dragon_phoenix_green.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/giftbox/dragon_phoenix.webp"
+  },
+  "/images/giftbox/dragon_phoenix_red.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/giftbox/dragon_phoenix.webp"
+  },
+  "/images/giftbox/dragon_phoenix_v2_red.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/giftbox/dragon_phoenix_v2.webp"
+  },
+  "/images/giftbox/dragon_phoenix_v3_red.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/giftbox/dragon_phoenix_v3.webp"
+  },
+  "/images/giftbox/dragon_phoenix_v4_red.webp": {
+   "status": 200,
+   "bytes": 97334,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/dried_flower_v2_green.webp": {
+   "status": 200,
+   "bytes": 40230,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/floral_fiesta_yellow.webp": {
+   "status": 200,
+   "bytes": 92504,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/florence_brown.webp": {
+   "status": 200,
+   "bytes": 54982,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/folk_floral_blue.webp": {
+   "status": 200,
+   "bytes": 65426,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/glass_garden_blue.webp": {
+   "status": 200,
+   "bytes": 62578,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/glass_garden_light_green.webp": {
+   "status": 200,
+   "bytes": 39386,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/hoa_dai_pink.webp": {
+   "status": 200,
+   "bytes": 46850,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/hoa_kho_orange.webp": {
+   "status": 200,
+   "bytes": 51778,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/hoa_kho_v2_blue.webp": {
+   "status": 200,
+   "bytes": 49060,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/jasmine_white.webp": {
+   "status": 200,
+   "bytes": 31756,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/lien_hoa_pink.webp": {
+   "status": 200,
+   "bytes": 32988,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/lien_hoa_v2_green.webp": {
+   "status": 200,
+   "bytes": 64372,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/mahal_gold.webp": {
+   "status": 200,
+   "bytes": 52038,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/mahal_pink.webp": {
+   "status": 200,
+   "bytes": 62734,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/mandap_darkred.webp": {
+   "status": 200,
+   "bytes": 75212,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/mandap_yellow.webp": {
+   "status": 200,
+   "bytes": 77226,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/marble_yellow.webp": {
+   "status": 200,
+   "bytes": 50476,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/mini/baroque_blue.webp": {
+   "status": 200,
+   "bytes": 7414,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/mini/calla_lily_white.webp": {
+   "status": 200,
+   "bytes": 5490,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/mini/chateau_blue.webp": {
+   "status": 200,
+   "bytes": 5988,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/mini/co_ba_red.webp": {
+   "status": 200,
+   "bytes": 6504,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/mini/dragon_phoenix_black.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/giftbox/mini/dragon_phoenix.webp"
+  },
+  "/images/giftbox/mini/dragon_phoenix_blue.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/giftbox/mini/dragon_phoenix.webp"
+  },
+  "/images/giftbox/mini/dragon_phoenix_green.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/giftbox/mini/dragon_phoenix.webp"
+  },
+  "/images/giftbox/mini/dragon_phoenix_red.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/giftbox/mini/dragon_phoenix.webp"
+  },
+  "/images/giftbox/mini/dragon_phoenix_v2_red.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/giftbox/mini/dragon_phoenix_v2.webp"
+  },
+  "/images/giftbox/mini/dragon_phoenix_v3_red.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/giftbox/mini/dragon_phoenix_v3.webp"
+  },
+  "/images/giftbox/mini/floral_fiesta_yellow.webp": {
+   "status": 200,
+   "bytes": 8990,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/mini/folk_floral_blue.webp": {
+   "status": 200,
+   "bytes": 9334,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/mini/glass_garden_light_green.webp": {
+   "status": 200,
+   "bytes": 5836,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/mini/mahal_pink.webp": {
+   "status": 200,
+   "bytes": 7126,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/mini/mandap_darkred.webp": {
+   "status": 200,
+   "bytes": 7688,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/mini/mandap_yellow.webp": {
+   "status": 200,
+   "bytes": 9002,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/mini/nomad_brown.webp": {
+   "status": 200,
+   "bytes": 8014,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/mini/royal_blue.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/giftbox/mini/royal.webp"
+  },
+  "/images/giftbox/mini/royal_green.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/giftbox/mini/royal.webp"
+  },
+  "/images/giftbox/mini/silk_ribbon_pink.webp": {
+   "status": 200,
+   "bytes": 5778,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/mini/sunflower_yellow.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/giftbox/mini/sunflower.webp"
+  },
+  "/images/giftbox/minimalism_darkblue.webp": {
+   "status": 200,
+   "bytes": 43432,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/minimalism_green.webp": {
+   "status": 200,
+   "bytes": 20122,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/minimalism_purple.webp": {
+   "status": 200,
+   "bytes": 34956,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/nomad_brown.webp": {
+   "status": 200,
+   "bytes": 84282,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/porcelain_brown.webp": {
+   "status": 200,
+   "bytes": 44058,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/porcelain_red.webp": {
+   "status": 200,
+   "bytes": 60814,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/porcelain_v2_green.webp": {
+   "status": 200,
+   "bytes": 61442,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/porcelain_v2_pink.webp": {
+   "status": 200,
+   "bytes": 64016,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/porcelain_v2_red.webp": {
+   "status": 200,
+   "bytes": 67914,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/qasr_blue.webp": {
+   "status": 200,
+   "bytes": 67668,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/qasr_gold.webp": {
+   "status": 200,
+   "bytes": 32384,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/qasr_green.webp": {
+   "status": 200,
+   "bytes": 46990,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/riviera_blue.webp": {
+   "status": 200,
+   "bytes": 74178,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/royal_blue.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/giftbox/royal.webp"
+  },
+  "/images/giftbox/royal_green.webp": {
+   "status": 200,
+   "bytes": 0,
+   "at": "2026-11-15 14:22",
+   "alias": "/images/giftbox/royal.webp"
+  },
+  "/images/giftbox/royal_v2_purple.webp": {
+   "status": 200,
+   "bytes": 65346,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/san_miguel_yellow.webp": {
+   "status": 200,
+   "bytes": 70584,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/santorini_blue.webp": {
+   "status": 200,
+   "bytes": 79852,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/saraya_gold.webp": {
+   "status": 200,
+   "bytes": 37388,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/silk_ribbon_darkred.webp": {
+   "status": 200,
+   "bytes": 39024,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/silk_ribbon_green.webp": {
+   "status": 200,
+   "bytes": 35740,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/silk_ribbon_pink.webp": {
+   "status": 200,
+   "bytes": 33292,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/song_hac_red.webp": {
+   "status": 200,
+   "bytes": 88668,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/song_hy_v2_red.webp": {
+   "status": 200,
+   "bytes": 47764,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/spring_garden_red.webp": {
+   "status": 200,
+   "bytes": 23962,
+   "at": "2026-11-15 14:20"
+  },
+  "/images/giftbox/sunflower_yellow.webp": {
+   "status": 200,
+   "bytes": 42934,
+   "at": "2026-11-15 14:20"
+  }
+ },
+ "log": [
+  {
+   "at": "2026-11-15 14:20",
+   "tried": 124,
+   "ok": 96,
+   "missingOnReal": 28,
+   "other": []
+  },
+  {
+   "at": "2026-11-15 14:22",
+   "tried": 28,
+   "ok": 26,
+   "missingOnReal": 2,
+   "other": []
+  }
+ ],
+ "rows": [
+  {
+   "path": "/images/envelope/applique_lace_white.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "applique_lace_white"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/baroque_blue.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "baroque_blue"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/baroque_gold.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "baroque_gold"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/baroque_v2_darkblue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "baroque_v2_darkblue"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/baroque_v2_darkgreen.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "baroque_v2_darkgreen"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/baroque_v2_darkred.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "baroque_v2_darkred"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/boho_floral_brown.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "boho_floral_brown"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/boho_floral_green.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "boho_floral_green"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/boho_floral_pink.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "boho_floral_pink"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/brocade_flower_red.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "brocade_flower_red"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/calla_lily_white.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "calla_lily_white"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/chateau_blue.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "chateau_blue"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/chateau_green.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "chateau_green"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/cherry_blossom_pink.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "cherry_blossom_pink"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/chibi_red.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "chibi_red"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/co_ba_red.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "co_ba_red"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/crystal_floral_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "crystal_floral_blue"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/crystal_floral_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "crystal_floral_green"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/crystal_floral_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "crystal_floral_red"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/double_dragon_blue.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "double_dragon_blue"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/double_dragon_green.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "double_dragon_green"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/double_dragon_red.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "double_dragon_red"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/double_phoenix_green.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "double_phoenix_green"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/double_phoenix_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "double_phoenix_red"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/dragon_phoenix_v2.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_v2_red"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/dragon_phoenix_v3.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_v3_red"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/dragon_phoenix_v4_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_v4_red"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/dragon_phoenix.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_red",
+    "dragon_phoenix_green",
+    "dragon_phoenix_blue",
+    "dragon_phoenix_black"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/dried_flower_v2_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dried_flower_v2_green"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/elegant_leaf_green.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "elegant_leaf_green"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/floral_fiesta_yellow.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "floral_fiesta_yellow"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/florence_brown.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "florence_brown"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/folk_floral_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "folk_floral_blue"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/glass_garden_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "glass_garden_blue"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/glass_garden_green.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "glass_garden_green"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/glass_garden_light_green.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "glass_garden_light_green"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/glass_garden_pink.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "glass_garden_pink"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/hoa_dai_pink.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "hoa_dai_pink"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/hoa_kho_orange.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "hoa_kho_orange"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/hoa_kho_v2_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "hoa_kho_v2_blue"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/hoa_tinh_red.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "hoa_tinh_red"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/jasmine_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "jasmine_green"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/jasmine_white.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "jasmine_white"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/lien_hoa_pink.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "lien_hoa_pink"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/lien_hoa_v2_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "lien_hoa_v2_green"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/mahal_gold.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "mahal_gold"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/mahal_pink.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "mahal_pink"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/mandap_darkred.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "mandap_darkred"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/mandap_yellow.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "mandap_yellow"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/marble_yellow.webp",
+   "local": false,
+   "remote": 404,
+   "alias": "/images/envelope/marble.webp",
+   "state": "gốc không có",
+   "ids": [
+    "marble_yellow"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/minimalism_brown.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_brown"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/minimalism_darkblue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_darkblue"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/minimalism_darkbrown.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_darkbrown"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/minimalism_darkred.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_darkred"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/minimalism_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_green"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/minimalism_purple.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_purple"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/minimalism_red.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_red"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/nhat_binh_red.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "nhat_binh_red"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/nomad_brown.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "nomad_brown"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/porcelain_blue.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "porcelain_blue"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/porcelain_brown.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "porcelain_brown"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/porcelain_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "porcelain_red"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/porcelain_v2_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "porcelain_v2_green"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/porcelain_v2_pink.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "porcelain_v2_pink"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/porcelain_v2_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "porcelain_v2_red"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/qasr_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "qasr_blue"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/qasr_gold.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "qasr_gold"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/qasr_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "qasr_green"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/riviera_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "riviera_blue"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/royal_v2_green.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "royal_v2_green"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/royal_v2_purple.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "royal_v2_purple"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/royal.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "royal_red",
+    "royal_green",
+    "royal_blue"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/san_miguel_yellow.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "san_miguel_yellow"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/santorini_blue.webp",
+   "local": false,
+   "remote": 404,
+   "alias": "/images/envelope/santorini.webp",
+   "state": "gốc không có",
+   "ids": [
+    "santorini_blue"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/saraya_gold.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "saraya_gold"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/silk_flora_brown.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "silk_flora_brown"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/silk_ribbon_darkred.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "silk_ribbon_darkred"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/silk_ribbon_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "silk_ribbon_green"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/silk_ribbon_pink.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "silk_ribbon_pink"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/song_hac_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hac_red"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/song_hy_green.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hy_green"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/song_hy_red.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hy_red"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/song_hy_v2_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hy_v2_red"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/spring_garden_blue.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "spring_garden_blue"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/spring_garden_green.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "spring_garden_green"
+   ],
+   "why": [
+    "phong bì"
+   ]
+  },
+  {
+   "path": "/images/envelope/spring_garden_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "spring_garden_red"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/envelope/sunflower_yellow.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "sunflower_yellow"
+   ],
+   "why": [
+    "phong bì",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/applique_lace_white.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "applique_lace_white"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/baroque_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "baroque_blue"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/baroque_gold.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "baroque_gold"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/baroque_v2_darkblue.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "baroque_v2_darkblue"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/baroque_v2_darkgreen.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "baroque_v2_darkgreen"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/baroque_v2_darkred.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "baroque_v2_darkred"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/boho_floral_brown.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "boho_floral_brown"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/boho_floral_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "boho_floral_green"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/boho_floral_pink.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "boho_floral_pink"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/brocade_flower_red.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "brocade_flower_red"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/calla_lily_white.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "calla_lily_white"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/chateau_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "chateau_blue"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/chateau_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "chateau_green"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/cherry_blossom_pink.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "cherry_blossom_pink"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/chibi_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "chibi_red"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/co_ba_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "co_ba_red"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/crystal_floral_blue.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "crystal_floral_blue"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/crystal_floral_green.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "crystal_floral_green"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/crystal_floral_red.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "crystal_floral_red"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/double_dragon_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "double_dragon_blue"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/double_dragon_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "double_dragon_green"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/double_dragon_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "double_dragon_red"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/double_phoenix_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "double_phoenix_green"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/double_phoenix_red.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "double_phoenix_red"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/dragon_phoenix_v2.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_v2_red"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/dragon_phoenix_v3.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_v3_red"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/dragon_phoenix_v4_red.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_v4_red"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/dragon_phoenix.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_red",
+    "dragon_phoenix_green",
+    "dragon_phoenix_blue",
+    "dragon_phoenix_black"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/dried_flower_v2_green.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dried_flower_v2_green"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/elegant_leaf_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "elegant_leaf_green"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/floral_fiesta_yellow.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "floral_fiesta_yellow"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/florence_brown.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "florence_brown"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/folk_floral_blue.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "folk_floral_blue"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/glass_garden_blue.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "glass_garden_blue"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/glass_garden_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "glass_garden_green"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/glass_garden_light_green.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "glass_garden_light_green"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/glass_garden_pink.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "glass_garden_pink"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/hoa_dai_pink.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "hoa_dai_pink"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/hoa_kho_orange.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "hoa_kho_orange"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/hoa_kho_v2_blue.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "hoa_kho_v2_blue"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/hoa_tinh_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "hoa_tinh_red"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/jasmine_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "jasmine_green"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/jasmine_white.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "jasmine_white"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/lien_hoa_pink.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "lien_hoa_pink"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/lien_hoa_v2_green.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "lien_hoa_v2_green"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mahal_gold.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "mahal_gold"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mahal_pink.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "mahal_pink"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mandap_darkred.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "mandap_darkred"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mandap_yellow.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "mandap_yellow"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/marble_yellow.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "marble_yellow"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/applique_lace_white.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "applique_lace_white",
+    "double_dragon_blue"
+   ],
+   "why": [
+    "hộp nhỏ",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/baroque_blue.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "marble_yellow",
+    "nhat_binh_red",
+    "minimalism_red",
+    "baroque_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/baroque_gold.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "spring_garden_blue",
+    "baroque_gold",
+    "santorini_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/baroque_v2_darkblue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hy_green",
+    "marble_yellow",
+    "hoa_tinh_red",
+    "baroque_v2_darkblue",
+    "brocade_flower_red"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/baroque_v2_darkgreen.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_darkbrown",
+    "chateau_green",
+    "baroque_v2_darkgreen",
+    "boho_floral_pink",
+    "minimalism_red",
+    "double_phoenix_green",
+    "glass_garden_light_green"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/baroque_v2_darkred.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hy_red",
+    "baroque_v2_darkred",
+    "boho_floral_pink",
+    "jasmine_green"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/boho_floral_brown.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "applique_lace_white",
+    "boho_floral_brown",
+    "brocade_flower_red"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/boho_floral_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "boho_floral_green",
+    "double_dragon_green",
+    "elegant_leaf_green",
+    "baroque_blue",
+    "royal_blue"
+   ],
+   "why": [
+    "hộp nhỏ",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/boho_floral_pink.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "boho_floral_green",
+    "song_hy_red",
+    "double_dragon_red",
+    "boho_floral_pink",
+    "royal_green",
+    "baroque_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/brocade_flower_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "boho_floral_green",
+    "marble_yellow",
+    "cherry_blossom_pink",
+    "boho_floral_pink",
+    "brocade_flower_red"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/calla_lily_white.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "glass_garden_green",
+    "calla_lily_white"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/chateau_blue.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "spring_garden_green",
+    "chateau_blue",
+    "brocade_flower_red"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/chateau_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "chateau_green",
+    "dragon_phoenix_black",
+    "santorini_blue"
+   ],
+   "why": [
+    "hộp nhỏ",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/cherry_blossom_pink.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_brown",
+    "chibi_red",
+    "cherry_blossom_pink",
+    "royal_green",
+    "porcelain_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/chibi_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hy_red",
+    "minimalism_darkbrown",
+    "chibi_red",
+    "royal_v2_green"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/co_ba_red.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "elegant_leaf_green",
+    "spring_garden_green",
+    "co_ba_red"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/crystal_floral_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hy_green",
+    "spring_garden_green",
+    "chibi_red",
+    "boho_floral_pink",
+    "crystal_floral_blue",
+    "royal_v2_green"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/crystal_floral_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "glass_garden_green",
+    "boho_floral_pink",
+    "applique_lace_white",
+    "crystal_floral_green"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/crystal_floral_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "hoa_tinh_red",
+    "royal_red",
+    "royal_v2_green",
+    "crystal_floral_red",
+    "santorini_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/double_dragon_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_v3_red",
+    "double_dragon_green",
+    "glass_garden_pink",
+    "double_dragon_blue",
+    "glass_garden_light_green"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/double_dragon_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "double_dragon_red",
+    "double_dragon_green",
+    "boho_floral_brown",
+    "royal_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/double_dragon_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "double_dragon_red",
+    "double_dragon_green",
+    "silk_flora_brown",
+    "royal_red"
+   ],
+   "why": [
+    "hộp nhỏ",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/double_phoenix_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "boho_floral_green",
+    "song_hy_red",
+    "baroque_gold",
+    "double_phoenix_green",
+    "porcelain_blue",
+    "nomad_brown"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/double_phoenix_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "double_phoenix_red",
+    "double_dragon_green",
+    "cherry_blossom_pink"
+   ],
+   "why": [
+    "hộp nhỏ",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/dragon_phoenix_v2.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hy_red",
+    "dragon_phoenix_v2_red",
+    "double_dragon_red",
+    "applique_lace_white"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/dragon_phoenix_v3.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_v3_red",
+    "elegant_leaf_green",
+    "nhat_binh_red",
+    "chateau_blue"
+   ],
+   "why": [
+    "hộp nhỏ",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/dragon_phoenix_v4_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hy_green",
+    "dragon_phoenix_red",
+    "elegant_leaf_green",
+    "dragon_phoenix_v4_red",
+    "chateau_blue",
+    "co_ba_red"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/dragon_phoenix.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_red",
+    "elegant_leaf_green",
+    "dragon_phoenix_green",
+    "glass_garden_light_green",
+    "dragon_phoenix_blue",
+    "dragon_phoenix_black",
+    "baroque_blue"
+   ],
+   "why": [
+    "hộp nhỏ",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/dried_flower_v2_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hy_red",
+    "chibi_red",
+    "hoa_tinh_red",
+    "baroque_gold",
+    "glass_garden_light_green",
+    "dried_flower_v2_green"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/elegant_leaf_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_darkbrown",
+    "elegant_leaf_green",
+    "nhat_binh_red",
+    "applique_lace_white",
+    "double_dragon_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/floral_fiesta_yellow.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "boho_floral_green",
+    "silk_flora_brown",
+    "minimalism_red",
+    "floral_fiesta_yellow",
+    "nomad_brown"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/florence_brown.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "chateau_green",
+    "spring_garden_green",
+    "dragon_phoenix_blue",
+    "florence_brown"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/folk_floral_blue.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "double_dragon_red",
+    "applique_lace_white",
+    "hoa_tinh_red",
+    "minimalism_red",
+    "double_phoenix_green",
+    "folk_floral_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/glass_garden_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "double_dragon_red",
+    "jasmine_green",
+    "porcelain_blue",
+    "glass_garden_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/glass_garden_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_v3_red",
+    "glass_garden_green",
+    "co_ba_red",
+    "royal_green"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/glass_garden_light_green.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "glass_garden_green",
+    "glass_garden_light_green"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/glass_garden_pink.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "glass_garden_pink",
+    "double_dragon_blue",
+    "royal_green"
+   ],
+   "why": [
+    "hộp nhỏ",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/hoa_dai_pink.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "marble_yellow",
+    "silk_flora_brown",
+    "co_ba_red",
+    "hoa_dai_pink"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/hoa_kho_orange.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "double_dragon_red",
+    "baroque_gold",
+    "chateau_blue",
+    "baroque_blue",
+    "hoa_kho_orange"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/hoa_kho_v2_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "glass_garden_green",
+    "baroque_gold",
+    "double_phoenix_green",
+    "boho_floral_brown",
+    "glass_garden_light_green",
+    "hoa_kho_v2_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/hoa_tinh_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "boho_floral_green",
+    "dragon_phoenix_v3_red",
+    "chibi_red",
+    "cherry_blossom_pink",
+    "hoa_tinh_red",
+    "glass_garden_light_green",
+    "dragon_phoenix_black",
+    "santorini_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/jasmine_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_brown",
+    "minimalism_darkbrown",
+    "spring_garden_blue",
+    "dragon_phoenix_blue",
+    "royal_green",
+    "jasmine_green",
+    "santorini_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/jasmine_white.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "jasmine_white",
+    "minimalism_darkbrown",
+    "double_dragon_green",
+    "royal_blue",
+    "jasmine_green"
+   ],
+   "why": [
+    "hộp nhỏ",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/lien_hoa_pink.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "royal_red",
+    "lien_hoa_pink",
+    "baroque_blue",
+    "jasmine_green",
+    "nomad_brown"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/lien_hoa_v2_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_red",
+    "lien_hoa_v2_green",
+    "boho_floral_pink",
+    "hoa_tinh_red",
+    "dragon_phoenix_blue",
+    "baroque_blue",
+    "royal_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/mahal_gold.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "silk_flora_brown",
+    "spring_garden_blue",
+    "royal_red",
+    "mahal_gold"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/mahal_pink.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "cherry_blossom_pink",
+    "mahal_pink"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/mandap_darkred.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "chateau_green",
+    "royal_red",
+    "mandap_darkred"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/mandap_yellow.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "glass_garden_pink",
+    "chateau_blue",
+    "co_ba_red",
+    "royal_blue",
+    "porcelain_blue",
+    "mandap_yellow"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/marble_yellow.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_darkbrown",
+    "glass_garden_green",
+    "double_dragon_green",
+    "glass_garden_pink",
+    "marble_yellow",
+    "boho_floral_brown",
+    "brocade_flower_red"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/minimalism_brown.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_brown",
+    "dragon_phoenix_v3_red",
+    "dragon_phoenix_red",
+    "spring_garden_green"
+   ],
+   "why": [
+    "hộp nhỏ",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/minimalism_darkblue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "nhat_binh_red",
+    "silk_flora_brown",
+    "minimalism_darkblue",
+    "royal_red",
+    "double_phoenix_green",
+    "royal_v2_green"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/minimalism_darkbrown.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_brown",
+    "minimalism_darkbrown",
+    "chateau_green",
+    "cherry_blossom_pink",
+    "double_dragon_blue",
+    "nomad_brown"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/minimalism_darkred.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_darkred",
+    "song_hy_green",
+    "chateau_green",
+    "nhat_binh_red",
+    "dragon_phoenix_blue",
+    "co_ba_red",
+    "porcelain_blue"
+   ],
+   "why": [
+    "hộp nhỏ",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/minimalism_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_green",
+    "applique_lace_white",
+    "chateau_blue",
+    "porcelain_blue"
+   ],
+   "why": [
+    "hộp nhỏ",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/minimalism_purple.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "chibi_red",
+    "minimalism_purple",
+    "royal_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/minimalism_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hy_green",
+    "silk_flora_brown",
+    "minimalism_red",
+    "baroque_gold"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/nhat_binh_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "nhat_binh_red"
+   ],
+   "why": [
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/nomad_brown.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_red",
+    "elegant_leaf_green",
+    "boho_floral_brown",
+    "royal_green",
+    "nomad_brown"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/porcelain_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_brown",
+    "boho_floral_green",
+    "song_hy_red",
+    "dragon_phoenix_v3_red",
+    "boho_floral_brown",
+    "porcelain_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/porcelain_brown.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "cherry_blossom_pink",
+    "dragon_phoenix_black",
+    "porcelain_brown"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/porcelain_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "glass_garden_pink",
+    "baroque_gold",
+    "royal_blue",
+    "porcelain_red"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/porcelain_v2_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "double_dragon_green",
+    "glass_garden_pink",
+    "double_dragon_blue",
+    "co_ba_red",
+    "porcelain_v2_green"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/porcelain_v2_pink.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_darkbrown",
+    "silk_flora_brown",
+    "hoa_tinh_red",
+    "glass_garden_light_green",
+    "porcelain_v2_pink",
+    "dragon_phoenix_black"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/porcelain_v2_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_v3_red",
+    "double_phoenix_green",
+    "boho_floral_brown",
+    "dragon_phoenix_blue",
+    "porcelain_v2_red"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/qasr_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_v3_red",
+    "dragon_phoenix_blue",
+    "royal_v2_green",
+    "jasmine_green",
+    "qasr_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/qasr_gold.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hy_green",
+    "boho_floral_brown",
+    "qasr_gold",
+    "brocade_flower_red"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/qasr_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "spring_garden_blue",
+    "dragon_phoenix_blue",
+    "co_ba_red",
+    "nomad_brown",
+    "qasr_green"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/riviera_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "boho_floral_green",
+    "minimalism_red",
+    "double_dragon_blue",
+    "royal_green",
+    "riviera_blue",
+    "santorini_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/royal_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "nhat_binh_red",
+    "royal_red",
+    "porcelain_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/royal_v2_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "marble_yellow",
+    "cherry_blossom_pink",
+    "spring_garden_blue",
+    "dragon_phoenix_black",
+    "royal_v2_green"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/royal_v2_purple.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_red",
+    "royal_v2_purple"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/royal.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_red",
+    "marble_yellow",
+    "royal_green",
+    "royal_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/san_miguel_yellow.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_black",
+    "san_miguel_yellow"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/santorini_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "marble_yellow",
+    "chateau_green",
+    "royal_v2_green",
+    "santorini_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/saraya_gold.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "spring_garden_green",
+    "hoa_tinh_red",
+    "minimalism_red",
+    "double_dragon_blue",
+    "jasmine_green",
+    "saraya_gold"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/silk_flora_brown.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_brown",
+    "glass_garden_green",
+    "silk_flora_brown",
+    "dragon_phoenix_black"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/silk_ribbon_darkred.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "silk_ribbon_darkred",
+    "spring_garden_blue"
+   ],
+   "why": [
+    "hộp nhỏ",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/silk_ribbon_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "silk_ribbon_green",
+    "chibi_red"
+   ],
+   "why": [
+    "hộp nhỏ",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/silk_ribbon_pink.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "dragon_phoenix_red",
+    "elegant_leaf_green",
+    "silk_ribbon_pink",
+    "boho_floral_pink",
+    "nomad_brown"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/song_hac_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_brown",
+    "song_hac_red"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/song_hy_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hy_green",
+    "glass_garden_green",
+    "chateau_blue",
+    "double_phoenix_green",
+    "jasmine_green"
+   ],
+   "why": [
+    "hộp nhỏ",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/song_hy_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hy_green",
+    "song_hy_red",
+    "chateau_green",
+    "royal_v2_green"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/song_hy_v2_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hy_v2_red",
+    "glass_garden_pink",
+    "applique_lace_white"
+   ],
+   "why": [
+    "hộp nhỏ",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/spring_garden_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "chibi_red",
+    "nhat_binh_red",
+    "spring_garden_blue",
+    "double_phoenix_green",
+    "santorini_blue",
+    "nomad_brown",
+    "brocade_flower_red"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/spring_garden_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_brown",
+    "double_dragon_red",
+    "glass_garden_pink",
+    "spring_garden_green",
+    "spring_garden_blue",
+    "minimalism_red",
+    "baroque_blue",
+    "brocade_flower_red"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/spring_garden_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "spring_garden_green",
+    "royal_red",
+    "spring_garden_red",
+    "baroque_gold",
+    "chateau_blue"
+   ],
+   "why": [
+    "markup đo thật",
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/mini/sunflower.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "sunflower_yellow"
+   ],
+   "why": [
+    "hộp nhỏ"
+   ]
+  },
+  {
+   "path": "/images/giftbox/minimalism_brown.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_brown"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/minimalism_darkblue.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_darkblue"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/minimalism_darkbrown.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_darkbrown"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/minimalism_darkred.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_darkred"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/minimalism_green.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_green"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/minimalism_purple.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_purple"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/minimalism_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "minimalism_red"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/nhat_binh_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "nhat_binh_red"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/nomad_brown.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "nomad_brown"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/porcelain_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "porcelain_blue"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/porcelain_brown.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "porcelain_brown"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/porcelain_red.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "porcelain_red"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/porcelain_v2_green.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "porcelain_v2_green"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/porcelain_v2_pink.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "porcelain_v2_pink"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/porcelain_v2_red.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "porcelain_v2_red"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/qasr_blue.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "qasr_blue"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/qasr_gold.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "qasr_gold"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/qasr_green.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "qasr_green"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/riviera_blue.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "riviera_blue"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/royal_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "royal_red"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/royal_v2_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "royal_v2_green"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/royal_v2_purple.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "royal_v2_purple"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/royal.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "royal_green",
+    "royal_blue"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/san_miguel_yellow.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "san_miguel_yellow"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/santorini_blue.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "santorini_blue"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/saraya_gold.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "saraya_gold"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/silk_flora_brown.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "silk_flora_brown"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/silk_ribbon_darkred.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "silk_ribbon_darkred"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/silk_ribbon_green.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "silk_ribbon_green"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/silk_ribbon_pink.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "silk_ribbon_pink"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/song_hac_red.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hac_red"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/song_hy_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hy_green"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/song_hy_red.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hy_red"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/song_hy_v2_red.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "song_hy_v2_red"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/spring_garden_blue.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "spring_garden_blue"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/spring_garden_green.webp",
+   "local": true,
+   "remote": null,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "spring_garden_green"
+   ],
+   "why": [
+    "hộp 3D",
+    "markup đo thật"
+   ]
+  },
+  {
+   "path": "/images/giftbox/spring_garden_red.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "spring_garden_red"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  },
+  {
+   "path": "/images/giftbox/sunflower_yellow.webp",
+   "local": true,
+   "remote": 200,
+   "alias": null,
+   "state": "có",
+   "ids": [
+    "sunflower_yellow"
+   ],
+   "why": [
+    "hộp 3D"
+   ]
+  }
+ ],
+ "extra": []
+}

@@ -20,15 +20,64 @@
   "partyOn": true,
   "locTitle": "Tiệc cưới sẽ tổ chức tại",
   "wishes": [
-    { "name": "Hải Đăng", "msg": "Bạn cùng phòng ký túc của tui lên xe hoa rồi. Từ nay có người khác nắm tay bạn đi tiếp, phải thật hạnh phúc nhé.", "at": "16:00:00 18/7/2027" },
-    { "name": "Ngọc Ánh", "msg": "Chúc anh chị một đời một kiếp, chỉ một người thương.", "at": "17:00:00 17/7/2027" },
-    { "name": "Chị Mai Phương", "msg": "Thấy hai đứa từ hồi còn yêu nhau ríu rít ở công ty, nay về chung một nhà, vui ghê! Chúc mừng nhé.", "at": "18:00:00 16/7/2027" },
-    { "name": "Duy Khánh", "msg": "Chúc hôn nhân của hai bạn là câu chuyện cổ tích kéo dài mãi mãi.", "at": "19:00:00 15/7/2027" },
-    { "name": "Linh Đan", "msg": "Mình bị ốm nên không đến được, tiếc lắm luôn. Chúc vợ chồng bạn trăm năm hạnh phúc, hẹn gặp sớm nha!", "at": "20:00:00 14/7/2027" },
-    { "name": "Anh chị Minh Thư", "msg": "Chúc hai em trăm năm hạnh phúc, nắm chặt tay nhau và cùng nhau già đi.", "at": "21:00:00 13/7/2027" },
-    { "name": "Em Duy", "msg": "Chúc anh chị đầu năm sinh con trai, cuối năm sinh con gái 🤣", "at": "22:00:00 12/7/2027" },
-    { "name": "Phương Thảo", "msg": "Nhận được thiệp mà mình xúc động muốn khóc luôn. Chúc mừng hạnh phúc bạn nha ❤️", "at": "23:00:00 11/7/2027" },
-    { "name": "Đức Anh", "msg": "Chúc hai bạn chân cứng đá mềm, cùng nhau đi qua những ngày nắng và cả những ngày mưa.", "at": "0:00:00 11/7/2027" }
+    {
+      "name": "Hải Đăng",
+      "msg": "Bạn cùng phòng ký túc của tui lên xe hoa rồi. Từ nay có người khác nắm tay bạn đi tiếp, phải thật hạnh phúc nhé.",
+      "at": "16:00:00 18/7/2027"
+    },
+    {
+      "name": "Ngọc Ánh",
+      "msg": "Chúc anh chị một đời một kiếp, chỉ một người thương.",
+      "at": "17:00:00 17/7/2027"
+    },
+    {
+      "name": "Chị Mai Phương",
+      "msg": "Thấy hai đứa từ hồi còn yêu nhau ríu rít ở công ty, nay về chung một nhà, vui ghê! Chúc mừng nhé.",
+      "at": "18:00:00 16/7/2027"
+    },
+    {
+      "name": "Duy Khánh",
+      "msg": "Chúc hôn nhân của hai bạn là câu chuyện cổ tích kéo dài mãi mãi.",
+      "at": "19:00:00 15/7/2027"
+    },
+    {
+      "name": "Linh Đan",
+      "msg": "Mình bị ốm nên không đến được, tiếc lắm luôn. Chúc vợ chồng bạn trăm năm hạnh phúc, hẹn gặp sớm nha!",
+      "at": "20:00:00 14/7/2027"
+    },
+    {
+      "name": "Anh chị Minh Thư",
+      "msg": "Chúc hai em trăm năm hạnh phúc, nắm chặt tay nhau và cùng nhau già đi.",
+      "at": "21:00:00 13/7/2027"
+    },
+    {
+      "name": "Em Duy",
+      "msg": "Chúc anh chị đầu năm sinh con trai, cuối năm sinh con gái 🤣",
+      "at": "22:00:00 12/7/2027"
+    },
+    {
+      "name": "Phương Thảo",
+      "msg": "Nhận được thiệp mà mình xúc động muốn khóc luôn. Chúc mừng hạnh phúc bạn nha ❤️",
+      "at": "23:00:00 11/7/2027"
+    },
+    {
+      "name": "Đức Anh",
+      "msg": "Chúc hai bạn chân cứng đá mềm, cùng nhau đi qua những ngày nắng và cả những ngày mưa.",
+      "at": "0:00:00 11/7/2027"
+    }
   ],
-  "gifts": []
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "0000000000",
+      "accountName": "THIEP CUOI DEMO",
+      "qrUrl": ""
+    }
+  ],
+  "giftOn": true,
+  "giftDisplayMode": "envelope"
 }

@@ -321,5 +321,18 @@
   "groomPhoto": "https://assets.chungdoi.com/photo-library/design/868ddb966956a9be3daceb4c5069c63402923a0db8fa90efda87fa0ddc8d417c.webp",
   "bridePhoto": "https://assets.chungdoi.com/photo-library/design/f4d501ac194bc87673a0260b53672083714f26a6807acdd15a0819cc80df2c3f.webp",
   "invitationId": "0512ff25-d842-4871-9b84-277dbc5cd029",
-  "invitationSlug": "hoangphuc-nhukhue-crystal-green"
+  "invitationSlug": "hoangphuc-nhukhue-crystal-green",
+  "giftOn": true,
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "0000000000",
+      "accountName": "THIEP CUOI DEMO",
+      "qrUrl": ""
+    }
+  ]
 }

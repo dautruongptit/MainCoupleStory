@@ -354,5 +354,18 @@
   "guestReceptionTime": "10:00",
   "bridePhoto": "https://assets.chungdoi.com/photo-library/design/454f856986dc4e94052eee2148f9c0006732d70700ff963c796fc737dfc84839.webp",
   "groomPhoto": "https://assets.chungdoi.com/photo-library/design/9c1c61b16fa1ff694846b781f371bc3b437a49a092300a1778bdd9ed56ff81d9.webp",
-  "guestName": "Gia đình chị Phương"
+  "guestName": "Gia đình chị Phương",
+  "giftOn": true,
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "0000000000",
+      "accountName": "THIEP CUOI DEMO",
+      "qrUrl": ""
+    }
+  ]
 }

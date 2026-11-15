@@ -80,8 +80,11 @@ function make({ OUT, TOKENS, EAGER = new Set(), imgRe }) {
     const byFile = {};
     for (const [k, [f, n]] of Object.entries(UTILS)) if (new RegExp("\\b" + k + "\\b").test(all)) (byFile[f] = byFile[f] || []).push(n);
     const imps = Object.entries(byFile).map(([f, ns]) => `import { ${ns.join(", ")} } from "@/utils/${f}";\n`).join("");
-    const file = `import React from "react";\n${imps}${extra}import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx";\n\n` +
+    let file = `import React from "react";\n${imps}${extra}import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx";\n\n` +
       `export function ${name}({ ctx }: { ctx: InvitationCtx }) {\n  const { ${used.join(", ")} } = ctx;\n${pre}  return (\n    ${cond ? cond + " && (" : ""}${body.replace(/\n/g, "\n    ")}${cond ? ")" : ""}\n  );\n}\n`;
+    // hộp mừng quà: dùng khối dùng chung dựng từ dữ liệu đo thật của từng mẫu (xem giftkit.cjs)
+    const viaGeneric = require("./giftkit.cjs").useGiftGeneric(file);
+    if (viaGeneric) file = viaGeneric;
     fs.writeFileSync(path.join(OUT, name + ".tsx"), file);
     console.log("ok", name, used.length);
   }

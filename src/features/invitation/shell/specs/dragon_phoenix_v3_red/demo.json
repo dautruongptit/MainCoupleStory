@@ -25,5 +25,28 @@
       "at": "18:31:14 9/7/2026"
     }
   ],
-  "gifts": []
+  "gifts": [
+    {
+      "id": "g1",
+      "who": "groom",
+      "bankName": "BIDV",
+      "bankCode": "BIDV",
+      "bankBin": "970418",
+      "accountNumber": "0399554682",
+      "accountName": "NGUYEN TUAN KIET",
+      "qrUrl": "/api/qr-png?d=00020101021238540010A00000072701240006970418011003995546820208QRIBFTTA53037045802VN63041770&ec=M"
+    },
+    {
+      "id": "g2",
+      "who": "bride",
+      "bankName": "Vietcombank",
+      "bankCode": "VCB",
+      "bankBin": "970436",
+      "accountNumber": "099996586",
+      "accountName": "TRAN THANH HA",
+      "qrUrl": "/api/qr-png?d=00020101021238530010A0000007270123000697043601090999965860208QRIBFTTA53037045802VN6304B278&ec=M"
+    }
+  ],
+  "giftDisplayMode": "gift_box",
+  "giftOn": true
 }
