@@ -42,7 +42,10 @@ for (const id of ids) {
   if (!Array.isArray(caps.blocks) || !caps.blocks.length) errors.push(`${id}: capabilities.blocks rỗng`);
   const missMeta = REQUIRED_META.filter((k) => meta[k] === undefined);
   if (missMeta.length) errors.push(`${id}: meta thiếu trường ${missMeta.join(", ")}`);
-  rows.push({ id, demo: has("demo.json"), cover: !!cover, meta });
+  // gift.json (tùy chọn nhưng mẫu nào cũng nên có): khối Hộp Quà Mừng đo từ trang gốc, sinh bởi gen_gift_sections.cjs
+  const gift = has("gift.json") ? readJson(id, "gift.json") : null;
+  if (gift && !["3d-box", "envelope", "other"].includes(gift.kind)) errors.push(`${id}: gift.kind = ${JSON.stringify(gift.kind)} không hợp lệ`);
+  rows.push({ id, demo: has("demo.json"), cover: !!cover, gift: !!gift, meta });
 }
 // meta: thứ tự (order) và slug không được trùng
 for (const key of ["order", "slug"]) {
@@ -85,8 +88,22 @@ const outMeta = [
   "",
 ].join("\n");
 
+// Hộp quà tách tệp riêng (dữ liệu lớn ~700 KB, chỉ khối hộp quà dùng)
+const OUT_GIFT = path.join(ROOT, "gift.generated.ts");
+const giftRows = rows.filter((r) => r.gift);
+const outGift = [
+  "// TỆP SINH — không sửa tay. Chạy: node scripts/clone/gen_spec_index.mjs",
+  "// Nguồn: specs/<id>/gift.json (sinh bởi scripts/clone/gen_gift_sections.cjs + gift_assets.mjs).",
+  ...giftRows.map(({ id }) => `import ${v(id)} from "./${id}/gift.json";`),
+  "",
+  "export const RAW_GIFT: Record<string, unknown> = {",
+  ...giftRows.map(({ id }) => `  ${id}: ${v(id)},`),
+  "};",
+  "",
+].join("\n");
+
 const norm = (f) => (fs.existsSync(f) ? fs.readFileSync(f, "utf8").split("\r\n").join("\n") : "");
-const stale = [[OUT, out], [OUT_META, outMeta]].filter(([f, text]) => norm(f) !== text);
+const stale = [[OUT, out], [OUT_META, outMeta], [OUT_GIFT, outGift]].filter(([f, text]) => norm(f) !== text);
 if (check) {
   if (stale.length) { console.error(`${stale.map(([f]) => f).join(", ")} đã cũ — chạy node scripts/clone/gen_spec_index.mjs`); process.exit(1); }
   console.log(`OK: ${rows.length} mẫu, chỉ mục khớp`);

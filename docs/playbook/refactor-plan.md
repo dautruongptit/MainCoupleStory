@@ -191,7 +191,7 @@ Khi A–D ổn định: chuyển phần app (trang, header, editor) từ Tailwin
 
 ## 5. Nguyên tắc khi làm
 - Không đổi số đo đã khớp: chụp mốc `local_dump` trước mỗi giai đoạn, so `cmp_dumps` sau.
-- Tệp sinh (`blocks/riviera|traditional/*`, `giftSpecs.generated.ts`, `giftAssets.generated.ts`) sửa bằng bộ sinh, không sửa tay.
+- Tệp sinh (`blocks/riviera|traditional/*`, `specs/<id>/gift.json`, `*.generated.ts`) sửa bằng bộ sinh, không sửa tay.
 - Mỗi giai đoạn: nhánh riêng từ `fix/clone-match`, commit theo nhóm, chờ duyệt trước khi push.
 
 ## 6. Nhật ký thực hiện
@@ -206,7 +206,7 @@ Khi A–D ổn định: chuyển phần app (trang, header, editor) từ Tailwin
 - **C — còn lại** (chưa làm):
   - `covers/index.ts` (bảng mẫu → component bìa, 77 dòng đăng ký tay) → tên component trong `cover.json` hoặc để D1.
   - `config/giftboxConfigs.ts` (1,2k dòng): còn 2 nơi dùng — `BaseCoverCard` (`flyDecor` theo `giftboxType` CŨ, khác kiểu đo thật ở 11 mẫu: folk_floral_blue, qasr_blue/gold/green, mahal_gold/pink, floral_fiesta_yellow, saraya_gold, mandap_darkred/yellow, calla_lily_white) và `GiftWidgets` (hộp nhỏ `miniImgs`, ảnh hộp dự phòng). Cần đo lại hiệu ứng bay của 11 mẫu đó trên trang gốc rồi mới gộp vào `gift.json`/`cover.json`.
-  - `giftSpecs.generated.ts`, `giftAssets.generated.ts` → `specs/<id>/gift.json` (bộ sinh ghi thẳng).
+  - ~~`giftSpecs.generated.ts`, `giftAssets.generated.ts`~~ **đã chuyển 16/11/2026** về `specs/<id>/gift.json` (92 tệp; `gen_gift_sections.cjs` ghi spec, `gift_assets.mjs` ghi khóa `assets`; chỉ mục `specs/gift.generated.ts`; lớp đọc `blocks/shared/giftSpecs.ts`). Kiểm: `config-data.mjs --compare` 92/92 giống mốc, sổ ảnh 261/263 không đổi.
   - `editor/config/editorSections.ts` → `capabilities.json#editor` (ma trận 88 mẫu).
   - ~~`templates/data/themeManifest.ts` (18,8k dòng)~~ **đã xóa 16/11/2026**: `TemplateModal` chỉ gán vào một biến không dùng; bundle JS 6,35 → 6,06 MB.
   - C1/C4: schema TS cho từng tệp spec, bỏ `as unknown as`/`any` còn lại. C5: test cho `giftDefaults`, bộ sinh chỉ mục.

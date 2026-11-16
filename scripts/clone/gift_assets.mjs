@@ -20,8 +20,11 @@ const DIRS = ["/images/giftbox", "/images/giftbox/mini", "/images/envelope"];
 
 const tpl = fs.readFileSync("src/features/templates/data/templates.generated.ts", "utf8");
 const ids = [...tpl.matchAll(/"id":\s*"([^"]+)"/g)].map((m) => m[1]);
-const specSrc = fs.readFileSync("src/features/invitation/shell/blocks/shared/giftSpecs.generated.ts", "utf8");
-const SPECS = JSON.parse(specSrc.slice(specSrc.indexOf("= {") + 2, specSrc.lastIndexOf(";")));
+// dữ liệu hộp quà từng mẫu: specs/<id>/gift.json (sinh bởi gen_gift_sections.cjs; khóa `assets` do script này ghi)
+const SPEC_DIR = "src/features/invitation/shell/specs";
+const giftFile = (id) => path.join(SPEC_DIR, id, "gift.json");
+const readGift = (id) => (fs.existsSync(giftFile(id)) ? JSON.parse(fs.readFileSync(giftFile(id), "utf8")) : null);
+const SPECS = Object.fromEntries(ids.map((id) => [id, readGift(id)]).filter(([, g]) => g).map(([id, { assets, ...spec }]) => [id, spec]));
 
 const prev = fs.existsSync(JSON_OUT) ? JSON.parse(fs.readFileSync(JSON_OUT, "utf8")) : { remote: {}, log: [] };
 const remote = prev.remote || {}; // path -> { status, bytes, at }
@@ -59,7 +62,7 @@ const rows = Object.entries(need).map(([p, v]) => {
 }).sort((a, b) => a.path.localeCompare(b.path));
 
 // thừa: file trong các thư mục ảnh hộp quà không mẫu nào cần và không mã nguồn nào nhắc tới
-const srcText = ["src/features/invitation", "src/pages", "src/features/editor"].flatMap((d) => walk(d)).filter((f) => /\.(tsx?|css)$/.test(f) && !f.includes("giftSpecs.generated")).map((f) => fs.readFileSync(f, "utf8")).join("\n");
+const srcText = ["src/features/invitation", "src/pages", "src/features/editor"].flatMap((d) => walk(d)).filter((f) => /\.(tsx?|css)$/.test(f)).map((f) => fs.readFileSync(f, "utf8")).join("\n");
 function walk(d) { if (!fs.existsSync(d)) return []; return fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)])); }
 const extra = [];
 for (const d of DIRS) {
@@ -83,13 +86,15 @@ const count = (st) => rows.filter((r) => r.state === st).length;
 const summary = { total: rows.length, co: count("có"), thieu: count("thiếu"), gocKhongCo: count("gốc không có"), loi: rows.filter((r) => r.state.startsWith("lỗi")).length, thua: extra.length };
 // bảng mẫu -> ảnh thật cho code (chỉ ghi ảnh đã có ở local)
 {
-  const map = Object.fromEntries(ids.map((id) => [id, Object.fromEntries(Object.entries(assetOf[id]).filter(([, v]) => exists(v)))]));
-  const head = [
-    "// TỆP SINH — đừng sửa tay. Sinh bởi scripts/clone/gift_assets.mjs từ docs/survey/gift-assets.json.",
-    "// Ảnh hộp quà của từng mẫu đúng tên trên trang gốc (có mẫu dùng tên chung của họ, vd dragon_phoenix.webp).",
-    "export const GIFT_ASSETS: Record<string, { box?: string; mini?: string; envelope?: string }> = ",
-  ].join("\n");
-  fs.writeFileSync("src/features/invitation/config/giftAssets.generated.ts", head + JSON.stringify(map, null, 1) + ";\n");
+  // ghi vào khóa `assets` của specs/<id>/gift.json — ảnh đúng tên trên trang gốc (có mẫu dùng tên chung của họ, vd dragon_phoenix.webp)
+  for (const id of ids) {
+    const g = readGift(id);
+    if (!g) continue;
+    const assets = Object.fromEntries(Object.entries(assetOf[id]).filter(([, v]) => exists(v)));
+    const { assets: _old, ...spec } = g;
+    const next = JSON.stringify({ ...spec, assets }, null, 1) + "\n";
+    if (fs.readFileSync(giftFile(id), "utf8").split("\r\n").join("\n") !== next) fs.writeFileSync(giftFile(id), next);
+  }
 }
 fs.writeFileSync(JSON_OUT, JSON.stringify({ updated: new Date().toISOString(), summary, remote, log, rows, extra }, null, 1));
 

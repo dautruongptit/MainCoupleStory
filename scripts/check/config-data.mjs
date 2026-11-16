@@ -15,8 +15,16 @@ if (!mode) { console.error("Cần --save <tệp> hoặc --compare <tệp>"); pro
 const file = args[args.indexOf("--" + mode) + 1];
 const abs = (p) => path.resolve(p).split(path.sep).join("/");
 
+// hộp quà: từ giai đoạn C nằm ở shared/giftSpecs.ts (đọc specs/<id>/gift.json); bản cũ là hai tệp *.generated.ts
+const GIFT_NEW = "src/features/invitation/shell/blocks/shared/giftSpecs.ts";
+const giftImports = fs.existsSync(GIFT_NEW)
+  ? `import { GIFT_SPECS, GIFT_ASSETS } from "${abs(GIFT_NEW)}";`
+  : `import { GIFT_SPECS } from "${abs("src/features/invitation/shell/blocks/shared/giftSpecs.generated.ts")}";
+import { GIFT_ASSETS } from "${abs("src/features/invitation/config/giftAssets.generated.ts")}";`;
+
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "config-data-"));
 fs.writeFileSync(path.join(tmp, "entry.ts"), `
+${giftImports}
 import { TEMPLATES, introDefaultFor, templateByIdOrSlug } from "${abs("src/features/templates/data/templates.ts")}";
 import { TEMPLATE_THEMES } from "${abs("src/features/invitation/config/templateThemes.ts")}";
 import { previewFocal } from "${abs("src/features/templates/data/previewFocal.ts")}";
@@ -38,6 +46,7 @@ export const ALL = {
     family: getCapabilities(t.id)?.family ?? null,
     cover: COVER_CONFIGS[t.id] ?? null,
     giftbox: getGiftboxConfig(t.id),
+    giftSpec: GIFT_SPECS[t.id] ?? null, giftAssets: GIFT_ASSETS[t.id] ?? null,
     dress: defaultDressColors(t.id), giftMode: defaultGiftMode(t.id),
   }])),
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import { getGiftboxConfig } from "@/features/invitation/config/giftboxConfigs";
-import { GIFT_ASSETS } from "@/features/invitation/config/giftAssets.generated";
+import { GIFT_ASSETS } from "./giftSpecs";
 import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx";
 
 /** "left: 1px; top: 2px" -> { left: "1px", top: "2px" } (cấu hình ảnh nhỏ của hộp quà lưu dạng chuỗi CSS) */

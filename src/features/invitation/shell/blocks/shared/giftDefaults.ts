@@ -1,4 +1,4 @@
-import { GIFT_SPECS, type GiftSpec } from "./giftSpecs.generated";
+import { GIFT_SPECS, type GiftSpec } from "./giftSpecs";
 
 export const giftKindToMode = (kind: GiftSpec["kind"] | undefined): "gift_box" | "envelope" => (kind === "envelope" ? "envelope" : "gift_box");
 

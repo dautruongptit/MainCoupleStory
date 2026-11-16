@@ -1,4 +1,4 @@
-// Sinh src/features/invitation/shell/blocks/shared/giftSpecs.generated.ts từ dữ liệu hộp mừng quà đo thật của từng mẫu
+// Sinh src/features/invitation/shell/specs/<id>/gift.json từ dữ liệu hộp mừng quà đo thật của từng mẫu
 // (docs/survey/raw/gift_<id>.json, thu bằng scripts/survey/gift_crawl.js). Mỗi mẫu một "spec" gồm:
 //   kind     kiểu mặc định thật của mẫu: "3d-box" | "envelope"
 //   rootCls/rootStyle  khung ngoài khối; headHtml  tiêu đề (chứa {{TITLE}}); widgetHtml  nút hộp quà/phong bì mặc định
@@ -7,7 +7,7 @@
 // Chạy: node scripts/clone/gen_gift_sections.cjs
 const fs = require("fs");
 const RAW = "docs/survey/raw";
-const OUT = "src/features/invitation/shell/blocks/shared/giftSpecs.generated.ts";
+const SPECS_DIR = "src/features/invitation/shell/specs";
 
 // Chỉ làm sạch thuộc tính class: ở trang gốc thuộc tính font bị đổ nhầm vào class (không có tác dụng với Tailwind); style giữ nguyên.
 const clean = (h) => h.replace(/ class="([^"]*)"/g, (m, c) => ' class="' + c.replace(/&quot;[^&]*&quot;, ChungDoiIndic, serif ?/g, "").replace(/\s+/g, " ").trim() + '"');
@@ -104,30 +104,17 @@ for (const f of files) {
   };
 }
 
-const body = `// TỆP SINH — đừng sửa tay. Sinh bởi scripts/clone/gen_gift_sections.cjs từ docs/survey/raw/gift_<id>.json (đo thật từ trang gốc).
-export type GiftKind = "3d-box" | "envelope";
-export interface GiftSpec {
-  /** real = đo thật từ trang gốc; local = lấy từ bản clone local (chưa có số đo thật) */
-  source: "real" | "local";
-  kind: GiftKind | "other";
-  title: string;
-  /** true: d.giftTitle ghi đè được tiêu đề; false: tiêu đề cố định của mẫu (vd song ngữ) */
-  titleEditable: boolean;
-  rootCls: string;
-  rootStyle: string;
-  headHtml: string;
-  widgetHtml: string;
-  ink: string;
-  accent: string;
-  dlgBefore: string;
-  dlgItem: string;
-  dlgAfter: string;
-  /** màu nền cửa sổ QR (dùng cửa sổ chuẩn khi mẫu không có thẻ tài khoản tách được) */
-  dlgBoxBg: string;
-  dlgHeadBg: string;
+// Mỗi mẫu một tệp specs/<id>/gift.json (kiểu GiftSpec ở blocks/shared/giftSpecs.ts). Khóa `assets` (ảnh hộp/phong bì thật)
+// do scripts/clone/gift_assets.mjs ghi → giữ nguyên khi sinh lại. Sau đó chạy `npm run gen:specs` để cập nhật chỉ mục.
+const path = require("path");
+let written = 0;
+for (const [id, spec] of Object.entries(specs)) {
+  const dir = path.join(SPECS_DIR, id);
+  if (!fs.existsSync(dir)) { problems.push(`${id}: có dữ liệu hộp quà nhưng chưa có thư mục spec`); continue; }
+  const f = path.join(dir, "gift.json");
+  const prev = fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {};
+  const next = JSON.stringify({ ...spec, ...(prev.assets ? { assets: prev.assets } : {}) }, null, 1) + "\n";
+  if (!fs.existsSync(f) || fs.readFileSync(f, "utf8").split("\r\n").join("\n") !== next) { fs.writeFileSync(f, next); written++; }
 }
-export const GIFT_SPECS: Record<string, GiftSpec> = ${JSON.stringify(specs, null, 1)};
-`;
-fs.writeFileSync(OUT, body);
-console.log("spec:", Object.keys(specs).length, "| vấn đề:", problems.length);
+console.log("spec:", Object.keys(specs).length, "| gift.json ghi mới/đổi:", written, "| vấn đề:", problems.length);
 for (const p of problems) console.log("  -", p);

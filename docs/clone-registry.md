@@ -127,11 +127,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/minimalism_darkred/cover.json` → khóa `minimalism_darkred`
 - Thư mục ảnh theme: `public/images/themes/minimalism-dark-red/` (9 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/minimalism_darkred/capabilities.json`
 - `src/features/invitation/shell/specs/minimalism_darkred/cover.json`
 - `src/features/invitation/shell/specs/minimalism_darkred/demo.json`
+- `src/features/invitation/shell/specs/minimalism_darkred/gift.json`
 - `src/features/invitation/shell/specs/minimalism_darkred/meta.json`
 - `src/features/invitation/shell/specs/minimalism_darkred/theme.json`
 
@@ -196,11 +197,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/minimalism-brown/` (10 file)
 - Ghi chú: Đạt 0 lệch hình học theo AGENTS.md
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/minimalism_brown/capabilities.json`
 - `src/features/invitation/shell/specs/minimalism_brown/cover.json`
 - `src/features/invitation/shell/specs/minimalism_brown/demo.json`
+- `src/features/invitation/shell/specs/minimalism_brown/gift.json`
 - `src/features/invitation/shell/specs/minimalism_brown/meta.json`
 - `src/features/invitation/shell/specs/minimalism_brown/theme.json`
 
@@ -262,11 +264,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/song_hy_green/cover.json` → khóa `song_hy_green`
 - Thư mục ảnh theme: `public/song-hy-green/` (0 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/song_hy_green/capabilities.json`
 - `src/features/invitation/shell/specs/song_hy_green/cover.json`
 - `src/features/invitation/shell/specs/song_hy_green/demo.json`
+- `src/features/invitation/shell/specs/song_hy_green/gift.json`
 - `src/features/invitation/shell/specs/song_hy_green/meta.json`
 - `src/features/invitation/shell/specs/song_hy_green/theme.json`
 
@@ -320,11 +323,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/boho_floral_green/cover.json` → khóa `boho_floral_green`
 - Thư mục ảnh theme: `public/boho-floral-green/` (0 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/boho_floral_green/capabilities.json`
 - `src/features/invitation/shell/specs/boho_floral_green/cover.json`
 - `src/features/invitation/shell/specs/boho_floral_green/demo.json`
+- `src/features/invitation/shell/specs/boho_floral_green/gift.json`
 - `src/features/invitation/shell/specs/boho_floral_green/meta.json`
 - `src/features/invitation/shell/specs/boho_floral_green/theme.json`
 
@@ -374,11 +378,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/song_hy_v2_red/cover.json` → khóa `song_hy_v2_red`
 - Thư mục ảnh theme: `public/images/themes/song-hy-v2-red/` (11 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/song_hy_v2_red/capabilities.json`
 - `src/features/invitation/shell/specs/song_hy_v2_red/cover.json`
 - `src/features/invitation/shell/specs/song_hy_v2_red/demo.json`
+- `src/features/invitation/shell/specs/song_hy_v2_red/gift.json`
 - `src/features/invitation/shell/specs/song_hy_v2_red/meta.json`
 - `src/features/invitation/shell/specs/song_hy_v2_red/theme.json`
 
@@ -424,11 +429,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/song_hy_red/cover.json` → khóa `song_hy_red`
 - Thư mục ảnh theme: `public/song-hy-red/` (0 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/song_hy_red/capabilities.json`
 - `src/features/invitation/shell/specs/song_hy_red/cover.json`
 - `src/features/invitation/shell/specs/song_hy_red/demo.json`
+- `src/features/invitation/shell/specs/song_hy_red/gift.json`
 - `src/features/invitation/shell/specs/song_hy_red/meta.json`
 - `src/features/invitation/shell/specs/song_hy_red/theme.json`
 
@@ -490,11 +496,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/silk-ribbon-green/` (6 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/silk_ribbon_green/capabilities.json`
 - `src/features/invitation/shell/specs/silk_ribbon_green/cover.json`
 - `src/features/invitation/shell/specs/silk_ribbon_green/demo.json`
+- `src/features/invitation/shell/specs/silk_ribbon_green/gift.json`
 - `src/features/invitation/shell/specs/silk_ribbon_green/meta.json`
 - `src/features/invitation/shell/specs/silk_ribbon_green/theme.json`
 
@@ -538,11 +545,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/minimalism_green/cover.json` → khóa `minimalism_green`
 - Thư mục ảnh theme: `public/images/themes/minimalism-green/` (9 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/minimalism_green/capabilities.json`
 - `src/features/invitation/shell/specs/minimalism_green/cover.json`
 - `src/features/invitation/shell/specs/minimalism_green/demo.json`
+- `src/features/invitation/shell/specs/minimalism_green/gift.json`
 - `src/features/invitation/shell/specs/minimalism_green/meta.json`
 - `src/features/invitation/shell/specs/minimalism_green/theme.json`
 
@@ -593,11 +601,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/moclan-white/` (2 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/jasmine_white/capabilities.json`
 - `src/features/invitation/shell/specs/jasmine_white/cover.json`
 - `src/features/invitation/shell/specs/jasmine_white/demo.json`
+- `src/features/invitation/shell/specs/jasmine_white/gift.json`
 - `src/features/invitation/shell/specs/jasmine_white/meta.json`
 - `src/features/invitation/shell/specs/jasmine_white/theme.json`
 
@@ -636,11 +645,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/longphung-v3-red/` (7 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/dragon_phoenix_v3_red/capabilities.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_v3_red/cover.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_v3_red/demo.json`
+- `src/features/invitation/shell/specs/dragon_phoenix_v3_red/gift.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_v3_red/meta.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_v3_red/theme.json`
 
@@ -677,11 +687,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/dragon_phoenix_red/cover.json` → khóa `dragon_phoenix_red`
 - Thư mục ảnh theme: `public/images/themes/red-v1/` (4 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/dragon_phoenix_red/capabilities.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_red/cover.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_red/demo.json`
+- `src/features/invitation/shell/specs/dragon_phoenix_red/gift.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_red/meta.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_red/theme.json`
 
@@ -736,11 +747,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/silk-ribbon-darkred/` (6 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/silk_ribbon_darkred/capabilities.json`
 - `src/features/invitation/shell/specs/silk_ribbon_darkred/cover.json`
 - `src/features/invitation/shell/specs/silk_ribbon_darkred/demo.json`
+- `src/features/invitation/shell/specs/silk_ribbon_darkred/gift.json`
 - `src/features/invitation/shell/specs/silk_ribbon_darkred/meta.json`
 - `src/features/invitation/shell/specs/silk_ribbon_darkred/theme.json`
 
@@ -784,11 +796,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/minimalism_darkbrown/cover.json` → khóa `minimalism_darkbrown`
 - Thư mục ảnh theme: `public/images/themes/minimalism-darkbrown/` (0 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/minimalism_darkbrown/capabilities.json`
 - `src/features/invitation/shell/specs/minimalism_darkbrown/cover.json`
 - `src/features/invitation/shell/specs/minimalism_darkbrown/demo.json`
+- `src/features/invitation/shell/specs/minimalism_darkbrown/gift.json`
 - `src/features/invitation/shell/specs/minimalism_darkbrown/meta.json`
 - `src/features/invitation/shell/specs/minimalism_darkbrown/theme.json`
 
@@ -827,11 +840,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/longphung-v2-red/` (6 file)
 - Ghi chú: Sửa theme/font/dữ liệu động Hero-Ceremony-Venue 2026-11-11
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/dragon_phoenix_v2_red/capabilities.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_v2_red/cover.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_v2_red/demo.json`
+- `src/features/invitation/shell/specs/dragon_phoenix_v2_red/gift.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_v2_red/meta.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_v2_red/theme.json`
 
@@ -862,11 +876,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/double_dragon_red/cover.json` → khóa `double_dragon_red`
 - Thư mục ảnh theme: `public/songlong-red/` (0 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/double_dragon_red/capabilities.json`
 - `src/features/invitation/shell/specs/double_dragon_red/cover.json`
 - `src/features/invitation/shell/specs/double_dragon_red/demo.json`
+- `src/features/invitation/shell/specs/double_dragon_red/gift.json`
 - `src/features/invitation/shell/specs/double_dragon_red/meta.json`
 - `src/features/invitation/shell/specs/double_dragon_red/theme.json`
 
@@ -926,11 +941,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/glass-garden-green/` (10 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/glass_garden_green/capabilities.json`
 - `src/features/invitation/shell/specs/glass_garden_green/cover.json`
 - `src/features/invitation/shell/specs/glass_garden_green/demo.json`
+- `src/features/invitation/shell/specs/glass_garden_green/gift.json`
 - `src/features/invitation/shell/specs/glass_garden_green/meta.json`
 - `src/features/invitation/shell/specs/glass_garden_green/theme.json`
 
@@ -969,11 +985,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/songphung-red/` (6 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/double_phoenix_red/capabilities.json`
 - `src/features/invitation/shell/specs/double_phoenix_red/cover.json`
 - `src/features/invitation/shell/specs/double_phoenix_red/demo.json`
+- `src/features/invitation/shell/specs/double_phoenix_red/gift.json`
 - `src/features/invitation/shell/specs/double_phoenix_red/meta.json`
 - `src/features/invitation/shell/specs/double_phoenix_red/theme.json`
 
@@ -1017,11 +1034,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/double_dragon_green/cover.json` → khóa `double_dragon_green`
 - Thư mục ảnh theme: `public/songlong-red/` (0 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/double_dragon_green/capabilities.json`
 - `src/features/invitation/shell/specs/double_dragon_green/cover.json`
 - `src/features/invitation/shell/specs/double_dragon_green/demo.json`
+- `src/features/invitation/shell/specs/double_dragon_green/gift.json`
 - `src/features/invitation/shell/specs/double_dragon_green/meta.json`
 - `src/features/invitation/shell/specs/double_dragon_green/theme.json`
 
@@ -1079,11 +1097,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/glass-garden-pink/` (10 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/glass_garden_pink/capabilities.json`
 - `src/features/invitation/shell/specs/glass_garden_pink/cover.json`
 - `src/features/invitation/shell/specs/glass_garden_pink/demo.json`
+- `src/features/invitation/shell/specs/glass_garden_pink/gift.json`
 - `src/features/invitation/shell/specs/glass_garden_pink/meta.json`
 - `src/features/invitation/shell/specs/glass_garden_pink/theme.json`
 
@@ -1121,10 +1140,11 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/marble-yellow/` (5 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (4)
+**Spec** (5)
 
 - `src/features/invitation/shell/specs/marble_yellow/capabilities.json`
 - `src/features/invitation/shell/specs/marble_yellow/demo.json`
+- `src/features/invitation/shell/specs/marble_yellow/gift.json`
 - `src/features/invitation/shell/specs/marble_yellow/meta.json`
 - `src/features/invitation/shell/specs/marble_yellow/theme.json`
 
@@ -1163,11 +1183,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/thanhdiep-green/` (4 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/elegant_leaf_green/capabilities.json`
 - `src/features/invitation/shell/specs/elegant_leaf_green/cover.json`
 - `src/features/invitation/shell/specs/elegant_leaf_green/demo.json`
+- `src/features/invitation/shell/specs/elegant_leaf_green/gift.json`
 - `src/features/invitation/shell/specs/elegant_leaf_green/meta.json`
 - `src/features/invitation/shell/specs/elegant_leaf_green/theme.json`
 
@@ -1204,11 +1225,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/silk-ribbon-pink/` (6 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/silk_ribbon_pink/capabilities.json`
 - `src/features/invitation/shell/specs/silk_ribbon_pink/cover.json`
 - `src/features/invitation/shell/specs/silk_ribbon_pink/demo.json`
+- `src/features/invitation/shell/specs/silk_ribbon_pink/gift.json`
 - `src/features/invitation/shell/specs/silk_ribbon_pink/meta.json`
 - `src/features/invitation/shell/specs/silk_ribbon_pink/theme.json`
 
@@ -1254,11 +1276,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/longphung-v4-red/` (18 file)
 - Ghi chú: Đạt 0 lệch hình học theo AGENTS.md
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/dragon_phoenix_v4_red/capabilities.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_v4_red/cover.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_v4_red/demo.json`
+- `src/features/invitation/shell/specs/dragon_phoenix_v4_red/gift.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_v4_red/meta.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_v4_red/theme.json`
 
@@ -1342,11 +1365,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/lien_hoa_v2_green/cover.json` → khóa `lien_hoa_v2_green`
 - Thư mục ảnh theme: `public/images/themes/lien-hoa-v2-green/` (10 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/lien_hoa_v2_green/capabilities.json`
 - `src/features/invitation/shell/specs/lien_hoa_v2_green/cover.json`
 - `src/features/invitation/shell/specs/lien_hoa_v2_green/demo.json`
+- `src/features/invitation/shell/specs/lien_hoa_v2_green/gift.json`
 - `src/features/invitation/shell/specs/lien_hoa_v2_green/meta.json`
 - `src/features/invitation/shell/specs/lien_hoa_v2_green/theme.json`
 
@@ -1418,11 +1442,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/chateau-green/` (15 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/chateau_green/capabilities.json`
 - `src/features/invitation/shell/specs/chateau_green/cover.json`
 - `src/features/invitation/shell/specs/chateau_green/demo.json`
+- `src/features/invitation/shell/specs/chateau_green/gift.json`
 - `src/features/invitation/shell/specs/chateau_green/meta.json`
 - `src/features/invitation/shell/specs/chateau_green/theme.json`
 
@@ -1472,11 +1497,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/spring_garden_green/cover.json` → khóa `spring_garden_green`
 - Thư mục ảnh theme: `public/images/themes/nature/` (2 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/spring_garden_green/capabilities.json`
 - `src/features/invitation/shell/specs/spring_garden_green/cover.json`
 - `src/features/invitation/shell/specs/spring_garden_green/demo.json`
+- `src/features/invitation/shell/specs/spring_garden_green/gift.json`
 - `src/features/invitation/shell/specs/spring_garden_green/meta.json`
 - `src/features/invitation/shell/specs/spring_garden_green/theme.json`
 
@@ -1518,11 +1544,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/chibi_red/` (7 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/chibi_red/capabilities.json`
 - `src/features/invitation/shell/specs/chibi_red/cover.json`
 - `src/features/invitation/shell/specs/chibi_red/demo.json`
+- `src/features/invitation/shell/specs/chibi_red/gift.json`
 - `src/features/invitation/shell/specs/chibi_red/meta.json`
 - `src/features/invitation/shell/specs/chibi_red/theme.json`
 
@@ -1567,11 +1594,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/song-hac-red/` (16 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/song_hac_red/capabilities.json`
 - `src/features/invitation/shell/specs/song_hac_red/cover.json`
 - `src/features/invitation/shell/specs/song_hac_red/demo.json`
+- `src/features/invitation/shell/specs/song_hac_red/gift.json`
 - `src/features/invitation/shell/specs/song_hac_red/meta.json`
 - `src/features/invitation/shell/specs/song_hac_red/theme.json`
 
@@ -1623,11 +1651,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/nhat-binh-red/` (9 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/nhat_binh_red/capabilities.json`
 - `src/features/invitation/shell/specs/nhat_binh_red/cover.json`
 - `src/features/invitation/shell/specs/nhat_binh_red/demo.json`
+- `src/features/invitation/shell/specs/nhat_binh_red/gift.json`
 - `src/features/invitation/shell/specs/nhat_binh_red/meta.json`
 - `src/features/invitation/shell/specs/nhat_binh_red/theme.json`
 
@@ -1665,11 +1694,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/baroque_v2_darkgreen/cover.json` → khóa `baroque_v2_darkgreen`
 - Thư mục ảnh theme: `public/images/themes/baroque-v2-dark-green/` (12 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/baroque_v2_darkgreen/capabilities.json`
 - `src/features/invitation/shell/specs/baroque_v2_darkgreen/cover.json`
 - `src/features/invitation/shell/specs/baroque_v2_darkgreen/demo.json`
+- `src/features/invitation/shell/specs/baroque_v2_darkgreen/gift.json`
 - `src/features/invitation/shell/specs/baroque_v2_darkgreen/meta.json`
 - `src/features/invitation/shell/specs/baroque_v2_darkgreen/theme.json`
 
@@ -1738,11 +1768,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/baroque_v2_darkred/cover.json` → khóa `baroque_v2_darkred`
 - Thư mục ảnh theme: `public/images/themes/baroque-v2-dark-red/` (12 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/baroque_v2_darkred/capabilities.json`
 - `src/features/invitation/shell/specs/baroque_v2_darkred/cover.json`
 - `src/features/invitation/shell/specs/baroque_v2_darkred/demo.json`
+- `src/features/invitation/shell/specs/baroque_v2_darkred/gift.json`
 - `src/features/invitation/shell/specs/baroque_v2_darkred/meta.json`
 - `src/features/invitation/shell/specs/baroque_v2_darkred/theme.json`
 
@@ -1819,11 +1850,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/anhdao-pink/` (4 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/cherry_blossom_pink/capabilities.json`
 - `src/features/invitation/shell/specs/cherry_blossom_pink/cover.json`
 - `src/features/invitation/shell/specs/cherry_blossom_pink/demo.json`
+- `src/features/invitation/shell/specs/cherry_blossom_pink/gift.json`
 - `src/features/invitation/shell/specs/cherry_blossom_pink/meta.json`
 - `src/features/invitation/shell/specs/cherry_blossom_pink/theme.json`
 
@@ -1868,11 +1900,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/boho_floral_pink/cover.json` → khóa `boho_floral_pink`
 - Thư mục ảnh theme: `public/boho-floral-pink/` (0 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/boho_floral_pink/capabilities.json`
 - `src/features/invitation/shell/specs/boho_floral_pink/cover.json`
 - `src/features/invitation/shell/specs/boho_floral_pink/demo.json`
+- `src/features/invitation/shell/specs/boho_floral_pink/gift.json`
 - `src/features/invitation/shell/specs/boho_floral_pink/meta.json`
 - `src/features/invitation/shell/specs/boho_floral_pink/theme.json`
 
@@ -1912,11 +1945,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/applique_lace_white/cover.json` → khóa `applique_lace_white`
 - Thư mục ảnh theme: `public/images/themes/applique-lace-white/` (11 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/applique_lace_white/capabilities.json`
 - `src/features/invitation/shell/specs/applique_lace_white/cover.json`
 - `src/features/invitation/shell/specs/applique_lace_white/demo.json`
+- `src/features/invitation/shell/specs/applique_lace_white/gift.json`
 - `src/features/invitation/shell/specs/applique_lace_white/meta.json`
 - `src/features/invitation/shell/specs/applique_lace_white/theme.json`
 
@@ -1969,11 +2003,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/silkflora-brown/` (3 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/silk_flora_brown/capabilities.json`
 - `src/features/invitation/shell/specs/silk_flora_brown/cover.json`
 - `src/features/invitation/shell/specs/silk_flora_brown/demo.json`
+- `src/features/invitation/shell/specs/silk_flora_brown/gift.json`
 - `src/features/invitation/shell/specs/silk_flora_brown/meta.json`
 - `src/features/invitation/shell/specs/silk_flora_brown/theme.json`
 
@@ -2013,11 +2048,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/love-art/` (13 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/hoa_tinh_red/capabilities.json`
 - `src/features/invitation/shell/specs/hoa_tinh_red/cover.json`
 - `src/features/invitation/shell/specs/hoa_tinh_red/demo.json`
+- `src/features/invitation/shell/specs/hoa_tinh_red/gift.json`
 - `src/features/invitation/shell/specs/hoa_tinh_red/meta.json`
 - `src/features/invitation/shell/specs/hoa_tinh_red/theme.json`
 
@@ -2058,11 +2094,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/spring_garden_blue/cover.json` → khóa `spring_garden_blue`
 - Thư mục ảnh theme: `public/images/themes/vuon xuan blue/` (3 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/spring_garden_blue/capabilities.json`
 - `src/features/invitation/shell/specs/spring_garden_blue/cover.json`
 - `src/features/invitation/shell/specs/spring_garden_blue/demo.json`
+- `src/features/invitation/shell/specs/spring_garden_blue/gift.json`
 - `src/features/invitation/shell/specs/spring_garden_blue/meta.json`
 - `src/features/invitation/shell/specs/spring_garden_blue/theme.json`
 
@@ -2104,11 +2141,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/minimalism_darkblue/cover.json` → khóa `minimalism_darkblue`
 - Thư mục ảnh theme: `public/images/themes/minimalism-darkblue/` (0 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/minimalism_darkblue/capabilities.json`
 - `src/features/invitation/shell/specs/minimalism_darkblue/cover.json`
 - `src/features/invitation/shell/specs/minimalism_darkblue/demo.json`
+- `src/features/invitation/shell/specs/minimalism_darkblue/gift.json`
 - `src/features/invitation/shell/specs/minimalism_darkblue/meta.json`
 - `src/features/invitation/shell/specs/minimalism_darkblue/theme.json`
 
@@ -2148,11 +2186,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/royal-red/` (5 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/royal_red/capabilities.json`
 - `src/features/invitation/shell/specs/royal_red/cover.json`
 - `src/features/invitation/shell/specs/royal_red/demo.json`
+- `src/features/invitation/shell/specs/royal_red/gift.json`
 - `src/features/invitation/shell/specs/royal_red/meta.json`
 - `src/features/invitation/shell/specs/royal_red/theme.json`
 
@@ -2189,11 +2228,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/minimalism_red/cover.json` → khóa `minimalism_red`
 - Thư mục ảnh theme: `public/images/themes/minimalism-red/` (2 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/minimalism_red/capabilities.json`
 - `src/features/invitation/shell/specs/minimalism_red/cover.json`
 - `src/features/invitation/shell/specs/minimalism_red/demo.json`
+- `src/features/invitation/shell/specs/minimalism_red/gift.json`
 - `src/features/invitation/shell/specs/minimalism_red/meta.json`
 - `src/features/invitation/shell/specs/minimalism_red/theme.json`
 
@@ -2237,11 +2277,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/spring_garden_red/cover.json` → khóa `spring_garden_red`
 - Thư mục ảnh theme: `public/images/themes/vuon xuan red/` (6 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/spring_garden_red/capabilities.json`
 - `src/features/invitation/shell/specs/spring_garden_red/cover.json`
 - `src/features/invitation/shell/specs/spring_garden_red/demo.json`
+- `src/features/invitation/shell/specs/spring_garden_red/gift.json`
 - `src/features/invitation/shell/specs/spring_garden_red/meta.json`
 - `src/features/invitation/shell/specs/spring_garden_red/theme.json`
 
@@ -2305,11 +2346,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/dragon_phoenix_green/cover.json` → khóa `dragon_phoenix_green`
 - Thư mục ảnh theme: `public/images/themes/red-v1/` (4 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/dragon_phoenix_green/capabilities.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_green/cover.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_green/demo.json`
+- `src/features/invitation/shell/specs/dragon_phoenix_green/gift.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_green/meta.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_green/theme.json`
 
@@ -2349,11 +2391,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/baroque-gold/` (8 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/baroque_gold/capabilities.json`
 - `src/features/invitation/shell/specs/baroque_gold/cover.json`
 - `src/features/invitation/shell/specs/baroque_gold/demo.json`
+- `src/features/invitation/shell/specs/baroque_gold/gift.json`
 - `src/features/invitation/shell/specs/baroque_gold/meta.json`
 - `src/features/invitation/shell/specs/baroque_gold/theme.json`
 
@@ -2396,11 +2439,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/chateau-blue/` (13 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/chateau_blue/capabilities.json`
 - `src/features/invitation/shell/specs/chateau_blue/cover.json`
 - `src/features/invitation/shell/specs/chateau_blue/demo.json`
+- `src/features/invitation/shell/specs/chateau_blue/gift.json`
 - `src/features/invitation/shell/specs/chateau_blue/meta.json`
 - `src/features/invitation/shell/specs/chateau_blue/theme.json`
 
@@ -2451,11 +2495,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/songphung-green/` (6 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/double_phoenix_green/capabilities.json`
 - `src/features/invitation/shell/specs/double_phoenix_green/cover.json`
 - `src/features/invitation/shell/specs/double_phoenix_green/demo.json`
+- `src/features/invitation/shell/specs/double_phoenix_green/gift.json`
 - `src/features/invitation/shell/specs/double_phoenix_green/meta.json`
 - `src/features/invitation/shell/specs/double_phoenix_green/theme.json`
 
@@ -2499,11 +2544,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/boho_floral_brown/cover.json` → khóa `boho_floral_brown`
 - Thư mục ảnh theme: `public/boho-floral-brown/` (0 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/boho_floral_brown/capabilities.json`
 - `src/features/invitation/shell/specs/boho_floral_brown/cover.json`
 - `src/features/invitation/shell/specs/boho_floral_brown/demo.json`
+- `src/features/invitation/shell/specs/boho_floral_brown/gift.json`
 - `src/features/invitation/shell/specs/boho_floral_brown/meta.json`
 - `src/features/invitation/shell/specs/boho_floral_brown/theme.json`
 
@@ -2543,11 +2589,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/double_dragon_blue/cover.json` → khóa `double_dragon_blue`
 - Thư mục ảnh theme: `public/songlong-red/` (0 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/double_dragon_blue/capabilities.json`
 - `src/features/invitation/shell/specs/double_dragon_blue/cover.json`
 - `src/features/invitation/shell/specs/double_dragon_blue/demo.json`
+- `src/features/invitation/shell/specs/double_dragon_blue/gift.json`
 - `src/features/invitation/shell/specs/double_dragon_blue/meta.json`
 - `src/features/invitation/shell/specs/double_dragon_blue/theme.json`
 
@@ -2604,10 +2651,11 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/glass-garden-light-green/` (9 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (4)
+**Spec** (5)
 
 - `src/features/invitation/shell/specs/glass_garden_light_green/capabilities.json`
 - `src/features/invitation/shell/specs/glass_garden_light_green/demo.json`
+- `src/features/invitation/shell/specs/glass_garden_light_green/gift.json`
 - `src/features/invitation/shell/specs/glass_garden_light_green/meta.json`
 - `src/features/invitation/shell/specs/glass_garden_light_green/theme.json`
 
@@ -2644,11 +2692,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/crystal_floral_blue/cover.json` → khóa `crystal_floral_blue`
 - Thư mục ảnh theme: `public/images/themes/crystal-floral-blue/` (10 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/crystal_floral_blue/capabilities.json`
 - `src/features/invitation/shell/specs/crystal_floral_blue/cover.json`
 - `src/features/invitation/shell/specs/crystal_floral_blue/demo.json`
+- `src/features/invitation/shell/specs/crystal_floral_blue/gift.json`
 - `src/features/invitation/shell/specs/crystal_floral_blue/meta.json`
 - `src/features/invitation/shell/specs/crystal_floral_blue/theme.json`
 
@@ -2719,11 +2768,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/dragon_phoenix_blue/cover.json` → khóa `dragon_phoenix_blue`
 - Thư mục ảnh theme: `public/images/themes/red-v1/` (4 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/dragon_phoenix_blue/capabilities.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_blue/cover.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_blue/demo.json`
+- `src/features/invitation/shell/specs/dragon_phoenix_blue/gift.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_blue/meta.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_blue/theme.json`
 
@@ -2763,11 +2813,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/coba-red/` (2 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/co_ba_red/capabilities.json`
 - `src/features/invitation/shell/specs/co_ba_red/cover.json`
 - `src/features/invitation/shell/specs/co_ba_red/demo.json`
+- `src/features/invitation/shell/specs/co_ba_red/gift.json`
 - `src/features/invitation/shell/specs/co_ba_red/meta.json`
 - `src/features/invitation/shell/specs/co_ba_red/theme.json`
 
@@ -2799,11 +2850,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/lien-hoa-pink/` (13 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/lien_hoa_pink/capabilities.json`
 - `src/features/invitation/shell/specs/lien_hoa_pink/cover.json`
 - `src/features/invitation/shell/specs/lien_hoa_pink/demo.json`
+- `src/features/invitation/shell/specs/lien_hoa_pink/gift.json`
 - `src/features/invitation/shell/specs/lien_hoa_pink/meta.json`
 - `src/features/invitation/shell/specs/lien_hoa_pink/theme.json`
 
@@ -2851,11 +2903,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/minimalism_purple/cover.json` → khóa `minimalism_purple`
 - Thư mục ảnh theme: `public/images/themes/minimalism-purple/` (13 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/minimalism_purple/capabilities.json`
 - `src/features/invitation/shell/specs/minimalism_purple/cover.json`
 - `src/features/invitation/shell/specs/minimalism_purple/demo.json`
+- `src/features/invitation/shell/specs/minimalism_purple/gift.json`
 - `src/features/invitation/shell/specs/minimalism_purple/meta.json`
 - `src/features/invitation/shell/specs/minimalism_purple/theme.json`
 
@@ -2907,11 +2960,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/porcelain_v2_green/cover.json` → khóa `porcelain_v2_green`
 - Thư mục ảnh theme: `public/images/themes/porcelain-v2-green/` (6 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/porcelain_v2_green/capabilities.json`
 - `src/features/invitation/shell/specs/porcelain_v2_green/cover.json`
 - `src/features/invitation/shell/specs/porcelain_v2_green/demo.json`
+- `src/features/invitation/shell/specs/porcelain_v2_green/gift.json`
 - `src/features/invitation/shell/specs/porcelain_v2_green/meta.json`
 - `src/features/invitation/shell/specs/porcelain_v2_green/theme.json`
 
@@ -2977,11 +3031,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/dried-flower-v2-green/` (11 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/dried_flower_v2_green/capabilities.json`
 - `src/features/invitation/shell/specs/dried_flower_v2_green/cover.json`
 - `src/features/invitation/shell/specs/dried_flower_v2_green/demo.json`
+- `src/features/invitation/shell/specs/dried_flower_v2_green/gift.json`
 - `src/features/invitation/shell/specs/dried_flower_v2_green/meta.json`
 - `src/features/invitation/shell/specs/dried_flower_v2_green/theme.json`
 
@@ -3028,11 +3083,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/porcelain_v2_pink/cover.json` → khóa `porcelain_v2_pink`
 - Thư mục ảnh theme: `public/images/themes/porcelain-v2-pink/` (6 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/porcelain_v2_pink/capabilities.json`
 - `src/features/invitation/shell/specs/porcelain_v2_pink/cover.json`
 - `src/features/invitation/shell/specs/porcelain_v2_pink/demo.json`
+- `src/features/invitation/shell/specs/porcelain_v2_pink/gift.json`
 - `src/features/invitation/shell/specs/porcelain_v2_pink/meta.json`
 - `src/features/invitation/shell/specs/porcelain_v2_pink/theme.json`
 
@@ -3078,11 +3134,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/hoa-kho-v2-blue/` (11 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/hoa_kho_v2_blue/capabilities.json`
 - `src/features/invitation/shell/specs/hoa_kho_v2_blue/cover.json`
 - `src/features/invitation/shell/specs/hoa_kho_v2_blue/demo.json`
+- `src/features/invitation/shell/specs/hoa_kho_v2_blue/gift.json`
 - `src/features/invitation/shell/specs/hoa_kho_v2_blue/meta.json`
 - `src/features/invitation/shell/specs/hoa_kho_v2_blue/theme.json`
 
@@ -3129,11 +3186,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/dragon_phoenix_black/cover.json` → khóa `dragon_phoenix_black`
 - Thư mục ảnh theme: `public/images/themes/red-v1/` (4 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/dragon_phoenix_black/capabilities.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_black/cover.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_black/demo.json`
+- `src/features/invitation/shell/specs/dragon_phoenix_black/gift.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_black/meta.json`
 - `src/features/invitation/shell/specs/dragon_phoenix_black/theme.json`
 
@@ -3173,11 +3231,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/royal-v2-green/` (12 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/royal_v2_green/capabilities.json`
 - `src/features/invitation/shell/specs/royal_v2_green/cover.json`
 - `src/features/invitation/shell/specs/royal_v2_green/demo.json`
+- `src/features/invitation/shell/specs/royal_v2_green/gift.json`
 - `src/features/invitation/shell/specs/royal_v2_green/meta.json`
 - `src/features/invitation/shell/specs/royal_v2_green/theme.json`
 
@@ -3227,11 +3286,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/royal-green/` (5 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/royal_green/capabilities.json`
 - `src/features/invitation/shell/specs/royal_green/cover.json`
 - `src/features/invitation/shell/specs/royal_green/demo.json`
+- `src/features/invitation/shell/specs/royal_green/gift.json`
 - `src/features/invitation/shell/specs/royal_green/meta.json`
 - `src/features/invitation/shell/specs/royal_green/theme.json`
 
@@ -3269,11 +3329,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/baroque-blue/` (13 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/baroque_blue/capabilities.json`
 - `src/features/invitation/shell/specs/baroque_blue/cover.json`
 - `src/features/invitation/shell/specs/baroque_blue/demo.json`
+- `src/features/invitation/shell/specs/baroque_blue/gift.json`
 - `src/features/invitation/shell/specs/baroque_blue/meta.json`
 - `src/features/invitation/shell/specs/baroque_blue/theme.json`
 
@@ -3323,11 +3384,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/porcelain-brown/` (6 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/porcelain_brown/capabilities.json`
 - `src/features/invitation/shell/specs/porcelain_brown/cover.json`
 - `src/features/invitation/shell/specs/porcelain_brown/demo.json`
+- `src/features/invitation/shell/specs/porcelain_brown/gift.json`
 - `src/features/invitation/shell/specs/porcelain_brown/meta.json`
 - `src/features/invitation/shell/specs/porcelain_brown/theme.json`
 
@@ -3360,11 +3422,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/crystal_floral_red/cover.json` → khóa `crystal_floral_red`
 - Thư mục ảnh theme: `public/images/themes/crystal-floral-red/` (11 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/crystal_floral_red/capabilities.json`
 - `src/features/invitation/shell/specs/crystal_floral_red/cover.json`
 - `src/features/invitation/shell/specs/crystal_floral_red/demo.json`
+- `src/features/invitation/shell/specs/crystal_floral_red/gift.json`
 - `src/features/invitation/shell/specs/crystal_floral_red/meta.json`
 - `src/features/invitation/shell/specs/crystal_floral_red/theme.json`
 
@@ -3437,11 +3500,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/royal-blue/` (5 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/royal_blue/capabilities.json`
 - `src/features/invitation/shell/specs/royal_blue/cover.json`
 - `src/features/invitation/shell/specs/royal_blue/demo.json`
+- `src/features/invitation/shell/specs/royal_blue/gift.json`
 - `src/features/invitation/shell/specs/royal_blue/meta.json`
 - `src/features/invitation/shell/specs/royal_blue/theme.json`
 
@@ -3480,11 +3544,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/riviera-blue/` (24 file)
 - Ghi chú: Đạt 0 lệch hình học theo AGENTS.md
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/riviera_blue/capabilities.json`
 - `src/features/invitation/shell/specs/riviera_blue/cover.json`
 - `src/features/invitation/shell/specs/riviera_blue/demo.json`
+- `src/features/invitation/shell/specs/riviera_blue/gift.json`
 - `src/features/invitation/shell/specs/riviera_blue/meta.json`
 - `src/features/invitation/shell/specs/riviera_blue/theme.json`
 
@@ -3590,11 +3655,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/florence-brown/` (19 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/florence_brown/capabilities.json`
 - `src/features/invitation/shell/specs/florence_brown/cover.json`
 - `src/features/invitation/shell/specs/florence_brown/demo.json`
+- `src/features/invitation/shell/specs/florence_brown/gift.json`
 - `src/features/invitation/shell/specs/florence_brown/meta.json`
 - `src/features/invitation/shell/specs/florence_brown/theme.json`
 
@@ -3660,11 +3726,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/baroque_v2_darkblue/cover.json` → khóa `baroque_v2_darkblue`
 - Thư mục ảnh theme: `public/images/themes/baroque-v2-dark-blue/` (12 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/baroque_v2_darkblue/capabilities.json`
 - `src/features/invitation/shell/specs/baroque_v2_darkblue/cover.json`
 - `src/features/invitation/shell/specs/baroque_v2_darkblue/demo.json`
+- `src/features/invitation/shell/specs/baroque_v2_darkblue/gift.json`
 - `src/features/invitation/shell/specs/baroque_v2_darkblue/meta.json`
 - `src/features/invitation/shell/specs/baroque_v2_darkblue/theme.json`
 
@@ -3734,11 +3801,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/jasmine_green/cover.json` → khóa `jasmine_green`
 - Thư mục ảnh theme: `public/images/themes/jasmine-green/` (27 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/jasmine_green/capabilities.json`
 - `src/features/invitation/shell/specs/jasmine_green/cover.json`
 - `src/features/invitation/shell/specs/jasmine_green/demo.json`
+- `src/features/invitation/shell/specs/jasmine_green/gift.json`
 - `src/features/invitation/shell/specs/jasmine_green/meta.json`
 - `src/features/invitation/shell/specs/jasmine_green/theme.json`
 
@@ -3830,11 +3898,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/sunflower/` (7 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/sunflower_yellow/capabilities.json`
 - `src/features/invitation/shell/specs/sunflower_yellow/cover.json`
 - `src/features/invitation/shell/specs/sunflower_yellow/demo.json`
+- `src/features/invitation/shell/specs/sunflower_yellow/gift.json`
 - `src/features/invitation/shell/specs/sunflower_yellow/meta.json`
 - `src/features/invitation/shell/specs/sunflower_yellow/theme.json`
 
@@ -3878,11 +3947,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/crystal_floral_green/cover.json` → khóa `crystal_floral_green`
 - Thư mục ảnh theme: `public/images/themes/crystal-floral-green/` (11 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/crystal_floral_green/capabilities.json`
 - `src/features/invitation/shell/specs/crystal_floral_green/cover.json`
 - `src/features/invitation/shell/specs/crystal_floral_green/demo.json`
+- `src/features/invitation/shell/specs/crystal_floral_green/gift.json`
 - `src/features/invitation/shell/specs/crystal_floral_green/meta.json`
 - `src/features/invitation/shell/specs/crystal_floral_green/theme.json`
 
@@ -3954,10 +4024,11 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/santorini-blue/` (18 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (4)
+**Spec** (5)
 
 - `src/features/invitation/shell/specs/santorini_blue/capabilities.json`
 - `src/features/invitation/shell/specs/santorini_blue/demo.json`
+- `src/features/invitation/shell/specs/santorini_blue/gift.json`
 - `src/features/invitation/shell/specs/santorini_blue/meta.json`
 - `src/features/invitation/shell/specs/santorini_blue/theme.json`
 
@@ -4009,11 +4080,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Bìa: `src/features/invitation/shell/specs/porcelain_v2_red/cover.json` → khóa `porcelain_v2_red`
 - Thư mục ảnh theme: `public/images/themes/porcelain-v2-red/` (6 file)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/porcelain_v2_red/capabilities.json`
 - `src/features/invitation/shell/specs/porcelain_v2_red/cover.json`
 - `src/features/invitation/shell/specs/porcelain_v2_red/demo.json`
+- `src/features/invitation/shell/specs/porcelain_v2_red/gift.json`
 - `src/features/invitation/shell/specs/porcelain_v2_red/meta.json`
 - `src/features/invitation/shell/specs/porcelain_v2_red/theme.json`
 
@@ -4059,11 +4131,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/porcelain-blue/` (5 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/porcelain_blue/capabilities.json`
 - `src/features/invitation/shell/specs/porcelain_blue/cover.json`
 - `src/features/invitation/shell/specs/porcelain_blue/demo.json`
+- `src/features/invitation/shell/specs/porcelain_blue/gift.json`
 - `src/features/invitation/shell/specs/porcelain_blue/meta.json`
 - `src/features/invitation/shell/specs/porcelain_blue/theme.json`
 
@@ -4095,10 +4168,11 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/folk-floral-blue/` (11 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (4)
+**Spec** (5)
 
 - `src/features/invitation/shell/specs/folk_floral_blue/capabilities.json`
 - `src/features/invitation/shell/specs/folk_floral_blue/demo.json`
+- `src/features/invitation/shell/specs/folk_floral_blue/gift.json`
 - `src/features/invitation/shell/specs/folk_floral_blue/meta.json`
 - `src/features/invitation/shell/specs/folk_floral_blue/theme.json`
 
@@ -4137,11 +4211,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/porcelain-red/` (5 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/porcelain_red/capabilities.json`
 - `src/features/invitation/shell/specs/porcelain_red/cover.json`
 - `src/features/invitation/shell/specs/porcelain_red/demo.json`
+- `src/features/invitation/shell/specs/porcelain_red/gift.json`
 - `src/features/invitation/shell/specs/porcelain_red/meta.json`
 - `src/features/invitation/shell/specs/porcelain_red/theme.json`
 
@@ -4174,11 +4249,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/hoa-dai-pink/` (9 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/hoa_dai_pink/capabilities.json`
 - `src/features/invitation/shell/specs/hoa_dai_pink/cover.json`
 - `src/features/invitation/shell/specs/hoa_dai_pink/demo.json`
+- `src/features/invitation/shell/specs/hoa_dai_pink/gift.json`
 - `src/features/invitation/shell/specs/hoa_dai_pink/meta.json`
 - `src/features/invitation/shell/specs/hoa_dai_pink/theme.json`
 
@@ -4224,10 +4300,11 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/qasr-blue/` (19 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (4)
+**Spec** (5)
 
 - `src/features/invitation/shell/specs/qasr_blue/capabilities.json`
 - `src/features/invitation/shell/specs/qasr_blue/demo.json`
+- `src/features/invitation/shell/specs/qasr_blue/gift.json`
 - `src/features/invitation/shell/specs/qasr_blue/meta.json`
 - `src/features/invitation/shell/specs/qasr_blue/theme.json`
 
@@ -4282,11 +4359,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/san-miguel-yellow/` (20 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/san_miguel_yellow/capabilities.json`
 - `src/features/invitation/shell/specs/san_miguel_yellow/cover.json`
 - `src/features/invitation/shell/specs/san_miguel_yellow/demo.json`
+- `src/features/invitation/shell/specs/san_miguel_yellow/gift.json`
 - `src/features/invitation/shell/specs/san_miguel_yellow/meta.json`
 - `src/features/invitation/shell/specs/san_miguel_yellow/theme.json`
 
@@ -4344,11 +4422,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/glass-garden-blue/` (8 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/glass_garden_blue/capabilities.json`
 - `src/features/invitation/shell/specs/glass_garden_blue/cover.json`
 - `src/features/invitation/shell/specs/glass_garden_blue/demo.json`
+- `src/features/invitation/shell/specs/glass_garden_blue/gift.json`
 - `src/features/invitation/shell/specs/glass_garden_blue/meta.json`
 - `src/features/invitation/shell/specs/glass_garden_blue/theme.json`
 
@@ -4385,11 +4464,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/royal-v2-purple/` (15 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/royal_v2_purple/capabilities.json`
 - `src/features/invitation/shell/specs/royal_v2_purple/cover.json`
 - `src/features/invitation/shell/specs/royal_v2_purple/demo.json`
+- `src/features/invitation/shell/specs/royal_v2_purple/gift.json`
 - `src/features/invitation/shell/specs/royal_v2_purple/meta.json`
 - `src/features/invitation/shell/specs/royal_v2_purple/theme.json`
 
@@ -4442,11 +4522,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/hoa-kho-orange/` (8 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/hoa_kho_orange/capabilities.json`
 - `src/features/invitation/shell/specs/hoa_kho_orange/cover.json`
 - `src/features/invitation/shell/specs/hoa_kho_orange/demo.json`
+- `src/features/invitation/shell/specs/hoa_kho_orange/gift.json`
 - `src/features/invitation/shell/specs/hoa_kho_orange/meta.json`
 - `src/features/invitation/shell/specs/hoa_kho_orange/theme.json`
 
@@ -4491,11 +4572,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/mahal-gold/` (18 file)
 - Ghi chú: Theme+bìa+ảnh đo lại 2026-11-11; Lightbox riêng còn ghi cứng ảnh demo
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/mahal_gold/capabilities.json`
 - `src/features/invitation/shell/specs/mahal_gold/cover.json`
 - `src/features/invitation/shell/specs/mahal_gold/demo.json`
+- `src/features/invitation/shell/specs/mahal_gold/gift.json`
 - `src/features/invitation/shell/specs/mahal_gold/meta.json`
 - `src/features/invitation/shell/specs/mahal_gold/theme.json`
 
@@ -4548,10 +4630,11 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/floral-fiesta-yellow/` (31 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (4)
+**Spec** (5)
 
 - `src/features/invitation/shell/specs/floral_fiesta_yellow/capabilities.json`
 - `src/features/invitation/shell/specs/floral_fiesta_yellow/demo.json`
+- `src/features/invitation/shell/specs/floral_fiesta_yellow/gift.json`
 - `src/features/invitation/shell/specs/floral_fiesta_yellow/meta.json`
 - `src/features/invitation/shell/specs/floral_fiesta_yellow/theme.json`
 
@@ -4621,10 +4704,11 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/nomad-brown/` (18 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (4)
+**Spec** (5)
 
 - `src/features/invitation/shell/specs/nomad_brown/capabilities.json`
 - `src/features/invitation/shell/specs/nomad_brown/demo.json`
+- `src/features/invitation/shell/specs/nomad_brown/gift.json`
 - `src/features/invitation/shell/specs/nomad_brown/meta.json`
 - `src/features/invitation/shell/specs/nomad_brown/theme.json`
 
@@ -4679,10 +4763,11 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/saraya-gold/` (17 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (4)
+**Spec** (5)
 
 - `src/features/invitation/shell/specs/saraya_gold/capabilities.json`
 - `src/features/invitation/shell/specs/saraya_gold/demo.json`
+- `src/features/invitation/shell/specs/saraya_gold/gift.json`
 - `src/features/invitation/shell/specs/saraya_gold/meta.json`
 - `src/features/invitation/shell/specs/saraya_gold/theme.json`
 
@@ -4734,10 +4819,11 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/qasr-gold/` (5 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (4)
+**Spec** (5)
 
 - `src/features/invitation/shell/specs/qasr_gold/capabilities.json`
 - `src/features/invitation/shell/specs/qasr_gold/demo.json`
+- `src/features/invitation/shell/specs/qasr_gold/gift.json`
 - `src/features/invitation/shell/specs/qasr_gold/meta.json`
 - `src/features/invitation/shell/specs/qasr_gold/theme.json`
 
@@ -4777,10 +4863,11 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/qasr-green/` (12 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (4)
+**Spec** (5)
 
 - `src/features/invitation/shell/specs/qasr_green/capabilities.json`
 - `src/features/invitation/shell/specs/qasr_green/demo.json`
+- `src/features/invitation/shell/specs/qasr_green/gift.json`
 - `src/features/invitation/shell/specs/qasr_green/meta.json`
 - `src/features/invitation/shell/specs/qasr_green/theme.json`
 
@@ -4828,11 +4915,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/mandap-darkred/` (17 file)
 - Ghi chú: Theme+bìa+ảnh đo lại 2026-11-11; thiếu Lightbox
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/mandap_darkred/capabilities.json`
 - `src/features/invitation/shell/specs/mandap_darkred/cover.json`
 - `src/features/invitation/shell/specs/mandap_darkred/demo.json`
+- `src/features/invitation/shell/specs/mandap_darkred/gift.json`
 - `src/features/invitation/shell/specs/mandap_darkred/meta.json`
 - `src/features/invitation/shell/specs/mandap_darkred/theme.json`
 
@@ -4886,10 +4974,11 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/brocade-flower-red/` (12 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (4)
+**Spec** (5)
 
 - `src/features/invitation/shell/specs/brocade_flower_red/capabilities.json`
 - `src/features/invitation/shell/specs/brocade_flower_red/demo.json`
+- `src/features/invitation/shell/specs/brocade_flower_red/gift.json`
 - `src/features/invitation/shell/specs/brocade_flower_red/meta.json`
 - `src/features/invitation/shell/specs/brocade_flower_red/theme.json`
 
@@ -4938,11 +5027,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/calla-lily-white/` (8 file)
 - Ghi chú: Họ mới, dựng 2026-11-11; so mắt bìa + thiệp mở, chưa chạy diff_dump/editor-sync
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/calla_lily_white/capabilities.json`
 - `src/features/invitation/shell/specs/calla_lily_white/cover.json`
 - `src/features/invitation/shell/specs/calla_lily_white/demo.json`
+- `src/features/invitation/shell/specs/calla_lily_white/gift.json`
 - `src/features/invitation/shell/specs/calla_lily_white/meta.json`
 - `src/features/invitation/shell/specs/calla_lily_white/theme.json`
 
@@ -4992,11 +5082,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/mandap-yellow/` (20 file)
 - Ghi chú: Họ mới, dựng 2026-11-11; stWidth=min(100vw,900px); chưa chạy diff_dump/editor-sync
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/mandap_yellow/capabilities.json`
 - `src/features/invitation/shell/specs/mandap_yellow/cover.json`
 - `src/features/invitation/shell/specs/mandap_yellow/demo.json`
+- `src/features/invitation/shell/specs/mandap_yellow/gift.json`
 - `src/features/invitation/shell/specs/mandap_yellow/meta.json`
 - `src/features/invitation/shell/specs/mandap_yellow/theme.json`
 
@@ -5071,11 +5162,12 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/mahal-pink/` (24 file)
 - Ghi chú: Họ mới, dựng 2026-11-11; chưa chạy diff_dump/editor-sync
 
-**Spec** (5)
+**Spec** (6)
 
 - `src/features/invitation/shell/specs/mahal_pink/capabilities.json`
 - `src/features/invitation/shell/specs/mahal_pink/cover.json`
 - `src/features/invitation/shell/specs/mahal_pink/demo.json`
+- `src/features/invitation/shell/specs/mahal_pink/gift.json`
 - `src/features/invitation/shell/specs/mahal_pink/meta.json`
 - `src/features/invitation/shell/specs/mahal_pink/theme.json`
 
@@ -5144,10 +5236,194 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 ## Thay đổi ở lần quét gần nhất
 
-_Không có thay đổi so với lần quét trước._
+- **minimalism_darkred** — file mới
+  - `src/features/invitation/shell/specs/minimalism_darkred/gift.json`
+- **minimalism_brown** — file mới
+  - `src/features/invitation/shell/specs/minimalism_brown/gift.json`
+- **song_hy_green** — file mới
+  - `src/features/invitation/shell/specs/song_hy_green/gift.json`
+- **boho_floral_green** — file mới
+  - `src/features/invitation/shell/specs/boho_floral_green/gift.json`
+- **song_hy_v2_red** — file mới
+  - `src/features/invitation/shell/specs/song_hy_v2_red/gift.json`
+- **song_hy_red** — file mới
+  - `src/features/invitation/shell/specs/song_hy_red/gift.json`
+- **silk_ribbon_green** — file mới
+  - `src/features/invitation/shell/specs/silk_ribbon_green/gift.json`
+- **minimalism_green** — file mới
+  - `src/features/invitation/shell/specs/minimalism_green/gift.json`
+- **jasmine_white** — file mới
+  - `src/features/invitation/shell/specs/jasmine_white/gift.json`
+- **dragon_phoenix_v3_red** — file mới
+  - `src/features/invitation/shell/specs/dragon_phoenix_v3_red/gift.json`
+- **dragon_phoenix_red** — file mới
+  - `src/features/invitation/shell/specs/dragon_phoenix_red/gift.json`
+- **silk_ribbon_darkred** — file mới
+  - `src/features/invitation/shell/specs/silk_ribbon_darkred/gift.json`
+- **minimalism_darkbrown** — file mới
+  - `src/features/invitation/shell/specs/minimalism_darkbrown/gift.json`
+- **dragon_phoenix_v2_red** — file mới
+  - `src/features/invitation/shell/specs/dragon_phoenix_v2_red/gift.json`
+- **double_dragon_red** — file mới
+  - `src/features/invitation/shell/specs/double_dragon_red/gift.json`
+- **glass_garden_green** — file mới
+  - `src/features/invitation/shell/specs/glass_garden_green/gift.json`
+- **double_phoenix_red** — file mới
+  - `src/features/invitation/shell/specs/double_phoenix_red/gift.json`
+- **double_dragon_green** — file mới
+  - `src/features/invitation/shell/specs/double_dragon_green/gift.json`
+- **glass_garden_pink** — file mới
+  - `src/features/invitation/shell/specs/glass_garden_pink/gift.json`
+- **marble_yellow** — file mới
+  - `src/features/invitation/shell/specs/marble_yellow/gift.json`
+- **elegant_leaf_green** — file mới
+  - `src/features/invitation/shell/specs/elegant_leaf_green/gift.json`
+- **silk_ribbon_pink** — file mới
+  - `src/features/invitation/shell/specs/silk_ribbon_pink/gift.json`
+- **dragon_phoenix_v4_red** — file mới
+  - `src/features/invitation/shell/specs/dragon_phoenix_v4_red/gift.json`
+- **lien_hoa_v2_green** — file mới
+  - `src/features/invitation/shell/specs/lien_hoa_v2_green/gift.json`
+- **chateau_green** — file mới
+  - `src/features/invitation/shell/specs/chateau_green/gift.json`
+- **spring_garden_green** — file mới
+  - `src/features/invitation/shell/specs/spring_garden_green/gift.json`
+- **chibi_red** — file mới
+  - `src/features/invitation/shell/specs/chibi_red/gift.json`
+- **song_hac_red** — file mới
+  - `src/features/invitation/shell/specs/song_hac_red/gift.json`
+- **nhat_binh_red** — file mới
+  - `src/features/invitation/shell/specs/nhat_binh_red/gift.json`
+- **baroque_v2_darkgreen** — file mới
+  - `src/features/invitation/shell/specs/baroque_v2_darkgreen/gift.json`
+- **baroque_v2_darkred** — file mới
+  - `src/features/invitation/shell/specs/baroque_v2_darkred/gift.json`
+- **cherry_blossom_pink** — file mới
+  - `src/features/invitation/shell/specs/cherry_blossom_pink/gift.json`
+- **boho_floral_pink** — file mới
+  - `src/features/invitation/shell/specs/boho_floral_pink/gift.json`
+- **applique_lace_white** — file mới
+  - `src/features/invitation/shell/specs/applique_lace_white/gift.json`
+- **silk_flora_brown** — file mới
+  - `src/features/invitation/shell/specs/silk_flora_brown/gift.json`
+- **hoa_tinh_red** — file mới
+  - `src/features/invitation/shell/specs/hoa_tinh_red/gift.json`
+- **spring_garden_blue** — file mới
+  - `src/features/invitation/shell/specs/spring_garden_blue/gift.json`
+- **minimalism_darkblue** — file mới
+  - `src/features/invitation/shell/specs/minimalism_darkblue/gift.json`
+- **royal_red** — file mới
+  - `src/features/invitation/shell/specs/royal_red/gift.json`
+- **minimalism_red** — file mới
+  - `src/features/invitation/shell/specs/minimalism_red/gift.json`
+- **spring_garden_red** — file mới
+  - `src/features/invitation/shell/specs/spring_garden_red/gift.json`
+- **dragon_phoenix_green** — file mới
+  - `src/features/invitation/shell/specs/dragon_phoenix_green/gift.json`
+- **baroque_gold** — file mới
+  - `src/features/invitation/shell/specs/baroque_gold/gift.json`
+- **chateau_blue** — file mới
+  - `src/features/invitation/shell/specs/chateau_blue/gift.json`
+- **double_phoenix_green** — file mới
+  - `src/features/invitation/shell/specs/double_phoenix_green/gift.json`
+- **boho_floral_brown** — file mới
+  - `src/features/invitation/shell/specs/boho_floral_brown/gift.json`
+- **double_dragon_blue** — file mới
+  - `src/features/invitation/shell/specs/double_dragon_blue/gift.json`
+- **glass_garden_light_green** — file mới
+  - `src/features/invitation/shell/specs/glass_garden_light_green/gift.json`
+- **crystal_floral_blue** — file mới
+  - `src/features/invitation/shell/specs/crystal_floral_blue/gift.json`
+- **dragon_phoenix_blue** — file mới
+  - `src/features/invitation/shell/specs/dragon_phoenix_blue/gift.json`
+- **co_ba_red** — file mới
+  - `src/features/invitation/shell/specs/co_ba_red/gift.json`
+- **lien_hoa_pink** — file mới
+  - `src/features/invitation/shell/specs/lien_hoa_pink/gift.json`
+- **minimalism_purple** — file mới
+  - `src/features/invitation/shell/specs/minimalism_purple/gift.json`
+- **porcelain_v2_green** — file mới
+  - `src/features/invitation/shell/specs/porcelain_v2_green/gift.json`
+- **dried_flower_v2_green** — file mới
+  - `src/features/invitation/shell/specs/dried_flower_v2_green/gift.json`
+- **porcelain_v2_pink** — file mới
+  - `src/features/invitation/shell/specs/porcelain_v2_pink/gift.json`
+- **hoa_kho_v2_blue** — file mới
+  - `src/features/invitation/shell/specs/hoa_kho_v2_blue/gift.json`
+- **dragon_phoenix_black** — file mới
+  - `src/features/invitation/shell/specs/dragon_phoenix_black/gift.json`
+- **royal_v2_green** — file mới
+  - `src/features/invitation/shell/specs/royal_v2_green/gift.json`
+- **royal_green** — file mới
+  - `src/features/invitation/shell/specs/royal_green/gift.json`
+- **baroque_blue** — file mới
+  - `src/features/invitation/shell/specs/baroque_blue/gift.json`
+- **porcelain_brown** — file mới
+  - `src/features/invitation/shell/specs/porcelain_brown/gift.json`
+- **crystal_floral_red** — file mới
+  - `src/features/invitation/shell/specs/crystal_floral_red/gift.json`
+- **royal_blue** — file mới
+  - `src/features/invitation/shell/specs/royal_blue/gift.json`
+- **riviera_blue** — file mới
+  - `src/features/invitation/shell/specs/riviera_blue/gift.json`
+- **florence_brown** — file mới
+  - `src/features/invitation/shell/specs/florence_brown/gift.json`
+- **baroque_v2_darkblue** — file mới
+  - `src/features/invitation/shell/specs/baroque_v2_darkblue/gift.json`
+- **jasmine_green** — file mới
+  - `src/features/invitation/shell/specs/jasmine_green/gift.json`
+- **sunflower_yellow** — file mới
+  - `src/features/invitation/shell/specs/sunflower_yellow/gift.json`
+- **crystal_floral_green** — file mới
+  - `src/features/invitation/shell/specs/crystal_floral_green/gift.json`
+- **santorini_blue** — file mới
+  - `src/features/invitation/shell/specs/santorini_blue/gift.json`
+- **porcelain_v2_red** — file mới
+  - `src/features/invitation/shell/specs/porcelain_v2_red/gift.json`
+- **porcelain_blue** — file mới
+  - `src/features/invitation/shell/specs/porcelain_blue/gift.json`
+- **folk_floral_blue** — file mới
+  - `src/features/invitation/shell/specs/folk_floral_blue/gift.json`
+- **porcelain_red** — file mới
+  - `src/features/invitation/shell/specs/porcelain_red/gift.json`
+- **hoa_dai_pink** — file mới
+  - `src/features/invitation/shell/specs/hoa_dai_pink/gift.json`
+- **qasr_blue** — file mới
+  - `src/features/invitation/shell/specs/qasr_blue/gift.json`
+- **san_miguel_yellow** — file mới
+  - `src/features/invitation/shell/specs/san_miguel_yellow/gift.json`
+- **glass_garden_blue** — file mới
+  - `src/features/invitation/shell/specs/glass_garden_blue/gift.json`
+- **royal_v2_purple** — file mới
+  - `src/features/invitation/shell/specs/royal_v2_purple/gift.json`
+- **hoa_kho_orange** — file mới
+  - `src/features/invitation/shell/specs/hoa_kho_orange/gift.json`
+- **mahal_gold** — file mới
+  - `src/features/invitation/shell/specs/mahal_gold/gift.json`
+- **floral_fiesta_yellow** — file mới
+  - `src/features/invitation/shell/specs/floral_fiesta_yellow/gift.json`
+- **nomad_brown** — file mới
+  - `src/features/invitation/shell/specs/nomad_brown/gift.json`
+- **saraya_gold** — file mới
+  - `src/features/invitation/shell/specs/saraya_gold/gift.json`
+- **qasr_gold** — file mới
+  - `src/features/invitation/shell/specs/qasr_gold/gift.json`
+- **qasr_green** — file mới
+  - `src/features/invitation/shell/specs/qasr_green/gift.json`
+- **mandap_darkred** — file mới
+  - `src/features/invitation/shell/specs/mandap_darkred/gift.json`
+- **brocade_flower_red** — file mới
+  - `src/features/invitation/shell/specs/brocade_flower_red/gift.json`
+- **calla_lily_white** — file mới
+  - `src/features/invitation/shell/specs/calla_lily_white/gift.json`
+- **mandap_yellow** — file mới
+  - `src/features/invitation/shell/specs/mandap_yellow/gift.json`
+- **mahal_pink** — file mới
+  - `src/features/invitation/shell/specs/mahal_pink/gift.json`
 
 ## Lịch sử các lần quét
 
+- 2026-11-16 09:30 — 92 thay đổi: minimalism_darkred: file mới; minimalism_brown: file mới; song_hy_green: file mới; boho_floral_green: file mới; song_hy_v2_red: file mới; song_hy_red: file mới…
 - 2026-11-16 09:04 — 0 thay đổi
 - 2026-11-16 09:02 — 162 thay đổi: minimalism_darkred: file mới; minimalism_darkred: file mất; minimalism_brown: file mới; minimalism_brown: file mất; song_hy_green: file mới; song_hy_green: file mất…
 - 2026-11-16 08:56 — 165 thay đổi: minimalism_darkred: file mới; minimalism_darkred: file đã cập nhật; minimalism_brown: file mới; song_hy_green: file mới; song_hy_green: file đã cập nhật; boho_floral_green: file mới…

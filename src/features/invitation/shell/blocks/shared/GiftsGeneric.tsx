@@ -1,11 +1,11 @@
 import React from "react";
 import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx";
-import { GIFT_SPECS, type GiftSpec } from "./giftSpecs.generated";
+import { GIFT_SPECS, type GiftSpec } from "./giftSpecs";
 import { giftKindToMode } from "./giftDefaults";
 import { AltGiftWidget, ENVELOPE_CSS, cssObj } from "./GiftWidgets";
 
 /**
- * Khối "Hộp Quà Mừng" dùng chung cho mọi mẫu, dựng từ dữ liệu của từng mẫu (giftSpecs.generated.ts, sinh bởi
+ * Khối "Hộp Quà Mừng" dùng chung cho mọi mẫu, dựng từ dữ liệu của từng mẫu (`specs/<id>/gift.json` qua giftSpecs.ts, sinh bởi
  * scripts/clone/gen_gift_sections.cjs từ docs/survey/raw/gift_<id>.json): khung, tiêu đề, nút hộp quà/phong bì mặc định
  * và cửa sổ QR. Người dùng chọn kiểu hiển thị (d.giftDisplayMode): hộp quà 3D | phong bì | hiện QR trực tiếp.
  *  - Kiểu trùng mặc định của mẫu: dùng nguyên markup đã thu.
