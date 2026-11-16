@@ -108,7 +108,7 @@ Mục tiêu: bỏ đường hiển thị cũ `Preview.tsx` (1.4k dòng). Hiện 
 | B2 | Tạo cửa vào mỏng `invitation/view/InvitationView.tsx`: chọn bìa (`covers/`) → mở thiệp → `InvitationShell`; chuyển phần dùng chung còn sống trong Preview (nhạc, chuyển cảnh mở thiệp, khung thiết bị nếu có) sang đây | mới |
 | B3 | EditorPage và Demo gọi `InvitationView` thay `Preview` | `editor/EditorPage.tsx`, `pages/Demo.tsx` |
 | B4 | Xóa `Preview.tsx` và những gì chỉ nó dùng: `LongPhungV2`, `MinimalismDarkRed`, `generated/headers.*`, `SignatureCovers` (nếu chỉ Preview gọi) | `invitation/components/` |
-| B5 | Dọn `Demo.tsx`: dữ liệu demo cứng theo từng mẫu (`isDarkRed`, `isBrown`, `lien_hoa_v2_green`…) chuyển hết vào `specs/<id>/demo.json` | `pages/Demo.tsx`, `specs/*/demo.json` |
+| B5 (dời sang giai đoạn C, làm cùng việc gom cấu hình) | Dọn `Demo.tsx`: dữ liệu demo cứng theo từng mẫu (`isDarkRed`, `isBrown`, `lien_hoa_v2_green`…) chuyển hết vào `specs/<id>/demo.json` | `pages/Demo.tsx`, `specs/*/demo.json` |
 | B6 | CSS cũ: tìm luật `sp-*`, `.theme-*` trong `styles.css` không còn class nào dùng (grep toàn `src/`) → xóa | `styles/styles.css` (241 luật nghi ngờ) |
 
 **Xong khi**: bộ kiểm tra chung đạt, **thêm** `diff_dump` 3 mẫu chuẩn × 390/768/1280 vẫn 0 lệch như trước; `grep Preview src/` = 0.
@@ -193,3 +193,7 @@ Khi A–D ổn định: chuyển phần app (trang, header, editor) từ Tailwin
 - Không đổi số đo đã khớp: chụp mốc `local_dump` trước mỗi giai đoạn, so `cmp_dumps` sau.
 - Tệp sinh (`blocks/riviera|traditional/*`, `giftSpecs.generated.ts`, `giftAssets.generated.ts`) sửa bằng bộ sinh, không sửa tay.
 - Mỗi giai đoạn: nhánh riêng từ `fix/clone-match`, commit theo nhóm, chờ duyệt trước khi push.
+
+## 6. Nhật ký thực hiện
+- **A (xong, đã gộp vào `fix/clone-match`)**: `npm run check` + mốc; xóa editor cũ/HeroPhoto/HoaMocXanh; sắp lại `scripts/`, `docs/`.
+- **B (xong trên `refactor/phase-b`)**: `InvitationView` thay `Preview.tsx` (xóa thêm LongPhungV2, MinimalismDarkRed, generated/headers.tsx, −2.550 dòng); dọn 810 khối CSS cũ (−102 KB) bằng `prune-css.mjs`. Kiểm tra: 92 mẫu × open 390/1280 giống mốc (dump-all), 26 trang/khổ app giống mốc (page-prints), build, `npm run check`. B5 dời sang C. Chưa dọn: `generated/headers.css` (3 keyframes thừa), lớp bọc `theme-*`/`palette-plain` vẫn giữ.
