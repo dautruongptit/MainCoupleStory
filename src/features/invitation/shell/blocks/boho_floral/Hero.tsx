@@ -8,18 +8,18 @@ export function Hero({ ctx }: { ctx: InvitationCtx }) {
   const groomPhoto =
     (d.photos && d.photos[0]) ||
     (theme.isGreen
-      ? "https://assets.chungdoi.com/photo-library/design/5b2fafb74f1aa84ca843acded191b5e4629c62f9b73820281864f27167312b06.webp"
+      ? "/images/photo-library/design/5b2fafb74f1aa84ca843acded191b5e4629c62f9b73820281864f27167312b06.webp"
       : theme.isPink
-      ? "https://assets.chungdoi.com/photo-library/design/a0666f1639ce05b0a9478c751fbb2d7c00986fe850d2107b1caf49710ac9e5cf.webp"
-      : "https://assets.chungdoi.com/photo-library/design/9c1c61b16fa1ff694846b781f371bc3b437a49a092300a1778bdd9ed56ff81d9.webp");
+      ? "/images/photo-library/design/a0666f1639ce05b0a9478c751fbb2d7c00986fe850d2107b1caf49710ac9e5cf.webp"
+      : "/images/photo-library/design/9c1c61b16fa1ff694846b781f371bc3b437a49a092300a1778bdd9ed56ff81d9.webp");
 
   const bridePhoto =
     (d.photos && d.photos[1]) ||
     (theme.isGreen
-      ? "https://assets.chungdoi.com/photo-library/design/3fcfad216695abf4dbd4198edb2ba4d451546d5e1231aafbc66559e164daad27.webp"
+      ? "/images/photo-library/design/3fcfad216695abf4dbd4198edb2ba4d451546d5e1231aafbc66559e164daad27.webp"
       : theme.isPink
-      ? "https://assets.chungdoi.com/photo-library/design/75a2233917e5a0c905f5f1094d7bed67cd0b648ffa0634f13376aec8357bc96e.webp"
-      : "https://assets.chungdoi.com/photo-library/design/454f856986dc4e94052eee2148f9c0006732d70700ff963c796fc737dfc84839.webp");
+      ? "/images/photo-library/design/75a2233917e5a0c905f5f1094d7bed67cd0b648ffa0634f13376aec8357bc96e.webp"
+      : "/images/photo-library/design/454f856986dc4e94052eee2148f9c0006732d70700ff963c796fc737dfc84839.webp");
 
   if (theme.isPink) {
     return (

@@ -131,49 +131,49 @@
   ],
   "galleryImages": [
     {
-      "url": "https://assets.chungdoi.com/photo-library/design/cf6f9bcff1184911ece986d8c4ada988b258ec0dcf655ca18d5bca20d4de4b21.webp",
+      "url": "/images/photo-library/design/cf6f9bcff1184911ece986d8c4ada988b258ec0dcf655ca18d5bca20d4de4b21.webp",
       "position": {
         "x": 0.5,
         "y": 0.5
       }
     },
     {
-      "url": "https://assets.chungdoi.com/photo-library/design/b77044ed7b0c90ff4cb15bc94621ecaf0c81622ef6bae2d386d85682a34bccb7.webp",
+      "url": "/images/photo-library/design/b77044ed7b0c90ff4cb15bc94621ecaf0c81622ef6bae2d386d85682a34bccb7.webp",
       "position": {
         "x": 0.5,
         "y": 0.5
       }
     },
     {
-      "url": "https://assets.chungdoi.com/photo-library/design/da38d00c9262fd73899fcce5add329960ee6fb88752c262306188049c0cbc013.webp",
+      "url": "/images/photo-library/design/da38d00c9262fd73899fcce5add329960ee6fb88752c262306188049c0cbc013.webp",
       "position": {
         "x": 0.5,
         "y": 0.5
       }
     },
     {
-      "url": "https://assets.chungdoi.com/photo-library/design/6064a6cf240e30e3582c5054162d41e3b5b8f2c6b0333f6086361e6a7d954800.webp",
+      "url": "/images/photo-library/design/6064a6cf240e30e3582c5054162d41e3b5b8f2c6b0333f6086361e6a7d954800.webp",
       "position": {
         "x": 0.5,
         "y": 0.5
       }
     },
     {
-      "url": "https://assets.chungdoi.com/photo-library/design/a22a6f4d711adbc963b9a21e319427a22eb4c91e92d275e47de749296257c20d.webp",
+      "url": "/images/photo-library/design/a22a6f4d711adbc963b9a21e319427a22eb4c91e92d275e47de749296257c20d.webp",
       "position": {
         "x": 0.5,
         "y": 0.5
       }
     },
     {
-      "url": "https://assets.chungdoi.com/photo-library/design/a15c8dccb70e24a5e2295befc004a52b3dae7a7fe38a5094bcc2153f21e052b7.webp",
+      "url": "/images/photo-library/design/a15c8dccb70e24a5e2295befc004a52b3dae7a7fe38a5094bcc2153f21e052b7.webp",
       "position": {
         "x": 0.5,
         "y": 0.5
       }
     },
     {
-      "url": "https://assets.chungdoi.com/photo-library/design/bf78ccd84012d6c8cb10db0be587775d0abb5f2798064bf3a2ac6d7afa487f5c.webp",
+      "url": "/images/photo-library/design/bf78ccd84012d6c8cb10db0be587775d0abb5f2798064bf3a2ac6d7afa487f5c.webp",
       "position": {
         "x": 0.5,
         "y": 0.5
@@ -294,7 +294,7 @@
   ],
   "dresscodeTitle": "DRESS CODE",
   "dresscodeSubtitle": "Trang phục dự tiệc",
-  "heroPhoto": "https://assets.chungdoi.com/photo-library/design/d58f6f7cc781c53023ea0eadc1b357a3674a332eb70552546c61af69f0b221b5.webp",
+  "heroPhoto": "/images/photo-library/design/d58f6f7cc781c53023ea0eadc1b357a3674a332eb70552546c61af69f0b221b5.webp",
   "showGallery": true,
   "showQRInline": false,
   "galleryLayout": "cards",

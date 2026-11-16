@@ -220,14 +220,14 @@ const DATA_BLUE = {
     }
   ],
   "photos": [
-    "https://assets.chungdoi.com/photo-library/design/036763c59f7ef906b62e30b7008f6767941432825703c7b068764409b423b3c6.webp",
-    "https://assets.chungdoi.com/photo-library/design/6c45bc2dd70976099d7f59ad31bc02dd1ad8935ff18a10d38d238b2e36e5f12d.webp",
-    "https://assets.chungdoi.com/photo-library/design/6fe9f62d36debb4a93e21ee8c95f358e0197c941f756841866ce75ab6c08ec72.webp",
-    "https://assets.chungdoi.com/photo-library/design/cef6b293479df24384ee066fa987780018c7ce4167ad8e26e8b41936f490af16.webp",
-    "https://assets.chungdoi.com/photo-library/design/69640c372895b8462fef289a7bd0b406b9f6496a875cd08b4f2a75c4f7ea9194.webp",
-    "https://assets.chungdoi.com/photo-library/design/389a487d88ccb51e43634bec13d090b64f9d70bd13815457faf311f84f79785d.webp",
-    "https://assets.chungdoi.com/photo-library/design/203d3be2336e5704edd15098294996a712bee4fc22395c1fbb52810908c8c0bc.webp",
-    "https://assets.chungdoi.com/photo-library/design/b9ac0e81f7efaf0133c6d4c056e995017630d351ab17c3873d53335d73b95567.webp"
+    "/images/photo-library/design/036763c59f7ef906b62e30b7008f6767941432825703c7b068764409b423b3c6.webp",
+    "/images/photo-library/design/6c45bc2dd70976099d7f59ad31bc02dd1ad8935ff18a10d38d238b2e36e5f12d.webp",
+    "/images/photo-library/design/6fe9f62d36debb4a93e21ee8c95f358e0197c941f756841866ce75ab6c08ec72.webp",
+    "/images/photo-library/design/cef6b293479df24384ee066fa987780018c7ce4167ad8e26e8b41936f490af16.webp",
+    "/images/photo-library/design/69640c372895b8462fef289a7bd0b406b9f6496a875cd08b4f2a75c4f7ea9194.webp",
+    "/images/photo-library/design/389a487d88ccb51e43634bec13d090b64f9d70bd13815457faf311f84f79785d.webp",
+    "/images/photo-library/design/203d3be2336e5704edd15098294996a712bee4fc22395c1fbb52810908c8c0bc.webp",
+    "/images/photo-library/design/b9ac0e81f7efaf0133c6d4c056e995017630d351ab17c3873d53335d73b95567.webp"
   ],
   "accounts": [
     {
@@ -415,15 +415,15 @@ const DATA_GREEN = {
     }
   ],
   "photos": [
-    "https://assets.chungdoi.com/photo-library/design/868ddb966956a9be3daceb4c5069c63402923a0db8fa90efda87fa0ddc8d417c.webp",
-    "https://assets.chungdoi.com/photo-library/design/f4d501ac194bc87673a0260b53672083714f26a6807acdd15a0819cc80df2c3f.webp",
-    "https://assets.chungdoi.com/photo-library/design/96a6b4bc3f9ba466dfcdd56b966b708dc43ea3e1743e7922185d6024a36cdef5.webp",
-    "https://assets.chungdoi.com/photo-library/design/932d1cc8e900f348e154b162746ab5aef56c93670464ca81b4c93f1e53bb87fa.webp",
-    "https://assets.chungdoi.com/photo-library/design/e675b91cf8fa3f9a97fe0dcc10cc51e61bdfd8491cbf9813e0dbe43413921993.webp",
-    "https://assets.chungdoi.com/photo-library/design/b9a8c9056bad5f8b1d62e0a86b2b1a97d6a5f14c70f7c1c3c4ad9c99edcda787.webp",
-    "https://assets.chungdoi.com/photo-library/design/a7d86e0a5cb47687efe046d667e6eedc0bce793c6d7a59f8c9385393bf30aa2a.webp",
-    "https://assets.chungdoi.com/photo-library/design/65cc988c7cef94f66d9b5fff4cd1f92333d2b5c08acdd9c10e1cc7b5cd513620.webp",
-    "https://assets.chungdoi.com/photo-library/design/5aceecdb76ac0b4e2d0b2a41a26a760cb29676a3edec0b5e79e688d2d9991f06.webp"
+    "/images/photo-library/design/868ddb966956a9be3daceb4c5069c63402923a0db8fa90efda87fa0ddc8d417c.webp",
+    "/images/photo-library/design/f4d501ac194bc87673a0260b53672083714f26a6807acdd15a0819cc80df2c3f.webp",
+    "/images/photo-library/design/96a6b4bc3f9ba466dfcdd56b966b708dc43ea3e1743e7922185d6024a36cdef5.webp",
+    "/images/photo-library/design/932d1cc8e900f348e154b162746ab5aef56c93670464ca81b4c93f1e53bb87fa.webp",
+    "/images/photo-library/design/e675b91cf8fa3f9a97fe0dcc10cc51e61bdfd8491cbf9813e0dbe43413921993.webp",
+    "/images/photo-library/design/b9a8c9056bad5f8b1d62e0a86b2b1a97d6a5f14c70f7c1c3c4ad9c99edcda787.webp",
+    "/images/photo-library/design/a7d86e0a5cb47687efe046d667e6eedc0bce793c6d7a59f8c9385393bf30aa2a.webp",
+    "/images/photo-library/design/65cc988c7cef94f66d9b5fff4cd1f92333d2b5c08acdd9c10e1cc7b5cd513620.webp",
+    "/images/photo-library/design/5aceecdb76ac0b4e2d0b2a41a26a760cb29676a3edec0b5e79e688d2d9991f06.webp"
   ],
   "accounts": [
     {
@@ -618,13 +618,13 @@ const DATA_RED = {
     }
   ],
   "photos": [
-    "https://assets.chungdoi.com/photo-library/design/91c89299e50d0147428d495685da42750d6dba505aa1bc5e08c9e3091aa8c85e.webp",
-    "https://assets.chungdoi.com/photo-library/design/8ce9041b57ac75a40fda724daf408ed9c9f5f8c06fc07956e92321dcecb8c070.webp",
-    "https://assets.chungdoi.com/photo-library/design/408e5eae5b0fbb8a3da6c7ff32d3647c032123a31e58705b1ffba426fed9c2c0.webp",
-    "https://assets.chungdoi.com/photo-library/design/9719c21e23be54d0e4c95f83ab4bd82fe8b3e77b9abd0e2290a8c8c372793e3a.webp",
-    "https://assets.chungdoi.com/photo-library/design/8f8b24ba9ae55bb862ba94a61da30b9355000b934e89933f672c0fa2393e56a2.webp",
-    "https://assets.chungdoi.com/photo-library/design/48c8d683aee7dffb0d82fc344a10525d2baec7d678f34b07df8b78123cf83356.webp",
-    "https://assets.chungdoi.com/photo-library/design/3ff467f130528703b7946df455fd535e4300004fe6785d301c15bbe37bfbe9ba.webp"
+    "/images/photo-library/design/91c89299e50d0147428d495685da42750d6dba505aa1bc5e08c9e3091aa8c85e.webp",
+    "/images/photo-library/design/8ce9041b57ac75a40fda724daf408ed9c9f5f8c06fc07956e92321dcecb8c070.webp",
+    "/images/photo-library/design/408e5eae5b0fbb8a3da6c7ff32d3647c032123a31e58705b1ffba426fed9c2c0.webp",
+    "/images/photo-library/design/9719c21e23be54d0e4c95f83ab4bd82fe8b3e77b9abd0e2290a8c8c372793e3a.webp",
+    "/images/photo-library/design/8f8b24ba9ae55bb862ba94a61da30b9355000b934e89933f672c0fa2393e56a2.webp",
+    "/images/photo-library/design/48c8d683aee7dffb0d82fc344a10525d2baec7d678f34b07df8b78123cf83356.webp",
+    "/images/photo-library/design/3ff467f130528703b7946df455fd535e4300004fe6785d301c15bbe37bfbe9ba.webp"
   ],
   "accounts": [
     {

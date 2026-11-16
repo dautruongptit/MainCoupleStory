@@ -7,7 +7,7 @@ export function Hero({ ctx }: { ctx: InvitationCtx }) {
 
   const groomName = str(d.groomShortName, ctx.gName || "Gia Bảo");
   const brideName = str(d.brideShortName, ctx.bName || "Ngọc Diệp");
-  const photo = d.heroPhoto || ctx.heroSrc || "https://assets.chungdoi.com/photo-library/design/bb1f9bfe41533c4f8929fa6d604c1d82d08c49c4b49d25bd004fad6e0df57830.webp";
+  const photo = d.heroPhoto || ctx.heroSrc || "/images/photo-library/design/bb1f9bfe41533c4f8929fa6d604c1d82d08c49c4b49d25bd004fad6e0df57830.webp";
 
   return (
     <header className={`relative isolate flex w-full flex-col items-center ${theme.hero.paddingClass}`}>

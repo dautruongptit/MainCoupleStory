@@ -10,12 +10,12 @@
   "heroOn": true,
   "albumOn": true,
   "photos": [
-    "https://assets.chungdoi.com/photo-library/design/53da5c6ae3dfa5d31b6d275b7d56512288571a22.webp",
-    "https://assets.chungdoi.com/photo-library/design/e278dc1ba0af77ca01744a0cc93412a4e7c4470c.webp",
-    "https://assets.chungdoi.com/photo-library/design/b70239ea4a66e2320d211664a97ea2f49d91f124.webp",
-    "https://assets.chungdoi.com/photo-library/design/31525a53ca60e87b03ce9dcdb8ceabb8e22dc6ac.webp",
-    "https://assets.chungdoi.com/photo-library/design/0a3eb5186e8cbcd50a257c91d2614077927de8c6.webp",
-    "https://assets.chungdoi.com/photo-library/design/352e5ce35b9bd21f83ffb336a585d7d504356333.webp"
+    "/images/photo-library/design/53da5c6ae3dfa5d31b6d275b7d56512288571a22.webp",
+    "/images/photo-library/design/e278dc1ba0af77ca01744a0cc93412a4e7c4470c.webp",
+    "/images/photo-library/design/b70239ea4a66e2320d211664a97ea2f49d91f124.webp",
+    "/images/photo-library/design/31525a53ca60e87b03ce9dcdb8ceabb8e22dc6ac.webp",
+    "/images/photo-library/design/0a3eb5186e8cbcd50a257c91d2614077927de8c6.webp",
+    "/images/photo-library/design/352e5ce35b9bd21f83ffb336a585d7d504356333.webp"
   ],
   "familyOn": true,
   "groomFamTitle": "Ông Bà",

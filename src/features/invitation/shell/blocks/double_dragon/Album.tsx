@@ -3,21 +3,21 @@ import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx
 import { getDoubleDragonTheme } from "./themeVars";
 
 const DEFAULT_PHOTOS = [
-  "https://assets.chungdoi.com/photo-library/design/e523eaddf90b9700235cbb63ce5f27a1a4fe795772b68d0a13d5271cb92c773b.webp",
-  "https://assets.chungdoi.com/photo-library/design/a878b637e33da8599edc016e3bd2164750ae7d839ea72f3ebeeefe9c74cbb595.webp",
-  "https://assets.chungdoi.com/photo-library/design/24017d76b67552fc03b87db62dfc545e506948e36759710879ecafea0e96f90f.webp",
-  "https://assets.chungdoi.com/photo-library/design/2b09f29a3701a3b015b497da90682826c71352968caf0b4353985e8597c12c40.webp",
-  "https://assets.chungdoi.com/photo-library/design/f4d3bf953b7429d6d94f351c0738ab0a49d8f3d0c5d3098e642daccec738c30b.webp",
-  "https://assets.chungdoi.com/photo-library/design/223c2ad83cd2ee02edf54f52e85d9e7a103b8c1415fb4c95cd893fc4b47f0c1f.webp",
-  "https://assets.chungdoi.com/photo-library/design/eb6d597051eb096bdfd352f1164298b3bdaebdb15e003206f1bebf3e6329a7a3.webp",
-  "https://assets.chungdoi.com/photo-library/design/00808e5c34131c224135f9cead6692d40b1ef457ff7d12bf8a8240858d9925c2.webp",
-  "https://assets.chungdoi.com/photo-library/design/c2ee0f7ad3220952ba32df1df099288ae57c2bab23fbbd55f1bb091ed6f3bb1f.webp",
-  "https://assets.chungdoi.com/photo-library/design/9ab5970787a8a6985809e56a9e4328f033e8d3154bf9b11b9e0aaedd2527cb35.webp",
-  "https://assets.chungdoi.com/photo-library/design/96ad5836c2edaa42c65e12bdeee209920e6a96c0fc5f4638d112bea717774c17.webp",
-  "https://assets.chungdoi.com/photo-library/design/86c838bfb18ec46de2bef1a31c746f6f9c021729cfe76ac30ffca1edf8b9a1cb.webp",
-  "https://assets.chungdoi.com/photo-library/design/551b8f5534d233bfedcb473258c0e3de20def36e1d9499f61236c31fd3bb705a.webp",
-  "https://assets.chungdoi.com/photo-library/design/8de4792ea7a8470b3116610a50bb02d012a8532ff5de32a22b8239af534ba4ad.webp",
-  "https://assets.chungdoi.com/photo-library/design/442dfbe73174b2750aa345bda5f2d3ce8d9ba8a4d0aecab9c627b0fb331f57f7.webp",
+  "/images/photo-library/design/e523eaddf90b9700235cbb63ce5f27a1a4fe795772b68d0a13d5271cb92c773b.webp",
+  "/images/photo-library/design/a878b637e33da8599edc016e3bd2164750ae7d839ea72f3ebeeefe9c74cbb595.webp",
+  "/images/photo-library/design/24017d76b67552fc03b87db62dfc545e506948e36759710879ecafea0e96f90f.webp",
+  "/images/photo-library/design/2b09f29a3701a3b015b497da90682826c71352968caf0b4353985e8597c12c40.webp",
+  "/images/photo-library/design/f4d3bf953b7429d6d94f351c0738ab0a49d8f3d0c5d3098e642daccec738c30b.webp",
+  "/images/photo-library/design/223c2ad83cd2ee02edf54f52e85d9e7a103b8c1415fb4c95cd893fc4b47f0c1f.webp",
+  "/images/photo-library/design/eb6d597051eb096bdfd352f1164298b3bdaebdb15e003206f1bebf3e6329a7a3.webp",
+  "/images/photo-library/design/00808e5c34131c224135f9cead6692d40b1ef457ff7d12bf8a8240858d9925c2.webp",
+  "/images/photo-library/design/c2ee0f7ad3220952ba32df1df099288ae57c2bab23fbbd55f1bb091ed6f3bb1f.webp",
+  "/images/photo-library/design/9ab5970787a8a6985809e56a9e4328f033e8d3154bf9b11b9e0aaedd2527cb35.webp",
+  "/images/photo-library/design/96ad5836c2edaa42c65e12bdeee209920e6a96c0fc5f4638d112bea717774c17.webp",
+  "/images/photo-library/design/86c838bfb18ec46de2bef1a31c746f6f9c021729cfe76ac30ffca1edf8b9a1cb.webp",
+  "/images/photo-library/design/551b8f5534d233bfedcb473258c0e3de20def36e1d9499f61236c31fd3bb705a.webp",
+  "/images/photo-library/design/8de4792ea7a8470b3116610a50bb02d012a8532ff5de32a22b8239af534ba4ad.webp",
+  "/images/photo-library/design/442dfbe73174b2750aa345bda5f2d3ce8d9ba8a4d0aecab9c627b0fb331f57f7.webp",
 ];
 
 export function Album({ ctx }: { ctx: InvitationCtx }) {

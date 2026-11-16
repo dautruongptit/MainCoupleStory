@@ -16,10 +16,10 @@ export function Hero({ ctx }: { ctx: InvitationCtx }) {
     : (d.brideBirthOrder || "Út Nữ");
   const groomAvatar =
     d.groomAvatar ||
-    "https://assets.chungdoi.com/photo-library/design/1c007ef450670061d3966b1170d56e01184172e198536c7ae796532bde3ea5ca.webp";
+    "/images/photo-library/design/1c007ef450670061d3966b1170d56e01184172e198536c7ae796532bde3ea5ca.webp";
   const brideAvatar =
     d.brideAvatar ||
-    "https://assets.chungdoi.com/photo-library/design/86a1d64f9b6609c7184ea139acbd21c109ddd103d8d1d647480b7b68ac716e58.webp";
+    "/images/photo-library/design/86a1d64f9b6609c7184ea139acbd21c109ddd103d8d1d647480b7b68ac716e58.webp";
 
   return (
     <div

@@ -4,7 +4,7 @@ export function Section1({ ctx }: { ctx: InvitationCtx }) {
   const { d, gName, bName } = ctx;
   const groomName = gName || "Anh Tuấn";
   const brideName = bName || "Thu Hà";
-  const photo = d.heroPhoto || (d.photos && d.photos[0]) || "https://assets.chungdoi.com/photo-library/design/b62c19234c4be5c6ed3ae19efab7fce13b8e9d24a307fa5aa29d2f80ccf9801d.webp";
+  const photo = d.heroPhoto || (d.photos && d.photos[0]) || "/images/photo-library/design/b62c19234c4be5c6ed3ae19efab7fce13b8e9d24a307fa5aa29d2f80ccf9801d.webp";
 
   return (
     <section className="relative isolate w-full" style={{ paddingTop: "calc(0.15646 * var(--st-w))", paddingBottom: "calc(0.17007 * var(--st-w))" }}>
