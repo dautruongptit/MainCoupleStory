@@ -1,0 +1,38 @@
+{
+  "accentColor": "#3a5a2c",
+  "bg": "linear-gradient(to bottom right, #1e3a17, #3a5a2c, #5a8040)",
+  "btnBg": "#3a5a2c",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(58, 90, 44, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[74%] max-w-[300px] md:max-w-[360px] top-1/2 -translate-y-1/2 left-0 -translate-x-[35%] opacity-20 rotate-[20deg]",
+      "src": "/images/themes/chateau-green/hoanho2-1.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[74%] max-w-[300px] md:max-w-[360px] top-1/2 -translate-y-1/2 right-0 translate-x-[35%] opacity-20 scale-x-[-1] rotate-[5deg]",
+      "src": "/images/themes/chateau-green/hoanho3-1.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#3a5a2c",
+    "#5a8040",
+    "#7da55c",
+    "#aac98a",
+    "#cfe0b8",
+    "#e8f0dc",
+    "#ffffff"
+  ],
+  "particleType": "blossom",
+  "rgb": "58, 90, 44",
+  "sealBg": "radial-gradient(circle at 30% 30%, #3a5a2c, rgba(58, 90, 44, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "lau-dai-xanh",
+  "templateId": "chateau_green",
+  "templateName": "Lâu Đài - Xanh",
+  "textColor": "#3a5a2c"
+}

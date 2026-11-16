@@ -1,0 +1,38 @@
+{
+  "accentColor": "#123467",
+  "bg": "linear-gradient(to bottom right, #0c2147, #123467, #1a4080)",
+  "btnBg": "#123467",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(18, 52, 103, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[64%] max-w-[300px] md:max-w-[360px] top-1/2 -translate-y-1/2 left-0 -translate-x-[35%] opacity-[0.18] rotate-[15deg]",
+      "src": "/images/themes/chateau-blue/hoa.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[64%] max-w-[300px] md:max-w-[360px] top-1/2 -translate-y-1/2 right-0 translate-x-[35%] opacity-[0.18] scale-x-[-1] rotate-[15deg]",
+      "src": "/images/themes/chateau-blue/hoa.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#123467",
+    "#3a5a8f",
+    "#6f8cbf",
+    "#a8bcd4",
+    "#cfdcec",
+    "#e6eef7",
+    "#ffffff"
+  ],
+  "particleType": "blossom",
+  "rgb": "18, 52, 103",
+  "sealBg": "radial-gradient(circle at 30% 30%, #123467, rgba(18, 52, 103, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "lau-dai-lam",
+  "templateId": "chateau_blue",
+  "templateName": "Lâu Đài - Lam",
+  "textColor": "#123467"
+}

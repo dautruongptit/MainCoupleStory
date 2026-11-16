@@ -1,0 +1,26 @@
+{
+  "accentColor": "#b03235",
+  "bg": "linear-gradient(to right, transparent calc(50% - 451px), #af3e42 calc(50% - 451px), #af3e42 calc(50% - 449px), transparent calc(50% - 449px), transparent calc(50% + 449px), #af3e42 calc(50% + 449px), #af3e42 calc(50% + 451px), transparent calc(50% + 451px)), linear-gradient(to right, #f6f3e7 calc(50% - 450px), rgba(246,243,231,0) calc(50% - 450px), rgba(246,243,231,0) calc(50% + 450px), #f6f3e7 calc(50% + 450px)), url(\"/images/themes/porcelain-red/floral-tile.webp\") 0 0 / 441px repeat, #f6f3e7",
+  "btnBg": "#b03235",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(176, 50, 53, 0.15)",
+  "imgs": [],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#b03235",
+    "#c0524f",
+    "#af3e42",
+    "#d98a86"
+  ],
+  "particleType": "blossom",
+  "rgb": "176, 50, 53",
+  "sealBg": "radial-gradient(circle at 30% 30%, #b03235, rgba(176, 50, 53, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "783589",
+  "slug": "bach-su-do",
+  "templateId": "porcelain_red",
+  "templateName": "Bạch Sứ - Đỏ",
+  "textColor": "#b03235"
+}

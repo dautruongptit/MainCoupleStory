@@ -1,0 +1,55 @@
+{
+  "accentColor": "#4c2d1f",
+  "bg": "#fef0e0",
+  "btnBg": "#4c2d1f",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(76, 45, 31, 0.15)",
+  "imgs": [
+    {
+      "className": "w-9 h-9 object-contain",
+      "src": "/images/themes/chibi_red/double-happiness.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[50px] md:w-[70px] top-[60px] -left-[5px] md:top-[45px] md:left-[10px]",
+      "src": "/images/themes/chibi_red/cherry-blossom.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[45px] md:w-[65px] top-[65px] -right-[5px] md:top-[48px] md:right-[10px] -scale-x-100",
+      "src": "/images/themes/chibi_red/cherry-blossom.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[30px] md:w-[40px] top-[30px] right-[20px] md:top-[25px] md:right-[30px] opacity-30",
+      "src": "/images/themes/chibi_red/decorative-diamond.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[25px] md:w-[35px] bottom-[40px] left-[15px] md:bottom-[30px] md:left-[25px] opacity-25 rotate-12",
+      "src": "/images/themes/chibi_red/decorative-diamond.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-full top-0 left-0",
+      "src": "/images/themes/chibi_red/decorative-flowers.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[200px] md:w-[250px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-5",
+      "src": "/images/themes/chibi_red/couple-main.webp"
+    }
+  ],
+  "nameFont": "\"Patrick Hand\", cursive",
+  "particleColors": [
+    "#CC0033",
+    "#B80030",
+    "#FF0040",
+    "#AA0028"
+  ],
+  "particleType": "confetti",
+  "rgb": "76, 45, 31",
+  "sealBg": "radial-gradient(circle at 30% 30%, #4c2d1f, rgba(76, 45, 31, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "6890ab",
+  "slug": "chibi-red",
+  "templateId": "chibi_red",
+  "templateName": "Chibi - Đỏ",
+  "textColor": "#4c2d1f"
+}

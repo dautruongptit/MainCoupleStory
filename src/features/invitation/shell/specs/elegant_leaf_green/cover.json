@@ -1,0 +1,35 @@
+{
+  "accentColor": "#4E6439",
+  "bg": "linear-gradient(to bottom right, #23381E, #1f3219, #1a2b15)",
+  "btnBg": "#4E6439",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(78, 100, 57, 0.15)",
+  "imgs": [
+    {
+      "className": "w-full h-auto opacity-40 rotate-[30deg]",
+      "src": "/images/themes/thanhdiep-green/la2.webp"
+    },
+    {
+      "className": "w-full h-auto opacity-40 rotate-180",
+      "src": "/images/themes/thanhdiep-green/la1.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#90EE90",
+    "#98FB98",
+    "#4E6439",
+    "#bdcdc1"
+  ],
+  "particleType": "petal",
+  "rgb": "78, 100, 57",
+  "sealBg": "radial-gradient(circle at 30% 30%, #4E6439, rgba(78, 100, 57, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "0f132a",
+  "slug": "thanh-diep-xanh",
+  "templateId": "elegant_leaf_green",
+  "templateName": "Thanh Diệp - Xanh",
+  "textColor": "#4E6439"
+}

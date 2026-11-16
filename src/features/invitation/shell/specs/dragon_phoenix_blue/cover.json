@@ -1,0 +1,40 @@
+{
+  "accentColor": "#ffe3b1",
+  "bg": "linear-gradient(to bottom right, #040e16, #020810, #010408)",
+  "btnBg": "#ffe3b1",
+  "btnTextColor": "#4a0808",
+  "cardBg": "rgba(0, 0, 0, 0.35)",
+  "cardBorder": "rgba(255, 227, 177, 0.25)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[200px] md:w-[280px] -top-[10px] -left-[70px] md:-top-[20px] md:-left-[90px] opacity-30",
+      "src": "/images/themes/red-v1/rong.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[200px] md:w-[280px] -bottom-[40px] -right-[70px] md:-bottom-[140px] md:-right-[90px] opacity-30",
+      "src": "/images/themes/red-v1/phuong.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[250px] md:w-[350px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-30",
+      "src": "/images/themes/red-v1/bg-main.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "openFx": "dragon-fly",
+  "particleColors": [
+    "#FFD700",
+    "#e9ce9e",
+    "#CD853F",
+    "#FFC107"
+  ],
+  "particleType": "xi",
+  "rgb": "233, 206, 158",
+  "sealBg": "radial-gradient(circle at 30% 30%, #ffe3b1, #d1ba91)",
+  "sealColor": "#4a0808",
+  "sealType": "xi",
+  "sig": "9586b5",
+  "slug": "long-phung-lam",
+  "templateId": "dragon_phoenix_blue",
+  "templateName": "Long Phụng - Lam",
+  "textColor": "#ffe3b1"
+}

@@ -1,0 +1,40 @@
+{
+  "accentColor": "rgb(59, 86, 0)",
+  "ampFont": "\"Alex Brush\", cursive",
+  "bg": "linear-gradient(to right bottom, rgba(253, 240, 205, 0.97), rgba(137, 97, 46, 0.55))",
+  "btnBg": "rgb(59, 86, 0)",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(253, 240, 205, 0.97)",
+  "cardBorder": "rgba(59, 86, 0, 0.15)",
+  "guestColor": "rgb(129, 0, 0)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none left-1/2 top-[-10%] md:top-[-32%] h-55 md:h-70 lg:h-70 w-auto max-w-none -translate-x-1/2 -scale-x-100 opacity-20",
+      "src": "/images/themes/mandap-yellow/flower-garland.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-60 w-auto max-w-none bottom-[-20px] left-[-50px] opacity-20",
+      "src": "/images/themes/mandap-yellow/kalash3-decoration.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-60 w-auto max-w-none bottom-[-20px] right-[-40px] opacity-20",
+      "src": "/images/themes/mandap-yellow/kalash4-decoration.webp"
+    }
+  ],
+  "nameFont": "\"Viaoda Libre\", cursive",
+  "particleColors": [
+    "#F2A33C",
+    "#E8743B",
+    "#4F7A34"
+  ],
+  "particleType": "blossom",
+  "rgb": "59, 86, 0",
+  "sealBg": "radial-gradient(circle at 30% 30%, rgb(59, 86, 0), rgb(29, 56, 0))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "mandap-vang",
+  "templateId": "mandap_yellow",
+  "templateName": "Mandap - Vàng",
+  "textColor": "rgb(59, 86, 0)"
+}

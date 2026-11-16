@@ -1,0 +1,35 @@
+{
+  "accentColor": "#ffefd6",
+  "bg": "radial-gradient(ellipse at top, #3a0808 0%, #2b0303 55%, #1e0202 100%)",
+  "btnBg": "#ffdfaf",
+  "btnTextColor": "#511419",
+  "cardBg": "rgba(0, 0, 0, 0.35)",
+  "cardBorder": "rgba(255, 227, 177, 0.25)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none z-0 h-auto w-[140px] max-w-none opacity-90 md:w-[160px] -top-[20px] -left-[20px] md:-top-[20px] md:-left-[20px] -scale-x-100",
+      "src": "/images/themes/baroque-v2-dark-red/flower3-decoration.webp"
+    },
+    {
+      "className": "absolute pointer-events-none z-0 h-auto w-[140px] max-w-none opacity-90 -scale-x-100 -scale-y-100 md:w-[160px] -bottom-[20px] -right-[20px] md:-bottom-[20px] md:-right-[10px] scale-y-100",
+      "src": "/images/themes/baroque-v2-dark-red/flower4-decoration.webp"
+    }
+  ],
+  "nameFont": "\"Cormorant Garamond\", serif",
+  "particleColors": [
+    "#ffdfaf",
+    "#ffefd6",
+    "#c39a5e",
+    "#8a1f26"
+  ],
+  "particleType": "blossom",
+  "rgb": "255, 239, 214",
+  "sealBg": "radial-gradient(circle at 30% 30%, #ffdfaf, #cbab7c)",
+  "sealColor": "#511419",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "baroque-v2-do-dam",
+  "templateId": "baroque_v2_darkred",
+  "templateName": "Baroque V2 - Đỏ Đậm",
+  "textColor": "#ffefd6"
+}

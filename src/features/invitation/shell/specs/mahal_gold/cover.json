@@ -1,0 +1,34 @@
+{
+  "accentColor": "rgb(100, 14, 27)",
+  "bg": "linear-gradient(to right bottom, rgba(100, 14, 27, 0.86), rgba(140, 45, 45, 0.82), rgba(171, 122, 69, 0.8)) 0% 0% / auto repeat, url(/images/themes/mahal-gold/paper.webp) 50% 50% / cover repeat",
+  "btnBg": "rgb(100, 14, 27)",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(247, 227, 205, 0.98)",
+  "cardBorder": "rgba(171, 122, 69, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[46%] md:w-[38%] max-w-[220px] top-0 left-0 -translate-x-[22%] -translate-y-[24%] -scale-x-100",
+      "src": "/images/themes/mahal-gold/flower1.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[42%] md:w-[34%] max-w-[200px] bottom-0 right-0 translate-x-[20%] translate-y-[18%] -scale-y-100",
+      "src": "/images/themes/mahal-gold/flower1.webp"
+    }
+  ],
+  "nameFont": "\"The Nautigal\", cursive",
+  "particleColors": [
+    "#D8407A",
+    "#AB7A45",
+    "#E0698F"
+  ],
+  "particleType": "blossom",
+  "rgb": "100, 14, 27",
+  "sealBg": "radial-gradient(circle at 30% 30%, rgb(100, 14, 27), rgb(70, 0, 0))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "mahal-vang",
+  "templateId": "mahal_gold",
+  "templateName": "Mahal - Vàng",
+  "textColor": "rgb(100, 14, 27)"
+}

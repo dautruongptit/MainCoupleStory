@@ -1,0 +1,41 @@
+{
+  "accentColor": "#72614b",
+  "bg": "linear-gradient(to bottom right, rgba(178, 156, 104, 0.92), rgba(81, 123, 162, 0.9)), url(/images/themes/baroque-blue/bg-pattern.webp) top left / 441px repeat",
+  "btnBg": "#72614b",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(114, 97, 75, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none h-130 md:h-70 lg:h-170 w-auto max-w-none top-[-3%] md:top-[-15%] right-[-24px] md:right-[-24px] -translate-x-[6%] md:-translate-x-[11%] opacity-60",
+      "src": "/images/themes/baroque-blue/bg-pattern.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-60 md:h-70 lg:h-130 w-auto max-w-none top-[-7%] md:top-[-15%] left-[-14px] md:left-[-25px] -translate-x-[6%] md:-translate-x-[11%] opacity-80 rotate-[9deg]",
+      "src": "/images/themes/baroque-blue/gold4-decoration.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-60 md:h-70 lg:h-130 w-auto max-w-none top-[-7%] md:top-[-15%] right-[-14px] md:right-[-25px] translate-x-[6%] md:translate-x-[11%] opacity-80 -rotate-[9deg] scale-x-[-1]",
+      "src": "/images/themes/baroque-blue/gold4-decoration.webp"
+    }
+  ],
+  "nameFont": "\"Cormorant Garamond\", serif",
+  "particleColors": [
+    "#5e7e9b",
+    "#8ca6be",
+    "#c9b082",
+    "#e8d2b0",
+    "#f3e9d6",
+    "#ffffff"
+  ],
+  "particleType": "blossom",
+  "rgb": "114, 97, 75",
+  "sealBg": "radial-gradient(circle at 30% 30%, #72614b, rgba(114, 97, 75, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "af36de",
+  "slug": "baroque-lam",
+  "templateId": "baroque_blue",
+  "templateName": "Baroque - Lam",
+  "textColor": "#72614b"
+}

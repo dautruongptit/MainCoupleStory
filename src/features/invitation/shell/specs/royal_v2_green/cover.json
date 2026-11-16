@@ -1,0 +1,35 @@
+{
+  "accentColor": "#ffe3b1",
+  "bg": "rgba(9, 22, 16, 0.98)",
+  "btnBg": "#ffe3b1",
+  "btnTextColor": "#4a0808",
+  "cardBg": "rgba(0, 0, 0, 0.35)",
+  "cardBorder": "rgba(255, 227, 177, 0.25)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[52%] max-w-[260px] md:max-w-[300px] top-0 left-0 -translate-x-[23%] -translate-y-[20%] opacity-95",
+      "src": "/images/themes/royal-v2-green/flower1-decoration.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[54%] max-w-[270px] md:max-w-[310px] bottom-0 right-0 translate-x-[20%] translate-y-[20%] opacity-95",
+      "src": "/images/themes/royal-v2-green/flower2-decoration.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#e5e4d0",
+    "#c9a15a",
+    "#ffffff",
+    "#874f22"
+  ],
+  "particleType": "stars",
+  "rgb": "229, 228, 208",
+  "sealBg": "radial-gradient(circle at 30% 30%, #ffe3b1, #d1ba91)",
+  "sealColor": "#4a0808",
+  "sealType": "heart",
+  "sig": "694b87",
+  "slug": "hoang-kim-ii-xanh",
+  "templateId": "royal_v2_green",
+  "templateName": "Hoàng Kim II - Xanh",
+  "textColor": "#ffe3b1"
+}

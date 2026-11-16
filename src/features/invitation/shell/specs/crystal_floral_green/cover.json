@@ -1,0 +1,39 @@
+{
+  "accentColor": "#0B2E00",
+  "bg": "linear-gradient(to bottom right, #3f7b1c, #2D5A13, #0B2E00)",
+  "btnBg": "#0B2E00",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(11, 46, 0, 0.15)",
+  "flyCorners": true,
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none h-36 md:h-100 lg:h-100 w-auto max-w-none top-[-5%] md:top-[5%] left-[-14px] md:left-[-10%] -translate-x-[6%] md:-translate-x-[11%] opacity-100 md:opacity-30 rotate-[25deg]",
+      "src": "/images/themes/crystal-floral-green/flower2.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-36 md:h-100 lg:h-100 w-auto max-w-none bottom-[-5%] md:bottom-[-2%] right-[-14px] md:right-[-10%] translate-x-[6%] md:translate-x-[11%] opacity-100 md:opacity-30 -rotate-[25deg]",
+      "src": "/images/themes/crystal-floral-green/flower3.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#2D5A13",
+    "#0B2E00",
+    "#0B2E00",
+    "#e0a86f",
+    "#c8dfd0",
+    "#e6f1ea",
+    "#ffffff"
+  ],
+  "particleType": "blossom",
+  "rgb": "11, 46, 0",
+  "sealBg": "radial-gradient(circle at 30% 30%, #0B2E00, rgba(11, 46, 0, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "hoa-thuy-tinh-xanh",
+  "templateId": "crystal_floral_green",
+  "templateName": "Hoa Thuỷ Tinh - Xanh",
+  "textColor": "#0B2E00"
+}

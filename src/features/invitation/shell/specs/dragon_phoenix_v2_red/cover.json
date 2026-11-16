@@ -1,0 +1,39 @@
+{
+  "accentColor": "#ffe3b1",
+  "bg": "url('/images/themes/longphung-v2-red/bg-frame.jpg') center/cover",
+  "btnBg": "#ffe3b1",
+  "btnTextColor": "#4a0808",
+  "cardBg": "rgb(104, 14, 14)",
+  "cardBorder": "rgba(255, 227, 177, 0.133)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[200px] md:w-[280px] -top-[10px] -left-[70px] md:-top-[20px] md:-left-[90px] opacity-30",
+      "src": "/images/themes/longphung-v2-red/phuong.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[200px] md:w-[280px] -bottom-[40px] -right-[70px] md:-bottom-[100px] md:-right-[90px] opacity-30",
+      "src": "/images/themes/longphung-v2-red/rong.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[80px] md:w-[100px] top-2 right-2 md:top-3 md:right-3 opacity-20",
+      "src": "/images/themes/longphung-v2-red/cloud.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#D4A017",
+    "#C41E3A",
+    "#E8A735",
+    "#B22222"
+  ],
+  "particleType": "xi",
+  "rgb": "255, 227, 177",
+  "sealBg": "radial-gradient(circle at 30% 30%, #ffe3b1, #d1ba91)",
+  "sealColor": "#4a0808",
+  "sealType": "none",
+  "sig": "59a8ef",
+  "slug": "long-phung-v2-do",
+  "templateId": "dragon_phoenix_v2_red",
+  "templateName": "Long Phụng V2 - Đỏ",
+  "textColor": "#ffe3b1"
+}

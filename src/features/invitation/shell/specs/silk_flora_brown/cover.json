@@ -1,0 +1,35 @@
+{
+  "accentColor": "#996247",
+  "bg": "linear-gradient(to bottom right, #7a4d38, #996247, #7a4d38)",
+  "btnBg": "#996247",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(153, 98, 71, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[64%] max-w-[300px] md:max-w-[360px] top-1/2 -translate-y-1/2 left-0 -translate-x-1/2 opacity-[0.15] scale-x-[-1] rotate-[30deg]",
+      "src": "/images/themes/silkflora-brown/top-flower.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[72%] max-w-[340px] md:max-w-[400px] top-1/2 -translate-y-1/2 right-0 translate-x-1/2 translate-y-[12px] opacity-[0.15] scale-x-[-1]",
+      "src": "/images/themes/silkflora-brown/bottom.webp"
+    }
+  ],
+  "nameFont": "\"Playfair Display\", serif",
+  "particleColors": [
+    "#e8d4c4",
+    "#dcc4b0",
+    "#faf3e8",
+    "#f0e2d5"
+  ],
+  "particleType": "petal",
+  "rgb": "153, 98, 71",
+  "sealBg": "radial-gradient(circle at 30% 30%, #996247, rgba(153, 98, 71, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "694b87",
+  "slug": "hoa-lua-nau",
+  "templateId": "silk_flora_brown",
+  "templateName": "Hoa Lụa - Nâu",
+  "textColor": "#996247"
+}

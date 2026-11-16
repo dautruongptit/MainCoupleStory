@@ -1,0 +1,35 @@
+{
+  "accentColor": "#e66474",
+  "bg": "linear-gradient(to bottom right, #ffffff, #fdf2f4, #f7dfe5)",
+  "btnBg": "#e66474",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(230, 100, 116, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[121px] md:w-[108px] lg:w-[500px] max-w-none top-[-5%] md:top-[-50%] left-[-45px] md:left-[-300px] -scale-x-100 rotate-[40deg] -translate-x-[6%] md:-translate-x-[11%]",
+      "src": "/images/themes/silk-ribbon-pink/flower-decoration.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[121px] md:w-[108px] lg:w-[500px] max-w-none bottom-[-10%] md:bottom-[-75%] right-[-45px] md:right-[-300px] rotate-[-40deg] translate-x-[6%] md:translate-x-[11%]",
+      "src": "/images/themes/silk-ribbon-pink/flower-decoration.webp"
+    }
+  ],
+  "nameFont": "\"Carattere\", cursive",
+  "particleColors": [
+    "#f7dfe5",
+    "#e66474",
+    "#dda9b8",
+    "#f3dfc3"
+  ],
+  "particleType": "blossom",
+  "rgb": "230, 100, 116",
+  "sealBg": "radial-gradient(circle at 30% 30%, #e66474, rgba(230, 100, 116, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "to-duyen-hong",
+  "templateId": "silk_ribbon_pink",
+  "templateName": "Tơ Duyên - Hồng",
+  "textColor": "#e66474"
+}

@@ -1,0 +1,40 @@
+{
+  "accentColor": "#511419",
+  "bg": "linear-gradient(to bottom right, #6e1a20, #511419, #380a0e)",
+  "btnBg": "#511419",
+  "btnTextColor": "#f3e8de",
+  "cardBg": "rgba(255, 250, 243, 0.96)",
+  "cardBorder": "rgba(81, 20, 25, 0.15)",
+  "dateColor": "rgba(81, 20, 25, 0.72)",
+  "flyCorners": true,
+  "guestColor": "rgba(81, 20, 25, 0.72)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none h-36 md:h-70 lg:h-70 w-auto max-w-none top-[-5%] md:top-[-2%] left-[-10px] md:left-[-10px] -translate-x-[6%] md:-translate-x-[11%] opacity-80 rotate-[25deg]",
+      "src": "/images/themes/minimalism-dark-red/flower2-decoration.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-36 md:h-70 lg:h-70 w-auto max-w-none bottom-[-5%] md:bottom-[35%] right-[-10px] md:right-[-10px] translate-x-[6%] md:translate-x-[11%] -scale-x-100 opacity-80 -rotate-[25deg]",
+      "src": "/images/themes/minimalism-dark-red/flower2-decoration.webp"
+    }
+  ],
+  "nameFont": "\"Viaoda Libre\", \"EB Garamond\", serif",
+  "nameFromSm": true,
+  "openFx": "center-hearts",
+  "particleColors": [
+    "#7a1f26",
+    "#a8323b",
+    "#c9a24a",
+    "#ece4d8"
+  ],
+  "particleType": "heart",
+  "rgb": "81, 20, 25",
+  "sealBg": "radial-gradient(circle at 30% 30%, #511419, rgb(51, 0, 0))",
+  "sealColor": "#f3e8de",
+  "sealType": "heart",
+  "sig": "ae1685",
+  "slug": "minimalism-do-dam",
+  "templateId": "minimalism_darkred",
+  "templateName": "Minimalism - Đỏ Đậm",
+  "textColor": "#511419"
+}

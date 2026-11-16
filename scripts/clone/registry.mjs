@@ -16,7 +16,7 @@ const REG_MD = J("docs/clone-registry.md");
 const SPECS = J("src/features/invitation/shell/specs");
 const BLOCKS = J("src/features/invitation/shell/blocks");
 const THEMES = J("public/images/themes");
-const COVER = J("src/features/invitation/components/covers/coverConfigs.ts");
+const coverFile = (id) => path.join(SPECS, id, "cover.json");
 
 const sha = (buf) => crypto.createHash("sha256").update(buf).digest("hex").slice(0, 16);
 const fileInfo = (p) => {
@@ -51,12 +51,10 @@ for (const f of fs.readdirSync(genDir).filter((x) => /^gen_.*\.cjs$/.test(x))) {
 }
 
 // ---- cover config
-const coverSrc = fs.readFileSync(COVER, "utf8");
+// cấu hình bìa của mẫu: specs/<id>/cover.json (trước đây là một mục trong coverConfigs.ts)
 const coverEntry = (id) => {
-  const i = coverSrc.indexOf(`\n  "${id}": {`);
-  if (i < 0) return null;
-  const j = coverSrc.indexOf("\n  },", i);
-  return coverSrc.slice(i, j + 5);
+  const f = coverFile(id);
+  return fs.existsSync(f) ? fs.readFileSync(f, "utf8").split("\r\n").join("\n") : null;
 };
 
 // ---- bản đã lưu
@@ -94,12 +92,12 @@ const entries = templates.map((t, index) => {
     envelope: fs.existsSync(envelope) ? [fileInfo(envelope)] : [],
     survey: [...listFiles(surveyBlocks), ...raws.map((f) => fileInfo(J("docs/survey/raw", f)))],
   };
-  const coverInfo = cover ? { file: rel(COVER), key: t.id, sha: sha(Buffer.from(cover)) } : null;
+  const coverInfo = cover ? { file: rel(coverFile(t.id)), key: t.id, sha: sha(Buffer.from(cover)) } : null;
 
   let status;
   const issues = [];
   if (hasSpec && isPlaceholderTheme(theme)) issues.push("theme.json còn màu mặc định (chưa đo)");
-  if (hasSpec && !cover) issues.push("thiếu cấu hình bìa trong coverConfigs.ts");
+  if (hasSpec && !cover) issues.push("thiếu cấu hình bìa specs/<id>/cover.json");
   if (!hasSpec) status = "chưa clone";
   else if (issues.length) status = "dở dang";
   else status = "đã clone";
@@ -177,7 +175,7 @@ L.push("# Sổ đăng ký clone mẫu thiệp", "");
 L.push("> Sinh tự động bởi `node scripts/clone/registry.mjs` — **chạy lại sau mỗi lần clone/sửa mẫu rồi commit cùng**. Chi tiết máy đọc (hash từng file): `docs/clone-registry.json`.", "");
 L.push(`Cập nhật: ${now.slice(0, 10)} · Tổng **${entries.length}** mẫu: ✅ đã clone **${counts("đã clone")}** · 🟡 dở dang **${counts("dở dang")}** · ⬜ chưa clone **${counts("chưa clone")}**`, "");
 L.push("## Ý nghĩa trạng thái", "");
-L.push("- ✅ **đã clone**: có `specs/<id>/` (theme đã đo thật, không còn màu đen/trắng mặc định) và có mục trong `coverConfigs.ts`.");
+L.push("- ✅ **đã clone**: có `specs/<id>/` (theme đã đo thật, không còn màu đen/trắng mặc định) và có `specs/<id>/cover.json`.");
 L.push("- 🟡 **dở dang**: có spec nhưng theme còn mặc định hoặc thiếu cấu hình bìa.");
 L.push("- ⬜ **chưa clone**: chưa có spec — đang chạy đường `Preview.tsx` cũ (lệch lớn so với gốc).");
 L.push("- Cột **Đã kiểm** là ô tích tay trong JSON (`verified`): bìa / mở thiệp / hộp quà / RSVP / editor / lệch hình học = 0. `clone` ≠ đã kiểm đủ.", "");

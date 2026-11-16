@@ -1,0 +1,31 @@
+{
+  "accentColor": "#486C7D",
+  "bg": "linear-gradient(to bottom right, #f0f7fa, #e8f2f6, #dfedf2)",
+  "btnBg": "#486C7D",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(72, 108, 125, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[840px] md:w-[800px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-60",
+      "src": "/images/themes/vuon xuan blue/button.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#87CEEB",
+    "#B0E0E6",
+    "#E0FFFF",
+    "#a4c4d4"
+  ],
+  "particleType": "petal",
+  "rgb": "72, 108, 125",
+  "sealBg": "radial-gradient(circle at 30% 30%, #486C7D, rgba(72, 108, 125, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "020f8b",
+  "slug": "vuon-xuan-lam",
+  "templateId": "spring_garden_blue",
+  "templateName": "Vườn Xuân - Lam",
+  "textColor": "#486C7D"
+}

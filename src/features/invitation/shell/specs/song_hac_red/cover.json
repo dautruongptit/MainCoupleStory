@@ -1,0 +1,51 @@
+{
+  "accentColor": "#ffe3b1",
+  "bg": "linear-gradient(to bottom right, #780002, #610102, #280000)",
+  "btnBg": "#ffe3b1",
+  "btnTextColor": "#4a0808",
+  "cardBg": "rgba(0, 0, 0, 0.35)",
+  "cardBorder": "rgba(255, 227, 177, 0.25)",
+  "imgs": [
+    {
+      "className": "w-[52px] h-[52px] object-contain",
+      "src": "/images/themes/song-hac-red/double-happiness.webp"
+    },
+    {
+      "className": "absolute pointer-events-none  w-[724px] md:w-[724px] max-w-none bottom-[-5%] opacity-50",
+      "src": "/images/themes/song-hac-red/cloud-pattern.webp"
+    },
+    {
+      "className": "w-full h-auto",
+      "src": "/images/themes/song-hac-red/bird-decoration.webp"
+    },
+    {
+      "className": "w-full h-auto -scale-x-100",
+      "src": "/images/themes/song-hac-red/bird-decoration.webp"
+    },
+    {
+      "className": "w-full h-auto",
+      "src": "/images/themes/song-hac-red/cloud1-decoration.webp"
+    },
+    {
+      "className": "w-full h-auto -scale-x-100",
+      "src": "/images/themes/song-hac-red/cloud2-decoration.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#FFE8A4",
+    "#F6EFEA",
+    "#E23B2B",
+    "#920002"
+  ],
+  "particleType": "xi",
+  "rgb": "255, 232, 164",
+  "sealBg": "radial-gradient(circle at 30% 30%, #ffe3b1, #d1ba91)",
+  "sealColor": "#4a0808",
+  "sealType": "xi",
+  "sig": "55ebbc",
+  "slug": "song-hac-do",
+  "templateId": "song_hac_red",
+  "templateName": "Song Hạc - Đỏ",
+  "textColor": "#ffe3b1"
+}

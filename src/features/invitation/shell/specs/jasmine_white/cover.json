@@ -1,0 +1,35 @@
+{
+  "accentColor": "#404A1D",
+  "bg": "linear-gradient(to bottom right, #404A1D, #5a6628, #404A1D)",
+  "btnBg": "#404A1D",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(64, 74, 29, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[40%] md:top-[-15%] top-[-6%] md:left-[-5%] left-[-5%] md:opacity-70 -scale-x-100 -scale-y-100",
+      "src": "/images/themes/moclan-white/hoa.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[40%] md:bottom-[-15%] bottom-[-6%] md:right-[-5%] right-[-5%] md:opacity-70",
+      "src": "/images/themes/moclan-white/hoa.webp"
+    }
+  ],
+  "nameFont": "\"Playfair Display\", serif",
+  "particleColors": [
+    "#d4e4a0",
+    "#c8d88a",
+    "#ffffff",
+    "#eef4d0"
+  ],
+  "particleType": "petal",
+  "rgb": "64, 74, 29",
+  "sealBg": "radial-gradient(circle at 30% 30%, #404A1D, rgba(64, 74, 29, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "694b87",
+  "slug": "mai-lan-trang",
+  "templateId": "jasmine_white",
+  "templateName": "Mai Lan - Trắng",
+  "textColor": "#404A1D"
+}

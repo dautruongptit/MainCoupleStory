@@ -1,0 +1,31 @@
+{
+  "accentColor": "#ae4c51",
+  "bg": "linear-gradient(to bottom right, #ba4a59, #ae4c51, #9e3c41)",
+  "btnBg": "#ae4c51",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(174, 76, 81, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-full bottom-0 left-0 opacity-20",
+      "src": "/images/themes/anhdao-pink/2.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#FFB6C1",
+    "#FFC0CB",
+    "#ffffff",
+    "#FF69B4"
+  ],
+  "particleType": "petal",
+  "rgb": "174, 76, 81",
+  "sealBg": "radial-gradient(circle at 30% 30%, #ae4c51, rgba(174, 76, 81, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "7fda2d",
+  "slug": "anh-dao-hong",
+  "templateId": "cherry_blossom_pink",
+  "templateName": "Anh Đào - Hồng",
+  "textColor": "#ae4c51"
+}

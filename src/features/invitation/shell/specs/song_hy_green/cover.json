@@ -1,0 +1,35 @@
+{
+  "accentColor": "#e8f0e4",
+  "bg": "linear-gradient(to bottom right, #0a1f0e, #122418, #1F3A25)",
+  "btnBg": "#e8f0e4",
+  "btnTextColor": "#1f3a25",
+  "cardBg": "rgba(0, 0, 0, 0.35)",
+  "cardBorder": "rgba(255, 227, 177, 0.25)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[220px] md:w-[300px] -top-[65px] -left-[124px] md:-top-[104px] md:-left-[130px] opacity-[0.15] rotate-[30deg] md:rotate-[30deg]",
+      "src": "/images/themes/song-hy-red/chu-hy.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[220px] md:w-[300px] -bottom-[39px] -right-[156px] md:-bottom-[104px] md:-right-[143px] opacity-[0.15] -rotate-[-30deg] md:-rotate-[-30deg]",
+      "src": "/images/themes/song-hy-red/chu-hy.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#a8e6a3",
+    "#7bc47a",
+    "#4CAF50",
+    "#c8e6c9"
+  ],
+  "particleType": "xi",
+  "rgb": "20, 58, 41",
+  "sealBg": "radial-gradient(circle at 30% 30%, #e9ce9e, rgb(203, 176, 128))",
+  "sealColor": "#4a0808",
+  "sealType": "xi",
+  "sig": "a2becd",
+  "slug": "song-hy-xanh",
+  "templateId": "song_hy_green",
+  "templateName": "Song Hỷ - Xanh",
+  "textColor": "#e8f0e4"
+}

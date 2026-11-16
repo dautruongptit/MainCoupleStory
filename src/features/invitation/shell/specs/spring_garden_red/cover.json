@@ -1,0 +1,35 @@
+{
+  "accentColor": "#D25F65",
+  "bg": "linear-gradient(to bottom right, #fff5f5, #ffefef, #ffe8e8)",
+  "btnBg": "#D25F65",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(210, 95, 101, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[300px] md:w-[420px] -top-[40px] -right-[50px] md:-top-[60px] md:-right-[70px] opacity-60",
+      "src": "/images/themes/vuon xuan red/top right.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[300px] md:w-[420px] -bottom-[40px] -left-[50px] md:-bottom-[60px] md:-left-[70px] opacity-60",
+      "src": "/images/themes/vuon xuan red/button left.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#FF6B6B",
+    "#FFB6C1",
+    "#FFC0CB",
+    "#f5c4c8"
+  ],
+  "particleType": "petal",
+  "rgb": "210, 95, 101",
+  "sealBg": "radial-gradient(circle at 30% 30%, #D25F65, rgba(210, 95, 101, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "ae1685",
+  "slug": "vuon-xuan-do",
+  "templateId": "spring_garden_red",
+  "templateName": "Vườn Xuân - Đỏ",
+  "textColor": "#D25F65"
+}

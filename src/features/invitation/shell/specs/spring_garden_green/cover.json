@@ -1,0 +1,35 @@
+{
+  "accentColor": "#5d6a57",
+  "bg": "linear-gradient(to bottom right, #f0f4ef, #e8ede6, #dfe5dd)",
+  "btnBg": "#5d6a57",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(93, 106, 87, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[1200px] md:w-[1680px] -top-[100px] -right-[100px] md:-top-[140px] md:-right-[140px] opacity-70",
+      "src": "/images/themes/nature/flower_top.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[1200px] md:w-[1680px] -bottom-[100px] -left-[100px] md:-bottom-[140px] md:-left-[140px] opacity-70 rotate-180",
+      "src": "/images/themes/nature/flower_paralax.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#5d6a57",
+    "#697a62",
+    "#8a9e82",
+    "#bdcdc1"
+  ],
+  "particleType": "petal",
+  "rgb": "93, 106, 87",
+  "sealBg": "radial-gradient(circle at 30% 30%, #5d6a57, rgba(93, 106, 87, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "ae1685",
+  "slug": "vuon-xuan-xanh",
+  "templateId": "spring_garden_green",
+  "templateName": "Vườn Xuân - Xanh",
+  "textColor": "#5d6a57"
+}

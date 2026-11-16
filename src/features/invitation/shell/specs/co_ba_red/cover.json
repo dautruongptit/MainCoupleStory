@@ -1,0 +1,35 @@
+{
+  "accentColor": "#ffe3b1",
+  "bg": "linear-gradient(165deg, #4a3428 0%, #352518 45%, #241a12 100%)",
+  "btnBg": "#ffe3b1",
+  "btnTextColor": "#4a0808",
+  "cardBg": "rgba(0, 0, 0, 0.35)",
+  "cardBorder": "rgba(255, 227, 177, 0.25)",
+  "imgs": [
+    {
+      "className": "w-9 h-9 object-contain",
+      "src": "/images/themes/chibi_red/double-happiness.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[115%] max-w-none left-1/2 top-[calc(12%_-_30px)] -translate-x-1/2 opacity-20",
+      "src": "/images/themes/coba-red/cho-ben-thanh.webp"
+    }
+  ],
+  "nameFont": "\"Playfair Display\", serif",
+  "particleColors": [
+    "#c32a29",
+    "#e8d4a8",
+    "#6b4423",
+    "#f8f3e0"
+  ],
+  "particleType": "xi",
+  "rgb": "84, 46, 8",
+  "sealBg": "radial-gradient(circle at 30% 30%, #ffe3b1, #d1ba91)",
+  "sealColor": "#4a0808",
+  "sealType": "xi",
+  "sig": "8ede96",
+  "slug": "co-ba-do",
+  "templateId": "co_ba_red",
+  "templateName": "Cô Ba - Đỏ",
+  "textColor": "#ffe3b1"
+}

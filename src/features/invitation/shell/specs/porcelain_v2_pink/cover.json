@@ -1,0 +1,35 @@
+{
+  "accentColor": "#776e38",
+  "bg": "linear-gradient(to right, #fdf9f0 calc(50% - 450px), rgba(253,249,240,0) calc(50% - 450px), rgba(253,249,240,0) calc(50% + 450px), #fdf9f0 calc(50% + 450px)), url(\"/images/themes/porcelain-v2-pink/floral-tile.webp\") 0 0 / 560px repeat, #fff7eb",
+  "btnBg": "#776e38",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(119, 110, 56, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none pointer-events-none z-0 top-[-5%] left-[-14px] md:left-[-26px] -translate-x-[6%] md:-translate-x-[11%] h-36 md:h-50 lg:h-80 w-auto max-w-none rotate-[25deg] opacity-90",
+      "src": "/images/themes/porcelain-v2-pink/flower.webp"
+    },
+    {
+      "className": "absolute pointer-events-none pointer-events-none z-0 bottom-[-5%] md:bottom-[27%] right-[-14px] md:right-[-26px] translate-x-[6%] md:translate-x-[11%] h-36 md:h-50 lg:h-80 w-auto max-w-none -rotate-[25deg] -scale-x-100 opacity-90",
+      "src": "/images/themes/porcelain-v2-pink/flower.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#dc8599",
+    "#e7a3b2",
+    "#c9b98a",
+    "#776e38"
+  ],
+  "particleType": "blossom",
+  "rgb": "119, 110, 56",
+  "sealBg": "radial-gradient(circle at 30% 30%, #776e38, rgba(119, 110, 56, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "bach-su-v2-hong",
+  "templateId": "porcelain_v2_pink",
+  "templateName": "Bạch Sứ V2 - Hồng",
+  "textColor": "#776e38"
+}

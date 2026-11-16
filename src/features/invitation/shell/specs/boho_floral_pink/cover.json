@@ -1,0 +1,36 @@
+{
+  "accentColor": "#9D6D63",
+  "bg": "linear-gradient(to bottom right, #6b2d3a, #4a1f28, #2e1219)",
+  "btnBg": "#9D6D63",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(157, 109, 99, 0.15)",
+  "flyCorners": true,
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[360px] md:w-[450px] lg:w-[520px] -top-[50px] md:-top-[65px] lg:-top-[80px] left-[calc(-30%+60px)] md:left-[calc(-30%+75px)] lg:left-[calc(-30%+90px)] opacity-40",
+      "src": "/images/themes/boho-floral-pink/asset_1.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[130px] md:w-[180px] -bottom-[40px] -right-[35px] md:-bottom-[50px] md:-right-[45px] opacity-30 rotate-[150deg]",
+      "src": "/images/themes/boho-floral-pink/asset_3.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#F5C6C9",
+    "#BAB4C7",
+    "#e8a8a0",
+    "#d4b8b4"
+  ],
+  "particleType": "petal",
+  "rgb": "157, 109, 99",
+  "sealBg": "radial-gradient(circle at 30% 30%, #9D6D63, rgba(157, 109, 99, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "694b87",
+  "slug": "hoa-moc-hong",
+  "templateId": "boho_floral_pink",
+  "templateName": "Hoa Mộc - Hồng",
+  "textColor": "#9D6D63"
+}

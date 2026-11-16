@@ -1,0 +1,52 @@
+{
+  "accentColor": "#f0d497",
+  "bg": "linear-gradient(to bottom right, #0f2215, #0a180e, #061008)",
+  "btnBg": "#f0d497",
+  "btnTextColor": "#4a1212",
+  "cardBg": "rgba(0, 0, 0, 0.35)",
+  "cardBorder": "rgba(255, 227, 177, 0.25)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[220px] md:w-[300px] -top-[50px] -left-[95px] md:-top-[80px] md:-left-[100px] opacity-30 rotate-[30deg] md:rotate-[30deg]",
+      "src": "/images/themes/songlong-red/dragon_left.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[220px] md:w-[300px] -bottom-[30px] -right-[120px] md:-bottom-[80px] md:-right-[110px] opacity-30 -rotate-[-30deg] md:-rotate-[-30deg]",
+      "src": "/images/themes/songlong-red/dragon_right.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[50px] md:w-[70px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-15",
+      "src": "/images/themes/songlong-red/chinese_happiness.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[50px] md:w-[70px] top-3 right-3 md:top-4 md:right-4 opacity-40",
+      "src": "/images/themes/songlong-red/cloud_small.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[50px] md:w-[70px] bottom-3 left-3 md:bottom-4 md:left-4 opacity-40 -scale-x-100",
+      "src": "/images/themes/songlong-red/cloud_big.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[50px] md:w-[70px] bottom-2 left-1/2 -translate-x-1/2 opacity-20",
+      "src": "/images/themes/songlong-red/wave.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "openFx": "dragon-fly",
+  "particleColors": [
+    "#FFD700",
+    "#FFC107",
+    "#90EE90",
+    "#FFE066"
+  ],
+  "particleType": "xi",
+  "rgb": "31, 58, 37",
+  "sealBg": "radial-gradient(circle at 30% 30%, #f0d497, #cbab7c)",
+  "sealColor": "#4a1212",
+  "sealType": "xi",
+  "sig": "b14ec9",
+  "slug": "song-long-xanh",
+  "templateId": "double_dragon_green",
+  "templateName": "Song Long - Xanh",
+  "textColor": "#f0d497"
+}

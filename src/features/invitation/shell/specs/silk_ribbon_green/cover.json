@@ -1,0 +1,35 @@
+{
+  "accentColor": "#5e813c",
+  "bg": "linear-gradient(to bottom right, #ffffff, #f2f6ea, #e3ecd2)",
+  "btnBg": "#5e813c",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(94, 129, 60, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[121px] md:w-[108px] lg:w-[200px] max-w-none top-[-5%] md:top-[-5%] left-[-70px] md:left-[-70px] rotate-[45deg] -translate-x-[6%] md:-translate-x-[11%]",
+      "src": "/images/themes/silk-ribbon-green/flower-decoration.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[121px] md:w-[108px] lg:w-[200px] max-w-none bottom-[-5%] md:bottom-[-5%] right-[-70px] md:right-[-70px] -scale-x-100 rotate-[-45deg] translate-x-[6%] md:translate-x-[11%]",
+      "src": "/images/themes/silk-ribbon-green/flower-decoration.webp"
+    }
+  ],
+  "nameFont": "\"Carattere\", cursive",
+  "particleColors": [
+    "#d1db9c",
+    "#a8bd7d",
+    "#5e813c",
+    "#f3dfc3"
+  ],
+  "particleType": "blossom",
+  "rgb": "94, 129, 60",
+  "sealBg": "radial-gradient(circle at 30% 30%, #5e813c, rgba(94, 129, 60, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "to-duyen-xanh",
+  "templateId": "silk_ribbon_green",
+  "templateName": "Tơ Duyên - Xanh",
+  "textColor": "#5e813c"
+}

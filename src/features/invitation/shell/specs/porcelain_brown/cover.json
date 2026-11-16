@@ -1,0 +1,26 @@
+{
+  "accentColor": "#8d6f32",
+  "bg": "linear-gradient(to right, transparent calc(50% - 451px), #8d6f32 calc(50% - 451px), #8d6f32 calc(50% - 449px), transparent calc(50% - 449px), transparent calc(50% + 449px), #8d6f32 calc(50% + 449px), #8d6f32 calc(50% + 451px), transparent calc(50% + 451px)), linear-gradient(to right, #fcfbf8 calc(50% - 450px), rgba(252,251,248,0) calc(50% - 450px), rgba(252,251,248,0) calc(50% + 450px), #fcfbf8 calc(50% + 450px)), url(\"/images/themes/porcelain-brown/floral-tile.webp\") 0 0 / 627px repeat, #fcfbf8",
+  "btnBg": "#8d6f32",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(141, 111, 50, 0.15)",
+  "imgs": [],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#8d6f32",
+    "#a9873f",
+    "#c0a45c",
+    "#d9c391"
+  ],
+  "particleType": "blossom",
+  "rgb": "141, 111, 50",
+  "sealBg": "radial-gradient(circle at 30% 30%, #8d6f32, rgba(141, 111, 50, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "783589",
+  "slug": "bach-su-nau",
+  "templateId": "porcelain_brown",
+  "templateName": "Bạch Sứ - Nâu",
+  "textColor": "#8d6f32"
+}

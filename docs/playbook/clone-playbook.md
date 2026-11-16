@@ -59,7 +59,7 @@ Cách đọc nhanh:
 ## 4. Dựng / sửa từng màn
 
 ### 4.1 Bìa + hiệu ứng mở (dùng chung, không viết lại)
-- Cấu hình ở `src/features/invitation/components/covers/coverConfigs.ts` (thêm mục cho `templateId`: màu thẻ, gradient con dấu, màu ngày, ảnh trang trí, ...) và `src/features/invitation/config/giftboxConfigs.ts` (hộp quà).
+- Cấu hình ở `src/features/invitation/shell/specs/<id>/cover.json` rồi `npm run gen:specs` (tệp cho `templateId`: màu thẻ, gradient con dấu, màu ngày, ảnh trang trí, ...) và `src/features/invitation/config/giftboxConfigs.ts` (hộp quà).
 - Engine: `BaseCoverCard.tsx` + `OpenTransition.tsx`. Mọi mẫu dùng chung 1 engine của trang gốc (trừ Hoa Mộc: bìa riêng). Chỉ sửa engine khi **tất cả** mẫu cùng lệch.
 - Kiểm tra: `diff_dump … cover 390` = 0, `open` chuỗi mở (`scripts/survey/local_open_seq.mjs`).
 
@@ -95,7 +95,7 @@ Khi mẫu có cấu trúc khác (không chỉ khác màu), dựng bộ khối m�
 2. **HTML → JSX → khối**: `html2jsx.mjs` → `scripts/clone/cut_blocks.cjs <jsx> <thư mục>` tách các con trực tiếp của khung thành `NN.jsx` (đã lưu ở `docs/survey/blocks/<id>/`). `scripts/clone/compact.cjs` in dạng rút gọn (bỏ class/style) để đọc cấu trúc.
 3. **Gắn dữ liệu**: viết bộ sinh như `scripts/clone/gen_riviera.cjs` (thư viện `jsxkit.cjs`: tìm phần tử theo class, thay văn bản, lặp phần tử mẫu theo mảng dữ liệu, bọc điều kiện cờ `xxxOn`). Bộ sinh cũng thay màu/ảnh bằng token `t.*` và xuất `shell/blocks/<family>/*.tsx`. Chạy lại bộ sinh khi sửa quy tắc, không sửa tay file sinh ra.
 4. **Khai báo**: `shell/blocks/<family>/index.ts` (bản đồ khối), `blocksForFamily` trong `shell/blocks/index.ts`, `specs/<id>/{meta,theme,capabilities,demo}.json` rồi `npm run gen:specs`. Dữ liệu demo của gốc để trong `demo.json` (`buildDemoInv` tự gộp), không thêm `if (id === ...)`.
-5. **Bìa**: chỉ cần điền `coverConfigs.ts` đúng số đo (màu, font, `rgb`, `ampFont`, ảnh nền). Dùng class tùy ý `h-[520px]` thay cho `h-130` (Tailwind v4 của gốc ≠ Tailwind v3 ngoài `.inv-root`). Hộp thoại RSVP nhận màu qua `t.ink`, `t.rsvpBtnText`.
+5. **Bìa**: chỉ cần điền `specs/<id>/cover.json` đúng số đo (màu, font, `rgb`, `ampFont`, ảnh nền). Dùng class tùy ý `h-[520px]` thay cho `h-130` (Tailwind v4 của gốc ≠ Tailwind v3 ngoài `.inv-root`). Hộp thoại RSVP nhận màu qua `t.ink`, `t.rsvpBtnText`.
 
 **Bài học Riviera (áp dụng cho mọi họ mới):**
 - **Ảnh `loading="lazy"`**: `html2jsx` bỏ thuộc tính `loading/decoding`; phải khôi phục (ảnh hero `eager`, ảnh trang trí phía dưới `lazy`) vì ảnh lazy chưa tải có chiều cao 0 và làm lệch cả trang.

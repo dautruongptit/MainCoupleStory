@@ -1,0 +1,38 @@
+{
+  "accentColor": "#567c22",
+  "bg": "linear-gradient(to bottom right, #f6d2dc, #b75873, #8d3f57)",
+  "btnBg": "#567c22",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(86, 124, 34, 0.15)",
+  "imgs": [
+    {
+      "className": "w-full h-auto -scale-y-100 -rotate-[1deg]",
+      "src": "/images/themes/hoa-dai-pink/flower3-decoration.webp"
+    },
+    {
+      "className": "w-full h-auto -scale-x-100 rotate-[-15deg]",
+      "src": "/images/themes/hoa-dai-pink/flower3-decoration.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#b75873",
+    "#e78fa5",
+    "#f6d2dc",
+    "#567c22",
+    "#8fae5a",
+    "#f3c969",
+    "#ffffff"
+  ],
+  "particleType": "blossom",
+  "rgb": "86, 124, 34",
+  "sealBg": "radial-gradient(circle at 30% 30%, #567c22, rgba(86, 124, 34, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "537758",
+  "slug": "hoa-dai-hong",
+  "templateId": "hoa_dai_pink",
+  "templateName": "Hoa Dại - Hồng",
+  "textColor": "#567c22"
+}

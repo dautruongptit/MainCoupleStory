@@ -27,7 +27,6 @@ const tplSrc = read(J("src/features/templates/data/templates.generated.ts"));
 const templates = tplSrc.split("\n").filter((l) => l.startsWith('  {"slug"')).map((l) => JSON.parse(l.trim().replace(/,$/, "")));
 const registry = readJson(J("docs/clone-registry.json"));
 const regById = Object.fromEntries((registry?.templates ?? []).map((t) => [t.id, t]));
-const coverSrc = read(J("src/features/invitation/components/covers/coverConfigs.ts"));
 const coverIdx = read(J("src/features/invitation/components/covers/index.ts"));
 const edSrc = read(J("src/features/editor/config/editorSections.ts"));
 // dữ liệu bìa (ngày, lời mời) của mẫu nằm trong specs/<id>/demo.json (trước đây: referenceCovers.ts)
@@ -42,12 +41,9 @@ const setOf = (name) => {
 };
 const HERO = setOf("HAS_HERO_PHOTO"), COUPLE = setOf("HAS_COUPLE_HERO"), INTRO = setOf("HAS_INTRO_LINE"), ALBUM_HERO = setOf("ALBUM_AFTER_HERO");
 
-const coverEntry = (id) => {
-  const i = coverSrc.indexOf(`\n  "${id}": {`);
-  if (i < 0) return null;
-  return coverSrc.slice(i, coverSrc.indexOf("\n  },", i));
-};
-const field = (txt, k) => { const m = new RegExp(`\\b${k}:\\s*("(?:[^"\\\\]|\\\\.)*"|true|false)`).exec(txt); return m ? m[1].replace(/^"|"$/g, "") : null; };
+// cấu hình bìa của mẫu: specs/<id>/cover.json (trước đây là một mục trong coverConfigs.ts)
+const coverEntry = (id) => readJson(J(`src/features/invitation/shell/specs/${id}/cover.json`)) ?? null;
+const field = (cover, k) => { const v = cover?.[k]; return typeof v === "string" ? v : typeof v === "boolean" ? String(v) : null; };
 
 const diffNums = (id, state, w) => {
   const t = read(path.join(SURVEY, `diff-${id}-${state}-${w}.md`));
@@ -277,7 +273,7 @@ head(s2); wrap(s2); s2.autoFilter = { from: "A1", to: { row: 1, column: s2.colum
 // --- Sheet 3: Hiệu ứng bìa & nút mở
 const s3 = wb.addWorksheet("Hiệu ứng bìa & nút mở");
 s3.columns = [
-  { header: "ID", width: 24 }, { header: "Tên", width: 22 }, { header: "Component bìa", width: 30 }, { header: "Có coverConfigs", width: 10 },
+  { header: "ID", width: 24 }, { header: "Tên", width: 22 }, { header: "Component bìa", width: 30 }, { header: "Có cover.json", width: 10 },
   { header: "Loại hạt (cấu hình local)", width: 14 }, { header: "Loại hạt đo từ mã gốc", width: 14 }, { header: "Bảng màu hạt đo", width: 36 },
   { header: "Con dấu", width: 9 }, { header: "Nền bìa (bg)", width: 50 }, { header: "Màu thẻ bìa", width: 24 }, { header: "Font tên", width: 28 },
   { header: "Số ảnh trang trí bìa", width: 10 }, { header: "Hiệu ứng khi bấm Mở thiệp", width: 32 }, { header: "Ảnh góc bay khi mở", width: 10 },
@@ -288,7 +284,7 @@ for (const r of rows) {
   const palette = c ? (/particleColors:\s*\[([^\]]*)\]/.exec(c)?.[1] ?? "").replace(/"/g, "") : "";
   s3.addRow([r.t.id, r.t.name, r.coverComp, c ? "có" : "KHÔNG", c ? field(c, "particleType") : "—", r.pm?.particleType ?? "chưa có", r.pm ? r.pm.particleColors.join(", ") : palette || "—",
     c ? field(c, "sealType") : "—", c ? (field(c, "bg") ?? "").slice(0, 160) : "—", c ? `${field(c, "cardBg")} / ${field(c, "cardBorder")}` : "—", c ? field(c, "nameFont") : "—",
-    c ? (c.match(/"src":/g) ?? []).length : 0, r.btn.openFx, r.btn.fly ?? "mặc định", r.seq ? `${r.seq.ok}/${r.seq.total} khớp` : "chưa so", r.fx.note]);
+    c ? (JSON.stringify(c).match(/"src":/g) ?? []).length : 0, r.btn.openFx, r.btn.fly ?? "mặc định", r.seq ? `${r.seq.ok}/${r.seq.total} khớp` : "chưa so", r.fx.note]);
 }
 head(s3); wrap(s3); s3.autoFilter = { from: "A1", to: { row: 1, column: s3.columns.length } };
 
@@ -338,12 +334,12 @@ add("◐ Đã dựng, chưa kiểm (vàng)", "Đã dựng bằng số đo thật
 add("✖ Chưa / dở dang (đỏ)", "Chưa có spec, theme.json còn màu mặc định (đen/trắng), thiếu cấu hình bìa, hoặc cấu hình editor chưa đo.");
 add("", "");
 add("1. Màn hình demo", "Thiệp đã mở tại /vi/mau-thiep/<slug>/demo (nội dung, bố cục, màu, ảnh). Bằng chứng: spec + theme đo thật + diff open/openfull.");
-add("2. Hiệu ứng màn hình demo", "Bìa (card, con dấu, ảnh trang trí, nền gradient) và hạt rơi/nền động. Bằng chứng: coverConfigs.ts + diff cover + particle-colors-88.json (loại hạt đo từ mã gốc).");
+add("2. Hiệu ứng màn hình demo", "Bìa (card, con dấu, ảnh trang trí, nền gradient) và hạt rơi/nền động. Bằng chứng: specs/<id>/cover.json + diff cover + particle-colors-88.json (loại hạt đo từ mã gốc).");
 add("3. Hiệu ứng nút bấm", "Hiệu ứng khi bấm nút 'Mở thiệp' trên bìa (hạt tuôn từ con dấu, sóng, rồng bay, ảnh góc bay...). Bằng chứng: openFx/flyCorners trong coverConfigs + open-seq-compare-<id>.md. (Cách hiểu 'nút bấm xem mẫu' của người làm báo cáo; nếu ý khác, chỉnh lại cột này.)");
 add("4. Màn hình chỉnh sửa", "Khung editor dùng chung (16 thẻ) + cấu hình thẻ riêng theo mẫu (ảnh đầu thiệp / ảnh đôi / lời mở đầu / vị trí Thư viện ảnh). Bằng chứng: editorSections.ts (đo 88 mẫu 01/11/2026), capabilities.editor, diff editor, editor-sync.");
 add("5. Màn hình xem trước", "Tab 'Xem trước' trong editor — cùng bộ dựng InvitationShell với demo; mỗi công tắc Hiện/Ẩn trong editor phải có khối đọc cờ xxxOn tương ứng (liệt kê ở sheet 'Editor & Xem trước').");
 add("", "");
-add("Nguồn", "src/features/templates/data/templates.generated.ts, shell/specs/*, shell/blocks/*, covers/coverConfigs.ts, covers/index.ts, editor/config/editorSections.ts, docs/survey/*, docs/clone-registry.json");
+add("Nguồn", "src/features/templates/data/templates.generated.ts, shell/specs/*, shell/blocks/*, shell/specs/<id>/cover.json, covers/index.ts, editor/config/editorSections.ts, docs/survey/*, docs/clone-registry.json");
 add("Giới hạn", "Cột trạng thái dựa trên bằng chứng có trong repo; ô vàng không có nghĩa là sai, chỉ là chưa được đối chiếu tự động. Thumbnail cắt từ ảnh listing local (public/images/template-previews, gitignore).");
 add("Tạo lại", "node scripts/clone/registry.mjs && node scripts/clone/export_xlsx.mjs");
 

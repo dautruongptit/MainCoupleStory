@@ -1,0 +1,39 @@
+{
+  "accentColor": "rgb(92, 95, 62)",
+  "ampFont": "\"Clicker Script\", cursive",
+  "bg": "linear-gradient(to right bottom, rgb(251, 250, 246), rgb(92, 95, 62))",
+  "btnBg": "rgb(92, 95, 62)",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(252, 251, 246, 0.97)",
+  "cardBorder": "rgba(167, 133, 85, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none inset-0 h-full w-full object-cover opacity-40",
+      "src": "/images/themes/calla-lily-white/template-background.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-85 md:h-85 lg:h-90 w-auto max-w-none top-[-15%] left-[-110px] md:left-[-90px] -translate-x-[6%] md:-translate-x-[11%] opacity-30 rotate-[30deg]",
+      "src": "/images/themes/calla-lily-white/rum-background.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-85 md:h-85 lg:h-90 w-auto max-w-none bottom-[-7%] right-[-100px] md:right-[-90px] translate-x-[6%] md:translate-x-[11%] -scale-x-100 opacity-30 -rotate-[30deg]",
+      "src": "/images/themes/calla-lily-white/rum-background.webp"
+    }
+  ],
+  "nameFont": "\"Beau Rivage\", cursive",
+  "particleColors": [
+    "#E3E6D4",
+    "#6C7E54",
+    "#A78555"
+  ],
+  "particleType": "blossom",
+  "rgb": "92, 95, 62",
+  "sealBg": "radial-gradient(circle at 30% 30%, rgb(92, 95, 62), rgb(62, 65, 32))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "hoa-rum-trang",
+  "templateId": "calla_lily_white",
+  "templateName": "Hoa Rum - Trắng",
+  "textColor": "rgb(92, 95, 62)"
+}

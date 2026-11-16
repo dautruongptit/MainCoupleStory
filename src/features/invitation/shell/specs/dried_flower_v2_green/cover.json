@@ -1,0 +1,39 @@
+{
+  "accentColor": "#6c7e54",
+  "bg": "#6c7e54",
+  "btnBg": "#6c7e54",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(108, 126, 84, 0.15)",
+  "imgs": [
+    {
+      "className": "w-full h-auto -scale-x-100 rotate-[20deg]",
+      "src": "/images/themes/dried-flower-v2-green/leaf.webp"
+    },
+    {
+      "className": "w-full h-auto -rotate-[25deg] -scale-x-100",
+      "src": "/images/themes/dried-flower-v2-green/flower3.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[327px] md:w-[500px] lg:w-[650px] max-w-none bottom-[-30%] right-[6px] md:right-[55px] translate-x-[6%] md:translate-x-[11%]",
+      "src": "/images/themes/dried-flower-v2-green/flower6.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#967928",
+    "#6c7e54",
+    "#c9d3b5",
+    "#efe7d6"
+  ],
+  "particleType": "blossom",
+  "rgb": "108, 126, 84",
+  "sealBg": "radial-gradient(circle at 30% 30%, #6c7e54, rgba(108, 126, 84, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "164e7c",
+  "slug": "hoa-kho-v2-xanh",
+  "templateId": "dried_flower_v2_green",
+  "templateName": "Hoa Khô V2 - Xanh",
+  "textColor": "#6c7e54"
+}

@@ -1,0 +1,35 @@
+{
+  "accentColor": "#bc9b63",
+  "bg": "linear-gradient(to right, #fdf9f0 calc(50% - 450px), rgba(253,249,240,0) calc(50% - 450px), rgba(253,249,240,0) calc(50% + 450px), #fdf9f0 calc(50% + 450px)), url(\"/images/themes/porcelain-v2-green/floral-tile.webp\") 0 0 / 567px 1008px repeat, #fff7eb",
+  "btnBg": "#bc9b63",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(188, 155, 99, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none pointer-events-none z-0 top-[-5%] left-[-14px] md:left-[-26px] -translate-x-[6%] md:-translate-x-[11%] h-36 md:h-50 lg:h-80 w-auto max-w-none rotate-[25deg] opacity-90",
+      "src": "/images/themes/porcelain-v2-green/flower.webp"
+    },
+    {
+      "className": "absolute pointer-events-none pointer-events-none z-0 bottom-[-5%] md:bottom-[27%] right-[-14px] md:right-[-26px] translate-x-[6%] md:translate-x-[11%] h-36 md:h-50 lg:h-80 w-auto max-w-none -rotate-[25deg] -scale-x-100 opacity-90",
+      "src": "/images/themes/porcelain-v2-green/flower.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#464f1e",
+    "#7d8a47",
+    "#bc9b63",
+    "#e8e2cf"
+  ],
+  "particleType": "blossom",
+  "rgb": "188, 155, 99",
+  "sealBg": "radial-gradient(circle at 30% 30%, #bc9b63, rgba(188, 155, 99, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "bach-su-v2-xanh",
+  "templateId": "porcelain_v2_green",
+  "templateName": "Bạch Sứ V2 - Xanh",
+  "textColor": "#bc9b63"
+}

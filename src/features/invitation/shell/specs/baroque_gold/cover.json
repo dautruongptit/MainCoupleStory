@@ -1,0 +1,37 @@
+{
+  "accentColor": "#8D8F58",
+  "bg": "linear-gradient(to bottom right, rgba(138,90,42,0.9), rgba(185,125,62,0.9), rgba(216,175,135,0.9)), url(/images/themes/baroque-gold/bg.webp) center / 1200px repeat",
+  "btnBg": "#8D8F58",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(141, 143, 88, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[42%] max-w-[220px] top-0 left-0 -translate-x-[28%] -translate-y-[28%] opacity-50 rotate-[8deg]",
+      "src": "/images/themes/baroque-gold/hoa.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[42%] max-w-[220px] bottom-0 right-0 translate-x-[28%] translate-y-[28%] opacity-50 scale-x-[-1] rotate-[8deg]",
+      "src": "/images/themes/baroque-gold/hoa.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#B97D3E",
+    "#d8af87",
+    "#e8d2b0",
+    "#8D8F58",
+    "#f3e9d6",
+    "#ffffff"
+  ],
+  "particleType": "blossom",
+  "rgb": "141, 143, 88",
+  "sealBg": "radial-gradient(circle at 30% 30%, #8D8F58, rgba(141, 143, 88, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "hoang-gia-vang",
+  "templateId": "baroque_gold",
+  "templateName": "Baroque - Vàng",
+  "textColor": "#8D8F58"
+}

@@ -1,0 +1,35 @@
+{
+  "accentColor": "#ffe3b1",
+  "bg": "#3d6cae url(/images/themes/glass-garden-blue/floral-background.webp) center / 180% auto repeat",
+  "btnBg": "#ffe3b1",
+  "btnTextColor": "#4a0808",
+  "cardBg": "rgba(0, 0, 0, 0.35)",
+  "cardBorder": "rgba(255, 227, 177, 0.25)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none h-36 md:h-32 lg:h-36 w-auto max-w-none top-[-5%] left-[-14px] md:left-[-26px] -translate-x-[6%] md:-translate-x-[11%] opacity-95 rotate-[25deg]",
+      "src": "/images/themes/glass-garden-blue/flower2-decoration.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-36 md:h-32 lg:h-36 w-auto max-w-none bottom-[-5%] right-[-14px] md:right-[-26px] translate-x-[6%] md:translate-x-[11%] -scale-x-100 opacity-95 -rotate-[25deg]",
+      "src": "/images/themes/glass-garden-blue/flower2-decoration.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#cfe2ff",
+    "#a9c8f5",
+    "#ffffff",
+    "#e3eeff"
+  ],
+  "particleType": "blossom",
+  "rgb": "217, 234, 255",
+  "sealBg": "radial-gradient(circle at 30% 30%, #ffe3b1, #d1ba91)",
+  "sealColor": "#4a0808",
+  "sealType": "heart",
+  "sig": "612c30",
+  "slug": "vuonkinh-lam",
+  "templateId": "glass_garden_blue",
+  "templateName": "Vườn Kính - Lam",
+  "textColor": "#ffe3b1"
+}

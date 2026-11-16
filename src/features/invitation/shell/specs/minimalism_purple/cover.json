@@ -1,0 +1,35 @@
+{
+  "accentColor": "#7869a0",
+  "bg": "linear-gradient(to bottom right, #9a8cc0, #7869a0, #574a78)",
+  "btnBg": "#7869a0",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(120, 105, 160, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[35%] md:w-[50%] max-w-none object-contain top-[-5%] md:top-[-16%] left-[-15%] md:left-[-20%] -translate-x-[6%] md:-translate-x-[10%] -scale-x-100 opacity-85 rotate-[30deg]",
+      "src": "/images/themes/minimalism-purple/flower4-decoration.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[35%] md:w-[50%] max-w-none object-contain bottom-[4%] md:bottom-[67%] right-[-15%] md:right-[-20%] translate-x-[6%] md:translate-x-[10%] scale-x-100 opacity-85 rotate-[-30deg]",
+      "src": "/images/themes/minimalism-purple/flower4-decoration.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#9a8cc0",
+    "#b7a8d6",
+    "#c9a24a",
+    "#efeaf6"
+  ],
+  "particleType": "blossom",
+  "rgb": "120, 105, 160",
+  "sealBg": "radial-gradient(circle at 30% 30%, #7869a0, rgba(120, 105, 160, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "minimalism-tim",
+  "templateId": "minimalism_purple",
+  "templateName": "Minimalism - Tím",
+  "textColor": "#7869a0"
+}

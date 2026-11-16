@@ -1,0 +1,43 @@
+{
+  "accentColor": "#19472D",
+  "bg": "linear-gradient(to bottom right, #19472D, #122F1E, #0C2216)",
+  "btnBg": "#19472D",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(25, 71, 45, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[120px] md:w-[220px] -top-[20px] -left-[20px] md:-top-[20px] md:-left-[50px] opacity-90 rotate-10",
+      "src": "/images/themes/songphung-green/Phuong.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[140px] md:w-[220px] -bottom-[120px] -right-[40px]  md:-bottom-[110px] md:-right-[50px] opacity-90 -scale-x-100 rotate-5",
+      "src": "/images/themes/songphung-green/Phuong.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[120px] md:w-[160px] -bottom-[20px] -left-[20px] md:-bottom-[30px] md:-left-[30px] opacity-60",
+      "src": "/images/themes/songphung-green/HOA.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[100px] md:w-[140px] -top-[15px] -right-[15px] md:-top-[20px] md:-right-[20px] opacity-60 rotate-180",
+      "src": "/images/themes/songphung-green/HOA.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#19472D",
+    "#2D6A4F",
+    "#52B788",
+    "#FFF0E7"
+  ],
+  "particleType": "xi",
+  "rgb": "25, 71, 45",
+  "sealBg": "radial-gradient(circle at 30% 30%, #e9ce9e, rgb(203, 176, 128))",
+  "sealColor": "#4a0808",
+  "sealType": "xi",
+  "sig": "160052",
+  "slug": "song-phung-xanh",
+  "templateId": "double_phoenix_green",
+  "templateName": "Song Phụng - Xanh",
+  "textColor": "#19472D"
+}

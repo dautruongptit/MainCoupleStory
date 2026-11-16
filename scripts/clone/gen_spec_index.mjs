@@ -1,5 +1,5 @@
 // Sinh chỉ mục spec: quét src/features/invitation/shell/specs/<id>/ →
-//   specs/index.generated.ts  (theme + capabilities + demo của từng mẫu; khuôn thiệp dùng)
+//   specs/index.generated.ts  (theme + capabilities + demo + cover của từng mẫu; khuôn thiệp và engine bìa dùng)
 //   src/features/templates/data/templates.generated.ts  (meta của từng mẫu, xếp theo meta.order; kho mẫu / bảng màu / điểm lấy nét dùng)
 // Thay cho ~275 dòng import + 92 dòng đăng ký tay trong specs/index.ts và mảng TEMPLATES viết tay.
 // Mỗi thư mục phải có meta.json + theme.json + capabilities.json (demo.json tùy chọn); capabilities.id phải trùng tên thư mục.
@@ -32,6 +32,9 @@ for (const id of ids) {
   const meta = readJson(id, "meta.json");
   readJson(id, "theme.json");
   if (has("demo.json")) readJson(id, "demo.json");
+  // cover.json (tùy chọn): cấu hình màn bìa cho engine bìa chung; mẫu có component bìa riêng hoàn toàn thì không cần
+  const cover = has("cover.json") ? readJson(id, "cover.json") : null;
+  if (cover && cover.templateId !== id) errors.push(`${id}: cover.templateId = "${cover.templateId}" không trùng tên thư mục`);
   if (!caps || !meta) continue;
   if (caps.id !== id) errors.push(`${id}: capabilities.id = "${caps.id}" không trùng tên thư mục`);
   const missCaps = REQUIRED_CAPS.filter((k) => caps[k] === undefined);
@@ -39,7 +42,7 @@ for (const id of ids) {
   if (!Array.isArray(caps.blocks) || !caps.blocks.length) errors.push(`${id}: capabilities.blocks rỗng`);
   const missMeta = REQUIRED_META.filter((k) => meta[k] === undefined);
   if (missMeta.length) errors.push(`${id}: meta thiếu trường ${missMeta.join(", ")}`);
-  rows.push({ id, demo: has("demo.json"), meta });
+  rows.push({ id, demo: has("demo.json"), cover: !!cover, meta });
 }
 // meta: thứ tự (order) và slug không được trùng
 for (const key of ["order", "slug"]) {
@@ -56,15 +59,16 @@ const v = (id) => "s_" + id.replace(/[^A-Za-z0-9_]/g, "_");
 const out = [
   "// TỆP SINH — không sửa tay. Chạy: node scripts/clone/gen_spec_index.mjs",
   "// Nguồn: mỗi thư mục specs/<id>/{theme,capabilities,demo}.json",
-  ...rows.flatMap(({ id, demo }) => [
+  ...rows.flatMap(({ id, demo, cover }) => [
     `import ${v(id)}_theme from "./${id}/theme.json";`,
     `import ${v(id)}_caps from "./${id}/capabilities.json";`,
     ...(demo ? [`import ${v(id)}_demo from "./${id}/demo.json";`] : []),
+    ...(cover ? [`import ${v(id)}_cover from "./${id}/cover.json";`] : []),
   ]),
   "",
   "/** JSON thô của từng mẫu; `specs/index.ts` ép kiểu và dựng theme. */",
-  "export const RAW_SPECS: Record<string, { theme: unknown; capabilities: unknown; demo?: unknown }> = {",
-  ...rows.map(({ id, demo }) => `  ${id}: { theme: ${v(id)}_theme, capabilities: ${v(id)}_caps${demo ? `, demo: ${v(id)}_demo` : ""} },`),
+  "export const RAW_SPECS: Record<string, { theme: unknown; capabilities: unknown; demo?: unknown; cover?: unknown }> = {",
+  ...rows.map(({ id, demo, cover }) => `  ${id}: { theme: ${v(id)}_theme, capabilities: ${v(id)}_caps${demo ? `, demo: ${v(id)}_demo` : ""}${cover ? `, cover: ${v(id)}_cover` : ""} },`),
   "};",
   "",
 ].join("\n");

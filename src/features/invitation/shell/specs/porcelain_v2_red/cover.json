@@ -1,0 +1,35 @@
+{
+  "accentColor": "#654e2f",
+  "bg": "linear-gradient(to right, #fefaf0 calc(50% - 450px), rgba(254,250,240,0) calc(50% - 450px), rgba(254,250,240,0) calc(50% + 450px), #fefaf0 calc(50% + 450px)), url(\"/images/themes/porcelain-v2-red/floral-tile.webp\") 0 0 / 518px 920px repeat, #fdf9f3",
+  "btnBg": "#654e2f",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(101, 78, 47, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none pointer-events-none z-0 top-[3%] left-[-14px] md:left-[-26px] -translate-x-[6%] md:-translate-x-[11%] h-28 md:h-24 lg:h-[200px] w-auto max-w-none -scale-x-100 rotate-[25deg] opacity-90",
+      "src": "/images/themes/porcelain-v2-red/flower.webp"
+    },
+    {
+      "className": "absolute pointer-events-none pointer-events-none z-0 bottom-[-5%] md:bottom-[50%] right-[-14px] md:right-[-26px] translate-x-[6%] md:translate-x-[11%] h-28 md:h-24 lg:h-[200px] w-auto max-w-none -rotate-[25deg] opacity-90",
+      "src": "/images/themes/porcelain-v2-red/flower.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#8f262d",
+    "#b8434a",
+    "#c9b98a",
+    "#654e2f"
+  ],
+  "particleType": "blossom",
+  "rgb": "101, 78, 47",
+  "sealBg": "radial-gradient(circle at 30% 30%, #654e2f, rgba(101, 78, 47, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "bach-su-v2-do",
+  "templateId": "porcelain_v2_red",
+  "templateName": "Bạch Sứ II - Đỏ",
+  "textColor": "#654e2f"
+}

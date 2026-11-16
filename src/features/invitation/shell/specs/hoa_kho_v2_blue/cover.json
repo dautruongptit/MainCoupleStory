@@ -1,0 +1,39 @@
+{
+  "accentColor": "#ffe3b1",
+  "bg": "#556183",
+  "btnBg": "#ffe3b1",
+  "btnTextColor": "#4a0808",
+  "cardBg": "rgba(0, 0, 0, 0.35)",
+  "cardBorder": "rgba(255, 227, 177, 0.25)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none h-36 w-auto max-w-none md:h-50 lg:h-50 bottom-[-5%] md:bottom-[-15%] left-[-14px] md:left-[67px] -translate-x-[6%] md:-translate-x-[11%] opacity-100",
+      "src": "/images/themes/hoa-kho-v2-blue/flower7.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-16 w-auto max-w-none md:h-32 lg:h-36 top-[5%] left-[-14px] md:left-[-26px] -translate-x-[6%] md:-translate-x-[11%] rotate-[25deg]",
+      "src": "/images/themes/hoa-kho-v2-blue/butterfly.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-16 w-auto max-w-none md:h-32 lg:h-36 bottom-[35%] right-[-14px] md:right-[-26px] translate-x-[6%] md:translate-x-[11%] -rotate-[25deg] -scale-x-100",
+      "src": "/images/themes/hoa-kho-v2-blue/butterfly.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#8f7148",
+    "#556183",
+    "#c7b48d",
+    "#efe7d6"
+  ],
+  "particleType": "blossom",
+  "rgb": "85, 97, 131",
+  "sealBg": "radial-gradient(circle at 30% 30%, #ffe3b1, #d1ba91)",
+  "sealColor": "#4a0808",
+  "sealType": "heart",
+  "sig": "f88fc4",
+  "slug": "hoa-kho-v2-lam",
+  "templateId": "hoa_kho_v2_blue",
+  "templateName": "Hoa Khô V2 - Lam",
+  "textColor": "#ffe3b1"
+}

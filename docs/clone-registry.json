@@ -1,6 +1,6 @@
 {
  "_doc": "Sổ đăng ký clone. Sinh bởi scripts/clone/registry.mjs — đừng sửa tay trừ trường verified/notes.",
- "generatedAt": "2026-11-16T08:56:33.234Z",
+ "generatedAt": "2026-11-16T09:04:26.718Z",
  "totals": {
   "templates": 92,
   "đã clone": 43,
@@ -272,6 +272,67 @@
     "spring_garden_green: file mới",
     "spring_garden_green: file đã cập nhật"
    ]
+  },
+  {
+   "at": "2026-11-16T09:02:49.718Z",
+   "changes": 162,
+   "summary": [
+    "minimalism_darkred: file mới",
+    "minimalism_darkred: file mất",
+    "minimalism_brown: file mới",
+    "minimalism_brown: file mất",
+    "song_hy_green: file mới",
+    "song_hy_green: file mất",
+    "boho_floral_green: file mới",
+    "boho_floral_green: file mất",
+    "song_hy_v2_red: file mới",
+    "song_hy_v2_red: file mất",
+    "song_hy_red: file mới",
+    "song_hy_red: file mất",
+    "silk_ribbon_green: file mới",
+    "silk_ribbon_green: file mất",
+    "minimalism_green: file mới",
+    "minimalism_green: file mất",
+    "jasmine_white: file mới",
+    "jasmine_white: file mất",
+    "dragon_phoenix_v3_red: file mới",
+    "dragon_phoenix_v3_red: file mất",
+    "dragon_phoenix_red: file mới",
+    "dragon_phoenix_red: file mất",
+    "silk_ribbon_darkred: file mới",
+    "silk_ribbon_darkred: file mất",
+    "minimalism_darkbrown: file mới",
+    "minimalism_darkbrown: file mất",
+    "dragon_phoenix_v2_red: file mới",
+    "dragon_phoenix_v2_red: file mất",
+    "double_dragon_red: file mới",
+    "double_dragon_red: file mất",
+    "glass_garden_green: file mới",
+    "glass_garden_green: file mất",
+    "double_phoenix_red: file mới",
+    "double_phoenix_red: file mất",
+    "double_dragon_green: file mới",
+    "double_dragon_green: file mất",
+    "glass_garden_pink: file mới",
+    "glass_garden_pink: file mất",
+    "elegant_leaf_green: file mới",
+    "elegant_leaf_green: file mất",
+    "silk_ribbon_pink: file mới",
+    "silk_ribbon_pink: file mất",
+    "dragon_phoenix_v4_red: file mới",
+    "dragon_phoenix_v4_red: file mất",
+    "lien_hoa_v2_green: file mới",
+    "lien_hoa_v2_green: file mất",
+    "chateau_green: file mới",
+    "chateau_green: file mất",
+    "spring_garden_green: file mới",
+    "spring_garden_green: file mất"
+   ]
+  },
+  {
+   "at": "2026-11-16T09:04:26.718Z",
+   "changes": 0,
+   "summary": []
   }
  ],
  "templates": [
@@ -288,9 +349,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/minimalism-dark-red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/minimalism_darkred/cover.json",
     "key": "minimalism_darkred",
-    "sha": "e3ef355328f7ec72"
+    "sha": "4456d60c5ca811c9"
    },
    "files": {
     "spec": [
@@ -298,6 +359,11 @@
       "path": "src/features/invitation/shell/specs/minimalism_darkred/capabilities.json",
       "size": 969,
       "sha": "987a54da8b85ef8d"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/minimalism_darkred/cover.json",
+      "size": 1496,
+      "sha": "4456d60c5ca811c9"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkred/demo.json",
@@ -543,9 +609,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/minimalism-brown",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/minimalism_brown/cover.json",
     "key": "minimalism_brown",
-    "sha": "09b1e7ee04d6aca3"
+    "sha": "4e6dc17d90379383"
    },
    "files": {
     "spec": [
@@ -553,6 +619,11 @@
       "path": "src/features/invitation/shell/specs/minimalism_brown/capabilities.json",
       "size": 1107,
       "sha": "598900a569ab08bd"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/minimalism_brown/cover.json",
+      "size": 1344,
+      "sha": "4e6dc17d90379383"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_brown/demo.json",
@@ -802,9 +873,9 @@
    "generator": null,
    "themeAssetsDir": "public/song-hy-green",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/song_hy_green/cover.json",
     "key": "song_hy_green",
-    "sha": "8deae5968bea8663"
+    "sha": "8207075d902fd8f5"
    },
    "files": {
     "spec": [
@@ -812,6 +883,11 @@
       "path": "src/features/invitation/shell/specs/song_hy_green/capabilities.json",
       "size": 855,
       "sha": "fc0a0698acbdfa52"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/song_hy_green/cover.json",
+      "size": 1197,
+      "sha": "8207075d902fd8f5"
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_green/demo.json",
@@ -1021,9 +1097,9 @@
    "generator": null,
    "themeAssetsDir": "public/boho-floral-green",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/boho_floral_green/cover.json",
     "key": "boho_floral_green",
-    "sha": "929685b36b2589b1"
+    "sha": "cc6476f6fbd4e069"
    },
    "files": {
     "spec": [
@@ -1031,6 +1107,11 @@
       "path": "src/features/invitation/shell/specs/boho_floral_green/capabilities.json",
       "size": 681,
       "sha": "287c3d08a7e71ac5"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/boho_floral_green/cover.json",
+      "size": 1175,
+      "sha": "cc6476f6fbd4e069"
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_green/demo.json",
@@ -1220,9 +1301,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/song-hy-v2-red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/song_hy_v2_red/cover.json",
     "key": "song_hy_v2_red",
-    "sha": "f48a4f20f1b59351"
+    "sha": "18e56d302ab4f204"
    },
    "files": {
     "spec": [
@@ -1230,6 +1311,11 @@
       "path": "src/features/invitation/shell/specs/song_hy_v2_red/capabilities.json",
       "size": 890,
       "sha": "f313a10a51741626"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/song_hy_v2_red/cover.json",
+      "size": 1330,
+      "sha": "18e56d302ab4f204"
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_v2_red/demo.json",
@@ -1399,9 +1485,9 @@
    "generator": null,
    "themeAssetsDir": "public/song-hy-red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/song_hy_red/cover.json",
     "key": "song_hy_red",
-    "sha": "4778674c22b7fd10"
+    "sha": "3b0bf47d0f6c5895"
    },
    "files": {
     "spec": [
@@ -1409,6 +1495,11 @@
       "path": "src/features/invitation/shell/specs/song_hy_red/capabilities.json",
       "size": 849,
       "sha": "608326c8164a0380"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/song_hy_red/cover.json",
+      "size": 1182,
+      "sha": "3b0bf47d0f6c5895"
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_red/demo.json",
@@ -1655,9 +1746,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/silk-ribbon-green",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/silk_ribbon_green/cover.json",
     "key": "silk_ribbon_green",
-    "sha": "e0b8969022fa0d3c"
+    "sha": "6b58695ab0351c0d"
    },
    "files": {
     "spec": [
@@ -1665,6 +1756,11 @@
       "path": "src/features/invitation/shell/specs/silk_ribbon_green/capabilities.json",
       "size": 949,
       "sha": "164f70b1e22b1720"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/silk_ribbon_green/cover.json",
+      "size": 1311,
+      "sha": "6b58695ab0351c0d"
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_green/demo.json",
@@ -1824,9 +1920,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/minimalism-green",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/minimalism_green/cover.json",
     "key": "minimalism_green",
-    "sha": "1bf40c1084ef7f17"
+    "sha": "1e3f17bb139e5623"
    },
    "files": {
     "spec": [
@@ -1834,6 +1930,11 @@
       "path": "src/features/invitation/shell/specs/minimalism_green/capabilities.json",
       "size": 928,
       "sha": "cb5bb11342d4d89a"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/minimalism_green/cover.json",
+      "size": 1322,
+      "sha": "1e3f17bb139e5623"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_green/demo.json",
@@ -2011,9 +2112,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/moclan-white",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/jasmine_white/cover.json",
     "key": "jasmine_white",
-    "sha": "a60f44d2a0cb100f"
+    "sha": "60ee25bcbb2b32c4"
    },
    "files": {
     "spec": [
@@ -2021,6 +2122,11 @@
       "path": "src/features/invitation/shell/specs/jasmine_white/capabilities.json",
       "size": 906,
       "sha": "ac3181e45de800e1"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/jasmine_white/cover.json",
+      "size": 1117,
+      "sha": "60ee25bcbb2b32c4"
      },
      {
       "path": "src/features/invitation/shell/specs/jasmine_white/demo.json",
@@ -2152,9 +2258,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/longphung-v3-red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/dragon_phoenix_v3_red/cover.json",
     "key": "dragon_phoenix_v3_red",
-    "sha": "ff60e1ed46ddcf9c"
+    "sha": "be29fd5949b2f2c8"
    },
    "files": {
     "spec": [
@@ -2162,6 +2268,11 @@
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v3_red/capabilities.json",
       "size": 896,
       "sha": "90ce382eaeb80df7"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/dragon_phoenix_v3_red/cover.json",
+      "size": 1283,
+      "sha": "be29fd5949b2f2c8"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v3_red/demo.json",
@@ -2300,9 +2411,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/red-v1",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/dragon_phoenix_red/cover.json",
     "key": "dragon_phoenix_red",
-    "sha": "4cf1e0d17a0ffa79"
+    "sha": "f2e46452420dc737"
    },
    "files": {
     "spec": [
@@ -2310,6 +2421,11 @@
       "path": "src/features/invitation/shell/specs/dragon_phoenix_red/capabilities.json",
       "size": 940,
       "sha": "248feefc24b86bba"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/dragon_phoenix_red/cover.json",
+      "size": 1329,
+      "sha": "f2e46452420dc737"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_red/demo.json",
@@ -2521,9 +2637,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/silk-ribbon-darkred",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/silk_ribbon_darkred/cover.json",
     "key": "silk_ribbon_darkred",
-    "sha": "c3f7acbe559e4f7e"
+    "sha": "8d526d0cd40644c0"
    },
    "files": {
     "spec": [
@@ -2531,6 +2647,11 @@
       "path": "src/features/invitation/shell/specs/silk_ribbon_darkred/capabilities.json",
       "size": 955,
       "sha": "044e6c9dc997f257"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/silk_ribbon_darkred/cover.json",
+      "size": 1332,
+      "sha": "8d526d0cd40644c0"
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_darkred/demo.json",
@@ -2690,9 +2811,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/minimalism-darkbrown",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/minimalism_darkbrown/cover.json",
     "key": "minimalism_darkbrown",
-    "sha": "c2107c0a51f3a456"
+    "sha": "26a3bc215d49bc0b"
    },
    "files": {
     "spec": [
@@ -2700,6 +2821,11 @@
       "path": "src/features/invitation/shell/specs/minimalism_darkbrown/capabilities.json",
       "size": 940,
       "sha": "b64739a4d29da8f1"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/minimalism_darkbrown/cover.json",
+      "size": 1342,
+      "sha": "26a3bc215d49bc0b"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkbrown/demo.json",
@@ -2829,9 +2955,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/longphung-v2-red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/dragon_phoenix_v2_red/cover.json",
     "key": "dragon_phoenix_v2_red",
-    "sha": "d063ff1877ab8da6"
+    "sha": "138349f893ef320d"
    },
    "files": {
     "spec": [
@@ -2839,6 +2965,11 @@
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v2_red/capabilities.json",
       "size": 820,
       "sha": "79db3e10d289884c"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/dragon_phoenix_v2_red/cover.json",
+      "size": 1327,
+      "sha": "138349f893ef320d"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v2_red/demo.json",
@@ -2947,9 +3078,9 @@
    "generator": null,
    "themeAssetsDir": "public/songlong-red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/double_dragon_red/cover.json",
     "key": "double_dragon_red",
-    "sha": "0aecdae3be538b7b"
+    "sha": "1a9fda6bfd5dbf68"
    },
    "files": {
     "spec": [
@@ -2957,6 +3088,11 @@
       "path": "src/features/invitation/shell/specs/double_dragon_red/capabilities.json",
       "size": 876,
       "sha": "30a5e4f662755fb8"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/double_dragon_red/cover.json",
+      "size": 1799,
+      "sha": "1a9fda6bfd5dbf68"
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_red/demo.json",
@@ -3193,9 +3329,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/glass-garden-green",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/glass_garden_green/cover.json",
     "key": "glass_garden_green",
-    "sha": "f00123cad64c2c40"
+    "sha": "3460117fc3b42846"
    },
    "files": {
     "spec": [
@@ -3203,6 +3339,11 @@
       "path": "src/features/invitation/shell/specs/glass_garden_green/capabilities.json",
       "size": 801,
       "sha": "74c3b917ebab5c3f"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/glass_garden_green/cover.json",
+      "size": 1365,
+      "sha": "3460117fc3b42846"
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_green/demo.json",
@@ -3334,9 +3475,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/songphung-red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/double_phoenix_red/cover.json",
     "key": "double_phoenix_red",
-    "sha": "f7e88ffc2a41da20"
+    "sha": "27af6ff2e88e18b4"
    },
    "files": {
     "spec": [
@@ -3344,6 +3485,11 @@
       "path": "src/features/invitation/shell/specs/double_phoenix_red/capabilities.json",
       "size": 955,
       "sha": "0055fb8128cd27cb"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/double_phoenix_red/cover.json",
+      "size": 1613,
+      "sha": "27af6ff2e88e18b4"
      },
      {
       "path": "src/features/invitation/shell/specs/double_phoenix_red/demo.json",
@@ -3503,9 +3649,9 @@
    "generator": null,
    "themeAssetsDir": "public/songlong-red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/double_dragon_green/cover.json",
     "key": "double_dragon_green",
-    "sha": "3d6f5e22ee03ceb5"
+    "sha": "6a7b952555cf01ed"
    },
    "files": {
     "spec": [
@@ -3513,6 +3659,11 @@
       "path": "src/features/invitation/shell/specs/double_dragon_green/capabilities.json",
       "size": 879,
       "sha": "f97dc41e93a48bb8"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/double_dragon_green/cover.json",
+      "size": 2014,
+      "sha": "6a7b952555cf01ed"
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_green/demo.json",
@@ -3739,9 +3890,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/glass-garden-pink",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/glass_garden_pink/cover.json",
     "key": "glass_garden_pink",
-    "sha": "f4f321eb0e0a00a0"
+    "sha": "94dd24947d3ca513"
    },
    "files": {
     "spec": [
@@ -3749,6 +3900,11 @@
       "path": "src/features/invitation/shell/specs/glass_garden_pink/capabilities.json",
       "size": 798,
       "sha": "a868423fdd3bf49d"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/glass_garden_pink/cover.json",
+      "size": 1326,
+      "sha": "94dd24947d3ca513"
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_pink/demo.json",
@@ -3874,7 +4030,7 @@
    "status": "dở dang",
    "issues": [
     "theme.json còn màu mặc định (chưa đo)",
-    "thiếu cấu hình bìa trong coverConfigs.ts"
+    "thiếu cấu hình bìa specs/<id>/cover.json"
    ],
    "family": "marble_yellow",
    "sharedBlocks": false,
@@ -4032,9 +4188,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/thanhdiep-green",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/elegant_leaf_green/cover.json",
     "key": "elegant_leaf_green",
-    "sha": "205cc0826e7db599"
+    "sha": "0168b28215e21301"
    },
    "files": {
     "spec": [
@@ -4042,6 +4198,11 @@
       "path": "src/features/invitation/shell/specs/elegant_leaf_green/capabilities.json",
       "size": 858,
       "sha": "65ef61fb47622fcf"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/elegant_leaf_green/cover.json",
+      "size": 972,
+      "sha": "0168b28215e21301"
      },
      {
       "path": "src/features/invitation/shell/specs/elegant_leaf_green/demo.json",
@@ -4163,9 +4324,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/silk-ribbon-pink",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/silk_ribbon_pink/cover.json",
     "key": "silk_ribbon_pink",
-    "sha": "5d0aacfb4bb15d44"
+    "sha": "580e56b01acaf922"
    },
    "files": {
     "spec": [
@@ -4173,6 +4334,11 @@
       "path": "src/features/invitation/shell/specs/silk_ribbon_pink/capabilities.json",
       "size": 946,
       "sha": "e108782b4f5f2ab4"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/silk_ribbon_pink/cover.json",
+      "size": 1321,
+      "sha": "580e56b01acaf922"
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_pink/demo.json",
@@ -4332,9 +4498,9 @@
    "generator": "scripts/clone/gen_traditional.cjs",
    "themeAssetsDir": "public/images/themes/longphung-v4-red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/dragon_phoenix_v4_red/cover.json",
     "key": "dragon_phoenix_v4_red",
-    "sha": "e9ddf2937a0fd83c"
+    "sha": "f3659351d65b719a"
    },
    "files": {
     "spec": [
@@ -4342,6 +4508,11 @@
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v4_red/capabilities.json",
       "size": 1112,
       "sha": "912d419d80bb2ae6"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/dragon_phoenix_v4_red/cover.json",
+      "size": 1421,
+      "sha": "f3659351d65b719a"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v4_red/demo.json",
@@ -4687,9 +4858,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/lien-hoa-v2-green",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/lien_hoa_v2_green/cover.json",
     "key": "lien_hoa_v2_green",
-    "sha": "28106e2599e31f71"
+    "sha": "1594e7a090134c1b"
    },
    "files": {
     "spec": [
@@ -4697,6 +4868,11 @@
       "path": "src/features/invitation/shell/specs/lien_hoa_v2_green/capabilities.json",
       "size": 1041,
       "sha": "625baafec904aaca"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/lien_hoa_v2_green/cover.json",
+      "size": 1518,
+      "sha": "1594e7a090134c1b"
      },
      {
       "path": "src/features/invitation/shell/specs/lien_hoa_v2_green/demo.json",
@@ -4979,9 +5155,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/chateau-green",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/chateau_green/cover.json",
     "key": "chateau_green",
-    "sha": "ec7e2c79a7f51f74"
+    "sha": "9ebdc4eb6fd89df5"
    },
    "files": {
     "spec": [
@@ -4989,6 +5165,11 @@
       "path": "src/features/invitation/shell/specs/chateau_green/capabilities.json",
       "size": 893,
       "sha": "bc72e5380e41d5fc"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/chateau_green/cover.json",
+      "size": 1240,
+      "sha": "9ebdc4eb6fd89df5"
      },
      {
       "path": "src/features/invitation/shell/specs/chateau_green/demo.json",
@@ -5178,9 +5359,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/nature",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/spring_garden_green/cover.json",
     "key": "spring_garden_green",
-    "sha": "d66524b69c53ee3f"
+    "sha": "2093ef1c771fd43c"
    },
    "files": {
     "spec": [
@@ -5188,6 +5369,11 @@
       "path": "src/features/invitation/shell/specs/spring_garden_green/capabilities.json",
       "size": 956,
       "sha": "27cee9cbca0182a7"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/spring_garden_green/cover.json",
+      "size": 1166,
+      "sha": "2093ef1c771fd43c"
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_green/demo.json",
@@ -5320,9 +5506,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/chibi_red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/chibi_red/cover.json",
     "key": "chibi_red",
-    "sha": "95e8783d869361bd"
+    "sha": "3e821a3785fa7edb"
    },
    "files": {
     "spec": [
@@ -5330,6 +5516,11 @@
       "path": "src/features/invitation/shell/specs/chibi_red/capabilities.json",
       "size": 911,
       "sha": "47e9d1eaf6bf8009"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/chibi_red/cover.json",
+      "size": 1970,
+      "sha": "3e821a3785fa7edb"
      },
      {
       "path": "src/features/invitation/shell/specs/chibi_red/demo.json",
@@ -5491,9 +5682,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/song-hac-red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/song_hac_red/cover.json",
     "key": "song_hac_red",
-    "sha": "4a1646df46191e90"
+    "sha": "ef77e08c78f57410"
    },
    "files": {
     "spec": [
@@ -5501,6 +5692,11 @@
       "path": "src/features/invitation/shell/specs/song_hac_red/capabilities.json",
       "size": 884,
       "sha": "62cdd0775bb0b7d0"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/song_hac_red/cover.json",
+      "size": 1481,
+      "sha": "ef77e08c78f57410"
      },
      {
       "path": "src/features/invitation/shell/specs/song_hac_red/demo.json",
@@ -5697,9 +5893,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/nhat-binh-red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/nhat_binh_red/cover.json",
     "key": "nhat_binh_red",
-    "sha": "d7bc29ff5cc3dbb3"
+    "sha": "95b2cb5913596972"
    },
    "files": {
     "spec": [
@@ -5707,6 +5903,11 @@
       "path": "src/features/invitation/shell/specs/nhat_binh_red/capabilities.json",
       "size": 797,
       "sha": "4666a6f1baa56bcc"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/nhat_binh_red/cover.json",
+      "size": 2240,
+      "sha": "95b2cb5913596972"
      },
      {
       "path": "src/features/invitation/shell/specs/nhat_binh_red/demo.json",
@@ -5836,9 +6037,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/baroque-v2-dark-green",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/baroque_v2_darkgreen/cover.json",
     "key": "baroque_v2_darkgreen",
-    "sha": "5a38aecc771e5b3b"
+    "sha": "88420099cd704f94"
    },
    "files": {
     "spec": [
@@ -5846,6 +6047,11 @@
       "path": "src/features/invitation/shell/specs/baroque_v2_darkgreen/capabilities.json",
       "size": 1121,
       "sha": "86b138387bd9c8fd"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/baroque_v2_darkgreen/cover.json",
+      "size": 1267,
+      "sha": "88420099cd704f94"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkgreen/demo.json",
@@ -6116,9 +6322,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/baroque-v2-dark-red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/baroque_v2_darkred/cover.json",
     "key": "baroque_v2_darkred",
-    "sha": "703ae74fcfead2ea"
+    "sha": "b0b192e71c9b4128"
    },
    "files": {
     "spec": [
@@ -6126,6 +6332,11 @@
       "path": "src/features/invitation/shell/specs/baroque_v2_darkred/capabilities.json",
       "size": 1117,
       "sha": "e09a5a34ef74eb70"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/baroque_v2_darkred/cover.json",
+      "size": 1285,
+      "sha": "b0b192e71c9b4128"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkred/demo.json",
@@ -6433,9 +6644,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/anhdao-pink",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/cherry_blossom_pink/cover.json",
     "key": "cherry_blossom_pink",
-    "sha": "0c471fc8b2c757ce"
+    "sha": "33dca09cbc16807c"
    },
    "files": {
     "spec": [
@@ -6443,6 +6654,11 @@
       "path": "src/features/invitation/shell/specs/cherry_blossom_pink/capabilities.json",
       "size": 1011,
       "sha": "80795955f3b81d14"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/cherry_blossom_pink/cover.json",
+      "size": 860,
+      "sha": "33dca09cbc16807c"
      },
      {
       "path": "src/features/invitation/shell/specs/cherry_blossom_pink/demo.json",
@@ -6607,9 +6823,9 @@
    "generator": null,
    "themeAssetsDir": "public/boho-floral-pink",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/boho_floral_pink/cover.json",
     "key": "boho_floral_pink",
-    "sha": "0c614390a22c99b2"
+    "sha": "2b7a63d8ba15e679"
    },
    "files": {
     "spec": [
@@ -6617,6 +6833,11 @@
       "path": "src/features/invitation/shell/specs/boho_floral_pink/capabilities.json",
       "size": 678,
       "sha": "f6213f55983ffd5b"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/boho_floral_pink/cover.json",
+      "size": 1261,
+      "sha": "2b7a63d8ba15e679"
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_pink/demo.json",
@@ -6770,9 +6991,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/applique-lace-white",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/applique_lace_white/cover.json",
     "key": "applique_lace_white",
-    "sha": "227c934f5bf3bd1c"
+    "sha": "ea268e1c9ee3d520"
    },
    "files": {
     "spec": [
@@ -6780,6 +7001,11 @@
       "path": "src/features/invitation/shell/specs/applique_lace_white/capabilities.json",
       "size": 941,
       "sha": "5e4cdb16a7a21fb7"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/applique_lace_white/cover.json",
+      "size": 1366,
+      "sha": "ea268e1c9ee3d520"
      },
      {
       "path": "src/features/invitation/shell/specs/applique_lace_white/demo.json",
@@ -6967,9 +7193,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/silkflora-brown",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/silk_flora_brown/cover.json",
     "key": "silk_flora_brown",
-    "sha": "27a8f666b6ebebe1"
+    "sha": "5512b80eb0f16361"
    },
    "files": {
     "spec": [
@@ -6977,6 +7203,11 @@
       "path": "src/features/invitation/shell/specs/silk_flora_brown/capabilities.json",
       "size": 919,
       "sha": "f3b20fe07fe042d8"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/silk_flora_brown/cover.json",
+      "size": 1226,
+      "sha": "5512b80eb0f16361"
      },
      {
       "path": "src/features/invitation/shell/specs/silk_flora_brown/demo.json",
@@ -7113,9 +7344,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/love-art",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/hoa_tinh_red/cover.json",
     "key": "hoa_tinh_red",
-    "sha": "2f242c1e8c292037"
+    "sha": "e57b4a46eeca8772"
    },
    "files": {
     "spec": [
@@ -7123,6 +7354,11 @@
       "path": "src/features/invitation/shell/specs/hoa_tinh_red/capabilities.json",
       "size": 779,
       "sha": "89b875f7b34c3938"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/hoa_tinh_red/cover.json",
+      "size": 1197,
+      "sha": "e57b4a46eeca8772"
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_tinh_red/demo.json",
@@ -7267,9 +7503,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/vuon xuan blue",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/spring_garden_blue/cover.json",
     "key": "spring_garden_blue",
-    "sha": "a84064b4511e7f48"
+    "sha": "8745ca45b477443c"
    },
    "files": {
     "spec": [
@@ -7277,6 +7513,11 @@
       "path": "src/features/invitation/shell/specs/spring_garden_blue/capabilities.json",
       "size": 955,
       "sha": "7b53fc2a32557178"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/spring_garden_blue/cover.json",
+      "size": 923,
+      "sha": "8745ca45b477443c"
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_blue/demo.json",
@@ -7412,9 +7653,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/minimalism-darkblue",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/minimalism_darkblue/cover.json",
     "key": "minimalism_darkblue",
-    "sha": "0bd4721c7cf8c30b"
+    "sha": "6c5fb7b959590f80"
    },
    "files": {
     "spec": [
@@ -7422,6 +7663,11 @@
       "path": "src/features/invitation/shell/specs/minimalism_darkblue/capabilities.json",
       "size": 955,
       "sha": "e6a4d44a2bef3890"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/minimalism_darkblue/cover.json",
+      "size": 1332,
+      "sha": "6c5fb7b959590f80"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkblue/demo.json",
@@ -7558,9 +7804,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/royal-red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/royal_red/cover.json",
     "key": "royal_red",
-    "sha": "e5bfc97c69ad5f87"
+    "sha": "eb4291602531019d"
    },
    "files": {
     "spec": [
@@ -7568,6 +7814,11 @@
       "path": "src/features/invitation/shell/specs/royal_red/capabilities.json",
       "size": 894,
       "sha": "b5bf1c5c0f4f6dcc"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/royal_red/cover.json",
+      "size": 1029,
+      "sha": "eb4291602531019d"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_red/demo.json",
@@ -7706,9 +7957,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/minimalism-red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/minimalism_red/cover.json",
     "key": "minimalism_red",
-    "sha": "8dc9bd08d0a1079a"
+    "sha": "8b05d3cf2d8de02b"
    },
    "files": {
     "spec": [
@@ -7716,6 +7967,11 @@
       "path": "src/features/invitation/shell/specs/minimalism_red/capabilities.json",
       "size": 950,
       "sha": "036e85b808ff9260"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/minimalism_red/cover.json",
+      "size": 1198,
+      "sha": "8b05d3cf2d8de02b"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_red/demo.json",
@@ -7861,9 +8117,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/vuon xuan red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/spring_garden_red/cover.json",
     "key": "spring_garden_red",
-    "sha": "6d9e26ff23b262bf"
+    "sha": "0d729348da04755a"
    },
    "files": {
     "spec": [
@@ -7871,6 +8127,11 @@
       "path": "src/features/invitation/shell/specs/spring_garden_red/capabilities.json",
       "size": 954,
       "sha": "7ca4277763886376"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/spring_garden_red/cover.json",
+      "size": 1153,
+      "sha": "0d729348da04755a"
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_red/demo.json",
@@ -8116,9 +8377,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/red-v1",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/dragon_phoenix_green/cover.json",
     "key": "dragon_phoenix_green",
-    "sha": "23931956bbdffc89"
+    "sha": "9d2cee9fb31dcb4f"
    },
    "files": {
     "spec": [
@@ -8126,6 +8387,11 @@
       "path": "src/features/invitation/shell/specs/dragon_phoenix_green/capabilities.json",
       "size": 944,
       "sha": "eba81685af1a0b38"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/dragon_phoenix_green/cover.json",
+      "size": 1332,
+      "sha": "9d2cee9fb31dcb4f"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_green/demo.json",
@@ -8262,9 +8528,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/baroque-gold",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/baroque_gold/cover.json",
     "key": "baroque_gold",
-    "sha": "2b149cc1ba7d30de"
+    "sha": "8be79eb7966f8e29"
    },
    "files": {
     "spec": [
@@ -8272,6 +8538,11 @@
       "path": "src/features/invitation/shell/specs/baroque_gold/capabilities.json",
       "size": 876,
       "sha": "fc51abab373fd6a2"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/baroque_gold/cover.json",
+      "size": 1287,
+      "sha": "8be79eb7966f8e29"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_gold/demo.json",
@@ -8423,9 +8694,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/chateau-blue",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/chateau_blue/cover.json",
     "key": "chateau_blue",
-    "sha": "2f8b481907653c20"
+    "sha": "a6596411639af2f7"
    },
    "files": {
     "spec": [
@@ -8433,6 +8704,11 @@
       "path": "src/features/invitation/shell/specs/chateau_blue/capabilities.json",
       "size": 924,
       "sha": "08c501924d523707"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/chateau_blue/cover.json",
+      "size": 1235,
+      "sha": "a6596411639af2f7"
      },
      {
       "path": "src/features/invitation/shell/specs/chateau_blue/demo.json",
@@ -8624,9 +8900,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/songphung-green",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/double_phoenix_green/cover.json",
     "key": "double_phoenix_green",
-    "sha": "a584debb80f7c776"
+    "sha": "6a0322a8dbbd094a"
    },
    "files": {
     "spec": [
@@ -8634,6 +8910,11 @@
       "path": "src/features/invitation/shell/specs/double_phoenix_green/capabilities.json",
       "size": 961,
       "sha": "b0aaf439879a9ab6"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/double_phoenix_green/cover.json",
+      "size": 1609,
+      "sha": "6a0322a8dbbd094a"
      },
      {
       "path": "src/features/invitation/shell/specs/double_phoenix_green/demo.json",
@@ -8793,9 +9074,9 @@
    "generator": null,
    "themeAssetsDir": "public/boho-floral-brown",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/boho_floral_brown/cover.json",
     "key": "boho_floral_brown",
-    "sha": "5260a438aca8a41e"
+    "sha": "d03c0aca046380ed"
    },
    "files": {
     "spec": [
@@ -8803,6 +9084,11 @@
       "path": "src/features/invitation/shell/specs/boho_floral_brown/capabilities.json",
       "size": 681,
       "sha": "d812119692e758df"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/boho_floral_brown/cover.json",
+      "size": 1172,
+      "sha": "d03c0aca046380ed"
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_brown/demo.json",
@@ -8956,9 +9242,9 @@
    "generator": null,
    "themeAssetsDir": "public/songlong-red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/double_dragon_blue/cover.json",
     "key": "double_dragon_blue",
-    "sha": "16510b991912b8be"
+    "sha": "9eedc4562ff656d9"
    },
    "files": {
     "spec": [
@@ -8966,6 +9252,11 @@
       "path": "src/features/invitation/shell/specs/double_dragon_blue/capabilities.json",
       "size": 878,
       "sha": "f1e9bb3338d20b8c"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/double_dragon_blue/cover.json",
+      "size": 2012,
+      "sha": "9eedc4562ff656d9"
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_blue/demo.json",
@@ -9186,7 +9477,7 @@
    "status": "dở dang",
    "issues": [
     "theme.json còn màu mặc định (chưa đo)",
-    "thiếu cấu hình bìa trong coverConfigs.ts"
+    "thiếu cấu hình bìa specs/<id>/cover.json"
    ],
    "family": "glass_garden_light_green",
    "sharedBlocks": false,
@@ -9323,9 +9614,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/crystal-floral-blue",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/crystal_floral_blue/cover.json",
     "key": "crystal_floral_blue",
-    "sha": "753bc736adc074b7"
+    "sha": "0cacb79075e925bb"
    },
    "files": {
     "spec": [
@@ -9333,6 +9624,11 @@
       "path": "src/features/invitation/shell/specs/crystal_floral_blue/capabilities.json",
       "size": 884,
       "sha": "86daa08f8dcb3452"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/crystal_floral_blue/cover.json",
+      "size": 1393,
+      "sha": "0cacb79075e925bb"
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_blue/demo.json",
@@ -9613,9 +9909,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/red-v1",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/dragon_phoenix_blue/cover.json",
     "key": "dragon_phoenix_blue",
-    "sha": "fe0ff2b8ebb024fe"
+    "sha": "b1976b93de4626b8"
    },
    "files": {
     "spec": [
@@ -9623,6 +9919,11 @@
       "path": "src/features/invitation/shell/specs/dragon_phoenix_blue/capabilities.json",
       "size": 942,
       "sha": "a1dfa48eceedf2f3"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/dragon_phoenix_blue/cover.json",
+      "size": 1329,
+      "sha": "b1976b93de4626b8"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_blue/demo.json",
@@ -9759,9 +10060,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/coba-red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/co_ba_red/cover.json",
     "key": "co_ba_red",
-    "sha": "595124a309e2b724"
+    "sha": "c9c0bdedb1a281d2"
    },
    "files": {
     "spec": [
@@ -9769,6 +10070,11 @@
       "path": "src/features/invitation/shell/specs/co_ba_red/capabilities.json",
       "size": 785,
       "sha": "a396074ad5507e9b"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/co_ba_red/cover.json",
+      "size": 997,
+      "sha": "c9c0bdedb1a281d2"
      },
      {
       "path": "src/features/invitation/shell/specs/co_ba_red/demo.json",
@@ -9865,9 +10171,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/lien-hoa-pink",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/lien_hoa_pink/cover.json",
     "key": "lien_hoa_pink",
-    "sha": "48a8bd254bb38fd0"
+    "sha": "f3d5d2bed44fc845"
    },
    "files": {
     "spec": [
@@ -9875,6 +10181,11 @@
       "path": "src/features/invitation/shell/specs/lien_hoa_pink/capabilities.json",
       "size": 894,
       "sha": "2d6932134c2cd93a"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/lien_hoa_pink/cover.json",
+      "size": 1199,
+      "sha": "f3d5d2bed44fc845"
      },
      {
       "path": "src/features/invitation/shell/specs/lien_hoa_pink/demo.json",
@@ -10054,9 +10365,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/minimalism-purple",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/minimalism_purple/cover.json",
     "key": "minimalism_purple",
-    "sha": "2329eb6c8d5d9798"
+    "sha": "fb69bdbfcaba7f0e"
    },
    "files": {
     "spec": [
@@ -10064,6 +10375,11 @@
       "path": "src/features/invitation/shell/specs/minimalism_purple/capabilities.json",
       "size": 975,
       "sha": "6bb8e1974f990efe"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/minimalism_purple/cover.json",
+      "size": 1346,
+      "sha": "fb69bdbfcaba7f0e"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_purple/demo.json",
@@ -10263,9 +10579,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/porcelain-v2-green",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/porcelain_v2_green/cover.json",
     "key": "porcelain_v2_green",
-    "sha": "ef9b0d09b90d456c"
+    "sha": "b4c3759b1dc65dcb"
    },
    "files": {
     "spec": [
@@ -10273,6 +10589,11 @@
       "path": "src/features/invitation/shell/specs/porcelain_v2_green/capabilities.json",
       "size": 987,
       "sha": "25619e7b4e9196fb"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/porcelain_v2_green/cover.json",
+      "size": 1536,
+      "sha": "b4c3759b1dc65dcb"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_green/demo.json",
@@ -10525,9 +10846,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/dried-flower-v2-green",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/dried_flower_v2_green/cover.json",
     "key": "dried_flower_v2_green",
-    "sha": "f948983979a1b76a"
+    "sha": "ed991040161c5975"
    },
    "files": {
     "spec": [
@@ -10535,6 +10856,11 @@
       "path": "src/features/invitation/shell/specs/dried_flower_v2_green/capabilities.json",
       "size": 928,
       "sha": "3373bde556ab9ae2"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/dried_flower_v2_green/cover.json",
+      "size": 1209,
+      "sha": "ed991040161c5975"
      },
      {
       "path": "src/features/invitation/shell/specs/dried_flower_v2_green/demo.json",
@@ -10709,9 +11035,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/porcelain-v2-pink",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/porcelain_v2_pink/cover.json",
     "key": "porcelain_v2_pink",
-    "sha": "8a6f963def646a07"
+    "sha": "2293bc127806797a"
    },
    "files": {
     "spec": [
@@ -10719,6 +11045,11 @@
       "path": "src/features/invitation/shell/specs/porcelain_v2_pink/capabilities.json",
       "size": 985,
       "sha": "4752bd82d9e42842"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/porcelain_v2_pink/cover.json",
+      "size": 1527,
+      "sha": "2293bc127806797a"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_pink/demo.json",
@@ -10871,9 +11202,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/hoa-kho-v2-blue",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/hoa_kho_v2_blue/cover.json",
     "key": "hoa_kho_v2_blue",
-    "sha": "3954316d868a16a5"
+    "sha": "865bf5685d62ee99"
    },
    "files": {
     "spec": [
@@ -10881,6 +11212,11 @@
       "path": "src/features/invitation/shell/specs/hoa_kho_v2_blue/capabilities.json",
       "size": 910,
       "sha": "92f72d5669e1b985"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/hoa_kho_v2_blue/cover.json",
+      "size": 1444,
+      "sha": "865bf5685d62ee99"
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_kho_v2_blue/demo.json",
@@ -11055,9 +11391,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/red-v1",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/dragon_phoenix_black/cover.json",
     "key": "dragon_phoenix_black",
-    "sha": "6d1772515af67c73"
+    "sha": "4e3be6808e0e6fea"
    },
    "files": {
     "spec": [
@@ -11065,6 +11401,11 @@
       "path": "src/features/invitation/shell/specs/dragon_phoenix_black/capabilities.json",
       "size": 944,
       "sha": "b8d3c5a4007b29bc"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/dragon_phoenix_black/cover.json",
+      "size": 1335,
+      "sha": "4e3be6808e0e6fea"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_black/demo.json",
@@ -11201,9 +11542,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/royal-v2-green",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/royal_v2_green/cover.json",
     "key": "royal_v2_green",
-    "sha": "5799a5b166aeee8d"
+    "sha": "0579fe7e2566d21f"
    },
    "files": {
     "spec": [
@@ -11211,6 +11552,11 @@
       "path": "src/features/invitation/shell/specs/royal_v2_green/capabilities.json",
       "size": 928,
       "sha": "b852a514e901ad49"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/royal_v2_green/cover.json",
+      "size": 1129,
+      "sha": "0579fe7e2566d21f"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_v2_green/demo.json",
@@ -11397,9 +11743,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/royal-green",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/royal_green/cover.json",
     "key": "royal_green",
-    "sha": "4f5714f441875c89"
+    "sha": "8358d001cc245a96"
    },
    "files": {
     "spec": [
@@ -11407,6 +11753,11 @@
       "path": "src/features/invitation/shell/specs/royal_green/capabilities.json",
       "size": 900,
       "sha": "21dfbc31305ce84d"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/royal_green/cover.json",
+      "size": 1036,
+      "sha": "8358d001cc245a96"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_green/demo.json",
@@ -11547,9 +11898,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/baroque-blue",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/baroque_blue/cover.json",
     "key": "baroque_blue",
-    "sha": "9c290adf0535ec49"
+    "sha": "9acdc6d2b9d86bad"
    },
    "files": {
     "spec": [
@@ -11557,6 +11908,11 @@
       "path": "src/features/invitation/shell/specs/baroque_blue/capabilities.json",
       "size": 905,
       "sha": "3fea8a8e0f3a34c7"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/baroque_blue/cover.json",
+      "size": 1696,
+      "sha": "9acdc6d2b9d86bad"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_blue/demo.json",
@@ -11743,9 +12099,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/porcelain-brown",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/porcelain_brown/cover.json",
     "key": "porcelain_brown",
-    "sha": "316f2d0e46dc4981"
+    "sha": "9818b760915f8be0"
    },
    "files": {
     "spec": [
@@ -11753,6 +12109,11 @@
       "path": "src/features/invitation/shell/specs/porcelain_brown/capabilities.json",
       "size": 775,
       "sha": "8c0aa67edb4a16dd"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/porcelain_brown/cover.json",
+      "size": 1154,
+      "sha": "9818b760915f8be0"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_brown/demo.json",
@@ -11857,9 +12218,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/crystal-floral-red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/crystal_floral_red/cover.json",
     "key": "crystal_floral_red",
-    "sha": "9a8f1751d323be29"
+    "sha": "c385fc91a1f91d3e"
    },
    "files": {
     "spec": [
@@ -11867,6 +12228,11 @@
       "path": "src/features/invitation/shell/specs/crystal_floral_red/capabilities.json",
       "size": 882,
       "sha": "dd9ce428b86d5587"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/crystal_floral_red/cover.json",
+      "size": 1385,
+      "sha": "c385fc91a1f91d3e"
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_red/demo.json",
@@ -12154,9 +12520,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/royal-blue",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/royal_blue/cover.json",
     "key": "royal_blue",
-    "sha": "8c31e894fa236560"
+    "sha": "3ae525dd3036c409"
    },
    "files": {
     "spec": [
@@ -12164,6 +12530,11 @@
       "path": "src/features/invitation/shell/specs/royal_blue/capabilities.json",
       "size": 897,
       "sha": "3f389c211afd14de"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/royal_blue/cover.json",
+      "size": 1032,
+      "sha": "3ae525dd3036c409"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_blue/demo.json",
@@ -12302,9 +12673,9 @@
    "generator": "scripts/clone/gen_riviera.cjs",
    "themeAssetsDir": "public/images/themes/riviera-blue",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/riviera_blue/cover.json",
     "key": "riviera_blue",
-    "sha": "fc9b204889876f49"
+    "sha": "594dd5478a666bee"
    },
    "files": {
     "spec": [
@@ -12312,6 +12683,11 @@
       "path": "src/features/invitation/shell/specs/riviera_blue/capabilities.json",
       "size": 1040,
       "sha": "9dfcad05b2a00ab0"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/riviera_blue/cover.json",
+      "size": 1149,
+      "sha": "594dd5478a666bee"
      },
      {
       "path": "src/features/invitation/shell/specs/riviera_blue/demo.json",
@@ -12764,9 +13140,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/florence-brown",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/florence_brown/cover.json",
     "key": "florence_brown",
-    "sha": "1dfe08cd52b9de86"
+    "sha": "54cfded2aadeb9bd"
    },
    "files": {
     "spec": [
@@ -12774,6 +13150,11 @@
       "path": "src/features/invitation/shell/specs/florence_brown/capabilities.json",
       "size": 926,
       "sha": "25e8746ad5c79d28"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/florence_brown/cover.json",
+      "size": 982,
+      "sha": "54cfded2aadeb9bd"
      },
      {
       "path": "src/features/invitation/shell/specs/florence_brown/demo.json",
@@ -13029,9 +13410,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/baroque-v2-dark-blue",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/baroque_v2_darkblue/cover.json",
     "key": "baroque_v2_darkblue",
-    "sha": "ab4e4a1621c10a36"
+    "sha": "c349c14b7d7ec897"
    },
    "files": {
     "spec": [
@@ -13039,6 +13420,11 @@
       "path": "src/features/invitation/shell/specs/baroque_v2_darkblue/capabilities.json",
       "size": 1122,
       "sha": "2c2a892b5312115b"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/baroque_v2_darkblue/cover.json",
+      "size": 1262,
+      "sha": "c349c14b7d7ec897"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkblue/demo.json",
@@ -13309,9 +13695,9 @@
    "generator": "scripts/clone/gen_jasmine_green.cjs",
    "themeAssetsDir": "public/images/themes/jasmine-green",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/jasmine_green/cover.json",
     "key": "jasmine_green",
-    "sha": "2470cf00ff85e06c"
+    "sha": "47cec00fa9005712"
    },
    "files": {
     "spec": [
@@ -13319,6 +13705,11 @@
       "path": "src/features/invitation/shell/specs/jasmine_green/capabilities.json",
       "size": 957,
       "sha": "3e1767c872a94bef"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/jasmine_green/cover.json",
+      "size": 1627,
+      "sha": "47cec00fa9005712"
      },
      {
       "path": "src/features/invitation/shell/specs/jasmine_green/demo.json",
@@ -13701,9 +14092,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/sunflower",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/sunflower_yellow/cover.json",
     "key": "sunflower_yellow",
-    "sha": "45b6cf594fc67ad1"
+    "sha": "272cb9e311e9a75d"
    },
    "files": {
     "spec": [
@@ -13711,6 +14102,11 @@
       "path": "src/features/invitation/shell/specs/sunflower_yellow/capabilities.json",
       "size": 928,
       "sha": "8470b72d85014c72"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/sunflower_yellow/cover.json",
+      "size": 885,
+      "sha": "272cb9e311e9a75d"
      },
      {
       "path": "src/features/invitation/shell/specs/sunflower_yellow/demo.json",
@@ -13870,9 +14266,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/crystal-floral-green",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/crystal_floral_green/cover.json",
     "key": "crystal_floral_green",
-    "sha": "aae3e457bf517c9b"
+    "sha": "98c7b785290a5357"
    },
    "files": {
     "spec": [
@@ -13880,6 +14276,11 @@
       "path": "src/features/invitation/shell/specs/crystal_floral_green/capabilities.json",
       "size": 886,
       "sha": "c48e904305a0d424"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/crystal_floral_green/cover.json",
+      "size": 1395,
+      "sha": "98c7b785290a5357"
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_green/demo.json",
@@ -14161,7 +14562,7 @@
    "status": "dở dang",
    "issues": [
     "theme.json còn màu mặc định (chưa đo)",
-    "thiếu cấu hình bìa trong coverConfigs.ts"
+    "thiếu cấu hình bìa specs/<id>/cover.json"
    ],
    "family": "santorini_blue",
    "sharedBlocks": false,
@@ -14387,9 +14788,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/porcelain-v2-red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/porcelain_v2_red/cover.json",
     "key": "porcelain_v2_red",
-    "sha": "4e79bffd0f9cacf1"
+    "sha": "1a5fcd8347c43108"
    },
    "files": {
     "spec": [
@@ -14397,6 +14798,11 @@
       "path": "src/features/invitation/shell/specs/porcelain_v2_red/capabilities.json",
       "size": 983,
       "sha": "3ab8c095480490ed"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/porcelain_v2_red/cover.json",
+      "size": 1532,
+      "sha": "1a5fcd8347c43108"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_red/demo.json",
@@ -14549,9 +14955,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/porcelain-blue",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/porcelain_blue/cover.json",
     "key": "porcelain_blue",
-    "sha": "08796bd7bc1766e4"
+    "sha": "aa9229194f7f277c"
    },
    "files": {
     "spec": [
@@ -14559,6 +14965,11 @@
       "path": "src/features/invitation/shell/specs/porcelain_blue/capabilities.json",
       "size": 772,
       "sha": "cdd204b001151f96"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/porcelain_blue/cover.json",
+      "size": 1142,
+      "sha": "aa9229194f7f277c"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_blue/demo.json",
@@ -14654,7 +15065,7 @@
    "status": "dở dang",
    "issues": [
     "theme.json còn màu mặc định (chưa đo)",
-    "thiếu cấu hình bìa trong coverConfigs.ts"
+    "thiếu cấu hình bìa specs/<id>/cover.json"
    ],
    "family": "folk_floral_blue",
    "sharedBlocks": false,
@@ -14798,9 +15209,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/porcelain-red",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/porcelain_red/cover.json",
     "key": "porcelain_red",
-    "sha": "5656cc6d990d4026"
+    "sha": "f0b9c0286df4e602"
    },
    "files": {
     "spec": [
@@ -14808,6 +15219,11 @@
       "path": "src/features/invitation/shell/specs/porcelain_red/capabilities.json",
       "size": 769,
       "sha": "4e20c7b5a9c8eb87"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/porcelain_red/cover.json",
+      "size": 1147,
+      "sha": "f0b9c0286df4e602"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_red/demo.json",
@@ -14909,9 +15325,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/hoa-dai-pink",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/hoa_dai_pink/cover.json",
     "key": "hoa_dai_pink",
-    "sha": "491288dad22dad02"
+    "sha": "f1ccbad2279d74d6"
    },
    "files": {
     "spec": [
@@ -14919,6 +15335,11 @@
       "path": "src/features/invitation/shell/specs/hoa_dai_pink/capabilities.json",
       "size": 920,
       "sha": "8c02f69d9f769665"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/hoa_dai_pink/cover.json",
+      "size": 1042,
+      "sha": "f1ccbad2279d74d6"
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_dai_pink/demo.json",
@@ -15084,7 +15505,7 @@
    "status": "dở dang",
    "issues": [
     "theme.json còn màu mặc định (chưa đo)",
-    "thiếu cấu hình bìa trong coverConfigs.ts"
+    "thiếu cấu hình bìa specs/<id>/cover.json"
    ],
    "family": "qasr_blue",
    "sharedBlocks": false,
@@ -15308,9 +15729,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/san-miguel-yellow",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/san_miguel_yellow/cover.json",
     "key": "san_miguel_yellow",
-    "sha": "11056b53c78ec692"
+    "sha": "9bf0a1a83a6defed"
    },
    "files": {
     "spec": [
@@ -15318,6 +15739,11 @@
       "path": "src/features/invitation/shell/specs/san_miguel_yellow/capabilities.json",
       "size": 935,
       "sha": "52bccd0e9ad660fd"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/san_miguel_yellow/cover.json",
+      "size": 995,
+      "sha": "9bf0a1a83a6defed"
      },
      {
       "path": "src/features/invitation/shell/specs/san_miguel_yellow/demo.json",
@@ -15544,9 +15970,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/glass-garden-blue",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/glass_garden_blue/cover.json",
     "key": "glass_garden_blue",
-    "sha": "9836c0c32c37a5e1"
+    "sha": "4230a253630da49b"
    },
    "files": {
     "spec": [
@@ -15554,6 +15980,11 @@
       "path": "src/features/invitation/shell/specs/glass_garden_blue/capabilities.json",
       "size": 798,
       "sha": "bb25656389be5df7"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/glass_garden_blue/cover.json",
+      "size": 1308,
+      "sha": "4230a253630da49b"
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_blue/demo.json",
@@ -15675,9 +16106,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/royal-v2-purple",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/royal_v2_purple/cover.json",
     "key": "royal_v2_purple",
-    "sha": "e7ac2ec800816215"
+    "sha": "f20daf0d21425f95"
    },
    "files": {
     "spec": [
@@ -15685,6 +16116,11 @@
       "path": "src/features/invitation/shell/specs/royal_v2_purple/capabilities.json",
       "size": 931,
       "sha": "67fc414a5a6a7392"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/royal_v2_purple/cover.json",
+      "size": 1173,
+      "sha": "f20daf0d21425f95"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_v2_purple/demo.json",
@@ -15886,9 +16322,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/hoa-kho-orange",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/hoa_kho_orange/cover.json",
     "key": "hoa_kho_orange",
-    "sha": "65416a230995c2ad"
+    "sha": "c8dff3042913e31c"
    },
    "files": {
     "spec": [
@@ -15896,6 +16332,11 @@
       "path": "src/features/invitation/shell/specs/hoa_kho_orange/capabilities.json",
       "size": 904,
       "sha": "1697facc3574f6b7"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/hoa_kho_orange/cover.json",
+      "size": 1167,
+      "sha": "c8dff3042913e31c"
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_kho_orange/demo.json",
@@ -16055,9 +16496,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/mahal-gold",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/mahal_gold/cover.json",
     "key": "mahal_gold",
-    "sha": "4853a6186f69178c"
+    "sha": "2572e596a1204fa9"
    },
    "files": {
     "spec": [
@@ -16065,6 +16506,11 @@
       "path": "src/features/invitation/shell/specs/mahal_gold/capabilities.json",
       "size": 885,
       "sha": "b592f3d6d52ca614"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/mahal_gold/cover.json",
+      "size": 1280,
+      "sha": "2572e596a1204fa9"
      },
      {
       "path": "src/features/invitation/shell/specs/mahal_gold/demo.json",
@@ -16265,7 +16711,7 @@
    "status": "dở dang",
    "issues": [
     "theme.json còn màu mặc định (chưa đo)",
-    "thiếu cấu hình bìa trong coverConfigs.ts"
+    "thiếu cấu hình bìa specs/<id>/cover.json"
    ],
    "family": "floral_fiesta_yellow",
    "sharedBlocks": false,
@@ -16563,7 +17009,7 @@
    "status": "dở dang",
    "issues": [
     "theme.json còn màu mặc định (chưa đo)",
-    "thiếu cấu hình bìa trong coverConfigs.ts"
+    "thiếu cấu hình bìa specs/<id>/cover.json"
    ],
    "family": "nomad_brown",
    "sharedBlocks": false,
@@ -16786,7 +17232,7 @@
    "status": "dở dang",
    "issues": [
     "theme.json còn màu mặc định (chưa đo)",
-    "thiếu cấu hình bìa trong coverConfigs.ts"
+    "thiếu cấu hình bìa specs/<id>/cover.json"
    ],
    "family": "saraya_gold",
    "sharedBlocks": false,
@@ -16994,7 +17440,7 @@
    "status": "dở dang",
    "issues": [
     "theme.json còn màu mặc định (chưa đo)",
-    "thiếu cấu hình bìa trong coverConfigs.ts"
+    "thiếu cấu hình bìa specs/<id>/cover.json"
    ],
    "family": "qasr_gold",
    "sharedBlocks": false,
@@ -17142,7 +17588,7 @@
    "status": "dở dang",
    "issues": [
     "theme.json còn màu mặc định (chưa đo)",
-    "thiếu cấu hình bìa trong coverConfigs.ts"
+    "thiếu cấu hình bìa specs/<id>/cover.json"
    ],
    "family": "qasr_green",
    "sharedBlocks": false,
@@ -17329,9 +17775,9 @@
    "generator": null,
    "themeAssetsDir": "public/images/themes/mandap-darkred",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/mandap_darkred/cover.json",
     "key": "mandap_darkred",
-    "sha": "d8da48339794f505"
+    "sha": "51b42d7fa404a4da"
    },
    "files": {
     "spec": [
@@ -17339,6 +17785,11 @@
       "path": "src/features/invitation/shell/specs/mandap_darkred/capabilities.json",
       "size": 928,
       "sha": "2ee77bd056ceb1f6"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/mandap_darkred/cover.json",
+      "size": 1375,
+      "sha": "51b42d7fa404a4da"
      },
      {
       "path": "src/features/invitation/shell/specs/mandap_darkred/demo.json",
@@ -17544,7 +17995,7 @@
    "status": "dở dang",
    "issues": [
     "theme.json còn màu mặc định (chưa đo)",
-    "thiếu cấu hình bìa trong coverConfigs.ts"
+    "thiếu cấu hình bìa specs/<id>/cover.json"
    ],
    "family": "brocade_flower_red",
    "sharedBlocks": false,
@@ -17731,9 +18182,9 @@
    "generator": "scripts/clone/gen_calla_lily_white.cjs",
    "themeAssetsDir": "public/images/themes/calla-lily-white",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/calla_lily_white/cover.json",
     "key": "calla_lily_white",
-    "sha": "bbd2614a5a9fd2e7"
+    "sha": "874f134ba0b02425"
    },
    "files": {
     "spec": [
@@ -17741,6 +18192,11 @@
       "path": "src/features/invitation/shell/specs/calla_lily_white/capabilities.json",
       "size": 863,
       "sha": "2b99c34be092f6e7"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/calla_lily_white/cover.json",
+      "size": 1529,
+      "sha": "874f134ba0b02425"
      },
      {
       "path": "src/features/invitation/shell/specs/calla_lily_white/demo.json",
@@ -17906,9 +18362,9 @@
    "generator": "scripts/clone/gen_mandap_yellow.cjs",
    "themeAssetsDir": "public/images/themes/mandap-yellow",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/mandap_yellow/cover.json",
     "key": "mandap_yellow",
-    "sha": "4928a6382d34515f"
+    "sha": "695a33874f17be14"
    },
    "files": {
     "spec": [
@@ -17916,6 +18372,11 @@
       "path": "src/features/invitation/shell/specs/mandap_yellow/capabilities.json",
       "size": 888,
       "sha": "c89c44bea74fbaed"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/mandap_yellow/cover.json",
+      "size": 1437,
+      "sha": "695a33874f17be14"
      },
      {
       "path": "src/features/invitation/shell/specs/mandap_yellow/demo.json",
@@ -18206,9 +18667,9 @@
    "generator": "scripts/clone/gen_mahal_pink.cjs",
    "themeAssetsDir": "public/images/themes/mahal-pink",
    "cover": {
-    "file": "src/features/invitation/components/covers/coverConfigs.ts",
+    "file": "src/features/invitation/shell/specs/mahal_pink/cover.json",
     "key": "mahal_pink",
-    "sha": "745a0e6441a5ce35"
+    "sha": "16c19e4070010474"
    },
    "files": {
     "spec": [
@@ -18216,6 +18677,11 @@
       "path": "src/features/invitation/shell/specs/mahal_pink/capabilities.json",
       "size": 845,
       "sha": "eef9e51fd35fc557"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/mahal_pink/cover.json",
+      "size": 1152,
+      "sha": "16c19e4070010474"
      },
      {
       "path": "src/features/invitation/shell/specs/mahal_pink/demo.json",

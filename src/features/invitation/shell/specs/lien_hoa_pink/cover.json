@@ -1,0 +1,36 @@
+{
+  "accentColor": "#804b5b",
+  "bg": "linear-gradient(to bottom right, #c9768e, #d07d95, #e9b4c4)",
+  "btnBg": "#804b5b",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(128, 75, 91, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[64%] top-0 left-[-50px] md:left-[-100px] -translate-x-[28%] -translate-y-[26%] opacity-90 -scale-x-100 rotate-[23deg]",
+      "src": "/images/themes/lien-hoa-pink/flower4.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[64%] bottom-0 right-[-50px] md:right-[-100px] translate-x-[28%] translate-y-[26%] opacity-90  rotate-[-23deg]",
+      "src": "/images/themes/lien-hoa-pink/flower4.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#c9768e",
+    "#d07d95",
+    "#e9b4c4",
+    "#f3d5df",
+    "#ffffff"
+  ],
+  "particleType": "petal",
+  "rgb": "128, 75, 91",
+  "sealBg": "radial-gradient(circle at 30% 30%, #804b5b, rgba(128, 75, 91, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "694b87",
+  "slug": "lien-hoa-hong",
+  "templateId": "lien_hoa_pink",
+  "templateName": "Liên Hoa - Hồng",
+  "textColor": "#804b5b"
+}

@@ -1,0 +1,35 @@
+{
+  "accentColor": "#ffe3b1",
+  "bg": "linear-gradient(to bottom right, #240c30, #15081a)",
+  "btnBg": "#ffe3b1",
+  "btnTextColor": "#4a0808",
+  "cardBg": "rgba(0, 0, 0, 0.35)",
+  "cardBorder": "rgba(255, 227, 177, 0.25)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[50%] max-w-[240px] md:max-w-[280px] top-[-7%] left-[-10%] -translate-x-[20%] -translate-y-[16%] opacity-95",
+      "src": "/images/themes/royal-v2-purple/flower-decoration.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[52%] max-w-[260px] md:max-w-[300px] bottom-0 right-[-12%] translate-x-[18%] translate-y-[18%] opacity-95",
+      "src": "/images/themes/royal-v2-purple/flower2-decoration.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#c9a1e0",
+    "#d3b0ff",
+    "#ffffff",
+    "#874f22"
+  ],
+  "particleType": "stars",
+  "rgb": "255, 255, 255",
+  "sealBg": "radial-gradient(circle at 30% 30%, #ffe3b1, #d1ba91)",
+  "sealColor": "#4a0808",
+  "sealType": "heart",
+  "sig": "694b87",
+  "slug": "hoang-kim-ii-tim",
+  "templateId": "royal_v2_purple",
+  "templateName": "Hoàng Kim II - Tím",
+  "textColor": "#ffe3b1"
+}

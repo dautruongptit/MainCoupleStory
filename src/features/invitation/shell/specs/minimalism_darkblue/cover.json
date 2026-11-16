@@ -1,0 +1,35 @@
+{
+  "accentColor": "#00224c",
+  "bg": "linear-gradient(to bottom right, #073268, #00224c, #001531)",
+  "btnBg": "#00224c",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(0, 34, 76, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none h-36 md:h-70 lg:h-70 w-auto max-w-none top-[-5%] md:top-[-2%] left-[-10px] md:left-[-10px] -translate-x-[6%] md:-translate-x-[11%] opacity-80 rotate-[25deg]",
+      "src": "/images/themes/minimalism-dark-blue/flower2-decoration.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-36 md:h-70 lg:h-70 w-auto max-w-none bottom-[-5%] md:bottom-[35%] right-[-10px] md:right-[-10px] translate-x-[6%] md:translate-x-[11%] -scale-x-100 opacity-80 -rotate-[25deg]",
+      "src": "/images/themes/minimalism-dark-blue/flower2-decoration.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#0b3a72",
+    "#3f6ea8",
+    "#c9a24a",
+    "#ece4d8"
+  ],
+  "particleType": "blossom",
+  "rgb": "0, 34, 76",
+  "sealBg": "radial-gradient(circle at 30% 30%, #00224c, rgba(0, 34, 76, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "minimalism-lam-dam",
+  "templateId": "minimalism_darkblue",
+  "templateName": "Minimalism - Lam Đậm",
+  "textColor": "#00224c"
+}

@@ -1,0 +1,35 @@
+{
+  "accentColor": "#71702a",
+  "bg": "#d19a53",
+  "btnBg": "#71702a",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(113, 112, 42, 0.15)",
+  "imgs": [
+    {
+      "className": "w-full h-auto",
+      "src": "/images/themes/sunflower/flower5.webp"
+    },
+    {
+      "className": "w-full h-auto -scale-x-100",
+      "src": "/images/themes/sunflower/flower5.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#dc8203",
+    "#e3a81c",
+    "#f5e3a8",
+    "#7c8b5e"
+  ],
+  "particleType": "blossom",
+  "rgb": "113, 112, 42",
+  "sealBg": "radial-gradient(circle at 30% 30%, #71702a, rgba(113, 112, 42, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "537758",
+  "slug": "hoa-huong-duong",
+  "templateId": "sunflower_yellow",
+  "templateName": "Hoa Hướng Dương",
+  "textColor": "#71702a"
+}

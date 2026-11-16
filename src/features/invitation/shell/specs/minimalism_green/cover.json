@@ -1,0 +1,35 @@
+{
+  "accentColor": "#6b7b4f",
+  "bg": "linear-gradient(to bottom right, #e9efe1, #dbe6cf, #cdd9bd)",
+  "btnBg": "#6b7b4f",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(107, 123, 79, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none h-50 md:h-100 lg:h-100 w-auto max-w-none top-[-5%] md:top-[-10%] left-[-10%] md:left-[-26px] -translate-x-[6%] md:-translate-x-[11%] opacity-20 rotate-[125deg]",
+      "src": "/images/themes/minimalism-green/flower-background.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-50 md:h-100 lg:h-100 w-auto max-w-none bottom-[-5%] md:bottom-[-10%] right-[-10%] md:right-[-26px] translate-x-[6%] md:translate-x-[11%] -scale-x-100 opacity-20 -rotate-[25deg]",
+      "src": "/images/themes/minimalism-green/flower-background.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#87a172",
+    "#a7bd8f",
+    "#6b7b4f",
+    "#cdd9bd"
+  ],
+  "particleType": "petal",
+  "rgb": "107, 123, 79",
+  "sealBg": "radial-gradient(circle at 30% 30%, #6b7b4f, rgba(107, 123, 79, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "ae1685",
+  "slug": "minimalism-xanh",
+  "templateId": "minimalism_green",
+  "templateName": "Minimalism - Xanh",
+  "textColor": "#6b7b4f"
+}

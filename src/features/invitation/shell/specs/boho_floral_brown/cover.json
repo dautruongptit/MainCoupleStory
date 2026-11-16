@@ -1,0 +1,36 @@
+{
+  "accentColor": "#ffe3b1",
+  "bg": "linear-gradient(to bottom right, #3d2112, #2e180d, #1f1008)",
+  "btnBg": "#ffe3b1",
+  "btnTextColor": "#4a0808",
+  "cardBg": "rgba(0, 0, 0, 0.35)",
+  "cardBorder": "rgba(255, 227, 177, 0.25)",
+  "flyCorners": true,
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[400px] md:w-[400px] -top-[40px] -right-[50px] md:-top-[50px] md:-right-[60px] opacity-40",
+      "src": "/images/themes/boho-floral-brown/flower_top.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[160px] md:w-[220px] -bottom-[40px] -left-[40px] md:-bottom-[60px] md:-left-[50px] opacity-30 rotate-[160deg]",
+      "src": "/images/themes/boho-floral-brown/flower_bottom.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#c9a87c",
+    "#846758",
+    "#d4a574",
+    "#e8c9a0"
+  ],
+  "particleType": "petal",
+  "rgb": "74, 40, 22",
+  "sealBg": "radial-gradient(circle at 30% 30%, #ffe3b1, #d1ba91)",
+  "sealColor": "#4a0808",
+  "sealType": "heart",
+  "sig": "6c3e04",
+  "slug": "hoa-moc-nau",
+  "templateId": "boho_floral_brown",
+  "templateName": "Hoa Mộc - Nâu",
+  "textColor": "#ffe3b1"
+}

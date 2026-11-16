@@ -1,0 +1,39 @@
+{
+  "accentColor": "#1a1a1a",
+  "bg": "linear-gradient(to bottom right, #2a2a2d, #141416, #08080a)",
+  "btnBg": "#141416",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.98)",
+  "cardBorder": "rgba(0, 0, 0, 0.12)",
+  "dateColor": "#666666",
+  "guestColor": "#666666",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none h-36 md:h-70 lg:h-70 w-auto max-w-none top-[-5%] md:top-[-2%] left-[-10px] md:left-[-10px] -translate-x-[6%] md:-translate-x-[11%] opacity-80 rotate-[25deg]",
+      "src": "/images/themes/applique-lace-white/flower.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-36 md:h-70 lg:h-70 w-auto max-w-none bottom-[-5%] md:bottom-[35%] right-[-10px] md:right-[-10px] translate-x-[6%] md:translate-x-[11%] -scale-x-100 opacity-80 -rotate-[25deg]",
+      "src": "/images/themes/applique-lace-white/flower.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#ffffff",
+    "#f6f1ea",
+    "#e8ddd0",
+    "#8f7964",
+    "#c9b9a6",
+    "#fdfcfa"
+  ],
+  "particleType": "blossom",
+  "rgb": "26, 26, 26",
+  "sealBg": "radial-gradient(circle at 30% 30%, #3a3a3d, #141416)",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "ren-theu-trang",
+  "templateId": "applique_lace_white",
+  "templateName": "Ren Thêu - Trắng",
+  "textColor": "#1a1a1a"
+}

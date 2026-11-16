@@ -1,0 +1,35 @@
+{
+  "accentColor": "#933845",
+  "bg": "#ffffff url(/images/themes/glass-garden-pink/floral-background.webp) center / 180% auto repeat",
+  "btnBg": "#933845",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(147, 56, 69, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none h-36 md:h-40 lg:h-40 w-auto max-w-none top-[-5%] left-[-14px] md:left-[-6px] -translate-x-[6%] md:-translate-x-[11%] opacity-90 rotate-[2deg]",
+      "src": "/images/themes/glass-garden-pink/flower4-decoration.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-36 md:h-40 lg:h-40 w-auto max-w-none bottom-[-5%] right-[-14px] md:right-[-6px] translate-x-[6%] md:translate-x-[11%] -scale-x-100 opacity-90 rotate-[85deg]",
+      "src": "/images/themes/glass-garden-pink/flower4-decoration.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#f5d6dc",
+    "#eab8c2",
+    "#ffffff",
+    "#f7e3e8"
+  ],
+  "particleType": "blossom",
+  "rgb": "147, 56, 69",
+  "sealBg": "radial-gradient(circle at 30% 30%, #933845, rgba(147, 56, 69, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "612c30",
+  "slug": "vuonkinh-hong",
+  "templateId": "glass_garden_pink",
+  "templateName": "Vườn Kính - Hồng",
+  "textColor": "#933845"
+}

@@ -1,0 +1,39 @@
+{
+  "accentColor": "#2f3a45",
+  "bg": "linear-gradient(to bottom right, #163a5e, #215589, #2f6aa6)",
+  "btnBg": "#2f3a45",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(47, 58, 69, 0.15)",
+  "flyCorners": true,
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none h-36 md:h-100 lg:h-100 w-auto max-w-none top-[-5%] md:top-[5%] left-[-14px] md:left-[-10%] -translate-x-[6%] md:-translate-x-[11%] opacity-100 md:opacity-30 rotate-[25deg]",
+      "src": "/images/themes/crystal-floral-blue/flower2.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-36 md:h-100 lg:h-100 w-auto max-w-none bottom-[-5%] md:bottom-[-2%] right-[-14px] md:right-[-10%] translate-x-[6%] md:translate-x-[11%] opacity-100 md:opacity-30 -rotate-[25deg]",
+      "src": "/images/themes/crystal-floral-blue/flower3.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#215589",
+    "#3a6ba0",
+    "#6f8cbf",
+    "#a8bcd4",
+    "#cfdcec",
+    "#e6eef7",
+    "#ffffff"
+  ],
+  "particleType": "blossom",
+  "rgb": "47, 58, 69",
+  "sealBg": "radial-gradient(circle at 30% 30%, #2f3a45, rgba(47, 58, 69, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "hoa-thuy-tinh-lam",
+  "templateId": "crystal_floral_blue",
+  "templateName": "Hoa Thuỷ Tinh - Lam",
+  "textColor": "#2f3a45"
+}

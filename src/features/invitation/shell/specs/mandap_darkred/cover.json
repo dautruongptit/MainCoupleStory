@@ -1,0 +1,36 @@
+{
+  "accentColor": "rgb(242, 192, 110)",
+  "bg": "linear-gradient(to right bottom, rgba(242, 192, 110, 0.5), rgba(95, 0, 5, 0.96))",
+  "btnBg": "rgb(242, 192, 110)",
+  "btnTextColor": "#764C4D",
+  "cardBg": "rgba(107, 5, 8, 0.97)",
+  "cardBorder": "rgba(242, 192, 110, 0.15)",
+  "guestColor": "rgba(255, 223, 175, 0.9)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none h-150 md:h-150 lg:h-150 w-auto max-w-none top-[-13%] left-[-24px] md:left-[-24px] -scale-x-100 -translate-x-[6%] md:-translate-x-[10%] opacity-15",
+      "src": "/images/themes/mandap-darkred/column-decoration.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-150 md:h-150 lg:h-150 w-auto max-w-none top-[-13%] right-[-24px] md:right-[-24px] translate-x-[6%] md:translate-x-[10%] opacity-15 scale-x-100",
+      "src": "/images/themes/mandap-darkred/column-decoration.webp"
+    }
+  ],
+  "nameFont": "\"Viaoda Libre\", cursive",
+  "particleColors": [
+    "#8D1C18",
+    "#E0A94F",
+    "#FFDFAF",
+    "#F2C06E"
+  ],
+  "particleType": "blossom",
+  "rgb": "242, 192, 110",
+  "sealBg": "radial-gradient(circle at 30% 30%, rgb(242, 192, 110), rgb(212, 162, 80))",
+  "sealColor": "#764C4D",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "mandap-do-dam",
+  "templateId": "mandap_darkred",
+  "templateName": "Mandap - Đỏ đậm",
+  "textColor": "rgb(242, 192, 110)"
+}

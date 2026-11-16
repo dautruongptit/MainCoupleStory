@@ -1,0 +1,39 @@
+{
+  "accentColor": "#ffe3b1",
+  "bg": "#420000",
+  "btnBg": "#ffe3b1",
+  "btnTextColor": "#4a0808",
+  "cardBg": "rgba(0, 0, 0, 0.35)",
+  "cardBorder": "rgba(255, 227, 177, 0.25)",
+  "imgs": [
+    {
+      "className": "w-[52px] h-[52px] object-contain",
+      "src": "/images/themes/song-hy-v2-red/double-happiness-light.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[220px] md:w-[300px] -top-[60px] -left-[156px] md:-bottom-[104px] md:-right-[143px] opacity-[0.15] -rotate-[-30deg] md:-rotate-[-30deg]",
+      "src": "/images/themes/song-hy-v2-red/double-happiness-light.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[220px] md:w-[300px] -bottom-[60px] -right-[156px] md:-bottom-[104px] md:-right-[143px] opacity-[0.15] -rotate-[-30deg] md:-rotate-[-30deg]",
+      "src": "/images/themes/song-hy-v2-red/double-happiness-light.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#ffe8a4",
+    "#fdcb9c",
+    "#fff9e6",
+    "#A50000"
+  ],
+  "particleType": "xi",
+  "rgb": "255, 232, 164",
+  "sealBg": "radial-gradient(circle at 30% 30%, #ffe3b1, #d1ba91)",
+  "sealColor": "#4a0808",
+  "sealType": "xi",
+  "sig": "2f50d9",
+  "slug": "song-hy-v2-do",
+  "templateId": "song_hy_v2_red",
+  "templateName": "Song Hỷ V2 - Đỏ",
+  "textColor": "#ffe3b1"
+}

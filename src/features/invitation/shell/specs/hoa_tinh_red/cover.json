@@ -1,0 +1,39 @@
+{
+  "accentColor": "#ffe3b1",
+  "bg": "linear-gradient(165deg, #8B0000 0%, #C41230 45%, #8B0000 100%)",
+  "btnBg": "#ffe3b1",
+  "btnTextColor": "#4a0808",
+  "cardBg": "rgba(0, 0, 0, 0.35)",
+  "cardBorder": "rgba(255, 227, 177, 0.25)",
+  "imgs": [
+    {
+      "className": "w-9 h-9 object-contain",
+      "src": "/images/themes/love-art/hy.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[18%] top-[calc(6%+50px)] right-[4%] opacity-50 md:w-[13%] md:top-[16%] md:right-[14%]",
+      "src": "/images/themes/love-art/hoa tim.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[16%] bottom-[calc(8%+50px)] left-[4%] opacity-50 md:w-[12%] md:bottom-[16%] md:left-[14%]",
+      "src": "/images/themes/love-art/tim.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#FFD700",
+    "#FFC107",
+    "#FF6B6B",
+    "#FFE066"
+  ],
+  "particleType": "xi",
+  "rgb": "0, 0, 0",
+  "sealBg": "radial-gradient(circle at 30% 30%, #ffe3b1, #d1ba91)",
+  "sealColor": "#4a0808",
+  "sealType": "heart",
+  "sig": "2f50d9",
+  "slug": "hoa-tinh-do",
+  "templateId": "hoa_tinh_red",
+  "templateName": "Hoạ Tình - Đỏ",
+  "textColor": "#ffe3b1"
+}

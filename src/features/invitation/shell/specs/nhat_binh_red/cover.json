@@ -1,0 +1,43 @@
+{
+  "accentColor": "#542e08",
+  "bg": "linear-gradient(165deg, #4a3428 0%, #352518 45%, #241a12 100%)",
+  "btnBg": "#542e08",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(84, 46, 8, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none left-[calc(2.5rem-30px)] top-[calc(3.5rem+50px+30px)] z-0 w-[min(150px,40%)] max-w-[min(200px,46%)] max-h-[min(150px,32vh)] origin-top-left object-contain opacity-[0.42] [transform:scaleY(-1)_rotate(20deg)] sm:left-[calc(3rem-30px)] sm:top-[calc(4rem+50px+30px)] sm:w-[min(165px,38%)] md:left-[calc(3.5rem-30px)] md:top-[calc(4.75rem+50px+30px)] md:max-h-[170px] md:w-[min(175px,36%)]",
+      "src": "/images/themes/nhat-binh-red/hoa.webp"
+    },
+    {
+      "className": "absolute pointer-events-none right-0 top-0 w-[52px] min-w-[48px] max-w-[18%] object-contain opacity-[0.42] sm:right-1 sm:top-1 sm:w-14 md:-top-0.5 md:right-2 md:w-16 md:max-w-[85px] -translate-x-[10px] -translate-y-[15px]",
+      "src": "/images/themes/nhat-binh-red/long-den.webp"
+    },
+    {
+      "className": "absolute pointer-events-none bottom-3 left-1 z-0 w-[min(228px,72%)] max-h-[min(276px,50vh)] origin-center object-contain opacity-[0.42] -translate-x-[100px] translate-y-[30px] rotate-45 sm:bottom-4 sm:left-2 sm:w-[min(252px,68%)] md:bottom-5 md:left-3 md:max-h-[300px]",
+      "src": "/images/themes/nhat-binh-red/quat.webp"
+    },
+    {
+      "className": "absolute pointer-events-none bottom-3 right-1 z-0 w-[min(300px,78%)] max-h-[min(264px,48vh)] origin-center object-contain opacity-[0.42] -scale-x-100 translate-x-[150px] translate-y-[40px] sm:bottom-4 sm:right-2 sm:w-[min(330px,74%)] md:bottom-5 md:right-3 md:max-h-[288px]",
+      "src": "/images/themes/nhat-binh-red/may.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#CC0033",
+    "#B80030",
+    "#FF0040",
+    "#AA0028"
+  ],
+  "particleType": "confetti",
+  "rgb": "84, 46, 8",
+  "sealBg": "radial-gradient(circle at 30% 30%, #e9ce9e, rgb(203, 176, 128))",
+  "sealColor": "#4a0808",
+  "sealType": "xi",
+  "sig": "160052",
+  "slug": "nhat-binh-do",
+  "templateId": "nhat_binh_red",
+  "templateName": "Nhật Bình - Đỏ",
+  "textColor": "#542e08"
+}

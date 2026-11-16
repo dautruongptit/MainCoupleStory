@@ -1,0 +1,35 @@
+{
+  "accentColor": "#7C151A",
+  "bg": "linear-gradient(to bottom right, #7C151A, #5a0e12, #3d090d)",
+  "btnBg": "#7C151A",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(124, 21, 26, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none w-[200px] md:w-[280px] top-[10px] -left-[20px] md:top-[10px] md:-left-[20px] opacity-80 rotate-[-25deg]",
+      "src": "/images/themes/minimalism-red/header-bottom-01.png"
+    },
+    {
+      "className": "absolute pointer-events-none w-[200px] md:w-[280px] bottom-[10px] -right-[20px] md:bottom-[10px] md:-right-[20px] opacity-80 rotate-[-25deg] -scale-x-100",
+      "src": "/images/themes/minimalism-red/header-bottom-01.png"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#7C151A",
+    "#9B1B21",
+    "#B52028",
+    "#FFFFFF"
+  ],
+  "particleType": "heart",
+  "rgb": "124, 21, 26",
+  "sealBg": "radial-gradient(circle at 30% 30%, #7C151A, rgba(124, 21, 26, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "041bef",
+  "slug": "minimalism-do",
+  "templateId": "minimalism_red",
+  "templateName": "Minimalism - Đỏ",
+  "textColor": "#7C151A"
+}

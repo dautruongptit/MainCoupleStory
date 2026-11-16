@@ -1,0 +1,37 @@
+{
+  "accentColor": "#005885",
+  "ampFont": "\"Alex Brush\", \"The Nautigal\", ChungDoiIndic, cursive",
+  "bg": "linear-gradient(to bottom right, #5992b0, #005885, #003f60)",
+  "btnBg": "#005885",
+  "btnTextColor": "#fdfbf5",
+  "cardBg": "#fdfbf5",
+  "cardBorder": "rgba(0, 88, 133, 0.15)",
+  "dateColor": "rgba(0, 0, 0, 0.82)",
+  "guestColor": "rgba(0, 0, 0, 0.82)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none h-[520px] md:h-[960px] w-auto max-w-none bottom-[-55px] md:bottom-[-220px] right-[-85px] md:right-[-166px] opacity-35",
+      "src": "/images/themes/riviera-blue/envelope-scene.webp"
+    }
+  ],
+  "nameFont": "\"Viaoda Libre\", \"EB Garamond\", ChungDoiIndic, cursive",
+  "particleColors": [
+    "#005885",
+    "#33799d",
+    "#669bb6",
+    "#99bcce",
+    "#ccdde7",
+    "#f2b8b8",
+    "#ffffff"
+  ],
+  "particleType": "blossom",
+  "rgb": "0, 88, 133",
+  "sealBg": "radial-gradient(circle at 30% 30%, #005885, rgb(0, 58, 103))",
+  "sealColor": "#fdfbf5",
+  "sealType": "heart",
+  "sig": "b71da8",
+  "slug": "riviera-lam",
+  "templateId": "riviera_blue",
+  "templateName": "Riviera - Lam",
+  "textColor": "#005885"
+}

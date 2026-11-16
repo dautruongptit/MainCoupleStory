@@ -1,0 +1,39 @@
+{
+  "accentColor": "#560207",
+  "bg": "linear-gradient(to bottom right, #560207, #9c1f2c, #c0304a)",
+  "btnBg": "#560207",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(86, 2, 7, 0.15)",
+  "flyCorners": true,
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none h-36 md:h-100 lg:h-100 w-auto max-w-none top-[-5%] md:top-[5%] left-[-14px] md:left-[-10%] -translate-x-[6%] md:-translate-x-[11%] opacity-100 md:opacity-30 rotate-[25deg]",
+      "src": "/images/themes/crystal-floral-red/flower2.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-36 md:h-100 lg:h-100 w-auto max-w-none bottom-[-5%] md:bottom-[-2%] right-[-14px] md:right-[-10%] translate-x-[6%] md:translate-x-[11%] opacity-100 md:opacity-30 -rotate-[25deg]",
+      "src": "/images/themes/crystal-floral-red/flower3.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#9c1f2c",
+    "#b83244",
+    "#cf5a68",
+    "#e0a86f",
+    "#ecc9a0",
+    "#f5e6d2",
+    "#ffffff"
+  ],
+  "particleType": "blossom",
+  "rgb": "86, 2, 7",
+  "sealBg": "radial-gradient(circle at 30% 30%, #560207, rgba(86, 2, 7, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "hoa-thuy-tinh-do",
+  "templateId": "crystal_floral_red",
+  "templateName": "Hoa Thuỷ Tinh - Đỏ",
+  "textColor": "#560207"
+}

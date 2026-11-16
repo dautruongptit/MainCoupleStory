@@ -1,0 +1,35 @@
+{
+  "accentColor": "#35452f",
+  "bg": "#eef3e8 url(/images/themes/glass-garden-green/floral-background.webp) center / 180% auto repeat",
+  "btnBg": "#35452f",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(53, 69, 47, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none h-40 md:h-50 lg:h-50 w-auto max-w-none top-[-5%] md:top-[-7%] left-[-7%] md:left-[-20px] -translate-x-[6%] md:-translate-x-[11%] -scale-x-100 opacity-90 rotate-[5deg]",
+      "src": "/images/themes/glass-garden-green/flower2-decoration.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-40 md:h-50 lg:h-50 w-auto max-w-none bottom-[-7%] md:bottom-[-10%] right-[-5%] md:right-[-10px] translate-x-[6%] md:translate-x-[11%] scale-x-100 opacity-90 rotate-[80deg]",
+      "src": "/images/themes/glass-garden-green/flower2-decoration.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#dbe6d0",
+    "#c4d4b3",
+    "#ffffff",
+    "#e7eede"
+  ],
+  "particleType": "blossom",
+  "rgb": "53, 69, 47",
+  "sealBg": "radial-gradient(circle at 30% 30%, #35452f, rgba(53, 69, 47, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "612c30",
+  "slug": "vuonkinh-xanh",
+  "templateId": "glass_garden_green",
+  "templateName": "Vườn Kính - Xanh",
+  "textColor": "#35452f"
+}

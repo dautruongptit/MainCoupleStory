@@ -1,0 +1,40 @@
+{
+  "accentColor": "#2e4733",
+  "ampFont": "\"Alex Brush\", \"The Nautigal\", ChungDoiIndic, cursive",
+  "bg": "linear-gradient(to right bottom, rgb(255, 255, 255), rgba(29, 80, 48, 0.96))",
+  "btnBg": "#2e4733",
+  "btnTextColor": "#ffffff",
+  "cardBg": "url(/images/themes/jasmine-green/paper.webp) 0 0 / 100% auto repeat, #f5f4f2",
+  "cardBorder": "rgba(169, 135, 78, 0.15)",
+  "dateColor": "rgba(169, 135, 78, 0.9)",
+  "glowRgb": "169, 135, 78",
+  "guestColor": "rgba(169, 135, 78, 0.9)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none z-0 top-[-5%] md:top-[-20%] left-[-14px] md:left-[-5px] -translate-x-[6%] md:-translate-x-[11%] h-40 md:h-72 lg:h-72 w-auto max-w-none rotate-[25deg] opacity-90",
+      "src": "/images/themes/jasmine-green/flower-decoration.webp"
+    },
+    {
+      "className": "absolute pointer-events-none z-0 bottom-[-7%] md:bottom-[-16%] right-[-14px] md:right-[-26px] [transform:translateX(6%)] md:[transform:translateX(11%)] h-[144px] md:h-[260px] lg:h-[260px] w-auto max-w-none opacity-90",
+      "src": "/images/themes/jasmine-green/flower2.webp"
+    }
+  ],
+  "nameFont": "\"Viaoda Libre\", \"Times New Roman\", ChungDoiIndic, serif",
+  "nameFromSm": true,
+  "ornamentColor": "#a9874e",
+  "particleColors": [
+    "#6f8a6a",
+    "#2e4733",
+    "#a9874e"
+  ],
+  "particleType": "blossom",
+  "rgb": "46, 71, 51",
+  "sealBg": "radial-gradient(circle at 30% 30%, #2e4733, rgb(16, 41, 21))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "2e4733",
+  "slug": "mai-lan-xanh",
+  "templateId": "jasmine_green",
+  "templateName": "Mai Lan - Xanh",
+  "textColor": "#2e4733"
+}

@@ -1,0 +1,36 @@
+{
+  "accentColor": "#5e813c",
+  "ampFont": "\"Ms Madi\", ChungDoiIndic, cursive",
+  "bg": "radial-gradient(ellipse at top, #e9efdc 0%, #dbe5c9 55%, #c7d4b1 100%)",
+  "btnBg": "#5e813c",
+  "btnTextColor": "#fefbf4",
+  "cardBg": "linear-gradient(rgba(255, 251, 237, 0.5), rgba(255, 251, 237, 0.5)), url(/images/themes/lien-hoa-v2-green/paper-texture.webp) 50% 0 / 100% auto repeat, #fffbed",
+  "cardBorder": "rgba(18, 77, 0, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none z-0 h-36 w-auto max-w-none opacity-90 md:h-60 lg:h-60 top-[-5%] md:top-[10%] left-[-14px] -translate-x-[6%] md:left-[-26px] md:-translate-x-[11%] rotate-[25deg]",
+      "src": "/images/themes/lien-hoa-v2-green/flower6.webp"
+    },
+    {
+      "className": "absolute pointer-events-none z-0 h-36 w-auto max-w-none opacity-90 md:h-60 lg:h-60 bottom-[-8%] md:bottom-[32%] right-[-14px] translate-x-[6%] md:right-[-26px] md:translate-x-[11%] -rotate-[25deg] -scale-x-100",
+      "src": "/images/themes/lien-hoa-v2-green/flower6.webp"
+    }
+  ],
+  "nameFont": "\"Carattere\", ChungDoiIndic, cursive",
+  "particleColors": [
+    "#f2b8c6",
+    "#f7d9e0",
+    "#5e813c",
+    "#a8c48a"
+  ],
+  "particleType": "blossom",
+  "rgb": "94, 129, 60",
+  "sealBg": "radial-gradient(circle at 30% 30%, #124d00, rgba(18, 77, 0, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "lien-hoa-v2-xanh",
+  "templateId": "lien_hoa_v2_green",
+  "templateName": "Liên Hoa V2 - Xanh",
+  "textColor": "#124d00"
+}

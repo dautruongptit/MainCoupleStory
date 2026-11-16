@@ -1,0 +1,39 @@
+{
+  "accentColor": "#ffe3b1",
+  "bg": "linear-gradient(to bottom right, #710001, #5a0001, #450001)",
+  "btnBg": "#ffe3b1",
+  "btnTextColor": "#4a0808",
+  "cardBg": "rgba(0, 0, 0, 0.35)",
+  "cardBorder": "rgba(255, 227, 177, 0.25)",
+  "imgs": [
+    {
+      "className": "w-[52px] h-[52px] object-contain",
+      "src": "/images/themes/longphung-v3-red/chu-hy.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[230px] md:w-[320px] top-[10px] -left-[20px] md:top-[0px] md:-left-[30px] opacity-55 rotate-[20deg]",
+      "src": "/images/themes/longphung-v3-red/phung.webp"
+    },
+    {
+      "className": "absolute pointer-events-none w-[230px] md:w-[320px] bottom-[10px] -right-[20px] md:bottom-[0px] md:-right-[30px] opacity-55 -rotate-[20deg]",
+      "src": "/images/themes/longphung-v3-red/rong.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#FFBE89",
+    "#FFD4A8",
+    "#FF9B4A",
+    "#710001"
+  ],
+  "particleType": "xi",
+  "rgb": "255, 190, 137",
+  "sealBg": "radial-gradient(circle at 30% 30%, #ffe3b1, #d1ba91)",
+  "sealColor": "#4a0808",
+  "sealType": "xi",
+  "sig": "2f50d9",
+  "slug": "long-phung-v3-do",
+  "templateId": "dragon_phoenix_v3_red",
+  "templateName": "Long Phụng V3 - Đỏ",
+  "textColor": "#ffe3b1"
+}

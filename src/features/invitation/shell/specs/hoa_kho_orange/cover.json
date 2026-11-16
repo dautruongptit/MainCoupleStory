@@ -1,0 +1,35 @@
+{
+  "accentColor": "#4c611b",
+  "bg": "#e08a3c",
+  "btnBg": "#4c611b",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(255, 255, 255, 0.97)",
+  "cardBorder": "rgba(76, 97, 27, 0.15)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none h-36 w-auto max-w-none md:h-50 lg:h-50 -top-[22px] md:-top-[75px] left-[-35%] md:left-[-15%] md:rotate-[30deg] md:-scale-x-100",
+      "src": "/images/themes/hoa-kho-orange/flower2.webp"
+    },
+    {
+      "className": "absolute pointer-events-none h-36 w-auto max-w-none md:h-50 lg:h-50 -bottom-[22px] md:bottom-[293px] right-[-35%] md:right-[-15%] md:rotate-[-30deg] -scale-x-100 -scale-y-100",
+      "src": "/images/themes/hoa-kho-orange/flower2.webp"
+    }
+  ],
+  "nameFont": "\"EB Garamond\", serif",
+  "particleColors": [
+    "#f26100",
+    "#f0a35c",
+    "#f7e2c4",
+    "#4c611b"
+  ],
+  "particleType": "blossom",
+  "rgb": "76, 97, 27",
+  "sealBg": "radial-gradient(circle at 30% 30%, #4c611b, rgba(76, 97, 27, 0.85))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "hoa-kho-cam",
+  "templateId": "hoa_kho_orange",
+  "templateName": "Hoa Khô - Cam",
+  "textColor": "#4c611b"
+}

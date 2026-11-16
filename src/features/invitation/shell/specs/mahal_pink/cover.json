@@ -1,0 +1,32 @@
+{
+  "accentColor": "rgb(125, 39, 50)",
+  "ampFont": "\"Alex Brush\", cursive",
+  "bg": "linear-gradient(to right bottom, rgba(125, 39, 50, 0.82), rgba(160, 80, 86, 0.78), rgba(102, 112, 73, 0.76)) 0% 0% / auto repeat, url(/images/themes/mahal-pink/paper.webp) 50% 50% / cover repeat",
+  "btnBg": "rgb(125, 39, 50)",
+  "btnTextColor": "#ffffff",
+  "cardBg": "rgba(252, 241, 224, 0.98)",
+  "cardBorder": "rgba(102, 112, 73, 0.15)",
+  "guestColor": "rgba(125, 39, 50, 0.72)",
+  "imgs": [
+    {
+      "className": "absolute pointer-events-none z-0 bottom-[-10%] left-1/2 -translate-x-1/2 h-[450px] md:h-[560px] opacity-30 w-auto max-w-none",
+      "src": "/images/themes/mahal-pink/envelope-bg.webp"
+    }
+  ],
+  "nameFont": "\"Viaoda Libre\", cursive",
+  "particleColors": [
+    "#E49AB0",
+    "#D4778F",
+    "#667049"
+  ],
+  "particleType": "blossom",
+  "rgb": "125, 39, 50",
+  "sealBg": "radial-gradient(circle at 30% 30%, rgb(125, 39, 50), rgb(95, 9, 20))",
+  "sealColor": "#ffffff",
+  "sealType": "heart",
+  "sig": "67993d",
+  "slug": "mahal-hong",
+  "templateId": "mahal_pink",
+  "templateName": "Mahal - Hồng",
+  "textColor": "rgb(125, 39, 50)"
+}
