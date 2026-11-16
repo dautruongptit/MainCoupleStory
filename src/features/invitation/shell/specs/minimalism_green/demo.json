@@ -73,5 +73,12 @@
     }
   ],
   "giftDisplayMode": "envelope",
-  "giftOn": true
+  "giftOn": true,
+  "dressColors": [
+    "#6b7b4f",
+    "#ffffff",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": ""
 }

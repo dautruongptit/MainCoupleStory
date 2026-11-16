@@ -39,5 +39,17 @@
     }
   ],
   "giftDisplayMode": "envelope",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Mỹ Duyên",
+  "brideNick": "Mỹ Duyên",
+  "date": "2027-05-05",
+  "dressColors": [
+    "#567c22",
+    "#ffffff",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Vân An",
+  "groomNick": "Vân An"
 }

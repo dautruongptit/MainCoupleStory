@@ -36,5 +36,17 @@
     }
   ],
   "giftDisplayMode": "gift_box",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Thanh Mai",
+  "brideNick": "Thanh Mai",
+  "date": "2026-05-10",
+  "dressColors": [
+    "#7C151A",
+    "#FFFAF7",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Đức Anh",
+  "groomNick": "Đức Anh"
 }

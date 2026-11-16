@@ -36,5 +36,17 @@
     }
   ],
   "giftDisplayMode": "envelope",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Mỹ Ngọc",
+  "brideNick": "Mỹ Ngọc",
+  "date": "2026-11-14",
+  "dressColors": [
+    "#71702a",
+    "#fefbf4",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Văn Hoàng",
+  "groomNick": "Văn Hoàng"
 }

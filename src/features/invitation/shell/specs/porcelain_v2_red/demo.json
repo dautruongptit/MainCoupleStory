@@ -162,5 +162,12 @@
       "accountName": "THIEP CUOI DEMO",
       "qrUrl": ""
     }
-  ]
+  ],
+  "dressColors": [
+    "#654e2f",
+    "#fdf9f3",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": ""
 }

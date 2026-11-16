@@ -37,5 +37,17 @@
     }
   ],
   "giftDisplayMode": "envelope",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Thanh Hà",
+  "brideNick": "Thanh Hà",
+  "date": "2027-01-04",
+  "dressColors": [
+    "#ffe8a4",
+    "#8c0000",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Trung Hiếu",
+  "groomNick": "Trung Hiếu"
 }

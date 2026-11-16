@@ -35,5 +35,17 @@
     }
   ],
   "giftDisplayMode": "envelope",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Hà Linh",
+  "brideNick": "Hà Linh",
+  "date": "2027-04-10",
+  "dressColors": [
+    "#FFE8A4",
+    "#920002",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Quang Duy",
+  "groomNick": "Quang Duy"
 }

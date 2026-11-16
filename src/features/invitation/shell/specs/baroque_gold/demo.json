@@ -34,5 +34,17 @@
     }
   ],
   "giftDisplayMode": "gift_box",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Tiểu Vy",
+  "brideNick": "Tiểu Vy",
+  "date": "2026-08-02",
+  "dressColors": [
+    "#8D8F58",
+    "#FBF8F1",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Gia Huy",
+  "groomNick": "Gia Huy"
 }

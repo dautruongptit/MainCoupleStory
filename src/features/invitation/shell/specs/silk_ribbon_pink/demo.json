@@ -38,5 +38,17 @@
     }
   ],
   "giftDisplayMode": "envelope",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Khánh Vy",
+  "brideNick": "Khánh Vy",
+  "date": "2027-02-20",
+  "dressColors": [
+    "#e66474",
+    "#ffffff",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Gia Bảo",
+  "groomNick": "Gia Bảo"
 }

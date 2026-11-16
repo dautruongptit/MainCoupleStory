@@ -346,5 +346,15 @@
       "accountName": "Phạm Quỳnh Anh",
       "qrUrl": "/api/qr-png?d=00020101021238540010A00000072701240006970418011080848561450208QRIBFTTA53037045802VN63044CBC&ec=M"
     }
-  ]
+  ],
+  "brideFull": "Quỳnh Anh",
+  "brideNick": "Quỳnh Anh",
+  "dressColors": [
+    "#800000",
+    "#fff7eb",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "groomFull": "Gia Khánh",
+  "groomNick": "Gia Khánh"
 }

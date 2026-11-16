@@ -164,5 +164,6 @@
     }
   ],
   "thanksOn": true,
-  "thanks": "Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi!"
+  "thanks": "Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi!",
+  "envelopeInviteMessage": ""
 }

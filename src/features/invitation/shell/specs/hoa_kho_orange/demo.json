@@ -36,5 +36,17 @@
     }
   ],
   "giftDisplayMode": "envelope",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Thanh Vân",
+  "brideNick": "Thanh Vân",
+  "date": "2026-12-19",
+  "dressColors": [
+    "#4c611b",
+    "#ffffff",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Gia Bảo",
+  "groomNick": "Gia Bảo"
 }

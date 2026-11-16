@@ -39,5 +39,17 @@
     }
   ],
   "giftDisplayMode": "gift_box",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Đức Anh",
+  "brideNick": "Đức Anh",
+  "date": "2026-11-08",
+  "dressColors": [
+    "#933845",
+    "#ffffff",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Ngọc Hân",
+  "groomNick": "Ngọc Hân"
 }

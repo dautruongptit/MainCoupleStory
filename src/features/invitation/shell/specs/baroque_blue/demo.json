@@ -33,5 +33,17 @@
     }
   ],
   "giftDisplayMode": "gift_box",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Diệu Linh",
+  "brideNick": "Diệu Linh",
+  "date": "2027-07-19",
+  "dressColors": [
+    "#72614b",
+    "#f9f1e6",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Quốc Đạt",
+  "groomNick": "Quốc Đạt"
 }

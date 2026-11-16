@@ -1,0 +1,142 @@
+{
+  "address": "Trung Tâm Hội Nghị White Palace, 194 Hoàng Văn Thụ, Phường 9, Quận Phú Nhuận, TP. Hồ Chí Minh",
+  "brideAddr": "Quận 3, TP. Hồ Chí Minh",
+  "brideFather": "Lê Văn Thành",
+  "brideFull": "Trần Thảo Vy",
+  "brideMother": "Phạm Thị Lan",
+  "brideNick": "Thảo Vy",
+  "ceremonies": [
+    {
+      "date": "2026-01-03",
+      "lunar": "Tức ngày 15 tháng 11 năm Ất Tỵ",
+      "place": "TƯ GIA",
+      "time": "09:00",
+      "title": "LỄ THÀNH HÔN ĐƯỢC CỬ HÀNH TẠI\nTƯ GIA"
+    }
+  ],
+  "countdown": false,
+  "date": "2026-01-03",
+  "dressColors": [
+    "#001a08",
+    "#e1bc7c",
+    "#3b5d3b",
+    "#f5e6c8"
+  ],
+  "dressText": "Trang phục dự tiệc",
+  "envelopeInviteMessage": "",
+  "gifts": [
+    {
+      "accountName": "TRAN TUAN KIET",
+      "accountNumber": "1023456789",
+      "bankBin": "970436",
+      "bankCode": "VCB",
+      "bankName": "Vietcombank",
+      "id": "g1",
+      "qrUrl": "/images/qr/boho_floral_green_groom.png",
+      "who": "groom"
+    },
+    {
+      "accountName": "LE MINH ANH",
+      "accountNumber": "9988776655",
+      "bankBin": "970407",
+      "bankCode": "TCB",
+      "bankName": "Techcombank",
+      "id": "g2",
+      "qrUrl": "/images/qr/boho_floral_green_groom.png",
+      "who": "bride"
+    }
+  ],
+  "groomAddr": "Quận 1, TP. Hồ Chí Minh",
+  "groomFather": "Trần Quốc Hưng",
+  "groomFull": "Nguyễn Hoàng Nam",
+  "groomMother": "Nguyễn Thị Hồng",
+  "groomNick": "Hoàng Nam",
+  "groomRole": "Trưởng Nam",
+  "locTitle": "Tiệc cưới sẽ tổ chức tại",
+  "mapUrl": "",
+  "order": "groom",
+  "photos": [
+    "/images/photo-library/design/1e0986014ff4206f135df254987fb52eb45ae964e8cce6f0dba29a905e0e0b67.webp",
+    "/images/photo-library/design/cea4d58014368af2908a492045ec39a91ab5ed17d4544eb6520733a40beb078a.webp",
+    "/images/photo-library/design/6c5d0a317cc97ce46cf6798f0248ceb3d97739840e1f27fc5040798c21ad55c6.webp",
+    "/images/photo-library/design/3f8b94b89026dc3738bb80e625b8ee993ce93949e595ef9539b9c41d17898671.webp",
+    "/images/photo-library/design/6f6851cc63126158d802563c047297dd76ba3f532c1e3809a556ab617c312000.webp",
+    "/images/photo-library/design/1c177f9721cd1802abf4fa62e6f22113bb477130cbc30b138c7a42cd995bb670.webp",
+    "/images/photo-library/design/0c4b3896fb70a7e08523a1299f851735fa4544c530ad41ab5ce1a6dc4677173c.webp",
+    "/images/photo-library/design/1bbb42e6ee9c2736341c2a79759bae02176bbb899bfca22cc71c0fa860f64a9e.webp"
+  ],
+  "sched": [
+    {
+      "text": "Đón khách",
+      "time": "17:00"
+    },
+    {
+      "text": "Khai tiệc",
+      "time": "18:00"
+    },
+    {
+      "text": "Nghi thức cưới",
+      "time": "18:30"
+    },
+    {
+      "text": "Cắt bánh & nâng ly",
+      "time": "19:00"
+    },
+    {
+      "text": "Kết thúc tiệc",
+      "time": "20:30"
+    }
+  ],
+  "wishes": [
+    {
+      "at": "21:20:27 14/7/2026",
+      "msg": "Chúc hai bạn trăm năm hạnh phúc, vạn sự như ý, một đám cưới thật vui!",
+      "name": "Mỹ Linh"
+    },
+    {
+      "at": "21:20:27 14/7/2026",
+      "msg": "Chúc mừng hai bạn về chung một nhà! Chúc luôn vui vẻ và yêu thương nhau thật nhiều.",
+      "name": "Trọng Nhân"
+    },
+    {
+      "at": "21:20:27 14/7/2026",
+      "msg": "Chúc Nam và Vy mãi ngọt ngào như ngày đầu, hạnh phúc trọn đời bên nhau!",
+      "name": "Phương Vy"
+    },
+    {
+      "at": "21:20:27 14/7/2026",
+      "msg": "Chúc mừng anh chị! Chúc hai người xây dựng tổ ấm thật hạnh phúc và bền lâu.",
+      "name": "Hải Đăng"
+    },
+    {
+      "at": "21:20:27 14/7/2026",
+      "msg": "Nhìn thiệp mà thấy ấm áp ghê. Chúc hai bạn một hôn lễ thật trọn vẹn và đáng nhớ!",
+      "name": "Ngọc Diệp"
+    },
+    {
+      "at": "21:20:27 14/7/2026",
+      "msg": "Chúc cô dâu chú rể trăm năm hạnh phúc, gia đình êm ấm, con cái đủ đầy!",
+      "name": "Đức Thịnh"
+    },
+    {
+      "at": "21:20:27 14/7/2026",
+      "msg": "Chúc mừng hạnh phúc hai bạn nhé! Mong hai bạn luôn nắm tay nhau đi hết cuộc đời.",
+      "name": "Lan Anh"
+    },
+    {
+      "at": "21:20:27 14/7/2026",
+      "msg": "Mừng đám cưới của cậu mợ! Chúc hai bạn mãi yêu thương và thấu hiểu nhau.",
+      "name": "Quốc Bảo"
+    },
+    {
+      "at": "21:20:27 14/7/2026",
+      "msg": "Ôi tấm thiệp đẹp quá! Chúc hai đứa hạnh phúc viên mãn, sớm có tin vui.",
+      "name": "Thu Hà"
+    },
+    {
+      "at": "21:20:27 14/7/2026",
+      "msg": "Chúc mừng Hoàng Nam và Thảo Vy! Chúc hai bạn trăm năm hạnh phúc, đầu bạc răng long nhé!",
+      "name": "Minh Tuấn"
+    }
+  ]
+}

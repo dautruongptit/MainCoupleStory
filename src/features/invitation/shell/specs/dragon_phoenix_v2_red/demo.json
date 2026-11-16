@@ -32,5 +32,19 @@
     }
   ],
   "giftOn": true,
-  "giftDisplayMode": "envelope"
+  "giftDisplayMode": "envelope",
+  "brideFull": "Minh Nguyệt",
+  "brideNick": "Minh Nguyệt",
+  "date": "2026-05-24",
+  "dressColors": [
+    "#ffe3b1",
+    "#680e0e",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeGuest": "Em Toàn",
+  "envelopeInviteMessage": "đến dự buổi tiệc chung vui cùng gia đình",
+  "groomFull": "Trung Hiếu",
+  "groomNick": "Trung Hiếu",
+  "heroPhoto": "/images/photo-library/design/c0c85699ec961efa2db8747663ff1a34ad9237b8f5c4bc9c18db8e5c33e16f76.webp"
 }

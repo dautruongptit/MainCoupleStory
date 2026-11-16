@@ -39,5 +39,18 @@
     }
   ],
   "giftDisplayMode": "gift_box",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Như Ý",
+  "brideNick": "Như Ý",
+  "date": "2026-05-31",
+  "dressColors": [
+    "#ae4c51",
+    "#464646",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeGuest": "Anh Minh Khôi",
+  "envelopeInviteMessage": "đến dự buổi tiệc chung vui cùng gia đình",
+  "groomFull": "Trung Hiếu",
+  "groomNick": "Trung Hiếu"
 }

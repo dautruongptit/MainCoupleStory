@@ -40,5 +40,17 @@
     }
   ],
   "giftDisplayMode": "envelope",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Ngọc Hân",
+  "brideNick": "Ngọc Hân",
+  "date": "2027-08-26",
+  "dressColors": [
+    "#6c7e54",
+    "#fffaf2",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Gia Khánh",
+  "groomNick": "Gia Khánh"
 }

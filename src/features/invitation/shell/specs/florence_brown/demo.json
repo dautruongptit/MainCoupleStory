@@ -38,5 +38,17 @@
     }
   ],
   "giftDisplayMode": "envelope",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Tuệ Anh",
+  "brideNick": "Tuệ Anh",
+  "date": "2027-04-25",
+  "dressColors": [
+    "#000000",
+    "#faf7f2",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Hoàng Phúc",
+  "groomNick": "Hoàng Phúc"
 }

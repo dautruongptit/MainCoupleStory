@@ -358,5 +358,15 @@
       "accountName": "Huynh Khanh Linh",
       "qrUrl": "/api/qr-png?d=00020101021238530010A0000007270123000697041801091234567890208QRIBFTTA53037045802VN6304D2A5&ec=M"
     }
-  ]
+  ],
+  "brideFull": "Khánh Linh",
+  "brideNick": "Khánh Linh",
+  "dressColors": [
+    "#143a29",
+    "#e9f2eb",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "groomFull": "Hải Nam",
+  "groomNick": "Hải Nam"
 }

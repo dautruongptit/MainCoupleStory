@@ -36,5 +36,17 @@
     }
   ],
   "giftDisplayMode": "envelope",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Thùy Dương",
+  "brideNick": "Thùy Dương",
+  "date": "2027-01-16",
+  "dressColors": [
+    "#8d6f32",
+    "#fcfbf8",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Đăng Khoa",
+  "groomNick": "Đăng Khoa"
 }

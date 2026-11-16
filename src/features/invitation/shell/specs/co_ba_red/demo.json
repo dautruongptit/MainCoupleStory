@@ -40,5 +40,17 @@
     }
   ],
   "giftDisplayMode": "gift_box",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Thanh Diệp",
+  "brideNick": "Thanh Diệp",
+  "date": "2026-05-11",
+  "dressColors": [
+    "#542e08",
+    "#f8f3e0",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Văn Toàn",
+  "groomNick": "Văn Toàn"
 }

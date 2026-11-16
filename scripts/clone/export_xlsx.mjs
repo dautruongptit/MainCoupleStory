@@ -30,7 +30,8 @@ const regById = Object.fromEntries((registry?.templates ?? []).map((t) => [t.id,
 const coverSrc = read(J("src/features/invitation/components/covers/coverConfigs.ts"));
 const coverIdx = read(J("src/features/invitation/components/covers/index.ts"));
 const edSrc = read(J("src/features/editor/config/editorSections.ts"));
-const refCovers = read(J("src/features/templates/data/referenceCovers.ts"));
+// dữ liệu bìa (ngày, lời mời) của mẫu nằm trong specs/<id>/demo.json (trước đây: referenceCovers.ts)
+const hasCoverData = (id) => { try { const d = JSON.parse(fs.readFileSync(J(`src/features/invitation/shell/specs/${id}/demo.json`), "utf8")); return "date" in d || "envelopeInviteMessage" in d; } catch { return false; } };
 const particle88 = readJson(J("docs/survey/particle-colors-88.json")) ?? {};
 const catalog88 = new Set((readJson(J("docs/survey/catalog-88.json")) ?? []).map((x) => x.id));
 const surveyFiles = fs.readdirSync(SURVEY);
@@ -192,7 +193,7 @@ for (const t of templates) {
 
   const levels = [demoLevel, fxLevel, btnLevel, edLevel, pvLevel];
   rows.push({
-    t, reg, caps, theme, family, b, cover, coverComp, pm, refCover: new RegExp(`"${t.id}":`).test(refCovers),
+    t, reg, caps, theme, family, b, cover, coverComp, pm, refCover: hasCoverData(t.id),
     demo: { level: demoLevel, note: demoNote, diff: open.text }, fx: { level: fxLevel, note: fxNote }, btn: { level: btnLevel, note: btnNote, openFx: fxName, fly },
     ed: { level: edLevel, note: edNote, flags, measured: measuredEd }, pv: { level: pvLevel, note: pvNote },
     gift, rsvp, sync, seq, levels,
@@ -260,7 +261,7 @@ s2.columns = [
   { header: "Thư mục ảnh theme", width: 36 }, { header: "Số ảnh theme", width: 9 }, { header: "Ảnh phong bì", width: 9 },
   { header: "Tên cô dâu chú rể đọc từ dữ liệu", width: 14 }, { header: "Album đọc từ dữ liệu", width: 12 }, { header: "Khối ghi cứng ảnh demo", width: 26 }, { header: "Lightbox", width: 26 },
   { header: "Công tắc Hiện/Ẩn nối", width: 40 }, { header: "Diff open/openfull (lệch hình học/kiểu)", width: 46 }, { header: "Diff hộp quà 390", width: 14 }, { header: "Diff RSVP 390", width: 14 },
-  { header: "Bộ sinh khối", width: 34 }, { header: "Nguồn demo gốc", width: 50 }, { header: "Có dữ liệu ngày/lời mời đo thật (referenceCovers)", width: 16 },
+  { header: "Bộ sinh khối", width: 34 }, { header: "Nguồn demo gốc", width: 50 }, { header: "Có dữ liệu ngày/lời mời riêng (demo.json)", width: 16 },
 ];
 for (const r of rows) {
   const g = (d) => (d.any ? d.text : "chưa đo");

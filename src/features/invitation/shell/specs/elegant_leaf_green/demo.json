@@ -40,5 +40,18 @@
     }
   ],
   "giftDisplayMode": "gift_box",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Thanh Diệp",
+  "brideNick": "Thanh Diệp",
+  "date": "2026-05-11",
+  "dressColors": [
+    "#4E6439",
+    "#ffffff",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeGuest": "Anh Chị Minh - Thanh",
+  "envelopeInviteMessage": "đến dự buổi tiệc chung vui cùng gia đình to celebrate with our family",
+  "groomFull": "Văn Toàn",
+  "groomNick": "Văn Toàn"
 }

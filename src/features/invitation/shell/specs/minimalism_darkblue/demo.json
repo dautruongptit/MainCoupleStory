@@ -39,5 +39,17 @@
     }
   ],
   "giftDisplayMode": "envelope",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Minh Anh",
+  "brideNick": "Minh Anh",
+  "date": "2026-12-19",
+  "dressColors": [
+    "#00224c",
+    "#f7f5ee",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Tuấn Kiệt",
+  "groomNick": "Tuấn Kiệt"
 }

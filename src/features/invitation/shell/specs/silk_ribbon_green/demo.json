@@ -47,5 +47,17 @@
     }
   ],
   "giftDisplayMode": "envelope",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Thanh Trúc",
+  "brideNick": "Thanh Trúc",
+  "date": "2026-12-19",
+  "dressColors": [
+    "#5e813c",
+    "#ffffff",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Hoài Nam",
+  "groomNick": "Hoài Nam"
 }

@@ -326,5 +326,15 @@
       "accountName": "THIEP CUOI DEMO",
       "qrUrl": ""
     }
-  ]
+  ],
+  "brideFull": "Thanh Tú",
+  "brideNick": "Thanh Tú",
+  "dressColors": [
+    "#9D6D63",
+    "#FFFAF7",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "groomFull": "Hoàng Nam",
+  "groomNick": "Hoàng Nam"
 }

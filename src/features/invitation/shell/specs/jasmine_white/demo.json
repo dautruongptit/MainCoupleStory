@@ -47,5 +47,17 @@
     }
   ],
   "giftDisplayMode": "envelope",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Thu Hà",
+  "brideNick": "Thu Hà",
+  "date": "2026-04-26",
+  "dressColors": [
+    "#404A1D",
+    "#FFFAF7",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Văn Long",
+  "groomNick": "Văn Long"
 }

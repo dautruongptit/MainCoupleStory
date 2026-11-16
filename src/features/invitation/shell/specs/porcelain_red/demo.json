@@ -35,5 +35,17 @@
     }
   ],
   "giftDisplayMode": "envelope",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Ngọc Hân",
+  "brideNick": "Ngọc Hân",
+  "date": "2026-12-19",
+  "dressColors": [
+    "#b03235",
+    "#ffffff",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Minh Khôi",
+  "groomNick": "Minh Khôi"
 }

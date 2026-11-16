@@ -38,5 +38,18 @@
     }
   ],
   "giftDisplayMode": "gift_box",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Thế Bảo",
+  "brideNick": "Thế Bảo",
+  "date": "2026-05-17",
+  "dressColors": [
+    "#19472D",
+    "#FFF0E7",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeGuest": "GĐ bác Mạnh - Nhung",
+  "envelopeInviteMessage": "Đến dự tiệc cùng gia đình",
+  "groomFull": "Ngọc Ánh",
+  "groomNick": "Ngọc Ánh"
 }

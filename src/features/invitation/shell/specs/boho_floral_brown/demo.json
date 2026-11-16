@@ -367,5 +367,16 @@
       "accountName": "THIEP CUOI DEMO",
       "qrUrl": ""
     }
-  ]
+  ],
+  "brideFull": "Thanh Tú",
+  "brideNick": "Thanh Tú",
+  "dressColors": [
+    "#4a2816",
+    "#fffaf7",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeGuest": "Gia đình chị Phương",
+  "groomFull": "Hoàng Nam",
+  "groomNick": "Hoàng Nam"
 }

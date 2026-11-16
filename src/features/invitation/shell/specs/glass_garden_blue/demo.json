@@ -36,5 +36,17 @@
     }
   ],
   "giftDisplayMode": "envelope",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Như Khuê",
+  "brideNick": "Như Khuê",
+  "date": "2026-11-22",
+  "dressColors": [
+    "#d9eaff",
+    "#3d6cae",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Hoàng Phúc",
+  "groomNick": "Hoàng Phúc"
 }

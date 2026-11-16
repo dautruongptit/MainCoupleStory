@@ -31,5 +31,17 @@
     }
   ],
   "giftDisplayMode": "envelope",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Hà My",
+  "brideNick": "Hà My",
+  "date": "2026-12-19",
+  "dressColors": [
+    "#804b5b",
+    "#fefefe",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Quốc Bảo",
+  "groomNick": "Quốc Bảo"
 }

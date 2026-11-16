@@ -37,5 +37,17 @@
     }
   ],
   "giftDisplayMode": "gift_box",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Mai Chi",
+  "brideNick": "Mai Chi",
+  "date": "2026-12-19",
+  "dressColors": [
+    "#08315a",
+    "#ffffff",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Hoài Nam",
+  "groomNick": "Hoài Nam"
 }

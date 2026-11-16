@@ -38,5 +38,18 @@
     }
   ],
   "giftDisplayMode": "gift_box",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Ngọc Linh",
+  "brideNick": "Ngọc Linh",
+  "date": "2026-05-30",
+  "dressColors": [
+    "#E1BC7C",
+    "#3E0001",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeGuest": "Anh Quân + người thương...",
+  "envelopeInviteMessage": "Đến dự buổi tiệc chung vui cùng chúng em",
+  "groomFull": "Hoài Nam",
+  "groomNick": "Hoài Nam"
 }

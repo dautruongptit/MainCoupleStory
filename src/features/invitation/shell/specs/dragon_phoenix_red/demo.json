@@ -116,5 +116,6 @@
       "accountName": "Lê Ngọc Linh",
       "qrUrl": "/api/qr-png?d=00020101021238540010A00000072701240006970415011080848561450208QRIBFTTA53037045802VN63041BE3&ec=M"
     }
-  ]
+  ],
+  "envelopeInviteMessage": ""
 }

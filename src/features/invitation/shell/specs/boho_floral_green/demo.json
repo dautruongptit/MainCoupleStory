@@ -369,5 +369,15 @@
       "accountName": "Nguyễn Thu Hà",
       "qrUrl": "/api/qr-png?d=00020101021238540010A00000072701240006970418011066655588880208QRIBFTTA53037045802VN6304086E&ec=M"
     }
-  ]
+  ],
+  "brideFull": "Thu Hà",
+  "brideNick": "Thu Hà",
+  "dressColors": [
+    "#30530F",
+    "#FFFAF7",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "groomFull": "Minh Quân",
+  "groomNick": "Minh Quân"
 }

@@ -36,5 +36,17 @@
     }
   ],
   "giftDisplayMode": "gift_box",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Phương Linh",
+  "brideNick": "Phương Linh",
+  "date": "2026-04-26",
+  "dressColors": [
+    "#3a5a2c",
+    "#FFFFFF",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Hoàng Long",
+  "groomNick": "Hoàng Long"
 }

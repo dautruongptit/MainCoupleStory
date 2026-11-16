@@ -250,5 +250,13 @@
       "accountName": "THIEP CUOI DEMO",
       "qrUrl": ""
     }
-  ]
+  ],
+  "dressColors": [
+    "#882925",
+    "#ecdfd6",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeGuest": "Anh Tuấn",
+  "envelopeInviteMessage": "đến dự buổi tiệc chung vui cùng gia đình"
 }

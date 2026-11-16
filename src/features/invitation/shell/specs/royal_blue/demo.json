@@ -37,5 +37,16 @@
     }
   ],
   "giftDisplayMode": "gift_box",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Ngọc Ánh",
+  "date": "2026-06-21",
+  "dressColors": [
+    "#E1BC7C",
+    "#00112E",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeGuest": "Bạn Thanh Nhã",
+  "envelopeInviteMessage": "Đến dự buổi tiệc chung vui cùng chúng mình",
+  "groomFull": "Thế Bảo"
 }

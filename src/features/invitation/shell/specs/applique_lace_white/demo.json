@@ -36,5 +36,17 @@
     }
   ],
   "giftDisplayMode": "gift_box",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Thu Hà",
+  "brideNick": "Thu Hà",
+  "date": "2027-06-12",
+  "dressColors": [
+    "#ffffff",
+    "#0d0b0b",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Anh Tuấn",
+  "groomNick": "Anh Tuấn"
 }

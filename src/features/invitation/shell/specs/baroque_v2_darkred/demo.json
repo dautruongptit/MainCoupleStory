@@ -319,5 +319,15 @@
       "accountName": "THIEP CUOI DEMO",
       "qrUrl": ""
     }
-  ]
+  ],
+  "brideFull": "Ngọc Diệp",
+  "brideNick": "Ngọc Diệp",
+  "dressColors": [
+    "#ffefd6",
+    "#2b0303",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "groomFull": "Gia Bảo",
+  "groomNick": "Gia Bảo"
 }

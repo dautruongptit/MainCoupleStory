@@ -38,5 +38,17 @@
     }
   ],
   "giftDisplayMode": "envelope",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Lan Anh",
+  "brideNick": "Lan Anh",
+  "date": "2027-02-11",
+  "dressColors": [
+    "#556183",
+    "#fffaf2",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Quang Huy",
+  "groomNick": "Quang Huy"
 }

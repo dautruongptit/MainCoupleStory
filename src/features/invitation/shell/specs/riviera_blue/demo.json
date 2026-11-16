@@ -170,5 +170,6 @@
   "thanksOn": true,
   "thanks": "Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi!",
   "announcementLine1": "Chúng tôi sắp về chung một nhà, và rất mong có bạn ở đó",
-  "announcementLine2": ""
+  "announcementLine2": "",
+  "envelopeInviteMessage": ""
 }

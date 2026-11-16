@@ -39,5 +39,17 @@
     }
   ],
   "giftDisplayMode": "gift_box",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Thiên Ý",
+  "brideNick": "Thiên Ý",
+  "date": "2026-08-02",
+  "dressColors": [
+    "#000000",
+    "#FFFFFF",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Hữu Trí",
+  "groomNick": "Hữu Trí"
 }

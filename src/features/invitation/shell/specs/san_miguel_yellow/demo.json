@@ -35,5 +35,17 @@
     }
   ],
   "giftDisplayMode": "envelope",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Quỳnh Anh",
+  "brideNick": "Quỳnh Anh",
+  "date": "2027-03-18",
+  "dressColors": [
+    "#000d29",
+    "#ffffff",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Bảo Lâm",
+  "groomNick": "Bảo Lâm"
 }

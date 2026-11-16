@@ -165,5 +165,7 @@
   ],
   "thanksOn": true,
   "thanks": "Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi!",
-  "rsvpOn": true
+  "rsvpOn": true,
+  "countdown": false,
+  "envelopeInviteMessage": ""
 }

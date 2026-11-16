@@ -48,5 +48,17 @@
     }
   ],
   "giftDisplayMode": "gift_box",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Thanh Hà",
+  "brideNick": "Thanh Hà",
+  "date": "2026-07-12",
+  "dressColors": [
+    "#FFBE89",
+    "#7A0014",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Tuấn Kiệt",
+  "groomNick": "Tuấn Kiệt"
 }

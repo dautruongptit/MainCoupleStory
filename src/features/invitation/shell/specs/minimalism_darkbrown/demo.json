@@ -38,5 +38,17 @@
     }
   ],
   "giftDisplayMode": "gift_box",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Diệu Linh",
+  "brideNick": "Diệu Linh",
+  "date": "2027-11-17",
+  "dressColors": [
+    "#593D2C",
+    "#f7f5ee",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Xuân Trường",
+  "groomNick": "Xuân Trường"
 }

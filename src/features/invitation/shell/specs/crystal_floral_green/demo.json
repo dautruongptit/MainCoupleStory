@@ -334,5 +334,15 @@
       "accountName": "THIEP CUOI DEMO",
       "qrUrl": ""
     }
-  ]
+  ],
+  "brideFull": "Như Khuê",
+  "brideNick": "Như Khuê",
+  "dressColors": [
+    "#0B2E00",
+    "#fbf8f3",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "groomFull": "Hoàng Phúc",
+  "groomNick": "Hoàng Phúc"
 }

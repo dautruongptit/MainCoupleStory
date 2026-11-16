@@ -37,5 +37,17 @@
     }
   ],
   "giftDisplayMode": "gift_box",
-  "giftOn": true
+  "giftOn": true,
+  "brideFull": "Thảo Vy",
+  "brideNick": "Thảo Vy",
+  "date": "2026-08-02",
+  "dressColors": [
+    "#35452f",
+    "#eef3e8",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "envelopeInviteMessage": "",
+  "groomFull": "Quang Huy",
+  "groomNick": "Quang Huy"
 }

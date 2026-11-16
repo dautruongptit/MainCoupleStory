@@ -319,5 +319,15 @@
       "accountName": "THIEP CUOI DEMO",
       "qrUrl": ""
     }
-  ]
+  ],
+  "brideFull": "Mai Trâm",
+  "brideNick": "Mai Trâm",
+  "dressColors": [
+    "#ffefd6",
+    "#0a1a0b",
+    "#d6c5b3",
+    "#ece5dd"
+  ],
+  "groomFull": "Duy Khang",
+  "groomNick": "Duy Khang"
 }
