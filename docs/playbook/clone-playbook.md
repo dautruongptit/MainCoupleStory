@@ -70,11 +70,13 @@ Cấu trúc:
 - `blocks/*.tsx`: một khối = một đoạn thiệp (Backdrop, Hero, Family, Album, Banquet, Venue, Dress, Schedule, Guestbook, Gifts, Thanks, RsvpButton, RsvpDialogHost, Lightbox, MusicPlayer). Đăng ký trong `blocks/index.ts` (họ "minimalism").
 - `specs/<id>/theme.json`: màu (ink, sub, muted, paper, line, accent, edge, cream) + thư mục ảnh (`assets`). Khối **không** chứa màu / đường dẫn ảnh cố định, chỉ đọc `t.ink`, `t.assets`...
 - `specs/<id>/capabilities.json`: danh sách & thứ tự khối, cờ cover/gift/hero/album/countdown/layout/editor/music (schema ở `docs/playbook/clone-rules.md` mục B1).
-- `specs/index.ts`: đăng ký mẫu (`getTemplateSpec(id)`, `getCapabilities(id)`). `Preview.tsx` tự dùng khuôn khi mẫu có spec.
+- `specs/<id>/meta.json`: thông tin danh mục (slug, tên, mô tả, ảnh listing/full, `order` = thứ tự trên trang gốc, tag, nhãn; tùy chọn `introDefault`, `previewFocal`, `palette`).
+- `specs/<id>/demo.json`: dữ liệu demo của trang gốc cho mẫu (ghi đè phần chung ở `src/features/invitation/demo/buildDemoInv.ts`).
+- `specs/index.ts`: đọc mẫu (`getTemplateSpec(id)`, `getCapabilities(id)`) từ `specs/index.generated.ts`. **Không đăng ký tay**: chạy `npm run gen:specs` (`scripts/clone/gen_spec_index.mjs`) sau khi thêm/sửa thư mục spec; bộ sinh cũng tạo bảng mẫu `src/features/templates/data/templates.generated.ts` và báo lỗi thiếu tệp/thiếu trường.
 
 Thêm mẫu cùng họ bố cục (minimalism: Nâu, Xanh lá, Tím, Đỏ... chỉ khác màu/ảnh):
 1. Chép `specs/minimalism_brown` → `specs/<id>/`; sửa `theme.json` theo số đo trang gốc (màu chữ chính/phụ/mờ, nền giấy, viền, thư mục ảnh `public/images/themes/<slug>/`) và `capabilities.json` (id, testId, cờ).
-2. Thêm 1 dòng vào `SPECS` trong `specs/index.ts`.
+2. Viết `meta.json` (và `demo.json` nếu có dữ liệu demo riêng), rồi chạy `npm run gen:specs`.
 3. Đo & so (mục 3). Lệch còn lại → sửa token / cờ trước; chỉ khi **cấu trúc** khác mới thêm biến thể khối.
 
 Khi cấu trúc khác (họ bố cục mới, vd song_hy / baroque / florence / boho):
@@ -83,7 +85,7 @@ Khi cấu trúc khác (họ bố cục mới, vd song_hy / baroque / florence / 
 
 Nguyên tắc: không `if (templateId === ...)` trong khối; mọi khác biệt là dữ liệu trong `theme.json`/`capabilities.json` hoặc là một khối khác.
 Chứng minh refactor không đổi số đo: `node scripts/check/cmp_dumps.mjs <thư mục mốc> <id> cover:390 open:390 open:768 open:1440 gift:390 rsvp:390` (so từng thuộc tính từng phần tử với dump local đã lưu trước khi sửa).
-Ghi chú còn lại: hộp thoại RSVP dùng `BrownRsvpDialog.tsx` (khớp 18/18); dữ liệu demo ở `src/pages/Demo.tsx`.
+Ghi chú còn lại: hộp thoại RSVP dùng `BrownRsvpDialog.tsx` (khớp 18/18); dữ liệu demo ở `specs/<id>/demo.json` + `src/features/invitation/demo/buildDemoInv.ts`.
 - Kiểm tra: `diff_dump … open 390/768/1440` = 0; `node scripts/check/audit.mjs <id>` Δ0 ở 390/768/1440.
 
 ### 4.2b Họ bố cục mới (đã làm thử với Riviera Lam, `riviera_blue`)
@@ -92,7 +94,7 @@ Khi mẫu có cấu trúc khác (không chỉ khác màu), dựng bộ khối m�
 1. **Thu HTML thật** của thiệp đã mở: trong tab chungdoi.com, lấy `outerHTML` của `[data-showcase-root]` ở 390 và 1440 (gửi về collector, ghi `docs/survey/raw/<id>_open_html.json`). Lấy thêm `P.stepCover/stepOpened/stepGift`, `P.engineDump` (keyframes + CSS styled-jsx thật).
 2. **HTML → JSX → khối**: `html2jsx.mjs` → `scripts/clone/cut_blocks.cjs <jsx> <thư mục>` tách các con trực tiếp của khung thành `NN.jsx` (đã lưu ở `docs/survey/blocks/<id>/`). `scripts/clone/compact.cjs` in dạng rút gọn (bỏ class/style) để đọc cấu trúc.
 3. **Gắn dữ liệu**: viết bộ sinh như `scripts/clone/gen_riviera.cjs` (thư viện `jsxkit.cjs`: tìm phần tử theo class, thay văn bản, lặp phần tử mẫu theo mảng dữ liệu, bọc điều kiện cờ `xxxOn`). Bộ sinh cũng thay màu/ảnh bằng token `t.*` và xuất `shell/blocks/<family>/*.tsx`. Chạy lại bộ sinh khi sửa quy tắc, không sửa tay file sinh ra.
-4. **Khai báo**: `shell/blocks/<family>/index.ts` (bản đồ khối), `blocksForFamily` trong `shell/blocks/index.ts`, `specs/<id>/{theme,capabilities,demo}.json`, một dòng trong `specs/index.ts`. Dữ liệu demo của gốc để trong `demo.json` (`Demo.tsx` tự gộp), không thêm `if (id === ...)`.
+4. **Khai báo**: `shell/blocks/<family>/index.ts` (bản đồ khối), `blocksForFamily` trong `shell/blocks/index.ts`, `specs/<id>/{meta,theme,capabilities,demo}.json` rồi `npm run gen:specs`. Dữ liệu demo của gốc để trong `demo.json` (`buildDemoInv` tự gộp), không thêm `if (id === ...)`.
 5. **Bìa**: chỉ cần điền `coverConfigs.ts` đúng số đo (màu, font, `rgb`, `ampFont`, ảnh nền). Dùng class tùy ý `h-[520px]` thay cho `h-130` (Tailwind v4 của gốc ≠ Tailwind v3 ngoài `.inv-root`). Hộp thoại RSVP nhận màu qua `t.ink`, `t.rsvpBtnText`.
 
 **Bài học Riviera (áp dụng cho mọi họ mới):**

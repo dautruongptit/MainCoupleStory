@@ -196,4 +196,19 @@ Khi A–D ổn định: chuyển phần app (trang, header, editor) từ Tailwin
 
 ## 6. Nhật ký thực hiện
 - **A (xong, đã gộp vào `fix/clone-match`)**: `npm run check` + mốc; xóa editor cũ/HeroPhoto/HoaMocXanh; sắp lại `scripts/`, `docs/`.
+- **C (đang làm trên `refactor/phase-c`, 2026-11-16)** — đã xong:
+  - C2: `scripts/clone/gen_spec_index.mjs` sinh `specs/index.generated.ts` (thay 275 dòng import + 92 dòng đăng ký tay; `specs/index.ts` 435 → 81 dòng) và kiểm tra thiếu tệp/thiếu trường; `npm run gen:specs`, có trong `npm run check`.
+  - B5 + C3 (dữ liệu demo): `demo/buildDemoInv.ts` = phần chung + `specs/<id>/demo.json`; `pages/Demo.tsx` 354 → 126 dòng, hết `if` theo mẫu; xóa `referenceCouples.ts`, `referenceCovers.ts`. Kiểm: `demo-data.mjs --compare` 92/92 giống mốc.
+  - C3 (bảng mẫu, bảng màu, điểm lấy nét): `specs/<id>/meta.json` là nguồn; `templates.generated.ts` sinh tự động; `templates.ts`, `templateThemes.ts`, `previewFocal.ts` chỉ còn là lớp đọc. Kiểm: `config-data.mjs --compare` 92/92 giống mốc. 9 script đọc bảng mẫu chuyển sang tệp sinh.
+  - C5 (một phần): Vitest + `store.test.ts` 11 test (`npm test`). `store.defaultGiftMode` bỏ phụ thuộc `giftboxConfigs`.
+  - C6: `AGENTS.md`, playbook, `scripts/README.md`.
+- **C — còn lại** (chưa làm):
+  - `covers/coverConfigs.ts` (1,8k dòng) + `covers/index.ts` → `specs/<id>/cover.json`.
+  - `config/giftboxConfigs.ts` (1,2k dòng): còn 2 nơi dùng — `BaseCoverCard` (`flyDecor` theo `giftboxType` CŨ, khác kiểu đo thật ở 11 mẫu: folk_floral_blue, qasr_blue/gold/green, mahal_gold/pink, floral_fiesta_yellow, saraya_gold, mandap_darkred/yellow, calla_lily_white) và `GiftWidgets` (hộp nhỏ `miniImgs`, ảnh hộp dự phòng). Cần đo lại hiệu ứng bay của 11 mẫu đó trên trang gốc rồi mới gộp vào `gift.json`/`cover.json`.
+  - `giftSpecs.generated.ts`, `giftAssets.generated.ts` → `specs/<id>/gift.json` (bộ sinh ghi thẳng).
+  - `editor/config/editorSections.ts` → `capabilities.json#editor` (ma trận 88 mẫu).
+  - `templates/data/themeManifest.ts` (18,8k dòng): chỉ `TemplateModal` dùng (`getTemplateThemeAssets`) → tách JSON tải theo nhu cầu hoặc bỏ.
+  - C1/C4: schema TS cho từng tệp spec, bỏ `as unknown as`/`any` còn lại. C5: test cho `giftDefaults`, bộ sinh chỉ mục.
+  - Đăng ký họ khối (`blocks/index.ts`, 75 nhánh `family === …`) để giai đoạn D1 (bảng mẫu sinh tự động).
+- **B (xong, đã gộp)** — bổ sung 2026-11-16: bỏ 3 keyframes thừa ở `headers.css`; `gift-modes --all` 92/92 đạt, `gift-geometry` khớp trừ chibi_red (đã biết) sau khi dọn CSS. Chi tiết:
 - **B (xong trên `refactor/phase-b`)**: `InvitationView` thay `Preview.tsx` (xóa thêm LongPhungV2, MinimalismDarkRed, generated/headers.tsx, −2.550 dòng); dọn 810 khối CSS cũ (−102 KB) bằng `prune-css.mjs`. Kiểm tra: 92 mẫu × open 390/1280 giống mốc (dump-all), 26 trang/khổ app giống mốc (page-prints), build, `npm run check`. B5 dời sang C. Chưa dọn: `generated/headers.css` (3 keyframes thừa), lớp bọc `theme-*`/`palette-plain` vẫn giữ.

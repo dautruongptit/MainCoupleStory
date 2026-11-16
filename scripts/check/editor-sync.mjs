@@ -7,7 +7,7 @@ import { ChromeController } from "../lib/cdp_helper.mjs";
 
 const id = process.argv[2];
 if (!id) { console.error("Cách dùng: node scripts/check/editor-sync.mjs <templateId>"); process.exit(1); }
-const base = process.argv.includes("--base") ? process.argv[process.argv.indexOf("--base") + 1] : "http://localhost:5173";
+const base = process.argv.includes("--base") ? process.argv[process.argv.indexOf("--base") + 1] : process.env.LOCAL_BASE || "http://localhost:8111";
 const draft = `sync-${id}-${Date.now()}`;
 const url = `${base}/edit/${draft}?template=${id}`;
 
@@ -160,7 +160,9 @@ for (const [card, why] of [["Ảnh đầu thiệp", "cần tải tệp ảnh (fi
 
 // ---- 4. tải lại -> còn dữ liệu ----
 await c.navigate(url, 4500);
-const keep = await run(`const s = sec('Thông tin cơ bản'); const g = fieldCtl(s, 'Họ tên chú rể'); const p = sec('Tiệc cưới'); const a = fieldCtl(p, 'Địa chỉ'); const d = sec('Dress Code'); return { name: g && g.value, addr: a && a.value, dress: d ? (sw(d) ? String(sw(d).checked) : null) : null }`);
+// editor có thể dựng chậm khi máy bận: chờ tới khi thẻ + ô nhập xuất hiện (tối đa 15 giây) rồi mới đọc
+const keep = await run(`for (let i = 0; i < 30; i++) { const s0 = sec('Thông tin cơ bản'); if (s0 && fieldCtl(s0, 'Họ tên chú rể')) break; await sleep(500); }
+const s = sec('Thông tin cơ bản'); if (!s) return {}; const g = fieldCtl(s, 'Họ tên chú rể'); const p = sec('Tiệc cưới'); const a = fieldCtl(p, 'Địa chỉ'); const d = sec('Dress Code'); return { name: g && g.value, addr: a && a.value, dress: d ? (sw(d) ? String(sw(d).checked) : null) : null }`);
 rec("(tải lại)", "Họ tên chú rể còn nguyên", keep.name === "Phạm Quang Huy", String(keep.name));
 rec("(tải lại)", "Địa chỉ tiệc còn nguyên", keep.addr === "99 Đường Kiểm Thử, Quận 1", String(keep.addr));
 rec("(tải lại)", "Trạng thái công tắc Dress Code còn nguyên", keep.dress === "false" || keep.dress === null ? keep.dress !== null : null, String(keep.dress));
