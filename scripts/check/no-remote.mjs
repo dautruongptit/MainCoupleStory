@@ -20,8 +20,16 @@ const PROBE = `(async () => {
   const h = document.documentElement.scrollHeight;
   for (let y = 0; y < h; y += 700) { window.scrollTo(0, y); await new Promise((r) => setTimeout(r, 120)); }
   await new Promise((r) => setTimeout(r, 1200));
+  // (a) tài nguyên trình duyệt đã ghi nhận — bộ đệm Performance chỉ giữ 250 mục đầu nên phải quét thêm DOM
   const res = performance.getEntriesByType("resource").map((e) => e.name);
-  const remote = [...new Set(res.filter((u) => u.includes("${HOST}")))];
+  // (b) mọi URL tài nguyên trong DOM: src/srcset/poster của ảnh-âm thanh-video-iframe-script, href của <link>, ảnh nền CSS
+  const dom = [];
+  for (const e of document.querySelectorAll("img,audio,video,source,iframe,script,link,embed,object")) {
+    for (const a of ["src", "srcset", "poster", "data", e.tagName === "LINK" ? "href" : ""]) { const v = a && e.getAttribute(a); if (v) dom.push(v); }
+    if (e.currentSrc) dom.push(e.currentSrc);
+  }
+  for (const e of document.querySelectorAll("*")) { const bg = getComputedStyle(e).backgroundImage; if (bg && bg !== "none") dom.push(bg); }
+  const remote = [...new Set([...res, ...dom].filter((u) => u.includes("${HOST}")))];
   const broken = [...document.images].filter((i) => i.complete && i.naturalWidth === 0 && i.currentSrc).map((i) => i.currentSrc.replace(location.origin, ""));
   return JSON.stringify({ remote, broken: [...new Set(broken)], n: res.length });
 })()`;

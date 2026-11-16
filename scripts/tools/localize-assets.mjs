@@ -37,6 +37,7 @@ console.log(`${write ? "ĐÃ GHI" : "(chỉ báo cáo — thêm --write để gh
 console.log(`Tệp local còn thiếu trong public/: ${missing.size}`);
 for (const m of [...missing].sort()) console.log("  " + m);
 const leftUniq = [...new Set(left)];
-console.log(`URL trang gốc còn lại trong mã: ${leftUniq.length}`);
-for (const l of leftUniq.slice(0, 20)) console.log("  " + l);
-process.exit(!write && replaced ? 1 : 0);
+// (các mục còn lại là liên kết hiển thị: dòng ghi công cuối thiệp, đường dẫn chia sẻ — không tải tài nguyên)
+console.log(`Liên kết tới trang gốc còn lại trong mã (chỉ là liên kết hiển thị): ${leftUniq.length}`);
+if (process.argv.includes("--list")) for (const l of leftUniq) console.log("  " + l);
+process.exit((!write && replaced) || missing.size ? 1 : 0);

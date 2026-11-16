@@ -26,6 +26,8 @@ node scripts/check/demo-data.mjs   --save|--compare <tệp>   # dữ liệu demo
 node scripts/check/config-data.mjs --save|--compare <tệp>   # mọi giá trị cấu hình tra theo mẫu (bảng mẫu, màu, bìa, thẻ editor…) trước/sau
 node scripts/check/dump-all.mjs    --save|--compare <dir> [open:390 open:1280]   # số đo cả 92 mẫu trước/sau một thay đổi lớn
 node scripts/check/page-prints.mjs --save|--compare <dir>   # bố cục các trang app (không phải thiệp) trước/sau
+node scripts/tools/localize-assets.mjs [--write]   # đổi URL máy chủ trang gốc trong src/ sang đường dẫn local; báo ảnh local còn thiếu
+node scripts/check/no-remote.mjs [<id> ...]        # mở thiệp demo trên trình duyệt: không tải gì từ trang gốc, không ảnh hỏng
 npm install
 npm run dev            # tự chạy css:inv rồi vite (cổng 5173)
 npx tsc --noEmit -p .  # kiểm kiểu
@@ -48,6 +50,7 @@ Tiêu chí đạt một màn: lệch hình học **0** (dung sai 1px) và lệch
 ## 5. Quy tắc cứng (đừng vi phạm)
 - Số đo phải **đo thật** từ trang gốc, không đoán.
 - **Không** nhập mật khẩu / tạo tài khoản / gửi form trên trang gốc; không vượt Cloudflare; ít request. Áp mẫu vào bản nháp tài khoản của chủ dự án (để đo editor) là thao tác thay đổi tài khoản: **hỏi chủ dự án trước**.
+- **Bản local không được tải tài nguyên nào từ trang gốc** (ảnh, nhạc, QR, favicon): mọi URL `assets.<trang gốc>/…` lấy về từ dump/HTML thật phải đổi sang đường dẫn local bằng `node scripts/tools/localize-assets.mjs --write`, ảnh còn thiếu thì tải về `public/images/photo-library/` (qua tab Chrome mở thẳng máy chủ ảnh, giãn vài giây mỗi ảnh; `fetch` từ trang chính bị CORS chặn). `npm run check` kiểm cả hai (mã nguồn + `no-remote`). Liên kết hiển thị tới trang gốc (dòng ghi công cuối thiệp, đường dẫn chia sẻ) không tính.
 - Ảnh/nhạc bản quyền của trang gốc chỉ để ở `public/assets/_reference/` (gitignore, chỉ localhost). Không đưa khóa API, mã tài khoản, email thật vào repo (dump thô đã che `AIzaSy_REDACTED`, `cdc-REDACTED`).
 - **Không commit/push khi chưa được chủ dự án duyệt.** Commit chia theo nhóm (xem lịch sử).
 - Sửa tay không phải cách làm với file sinh: `blocks/riviera/*`, `blocks/traditional/*` do `scripts/clone/gen_*.cjs` sinh; sửa bộ sinh rồi chạy lại.

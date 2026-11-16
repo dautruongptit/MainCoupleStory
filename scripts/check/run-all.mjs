@@ -62,6 +62,10 @@ else {
 run(full ? "hộp quà 3 kiểu (92 mẫu)" : "hộp quà 3 kiểu (mẫu đại diện)", "node", ["scripts/check/gift-modes.mjs", ...(full ? ["--all"] : GIFT_SAMPLE), "--base", base]);
 if (full) run("hình học hộp quà", "node", ["scripts/check/gift-geometry.mjs", "--base", base]);
 
+// 3b. không tải gì từ trang gốc, không ảnh hỏng (mã nguồn + thiệp demo trên trình duyệt)
+run("mã nguồn không còn URL tài nguyên trang gốc", "node", ["scripts/tools/localize-assets.mjs"]);
+run(full ? "không gọi về trang gốc (92 mẫu + trang app)" : "không gọi về trang gốc (mẫu đại diện)", "node", ["scripts/check/no-remote.mjs", ...(full ? [] : GIFT_SAMPLE)]);
+
 // 4. editor <-> xem trước
 for (const id of SYNC_SAMPLE) {
   const r = run(`editor-sync ${id}`, "node", ["scripts/check/editor-sync.mjs", id, "--base", base]);
