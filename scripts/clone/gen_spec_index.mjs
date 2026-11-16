@@ -102,8 +102,38 @@ const outGift = [
   "",
 ].join("\n");
 
+// Họ khối: mỗi thư mục shell/blocks/<họ>/ có index.ts là một họ (tên họ = tên thư mục = capabilities.family).
+// index.ts xuất hằng `<TÊN>_BLOCKS` (bản đồ tên khối → component) thì dùng hằng đó; không thì dùng mọi export của index.ts.
+const BLOCKS = "src/features/invitation/shell/blocks";
+const OUT_FAM = path.join(BLOCKS, "families.generated.ts");
+const families = fs.readdirSync(BLOCKS, { withFileTypes: true })
+  .filter((e) => e.isDirectory() && fs.existsSync(path.join(BLOCKS, e.name, "index.ts")))
+  .map((e) => {
+    const m = /export const ([A-Z0-9_]+_BLOCKS)\b/.exec(fs.readFileSync(path.join(BLOCKS, e.name, "index.ts"), "utf8"));
+    return { name: e.name, named: m ? m[1] : null };
+  })
+  .sort((a, b) => a.name.localeCompare(b.name));
+const famNames = new Set(families.map((f) => f.name));
+// "minimalism" là họ gốc nằm ngay trong shell/blocks/ (MINIMALISM_BLOCKS ở blocks/index.ts)
+const usedFamilies = new Set(ids.map((id) => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, id, "capabilities.json"), "utf8")).family; } catch { return null; } }));
+const famErrors = [...usedFamilies].filter((f) => f && f !== "minimalism" && !famNames.has(f)).map((f) => `họ khối "${f}" được dùng trong capabilities.json nhưng không có thư mục ${BLOCKS}/${f}/index.ts`);
+if (famErrors.length) { console.error("Spec lỗi:\n  " + famErrors.join("\n  ")); process.exit(1); }
+const fv = (n) => "f_" + n.replace(/[^A-Za-z0-9_]/g, "_");
+const outFam = [
+  "// TỆP SINH — không sửa tay. Chạy: node scripts/clone/gen_spec_index.mjs",
+  "// Nguồn: các thư mục shell/blocks/<họ>/index.ts. Thêm họ khối mới = tạo thư mục + index.ts rồi chạy bộ sinh.",
+  'import type { BlockComponent } from "./index";',
+  ...families.map((f) => (f.named ? `import { ${f.named} as ${fv(f.name)} } from "./${f.name}";` : `import * as ${fv(f.name)} from "./${f.name}";`)),
+  "",
+  "/** capabilities.family → bản đồ tên khối → component của họ đó. */",
+  "export const FAMILY_BLOCKS: Record<string, Record<string, BlockComponent>> = {",
+  ...families.map((f) => `  ${f.name}: ${fv(f.name)},`),
+  "};",
+  "",
+].join("\n");
+
 const norm = (f) => (fs.existsSync(f) ? fs.readFileSync(f, "utf8").split("\r\n").join("\n") : "");
-const stale = [[OUT, out], [OUT_META, outMeta], [OUT_GIFT, outGift]].filter(([f, text]) => norm(f) !== text);
+const stale = [[OUT, out], [OUT_META, outMeta], [OUT_GIFT, outGift], [OUT_FAM, outFam]].filter(([f, text]) => norm(f) !== text);
 if (check) {
   if (stale.length) { console.error(`${stale.map(([f]) => f).join(", ")} đã cũ — chạy node scripts/clone/gen_spec_index.mjs`); process.exit(1); }
   console.log(`OK: ${rows.length} mẫu, chỉ mục khớp`);

@@ -1,6 +1,6 @@
 {
  "_doc": "Sổ đăng ký clone. Sinh bởi scripts/clone/registry.mjs — đừng sửa tay trừ trường verified/notes.",
- "generatedAt": "2026-11-16T10:23:02.664Z",
+ "generatedAt": "2026-11-16T10:36:48.618Z",
  "totals": {
   "templates": 92,
   "đã clone": 43,
@@ -501,6 +501,11 @@
     "co_ba_red: file đã cập nhật",
     "lien_hoa_pink: file đã cập nhật"
    ]
+  },
+  {
+   "at": "2026-11-16T10:36:48.618Z",
+   "changes": 0,
+   "summary": []
   }
  ],
  "templates": [
