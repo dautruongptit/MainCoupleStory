@@ -208,7 +208,7 @@ Khi A–D ổn định: chuyển phần app (trang, header, editor) từ Tailwin
   - `config/giftboxConfigs.ts` (1,2k dòng): còn 2 nơi dùng — `BaseCoverCard` (`flyDecor` theo `giftboxType` CŨ, khác kiểu đo thật ở 11 mẫu: folk_floral_blue, qasr_blue/gold/green, mahal_gold/pink, floral_fiesta_yellow, saraya_gold, mandap_darkred/yellow, calla_lily_white) và `GiftWidgets` (hộp nhỏ `miniImgs`, ảnh hộp dự phòng). Cần đo lại hiệu ứng bay của 11 mẫu đó trên trang gốc rồi mới gộp vào `gift.json`/`cover.json`.
   - `giftSpecs.generated.ts`, `giftAssets.generated.ts` → `specs/<id>/gift.json` (bộ sinh ghi thẳng).
   - `editor/config/editorSections.ts` → `capabilities.json#editor` (ma trận 88 mẫu).
-  - `templates/data/themeManifest.ts` (18,8k dòng): chỉ `TemplateModal` dùng (`getTemplateThemeAssets`) → tách JSON tải theo nhu cầu hoặc bỏ.
+  - ~~`templates/data/themeManifest.ts` (18,8k dòng)~~ **đã xóa 16/11/2026**: `TemplateModal` chỉ gán vào một biến không dùng; bundle JS 6,35 → 6,06 MB.
   - C1/C4: schema TS cho từng tệp spec, bỏ `as unknown as`/`any` còn lại. C5: test cho `giftDefaults`, bộ sinh chỉ mục.
   - Đăng ký họ khối (`blocks/index.ts`, 75 nhánh `family === …`) để giai đoạn D1 (bảng mẫu sinh tự động).
 - **B (xong, đã gộp)** — bổ sung 2026-11-16: bỏ 3 keyframes thừa ở `headers.css`; `gift-modes --all` 92/92 đạt, `gift-geometry` khớp trừ chibi_red (đã biết) sau khi dọn CSS. Chi tiết:

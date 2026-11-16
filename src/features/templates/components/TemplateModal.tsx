@@ -4,7 +4,6 @@ import { useIsMd } from "@/features/invitation/shell/useMedia";
 import qrcode from "qrcode-generator";
 import { Link, navigate } from "@/app/router";
 import { TPL_CDN, Tpl } from "@/features/templates/data/templates";
-import { getTemplateThemeAssets } from "@/features/templates/data/themeManifest";
 import { useChooseTemplate } from "@/features/templates/components/DraftPrompt";
 
 const ico = (d: string) => (
@@ -51,7 +50,6 @@ function LegacyModal({ tpl, onClose }: { tpl: Tpl; onClose: () => void }) {
 
   const { choose, prompt } = useChooseTemplate();
 
-  const themeAssets = getTemplateThemeAssets(tpl.id);
 
   return (
     <>
