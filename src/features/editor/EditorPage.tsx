@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import type { Inv } from "@/types/invitation";
 import { defaultInv, blankInv } from "@/features/editor/data/defaultData";
 import Header, { type Mode } from "@/features/editor/components/Header";
-import Preview from "@/features/invitation/components/Preview";
+import InvitationView from "@/features/invitation/view/InvitationView";
 import BanquetV2 from "@/features/editor/components/v2/BanquetV2";
 import * as V from "@/features/editor/components/v2/SectionsV2";
 import TopNav from "@/components/layout/TopNav";
@@ -209,7 +209,7 @@ export default function EditorPage() {
             <V.Share d={d} set={set} />
           </div></main>
       ) : (
-        <main className="editor-main"><Preview d={d} set={set} initialOpen={true} /></main>
+        <main className="editor-main"><InvitationView d={d} set={set} initialOpen={true} /></main>
       )}
       </div></div>
       {toast && <div className="toast">{toast}</div>}

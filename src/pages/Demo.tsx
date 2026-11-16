@@ -1,7 +1,7 @@
 import { useEffect, useState, useMemo } from "react";
 import type { Inv } from "@/types/invitation";
 import { defaultInv } from "@/features/editor/data/defaultData";
-import Preview from "@/features/invitation/components/Preview";
+import InvitationView from "@/features/invitation/view/InvitationView";
 import { useChooseTemplate } from "@/features/templates/components/DraftPrompt";
 import { Link, navigate } from "@/app/router";
 import { TEMPLATES, Tpl, TPL_CDN, introDefaultFor, templateByIdOrSlug } from "@/features/templates/data/templates";
@@ -343,7 +343,7 @@ export default function Demo({ slug }: { slug: string }) {
 
       {/* Invitation Preview Component */}
       {prompt}
-      <Preview
+      <InvitationView
         d={d}
         set={(p) => setD((prev) => ({ ...prev, ...p }))}
         standalone={true}
