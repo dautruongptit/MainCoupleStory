@@ -14,6 +14,9 @@
  "dlgAfter": "</div></div></div><div class=\"modal-backdrop\" data-gift-close=\"1\"><button type=\"button\">close</button></div></dialog>",
  "dlgBoxBg": "rgb(90, 0, 0)",
  "dlgHeadBg": "rgb(255, 232, 164)",
+ "legacy": {
+  "coverFlyDecor": false
+ },
  "assets": {
   "box": "/images/giftbox/song_hac_red.webp",
   "mini": "/images/giftbox/mini/song_hac_red.webp",

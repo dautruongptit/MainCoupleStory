@@ -14,6 +14,9 @@
  "dlgAfter": "</div></div></div><div class=\"modal-backdrop\" data-gift-close=\"1\"><button type=\"button\">close</button></div></dialog>",
  "dlgBoxBg": "rgb(255, 255, 255)",
  "dlgHeadBg": "rgb(66, 111, 56)",
+ "legacy": {
+  "coverFlyDecor": false
+ },
  "assets": {
   "box": "/images/giftbox/san_miguel_yellow.webp",
   "mini": "/images/giftbox/mini/san_miguel_yellow.webp",

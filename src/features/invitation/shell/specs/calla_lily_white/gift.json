@@ -14,6 +14,10 @@
  "dlgAfter": "</div></div></div><div class=\"modal-backdrop\" data-gift-close=\"1\"><button type=\"button\">close</button></div></dialog>",
  "dlgBoxBg": "rgb(244, 243, 238)",
  "dlgHeadBg": "rgb(92, 95, 62)",
+ "legacy": {
+  "coverFlyDecor": true,
+  "mainBoxSrc": "/images/giftbox/nhat_binh_red.webp"
+ },
  "assets": {
   "box": "/images/giftbox/calla_lily_white.webp",
   "mini": "/images/giftbox/mini/calla_lily_white.webp",

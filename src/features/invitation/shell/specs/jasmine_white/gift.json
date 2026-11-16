@@ -14,6 +14,9 @@
  "dlgAfter": "</div></div></div><div class=\"modal-backdrop\" data-gift-close=\"1\"><button type=\"button\">close</button></div></dialog>",
  "dlgBoxBg": "rgb(255, 250, 247)",
  "dlgHeadBg": "rgb(64, 74, 29)",
+ "legacy": {
+  "coverFlyDecor": false
+ },
  "assets": {
   "box": "/images/giftbox/jasmine_white.webp",
   "mini": "/images/giftbox/mini/jasmine_white.webp",

@@ -14,6 +14,9 @@
  "dlgAfter": "</div></div></div><div class=\"modal-backdrop\" data-gift-close=\"1\"><button type=\"button\">close</button></div></dialog>",
  "dlgBoxBg": "rgb(255, 255, 255)",
  "dlgHeadBg": "rgb(107, 123, 79)",
+ "legacy": {
+  "coverFlyDecor": false
+ },
  "assets": {
   "box": "/images/giftbox/minimalism_green.webp",
   "mini": "/images/giftbox/mini/minimalism_green.webp",

@@ -14,6 +14,47 @@
  "dlgAfter": "</div></div></div><div class=\"modal-backdrop\" data-gift-close=\"1\"><button type=\"button\">close</button></div></dialog>",
  "dlgBoxBg": "rgb(10, 10, 10)",
  "dlgHeadBg": "rgb(255, 198, 98)",
+ "legacy": {
+  "coverFlyDecor": true,
+  "mainBoxSrc": "/images/giftbox/dragon_phoenix.webp",
+  "miniImgs": [
+   {
+    "src": "/images/giftbox/mini/minimalism_darkred.webp",
+    "style": "left: -20px; top: 10px; width: 34px; z-index: 1; transform: rotate(-22deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   },
+   {
+    "src": "/images/giftbox/mini/porcelain_blue.webp",
+    "style": "left: 168px; top: 2px; width: 38px; z-index: 1; transform: rotate(20deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   },
+   {
+    "src": "/images/giftbox/mini/minimalism_red.webp",
+    "style": "left: -16px; top: 120px; width: 26px; z-index: 1; transform: rotate(-18deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   },
+   {
+    "src": "/images/giftbox/mini/double_phoenix_red.webp",
+    "style": "left: 182px; top: 114px; width: 24px; z-index: 1; transform: rotate(14deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   },
+   {
+    "src": "/images/giftbox/mini/minimalism_darkblue.webp",
+    "style": "left: -8px; top: 172px; width: 44px; z-index: 3; transform: rotate(8deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   },
+   {
+    "src": "/images/giftbox/mini/song_hac_red.webp",
+    "style": "left: 26px; top: 182px; width: 26px; z-index: 3; transform: rotate(-10deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   },
+   {
+    "src": "/images/giftbox/mini/glass_garden_blue.webp",
+    "style": "left: 118px; top: 176px; width: 40px; z-index: 3; transform: rotate(-14deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   }
+  ]
+ },
  "assets": {
   "box": "/images/giftbox/dragon_phoenix.webp",
   "mini": "/images/giftbox/mini/dragon_phoenix.webp",

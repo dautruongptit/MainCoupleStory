@@ -3,7 +3,7 @@
 Sinh bởi `node scripts/clone/gift_assets.mjs` — đừng sửa tay; chạy lại sau mỗi lần tải ảnh.
 Quy trình tải: `--todo` lấy danh sách → tải trong tab chungdoi.com (fetch cùng nguồn, POST về bộ nhận ảnh, giãn vài giây/ảnh) → ghi kết quả JSON → `--result <file>`.
 
-Cập nhật: 2026-11-16 09:24 · cần 263 ảnh · **có 261** · thiếu 0 · trang gốc không có 2 · lỗi 0 · thừa 0
+Cập nhật: 2026-11-16 09:52 · cần 263 ảnh · **có 261** · thiếu 0 · trang gốc không có 2 · lỗi 0 · thừa 0
 
 ## Lịch sử tải
 - 2026-11-15 14:20: thử 124, tải được 96, gốc không có 28

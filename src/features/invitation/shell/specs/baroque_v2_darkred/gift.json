@@ -14,6 +14,9 @@
  "dlgAfter": "</div></div></div><div class=\"modal-backdrop\" data-gift-close=\"1\"><button type=\"button\">close</button></div></dialog>",
  "dlgBoxBg": "rgb(43, 3, 3)",
  "dlgHeadBg": "rgb(255, 223, 175)",
+ "legacy": {
+  "coverFlyDecor": false
+ },
  "assets": {
   "box": "/images/giftbox/baroque_v2_darkred.webp",
   "mini": "/images/giftbox/mini/baroque_v2_darkred.webp",

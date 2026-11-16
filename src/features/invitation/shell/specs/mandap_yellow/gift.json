@@ -14,6 +14,10 @@
  "dlgAfter": "</div></div></div><div class=\"modal-backdrop\" data-gift-close=\"1\"><button type=\"button\">close</button></div></dialog>",
  "dlgBoxBg": "rgb(253, 240, 205)",
  "dlgHeadBg": "rgb(59, 86, 0)",
+ "legacy": {
+  "coverFlyDecor": true,
+  "mainBoxSrc": "/images/giftbox/nhat_binh_red.webp"
+ },
  "assets": {
   "box": "/images/giftbox/mandap_yellow.webp",
   "mini": "/images/giftbox/mini/mandap_yellow.webp",

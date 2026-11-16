@@ -14,6 +14,47 @@
  "dlgAfter": "</div></div></div><div class=\"modal-backdrop\" data-gift-close=\"1\"><button type=\"button\">close</button></div></dialog>",
  "dlgBoxBg": "rgb(255, 255, 255)",
  "dlgHeadBg": "rgb(0, 0, 0)",
+ "legacy": {
+  "coverFlyDecor": true,
+  "mainBoxSrc": "/images/giftbox/applique_lace_white.webp",
+  "miniImgs": [
+   {
+    "src": "/images/giftbox/mini/royal_v2_purple.webp",
+    "style": "left: -16.3px; top: 8.15px; width: 27.71px; z-index: 1; transform: rotate(-22deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   },
+   {
+    "src": "/images/giftbox/mini/double_dragon_blue.webp",
+    "style": "left: 136.92px; top: 1.63px; width: 30.97px; z-index: 1; transform: rotate(20deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   },
+   {
+    "src": "/images/giftbox/mini/jasmine_white.webp",
+    "style": "left: -13.04px; top: 97.8px; width: 21.19px; z-index: 1; transform: rotate(-18deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   },
+   {
+    "src": "/images/giftbox/mini/minimalism_darkblue.webp",
+    "style": "left: 148.33px; top: 92.91px; width: 19.56px; z-index: 1; transform: rotate(14deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   },
+   {
+    "src": "/images/giftbox/mini/crystal_floral_red.webp",
+    "style": "left: -6.52px; top: 140.18px; width: 35.86px; z-index: 3; transform: rotate(8deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   },
+   {
+    "src": "/images/giftbox/mini/boho_floral_brown.webp",
+    "style": "left: 21.19px; top: 148.33px; width: 21.19px; z-index: 3; transform: rotate(-10deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   },
+   {
+    "src": "/images/giftbox/mini/minimalism_darkred.webp",
+    "style": "left: 96.17px; top: 143.44px; width: 32.6px; z-index: 3; transform: rotate(-14deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   }
+  ]
+ },
  "assets": {
   "box": "/images/giftbox/applique_lace_white.webp",
   "mini": "/images/giftbox/mini/applique_lace_white.webp",

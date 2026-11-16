@@ -14,6 +14,9 @@
  "dlgAfter": "</div></div></div><div class=\"modal-backdrop\" data-gift-close=\"1\"><button type=\"button\">close</button></div></dialog>",
  "dlgBoxBg": "rgb(22, 38, 20)",
  "dlgHeadBg": "rgb(233, 206, 158)",
+ "legacy": {
+  "coverFlyDecor": false
+ },
  "assets": {
   "box": "/images/giftbox/dragon_phoenix.webp",
   "mini": "/images/giftbox/mini/dragon_phoenix.webp",

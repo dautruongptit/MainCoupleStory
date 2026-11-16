@@ -59,7 +59,7 @@ Cách đọc nhanh:
 ## 4. Dựng / sửa từng màn
 
 ### 4.1 Bìa + hiệu ứng mở (dùng chung, không viết lại)
-- Cấu hình ở `src/features/invitation/shell/specs/<id>/cover.json` rồi `npm run gen:specs` (tệp cho `templateId`: màu thẻ, gradient con dấu, màu ngày, ảnh trang trí, ...) và `src/features/invitation/config/giftboxConfigs.ts` (hộp quà).
+- Cấu hình ở `src/features/invitation/shell/specs/<id>/cover.json` rồi `npm run gen:specs` (tệp cho `templateId`: màu thẻ, gradient con dấu, màu ngày, ảnh trang trí, ...) và `specs/<id>/gift.json` (hộp quà: sinh bởi `gen_gift_sections.cjs`; khóa `legacy` viết tay cho hoa bìa bay/hộp nhỏ).
 - Engine: `BaseCoverCard.tsx` + `OpenTransition.tsx`. Mọi mẫu dùng chung 1 engine của trang gốc (trừ Hoa Mộc: bìa riêng). Chỉ sửa engine khi **tất cả** mẫu cùng lệch.
 - Kiểm tra: `diff_dump … cover 390` = 0, `open` chuỗi mở (`scripts/survey/local_open_seq.mjs`).
 

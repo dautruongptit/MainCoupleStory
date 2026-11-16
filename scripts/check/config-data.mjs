@@ -22,15 +22,25 @@ const giftImports = fs.existsSync(GIFT_NEW)
   : `import { GIFT_SPECS } from "${abs("src/features/invitation/shell/blocks/shared/giftSpecs.generated.ts")}";
 import { GIFT_ASSETS } from "${abs("src/features/invitation/config/giftAssets.generated.ts")}";`;
 
+// phần còn dùng của bảng hộp quà cũ (hoa bìa bay khi mở, hộp nhỏ trang trí, ảnh hộp dự phòng):
+// bản cũ tính từ config/giftboxConfigs.ts; bản mới đọc khóa `legacy` của gift.json qua giftSpecs.ts
+const BOX_OLD = "src/features/invitation/config/giftboxConfigs.ts";
+const boxImports = fs.existsSync(BOX_OLD)
+  ? `import { getGiftboxConfig } from "${abs(BOX_OLD)}";
+const coverFlyDecor = (id) => getGiftboxConfig(id).giftboxType === "3d-box";
+const giftMiniImgs = (id) => { const c = getGiftboxConfig(id); return c.miniImgs && c.miniImgs.length ? c.miniImgs : (getGiftboxConfig("minimalism_brown").miniImgs ?? []); };
+const giftMainBoxFallback = (id) => getGiftboxConfig(id).mainBoxSrc || "/images/giftbox/minimalism_brown.webp";`
+  : `import { coverFlyDecor, giftMiniImgs, giftMainBoxFallback } from "${abs(GIFT_NEW)}";`;
+
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "config-data-"));
 fs.writeFileSync(path.join(tmp, "entry.ts"), `
 ${giftImports}
+${boxImports}
 import { TEMPLATES, introDefaultFor, templateByIdOrSlug } from "${abs("src/features/templates/data/templates.ts")}";
 import { TEMPLATE_THEMES } from "${abs("src/features/invitation/config/templateThemes.ts")}";
 import { previewFocal } from "${abs("src/features/templates/data/previewFocal.ts")}";
 import { editorSections, hasCoupleHero, albumCardAfter } from "${abs("src/features/editor/config/editorSections.ts")}";
 import { COVER_CONFIGS } from "${abs("src/features/invitation/components/covers/coverConfigs.ts")}";
-import { getGiftboxConfig } from "${abs("src/features/invitation/config/giftboxConfigs.ts")}";
 import { getEditorSections, getCoupleHero, getCapabilities } from "${abs("src/features/invitation/shell/specs/index.ts")}";
 import { defaultDressColors, defaultGiftMode } from "${abs("src/services/storage/store.ts")}";
 export const ALL = {
@@ -45,7 +55,7 @@ export const ALL = {
     editorSections: getEditorSections(t.id), coupleHero: getCoupleHero(t.id),
     family: getCapabilities(t.id)?.family ?? null,
     cover: COVER_CONFIGS[t.id] ?? null,
-    giftbox: getGiftboxConfig(t.id),
+    boxUsed: { flyDecor: coverFlyDecor(t.id), minis: giftMiniImgs(t.id), mainBoxFallback: giftMainBoxFallback(t.id) },
     giftSpec: GIFT_SPECS[t.id] ?? null, giftAssets: GIFT_ASSETS[t.id] ?? null,
     dress: defaultDressColors(t.id), giftMode: defaultGiftMode(t.id),
   }])),

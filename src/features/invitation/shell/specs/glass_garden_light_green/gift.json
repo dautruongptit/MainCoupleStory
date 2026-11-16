@@ -14,6 +14,10 @@
  "dlgAfter": "</div></div></div><div class=\"modal-backdrop\" data-gift-close=\"1\"><button type=\"button\">close</button></div></dialog>",
  "dlgBoxBg": "rgb(251, 253, 245)",
  "dlgHeadBg": "rgb(122, 134, 53)",
+ "legacy": {
+  "coverFlyDecor": true,
+  "mainBoxSrc": "/images/giftbox/nhat_binh_red.webp"
+ },
  "assets": {
   "box": "/images/giftbox/glass_garden_light_green.webp",
   "mini": "/images/giftbox/mini/glass_garden_light_green.webp",

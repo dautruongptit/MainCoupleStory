@@ -14,6 +14,47 @@
  "dlgAfter": "</div></div></div><div class=\"modal-backdrop\" data-gift-close=\"1\"><button type=\"button\">close</button></div></dialog>",
  "dlgBoxBg": "rgb(255, 255, 255)",
  "dlgHeadBg": "rgb(215, 12, 27)",
+ "legacy": {
+  "coverFlyDecor": true,
+  "mainBoxSrc": "/images/giftbox/hoa_tinh_red.webp",
+  "miniImgs": [
+   {
+    "src": "/images/giftbox/mini/porcelain_v2_green.webp",
+    "style": "left: -20px; top: 10px; width: 34px; z-index: 1; transform: rotate(-22deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   },
+   {
+    "src": "/images/giftbox/mini/spring_garden_red.webp",
+    "style": "left: 168px; top: 2px; width: 38px; z-index: 1; transform: rotate(20deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   },
+   {
+    "src": "/images/giftbox/mini/minimalism_darkbrown.webp",
+    "style": "left: -16px; top: 120px; width: 26px; z-index: 1; transform: rotate(-18deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   },
+   {
+    "src": "/images/giftbox/mini/elegant_leaf_green.webp",
+    "style": "left: 182px; top: 114px; width: 24px; z-index: 1; transform: rotate(14deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   },
+   {
+    "src": "/images/giftbox/mini/glass_garden_green.webp",
+    "style": "left: -8px; top: 172px; width: 44px; z-index: 3; transform: rotate(8deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   },
+   {
+    "src": "/images/giftbox/mini/minimalism_brown.webp",
+    "style": "left: 26px; top: 182px; width: 26px; z-index: 3; transform: rotate(-10deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   },
+   {
+    "src": "/images/giftbox/mini/mahal_gold.webp",
+    "style": "left: 118px; top: 176px; width: 40px; z-index: 3; transform: rotate(-14deg); filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 2px 3px); will-change: transform, opacity;",
+    "className": "igb-decor absolute pointer-events-none"
+   }
+  ]
+ },
  "assets": {
   "box": "/images/giftbox/hoa_tinh_red.webp",
   "mini": "/images/giftbox/mini/hoa_tinh_red.webp",

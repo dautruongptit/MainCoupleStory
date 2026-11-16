@@ -113,7 +113,8 @@ for (const [id, spec] of Object.entries(specs)) {
   if (!fs.existsSync(dir)) { problems.push(`${id}: có dữ liệu hộp quà nhưng chưa có thư mục spec`); continue; }
   const f = path.join(dir, "gift.json");
   const prev = fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : {};
-  const next = JSON.stringify({ ...spec, ...(prev.assets ? { assets: prev.assets } : {}) }, null, 1) + "\n";
+  // `legacy`: giá trị viết tay chép từ bảng cũ (hoa bìa bay, hộp nhỏ, ảnh hộp dự phòng) — cũng giữ nguyên
+  const next = JSON.stringify({ ...spec, ...(prev.legacy ? { legacy: prev.legacy } : {}), ...(prev.assets ? { assets: prev.assets } : {}) }, null, 1) + "\n";
   if (!fs.existsSync(f) || fs.readFileSync(f, "utf8").split("\r\n").join("\n") !== next) { fs.writeFileSync(f, next); written++; }
 }
 console.log("spec:", Object.keys(specs).length, "| gift.json ghi mới/đổi:", written, "| vấn đề:", problems.length);

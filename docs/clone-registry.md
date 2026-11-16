@@ -5236,193 +5236,194 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 ## Thay đổi ở lần quét gần nhất
 
-- **minimalism_darkred** — file mới
+- **minimalism_darkred** — file đã cập nhật
   - `src/features/invitation/shell/specs/minimalism_darkred/gift.json`
-- **minimalism_brown** — file mới
+- **minimalism_brown** — file đã cập nhật
   - `src/features/invitation/shell/specs/minimalism_brown/gift.json`
-- **song_hy_green** — file mới
+- **song_hy_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/song_hy_green/gift.json`
-- **boho_floral_green** — file mới
+- **boho_floral_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/boho_floral_green/gift.json`
-- **song_hy_v2_red** — file mới
+- **song_hy_v2_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/song_hy_v2_red/gift.json`
-- **song_hy_red** — file mới
+- **song_hy_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/song_hy_red/gift.json`
-- **silk_ribbon_green** — file mới
+- **silk_ribbon_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/silk_ribbon_green/gift.json`
-- **minimalism_green** — file mới
+- **minimalism_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/minimalism_green/gift.json`
-- **jasmine_white** — file mới
+- **jasmine_white** — file đã cập nhật
   - `src/features/invitation/shell/specs/jasmine_white/gift.json`
-- **dragon_phoenix_v3_red** — file mới
+- **dragon_phoenix_v3_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/dragon_phoenix_v3_red/gift.json`
-- **dragon_phoenix_red** — file mới
+- **dragon_phoenix_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/dragon_phoenix_red/gift.json`
-- **silk_ribbon_darkred** — file mới
+- **silk_ribbon_darkred** — file đã cập nhật
   - `src/features/invitation/shell/specs/silk_ribbon_darkred/gift.json`
-- **minimalism_darkbrown** — file mới
+- **minimalism_darkbrown** — file đã cập nhật
   - `src/features/invitation/shell/specs/minimalism_darkbrown/gift.json`
-- **dragon_phoenix_v2_red** — file mới
+- **dragon_phoenix_v2_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/dragon_phoenix_v2_red/gift.json`
-- **double_dragon_red** — file mới
+- **double_dragon_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/double_dragon_red/gift.json`
-- **glass_garden_green** — file mới
+- **glass_garden_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/glass_garden_green/gift.json`
-- **double_phoenix_red** — file mới
+- **double_phoenix_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/double_phoenix_red/gift.json`
-- **double_dragon_green** — file mới
+- **double_dragon_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/double_dragon_green/gift.json`
-- **glass_garden_pink** — file mới
+- **glass_garden_pink** — file đã cập nhật
   - `src/features/invitation/shell/specs/glass_garden_pink/gift.json`
-- **marble_yellow** — file mới
+- **marble_yellow** — file đã cập nhật
   - `src/features/invitation/shell/specs/marble_yellow/gift.json`
-- **elegant_leaf_green** — file mới
+- **elegant_leaf_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/elegant_leaf_green/gift.json`
-- **silk_ribbon_pink** — file mới
+- **silk_ribbon_pink** — file đã cập nhật
   - `src/features/invitation/shell/specs/silk_ribbon_pink/gift.json`
-- **dragon_phoenix_v4_red** — file mới
+- **dragon_phoenix_v4_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/dragon_phoenix_v4_red/gift.json`
-- **lien_hoa_v2_green** — file mới
+- **lien_hoa_v2_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/lien_hoa_v2_green/gift.json`
-- **chateau_green** — file mới
+- **chateau_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/chateau_green/gift.json`
-- **spring_garden_green** — file mới
+- **spring_garden_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/spring_garden_green/gift.json`
-- **chibi_red** — file mới
+- **chibi_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/chibi_red/gift.json`
-- **song_hac_red** — file mới
+- **song_hac_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/song_hac_red/gift.json`
-- **nhat_binh_red** — file mới
+- **nhat_binh_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/nhat_binh_red/gift.json`
-- **baroque_v2_darkgreen** — file mới
+- **baroque_v2_darkgreen** — file đã cập nhật
   - `src/features/invitation/shell/specs/baroque_v2_darkgreen/gift.json`
-- **baroque_v2_darkred** — file mới
+- **baroque_v2_darkred** — file đã cập nhật
   - `src/features/invitation/shell/specs/baroque_v2_darkred/gift.json`
-- **cherry_blossom_pink** — file mới
+- **cherry_blossom_pink** — file đã cập nhật
   - `src/features/invitation/shell/specs/cherry_blossom_pink/gift.json`
-- **boho_floral_pink** — file mới
+- **boho_floral_pink** — file đã cập nhật
   - `src/features/invitation/shell/specs/boho_floral_pink/gift.json`
-- **applique_lace_white** — file mới
+- **applique_lace_white** — file đã cập nhật
   - `src/features/invitation/shell/specs/applique_lace_white/gift.json`
-- **silk_flora_brown** — file mới
+- **silk_flora_brown** — file đã cập nhật
   - `src/features/invitation/shell/specs/silk_flora_brown/gift.json`
-- **hoa_tinh_red** — file mới
+- **hoa_tinh_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/hoa_tinh_red/gift.json`
-- **spring_garden_blue** — file mới
+- **spring_garden_blue** — file đã cập nhật
   - `src/features/invitation/shell/specs/spring_garden_blue/gift.json`
-- **minimalism_darkblue** — file mới
+- **minimalism_darkblue** — file đã cập nhật
   - `src/features/invitation/shell/specs/minimalism_darkblue/gift.json`
-- **royal_red** — file mới
+- **royal_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/royal_red/gift.json`
-- **minimalism_red** — file mới
+- **minimalism_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/minimalism_red/gift.json`
-- **spring_garden_red** — file mới
+- **spring_garden_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/spring_garden_red/gift.json`
-- **dragon_phoenix_green** — file mới
+- **dragon_phoenix_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/dragon_phoenix_green/gift.json`
-- **baroque_gold** — file mới
+- **baroque_gold** — file đã cập nhật
   - `src/features/invitation/shell/specs/baroque_gold/gift.json`
-- **chateau_blue** — file mới
+- **chateau_blue** — file đã cập nhật
   - `src/features/invitation/shell/specs/chateau_blue/gift.json`
-- **double_phoenix_green** — file mới
+- **double_phoenix_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/double_phoenix_green/gift.json`
-- **boho_floral_brown** — file mới
+- **boho_floral_brown** — file đã cập nhật
   - `src/features/invitation/shell/specs/boho_floral_brown/gift.json`
-- **double_dragon_blue** — file mới
+- **double_dragon_blue** — file đã cập nhật
   - `src/features/invitation/shell/specs/double_dragon_blue/gift.json`
-- **glass_garden_light_green** — file mới
+- **glass_garden_light_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/glass_garden_light_green/gift.json`
-- **crystal_floral_blue** — file mới
+- **crystal_floral_blue** — file đã cập nhật
   - `src/features/invitation/shell/specs/crystal_floral_blue/gift.json`
-- **dragon_phoenix_blue** — file mới
+- **dragon_phoenix_blue** — file đã cập nhật
   - `src/features/invitation/shell/specs/dragon_phoenix_blue/gift.json`
-- **co_ba_red** — file mới
+- **co_ba_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/co_ba_red/gift.json`
-- **lien_hoa_pink** — file mới
+- **lien_hoa_pink** — file đã cập nhật
   - `src/features/invitation/shell/specs/lien_hoa_pink/gift.json`
-- **minimalism_purple** — file mới
+- **minimalism_purple** — file đã cập nhật
   - `src/features/invitation/shell/specs/minimalism_purple/gift.json`
-- **porcelain_v2_green** — file mới
+- **porcelain_v2_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/porcelain_v2_green/gift.json`
-- **dried_flower_v2_green** — file mới
+- **dried_flower_v2_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/dried_flower_v2_green/gift.json`
-- **porcelain_v2_pink** — file mới
+- **porcelain_v2_pink** — file đã cập nhật
   - `src/features/invitation/shell/specs/porcelain_v2_pink/gift.json`
-- **hoa_kho_v2_blue** — file mới
+- **hoa_kho_v2_blue** — file đã cập nhật
   - `src/features/invitation/shell/specs/hoa_kho_v2_blue/gift.json`
-- **dragon_phoenix_black** — file mới
+- **dragon_phoenix_black** — file đã cập nhật
   - `src/features/invitation/shell/specs/dragon_phoenix_black/gift.json`
-- **royal_v2_green** — file mới
+- **royal_v2_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/royal_v2_green/gift.json`
-- **royal_green** — file mới
+- **royal_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/royal_green/gift.json`
-- **baroque_blue** — file mới
+- **baroque_blue** — file đã cập nhật
   - `src/features/invitation/shell/specs/baroque_blue/gift.json`
-- **porcelain_brown** — file mới
+- **porcelain_brown** — file đã cập nhật
   - `src/features/invitation/shell/specs/porcelain_brown/gift.json`
-- **crystal_floral_red** — file mới
+- **crystal_floral_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/crystal_floral_red/gift.json`
-- **royal_blue** — file mới
+- **royal_blue** — file đã cập nhật
   - `src/features/invitation/shell/specs/royal_blue/gift.json`
-- **riviera_blue** — file mới
+- **riviera_blue** — file đã cập nhật
   - `src/features/invitation/shell/specs/riviera_blue/gift.json`
-- **florence_brown** — file mới
+- **florence_brown** — file đã cập nhật
   - `src/features/invitation/shell/specs/florence_brown/gift.json`
-- **baroque_v2_darkblue** — file mới
+- **baroque_v2_darkblue** — file đã cập nhật
   - `src/features/invitation/shell/specs/baroque_v2_darkblue/gift.json`
-- **jasmine_green** — file mới
+- **jasmine_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/jasmine_green/gift.json`
-- **sunflower_yellow** — file mới
+- **sunflower_yellow** — file đã cập nhật
   - `src/features/invitation/shell/specs/sunflower_yellow/gift.json`
-- **crystal_floral_green** — file mới
+- **crystal_floral_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/crystal_floral_green/gift.json`
-- **santorini_blue** — file mới
+- **santorini_blue** — file đã cập nhật
   - `src/features/invitation/shell/specs/santorini_blue/gift.json`
-- **porcelain_v2_red** — file mới
+- **porcelain_v2_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/porcelain_v2_red/gift.json`
-- **porcelain_blue** — file mới
+- **porcelain_blue** — file đã cập nhật
   - `src/features/invitation/shell/specs/porcelain_blue/gift.json`
-- **folk_floral_blue** — file mới
+- **folk_floral_blue** — file đã cập nhật
   - `src/features/invitation/shell/specs/folk_floral_blue/gift.json`
-- **porcelain_red** — file mới
+- **porcelain_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/porcelain_red/gift.json`
-- **hoa_dai_pink** — file mới
+- **hoa_dai_pink** — file đã cập nhật
   - `src/features/invitation/shell/specs/hoa_dai_pink/gift.json`
-- **qasr_blue** — file mới
+- **qasr_blue** — file đã cập nhật
   - `src/features/invitation/shell/specs/qasr_blue/gift.json`
-- **san_miguel_yellow** — file mới
+- **san_miguel_yellow** — file đã cập nhật
   - `src/features/invitation/shell/specs/san_miguel_yellow/gift.json`
-- **glass_garden_blue** — file mới
+- **glass_garden_blue** — file đã cập nhật
   - `src/features/invitation/shell/specs/glass_garden_blue/gift.json`
-- **royal_v2_purple** — file mới
+- **royal_v2_purple** — file đã cập nhật
   - `src/features/invitation/shell/specs/royal_v2_purple/gift.json`
-- **hoa_kho_orange** — file mới
+- **hoa_kho_orange** — file đã cập nhật
   - `src/features/invitation/shell/specs/hoa_kho_orange/gift.json`
-- **mahal_gold** — file mới
+- **mahal_gold** — file đã cập nhật
   - `src/features/invitation/shell/specs/mahal_gold/gift.json`
-- **floral_fiesta_yellow** — file mới
+- **floral_fiesta_yellow** — file đã cập nhật
   - `src/features/invitation/shell/specs/floral_fiesta_yellow/gift.json`
-- **nomad_brown** — file mới
+- **nomad_brown** — file đã cập nhật
   - `src/features/invitation/shell/specs/nomad_brown/gift.json`
-- **saraya_gold** — file mới
+- **saraya_gold** — file đã cập nhật
   - `src/features/invitation/shell/specs/saraya_gold/gift.json`
-- **qasr_gold** — file mới
+- **qasr_gold** — file đã cập nhật
   - `src/features/invitation/shell/specs/qasr_gold/gift.json`
-- **qasr_green** — file mới
+- **qasr_green** — file đã cập nhật
   - `src/features/invitation/shell/specs/qasr_green/gift.json`
-- **mandap_darkred** — file mới
+- **mandap_darkred** — file đã cập nhật
   - `src/features/invitation/shell/specs/mandap_darkred/gift.json`
-- **brocade_flower_red** — file mới
+- **brocade_flower_red** — file đã cập nhật
   - `src/features/invitation/shell/specs/brocade_flower_red/gift.json`
-- **calla_lily_white** — file mới
+- **calla_lily_white** — file đã cập nhật
   - `src/features/invitation/shell/specs/calla_lily_white/gift.json`
-- **mandap_yellow** — file mới
+- **mandap_yellow** — file đã cập nhật
   - `src/features/invitation/shell/specs/mandap_yellow/gift.json`
-- **mahal_pink** — file mới
+- **mahal_pink** — file đã cập nhật
   - `src/features/invitation/shell/specs/mahal_pink/gift.json`
 
 ## Lịch sử các lần quét
 
+- 2026-11-16 10:16 — 92 thay đổi: minimalism_darkred: file đã cập nhật; minimalism_brown: file đã cập nhật; song_hy_green: file đã cập nhật; boho_floral_green: file đã cập nhật; song_hy_v2_red: file đã cập nhật; song_hy_red: file đã cập nhật…
 - 2026-11-16 09:30 — 92 thay đổi: minimalism_darkred: file mới; minimalism_brown: file mới; song_hy_green: file mới; boho_floral_green: file mới; song_hy_v2_red: file mới; song_hy_red: file mới…
 - 2026-11-16 09:04 — 0 thay đổi
 - 2026-11-16 09:02 — 162 thay đổi: minimalism_darkred: file mới; minimalism_darkred: file mất; minimalism_brown: file mới; minimalism_brown: file mất; song_hy_green: file mới; song_hy_green: file mất…

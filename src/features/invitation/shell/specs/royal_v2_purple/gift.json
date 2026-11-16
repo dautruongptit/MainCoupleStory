@@ -14,6 +14,9 @@
  "dlgAfter": "</div></div></div><div class=\"modal-backdrop\" data-gift-close=\"1\"><button type=\"button\">close</button></div></dialog>",
  "dlgBoxBg": "rgb(25, 12, 31)",
  "dlgHeadBg": "rgb(255, 255, 255)",
+ "legacy": {
+  "coverFlyDecor": false
+ },
  "assets": {
   "box": "/images/giftbox/royal_v2_purple.webp",
   "mini": "/images/giftbox/mini/royal_v2_purple.webp",

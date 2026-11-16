@@ -1,5 +1,4 @@
 import { describe, expect, it } from "vitest";
-import { spawnSync } from "node:child_process";
 import { TEMPLATES, TEMPLATE_ROW_BY_ID, introDefaultFor, templateByIdOrSlug } from "@/features/templates/data/templates";
 import { getCapabilities, getTemplateSpec } from "./index";
 import { blocksForFamily } from "@/features/invitation/shell/blocks";
@@ -8,11 +7,7 @@ import { buildDemoInv } from "@/features/invitation/demo/buildDemoInv";
 
 /** Toàn vẹn của nguồn cấu hình duy nhất `specs/<id>/`: mẫu nào trong kho cũng dựng được thiệp. */
 describe("specs/<id>/ — mỗi mẫu một thư mục", () => {
-  it("chỉ mục sinh khớp thư mục specs (npm run gen:specs)", () => {
-    const r = spawnSync("node", ["scripts/clone/gen_spec_index.mjs", "--check"], { encoding: "utf8" });
-    expect(r.status, r.stderr || r.stdout).toBe(0);
-  });
-
+  // (chỉ mục sinh có khớp thư mục specs không: `node scripts/clone/gen_spec_index.mjs --check`, nằm trong `npm run check`)
   it("kho mẫu: id và slug không trùng, tra được theo cả hai", () => {
     expect(new Set(TEMPLATES.map((t) => t.id)).size).toBe(TEMPLATES.length);
     expect(new Set(TEMPLATES.map((t) => t.slug)).size).toBe(TEMPLATES.length);

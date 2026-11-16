@@ -14,6 +14,9 @@
  "dlgAfter": "</div></div></div><div class=\"modal-backdrop\" data-gift-close=\"1\"><button type=\"button\">close</button></div></dialog>",
  "dlgBoxBg": "rgb(255, 250, 242)",
  "dlgHeadBg": "rgb(85, 97, 131)",
+ "legacy": {
+  "coverFlyDecor": false
+ },
  "assets": {
   "box": "/images/giftbox/hoa_kho_v2_blue.webp",
   "mini": "/images/giftbox/mini/hoa_kho_v2_blue.webp",

@@ -1,5 +1,5 @@
 import React from "react";
-import { getGiftboxConfig } from "@/features/invitation/config/giftboxConfigs";
+import { coverFlyDecor } from "@/features/invitation/shell/blocks/shared/giftSpecs";
 import type { CoverProps, CoverConfig } from "./types";
 import { AmbientParticles } from "./AmbientParticles";
 import { OpenTransitionBurst, OpenTransitionBurstCenter, useEnvelopeOpen } from "./OpenTransition";
@@ -19,7 +19,7 @@ export function BaseCoverCard({ d, onOpen, config, cardExtra }: BaseCoverCardPro
 
   const { isOpening, showBurst, triggerOpen } = useEnvelopeOpen(onOpen, config.openFx === "dragon-fly" ? 780 : 500);
   // Trang gốc: hoa trang trí "bay về phía trước" chỉ khi hộp quà là hộp 3D (phong bì thì không)
-  const flyDecor = getGiftboxConfig(d.templateId).giftboxType === "3d-box";
+  const flyDecor = coverFlyDecor(d.templateId);
 
   // Seal radial gradient
   const sealBg = config.sealBg || (config.sealType === "xi"
