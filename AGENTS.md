@@ -2,12 +2,14 @@
 
 Dự án: **clone giao diện thiệp cưới chungdoi.com sang bản chạy localhost**, khớp từng px (hình học + kiểu) theo từng mẫu. Ngôn ngữ làm việc với chủ dự án: tiếng Việt.
 
+**Số mẫu (cập nhật 16/11/2026): trang thật công bố 92 mẫu (kho mẫu đo ngày 15/11/2026; danh mục trong mã trang thật có 94 mã, trong đó `DESERT_BLOOM_BROWN` chưa công bố); bản local có đủ 92 mẫu, đúng thứ tự.** Các con số 75 và 88 trong tài liệu cũ là số mẫu của trang thật ở thời điểm viết (75 → 88 ngày 01/11/2026 → 92).
+
 ## 1. Việc đang làm
 - **Sổ đăng ký clone**: `docs/clone-registry.md` (đọc) + `docs/clone-registry.json` (hash từng file) cho biết mẫu nào đã/dở dang/chưa clone và file nào đã lưu. **Sau mỗi lần clone hoặc sửa mẫu: chạy `node scripts/clone/registry.mjs` rồi commit cùng.** Khi chủ dự án bảo "đồng bộ lại toàn bộ mẫu": chạy `--check` trước để thấy file mới/đã đổi/mất, rồi làm theo mục "Quy trình đồng bộ" trong sổ.
 - **Sổ ảnh Hộp Mừng Quà**: `docs/survey/gift-assets.md` (+ `.json`, lịch sử ở `docs/survey/gift-asset-results/`) ghi ảnh hộp 3D/hộp nhỏ/phong bì từng mẫu cần, đã có, trang gốc không có, mẫu dùng ảnh tên chung của họ (giống trang gốc: vd `dragon_phoenix_red` → `dragon_phoenix.webp`, lưu đúng tên thật, không nhân bản theo id; code tra `config/giftAssets.generated.ts`) và file thừa. **Sau mỗi lần tải ảnh hộp quà: chạy `node scripts/clone/gift_assets.mjs --result <kết quả>` rồi commit cùng.** Lấy danh sách cần tải: `--todo`. Dữ liệu khối hộp quà của 92 mẫu: `docs/survey/raw/gift_<id>.json` (thu bằng `scripts/survey/gift_crawl.js`, giãn ≥35 giây/mẫu — tải nhanh sẽ bị 403) → `node scripts/clone/gen_gift_sections.cjs` → khối dùng chung `blocks/shared/GiftsGeneric.tsx`. Kiểm tra: `node scripts/check/gift-modes.mjs --all`, `node scripts/check/gift-geometry.mjs`.
 - Nhánh `fix/clone-match`. Đã đạt: **minimalism_brown** (Nâu), **riviera_blue** (Riviera - Lam) và **dragon_phoenix_v4_red** (Long Phụng V4 - Đỏ) ở bìa, thiệp đã mở, hộp quà, RSVP; editor đã dựng theo markup gốc (16 thẻ) và khớp mẫu Nâu ở 390/768/1280.
 - Còn lại (xem `docs/playbook/clone-playbook.md` mục 8): đo editor thật của Riviera; parallax khi cuộn của Riviera; nối `getCapabilities()` vào editor; các mẫu còn dở dang theo sổ đăng ký clone.
-- Đọc theo thứ tự: `docs/playbook/clone-playbook.md` (quy trình) → `docs/playbook/clone-rules.md` (rule, capabilities) → `docs/playbook/clone-plan-88.md` (kế hoạch 88 mẫu, thay `clone-plan.md` cũ) → `docs/archive/brown-fix-plan.md` (ví dụ làm hết một mẫu).
+- Đọc theo thứ tự: `docs/playbook/clone-playbook.md` (quy trình) → `docs/playbook/clone-rules.md` (rule, capabilities) → `docs/playbook/clone-plan-88.md` (kế hoạch viết khi trang thật có 88 mẫu, nay 92; thay `clone-plan.md` cũ) → `docs/archive/brown-fix-plan.md` (ví dụ làm hết một mẫu).
 
 ## 2. Kiến trúc cần biết
 - Stack: React 18 + Vite 5 + TypeScript; router tự viết; dữ liệu thiệp ở localStorage (`Inv` trong `src/types/invitation.ts`).

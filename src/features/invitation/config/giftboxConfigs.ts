@@ -1,5 +1,5 @@
 /**
- * Cấu hình Hộp Quà Mừng & Hộp Thoại Quà Mừng cho đủ 75 mẫu thiệp.
+ * Cấu hình Hộp Quà Mừng & Hộp Thoại Quà Mừng cho các mẫu thiệp (bảng cũ, lập khi có 75 mẫu; hiện 92 mẫu).
  * Được trích xuất trực tiếp từ DOM thật của chungdoi.com.
  * Hỗ trợ 2 kiểu giao diện:
  *  - 3d-box: Hộp quà 3D chuyển động kèm 7 hộp quà nhỏ trang trí xung quanh và pháo giấy bay

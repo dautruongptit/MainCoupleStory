@@ -1,7 +1,7 @@
 # Playbook: clone 1 mẫu thiệp cho khớp trang gốc (chungdoi.com)
 
 Dùng cho **bất kỳ `<templateId>`** (vd `song_hy_red`). Làm lần lượt; mỗi bước có lệnh kiểm tra và tiêu chí qua.
-Tài liệu liên quan: `docs/playbook/clone-rules.md` (rule + capabilities), `docs/archive/clone-plan.md` (kế hoạch 75 mẫu), `docs/archive/brown-fix-plan.md` (ví dụ làm hết mẫu Nâu).
+Tài liệu liên quan: `docs/playbook/clone-rules.md` (rule + capabilities), `docs/archive/clone-plan.md` (kế hoạch cũ, viết khi trang thật có 75 mẫu; nay 92), `docs/archive/brown-fix-plan.md` (ví dụ làm hết mẫu Nâu).
 Mẫu tham chiếu đã đạt: `minimalism_brown`.
 
 > Trạng thái: engine mở thiệp, hộp thoại RSVP, editor (khung + 16 thẻ) và khuôn thiệp đã mở (`shell/`: theme.json + capabilities.json + block) dùng chung. Khuôn hiện có một họ bố cục (minimalism); xem mục 4.2 và 8.
@@ -141,7 +141,7 @@ npm run css:inv
 for s in cover open gift rsvp: node scripts/survey/local_dump.mjs minimalism_brown $s 390 && node scripts/survey/diff_dump.mjs minimalism_brown $s 390
 node scripts/check/audit.mjs minimalism_brown
 node scripts/check/editor-sync.mjs minimalism_brown
-node scripts/check/phase6_all.mjs        # quét 75 mẫu (lâu)
+node scripts/check/phase6_all.mjs        # quét mọi mẫu, hiện 92 (lâu)
 npm run build
 ```
 

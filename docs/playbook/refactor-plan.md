@@ -201,7 +201,7 @@ Khi A–D ổn định: chuyển phần app (trang, header, editor) từ Tailwin
   - B5 + C3 (dữ liệu demo): `demo/buildDemoInv.ts` = phần chung + `specs/<id>/demo.json`; `pages/Demo.tsx` 354 → 126 dòng, hết `if` theo mẫu; xóa `referenceCouples.ts`, `referenceCovers.ts`. Kiểm: `demo-data.mjs --compare` 92/92 giống mốc.
   - C3 (bảng mẫu, bảng màu, điểm lấy nét): `specs/<id>/meta.json` là nguồn; `templates.generated.ts` sinh tự động; `templates.ts`, `templateThemes.ts`, `previewFocal.ts` chỉ còn là lớp đọc. Kiểm: `config-data.mjs --compare` 92/92 giống mốc. 9 script đọc bảng mẫu chuyển sang tệp sinh.
   - C5 (một phần): Vitest + `store.test.ts` 11 test (`npm test`). `store.defaultGiftMode` bỏ phụ thuộc `giftboxConfigs`.
-  - C3 (bìa): `covers/coverConfigs.ts` 1.766 → 11 dòng; cấu hình bìa từng mẫu ở `specs/<id>/cover.json` (81 mẫu; 11 mẫu không có cấu hình bìa như trước). Kiểm: `config-data.mjs --compare` 92/92 giống mốc; sổ đăng ký clone và bản xuất Excel đọc `cover.json`.
+  - C3 (bìa): `covers/coverConfigs.ts` 1.766 → 11 dòng; cấu hình bìa từng mẫu ở `specs/<id>/cover.json`. **Tổng số mẫu vẫn là 92**; 81/92 mẫu có cấu hình bìa, 11 mẫu chưa có từ trước khi tái cấu trúc (marble_yellow, glass_garden_light_green, santorini_blue, folk_floral_blue, qasr_blue, qasr_gold, qasr_green, floral_fiesta_yellow, nomad_brown, saraya_gold, brocade_flower_red) — bìa của chúng đang mượn cấu hình mặc định, cần đo và thêm `cover.json`. Kiểm: `config-data.mjs --compare` 92/92 giống mốc; sổ đăng ký clone và bản xuất Excel đọc `cover.json`.
   - C6: `AGENTS.md`, playbook, `scripts/README.md`.
 - **C — còn lại** (chưa làm):
   - `covers/index.ts` (bảng mẫu → component bìa, 77 dòng đăng ký tay) → tên component trong `cover.json` hoặc để D1.

@@ -1,4 +1,6 @@
-# Kế hoạch đưa 88 mẫu về giống trang thật
+# Kế hoạch đưa các mẫu về giống trang thật (viết khi có 88 mẫu; nay 92)
+
+> **Cập nhật 16/11/2026.** Trang thật hiện công bố **92 mẫu** (4 mẫu mới sau khi viết kế hoạch: `calla_lily_white`, `mandap_yellow`, `mahal_pink`, `jasmine_green`); bản local có đủ 92, **cả 92 đều chạy khuôn chung** (`Preview.tsx` cũ đã xóa). Cấu hình bìa: 81/92 mẫu có `specs/<id>/cover.json`; 11 mẫu chưa có (xem `docs/clone-registry.md`, mục "thiếu cấu hình bìa"). Các con số 88/85/72 bên dưới là số đo ngày 01/11/2026, giữ lại làm lịch sử; tình trạng từng mẫu hiện tại xem `docs/clone-registry.md`.
 
 Thay cho `clone-plan.md` (viết cho 75 mẫu, trước khi có khuôn chung). Số liệu dưới đây đo ngày 01/11/2026 trên chungdoi.com và bản local; chỗ nào là **giả định** thì ghi rõ và sẽ được xác nhận ở Giai đoạn 1.
 
@@ -6,7 +8,7 @@ Thay cho `clone-plan.md` (viết cho 75 mẫu, trước khi có khuôn chung). S
 
 | Hạng mục | Trang thật | Local |
 |---|---|---|
-| Số mẫu | **88** (danh sách, hộp thoại đổi mẫu, kho mẫu trong mã đều 88) | **88** trong danh sách; đúng thứ tự, tên, mô tả, tag, nhãn Hot/Mới, ảnh listing + full |
+| Số mẫu | **88** lúc đo 01/11/2026, **92** từ 15/11/2026 (danh sách, hộp thoại đổi mẫu, kho mẫu trong mã đều 88) | **88** trong danh sách; đúng thứ tự, tên, mô tả, tag, nhãn Hot/Mới, ảnh listing + full |
 | Mẫu đã clone theo khuôn chung (bìa, thiệp mở, hộp quà, RSVP, editor, xem trước) | — | **3**: `minimalism_brown`, `riviera_blue`, `dragon_phoenix_v4_red` |
 | Mẫu còn chạy đường `Preview.tsx` cũ (lệch lớn) | — | **85** |
 | Cấu hình bìa đo thật | — | 3/88. 72 mục trong `coverConfigs.ts` là giá trị mặc định/đoán (52 hạt `petal`, 57 con dấu `heart`) |

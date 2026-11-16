@@ -4,7 +4,7 @@ import { defaultInv } from "@/features/editor/data/defaultData";
 import InvitationView from "@/features/invitation/view/InvitationView";
 import { useChooseTemplate } from "@/features/templates/components/DraftPrompt";
 import { Link } from "@/app/router";
-import { templateByIdOrSlug } from "@/features/templates/data/templates";
+import { TEMPLATES, templateByIdOrSlug } from "@/features/templates/data/templates";
 import { buildDemoInv } from "@/features/invitation/demo/buildDemoInv";
 
 
@@ -72,7 +72,7 @@ export default function Demo({ slug }: { slug: string }) {
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <polyline points="15 18 9 12 15 6" />
           </svg>
-          <span>Xem tất cả 75 mẫu thiệp</span>
+          <span>Xem tất cả {TEMPLATES.length} mẫu thiệp</span>
         </Link>
       </div>
     );

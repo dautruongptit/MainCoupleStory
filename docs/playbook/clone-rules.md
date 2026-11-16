@@ -1,4 +1,4 @@
-# Bộ rule clone 75 mẫu (rút từ 5 mẫu đã đo)
+# Bộ rule clone mẫu thiệp (rút từ 5 mẫu đã đo; viết khi trang thật có 75 mẫu, nay 92)
 
 Nguồn: `docs/survey/*.md|json` (5 mẫu: Nâu làm chuẩn, Song Hỷ Đỏ, Baroque V2 Đỏ Đậm, Florence Nâu, Hoa Mộc Xanh), số liệu thô `docs/survey/raw/`, khung hình `docs/survey/frames/`.
 **Độ chắc chắn:** quy tắc nhóm A (chung) chắc cao (5/5 mẫu giống nhau, đo bằng animation API/computed style). Nhóm B (biến thể) chắc trung bình: mới thấy 2–3 giá trị mỗi cờ, cờ thật có thể nhiều hơn. Nhóm C chỉ là dữ liệu.
@@ -142,7 +142,7 @@ Giá trị thực đo được:
 | Tương tác: mở bìa, album, hộp quà, RSVP, lời chúc, `?guest=` | đạt |
 | `editor-sync` | 0 FAIL (SKIP chỉ khi ghi rõ lý do) |
 
-Công cụ: `scripts/check/audit.mjs <id>` (khối + console/network), `scripts/check/editor-sync.mjs <id>`, `scripts/check/phase6_all.mjs` (quét 75 mẫu).
+Công cụ: `scripts/check/audit.mjs <id>` (khối + console/network), `scripts/check/editor-sync.mjs <id>`, `scripts/check/phase6_all.mjs` (quét mọi mẫu, hiện 92).
 
 ---
 

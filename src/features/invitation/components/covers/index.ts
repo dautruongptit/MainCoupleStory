@@ -1,5 +1,5 @@
 /**
- * Registry màn hình Mở thiệp (Cover Screen) cho toàn bộ 75 mẫu thiệp.
+ * Registry màn hình Mở thiệp (Cover Screen) cho các mẫu thiệp (hiện 92 mẫu).
  * Không dùng điều kiện rải rác trong Preview.tsx.
  */
 import React from "react";
