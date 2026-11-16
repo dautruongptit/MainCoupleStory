@@ -1,4 +1,5 @@
 {
+  "component": "VuonXuanLamCover",
   "accentColor": "#486C7D",
   "bg": "linear-gradient(to bottom right, #f0f7fa, #e8f2f6, #dfedf2)",
   "btnBg": "#486C7D",

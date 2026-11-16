@@ -1,4 +1,5 @@
 {
+  "component": "ArchitecturalCover",
   "accentColor": "#000000",
   "bg": "linear-gradient(to bottom right, #c9a888, #9c7355, #6d4e37)",
   "btnBg": "#000000",

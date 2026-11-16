@@ -1,4 +1,5 @@
 {
+  "component": "TraditionalRoyalCover",
   "accentColor": "#710001",
   "bg": "linear-gradient(to bottom right, #710001, #5a0001, #450001)",
   "btnBg": "#710001",

@@ -1,4 +1,5 @@
 {
+  "component": "LongPhungV2BesCover",
   "accentColor": "#ffe3b1",
   "bg": "url('/images/themes/longphung-v2-red/bg-frame.jpg') center/cover",
   "btnBg": "#ffe3b1",

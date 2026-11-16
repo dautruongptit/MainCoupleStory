@@ -1,4 +1,5 @@
 {
+  "component": "BaroquePorcelainCover",
   "accentColor": "#123467",
   "bg": "linear-gradient(to bottom right, #0c2147, #123467, #1a4080)",
   "btnBg": "#123467",

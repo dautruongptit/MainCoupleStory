@@ -41,6 +41,7 @@ import { TEMPLATE_THEMES } from "${abs("src/features/invitation/config/templateT
 import { previewFocal } from "${abs("src/features/templates/data/previewFocal.ts")}";
 import { editorSections, hasCoupleHero, albumCardAfter } from "${abs("src/features/editor/config/editorSections.ts")}";
 import { COVER_CONFIGS } from "${abs("src/features/invitation/components/covers/coverConfigs.ts")}";
+import { getCoverComponent } from "${abs("src/features/invitation/components/covers/index.ts")}";
 import { getEditorSections, getCoupleHero, getCapabilities } from "${abs("src/features/invitation/shell/specs/index.ts")}";
 import { defaultDressColors, defaultGiftMode } from "${abs("src/services/storage/store.ts")}";
 export const ALL = {
@@ -54,7 +55,8 @@ export const ALL = {
     editorMatrix: editorSections(t.id), coupleHeroMatrix: hasCoupleHero(t.id), albumCardAfter: albumCardAfter(t.id),
     editorSections: getEditorSections(t.id), coupleHero: getCoupleHero(t.id),
     family: getCapabilities(t.id)?.family ?? null,
-    cover: COVER_CONFIGS[t.id] ?? null,
+    cover: COVER_CONFIGS[t.id] ? { ...COVER_CONFIGS[t.id], component: undefined } : null, // tên component so ở coverComp
+    coverComp: getCoverComponent(t.id).name,
     boxUsed: { flyDecor: coverFlyDecor(t.id), minis: giftMiniImgs(t.id), mainBoxFallback: giftMainBoxFallback(t.id) },
     giftSpec: GIFT_SPECS[t.id] ?? null, giftAssets: GIFT_ASSETS[t.id] ?? null,
     dress: defaultDressColors(t.id), giftMode: defaultGiftMode(t.id),

@@ -5237,192 +5237,234 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 ## Thay đổi ở lần quét gần nhất
 
 - **minimalism_darkred** — file đã cập nhật
-  - `src/features/invitation/shell/specs/minimalism_darkred/gift.json`
+  - `src/features/invitation/shell/specs/minimalism_darkred/cover.json`
+  - `src/features/invitation/shell/specs/minimalism_darkred/cover.json#minimalism_darkred`
 - **minimalism_brown** — file đã cập nhật
-  - `src/features/invitation/shell/specs/minimalism_brown/gift.json`
+  - `src/features/invitation/shell/specs/minimalism_brown/cover.json`
+  - `src/features/invitation/shell/specs/minimalism_brown/cover.json#minimalism_brown`
 - **song_hy_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/song_hy_green/gift.json`
+  - `src/features/invitation/shell/specs/song_hy_green/cover.json`
+  - `src/features/invitation/shell/specs/song_hy_green/cover.json#song_hy_green`
 - **boho_floral_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/boho_floral_green/gift.json`
+  - `src/features/invitation/shell/specs/boho_floral_green/cover.json`
+  - `src/features/invitation/shell/specs/boho_floral_green/cover.json#boho_floral_green`
 - **song_hy_v2_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/song_hy_v2_red/gift.json`
+  - `src/features/invitation/shell/specs/song_hy_v2_red/cover.json`
+  - `src/features/invitation/shell/specs/song_hy_v2_red/cover.json#song_hy_v2_red`
 - **song_hy_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/song_hy_red/gift.json`
+  - `src/features/invitation/shell/specs/song_hy_red/cover.json`
+  - `src/features/invitation/shell/specs/song_hy_red/cover.json#song_hy_red`
 - **silk_ribbon_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/silk_ribbon_green/gift.json`
+  - `src/features/invitation/shell/specs/silk_ribbon_green/cover.json`
+  - `src/features/invitation/shell/specs/silk_ribbon_green/cover.json#silk_ribbon_green`
 - **minimalism_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/minimalism_green/gift.json`
+  - `src/features/invitation/shell/specs/minimalism_green/cover.json`
+  - `src/features/invitation/shell/specs/minimalism_green/cover.json#minimalism_green`
 - **jasmine_white** — file đã cập nhật
-  - `src/features/invitation/shell/specs/jasmine_white/gift.json`
+  - `src/features/invitation/shell/specs/jasmine_white/cover.json`
+  - `src/features/invitation/shell/specs/jasmine_white/cover.json#jasmine_white`
 - **dragon_phoenix_v3_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/dragon_phoenix_v3_red/gift.json`
+  - `src/features/invitation/shell/specs/dragon_phoenix_v3_red/cover.json`
+  - `src/features/invitation/shell/specs/dragon_phoenix_v3_red/cover.json#dragon_phoenix_v3_red`
 - **dragon_phoenix_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/dragon_phoenix_red/gift.json`
+  - `src/features/invitation/shell/specs/dragon_phoenix_red/cover.json`
+  - `src/features/invitation/shell/specs/dragon_phoenix_red/cover.json#dragon_phoenix_red`
 - **silk_ribbon_darkred** — file đã cập nhật
-  - `src/features/invitation/shell/specs/silk_ribbon_darkred/gift.json`
+  - `src/features/invitation/shell/specs/silk_ribbon_darkred/cover.json`
+  - `src/features/invitation/shell/specs/silk_ribbon_darkred/cover.json#silk_ribbon_darkred`
 - **minimalism_darkbrown** — file đã cập nhật
-  - `src/features/invitation/shell/specs/minimalism_darkbrown/gift.json`
+  - `src/features/invitation/shell/specs/minimalism_darkbrown/cover.json`
+  - `src/features/invitation/shell/specs/minimalism_darkbrown/cover.json#minimalism_darkbrown`
 - **dragon_phoenix_v2_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/dragon_phoenix_v2_red/gift.json`
+  - `src/features/invitation/shell/specs/dragon_phoenix_v2_red/cover.json`
+  - `src/features/invitation/shell/specs/dragon_phoenix_v2_red/cover.json#dragon_phoenix_v2_red`
 - **double_dragon_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/double_dragon_red/gift.json`
+  - `src/features/invitation/shell/specs/double_dragon_red/cover.json`
+  - `src/features/invitation/shell/specs/double_dragon_red/cover.json#double_dragon_red`
 - **glass_garden_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/glass_garden_green/gift.json`
+  - `src/features/invitation/shell/specs/glass_garden_green/cover.json`
+  - `src/features/invitation/shell/specs/glass_garden_green/cover.json#glass_garden_green`
 - **double_phoenix_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/double_phoenix_red/gift.json`
+  - `src/features/invitation/shell/specs/double_phoenix_red/cover.json`
+  - `src/features/invitation/shell/specs/double_phoenix_red/cover.json#double_phoenix_red`
 - **double_dragon_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/double_dragon_green/gift.json`
+  - `src/features/invitation/shell/specs/double_dragon_green/cover.json`
+  - `src/features/invitation/shell/specs/double_dragon_green/cover.json#double_dragon_green`
 - **glass_garden_pink** — file đã cập nhật
-  - `src/features/invitation/shell/specs/glass_garden_pink/gift.json`
-- **marble_yellow** — file đã cập nhật
-  - `src/features/invitation/shell/specs/marble_yellow/gift.json`
+  - `src/features/invitation/shell/specs/glass_garden_pink/cover.json`
+  - `src/features/invitation/shell/specs/glass_garden_pink/cover.json#glass_garden_pink`
 - **elegant_leaf_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/elegant_leaf_green/gift.json`
+  - `src/features/invitation/shell/specs/elegant_leaf_green/cover.json`
+  - `src/features/invitation/shell/specs/elegant_leaf_green/cover.json#elegant_leaf_green`
 - **silk_ribbon_pink** — file đã cập nhật
-  - `src/features/invitation/shell/specs/silk_ribbon_pink/gift.json`
+  - `src/features/invitation/shell/specs/silk_ribbon_pink/cover.json`
+  - `src/features/invitation/shell/specs/silk_ribbon_pink/cover.json#silk_ribbon_pink`
 - **dragon_phoenix_v4_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/dragon_phoenix_v4_red/gift.json`
+  - `src/features/invitation/shell/specs/dragon_phoenix_v4_red/cover.json`
+  - `src/features/invitation/shell/specs/dragon_phoenix_v4_red/cover.json#dragon_phoenix_v4_red`
 - **lien_hoa_v2_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/lien_hoa_v2_green/gift.json`
+  - `src/features/invitation/shell/specs/lien_hoa_v2_green/cover.json`
+  - `src/features/invitation/shell/specs/lien_hoa_v2_green/cover.json#lien_hoa_v2_green`
 - **chateau_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/chateau_green/gift.json`
+  - `src/features/invitation/shell/specs/chateau_green/cover.json`
+  - `src/features/invitation/shell/specs/chateau_green/cover.json#chateau_green`
 - **spring_garden_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/spring_garden_green/gift.json`
+  - `src/features/invitation/shell/specs/spring_garden_green/cover.json`
+  - `src/features/invitation/shell/specs/spring_garden_green/cover.json#spring_garden_green`
 - **chibi_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/chibi_red/gift.json`
+  - `src/features/invitation/shell/specs/chibi_red/cover.json`
+  - `src/features/invitation/shell/specs/chibi_red/cover.json#chibi_red`
 - **song_hac_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/song_hac_red/gift.json`
+  - `src/features/invitation/shell/specs/song_hac_red/cover.json`
+  - `src/features/invitation/shell/specs/song_hac_red/cover.json#song_hac_red`
 - **nhat_binh_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/nhat_binh_red/gift.json`
+  - `src/features/invitation/shell/specs/nhat_binh_red/cover.json`
+  - `src/features/invitation/shell/specs/nhat_binh_red/cover.json#nhat_binh_red`
 - **baroque_v2_darkgreen** — file đã cập nhật
-  - `src/features/invitation/shell/specs/baroque_v2_darkgreen/gift.json`
+  - `src/features/invitation/shell/specs/baroque_v2_darkgreen/cover.json`
+  - `src/features/invitation/shell/specs/baroque_v2_darkgreen/cover.json#baroque_v2_darkgreen`
 - **baroque_v2_darkred** — file đã cập nhật
-  - `src/features/invitation/shell/specs/baroque_v2_darkred/gift.json`
+  - `src/features/invitation/shell/specs/baroque_v2_darkred/cover.json`
+  - `src/features/invitation/shell/specs/baroque_v2_darkred/cover.json#baroque_v2_darkred`
 - **cherry_blossom_pink** — file đã cập nhật
-  - `src/features/invitation/shell/specs/cherry_blossom_pink/gift.json`
+  - `src/features/invitation/shell/specs/cherry_blossom_pink/cover.json`
+  - `src/features/invitation/shell/specs/cherry_blossom_pink/cover.json#cherry_blossom_pink`
 - **boho_floral_pink** — file đã cập nhật
-  - `src/features/invitation/shell/specs/boho_floral_pink/gift.json`
+  - `src/features/invitation/shell/specs/boho_floral_pink/cover.json`
+  - `src/features/invitation/shell/specs/boho_floral_pink/cover.json#boho_floral_pink`
 - **applique_lace_white** — file đã cập nhật
-  - `src/features/invitation/shell/specs/applique_lace_white/gift.json`
+  - `src/features/invitation/shell/specs/applique_lace_white/cover.json`
+  - `src/features/invitation/shell/specs/applique_lace_white/cover.json#applique_lace_white`
 - **silk_flora_brown** — file đã cập nhật
-  - `src/features/invitation/shell/specs/silk_flora_brown/gift.json`
+  - `src/features/invitation/shell/specs/silk_flora_brown/cover.json`
+  - `src/features/invitation/shell/specs/silk_flora_brown/cover.json#silk_flora_brown`
 - **hoa_tinh_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/hoa_tinh_red/gift.json`
+  - `src/features/invitation/shell/specs/hoa_tinh_red/cover.json`
+  - `src/features/invitation/shell/specs/hoa_tinh_red/cover.json#hoa_tinh_red`
 - **spring_garden_blue** — file đã cập nhật
-  - `src/features/invitation/shell/specs/spring_garden_blue/gift.json`
+  - `src/features/invitation/shell/specs/spring_garden_blue/cover.json`
+  - `src/features/invitation/shell/specs/spring_garden_blue/cover.json#spring_garden_blue`
 - **minimalism_darkblue** — file đã cập nhật
-  - `src/features/invitation/shell/specs/minimalism_darkblue/gift.json`
+  - `src/features/invitation/shell/specs/minimalism_darkblue/cover.json`
+  - `src/features/invitation/shell/specs/minimalism_darkblue/cover.json#minimalism_darkblue`
 - **royal_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/royal_red/gift.json`
+  - `src/features/invitation/shell/specs/royal_red/cover.json`
+  - `src/features/invitation/shell/specs/royal_red/cover.json#royal_red`
 - **minimalism_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/minimalism_red/gift.json`
+  - `src/features/invitation/shell/specs/minimalism_red/cover.json`
+  - `src/features/invitation/shell/specs/minimalism_red/cover.json#minimalism_red`
 - **spring_garden_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/spring_garden_red/gift.json`
+  - `src/features/invitation/shell/specs/spring_garden_red/cover.json`
+  - `src/features/invitation/shell/specs/spring_garden_red/cover.json#spring_garden_red`
 - **dragon_phoenix_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/dragon_phoenix_green/gift.json`
+  - `src/features/invitation/shell/specs/dragon_phoenix_green/cover.json`
+  - `src/features/invitation/shell/specs/dragon_phoenix_green/cover.json#dragon_phoenix_green`
 - **baroque_gold** — file đã cập nhật
-  - `src/features/invitation/shell/specs/baroque_gold/gift.json`
+  - `src/features/invitation/shell/specs/baroque_gold/cover.json`
+  - `src/features/invitation/shell/specs/baroque_gold/cover.json#baroque_gold`
 - **chateau_blue** — file đã cập nhật
-  - `src/features/invitation/shell/specs/chateau_blue/gift.json`
+  - `src/features/invitation/shell/specs/chateau_blue/cover.json`
+  - `src/features/invitation/shell/specs/chateau_blue/cover.json#chateau_blue`
 - **double_phoenix_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/double_phoenix_green/gift.json`
+  - `src/features/invitation/shell/specs/double_phoenix_green/cover.json`
+  - `src/features/invitation/shell/specs/double_phoenix_green/cover.json#double_phoenix_green`
 - **boho_floral_brown** — file đã cập nhật
-  - `src/features/invitation/shell/specs/boho_floral_brown/gift.json`
+  - `src/features/invitation/shell/specs/boho_floral_brown/cover.json`
+  - `src/features/invitation/shell/specs/boho_floral_brown/cover.json#boho_floral_brown`
 - **double_dragon_blue** — file đã cập nhật
-  - `src/features/invitation/shell/specs/double_dragon_blue/gift.json`
-- **glass_garden_light_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/glass_garden_light_green/gift.json`
+  - `src/features/invitation/shell/specs/double_dragon_blue/cover.json`
+  - `src/features/invitation/shell/specs/double_dragon_blue/cover.json#double_dragon_blue`
 - **crystal_floral_blue** — file đã cập nhật
-  - `src/features/invitation/shell/specs/crystal_floral_blue/gift.json`
+  - `src/features/invitation/shell/specs/crystal_floral_blue/cover.json`
+  - `src/features/invitation/shell/specs/crystal_floral_blue/cover.json#crystal_floral_blue`
 - **dragon_phoenix_blue** — file đã cập nhật
-  - `src/features/invitation/shell/specs/dragon_phoenix_blue/gift.json`
+  - `src/features/invitation/shell/specs/dragon_phoenix_blue/cover.json`
+  - `src/features/invitation/shell/specs/dragon_phoenix_blue/cover.json#dragon_phoenix_blue`
 - **co_ba_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/co_ba_red/gift.json`
+  - `src/features/invitation/shell/specs/co_ba_red/cover.json`
+  - `src/features/invitation/shell/specs/co_ba_red/cover.json#co_ba_red`
 - **lien_hoa_pink** — file đã cập nhật
-  - `src/features/invitation/shell/specs/lien_hoa_pink/gift.json`
+  - `src/features/invitation/shell/specs/lien_hoa_pink/cover.json`
+  - `src/features/invitation/shell/specs/lien_hoa_pink/cover.json#lien_hoa_pink`
 - **minimalism_purple** — file đã cập nhật
-  - `src/features/invitation/shell/specs/minimalism_purple/gift.json`
+  - `src/features/invitation/shell/specs/minimalism_purple/cover.json`
+  - `src/features/invitation/shell/specs/minimalism_purple/cover.json#minimalism_purple`
 - **porcelain_v2_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/porcelain_v2_green/gift.json`
+  - `src/features/invitation/shell/specs/porcelain_v2_green/cover.json`
+  - `src/features/invitation/shell/specs/porcelain_v2_green/cover.json#porcelain_v2_green`
 - **dried_flower_v2_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/dried_flower_v2_green/gift.json`
+  - `src/features/invitation/shell/specs/dried_flower_v2_green/cover.json`
+  - `src/features/invitation/shell/specs/dried_flower_v2_green/cover.json#dried_flower_v2_green`
 - **porcelain_v2_pink** — file đã cập nhật
-  - `src/features/invitation/shell/specs/porcelain_v2_pink/gift.json`
+  - `src/features/invitation/shell/specs/porcelain_v2_pink/cover.json`
+  - `src/features/invitation/shell/specs/porcelain_v2_pink/cover.json#porcelain_v2_pink`
 - **hoa_kho_v2_blue** — file đã cập nhật
-  - `src/features/invitation/shell/specs/hoa_kho_v2_blue/gift.json`
+  - `src/features/invitation/shell/specs/hoa_kho_v2_blue/cover.json`
+  - `src/features/invitation/shell/specs/hoa_kho_v2_blue/cover.json#hoa_kho_v2_blue`
 - **dragon_phoenix_black** — file đã cập nhật
-  - `src/features/invitation/shell/specs/dragon_phoenix_black/gift.json`
+  - `src/features/invitation/shell/specs/dragon_phoenix_black/cover.json`
+  - `src/features/invitation/shell/specs/dragon_phoenix_black/cover.json#dragon_phoenix_black`
 - **royal_v2_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/royal_v2_green/gift.json`
+  - `src/features/invitation/shell/specs/royal_v2_green/cover.json`
+  - `src/features/invitation/shell/specs/royal_v2_green/cover.json#royal_v2_green`
 - **royal_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/royal_green/gift.json`
+  - `src/features/invitation/shell/specs/royal_green/cover.json`
+  - `src/features/invitation/shell/specs/royal_green/cover.json#royal_green`
 - **baroque_blue** — file đã cập nhật
-  - `src/features/invitation/shell/specs/baroque_blue/gift.json`
+  - `src/features/invitation/shell/specs/baroque_blue/cover.json`
+  - `src/features/invitation/shell/specs/baroque_blue/cover.json#baroque_blue`
 - **porcelain_brown** — file đã cập nhật
-  - `src/features/invitation/shell/specs/porcelain_brown/gift.json`
+  - `src/features/invitation/shell/specs/porcelain_brown/cover.json`
+  - `src/features/invitation/shell/specs/porcelain_brown/cover.json#porcelain_brown`
 - **crystal_floral_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/crystal_floral_red/gift.json`
+  - `src/features/invitation/shell/specs/crystal_floral_red/cover.json`
+  - `src/features/invitation/shell/specs/crystal_floral_red/cover.json#crystal_floral_red`
 - **royal_blue** — file đã cập nhật
-  - `src/features/invitation/shell/specs/royal_blue/gift.json`
+  - `src/features/invitation/shell/specs/royal_blue/cover.json`
+  - `src/features/invitation/shell/specs/royal_blue/cover.json#royal_blue`
 - **riviera_blue** — file đã cập nhật
-  - `src/features/invitation/shell/specs/riviera_blue/gift.json`
+  - `src/features/invitation/shell/specs/riviera_blue/cover.json`
+  - `src/features/invitation/shell/specs/riviera_blue/cover.json#riviera_blue`
 - **florence_brown** — file đã cập nhật
-  - `src/features/invitation/shell/specs/florence_brown/gift.json`
+  - `src/features/invitation/shell/specs/florence_brown/cover.json`
+  - `src/features/invitation/shell/specs/florence_brown/cover.json#florence_brown`
 - **baroque_v2_darkblue** — file đã cập nhật
-  - `src/features/invitation/shell/specs/baroque_v2_darkblue/gift.json`
-- **jasmine_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/jasmine_green/gift.json`
+  - `src/features/invitation/shell/specs/baroque_v2_darkblue/cover.json`
+  - `src/features/invitation/shell/specs/baroque_v2_darkblue/cover.json#baroque_v2_darkblue`
 - **sunflower_yellow** — file đã cập nhật
-  - `src/features/invitation/shell/specs/sunflower_yellow/gift.json`
+  - `src/features/invitation/shell/specs/sunflower_yellow/cover.json`
+  - `src/features/invitation/shell/specs/sunflower_yellow/cover.json#sunflower_yellow`
 - **crystal_floral_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/crystal_floral_green/gift.json`
-- **santorini_blue** — file đã cập nhật
-  - `src/features/invitation/shell/specs/santorini_blue/gift.json`
+  - `src/features/invitation/shell/specs/crystal_floral_green/cover.json`
+  - `src/features/invitation/shell/specs/crystal_floral_green/cover.json#crystal_floral_green`
 - **porcelain_v2_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/porcelain_v2_red/gift.json`
+  - `src/features/invitation/shell/specs/porcelain_v2_red/cover.json`
+  - `src/features/invitation/shell/specs/porcelain_v2_red/cover.json#porcelain_v2_red`
 - **porcelain_blue** — file đã cập nhật
-  - `src/features/invitation/shell/specs/porcelain_blue/gift.json`
-- **folk_floral_blue** — file đã cập nhật
-  - `src/features/invitation/shell/specs/folk_floral_blue/gift.json`
+  - `src/features/invitation/shell/specs/porcelain_blue/cover.json`
+  - `src/features/invitation/shell/specs/porcelain_blue/cover.json#porcelain_blue`
 - **porcelain_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/porcelain_red/gift.json`
+  - `src/features/invitation/shell/specs/porcelain_red/cover.json`
+  - `src/features/invitation/shell/specs/porcelain_red/cover.json#porcelain_red`
 - **hoa_dai_pink** — file đã cập nhật
-  - `src/features/invitation/shell/specs/hoa_dai_pink/gift.json`
-- **qasr_blue** — file đã cập nhật
-  - `src/features/invitation/shell/specs/qasr_blue/gift.json`
+  - `src/features/invitation/shell/specs/hoa_dai_pink/cover.json`
+  - `src/features/invitation/shell/specs/hoa_dai_pink/cover.json#hoa_dai_pink`
 - **san_miguel_yellow** — file đã cập nhật
-  - `src/features/invitation/shell/specs/san_miguel_yellow/gift.json`
+  - `src/features/invitation/shell/specs/san_miguel_yellow/cover.json`
+  - `src/features/invitation/shell/specs/san_miguel_yellow/cover.json#san_miguel_yellow`
 - **glass_garden_blue** — file đã cập nhật
-  - `src/features/invitation/shell/specs/glass_garden_blue/gift.json`
+  - `src/features/invitation/shell/specs/glass_garden_blue/cover.json`
+  - `src/features/invitation/shell/specs/glass_garden_blue/cover.json#glass_garden_blue`
 - **royal_v2_purple** — file đã cập nhật
-  - `src/features/invitation/shell/specs/royal_v2_purple/gift.json`
+  - `src/features/invitation/shell/specs/royal_v2_purple/cover.json`
+  - `src/features/invitation/shell/specs/royal_v2_purple/cover.json#royal_v2_purple`
 - **hoa_kho_orange** — file đã cập nhật
-  - `src/features/invitation/shell/specs/hoa_kho_orange/gift.json`
-- **mahal_gold** — file đã cập nhật
-  - `src/features/invitation/shell/specs/mahal_gold/gift.json`
-- **floral_fiesta_yellow** — file đã cập nhật
-  - `src/features/invitation/shell/specs/floral_fiesta_yellow/gift.json`
-- **nomad_brown** — file đã cập nhật
-  - `src/features/invitation/shell/specs/nomad_brown/gift.json`
-- **saraya_gold** — file đã cập nhật
-  - `src/features/invitation/shell/specs/saraya_gold/gift.json`
-- **qasr_gold** — file đã cập nhật
-  - `src/features/invitation/shell/specs/qasr_gold/gift.json`
-- **qasr_green** — file đã cập nhật
-  - `src/features/invitation/shell/specs/qasr_green/gift.json`
-- **mandap_darkred** — file đã cập nhật
-  - `src/features/invitation/shell/specs/mandap_darkred/gift.json`
-- **brocade_flower_red** — file đã cập nhật
-  - `src/features/invitation/shell/specs/brocade_flower_red/gift.json`
-- **calla_lily_white** — file đã cập nhật
-  - `src/features/invitation/shell/specs/calla_lily_white/gift.json`
-- **mandap_yellow** — file đã cập nhật
-  - `src/features/invitation/shell/specs/mandap_yellow/gift.json`
-- **mahal_pink** — file đã cập nhật
-  - `src/features/invitation/shell/specs/mahal_pink/gift.json`
+  - `src/features/invitation/shell/specs/hoa_kho_orange/cover.json`
+  - `src/features/invitation/shell/specs/hoa_kho_orange/cover.json#hoa_kho_orange`
 
 ## Lịch sử các lần quét
 
+- 2026-11-16 10:23 — 75 thay đổi: minimalism_darkred: file đã cập nhật; minimalism_brown: file đã cập nhật; song_hy_green: file đã cập nhật; boho_floral_green: file đã cập nhật; song_hy_v2_red: file đã cập nhật; song_hy_red: file đã cập nhật…
 - 2026-11-16 10:16 — 92 thay đổi: minimalism_darkred: file đã cập nhật; minimalism_brown: file đã cập nhật; song_hy_green: file đã cập nhật; boho_floral_green: file đã cập nhật; song_hy_v2_red: file đã cập nhật; song_hy_red: file đã cập nhật…
 - 2026-11-16 09:30 — 92 thay đổi: minimalism_darkred: file mới; minimalism_brown: file mới; song_hy_green: file mới; boho_floral_green: file mới; song_hy_v2_red: file mới; song_hy_red: file mới…
 - 2026-11-16 09:04 — 0 thay đổi

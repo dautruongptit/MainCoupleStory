@@ -27,7 +27,6 @@ const tplSrc = read(J("src/features/templates/data/templates.generated.ts"));
 const templates = tplSrc.split("\n").filter((l) => l.startsWith('  {"slug"')).map((l) => JSON.parse(l.trim().replace(/,$/, "")));
 const registry = readJson(J("docs/clone-registry.json"));
 const regById = Object.fromEntries((registry?.templates ?? []).map((t) => [t.id, t]));
-const coverIdx = read(J("src/features/invitation/components/covers/index.ts"));
 const edSrc = read(J("src/features/editor/config/editorSections.ts"));
 // dữ liệu bìa (ngày, lời mời) của mẫu nằm trong specs/<id>/demo.json (trước đây: referenceCovers.ts)
 const hasCoverData = (id) => { try { const d = JSON.parse(fs.readFileSync(J(`src/features/invitation/shell/specs/${id}/demo.json`), "utf8")); return "date" in d || "envelopeInviteMessage" in d; } catch { return false; } };
@@ -124,7 +123,8 @@ for (const t of templates) {
   const b = blockInfo(family, caps?.blocks);
   const placeholder = !theme || (theme.colors?.ink === "rgb(0, 0, 0)" && theme.colors?.paper === "#ffffff");
   const cover = coverEntry(t.id);
-  const compM = new RegExp(`"${t.id}":\\s*([A-Za-z0-9]+)`).exec(coverIdx);
+  // tên component bìa: specs/<id>/cover.json#component (trước đây là bảng trong covers/index.ts)
+  const compM = cover?.component ? [null, cover.component] : null;
   const coverComp = compM ? compM[1] : "BaroquePorcelainCover (mặc định)";
   const bespoke = compM && /^(HoaTinhDoCover|HoangKimLamCover|ChibiRedCover|BachSuDoCover)$/.test(compM[1]);
   const pm = particle88[t.id];

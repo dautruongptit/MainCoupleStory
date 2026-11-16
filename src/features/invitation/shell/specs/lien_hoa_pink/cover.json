@@ -1,4 +1,5 @@
 {
+  "component": "FloralBouquetCover",
   "accentColor": "#804b5b",
   "bg": "linear-gradient(to bottom right, #c9768e, #d07d95, #e9b4c4)",
   "btnBg": "#804b5b",

@@ -1,4 +1,5 @@
 {
+  "component": "BaroquePorcelainCover",
   "accentColor": "#654e2f",
   "bg": "linear-gradient(to right, #fefaf0 calc(50% - 450px), rgba(254,250,240,0) calc(50% - 450px), rgba(254,250,240,0) calc(50% + 450px), #fefaf0 calc(50% + 450px)), url(\"/images/themes/porcelain-v2-red/floral-tile.webp\") 0 0 / 518px 920px repeat, #fdf9f3",
   "btnBg": "#654e2f",

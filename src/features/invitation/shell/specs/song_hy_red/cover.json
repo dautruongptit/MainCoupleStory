@@ -1,4 +1,5 @@
 {
+  "component": "SongHyClassicCover",
   "accentColor": "#ffeed2",
   "bg": "linear-gradient(to bottom right, #5a0000, #400000, #2a0000)",
   "btnBg": "#ffeed2",

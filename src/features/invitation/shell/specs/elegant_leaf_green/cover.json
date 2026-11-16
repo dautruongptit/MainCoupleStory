@@ -1,4 +1,5 @@
 {
+  "component": "ThanhDiepCover",
   "accentColor": "#4E6439",
   "bg": "linear-gradient(to bottom right, #23381E, #1f3219, #1a2b15)",
   "btnBg": "#4E6439",

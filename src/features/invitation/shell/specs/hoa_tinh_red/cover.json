@@ -1,4 +1,5 @@
 {
+  "component": "HoaTinhDoCover",
   "accentColor": "#ffe3b1",
   "bg": "linear-gradient(165deg, #8B0000 0%, #C41230 45%, #8B0000 100%)",
   "btnBg": "#ffe3b1",

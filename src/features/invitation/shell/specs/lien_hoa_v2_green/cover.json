@@ -1,4 +1,5 @@
 {
+  "component": "BaroquePorcelainCover",
   "accentColor": "#5e813c",
   "ampFont": "\"Ms Madi\", ChungDoiIndic, cursive",
   "bg": "radial-gradient(ellipse at top, #e9efdc 0%, #dbe5c9 55%, #c7d4b1 100%)",

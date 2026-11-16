@@ -1,4 +1,5 @@
 {
+  "component": "GlassGardenCover",
   "accentColor": "#ffe3b1",
   "bg": "#3d6cae url(/images/themes/glass-garden-blue/floral-background.webp) center / 180% auto repeat",
   "btnBg": "#ffe3b1",

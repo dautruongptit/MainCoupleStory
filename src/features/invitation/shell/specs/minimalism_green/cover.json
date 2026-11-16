@@ -1,4 +1,5 @@
 {
+  "component": "MinimalismCover",
   "accentColor": "#6b7b4f",
   "bg": "linear-gradient(to bottom right, #e9efe1, #dbe6cf, #cdd9bd)",
   "btnBg": "#6b7b4f",

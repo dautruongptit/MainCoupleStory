@@ -1,4 +1,5 @@
 {
+  "component": "ArchitecturalCover",
   "accentColor": "#005885",
   "ampFont": "\"Alex Brush\", \"The Nautigal\", ChungDoiIndic, cursive",
   "bg": "linear-gradient(to bottom right, #5992b0, #005885, #003f60)",

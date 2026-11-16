@@ -1,6 +1,6 @@
 {
  "_doc": "Sổ đăng ký clone. Sinh bởi scripts/clone/registry.mjs — đừng sửa tay trừ trường verified/notes.",
- "generatedAt": "2026-11-16T10:16:17.245Z",
+ "generatedAt": "2026-11-16T10:23:02.664Z",
  "totals": {
   "templates": 92,
   "đã clone": 43,
@@ -445,6 +445,62 @@
     "crystal_floral_blue: file đã cập nhật",
     "dragon_phoenix_blue: file đã cập nhật"
    ]
+  },
+  {
+   "at": "2026-11-16T10:23:02.664Z",
+   "changes": 75,
+   "summary": [
+    "minimalism_darkred: file đã cập nhật",
+    "minimalism_brown: file đã cập nhật",
+    "song_hy_green: file đã cập nhật",
+    "boho_floral_green: file đã cập nhật",
+    "song_hy_v2_red: file đã cập nhật",
+    "song_hy_red: file đã cập nhật",
+    "silk_ribbon_green: file đã cập nhật",
+    "minimalism_green: file đã cập nhật",
+    "jasmine_white: file đã cập nhật",
+    "dragon_phoenix_v3_red: file đã cập nhật",
+    "dragon_phoenix_red: file đã cập nhật",
+    "silk_ribbon_darkred: file đã cập nhật",
+    "minimalism_darkbrown: file đã cập nhật",
+    "dragon_phoenix_v2_red: file đã cập nhật",
+    "double_dragon_red: file đã cập nhật",
+    "glass_garden_green: file đã cập nhật",
+    "double_phoenix_red: file đã cập nhật",
+    "double_dragon_green: file đã cập nhật",
+    "glass_garden_pink: file đã cập nhật",
+    "elegant_leaf_green: file đã cập nhật",
+    "silk_ribbon_pink: file đã cập nhật",
+    "dragon_phoenix_v4_red: file đã cập nhật",
+    "lien_hoa_v2_green: file đã cập nhật",
+    "chateau_green: file đã cập nhật",
+    "spring_garden_green: file đã cập nhật",
+    "chibi_red: file đã cập nhật",
+    "song_hac_red: file đã cập nhật",
+    "nhat_binh_red: file đã cập nhật",
+    "baroque_v2_darkgreen: file đã cập nhật",
+    "baroque_v2_darkred: file đã cập nhật",
+    "cherry_blossom_pink: file đã cập nhật",
+    "boho_floral_pink: file đã cập nhật",
+    "applique_lace_white: file đã cập nhật",
+    "silk_flora_brown: file đã cập nhật",
+    "hoa_tinh_red: file đã cập nhật",
+    "spring_garden_blue: file đã cập nhật",
+    "minimalism_darkblue: file đã cập nhật",
+    "royal_red: file đã cập nhật",
+    "minimalism_red: file đã cập nhật",
+    "spring_garden_red: file đã cập nhật",
+    "dragon_phoenix_green: file đã cập nhật",
+    "baroque_gold: file đã cập nhật",
+    "chateau_blue: file đã cập nhật",
+    "double_phoenix_green: file đã cập nhật",
+    "boho_floral_brown: file đã cập nhật",
+    "double_dragon_blue: file đã cập nhật",
+    "crystal_floral_blue: file đã cập nhật",
+    "dragon_phoenix_blue: file đã cập nhật",
+    "co_ba_red: file đã cập nhật",
+    "lien_hoa_pink: file đã cập nhật"
+   ]
   }
  ],
  "templates": [
@@ -463,7 +519,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/minimalism_darkred/cover.json",
     "key": "minimalism_darkred",
-    "sha": "4456d60c5ca811c9"
+    "sha": "96389560588b898d"
    },
    "files": {
     "spec": [
@@ -474,8 +530,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkred/cover.json",
-      "size": 1496,
-      "sha": "4456d60c5ca811c9"
+      "size": 1530,
+      "sha": "96389560588b898d"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkred/demo.json",
@@ -728,7 +784,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/minimalism_brown/cover.json",
     "key": "minimalism_brown",
-    "sha": "4e6dc17d90379383"
+    "sha": "0cb1c122937adc27"
    },
    "files": {
     "spec": [
@@ -739,8 +795,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_brown/cover.json",
-      "size": 1344,
-      "sha": "4e6dc17d90379383"
+      "size": 1378,
+      "sha": "0cb1c122937adc27"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_brown/demo.json",
@@ -997,7 +1053,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/song_hy_green/cover.json",
     "key": "song_hy_green",
-    "sha": "8207075d902fd8f5"
+    "sha": "9c2ff373883b7de1"
    },
    "files": {
     "spec": [
@@ -1008,8 +1064,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_green/cover.json",
-      "size": 1197,
-      "sha": "8207075d902fd8f5"
+      "size": 1234,
+      "sha": "9c2ff373883b7de1"
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_green/demo.json",
@@ -1226,7 +1282,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/boho_floral_green/cover.json",
     "key": "boho_floral_green",
-    "sha": "cc6476f6fbd4e069"
+    "sha": "11474a3596d08be9"
    },
    "files": {
     "spec": [
@@ -1237,8 +1293,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_green/cover.json",
-      "size": 1175,
-      "sha": "cc6476f6fbd4e069"
+      "size": 1212,
+      "sha": "11474a3596d08be9"
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_green/demo.json",
@@ -1435,7 +1491,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/song_hy_v2_red/cover.json",
     "key": "song_hy_v2_red",
-    "sha": "18e56d302ab4f204"
+    "sha": "8fad3bcb2b64883f"
    },
    "files": {
     "spec": [
@@ -1446,8 +1502,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_v2_red/cover.json",
-      "size": 1330,
-      "sha": "18e56d302ab4f204"
+      "size": 1367,
+      "sha": "8fad3bcb2b64883f"
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_v2_red/demo.json",
@@ -1624,7 +1680,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/song_hy_red/cover.json",
     "key": "song_hy_red",
-    "sha": "3b0bf47d0f6c5895"
+    "sha": "574b3c3efdf58286"
    },
    "files": {
     "spec": [
@@ -1635,8 +1691,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_red/cover.json",
-      "size": 1182,
-      "sha": "3b0bf47d0f6c5895"
+      "size": 1219,
+      "sha": "574b3c3efdf58286"
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_red/demo.json",
@@ -1890,7 +1946,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/silk_ribbon_green/cover.json",
     "key": "silk_ribbon_green",
-    "sha": "6b58695ab0351c0d"
+    "sha": "bfa3b78e8d597a4f"
    },
    "files": {
     "spec": [
@@ -1901,8 +1957,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_green/cover.json",
-      "size": 1311,
-      "sha": "6b58695ab0351c0d"
+      "size": 1351,
+      "sha": "bfa3b78e8d597a4f"
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_green/demo.json",
@@ -2069,7 +2125,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/minimalism_green/cover.json",
     "key": "minimalism_green",
-    "sha": "1e3f17bb139e5623"
+    "sha": "c10a4e9341562d97"
    },
    "files": {
     "spec": [
@@ -2080,8 +2136,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_green/cover.json",
-      "size": 1322,
-      "sha": "1e3f17bb139e5623"
+      "size": 1356,
+      "sha": "c10a4e9341562d97"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_green/demo.json",
@@ -2266,7 +2322,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/jasmine_white/cover.json",
     "key": "jasmine_white",
-    "sha": "60ee25bcbb2b32c4"
+    "sha": "478f6c37b4fd6801"
    },
    "files": {
     "spec": [
@@ -2277,8 +2333,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/jasmine_white/cover.json",
-      "size": 1117,
-      "sha": "60ee25bcbb2b32c4"
+      "size": 1154,
+      "sha": "478f6c37b4fd6801"
      },
      {
       "path": "src/features/invitation/shell/specs/jasmine_white/demo.json",
@@ -2417,7 +2473,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/dragon_phoenix_v3_red/cover.json",
     "key": "dragon_phoenix_v3_red",
-    "sha": "be29fd5949b2f2c8"
+    "sha": "8673b2c262da2cf0"
    },
    "files": {
     "spec": [
@@ -2428,8 +2484,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v3_red/cover.json",
-      "size": 1283,
-      "sha": "be29fd5949b2f2c8"
+      "size": 1320,
+      "sha": "8673b2c262da2cf0"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v3_red/demo.json",
@@ -2575,7 +2631,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/dragon_phoenix_red/cover.json",
     "key": "dragon_phoenix_red",
-    "sha": "f2e46452420dc737"
+    "sha": "70d1f7d39b8d0564"
    },
    "files": {
     "spec": [
@@ -2586,8 +2642,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_red/cover.json",
-      "size": 1329,
-      "sha": "f2e46452420dc737"
+      "size": 1369,
+      "sha": "70d1f7d39b8d0564"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_red/demo.json",
@@ -2806,7 +2862,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/silk_ribbon_darkred/cover.json",
     "key": "silk_ribbon_darkred",
-    "sha": "8d526d0cd40644c0"
+    "sha": "58f91fca5e49e452"
    },
    "files": {
     "spec": [
@@ -2817,8 +2873,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_darkred/cover.json",
-      "size": 1332,
-      "sha": "8d526d0cd40644c0"
+      "size": 1372,
+      "sha": "58f91fca5e49e452"
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_darkred/demo.json",
@@ -2985,7 +3041,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/minimalism_darkbrown/cover.json",
     "key": "minimalism_darkbrown",
-    "sha": "26a3bc215d49bc0b"
+    "sha": "5dbf549fb4765f96"
    },
    "files": {
     "spec": [
@@ -2996,8 +3052,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkbrown/cover.json",
-      "size": 1342,
-      "sha": "26a3bc215d49bc0b"
+      "size": 1382,
+      "sha": "5dbf549fb4765f96"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkbrown/demo.json",
@@ -3134,7 +3190,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/dragon_phoenix_v2_red/cover.json",
     "key": "dragon_phoenix_v2_red",
-    "sha": "138349f893ef320d"
+    "sha": "bc87e0d7b9d141fc"
    },
    "files": {
     "spec": [
@@ -3145,8 +3201,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v2_red/cover.json",
-      "size": 1327,
-      "sha": "138349f893ef320d"
+      "size": 1365,
+      "sha": "bc87e0d7b9d141fc"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v2_red/demo.json",
@@ -3262,7 +3318,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/double_dragon_red/cover.json",
     "key": "double_dragon_red",
-    "sha": "1a9fda6bfd5dbf68"
+    "sha": "b5193edfab035035"
    },
    "files": {
     "spec": [
@@ -3273,8 +3329,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_red/cover.json",
-      "size": 1799,
-      "sha": "1a9fda6bfd5dbf68"
+      "size": 1831,
+      "sha": "b5193edfab035035"
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_red/demo.json",
@@ -3518,7 +3574,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/glass_garden_green/cover.json",
     "key": "glass_garden_green",
-    "sha": "3460117fc3b42846"
+    "sha": "f357b23b9187c0a5"
    },
    "files": {
     "spec": [
@@ -3529,8 +3585,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_green/cover.json",
-      "size": 1365,
-      "sha": "3460117fc3b42846"
+      "size": 1400,
+      "sha": "f357b23b9187c0a5"
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_green/demo.json",
@@ -3669,7 +3725,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/double_phoenix_red/cover.json",
     "key": "double_phoenix_red",
-    "sha": "27af6ff2e88e18b4"
+    "sha": "837f7da0154f340a"
    },
    "files": {
     "spec": [
@@ -3680,8 +3736,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/double_phoenix_red/cover.json",
-      "size": 1613,
-      "sha": "27af6ff2e88e18b4"
+      "size": 1653,
+      "sha": "837f7da0154f340a"
      },
      {
       "path": "src/features/invitation/shell/specs/double_phoenix_red/demo.json",
@@ -3848,7 +3904,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/double_dragon_green/cover.json",
     "key": "double_dragon_green",
-    "sha": "6a7b952555cf01ed"
+    "sha": "f6fe3cf78de7071a"
    },
    "files": {
     "spec": [
@@ -3859,8 +3915,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_green/cover.json",
-      "size": 2014,
-      "sha": "6a7b952555cf01ed"
+      "size": 2046,
+      "sha": "f6fe3cf78de7071a"
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_green/demo.json",
@@ -4094,7 +4150,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/glass_garden_pink/cover.json",
     "key": "glass_garden_pink",
-    "sha": "94dd24947d3ca513"
+    "sha": "1f291665c7eda718"
    },
    "files": {
     "spec": [
@@ -4105,8 +4161,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_pink/cover.json",
-      "size": 1326,
-      "sha": "94dd24947d3ca513"
+      "size": 1361,
+      "sha": "1f291665c7eda718"
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_pink/demo.json",
@@ -4402,7 +4458,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/elegant_leaf_green/cover.json",
     "key": "elegant_leaf_green",
-    "sha": "0168b28215e21301"
+    "sha": "56fd9d70b7ad2c91"
    },
    "files": {
     "spec": [
@@ -4413,8 +4469,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/elegant_leaf_green/cover.json",
-      "size": 972,
-      "sha": "0168b28215e21301"
+      "size": 1005,
+      "sha": "56fd9d70b7ad2c91"
      },
      {
       "path": "src/features/invitation/shell/specs/elegant_leaf_green/demo.json",
@@ -4543,7 +4599,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/silk_ribbon_pink/cover.json",
     "key": "silk_ribbon_pink",
-    "sha": "580e56b01acaf922"
+    "sha": "525b3c3c3fba2e0e"
    },
    "files": {
     "spec": [
@@ -4554,8 +4610,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_pink/cover.json",
-      "size": 1321,
-      "sha": "580e56b01acaf922"
+      "size": 1361,
+      "sha": "525b3c3c3fba2e0e"
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_pink/demo.json",
@@ -4722,7 +4778,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/dragon_phoenix_v4_red/cover.json",
     "key": "dragon_phoenix_v4_red",
-    "sha": "f3659351d65b719a"
+    "sha": "737bac3e4e2faf7d"
    },
    "files": {
     "spec": [
@@ -4733,8 +4789,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v4_red/cover.json",
-      "size": 1421,
-      "sha": "f3659351d65b719a"
+      "size": 1458,
+      "sha": "737bac3e4e2faf7d"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v4_red/demo.json",
@@ -5087,7 +5143,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/lien_hoa_v2_green/cover.json",
     "key": "lien_hoa_v2_green",
-    "sha": "1594e7a090134c1b"
+    "sha": "b294698bc6d502cc"
    },
    "files": {
     "spec": [
@@ -5098,8 +5154,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/lien_hoa_v2_green/cover.json",
-      "size": 1518,
-      "sha": "1594e7a090134c1b"
+      "size": 1558,
+      "sha": "b294698bc6d502cc"
      },
      {
       "path": "src/features/invitation/shell/specs/lien_hoa_v2_green/demo.json",
@@ -5389,7 +5445,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/chateau_green/cover.json",
     "key": "chateau_green",
-    "sha": "9ebdc4eb6fd89df5"
+    "sha": "4b2f42f452d1c0a0"
    },
    "files": {
     "spec": [
@@ -5400,8 +5456,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/chateau_green/cover.json",
-      "size": 1240,
-      "sha": "9ebdc4eb6fd89df5"
+      "size": 1280,
+      "sha": "4b2f42f452d1c0a0"
      },
      {
       "path": "src/features/invitation/shell/specs/chateau_green/demo.json",
@@ -5598,7 +5654,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/spring_garden_green/cover.json",
     "key": "spring_garden_green",
-    "sha": "2093ef1c771fd43c"
+    "sha": "51ad5cd067081eea"
    },
    "files": {
     "spec": [
@@ -5609,8 +5665,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_green/cover.json",
-      "size": 1166,
-      "sha": "2093ef1c771fd43c"
+      "size": 1200,
+      "sha": "51ad5cd067081eea"
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_green/demo.json",
@@ -5750,7 +5806,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/chibi_red/cover.json",
     "key": "chibi_red",
-    "sha": "3e821a3785fa7edb"
+    "sha": "011474fc25bed69f"
    },
    "files": {
     "spec": [
@@ -5761,8 +5817,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/chibi_red/cover.json",
-      "size": 1970,
-      "sha": "3e821a3785fa7edb"
+      "size": 2002,
+      "sha": "011474fc25bed69f"
      },
      {
       "path": "src/features/invitation/shell/specs/chibi_red/demo.json",
@@ -5931,7 +5987,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/song_hac_red/cover.json",
     "key": "song_hac_red",
-    "sha": "ef77e08c78f57410"
+    "sha": "de3d7392aad84d5c"
    },
    "files": {
     "spec": [
@@ -5942,8 +5998,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/song_hac_red/cover.json",
-      "size": 1481,
-      "sha": "ef77e08c78f57410"
+      "size": 1512,
+      "sha": "de3d7392aad84d5c"
      },
      {
       "path": "src/features/invitation/shell/specs/song_hac_red/demo.json",
@@ -6147,7 +6203,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/nhat_binh_red/cover.json",
     "key": "nhat_binh_red",
-    "sha": "95b2cb5913596972"
+    "sha": "d758f58bf7795ceb"
    },
    "files": {
     "spec": [
@@ -6158,8 +6214,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/nhat_binh_red/cover.json",
-      "size": 2240,
-      "sha": "95b2cb5913596972"
+      "size": 2280,
+      "sha": "d758f58bf7795ceb"
      },
      {
       "path": "src/features/invitation/shell/specs/nhat_binh_red/demo.json",
@@ -6296,7 +6352,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/baroque_v2_darkgreen/cover.json",
     "key": "baroque_v2_darkgreen",
-    "sha": "88420099cd704f94"
+    "sha": "d78588f06e069cc8"
    },
    "files": {
     "spec": [
@@ -6307,8 +6363,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkgreen/cover.json",
-      "size": 1267,
-      "sha": "88420099cd704f94"
+      "size": 1307,
+      "sha": "d78588f06e069cc8"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkgreen/demo.json",
@@ -6586,7 +6642,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/baroque_v2_darkred/cover.json",
     "key": "baroque_v2_darkred",
-    "sha": "b0b192e71c9b4128"
+    "sha": "0e1e155261e83ea4"
    },
    "files": {
     "spec": [
@@ -6597,8 +6653,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkred/cover.json",
-      "size": 1285,
-      "sha": "b0b192e71c9b4128"
+      "size": 1325,
+      "sha": "0e1e155261e83ea4"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkred/demo.json",
@@ -6913,7 +6969,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/cherry_blossom_pink/cover.json",
     "key": "cherry_blossom_pink",
-    "sha": "33dca09cbc16807c"
+    "sha": "17f6b89bb59ea0b1"
    },
    "files": {
     "spec": [
@@ -6924,8 +6980,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/cherry_blossom_pink/cover.json",
-      "size": 860,
-      "sha": "33dca09cbc16807c"
+      "size": 890,
+      "sha": "17f6b89bb59ea0b1"
      },
      {
       "path": "src/features/invitation/shell/specs/cherry_blossom_pink/demo.json",
@@ -7097,7 +7153,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/boho_floral_pink/cover.json",
     "key": "boho_floral_pink",
-    "sha": "2b7a63d8ba15e679"
+    "sha": "5ad1161fa7d227b0"
    },
    "files": {
     "spec": [
@@ -7108,8 +7164,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_pink/cover.json",
-      "size": 1261,
-      "sha": "2b7a63d8ba15e679"
+      "size": 1298,
+      "sha": "5ad1161fa7d227b0"
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_pink/demo.json",
@@ -7270,7 +7326,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/applique_lace_white/cover.json",
     "key": "applique_lace_white",
-    "sha": "ea268e1c9ee3d520"
+    "sha": "44f86c796c1c77b0"
    },
    "files": {
     "spec": [
@@ -7281,8 +7337,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/applique_lace_white/cover.json",
-      "size": 1366,
-      "sha": "ea268e1c9ee3d520"
+      "size": 1406,
+      "sha": "44f86c796c1c77b0"
      },
      {
       "path": "src/features/invitation/shell/specs/applique_lace_white/demo.json",
@@ -7477,7 +7533,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/silk_flora_brown/cover.json",
     "key": "silk_flora_brown",
-    "sha": "5512b80eb0f16361"
+    "sha": "65cc76e1240868ae"
    },
    "files": {
     "spec": [
@@ -7488,8 +7544,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/silk_flora_brown/cover.json",
-      "size": 1226,
-      "sha": "5512b80eb0f16361"
+      "size": 1263,
+      "sha": "65cc76e1240868ae"
      },
      {
       "path": "src/features/invitation/shell/specs/silk_flora_brown/demo.json",
@@ -7633,7 +7689,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/hoa_tinh_red/cover.json",
     "key": "hoa_tinh_red",
-    "sha": "e57b4a46eeca8772"
+    "sha": "5df50960dc25f933"
    },
    "files": {
     "spec": [
@@ -7644,8 +7700,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_tinh_red/cover.json",
-      "size": 1197,
-      "sha": "e57b4a46eeca8772"
+      "size": 1230,
+      "sha": "5df50960dc25f933"
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_tinh_red/demo.json",
@@ -7797,7 +7853,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/spring_garden_blue/cover.json",
     "key": "spring_garden_blue",
-    "sha": "8745ca45b477443c"
+    "sha": "807a87965526905b"
    },
    "files": {
     "spec": [
@@ -7808,8 +7864,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_blue/cover.json",
-      "size": 923,
-      "sha": "8745ca45b477443c"
+      "size": 958,
+      "sha": "807a87965526905b"
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_blue/demo.json",
@@ -7952,7 +8008,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/minimalism_darkblue/cover.json",
     "key": "minimalism_darkblue",
-    "sha": "6c5fb7b959590f80"
+    "sha": "79cca53ca8dc5fed"
    },
    "files": {
     "spec": [
@@ -7963,8 +8019,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkblue/cover.json",
-      "size": 1332,
-      "sha": "6c5fb7b959590f80"
+      "size": 1372,
+      "sha": "79cca53ca8dc5fed"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkblue/demo.json",
@@ -8108,7 +8164,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/royal_red/cover.json",
     "key": "royal_red",
-    "sha": "eb4291602531019d"
+    "sha": "6adb64b00d68b4f7"
    },
    "files": {
     "spec": [
@@ -8119,8 +8175,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/royal_red/cover.json",
-      "size": 1029,
-      "sha": "eb4291602531019d"
+      "size": 1062,
+      "sha": "6adb64b00d68b4f7"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_red/demo.json",
@@ -8266,7 +8322,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/minimalism_red/cover.json",
     "key": "minimalism_red",
-    "sha": "8b05d3cf2d8de02b"
+    "sha": "28b188e9f4d4dabf"
    },
    "files": {
     "spec": [
@@ -8277,8 +8333,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_red/cover.json",
-      "size": 1198,
-      "sha": "8b05d3cf2d8de02b"
+      "size": 1235,
+      "sha": "28b188e9f4d4dabf"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_red/demo.json",
@@ -8431,7 +8487,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/spring_garden_red/cover.json",
     "key": "spring_garden_red",
-    "sha": "0d729348da04755a"
+    "sha": "f37839dc4fe8b4ac"
    },
    "files": {
     "spec": [
@@ -8442,8 +8498,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_red/cover.json",
-      "size": 1153,
-      "sha": "0d729348da04755a"
+      "size": 1187,
+      "sha": "f37839dc4fe8b4ac"
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_red/demo.json",
@@ -8696,7 +8752,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/dragon_phoenix_green/cover.json",
     "key": "dragon_phoenix_green",
-    "sha": "9d2cee9fb31dcb4f"
+    "sha": "333813b6a8429dab"
    },
    "files": {
     "spec": [
@@ -8707,8 +8763,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_green/cover.json",
-      "size": 1332,
-      "sha": "9d2cee9fb31dcb4f"
+      "size": 1373,
+      "sha": "333813b6a8429dab"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_green/demo.json",
@@ -8852,7 +8908,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/baroque_gold/cover.json",
     "key": "baroque_gold",
-    "sha": "8be79eb7966f8e29"
+    "sha": "677bd4ee080ec53e"
    },
    "files": {
     "spec": [
@@ -8863,8 +8919,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_gold/cover.json",
-      "size": 1287,
-      "sha": "8be79eb7966f8e29"
+      "size": 1327,
+      "sha": "677bd4ee080ec53e"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_gold/demo.json",
@@ -9023,7 +9079,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/chateau_blue/cover.json",
     "key": "chateau_blue",
-    "sha": "a6596411639af2f7"
+    "sha": "85fda06de39a2ebb"
    },
    "files": {
     "spec": [
@@ -9034,8 +9090,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/chateau_blue/cover.json",
-      "size": 1235,
-      "sha": "a6596411639af2f7"
+      "size": 1275,
+      "sha": "85fda06de39a2ebb"
      },
      {
       "path": "src/features/invitation/shell/specs/chateau_blue/demo.json",
@@ -9234,7 +9290,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/double_phoenix_green/cover.json",
     "key": "double_phoenix_green",
-    "sha": "6a0322a8dbbd094a"
+    "sha": "925552839ca558cb"
    },
    "files": {
     "spec": [
@@ -9245,8 +9301,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/double_phoenix_green/cover.json",
-      "size": 1609,
-      "sha": "6a0322a8dbbd094a"
+      "size": 1649,
+      "sha": "925552839ca558cb"
      },
      {
       "path": "src/features/invitation/shell/specs/double_phoenix_green/demo.json",
@@ -9413,7 +9469,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/boho_floral_brown/cover.json",
     "key": "boho_floral_brown",
-    "sha": "d03c0aca046380ed"
+    "sha": "df08d479860a5e39"
    },
    "files": {
     "spec": [
@@ -9424,8 +9480,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_brown/cover.json",
-      "size": 1172,
-      "sha": "d03c0aca046380ed"
+      "size": 1205,
+      "sha": "df08d479860a5e39"
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_brown/demo.json",
@@ -9586,7 +9642,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/double_dragon_blue/cover.json",
     "key": "double_dragon_blue",
-    "sha": "9eedc4562ff656d9"
+    "sha": "9bb6e29bee0e43be"
    },
    "files": {
     "spec": [
@@ -9597,8 +9653,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_blue/cover.json",
-      "size": 2012,
-      "sha": "9eedc4562ff656d9"
+      "size": 2044,
+      "sha": "9bb6e29bee0e43be"
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_blue/demo.json",
@@ -9968,7 +10024,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/crystal_floral_blue/cover.json",
     "key": "crystal_floral_blue",
-    "sha": "0cacb79075e925bb"
+    "sha": "fefe08a4a7dc243e"
    },
    "files": {
     "spec": [
@@ -9979,8 +10035,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_blue/cover.json",
-      "size": 1393,
-      "sha": "0cacb79075e925bb"
+      "size": 1433,
+      "sha": "fefe08a4a7dc243e"
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_blue/demo.json",
@@ -10268,7 +10324,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/dragon_phoenix_blue/cover.json",
     "key": "dragon_phoenix_blue",
-    "sha": "b1976b93de4626b8"
+    "sha": "f2c06750ed412c84"
    },
    "files": {
     "spec": [
@@ -10279,8 +10335,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_blue/cover.json",
-      "size": 1329,
-      "sha": "b1976b93de4626b8"
+      "size": 1370,
+      "sha": "f2c06750ed412c84"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_blue/demo.json",
@@ -10424,7 +10480,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/co_ba_red/cover.json",
     "key": "co_ba_red",
-    "sha": "c9c0bdedb1a281d2"
+    "sha": "6acff3b1ebaaa256"
    },
    "files": {
     "spec": [
@@ -10435,8 +10491,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/co_ba_red/cover.json",
-      "size": 997,
-      "sha": "c9c0bdedb1a281d2"
+      "size": 1025,
+      "sha": "6acff3b1ebaaa256"
      },
      {
       "path": "src/features/invitation/shell/specs/co_ba_red/demo.json",
@@ -10540,7 +10596,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/lien_hoa_pink/cover.json",
     "key": "lien_hoa_pink",
-    "sha": "f3d5d2bed44fc845"
+    "sha": "1ef76d58058d6d16"
    },
    "files": {
     "spec": [
@@ -10551,8 +10607,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/lien_hoa_pink/cover.json",
-      "size": 1199,
-      "sha": "f3d5d2bed44fc845"
+      "size": 1236,
+      "sha": "1ef76d58058d6d16"
      },
      {
       "path": "src/features/invitation/shell/specs/lien_hoa_pink/demo.json",
@@ -10739,7 +10795,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/minimalism_purple/cover.json",
     "key": "minimalism_purple",
-    "sha": "fb69bdbfcaba7f0e"
+    "sha": "fa4bc0abd1248adb"
    },
    "files": {
     "spec": [
@@ -10750,8 +10806,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_purple/cover.json",
-      "size": 1346,
-      "sha": "fb69bdbfcaba7f0e"
+      "size": 1386,
+      "sha": "fa4bc0abd1248adb"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_purple/demo.json",
@@ -10958,7 +11014,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/porcelain_v2_green/cover.json",
     "key": "porcelain_v2_green",
-    "sha": "b4c3759b1dc65dcb"
+    "sha": "f8c209a514d6cd22"
    },
    "files": {
     "spec": [
@@ -10969,8 +11025,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_green/cover.json",
-      "size": 1536,
-      "sha": "b4c3759b1dc65dcb"
+      "size": 1576,
+      "sha": "f8c209a514d6cd22"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_green/demo.json",
@@ -11230,7 +11286,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/dried_flower_v2_green/cover.json",
     "key": "dried_flower_v2_green",
-    "sha": "ed991040161c5975"
+    "sha": "c383d8e9e9513fb5"
    },
    "files": {
     "spec": [
@@ -11241,8 +11297,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dried_flower_v2_green/cover.json",
-      "size": 1209,
-      "sha": "ed991040161c5975"
+      "size": 1245,
+      "sha": "c383d8e9e9513fb5"
      },
      {
       "path": "src/features/invitation/shell/specs/dried_flower_v2_green/demo.json",
@@ -11424,7 +11480,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/porcelain_v2_pink/cover.json",
     "key": "porcelain_v2_pink",
-    "sha": "2293bc127806797a"
+    "sha": "cda347dd78a60923"
    },
    "files": {
     "spec": [
@@ -11435,8 +11491,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_pink/cover.json",
-      "size": 1527,
-      "sha": "2293bc127806797a"
+      "size": 1567,
+      "sha": "cda347dd78a60923"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_pink/demo.json",
@@ -11596,7 +11652,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/hoa_kho_v2_blue/cover.json",
     "key": "hoa_kho_v2_blue",
-    "sha": "865bf5685d62ee99"
+    "sha": "df20d5ac341eb5f6"
    },
    "files": {
     "spec": [
@@ -11607,8 +11663,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_kho_v2_blue/cover.json",
-      "size": 1444,
-      "sha": "865bf5685d62ee99"
+      "size": 1479,
+      "sha": "df20d5ac341eb5f6"
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_kho_v2_blue/demo.json",
@@ -11790,7 +11846,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/dragon_phoenix_black/cover.json",
     "key": "dragon_phoenix_black",
-    "sha": "4e3be6808e0e6fea"
+    "sha": "a587b7970bfdb009"
    },
    "files": {
     "spec": [
@@ -11801,8 +11857,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_black/cover.json",
-      "size": 1335,
-      "sha": "4e3be6808e0e6fea"
+      "size": 1375,
+      "sha": "a587b7970bfdb009"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_black/demo.json",
@@ -11946,7 +12002,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/royal_v2_green/cover.json",
     "key": "royal_v2_green",
-    "sha": "0579fe7e2566d21f"
+    "sha": "63a96782d238fcda"
    },
    "files": {
     "spec": [
@@ -11957,8 +12013,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/royal_v2_green/cover.json",
-      "size": 1129,
-      "sha": "0579fe7e2566d21f"
+      "size": 1166,
+      "sha": "63a96782d238fcda"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_v2_green/demo.json",
@@ -12152,7 +12208,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/royal_green/cover.json",
     "key": "royal_green",
-    "sha": "8358d001cc245a96"
+    "sha": "c4f34764b75f90e6"
    },
    "files": {
     "spec": [
@@ -12163,8 +12219,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/royal_green/cover.json",
-      "size": 1036,
-      "sha": "8358d001cc245a96"
+      "size": 1073,
+      "sha": "c4f34764b75f90e6"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_green/demo.json",
@@ -12312,7 +12368,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/baroque_blue/cover.json",
     "key": "baroque_blue",
-    "sha": "9acdc6d2b9d86bad"
+    "sha": "d7f474c90f83ef5e"
    },
    "files": {
     "spec": [
@@ -12323,8 +12379,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_blue/cover.json",
-      "size": 1696,
-      "sha": "9acdc6d2b9d86bad"
+      "size": 1730,
+      "sha": "d7f474c90f83ef5e"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_blue/demo.json",
@@ -12518,7 +12574,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/porcelain_brown/cover.json",
     "key": "porcelain_brown",
-    "sha": "9818b760915f8be0"
+    "sha": "3d8cdb00fc5cea45"
    },
    "files": {
     "spec": [
@@ -12529,8 +12585,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_brown/cover.json",
-      "size": 1154,
-      "sha": "9818b760915f8be0"
+      "size": 1191,
+      "sha": "3d8cdb00fc5cea45"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_brown/demo.json",
@@ -12642,7 +12698,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/crystal_floral_red/cover.json",
     "key": "crystal_floral_red",
-    "sha": "c385fc91a1f91d3e"
+    "sha": "dfe7095f4bb1035a"
    },
    "files": {
     "spec": [
@@ -12653,8 +12709,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_red/cover.json",
-      "size": 1385,
-      "sha": "c385fc91a1f91d3e"
+      "size": 1425,
+      "sha": "dfe7095f4bb1035a"
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_red/demo.json",
@@ -12949,7 +13005,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/royal_blue/cover.json",
     "key": "royal_blue",
-    "sha": "3ae525dd3036c409"
+    "sha": "ad4463e9a074c2ed"
    },
    "files": {
     "spec": [
@@ -12960,8 +13016,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/royal_blue/cover.json",
-      "size": 1032,
-      "sha": "3ae525dd3036c409"
+      "size": 1067,
+      "sha": "ad4463e9a074c2ed"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_blue/demo.json",
@@ -13107,7 +13163,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/riviera_blue/cover.json",
     "key": "riviera_blue",
-    "sha": "594dd5478a666bee"
+    "sha": "a3f8981ee9d4c7d3"
    },
    "files": {
     "spec": [
@@ -13118,8 +13174,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/riviera_blue/cover.json",
-      "size": 1149,
-      "sha": "594dd5478a666bee"
+      "size": 1186,
+      "sha": "a3f8981ee9d4c7d3"
      },
      {
       "path": "src/features/invitation/shell/specs/riviera_blue/demo.json",
@@ -13579,7 +13635,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/florence_brown/cover.json",
     "key": "florence_brown",
-    "sha": "54cfded2aadeb9bd"
+    "sha": "eedee6c306787b30"
    },
    "files": {
     "spec": [
@@ -13590,8 +13646,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/florence_brown/cover.json",
-      "size": 982,
-      "sha": "54cfded2aadeb9bd"
+      "size": 1019,
+      "sha": "eedee6c306787b30"
      },
      {
       "path": "src/features/invitation/shell/specs/florence_brown/demo.json",
@@ -13854,7 +13910,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/baroque_v2_darkblue/cover.json",
     "key": "baroque_v2_darkblue",
-    "sha": "c349c14b7d7ec897"
+    "sha": "c738442d89f0aa55"
    },
    "files": {
     "spec": [
@@ -13865,8 +13921,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkblue/cover.json",
-      "size": 1262,
-      "sha": "c349c14b7d7ec897"
+      "size": 1302,
+      "sha": "c738442d89f0aa55"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkblue/demo.json",
@@ -14546,7 +14602,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/sunflower_yellow/cover.json",
     "key": "sunflower_yellow",
-    "sha": "272cb9e311e9a75d"
+    "sha": "1e92aae77d79784e"
    },
    "files": {
     "spec": [
@@ -14557,8 +14613,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/sunflower_yellow/cover.json",
-      "size": 885,
-      "sha": "272cb9e311e9a75d"
+      "size": 919,
+      "sha": "1e92aae77d79784e"
      },
      {
       "path": "src/features/invitation/shell/specs/sunflower_yellow/demo.json",
@@ -14725,7 +14781,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/crystal_floral_green/cover.json",
     "key": "crystal_floral_green",
-    "sha": "98c7b785290a5357"
+    "sha": "3b659710bf78d8a3"
    },
    "files": {
     "spec": [
@@ -14736,8 +14792,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_green/cover.json",
-      "size": 1395,
-      "sha": "98c7b785290a5357"
+      "size": 1435,
+      "sha": "3b659710bf78d8a3"
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_green/demo.json",
@@ -15257,7 +15313,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/porcelain_v2_red/cover.json",
     "key": "porcelain_v2_red",
-    "sha": "1a5fcd8347c43108"
+    "sha": "5c1e1f8f0ffd4504"
    },
    "files": {
     "spec": [
@@ -15268,8 +15324,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_red/cover.json",
-      "size": 1532,
-      "sha": "1a5fcd8347c43108"
+      "size": 1572,
+      "sha": "5c1e1f8f0ffd4504"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_red/demo.json",
@@ -15429,7 +15485,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/porcelain_blue/cover.json",
     "key": "porcelain_blue",
-    "sha": "aa9229194f7f277c"
+    "sha": "226ed2ee80c02b80"
    },
    "files": {
     "spec": [
@@ -15440,8 +15496,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_blue/cover.json",
-      "size": 1142,
-      "sha": "aa9229194f7f277c"
+      "size": 1179,
+      "sha": "226ed2ee80c02b80"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_blue/demo.json",
@@ -15693,7 +15749,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/porcelain_red/cover.json",
     "key": "porcelain_red",
-    "sha": "f0b9c0286df4e602"
+    "sha": "c5068c8750e75859"
    },
    "files": {
     "spec": [
@@ -15704,8 +15760,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_red/cover.json",
-      "size": 1147,
-      "sha": "f0b9c0286df4e602"
+      "size": 1179,
+      "sha": "c5068c8750e75859"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_red/demo.json",
@@ -15814,7 +15870,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/hoa_dai_pink/cover.json",
     "key": "hoa_dai_pink",
-    "sha": "f1ccbad2279d74d6"
+    "sha": "6e2d691a1138498f"
    },
    "files": {
     "spec": [
@@ -15825,8 +15881,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_dai_pink/cover.json",
-      "size": 1042,
-      "sha": "f1ccbad2279d74d6"
+      "size": 1076,
+      "sha": "6e2d691a1138498f"
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_dai_pink/demo.json",
@@ -16228,7 +16284,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/san_miguel_yellow/cover.json",
     "key": "san_miguel_yellow",
-    "sha": "9bf0a1a83a6defed"
+    "sha": "46ed57a5e98b5bf0"
    },
    "files": {
     "spec": [
@@ -16239,8 +16295,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/san_miguel_yellow/cover.json",
-      "size": 995,
-      "sha": "9bf0a1a83a6defed"
+      "size": 1032,
+      "sha": "46ed57a5e98b5bf0"
      },
      {
       "path": "src/features/invitation/shell/specs/san_miguel_yellow/demo.json",
@@ -16474,7 +16530,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/glass_garden_blue/cover.json",
     "key": "glass_garden_blue",
-    "sha": "4230a253630da49b"
+    "sha": "f534cd1276ddfec6"
    },
    "files": {
     "spec": [
@@ -16485,8 +16541,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_blue/cover.json",
-      "size": 1308,
-      "sha": "4230a253630da49b"
+      "size": 1343,
+      "sha": "f534cd1276ddfec6"
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_blue/demo.json",
@@ -16615,7 +16671,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/royal_v2_purple/cover.json",
     "key": "royal_v2_purple",
-    "sha": "f20daf0d21425f95"
+    "sha": "da60b9c71a507bda"
    },
    "files": {
     "spec": [
@@ -16626,8 +16682,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/royal_v2_purple/cover.json",
-      "size": 1173,
-      "sha": "f20daf0d21425f95"
+      "size": 1210,
+      "sha": "da60b9c71a507bda"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_v2_purple/demo.json",
@@ -16836,7 +16892,7 @@
    "cover": {
     "file": "src/features/invitation/shell/specs/hoa_kho_orange/cover.json",
     "key": "hoa_kho_orange",
-    "sha": "c8dff3042913e31c"
+    "sha": "df26b1b01c5c3fc5"
    },
    "files": {
     "spec": [
@@ -16847,8 +16903,8 @@
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_kho_orange/cover.json",
-      "size": 1167,
-      "sha": "c8dff3042913e31c"
+      "size": 1207,
+      "sha": "df26b1b01c5c3fc5"
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_kho_orange/demo.json",

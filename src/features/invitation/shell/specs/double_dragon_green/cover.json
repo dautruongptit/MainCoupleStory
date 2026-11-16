@@ -1,4 +1,5 @@
 {
+  "component": "SongLongCover",
   "accentColor": "#f0d497",
   "bg": "linear-gradient(to bottom right, #0f2215, #0a180e, #061008)",
   "btnBg": "#f0d497",

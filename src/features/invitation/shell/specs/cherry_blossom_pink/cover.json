@@ -1,4 +1,5 @@
 {
+  "component": "AnhDaoCover",
   "accentColor": "#ae4c51",
   "bg": "linear-gradient(to bottom right, #ba4a59, #ae4c51, #9e3c41)",
   "btnBg": "#ae4c51",

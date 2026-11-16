@@ -1,4 +1,5 @@
 {
+  "component": "WildflowerCover",
   "accentColor": "#567c22",
   "bg": "linear-gradient(to bottom right, #f6d2dc, #b75873, #8d3f57)",
   "btnBg": "#567c22",

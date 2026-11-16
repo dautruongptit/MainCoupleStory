@@ -1,4 +1,5 @@
 {
+  "component": "BaroquePorcelainCover",
   "accentColor": "#8D8F58",
   "bg": "linear-gradient(to bottom right, rgba(138,90,42,0.9), rgba(185,125,62,0.9), rgba(216,175,135,0.9)), url(/images/themes/baroque-gold/bg.webp) center / 1200px repeat",
   "btnBg": "#8D8F58",

@@ -3,6 +3,7 @@ import { TEMPLATES, TEMPLATE_ROW_BY_ID, introDefaultFor, templateByIdOrSlug } fr
 import { getCapabilities, getTemplateSpec } from "./index";
 import { blocksForFamily } from "@/features/invitation/shell/blocks";
 import { GIFT_SPECS } from "@/features/invitation/shell/blocks/shared/giftSpecs";
+import { COVER_COMPONENTS, COVER_CONFIGS, getCoverComponent } from "@/features/invitation/components/covers";
 import { buildDemoInv } from "@/features/invitation/demo/buildDemoInv";
 
 /** Toàn vẹn của nguồn cấu hình duy nhất `specs/<id>/`: mẫu nào trong kho cũng dựng được thiệp. */
@@ -28,6 +29,14 @@ describe("specs/<id>/ — mỗi mẫu một thư mục", () => {
       const missing = caps.blocks.filter((b) => !blocks[b]);
       expect(missing, `${t.id} (họ ${caps.family}): khối chưa đăng ký`).toEqual([]);
     }
+  });
+
+  it("tên component bìa ghi trong cover.json đều tồn tại", () => {
+    for (const [id, cfg] of Object.entries(COVER_CONFIGS)) {
+      expect(cfg.templateId, id).toBe(id);
+      if (cfg.component) expect(Object.keys(COVER_COMPONENTS), `${id}: component bìa "${cfg.component}"`).toContain(cfg.component);
+    }
+    for (const t of TEMPLATES) expect(getCoverComponent(t.id), t.id).toBeTypeOf("function");
   });
 
   it("mẫu nào cũng có dữ liệu hộp quà đo từ trang gốc", () => {

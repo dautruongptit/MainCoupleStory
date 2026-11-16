@@ -1,4 +1,5 @@
 {
+  "component": "PorcelainTileCover",
   "accentColor": "#08315a",
   "bg": "linear-gradient(to right, transparent calc(50% - 451px), #082f55 calc(50% - 451px), #082f55 calc(50% - 449px), transparent calc(50% - 449px), transparent calc(50% + 449px), #082f55 calc(50% + 449px), #082f55 calc(50% + 451px), transparent calc(50% + 451px)), linear-gradient(to right, #f6f3e7 calc(50% - 450px), rgba(246,243,231,0) calc(50% - 450px), rgba(246,243,231,0) calc(50% + 450px), #f6f3e7 calc(50% + 450px)), url(\"/images/themes/porcelain-blue/floral-tile.webp\") 0 0 / 441px repeat, #f6f3e7",
   "btnBg": "#08315a",

@@ -33,6 +33,8 @@ export interface CoverConfig {
   rgb: string;
   btnBg: string;
   btnTextColor: string;
+  /** Tên component bìa của mẫu (khóa trong `COVER_COMPONENTS` ở covers/index.ts); không ghi = bìa mặc định. */
+  component?: string;
   /** Tên cô dâu chú rể lên cỡ lớn từ breakpoint sm (640px) thay vì md (768px), như trang gốc. */
   nameFromSm?: boolean;
   /** Hiệu ứng chuyển cảnh riêng khi bấm "Mở thiệp" (mặc định: hạt tuôn từ dấu sáp + 2 vòng sóng). */

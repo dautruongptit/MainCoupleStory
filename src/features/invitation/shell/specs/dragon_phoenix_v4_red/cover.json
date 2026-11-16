@@ -1,4 +1,5 @@
 {
+  "component": "TraditionalV2Cover",
   "accentColor": "#FFD390",
   "ampFont": "\"Ms Madi\", \"Carattere\", ChungDoiIndic, cursive",
   "bg": "linear-gradient(to bottom right, #A50000, #8C0000, #5A0000)",

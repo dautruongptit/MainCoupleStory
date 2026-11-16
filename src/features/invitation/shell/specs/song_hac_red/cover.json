@@ -1,4 +1,5 @@
 {
+  "component": "SongHacCover",
   "accentColor": "#ffe3b1",
   "bg": "linear-gradient(to bottom right, #780002, #610102, #280000)",
   "btnBg": "#ffe3b1",

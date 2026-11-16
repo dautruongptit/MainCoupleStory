@@ -1,4 +1,5 @@
 {
+  "component": "LongPhungImperialCover",
   "accentColor": "#ffe3b1",
   "bg": "linear-gradient(to bottom right, #080e07, #050905, #020402)",
   "btnBg": "#ffe3b1",
