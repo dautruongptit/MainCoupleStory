@@ -1,0 +1,20 @@
+{
+  "order": 44,
+  "slug": "lau-dai-lam",
+  "name": "Lâu Đài - Lam",
+  "desc": "Phong cách lâu đài châu Âu với biệt thự lớn, vòi phun nước và cây bách Ý; tông xanh lam sâu trên nền trắng, font script lãng mạn.",
+  "img": "listing/chateau_blue.cc9f22c8.webp",
+  "full": "full/chateau_blue.07e262a0.webp",
+  "tags": [
+    "Lâu đài",
+    "Lam",
+    "Châu Âu"
+  ],
+  "previewFocal": 8.5,
+  "palette": {
+    "bg": "#FFFFFF",
+    "ink": "#123467",
+    "rgb": "18, 52, 103",
+    "cover": "linear-gradient(to bottom right, #0c2147, #123467, #1a4080)"
+  }
+}

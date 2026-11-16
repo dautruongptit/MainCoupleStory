@@ -1,0 +1,19 @@
+{
+  "order": 18,
+  "slug": "song-long-xanh",
+  "name": "Song Long - Xanh",
+  "desc": "Thanh lịch với tông màu xanh lá tự nhiên",
+  "img": "listing/double_dragon_green.4f7b14c5.webp",
+  "full": "full/double_dragon_green.503d44a0.webp",
+  "tags": [
+    "Truyền thống",
+    "Xanh lá",
+    "Thanh lịch"
+  ],
+  "palette": {
+    "bg": "#ece8d6",
+    "ink": "#1f3a25",
+    "rgb": "31, 58, 37",
+    "cover": "linear-gradient(to bottom right, #0f2215, #0a180e, #061008)"
+  }
+}

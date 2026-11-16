@@ -1,0 +1,20 @@
+{
+  "order": 40,
+  "slug": "minimalism-do",
+  "name": "Minimalism - Đỏ",
+  "desc": "Tối giản thanh lịch với nền trắng tinh tế và sắc đỏ chủ đạo",
+  "img": "listing/minimalism_red.d31b2e39.webp",
+  "full": "full/minimalism_red.b8a80906.webp",
+  "tags": [
+    "Tối giản",
+    "Đỏ",
+    "Thanh lịch"
+  ],
+  "previewFocal": 5.8,
+  "palette": {
+    "bg": "#FFFAF7",
+    "ink": "#7C151A",
+    "rgb": "124, 21, 26",
+    "cover": "linear-gradient(to bottom right, #7C151A, #5a0e12, #3d090d)"
+  }
+}

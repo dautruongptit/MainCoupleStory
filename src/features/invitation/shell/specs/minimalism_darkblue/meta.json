@@ -1,0 +1,20 @@
+{
+  "order": 38,
+  "slug": "minimalism-lam-dam",
+  "name": "Minimalism - Lam Đậm",
+  "desc": "Tối giản trên nền giấy ngà, tông xanh navy với hoa xanh vẽ tay và hai tấm ảnh polaroid",
+  "img": "listing/minimalism_darkblue.b0783e1e.webp",
+  "full": "full/minimalism_darkblue.c1a0d845.webp",
+  "tags": [
+    "Tối giản",
+    "Xanh navy",
+    "Thanh lịch"
+  ],
+  "previewFocal": 6.7,
+  "palette": {
+    "bg": "#f7f5ee",
+    "ink": "#00224c",
+    "rgb": "0, 34, 76",
+    "cover": "linear-gradient(to bottom right, #073268, #00224c, #001531)"
+  }
+}

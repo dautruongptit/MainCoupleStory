@@ -1,0 +1,19 @@
+{
+  "order": 62,
+  "slug": "bach-su-nau",
+  "name": "Bạch Sứ - Nâu",
+  "desc": "Hoa văn vàng nâu vẽ nét trên nền sứ kem, khung vòm cổ điển và khối lịch cưới vàng đồng ấm",
+  "img": "listing/porcelain_brown.955ff19b.webp",
+  "full": "full/porcelain_brown.b409cb4d.webp",
+  "tags": [
+    "Hoa văn vàng",
+    "Nâu kem",
+    "Cổ điển"
+  ],
+  "palette": {
+    "bg": "#fcfbf8",
+    "ink": "#8d6f32",
+    "rgb": "141, 111, 50",
+    "cover": "linear-gradient(to bottom right, #8d6f32, #735b29, #57441f)"
+  }
+}

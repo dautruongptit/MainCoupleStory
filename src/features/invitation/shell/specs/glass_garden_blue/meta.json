@@ -1,0 +1,19 @@
+{
+  "order": 79,
+  "slug": "vuonkinh-lam",
+  "name": "Vườn Kính - Lam",
+  "desc": "Nền hoa cẩm tú cầu xanh lam phủ kín thiệp, hai tên trong khung kính vòm trong suốt và tấm kính lớn ôm trọn nội dung; tông xanh lam mát cùng chữ trắng, gợi vẻ trong trẻo, mộng mơ kiểu khu vườn.",
+  "img": "listing/glass_garden_blue.9057696b.webp",
+  "full": "full/glass_garden_blue.8a2dcdf5.webp",
+  "tags": [
+    "Vườn",
+    "Lam",
+    "Hoa"
+  ],
+  "palette": {
+    "bg": "#3d6cae",
+    "ink": "#d9eaff",
+    "rgb": "217, 234, 255",
+    "cover": "linear-gradient(to bottom right, #d9eaff, #b1bfd1, #86919e)"
+  }
+}

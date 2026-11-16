@@ -10,7 +10,7 @@ const width = Number(widthArg);
 const BASE = process.env.LOCAL_BASE || "http://localhost:5173"; // đổi cổng dev: LOCAL_BASE=http://localhost:8111
 let slug = process.argv.includes("--slug") ? process.argv[process.argv.indexOf("--slug") + 1] : "";
 if (!slug) {
-  const tplContent = fs.readFileSync(new URL("../../src/features/templates/data/templates.ts", import.meta.url), "utf8");
+  const tplContent = fs.readFileSync(new URL("../../src/features/templates/data/templates.generated.ts", import.meta.url), "utf8");
   const m = tplContent.match(new RegExp(`"slug":\\s*"([^"]+)",\\s*"id":\\s*"${id}"`));
   if (m) slug = m[1];
 }

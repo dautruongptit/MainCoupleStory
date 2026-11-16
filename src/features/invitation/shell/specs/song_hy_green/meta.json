@@ -1,0 +1,22 @@
+{
+  "order": 3,
+  "slug": "song-hy-xanh",
+  "name": "Song Hỷ - Xanh",
+  "desc": "Chữ Hỷ nền xanh lá, khung ảnh cung, phong bì 囍",
+  "img": "listing/song_hy_green.7f0d10fa.webp",
+  "full": "full/song_hy_green.1a9c9b7f.webp",
+  "badge": "hot",
+  "tags": [
+    "Truyền thống",
+    "Xanh",
+    "Chữ Hỷ"
+  ],
+  "introDefault": "WELCOME TO OUR WEDDING",
+  "previewFocal": 3,
+  "palette": {
+    "bg": "#e9f2eb",
+    "ink": "#143a29",
+    "rgb": "20, 58, 41",
+    "cover": "linear-gradient(to bottom right, #0d2a1d, #143a29, #081d13)"
+  }
+}

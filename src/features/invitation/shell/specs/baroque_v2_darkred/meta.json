@@ -1,0 +1,20 @@
+{
+  "order": 31,
+  "slug": "baroque-v2-do-dam",
+  "name": "Baroque V2 - Đỏ Đậm",
+  "desc": "Nền đỏ đậm gần đen phủ hoa văn damask, khung tranh Baroque mạ vàng ôm ảnh cưới cùng hoa mẫu đơn đỏ rượu và kem; đường viền vàng, chữ Times New Roman và Cormorant Garamond, gợi vẻ cổ điển sang trọng kiểu châu Âu.",
+  "img": "listing/baroque_v2_darkred.fb78df9c.webp",
+  "full": "full/baroque_v2_darkred.90817915.webp",
+  "tags": [
+    "Baroque",
+    "Đỏ đậm",
+    "Châu Âu"
+  ],
+  "previewFocal": 9.5,
+  "palette": {
+    "bg": "#2b0303",
+    "ink": "#ffefd6",
+    "rgb": "255, 239, 214",
+    "cover": "linear-gradient(to bottom right, #ffefd6, #d1c3af, #9e9484)"
+  }
+}

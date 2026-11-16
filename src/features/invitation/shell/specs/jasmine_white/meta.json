@@ -1,0 +1,20 @@
+{
+  "order": 9,
+  "slug": "mai-lan-trang",
+  "name": "Mai Lan - Trắng",
+  "desc": "Tối giản hiện đại với nền kem trắng và sắc xanh olive",
+  "img": "listing/jasmine_white.16e1ed7f.webp",
+  "full": "full/jasmine_white.950f00dc.webp",
+  "tags": [
+    "Tối giản",
+    "Hoa",
+    "Thanh lịch"
+  ],
+  "previewFocal": 8,
+  "palette": {
+    "bg": "#FFFAF7",
+    "ink": "#404A1D",
+    "rgb": "64, 74, 29",
+    "cover": "linear-gradient(to bottom right, #404A1D, #5a6628, #404A1D)"
+  }
+}

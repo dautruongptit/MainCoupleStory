@@ -1,0 +1,19 @@
+{
+  "order": 19,
+  "slug": "vuonkinh-hong",
+  "name": "Vườn Kính - Hồng",
+  "desc": "Nền hoa mềm mại phủ kín thiệp, hai tên trong khung kính bầu dục trong suốt và tấm kính lớn ôm trọn nội dung; tông hồng phấn trên lá hồng ánh vàng, gợi vẻ ngọt ngào, lãng mạn kiểu khu vườn mùa xuân.",
+  "img": "listing/glass_garden_pink.e2c3377f.webp",
+  "full": "full/glass_garden_pink.91daeafd.webp",
+  "tags": [
+    "Vườn",
+    "Hồng",
+    "Hoa"
+  ],
+  "palette": {
+    "bg": "#ffffff",
+    "ink": "#933845",
+    "rgb": "147, 56, 69",
+    "cover": "linear-gradient(to bottom right, #933845, #782d38, #5b222a)"
+  }
+}

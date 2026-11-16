@@ -15,7 +15,7 @@ const specs = args.filter((a) => /^[a-z]+:\d+$/.test(a));
 if (!specs.length) specs.push("open:390");
 const only = args.includes("--only") ? args[args.indexOf("--only") + 1].split(",") : null;
 const env = { ...process.env, LOCAL_BASE: process.env.LOCAL_BASE || "http://localhost:8111" };
-const tpl = fs.readFileSync("src/features/templates/data/templates.ts", "utf8");
+const tpl = fs.readFileSync("src/features/templates/data/templates.generated.ts", "utf8");
 let ids = [...tpl.matchAll(/"id":\s*"([^"]+)"/g)].map((m) => m[1]);
 if (only) ids = ids.filter((i) => only.includes(i));
 fs.mkdirSync(dir, { recursive: true });

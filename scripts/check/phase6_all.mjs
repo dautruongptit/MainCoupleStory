@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import { ChromeController } from "../lib/cdp_helper.mjs";
-const src = fs.readFileSync("src/features/templates/data/templates.ts", "utf8");
+const src = fs.readFileSync("src/features/templates/data/templates.generated.ts", "utf8");
 const slugs = [...src.matchAll(/"slug": *"([^"]*)"/g)].map((m) => m[1]);
 const c = new ChromeController(); await c.start({ headless: true }); await c.newPage();
 await c.setViewport({ width: 390, height: 844 });

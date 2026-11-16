@@ -1,0 +1,19 @@
+{
+  "order": 43,
+  "slug": "hoang-gia-vang",
+  "name": "Baroque - Vàng",
+  "desc": "Cảm hứng kiến trúc Baroque châu Âu: khung hoa văn mạ vàng cầu kỳ, hai cột trụ La Mã và nền damask kem; tông vàng đồng ấm điểm xanh ô-liu, gợi vẻ cổ điển xa hoa và lãng mạn.",
+  "img": "listing/baroque_gold.b694b292.webp",
+  "full": "full/baroque_gold.b7a9b8c9.webp",
+  "tags": [
+    "Baroque",
+    "Vàng",
+    "Châu Âu"
+  ],
+  "palette": {
+    "bg": "#FBF8F1",
+    "ink": "#8D8F58",
+    "rgb": "141, 143, 88",
+    "cover": "linear-gradient(to bottom right, #8D8F58, #737548, #575836)"
+  }
+}

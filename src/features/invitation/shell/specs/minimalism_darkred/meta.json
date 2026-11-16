@@ -1,0 +1,21 @@
+{
+  "order": 1,
+  "slug": "minimalism-do-dam",
+  "name": "Minimalism - Đỏ Đậm",
+  "desc": "Tối giản sang trọng với nền kem, tông đỏ đô, hoa mẫu đơn và dấu sáp trái tim",
+  "img": "listing/minimalism_darkred.d60d4ed8.webp",
+  "full": "full/minimalism_darkred.4496816d.webp",
+  "badge": "hot",
+  "tags": [
+    "Tối giản",
+    "Đỏ Đậm",
+    "Sang trọng"
+  ],
+  "previewFocal": 6.7,
+  "palette": {
+    "bg": "#fff7eb",
+    "ink": "#511419",
+    "rgb": "81, 20, 25",
+    "cover": "linear-gradient(to bottom right, #6e1a20, #511419, #380a0e)"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "order": 30,
+  "slug": "baroque-v2-xanh-dam",
+  "name": "Baroque V2 - Xanh Đậm",
+  "desc": "Nền xanh rừng gần đen phủ hoa văn damask, khung tranh Baroque chạm trổ mạ vàng ôm ảnh cưới cùng hoa mẫu đơn xanh thẫm và kem; đường viền vàng, chữ Times New Roman và EB Garamond, gợi vẻ cổ điển sang trọng kiểu châu Âu.",
+  "img": "listing/baroque_v2_darkgreen.d32942f1.webp",
+  "full": "full/baroque_v2_darkgreen.ada69db2.webp",
+  "tags": [
+    "Baroque",
+    "Xanh đậm",
+    "Châu Âu"
+  ],
+  "previewFocal": 9.7,
+  "palette": {
+    "bg": "#0a1a0b",
+    "ink": "#ffefd6",
+    "rgb": "255, 239, 214",
+    "cover": "linear-gradient(to bottom right, #ffefd6, #d1c3af, #9e9484)"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "order": 61,
+  "slug": "baroque-lam",
+  "name": "Baroque - Lam",
+  "desc": "Khung chạm rococo mạ vàng điểm xanh lam phấn nổi trên nền ngà phủ hoa văn damask; hai bên là cuộn lá acanthus và cột trụ cổ điển, khép lại bằng vòng hoa vỏ sò, mang vẻ quý phái châu Âu dịu dàng.",
+  "img": "listing/baroque_blue.cb7be43a.webp",
+  "full": "full/baroque_blue.c9024b02.webp",
+  "badge": "new",
+  "tags": [
+    "Baroque",
+    "Lam",
+    "Châu Âu"
+  ],
+  "previewFocal": 2.3,
+  "palette": {
+    "bg": "#f9f1e6",
+    "ink": "#72614b",
+    "rgb": "114, 97, 75",
+    "cover": "linear-gradient(to bottom right, #72614b, #5d4f3d, #463c2e)"
+  }
+}

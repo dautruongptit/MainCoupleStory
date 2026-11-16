@@ -1,0 +1,19 @@
+{
+  "order": 64,
+  "slug": "hoang-kim-lam",
+  "name": "Hoàng Kim - Lam",
+  "desc": "Sang trọng hoàng gia với nền xanh lam thẫm và điểm nhấn vàng kim",
+  "img": "listing/royal_blue.6c67d365.webp",
+  "full": "full/royal_blue.4d21a11a.webp",
+  "tags": [
+    "Sang trọng",
+    "Lam",
+    "Vàng kim"
+  ],
+  "palette": {
+    "bg": "#00112E",
+    "ink": "#E1BC7C",
+    "rgb": "225, 188, 124",
+    "cover": "linear-gradient(to bottom right, #E1BC7C, #b89a65, #8b744c)"
+  }
+}

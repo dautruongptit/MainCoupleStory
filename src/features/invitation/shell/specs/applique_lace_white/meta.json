@@ -1,0 +1,21 @@
+{
+  "order": 34,
+  "slug": "ren-theu-trang",
+  "name": "Ren Thêu - Trắng",
+  "desc": "Nền lụa đen mềm mại ôm lấy những tấm giấy trắng viền ren thêu nổi, ảnh cưới đen trắng nghiêng nhẹ trong phong bì ren, điểm thêm hoa mẫu đơn trắng và nhành khô màu be",
+  "img": "listing/applique_lace_white.4c8cc4dc.webp",
+  "full": "full/applique_lace_white.ace16dd0.webp",
+  "badge": "new",
+  "tags": [
+    "Ren thêu",
+    "Trắng",
+    "Lụa đen"
+  ],
+  "previewFocal": 7.3,
+  "palette": {
+    "bg": "#0d0b0b",
+    "ink": "#ffffff",
+    "rgb": "255, 255, 255",
+    "cover": "linear-gradient(to bottom right, #3a3a3d, #141416, #050506)"
+  }
+}

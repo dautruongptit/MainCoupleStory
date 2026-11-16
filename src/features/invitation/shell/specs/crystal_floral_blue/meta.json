@@ -1,0 +1,19 @@
+{
+  "order": 49,
+  "slug": "hoa-thuy-tinh-lam",
+  "name": "Hoa Thuỷ Tinh - Lam",
+  "desc": "Hoa văn pha lê tinh xảo và khung hoa màu xanh sứ trên nền kem ấm, điểm tông xanh sứ đậm; cảm giác châu Âu thanh lịch, trong trẻo và lãng mạn.",
+  "img": "listing/crystal_floral_blue.b8d1c0ae.webp",
+  "full": "full/crystal_floral_blue.e6ec8da5.webp",
+  "tags": [
+    "Hoa pha lê",
+    "Lam",
+    "Châu Âu"
+  ],
+  "palette": {
+    "bg": "#fbf8f3",
+    "ink": "#2f3a45",
+    "rgb": "47, 58, 69",
+    "cover": "linear-gradient(to bottom right, #163a5e, #215589, #2f6aa6)"
+  }
+}

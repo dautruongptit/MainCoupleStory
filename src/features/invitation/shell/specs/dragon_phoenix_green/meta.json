@@ -1,0 +1,20 @@
+{
+  "order": 42,
+  "slug": "long-phung-xanh",
+  "name": "Long Phụng - Xanh",
+  "desc": "Cổ điển với họa tiết rồng phượng truyền thống",
+  "img": "listing/dragon_phoenix_green.93d16f47.webp",
+  "full": "full/dragon_phoenix_green.6731da9e.webp",
+  "tags": [
+    "Cổ điển",
+    "Xanh",
+    "Rồng phượng"
+  ],
+  "previewFocal": 2,
+  "palette": {
+    "bg": "#162614",
+    "ink": "#e9ce9e",
+    "rgb": "233, 206, 158",
+    "cover": "linear-gradient(to bottom right, #080e07, #050905, #020402)"
+  }
+}

@@ -7,7 +7,7 @@ import { ChromeController } from "../lib/cdp_helper.mjs";
 const args = process.argv.slice(2);
 const base = args.includes("--base") ? args[args.indexOf("--base") + 1] : "http://localhost:5173";
 const force = args.includes("--force");
-const tpl = fs.readFileSync(new URL("../../src/features/templates/data/templates.ts", import.meta.url), "utf8");
+const tpl = fs.readFileSync(new URL("../../src/features/templates/data/templates.generated.ts", import.meta.url), "utf8");
 const all = [...tpl.matchAll(/"slug":\s*"([^"]+)",\s*"id":\s*"([^"]+)"/g)].map((m) => ({ slug: m[1], id: m[2] }));
 const want = args.filter((a) => !a.startsWith("--") && a !== base);
 const RAW = "docs/survey/raw";

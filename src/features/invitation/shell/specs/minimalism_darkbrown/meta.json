@@ -1,0 +1,21 @@
+{
+  "order": 13,
+  "slug": "minimalism-nau-dam",
+  "name": "Minimalism - Nâu Đậm",
+  "desc": "Tối giản trên nền giấy ngà, tông nâu đậm với hoa nâu vẽ tay và một tấm ảnh polaroid lồng trong phong bì",
+  "img": "listing/minimalism_darkbrown.06e3bfff.webp",
+  "full": "full/minimalism_darkbrown.94b1c63d.webp",
+  "badge": "new",
+  "tags": [
+    "Tối giản",
+    "Nâu đậm",
+    "Thanh lịch"
+  ],
+  "previewFocal": 5.2,
+  "palette": {
+    "bg": "#f7f5ee",
+    "ink": "#593D2C",
+    "rgb": "89, 61, 44",
+    "cover": "linear-gradient(to bottom right, #7D553E, #593D2C, #37261B)"
+  }
+}

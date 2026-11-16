@@ -1,0 +1,19 @@
+{
+  "order": 60,
+  "slug": "hoang-kim-xanh",
+  "name": "Hoàng Kim - Xanh",
+  "desc": "Sang trọng hoàng gia với nền xanh lục thẫm và điểm nhấn vàng kim",
+  "img": "listing/royal_green.c9f27e5a.webp",
+  "full": "full/royal_green.93be107e.webp",
+  "tags": [
+    "Sang trọng",
+    "Xanh lá",
+    "Vàng kim"
+  ],
+  "palette": {
+    "bg": "#001A08",
+    "ink": "#E1BC7C",
+    "rgb": "225, 188, 124",
+    "cover": "linear-gradient(to bottom right, #E1BC7C, #b89a65, #8b744c)"
+  }
+}

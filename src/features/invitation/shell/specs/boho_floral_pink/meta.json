@@ -1,0 +1,19 @@
+{
+  "order": 33,
+  "slug": "hoa-moc-hong",
+  "name": "Hoa Mộc - Hồng",
+  "desc": "Hoa mộc watercolor với tông hồng ấm lãng mạn trên nền kem trắng",
+  "img": "listing/boho_floral_pink.964362f5.webp",
+  "full": "full/boho_floral_pink.d3d703b1.webp",
+  "tags": [
+    "Hoa Mộc",
+    "Hồng",
+    "Hoa"
+  ],
+  "palette": {
+    "bg": "#FFFAF7",
+    "ink": "#9D6D63",
+    "rgb": "157, 109, 99",
+    "cover": "linear-gradient(to bottom right, #6b2d3a, #4a1f28, #2e1219)"
+  }
+}

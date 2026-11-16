@@ -1,0 +1,21 @@
+{
+  "order": 55,
+  "slug": "hoa-kho-v2-xanh",
+  "name": "Hoa Khô V2 - Xanh",
+  "desc": "Vòng hoa khô vẽ màu nước ôm lấy tên cô dâu chú rể, lá xanh rêu cùng cúc vàng và hoa chuông xanh trên nền giấy kem",
+  "img": "listing/dried_flower_v2_green.6722f90b.webp",
+  "full": "full/dried_flower_v2_green.6b7aa2ef.webp",
+  "badge": "new",
+  "tags": [
+    "Hoa khô",
+    "Xanh",
+    "Boho"
+  ],
+  "previewFocal": 9,
+  "palette": {
+    "bg": "#fffaf2",
+    "ink": "#6c7e54",
+    "rgb": "108, 126, 84",
+    "cover": "linear-gradient(to bottom right, #6c7e54, #586744, #424e34)"
+  }
+}

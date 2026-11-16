@@ -1,0 +1,21 @@
+{
+  "order": 12,
+  "slug": "to-duyen-do-dam",
+  "name": "Tơ Duyên - Đỏ Đậm",
+  "desc": "Hoa phong quỳ đỏ rượu vang nở trên nền giấy trắng tinh, dải lụa đỏ thẫm uốn quanh từng phần nội dung cùng những nét cong mảnh như sợi tơ; chữ đỏ đô, bố cục so le trái phải, gợi vẻ lãng mạn và sang trọng.",
+  "img": "listing/silk_ribbon_darkred.5ee948b0.webp",
+  "full": "full/silk_ribbon_darkred.0e63ff98.webp",
+  "badge": "new",
+  "tags": [
+    "Hoa phong quỳ",
+    "Đỏ đậm",
+    "Lụa"
+  ],
+  "previewFocal": 1.2,
+  "palette": {
+    "bg": "#ffffff",
+    "ink": "#931434",
+    "rgb": "147, 20, 52",
+    "cover": "linear-gradient(to bottom right, #ffffff, #f8eef1, #efd9df)"
+  }
+}

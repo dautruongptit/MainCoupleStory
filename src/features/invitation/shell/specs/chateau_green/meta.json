@@ -1,0 +1,20 @@
+{
+  "order": 25,
+  "slug": "lau-dai-xanh",
+  "name": "Lâu Đài - Xanh",
+  "desc": "Phong cách lâu đài châu Âu phiên bản vườn xanh, biệt thự nước màu watercolor với cây cối, vòi phun và hoa nhỏ; tông xanh lá rừng trên nền trắng, cảm giác lãng mạn, gần gũi thiên nhiên.",
+  "img": "listing/chateau_green.5073169e.webp",
+  "full": "full/chateau_green.c5248eba.webp",
+  "tags": [
+    "Lâu đài",
+    "Xanh lá",
+    "Châu Âu"
+  ],
+  "previewFocal": 8,
+  "palette": {
+    "bg": "#FFFFFF",
+    "ink": "#3a5a2c",
+    "rgb": "58, 90, 44",
+    "cover": "linear-gradient(to bottom right, #1e3a17, #3a5a2c, #5a8040)"
+  }
+}

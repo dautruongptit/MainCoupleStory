@@ -1,0 +1,19 @@
+{
+  "order": 56,
+  "slug": "bach-su-v2-hong",
+  "name": "Bạch Sứ V2 - Hồng",
+  "desc": "Hoa mẫu đơn hồng vẽ tay phủ khắp nền sứ kem, thẻ bờ bo tròn viền vàng ô liu và khối lịch cưới hồng phấn",
+  "img": "listing/porcelain_v2_pink.914f3930.webp",
+  "full": "full/porcelain_v2_pink.98794c51.webp",
+  "tags": [
+    "Hoa mẫu đơn",
+    "Hồng phấn",
+    "Cổ điển"
+  ],
+  "palette": {
+    "bg": "#fff7eb",
+    "ink": "#776e38",
+    "rgb": "119, 110, 56",
+    "cover": "linear-gradient(to bottom right, #776e38, #615a2d, #494422)"
+  }
+}

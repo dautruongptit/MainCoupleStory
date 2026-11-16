@@ -1,0 +1,20 @@
+{
+  "order": 67,
+  "slug": "baroque-v2-lam-dam",
+  "name": "Baroque V2 - Lam Đậm",
+  "desc": "Nền lam đậm gần đen phủ hoa văn damask, khung gương Baroque mạ vàng hình bầu dục ôm ảnh cưới cùng hoa mẫu đơn xanh navy và kem; đường viền vàng, chữ Times New Roman và EB Garamond, gợi vẻ cổ điển sang trọng kiểu châu Âu.",
+  "img": "listing/baroque_v2_darkblue.71a96c98.webp",
+  "full": "full/baroque_v2_darkblue.59f6c4bd.webp",
+  "tags": [
+    "Baroque",
+    "Lam đậm",
+    "Châu Âu"
+  ],
+  "previewFocal": 9,
+  "palette": {
+    "bg": "#001a3a",
+    "ink": "#ffefd6",
+    "rgb": "255, 239, 214",
+    "cover": "linear-gradient(to bottom right, #ffefd6, #d1c3af, #9e9484)"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "order": 17,
+  "slug": "song-phung-do",
+  "name": "Song Phụng - Đỏ",
+  "desc": "Thanh lịch với họa tiết đôi phụng hoàng",
+  "img": "listing/double_phoenix_red.3bfb98ec.webp",
+  "full": "full/double_phoenix_red.95412374.webp",
+  "tags": [
+    "Truyền thống",
+    "Đỏ",
+    "Thanh lịch"
+  ],
+  "previewFocal": 5,
+  "palette": {
+    "bg": "#FFF0E7",
+    "ink": "#710001",
+    "rgb": "113, 0, 1",
+    "cover": "linear-gradient(to bottom right, #710001, #5a0001, #450001)"
+  }
+}

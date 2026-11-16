@@ -1,0 +1,19 @@
+{
+  "order": 59,
+  "slug": "hoang-kim-ii-xanh",
+  "name": "Hoàng Kim II - Xanh",
+  "desc": "Hoàng gia xanh lục thẫm với khung vàng kim và hoa hồng trắng sang trọng",
+  "img": "listing/royal_v2_green.9e2ded33.webp",
+  "full": "full/royal_v2_green.ae91b320.webp",
+  "tags": [
+    "Sang trọng",
+    "Xanh lá",
+    "Hoa hồng trắng"
+  ],
+  "palette": {
+    "bg": "#10261c",
+    "ink": "#e5e4d0",
+    "rgb": "229, 228, 208",
+    "cover": "linear-gradient(to bottom right, #e5e4d0, #bbbaaa, #8d8d80)"
+  }
+}

@@ -39,7 +39,7 @@ const listFiles = (dir, filter = () => true) => {
 const readJson = (p) => { try { return JSON.parse(fs.readFileSync(p, "utf8")); } catch { return null; } };
 
 // ---- danh sách mẫu (kho mẫu local = đúng thứ tự trang gốc)
-const tplSrc = fs.readFileSync(J("src/features/templates/data/templates.ts"), "utf8");
+const tplSrc = fs.readFileSync(J("src/features/templates/data/templates.generated.ts"), "utf8");
 const templates = tplSrc.split("\n").filter((l) => l.startsWith('  {"slug"')).map((l) => JSON.parse(l.trim().replace(/,$/, "")));
 
 // ---- generator → họ khối

@@ -1,0 +1,19 @@
+{
+  "order": 54,
+  "slug": "bach-su-v2-xanh",
+  "name": "Bạch Sứ V2 - Xanh",
+  "desc": "Hoa trắng vẽ tay trên nền lá xanh ô liu, thẻ bo tròn viền xanh rêu và khối lịch cưới xanh trầm",
+  "img": "listing/porcelain_v2_green.8cf460ee.webp",
+  "full": "full/porcelain_v2_green.06e7a904.webp",
+  "tags": [
+    "Hoa trắng",
+    "Xanh ô liu",
+    "Cổ điển"
+  ],
+  "palette": {
+    "bg": "#fff7eb",
+    "ink": "#bc9b63",
+    "rgb": "188, 155, 99",
+    "cover": "linear-gradient(to bottom right, #bc9b63, #9a7f51, #74603d)"
+  }
+}

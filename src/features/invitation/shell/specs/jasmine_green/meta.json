@@ -1,0 +1,21 @@
+{
+  "order": 68,
+  "slug": "mai-lan-xanh",
+  "name": "Mai Lan - Xanh",
+  "desc": "Hoa ngọc lan trắng vẽ màu nước nở quanh vòm cổng mạ vàng, lá xanh lá và nhũ vàng rải trên nền giấy kem; mỗi khối nội dung nằm trên thẻ trắng mờ viền vàng, khối lịch cưới xanh rêu và ba huy hiệu chim, ly rượu, nhẫn cưới ở phần lịch trình.",
+  "img": "listing/jasmine_green.ea83e30e.webp",
+  "full": "full/jasmine_green.bd035a3d.webp",
+  "badge": "new",
+  "tags": [
+    "Hoa ngọc lan",
+    "Vòm vàng",
+    "Màu nước",
+    "Trang nhã"
+  ],
+  "palette": {
+    "bg": "#F5F4F2",
+    "ink": "#2E4733",
+    "rgb": "46, 71, 51",
+    "cover": "linear-gradient(to bottom right, rgb(255, 255, 255), rgba(29, 80, 48, 0.96))"
+  }
+}

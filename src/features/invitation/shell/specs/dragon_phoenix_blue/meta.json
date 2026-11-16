@@ -1,0 +1,20 @@
+{
+  "order": 50,
+  "slug": "long-phung-lam",
+  "name": "Long Phụng - Lam",
+  "desc": "Cổ điển với họa tiết rồng phượng truyền thống",
+  "img": "listing/dragon_phoenix_blue.bfd4ff1e.webp",
+  "full": "full/dragon_phoenix_blue.92548870.webp",
+  "tags": [
+    "Cổ điển",
+    "Lam",
+    "Rồng phượng"
+  ],
+  "previewFocal": 2,
+  "palette": {
+    "bg": "#0A202F",
+    "ink": "#e9ce9e",
+    "rgb": "233, 206, 158",
+    "cover": "linear-gradient(to bottom right, #040e16, #020810, #010408)"
+  }
+}

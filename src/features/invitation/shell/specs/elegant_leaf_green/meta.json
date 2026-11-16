@@ -1,0 +1,20 @@
+{
+  "order": 21,
+  "slug": "thanh-diep-xanh",
+  "name": "Thanh Diệp - Xanh",
+  "desc": "Thanh lịch với tông xanh lá thanh diệp",
+  "img": "listing/elegant_leaf_green.14803fcc.webp",
+  "full": "full/elegant_leaf_green.4ec860f1.webp",
+  "tags": [
+    "Thanh lịch",
+    "Xanh lá",
+    "Hiện đại"
+  ],
+  "previewFocal": 13,
+  "palette": {
+    "bg": "#ffffff",
+    "ink": "#4E6439",
+    "rgb": "78, 100, 57",
+    "cover": "linear-gradient(to bottom right, #23381E, #1f3219, #1a2b15)"
+  }
+}

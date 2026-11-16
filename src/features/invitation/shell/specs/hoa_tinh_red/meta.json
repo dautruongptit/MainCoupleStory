@@ -1,0 +1,20 @@
+{
+  "order": 36,
+  "slug": "hoa-tinh-do",
+  "name": "Hoạ Tình - Đỏ",
+  "desc": "Phong cách comic nghệ thuật với nền trắng tinh khôi và điểm nhấn đỏ tươi. Hoạ tiết hoa tim lãng mạn, font chữ handwritten độc đáo. Phong bì đỏ son hiện đại.",
+  "img": "listing/hoa_tinh_red.bff9dbe6.webp",
+  "full": "full/hoa_tinh_red.83b9c56b.webp",
+  "tags": [
+    "Nghệ thuật",
+    "Đỏ",
+    "Comic"
+  ],
+  "previewFocal": 1,
+  "palette": {
+    "bg": "#FFFFFF",
+    "ink": "#000000",
+    "rgb": "0, 0, 0",
+    "cover": "linear-gradient(to bottom right, #000000, #000000, #000000)"
+  }
+}

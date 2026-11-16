@@ -18,7 +18,7 @@ const JSON_OUT = "docs/survey/gift-assets.json";
 const MD_OUT = "docs/survey/gift-assets.md";
 const DIRS = ["/images/giftbox", "/images/giftbox/mini", "/images/envelope"];
 
-const tpl = fs.readFileSync("src/features/templates/data/templates.ts", "utf8");
+const tpl = fs.readFileSync("src/features/templates/data/templates.generated.ts", "utf8");
 const ids = [...tpl.matchAll(/"id":\s*"([^"]+)"/g)].map((m) => m[1]);
 const specSrc = fs.readFileSync("src/features/invitation/shell/blocks/shared/giftSpecs.generated.ts", "utf8");
 const SPECS = JSON.parse(specSrc.slice(specSrc.indexOf("= {") + 2, specSrc.lastIndexOf(";")));

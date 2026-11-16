@@ -23,7 +23,7 @@ const SURVEY = J("docs/survey");
 const BLOCKS = J("src/features/invitation/shell/blocks");
 
 // ---------- nguồn dữ liệu
-const tplSrc = read(J("src/features/templates/data/templates.ts"));
+const tplSrc = read(J("src/features/templates/data/templates.generated.ts"));
 const templates = tplSrc.split("\n").filter((l) => l.startsWith('  {"slug"')).map((l) => JSON.parse(l.trim().replace(/,$/, "")));
 const registry = readJson(J("docs/clone-registry.json"));
 const regById = Object.fromEntries((registry?.templates ?? []).map((t) => [t.id, t]));
@@ -343,7 +343,7 @@ add("3. Hiệu ứng nút bấm", "Hiệu ứng khi bấm nút 'Mở thiệp' tr
 add("4. Màn hình chỉnh sửa", "Khung editor dùng chung (16 thẻ) + cấu hình thẻ riêng theo mẫu (ảnh đầu thiệp / ảnh đôi / lời mở đầu / vị trí Thư viện ảnh). Bằng chứng: editorSections.ts (đo 88 mẫu 01/11/2026), capabilities.editor, diff editor, editor-sync.");
 add("5. Màn hình xem trước", "Tab 'Xem trước' trong editor — cùng bộ dựng InvitationShell với demo; mỗi công tắc Hiện/Ẩn trong editor phải có khối đọc cờ xxxOn tương ứng (liệt kê ở sheet 'Editor & Xem trước').");
 add("", "");
-add("Nguồn", "src/features/templates/data/templates.ts, shell/specs/*, shell/blocks/*, covers/coverConfigs.ts, covers/index.ts, editor/config/editorSections.ts, docs/survey/*, docs/clone-registry.json");
+add("Nguồn", "src/features/templates/data/templates.generated.ts, shell/specs/*, shell/blocks/*, covers/coverConfigs.ts, covers/index.ts, editor/config/editorSections.ts, docs/survey/*, docs/clone-registry.json");
 add("Giới hạn", "Cột trạng thái dựa trên bằng chứng có trong repo; ô vàng không có nghĩa là sai, chỉ là chưa được đối chiếu tự động. Thumbnail cắt từ ảnh listing local (public/images/template-previews, gitignore).");
 add("Tạo lại", "node scripts/clone/registry.mjs && node scripts/clone/export_xlsx.mjs");
 

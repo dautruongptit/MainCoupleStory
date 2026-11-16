@@ -1,0 +1,19 @@
+{
+  "order": 16,
+  "slug": "vuonkinh-xanh",
+  "name": "Vườn Kính - Xanh",
+  "desc": "Nền hoa mềm mại phủ kín thiệp, hai tên trong khung kính bầu dục trong suốt và tấm kính lớn ôm trọn nội dung; tông xanh vườn trên hoa trắng, gợi vẻ trong trẻo, lãng mạn kiểu khu vườn mùa xuân.",
+  "img": "listing/glass_garden_green.aacdf716.webp",
+  "full": "full/glass_garden_green.67266fc0.webp",
+  "tags": [
+    "Vườn",
+    "Xanh",
+    "Hoa"
+  ],
+  "palette": {
+    "bg": "#eef3e8",
+    "ink": "#35452f",
+    "rgb": "53, 69, 47",
+    "cover": "linear-gradient(to bottom right, #35452f, #2b3826, #202a1d)"
+  }
+}

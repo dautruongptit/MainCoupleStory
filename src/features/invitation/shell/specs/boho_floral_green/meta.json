@@ -1,0 +1,19 @@
+{
+  "order": 4,
+  "slug": "hoa-moc-xanh",
+  "name": "Hoa Mộc - Xanh",
+  "desc": "Hoa mộc watercolor với tông xanh lá thanh nhã trên nền kem trắng",
+  "img": "listing/boho_floral_green.ad64d9e9.webp",
+  "full": "full/boho_floral_green.7ab8e124.webp",
+  "tags": [
+    "Hoa Mộc",
+    "Xanh",
+    "Hoa"
+  ],
+  "palette": {
+    "bg": "#FFFAF7",
+    "ink": "#30530F",
+    "rgb": "48, 83, 15",
+    "cover": "linear-gradient(to bottom right, #1a3005, #0f2003, #081500)"
+  }
+}

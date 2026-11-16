@@ -1,0 +1,19 @@
+{
+  "order": 46,
+  "slug": "hoa-moc-nau",
+  "name": "Hoa Mộc - Nâu",
+  "desc": "Hoa mộc watercolor với tông nâu ấm áp, thanh nhã",
+  "img": "listing/boho_floral_brown.68efdf4d.webp",
+  "full": "full/boho_floral_brown.78547984.webp",
+  "tags": [
+    "Hoa Mộc",
+    "Nâu",
+    "Hoa"
+  ],
+  "palette": {
+    "bg": "#fffaf7",
+    "ink": "#4a2816",
+    "rgb": "74, 40, 22",
+    "cover": "linear-gradient(to bottom right, #3d2112, #2e180d, #1f1008)"
+  }
+}

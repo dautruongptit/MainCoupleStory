@@ -1,6 +1,6 @@
 {
  "_doc": "Sổ đăng ký clone. Sinh bởi scripts/clone/registry.mjs — đừng sửa tay trừ trường verified/notes.",
- "generatedAt": "2026-11-15T15:37:33.299Z",
+ "generatedAt": "2026-11-16T08:56:33.234Z",
  "totals": {
   "templates": 92,
   "đã clone": 43,
@@ -216,6 +216,62 @@
    "summary": [
     "jasmine_green: file đã cập nhật"
    ]
+  },
+  {
+   "at": "2026-11-16T08:56:33.234Z",
+   "changes": 165,
+   "summary": [
+    "minimalism_darkred: file mới",
+    "minimalism_darkred: file đã cập nhật",
+    "minimalism_brown: file mới",
+    "song_hy_green: file mới",
+    "song_hy_green: file đã cập nhật",
+    "boho_floral_green: file mới",
+    "boho_floral_green: file đã cập nhật",
+    "song_hy_v2_red: file mới",
+    "song_hy_v2_red: file đã cập nhật",
+    "song_hy_red: file mới",
+    "song_hy_red: file đã cập nhật",
+    "silk_ribbon_green: file mới",
+    "silk_ribbon_green: file đã cập nhật",
+    "minimalism_green: file mới",
+    "minimalism_green: file đã cập nhật",
+    "jasmine_white: file mới",
+    "jasmine_white: file đã cập nhật",
+    "dragon_phoenix_v3_red: file mới",
+    "dragon_phoenix_v3_red: file đã cập nhật",
+    "dragon_phoenix_red: file mới",
+    "dragon_phoenix_red: file đã cập nhật",
+    "silk_ribbon_darkred: file mới",
+    "silk_ribbon_darkred: file đã cập nhật",
+    "minimalism_darkbrown: file mới",
+    "minimalism_darkbrown: file đã cập nhật",
+    "dragon_phoenix_v2_red: file mới",
+    "dragon_phoenix_v2_red: file đã cập nhật",
+    "double_dragon_red: file mới",
+    "double_dragon_red: file đã cập nhật",
+    "glass_garden_green: file mới",
+    "glass_garden_green: file đã cập nhật",
+    "double_phoenix_red: file mới",
+    "double_phoenix_red: file đã cập nhật",
+    "double_dragon_green: file mới",
+    "double_dragon_green: file đã cập nhật",
+    "glass_garden_pink: file mới",
+    "glass_garden_pink: file đã cập nhật",
+    "marble_yellow: file mới",
+    "elegant_leaf_green: file mới",
+    "elegant_leaf_green: file đã cập nhật",
+    "silk_ribbon_pink: file mới",
+    "silk_ribbon_pink: file đã cập nhật",
+    "dragon_phoenix_v4_red: file mới",
+    "dragon_phoenix_v4_red: file đã cập nhật",
+    "lien_hoa_v2_green: file mới",
+    "lien_hoa_v2_green: file đã cập nhật",
+    "chateau_green: file mới",
+    "chateau_green: file đã cập nhật",
+    "spring_garden_green: file mới",
+    "spring_garden_green: file đã cập nhật"
+   ]
   }
  ],
  "templates": [
@@ -245,8 +301,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkred/demo.json",
-      "size": 5893,
-      "sha": "18bb8f96fee03942"
+      "size": 5948,
+      "sha": "a912d6c46cb0c9ec"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/minimalism_darkred/meta.json",
+      "size": 586,
+      "sha": "53ecf79b6cfe2c14"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkred/theme.json",
@@ -492,6 +553,16 @@
       "path": "src/features/invitation/shell/specs/minimalism_brown/capabilities.json",
       "size": 1107,
       "sha": "598900a569ab08bd"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/minimalism_brown/demo.json",
+      "size": 4787,
+      "sha": "ab4033ff082dc998"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/minimalism_brown/meta.json",
+      "size": 578,
+      "sha": "46c3d44e0e27b50b"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_brown/theme.json",
@@ -744,8 +815,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_green/demo.json",
-      "size": 13489,
-      "sha": "1fd6b8a551495e21"
+      "size": 13698,
+      "sha": "0d4b30efc7ce0e05"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/song_hy_green/meta.json",
+      "size": 555,
+      "sha": "68bb8d8138c97878"
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_green/theme.json",
@@ -958,8 +1034,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_green/demo.json",
-      "size": 14354,
-      "sha": "bb2f6f5097403954"
+      "size": 14557,
+      "sha": "cde17395404f28bb"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/boho_floral_green/meta.json",
+      "size": 484,
+      "sha": "b56a1fa142075c04"
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_green/theme.json",
@@ -1152,8 +1233,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_v2_red/demo.json",
-      "size": 1992,
-      "sha": "ae7ff2f0e4bef433"
+      "size": 2260,
+      "sha": "07f2ebbf83188dbf"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/song_hy_v2_red/meta.json",
+      "size": 538,
+      "sha": "c24070ee89ad839b"
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_v2_red/theme.json",
@@ -1326,8 +1412,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_red/demo.json",
-      "size": 13500,
-      "sha": "4b1383c5661ee338"
+      "size": 13711,
+      "sha": "68eb489c9a2d9e7a"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/song_hy_red/meta.json",
+      "size": 531,
+      "sha": "bc14b20b51837d32"
      },
      {
       "path": "src/features/invitation/shell/specs/song_hy_red/theme.json",
@@ -1577,8 +1668,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_green/demo.json",
-      "size": 2345,
-      "sha": "dbb7b687d9a6f002"
+      "size": 2611,
+      "sha": "b4b85a460bb6d802"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/silk_ribbon_green/meta.json",
+      "size": 696,
+      "sha": "68dd3596aca69fe2"
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_green/theme.json",
@@ -1741,8 +1837,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_green/demo.json",
-      "size": 3745,
-      "sha": "d8d61a350104f44d"
+      "size": 3866,
+      "sha": "d85280a3b55a6cad"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/minimalism_green/meta.json",
+      "size": 536,
+      "sha": "ce89faa125706c58"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_green/theme.json",
@@ -1923,8 +2024,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/jasmine_white/demo.json",
-      "size": 2345,
-      "sha": "0063437b10845276"
+      "size": 2603,
+      "sha": "1e9dd487683fe28f"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/jasmine_white/meta.json",
+      "size": 505,
+      "sha": "e19090039977360a"
      },
      {
       "path": "src/features/invitation/shell/specs/jasmine_white/theme.json",
@@ -2059,8 +2165,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v3_red/demo.json",
-      "size": 2470,
-      "sha": "c8e380d96d3e0092"
+      "size": 2740,
+      "sha": "f998bb42b16e793c"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/dragon_phoenix_v3_red/meta.json",
+      "size": 550,
+      "sha": "3552f18becf0e845"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v3_red/theme.json",
@@ -2202,8 +2313,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_red/demo.json",
-      "size": 4262,
-      "sha": "0b919818322dc827"
+      "size": 4294,
+      "sha": "3adb585916348b26"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/dragon_phoenix_red/meta.json",
+      "size": 522,
+      "sha": "aa4dc1c394907935"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_red/theme.json",
@@ -2418,8 +2534,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_darkred/demo.json",
-      "size": 2347,
-      "sha": "df8a79f056353990"
+      "size": 2617,
+      "sha": "1473ee4655665e6d"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/silk_ribbon_darkred/meta.json",
+      "size": 754,
+      "sha": "243e23d6aef4784f"
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_darkred/theme.json",
@@ -2582,8 +2703,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkbrown/demo.json",
-      "size": 2015,
-      "sha": "34738f51b4151b7d"
+      "size": 2293,
+      "sha": "6d584b5e384eb6b4"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/minimalism_darkbrown/meta.json",
+      "size": 622,
+      "sha": "05dd390ebe89207d"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkbrown/theme.json",
@@ -2716,8 +2842,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v2_red/demo.json",
-      "size": 1254,
-      "sha": "285b9f9193deec90"
+      "size": 1732,
+      "sha": "c3ff16f72c5fdeea"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/dragon_phoenix_v2_red/meta.json",
+      "size": 542,
+      "sha": "c93b06d210935d0c"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v2_red/theme.json",
@@ -2829,8 +2960,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_red/demo.json",
-      "size": 10171,
-      "sha": "4bcd734dbec20c95"
+      "size": 10378,
+      "sha": "4c19598acd95b499"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/double_dragon_red/meta.json",
+      "size": 489,
+      "sha": "af4659db2f41c1ec"
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_red/theme.json",
@@ -3070,8 +3206,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_green/demo.json",
-      "size": 1886,
-      "sha": "171d01bff934db2f"
+      "size": 2148,
+      "sha": "a99207eb257461c8"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/glass_garden_green/meta.json",
+      "size": 658,
+      "sha": "02097a5c6e9eae02"
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_green/theme.json",
@@ -3206,8 +3347,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/double_phoenix_red/demo.json",
-      "size": 1505,
-      "sha": "f7754498383319b9"
+      "size": 1872,
+      "sha": "863a2ff21692a49b"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/double_phoenix_red/meta.json",
+      "size": 505,
+      "sha": "f8209ed6a492e64b"
      },
      {
       "path": "src/features/invitation/shell/specs/double_phoenix_red/theme.json",
@@ -3370,8 +3516,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_green/demo.json",
-      "size": 5143,
-      "sha": "220a25b1824fc3bb"
+      "size": 5264,
+      "sha": "075788db05c9585e"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/double_dragon_green/meta.json",
+      "size": 485,
+      "sha": "570b46b591b59af1"
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_green/theme.json",
@@ -3601,8 +3752,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_pink/demo.json",
-      "size": 2139,
-      "sha": "8fb2ef155379c07c"
+      "size": 2407,
+      "sha": "00b300581ef88e64"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/glass_garden_pink/meta.json",
+      "size": 672,
+      "sha": "4f66d706e83c0666"
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_pink/theme.json",
@@ -3736,6 +3892,11 @@
       "path": "src/features/invitation/shell/specs/marble_yellow/demo.json",
       "size": 1881,
       "sha": "54f9b7993297adfb"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/marble_yellow/meta.json",
+      "size": 539,
+      "sha": "f3d4d652a59d664d"
      },
      {
       "path": "src/features/invitation/shell/specs/marble_yellow/theme.json",
@@ -3884,8 +4045,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/elegant_leaf_green/demo.json",
-      "size": 2267,
-      "sha": "460150fd5afa1e36"
+      "size": 2664,
+      "sha": "949a02ed732bee96"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/elegant_leaf_green/meta.json",
+      "size": 503,
+      "sha": "40324298dfbc75e5"
      },
      {
       "path": "src/features/invitation/shell/specs/elegant_leaf_green/theme.json",
@@ -4010,8 +4176,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_pink/demo.json",
-      "size": 2011,
-      "sha": "00c780746c4f04bc"
+      "size": 2273,
+      "sha": "1de3fc82e972574a"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/silk_ribbon_pink/meta.json",
+      "size": 722,
+      "sha": "8a2b07eef68ff95f"
      },
      {
       "path": "src/features/invitation/shell/specs/silk_ribbon_pink/theme.json",
@@ -4174,8 +4345,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v4_red/demo.json",
-      "size": 5855,
-      "sha": "093ed3282b42fcf4"
+      "size": 5887,
+      "sha": "35dfd80c771c0b99"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/dragon_phoenix_v4_red/meta.json",
+      "size": 601,
+      "sha": "43e9d449ae438aa9"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_v4_red/theme.json",
@@ -4524,8 +4700,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/lien_hoa_v2_green/demo.json",
-      "size": 21132,
-      "sha": "e6687db6e607e3e5"
+      "size": 21178,
+      "sha": "03dbc3c4b9cf2c59"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/lien_hoa_v2_green/meta.json",
+      "size": 766,
+      "sha": "8dbf457a75929920"
      },
      {
       "path": "src/features/invitation/shell/specs/lien_hoa_v2_green/theme.json",
@@ -4811,8 +4992,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/chateau_green/demo.json",
-      "size": 1754,
-      "sha": "bec05f273b6f73c0"
+      "size": 2028,
+      "sha": "27ecd58284d105b6"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/chateau_green/meta.json",
+      "size": 667,
+      "sha": "c91adc04cfa5f093"
      },
      {
       "path": "src/features/invitation/shell/specs/chateau_green/theme.json",
@@ -5005,8 +5191,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_green/demo.json",
-      "size": 5238,
-      "sha": "2ce96dc78f115b7c"
+      "size": 5359,
+      "sha": "b282fa2c1ead81a9"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/spring_garden_green/meta.json",
+      "size": 489,
+      "sha": "121ce03b735d89b9"
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_green/theme.json",
@@ -5142,8 +5333,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/chibi_red/demo.json",
-      "size": 2385,
-      "sha": "60d18a8d1a676be9"
+      "size": 2737,
+      "sha": "d2e9532741cdda62"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/chibi_red/meta.json",
+      "size": 470,
+      "sha": "85aba4709408f8c0"
      },
      {
       "path": "src/features/invitation/shell/specs/chibi_red/theme.json",
@@ -5308,8 +5504,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/song_hac_red/demo.json",
-      "size": 1626,
-      "sha": "a288c3ebf12ffec2"
+      "size": 1886,
+      "sha": "daf86afb3572a7a0"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/song_hac_red/meta.json",
+      "size": 564,
+      "sha": "3a41d439b723585c"
      },
      {
       "path": "src/features/invitation/shell/specs/song_hac_red/theme.json",
@@ -5509,8 +5710,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/nhat_binh_red/demo.json",
-      "size": 2008,
-      "sha": "d37b4607b37bdfe6"
+      "size": 2306,
+      "sha": "92bfa796c5f8f797"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/nhat_binh_red/meta.json",
+      "size": 652,
+      "sha": "cc0c3147a77f4936"
      },
      {
       "path": "src/features/invitation/shell/specs/nhat_binh_red/theme.json",
@@ -5643,8 +5849,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkgreen/demo.json",
-      "size": 12060,
-      "sha": "9bbf9658344e1276"
+      "size": 12265,
+      "sha": "f261cb63a050d95d"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/baroque_v2_darkgreen/meta.json",
+      "size": 741,
+      "sha": "ac4523562cf23d62"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkgreen/theme.json",
@@ -5918,8 +6129,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkred/demo.json",
-      "size": 11899,
-      "sha": "39e5543d91c12490"
+      "size": 12112,
+      "sha": "518702b8a896cfe6"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/baroque_v2_darkred/meta.json",
+      "size": 734,
+      "sha": "60cc93e416423548"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkred/theme.json",
@@ -6230,8 +6446,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/cherry_blossom_pink/demo.json",
-      "size": 2141,
-      "sha": "bcea1db5f0e052ff"
+      "size": 2495,
+      "sha": "8e2d2ce505a88b62"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/cherry_blossom_pink/meta.json",
+      "size": 502,
+      "sha": "9a68add414873e49"
      },
      {
       "path": "src/features/invitation/shell/specs/cherry_blossom_pink/theme.json",
@@ -6399,8 +6620,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_pink/demo.json",
-      "size": 12541,
-      "sha": "5d0b08e9a244371f"
+      "size": 12748,
+      "sha": "9ae113a05708dcb4"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/boho_floral_pink/meta.json",
+      "size": 493,
+      "sha": "9c7b64ba32927a65"
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_pink/theme.json",
@@ -6557,8 +6783,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/applique_lace_white/demo.json",
-      "size": 1760,
-      "sha": "c60fd83c7d10d9ac"
+      "size": 2020,
+      "sha": "b7b50eb82e2ce104"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/applique_lace_white/meta.json",
+      "size": 688,
+      "sha": "e7445d5250259b13"
      },
      {
       "path": "src/features/invitation/shell/specs/applique_lace_white/theme.json",
@@ -6749,8 +6980,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/silk_flora_brown/demo.json",
-      "size": 1884,
-      "sha": "4eb24d15f943cafb"
+      "size": 2142,
+      "sha": "990f1fac26df0e60"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/silk_flora_brown/meta.json",
+      "size": 567,
+      "sha": "0ec2171b3e26722b"
      },
      {
       "path": "src/features/invitation/shell/specs/silk_flora_brown/theme.json",
@@ -6890,8 +7126,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_tinh_red/demo.json",
-      "size": 2134,
-      "sha": "7cb25a50e1a1c70e"
+      "size": 2398,
+      "sha": "e8739e7c052c20c9"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/hoa_tinh_red/meta.json",
+      "size": 629,
+      "sha": "3c60e8bc293ef3ae"
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_tinh_red/theme.json",
@@ -7039,8 +7280,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_blue/demo.json",
-      "size": 5236,
-      "sha": "0f42eedd131ab92c"
+      "size": 5357,
+      "sha": "fbad6020fbb49aa7"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/spring_garden_blue/meta.json",
+      "size": 496,
+      "sha": "b4473477715c08dc"
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_blue/theme.json",
@@ -7179,8 +7425,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkblue/demo.json",
-      "size": 2141,
-      "sha": "07e103f10988fef0"
+      "size": 2409,
+      "sha": "405287c76c78e309"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/minimalism_darkblue/meta.json",
+      "size": 571,
+      "sha": "1c5539d565e5d139"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_darkblue/theme.json",
@@ -7320,8 +7571,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/royal_red/demo.json",
-      "size": 2004,
-      "sha": "c0cb59d02b671e03"
+      "size": 2377,
+      "sha": "0ce512e49731d67a"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/royal_red/meta.json",
+      "size": 485,
+      "sha": "4599afb7ef7739ba"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_red/theme.json",
@@ -7463,8 +7719,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_red/demo.json",
-      "size": 1755,
-      "sha": "fb43653d3eab1302"
+      "size": 2019,
+      "sha": "7f6734785fb55129"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/minimalism_red/meta.json",
+      "size": 527,
+      "sha": "dd74e5ee7d48dae1"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_red/theme.json",
@@ -7613,8 +7874,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_red/demo.json",
-      "size": 5237,
-      "sha": "074da0f9cc1f6cb5"
+      "size": 5358,
+      "sha": "ed3aa48c5481071b"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/spring_garden_red/meta.json",
+      "size": 500,
+      "sha": "4825f69098e49c23"
      },
      {
       "path": "src/features/invitation/shell/specs/spring_garden_red/theme.json",
@@ -7863,8 +8129,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_green/demo.json",
-      "size": 3800,
-      "sha": "70bf5c597f2cf342"
+      "size": 3832,
+      "sha": "968f5104acf97321"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/dragon_phoenix_green/meta.json",
+      "size": 526,
+      "sha": "4c3aad327e1a5cdd"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_green/theme.json",
@@ -8004,8 +8275,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_gold/demo.json",
-      "size": 1499,
-      "sha": "1c16a26f4d189e8e"
+      "size": 1757,
+      "sha": "b51d7f2d48cdbb27"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/baroque_gold/meta.json",
+      "size": 628,
+      "sha": "737a4c52b1b8a291"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_gold/theme.json",
@@ -8160,8 +8436,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/chateau_blue/demo.json",
-      "size": 1372,
-      "sha": "6b42f60181d2c076"
+      "size": 1630,
+      "sha": "b8e0f573ab54b81c"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/chateau_blue/meta.json",
+      "size": 589,
+      "sha": "73d2cd8aecff4315"
      },
      {
       "path": "src/features/invitation/shell/specs/chateau_blue/theme.json",
@@ -8356,8 +8637,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/double_phoenix_green/demo.json",
-      "size": 2015,
-      "sha": "e11e2558feb6a0c1"
+      "size": 2367,
+      "sha": "c69b0744f4f3d726"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/double_phoenix_green/meta.json",
+      "size": 532,
+      "sha": "50ca0d322b645e92"
      },
      {
       "path": "src/features/invitation/shell/specs/double_phoenix_green/theme.json",
@@ -8520,8 +8806,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_brown/demo.json",
-      "size": 14287,
-      "sha": "d2857e51db72efca"
+      "size": 14543,
+      "sha": "66ccb1d3b0d0cef9"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/boho_floral_brown/meta.json",
+      "size": 466,
+      "sha": "c7613780b3cc7781"
      },
      {
       "path": "src/features/invitation/shell/specs/boho_floral_brown/theme.json",
@@ -8678,8 +8969,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_blue/demo.json",
-      "size": 8415,
-      "sha": "c8ff1830fe0e3852"
+      "size": 8617,
+      "sha": "4d6a0ea2935bbf94"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/double_dragon_blue/meta.json",
+      "size": 484,
+      "sha": "b8e9e72c068f77a5"
      },
      {
       "path": "src/features/invitation/shell/specs/double_dragon_blue/theme.json",
@@ -8910,6 +9206,11 @@
       "sha": "89235dddf1d3bf7f"
      },
      {
+      "path": "src/features/invitation/shell/specs/glass_garden_light_green/meta.json",
+      "size": 604,
+      "sha": "3d5339d8f923aa65"
+     },
+     {
       "path": "src/features/invitation/shell/specs/glass_garden_light_green/theme.json",
       "size": 318,
       "sha": "eb5f68606c0af3d2"
@@ -9035,8 +9336,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_blue/demo.json",
-      "size": 11178,
-      "sha": "823f91b69f924612"
+      "size": 11389,
+      "sha": "a432982c74a3d8e1"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/crystal_floral_blue/meta.json",
+      "size": 606,
+      "sha": "8c4283b4452426c5"
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_blue/theme.json",
@@ -9320,8 +9626,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_blue/demo.json",
-      "size": 3800,
-      "sha": "835e3aaf41e38de2"
+      "size": 3832,
+      "sha": "2a9b43295a484702"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/dragon_phoenix_blue/meta.json",
+      "size": 521,
+      "sha": "de9e4e06bfff4733"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_blue/theme.json",
@@ -9461,8 +9772,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/co_ba_red/demo.json",
-      "size": 2258,
-      "sha": "ac03215db46e2757"
+      "size": 2528,
+      "sha": "2fe2cd155558fd37"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/co_ba_red/meta.json",
+      "size": 634,
+      "sha": "3375551f5183d70f"
      },
      {
       "path": "src/features/invitation/shell/specs/co_ba_red/theme.json",
@@ -9562,8 +9878,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/lien_hoa_pink/demo.json",
-      "size": 1119,
-      "sha": "3583e40e0faa74b4"
+      "size": 1381,
+      "sha": "3c732b247d9c0825"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/lien_hoa_pink/meta.json",
+      "size": 703,
+      "sha": "5ebf7e299c67bd5a"
      },
      {
       "path": "src/features/invitation/shell/specs/lien_hoa_pink/theme.json",
@@ -9748,6 +10069,11 @@
       "path": "src/features/invitation/shell/specs/minimalism_purple/demo.json",
       "size": 17892,
       "sha": "f5d8d58cff102460"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/minimalism_purple/meta.json",
+      "size": 559,
+      "sha": "3823b29fba523fd8"
      },
      {
       "path": "src/features/invitation/shell/specs/minimalism_purple/theme.json",
@@ -9950,8 +10276,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_green/demo.json",
-      "size": 7706,
-      "sha": "49d10c2fecf18bf5"
+      "size": 7827,
+      "sha": "e34f6237872c87f2"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/porcelain_v2_green/meta.json",
+      "size": 558,
+      "sha": "792835bdc8aa8d7e"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_green/theme.json",
@@ -10207,8 +10538,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dried_flower_v2_green/demo.json",
-      "size": 2270,
-      "sha": "891ba813f30b1b16"
+      "size": 2538,
+      "sha": "343a9e020b88388c"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/dried_flower_v2_green/meta.json",
+      "size": 605,
+      "sha": "6b895ec559418984"
      },
      {
       "path": "src/features/invitation/shell/specs/dried_flower_v2_green/theme.json",
@@ -10386,8 +10722,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_pink/demo.json",
-      "size": 6601,
-      "sha": "75e621c81b396467"
+      "size": 6722,
+      "sha": "1c1fde4662465cdf"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/porcelain_v2_pink/meta.json",
+      "size": 585,
+      "sha": "b76c9de702fd3521"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_pink/theme.json",
@@ -10543,8 +10884,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_kho_v2_blue/demo.json",
-      "size": 2010,
-      "sha": "6362ac0409e01d91"
+      "size": 2268,
+      "sha": "6a75121de38b6ae1"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/hoa_kho_v2_blue/meta.json",
+      "size": 589,
+      "sha": "86fff87c28edc413"
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_kho_v2_blue/theme.json",
@@ -10722,8 +11068,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_black/demo.json",
-      "size": 3800,
-      "sha": "835e3aaf41e38de2"
+      "size": 3832,
+      "sha": "2a9b43295a484702"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/dragon_phoenix_black/meta.json",
+      "size": 521,
+      "sha": "9285854aabc02d1a"
      },
      {
       "path": "src/features/invitation/shell/specs/dragon_phoenix_black/theme.json",
@@ -10863,8 +11214,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/royal_v2_green/demo.json",
-      "size": 1628,
-      "sha": "c45315054caeaaee"
+      "size": 1896,
+      "sha": "177b2def2939ecad"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/royal_v2_green/meta.json",
+      "size": 523,
+      "sha": "8eb09b96926e09c8"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_v2_green/theme.json",
@@ -11054,8 +11410,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/royal_green/demo.json",
-      "size": 2006,
-      "sha": "f22427d5b0dcb34a"
+      "size": 2270,
+      "sha": "f68e7c4fc147b08c"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/royal_green/meta.json",
+      "size": 498,
+      "sha": "0843dfe01538062e"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_green/theme.json",
@@ -11199,8 +11560,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_blue/demo.json",
-      "size": 1372,
-      "sha": "f6abcd1ad7b7af57"
+      "size": 1646,
+      "sha": "e04138c8ccd9546d"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/baroque_blue/meta.json",
+      "size": 686,
+      "sha": "c4bfbb6f5d4aeee3"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_blue/theme.json",
@@ -11390,8 +11756,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_brown/demo.json",
-      "size": 1756,
-      "sha": "6958b4fa4178d4fa"
+      "size": 2030,
+      "sha": "d529a1da49565640"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/porcelain_brown/meta.json",
+      "size": 546,
+      "sha": "9d15fb2223f2b115"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_brown/theme.json",
@@ -11499,8 +11870,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_red/demo.json",
-      "size": 11730,
-      "sha": "5fb4add14eb94fe1"
+      "size": 11947,
+      "sha": "35024dbe9349eb02"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/crystal_floral_red/meta.json",
+      "size": 611,
+      "sha": "2369c37b9e8db9c3"
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_red/theme.json",
@@ -11791,8 +12167,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/royal_blue/demo.json",
-      "size": 1878,
-      "sha": "02b1358222b97876"
+      "size": 2180,
+      "sha": "265a4e9245e6d49d"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/royal_blue/meta.json",
+      "size": 487,
+      "sha": "20ac81db08294378"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_blue/theme.json",
@@ -11934,8 +12315,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/riviera_blue/demo.json",
-      "size": 5195,
-      "sha": "e1b4b142e8ad7e73"
+      "size": 5227,
+      "sha": "be941db3f527b07c"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/riviera_blue/meta.json",
+      "size": 640,
+      "sha": "fca9408494eca7e2"
      },
      {
       "path": "src/features/invitation/shell/specs/riviera_blue/theme.json",
@@ -12391,8 +12777,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/florence_brown/demo.json",
-      "size": 2009,
-      "sha": "4075e651eba16397"
+      "size": 2277,
+      "sha": "d71848746134ac9b"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/florence_brown/meta.json",
+      "size": 636,
+      "sha": "24f58451909a8a04"
      },
      {
       "path": "src/features/invitation/shell/specs/florence_brown/theme.json",
@@ -12651,8 +13042,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkblue/demo.json",
-      "size": 12045,
-      "sha": "e6a63dd60ac53c49"
+      "size": 12262,
+      "sha": "7ecd7f0a56683c74"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/baroque_v2_darkblue/meta.json",
+      "size": 738,
+      "sha": "e007339c0c580bac"
      },
      {
       "path": "src/features/invitation/shell/specs/baroque_v2_darkblue/theme.json",
@@ -12928,6 +13324,11 @@
       "path": "src/features/invitation/shell/specs/jasmine_green/demo.json",
       "size": 5892,
       "sha": "4fc8ea64f1f75e9a"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/jasmine_green/meta.json",
+      "size": 783,
+      "sha": "55d72867572f20e1"
      },
      {
       "path": "src/features/invitation/shell/specs/jasmine_green/theme.json",
@@ -13313,8 +13714,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/sunflower_yellow/demo.json",
-      "size": 1757,
-      "sha": "98dea24bb2ac3997"
+      "size": 2027,
+      "sha": "3a2e4ea29a694298"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/sunflower_yellow/meta.json",
+      "size": 587,
+      "sha": "544033b00044f5f1"
      },
      {
       "path": "src/features/invitation/shell/specs/sunflower_yellow/theme.json",
@@ -13477,8 +13883,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_green/demo.json",
-      "size": 12437,
-      "sha": "491d8616fd75a6be"
+      "size": 12650,
+      "sha": "1dbbead7affe84c8"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/crystal_floral_green/meta.json",
+      "size": 625,
+      "sha": "ab9b941c6f6b47e3"
      },
      {
       "path": "src/features/invitation/shell/specs/crystal_floral_green/theme.json",
@@ -13770,6 +14181,11 @@
       "sha": "6b180586bbd4be6b"
      },
      {
+      "path": "src/features/invitation/shell/specs/santorini_blue/meta.json",
+      "size": 494,
+      "sha": "d077be2efd10942a"
+     },
+     {
       "path": "src/features/invitation/shell/specs/santorini_blue/theme.json",
       "size": 308,
       "sha": "b52ad1fa69dab2e7"
@@ -13984,8 +14400,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_red/demo.json",
-      "size": 7019,
-      "sha": "f455485acbcdab9e"
+      "size": 7140,
+      "sha": "bb3b28d9cb55de45"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/porcelain_v2_red/meta.json",
+      "size": 549,
+      "sha": "0861ca9901d7c165"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_v2_red/theme.json",
@@ -14141,8 +14562,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_blue/demo.json",
-      "size": 1882,
-      "sha": "ee88d55dffc67f3c"
+      "size": 2140,
+      "sha": "62bcb6be5aef2057"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/porcelain_blue/meta.json",
+      "size": 540,
+      "sha": "9b0571de4c0bf789"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_blue/theme.json",
@@ -14246,6 +14672,11 @@
       "path": "src/features/invitation/shell/specs/folk_floral_blue/demo.json",
       "size": 2011,
       "sha": "cc949866c08c30b4"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/folk_floral_blue/meta.json",
+      "size": 552,
+      "sha": "bb824b07401ffd5e"
      },
      {
       "path": "src/features/invitation/shell/specs/folk_floral_blue/theme.json",
@@ -14380,8 +14811,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_red/demo.json",
-      "size": 1627,
-      "sha": "10d4c2d64c2e09e2"
+      "size": 1895,
+      "sha": "a6ce411ad0d41fb2"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/porcelain_red/meta.json",
+      "size": 544,
+      "sha": "460c12822a038e58"
      },
      {
       "path": "src/features/invitation/shell/specs/porcelain_red/theme.json",
@@ -14486,8 +14922,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_dai_pink/demo.json",
-      "size": 2134,
-      "sha": "2a26c784421a2eaf"
+      "size": 2396,
+      "sha": "5ee0eaac2025ca8c"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/hoa_dai_pink/meta.json",
+      "size": 675,
+      "sha": "0818e1128d719b58"
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_dai_pink/theme.json",
@@ -14661,6 +15102,11 @@
       "path": "src/features/invitation/shell/specs/qasr_blue/demo.json",
       "size": 2004,
       "sha": "5935ff884a7934c2"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/qasr_blue/meta.json",
+      "size": 651,
+      "sha": "578aac146e3f5db6"
      },
      {
       "path": "src/features/invitation/shell/specs/qasr_blue/theme.json",
@@ -14875,8 +15321,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/san_miguel_yellow/demo.json",
-      "size": 1631,
-      "sha": "eeac366332475c68"
+      "size": 1899,
+      "sha": "24cc81c78c5556e6"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/san_miguel_yellow/meta.json",
+      "size": 627,
+      "sha": "648f0bce9ec17ec0"
      },
      {
       "path": "src/features/invitation/shell/specs/san_miguel_yellow/theme.json",
@@ -15106,8 +15557,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_blue/demo.json",
-      "size": 1758,
-      "sha": "4c1549272febc16c"
+      "size": 2028,
+      "sha": "a96a77794e83bb43"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/glass_garden_blue/meta.json",
+      "size": 653,
+      "sha": "044524d287a0e8b6"
      },
      {
       "path": "src/features/invitation/shell/specs/glass_garden_blue/theme.json",
@@ -15232,8 +15688,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/royal_v2_purple/demo.json",
-      "size": 1502,
-      "sha": "b6ced52de57a5917"
+      "size": 1760,
+      "sha": "778076f46935253c"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/royal_v2_purple/meta.json",
+      "size": 526,
+      "sha": "19abf95a74a8c378"
      },
      {
       "path": "src/features/invitation/shell/specs/royal_v2_purple/theme.json",
@@ -15438,8 +15899,13 @@
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_kho_orange/demo.json",
-      "size": 1755,
-      "sha": "c97edfab8be3f53e"
+      "size": 2019,
+      "sha": "c8762e7395e1d16e"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/hoa_kho_orange/meta.json",
+      "size": 523,
+      "sha": "c8f2ff879ab58d37"
      },
      {
       "path": "src/features/invitation/shell/specs/hoa_kho_orange/theme.json",
@@ -15604,6 +16070,11 @@
       "path": "src/features/invitation/shell/specs/mahal_gold/demo.json",
       "size": 1878,
       "sha": "6813f04cb7c449ad"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/mahal_gold/meta.json",
+      "size": 589,
+      "sha": "272bb39f3a5a5c3f"
      },
      {
       "path": "src/features/invitation/shell/specs/mahal_gold/theme.json",
@@ -15812,6 +16283,11 @@
       "path": "src/features/invitation/shell/specs/floral_fiesta_yellow/demo.json",
       "size": 1507,
       "sha": "95fa763ef0c1e19e"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/floral_fiesta_yellow/meta.json",
+      "size": 656,
+      "sha": "c05b11e12586e89f"
      },
      {
       "path": "src/features/invitation/shell/specs/floral_fiesta_yellow/theme.json",
@@ -16107,6 +16583,11 @@
       "sha": "5c541a25eb6fe89d"
      },
      {
+      "path": "src/features/invitation/shell/specs/nomad_brown/meta.json",
+      "size": 548,
+      "sha": "7706c7ada88cb6ca"
+     },
+     {
       "path": "src/features/invitation/shell/specs/nomad_brown/theme.json",
       "size": 305,
       "sha": "8f555623d931a83c"
@@ -16325,6 +16806,11 @@
       "sha": "5dd9a6114d5ba1f9"
      },
      {
+      "path": "src/features/invitation/shell/specs/saraya_gold/meta.json",
+      "size": 604,
+      "sha": "822df955d8ec40d9"
+     },
+     {
       "path": "src/features/invitation/shell/specs/saraya_gold/theme.json",
       "size": 305,
       "sha": "45c1988d2d64b807"
@@ -16528,6 +17014,11 @@
       "sha": "9dcff17230ea8f83"
      },
      {
+      "path": "src/features/invitation/shell/specs/qasr_gold/meta.json",
+      "size": 585,
+      "sha": "a4f42ae289dbcd71"
+     },
+     {
       "path": "src/features/invitation/shell/specs/qasr_gold/theme.json",
       "size": 303,
       "sha": "acab9a68b61eadf3"
@@ -16669,6 +17160,11 @@
       "path": "src/features/invitation/shell/specs/qasr_green/demo.json",
       "size": 1624,
       "sha": "c9e70fb3cb31f597"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/qasr_green/meta.json",
+      "size": 585,
+      "sha": "86d18445cd086184"
      },
      {
       "path": "src/features/invitation/shell/specs/qasr_green/theme.json",
@@ -16848,6 +17344,11 @@
       "path": "src/features/invitation/shell/specs/mandap_darkred/demo.json",
       "size": 1374,
       "sha": "5e0429390cd6e7e0"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/mandap_darkred/meta.json",
+      "size": 643,
+      "sha": "7f6b173f3919288c"
      },
      {
       "path": "src/features/invitation/shell/specs/mandap_darkred/theme.json",
@@ -17063,6 +17564,11 @@
       "sha": "96b5f0873d5a1254"
      },
      {
+      "path": "src/features/invitation/shell/specs/brocade_flower_red/meta.json",
+      "size": 494,
+      "sha": "d467e2dd1320cd1d"
+     },
+     {
       "path": "src/features/invitation/shell/specs/brocade_flower_red/theme.json",
       "size": 312,
       "sha": "7ecb7951a827dee9"
@@ -17242,6 +17748,11 @@
       "sha": "233033fcd13a49b1"
      },
      {
+      "path": "src/features/invitation/shell/specs/calla_lily_white/meta.json",
+      "size": 589,
+      "sha": "2e073e519a528fca"
+     },
+     {
       "path": "src/features/invitation/shell/specs/calla_lily_white/theme.json",
       "size": 385,
       "sha": "29fd7fec0b91151d"
@@ -17410,6 +17921,11 @@
       "path": "src/features/invitation/shell/specs/mandap_yellow/demo.json",
       "size": 3619,
       "sha": "aba39d3085a5c732"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/mandap_yellow/meta.json",
+      "size": 665,
+      "sha": "a34848702f57b875"
      },
      {
       "path": "src/features/invitation/shell/specs/mandap_yellow/theme.json",
@@ -17705,6 +18221,11 @@
       "path": "src/features/invitation/shell/specs/mahal_pink/demo.json",
       "size": 3121,
       "sha": "b605da5480f16215"
+     },
+     {
+      "path": "src/features/invitation/shell/specs/mahal_pink/meta.json",
+      "size": 587,
+      "sha": "d11a74adaac13555"
      },
      {
       "path": "src/features/invitation/shell/specs/mahal_pink/theme.json",

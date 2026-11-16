@@ -1,0 +1,19 @@
+{
+  "order": 39,
+  "slug": "hoang-kim-do",
+  "name": "Hoàng Kim - Đỏ",
+  "desc": "Sang trọng hoàng gia với nền đỏ thẫm và điểm nhấn vàng kim",
+  "img": "listing/royal_red.fa9bcdab.webp",
+  "full": "full/royal_red.10169b4f.webp",
+  "tags": [
+    "Sang trọng",
+    "Đỏ",
+    "Vàng kim"
+  ],
+  "palette": {
+    "bg": "#3E0001",
+    "ink": "#E1BC7C",
+    "rgb": "225, 188, 124",
+    "cover": "linear-gradient(to bottom right, #E1BC7C, #b89a65, #8b744c)"
+  }
+}

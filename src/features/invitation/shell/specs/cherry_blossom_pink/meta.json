@@ -1,0 +1,20 @@
+{
+  "order": 32,
+  "slug": "anh-dao-hong",
+  "name": "Anh Đào - Hồng",
+  "desc": "Lãng mạn với sắc hồng hoa anh đào",
+  "img": "listing/cherry_blossom_pink.23b01e1b.webp",
+  "full": "full/cherry_blossom_pink.5121d2f4.webp",
+  "tags": [
+    "Lãng mạn",
+    "Hoa anh đào",
+    "Hiện đại"
+  ],
+  "previewFocal": 1,
+  "palette": {
+    "bg": "#464646",
+    "ink": "#ae4c51",
+    "rgb": "174, 76, 81",
+    "cover": "linear-gradient(to bottom right, #ba4a59, #ae4c51, #9e3c41)"
+  }
+}

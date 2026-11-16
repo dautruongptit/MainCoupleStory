@@ -1,0 +1,20 @@
+{
+  "order": 41,
+  "slug": "vuon-xuan-do",
+  "name": "Vườn Xuân - Đỏ",
+  "desc": "Thiên nhiên ấm áp với sắc đỏ tươi tắn",
+  "img": "listing/spring_garden_red.5d0604e5.webp",
+  "full": "full/spring_garden_red.7831a3ca.webp",
+  "tags": [
+    "Thiên nhiên",
+    "Đỏ",
+    "Ấm áp"
+  ],
+  "previewFocal": 1,
+  "palette": {
+    "bg": "#ffffff",
+    "ink": "#D25F65",
+    "rgb": "210, 95, 101",
+    "cover": "linear-gradient(to bottom right, #fff5f5, #ffefef, #ffe8e8)"
+  }
+}

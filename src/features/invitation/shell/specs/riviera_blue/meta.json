@@ -1,0 +1,22 @@
+{
+  "order": 65,
+  "slug": "riviera-lam",
+  "name": "Riviera - Lam",
+  "desc": "Tranh màu nước vẽ ngôi làng bên hồ dưới chân núi kiểu Riviera, tông xanh lam và những nhánh hoa nở rực, nhẹ nhàng và thơ mộng",
+  "img": "listing/riviera_blue.8a5c2b0c.webp",
+  "full": "full/riviera_blue.0b0dd7a5.webp",
+  "badge": "new",
+  "tags": [
+    "Riviera",
+    "Lam",
+    "Màu nước"
+  ],
+  "introDefault": "WELCOME TO OUR WEDDING",
+  "previewFocal": 8,
+  "palette": {
+    "bg": "#fdfbf5",
+    "ink": "#000000",
+    "rgb": "0, 0, 0",
+    "cover": "linear-gradient(to bottom right, #5992b0, #005885, #003f60)"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "order": 29,
+  "slug": "nhat-binh-do",
+  "name": "Nhật Bình - Đỏ",
+  "desc": "Giấy kem ấm, chữ nâu cổ điển và điểm nhấn đỏ son; mây, hoa và đèn lồng có parallax. Phong bì nâu, thẻ kem, con dấu 囍 — gợi áo Nhật Bình và thiệp cổ trang hiện đại.",
+  "img": "listing/nhat_binh_red.793a8042.webp",
+  "full": "full/nhat_binh_red.d63b4d39.webp",
+  "tags": [
+    "Cổ phục",
+    "Đỏ",
+    "Giấy kem"
+  ],
+  "previewFocal": 6,
+  "palette": {
+    "bg": "#f8f3e0",
+    "ink": "#542e08",
+    "rgb": "84, 46, 8",
+    "cover": "linear-gradient(to bottom right, #542e08, #442506, #341c04)"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "order": 26,
+  "slug": "vuon-xuan-xanh",
+  "name": "Vườn Xuân - Xanh",
+  "desc": "Thiên nhiên tươi mát với họa tiết lá cây",
+  "img": "listing/spring_garden_green.3734bfda.webp",
+  "full": "full/spring_garden_green.ebe294d9.webp",
+  "tags": [
+    "Thiên nhiên",
+    "Xanh lá",
+    "Thanh bình"
+  ],
+  "palette": {
+    "bg": "#ffffff",
+    "ink": "#5d6a57",
+    "rgb": "93, 106, 87",
+    "cover": "linear-gradient(to bottom right, #f0f4ef, #e8ede6, #dfe5dd)"
+  }
+}

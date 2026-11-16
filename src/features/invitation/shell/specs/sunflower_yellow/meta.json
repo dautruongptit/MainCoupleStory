@@ -1,0 +1,20 @@
+{
+  "order": 69,
+  "slug": "hoa-huong-duong",
+  "name": "Hoa Hướng Dương",
+  "desc": "Hoa hướng dương vẽ màu nước trên nền kem ấm, tiêu đề tông hổ phách và chữ xanh ô liu, rực rỡ mà vẫn dịu mắt",
+  "img": "listing/sunflower.6a3cb26b.webp",
+  "full": "full/sunflower.27ad1ffe.webp",
+  "tags": [
+    "Hướng dương",
+    "Vàng",
+    "Màu nước"
+  ],
+  "previewFocal": 10,
+  "palette": {
+    "bg": "#fefbf4",
+    "ink": "#71702a",
+    "rgb": "113, 112, 42",
+    "cover": "linear-gradient(to bottom right, #71702a, #5c5b22, #46451a)"
+  }
+}

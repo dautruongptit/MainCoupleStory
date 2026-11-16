@@ -1,0 +1,19 @@
+{
+  "order": 81,
+  "slug": "hoa-kho-cam",
+  "name": "Hoa Khô - Cam",
+  "desc": "Hoa khô cúc vạn thọ vẽ màu nước viền quanh những khung thiệp kem, chữ cam đất trên nền giấy ấm",
+  "img": "listing/hoa_kho_orange.11f1f15d.webp",
+  "full": "full/hoa_kho_orange.14d9d669.webp",
+  "tags": [
+    "Hoa khô",
+    "Cam",
+    "Boho"
+  ],
+  "palette": {
+    "bg": "#ffffff",
+    "ink": "#4c611b",
+    "rgb": "76, 97, 27",
+    "cover": "linear-gradient(to bottom right, #4c611b, #3e4f16, #2f3c10)"
+  }
+}

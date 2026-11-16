@@ -1,0 +1,21 @@
+{
+  "order": 78,
+  "slug": "san-miguel-vang",
+  "name": "San Miguel - Vàng",
+  "desc": "Tranh màu nước vẽ thị trấn thuộc địa Mexico, nhà thờ mái vòm vàng ochre, đài phun nước đá và hoa giấy hồng đổ xuống hai bên",
+  "img": "listing/san_miguel_yellow.22977001.webp",
+  "full": "full/san_miguel_yellow.c28bd1e3.webp",
+  "badge": "new",
+  "tags": [
+    "San Miguel",
+    "Vàng",
+    "Màu nước"
+  ],
+  "previewFocal": 7.5,
+  "palette": {
+    "bg": "#ffffff",
+    "ink": "#000d29",
+    "rgb": "0, 13, 41",
+    "cover": "linear-gradient(to bottom right, #76b45c, #426f38, #174a27)"
+  }
+}

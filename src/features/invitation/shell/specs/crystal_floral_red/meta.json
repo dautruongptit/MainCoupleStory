@@ -1,0 +1,19 @@
+{
+  "order": 63,
+  "slug": "hoa-thuy-tinh-do",
+  "name": "Hoa Thuỷ Tinh - Đỏ",
+  "desc": "Hoa văn pha lê tinh xảo và khung hoa đỏ ánh vàng trên nền kem ấm, điểm tông đỏ thắm sang trọng; cảm giác châu Âu thanh lịch, ấm áp và rực rỡ.",
+  "img": "listing/crystal_floral_red.11abb2b8.webp",
+  "full": "full/crystal_floral_red.7b62347a.webp",
+  "tags": [
+    "Hoa pha lê",
+    "Đỏ",
+    "Châu Âu"
+  ],
+  "palette": {
+    "bg": "#fbf8f3",
+    "ink": "#560207",
+    "rgb": "86, 2, 7",
+    "cover": "linear-gradient(to bottom right, #560207, #9c1f2c, #c0304a)"
+  }
+}

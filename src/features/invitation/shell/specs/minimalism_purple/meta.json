@@ -1,0 +1,20 @@
+{
+  "order": 53,
+  "slug": "minimalism-tim",
+  "name": "Minimalism - Tím",
+  "desc": "Tối giản dịu dàng trên nền giấy trắng, hoa hồng tím lavender và dấu sáp trái tim mạ vàng",
+  "img": "listing/minimalism_purple.a9c64410.webp",
+  "full": "full/minimalism_purple.b3f9ce2f.webp",
+  "tags": [
+    "Tối giản",
+    "Tím",
+    "Lavender"
+  ],
+  "previewFocal": 6.7,
+  "palette": {
+    "bg": "#ffffff",
+    "ink": "#7869a0",
+    "rgb": "120, 105, 160",
+    "cover": "linear-gradient(to bottom right, #9a8cc0, #7869a0, #574a78)"
+  }
+}

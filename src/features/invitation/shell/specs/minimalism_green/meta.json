@@ -1,0 +1,20 @@
+{
+  "order": 8,
+  "slug": "minimalism-xanh",
+  "name": "Minimalism - Xanh",
+  "desc": "Tối giản thanh lịch với nền giấy trắng và sắc xanh lá cây thảo mộc",
+  "img": "listing/minimalism_green.18f0f6fd.webp",
+  "full": "full/minimalism_green.c0c2249b.webp",
+  "tags": [
+    "Tối giản",
+    "Xanh",
+    "Thanh lịch"
+  ],
+  "previewFocal": 5.3,
+  "palette": {
+    "bg": "#ffffff",
+    "ink": "#6b7b4f",
+    "rgb": "107, 123, 79",
+    "cover": "linear-gradient(to bottom right, #e9efe1, #dbe6cf, #cdd9bd)"
+  }
+}

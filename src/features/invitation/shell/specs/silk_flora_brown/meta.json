@@ -1,0 +1,20 @@
+{
+  "order": 35,
+  "slug": "hoa-lua-nau",
+  "name": "Hoa Lụa - Nâu",
+  "desc": "Thiệp cưới tối giản tông ấm, nhấn vào typography và nội dung, phù hợp phong cách thanh lịch hiện đại",
+  "img": "listing/silk_flora_brown.9f083309.webp",
+  "full": "full/silk_flora_brown.b755a149.webp",
+  "tags": [
+    "Tối giản",
+    "Typography",
+    "Nâu"
+  ],
+  "previewFocal": 3,
+  "palette": {
+    "bg": "#FAF3E8",
+    "ink": "#996247",
+    "rgb": "153, 98, 71",
+    "cover": "linear-gradient(to bottom right, #7a4d38, #996247, #7a4d38)"
+  }
+}

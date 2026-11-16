@@ -1,0 +1,19 @@
+{
+  "order": 75,
+  "slug": "bach-su-do",
+  "name": "Bạch Sứ - Đỏ",
+  "desc": "Hoa văn đỏ vẽ nét trên nền sứ kem, khung viền chạm cổ điển và khối lịch cưới đỏ trầm",
+  "img": "listing/porcelain_red.9647d2d8.webp",
+  "full": "full/porcelain_red.e9abd64e.webp",
+  "tags": [
+    "Hoa văn đỏ",
+    "Trắng đỏ",
+    "Cổ điển"
+  ],
+  "palette": {
+    "bg": "#ffffff",
+    "ink": "#b03235",
+    "rgb": "176, 50, 53",
+    "cover": "linear-gradient(to bottom right, #b03235, #90292b, #6d1f20)"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "order": 24,
+  "slug": "lien-hoa-v2-xanh",
+  "name": "Liên Hoa V2 - Xanh",
+  "desc": "Phiên bản thứ hai của dòng Liên Hoa: sen hồng phấn vẽ màu nước cùng những tàu lá sen xanh ngọc tràn vào từ hai bên mép thiệp, trên nền giấy kem ấm; ảnh cưới đặt trong khung bo cánh sen và mọi tiêu đề đều nằm gọn trong viền hoa văn thanh mảnh.",
+  "img": "listing/lien_hoa_v2_green.19afaa39.webp",
+  "full": "full/lien_hoa_v2_green.63f2a8ca.webp",
+  "tags": [
+    "Hoa sen",
+    "Xanh",
+    "Màu nước"
+  ],
+  "introDefault": "Thân Mời",
+  "palette": {
+    "bg": "#fffbed",
+    "ink": "#124d00",
+    "rgb": "18, 77, 0",
+    "cover": "linear-gradient(to bottom right, #124d00, #0e3f00, #0b2f00)"
+  }
+}

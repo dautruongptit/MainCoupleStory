@@ -1,0 +1,20 @@
+{
+  "order": 51,
+  "slug": "co-ba-do",
+  "name": "Cô Ba - Đỏ",
+  "desc": "Giấy kem ấm, chữ nâu cổ điển và điểm nhấn đỏ son; mây, hoa và đèn lồng có parallax. Phong bì nâu, thẻ kem, con dấu 囍 — gợi áo Nhật Bình và thiệp cổ trang hiện đại.",
+  "img": "listing/co_ba_red.98b8cfdb.webp",
+  "full": "full/co_ba_red.b7589c15.webp",
+  "tags": [
+    "Cổ phục",
+    "Đỏ",
+    "Giấy kem"
+  ],
+  "previewFocal": 7,
+  "palette": {
+    "bg": "#f8f3e0",
+    "ink": "#542e08",
+    "rgb": "84, 46, 8",
+    "cover": "linear-gradient(to bottom right, #542e08, #442506, #341c04)"
+  }
+}

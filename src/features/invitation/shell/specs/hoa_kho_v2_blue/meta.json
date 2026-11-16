@@ -1,0 +1,21 @@
+{
+  "order": 57,
+  "slug": "hoa-kho-v2-lam",
+  "name": "Hoa Khô V2 - Lam",
+  "desc": "Hoa khô vẽ màu nước tông lam và vàng đất trên nền giấy kem, điểm những cánh bướm nhạt xuyên suốt tấm thiệp",
+  "img": "listing/hoa_kho_v2_blue.2df625e2.webp",
+  "full": "full/hoa_kho_v2_blue.6e33a368.webp",
+  "badge": "new",
+  "tags": [
+    "Hoa khô",
+    "Lam",
+    "Boho"
+  ],
+  "previewFocal": 1,
+  "palette": {
+    "bg": "#fffaf2",
+    "ink": "#556183",
+    "rgb": "85, 97, 131",
+    "cover": "linear-gradient(to bottom right, #556183, #454f6b, #343c51)"
+  }
+}

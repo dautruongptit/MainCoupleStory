@@ -8,7 +8,7 @@ const args = process.argv.slice(2);
 const base = args.includes("--base") ? args[args.indexOf("--base") + 1] : process.env.LOCAL_BASE || "http://localhost:8111";
 let ids = args.filter((a) => !a.startsWith("--") && a !== base);
 if (args.includes("--all") || !ids.length) {
-  const s = fs.readFileSync(new URL("../../src/features/templates/data/templates.ts", import.meta.url), "utf8");
+  const s = fs.readFileSync(new URL("../../src/features/templates/data/templates.generated.ts", import.meta.url), "utf8");
   ids = [...s.matchAll(/"id":\s*"([^"]+)"/g)].map((m) => m[1]);
 }
 

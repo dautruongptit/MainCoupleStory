@@ -1,0 +1,21 @@
+{
+  "order": 6,
+  "slug": "song-hy-do",
+  "name": "Song Hỷ - Đỏ",
+  "desc": "Chữ Hỷ trang trọng, khung ảnh cung, phong bì 囍",
+  "img": "listing/song_hy_red.197afce7.webp",
+  "full": "full/song_hy_red.09106faf.webp",
+  "tags": [
+    "Truyền thống",
+    "Đỏ",
+    "Chữ Hỷ"
+  ],
+  "introDefault": "WELCOME TO OUR WEDDING",
+  "previewFocal": 3,
+  "palette": {
+    "bg": "#fff7eb",
+    "ink": "#800000",
+    "rgb": "128, 0, 0",
+    "cover": "linear-gradient(to bottom right, #5a0000, #400000, #2a0000)"
+  }
+}

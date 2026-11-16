@@ -1,0 +1,19 @@
+{
+  "order": 52,
+  "slug": "lien-hoa-hong",
+  "name": "Liên Hoa - Hồng",
+  "desc": "Sắc hồng phấn dịu dàng của hoa sen: khung mạ vàng tinh tế cùng những đóa sen vẽ màu nước, tông hồng blush trên nền trắng ngà; chữ EB Garamond và Beau Rivage viết tay, gợi vẻ thanh khiết, lãng mạn và đậm nét truyền thống Á Đông.",
+  "img": "listing/lien_hoa_pink.da895261.webp",
+  "full": "full/lien_hoa_pink.abc0f8e2.webp",
+  "tags": [
+    "Hoa sen",
+    "Hồng",
+    "Thanh lịch"
+  ],
+  "palette": {
+    "bg": "#fefefe",
+    "ink": "#804b5b",
+    "rgb": "128, 75, 91",
+    "cover": "linear-gradient(to bottom right, #c9768e, #d07d95, #e9b4c4)"
+  }
+}

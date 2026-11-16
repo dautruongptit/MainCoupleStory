@@ -1,0 +1,19 @@
+{
+  "order": 10,
+  "slug": "long-phung-v3-do",
+  "name": "Long Phụng V3 - Đỏ",
+  "desc": "Nền đỏ thẫm cổ điển, khung ảnh vòm rồng phượng và họa tiết chim én tinh tế",
+  "img": "listing/dragon_phoenix_v3_red.e041b5dd.webp",
+  "full": "full/dragon_phoenix_v3_red.14123d1f.webp",
+  "tags": [
+    "Cổ điển",
+    "Đỏ",
+    "Rồng phượng"
+  ],
+  "palette": {
+    "bg": "#7A0014",
+    "ink": "#FFBE89",
+    "rgb": "255, 190, 137",
+    "cover": "linear-gradient(to bottom right, #710001, #5a0001, #450001)"
+  }
+}

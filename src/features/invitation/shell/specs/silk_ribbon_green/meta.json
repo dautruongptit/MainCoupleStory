@@ -1,0 +1,20 @@
+{
+  "order": 7,
+  "slug": "to-duyen-xanh",
+  "name": "Tơ Duyên - Xanh",
+  "desc": "Hoa rum trắng nở trên nền giấy trắng tinh, dải lụa xanh rêu mềm mại uốn quanh từng phần nội dung cùng những nét cong mảnh như sợi tơ; chữ xanh ô liu, bố cục so le trái phải, gợi vẻ tinh giản và thanh lịch.",
+  "img": "listing/silk_ribbon_green.0e99b42a.webp",
+  "full": "full/silk_ribbon_green.95f87a06.webp",
+  "tags": [
+    "Hoa rum",
+    "Xanh",
+    "Lụa"
+  ],
+  "previewFocal": 1.5,
+  "palette": {
+    "bg": "#ffffff",
+    "ink": "#5e813c",
+    "rgb": "94, 129, 60",
+    "cover": "linear-gradient(to bottom right, #ffffff, #f2f6ea, #e3ecd2)"
+  }
+}

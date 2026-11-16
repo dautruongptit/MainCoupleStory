@@ -1,4 +1,3 @@
-import { getGiftboxConfig } from "@/features/invitation/config/giftboxConfigs";
 import { defaultGiftModeOf } from "@/features/invitation/shell/blocks/shared/giftDefaults";
 import { TPL_CDN, introDefaultFor, type Tpl } from "@/features/templates/data/templates";
 import type { Inv } from "@/types/invitation";
@@ -258,8 +257,8 @@ export function defaultDressColors(templateId: string): string[] {
 
 /** Kiểu hiển thị hộp quà mặc định theo mẫu (phong bì hay hộp 3D). */
 export function defaultGiftMode(templateId: string): Inv["giftDisplayMode"] {
-  // ưu tiên dữ liệu đo thật từ trang gốc; chưa có thì theo cấu hình cũ
-  return defaultGiftModeOf(templateId) ?? (getGiftboxConfig(templateId).giftboxType === "envelope" ? "envelope" : "gift_box");
+  // dữ liệu đo thật từ trang gốc (đủ 92 mẫu — store.test.ts kiểm); mẫu lạ thì hộp quà 3D
+  return defaultGiftModeOf(templateId) ?? "gift_box";
 }
 
 const sameColors = (a: string[] | undefined, b: string[]) =>

@@ -1,0 +1,19 @@
+{
+  "order": 73,
+  "slug": "bach-su-lam",
+  "name": "Bạch Sứ - Lam",
+  "desc": "Hoa văn xanh lam vẽ nét trên nền sứ kem, khung viền chạm cổ điển và khối lịch cưới xanh navy",
+  "img": "listing/porcelain_blue.789dab94.webp",
+  "full": "full/porcelain_blue.90317daf.webp",
+  "tags": [
+    "Hoa văn xanh",
+    "Trắng lam",
+    "Cổ điển"
+  ],
+  "palette": {
+    "bg": "#ffffff",
+    "ink": "#08315a",
+    "rgb": "8, 49, 90",
+    "cover": "linear-gradient(to bottom right, #08315a, #062849, #041e37)"
+  }
+}

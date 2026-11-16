@@ -1,0 +1,20 @@
+{
+  "order": 45,
+  "slug": "song-phung-xanh",
+  "name": "Song Phụng - Xanh",
+  "desc": "Thanh lịch với họa tiết đôi phụng hoàng, tông xanh lá",
+  "img": "listing/double_phoenix_green.815225f7.webp",
+  "full": "full/double_phoenix_green.60fa8a22.webp",
+  "tags": [
+    "Truyền thống",
+    "Xanh lá",
+    "Thanh lịch"
+  ],
+  "previewFocal": 6.2,
+  "palette": {
+    "bg": "#FFF0E7",
+    "ink": "#19472D",
+    "rgb": "25, 71, 45",
+    "cover": "linear-gradient(to bottom right, #19472D, #122F1E, #0C2216)"
+  }
+}

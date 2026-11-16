@@ -1,0 +1,21 @@
+{
+  "order": 5,
+  "slug": "song-hy-v2-do",
+  "name": "Song Hỷ V2 - Đỏ",
+  "desc": "Thiệp giấy kem chữ Hỷ, ảnh khung vòm, hoa văn sóng nước",
+  "img": "listing/song_hy_v2_red.b7d86a91.webp",
+  "full": "full/song_hy_v2_red.1188951a.webp",
+  "badge": "new",
+  "tags": [
+    "Truyền thống",
+    "Đỏ",
+    "Chữ Hỷ"
+  ],
+  "previewFocal": 24.5,
+  "palette": {
+    "bg": "#8c0000",
+    "ink": "#ffe8a4",
+    "rgb": "255, 232, 164",
+    "cover": "linear-gradient(to bottom right, #ffe8a4, #d1be86, #9e8f65)"
+  }
+}

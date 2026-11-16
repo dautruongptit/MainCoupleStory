@@ -1,0 +1,21 @@
+{
+  "order": 66,
+  "slug": "florence-nau",
+  "name": "Florence - Nâu",
+  "desc": "Tranh màu nước vẽ thành Florence, mái vòm gạch đỏ của nhà thờ Duomo soi bóng xuống sông Arno, cầu đá phủ hoa hồng và hàng bách Tuscany trong sắc nâu ấm",
+  "img": "listing/florence_brown.7cd12fe1.webp",
+  "full": "full/florence_brown.e36da839.webp",
+  "badge": "new",
+  "tags": [
+    "Florence",
+    "Nâu",
+    "Màu nước"
+  ],
+  "previewFocal": 7,
+  "palette": {
+    "bg": "#faf7f2",
+    "ink": "#000000",
+    "rgb": "0, 0, 0",
+    "cover": "linear-gradient(to bottom right, #c9a888, #9c7355, #6d4e37)"
+  }
+}

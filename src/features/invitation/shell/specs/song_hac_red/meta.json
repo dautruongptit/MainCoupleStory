@@ -1,0 +1,21 @@
+{
+  "order": 28,
+  "slug": "song-hac-do",
+  "name": "Song Hạc - Đỏ",
+  "desc": "Nền đỏ son phủ vân giấy, đôi hạc bay qua vầng trăng son cùng mây xanh và mẫu đơn thêu nổi",
+  "img": "listing/song_hac_red.6bba531a.webp",
+  "full": "full/song_hac_red.dc8fb5c2.webp",
+  "badge": "new",
+  "tags": [
+    "Cổ điển",
+    "Đỏ",
+    "Hạc"
+  ],
+  "previewFocal": 7,
+  "palette": {
+    "bg": "#920002",
+    "ink": "#FFE8A4",
+    "rgb": "255, 232, 164",
+    "cover": "linear-gradient(to bottom right, #780002, #610102, #280000)"
+  }
+}

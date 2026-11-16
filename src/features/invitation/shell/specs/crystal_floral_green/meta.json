@@ -1,0 +1,19 @@
+{
+  "order": 70,
+  "slug": "hoa-thuy-tinh-xanh",
+  "name": "Hoa Thuỷ Tinh - Xanh",
+  "desc": "Hoa văn pha lê tinh xảo và khung hoa xanh lục ánh vàng trên nền kem ấm, điểm tông xanh ngọc lục đậm; cảm giác châu Âu thanh lịch, trong trẻo và tươi mát.",
+  "img": "listing/crystal_floral_green.064b60f2.webp",
+  "full": "full/crystal_floral_green.1cfe211b.webp",
+  "tags": [
+    "Hoa pha lê",
+    "Xanh",
+    "Châu Âu"
+  ],
+  "palette": {
+    "bg": "#fbf8f3",
+    "ink": "#0B2E00",
+    "rgb": "11, 46, 0",
+    "cover": "linear-gradient(to bottom right, #3f7b1c, #2D5A13, #0B2E00)"
+  }
+}

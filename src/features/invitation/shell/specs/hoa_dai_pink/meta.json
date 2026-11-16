@@ -1,0 +1,21 @@
+{
+  "order": 76,
+  "slug": "hoa-dai-hong",
+  "name": "Hoa Dại - Hồng",
+  "desc": "Tranh màu nước vẽ hoa dại hồng, vàng và xanh biếc cùng tán lá non buông từ bốn phía khung thiệp, nền giấy phớt hồng dịu và những cánh hoa rơi nhẹ suốt chiều dài tấm thiệp",
+  "img": "listing/hoa_dai_pink.6ab5729a.webp",
+  "full": "full/hoa_dai_pink.ed88db10.webp",
+  "badge": "new",
+  "tags": [
+    "Hoa dại",
+    "Hồng",
+    "Màu nước"
+  ],
+  "previewFocal": 7.5,
+  "palette": {
+    "bg": "#ffffff",
+    "ink": "#567c22",
+    "rgb": "86, 124, 34",
+    "cover": "linear-gradient(to bottom right, #f6d2dc, #b75873, #8d3f57)"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "order": 47,
+  "slug": "song-long-lam",
+  "name": "Song Long - Lam",
+  "desc": "Lãng mạn với sắc xanh dương nhẹ nhàng",
+  "img": "listing/double_dragon_blue.e006cece.webp",
+  "full": "full/double_dragon_blue.4655d6c0.webp",
+  "tags": [
+    "Truyền thống",
+    "Xanh dương",
+    "Lãng mạn"
+  ],
+  "palette": {
+    "bg": "#e8ecd6",
+    "ink": "#253f78",
+    "rgb": "37, 63, 120",
+    "cover": "linear-gradient(to bottom right, #0f1a2e, #0a1222, #060d18)"
+  }
+}

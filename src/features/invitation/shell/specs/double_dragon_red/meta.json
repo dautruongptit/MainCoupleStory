@@ -1,0 +1,19 @@
+{
+  "order": 15,
+  "slug": "song-long-do",
+  "name": "Song Long - Đỏ",
+  "desc": "Phong cách truyền thống với họa tiết rồng đôi",
+  "img": "listing/double_dragon_red.e3dd75ad.webp",
+  "full": "full/double_dragon_red.db341003.webp",
+  "tags": [
+    "Truyền thống",
+    "Đỏ",
+    "Trang trọng"
+  ],
+  "palette": {
+    "bg": "#ecdfd6",
+    "ink": "#882925",
+    "rgb": "136, 41, 37",
+    "cover": "linear-gradient(to bottom right, #4a1212, #3a0e0e, #2a0808)"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "order": 27,
+  "slug": "chibi-red",
+  "name": "Chibi - Đỏ",
+  "desc": "Dễ thương với phong cách chibi minh họa",
+  "img": "listing/chibi_red.9b0b4a62.webp",
+  "full": "full/chibi_red.5d2487f4.webp",
+  "tags": [
+    "Dễ thương",
+    "Chibi",
+    "Minh họa"
+  ],
+  "previewFocal": 3.5,
+  "palette": {
+    "bg": "#fef0e0",
+    "ink": "#4c2d1f",
+    "rgb": "76, 45, 31",
+    "cover": "linear-gradient(to bottom right, #4c2d1f, #3e2419, #2f1b13)"
+  }
+}

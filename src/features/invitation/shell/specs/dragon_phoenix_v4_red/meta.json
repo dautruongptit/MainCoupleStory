@@ -1,0 +1,21 @@
+{
+  "order": 23,
+  "slug": "long-phung-v4-do",
+  "name": "Long Phụng V4 - Đỏ",
+  "desc": "Nền đỏ son rực rỡ, khung ảnh tròn mạ vàng cùng rồng phượng và mây ngũ sắc thêu nổi",
+  "img": "listing/dragon_phoenix_v4_red.8ddb5b57.webp",
+  "full": "full/dragon_phoenix_v4_red.ee8c798f.webp",
+  "badge": "new",
+  "tags": [
+    "Cổ điển",
+    "Đỏ",
+    "Rồng phượng"
+  ],
+  "previewFocal": 1.67,
+  "palette": {
+    "bg": "#8c0000",
+    "ink": "#FFD390",
+    "rgb": "255, 211, 144",
+    "cover": "linear-gradient(to bottom right, #A50000, #8C0000, #5A0000)"
+  }
+}

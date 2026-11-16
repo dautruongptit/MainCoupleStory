@@ -1,0 +1,22 @@
+{
+  "order": 2,
+  "slug": "minimalism-nau",
+  "name": "Minimalism - Nâu",
+  "desc": "Tối giản thanh lịch với nền kem trắng và sắc nâu trầm ấm áp",
+  "img": "listing/minimalism_brown.4ee237c0.webp",
+  "full": "full/minimalism_brown.b5df2103.webp",
+  "badge": "hot",
+  "tags": [
+    "Tối giản",
+    "Nâu",
+    "Thanh lịch"
+  ],
+  "introDefault": "The Wedding Of",
+  "previewFocal": 9,
+  "palette": {
+    "bg": "#fff7f3",
+    "ink": "#7c6a60",
+    "rgb": "124, 106, 96",
+    "cover": "linear-gradient(to bottom right, #f3e6da, #e8d5c4, #dcc6b2)"
+  }
+}

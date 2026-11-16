@@ -6,7 +6,7 @@ import { ChromeController } from "../lib/cdp_helper.mjs";
 
 const args = process.argv.slice(2);
 const base = args.includes("--base") ? args[args.indexOf("--base") + 1] : process.env.LOCAL_BASE || "http://localhost:8111";
-const tpl = fs.readFileSync(new URL("../../src/features/templates/data/templates.ts", import.meta.url), "utf8");
+const tpl = fs.readFileSync(new URL("../../src/features/templates/data/templates.generated.ts", import.meta.url), "utf8");
 const all = [...tpl.matchAll(/"slug":\s*"([^"]+)",\s*"id":\s*"([^"]+)"/g)].map((m) => ({ slug: m[1], id: m[2] }));
 let want = args.filter((a) => !a.startsWith("--") && a !== base);
 const list = all.filter((t) => (want.length ? want.includes(t.id) : fs.existsSync(`docs/survey/raw/gift_${t.id}.json`)));

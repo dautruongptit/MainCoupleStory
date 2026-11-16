@@ -1,0 +1,19 @@
+{
+  "order": 37,
+  "slug": "vuon-xuan-lam",
+  "name": "Vườn Xuân - Lam",
+  "desc": "Thiên nhiên thanh lịch với sắc xanh lam dịu mát",
+  "img": "listing/spring_garden_blue.b33d50b9.webp",
+  "full": "full/spring_garden_blue.be6dc589.webp",
+  "tags": [
+    "Thiên nhiên",
+    "Xanh dương",
+    "Thanh lịch"
+  ],
+  "palette": {
+    "bg": "#ffffff",
+    "ink": "#486C7D",
+    "rgb": "72, 108, 125",
+    "cover": "linear-gradient(to bottom right, #f0f7fa, #e8f2f6, #dfedf2)"
+  }
+}

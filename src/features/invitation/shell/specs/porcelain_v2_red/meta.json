@@ -1,0 +1,19 @@
+{
+  "order": 72,
+  "slug": "bach-su-v2-do",
+  "name": "Bạch Sứ II - Đỏ",
+  "desc": "Hoa đỏ vẽ tay phủ khắp nền sứ kem, thẻ bo tròn viền đỏ mảnh và khối lịch cưới đỏ trầm",
+  "img": "listing/porcelain_v2_red.2b54d65a.webp",
+  "full": "full/porcelain_v2_red.80f61007.webp",
+  "tags": [
+    "Hoa đỏ",
+    "Sứ kem",
+    "Cổ điển"
+  ],
+  "palette": {
+    "bg": "#fdf9f3",
+    "ink": "#654e2f",
+    "rgb": "101, 78, 47",
+    "cover": "linear-gradient(to bottom right, #654e2f, #523f26, #3e301d)"
+  }
+}

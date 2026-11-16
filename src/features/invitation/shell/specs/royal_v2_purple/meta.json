@@ -1,0 +1,20 @@
+{
+  "order": 80,
+  "slug": "hoang-kim-ii-tim",
+  "name": "Hoàng Kim II - Tím",
+  "desc": "Nền tím hoàng gia với khung vàng kim và hoa mẫu đơn tím sang trọng",
+  "img": "listing/royal_v2_purple.17611c9c.webp",
+  "full": "full/royal_v2_purple.c2950d04.webp",
+  "tags": [
+    "Sang trọng",
+    "Tím",
+    "Hoa mẫu đơn"
+  ],
+  "previewFocal": 0.9,
+  "palette": {
+    "bg": "#190C1F",
+    "ink": "#ffffff",
+    "rgb": "255, 255, 255",
+    "cover": "linear-gradient(to bottom right, #240c30, #15081a)"
+  }
+}
