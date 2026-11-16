@@ -46,6 +46,8 @@ if (args.includes("--baseline")) {
 
 // 1. kiểu
 run("tsc", "npx", ["tsc", "--noEmit", "-p", "."]);
+run("chỉ mục spec khớp thư mục specs/", "node", ["scripts/clone/gen_spec_index.mjs", "--check"]);
+run("test đơn vị (vitest)", "npx", ["vitest", "run"]);
 if (full) run("build", "npm", ["run", "build"]);
 
 // 2. số đo so với mốc

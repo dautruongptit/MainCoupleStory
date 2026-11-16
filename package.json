@@ -10,7 +10,9 @@
     "check:assets": "node scripts/check/check-assets.mjs",
     "css:inv": "node scripts/tools/build-invitation-css.mjs",
     "css:inv:watch": "node scripts/tools/build-invitation-css.mjs --watch",
-    "check": "node scripts/check/run-all.mjs"
+    "check": "node scripts/check/run-all.mjs",
+    "test": "vitest run",
+    "gen:specs": "node scripts/clone/gen_spec_index.mjs"
   },
   "dependencies": {
     "qrcode-generator": "^2.0.4",
@@ -28,6 +30,7 @@
     "postcss-prefix-selector": "^2.2.1",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.5.4",
-    "vite": "^5.4.2"
+    "vite": "^5.4.2",
+    "vitest": "^2.1.9"
   }
 }
