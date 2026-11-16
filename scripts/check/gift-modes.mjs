@@ -5,7 +5,7 @@ import fs from "node:fs";
 import { ChromeController } from "../lib/cdp_helper.mjs";
 
 const args = process.argv.slice(2);
-const base = args.includes("--base") ? args[args.indexOf("--base") + 1] : "http://localhost:5173";
+const base = args.includes("--base") ? args[args.indexOf("--base") + 1] : process.env.LOCAL_BASE || "http://localhost:8111";
 let ids = args.filter((a) => !a.startsWith("--") && a !== base);
 if (args.includes("--all") || !ids.length) {
   const s = fs.readFileSync(new URL("../../src/features/templates/data/templates.ts", import.meta.url), "utf8");
