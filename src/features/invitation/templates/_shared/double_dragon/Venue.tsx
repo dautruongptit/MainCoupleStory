@@ -13,7 +13,7 @@ export function Venue({ ctx }: { ctx: InvitationCtx }) {
     d.locTitle ||
     d.address ||
     "Queen Plaza Kỳ Hòa, 16A Lê Hồng Phong, Phường 12, Quận 10, TP. Hồ Chí Minh";
-  const mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyAY8WQxGig6axA_jZil94btO9G6dhsFEKg&q=${encodeURIComponent(
+  const mapUrl = `https://maps.google.com/maps?z=15&output=embed&q=${encodeURIComponent(
     address
   )}`;
   const dirUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(

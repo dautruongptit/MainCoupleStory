@@ -7,7 +7,7 @@ export function Venue({ ctx }: { ctx: InvitationCtx }) {
   const address = d.address || "Đà Nẵng";
   const fullAddress = `${venue}, ${address}`;
   const mapUrl = d.mapUrl || `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(fullAddress)}`;
-  const embedUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyAY8WQxGig6axA_jZil94btO9G6dhsFEKg&q=${encodeURIComponent(fullAddress)}`;
+  const embedUrl = `https://maps.google.com/maps?z=15&output=embed&q=${encodeURIComponent(fullAddress)}`;
 
   return (
     <section className="relative isolate w-full" style={{ marginTop: "calc(0.05215 * var(--st-w))", paddingInline: "11.678%" }}>

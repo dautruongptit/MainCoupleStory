@@ -18,7 +18,7 @@ export function Venue({ ctx }: { ctx: InvitationCtx }) {
   const swatch3Border = isRed ? "none" : `1.5px solid ${accentColor.replace("rgb", "rgba").replace(")", ", 0.19)")}`;
 
   const locAddress = anyD.locAddress || anyD.locTitle || "Nhà hàng Vườn Thông, 145 Trần Phú, phường 2, thành phố Bảo Lộc, tỉnh Lâm Đồng";
-  const mapIframe = anyD.mapIframe || `https://www.google.com/maps/embed/v1/place?key=AIzaSyAY8WQxGig6axA_jZil94btO9G6dhsFEKg&q=${encodeURIComponent(locAddress)}`;
+  const mapIframe = anyD.mapIframe || `https://maps.google.com/maps?z=15&output=embed&q=${encodeURIComponent(locAddress)}`;
   const dirUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(locAddress)}`;
 
   return (

@@ -13,7 +13,7 @@ export function Venue({ ctx }: { ctx: InvitationCtx }) {
   const venueTitle = "Tiệc cưới sẽ tổ chức tại";
   const venueName = anyD.locAddress || anyD.address || anyD.locTitle || "Summer Vinh Convention Center, 343 Lê Duẩn, Trường Thi, Thành phố Vinh, Nghệ An";
   const mapIframe =
-    "https://www.google.com/maps/embed/v1/place?key=AIzaSyAY8WQxGig6axA_jZil94btO9G6dhsFEKg&q=" +
+    "https://maps.google.com/maps?z=15&output=embed&q=" +
     encodeURIComponent(venueName);
   const mapDirect =
     "https://www.google.com/maps/dir/?api=1&destination=" +

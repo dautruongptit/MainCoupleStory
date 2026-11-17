@@ -12,7 +12,7 @@ export function Venue({ ctx }: { ctx: InvitationCtx }) {
   );
   const mapUrl =
     d.mapUrl ||
-    `https://www.google.com/maps/embed/v1/place?key=AIzaSyAY8WQxGig6axA_jZil94btO9G6dhsFEKg&q=${encodeURIComponent(
+    `https://maps.google.com/maps?z=15&output=embed&q=${encodeURIComponent(
       address
     )}`;
   const directUrl = d.directUrl || `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address)}`;

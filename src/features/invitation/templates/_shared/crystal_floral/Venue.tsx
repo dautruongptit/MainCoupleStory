@@ -18,7 +18,7 @@ export function Venue({ ctx }: { ctx: InvitationCtx }) {
     ? "border-[#1f6b4a20]"
     : "border-[#9c1f2c20]";
 
-  const mapEmbedUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyAY8WQxGig6axA_jZil94btO9G6dhsFEKg&q=${encodeURIComponent(venueAddress)}`;
+  const mapEmbedUrl = `https://maps.google.com/maps?z=15&output=embed&q=${encodeURIComponent(venueAddress)}`;
   const mapDirUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(venueAddress)}`;
 
   return (

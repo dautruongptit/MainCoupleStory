@@ -69,7 +69,7 @@ export function getBohoFloralTheme(ctx: InvitationCtx): BohoFloralThemeVars {
       photoAspectRatios: ["1.2 / 1", "1.2 / 1", "0.667028 / 1"],
       objectPositions: ["50% 50%", "50% 50%", "50% 50%"],
       googleMapsUrl:
-        "https://www.google.com/maps/embed/v1/place?key=AIzaSyAY8WQxGig6axA_jZil94btO9G6dhsFEKg&q=Queen%20Plaza%20K%E1%BB%B3%20H%C3%B2a%2C%2016A%20L%C3%AA%20H%E1%BB%93ng%20Phong%2C%20Ph%C6%B0%E1%BB%9Dng%2012%2C%20Qu%E1%BA%ADn%2010%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh",
+        "https://maps.google.com/maps?z=15&output=embed&q=Queen%20Plaza%20K%E1%BB%B3%20H%C3%B2a%2C%2016A%20L%C3%AA%20H%E1%BB%93ng%20Phong%2C%20Ph%C6%B0%E1%BB%9Dng%2012%2C%20Qu%E1%BA%ADn%2010%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh",
       directionsUrl:
         "https://www.google.com/maps/dir/?api=1&destination=Queen%20Plaza%20K%E1%BB%B3%20H%C3%B2a%2C%2016A%20L%C3%AA%20H%E1%BB%93ng%20Phong%2C%20Ph%C6%B0%E1%BB%9Dng%2012%2C%20Qu%E1%BA%ADn%2010%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh",
       calendarHeartFill: "#9D6D63",
@@ -128,7 +128,7 @@ export function getBohoFloralTheme(ctx: InvitationCtx): BohoFloralThemeVars {
         "50% 0%",
       ],
       googleMapsUrl:
-        "https://www.google.com/maps/embed/v1/place?key=AIzaSyAY8WQxGig6axA_jZil94btO9G6dhsFEKg&q=White%20Palace%20Convention%20Center%2C%20194%20Ho%C3%A0ng%20V%C4%83n%20Th%E1%BB%A5%2C%20Ph%C3%BA%20Nhu%E1%BA%ADn%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh",
+        "https://maps.google.com/maps?z=15&output=embed&q=White%20Palace%20Convention%20Center%2C%20194%20Ho%C3%A0ng%20V%C4%83n%20Th%E1%BB%A5%2C%20Ph%C3%BA%20Nhu%E1%BA%ADn%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh",
       directionsUrl:
         "https://www.google.com/maps/dir/?api=1&destination=White%20Palace%20Convention%20Center%2C%20194%20Ho%C3%A0ng%20V%C4%83n%20Th%E1%BB%A5%2C%20Ph%C3%BA%20Nhu%E1%BA%ADn%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh",
       calendarHeartFill: "#4A2816",
@@ -187,7 +187,7 @@ export function getBohoFloralTheme(ctx: InvitationCtx): BohoFloralThemeVars {
       "50% 0%",
     ],
     googleMapsUrl:
-      "https://www.google.com/maps/embed/v1/place?key=AIzaSyAY8WQxGig6axA_jZil94btO9G6dhsFEKg&q=Ti%E1%BB%87c%20C%C6%B0%E1%BB%9Bi%20Ho%C3%A0ng%20Gia%2C%20Ng%C3%B5%2074%20P.%20Nguy%E1%BB%85n%20Th%E1%BB%8B%20%C4%90%E1%BB%8Bnh%2C%20Nh%C3%A2n%20Ch%C3%ADnh%2C%20Thanh%20Xu%C3%A2n%2C%20H%C3%A0%20N%E1%BB%99i",
+      "https://maps.google.com/maps?z=15&output=embed&q=Ti%E1%BB%87c%20C%C6%B0%E1%BB%9Bi%20Ho%C3%A0ng%20Gia%2C%20Ng%C3%B5%2074%20P.%20Nguy%E1%BB%85n%20Th%E1%BB%8B%20%C4%90%E1%BB%8Bnh%2C%20Nh%C3%A2n%20Ch%C3%ADnh%2C%20Thanh%20Xu%C3%A2n%2C%20H%C3%A0%20N%E1%BB%99i",
     directionsUrl:
       "https://www.google.com/maps/dir/?api=1&destination=Ti%E1%BB%87c%20C%C6%B0%E1%BB%9Bi%20Ho%C3%A0ng%20Gia%2C%20Ng%C3%B5%2074%20P.%20Nguy%E1%BB%85n%20Th%E1%BB%8B%20%C4%90%E1%BB%8Bnh%2C%20Nh%C3%A2n%20Ch%C3%ADnh%2C%20Thanh%20Xu%C3%A2n%2C%20H%C3%A0%20N%E1%BB%99i",
     calendarHeartFill: "#30530F",

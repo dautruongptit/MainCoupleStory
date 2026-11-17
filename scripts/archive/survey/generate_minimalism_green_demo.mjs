@@ -54,7 +54,7 @@ const demoData = {
   "date": "2026-07-18",
   "locTitle": "Riverside Palace",
   "locAddress": "Riverside Palace, 360 Bến Vân Đồn, Quận 4, TP. Hồ Chí Minh",
-  "mapIframe": "https://www.google.com/maps/embed/v1/place?key=AIzaSyAY8WQxGig6axA_jZil94btO9G6dhsFEKg&q=Riverside%20Palace%2C%20360%20B%E1%BA%BFn%20V%C3%A2n%20%C4%90%E1%BB%93n%2C%20Qu%E1%BA%ADn%204%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh",
+  "mapIframe": "https://www.google.com/maps/embed/v1/place?key=AIzaSy_REDACTED&q=Riverside%20Palace%2C%20360%20B%E1%BA%BFn%20V%C3%A2n%20%C4%90%E1%BB%93n%2C%20Qu%E1%BA%ADn%204%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh",
   "wishes": [
     {
       "name": "Minh Tuấn",

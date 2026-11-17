@@ -47,7 +47,7 @@ export function Venue({ ctx }: { ctx: InvitationCtx }) {
         <div className="relative flex flex-col items-center gap-4 md:gap-5 w-full">
           <iframe
             className="h-[280px] md:h-[380px] w-full max-w-[340px] md:max-w-[560px] rounded-2xl overflow-hidden"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAY8WQxGig6axA_jZil94btO9G6dhsFEKg&q=10.755341,106.70811&zoom=17"
+            src="https://maps.google.com/maps?z=15&output=embed&q=10.755341,106.70811&zoom=17"
             allowFullScreen
             referrerPolicy="no-referrer-when-downgrade"
             style={{ borderColor: muted }}

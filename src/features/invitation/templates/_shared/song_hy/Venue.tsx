@@ -16,8 +16,8 @@ export function Venue({ ctx }: { ctx: InvitationCtx }) {
     : "Sun Palace, 170 Kinh Dương Vương, Phường 13, Quận 6, Hồ Chí Minh ";
 
   const mapIframeSrc = vars.isGreen
-    ? "https://www.google.com/maps/embed/v1/place?key=AIzaSyAY8WQxGig6axA_jZil94btO9G6dhsFEKg&q=place_id:ChIJK_GoUy8vdTER7o7W3nSgZiE&zoom=16&center=10.7799574,106.682232"
-    : "https://www.google.com/maps/embed/v1/place?key=AIzaSyAY8WQxGig6axA_jZil94btO9G6dhsFEKg&q=place_id:ChIJg5qJqWovdTERsYyv11yX_Ww&zoom=16&center=10.7490059,106.6346764";
+    ? "https://maps.google.com/maps?z=15&output=embed&q=place_id:ChIJK_GoUy8vdTER7o7W3nSgZiE&zoom=16&center=10.7799574,106.682232"
+    : "https://maps.google.com/maps?z=15&output=embed&q=place_id:ChIJg5qJqWovdTERsYyv11yX_Ww&zoom=16&center=10.7490059,106.6346764";
 
   const dirLink = vars.isGreen
     ? "https://www.google.com/maps/dir/?api=1&destination=Gala%20Center%2C%20415%20Ho%C3%A0ng%20V%C4%83n%20Th%E1%BB%A5%2C%20Ph%C6%B0%E1%BB%9Dng%202%2C%20T%C3%A2n%20B%C3%ACnh%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh"
