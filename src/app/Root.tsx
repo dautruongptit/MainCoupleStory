@@ -1,14 +1,14 @@
-import { useEffect } from "react";
-import EditorPage from "@/features/editor/EditorPage";
+import { Suspense, lazy, useEffect } from "react";
+const EditorPage = lazy(() => import("@/features/editor/EditorPage"));
 import TopNav from "@/components/layout/TopNav";
 import { Logo } from "@/components/layout/Logo";
 import Home from "@/pages/Home";
-import Pricing from "@/pages/Pricing";
-import Dashboard from "@/pages/Dashboard";
-import Account from "@/pages/Account";
-import Guests from "@/pages/Guests";
-import Templates from "@/pages/Templates";
-import Demo from "@/pages/Demo";
+const Pricing = lazy(() => import("@/pages/Pricing"));
+const Dashboard = lazy(() => import("@/pages/Dashboard"));
+const Account = lazy(() => import("@/pages/Account"));
+const Guests = lazy(() => import("@/pages/Guests"));
+const Templates = lazy(() => import("@/pages/Templates"));
+const Demo = lazy(() => import("@/pages/Demo"));
 import { Link, navigate, usePath } from "@/app/router";
 import { templateByIdOrSlug } from "@/features/templates/data/templates";
 import { createDraft, getDraftCard } from "@/services/storage/store";
@@ -27,11 +27,17 @@ function Stub({ title }: { title: string }) {
   );
 }
 
+function RouteFallback() {
+  return <div style={{ minHeight: "60vh" }} aria-busy="true" />;
+}
+
 export default function Root() {
   const path = usePath().replace(/\/+$/, "") || "/";
+  // Trang nặng (editor, demo, dashboard…) tải theo nhu cầu; L() bọc Suspense khi render component lazy.
+  const L = (el: React.ReactNode) => <Suspense fallback={<RouteFallback />}>{el}</Suspense>;
 
   // The editor renders its own TopNav + header.
-  if (path.startsWith("/edit/")) return <EditorPage />;
+  if (path.startsWith("/edit/")) return L(<EditorPage />);
 
   // Chỉnh sửa thiệp theo slug: /vi/mau-thiep/:slug/edit
   const editSlugMatch = path.match(/^\/vi\/mau-thiep\/([^/]+)\/edit$/);
@@ -41,7 +47,7 @@ export default function Root() {
     if (tpl) {
       const draftId = createDraft(tpl);
       history.replaceState({}, "", `/edit/${draftId}?template=${tpl.id}`);
-      return <EditorPage />;
+      return L(<EditorPage />);
     }
   }
 
@@ -70,7 +76,7 @@ export default function Root() {
     if (getDraftCard()) return <Redirect to={`/vi/mau-thiep/${tpl.slug}/demo`} />;
     const draftId = createDraft(tpl);
     history.replaceState({}, "", `/edit/${draftId}?template=${tpl.id}`);
-    return <EditorPage />;
+    return L(<EditorPage />);
   }
 
   if (path === "/invitations/create") return <Redirect to="/vi/mau-thiep" />;
@@ -82,7 +88,7 @@ export default function Root() {
 
   if (demoMatch) {
     const slug = decodeURIComponent(demoMatch[1]);
-    return <Demo key={slug} slug={slug} />;
+    return L(<Demo key={slug} slug={slug} />);
   }
 
   // Cover / Detail view: /vi/mau-thiep/:slug
@@ -91,14 +97,14 @@ export default function Root() {
     const slug = decodeURIComponent(detailMatch[1]);
     const tpl = templateByIdOrSlug(slug);
     if (tpl) {
-      return <Demo key={slug} slug={tpl.slug} />;
+      return L(<Demo key={slug} slug={tpl.slug} />);
     }
   }
 
   if (path === "/demo") {
     const params = new URLSearchParams(window.location.search);
     const slug = params.get("template") || params.get("slug") || "minimalism-do-dam";
-    return <Demo key={slug} slug={slug} />;
+    return L(<Demo key={slug} slug={slug} />);
   }
 
   let page;
@@ -117,7 +123,7 @@ export default function Root() {
   return (
     <div className="site" data-page={path === "/dashboard" ? "dashboard" : undefined}>
       <TopNav />
-      {page}
+      {L(page)}
       {showFooter && <Footer />}
     </div>
   );
