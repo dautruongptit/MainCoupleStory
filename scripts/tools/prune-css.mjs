@@ -13,7 +13,8 @@ const targets = args.filter((a) => a.endsWith(".css"));
 if (!targets.length) targets.push("src/styles/styles.css", "src/styles/pages.css");
 
 const walk = (d) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]));
-const srcFiles = walk("src").filter((f) => /\.(tsx?|html)$/.test(f));
+// .json: cấu hình từng mẫu (specs/<id>/cover.json, gift.json) cũng chứa class — không quét thì xóa nhầm class của bìa
+const srcFiles = walk("src").filter((f) => /\.(tsx?|html|json)$/.test(f));
 const code = srcFiles.map((f) => fs.readFileSync(f, "utf8")).join("\n") + "\n" + fs.readFileSync("index.html", "utf8");
 // CSS khác (ngoài tệp đang dọn) cũng có thể nhắc tên keyframes
 const otherCss = walk("src").filter((f) => f.endsWith(".css") && !f.includes("generated")).map((f) => [f, fs.readFileSync(f, "utf8")]);

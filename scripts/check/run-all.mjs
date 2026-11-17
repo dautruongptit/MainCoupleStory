@@ -66,6 +66,9 @@ else {
 if (fs.existsSync(PAGES_DIR)) run("bố cục trang app + bìa so mốc", "node", ["scripts/check/page-prints.mjs", "--compare", PAGES_DIR]);
 else { console.log("⚠ chưa có mốc bố cục trang — chạy: npm run check -- --baseline"); results.push({ name: "mốc bố cục trang", ok: false }); }
 
+// 2c. băng trượt mẫu ở trang chủ so với số đo thật của trang gốc
+run("băng trượt trang chủ so số đo thật", "node", ["scripts/check/home-showcase.mjs"]);
+
 // 3. hộp quà 3 kiểu
 run(full ? "hộp quà 3 kiểu (92 mẫu)" : "hộp quà 3 kiểu (mẫu đại diện)", "node", ["scripts/check/gift-modes.mjs", ...(full ? ["--all"] : GIFT_SAMPLE), "--base", base]);
 if (full) run("hình học hộp quà", "node", ["scripts/check/gift-geometry.mjs", "--base", base]);

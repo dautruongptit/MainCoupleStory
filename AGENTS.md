@@ -27,7 +27,8 @@ node scripts/check/config-data.mjs --save|--compare <tệp>   # mọi giá trị
 node scripts/check/dump-all.mjs    --save|--compare <dir> [open:390 open:1280]   # số đo cả 92 mẫu trước/sau một thay đổi lớn
 node scripts/check/page-prints.mjs --save|--compare <dir>   # bố cục các trang app (không phải thiệp) trước/sau
 node scripts/tools/localize-assets.mjs [--write]   # đổi URL máy chủ trang gốc trong src/ sang đường dẫn local; báo ảnh local còn thiếu
-node scripts/check/no-remote.mjs [<id> ...]        # mở thiệp demo trên trình duyệt: không tải gì từ trang gốc, không ảnh hỏng
+node scripts/check/home-showcase.mjs               # băng trượt mẫu ở trang chủ so với số đo thật của trang chủ gốc
+node scripts/check/no-remote.mjs [<id> ...|--pages] # mở thiệp demo trên trình duyệt: không tải gì từ trang gốc, không ảnh hỏng
 npm install
 npm run dev            # tự chạy css:inv rồi vite (cổng 5173)
 npx tsc --noEmit -p .  # kiểm kiểu

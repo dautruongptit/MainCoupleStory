@@ -45,6 +45,8 @@ const PRINT = `(() => {
     if (moving) continue;
     const cls = (e.getAttribute('class') || '').toString();
     if (/igb-|ienv-|particle|ambient|confetti|music-floating/.test(cls) || e.closest('[class*="ambient"],[class*="particle"]')) continue; // phần tử chuyển động
+    // băng trượt mẫu ở trang chủ tự chuyển thẻ mỗi 4 giây (thẻ + chấm đổi theo thời gian) → so riêng bằng home-showcase.mjs
+    if (e.closest('article[style*="translateZ"]') || /^Go to slide/.test(e.getAttribute('aria-label') || '')) continue;
     if (e.tagName === 'svg' && e.closest('[style*="ambient-fall"]')) continue;
     if (/ambient-fall|seal-pulse/.test(e.getAttribute('style') || '') || e.closest('[style*="ambient-fall"]')) continue;
     out.push([e.tagName.toLowerCase(), cls.slice(0, 50), Math.round(r.left), Math.round(r.top + scrollY), Math.round(r.width), Math.round(r.height), cs.color, cs.backgroundColor, cs.fontSize, cs.fontWeight, cs.display, cs.borderTopWidth, cs.borderRadius].join('|'));
