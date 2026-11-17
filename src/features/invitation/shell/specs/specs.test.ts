@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { TEMPLATES, TEMPLATE_ROW_BY_ID, introDefaultFor, templateByIdOrSlug } from "@/features/templates/data/templates";
 import { getCapabilities, getTemplateSpec } from "./index";
-import { blocksForFamily } from "@/features/invitation/shell/blocks";
+import { loadBlocksForFamily } from "@/features/invitation/shell/blocks";
 import { GIFT_SPECS } from "@/features/invitation/shell/blocks/shared/giftSpecs";
 import { COVER_COMPONENTS, COVER_CONFIGS, getCoverComponent } from "@/features/invitation/components/covers";
 import { buildDemoInv } from "@/features/invitation/demo/buildDemoInv";
@@ -20,16 +20,16 @@ describe("specs/<id>/ — mỗi mẫu một thư mục", () => {
     }
   });
 
-  it("mẫu nào cũng có spec, và mọi khối trong capabilities.blocks đều đã đăng ký cho họ khối", () => {
+  it("mẫu nào cũng có spec, và mọi khối trong capabilities.blocks đều đã đăng ký cho họ khối", async () => {
     for (const t of TEMPLATES) {
       const spec = getTemplateSpec(t.id);
       expect(spec, `${t.id}: thiếu spec`).not.toBeNull();
       const caps = getCapabilities(t.id)!;
-      const blocks = blocksForFamily(caps.family);
+      const blocks = await loadBlocksForFamily(caps.family);
       const missing = caps.blocks.filter((b) => !blocks[b]);
       expect(missing, `${t.id} (họ ${caps.family}): khối chưa đăng ký`).toEqual([]);
     }
-  });
+  }, 120_000); // tải lần lượt 75 họ khối (mỗi họ một import() động)
 
   it("tên component bìa ghi trong cover.json đều tồn tại", () => {
     for (const [id, cfg] of Object.entries(COVER_CONFIGS)) {

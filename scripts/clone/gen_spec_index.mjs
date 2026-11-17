@@ -122,12 +122,15 @@ const fv = (n) => "f_" + n.replace(/[^A-Za-z0-9_]/g, "_");
 const outFam = [
   "// TỆP SINH — không sửa tay. Chạy: node scripts/clone/gen_spec_index.mjs",
   "// Nguồn: các thư mục shell/blocks/<họ>/index.ts. Thêm họ khối mới = tạo thư mục + index.ts rồi chạy bộ sinh.",
+  "// Mỗi họ là một import() động → trình đóng gói tách mỗi họ thành một tệp riêng, trang chỉ tải họ của mẫu đang xem.",
   'import type { BlockComponent } from "./index";',
-  ...families.map((f) => (f.named ? `import { ${f.named} as ${fv(f.name)} } from "./${f.name}";` : `import * as ${fv(f.name)} from "./${f.name}";`)),
   "",
-  "/** capabilities.family → bản đồ tên khối → component của họ đó. */",
-  "export const FAMILY_BLOCKS: Record<string, Record<string, BlockComponent>> = {",
-  ...families.map((f) => `  ${f.name}: ${fv(f.name)},`),
+  "type BlockMap = Record<string, BlockComponent>;",
+  "/** capabilities.family → hàm tải bản đồ tên khối → component của họ đó. */",
+  "export const FAMILY_LOADERS: Record<string, () => Promise<BlockMap>> = {",
+  ...families.map((f) => (f.named
+    ? `  ${f.name}: () => import("./${f.name}").then((m) => m.${f.named}),`
+    : `  ${f.name}: () => import("./${f.name}").then((m) => ({ ...m }) as unknown as BlockMap),`)),
   "};",
   "",
 ].join("\n");

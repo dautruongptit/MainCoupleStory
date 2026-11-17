@@ -1,8 +1,10 @@
 import type { Inv } from "@/types/invitation";
 import { useInvitationCtx } from "@/features/invitation/shell/useInvitationCtx";
 import { MusicPlayer } from "@/features/invitation/shell/blocks/MusicPlayer";
-import { blocksForFamily } from "@/features/invitation/shell/blocks";
+import { useFamilyBlocks, type BlockMap } from "@/features/invitation/shell/blocks";
 import type { TemplateSpec } from "@/features/invitation/shell/specs";
+
+const NO_BLOCKS: BlockMap = {};
 
 export interface InvitationShellProps {
   d: Inv;
@@ -19,7 +21,8 @@ export interface InvitationShellProps {
 export function InvitationShell({ d, set, spec, active = true }: InvitationShellProps) {
   const ctx = useInvitationCtx(d, set, spec.theme, active);
   const t = spec.theme;
-  const BLOCKS = blocksForFamily(spec.capabilities.family);
+  // Khối của họ được tải theo nhu cầu (mỗi họ một tệp JS): trong lúc tải lần đầu, khung thiệp hiện trước, khối hiện sau.
+  const BLOCKS: BlockMap = useFamilyBlocks(spec.capabilities.family) ?? NO_BLOCKS;
   return (
     <div className="min-h-screen w-full select-none">
       <MusicPlayer ctx={ctx} />
