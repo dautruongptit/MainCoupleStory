@@ -1,10 +1,11 @@
 import type { Inv } from "@/types/invitation";
 import { assetUrl } from "@/services/asset";
+import { TEMPLATE_ROW_BY_ID, TPL_CDN } from "@/features/templates/data/templates";
 
 export const defaultInv: Inv = {
   templateId: "double_phoenix_red",
   templateName: "Song Phụng - Đỏ",
-  templateThumb: assetUrl("/images/templates/double_phoenix_red.webp"),
+  templateThumb: TPL_CDN + (TEMPLATE_ROW_BY_ID["double_phoenix_red"]?.img ?? ""),
   photoCrops: {},
   heroOn: true,
   heroPhoto: assetUrl("/images/photo-library/design/2e494e0b7ab193dde9575183fa33982e4df2c2a69e3424edb4864146fcd797c6.webp"),

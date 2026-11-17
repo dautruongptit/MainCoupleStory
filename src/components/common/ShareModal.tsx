@@ -10,7 +10,8 @@ export function QrModal({
   onClose: () => void;
 }) {
   const [downloaded, setDownloaded] = useState(false);
-  const fullUrl = `https://chungdoi.com/i/${slug}`;
+  // liên kết xem thiệp của chính bản này (cùng cách với guestUrl trong store), không trỏ sang trang gốc
+  const fullUrl = `${typeof window !== "undefined" ? window.location.origin : ""}/i/${slug}`;
 
   useEffect(() => {
     const h = (e: KeyboardEvent) => e.key === "Escape" && onClose();
@@ -116,7 +117,8 @@ export default function ShareModal({
 }) {
   const [showQr, setShowQr] = useState(false);
   const [copied, setCopied] = useState(false);
-  const fullUrl = `https://chungdoi.com/i/${slug}`;
+  // liên kết xem thiệp của chính bản này (cùng cách với guestUrl trong store), không trỏ sang trang gốc
+  const fullUrl = `${typeof window !== "undefined" ? window.location.origin : ""}/i/${slug}`;
 
   useEffect(() => {
     const h = (e: KeyboardEvent) => e.key === "Escape" && onClose();

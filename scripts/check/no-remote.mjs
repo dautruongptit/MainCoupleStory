@@ -10,9 +10,11 @@ const HOST = ["chungdoi", "com"].join(".");
 const rows = fs.readFileSync("src/features/templates/data/templates.generated.ts", "utf8");
 const all = [...rows.matchAll(/"slug":\s*"([^"]+)",\s*"id":\s*"([^"]+)"/g)].map((m) => ({ slug: m[1], id: m[2] }));
 const want = process.argv.slice(2).filter((a) => !a.startsWith("--"));
+const pagesOnly = process.argv.includes("--pages"); // chỉ các trang app (nhanh)
+const APP_PAGES = [["(trang chủ)", "/vi"], ["(kho mẫu)", "/vi/mau-thiep"], ["(bảng giá)", "/vi/bang-gia"], ["(dashboard)", "/dashboard"]];
 const targets = [
-  ...all.filter((t) => !want.length || want.includes(t.id)).map((t) => [t.id, `/vi/mau-thiep/${t.slug}/demo?open=1&autoscroll=0`]),
-  ...(want.length ? [] : [["(trang chủ)", "/vi"], ["(kho mẫu)", "/vi/mau-thiep"], ["(dashboard)", "/dashboard"]]),
+  ...(pagesOnly ? [] : all.filter((t) => !want.length || want.includes(t.id)).map((t) => [t.id, `/vi/mau-thiep/${t.slug}/demo?open=1&autoscroll=0`])),
+  ...(want.length && !pagesOnly ? [] : APP_PAGES),
 ];
 
 const PROBE = `(async () => {

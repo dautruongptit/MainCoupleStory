@@ -1576,6 +1576,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center; /* ảnh listing là dải dọc: hiện phần đầu thiệp */
   display: block;
 }
 .tut-yt-play {

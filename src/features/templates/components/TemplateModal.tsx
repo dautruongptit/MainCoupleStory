@@ -21,7 +21,8 @@ const FEATURES: [string, string][] = [
   ["Nhận lời chúc", "M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.4A8 8 0 1 1 21 12Z"],
 ];
 
-const DEMO_ORIGIN = "https://chungdoi.com";
+// mã QR mở trang demo của chính bản này (không trỏ sang trang gốc)
+const DEMO_ORIGIN = typeof window !== "undefined" ? window.location.origin : "";
 
 function Qr({ text }: { text: string }) {
   const svg = useMemo(() => {

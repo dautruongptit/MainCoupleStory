@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { Link } from "@/app/router";
 import { assetUrl } from "@/services/asset";
+import { TEMPLATE_ROW_BY_ID, TPL_CDN } from "@/features/templates/data/templates";
 
 const CDN = assetUrl("/template-previews/vi/listing/");
 const TEMPLATES: { name: string; file: string; tag?: string }[] = [
@@ -127,23 +128,22 @@ function Features({ items }: { items: string[] }) {
   return <ul className="feat-list">{items.map((t) => <li key={t}><Check />{t}</li>)}</ul>;
 }
 
-const COVERFLOW_TEMPLATES = [
-  { name: "Song Long - Đỏ", img: "/images/templates/double_dragon_red.webp", slug: "song-long-do" },
-  { name: "Thanh Diệp - Xanh", img: "/images/templates/elegant_leaf_green.webp", slug: "thanh-diep-xanh" },
-  { name: "Song Hỷ V2 - Đỏ", img: "/images/templates/song_hy_v2_red.webp", slug: "song-hy-v2-do" },
-  { name: "Song Hỷ - Xanh", img: "/images/templates/song_hy_green.webp", slug: "song-hy-xanh" },
-  { name: "Minimalism - Đỏ Đậm", img: "/images/templates/minimalism_darkred.webp", slug: "minimalism-do-dam" },
-  { name: "Minimalism - Nâu", img: "/images/templates/minimalism_brown.webp", slug: "minimalism-nau" },
-  { name: "Song Hỷ - Đỏ", img: "/images/templates/song_hy_red.webp", slug: "song-hy-do" },
-  { name: "Song Phụng - Đỏ", img: "/images/templates/double_phoenix_red.webp", slug: "song-phung-do" },
-  { name: "Long Phụng - Đỏ", img: "/images/templates/dragon_phoenix_red.webp", slug: "long-phung-do" },
-  { name: "Song Hạc - Đỏ", img: "/images/templates/song_hac_red.webp", slug: "song-hac-do" },
-  { name: "Riviera - Lam", img: "/images/templates/riviera_blue.webp", slug: "riviera-lam" },
-  { name: "San Miguel - Vàng", img: "/images/templates/san_miguel_yellow.webp", slug: "san-miguel-vang" },
-  { name: "Hoa Dại - Hồng", img: "/images/templates/hoa_dai_pink.webp", slug: "hoa-dai-hong" },
-  { name: "Ren Thêu - Trắng", img: "/images/templates/applique_lace_white.webp", slug: "ren-theu-trang" },
-  { name: "Florence - Nâu", img: "/images/templates/florence_brown.webp", slug: "florence-nau" },
+/**
+ * Băng trượt mẫu ở trang chủ: 20 mẫu và thứ tự đo từ trang chủ thật (17/11/2026), ảnh là ảnh listing của kho mẫu
+ * (`template-previews/vi/listing/…`, như trang gốc) — tên, slug, ảnh lấy từ `specs/<id>/meta.json` qua bảng mẫu.
+ * Danh sách là vòng tròn; xoay 4 vị trí để mẫu đầu (Minimalism - Đỏ Đậm) đứng giữa lúc mở trang.
+ */
+const COVERFLOW_IDS = [
+  "lien_hoa_v2_green", "glass_garden_pink", "minimalism_red", "double_phoenix_red",
+  "minimalism_darkred", "minimalism_brown", "song_hy_green", "song_hy_v2_red", "boho_floral_green", "marble_yellow",
+  "minimalism_darkbrown", "silk_ribbon_darkred", "song_hy_red", "dragon_phoenix_v3_red", "silk_ribbon_green", "double_dragon_red",
+  "minimalism_green", "dragon_phoenix_v2_red", "jasmine_white", "dragon_phoenix_red",
 ];
+const COVERFLOW_TEMPLATES = COVERFLOW_IDS.flatMap((id) => {
+  const row = TEMPLATE_ROW_BY_ID[id];
+  return row ? [{ name: row.name, img: TPL_CDN + row.img, slug: row.slug }] : [];
+});
+
 
 function CoverflowCarousel() {
   const [activeIndex, setActiveIndex] = useState(4); // "Minimalism - Đỏ Đậm"
@@ -354,10 +354,10 @@ function StepsSection() {
 
             <div className="tut-phones-stage">
               <div className="tut-phone-back-left">
-                <img src="/images/templates/applique_lace_white.webp" alt="Preview Left" className="tut-phone-screen-img" />
+                <img src={TPL_CDN + (TEMPLATE_ROW_BY_ID["applique_lace_white"]?.img ?? "")} alt="Preview Left" className="tut-phone-screen-img" />
               </div>
               <div className="tut-phone-back-right">
-                <img src="/images/templates/song_hy_green.webp" alt="Preview Right" className="tut-phone-screen-img" />
+                <img src={TPL_CDN + (TEMPLATE_ROW_BY_ID["song_hy_green"]?.img ?? "")} alt="Preview Right" className="tut-phone-screen-img" />
               </div>
               <div className="tut-phone-center-main">
                 <img src="/images/themes/minimalism-brown/couple.webp" alt="Hoàng Long & Bảo Ngọc" className="tut-phone-screen-img" />
