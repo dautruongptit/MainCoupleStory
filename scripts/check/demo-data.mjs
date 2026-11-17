@@ -3,7 +3,7 @@
 // Dùng:
 //   node scripts/check/demo-data.mjs --save <tệp.json>      chụp mốc
 //   node scripts/check/demo-data.mjs --compare <tệp.json>   chụp lại, so với mốc (thoát mã 1 nếu khác)
-// Nguồn: src/features/invitation/demo/buildDemoInv.ts (export buildDemoInv); nếu chưa có thì cắt hàm từ src/pages/Demo.tsx.
+// Nguồn: src/features/invitation/demo/buildDemoInv.ts (loadDemoInv: phần chung + specs/<id>/demo.json).
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
@@ -19,16 +19,11 @@ const MOD = "src/features/invitation/demo/buildDemoInv.ts";
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "demo-data-"));
 const entry = path.join(tmp, "entry.ts");
 const abs = (p) => path.resolve(p).replace(/\\/g, "/");
-if (fs.existsSync(MOD)) {
-  fs.writeFileSync(entry, `import { buildDemoInv } from "${abs(MOD)}";\nimport { TEMPLATES } from "${abs("src/features/templates/data/templates.ts")}";\nexport const ALL = Object.fromEntries(TEMPLATES.map((t) => [t.id, buildDemoInv(t)]));\n`);
-} else {
-  // bản cũ: hàm nằm trong trang Demo (không export) → cắt phần trước component, bỏ import của giao diện
-  const src = fs.readFileSync("src/pages/Demo.tsx", "utf8").replace(/\r\n/g, "\n");
-  const cut = src.indexOf("/**\n * Trang xem Demo");
-  if (cut < 0) throw new Error("không tìm thấy mốc cắt trong Demo.tsx");
-  const head = src.slice(0, cut).split("\n").filter((l) => !/^import .*(from "react"|InvitationView|DraftPrompt|app\/router)/.test(l)).join("\n");
-  fs.writeFileSync(entry, head + "\nexport const ALL = Object.fromEntries(TEMPLATES.map((t) => [t.id, buildDemoInv(t)]));\n");
-}
+// demo.json của từng mẫu tải theo nhu cầu (loadDemoInv) → chờ tải hết rồi mới xuất
+fs.writeFileSync(entry, `import { loadDemoInv } from "${abs(MOD)}";
+import { TEMPLATES } from "${abs("src/features/templates/data/templates.ts")}";
+export const ALL = Object.fromEntries(await Promise.all(TEMPLATES.map(async (t) => [t.id, await loadDemoInv(t)])));
+`);
 const outfile = path.join(tmp, "out.mjs");
 await build({
   entryPoints: [entry], outfile, bundle: true, format: "esm", platform: "node", logLevel: "error",

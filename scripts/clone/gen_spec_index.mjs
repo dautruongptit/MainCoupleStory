@@ -61,17 +61,21 @@ if (errors.length) { console.error("Spec lỗi:\n  " + errors.join("\n  ")); pro
 const v = (id) => "s_" + id.replace(/[^A-Za-z0-9_]/g, "_");
 const out = [
   "// TỆP SINH — không sửa tay. Chạy: node scripts/clone/gen_spec_index.mjs",
-  "// Nguồn: mỗi thư mục specs/<id>/{theme,capabilities,demo}.json",
+  "// Nguồn: mỗi thư mục specs/<id>/{theme,capabilities,cover,demo}.json (demo tải theo nhu cầu)",
   ...rows.flatMap(({ id, demo, cover }) => [
     `import ${v(id)}_theme from "./${id}/theme.json";`,
     `import ${v(id)}_caps from "./${id}/capabilities.json";`,
-    ...(demo ? [`import ${v(id)}_demo from "./${id}/demo.json";`] : []),
     ...(cover ? [`import ${v(id)}_cover from "./${id}/cover.json";`] : []),
   ]),
   "",
   "/** JSON thô của từng mẫu; `specs/index.ts` ép kiểu và dựng theme. */",
-  "export const RAW_SPECS: Record<string, { theme: unknown; capabilities: unknown; demo?: unknown; cover?: unknown }> = {",
-  ...rows.map(({ id, demo, cover }) => `  ${id}: { theme: ${v(id)}_theme, capabilities: ${v(id)}_caps${demo ? `, demo: ${v(id)}_demo` : ""}${cover ? `, cover: ${v(id)}_cover` : ""} },`),
+  "export const RAW_SPECS: Record<string, { theme: unknown; capabilities: unknown; cover?: unknown }> = {",
+  ...rows.map(({ id, demo, cover }) => `  ${id}: { theme: ${v(id)}_theme, capabilities: ${v(id)}_caps${cover ? `, cover: ${v(id)}_cover` : ""} },`),
+  "};",
+  "",
+  "/** Dữ liệu demo của trang gốc cho từng mẫu (specs/<id>/demo.json) — tải theo nhu cầu, chỉ trang demo dùng. */",
+  "export const DEMO_LOADERS: Record<string, () => Promise<unknown>> = {",
+  ...rows.filter((r) => r.demo).map(({ id }) => `  ${id}: () => import("./${id}/demo.json").then((m) => m.default),`),
   "};",
   "",
 ].join("\n");

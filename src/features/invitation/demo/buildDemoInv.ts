@@ -1,7 +1,7 @@
 import type { Inv } from "@/types/invitation";
 import { defaultInv } from "@/features/editor/data/defaultData";
 import { TPL_CDN, type Tpl } from "@/features/templates/data/templates";
-import { getTemplateDemo } from "@/features/invitation/shell/specs";
+import { loadTemplateDemo } from "@/features/invitation/shell/specs";
 
 /**
  * Dữ liệu thiệp của màn demo = dữ liệu chung dưới đây + `specs/<id>/demo.json` của mẫu (ghi đè).
@@ -49,7 +49,13 @@ export function demoBase(tpl: Tpl): Inv {
   return { ...defaultInv, ...DEMO_COMMON, templateId: tpl.id, templateName: tpl.name, templateThumb: TPL_CDN + tpl.img } as Inv;
 }
 
-export function buildDemoInv(tpl: Tpl): Inv {
+/** Ghép phần chung với `demo.json` đã tải của mẫu. */
+export function buildDemoInv(tpl: Tpl, demo: Partial<Inv> | null): Inv {
   // Đường dẫn ảnh giữ nguyên như trong JSON (kể cả URL máy chủ ảnh gốc); các khối tự đổi qua `assetUrl` lúc vẽ.
-  return { ...demoBase(tpl), ...(getTemplateDemo(tpl.id) ?? {}) } as Inv;
+  return { ...demoBase(tpl), ...(demo ?? {}) } as Inv;
+}
+
+/** Tải `demo.json` của mẫu (theo nhu cầu) rồi dựng dữ liệu thiệp demo. */
+export async function loadDemoInv(tpl: Tpl): Promise<Inv> {
+  return buildDemoInv(tpl, await loadTemplateDemo(tpl.id));
 }

@@ -4,7 +4,7 @@ import { getCapabilities, getTemplateSpec } from "./index";
 import { loadBlocksForFamily } from "@/features/invitation/shell/blocks";
 import { giftKindOf } from "@/features/invitation/shell/blocks/shared/giftSpecs";
 import { COVER_COMPONENTS, COVER_CONFIGS, getCoverComponent } from "@/features/invitation/components/covers";
-import { buildDemoInv } from "@/features/invitation/demo/buildDemoInv";
+import { loadDemoInv } from "@/features/invitation/demo/buildDemoInv";
 
 /** Toàn vẹn của nguồn cấu hình duy nhất `specs/<id>/`: mẫu nào trong kho cũng dựng được thiệp. */
 describe("specs/<id>/ — mỗi mẫu một thư mục", () => {
@@ -43,9 +43,9 @@ describe("specs/<id>/ — mỗi mẫu một thư mục", () => {
     for (const t of TEMPLATES) expect(["3d-box", "envelope"], t.id).toContain(giftKindOf(t.id));
   });
 
-  it("dữ liệu demo dựng được cho mọi mẫu và mang đúng mẫu", () => {
+  it("dữ liệu demo dựng được cho mọi mẫu và mang đúng mẫu", async () => {
     for (const t of TEMPLATES) {
-      const inv = buildDemoInv(t);
+      const inv = await loadDemoInv(t);
       expect(inv.templateId).toBe(t.id);
       expect(inv.groomFull && inv.brideFull, t.id).toBeTruthy();
       expect(["gift_box", "envelope", "qr_inline"], t.id).toContain(inv.giftDisplayMode);

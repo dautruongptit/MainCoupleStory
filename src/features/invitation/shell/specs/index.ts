@@ -1,4 +1,4 @@
-import { RAW_SPECS } from "./index.generated";
+import { DEMO_LOADERS, RAW_SPECS } from "./index.generated";
 import type { Inv } from "@/types/invitation";
 import { buildTheme, type ThemeJson, type ThemeTokens } from "../theme";
 import { editorSections, hasCoupleHero, type EditorSections } from "@/features/editor/config/editorSections";
@@ -49,7 +49,6 @@ const SPECS: Record<string, TemplateSpec> = Object.fromEntries(
       id,
       theme: buildTheme(raw.theme as ThemeJson),
       capabilities: raw.capabilities as TemplateCapabilities,
-      ...(raw.demo ? { demo: raw.demo as Partial<Inv> } : {}),
     },
   ]),
 );
@@ -58,7 +57,15 @@ const SPECS: Record<string, TemplateSpec> = Object.fromEntries(
 export const getTemplateSpec = (templateId: string): TemplateSpec | null => SPECS[templateId] ?? null;
 export const getCapabilities = (templateId: string): TemplateCapabilities | null => SPECS[templateId]?.capabilities ?? null;
 
-export const getTemplateDemo = (templateId: string): Partial<Inv> | null => SPECS[templateId]?.demo ?? null;
+const demoCache = new Map<string, Partial<Inv> | null>();
+/** Dữ liệu demo của trang gốc cho mẫu (`specs/<id>/demo.json`), tải theo nhu cầu; null nếu mẫu không có. */
+export async function loadTemplateDemo(templateId: string): Promise<Partial<Inv> | null> {
+  if (demoCache.has(templateId)) return demoCache.get(templateId)!;
+  const loader = DEMO_LOADERS[templateId];
+  const demo = loader ? ((await loader()) as Partial<Inv>) : null;
+  demoCache.set(templateId, demo);
+  return demo;
+}
 
 /**
  * Hiện/ẩn thẻ editor theo mẫu. Ưu tiên `capabilities.editor.sections` (đo thật, mẫu đã clone);

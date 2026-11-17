@@ -5,7 +5,7 @@ import InvitationView from "@/features/invitation/view/InvitationView";
 import { useChooseTemplate } from "@/features/templates/components/DraftPrompt";
 import { Link } from "@/app/router";
 import { TEMPLATES, templateByIdOrSlug } from "@/features/templates/data/templates";
-import { buildDemoInv } from "@/features/invitation/demo/buildDemoInv";
+import { loadDemoInv } from "@/features/invitation/demo/buildDemoInv";
 
 
 /**
@@ -19,7 +19,15 @@ export default function Demo({ slug }: { slug: string }) {
   const tpl = useMemo(() => templateByIdOrSlug(slug), [slug]);
 
   // 2. Trạng thái dữ liệu thiệp demo tương ứng với template
-  const [d, setD] = useState<Inv>(() => (tpl ? buildDemoInv(tpl) : defaultInv));
+  // demo.json của mẫu tải theo nhu cầu → null trong lúc tải (trang trống rất ngắn rồi hiện bìa)
+  const [d, setD] = useState<Inv | null>(tpl ? null : defaultInv);
+  useEffect(() => {
+    if (!tpl) return;
+    let alive = true;
+    setD(null);
+    loadDemoInv(tpl).then((inv) => { if (alive) setD(inv); });
+    return () => { alive = false; };
+  }, [tpl]);
 
   // 3. Trạng thái đã mở thiệp hay chưa (ẩn thanh nổi trên màn hình bì thư)
   const [isOpened, setIsOpened] = useState(() => {
@@ -78,6 +86,9 @@ export default function Demo({ slug }: { slug: string }) {
     );
   }
 
+  // Đang tải demo.json của mẫu: chưa có dữ liệu để dựng thiệp
+  if (!d) return <div className="demo-standalone-wrap" />;
+
   // 6. Render bản xem trước trực tiếp chuẩn 100% như website gốc chungdoi.com
   // Mặc định giao diện demo hoàn toàn thuần khiết (không có thanh floating navigation đè lên thiệp).
   // Nếu có tham số ?actions=1, mới hiển thị thanh công cụ tiện ích.
@@ -116,7 +127,7 @@ export default function Demo({ slug }: { slug: string }) {
       {prompt}
       <InvitationView
         d={d}
-        set={(p) => setD((prev) => ({ ...prev, ...p }))}
+        set={(p) => setD((prev) => (prev ? { ...prev, ...p } : prev))}
         standalone={true}
         onEnvelopeOpen={() => setIsOpened(true)}
       />
