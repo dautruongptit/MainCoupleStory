@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { Link } from "@/app/router";
 import { assetUrl } from "@/services/asset";
 import { TEMPLATE_ROW_BY_ID, TPL_CDN } from "@/features/templates/data/templates";
+import TemplateShowcase from "./home/TemplateShowcase";
 
 const CDN = assetUrl("/template-previews/vi/listing/");
 const TEMPLATES: { name: string; file: string; tag?: string }[] = [
@@ -126,139 +127,6 @@ function Check() {
 
 function Features({ items }: { items: string[] }) {
   return <ul className="feat-list">{items.map((t) => <li key={t}><Check />{t}</li>)}</ul>;
-}
-
-/**
- * Băng trượt mẫu ở trang chủ: 20 mẫu và thứ tự đo từ trang chủ thật (17/11/2026), ảnh là ảnh listing của kho mẫu
- * (`template-previews/vi/listing/…`, như trang gốc) — tên, slug, ảnh lấy từ `specs/<id>/meta.json` qua bảng mẫu.
- * Danh sách là vòng tròn; xoay 4 vị trí để mẫu đầu (Minimalism - Đỏ Đậm) đứng giữa lúc mở trang.
- */
-const COVERFLOW_IDS = [
-  "lien_hoa_v2_green", "glass_garden_pink", "minimalism_red", "double_phoenix_red",
-  "minimalism_darkred", "minimalism_brown", "song_hy_green", "song_hy_v2_red", "boho_floral_green", "marble_yellow",
-  "minimalism_darkbrown", "silk_ribbon_darkred", "song_hy_red", "dragon_phoenix_v3_red", "silk_ribbon_green", "double_dragon_red",
-  "minimalism_green", "dragon_phoenix_v2_red", "jasmine_white", "dragon_phoenix_red",
-];
-const COVERFLOW_TEMPLATES = COVERFLOW_IDS.flatMap((id) => {
-  const row = TEMPLATE_ROW_BY_ID[id];
-  return row ? [{ name: row.name, img: TPL_CDN + row.img, slug: row.slug }] : [];
-});
-
-
-function CoverflowCarousel() {
-  const [activeIndex, setActiveIndex] = useState(4); // "Minimalism - Đỏ Đậm"
-
-  const prev = () => setActiveIndex((curr) => (curr > 0 ? curr - 1 : COVERFLOW_TEMPLATES.length - 1));
-  const next = () => setActiveIndex((curr) => (curr < COVERFLOW_TEMPLATES.length - 1 ? curr + 1 : 0));
-
-  return (
-    <div className="coverflow-sec">
-      <div className="coverflow-wrap">
-        <button className="coverflow-btn left" aria-label="Trước" onClick={prev}>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <polyline points="15 18 9 12 15 6" />
-          </svg>
-        </button>
-
-        <div className="coverflow-stage">
-          {COVERFLOW_TEMPLATES.map((tpl, i) => {
-            const diff = i - activeIndex;
-            const absDiff = Math.abs(diff);
-
-            let transform = "";
-            let zIndex = 20 - absDiff;
-            let opacity = 1;
-            let filter = "none";
-            let pointerEvents: "auto" | "none" = "auto";
-
-            if (diff === 0) {
-              transform = "translateX(0px) translateZ(0px) rotateY(0deg) scale(1.05)";
-              zIndex = 30;
-              opacity = 1;
-              filter = "brightness(1)";
-            } else if (diff < 0) {
-              const offset = diff * 85 - 90;
-              const rot = Math.min(45, 28 + absDiff * 3);
-              const scale = Math.max(0.68, 1 - absDiff * 0.07);
-              const z = -absDiff * 50;
-              transform = `translateX(${offset}px) translateZ(${z}px) rotateY(${rot}deg) scale(${scale})`;
-              opacity = absDiff > 5 ? 0 : Math.max(0.35, 1 - absDiff * 0.14);
-              filter = `brightness(${Math.max(0.45, 1 - absDiff * 0.12)})`;
-              if (absDiff > 5) pointerEvents = "none";
-            } else {
-              const offset = diff * 85 + 90;
-              const rot = -Math.min(45, 28 + absDiff * 3);
-              const scale = Math.max(0.68, 1 - absDiff * 0.07);
-              const z = -absDiff * 50;
-              transform = `translateX(${offset}px) translateZ(${z}px) rotateY(${rot}deg) scale(${scale})`;
-              opacity = absDiff > 5 ? 0 : Math.max(0.35, 1 - absDiff * 0.14);
-              filter = `brightness(${Math.max(0.45, 1 - absDiff * 0.12)})`;
-              if (absDiff > 5) pointerEvents = "none";
-            }
-
-            return (
-              <div
-                key={tpl.slug}
-                className="coverflow-card"
-                style={{
-                  transform,
-                  zIndex,
-                  opacity,
-                  filter,
-                  pointerEvents,
-                }}
-                onClick={() => setActiveIndex(i)}
-              >
-                <img src={tpl.img} alt={tpl.name} loading="lazy" />
-              </div>
-            );
-          })}
-        </div>
-
-        <button className="coverflow-btn right" aria-label="Sau" onClick={next}>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <polyline points="9 18 15 12 9 6" />
-          </svg>
-        </button>
-      </div>
-
-      <div className="coverflow-dots-row">
-        {COVERFLOW_TEMPLATES.map((tpl, i) => (
-          <button
-            key={tpl.slug}
-            type="button"
-            className={`coverflow-dot ${i === activeIndex ? "active" : ""}`}
-            onClick={() => setActiveIndex(i)}
-            aria-label={tpl.name}
-          />
-        ))}
-      </div>
-
-      <div className="center col" style={{ marginTop: "24px", gap: "10px" }}>
-        <Link
-          href="/vi/mau-thiep"
-          className="btn-pill"
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "6px",
-            padding: "0 28px",
-            height: "44px",
-            fontSize: "14px",
-            fontWeight: 600,
-          }}
-        >
-          <span>Xem tất cả mẫu thiệp</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <polyline points="9 18 15 12 9 6" />
-          </svg>
-        </Link>
-        <p style={{ margin: 0, fontSize: "12px", color: "rgba(255,255,255,0.5)" }}>
-          Những mẫu thiệp độc đáo đang chờ bạn
-        </p>
-      </div>
-    </div>
-  );
 }
 
 function StepsSection() {
@@ -415,12 +283,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Templates */}
-      <section className="sec" style={{ paddingBottom: 0 }}>
-        <h2 className="sec-title">Mẫu thiệp cưới online <em>đẹp nhất</em></h2>
-        <p className="sec-sub">Khám phá những mẫu thiệp cưới được thiết kế tinh tế và hiện đại</p>
-        <CoverflowCarousel />
-      </section>
+      {/* Mẫu thiệp: markup + số đo thật của trang chủ gốc (pages/home/TemplateShowcase.tsx) */}
+      <TemplateShowcase />
 
       {/* Steps */}
       <StepsSection />
