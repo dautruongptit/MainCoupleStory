@@ -21,7 +21,7 @@ const DIRS = ["/images/giftbox", "/images/giftbox/mini", "/images/envelope"];
 const tpl = fs.readFileSync("src/features/templates/data/templates.generated.ts", "utf8");
 const ids = [...tpl.matchAll(/"id":\s*"([^"]+)"/g)].map((m) => m[1]);
 // dữ liệu hộp quà từng mẫu: specs/<id>/gift.json (sinh bởi gen_gift_sections.cjs; khóa `assets` do script này ghi)
-const SPEC_DIR = "src/features/invitation/shell/specs";
+const SPEC_DIR = "src/features/invitation/templates";
 const giftFile = (id) => path.join(SPEC_DIR, id, "gift.json");
 const readGift = (id) => (fs.existsSync(giftFile(id)) ? JSON.parse(fs.readFileSync(giftFile(id), "utf8")) : null);
 const SPECS = Object.fromEntries(ids.map((id) => [id, readGift(id)]).filter(([, g]) => g).map(([id, { assets, ...spec }]) => [id, spec]));

@@ -5,7 +5,7 @@
 const fs = require("fs");
 const path = require("path");
 const dry = process.argv.includes("--dry");
-const SPECS = "src/features/invitation/shell/specs";
+const SPECS = "src/features/invitation/templates";
 const RAW = "docs/survey/raw";
 const BANKS = { Vietcombank: ["VCB", "970436"], Techcombank: ["TCB", "970407"], VietinBank: ["ICB", "970415"], BIDV: ["BIDV", "970418"], MBBank: ["MB", "970422"], ACB: ["ACB", "970416"], VPBank: ["VPB", "970432"], Agribank: ["VBA", "970405"], TPBank: ["TPB", "970423"], Sacombank: ["STB", "970403"] };
 const unesc = (s) => s.replace(/&amp;/g, "&").replace(/&quot;/g, '"');

@@ -34,7 +34,7 @@ import { getCoverComponent } from "${abs("src/features/invitation/components/cov
 import { loadBlocksForFamily } from "${abs("src/features/invitation/shell/blocks/index.ts")}";
 const GIFT_SPECS = Object.fromEntries(await Promise.all(TEMPLATES.map(async (t) => [t.id, await loadGiftSpec(t.id)])));
 const BLOCKS_OF = Object.fromEntries(await Promise.all(TEMPLATES.map(async (t) => [t.id, await loadBlocksForFamily(getCapabilities(t.id)?.family ?? "")])));
-import { getEditorSections, getCoupleHero, getCapabilities } from "${abs("src/features/invitation/shell/specs/index.ts")}";
+import { getEditorSections, getCoupleHero, getCapabilities } from "${abs("src/features/invitation/templates/index.ts")}";
 import { defaultDressColors, defaultGiftMode } from "${abs("src/services/storage/store.ts")}";
 const fnHash = (f) => { const s = String(f).replace(/[A-Za-z_$][A-Za-z0-9_$]*/g, (w) => w.replace(/[0-9]+$/, "")); let h = 5381; for (let i = 0; i < s.length; i++) h = ((h * 33) ^ s.charCodeAt(i)) >>> 0; return s.length + "-" + h.toString(36); };
 export const ALL = {

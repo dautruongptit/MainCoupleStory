@@ -5,7 +5,8 @@ const path = require("path");
 const { J } = require("./jsxkit.cjs");
 
 const RIV = "docs/survey/blocks/hoa_rum_trang";
-const OUT = "src/features/invitation/shell/blocks/calla_lily_white";
+const { blocksDirOf } = require("../lib/template_paths.cjs");
+const OUT = blocksDirOf("calla_lily_white"); // templates/<id>/blocks hoặc templates/_shared/<họ>
 const raw = (i) => fs.readFileSync(path.join(RIV, String(i).padStart(2, "0") + ".jsx"), "utf8");
 
 const kit = require("./genkit.cjs").make({

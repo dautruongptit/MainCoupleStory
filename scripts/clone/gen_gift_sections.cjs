@@ -1,4 +1,4 @@
-// Sinh src/features/invitation/shell/specs/<id>/gift.json từ dữ liệu hộp mừng quà đo thật của từng mẫu
+// Sinh src/features/invitation/templates/<id>/gift.json từ dữ liệu hộp mừng quà đo thật của từng mẫu
 // (docs/survey/raw/gift_<id>.json, thu bằng scripts/survey/gift_crawl.js). Mỗi mẫu một "spec" gồm:
 //   kind     kiểu mặc định thật của mẫu: "3d-box" | "envelope"
 //   rootCls/rootStyle  khung ngoài khối; headHtml  tiêu đề (chứa {{TITLE}}); widgetHtml  nút hộp quà/phong bì mặc định
@@ -7,7 +7,7 @@
 // Chạy: node scripts/clone/gen_gift_sections.cjs
 const fs = require("fs");
 const RAW = "docs/survey/raw";
-const SPECS_DIR = "src/features/invitation/shell/specs";
+const SPECS_DIR = "src/features/invitation/templates";
 
 // Chỉ làm sạch thuộc tính class: ở trang gốc thuộc tính font bị đổ nhầm vào class (không có tác dụng với Tailwind); style giữ nguyên.
 const clean = (h) => h.replace(/ class="([^"]*)"/g, (m, c) => ' class="' + c.replace(/&quot;[^&]*&quot;, ChungDoiIndic, serif ?/g, "").replace(/\s+/g, " ").trim() + '"');

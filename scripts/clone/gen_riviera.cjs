@@ -5,7 +5,8 @@ const ts = require("typescript");
 const { J } = require("./jsxkit.cjs");
 
 const RIV = process.argv[2] || "docs/survey/blocks/riviera_blue";
-const OUT = "src/features/invitation/shell/blocks/riviera";
+const { blocksDirOf } = require("../lib/template_paths.cjs");
+const OUT = blocksDirOf("riviera"); // templates/<id>/blocks hoặc templates/_shared/<họ>
 fs.mkdirSync(OUT, { recursive: true });
 const raw = (i) => fs.readFileSync(path.join(RIV, String(i).padStart(2, "0") + ".jsx"), "utf8");
 

@@ -5,6 +5,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { createRequire } from "node:module";
+import tp from "../lib/template_paths.cjs";
 
 const ROOT = process.cwd();
 const J = (...p) => path.join(ROOT, ...p);
@@ -20,7 +21,8 @@ const sharp = req("sharp");
 const read = (p) => { try { return fs.readFileSync(p, "utf8"); } catch { return ""; } };
 const readJson = (p) => { try { return JSON.parse(fs.readFileSync(p, "utf8")); } catch { return null; } };
 const SURVEY = J("docs/survey");
-const BLOCKS = J("src/features/invitation/shell/blocks");
+const BLOCKS = J("src/features/invitation/shell/blocks"); // khối nền minimalism
+const blocksDir = (family) => J(tp.blocksDirOf(family, ROOT));
 
 // ---------- nguồn dữ liệu
 const tplSrc = read(J("src/features/templates/data/templates.generated.ts"));
@@ -29,7 +31,7 @@ const registry = readJson(J("docs/clone-registry.json"));
 const regById = Object.fromEntries((registry?.templates ?? []).map((t) => [t.id, t]));
 const edSrc = read(J("src/features/editor/config/editorSections.ts"));
 // dữ liệu bìa (ngày, lời mời) của mẫu nằm trong specs/<id>/demo.json (trước đây: referenceCovers.ts)
-const hasCoverData = (id) => { try { const d = JSON.parse(fs.readFileSync(J(`src/features/invitation/shell/specs/${id}/demo.json`), "utf8")); return "date" in d || "envelopeInviteMessage" in d; } catch { return false; } };
+const hasCoverData = (id) => { try { const d = JSON.parse(fs.readFileSync(J(`src/features/invitation/templates/${id}/demo.json`), "utf8")); return "date" in d || "envelopeInviteMessage" in d; } catch { return false; } };
 const particle88 = readJson(J("docs/survey/particle-colors-88.json")) ?? {};
 const catalog88 = new Set((readJson(J("docs/survey/catalog-88.json")) ?? []).map((x) => x.id));
 const surveyFiles = fs.readdirSync(SURVEY);
@@ -41,7 +43,7 @@ const setOf = (name) => {
 const HERO = setOf("HAS_HERO_PHOTO"), COUPLE = setOf("HAS_COUPLE_HERO"), INTRO = setOf("HAS_INTRO_LINE"), ALBUM_HERO = setOf("ALBUM_AFTER_HERO");
 
 // cấu hình bìa của mẫu: specs/<id>/cover.json (trước đây là một mục trong coverConfigs.ts)
-const coverEntry = (id) => readJson(J(`src/features/invitation/shell/specs/${id}/cover.json`)) ?? null;
+const coverEntry = (id) => readJson(J(`src/features/invitation/templates/${id}/cover.json`)) ?? null;
 const field = (cover, k) => { const v = cover?.[k]; return typeof v === "string" ? v : typeof v === "boolean" ? String(v) : null; };
 
 const diffNums = (id, state, w) => {
@@ -80,7 +82,7 @@ const openSeq = (id) => {
 // ---------- phân tích khối của họ
 const TOGGLES = ["familyOn", "announceOn", "albumOn", "partyOn", "dressOn", "schedOn", "guestOn", "giftOn", "thanksOn", "rsvpOn"];
 const blockInfo = (family, capBlocks) => {
-  const dir = family && fs.existsSync(path.join(BLOCKS, family)) ? path.join(BLOCKS, family) : null;
+  const dir = family && family !== "minimalism" && fs.existsSync(blocksDir(family)) ? blocksDir(family) : null;
   const files = dir
     ? fs.readdirSync(dir).filter((f) => f.endsWith(".tsx")).map((f) => path.join(dir, f))
     : fs.readdirSync(BLOCKS).filter((f) => f.endsWith(".tsx")).map((f) => path.join(BLOCKS, f));
@@ -116,7 +118,7 @@ const rows = [];
 for (const t of templates) {
   const reg = regById[t.id];
   const spec = reg && reg.status !== "chưa clone";
-  const specDir = J("src/features/invitation/shell/specs", t.id);
+  const specDir = J("src/features/invitation/templates", t.id);
   const caps = readJson(path.join(specDir, "capabilities.json"));
   const theme = readJson(path.join(specDir, "theme.json"));
   const family = caps?.family ?? null;
@@ -339,7 +341,7 @@ add("3. Hiệu ứng nút bấm", "Hiệu ứng khi bấm nút 'Mở thiệp' tr
 add("4. Màn hình chỉnh sửa", "Khung editor dùng chung (16 thẻ) + cấu hình thẻ riêng theo mẫu (ảnh đầu thiệp / ảnh đôi / lời mở đầu / vị trí Thư viện ảnh). Bằng chứng: editorSections.ts (đo 88 mẫu 01/11/2026), capabilities.editor, diff editor, editor-sync.");
 add("5. Màn hình xem trước", "Tab 'Xem trước' trong editor — cùng bộ dựng InvitationShell với demo; mỗi công tắc Hiện/Ẩn trong editor phải có khối đọc cờ xxxOn tương ứng (liệt kê ở sheet 'Editor & Xem trước').");
 add("", "");
-add("Nguồn", "src/features/templates/data/templates.generated.ts, shell/specs/*, shell/blocks/*, shell/specs/<id>/cover.json, covers/index.ts, editor/config/editorSections.ts, docs/survey/*, docs/clone-registry.json");
+add("Nguồn", "src/features/templates/data/templates.generated.ts, templates/<id>/*.json, templates/<id>/blocks/*, templates/_shared/*, covers/index.ts, editor/config/editorSections.ts, docs/survey/*, docs/clone-registry.json");
 add("Giới hạn", "Cột trạng thái dựa trên bằng chứng có trong repo; ô vàng không có nghĩa là sai, chỉ là chưa được đối chiếu tự động. Thumbnail cắt từ ảnh listing local (public/images/template-previews, gitignore).");
 add("Tạo lại", "node scripts/clone/registry.mjs && node scripts/clone/export_xlsx.mjs");
 

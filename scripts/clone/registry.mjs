@@ -7,14 +7,15 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
+import tp from "../lib/template_paths.cjs";
 
 const ROOT = process.cwd();
 const J = (...p) => path.join(ROOT, ...p);
 const rel = (p) => path.relative(ROOT, p).split(path.sep).join("/");
 const REG_JSON = J("docs/clone-registry.json");
 const REG_MD = J("docs/clone-registry.md");
-const SPECS = J("src/features/invitation/shell/specs");
-const BLOCKS = J("src/features/invitation/shell/blocks");
+const SPECS = J("src/features/invitation/templates");
+const blocksDir = (family) => J(tp.blocksDirOf(family, ROOT)); // templates/<id>/blocks | templates/_shared/<họ> | shell/blocks (minimalism)
 const THEMES = J("public/images/themes");
 const coverFile = (id) => path.join(SPECS, id, "cover.json");
 
@@ -46,7 +47,7 @@ const templates = tplSrc.split("\n").filter((l) => l.startsWith('  {"slug"')).ma
 const genDir = J("scripts/clone");
 const generators = {};
 for (const f of fs.readdirSync(genDir).filter((x) => /^gen_.*\.cjs$/.test(x))) {
-  const m = /const OUT = "src\/features\/invitation\/shell\/blocks\/([^"]+)"/.exec(fs.readFileSync(path.join(genDir, f), "utf8"));
+  const m = /const OUT = blocksDirOf\("([^"]+)"\)/.exec(fs.readFileSync(path.join(genDir, f), "utf8"));
   if (m) generators[m[1]] = `scripts/clone/${f}`;
 }
 
@@ -79,7 +80,7 @@ const entries = templates.map((t, index) => {
   const theme = readJson(path.join(specDir, "theme.json"));
   const caps = readJson(path.join(specDir, "capabilities.json"));
   const family = caps?.family ?? null;
-  const blockDir = family && fs.existsSync(path.join(BLOCKS, family)) ? path.join(BLOCKS, family) : null;
+  const blockDir = family && family !== "minimalism" && fs.existsSync(blocksDir(family)) ? blocksDir(family) : null;
   const assetsDir = theme?.assets ? J("public", theme.assets.replace(/^\//, "")) : null;
   const cover = coverEntry(t.id);
   const envelope = J("public/images/envelope", `${t.id}.webp`);

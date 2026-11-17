@@ -6,7 +6,8 @@ const { J } = require("./jsxkit.cjs");
 
 const ID = "dragon_phoenix_v4_red";
 const RIV = process.argv[2] || "docs/survey/blocks/" + ID;
-const OUT = "src/features/invitation/shell/blocks/traditional";
+const { blocksDirOf } = require("../lib/template_paths.cjs");
+const OUT = blocksDirOf("traditional"); // templates/<id>/blocks hoặc templates/_shared/<họ>
 const raw = (i) => fs.readFileSync(path.join(RIV, String(i).padStart(2, "0") + ".jsx"), "utf8");
 
 const kit = require("./genkit.cjs").make({

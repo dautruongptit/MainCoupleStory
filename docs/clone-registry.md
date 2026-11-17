@@ -2,7 +2,7 @@
 
 > Sinh tự động bởi `node scripts/clone/registry.mjs` — **chạy lại sau mỗi lần clone/sửa mẫu rồi commit cùng**. Chi tiết máy đọc (hash từng file): `docs/clone-registry.json`.
 
-Cập nhật: 2026-11-16 · Tổng **92** mẫu: ✅ đã clone **43** · 🟡 dở dang **49** · ⬜ chưa clone **0**
+Cập nhật: 2026-11-17 · Tổng **92** mẫu: ✅ đã clone **43** · 🟡 dở dang **49** · ⬜ chưa clone **0**
 
 ## Ý nghĩa trạng thái
 
@@ -124,34 +124,48 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/minimalism-do-dam/demo
 - Họ khối: `darkred`
-- Bìa: `src/features/invitation/shell/specs/minimalism_darkred/cover.json` → khóa `minimalism_darkred`
+- Bìa: `src/features/invitation/templates/minimalism_darkred/cover.json` → khóa `minimalism_darkred`
 - Thư mục ảnh theme: `public/images/themes/minimalism-dark-red/` (9 file)
 
-**Spec** (6)
+**Spec** (20)
 
-- `src/features/invitation/shell/specs/minimalism_darkred/capabilities.json`
-- `src/features/invitation/shell/specs/minimalism_darkred/cover.json`
-- `src/features/invitation/shell/specs/minimalism_darkred/demo.json`
-- `src/features/invitation/shell/specs/minimalism_darkred/gift.json`
-- `src/features/invitation/shell/specs/minimalism_darkred/meta.json`
-- `src/features/invitation/shell/specs/minimalism_darkred/theme.json`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Album.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Banquet.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Credit.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Dress.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Family.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Gifts.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Hero.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/index.ts`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Paper.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Schedule.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Thanks.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Venue.tsx`
+- `src/features/invitation/templates/minimalism_darkred/capabilities.json`
+- `src/features/invitation/templates/minimalism_darkred/cover.json`
+- `src/features/invitation/templates/minimalism_darkred/demo.json`
+- `src/features/invitation/templates/minimalism_darkred/gift.json`
+- `src/features/invitation/templates/minimalism_darkred/meta.json`
+- `src/features/invitation/templates/minimalism_darkred/theme.json`
 
 **Khối** (14)
 
-- `src/features/invitation/shell/blocks/darkred/Album.tsx`
-- `src/features/invitation/shell/blocks/darkred/Banquet.tsx`
-- `src/features/invitation/shell/blocks/darkred/Credit.tsx`
-- `src/features/invitation/shell/blocks/darkred/Dress.tsx`
-- `src/features/invitation/shell/blocks/darkred/Family.tsx`
-- `src/features/invitation/shell/blocks/darkred/Gifts.tsx`
-- `src/features/invitation/shell/blocks/darkred/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/darkred/Hero.tsx`
-- `src/features/invitation/shell/blocks/darkred/index.ts`
-- `src/features/invitation/shell/blocks/darkred/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/darkred/Paper.tsx`
-- `src/features/invitation/shell/blocks/darkred/Schedule.tsx`
-- `src/features/invitation/shell/blocks/darkred/Thanks.tsx`
-- `src/features/invitation/shell/blocks/darkred/Venue.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Album.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Banquet.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Credit.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Dress.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Family.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Gifts.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Hero.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/index.ts`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Paper.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Schedule.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Thanks.tsx`
+- `src/features/invitation/templates/minimalism_darkred/blocks/Venue.tsx`
 
 **Ảnh theme** (9)
 
@@ -193,18 +207,18 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/minimalism-nau/demo
 - Họ khối: `minimalism` (dùng khối chung, không có thư mục riêng)
-- Bìa: `src/features/invitation/shell/specs/minimalism_brown/cover.json` → khóa `minimalism_brown`
+- Bìa: `src/features/invitation/templates/minimalism_brown/cover.json` → khóa `minimalism_brown`
 - Thư mục ảnh theme: `public/images/themes/minimalism-brown/` (10 file)
 - Ghi chú: Đạt 0 lệch hình học theo AGENTS.md
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/minimalism_brown/capabilities.json`
-- `src/features/invitation/shell/specs/minimalism_brown/cover.json`
-- `src/features/invitation/shell/specs/minimalism_brown/demo.json`
-- `src/features/invitation/shell/specs/minimalism_brown/gift.json`
-- `src/features/invitation/shell/specs/minimalism_brown/meta.json`
-- `src/features/invitation/shell/specs/minimalism_brown/theme.json`
+- `src/features/invitation/templates/minimalism_brown/capabilities.json`
+- `src/features/invitation/templates/minimalism_brown/cover.json`
+- `src/features/invitation/templates/minimalism_brown/demo.json`
+- `src/features/invitation/templates/minimalism_brown/gift.json`
+- `src/features/invitation/templates/minimalism_brown/meta.json`
+- `src/features/invitation/templates/minimalism_brown/theme.json`
 
 **Ảnh theme** (10)
 
@@ -261,35 +275,35 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/song-hy-xanh/demo
 - Họ khối: `song_hy`
-- Bìa: `src/features/invitation/shell/specs/song_hy_green/cover.json` → khóa `song_hy_green`
+- Bìa: `src/features/invitation/templates/song_hy_green/cover.json` → khóa `song_hy_green`
 - Thư mục ảnh theme: `public/song-hy-green/` (0 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/song_hy_green/capabilities.json`
-- `src/features/invitation/shell/specs/song_hy_green/cover.json`
-- `src/features/invitation/shell/specs/song_hy_green/demo.json`
-- `src/features/invitation/shell/specs/song_hy_green/gift.json`
-- `src/features/invitation/shell/specs/song_hy_green/meta.json`
-- `src/features/invitation/shell/specs/song_hy_green/theme.json`
+- `src/features/invitation/templates/song_hy_green/capabilities.json`
+- `src/features/invitation/templates/song_hy_green/cover.json`
+- `src/features/invitation/templates/song_hy_green/demo.json`
+- `src/features/invitation/templates/song_hy_green/gift.json`
+- `src/features/invitation/templates/song_hy_green/meta.json`
+- `src/features/invitation/templates/song_hy_green/theme.json`
 
 **Khối** (15)
 
-- `src/features/invitation/shell/blocks/song_hy/Album.tsx`
-- `src/features/invitation/shell/blocks/song_hy/AlbumTitle.tsx`
-- `src/features/invitation/shell/blocks/song_hy/Banquet.tsx`
-- `src/features/invitation/shell/blocks/song_hy/BanquetTitle.tsx`
-- `src/features/invitation/shell/blocks/song_hy/CeremonyTitle.tsx`
-- `src/features/invitation/shell/blocks/song_hy/DressSchedule.tsx`
-- `src/features/invitation/shell/blocks/song_hy/Family.tsx`
-- `src/features/invitation/shell/blocks/song_hy/Footer.tsx`
-- `src/features/invitation/shell/blocks/song_hy/Gifts.tsx`
-- `src/features/invitation/shell/blocks/song_hy/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/song_hy/GuestbookTitle.tsx`
-- `src/features/invitation/shell/blocks/song_hy/Hero.tsx`
-- `src/features/invitation/shell/blocks/song_hy/index.ts`
-- `src/features/invitation/shell/blocks/song_hy/themeVars.ts`
-- `src/features/invitation/shell/blocks/song_hy/Venue.tsx`
+- `src/features/invitation/templates/_shared/song_hy/Album.tsx`
+- `src/features/invitation/templates/_shared/song_hy/AlbumTitle.tsx`
+- `src/features/invitation/templates/_shared/song_hy/Banquet.tsx`
+- `src/features/invitation/templates/_shared/song_hy/BanquetTitle.tsx`
+- `src/features/invitation/templates/_shared/song_hy/CeremonyTitle.tsx`
+- `src/features/invitation/templates/_shared/song_hy/DressSchedule.tsx`
+- `src/features/invitation/templates/_shared/song_hy/Family.tsx`
+- `src/features/invitation/templates/_shared/song_hy/Footer.tsx`
+- `src/features/invitation/templates/_shared/song_hy/Gifts.tsx`
+- `src/features/invitation/templates/_shared/song_hy/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/song_hy/GuestbookTitle.tsx`
+- `src/features/invitation/templates/_shared/song_hy/Hero.tsx`
+- `src/features/invitation/templates/_shared/song_hy/index.ts`
+- `src/features/invitation/templates/_shared/song_hy/themeVars.ts`
+- `src/features/invitation/templates/_shared/song_hy/Venue.tsx`
 
 **Phong bì** (1)
 
@@ -320,40 +334,40 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoa-moc-xanh/demo
 - Họ khối: `boho_floral`
-- Bìa: `src/features/invitation/shell/specs/boho_floral_green/cover.json` → khóa `boho_floral_green`
+- Bìa: `src/features/invitation/templates/boho_floral_green/cover.json` → khóa `boho_floral_green`
 - Thư mục ảnh theme: `public/boho-floral-green/` (0 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/boho_floral_green/capabilities.json`
-- `src/features/invitation/shell/specs/boho_floral_green/cover.json`
-- `src/features/invitation/shell/specs/boho_floral_green/demo.json`
-- `src/features/invitation/shell/specs/boho_floral_green/gift.json`
-- `src/features/invitation/shell/specs/boho_floral_green/meta.json`
-- `src/features/invitation/shell/specs/boho_floral_green/theme.json`
+- `src/features/invitation/templates/boho_floral_green/capabilities.json`
+- `src/features/invitation/templates/boho_floral_green/cover.json`
+- `src/features/invitation/templates/boho_floral_green/demo.json`
+- `src/features/invitation/templates/boho_floral_green/gift.json`
+- `src/features/invitation/templates/boho_floral_green/meta.json`
+- `src/features/invitation/templates/boho_floral_green/theme.json`
 
 **Khối** (20)
 
-- `src/features/invitation/shell/blocks/boho_floral/Album.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Banquet.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/BanquetTitle.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/CeremonyTitle.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Credit.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Dresscode.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Family.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Footer.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Gifts.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Hero.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/index.ts`
-- `src/features/invitation/shell/blocks/boho_floral/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/MidDecor.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Rsvp.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Schedule.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/themeVars.ts`
-- `src/features/invitation/shell/blocks/boho_floral/TopDecor.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Venue.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/VenueDecor.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Album.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Banquet.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/BanquetTitle.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/CeremonyTitle.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Credit.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Dresscode.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Family.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Footer.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Gifts.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Hero.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/index.ts`
+- `src/features/invitation/templates/_shared/boho_floral/Lightbox.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/MidDecor.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Rsvp.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Schedule.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/themeVars.ts`
+- `src/features/invitation/templates/_shared/boho_floral/TopDecor.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Venue.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/VenueDecor.tsx`
 
 **Phong bì** (1)
 
@@ -375,32 +389,44 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/song-hy-v2-do/demo
 - Họ khối: `song_hy_v2_red`
-- Bìa: `src/features/invitation/shell/specs/song_hy_v2_red/cover.json` → khóa `song_hy_v2_red`
+- Bìa: `src/features/invitation/templates/song_hy_v2_red/cover.json` → khóa `song_hy_v2_red`
 - Thư mục ảnh theme: `public/images/themes/song-hy-v2-red/` (11 file)
 
-**Spec** (6)
+**Spec** (18)
 
-- `src/features/invitation/shell/specs/song_hy_v2_red/capabilities.json`
-- `src/features/invitation/shell/specs/song_hy_v2_red/cover.json`
-- `src/features/invitation/shell/specs/song_hy_v2_red/demo.json`
-- `src/features/invitation/shell/specs/song_hy_v2_red/gift.json`
-- `src/features/invitation/shell/specs/song_hy_v2_red/meta.json`
-- `src/features/invitation/shell/specs/song_hy_v2_red/theme.json`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Album.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Banquet.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Dress.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Footer.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Gifts.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/index.ts`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Schedule.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Venue.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/capabilities.json`
+- `src/features/invitation/templates/song_hy_v2_red/cover.json`
+- `src/features/invitation/templates/song_hy_v2_red/demo.json`
+- `src/features/invitation/templates/song_hy_v2_red/gift.json`
+- `src/features/invitation/templates/song_hy_v2_red/meta.json`
+- `src/features/invitation/templates/song_hy_v2_red/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/song_hy_v2_red/Album.tsx`
-- `src/features/invitation/shell/blocks/song_hy_v2_red/Banquet.tsx`
-- `src/features/invitation/shell/blocks/song_hy_v2_red/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/song_hy_v2_red/Dress.tsx`
-- `src/features/invitation/shell/blocks/song_hy_v2_red/Footer.tsx`
-- `src/features/invitation/shell/blocks/song_hy_v2_red/Gifts.tsx`
-- `src/features/invitation/shell/blocks/song_hy_v2_red/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/song_hy_v2_red/Hero.tsx`
-- `src/features/invitation/shell/blocks/song_hy_v2_red/index.ts`
-- `src/features/invitation/shell/blocks/song_hy_v2_red/Paper.tsx`
-- `src/features/invitation/shell/blocks/song_hy_v2_red/Schedule.tsx`
-- `src/features/invitation/shell/blocks/song_hy_v2_red/Venue.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Album.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Banquet.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Dress.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Footer.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Gifts.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/index.ts`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Schedule.tsx`
+- `src/features/invitation/templates/song_hy_v2_red/blocks/Venue.tsx`
 
 **Ảnh theme** (11)
 
@@ -426,35 +452,35 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/song-hy-do/demo
 - Họ khối: `song_hy`
-- Bìa: `src/features/invitation/shell/specs/song_hy_red/cover.json` → khóa `song_hy_red`
+- Bìa: `src/features/invitation/templates/song_hy_red/cover.json` → khóa `song_hy_red`
 - Thư mục ảnh theme: `public/song-hy-red/` (0 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/song_hy_red/capabilities.json`
-- `src/features/invitation/shell/specs/song_hy_red/cover.json`
-- `src/features/invitation/shell/specs/song_hy_red/demo.json`
-- `src/features/invitation/shell/specs/song_hy_red/gift.json`
-- `src/features/invitation/shell/specs/song_hy_red/meta.json`
-- `src/features/invitation/shell/specs/song_hy_red/theme.json`
+- `src/features/invitation/templates/song_hy_red/capabilities.json`
+- `src/features/invitation/templates/song_hy_red/cover.json`
+- `src/features/invitation/templates/song_hy_red/demo.json`
+- `src/features/invitation/templates/song_hy_red/gift.json`
+- `src/features/invitation/templates/song_hy_red/meta.json`
+- `src/features/invitation/templates/song_hy_red/theme.json`
 
 **Khối** (15)
 
-- `src/features/invitation/shell/blocks/song_hy/Album.tsx`
-- `src/features/invitation/shell/blocks/song_hy/AlbumTitle.tsx`
-- `src/features/invitation/shell/blocks/song_hy/Banquet.tsx`
-- `src/features/invitation/shell/blocks/song_hy/BanquetTitle.tsx`
-- `src/features/invitation/shell/blocks/song_hy/CeremonyTitle.tsx`
-- `src/features/invitation/shell/blocks/song_hy/DressSchedule.tsx`
-- `src/features/invitation/shell/blocks/song_hy/Family.tsx`
-- `src/features/invitation/shell/blocks/song_hy/Footer.tsx`
-- `src/features/invitation/shell/blocks/song_hy/Gifts.tsx`
-- `src/features/invitation/shell/blocks/song_hy/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/song_hy/GuestbookTitle.tsx`
-- `src/features/invitation/shell/blocks/song_hy/Hero.tsx`
-- `src/features/invitation/shell/blocks/song_hy/index.ts`
-- `src/features/invitation/shell/blocks/song_hy/themeVars.ts`
-- `src/features/invitation/shell/blocks/song_hy/Venue.tsx`
+- `src/features/invitation/templates/_shared/song_hy/Album.tsx`
+- `src/features/invitation/templates/_shared/song_hy/AlbumTitle.tsx`
+- `src/features/invitation/templates/_shared/song_hy/Banquet.tsx`
+- `src/features/invitation/templates/_shared/song_hy/BanquetTitle.tsx`
+- `src/features/invitation/templates/_shared/song_hy/CeremonyTitle.tsx`
+- `src/features/invitation/templates/_shared/song_hy/DressSchedule.tsx`
+- `src/features/invitation/templates/_shared/song_hy/Family.tsx`
+- `src/features/invitation/templates/_shared/song_hy/Footer.tsx`
+- `src/features/invitation/templates/_shared/song_hy/Gifts.tsx`
+- `src/features/invitation/templates/_shared/song_hy/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/song_hy/GuestbookTitle.tsx`
+- `src/features/invitation/templates/_shared/song_hy/Hero.tsx`
+- `src/features/invitation/templates/_shared/song_hy/index.ts`
+- `src/features/invitation/templates/_shared/song_hy/themeVars.ts`
+- `src/features/invitation/templates/_shared/song_hy/Venue.tsx`
 
 **Phong bì** (1)
 
@@ -492,36 +518,51 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/to-duyen-xanh/demo
 - Họ khối: `silk_ribbon_green`
-- Bìa: `src/features/invitation/shell/specs/silk_ribbon_green/cover.json` → khóa `silk_ribbon_green`
+- Bìa: `src/features/invitation/templates/silk_ribbon_green/cover.json` → khóa `silk_ribbon_green`
 - Thư mục ảnh theme: `public/images/themes/silk-ribbon-green/` (6 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (21)
 
-- `src/features/invitation/shell/specs/silk_ribbon_green/capabilities.json`
-- `src/features/invitation/shell/specs/silk_ribbon_green/cover.json`
-- `src/features/invitation/shell/specs/silk_ribbon_green/demo.json`
-- `src/features/invitation/shell/specs/silk_ribbon_green/gift.json`
-- `src/features/invitation/shell/specs/silk_ribbon_green/meta.json`
-- `src/features/invitation/shell/specs/silk_ribbon_green/theme.json`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Album.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Banquet.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Credit.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Gifts.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Hero.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/index.ts`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Section12.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Venue.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/capabilities.json`
+- `src/features/invitation/templates/silk_ribbon_green/cover.json`
+- `src/features/invitation/templates/silk_ribbon_green/demo.json`
+- `src/features/invitation/templates/silk_ribbon_green/gift.json`
+- `src/features/invitation/templates/silk_ribbon_green/meta.json`
+- `src/features/invitation/templates/silk_ribbon_green/theme.json`
 
 **Khối** (15)
 
-- `src/features/invitation/shell/blocks/silk_ribbon_green/Album.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_green/Banquet.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_green/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_green/Credit.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_green/Dress.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_green/Footer.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_green/Gifts.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_green/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_green/Hero.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_green/index.ts`
-- `src/features/invitation/shell/blocks/silk_ribbon_green/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_green/Paper.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_green/Schedule.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_green/Section12.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_green/Venue.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Album.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Banquet.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Credit.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Gifts.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Hero.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/index.ts`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Section12.tsx`
+- `src/features/invitation/templates/silk_ribbon_green/blocks/Venue.tsx`
 
 **Ảnh theme** (6)
 
@@ -542,34 +583,48 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/minimalism-xanh/demo
 - Họ khối: `minimalism_green`
-- Bìa: `src/features/invitation/shell/specs/minimalism_green/cover.json` → khóa `minimalism_green`
+- Bìa: `src/features/invitation/templates/minimalism_green/cover.json` → khóa `minimalism_green`
 - Thư mục ảnh theme: `public/images/themes/minimalism-green/` (9 file)
 
-**Spec** (6)
+**Spec** (20)
 
-- `src/features/invitation/shell/specs/minimalism_green/capabilities.json`
-- `src/features/invitation/shell/specs/minimalism_green/cover.json`
-- `src/features/invitation/shell/specs/minimalism_green/demo.json`
-- `src/features/invitation/shell/specs/minimalism_green/gift.json`
-- `src/features/invitation/shell/specs/minimalism_green/meta.json`
-- `src/features/invitation/shell/specs/minimalism_green/theme.json`
+- `src/features/invitation/templates/minimalism_green/blocks/Album.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Banquet.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Credit.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Gifts.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Hero.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/index.ts`
+- `src/features/invitation/templates/minimalism_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Venue.tsx`
+- `src/features/invitation/templates/minimalism_green/capabilities.json`
+- `src/features/invitation/templates/minimalism_green/cover.json`
+- `src/features/invitation/templates/minimalism_green/demo.json`
+- `src/features/invitation/templates/minimalism_green/gift.json`
+- `src/features/invitation/templates/minimalism_green/meta.json`
+- `src/features/invitation/templates/minimalism_green/theme.json`
 
 **Khối** (14)
 
-- `src/features/invitation/shell/blocks/minimalism_green/Album.tsx`
-- `src/features/invitation/shell/blocks/minimalism_green/Banquet.tsx`
-- `src/features/invitation/shell/blocks/minimalism_green/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/minimalism_green/Credit.tsx`
-- `src/features/invitation/shell/blocks/minimalism_green/Dress.tsx`
-- `src/features/invitation/shell/blocks/minimalism_green/Footer.tsx`
-- `src/features/invitation/shell/blocks/minimalism_green/Gifts.tsx`
-- `src/features/invitation/shell/blocks/minimalism_green/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/minimalism_green/Hero.tsx`
-- `src/features/invitation/shell/blocks/minimalism_green/index.ts`
-- `src/features/invitation/shell/blocks/minimalism_green/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/minimalism_green/Paper.tsx`
-- `src/features/invitation/shell/blocks/minimalism_green/Schedule.tsx`
-- `src/features/invitation/shell/blocks/minimalism_green/Venue.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Album.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Banquet.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Credit.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Gifts.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Hero.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/index.ts`
+- `src/features/invitation/templates/minimalism_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/minimalism_green/blocks/Venue.tsx`
 
 **Ảnh theme** (9)
 
@@ -597,34 +652,47 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/mai-lan-trang/demo
 - Họ khối: `jasmine_white`
-- Bìa: `src/features/invitation/shell/specs/jasmine_white/cover.json` → khóa `jasmine_white`
+- Bìa: `src/features/invitation/templates/jasmine_white/cover.json` → khóa `jasmine_white`
 - Thư mục ảnh theme: `public/images/themes/moclan-white/` (2 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (19)
 
-- `src/features/invitation/shell/specs/jasmine_white/capabilities.json`
-- `src/features/invitation/shell/specs/jasmine_white/cover.json`
-- `src/features/invitation/shell/specs/jasmine_white/demo.json`
-- `src/features/invitation/shell/specs/jasmine_white/gift.json`
-- `src/features/invitation/shell/specs/jasmine_white/meta.json`
-- `src/features/invitation/shell/specs/jasmine_white/theme.json`
+- `src/features/invitation/templates/jasmine_white/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Credit.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Dress.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Footer.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Gifts.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Hero.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/index.ts`
+- `src/features/invitation/templates/jasmine_white/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Paper.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Schedule.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Section9.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Venue.tsx`
+- `src/features/invitation/templates/jasmine_white/capabilities.json`
+- `src/features/invitation/templates/jasmine_white/cover.json`
+- `src/features/invitation/templates/jasmine_white/demo.json`
+- `src/features/invitation/templates/jasmine_white/gift.json`
+- `src/features/invitation/templates/jasmine_white/meta.json`
+- `src/features/invitation/templates/jasmine_white/theme.json`
 
 **Khối** (13)
 
-- `src/features/invitation/shell/blocks/jasmine_white/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/jasmine_white/Credit.tsx`
-- `src/features/invitation/shell/blocks/jasmine_white/Dress.tsx`
-- `src/features/invitation/shell/blocks/jasmine_white/Footer.tsx`
-- `src/features/invitation/shell/blocks/jasmine_white/Gifts.tsx`
-- `src/features/invitation/shell/blocks/jasmine_white/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/jasmine_white/Hero.tsx`
-- `src/features/invitation/shell/blocks/jasmine_white/index.ts`
-- `src/features/invitation/shell/blocks/jasmine_white/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/jasmine_white/Paper.tsx`
-- `src/features/invitation/shell/blocks/jasmine_white/Schedule.tsx`
-- `src/features/invitation/shell/blocks/jasmine_white/Section9.tsx`
-- `src/features/invitation/shell/blocks/jasmine_white/Venue.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Credit.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Dress.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Footer.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Gifts.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Hero.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/index.ts`
+- `src/features/invitation/templates/jasmine_white/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Paper.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Schedule.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Section9.tsx`
+- `src/features/invitation/templates/jasmine_white/blocks/Venue.tsx`
 
 **Ảnh theme** (2)
 
@@ -641,32 +709,43 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/long-phung-v3-do/demo
 - Họ khối: `dragon_phoenix_v3_red`
-- Bìa: `src/features/invitation/shell/specs/dragon_phoenix_v3_red/cover.json` → khóa `dragon_phoenix_v3_red`
+- Bìa: `src/features/invitation/templates/dragon_phoenix_v3_red/cover.json` → khóa `dragon_phoenix_v3_red`
 - Thư mục ảnh theme: `public/images/themes/longphung-v3-red/` (7 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (17)
 
-- `src/features/invitation/shell/specs/dragon_phoenix_v3_red/capabilities.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_v3_red/cover.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_v3_red/demo.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_v3_red/gift.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_v3_red/meta.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_v3_red/theme.json`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Credit.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Dress.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Footer.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Gifts.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/index.ts`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Schedule.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Venue.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/capabilities.json`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/cover.json`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/demo.json`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/gift.json`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/meta.json`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/theme.json`
 
 **Khối** (11)
 
-- `src/features/invitation/shell/blocks/dragon_phoenix_v3_red/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/dragon_phoenix_v3_red/Credit.tsx`
-- `src/features/invitation/shell/blocks/dragon_phoenix_v3_red/Dress.tsx`
-- `src/features/invitation/shell/blocks/dragon_phoenix_v3_red/Footer.tsx`
-- `src/features/invitation/shell/blocks/dragon_phoenix_v3_red/Gifts.tsx`
-- `src/features/invitation/shell/blocks/dragon_phoenix_v3_red/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/dragon_phoenix_v3_red/Hero.tsx`
-- `src/features/invitation/shell/blocks/dragon_phoenix_v3_red/index.ts`
-- `src/features/invitation/shell/blocks/dragon_phoenix_v3_red/Paper.tsx`
-- `src/features/invitation/shell/blocks/dragon_phoenix_v3_red/Schedule.tsx`
-- `src/features/invitation/shell/blocks/dragon_phoenix_v3_red/Venue.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Credit.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Dress.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Footer.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Gifts.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/index.ts`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Schedule.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v3_red/blocks/Venue.tsx`
 
 **Ảnh theme** (7)
 
@@ -684,32 +763,32 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/long-phung-do/demo
 - Họ khối: `longphung_v1`
-- Bìa: `src/features/invitation/shell/specs/dragon_phoenix_red/cover.json` → khóa `dragon_phoenix_red`
+- Bìa: `src/features/invitation/templates/dragon_phoenix_red/cover.json` → khóa `dragon_phoenix_red`
 - Thư mục ảnh theme: `public/images/themes/red-v1/` (4 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/dragon_phoenix_red/capabilities.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_red/cover.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_red/demo.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_red/gift.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_red/meta.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_red/theme.json`
+- `src/features/invitation/templates/dragon_phoenix_red/capabilities.json`
+- `src/features/invitation/templates/dragon_phoenix_red/cover.json`
+- `src/features/invitation/templates/dragon_phoenix_red/demo.json`
+- `src/features/invitation/templates/dragon_phoenix_red/gift.json`
+- `src/features/invitation/templates/dragon_phoenix_red/meta.json`
+- `src/features/invitation/templates/dragon_phoenix_red/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/longphung_v1/Album.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Dress.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Family.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Footer.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Gifts.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Hero.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/index.ts`
-- `src/features/invitation/shell/blocks/longphung_v1/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Paper.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Schedule.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Venue.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Album.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Dress.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Family.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Footer.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Gifts.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Hero.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/index.ts`
+- `src/features/invitation/templates/_shared/longphung_v1/Lightbox.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Paper.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Schedule.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Venue.tsx`
 
 **Ảnh theme** (4)
 
@@ -743,36 +822,51 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/to-duyen-do-dam/demo
 - Họ khối: `silk_ribbon_darkred`
-- Bìa: `src/features/invitation/shell/specs/silk_ribbon_darkred/cover.json` → khóa `silk_ribbon_darkred`
+- Bìa: `src/features/invitation/templates/silk_ribbon_darkred/cover.json` → khóa `silk_ribbon_darkred`
 - Thư mục ảnh theme: `public/images/themes/silk-ribbon-darkred/` (6 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (21)
 
-- `src/features/invitation/shell/specs/silk_ribbon_darkred/capabilities.json`
-- `src/features/invitation/shell/specs/silk_ribbon_darkred/cover.json`
-- `src/features/invitation/shell/specs/silk_ribbon_darkred/demo.json`
-- `src/features/invitation/shell/specs/silk_ribbon_darkred/gift.json`
-- `src/features/invitation/shell/specs/silk_ribbon_darkred/meta.json`
-- `src/features/invitation/shell/specs/silk_ribbon_darkred/theme.json`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Album.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Banquet.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Credit.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Dress.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Footer.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Gifts.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Hero.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/index.ts`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Paper.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Schedule.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Section12.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Venue.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/capabilities.json`
+- `src/features/invitation/templates/silk_ribbon_darkred/cover.json`
+- `src/features/invitation/templates/silk_ribbon_darkred/demo.json`
+- `src/features/invitation/templates/silk_ribbon_darkred/gift.json`
+- `src/features/invitation/templates/silk_ribbon_darkred/meta.json`
+- `src/features/invitation/templates/silk_ribbon_darkred/theme.json`
 
 **Khối** (15)
 
-- `src/features/invitation/shell/blocks/silk_ribbon_darkred/Album.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_darkred/Banquet.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_darkred/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_darkred/Credit.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_darkred/Dress.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_darkred/Footer.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_darkred/Gifts.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_darkred/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_darkred/Hero.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_darkred/index.ts`
-- `src/features/invitation/shell/blocks/silk_ribbon_darkred/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_darkred/Paper.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_darkred/Schedule.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_darkred/Section12.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_darkred/Venue.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Album.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Banquet.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Credit.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Dress.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Footer.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Gifts.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Hero.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/index.ts`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Paper.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Schedule.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Section12.tsx`
+- `src/features/invitation/templates/silk_ribbon_darkred/blocks/Venue.tsx`
 
 **Ảnh theme** (6)
 
@@ -793,34 +887,48 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/minimalism-nau-dam/demo
 - Họ khối: `minimalism_darkbrown`
-- Bìa: `src/features/invitation/shell/specs/minimalism_darkbrown/cover.json` → khóa `minimalism_darkbrown`
+- Bìa: `src/features/invitation/templates/minimalism_darkbrown/cover.json` → khóa `minimalism_darkbrown`
 - Thư mục ảnh theme: `public/images/themes/minimalism-darkbrown/` (0 file)
 
-**Spec** (6)
+**Spec** (20)
 
-- `src/features/invitation/shell/specs/minimalism_darkbrown/capabilities.json`
-- `src/features/invitation/shell/specs/minimalism_darkbrown/cover.json`
-- `src/features/invitation/shell/specs/minimalism_darkbrown/demo.json`
-- `src/features/invitation/shell/specs/minimalism_darkbrown/gift.json`
-- `src/features/invitation/shell/specs/minimalism_darkbrown/meta.json`
-- `src/features/invitation/shell/specs/minimalism_darkbrown/theme.json`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Album.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Banquet.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Credit.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Dress.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Footer.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Gifts.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Hero.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/index.ts`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Paper.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Schedule.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Venue.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/capabilities.json`
+- `src/features/invitation/templates/minimalism_darkbrown/cover.json`
+- `src/features/invitation/templates/minimalism_darkbrown/demo.json`
+- `src/features/invitation/templates/minimalism_darkbrown/gift.json`
+- `src/features/invitation/templates/minimalism_darkbrown/meta.json`
+- `src/features/invitation/templates/minimalism_darkbrown/theme.json`
 
 **Khối** (14)
 
-- `src/features/invitation/shell/blocks/minimalism_darkbrown/Album.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkbrown/Banquet.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkbrown/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkbrown/Credit.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkbrown/Dress.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkbrown/Footer.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkbrown/Gifts.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkbrown/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkbrown/Hero.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkbrown/index.ts`
-- `src/features/invitation/shell/blocks/minimalism_darkbrown/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkbrown/Paper.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkbrown/Schedule.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkbrown/Venue.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Album.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Banquet.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Credit.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Dress.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Footer.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Gifts.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Hero.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/index.ts`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Paper.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Schedule.tsx`
+- `src/features/invitation/templates/minimalism_darkbrown/blocks/Venue.tsx`
 
 **Phong bì** (1)
 
@@ -836,27 +944,33 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/long-phung-v2-do/demo
 - Họ khối: `dragon_phoenix_v2_red`
-- Bìa: `src/features/invitation/shell/specs/dragon_phoenix_v2_red/cover.json` → khóa `dragon_phoenix_v2_red`
+- Bìa: `src/features/invitation/templates/dragon_phoenix_v2_red/cover.json` → khóa `dragon_phoenix_v2_red`
 - Thư mục ảnh theme: `public/images/themes/longphung-v2-red/` (6 file)
 - Ghi chú: Sửa theme/font/dữ liệu động Hero-Ceremony-Venue 2026-11-11
 
-**Spec** (6)
+**Spec** (12)
 
-- `src/features/invitation/shell/specs/dragon_phoenix_v2_red/capabilities.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_v2_red/cover.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_v2_red/demo.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_v2_red/gift.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_v2_red/meta.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_v2_red/theme.json`
+- `src/features/invitation/templates/dragon_phoenix_v2_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v2_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v2_red/blocks/index.ts`
+- `src/features/invitation/templates/dragon_phoenix_v2_red/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v2_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v2_red/blocks/Venue.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v2_red/capabilities.json`
+- `src/features/invitation/templates/dragon_phoenix_v2_red/cover.json`
+- `src/features/invitation/templates/dragon_phoenix_v2_red/demo.json`
+- `src/features/invitation/templates/dragon_phoenix_v2_red/gift.json`
+- `src/features/invitation/templates/dragon_phoenix_v2_red/meta.json`
+- `src/features/invitation/templates/dragon_phoenix_v2_red/theme.json`
 
 **Khối** (6)
 
-- `src/features/invitation/shell/blocks/dragon_phoenix_v2_red/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/dragon_phoenix_v2_red/Hero.tsx`
-- `src/features/invitation/shell/blocks/dragon_phoenix_v2_red/index.ts`
-- `src/features/invitation/shell/blocks/dragon_phoenix_v2_red/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/dragon_phoenix_v2_red/Paper.tsx`
-- `src/features/invitation/shell/blocks/dragon_phoenix_v2_red/Venue.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v2_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v2_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v2_red/blocks/index.ts`
+- `src/features/invitation/templates/dragon_phoenix_v2_red/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v2_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v2_red/blocks/Venue.tsx`
 
 **Ảnh theme** (6)
 
@@ -873,37 +987,37 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/song-long-do/demo
 - Họ khối: `double_dragon`
-- Bìa: `src/features/invitation/shell/specs/double_dragon_red/cover.json` → khóa `double_dragon_red`
+- Bìa: `src/features/invitation/templates/double_dragon_red/cover.json` → khóa `double_dragon_red`
 - Thư mục ảnh theme: `public/songlong-red/` (0 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/double_dragon_red/capabilities.json`
-- `src/features/invitation/shell/specs/double_dragon_red/cover.json`
-- `src/features/invitation/shell/specs/double_dragon_red/demo.json`
-- `src/features/invitation/shell/specs/double_dragon_red/gift.json`
-- `src/features/invitation/shell/specs/double_dragon_red/meta.json`
-- `src/features/invitation/shell/specs/double_dragon_red/theme.json`
+- `src/features/invitation/templates/double_dragon_red/capabilities.json`
+- `src/features/invitation/templates/double_dragon_red/cover.json`
+- `src/features/invitation/templates/double_dragon_red/demo.json`
+- `src/features/invitation/templates/double_dragon_red/gift.json`
+- `src/features/invitation/templates/double_dragon_red/meta.json`
+- `src/features/invitation/templates/double_dragon_red/theme.json`
 
 **Khối** (17)
 
-- `src/features/invitation/shell/blocks/double_dragon/Album.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/AlbumTitle.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/Banquet.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/BanquetTitle.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/CeremonyTitle.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/DressSchedule.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/Family.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/Footer.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/FooterDecor.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/Gifts.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/GuestbookTitle.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/HeaderDecor.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/Hero.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/index.ts`
-- `src/features/invitation/shell/blocks/double_dragon/themeVars.ts`
-- `src/features/invitation/shell/blocks/double_dragon/Venue.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Album.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/AlbumTitle.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Banquet.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/BanquetTitle.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/CeremonyTitle.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/DressSchedule.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Family.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Footer.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/FooterDecor.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Gifts.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/GuestbookTitle.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/HeaderDecor.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Hero.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/index.ts`
+- `src/features/invitation/templates/_shared/double_dragon/themeVars.ts`
+- `src/features/invitation/templates/_shared/double_dragon/Venue.tsx`
 
 **Phong bì** (1)
 
@@ -937,26 +1051,31 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/vuonkinh-xanh/demo
 - Họ khối: `glass_garden_green`
-- Bìa: `src/features/invitation/shell/specs/glass_garden_green/cover.json` → khóa `glass_garden_green`
+- Bìa: `src/features/invitation/templates/glass_garden_green/cover.json` → khóa `glass_garden_green`
 - Thư mục ảnh theme: `public/images/themes/glass-garden-green/` (10 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (11)
 
-- `src/features/invitation/shell/specs/glass_garden_green/capabilities.json`
-- `src/features/invitation/shell/specs/glass_garden_green/cover.json`
-- `src/features/invitation/shell/specs/glass_garden_green/demo.json`
-- `src/features/invitation/shell/specs/glass_garden_green/gift.json`
-- `src/features/invitation/shell/specs/glass_garden_green/meta.json`
-- `src/features/invitation/shell/specs/glass_garden_green/theme.json`
+- `src/features/invitation/templates/glass_garden_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/glass_garden_green/blocks/index.ts`
+- `src/features/invitation/templates/glass_garden_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/glass_garden_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/glass_garden_green/blocks/Section1.tsx`
+- `src/features/invitation/templates/glass_garden_green/capabilities.json`
+- `src/features/invitation/templates/glass_garden_green/cover.json`
+- `src/features/invitation/templates/glass_garden_green/demo.json`
+- `src/features/invitation/templates/glass_garden_green/gift.json`
+- `src/features/invitation/templates/glass_garden_green/meta.json`
+- `src/features/invitation/templates/glass_garden_green/theme.json`
 
 **Khối** (5)
 
-- `src/features/invitation/shell/blocks/glass_garden_green/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/glass_garden_green/index.ts`
-- `src/features/invitation/shell/blocks/glass_garden_green/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/glass_garden_green/Paper.tsx`
-- `src/features/invitation/shell/blocks/glass_garden_green/Section1.tsx`
+- `src/features/invitation/templates/glass_garden_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/glass_garden_green/blocks/index.ts`
+- `src/features/invitation/templates/glass_garden_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/glass_garden_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/glass_garden_green/blocks/Section1.tsx`
 
 **Ảnh theme** (10)
 
@@ -981,36 +1100,51 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/song-phung-do/demo
 - Họ khối: `double_phoenix_red`
-- Bìa: `src/features/invitation/shell/specs/double_phoenix_red/cover.json` → khóa `double_phoenix_red`
+- Bìa: `src/features/invitation/templates/double_phoenix_red/cover.json` → khóa `double_phoenix_red`
 - Thư mục ảnh theme: `public/images/themes/songphung-red/` (6 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (21)
 
-- `src/features/invitation/shell/specs/double_phoenix_red/capabilities.json`
-- `src/features/invitation/shell/specs/double_phoenix_red/cover.json`
-- `src/features/invitation/shell/specs/double_phoenix_red/demo.json`
-- `src/features/invitation/shell/specs/double_phoenix_red/gift.json`
-- `src/features/invitation/shell/specs/double_phoenix_red/meta.json`
-- `src/features/invitation/shell/specs/double_phoenix_red/theme.json`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Credit.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Dress.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Footer.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Gifts.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/index.ts`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Schedule.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Section1.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Section2.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Section3.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Section4.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Venue.tsx`
+- `src/features/invitation/templates/double_phoenix_red/capabilities.json`
+- `src/features/invitation/templates/double_phoenix_red/cover.json`
+- `src/features/invitation/templates/double_phoenix_red/demo.json`
+- `src/features/invitation/templates/double_phoenix_red/gift.json`
+- `src/features/invitation/templates/double_phoenix_red/meta.json`
+- `src/features/invitation/templates/double_phoenix_red/theme.json`
 
 **Khối** (15)
 
-- `src/features/invitation/shell/blocks/double_phoenix_red/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_red/Credit.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_red/Dress.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_red/Footer.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_red/Gifts.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_red/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_red/Hero.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_red/index.ts`
-- `src/features/invitation/shell/blocks/double_phoenix_red/Paper.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_red/Schedule.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_red/Section1.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_red/Section2.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_red/Section3.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_red/Section4.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_red/Venue.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Credit.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Dress.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Footer.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Gifts.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/index.ts`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Schedule.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Section1.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Section2.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Section3.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Section4.tsx`
+- `src/features/invitation/templates/double_phoenix_red/blocks/Venue.tsx`
 
 **Ảnh theme** (6)
 
@@ -1031,37 +1165,37 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/song-long-xanh/demo
 - Họ khối: `double_dragon`
-- Bìa: `src/features/invitation/shell/specs/double_dragon_green/cover.json` → khóa `double_dragon_green`
+- Bìa: `src/features/invitation/templates/double_dragon_green/cover.json` → khóa `double_dragon_green`
 - Thư mục ảnh theme: `public/songlong-red/` (0 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/double_dragon_green/capabilities.json`
-- `src/features/invitation/shell/specs/double_dragon_green/cover.json`
-- `src/features/invitation/shell/specs/double_dragon_green/demo.json`
-- `src/features/invitation/shell/specs/double_dragon_green/gift.json`
-- `src/features/invitation/shell/specs/double_dragon_green/meta.json`
-- `src/features/invitation/shell/specs/double_dragon_green/theme.json`
+- `src/features/invitation/templates/double_dragon_green/capabilities.json`
+- `src/features/invitation/templates/double_dragon_green/cover.json`
+- `src/features/invitation/templates/double_dragon_green/demo.json`
+- `src/features/invitation/templates/double_dragon_green/gift.json`
+- `src/features/invitation/templates/double_dragon_green/meta.json`
+- `src/features/invitation/templates/double_dragon_green/theme.json`
 
 **Khối** (17)
 
-- `src/features/invitation/shell/blocks/double_dragon/Album.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/AlbumTitle.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/Banquet.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/BanquetTitle.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/CeremonyTitle.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/DressSchedule.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/Family.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/Footer.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/FooterDecor.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/Gifts.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/GuestbookTitle.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/HeaderDecor.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/Hero.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/index.ts`
-- `src/features/invitation/shell/blocks/double_dragon/themeVars.ts`
-- `src/features/invitation/shell/blocks/double_dragon/Venue.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Album.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/AlbumTitle.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Banquet.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/BanquetTitle.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/CeremonyTitle.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/DressSchedule.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Family.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Footer.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/FooterDecor.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Gifts.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/GuestbookTitle.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/HeaderDecor.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Hero.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/index.ts`
+- `src/features/invitation/templates/_shared/double_dragon/themeVars.ts`
+- `src/features/invitation/templates/_shared/double_dragon/Venue.tsx`
 
 **Phong bì** (1)
 
@@ -1093,26 +1227,31 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/vuonkinh-hong/demo
 - Họ khối: `glass_garden_pink`
-- Bìa: `src/features/invitation/shell/specs/glass_garden_pink/cover.json` → khóa `glass_garden_pink`
+- Bìa: `src/features/invitation/templates/glass_garden_pink/cover.json` → khóa `glass_garden_pink`
 - Thư mục ảnh theme: `public/images/themes/glass-garden-pink/` (10 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (11)
 
-- `src/features/invitation/shell/specs/glass_garden_pink/capabilities.json`
-- `src/features/invitation/shell/specs/glass_garden_pink/cover.json`
-- `src/features/invitation/shell/specs/glass_garden_pink/demo.json`
-- `src/features/invitation/shell/specs/glass_garden_pink/gift.json`
-- `src/features/invitation/shell/specs/glass_garden_pink/meta.json`
-- `src/features/invitation/shell/specs/glass_garden_pink/theme.json`
+- `src/features/invitation/templates/glass_garden_pink/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/glass_garden_pink/blocks/index.ts`
+- `src/features/invitation/templates/glass_garden_pink/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/glass_garden_pink/blocks/Paper.tsx`
+- `src/features/invitation/templates/glass_garden_pink/blocks/Section1.tsx`
+- `src/features/invitation/templates/glass_garden_pink/capabilities.json`
+- `src/features/invitation/templates/glass_garden_pink/cover.json`
+- `src/features/invitation/templates/glass_garden_pink/demo.json`
+- `src/features/invitation/templates/glass_garden_pink/gift.json`
+- `src/features/invitation/templates/glass_garden_pink/meta.json`
+- `src/features/invitation/templates/glass_garden_pink/theme.json`
 
 **Khối** (5)
 
-- `src/features/invitation/shell/blocks/glass_garden_pink/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/glass_garden_pink/index.ts`
-- `src/features/invitation/shell/blocks/glass_garden_pink/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/glass_garden_pink/Paper.tsx`
-- `src/features/invitation/shell/blocks/glass_garden_pink/Section1.tsx`
+- `src/features/invitation/templates/glass_garden_pink/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/glass_garden_pink/blocks/index.ts`
+- `src/features/invitation/templates/glass_garden_pink/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/glass_garden_pink/blocks/Paper.tsx`
+- `src/features/invitation/templates/glass_garden_pink/blocks/Section1.tsx`
 
 **Ảnh theme** (10)
 
@@ -1140,30 +1279,44 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/marble-yellow/` (5 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (5)
+**Spec** (19)
 
-- `src/features/invitation/shell/specs/marble_yellow/capabilities.json`
-- `src/features/invitation/shell/specs/marble_yellow/demo.json`
-- `src/features/invitation/shell/specs/marble_yellow/gift.json`
-- `src/features/invitation/shell/specs/marble_yellow/meta.json`
-- `src/features/invitation/shell/specs/marble_yellow/theme.json`
+- `src/features/invitation/templates/marble_yellow/blocks/Album.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Banquet.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Dress.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Footer.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Gifts.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/index.ts`
+- `src/features/invitation/templates/marble_yellow/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Paper.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Schedule.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Section1.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Section5.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Venue.tsx`
+- `src/features/invitation/templates/marble_yellow/capabilities.json`
+- `src/features/invitation/templates/marble_yellow/demo.json`
+- `src/features/invitation/templates/marble_yellow/gift.json`
+- `src/features/invitation/templates/marble_yellow/meta.json`
+- `src/features/invitation/templates/marble_yellow/theme.json`
 
 **Khối** (14)
 
-- `src/features/invitation/shell/blocks/marble_yellow/Album.tsx`
-- `src/features/invitation/shell/blocks/marble_yellow/Banquet.tsx`
-- `src/features/invitation/shell/blocks/marble_yellow/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/marble_yellow/Dress.tsx`
-- `src/features/invitation/shell/blocks/marble_yellow/Footer.tsx`
-- `src/features/invitation/shell/blocks/marble_yellow/Gifts.tsx`
-- `src/features/invitation/shell/blocks/marble_yellow/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/marble_yellow/index.ts`
-- `src/features/invitation/shell/blocks/marble_yellow/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/marble_yellow/Paper.tsx`
-- `src/features/invitation/shell/blocks/marble_yellow/Schedule.tsx`
-- `src/features/invitation/shell/blocks/marble_yellow/Section1.tsx`
-- `src/features/invitation/shell/blocks/marble_yellow/Section5.tsx`
-- `src/features/invitation/shell/blocks/marble_yellow/Venue.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Album.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Banquet.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Dress.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Footer.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Gifts.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/index.ts`
+- `src/features/invitation/templates/marble_yellow/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Paper.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Schedule.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Section1.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Section5.tsx`
+- `src/features/invitation/templates/marble_yellow/blocks/Venue.tsx`
 
 **Ảnh theme** (5)
 
@@ -1179,30 +1332,39 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/thanh-diep-xanh/demo
 - Họ khối: `elegant_leaf_green`
-- Bìa: `src/features/invitation/shell/specs/elegant_leaf_green/cover.json` → khóa `elegant_leaf_green`
+- Bìa: `src/features/invitation/templates/elegant_leaf_green/cover.json` → khóa `elegant_leaf_green`
 - Thư mục ảnh theme: `public/images/themes/thanhdiep-green/` (4 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (15)
 
-- `src/features/invitation/shell/specs/elegant_leaf_green/capabilities.json`
-- `src/features/invitation/shell/specs/elegant_leaf_green/cover.json`
-- `src/features/invitation/shell/specs/elegant_leaf_green/demo.json`
-- `src/features/invitation/shell/specs/elegant_leaf_green/gift.json`
-- `src/features/invitation/shell/specs/elegant_leaf_green/meta.json`
-- `src/features/invitation/shell/specs/elegant_leaf_green/theme.json`
+- `src/features/invitation/templates/elegant_leaf_green/blocks/Album.tsx`
+- `src/features/invitation/templates/elegant_leaf_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/elegant_leaf_green/blocks/Credit.tsx`
+- `src/features/invitation/templates/elegant_leaf_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/elegant_leaf_green/blocks/Hero.tsx`
+- `src/features/invitation/templates/elegant_leaf_green/blocks/index.ts`
+- `src/features/invitation/templates/elegant_leaf_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/elegant_leaf_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/elegant_leaf_green/blocks/Venue.tsx`
+- `src/features/invitation/templates/elegant_leaf_green/capabilities.json`
+- `src/features/invitation/templates/elegant_leaf_green/cover.json`
+- `src/features/invitation/templates/elegant_leaf_green/demo.json`
+- `src/features/invitation/templates/elegant_leaf_green/gift.json`
+- `src/features/invitation/templates/elegant_leaf_green/meta.json`
+- `src/features/invitation/templates/elegant_leaf_green/theme.json`
 
 **Khối** (9)
 
-- `src/features/invitation/shell/blocks/elegant_leaf_green/Album.tsx`
-- `src/features/invitation/shell/blocks/elegant_leaf_green/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/elegant_leaf_green/Credit.tsx`
-- `src/features/invitation/shell/blocks/elegant_leaf_green/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/elegant_leaf_green/Hero.tsx`
-- `src/features/invitation/shell/blocks/elegant_leaf_green/index.ts`
-- `src/features/invitation/shell/blocks/elegant_leaf_green/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/elegant_leaf_green/Paper.tsx`
-- `src/features/invitation/shell/blocks/elegant_leaf_green/Venue.tsx`
+- `src/features/invitation/templates/elegant_leaf_green/blocks/Album.tsx`
+- `src/features/invitation/templates/elegant_leaf_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/elegant_leaf_green/blocks/Credit.tsx`
+- `src/features/invitation/templates/elegant_leaf_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/elegant_leaf_green/blocks/Hero.tsx`
+- `src/features/invitation/templates/elegant_leaf_green/blocks/index.ts`
+- `src/features/invitation/templates/elegant_leaf_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/elegant_leaf_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/elegant_leaf_green/blocks/Venue.tsx`
 
 **Ảnh theme** (4)
 
@@ -1221,36 +1383,51 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/to-duyen-hong/demo
 - Họ khối: `silk_ribbon_pink`
-- Bìa: `src/features/invitation/shell/specs/silk_ribbon_pink/cover.json` → khóa `silk_ribbon_pink`
+- Bìa: `src/features/invitation/templates/silk_ribbon_pink/cover.json` → khóa `silk_ribbon_pink`
 - Thư mục ảnh theme: `public/images/themes/silk-ribbon-pink/` (6 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (21)
 
-- `src/features/invitation/shell/specs/silk_ribbon_pink/capabilities.json`
-- `src/features/invitation/shell/specs/silk_ribbon_pink/cover.json`
-- `src/features/invitation/shell/specs/silk_ribbon_pink/demo.json`
-- `src/features/invitation/shell/specs/silk_ribbon_pink/gift.json`
-- `src/features/invitation/shell/specs/silk_ribbon_pink/meta.json`
-- `src/features/invitation/shell/specs/silk_ribbon_pink/theme.json`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Album.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Banquet.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Credit.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Dress.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Footer.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Gifts.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Hero.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/index.ts`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Paper.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Schedule.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Section12.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Venue.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/capabilities.json`
+- `src/features/invitation/templates/silk_ribbon_pink/cover.json`
+- `src/features/invitation/templates/silk_ribbon_pink/demo.json`
+- `src/features/invitation/templates/silk_ribbon_pink/gift.json`
+- `src/features/invitation/templates/silk_ribbon_pink/meta.json`
+- `src/features/invitation/templates/silk_ribbon_pink/theme.json`
 
 **Khối** (15)
 
-- `src/features/invitation/shell/blocks/silk_ribbon_pink/Album.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_pink/Banquet.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_pink/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_pink/Credit.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_pink/Dress.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_pink/Footer.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_pink/Gifts.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_pink/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_pink/Hero.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_pink/index.ts`
-- `src/features/invitation/shell/blocks/silk_ribbon_pink/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_pink/Paper.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_pink/Schedule.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_pink/Section12.tsx`
-- `src/features/invitation/shell/blocks/silk_ribbon_pink/Venue.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Album.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Banquet.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Credit.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Dress.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Footer.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Gifts.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Hero.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/index.ts`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Paper.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Schedule.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Section12.tsx`
+- `src/features/invitation/templates/silk_ribbon_pink/blocks/Venue.tsx`
 
 **Ảnh theme** (6)
 
@@ -1272,33 +1449,45 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Nguồn: https://chungdoi.com/vi/mau-thiep/long-phung-v4-do/demo
 - Họ khối: `traditional`
 - Bộ sinh: `scripts/clone/gen_traditional.cjs`
-- Bìa: `src/features/invitation/shell/specs/dragon_phoenix_v4_red/cover.json` → khóa `dragon_phoenix_v4_red`
+- Bìa: `src/features/invitation/templates/dragon_phoenix_v4_red/cover.json` → khóa `dragon_phoenix_v4_red`
 - Thư mục ảnh theme: `public/images/themes/longphung-v4-red/` (18 file)
 - Ghi chú: Đạt 0 lệch hình học theo AGENTS.md
 
-**Spec** (6)
+**Spec** (18)
 
-- `src/features/invitation/shell/specs/dragon_phoenix_v4_red/capabilities.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_v4_red/cover.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_v4_red/demo.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_v4_red/gift.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_v4_red/meta.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_v4_red/theme.json`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Album.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Banquet.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Dress.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Family.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Footer.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Gifts.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/index.ts`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Schedule.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Venue.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/capabilities.json`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/cover.json`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/demo.json`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/gift.json`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/meta.json`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/traditional/Album.tsx`
-- `src/features/invitation/shell/blocks/traditional/Banquet.tsx`
-- `src/features/invitation/shell/blocks/traditional/Dress.tsx`
-- `src/features/invitation/shell/blocks/traditional/Family.tsx`
-- `src/features/invitation/shell/blocks/traditional/Footer.tsx`
-- `src/features/invitation/shell/blocks/traditional/Gifts.tsx`
-- `src/features/invitation/shell/blocks/traditional/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/traditional/Hero.tsx`
-- `src/features/invitation/shell/blocks/traditional/index.ts`
-- `src/features/invitation/shell/blocks/traditional/Paper.tsx`
-- `src/features/invitation/shell/blocks/traditional/Schedule.tsx`
-- `src/features/invitation/shell/blocks/traditional/Venue.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Album.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Banquet.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Dress.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Family.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Footer.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Gifts.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/index.ts`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Schedule.tsx`
+- `src/features/invitation/templates/dragon_phoenix_v4_red/blocks/Venue.tsx`
 
 **Ảnh theme** (18)
 
@@ -1362,36 +1551,52 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/lien-hoa-v2-xanh/demo
 - Họ khối: `lien_hoa_v2`
-- Bìa: `src/features/invitation/shell/specs/lien_hoa_v2_green/cover.json` → khóa `lien_hoa_v2_green`
+- Bìa: `src/features/invitation/templates/lien_hoa_v2_green/cover.json` → khóa `lien_hoa_v2_green`
 - Thư mục ảnh theme: `public/images/themes/lien-hoa-v2-green/` (10 file)
 
-**Spec** (6)
+**Spec** (22)
 
-- `src/features/invitation/shell/specs/lien_hoa_v2_green/capabilities.json`
-- `src/features/invitation/shell/specs/lien_hoa_v2_green/cover.json`
-- `src/features/invitation/shell/specs/lien_hoa_v2_green/demo.json`
-- `src/features/invitation/shell/specs/lien_hoa_v2_green/gift.json`
-- `src/features/invitation/shell/specs/lien_hoa_v2_green/meta.json`
-- `src/features/invitation/shell/specs/lien_hoa_v2_green/theme.json`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Album.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Banquet.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/BottomDecor.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Credit.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Family.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Gifts.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Hero.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/index.ts`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Rsvp.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Venue.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/capabilities.json`
+- `src/features/invitation/templates/lien_hoa_v2_green/cover.json`
+- `src/features/invitation/templates/lien_hoa_v2_green/demo.json`
+- `src/features/invitation/templates/lien_hoa_v2_green/gift.json`
+- `src/features/invitation/templates/lien_hoa_v2_green/meta.json`
+- `src/features/invitation/templates/lien_hoa_v2_green/theme.json`
 
 **Khối** (16)
 
-- `src/features/invitation/shell/blocks/lien_hoa_v2/Album.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_v2/Banquet.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_v2/BottomDecor.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_v2/Credit.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_v2/Dress.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_v2/Family.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_v2/Footer.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_v2/Gifts.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_v2/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_v2/Hero.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_v2/index.ts`
-- `src/features/invitation/shell/blocks/lien_hoa_v2/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_v2/Paper.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_v2/Rsvp.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_v2/Schedule.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_v2/Venue.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Album.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Banquet.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/BottomDecor.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Credit.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Family.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Gifts.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Hero.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/index.ts`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Rsvp.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/lien_hoa_v2_green/blocks/Venue.tsx`
 
 **Ảnh theme** (10)
 
@@ -1438,33 +1643,45 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/lau-dai-xanh/demo
 - Họ khối: `chateau_green`
-- Bìa: `src/features/invitation/shell/specs/chateau_green/cover.json` → khóa `chateau_green`
+- Bìa: `src/features/invitation/templates/chateau_green/cover.json` → khóa `chateau_green`
 - Thư mục ảnh theme: `public/images/themes/chateau-green/` (15 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (18)
 
-- `src/features/invitation/shell/specs/chateau_green/capabilities.json`
-- `src/features/invitation/shell/specs/chateau_green/cover.json`
-- `src/features/invitation/shell/specs/chateau_green/demo.json`
-- `src/features/invitation/shell/specs/chateau_green/gift.json`
-- `src/features/invitation/shell/specs/chateau_green/meta.json`
-- `src/features/invitation/shell/specs/chateau_green/theme.json`
+- `src/features/invitation/templates/chateau_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/Credit.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/Gifts.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/index.ts`
+- `src/features/invitation/templates/chateau_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/Section1.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/Venue.tsx`
+- `src/features/invitation/templates/chateau_green/capabilities.json`
+- `src/features/invitation/templates/chateau_green/cover.json`
+- `src/features/invitation/templates/chateau_green/demo.json`
+- `src/features/invitation/templates/chateau_green/gift.json`
+- `src/features/invitation/templates/chateau_green/meta.json`
+- `src/features/invitation/templates/chateau_green/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/chateau_green/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/chateau_green/Credit.tsx`
-- `src/features/invitation/shell/blocks/chateau_green/Dress.tsx`
-- `src/features/invitation/shell/blocks/chateau_green/Footer.tsx`
-- `src/features/invitation/shell/blocks/chateau_green/Gifts.tsx`
-- `src/features/invitation/shell/blocks/chateau_green/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/chateau_green/index.ts`
-- `src/features/invitation/shell/blocks/chateau_green/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/chateau_green/Paper.tsx`
-- `src/features/invitation/shell/blocks/chateau_green/Schedule.tsx`
-- `src/features/invitation/shell/blocks/chateau_green/Section1.tsx`
-- `src/features/invitation/shell/blocks/chateau_green/Venue.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/Credit.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/Gifts.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/index.ts`
+- `src/features/invitation/templates/chateau_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/Section1.tsx`
+- `src/features/invitation/templates/chateau_green/blocks/Venue.tsx`
 
 **Ảnh theme** (15)
 
@@ -1494,32 +1711,32 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/vuon-xuan-xanh/demo
 - Họ khối: `springgarden_v1`
-- Bìa: `src/features/invitation/shell/specs/spring_garden_green/cover.json` → khóa `spring_garden_green`
+- Bìa: `src/features/invitation/templates/spring_garden_green/cover.json` → khóa `spring_garden_green`
 - Thư mục ảnh theme: `public/images/themes/nature/` (2 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/spring_garden_green/capabilities.json`
-- `src/features/invitation/shell/specs/spring_garden_green/cover.json`
-- `src/features/invitation/shell/specs/spring_garden_green/demo.json`
-- `src/features/invitation/shell/specs/spring_garden_green/gift.json`
-- `src/features/invitation/shell/specs/spring_garden_green/meta.json`
-- `src/features/invitation/shell/specs/spring_garden_green/theme.json`
+- `src/features/invitation/templates/spring_garden_green/capabilities.json`
+- `src/features/invitation/templates/spring_garden_green/cover.json`
+- `src/features/invitation/templates/spring_garden_green/demo.json`
+- `src/features/invitation/templates/spring_garden_green/gift.json`
+- `src/features/invitation/templates/spring_garden_green/meta.json`
+- `src/features/invitation/templates/spring_garden_green/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/springgarden_v1/Album.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Dress.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Family.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Footer.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Gifts.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Hero.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/index.ts`
-- `src/features/invitation/shell/blocks/springgarden_v1/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Paper.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Schedule.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Venue.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Album.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Dress.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Family.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Footer.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Gifts.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Hero.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/index.ts`
+- `src/features/invitation/templates/_shared/springgarden_v1/Lightbox.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Paper.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Schedule.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Venue.tsx`
 
 **Ảnh theme** (2)
 
@@ -1540,35 +1757,49 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/chibi-red/demo
 - Họ khối: `chibi_red`
-- Bìa: `src/features/invitation/shell/specs/chibi_red/cover.json` → khóa `chibi_red`
+- Bìa: `src/features/invitation/templates/chibi_red/cover.json` → khóa `chibi_red`
 - Thư mục ảnh theme: `public/images/themes/chibi_red/` (7 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (20)
 
-- `src/features/invitation/shell/specs/chibi_red/capabilities.json`
-- `src/features/invitation/shell/specs/chibi_red/cover.json`
-- `src/features/invitation/shell/specs/chibi_red/demo.json`
-- `src/features/invitation/shell/specs/chibi_red/gift.json`
-- `src/features/invitation/shell/specs/chibi_red/meta.json`
-- `src/features/invitation/shell/specs/chibi_red/theme.json`
+- `src/features/invitation/templates/chibi_red/blocks/Album.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Banquet.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Credit.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Dress.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Footer.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Gifts.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/index.ts`
+- `src/features/invitation/templates/chibi_red/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Schedule.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Section1.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Venue.tsx`
+- `src/features/invitation/templates/chibi_red/capabilities.json`
+- `src/features/invitation/templates/chibi_red/cover.json`
+- `src/features/invitation/templates/chibi_red/demo.json`
+- `src/features/invitation/templates/chibi_red/gift.json`
+- `src/features/invitation/templates/chibi_red/meta.json`
+- `src/features/invitation/templates/chibi_red/theme.json`
 
 **Khối** (14)
 
-- `src/features/invitation/shell/blocks/chibi_red/Album.tsx`
-- `src/features/invitation/shell/blocks/chibi_red/Banquet.tsx`
-- `src/features/invitation/shell/blocks/chibi_red/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/chibi_red/Credit.tsx`
-- `src/features/invitation/shell/blocks/chibi_red/Dress.tsx`
-- `src/features/invitation/shell/blocks/chibi_red/Footer.tsx`
-- `src/features/invitation/shell/blocks/chibi_red/Gifts.tsx`
-- `src/features/invitation/shell/blocks/chibi_red/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/chibi_red/index.ts`
-- `src/features/invitation/shell/blocks/chibi_red/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/chibi_red/Paper.tsx`
-- `src/features/invitation/shell/blocks/chibi_red/Schedule.tsx`
-- `src/features/invitation/shell/blocks/chibi_red/Section1.tsx`
-- `src/features/invitation/shell/blocks/chibi_red/Venue.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Album.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Banquet.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Credit.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Dress.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Footer.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Gifts.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/index.ts`
+- `src/features/invitation/templates/chibi_red/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Schedule.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Section1.tsx`
+- `src/features/invitation/templates/chibi_red/blocks/Venue.tsx`
 
 **Ảnh theme** (7)
 
@@ -1590,33 +1821,45 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/song-hac-do/demo
 - Họ khối: `song_hac_red`
-- Bìa: `src/features/invitation/shell/specs/song_hac_red/cover.json` → khóa `song_hac_red`
+- Bìa: `src/features/invitation/templates/song_hac_red/cover.json` → khóa `song_hac_red`
 - Thư mục ảnh theme: `public/images/themes/song-hac-red/` (16 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (18)
 
-- `src/features/invitation/shell/specs/song_hac_red/capabilities.json`
-- `src/features/invitation/shell/specs/song_hac_red/cover.json`
-- `src/features/invitation/shell/specs/song_hac_red/demo.json`
-- `src/features/invitation/shell/specs/song_hac_red/gift.json`
-- `src/features/invitation/shell/specs/song_hac_red/meta.json`
-- `src/features/invitation/shell/specs/song_hac_red/theme.json`
+- `src/features/invitation/templates/song_hac_red/blocks/Album.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/Banquet.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/Dress.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/Footer.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/Gifts.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/index.ts`
+- `src/features/invitation/templates/song_hac_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/Schedule.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/Venue.tsx`
+- `src/features/invitation/templates/song_hac_red/capabilities.json`
+- `src/features/invitation/templates/song_hac_red/cover.json`
+- `src/features/invitation/templates/song_hac_red/demo.json`
+- `src/features/invitation/templates/song_hac_red/gift.json`
+- `src/features/invitation/templates/song_hac_red/meta.json`
+- `src/features/invitation/templates/song_hac_red/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/song_hac_red/Album.tsx`
-- `src/features/invitation/shell/blocks/song_hac_red/Banquet.tsx`
-- `src/features/invitation/shell/blocks/song_hac_red/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/song_hac_red/Dress.tsx`
-- `src/features/invitation/shell/blocks/song_hac_red/Footer.tsx`
-- `src/features/invitation/shell/blocks/song_hac_red/Gifts.tsx`
-- `src/features/invitation/shell/blocks/song_hac_red/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/song_hac_red/Hero.tsx`
-- `src/features/invitation/shell/blocks/song_hac_red/index.ts`
-- `src/features/invitation/shell/blocks/song_hac_red/Paper.tsx`
-- `src/features/invitation/shell/blocks/song_hac_red/Schedule.tsx`
-- `src/features/invitation/shell/blocks/song_hac_red/Venue.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/Album.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/Banquet.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/Dress.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/Footer.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/Gifts.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/index.ts`
+- `src/features/invitation/templates/song_hac_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/Schedule.tsx`
+- `src/features/invitation/templates/song_hac_red/blocks/Venue.tsx`
 
 **Ảnh theme** (16)
 
@@ -1647,27 +1890,33 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/nhat-binh-do/demo
 - Họ khối: `nhat_binh_red`
-- Bìa: `src/features/invitation/shell/specs/nhat_binh_red/cover.json` → khóa `nhat_binh_red`
+- Bìa: `src/features/invitation/templates/nhat_binh_red/cover.json` → khóa `nhat_binh_red`
 - Thư mục ảnh theme: `public/images/themes/nhat-binh-red/` (9 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (12)
 
-- `src/features/invitation/shell/specs/nhat_binh_red/capabilities.json`
-- `src/features/invitation/shell/specs/nhat_binh_red/cover.json`
-- `src/features/invitation/shell/specs/nhat_binh_red/demo.json`
-- `src/features/invitation/shell/specs/nhat_binh_red/gift.json`
-- `src/features/invitation/shell/specs/nhat_binh_red/meta.json`
-- `src/features/invitation/shell/specs/nhat_binh_red/theme.json`
+- `src/features/invitation/templates/nhat_binh_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/nhat_binh_red/blocks/Credit.tsx`
+- `src/features/invitation/templates/nhat_binh_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/nhat_binh_red/blocks/index.ts`
+- `src/features/invitation/templates/nhat_binh_red/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/nhat_binh_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/nhat_binh_red/capabilities.json`
+- `src/features/invitation/templates/nhat_binh_red/cover.json`
+- `src/features/invitation/templates/nhat_binh_red/demo.json`
+- `src/features/invitation/templates/nhat_binh_red/gift.json`
+- `src/features/invitation/templates/nhat_binh_red/meta.json`
+- `src/features/invitation/templates/nhat_binh_red/theme.json`
 
 **Khối** (6)
 
-- `src/features/invitation/shell/blocks/nhat_binh_red/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/nhat_binh_red/Credit.tsx`
-- `src/features/invitation/shell/blocks/nhat_binh_red/Hero.tsx`
-- `src/features/invitation/shell/blocks/nhat_binh_red/index.ts`
-- `src/features/invitation/shell/blocks/nhat_binh_red/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/nhat_binh_red/Paper.tsx`
+- `src/features/invitation/templates/nhat_binh_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/nhat_binh_red/blocks/Credit.tsx`
+- `src/features/invitation/templates/nhat_binh_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/nhat_binh_red/blocks/index.ts`
+- `src/features/invitation/templates/nhat_binh_red/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/nhat_binh_red/blocks/Paper.tsx`
 
 **Ảnh theme** (9)
 
@@ -1691,37 +1940,37 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/baroque-v2-xanh-dam/demo
 - Họ khối: `baroque_v2`
-- Bìa: `src/features/invitation/shell/specs/baroque_v2_darkgreen/cover.json` → khóa `baroque_v2_darkgreen`
+- Bìa: `src/features/invitation/templates/baroque_v2_darkgreen/cover.json` → khóa `baroque_v2_darkgreen`
 - Thư mục ảnh theme: `public/images/themes/baroque-v2-dark-green/` (12 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/baroque_v2_darkgreen/capabilities.json`
-- `src/features/invitation/shell/specs/baroque_v2_darkgreen/cover.json`
-- `src/features/invitation/shell/specs/baroque_v2_darkgreen/demo.json`
-- `src/features/invitation/shell/specs/baroque_v2_darkgreen/gift.json`
-- `src/features/invitation/shell/specs/baroque_v2_darkgreen/meta.json`
-- `src/features/invitation/shell/specs/baroque_v2_darkgreen/theme.json`
+- `src/features/invitation/templates/baroque_v2_darkgreen/capabilities.json`
+- `src/features/invitation/templates/baroque_v2_darkgreen/cover.json`
+- `src/features/invitation/templates/baroque_v2_darkgreen/demo.json`
+- `src/features/invitation/templates/baroque_v2_darkgreen/gift.json`
+- `src/features/invitation/templates/baroque_v2_darkgreen/meta.json`
+- `src/features/invitation/templates/baroque_v2_darkgreen/theme.json`
 
 **Khối** (17)
 
-- `src/features/invitation/shell/blocks/baroque_v2/Album.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Banquet.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/BottomDecor.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/DressCode.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Footer.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Gifts.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Hero.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/index.ts`
-- `src/features/invitation/shell/blocks/baroque_v2/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Paper.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/RsvpAction.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Schedule.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/ThankYou.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/themeVars.ts`
-- `src/features/invitation/shell/blocks/baroque_v2/Venue.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Album.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Banquet.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/BottomDecor.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Ceremony.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/DressCode.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Footer.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Gifts.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Hero.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/index.ts`
+- `src/features/invitation/templates/_shared/baroque_v2/Lightbox.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Paper.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/RsvpAction.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Schedule.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/ThankYou.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/themeVars.ts`
+- `src/features/invitation/templates/_shared/baroque_v2/Venue.tsx`
 
 **Ảnh theme** (12)
 
@@ -1765,37 +2014,37 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/baroque-v2-do-dam/demo
 - Họ khối: `baroque_v2`
-- Bìa: `src/features/invitation/shell/specs/baroque_v2_darkred/cover.json` → khóa `baroque_v2_darkred`
+- Bìa: `src/features/invitation/templates/baroque_v2_darkred/cover.json` → khóa `baroque_v2_darkred`
 - Thư mục ảnh theme: `public/images/themes/baroque-v2-dark-red/` (12 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/baroque_v2_darkred/capabilities.json`
-- `src/features/invitation/shell/specs/baroque_v2_darkred/cover.json`
-- `src/features/invitation/shell/specs/baroque_v2_darkred/demo.json`
-- `src/features/invitation/shell/specs/baroque_v2_darkred/gift.json`
-- `src/features/invitation/shell/specs/baroque_v2_darkred/meta.json`
-- `src/features/invitation/shell/specs/baroque_v2_darkred/theme.json`
+- `src/features/invitation/templates/baroque_v2_darkred/capabilities.json`
+- `src/features/invitation/templates/baroque_v2_darkred/cover.json`
+- `src/features/invitation/templates/baroque_v2_darkred/demo.json`
+- `src/features/invitation/templates/baroque_v2_darkred/gift.json`
+- `src/features/invitation/templates/baroque_v2_darkred/meta.json`
+- `src/features/invitation/templates/baroque_v2_darkred/theme.json`
 
 **Khối** (17)
 
-- `src/features/invitation/shell/blocks/baroque_v2/Album.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Banquet.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/BottomDecor.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/DressCode.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Footer.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Gifts.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Hero.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/index.ts`
-- `src/features/invitation/shell/blocks/baroque_v2/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Paper.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/RsvpAction.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Schedule.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/ThankYou.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/themeVars.ts`
-- `src/features/invitation/shell/blocks/baroque_v2/Venue.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Album.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Banquet.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/BottomDecor.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Ceremony.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/DressCode.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Footer.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Gifts.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Hero.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/index.ts`
+- `src/features/invitation/templates/_shared/baroque_v2/Lightbox.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Paper.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/RsvpAction.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Schedule.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/ThankYou.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/themeVars.ts`
+- `src/features/invitation/templates/_shared/baroque_v2/Venue.tsx`
 
 **Ảnh theme** (12)
 
@@ -1846,39 +2095,57 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/anh-dao-hong/demo
 - Họ khối: `cherry_blossom_pink`
-- Bìa: `src/features/invitation/shell/specs/cherry_blossom_pink/cover.json` → khóa `cherry_blossom_pink`
+- Bìa: `src/features/invitation/templates/cherry_blossom_pink/cover.json` → khóa `cherry_blossom_pink`
 - Thư mục ảnh theme: `public/images/themes/anhdao-pink/` (4 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (24)
 
-- `src/features/invitation/shell/specs/cherry_blossom_pink/capabilities.json`
-- `src/features/invitation/shell/specs/cherry_blossom_pink/cover.json`
-- `src/features/invitation/shell/specs/cherry_blossom_pink/demo.json`
-- `src/features/invitation/shell/specs/cherry_blossom_pink/gift.json`
-- `src/features/invitation/shell/specs/cherry_blossom_pink/meta.json`
-- `src/features/invitation/shell/specs/cherry_blossom_pink/theme.json`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Album.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Credit.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Dress.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Footer.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Gifts.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Hero.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/index.ts`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Paper.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Schedule.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Section11.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Section12.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Section13.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Section14.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Section15.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Venue.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/capabilities.json`
+- `src/features/invitation/templates/cherry_blossom_pink/cover.json`
+- `src/features/invitation/templates/cherry_blossom_pink/demo.json`
+- `src/features/invitation/templates/cherry_blossom_pink/gift.json`
+- `src/features/invitation/templates/cherry_blossom_pink/meta.json`
+- `src/features/invitation/templates/cherry_blossom_pink/theme.json`
 
 **Khối** (18)
 
-- `src/features/invitation/shell/blocks/cherry_blossom_pink/Album.tsx`
-- `src/features/invitation/shell/blocks/cherry_blossom_pink/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/cherry_blossom_pink/Credit.tsx`
-- `src/features/invitation/shell/blocks/cherry_blossom_pink/Dress.tsx`
-- `src/features/invitation/shell/blocks/cherry_blossom_pink/Footer.tsx`
-- `src/features/invitation/shell/blocks/cherry_blossom_pink/Gifts.tsx`
-- `src/features/invitation/shell/blocks/cherry_blossom_pink/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/cherry_blossom_pink/Hero.tsx`
-- `src/features/invitation/shell/blocks/cherry_blossom_pink/index.ts`
-- `src/features/invitation/shell/blocks/cherry_blossom_pink/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/cherry_blossom_pink/Paper.tsx`
-- `src/features/invitation/shell/blocks/cherry_blossom_pink/Schedule.tsx`
-- `src/features/invitation/shell/blocks/cherry_blossom_pink/Section11.tsx`
-- `src/features/invitation/shell/blocks/cherry_blossom_pink/Section12.tsx`
-- `src/features/invitation/shell/blocks/cherry_blossom_pink/Section13.tsx`
-- `src/features/invitation/shell/blocks/cherry_blossom_pink/Section14.tsx`
-- `src/features/invitation/shell/blocks/cherry_blossom_pink/Section15.tsx`
-- `src/features/invitation/shell/blocks/cherry_blossom_pink/Venue.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Album.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Credit.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Dress.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Footer.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Gifts.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Hero.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/index.ts`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Paper.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Schedule.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Section11.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Section12.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Section13.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Section14.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Section15.tsx`
+- `src/features/invitation/templates/cherry_blossom_pink/blocks/Venue.tsx`
 
 **Ảnh theme** (4)
 
@@ -1897,40 +2164,40 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoa-moc-hong/demo
 - Họ khối: `boho_floral`
-- Bìa: `src/features/invitation/shell/specs/boho_floral_pink/cover.json` → khóa `boho_floral_pink`
+- Bìa: `src/features/invitation/templates/boho_floral_pink/cover.json` → khóa `boho_floral_pink`
 - Thư mục ảnh theme: `public/boho-floral-pink/` (0 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/boho_floral_pink/capabilities.json`
-- `src/features/invitation/shell/specs/boho_floral_pink/cover.json`
-- `src/features/invitation/shell/specs/boho_floral_pink/demo.json`
-- `src/features/invitation/shell/specs/boho_floral_pink/gift.json`
-- `src/features/invitation/shell/specs/boho_floral_pink/meta.json`
-- `src/features/invitation/shell/specs/boho_floral_pink/theme.json`
+- `src/features/invitation/templates/boho_floral_pink/capabilities.json`
+- `src/features/invitation/templates/boho_floral_pink/cover.json`
+- `src/features/invitation/templates/boho_floral_pink/demo.json`
+- `src/features/invitation/templates/boho_floral_pink/gift.json`
+- `src/features/invitation/templates/boho_floral_pink/meta.json`
+- `src/features/invitation/templates/boho_floral_pink/theme.json`
 
 **Khối** (20)
 
-- `src/features/invitation/shell/blocks/boho_floral/Album.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Banquet.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/BanquetTitle.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/CeremonyTitle.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Credit.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Dresscode.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Family.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Footer.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Gifts.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Hero.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/index.ts`
-- `src/features/invitation/shell/blocks/boho_floral/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/MidDecor.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Rsvp.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Schedule.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/themeVars.ts`
-- `src/features/invitation/shell/blocks/boho_floral/TopDecor.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Venue.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/VenueDecor.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Album.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Banquet.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/BanquetTitle.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/CeremonyTitle.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Credit.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Dresscode.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Family.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Footer.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Gifts.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Hero.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/index.ts`
+- `src/features/invitation/templates/_shared/boho_floral/Lightbox.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/MidDecor.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Rsvp.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Schedule.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/themeVars.ts`
+- `src/features/invitation/templates/_shared/boho_floral/TopDecor.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Venue.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/VenueDecor.tsx`
 
 **Phong bì** (1)
 
@@ -1942,34 +2209,48 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/ren-theu-trang/demo
 - Họ khối: `applique_lace_white`
-- Bìa: `src/features/invitation/shell/specs/applique_lace_white/cover.json` → khóa `applique_lace_white`
+- Bìa: `src/features/invitation/templates/applique_lace_white/cover.json` → khóa `applique_lace_white`
 - Thư mục ảnh theme: `public/images/themes/applique-lace-white/` (11 file)
 
-**Spec** (6)
+**Spec** (20)
 
-- `src/features/invitation/shell/specs/applique_lace_white/capabilities.json`
-- `src/features/invitation/shell/specs/applique_lace_white/cover.json`
-- `src/features/invitation/shell/specs/applique_lace_white/demo.json`
-- `src/features/invitation/shell/specs/applique_lace_white/gift.json`
-- `src/features/invitation/shell/specs/applique_lace_white/meta.json`
-- `src/features/invitation/shell/specs/applique_lace_white/theme.json`
+- `src/features/invitation/templates/applique_lace_white/blocks/Album.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Banquet.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Credit.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Dress.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Footer.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Gifts.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/index.ts`
+- `src/features/invitation/templates/applique_lace_white/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Paper.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Schedule.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Section1.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Venue.tsx`
+- `src/features/invitation/templates/applique_lace_white/capabilities.json`
+- `src/features/invitation/templates/applique_lace_white/cover.json`
+- `src/features/invitation/templates/applique_lace_white/demo.json`
+- `src/features/invitation/templates/applique_lace_white/gift.json`
+- `src/features/invitation/templates/applique_lace_white/meta.json`
+- `src/features/invitation/templates/applique_lace_white/theme.json`
 
 **Khối** (14)
 
-- `src/features/invitation/shell/blocks/applique_lace_white/Album.tsx`
-- `src/features/invitation/shell/blocks/applique_lace_white/Banquet.tsx`
-- `src/features/invitation/shell/blocks/applique_lace_white/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/applique_lace_white/Credit.tsx`
-- `src/features/invitation/shell/blocks/applique_lace_white/Dress.tsx`
-- `src/features/invitation/shell/blocks/applique_lace_white/Footer.tsx`
-- `src/features/invitation/shell/blocks/applique_lace_white/Gifts.tsx`
-- `src/features/invitation/shell/blocks/applique_lace_white/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/applique_lace_white/index.ts`
-- `src/features/invitation/shell/blocks/applique_lace_white/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/applique_lace_white/Paper.tsx`
-- `src/features/invitation/shell/blocks/applique_lace_white/Schedule.tsx`
-- `src/features/invitation/shell/blocks/applique_lace_white/Section1.tsx`
-- `src/features/invitation/shell/blocks/applique_lace_white/Venue.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Album.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Banquet.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Credit.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Dress.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Footer.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Gifts.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/index.ts`
+- `src/features/invitation/templates/applique_lace_white/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Paper.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Schedule.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Section1.tsx`
+- `src/features/invitation/templates/applique_lace_white/blocks/Venue.tsx`
 
 **Ảnh theme** (11)
 
@@ -1999,34 +2280,47 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoa-lua-nau/demo
 - Họ khối: `silk_flora_brown`
-- Bìa: `src/features/invitation/shell/specs/silk_flora_brown/cover.json` → khóa `silk_flora_brown`
+- Bìa: `src/features/invitation/templates/silk_flora_brown/cover.json` → khóa `silk_flora_brown`
 - Thư mục ảnh theme: `public/images/themes/silkflora-brown/` (3 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (19)
 
-- `src/features/invitation/shell/specs/silk_flora_brown/capabilities.json`
-- `src/features/invitation/shell/specs/silk_flora_brown/cover.json`
-- `src/features/invitation/shell/specs/silk_flora_brown/demo.json`
-- `src/features/invitation/shell/specs/silk_flora_brown/gift.json`
-- `src/features/invitation/shell/specs/silk_flora_brown/meta.json`
-- `src/features/invitation/shell/specs/silk_flora_brown/theme.json`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Credit.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Dress.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Footer.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Gifts.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/index.ts`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Paper.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Schedule.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Section1.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Section2.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Venue.tsx`
+- `src/features/invitation/templates/silk_flora_brown/capabilities.json`
+- `src/features/invitation/templates/silk_flora_brown/cover.json`
+- `src/features/invitation/templates/silk_flora_brown/demo.json`
+- `src/features/invitation/templates/silk_flora_brown/gift.json`
+- `src/features/invitation/templates/silk_flora_brown/meta.json`
+- `src/features/invitation/templates/silk_flora_brown/theme.json`
 
 **Khối** (13)
 
-- `src/features/invitation/shell/blocks/silk_flora_brown/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/silk_flora_brown/Credit.tsx`
-- `src/features/invitation/shell/blocks/silk_flora_brown/Dress.tsx`
-- `src/features/invitation/shell/blocks/silk_flora_brown/Footer.tsx`
-- `src/features/invitation/shell/blocks/silk_flora_brown/Gifts.tsx`
-- `src/features/invitation/shell/blocks/silk_flora_brown/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/silk_flora_brown/index.ts`
-- `src/features/invitation/shell/blocks/silk_flora_brown/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/silk_flora_brown/Paper.tsx`
-- `src/features/invitation/shell/blocks/silk_flora_brown/Schedule.tsx`
-- `src/features/invitation/shell/blocks/silk_flora_brown/Section1.tsx`
-- `src/features/invitation/shell/blocks/silk_flora_brown/Section2.tsx`
-- `src/features/invitation/shell/blocks/silk_flora_brown/Venue.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Credit.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Dress.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Footer.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Gifts.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/index.ts`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Paper.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Schedule.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Section1.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Section2.tsx`
+- `src/features/invitation/templates/silk_flora_brown/blocks/Venue.tsx`
 
 **Ảnh theme** (3)
 
@@ -2044,26 +2338,31 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoa-tinh-do/demo
 - Họ khối: `hoa_tinh_red`
-- Bìa: `src/features/invitation/shell/specs/hoa_tinh_red/cover.json` → khóa `hoa_tinh_red`
+- Bìa: `src/features/invitation/templates/hoa_tinh_red/cover.json` → khóa `hoa_tinh_red`
 - Thư mục ảnh theme: `public/images/themes/love-art/` (13 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (11)
 
-- `src/features/invitation/shell/specs/hoa_tinh_red/capabilities.json`
-- `src/features/invitation/shell/specs/hoa_tinh_red/cover.json`
-- `src/features/invitation/shell/specs/hoa_tinh_red/demo.json`
-- `src/features/invitation/shell/specs/hoa_tinh_red/gift.json`
-- `src/features/invitation/shell/specs/hoa_tinh_red/meta.json`
-- `src/features/invitation/shell/specs/hoa_tinh_red/theme.json`
+- `src/features/invitation/templates/hoa_tinh_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/hoa_tinh_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/hoa_tinh_red/blocks/index.ts`
+- `src/features/invitation/templates/hoa_tinh_red/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/hoa_tinh_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/hoa_tinh_red/capabilities.json`
+- `src/features/invitation/templates/hoa_tinh_red/cover.json`
+- `src/features/invitation/templates/hoa_tinh_red/demo.json`
+- `src/features/invitation/templates/hoa_tinh_red/gift.json`
+- `src/features/invitation/templates/hoa_tinh_red/meta.json`
+- `src/features/invitation/templates/hoa_tinh_red/theme.json`
 
 **Khối** (5)
 
-- `src/features/invitation/shell/blocks/hoa_tinh_red/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/hoa_tinh_red/Hero.tsx`
-- `src/features/invitation/shell/blocks/hoa_tinh_red/index.ts`
-- `src/features/invitation/shell/blocks/hoa_tinh_red/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/hoa_tinh_red/Paper.tsx`
+- `src/features/invitation/templates/hoa_tinh_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/hoa_tinh_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/hoa_tinh_red/blocks/index.ts`
+- `src/features/invitation/templates/hoa_tinh_red/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/hoa_tinh_red/blocks/Paper.tsx`
 
 **Ảnh theme** (13)
 
@@ -2091,32 +2390,32 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/vuon-xuan-lam/demo
 - Họ khối: `springgarden_v1`
-- Bìa: `src/features/invitation/shell/specs/spring_garden_blue/cover.json` → khóa `spring_garden_blue`
+- Bìa: `src/features/invitation/templates/spring_garden_blue/cover.json` → khóa `spring_garden_blue`
 - Thư mục ảnh theme: `public/images/themes/vuon xuan blue/` (3 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/spring_garden_blue/capabilities.json`
-- `src/features/invitation/shell/specs/spring_garden_blue/cover.json`
-- `src/features/invitation/shell/specs/spring_garden_blue/demo.json`
-- `src/features/invitation/shell/specs/spring_garden_blue/gift.json`
-- `src/features/invitation/shell/specs/spring_garden_blue/meta.json`
-- `src/features/invitation/shell/specs/spring_garden_blue/theme.json`
+- `src/features/invitation/templates/spring_garden_blue/capabilities.json`
+- `src/features/invitation/templates/spring_garden_blue/cover.json`
+- `src/features/invitation/templates/spring_garden_blue/demo.json`
+- `src/features/invitation/templates/spring_garden_blue/gift.json`
+- `src/features/invitation/templates/spring_garden_blue/meta.json`
+- `src/features/invitation/templates/spring_garden_blue/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/springgarden_v1/Album.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Dress.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Family.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Footer.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Gifts.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Hero.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/index.ts`
-- `src/features/invitation/shell/blocks/springgarden_v1/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Paper.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Schedule.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Venue.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Album.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Dress.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Family.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Footer.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Gifts.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Hero.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/index.ts`
+- `src/features/invitation/templates/_shared/springgarden_v1/Lightbox.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Paper.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Schedule.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Venue.tsx`
 
 **Ảnh theme** (3)
 
@@ -2138,35 +2437,50 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/minimalism-lam-dam/demo
 - Họ khối: `minimalism_darkblue`
-- Bìa: `src/features/invitation/shell/specs/minimalism_darkblue/cover.json` → khóa `minimalism_darkblue`
+- Bìa: `src/features/invitation/templates/minimalism_darkblue/cover.json` → khóa `minimalism_darkblue`
 - Thư mục ảnh theme: `public/images/themes/minimalism-darkblue/` (0 file)
 
-**Spec** (6)
+**Spec** (21)
 
-- `src/features/invitation/shell/specs/minimalism_darkblue/capabilities.json`
-- `src/features/invitation/shell/specs/minimalism_darkblue/cover.json`
-- `src/features/invitation/shell/specs/minimalism_darkblue/demo.json`
-- `src/features/invitation/shell/specs/minimalism_darkblue/gift.json`
-- `src/features/invitation/shell/specs/minimalism_darkblue/meta.json`
-- `src/features/invitation/shell/specs/minimalism_darkblue/theme.json`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Album.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Banquet.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Credit.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Dress.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Footer.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Gifts.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Hero.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/index.ts`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Paper.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Schedule.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Section11.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Venue.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/capabilities.json`
+- `src/features/invitation/templates/minimalism_darkblue/cover.json`
+- `src/features/invitation/templates/minimalism_darkblue/demo.json`
+- `src/features/invitation/templates/minimalism_darkblue/gift.json`
+- `src/features/invitation/templates/minimalism_darkblue/meta.json`
+- `src/features/invitation/templates/minimalism_darkblue/theme.json`
 
 **Khối** (15)
 
-- `src/features/invitation/shell/blocks/minimalism_darkblue/Album.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkblue/Banquet.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkblue/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkblue/Credit.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkblue/Dress.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkblue/Footer.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkblue/Gifts.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkblue/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkblue/Hero.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkblue/index.ts`
-- `src/features/invitation/shell/blocks/minimalism_darkblue/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkblue/Paper.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkblue/Schedule.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkblue/Section11.tsx`
-- `src/features/invitation/shell/blocks/minimalism_darkblue/Venue.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Album.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Banquet.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Credit.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Dress.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Footer.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Gifts.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Hero.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/index.ts`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Paper.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Schedule.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Section11.tsx`
+- `src/features/invitation/templates/minimalism_darkblue/blocks/Venue.tsx`
 
 **Phong bì** (1)
 
@@ -2182,34 +2496,47 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoang-kim-do/demo
 - Họ khối: `royal_red`
-- Bìa: `src/features/invitation/shell/specs/royal_red/cover.json` → khóa `royal_red`
+- Bìa: `src/features/invitation/templates/royal_red/cover.json` → khóa `royal_red`
 - Thư mục ảnh theme: `public/images/themes/royal-red/` (5 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (19)
 
-- `src/features/invitation/shell/specs/royal_red/capabilities.json`
-- `src/features/invitation/shell/specs/royal_red/cover.json`
-- `src/features/invitation/shell/specs/royal_red/demo.json`
-- `src/features/invitation/shell/specs/royal_red/gift.json`
-- `src/features/invitation/shell/specs/royal_red/meta.json`
-- `src/features/invitation/shell/specs/royal_red/theme.json`
+- `src/features/invitation/templates/royal_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Credit.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Dress.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Footer.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Gifts.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/royal_red/blocks/index.ts`
+- `src/features/invitation/templates/royal_red/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Schedule.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Section1.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Venue.tsx`
+- `src/features/invitation/templates/royal_red/capabilities.json`
+- `src/features/invitation/templates/royal_red/cover.json`
+- `src/features/invitation/templates/royal_red/demo.json`
+- `src/features/invitation/templates/royal_red/gift.json`
+- `src/features/invitation/templates/royal_red/meta.json`
+- `src/features/invitation/templates/royal_red/theme.json`
 
 **Khối** (13)
 
-- `src/features/invitation/shell/blocks/royal_red/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/royal_red/Credit.tsx`
-- `src/features/invitation/shell/blocks/royal_red/Dress.tsx`
-- `src/features/invitation/shell/blocks/royal_red/Footer.tsx`
-- `src/features/invitation/shell/blocks/royal_red/Gifts.tsx`
-- `src/features/invitation/shell/blocks/royal_red/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/royal_red/Hero.tsx`
-- `src/features/invitation/shell/blocks/royal_red/index.ts`
-- `src/features/invitation/shell/blocks/royal_red/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/royal_red/Paper.tsx`
-- `src/features/invitation/shell/blocks/royal_red/Schedule.tsx`
-- `src/features/invitation/shell/blocks/royal_red/Section1.tsx`
-- `src/features/invitation/shell/blocks/royal_red/Venue.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Credit.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Dress.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Footer.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Gifts.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/royal_red/blocks/index.ts`
+- `src/features/invitation/templates/royal_red/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Schedule.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Section1.tsx`
+- `src/features/invitation/templates/royal_red/blocks/Venue.tsx`
 
 **Ảnh theme** (5)
 
@@ -2225,35 +2552,50 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/minimalism-do/demo
 - Họ khối: `minimalism_red`
-- Bìa: `src/features/invitation/shell/specs/minimalism_red/cover.json` → khóa `minimalism_red`
+- Bìa: `src/features/invitation/templates/minimalism_red/cover.json` → khóa `minimalism_red`
 - Thư mục ảnh theme: `public/images/themes/minimalism-red/` (2 file)
 
-**Spec** (6)
+**Spec** (21)
 
-- `src/features/invitation/shell/specs/minimalism_red/capabilities.json`
-- `src/features/invitation/shell/specs/minimalism_red/cover.json`
-- `src/features/invitation/shell/specs/minimalism_red/demo.json`
-- `src/features/invitation/shell/specs/minimalism_red/gift.json`
-- `src/features/invitation/shell/specs/minimalism_red/meta.json`
-- `src/features/invitation/shell/specs/minimalism_red/theme.json`
+- `src/features/invitation/templates/minimalism_red/blocks/Album.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Banquet.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/BanquetBanner.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/CeremonyBanner.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Credit.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Dress.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Footer.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Gifts.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/index.ts`
+- `src/features/invitation/templates/minimalism_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Schedule.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Venue.tsx`
+- `src/features/invitation/templates/minimalism_red/capabilities.json`
+- `src/features/invitation/templates/minimalism_red/cover.json`
+- `src/features/invitation/templates/minimalism_red/demo.json`
+- `src/features/invitation/templates/minimalism_red/gift.json`
+- `src/features/invitation/templates/minimalism_red/meta.json`
+- `src/features/invitation/templates/minimalism_red/theme.json`
 
 **Khối** (15)
 
-- `src/features/invitation/shell/blocks/minimalism_red/Album.tsx`
-- `src/features/invitation/shell/blocks/minimalism_red/Banquet.tsx`
-- `src/features/invitation/shell/blocks/minimalism_red/BanquetBanner.tsx`
-- `src/features/invitation/shell/blocks/minimalism_red/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/minimalism_red/CeremonyBanner.tsx`
-- `src/features/invitation/shell/blocks/minimalism_red/Credit.tsx`
-- `src/features/invitation/shell/blocks/minimalism_red/Dress.tsx`
-- `src/features/invitation/shell/blocks/minimalism_red/Footer.tsx`
-- `src/features/invitation/shell/blocks/minimalism_red/Gifts.tsx`
-- `src/features/invitation/shell/blocks/minimalism_red/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/minimalism_red/Hero.tsx`
-- `src/features/invitation/shell/blocks/minimalism_red/index.ts`
-- `src/features/invitation/shell/blocks/minimalism_red/Paper.tsx`
-- `src/features/invitation/shell/blocks/minimalism_red/Schedule.tsx`
-- `src/features/invitation/shell/blocks/minimalism_red/Venue.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Album.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Banquet.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/BanquetBanner.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/CeremonyBanner.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Credit.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Dress.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Footer.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Gifts.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/index.ts`
+- `src/features/invitation/templates/minimalism_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Schedule.tsx`
+- `src/features/invitation/templates/minimalism_red/blocks/Venue.tsx`
 
 **Ảnh theme** (2)
 
@@ -2274,32 +2616,32 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/vuon-xuan-do/demo
 - Họ khối: `springgarden_v1`
-- Bìa: `src/features/invitation/shell/specs/spring_garden_red/cover.json` → khóa `spring_garden_red`
+- Bìa: `src/features/invitation/templates/spring_garden_red/cover.json` → khóa `spring_garden_red`
 - Thư mục ảnh theme: `public/images/themes/vuon xuan red/` (6 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/spring_garden_red/capabilities.json`
-- `src/features/invitation/shell/specs/spring_garden_red/cover.json`
-- `src/features/invitation/shell/specs/spring_garden_red/demo.json`
-- `src/features/invitation/shell/specs/spring_garden_red/gift.json`
-- `src/features/invitation/shell/specs/spring_garden_red/meta.json`
-- `src/features/invitation/shell/specs/spring_garden_red/theme.json`
+- `src/features/invitation/templates/spring_garden_red/capabilities.json`
+- `src/features/invitation/templates/spring_garden_red/cover.json`
+- `src/features/invitation/templates/spring_garden_red/demo.json`
+- `src/features/invitation/templates/spring_garden_red/gift.json`
+- `src/features/invitation/templates/spring_garden_red/meta.json`
+- `src/features/invitation/templates/spring_garden_red/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/springgarden_v1/Album.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Dress.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Family.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Footer.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Gifts.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Hero.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/index.ts`
-- `src/features/invitation/shell/blocks/springgarden_v1/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Paper.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Schedule.tsx`
-- `src/features/invitation/shell/blocks/springgarden_v1/Venue.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Album.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Dress.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Family.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Footer.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Gifts.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Hero.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/index.ts`
+- `src/features/invitation/templates/_shared/springgarden_v1/Lightbox.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Paper.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Schedule.tsx`
+- `src/features/invitation/templates/_shared/springgarden_v1/Venue.tsx`
 
 **Ảnh theme** (6)
 
@@ -2343,32 +2685,32 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/long-phung-xanh/demo
 - Họ khối: `longphung_v1`
-- Bìa: `src/features/invitation/shell/specs/dragon_phoenix_green/cover.json` → khóa `dragon_phoenix_green`
+- Bìa: `src/features/invitation/templates/dragon_phoenix_green/cover.json` → khóa `dragon_phoenix_green`
 - Thư mục ảnh theme: `public/images/themes/red-v1/` (4 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/dragon_phoenix_green/capabilities.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_green/cover.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_green/demo.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_green/gift.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_green/meta.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_green/theme.json`
+- `src/features/invitation/templates/dragon_phoenix_green/capabilities.json`
+- `src/features/invitation/templates/dragon_phoenix_green/cover.json`
+- `src/features/invitation/templates/dragon_phoenix_green/demo.json`
+- `src/features/invitation/templates/dragon_phoenix_green/gift.json`
+- `src/features/invitation/templates/dragon_phoenix_green/meta.json`
+- `src/features/invitation/templates/dragon_phoenix_green/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/longphung_v1/Album.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Dress.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Family.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Footer.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Gifts.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Hero.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/index.ts`
-- `src/features/invitation/shell/blocks/longphung_v1/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Paper.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Schedule.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Venue.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Album.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Dress.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Family.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Footer.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Gifts.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Hero.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/index.ts`
+- `src/features/invitation/templates/_shared/longphung_v1/Lightbox.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Paper.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Schedule.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Venue.tsx`
 
 **Ảnh theme** (4)
 
@@ -2387,32 +2729,43 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoang-gia-vang/demo
 - Họ khối: `baroque_gold`
-- Bìa: `src/features/invitation/shell/specs/baroque_gold/cover.json` → khóa `baroque_gold`
+- Bìa: `src/features/invitation/templates/baroque_gold/cover.json` → khóa `baroque_gold`
 - Thư mục ảnh theme: `public/images/themes/baroque-gold/` (8 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (17)
 
-- `src/features/invitation/shell/specs/baroque_gold/capabilities.json`
-- `src/features/invitation/shell/specs/baroque_gold/cover.json`
-- `src/features/invitation/shell/specs/baroque_gold/demo.json`
-- `src/features/invitation/shell/specs/baroque_gold/gift.json`
-- `src/features/invitation/shell/specs/baroque_gold/meta.json`
-- `src/features/invitation/shell/specs/baroque_gold/theme.json`
+- `src/features/invitation/templates/baroque_gold/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/baroque_gold/blocks/Credit.tsx`
+- `src/features/invitation/templates/baroque_gold/blocks/Dress.tsx`
+- `src/features/invitation/templates/baroque_gold/blocks/Footer.tsx`
+- `src/features/invitation/templates/baroque_gold/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/baroque_gold/blocks/index.ts`
+- `src/features/invitation/templates/baroque_gold/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/baroque_gold/blocks/Paper.tsx`
+- `src/features/invitation/templates/baroque_gold/blocks/Schedule.tsx`
+- `src/features/invitation/templates/baroque_gold/blocks/Section1.tsx`
+- `src/features/invitation/templates/baroque_gold/blocks/Venue.tsx`
+- `src/features/invitation/templates/baroque_gold/capabilities.json`
+- `src/features/invitation/templates/baroque_gold/cover.json`
+- `src/features/invitation/templates/baroque_gold/demo.json`
+- `src/features/invitation/templates/baroque_gold/gift.json`
+- `src/features/invitation/templates/baroque_gold/meta.json`
+- `src/features/invitation/templates/baroque_gold/theme.json`
 
 **Khối** (11)
 
-- `src/features/invitation/shell/blocks/baroque_gold/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/baroque_gold/Credit.tsx`
-- `src/features/invitation/shell/blocks/baroque_gold/Dress.tsx`
-- `src/features/invitation/shell/blocks/baroque_gold/Footer.tsx`
-- `src/features/invitation/shell/blocks/baroque_gold/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/baroque_gold/index.ts`
-- `src/features/invitation/shell/blocks/baroque_gold/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/baroque_gold/Paper.tsx`
-- `src/features/invitation/shell/blocks/baroque_gold/Schedule.tsx`
-- `src/features/invitation/shell/blocks/baroque_gold/Section1.tsx`
-- `src/features/invitation/shell/blocks/baroque_gold/Venue.tsx`
+- `src/features/invitation/templates/baroque_gold/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/baroque_gold/blocks/Credit.tsx`
+- `src/features/invitation/templates/baroque_gold/blocks/Dress.tsx`
+- `src/features/invitation/templates/baroque_gold/blocks/Footer.tsx`
+- `src/features/invitation/templates/baroque_gold/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/baroque_gold/blocks/index.ts`
+- `src/features/invitation/templates/baroque_gold/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/baroque_gold/blocks/Paper.tsx`
+- `src/features/invitation/templates/baroque_gold/blocks/Schedule.tsx`
+- `src/features/invitation/templates/baroque_gold/blocks/Section1.tsx`
+- `src/features/invitation/templates/baroque_gold/blocks/Venue.tsx`
 
 **Ảnh theme** (8)
 
@@ -2435,35 +2788,49 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/lau-dai-lam/demo
 - Họ khối: `chateau_blue`
-- Bìa: `src/features/invitation/shell/specs/chateau_blue/cover.json` → khóa `chateau_blue`
+- Bìa: `src/features/invitation/templates/chateau_blue/cover.json` → khóa `chateau_blue`
 - Thư mục ảnh theme: `public/images/themes/chateau-blue/` (13 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (20)
 
-- `src/features/invitation/shell/specs/chateau_blue/capabilities.json`
-- `src/features/invitation/shell/specs/chateau_blue/cover.json`
-- `src/features/invitation/shell/specs/chateau_blue/demo.json`
-- `src/features/invitation/shell/specs/chateau_blue/gift.json`
-- `src/features/invitation/shell/specs/chateau_blue/meta.json`
-- `src/features/invitation/shell/specs/chateau_blue/theme.json`
+- `src/features/invitation/templates/chateau_blue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Credit.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Dress.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Footer.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Gifts.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/index.ts`
+- `src/features/invitation/templates/chateau_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Paper.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Schedule.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Section1.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Section6.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Section9.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Venue.tsx`
+- `src/features/invitation/templates/chateau_blue/capabilities.json`
+- `src/features/invitation/templates/chateau_blue/cover.json`
+- `src/features/invitation/templates/chateau_blue/demo.json`
+- `src/features/invitation/templates/chateau_blue/gift.json`
+- `src/features/invitation/templates/chateau_blue/meta.json`
+- `src/features/invitation/templates/chateau_blue/theme.json`
 
 **Khối** (14)
 
-- `src/features/invitation/shell/blocks/chateau_blue/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/chateau_blue/Credit.tsx`
-- `src/features/invitation/shell/blocks/chateau_blue/Dress.tsx`
-- `src/features/invitation/shell/blocks/chateau_blue/Footer.tsx`
-- `src/features/invitation/shell/blocks/chateau_blue/Gifts.tsx`
-- `src/features/invitation/shell/blocks/chateau_blue/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/chateau_blue/index.ts`
-- `src/features/invitation/shell/blocks/chateau_blue/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/chateau_blue/Paper.tsx`
-- `src/features/invitation/shell/blocks/chateau_blue/Schedule.tsx`
-- `src/features/invitation/shell/blocks/chateau_blue/Section1.tsx`
-- `src/features/invitation/shell/blocks/chateau_blue/Section6.tsx`
-- `src/features/invitation/shell/blocks/chateau_blue/Section9.tsx`
-- `src/features/invitation/shell/blocks/chateau_blue/Venue.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Credit.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Dress.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Footer.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Gifts.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/index.ts`
+- `src/features/invitation/templates/chateau_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Paper.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Schedule.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Section1.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Section6.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Section9.tsx`
+- `src/features/invitation/templates/chateau_blue/blocks/Venue.tsx`
 
 **Ảnh theme** (13)
 
@@ -2491,36 +2858,51 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/song-phung-xanh/demo
 - Họ khối: `double_phoenix_green`
-- Bìa: `src/features/invitation/shell/specs/double_phoenix_green/cover.json` → khóa `double_phoenix_green`
+- Bìa: `src/features/invitation/templates/double_phoenix_green/cover.json` → khóa `double_phoenix_green`
 - Thư mục ảnh theme: `public/images/themes/songphung-green/` (6 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (21)
 
-- `src/features/invitation/shell/specs/double_phoenix_green/capabilities.json`
-- `src/features/invitation/shell/specs/double_phoenix_green/cover.json`
-- `src/features/invitation/shell/specs/double_phoenix_green/demo.json`
-- `src/features/invitation/shell/specs/double_phoenix_green/gift.json`
-- `src/features/invitation/shell/specs/double_phoenix_green/meta.json`
-- `src/features/invitation/shell/specs/double_phoenix_green/theme.json`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Credit.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Gifts.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Hero.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/index.ts`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Section1.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Section2.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Section3.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Section4.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Venue.tsx`
+- `src/features/invitation/templates/double_phoenix_green/capabilities.json`
+- `src/features/invitation/templates/double_phoenix_green/cover.json`
+- `src/features/invitation/templates/double_phoenix_green/demo.json`
+- `src/features/invitation/templates/double_phoenix_green/gift.json`
+- `src/features/invitation/templates/double_phoenix_green/meta.json`
+- `src/features/invitation/templates/double_phoenix_green/theme.json`
 
 **Khối** (15)
 
-- `src/features/invitation/shell/blocks/double_phoenix_green/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_green/Credit.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_green/Dress.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_green/Footer.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_green/Gifts.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_green/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_green/Hero.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_green/index.ts`
-- `src/features/invitation/shell/blocks/double_phoenix_green/Paper.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_green/Schedule.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_green/Section1.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_green/Section2.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_green/Section3.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_green/Section4.tsx`
-- `src/features/invitation/shell/blocks/double_phoenix_green/Venue.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Credit.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Gifts.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Hero.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/index.ts`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Section1.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Section2.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Section3.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Section4.tsx`
+- `src/features/invitation/templates/double_phoenix_green/blocks/Venue.tsx`
 
 **Ảnh theme** (6)
 
@@ -2541,40 +2923,40 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoa-moc-nau/demo
 - Họ khối: `boho_floral`
-- Bìa: `src/features/invitation/shell/specs/boho_floral_brown/cover.json` → khóa `boho_floral_brown`
+- Bìa: `src/features/invitation/templates/boho_floral_brown/cover.json` → khóa `boho_floral_brown`
 - Thư mục ảnh theme: `public/boho-floral-brown/` (0 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/boho_floral_brown/capabilities.json`
-- `src/features/invitation/shell/specs/boho_floral_brown/cover.json`
-- `src/features/invitation/shell/specs/boho_floral_brown/demo.json`
-- `src/features/invitation/shell/specs/boho_floral_brown/gift.json`
-- `src/features/invitation/shell/specs/boho_floral_brown/meta.json`
-- `src/features/invitation/shell/specs/boho_floral_brown/theme.json`
+- `src/features/invitation/templates/boho_floral_brown/capabilities.json`
+- `src/features/invitation/templates/boho_floral_brown/cover.json`
+- `src/features/invitation/templates/boho_floral_brown/demo.json`
+- `src/features/invitation/templates/boho_floral_brown/gift.json`
+- `src/features/invitation/templates/boho_floral_brown/meta.json`
+- `src/features/invitation/templates/boho_floral_brown/theme.json`
 
 **Khối** (20)
 
-- `src/features/invitation/shell/blocks/boho_floral/Album.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Banquet.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/BanquetTitle.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/CeremonyTitle.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Credit.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Dresscode.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Family.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Footer.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Gifts.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Hero.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/index.ts`
-- `src/features/invitation/shell/blocks/boho_floral/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/MidDecor.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Rsvp.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Schedule.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/themeVars.ts`
-- `src/features/invitation/shell/blocks/boho_floral/TopDecor.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/Venue.tsx`
-- `src/features/invitation/shell/blocks/boho_floral/VenueDecor.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Album.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Banquet.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/BanquetTitle.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/CeremonyTitle.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Credit.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Dresscode.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Family.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Footer.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Gifts.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Hero.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/index.ts`
+- `src/features/invitation/templates/_shared/boho_floral/Lightbox.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/MidDecor.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Rsvp.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Schedule.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/themeVars.ts`
+- `src/features/invitation/templates/_shared/boho_floral/TopDecor.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/Venue.tsx`
+- `src/features/invitation/templates/_shared/boho_floral/VenueDecor.tsx`
 
 **Phong bì** (1)
 
@@ -2586,37 +2968,37 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/song-long-lam/demo
 - Họ khối: `double_dragon`
-- Bìa: `src/features/invitation/shell/specs/double_dragon_blue/cover.json` → khóa `double_dragon_blue`
+- Bìa: `src/features/invitation/templates/double_dragon_blue/cover.json` → khóa `double_dragon_blue`
 - Thư mục ảnh theme: `public/songlong-red/` (0 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/double_dragon_blue/capabilities.json`
-- `src/features/invitation/shell/specs/double_dragon_blue/cover.json`
-- `src/features/invitation/shell/specs/double_dragon_blue/demo.json`
-- `src/features/invitation/shell/specs/double_dragon_blue/gift.json`
-- `src/features/invitation/shell/specs/double_dragon_blue/meta.json`
-- `src/features/invitation/shell/specs/double_dragon_blue/theme.json`
+- `src/features/invitation/templates/double_dragon_blue/capabilities.json`
+- `src/features/invitation/templates/double_dragon_blue/cover.json`
+- `src/features/invitation/templates/double_dragon_blue/demo.json`
+- `src/features/invitation/templates/double_dragon_blue/gift.json`
+- `src/features/invitation/templates/double_dragon_blue/meta.json`
+- `src/features/invitation/templates/double_dragon_blue/theme.json`
 
 **Khối** (17)
 
-- `src/features/invitation/shell/blocks/double_dragon/Album.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/AlbumTitle.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/Banquet.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/BanquetTitle.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/CeremonyTitle.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/DressSchedule.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/Family.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/Footer.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/FooterDecor.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/Gifts.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/GuestbookTitle.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/HeaderDecor.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/Hero.tsx`
-- `src/features/invitation/shell/blocks/double_dragon/index.ts`
-- `src/features/invitation/shell/blocks/double_dragon/themeVars.ts`
-- `src/features/invitation/shell/blocks/double_dragon/Venue.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Album.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/AlbumTitle.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Banquet.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/BanquetTitle.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/CeremonyTitle.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/DressSchedule.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Family.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Footer.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/FooterDecor.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Gifts.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/GuestbookTitle.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/HeaderDecor.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/Hero.tsx`
+- `src/features/invitation/templates/_shared/double_dragon/index.ts`
+- `src/features/invitation/templates/_shared/double_dragon/themeVars.ts`
+- `src/features/invitation/templates/_shared/double_dragon/Venue.tsx`
 
 **Phong bì** (1)
 
@@ -2651,21 +3033,26 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/glass-garden-light-green/` (9 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (5)
+**Spec** (10)
 
-- `src/features/invitation/shell/specs/glass_garden_light_green/capabilities.json`
-- `src/features/invitation/shell/specs/glass_garden_light_green/demo.json`
-- `src/features/invitation/shell/specs/glass_garden_light_green/gift.json`
-- `src/features/invitation/shell/specs/glass_garden_light_green/meta.json`
-- `src/features/invitation/shell/specs/glass_garden_light_green/theme.json`
+- `src/features/invitation/templates/glass_garden_light_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/glass_garden_light_green/blocks/index.ts`
+- `src/features/invitation/templates/glass_garden_light_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/glass_garden_light_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/glass_garden_light_green/blocks/Section1.tsx`
+- `src/features/invitation/templates/glass_garden_light_green/capabilities.json`
+- `src/features/invitation/templates/glass_garden_light_green/demo.json`
+- `src/features/invitation/templates/glass_garden_light_green/gift.json`
+- `src/features/invitation/templates/glass_garden_light_green/meta.json`
+- `src/features/invitation/templates/glass_garden_light_green/theme.json`
 
 **Khối** (5)
 
-- `src/features/invitation/shell/blocks/glass_garden_light_green/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/glass_garden_light_green/index.ts`
-- `src/features/invitation/shell/blocks/glass_garden_light_green/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/glass_garden_light_green/Paper.tsx`
-- `src/features/invitation/shell/blocks/glass_garden_light_green/Section1.tsx`
+- `src/features/invitation/templates/glass_garden_light_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/glass_garden_light_green/blocks/index.ts`
+- `src/features/invitation/templates/glass_garden_light_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/glass_garden_light_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/glass_garden_light_green/blocks/Section1.tsx`
 
 **Ảnh theme** (9)
 
@@ -2689,35 +3076,35 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoa-thuy-tinh-lam/demo
 - Họ khối: `crystal_floral`
-- Bìa: `src/features/invitation/shell/specs/crystal_floral_blue/cover.json` → khóa `crystal_floral_blue`
+- Bìa: `src/features/invitation/templates/crystal_floral_blue/cover.json` → khóa `crystal_floral_blue`
 - Thư mục ảnh theme: `public/images/themes/crystal-floral-blue/` (10 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/crystal_floral_blue/capabilities.json`
-- `src/features/invitation/shell/specs/crystal_floral_blue/cover.json`
-- `src/features/invitation/shell/specs/crystal_floral_blue/demo.json`
-- `src/features/invitation/shell/specs/crystal_floral_blue/gift.json`
-- `src/features/invitation/shell/specs/crystal_floral_blue/meta.json`
-- `src/features/invitation/shell/specs/crystal_floral_blue/theme.json`
+- `src/features/invitation/templates/crystal_floral_blue/capabilities.json`
+- `src/features/invitation/templates/crystal_floral_blue/cover.json`
+- `src/features/invitation/templates/crystal_floral_blue/demo.json`
+- `src/features/invitation/templates/crystal_floral_blue/gift.json`
+- `src/features/invitation/templates/crystal_floral_blue/meta.json`
+- `src/features/invitation/templates/crystal_floral_blue/theme.json`
 
 **Khối** (15)
 
-- `src/features/invitation/shell/blocks/crystal_floral/BottomDecor.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/DressCode.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Footer.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Gifts.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Hero.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/index.ts`
-- `src/features/invitation/shell/blocks/crystal_floral/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Schedule.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/ThankYou.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/themeVars.ts`
-- `src/features/invitation/shell/blocks/crystal_floral/TopDecor.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Venue.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Watermark.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/BottomDecor.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Ceremony.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/DressCode.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Footer.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Gifts.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Hero.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/index.ts`
+- `src/features/invitation/templates/_shared/crystal_floral/Lightbox.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Schedule.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/ThankYou.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/themeVars.ts`
+- `src/features/invitation/templates/_shared/crystal_floral/TopDecor.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Venue.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Watermark.tsx`
 
 **Ảnh theme** (10)
 
@@ -2765,32 +3152,32 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/long-phung-lam/demo
 - Họ khối: `longphung_v1`
-- Bìa: `src/features/invitation/shell/specs/dragon_phoenix_blue/cover.json` → khóa `dragon_phoenix_blue`
+- Bìa: `src/features/invitation/templates/dragon_phoenix_blue/cover.json` → khóa `dragon_phoenix_blue`
 - Thư mục ảnh theme: `public/images/themes/red-v1/` (4 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/dragon_phoenix_blue/capabilities.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_blue/cover.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_blue/demo.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_blue/gift.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_blue/meta.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_blue/theme.json`
+- `src/features/invitation/templates/dragon_phoenix_blue/capabilities.json`
+- `src/features/invitation/templates/dragon_phoenix_blue/cover.json`
+- `src/features/invitation/templates/dragon_phoenix_blue/demo.json`
+- `src/features/invitation/templates/dragon_phoenix_blue/gift.json`
+- `src/features/invitation/templates/dragon_phoenix_blue/meta.json`
+- `src/features/invitation/templates/dragon_phoenix_blue/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/longphung_v1/Album.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Dress.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Family.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Footer.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Gifts.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Hero.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/index.ts`
-- `src/features/invitation/shell/blocks/longphung_v1/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Paper.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Schedule.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Venue.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Album.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Dress.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Family.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Footer.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Gifts.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Hero.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/index.ts`
+- `src/features/invitation/templates/_shared/longphung_v1/Lightbox.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Paper.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Schedule.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Venue.tsx`
 
 **Ảnh theme** (4)
 
@@ -2809,27 +3196,33 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/co-ba-do/demo
 - Họ khối: `co_ba_red`
-- Bìa: `src/features/invitation/shell/specs/co_ba_red/cover.json` → khóa `co_ba_red`
+- Bìa: `src/features/invitation/templates/co_ba_red/cover.json` → khóa `co_ba_red`
 - Thư mục ảnh theme: `public/images/themes/coba-red/` (2 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (12)
 
-- `src/features/invitation/shell/specs/co_ba_red/capabilities.json`
-- `src/features/invitation/shell/specs/co_ba_red/cover.json`
-- `src/features/invitation/shell/specs/co_ba_red/demo.json`
-- `src/features/invitation/shell/specs/co_ba_red/gift.json`
-- `src/features/invitation/shell/specs/co_ba_red/meta.json`
-- `src/features/invitation/shell/specs/co_ba_red/theme.json`
+- `src/features/invitation/templates/co_ba_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/co_ba_red/blocks/Credit.tsx`
+- `src/features/invitation/templates/co_ba_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/co_ba_red/blocks/index.ts`
+- `src/features/invitation/templates/co_ba_red/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/co_ba_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/co_ba_red/capabilities.json`
+- `src/features/invitation/templates/co_ba_red/cover.json`
+- `src/features/invitation/templates/co_ba_red/demo.json`
+- `src/features/invitation/templates/co_ba_red/gift.json`
+- `src/features/invitation/templates/co_ba_red/meta.json`
+- `src/features/invitation/templates/co_ba_red/theme.json`
 
 **Khối** (6)
 
-- `src/features/invitation/shell/blocks/co_ba_red/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/co_ba_red/Credit.tsx`
-- `src/features/invitation/shell/blocks/co_ba_red/Hero.tsx`
-- `src/features/invitation/shell/blocks/co_ba_red/index.ts`
-- `src/features/invitation/shell/blocks/co_ba_red/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/co_ba_red/Paper.tsx`
+- `src/features/invitation/templates/co_ba_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/co_ba_red/blocks/Credit.tsx`
+- `src/features/invitation/templates/co_ba_red/blocks/Hero.tsx`
+- `src/features/invitation/templates/co_ba_red/blocks/index.ts`
+- `src/features/invitation/templates/co_ba_red/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/co_ba_red/blocks/Paper.tsx`
 
 **Ảnh theme** (2)
 
@@ -2846,33 +3239,45 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/lien-hoa-hong/demo
 - Họ khối: `lien_hoa_pink`
-- Bìa: `src/features/invitation/shell/specs/lien_hoa_pink/cover.json` → khóa `lien_hoa_pink`
+- Bìa: `src/features/invitation/templates/lien_hoa_pink/cover.json` → khóa `lien_hoa_pink`
 - Thư mục ảnh theme: `public/images/themes/lien-hoa-pink/` (13 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (18)
 
-- `src/features/invitation/shell/specs/lien_hoa_pink/capabilities.json`
-- `src/features/invitation/shell/specs/lien_hoa_pink/cover.json`
-- `src/features/invitation/shell/specs/lien_hoa_pink/demo.json`
-- `src/features/invitation/shell/specs/lien_hoa_pink/gift.json`
-- `src/features/invitation/shell/specs/lien_hoa_pink/meta.json`
-- `src/features/invitation/shell/specs/lien_hoa_pink/theme.json`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Banquet.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Dress.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Footer.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Gifts.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/index.ts`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Paper.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Schedule.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Section1.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Venue.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/capabilities.json`
+- `src/features/invitation/templates/lien_hoa_pink/cover.json`
+- `src/features/invitation/templates/lien_hoa_pink/demo.json`
+- `src/features/invitation/templates/lien_hoa_pink/gift.json`
+- `src/features/invitation/templates/lien_hoa_pink/meta.json`
+- `src/features/invitation/templates/lien_hoa_pink/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/lien_hoa_pink/Banquet.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_pink/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_pink/Dress.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_pink/Footer.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_pink/Gifts.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_pink/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_pink/index.ts`
-- `src/features/invitation/shell/blocks/lien_hoa_pink/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_pink/Paper.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_pink/Schedule.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_pink/Section1.tsx`
-- `src/features/invitation/shell/blocks/lien_hoa_pink/Venue.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Banquet.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Dress.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Footer.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Gifts.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/index.ts`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Paper.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Schedule.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Section1.tsx`
+- `src/features/invitation/templates/lien_hoa_pink/blocks/Venue.tsx`
 
 **Ảnh theme** (13)
 
@@ -2900,36 +3305,52 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/minimalism-tim/demo
 - Họ khối: `minimalism_purple`
-- Bìa: `src/features/invitation/shell/specs/minimalism_purple/cover.json` → khóa `minimalism_purple`
+- Bìa: `src/features/invitation/templates/minimalism_purple/cover.json` → khóa `minimalism_purple`
 - Thư mục ảnh theme: `public/images/themes/minimalism-purple/` (13 file)
 
-**Spec** (6)
+**Spec** (22)
 
-- `src/features/invitation/shell/specs/minimalism_purple/capabilities.json`
-- `src/features/invitation/shell/specs/minimalism_purple/cover.json`
-- `src/features/invitation/shell/specs/minimalism_purple/demo.json`
-- `src/features/invitation/shell/specs/minimalism_purple/gift.json`
-- `src/features/invitation/shell/specs/minimalism_purple/meta.json`
-- `src/features/invitation/shell/specs/minimalism_purple/theme.json`
+- `src/features/invitation/templates/minimalism_purple/blocks/Album.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Banquet.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/BottomDecor.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Credit.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Dress.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Family.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Footer.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Gifts.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Hero.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/index.ts`
+- `src/features/invitation/templates/minimalism_purple/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Paper.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Rsvp.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Schedule.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Venue.tsx`
+- `src/features/invitation/templates/minimalism_purple/capabilities.json`
+- `src/features/invitation/templates/minimalism_purple/cover.json`
+- `src/features/invitation/templates/minimalism_purple/demo.json`
+- `src/features/invitation/templates/minimalism_purple/gift.json`
+- `src/features/invitation/templates/minimalism_purple/meta.json`
+- `src/features/invitation/templates/minimalism_purple/theme.json`
 
 **Khối** (16)
 
-- `src/features/invitation/shell/blocks/minimalism_purple/Album.tsx`
-- `src/features/invitation/shell/blocks/minimalism_purple/Banquet.tsx`
-- `src/features/invitation/shell/blocks/minimalism_purple/BottomDecor.tsx`
-- `src/features/invitation/shell/blocks/minimalism_purple/Credit.tsx`
-- `src/features/invitation/shell/blocks/minimalism_purple/Dress.tsx`
-- `src/features/invitation/shell/blocks/minimalism_purple/Family.tsx`
-- `src/features/invitation/shell/blocks/minimalism_purple/Footer.tsx`
-- `src/features/invitation/shell/blocks/minimalism_purple/Gifts.tsx`
-- `src/features/invitation/shell/blocks/minimalism_purple/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/minimalism_purple/Hero.tsx`
-- `src/features/invitation/shell/blocks/minimalism_purple/index.ts`
-- `src/features/invitation/shell/blocks/minimalism_purple/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/minimalism_purple/Paper.tsx`
-- `src/features/invitation/shell/blocks/minimalism_purple/Rsvp.tsx`
-- `src/features/invitation/shell/blocks/minimalism_purple/Schedule.tsx`
-- `src/features/invitation/shell/blocks/minimalism_purple/Venue.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Album.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Banquet.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/BottomDecor.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Credit.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Dress.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Family.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Footer.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Gifts.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Hero.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/index.ts`
+- `src/features/invitation/templates/minimalism_purple/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Paper.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Rsvp.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Schedule.tsx`
+- `src/features/invitation/templates/minimalism_purple/blocks/Venue.tsx`
 
 **Ảnh theme** (13)
 
@@ -2957,31 +3378,31 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/bach-su-v2-xanh/demo
 - Họ khối: `porcelain_v2`
-- Bìa: `src/features/invitation/shell/specs/porcelain_v2_green/cover.json` → khóa `porcelain_v2_green`
+- Bìa: `src/features/invitation/templates/porcelain_v2_green/cover.json` → khóa `porcelain_v2_green`
 - Thư mục ảnh theme: `public/images/themes/porcelain-v2-green/` (6 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/porcelain_v2_green/capabilities.json`
-- `src/features/invitation/shell/specs/porcelain_v2_green/cover.json`
-- `src/features/invitation/shell/specs/porcelain_v2_green/demo.json`
-- `src/features/invitation/shell/specs/porcelain_v2_green/gift.json`
-- `src/features/invitation/shell/specs/porcelain_v2_green/meta.json`
-- `src/features/invitation/shell/specs/porcelain_v2_green/theme.json`
+- `src/features/invitation/templates/porcelain_v2_green/capabilities.json`
+- `src/features/invitation/templates/porcelain_v2_green/cover.json`
+- `src/features/invitation/templates/porcelain_v2_green/demo.json`
+- `src/features/invitation/templates/porcelain_v2_green/gift.json`
+- `src/features/invitation/templates/porcelain_v2_green/meta.json`
+- `src/features/invitation/templates/porcelain_v2_green/theme.json`
 
 **Khối** (11)
 
-- `src/features/invitation/shell/blocks/porcelain_v2/Album.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Banquet.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Dress.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Family.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Hero.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/index.ts`
-- `src/features/invitation/shell/blocks/porcelain_v2/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Paper.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Schedule.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Venue.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Album.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Banquet.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Dress.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Family.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Hero.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/index.ts`
+- `src/features/invitation/templates/_shared/porcelain_v2/Lightbox.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Paper.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Schedule.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Venue.tsx`
 
 **Ảnh theme** (6)
 
@@ -3027,34 +3448,47 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoa-kho-v2-xanh/demo
 - Họ khối: `dried_flower_v2_green`
-- Bìa: `src/features/invitation/shell/specs/dried_flower_v2_green/cover.json` → khóa `dried_flower_v2_green`
+- Bìa: `src/features/invitation/templates/dried_flower_v2_green/cover.json` → khóa `dried_flower_v2_green`
 - Thư mục ảnh theme: `public/images/themes/dried-flower-v2-green/` (11 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (19)
 
-- `src/features/invitation/shell/specs/dried_flower_v2_green/capabilities.json`
-- `src/features/invitation/shell/specs/dried_flower_v2_green/cover.json`
-- `src/features/invitation/shell/specs/dried_flower_v2_green/demo.json`
-- `src/features/invitation/shell/specs/dried_flower_v2_green/gift.json`
-- `src/features/invitation/shell/specs/dried_flower_v2_green/meta.json`
-- `src/features/invitation/shell/specs/dried_flower_v2_green/theme.json`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Album.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Banquet.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Gifts.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Hero.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/index.ts`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Venue.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/capabilities.json`
+- `src/features/invitation/templates/dried_flower_v2_green/cover.json`
+- `src/features/invitation/templates/dried_flower_v2_green/demo.json`
+- `src/features/invitation/templates/dried_flower_v2_green/gift.json`
+- `src/features/invitation/templates/dried_flower_v2_green/meta.json`
+- `src/features/invitation/templates/dried_flower_v2_green/theme.json`
 
 **Khối** (13)
 
-- `src/features/invitation/shell/blocks/dried_flower_v2_green/Album.tsx`
-- `src/features/invitation/shell/blocks/dried_flower_v2_green/Banquet.tsx`
-- `src/features/invitation/shell/blocks/dried_flower_v2_green/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/dried_flower_v2_green/Dress.tsx`
-- `src/features/invitation/shell/blocks/dried_flower_v2_green/Footer.tsx`
-- `src/features/invitation/shell/blocks/dried_flower_v2_green/Gifts.tsx`
-- `src/features/invitation/shell/blocks/dried_flower_v2_green/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/dried_flower_v2_green/Hero.tsx`
-- `src/features/invitation/shell/blocks/dried_flower_v2_green/index.ts`
-- `src/features/invitation/shell/blocks/dried_flower_v2_green/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/dried_flower_v2_green/Paper.tsx`
-- `src/features/invitation/shell/blocks/dried_flower_v2_green/Schedule.tsx`
-- `src/features/invitation/shell/blocks/dried_flower_v2_green/Venue.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Album.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Banquet.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Gifts.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Hero.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/index.ts`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/dried_flower_v2_green/blocks/Venue.tsx`
 
 **Ảnh theme** (11)
 
@@ -3080,31 +3514,31 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/bach-su-v2-hong/demo
 - Họ khối: `porcelain_v2`
-- Bìa: `src/features/invitation/shell/specs/porcelain_v2_pink/cover.json` → khóa `porcelain_v2_pink`
+- Bìa: `src/features/invitation/templates/porcelain_v2_pink/cover.json` → khóa `porcelain_v2_pink`
 - Thư mục ảnh theme: `public/images/themes/porcelain-v2-pink/` (6 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/porcelain_v2_pink/capabilities.json`
-- `src/features/invitation/shell/specs/porcelain_v2_pink/cover.json`
-- `src/features/invitation/shell/specs/porcelain_v2_pink/demo.json`
-- `src/features/invitation/shell/specs/porcelain_v2_pink/gift.json`
-- `src/features/invitation/shell/specs/porcelain_v2_pink/meta.json`
-- `src/features/invitation/shell/specs/porcelain_v2_pink/theme.json`
+- `src/features/invitation/templates/porcelain_v2_pink/capabilities.json`
+- `src/features/invitation/templates/porcelain_v2_pink/cover.json`
+- `src/features/invitation/templates/porcelain_v2_pink/demo.json`
+- `src/features/invitation/templates/porcelain_v2_pink/gift.json`
+- `src/features/invitation/templates/porcelain_v2_pink/meta.json`
+- `src/features/invitation/templates/porcelain_v2_pink/theme.json`
 
 **Khối** (11)
 
-- `src/features/invitation/shell/blocks/porcelain_v2/Album.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Banquet.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Dress.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Family.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Hero.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/index.ts`
-- `src/features/invitation/shell/blocks/porcelain_v2/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Paper.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Schedule.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Venue.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Album.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Banquet.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Dress.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Family.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Hero.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/index.ts`
+- `src/features/invitation/templates/_shared/porcelain_v2/Lightbox.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Paper.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Schedule.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Venue.tsx`
 
 **Ảnh theme** (6)
 
@@ -3130,34 +3564,47 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoa-kho-v2-lam/demo
 - Họ khối: `hoa_kho_v2_blue`
-- Bìa: `src/features/invitation/shell/specs/hoa_kho_v2_blue/cover.json` → khóa `hoa_kho_v2_blue`
+- Bìa: `src/features/invitation/templates/hoa_kho_v2_blue/cover.json` → khóa `hoa_kho_v2_blue`
 - Thư mục ảnh theme: `public/images/themes/hoa-kho-v2-blue/` (11 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (19)
 
-- `src/features/invitation/shell/specs/hoa_kho_v2_blue/capabilities.json`
-- `src/features/invitation/shell/specs/hoa_kho_v2_blue/cover.json`
-- `src/features/invitation/shell/specs/hoa_kho_v2_blue/demo.json`
-- `src/features/invitation/shell/specs/hoa_kho_v2_blue/gift.json`
-- `src/features/invitation/shell/specs/hoa_kho_v2_blue/meta.json`
-- `src/features/invitation/shell/specs/hoa_kho_v2_blue/theme.json`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Album.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Banquet.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Dress.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Footer.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Gifts.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Hero.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/index.ts`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Paper.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Schedule.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Venue.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/capabilities.json`
+- `src/features/invitation/templates/hoa_kho_v2_blue/cover.json`
+- `src/features/invitation/templates/hoa_kho_v2_blue/demo.json`
+- `src/features/invitation/templates/hoa_kho_v2_blue/gift.json`
+- `src/features/invitation/templates/hoa_kho_v2_blue/meta.json`
+- `src/features/invitation/templates/hoa_kho_v2_blue/theme.json`
 
 **Khối** (13)
 
-- `src/features/invitation/shell/blocks/hoa_kho_v2_blue/Album.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_v2_blue/Banquet.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_v2_blue/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_v2_blue/Dress.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_v2_blue/Footer.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_v2_blue/Gifts.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_v2_blue/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_v2_blue/Hero.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_v2_blue/index.ts`
-- `src/features/invitation/shell/blocks/hoa_kho_v2_blue/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_v2_blue/Paper.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_v2_blue/Schedule.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_v2_blue/Venue.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Album.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Banquet.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Dress.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Footer.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Gifts.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Hero.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/index.ts`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Paper.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Schedule.tsx`
+- `src/features/invitation/templates/hoa_kho_v2_blue/blocks/Venue.tsx`
 
 **Ảnh theme** (11)
 
@@ -3183,32 +3630,32 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/long-phung-huyen/demo
 - Họ khối: `longphung_v1`
-- Bìa: `src/features/invitation/shell/specs/dragon_phoenix_black/cover.json` → khóa `dragon_phoenix_black`
+- Bìa: `src/features/invitation/templates/dragon_phoenix_black/cover.json` → khóa `dragon_phoenix_black`
 - Thư mục ảnh theme: `public/images/themes/red-v1/` (4 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/dragon_phoenix_black/capabilities.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_black/cover.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_black/demo.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_black/gift.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_black/meta.json`
-- `src/features/invitation/shell/specs/dragon_phoenix_black/theme.json`
+- `src/features/invitation/templates/dragon_phoenix_black/capabilities.json`
+- `src/features/invitation/templates/dragon_phoenix_black/cover.json`
+- `src/features/invitation/templates/dragon_phoenix_black/demo.json`
+- `src/features/invitation/templates/dragon_phoenix_black/gift.json`
+- `src/features/invitation/templates/dragon_phoenix_black/meta.json`
+- `src/features/invitation/templates/dragon_phoenix_black/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/longphung_v1/Album.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Dress.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Family.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Footer.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Gifts.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Hero.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/index.ts`
-- `src/features/invitation/shell/blocks/longphung_v1/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Paper.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Schedule.tsx`
-- `src/features/invitation/shell/blocks/longphung_v1/Venue.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Album.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Dress.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Family.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Footer.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Gifts.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Hero.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/index.ts`
+- `src/features/invitation/templates/_shared/longphung_v1/Lightbox.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Paper.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Schedule.tsx`
+- `src/features/invitation/templates/_shared/longphung_v1/Venue.tsx`
 
 **Ảnh theme** (4)
 
@@ -3227,35 +3674,49 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoang-kim-ii-xanh/demo
 - Họ khối: `royal_v2_green`
-- Bìa: `src/features/invitation/shell/specs/royal_v2_green/cover.json` → khóa `royal_v2_green`
+- Bìa: `src/features/invitation/templates/royal_v2_green/cover.json` → khóa `royal_v2_green`
 - Thư mục ảnh theme: `public/images/themes/royal-v2-green/` (12 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (20)
 
-- `src/features/invitation/shell/specs/royal_v2_green/capabilities.json`
-- `src/features/invitation/shell/specs/royal_v2_green/cover.json`
-- `src/features/invitation/shell/specs/royal_v2_green/demo.json`
-- `src/features/invitation/shell/specs/royal_v2_green/gift.json`
-- `src/features/invitation/shell/specs/royal_v2_green/meta.json`
-- `src/features/invitation/shell/specs/royal_v2_green/theme.json`
+- `src/features/invitation/templates/royal_v2_green/blocks/Album.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Banquet.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Gifts.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/index.ts`
+- `src/features/invitation/templates/royal_v2_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Section1.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Section5.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Venue.tsx`
+- `src/features/invitation/templates/royal_v2_green/capabilities.json`
+- `src/features/invitation/templates/royal_v2_green/cover.json`
+- `src/features/invitation/templates/royal_v2_green/demo.json`
+- `src/features/invitation/templates/royal_v2_green/gift.json`
+- `src/features/invitation/templates/royal_v2_green/meta.json`
+- `src/features/invitation/templates/royal_v2_green/theme.json`
 
 **Khối** (14)
 
-- `src/features/invitation/shell/blocks/royal_v2_green/Album.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_green/Banquet.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_green/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_green/Dress.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_green/Footer.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_green/Gifts.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_green/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_green/index.ts`
-- `src/features/invitation/shell/blocks/royal_v2_green/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_green/Paper.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_green/Schedule.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_green/Section1.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_green/Section5.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_green/Venue.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Album.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Banquet.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Gifts.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/index.ts`
+- `src/features/invitation/templates/royal_v2_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Section1.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Section5.tsx`
+- `src/features/invitation/templates/royal_v2_green/blocks/Venue.tsx`
 
 **Ảnh theme** (12)
 
@@ -3282,34 +3743,47 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoang-kim-xanh/demo
 - Họ khối: `royal_green`
-- Bìa: `src/features/invitation/shell/specs/royal_green/cover.json` → khóa `royal_green`
+- Bìa: `src/features/invitation/templates/royal_green/cover.json` → khóa `royal_green`
 - Thư mục ảnh theme: `public/images/themes/royal-green/` (5 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (19)
 
-- `src/features/invitation/shell/specs/royal_green/capabilities.json`
-- `src/features/invitation/shell/specs/royal_green/cover.json`
-- `src/features/invitation/shell/specs/royal_green/demo.json`
-- `src/features/invitation/shell/specs/royal_green/gift.json`
-- `src/features/invitation/shell/specs/royal_green/meta.json`
-- `src/features/invitation/shell/specs/royal_green/theme.json`
+- `src/features/invitation/templates/royal_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Credit.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Gifts.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Hero.tsx`
+- `src/features/invitation/templates/royal_green/blocks/index.ts`
+- `src/features/invitation/templates/royal_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Section1.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Venue.tsx`
+- `src/features/invitation/templates/royal_green/capabilities.json`
+- `src/features/invitation/templates/royal_green/cover.json`
+- `src/features/invitation/templates/royal_green/demo.json`
+- `src/features/invitation/templates/royal_green/gift.json`
+- `src/features/invitation/templates/royal_green/meta.json`
+- `src/features/invitation/templates/royal_green/theme.json`
 
 **Khối** (13)
 
-- `src/features/invitation/shell/blocks/royal_green/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/royal_green/Credit.tsx`
-- `src/features/invitation/shell/blocks/royal_green/Dress.tsx`
-- `src/features/invitation/shell/blocks/royal_green/Footer.tsx`
-- `src/features/invitation/shell/blocks/royal_green/Gifts.tsx`
-- `src/features/invitation/shell/blocks/royal_green/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/royal_green/Hero.tsx`
-- `src/features/invitation/shell/blocks/royal_green/index.ts`
-- `src/features/invitation/shell/blocks/royal_green/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/royal_green/Paper.tsx`
-- `src/features/invitation/shell/blocks/royal_green/Schedule.tsx`
-- `src/features/invitation/shell/blocks/royal_green/Section1.tsx`
-- `src/features/invitation/shell/blocks/royal_green/Venue.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Credit.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Gifts.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Hero.tsx`
+- `src/features/invitation/templates/royal_green/blocks/index.ts`
+- `src/features/invitation/templates/royal_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Section1.tsx`
+- `src/features/invitation/templates/royal_green/blocks/Venue.tsx`
 
 **Ảnh theme** (5)
 
@@ -3325,34 +3799,47 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/baroque-lam/demo
 - Họ khối: `baroque_blue`
-- Bìa: `src/features/invitation/shell/specs/baroque_blue/cover.json` → khóa `baroque_blue`
+- Bìa: `src/features/invitation/templates/baroque_blue/cover.json` → khóa `baroque_blue`
 - Thư mục ảnh theme: `public/images/themes/baroque-blue/` (13 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (19)
 
-- `src/features/invitation/shell/specs/baroque_blue/capabilities.json`
-- `src/features/invitation/shell/specs/baroque_blue/cover.json`
-- `src/features/invitation/shell/specs/baroque_blue/demo.json`
-- `src/features/invitation/shell/specs/baroque_blue/gift.json`
-- `src/features/invitation/shell/specs/baroque_blue/meta.json`
-- `src/features/invitation/shell/specs/baroque_blue/theme.json`
+- `src/features/invitation/templates/baroque_blue/blocks/Album.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Banquet.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Dress.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Footer.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Gifts.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/index.ts`
+- `src/features/invitation/templates/baroque_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Paper.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Schedule.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Section1.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Venue.tsx`
+- `src/features/invitation/templates/baroque_blue/capabilities.json`
+- `src/features/invitation/templates/baroque_blue/cover.json`
+- `src/features/invitation/templates/baroque_blue/demo.json`
+- `src/features/invitation/templates/baroque_blue/gift.json`
+- `src/features/invitation/templates/baroque_blue/meta.json`
+- `src/features/invitation/templates/baroque_blue/theme.json`
 
 **Khối** (13)
 
-- `src/features/invitation/shell/blocks/baroque_blue/Album.tsx`
-- `src/features/invitation/shell/blocks/baroque_blue/Banquet.tsx`
-- `src/features/invitation/shell/blocks/baroque_blue/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/baroque_blue/Dress.tsx`
-- `src/features/invitation/shell/blocks/baroque_blue/Footer.tsx`
-- `src/features/invitation/shell/blocks/baroque_blue/Gifts.tsx`
-- `src/features/invitation/shell/blocks/baroque_blue/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/baroque_blue/index.ts`
-- `src/features/invitation/shell/blocks/baroque_blue/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/baroque_blue/Paper.tsx`
-- `src/features/invitation/shell/blocks/baroque_blue/Schedule.tsx`
-- `src/features/invitation/shell/blocks/baroque_blue/Section1.tsx`
-- `src/features/invitation/shell/blocks/baroque_blue/Venue.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Album.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Banquet.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Dress.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Footer.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Gifts.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/index.ts`
+- `src/features/invitation/templates/baroque_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Paper.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Schedule.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Section1.tsx`
+- `src/features/invitation/templates/baroque_blue/blocks/Venue.tsx`
 
 **Ảnh theme** (13)
 
@@ -3380,25 +3867,29 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/bach-su-nau/demo
 - Họ khối: `porcelain_brown`
-- Bìa: `src/features/invitation/shell/specs/porcelain_brown/cover.json` → khóa `porcelain_brown`
+- Bìa: `src/features/invitation/templates/porcelain_brown/cover.json` → khóa `porcelain_brown`
 - Thư mục ảnh theme: `public/images/themes/porcelain-brown/` (6 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (10)
 
-- `src/features/invitation/shell/specs/porcelain_brown/capabilities.json`
-- `src/features/invitation/shell/specs/porcelain_brown/cover.json`
-- `src/features/invitation/shell/specs/porcelain_brown/demo.json`
-- `src/features/invitation/shell/specs/porcelain_brown/gift.json`
-- `src/features/invitation/shell/specs/porcelain_brown/meta.json`
-- `src/features/invitation/shell/specs/porcelain_brown/theme.json`
+- `src/features/invitation/templates/porcelain_brown/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/porcelain_brown/blocks/index.ts`
+- `src/features/invitation/templates/porcelain_brown/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/porcelain_brown/blocks/Paper.tsx`
+- `src/features/invitation/templates/porcelain_brown/capabilities.json`
+- `src/features/invitation/templates/porcelain_brown/cover.json`
+- `src/features/invitation/templates/porcelain_brown/demo.json`
+- `src/features/invitation/templates/porcelain_brown/gift.json`
+- `src/features/invitation/templates/porcelain_brown/meta.json`
+- `src/features/invitation/templates/porcelain_brown/theme.json`
 
 **Khối** (4)
 
-- `src/features/invitation/shell/blocks/porcelain_brown/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/porcelain_brown/index.ts`
-- `src/features/invitation/shell/blocks/porcelain_brown/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/porcelain_brown/Paper.tsx`
+- `src/features/invitation/templates/porcelain_brown/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/porcelain_brown/blocks/index.ts`
+- `src/features/invitation/templates/porcelain_brown/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/porcelain_brown/blocks/Paper.tsx`
 
 **Ảnh theme** (6)
 
@@ -3419,35 +3910,35 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoa-thuy-tinh-do/demo
 - Họ khối: `crystal_floral`
-- Bìa: `src/features/invitation/shell/specs/crystal_floral_red/cover.json` → khóa `crystal_floral_red`
+- Bìa: `src/features/invitation/templates/crystal_floral_red/cover.json` → khóa `crystal_floral_red`
 - Thư mục ảnh theme: `public/images/themes/crystal-floral-red/` (11 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/crystal_floral_red/capabilities.json`
-- `src/features/invitation/shell/specs/crystal_floral_red/cover.json`
-- `src/features/invitation/shell/specs/crystal_floral_red/demo.json`
-- `src/features/invitation/shell/specs/crystal_floral_red/gift.json`
-- `src/features/invitation/shell/specs/crystal_floral_red/meta.json`
-- `src/features/invitation/shell/specs/crystal_floral_red/theme.json`
+- `src/features/invitation/templates/crystal_floral_red/capabilities.json`
+- `src/features/invitation/templates/crystal_floral_red/cover.json`
+- `src/features/invitation/templates/crystal_floral_red/demo.json`
+- `src/features/invitation/templates/crystal_floral_red/gift.json`
+- `src/features/invitation/templates/crystal_floral_red/meta.json`
+- `src/features/invitation/templates/crystal_floral_red/theme.json`
 
 **Khối** (15)
 
-- `src/features/invitation/shell/blocks/crystal_floral/BottomDecor.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/DressCode.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Footer.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Gifts.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Hero.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/index.ts`
-- `src/features/invitation/shell/blocks/crystal_floral/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Schedule.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/ThankYou.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/themeVars.ts`
-- `src/features/invitation/shell/blocks/crystal_floral/TopDecor.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Venue.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Watermark.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/BottomDecor.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Ceremony.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/DressCode.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Footer.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Gifts.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Hero.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/index.ts`
+- `src/features/invitation/templates/_shared/crystal_floral/Lightbox.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Schedule.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/ThankYou.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/themeVars.ts`
+- `src/features/invitation/templates/_shared/crystal_floral/TopDecor.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Venue.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Watermark.tsx`
 
 **Ảnh theme** (11)
 
@@ -3496,34 +3987,47 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoang-kim-lam/demo
 - Họ khối: `royal_blue`
-- Bìa: `src/features/invitation/shell/specs/royal_blue/cover.json` → khóa `royal_blue`
+- Bìa: `src/features/invitation/templates/royal_blue/cover.json` → khóa `royal_blue`
 - Thư mục ảnh theme: `public/images/themes/royal-blue/` (5 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (19)
 
-- `src/features/invitation/shell/specs/royal_blue/capabilities.json`
-- `src/features/invitation/shell/specs/royal_blue/cover.json`
-- `src/features/invitation/shell/specs/royal_blue/demo.json`
-- `src/features/invitation/shell/specs/royal_blue/gift.json`
-- `src/features/invitation/shell/specs/royal_blue/meta.json`
-- `src/features/invitation/shell/specs/royal_blue/theme.json`
+- `src/features/invitation/templates/royal_blue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Credit.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Dress.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Footer.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Gifts.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Hero.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/index.ts`
+- `src/features/invitation/templates/royal_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Paper.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Schedule.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Section1.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Venue.tsx`
+- `src/features/invitation/templates/royal_blue/capabilities.json`
+- `src/features/invitation/templates/royal_blue/cover.json`
+- `src/features/invitation/templates/royal_blue/demo.json`
+- `src/features/invitation/templates/royal_blue/gift.json`
+- `src/features/invitation/templates/royal_blue/meta.json`
+- `src/features/invitation/templates/royal_blue/theme.json`
 
 **Khối** (13)
 
-- `src/features/invitation/shell/blocks/royal_blue/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/royal_blue/Credit.tsx`
-- `src/features/invitation/shell/blocks/royal_blue/Dress.tsx`
-- `src/features/invitation/shell/blocks/royal_blue/Footer.tsx`
-- `src/features/invitation/shell/blocks/royal_blue/Gifts.tsx`
-- `src/features/invitation/shell/blocks/royal_blue/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/royal_blue/Hero.tsx`
-- `src/features/invitation/shell/blocks/royal_blue/index.ts`
-- `src/features/invitation/shell/blocks/royal_blue/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/royal_blue/Paper.tsx`
-- `src/features/invitation/shell/blocks/royal_blue/Schedule.tsx`
-- `src/features/invitation/shell/blocks/royal_blue/Section1.tsx`
-- `src/features/invitation/shell/blocks/royal_blue/Venue.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Credit.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Dress.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Footer.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Gifts.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Hero.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/index.ts`
+- `src/features/invitation/templates/royal_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Paper.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Schedule.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Section1.tsx`
+- `src/features/invitation/templates/royal_blue/blocks/Venue.tsx`
 
 **Ảnh theme** (5)
 
@@ -3540,38 +4044,55 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Nguồn: https://chungdoi.com/vi/mau-thiep/riviera-lam/demo
 - Họ khối: `riviera`
 - Bộ sinh: `scripts/clone/gen_riviera.cjs`
-- Bìa: `src/features/invitation/shell/specs/riviera_blue/cover.json` → khóa `riviera_blue`
+- Bìa: `src/features/invitation/templates/riviera_blue/cover.json` → khóa `riviera_blue`
 - Thư mục ảnh theme: `public/images/themes/riviera-blue/` (24 file)
 - Ghi chú: Đạt 0 lệch hình học theo AGENTS.md
 
-**Spec** (6)
+**Spec** (23)
 
-- `src/features/invitation/shell/specs/riviera_blue/capabilities.json`
-- `src/features/invitation/shell/specs/riviera_blue/cover.json`
-- `src/features/invitation/shell/specs/riviera_blue/demo.json`
-- `src/features/invitation/shell/specs/riviera_blue/gift.json`
-- `src/features/invitation/shell/specs/riviera_blue/meta.json`
-- `src/features/invitation/shell/specs/riviera_blue/theme.json`
+- `src/features/invitation/templates/riviera_blue/blocks/Album.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Banquet.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Credit.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Dress.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Family.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Gifts.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Hero.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/index.ts`
+- `src/features/invitation/templates/riviera_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/LineDecoration.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Paper.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/RsvpBridge.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Schedule.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Stone.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Thanks.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Venue.tsx`
+- `src/features/invitation/templates/riviera_blue/capabilities.json`
+- `src/features/invitation/templates/riviera_blue/cover.json`
+- `src/features/invitation/templates/riviera_blue/demo.json`
+- `src/features/invitation/templates/riviera_blue/gift.json`
+- `src/features/invitation/templates/riviera_blue/meta.json`
+- `src/features/invitation/templates/riviera_blue/theme.json`
 
 **Khối** (17)
 
-- `src/features/invitation/shell/blocks/riviera/Album.tsx`
-- `src/features/invitation/shell/blocks/riviera/Banquet.tsx`
-- `src/features/invitation/shell/blocks/riviera/Credit.tsx`
-- `src/features/invitation/shell/blocks/riviera/Dress.tsx`
-- `src/features/invitation/shell/blocks/riviera/Family.tsx`
-- `src/features/invitation/shell/blocks/riviera/Gifts.tsx`
-- `src/features/invitation/shell/blocks/riviera/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/riviera/Hero.tsx`
-- `src/features/invitation/shell/blocks/riviera/index.ts`
-- `src/features/invitation/shell/blocks/riviera/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/riviera/LineDecoration.tsx`
-- `src/features/invitation/shell/blocks/riviera/Paper.tsx`
-- `src/features/invitation/shell/blocks/riviera/RsvpBridge.tsx`
-- `src/features/invitation/shell/blocks/riviera/Schedule.tsx`
-- `src/features/invitation/shell/blocks/riviera/Stone.tsx`
-- `src/features/invitation/shell/blocks/riviera/Thanks.tsx`
-- `src/features/invitation/shell/blocks/riviera/Venue.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Album.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Banquet.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Credit.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Dress.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Family.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Gifts.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Hero.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/index.ts`
+- `src/features/invitation/templates/riviera_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/LineDecoration.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Paper.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/RsvpBridge.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Schedule.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Stone.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Thanks.tsx`
+- `src/features/invitation/templates/riviera_blue/blocks/Venue.tsx`
 
 **Ảnh theme** (24)
 
@@ -3651,35 +4172,49 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/florence-nau/demo
 - Họ khối: `florence_brown`
-- Bìa: `src/features/invitation/shell/specs/florence_brown/cover.json` → khóa `florence_brown`
+- Bìa: `src/features/invitation/templates/florence_brown/cover.json` → khóa `florence_brown`
 - Thư mục ảnh theme: `public/images/themes/florence-brown/` (19 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (20)
 
-- `src/features/invitation/shell/specs/florence_brown/capabilities.json`
-- `src/features/invitation/shell/specs/florence_brown/cover.json`
-- `src/features/invitation/shell/specs/florence_brown/demo.json`
-- `src/features/invitation/shell/specs/florence_brown/gift.json`
-- `src/features/invitation/shell/specs/florence_brown/meta.json`
-- `src/features/invitation/shell/specs/florence_brown/theme.json`
+- `src/features/invitation/templates/florence_brown/blocks/Album.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Banquet.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Credit.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Dress.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Footer.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Gifts.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/index.ts`
+- `src/features/invitation/templates/florence_brown/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Paper.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Schedule.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Section1.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Venue.tsx`
+- `src/features/invitation/templates/florence_brown/capabilities.json`
+- `src/features/invitation/templates/florence_brown/cover.json`
+- `src/features/invitation/templates/florence_brown/demo.json`
+- `src/features/invitation/templates/florence_brown/gift.json`
+- `src/features/invitation/templates/florence_brown/meta.json`
+- `src/features/invitation/templates/florence_brown/theme.json`
 
 **Khối** (14)
 
-- `src/features/invitation/shell/blocks/florence_brown/Album.tsx`
-- `src/features/invitation/shell/blocks/florence_brown/Banquet.tsx`
-- `src/features/invitation/shell/blocks/florence_brown/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/florence_brown/Credit.tsx`
-- `src/features/invitation/shell/blocks/florence_brown/Dress.tsx`
-- `src/features/invitation/shell/blocks/florence_brown/Footer.tsx`
-- `src/features/invitation/shell/blocks/florence_brown/Gifts.tsx`
-- `src/features/invitation/shell/blocks/florence_brown/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/florence_brown/index.ts`
-- `src/features/invitation/shell/blocks/florence_brown/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/florence_brown/Paper.tsx`
-- `src/features/invitation/shell/blocks/florence_brown/Schedule.tsx`
-- `src/features/invitation/shell/blocks/florence_brown/Section1.tsx`
-- `src/features/invitation/shell/blocks/florence_brown/Venue.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Album.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Banquet.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Credit.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Dress.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Footer.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Gifts.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/index.ts`
+- `src/features/invitation/templates/florence_brown/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Paper.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Schedule.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Section1.tsx`
+- `src/features/invitation/templates/florence_brown/blocks/Venue.tsx`
 
 **Ảnh theme** (19)
 
@@ -3723,37 +4258,37 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/baroque-v2-lam-dam/demo
 - Họ khối: `baroque_v2`
-- Bìa: `src/features/invitation/shell/specs/baroque_v2_darkblue/cover.json` → khóa `baroque_v2_darkblue`
+- Bìa: `src/features/invitation/templates/baroque_v2_darkblue/cover.json` → khóa `baroque_v2_darkblue`
 - Thư mục ảnh theme: `public/images/themes/baroque-v2-dark-blue/` (12 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/baroque_v2_darkblue/capabilities.json`
-- `src/features/invitation/shell/specs/baroque_v2_darkblue/cover.json`
-- `src/features/invitation/shell/specs/baroque_v2_darkblue/demo.json`
-- `src/features/invitation/shell/specs/baroque_v2_darkblue/gift.json`
-- `src/features/invitation/shell/specs/baroque_v2_darkblue/meta.json`
-- `src/features/invitation/shell/specs/baroque_v2_darkblue/theme.json`
+- `src/features/invitation/templates/baroque_v2_darkblue/capabilities.json`
+- `src/features/invitation/templates/baroque_v2_darkblue/cover.json`
+- `src/features/invitation/templates/baroque_v2_darkblue/demo.json`
+- `src/features/invitation/templates/baroque_v2_darkblue/gift.json`
+- `src/features/invitation/templates/baroque_v2_darkblue/meta.json`
+- `src/features/invitation/templates/baroque_v2_darkblue/theme.json`
 
 **Khối** (17)
 
-- `src/features/invitation/shell/blocks/baroque_v2/Album.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Banquet.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/BottomDecor.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/DressCode.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Footer.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Gifts.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Hero.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/index.ts`
-- `src/features/invitation/shell/blocks/baroque_v2/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Paper.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/RsvpAction.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/Schedule.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/ThankYou.tsx`
-- `src/features/invitation/shell/blocks/baroque_v2/themeVars.ts`
-- `src/features/invitation/shell/blocks/baroque_v2/Venue.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Album.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Banquet.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/BottomDecor.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Ceremony.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/DressCode.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Footer.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Gifts.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Hero.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/index.ts`
+- `src/features/invitation/templates/_shared/baroque_v2/Lightbox.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Paper.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/RsvpAction.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/Schedule.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/ThankYou.tsx`
+- `src/features/invitation/templates/_shared/baroque_v2/themeVars.ts`
+- `src/features/invitation/templates/_shared/baroque_v2/Venue.tsx`
 
 **Ảnh theme** (12)
 
@@ -3798,32 +4333,44 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Nguồn: https://chungdoi.com/vi/mau-thiep/mai-lan-xanh/demo
 - Họ khối: `jasmine_green`
 - Bộ sinh: `scripts/clone/gen_jasmine_green.cjs`
-- Bìa: `src/features/invitation/shell/specs/jasmine_green/cover.json` → khóa `jasmine_green`
+- Bìa: `src/features/invitation/templates/jasmine_green/cover.json` → khóa `jasmine_green`
 - Thư mục ảnh theme: `public/images/themes/jasmine-green/` (27 file)
 
-**Spec** (6)
+**Spec** (18)
 
-- `src/features/invitation/shell/specs/jasmine_green/capabilities.json`
-- `src/features/invitation/shell/specs/jasmine_green/cover.json`
-- `src/features/invitation/shell/specs/jasmine_green/demo.json`
-- `src/features/invitation/shell/specs/jasmine_green/gift.json`
-- `src/features/invitation/shell/specs/jasmine_green/meta.json`
-- `src/features/invitation/shell/specs/jasmine_green/theme.json`
+- `src/features/invitation/templates/jasmine_green/blocks/Album.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/Banquet.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/Family.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/Gifts.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/Hero.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/index.ts`
+- `src/features/invitation/templates/jasmine_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/Venue.tsx`
+- `src/features/invitation/templates/jasmine_green/capabilities.json`
+- `src/features/invitation/templates/jasmine_green/cover.json`
+- `src/features/invitation/templates/jasmine_green/demo.json`
+- `src/features/invitation/templates/jasmine_green/gift.json`
+- `src/features/invitation/templates/jasmine_green/meta.json`
+- `src/features/invitation/templates/jasmine_green/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/jasmine_green/Album.tsx`
-- `src/features/invitation/shell/blocks/jasmine_green/Banquet.tsx`
-- `src/features/invitation/shell/blocks/jasmine_green/Dress.tsx`
-- `src/features/invitation/shell/blocks/jasmine_green/Family.tsx`
-- `src/features/invitation/shell/blocks/jasmine_green/Footer.tsx`
-- `src/features/invitation/shell/blocks/jasmine_green/Gifts.tsx`
-- `src/features/invitation/shell/blocks/jasmine_green/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/jasmine_green/Hero.tsx`
-- `src/features/invitation/shell/blocks/jasmine_green/index.ts`
-- `src/features/invitation/shell/blocks/jasmine_green/Paper.tsx`
-- `src/features/invitation/shell/blocks/jasmine_green/Schedule.tsx`
-- `src/features/invitation/shell/blocks/jasmine_green/Venue.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/Album.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/Banquet.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/Family.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/Gifts.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/Hero.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/index.ts`
+- `src/features/invitation/templates/jasmine_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/jasmine_green/blocks/Venue.tsx`
 
 **Ảnh theme** (27)
 
@@ -3894,35 +4441,49 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoa-huong-duong/demo
 - Họ khối: `sunflower_yellow`
-- Bìa: `src/features/invitation/shell/specs/sunflower_yellow/cover.json` → khóa `sunflower_yellow`
+- Bìa: `src/features/invitation/templates/sunflower_yellow/cover.json` → khóa `sunflower_yellow`
 - Thư mục ảnh theme: `public/images/themes/sunflower/` (7 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (20)
 
-- `src/features/invitation/shell/specs/sunflower_yellow/capabilities.json`
-- `src/features/invitation/shell/specs/sunflower_yellow/cover.json`
-- `src/features/invitation/shell/specs/sunflower_yellow/demo.json`
-- `src/features/invitation/shell/specs/sunflower_yellow/gift.json`
-- `src/features/invitation/shell/specs/sunflower_yellow/meta.json`
-- `src/features/invitation/shell/specs/sunflower_yellow/theme.json`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Album.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Banquet.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Credit.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Dress.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Footer.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Gifts.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Hero.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/index.ts`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Paper.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Schedule.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Venue.tsx`
+- `src/features/invitation/templates/sunflower_yellow/capabilities.json`
+- `src/features/invitation/templates/sunflower_yellow/cover.json`
+- `src/features/invitation/templates/sunflower_yellow/demo.json`
+- `src/features/invitation/templates/sunflower_yellow/gift.json`
+- `src/features/invitation/templates/sunflower_yellow/meta.json`
+- `src/features/invitation/templates/sunflower_yellow/theme.json`
 
 **Khối** (14)
 
-- `src/features/invitation/shell/blocks/sunflower_yellow/Album.tsx`
-- `src/features/invitation/shell/blocks/sunflower_yellow/Banquet.tsx`
-- `src/features/invitation/shell/blocks/sunflower_yellow/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/sunflower_yellow/Credit.tsx`
-- `src/features/invitation/shell/blocks/sunflower_yellow/Dress.tsx`
-- `src/features/invitation/shell/blocks/sunflower_yellow/Footer.tsx`
-- `src/features/invitation/shell/blocks/sunflower_yellow/Gifts.tsx`
-- `src/features/invitation/shell/blocks/sunflower_yellow/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/sunflower_yellow/Hero.tsx`
-- `src/features/invitation/shell/blocks/sunflower_yellow/index.ts`
-- `src/features/invitation/shell/blocks/sunflower_yellow/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/sunflower_yellow/Paper.tsx`
-- `src/features/invitation/shell/blocks/sunflower_yellow/Schedule.tsx`
-- `src/features/invitation/shell/blocks/sunflower_yellow/Venue.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Album.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Banquet.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Credit.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Dress.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Footer.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Gifts.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Hero.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/index.ts`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Paper.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Schedule.tsx`
+- `src/features/invitation/templates/sunflower_yellow/blocks/Venue.tsx`
 
 **Ảnh theme** (7)
 
@@ -3944,35 +4505,35 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoa-thuy-tinh-xanh/demo
 - Họ khối: `crystal_floral`
-- Bìa: `src/features/invitation/shell/specs/crystal_floral_green/cover.json` → khóa `crystal_floral_green`
+- Bìa: `src/features/invitation/templates/crystal_floral_green/cover.json` → khóa `crystal_floral_green`
 - Thư mục ảnh theme: `public/images/themes/crystal-floral-green/` (11 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/crystal_floral_green/capabilities.json`
-- `src/features/invitation/shell/specs/crystal_floral_green/cover.json`
-- `src/features/invitation/shell/specs/crystal_floral_green/demo.json`
-- `src/features/invitation/shell/specs/crystal_floral_green/gift.json`
-- `src/features/invitation/shell/specs/crystal_floral_green/meta.json`
-- `src/features/invitation/shell/specs/crystal_floral_green/theme.json`
+- `src/features/invitation/templates/crystal_floral_green/capabilities.json`
+- `src/features/invitation/templates/crystal_floral_green/cover.json`
+- `src/features/invitation/templates/crystal_floral_green/demo.json`
+- `src/features/invitation/templates/crystal_floral_green/gift.json`
+- `src/features/invitation/templates/crystal_floral_green/meta.json`
+- `src/features/invitation/templates/crystal_floral_green/theme.json`
 
 **Khối** (15)
 
-- `src/features/invitation/shell/blocks/crystal_floral/BottomDecor.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/DressCode.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Footer.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Gifts.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Hero.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/index.ts`
-- `src/features/invitation/shell/blocks/crystal_floral/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Schedule.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/ThankYou.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/themeVars.ts`
-- `src/features/invitation/shell/blocks/crystal_floral/TopDecor.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Venue.tsx`
-- `src/features/invitation/shell/blocks/crystal_floral/Watermark.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/BottomDecor.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Ceremony.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/DressCode.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Footer.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Gifts.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Hero.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/index.ts`
+- `src/features/invitation/templates/_shared/crystal_floral/Lightbox.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Schedule.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/ThankYou.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/themeVars.ts`
+- `src/features/invitation/templates/_shared/crystal_floral/TopDecor.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Venue.tsx`
+- `src/features/invitation/templates/_shared/crystal_floral/Watermark.tsx`
 
 **Ảnh theme** (11)
 
@@ -4024,31 +4585,46 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/santorini-blue/` (18 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (5)
+**Spec** (20)
 
-- `src/features/invitation/shell/specs/santorini_blue/capabilities.json`
-- `src/features/invitation/shell/specs/santorini_blue/demo.json`
-- `src/features/invitation/shell/specs/santorini_blue/gift.json`
-- `src/features/invitation/shell/specs/santorini_blue/meta.json`
-- `src/features/invitation/shell/specs/santorini_blue/theme.json`
+- `src/features/invitation/templates/santorini_blue/blocks/Album.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Banquet.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Credit.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Dress.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Footer.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Gifts.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/index.ts`
+- `src/features/invitation/templates/santorini_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Paper.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Schedule.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Section1.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Section5.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Venue.tsx`
+- `src/features/invitation/templates/santorini_blue/capabilities.json`
+- `src/features/invitation/templates/santorini_blue/demo.json`
+- `src/features/invitation/templates/santorini_blue/gift.json`
+- `src/features/invitation/templates/santorini_blue/meta.json`
+- `src/features/invitation/templates/santorini_blue/theme.json`
 
 **Khối** (15)
 
-- `src/features/invitation/shell/blocks/santorini_blue/Album.tsx`
-- `src/features/invitation/shell/blocks/santorini_blue/Banquet.tsx`
-- `src/features/invitation/shell/blocks/santorini_blue/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/santorini_blue/Credit.tsx`
-- `src/features/invitation/shell/blocks/santorini_blue/Dress.tsx`
-- `src/features/invitation/shell/blocks/santorini_blue/Footer.tsx`
-- `src/features/invitation/shell/blocks/santorini_blue/Gifts.tsx`
-- `src/features/invitation/shell/blocks/santorini_blue/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/santorini_blue/index.ts`
-- `src/features/invitation/shell/blocks/santorini_blue/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/santorini_blue/Paper.tsx`
-- `src/features/invitation/shell/blocks/santorini_blue/Schedule.tsx`
-- `src/features/invitation/shell/blocks/santorini_blue/Section1.tsx`
-- `src/features/invitation/shell/blocks/santorini_blue/Section5.tsx`
-- `src/features/invitation/shell/blocks/santorini_blue/Venue.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Album.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Banquet.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Credit.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Dress.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Footer.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Gifts.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/index.ts`
+- `src/features/invitation/templates/santorini_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Paper.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Schedule.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Section1.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Section5.tsx`
+- `src/features/invitation/templates/santorini_blue/blocks/Venue.tsx`
 
 **Ảnh theme** (18)
 
@@ -4077,31 +4653,31 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/bach-su-v2-do/demo
 - Họ khối: `porcelain_v2`
-- Bìa: `src/features/invitation/shell/specs/porcelain_v2_red/cover.json` → khóa `porcelain_v2_red`
+- Bìa: `src/features/invitation/templates/porcelain_v2_red/cover.json` → khóa `porcelain_v2_red`
 - Thư mục ảnh theme: `public/images/themes/porcelain-v2-red/` (6 file)
 
 **Spec** (6)
 
-- `src/features/invitation/shell/specs/porcelain_v2_red/capabilities.json`
-- `src/features/invitation/shell/specs/porcelain_v2_red/cover.json`
-- `src/features/invitation/shell/specs/porcelain_v2_red/demo.json`
-- `src/features/invitation/shell/specs/porcelain_v2_red/gift.json`
-- `src/features/invitation/shell/specs/porcelain_v2_red/meta.json`
-- `src/features/invitation/shell/specs/porcelain_v2_red/theme.json`
+- `src/features/invitation/templates/porcelain_v2_red/capabilities.json`
+- `src/features/invitation/templates/porcelain_v2_red/cover.json`
+- `src/features/invitation/templates/porcelain_v2_red/demo.json`
+- `src/features/invitation/templates/porcelain_v2_red/gift.json`
+- `src/features/invitation/templates/porcelain_v2_red/meta.json`
+- `src/features/invitation/templates/porcelain_v2_red/theme.json`
 
 **Khối** (11)
 
-- `src/features/invitation/shell/blocks/porcelain_v2/Album.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Banquet.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Dress.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Family.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Hero.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/index.ts`
-- `src/features/invitation/shell/blocks/porcelain_v2/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Paper.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Schedule.tsx`
-- `src/features/invitation/shell/blocks/porcelain_v2/Venue.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Album.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Banquet.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Dress.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Family.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Guestbook.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Hero.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/index.ts`
+- `src/features/invitation/templates/_shared/porcelain_v2/Lightbox.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Paper.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Schedule.tsx`
+- `src/features/invitation/templates/_shared/porcelain_v2/Venue.tsx`
 
 **Ảnh theme** (6)
 
@@ -4127,25 +4703,29 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/bach-su-lam/demo
 - Họ khối: `porcelain_blue`
-- Bìa: `src/features/invitation/shell/specs/porcelain_blue/cover.json` → khóa `porcelain_blue`
+- Bìa: `src/features/invitation/templates/porcelain_blue/cover.json` → khóa `porcelain_blue`
 - Thư mục ảnh theme: `public/images/themes/porcelain-blue/` (5 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (10)
 
-- `src/features/invitation/shell/specs/porcelain_blue/capabilities.json`
-- `src/features/invitation/shell/specs/porcelain_blue/cover.json`
-- `src/features/invitation/shell/specs/porcelain_blue/demo.json`
-- `src/features/invitation/shell/specs/porcelain_blue/gift.json`
-- `src/features/invitation/shell/specs/porcelain_blue/meta.json`
-- `src/features/invitation/shell/specs/porcelain_blue/theme.json`
+- `src/features/invitation/templates/porcelain_blue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/porcelain_blue/blocks/index.ts`
+- `src/features/invitation/templates/porcelain_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/porcelain_blue/blocks/Paper.tsx`
+- `src/features/invitation/templates/porcelain_blue/capabilities.json`
+- `src/features/invitation/templates/porcelain_blue/cover.json`
+- `src/features/invitation/templates/porcelain_blue/demo.json`
+- `src/features/invitation/templates/porcelain_blue/gift.json`
+- `src/features/invitation/templates/porcelain_blue/meta.json`
+- `src/features/invitation/templates/porcelain_blue/theme.json`
 
 **Khối** (4)
 
-- `src/features/invitation/shell/blocks/porcelain_blue/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/porcelain_blue/index.ts`
-- `src/features/invitation/shell/blocks/porcelain_blue/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/porcelain_blue/Paper.tsx`
+- `src/features/invitation/templates/porcelain_blue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/porcelain_blue/blocks/index.ts`
+- `src/features/invitation/templates/porcelain_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/porcelain_blue/blocks/Paper.tsx`
 
 **Ảnh theme** (5)
 
@@ -4168,20 +4748,24 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/folk-floral-blue/` (11 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (5)
+**Spec** (9)
 
-- `src/features/invitation/shell/specs/folk_floral_blue/capabilities.json`
-- `src/features/invitation/shell/specs/folk_floral_blue/demo.json`
-- `src/features/invitation/shell/specs/folk_floral_blue/gift.json`
-- `src/features/invitation/shell/specs/folk_floral_blue/meta.json`
-- `src/features/invitation/shell/specs/folk_floral_blue/theme.json`
+- `src/features/invitation/templates/folk_floral_blue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/folk_floral_blue/blocks/index.ts`
+- `src/features/invitation/templates/folk_floral_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/folk_floral_blue/blocks/Paper.tsx`
+- `src/features/invitation/templates/folk_floral_blue/capabilities.json`
+- `src/features/invitation/templates/folk_floral_blue/demo.json`
+- `src/features/invitation/templates/folk_floral_blue/gift.json`
+- `src/features/invitation/templates/folk_floral_blue/meta.json`
+- `src/features/invitation/templates/folk_floral_blue/theme.json`
 
 **Khối** (4)
 
-- `src/features/invitation/shell/blocks/folk_floral_blue/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/folk_floral_blue/index.ts`
-- `src/features/invitation/shell/blocks/folk_floral_blue/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/folk_floral_blue/Paper.tsx`
+- `src/features/invitation/templates/folk_floral_blue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/folk_floral_blue/blocks/index.ts`
+- `src/features/invitation/templates/folk_floral_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/folk_floral_blue/blocks/Paper.tsx`
 
 **Ảnh theme** (11)
 
@@ -4207,25 +4791,29 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/bach-su-do/demo
 - Họ khối: `porcelain_red`
-- Bìa: `src/features/invitation/shell/specs/porcelain_red/cover.json` → khóa `porcelain_red`
+- Bìa: `src/features/invitation/templates/porcelain_red/cover.json` → khóa `porcelain_red`
 - Thư mục ảnh theme: `public/images/themes/porcelain-red/` (5 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (10)
 
-- `src/features/invitation/shell/specs/porcelain_red/capabilities.json`
-- `src/features/invitation/shell/specs/porcelain_red/cover.json`
-- `src/features/invitation/shell/specs/porcelain_red/demo.json`
-- `src/features/invitation/shell/specs/porcelain_red/gift.json`
-- `src/features/invitation/shell/specs/porcelain_red/meta.json`
-- `src/features/invitation/shell/specs/porcelain_red/theme.json`
+- `src/features/invitation/templates/porcelain_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/porcelain_red/blocks/index.ts`
+- `src/features/invitation/templates/porcelain_red/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/porcelain_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/porcelain_red/capabilities.json`
+- `src/features/invitation/templates/porcelain_red/cover.json`
+- `src/features/invitation/templates/porcelain_red/demo.json`
+- `src/features/invitation/templates/porcelain_red/gift.json`
+- `src/features/invitation/templates/porcelain_red/meta.json`
+- `src/features/invitation/templates/porcelain_red/theme.json`
 
 **Khối** (4)
 
-- `src/features/invitation/shell/blocks/porcelain_red/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/porcelain_red/index.ts`
-- `src/features/invitation/shell/blocks/porcelain_red/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/porcelain_red/Paper.tsx`
+- `src/features/invitation/templates/porcelain_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/porcelain_red/blocks/index.ts`
+- `src/features/invitation/templates/porcelain_red/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/porcelain_red/blocks/Paper.tsx`
 
 **Ảnh theme** (5)
 
@@ -4245,35 +4833,49 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoa-dai-hong/demo
 - Họ khối: `hoa_dai_pink`
-- Bìa: `src/features/invitation/shell/specs/hoa_dai_pink/cover.json` → khóa `hoa_dai_pink`
+- Bìa: `src/features/invitation/templates/hoa_dai_pink/cover.json` → khóa `hoa_dai_pink`
 - Thư mục ảnh theme: `public/images/themes/hoa-dai-pink/` (9 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (20)
 
-- `src/features/invitation/shell/specs/hoa_dai_pink/capabilities.json`
-- `src/features/invitation/shell/specs/hoa_dai_pink/cover.json`
-- `src/features/invitation/shell/specs/hoa_dai_pink/demo.json`
-- `src/features/invitation/shell/specs/hoa_dai_pink/gift.json`
-- `src/features/invitation/shell/specs/hoa_dai_pink/meta.json`
-- `src/features/invitation/shell/specs/hoa_dai_pink/theme.json`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Album.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Banquet.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Credit.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Dress.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Footer.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Gifts.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/index.ts`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Paper.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Schedule.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Section1.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Venue.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/capabilities.json`
+- `src/features/invitation/templates/hoa_dai_pink/cover.json`
+- `src/features/invitation/templates/hoa_dai_pink/demo.json`
+- `src/features/invitation/templates/hoa_dai_pink/gift.json`
+- `src/features/invitation/templates/hoa_dai_pink/meta.json`
+- `src/features/invitation/templates/hoa_dai_pink/theme.json`
 
 **Khối** (14)
 
-- `src/features/invitation/shell/blocks/hoa_dai_pink/Album.tsx`
-- `src/features/invitation/shell/blocks/hoa_dai_pink/Banquet.tsx`
-- `src/features/invitation/shell/blocks/hoa_dai_pink/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/hoa_dai_pink/Credit.tsx`
-- `src/features/invitation/shell/blocks/hoa_dai_pink/Dress.tsx`
-- `src/features/invitation/shell/blocks/hoa_dai_pink/Footer.tsx`
-- `src/features/invitation/shell/blocks/hoa_dai_pink/Gifts.tsx`
-- `src/features/invitation/shell/blocks/hoa_dai_pink/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/hoa_dai_pink/index.ts`
-- `src/features/invitation/shell/blocks/hoa_dai_pink/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/hoa_dai_pink/Paper.tsx`
-- `src/features/invitation/shell/blocks/hoa_dai_pink/Schedule.tsx`
-- `src/features/invitation/shell/blocks/hoa_dai_pink/Section1.tsx`
-- `src/features/invitation/shell/blocks/hoa_dai_pink/Venue.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Album.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Banquet.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Credit.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Dress.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Footer.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Gifts.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/index.ts`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Paper.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Schedule.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Section1.tsx`
+- `src/features/invitation/templates/hoa_dai_pink/blocks/Venue.tsx`
 
 **Ảnh theme** (9)
 
@@ -4300,28 +4902,40 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/qasr-blue/` (19 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (5)
+**Spec** (17)
 
-- `src/features/invitation/shell/specs/qasr_blue/capabilities.json`
-- `src/features/invitation/shell/specs/qasr_blue/demo.json`
-- `src/features/invitation/shell/specs/qasr_blue/gift.json`
-- `src/features/invitation/shell/specs/qasr_blue/meta.json`
-- `src/features/invitation/shell/specs/qasr_blue/theme.json`
+- `src/features/invitation/templates/qasr_blue/blocks/Album.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/Banquet.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/Dress.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/Footer.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/index.ts`
+- `src/features/invitation/templates/qasr_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/Paper.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/Schedule.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/Section1.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/Venue.tsx`
+- `src/features/invitation/templates/qasr_blue/capabilities.json`
+- `src/features/invitation/templates/qasr_blue/demo.json`
+- `src/features/invitation/templates/qasr_blue/gift.json`
+- `src/features/invitation/templates/qasr_blue/meta.json`
+- `src/features/invitation/templates/qasr_blue/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/qasr_blue/Album.tsx`
-- `src/features/invitation/shell/blocks/qasr_blue/Banquet.tsx`
-- `src/features/invitation/shell/blocks/qasr_blue/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/qasr_blue/Dress.tsx`
-- `src/features/invitation/shell/blocks/qasr_blue/Footer.tsx`
-- `src/features/invitation/shell/blocks/qasr_blue/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/qasr_blue/index.ts`
-- `src/features/invitation/shell/blocks/qasr_blue/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/qasr_blue/Paper.tsx`
-- `src/features/invitation/shell/blocks/qasr_blue/Schedule.tsx`
-- `src/features/invitation/shell/blocks/qasr_blue/Section1.tsx`
-- `src/features/invitation/shell/blocks/qasr_blue/Venue.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/Album.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/Banquet.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/Dress.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/Footer.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/index.ts`
+- `src/features/invitation/templates/qasr_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/Paper.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/Schedule.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/Section1.tsx`
+- `src/features/invitation/templates/qasr_blue/blocks/Venue.tsx`
 
 **Ảnh theme** (19)
 
@@ -4355,35 +4969,49 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/san-miguel-vang/demo
 - Họ khối: `san_miguel_yellow`
-- Bìa: `src/features/invitation/shell/specs/san_miguel_yellow/cover.json` → khóa `san_miguel_yellow`
+- Bìa: `src/features/invitation/templates/san_miguel_yellow/cover.json` → khóa `san_miguel_yellow`
 - Thư mục ảnh theme: `public/images/themes/san-miguel-yellow/` (20 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (20)
 
-- `src/features/invitation/shell/specs/san_miguel_yellow/capabilities.json`
-- `src/features/invitation/shell/specs/san_miguel_yellow/cover.json`
-- `src/features/invitation/shell/specs/san_miguel_yellow/demo.json`
-- `src/features/invitation/shell/specs/san_miguel_yellow/gift.json`
-- `src/features/invitation/shell/specs/san_miguel_yellow/meta.json`
-- `src/features/invitation/shell/specs/san_miguel_yellow/theme.json`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Album.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Banquet.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Credit.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Dress.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Footer.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Gifts.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/index.ts`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Paper.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Schedule.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Section1.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Venue.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/capabilities.json`
+- `src/features/invitation/templates/san_miguel_yellow/cover.json`
+- `src/features/invitation/templates/san_miguel_yellow/demo.json`
+- `src/features/invitation/templates/san_miguel_yellow/gift.json`
+- `src/features/invitation/templates/san_miguel_yellow/meta.json`
+- `src/features/invitation/templates/san_miguel_yellow/theme.json`
 
 **Khối** (14)
 
-- `src/features/invitation/shell/blocks/san_miguel_yellow/Album.tsx`
-- `src/features/invitation/shell/blocks/san_miguel_yellow/Banquet.tsx`
-- `src/features/invitation/shell/blocks/san_miguel_yellow/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/san_miguel_yellow/Credit.tsx`
-- `src/features/invitation/shell/blocks/san_miguel_yellow/Dress.tsx`
-- `src/features/invitation/shell/blocks/san_miguel_yellow/Footer.tsx`
-- `src/features/invitation/shell/blocks/san_miguel_yellow/Gifts.tsx`
-- `src/features/invitation/shell/blocks/san_miguel_yellow/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/san_miguel_yellow/index.ts`
-- `src/features/invitation/shell/blocks/san_miguel_yellow/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/san_miguel_yellow/Paper.tsx`
-- `src/features/invitation/shell/blocks/san_miguel_yellow/Schedule.tsx`
-- `src/features/invitation/shell/blocks/san_miguel_yellow/Section1.tsx`
-- `src/features/invitation/shell/blocks/san_miguel_yellow/Venue.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Album.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Banquet.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Credit.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Dress.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Footer.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Gifts.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/index.ts`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Paper.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Schedule.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Section1.tsx`
+- `src/features/invitation/templates/san_miguel_yellow/blocks/Venue.tsx`
 
 **Ảnh theme** (20)
 
@@ -4418,26 +5046,31 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/vuonkinh-lam/demo
 - Họ khối: `glass_garden_blue`
-- Bìa: `src/features/invitation/shell/specs/glass_garden_blue/cover.json` → khóa `glass_garden_blue`
+- Bìa: `src/features/invitation/templates/glass_garden_blue/cover.json` → khóa `glass_garden_blue`
 - Thư mục ảnh theme: `public/images/themes/glass-garden-blue/` (8 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (11)
 
-- `src/features/invitation/shell/specs/glass_garden_blue/capabilities.json`
-- `src/features/invitation/shell/specs/glass_garden_blue/cover.json`
-- `src/features/invitation/shell/specs/glass_garden_blue/demo.json`
-- `src/features/invitation/shell/specs/glass_garden_blue/gift.json`
-- `src/features/invitation/shell/specs/glass_garden_blue/meta.json`
-- `src/features/invitation/shell/specs/glass_garden_blue/theme.json`
+- `src/features/invitation/templates/glass_garden_blue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/glass_garden_blue/blocks/index.ts`
+- `src/features/invitation/templates/glass_garden_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/glass_garden_blue/blocks/Paper.tsx`
+- `src/features/invitation/templates/glass_garden_blue/blocks/Section1.tsx`
+- `src/features/invitation/templates/glass_garden_blue/capabilities.json`
+- `src/features/invitation/templates/glass_garden_blue/cover.json`
+- `src/features/invitation/templates/glass_garden_blue/demo.json`
+- `src/features/invitation/templates/glass_garden_blue/gift.json`
+- `src/features/invitation/templates/glass_garden_blue/meta.json`
+- `src/features/invitation/templates/glass_garden_blue/theme.json`
 
 **Khối** (5)
 
-- `src/features/invitation/shell/blocks/glass_garden_blue/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/glass_garden_blue/index.ts`
-- `src/features/invitation/shell/blocks/glass_garden_blue/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/glass_garden_blue/Paper.tsx`
-- `src/features/invitation/shell/blocks/glass_garden_blue/Section1.tsx`
+- `src/features/invitation/templates/glass_garden_blue/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/glass_garden_blue/blocks/index.ts`
+- `src/features/invitation/templates/glass_garden_blue/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/glass_garden_blue/blocks/Paper.tsx`
+- `src/features/invitation/templates/glass_garden_blue/blocks/Section1.tsx`
 
 **Ảnh theme** (8)
 
@@ -4460,35 +5093,49 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoang-kim-ii-tim/demo
 - Họ khối: `royal_v2_purple`
-- Bìa: `src/features/invitation/shell/specs/royal_v2_purple/cover.json` → khóa `royal_v2_purple`
+- Bìa: `src/features/invitation/templates/royal_v2_purple/cover.json` → khóa `royal_v2_purple`
 - Thư mục ảnh theme: `public/images/themes/royal-v2-purple/` (15 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (20)
 
-- `src/features/invitation/shell/specs/royal_v2_purple/capabilities.json`
-- `src/features/invitation/shell/specs/royal_v2_purple/cover.json`
-- `src/features/invitation/shell/specs/royal_v2_purple/demo.json`
-- `src/features/invitation/shell/specs/royal_v2_purple/gift.json`
-- `src/features/invitation/shell/specs/royal_v2_purple/meta.json`
-- `src/features/invitation/shell/specs/royal_v2_purple/theme.json`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Album.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Banquet.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Dress.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Footer.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Gifts.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/index.ts`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Paper.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Schedule.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Section1.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Section5.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Venue.tsx`
+- `src/features/invitation/templates/royal_v2_purple/capabilities.json`
+- `src/features/invitation/templates/royal_v2_purple/cover.json`
+- `src/features/invitation/templates/royal_v2_purple/demo.json`
+- `src/features/invitation/templates/royal_v2_purple/gift.json`
+- `src/features/invitation/templates/royal_v2_purple/meta.json`
+- `src/features/invitation/templates/royal_v2_purple/theme.json`
 
 **Khối** (14)
 
-- `src/features/invitation/shell/blocks/royal_v2_purple/Album.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_purple/Banquet.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_purple/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_purple/Dress.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_purple/Footer.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_purple/Gifts.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_purple/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_purple/index.ts`
-- `src/features/invitation/shell/blocks/royal_v2_purple/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_purple/Paper.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_purple/Schedule.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_purple/Section1.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_purple/Section5.tsx`
-- `src/features/invitation/shell/blocks/royal_v2_purple/Venue.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Album.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Banquet.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Dress.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Footer.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Gifts.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/index.ts`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Paper.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Schedule.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Section1.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Section5.tsx`
+- `src/features/invitation/templates/royal_v2_purple/blocks/Venue.tsx`
 
 **Ảnh theme** (15)
 
@@ -4518,34 +5165,47 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoa-kho-cam/demo
 - Họ khối: `hoa_kho_orange`
-- Bìa: `src/features/invitation/shell/specs/hoa_kho_orange/cover.json` → khóa `hoa_kho_orange`
+- Bìa: `src/features/invitation/templates/hoa_kho_orange/cover.json` → khóa `hoa_kho_orange`
 - Thư mục ảnh theme: `public/images/themes/hoa-kho-orange/` (8 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo)
 
-**Spec** (6)
+**Spec** (19)
 
-- `src/features/invitation/shell/specs/hoa_kho_orange/capabilities.json`
-- `src/features/invitation/shell/specs/hoa_kho_orange/cover.json`
-- `src/features/invitation/shell/specs/hoa_kho_orange/demo.json`
-- `src/features/invitation/shell/specs/hoa_kho_orange/gift.json`
-- `src/features/invitation/shell/specs/hoa_kho_orange/meta.json`
-- `src/features/invitation/shell/specs/hoa_kho_orange/theme.json`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Album.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Banquet.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Credit.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Dress.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Footer.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Gifts.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Hero.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/index.ts`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Paper.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Schedule.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Venue.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/capabilities.json`
+- `src/features/invitation/templates/hoa_kho_orange/cover.json`
+- `src/features/invitation/templates/hoa_kho_orange/demo.json`
+- `src/features/invitation/templates/hoa_kho_orange/gift.json`
+- `src/features/invitation/templates/hoa_kho_orange/meta.json`
+- `src/features/invitation/templates/hoa_kho_orange/theme.json`
 
 **Khối** (13)
 
-- `src/features/invitation/shell/blocks/hoa_kho_orange/Album.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_orange/Banquet.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_orange/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_orange/Credit.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_orange/Dress.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_orange/Footer.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_orange/Gifts.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_orange/Hero.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_orange/index.ts`
-- `src/features/invitation/shell/blocks/hoa_kho_orange/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_orange/Paper.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_orange/Schedule.tsx`
-- `src/features/invitation/shell/blocks/hoa_kho_orange/Venue.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Album.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Banquet.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Credit.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Dress.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Footer.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Gifts.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Hero.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/index.ts`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Paper.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Schedule.tsx`
+- `src/features/invitation/templates/hoa_kho_orange/blocks/Venue.tsx`
 
 **Ảnh theme** (8)
 
@@ -4568,33 +5228,45 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/mahal-vang/demo
 - Họ khối: `mahal_gold`
-- Bìa: `src/features/invitation/shell/specs/mahal_gold/cover.json` → khóa `mahal_gold`
+- Bìa: `src/features/invitation/templates/mahal_gold/cover.json` → khóa `mahal_gold`
 - Thư mục ảnh theme: `public/images/themes/mahal-gold/` (18 file)
 - Ghi chú: Theme+bìa+ảnh đo lại 2026-11-11; Lightbox riêng còn ghi cứng ảnh demo
 
-**Spec** (6)
+**Spec** (18)
 
-- `src/features/invitation/shell/specs/mahal_gold/capabilities.json`
-- `src/features/invitation/shell/specs/mahal_gold/cover.json`
-- `src/features/invitation/shell/specs/mahal_gold/demo.json`
-- `src/features/invitation/shell/specs/mahal_gold/gift.json`
-- `src/features/invitation/shell/specs/mahal_gold/meta.json`
-- `src/features/invitation/shell/specs/mahal_gold/theme.json`
+- `src/features/invitation/templates/mahal_gold/blocks/Album.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/Banquet.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/Dress.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/Footer.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/index.ts`
+- `src/features/invitation/templates/mahal_gold/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/Paper.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/Schedule.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/Section1.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/Venue.tsx`
+- `src/features/invitation/templates/mahal_gold/capabilities.json`
+- `src/features/invitation/templates/mahal_gold/cover.json`
+- `src/features/invitation/templates/mahal_gold/demo.json`
+- `src/features/invitation/templates/mahal_gold/gift.json`
+- `src/features/invitation/templates/mahal_gold/meta.json`
+- `src/features/invitation/templates/mahal_gold/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/mahal_gold/Album.tsx`
-- `src/features/invitation/shell/blocks/mahal_gold/Banquet.tsx`
-- `src/features/invitation/shell/blocks/mahal_gold/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/mahal_gold/Dress.tsx`
-- `src/features/invitation/shell/blocks/mahal_gold/Footer.tsx`
-- `src/features/invitation/shell/blocks/mahal_gold/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/mahal_gold/index.ts`
-- `src/features/invitation/shell/blocks/mahal_gold/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/mahal_gold/Paper.tsx`
-- `src/features/invitation/shell/blocks/mahal_gold/Schedule.tsx`
-- `src/features/invitation/shell/blocks/mahal_gold/Section1.tsx`
-- `src/features/invitation/shell/blocks/mahal_gold/Venue.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/Album.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/Banquet.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/Dress.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/Footer.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/index.ts`
+- `src/features/invitation/templates/mahal_gold/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/Paper.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/Schedule.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/Section1.tsx`
+- `src/features/invitation/templates/mahal_gold/blocks/Venue.tsx`
 
 **Ảnh theme** (18)
 
@@ -4630,32 +5302,48 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/floral-fiesta-yellow/` (31 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (5)
+**Spec** (21)
 
-- `src/features/invitation/shell/specs/floral_fiesta_yellow/capabilities.json`
-- `src/features/invitation/shell/specs/floral_fiesta_yellow/demo.json`
-- `src/features/invitation/shell/specs/floral_fiesta_yellow/gift.json`
-- `src/features/invitation/shell/specs/floral_fiesta_yellow/meta.json`
-- `src/features/invitation/shell/specs/floral_fiesta_yellow/theme.json`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Album.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Banquet.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Credit.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Dress.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Footer.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Gifts.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/index.ts`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Paper.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Schedule.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Section1.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Section13.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Section5.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Venue.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/capabilities.json`
+- `src/features/invitation/templates/floral_fiesta_yellow/demo.json`
+- `src/features/invitation/templates/floral_fiesta_yellow/gift.json`
+- `src/features/invitation/templates/floral_fiesta_yellow/meta.json`
+- `src/features/invitation/templates/floral_fiesta_yellow/theme.json`
 
 **Khối** (16)
 
-- `src/features/invitation/shell/blocks/floral_fiesta_yellow/Album.tsx`
-- `src/features/invitation/shell/blocks/floral_fiesta_yellow/Banquet.tsx`
-- `src/features/invitation/shell/blocks/floral_fiesta_yellow/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/floral_fiesta_yellow/Credit.tsx`
-- `src/features/invitation/shell/blocks/floral_fiesta_yellow/Dress.tsx`
-- `src/features/invitation/shell/blocks/floral_fiesta_yellow/Footer.tsx`
-- `src/features/invitation/shell/blocks/floral_fiesta_yellow/Gifts.tsx`
-- `src/features/invitation/shell/blocks/floral_fiesta_yellow/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/floral_fiesta_yellow/index.ts`
-- `src/features/invitation/shell/blocks/floral_fiesta_yellow/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/floral_fiesta_yellow/Paper.tsx`
-- `src/features/invitation/shell/blocks/floral_fiesta_yellow/Schedule.tsx`
-- `src/features/invitation/shell/blocks/floral_fiesta_yellow/Section1.tsx`
-- `src/features/invitation/shell/blocks/floral_fiesta_yellow/Section13.tsx`
-- `src/features/invitation/shell/blocks/floral_fiesta_yellow/Section5.tsx`
-- `src/features/invitation/shell/blocks/floral_fiesta_yellow/Venue.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Album.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Banquet.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Credit.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Dress.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Footer.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Gifts.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/index.ts`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Paper.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Schedule.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Section1.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Section13.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Section5.tsx`
+- `src/features/invitation/templates/floral_fiesta_yellow/blocks/Venue.tsx`
 
 **Ảnh theme** (31)
 
@@ -4704,30 +5392,44 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/nomad-brown/` (18 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (5)
+**Spec** (19)
 
-- `src/features/invitation/shell/specs/nomad_brown/capabilities.json`
-- `src/features/invitation/shell/specs/nomad_brown/demo.json`
-- `src/features/invitation/shell/specs/nomad_brown/gift.json`
-- `src/features/invitation/shell/specs/nomad_brown/meta.json`
-- `src/features/invitation/shell/specs/nomad_brown/theme.json`
+- `src/features/invitation/templates/nomad_brown/blocks/Album.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Banquet.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Dress.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Footer.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Gifts.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/index.ts`
+- `src/features/invitation/templates/nomad_brown/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Paper.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Schedule.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Section1.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Section5.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Venue.tsx`
+- `src/features/invitation/templates/nomad_brown/capabilities.json`
+- `src/features/invitation/templates/nomad_brown/demo.json`
+- `src/features/invitation/templates/nomad_brown/gift.json`
+- `src/features/invitation/templates/nomad_brown/meta.json`
+- `src/features/invitation/templates/nomad_brown/theme.json`
 
 **Khối** (14)
 
-- `src/features/invitation/shell/blocks/nomad_brown/Album.tsx`
-- `src/features/invitation/shell/blocks/nomad_brown/Banquet.tsx`
-- `src/features/invitation/shell/blocks/nomad_brown/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/nomad_brown/Dress.tsx`
-- `src/features/invitation/shell/blocks/nomad_brown/Footer.tsx`
-- `src/features/invitation/shell/blocks/nomad_brown/Gifts.tsx`
-- `src/features/invitation/shell/blocks/nomad_brown/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/nomad_brown/index.ts`
-- `src/features/invitation/shell/blocks/nomad_brown/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/nomad_brown/Paper.tsx`
-- `src/features/invitation/shell/blocks/nomad_brown/Schedule.tsx`
-- `src/features/invitation/shell/blocks/nomad_brown/Section1.tsx`
-- `src/features/invitation/shell/blocks/nomad_brown/Section5.tsx`
-- `src/features/invitation/shell/blocks/nomad_brown/Venue.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Album.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Banquet.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Dress.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Footer.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Gifts.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/index.ts`
+- `src/features/invitation/templates/nomad_brown/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Paper.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Schedule.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Section1.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Section5.tsx`
+- `src/features/invitation/templates/nomad_brown/blocks/Venue.tsx`
 
 **Ảnh theme** (18)
 
@@ -4763,28 +5465,40 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/saraya-gold/` (17 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (5)
+**Spec** (17)
 
-- `src/features/invitation/shell/specs/saraya_gold/capabilities.json`
-- `src/features/invitation/shell/specs/saraya_gold/demo.json`
-- `src/features/invitation/shell/specs/saraya_gold/gift.json`
-- `src/features/invitation/shell/specs/saraya_gold/meta.json`
-- `src/features/invitation/shell/specs/saraya_gold/theme.json`
+- `src/features/invitation/templates/saraya_gold/blocks/Album.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/Banquet.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/Dress.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/Footer.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/index.ts`
+- `src/features/invitation/templates/saraya_gold/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/Paper.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/Schedule.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/Section1.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/Venue.tsx`
+- `src/features/invitation/templates/saraya_gold/capabilities.json`
+- `src/features/invitation/templates/saraya_gold/demo.json`
+- `src/features/invitation/templates/saraya_gold/gift.json`
+- `src/features/invitation/templates/saraya_gold/meta.json`
+- `src/features/invitation/templates/saraya_gold/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/saraya_gold/Album.tsx`
-- `src/features/invitation/shell/blocks/saraya_gold/Banquet.tsx`
-- `src/features/invitation/shell/blocks/saraya_gold/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/saraya_gold/Dress.tsx`
-- `src/features/invitation/shell/blocks/saraya_gold/Footer.tsx`
-- `src/features/invitation/shell/blocks/saraya_gold/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/saraya_gold/index.ts`
-- `src/features/invitation/shell/blocks/saraya_gold/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/saraya_gold/Paper.tsx`
-- `src/features/invitation/shell/blocks/saraya_gold/Schedule.tsx`
-- `src/features/invitation/shell/blocks/saraya_gold/Section1.tsx`
-- `src/features/invitation/shell/blocks/saraya_gold/Venue.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/Album.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/Banquet.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/Dress.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/Footer.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/index.ts`
+- `src/features/invitation/templates/saraya_gold/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/Paper.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/Schedule.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/Section1.tsx`
+- `src/features/invitation/templates/saraya_gold/blocks/Venue.tsx`
 
 **Ảnh theme** (17)
 
@@ -4819,28 +5533,40 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/qasr-gold/` (5 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (5)
+**Spec** (17)
 
-- `src/features/invitation/shell/specs/qasr_gold/capabilities.json`
-- `src/features/invitation/shell/specs/qasr_gold/demo.json`
-- `src/features/invitation/shell/specs/qasr_gold/gift.json`
-- `src/features/invitation/shell/specs/qasr_gold/meta.json`
-- `src/features/invitation/shell/specs/qasr_gold/theme.json`
+- `src/features/invitation/templates/qasr_gold/blocks/Album.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/Banquet.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/Dress.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/Footer.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/index.ts`
+- `src/features/invitation/templates/qasr_gold/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/Paper.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/Schedule.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/Section1.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/Venue.tsx`
+- `src/features/invitation/templates/qasr_gold/capabilities.json`
+- `src/features/invitation/templates/qasr_gold/demo.json`
+- `src/features/invitation/templates/qasr_gold/gift.json`
+- `src/features/invitation/templates/qasr_gold/meta.json`
+- `src/features/invitation/templates/qasr_gold/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/qasr_gold/Album.tsx`
-- `src/features/invitation/shell/blocks/qasr_gold/Banquet.tsx`
-- `src/features/invitation/shell/blocks/qasr_gold/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/qasr_gold/Dress.tsx`
-- `src/features/invitation/shell/blocks/qasr_gold/Footer.tsx`
-- `src/features/invitation/shell/blocks/qasr_gold/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/qasr_gold/index.ts`
-- `src/features/invitation/shell/blocks/qasr_gold/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/qasr_gold/Paper.tsx`
-- `src/features/invitation/shell/blocks/qasr_gold/Schedule.tsx`
-- `src/features/invitation/shell/blocks/qasr_gold/Section1.tsx`
-- `src/features/invitation/shell/blocks/qasr_gold/Venue.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/Album.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/Banquet.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/Dress.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/Footer.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/index.ts`
+- `src/features/invitation/templates/qasr_gold/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/Paper.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/Schedule.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/Section1.tsx`
+- `src/features/invitation/templates/qasr_gold/blocks/Venue.tsx`
 
 **Ảnh theme** (5)
 
@@ -4863,28 +5589,40 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/qasr-green/` (12 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (5)
+**Spec** (17)
 
-- `src/features/invitation/shell/specs/qasr_green/capabilities.json`
-- `src/features/invitation/shell/specs/qasr_green/demo.json`
-- `src/features/invitation/shell/specs/qasr_green/gift.json`
-- `src/features/invitation/shell/specs/qasr_green/meta.json`
-- `src/features/invitation/shell/specs/qasr_green/theme.json`
+- `src/features/invitation/templates/qasr_green/blocks/Album.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/Banquet.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/index.ts`
+- `src/features/invitation/templates/qasr_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/Section1.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/Venue.tsx`
+- `src/features/invitation/templates/qasr_green/capabilities.json`
+- `src/features/invitation/templates/qasr_green/demo.json`
+- `src/features/invitation/templates/qasr_green/gift.json`
+- `src/features/invitation/templates/qasr_green/meta.json`
+- `src/features/invitation/templates/qasr_green/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/qasr_green/Album.tsx`
-- `src/features/invitation/shell/blocks/qasr_green/Banquet.tsx`
-- `src/features/invitation/shell/blocks/qasr_green/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/qasr_green/Dress.tsx`
-- `src/features/invitation/shell/blocks/qasr_green/Footer.tsx`
-- `src/features/invitation/shell/blocks/qasr_green/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/qasr_green/index.ts`
-- `src/features/invitation/shell/blocks/qasr_green/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/qasr_green/Paper.tsx`
-- `src/features/invitation/shell/blocks/qasr_green/Schedule.tsx`
-- `src/features/invitation/shell/blocks/qasr_green/Section1.tsx`
-- `src/features/invitation/shell/blocks/qasr_green/Venue.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/Album.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/Banquet.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/Dress.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/Footer.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/index.ts`
+- `src/features/invitation/templates/qasr_green/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/Paper.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/Schedule.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/Section1.tsx`
+- `src/features/invitation/templates/qasr_green/blocks/Venue.tsx`
 
 **Ảnh theme** (12)
 
@@ -4911,35 +5649,49 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 
 - Nguồn: https://chungdoi.com/vi/mau-thiep/mandap-do-dam/demo
 - Họ khối: `mandap_darkred`
-- Bìa: `src/features/invitation/shell/specs/mandap_darkred/cover.json` → khóa `mandap_darkred`
+- Bìa: `src/features/invitation/templates/mandap_darkred/cover.json` → khóa `mandap_darkred`
 - Thư mục ảnh theme: `public/images/themes/mandap-darkred/` (17 file)
 - Ghi chú: Theme+bìa+ảnh đo lại 2026-11-11; thiếu Lightbox
 
-**Spec** (6)
+**Spec** (20)
 
-- `src/features/invitation/shell/specs/mandap_darkred/capabilities.json`
-- `src/features/invitation/shell/specs/mandap_darkred/cover.json`
-- `src/features/invitation/shell/specs/mandap_darkred/demo.json`
-- `src/features/invitation/shell/specs/mandap_darkred/gift.json`
-- `src/features/invitation/shell/specs/mandap_darkred/meta.json`
-- `src/features/invitation/shell/specs/mandap_darkred/theme.json`
+- `src/features/invitation/templates/mandap_darkred/blocks/Album.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Banquet.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Dress.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Footer.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Gifts.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/index.ts`
+- `src/features/invitation/templates/mandap_darkred/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Paper.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Schedule.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Section1.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Section5.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Venue.tsx`
+- `src/features/invitation/templates/mandap_darkred/capabilities.json`
+- `src/features/invitation/templates/mandap_darkred/cover.json`
+- `src/features/invitation/templates/mandap_darkred/demo.json`
+- `src/features/invitation/templates/mandap_darkred/gift.json`
+- `src/features/invitation/templates/mandap_darkred/meta.json`
+- `src/features/invitation/templates/mandap_darkred/theme.json`
 
 **Khối** (14)
 
-- `src/features/invitation/shell/blocks/mandap_darkred/Album.tsx`
-- `src/features/invitation/shell/blocks/mandap_darkred/Banquet.tsx`
-- `src/features/invitation/shell/blocks/mandap_darkred/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/mandap_darkred/Dress.tsx`
-- `src/features/invitation/shell/blocks/mandap_darkred/Footer.tsx`
-- `src/features/invitation/shell/blocks/mandap_darkred/Gifts.tsx`
-- `src/features/invitation/shell/blocks/mandap_darkred/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/mandap_darkred/index.ts`
-- `src/features/invitation/shell/blocks/mandap_darkred/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/mandap_darkred/Paper.tsx`
-- `src/features/invitation/shell/blocks/mandap_darkred/Schedule.tsx`
-- `src/features/invitation/shell/blocks/mandap_darkred/Section1.tsx`
-- `src/features/invitation/shell/blocks/mandap_darkred/Section5.tsx`
-- `src/features/invitation/shell/blocks/mandap_darkred/Venue.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Album.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Banquet.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Dress.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Footer.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Gifts.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/index.ts`
+- `src/features/invitation/templates/mandap_darkred/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Paper.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Schedule.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Section1.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Section5.tsx`
+- `src/features/invitation/templates/mandap_darkred/blocks/Venue.tsx`
 
 **Ảnh theme** (17)
 
@@ -4974,28 +5726,40 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Thư mục ảnh theme: `public/images/themes/brocade-flower-red/` (12 file)
 - Còn thiếu: theme.json còn màu mặc định (chưa đo); thiếu cấu hình bìa specs/<id>/cover.json
 
-**Spec** (5)
+**Spec** (17)
 
-- `src/features/invitation/shell/specs/brocade_flower_red/capabilities.json`
-- `src/features/invitation/shell/specs/brocade_flower_red/demo.json`
-- `src/features/invitation/shell/specs/brocade_flower_red/gift.json`
-- `src/features/invitation/shell/specs/brocade_flower_red/meta.json`
-- `src/features/invitation/shell/specs/brocade_flower_red/theme.json`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Credit.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Dress.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Footer.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Gifts.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/index.ts`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Schedule.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Section1.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Venue.tsx`
+- `src/features/invitation/templates/brocade_flower_red/capabilities.json`
+- `src/features/invitation/templates/brocade_flower_red/demo.json`
+- `src/features/invitation/templates/brocade_flower_red/gift.json`
+- `src/features/invitation/templates/brocade_flower_red/meta.json`
+- `src/features/invitation/templates/brocade_flower_red/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/brocade_flower_red/Ceremony.tsx`
-- `src/features/invitation/shell/blocks/brocade_flower_red/Credit.tsx`
-- `src/features/invitation/shell/blocks/brocade_flower_red/Dress.tsx`
-- `src/features/invitation/shell/blocks/brocade_flower_red/Footer.tsx`
-- `src/features/invitation/shell/blocks/brocade_flower_red/Gifts.tsx`
-- `src/features/invitation/shell/blocks/brocade_flower_red/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/brocade_flower_red/index.ts`
-- `src/features/invitation/shell/blocks/brocade_flower_red/Lightbox.tsx`
-- `src/features/invitation/shell/blocks/brocade_flower_red/Paper.tsx`
-- `src/features/invitation/shell/blocks/brocade_flower_red/Schedule.tsx`
-- `src/features/invitation/shell/blocks/brocade_flower_red/Section1.tsx`
-- `src/features/invitation/shell/blocks/brocade_flower_red/Venue.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Ceremony.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Credit.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Dress.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Footer.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Gifts.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/index.ts`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Lightbox.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Paper.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Schedule.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Section1.tsx`
+- `src/features/invitation/templates/brocade_flower_red/blocks/Venue.tsx`
 
 **Ảnh theme** (12)
 
@@ -5023,33 +5787,45 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Nguồn: https://chungdoi.com/vi/mau-thiep/hoa-rum-trang/demo
 - Họ khối: `calla_lily_white`
 - Bộ sinh: `scripts/clone/gen_calla_lily_white.cjs`
-- Bìa: `src/features/invitation/shell/specs/calla_lily_white/cover.json` → khóa `calla_lily_white`
+- Bìa: `src/features/invitation/templates/calla_lily_white/cover.json` → khóa `calla_lily_white`
 - Thư mục ảnh theme: `public/images/themes/calla-lily-white/` (8 file)
 - Ghi chú: Họ mới, dựng 2026-11-11; so mắt bìa + thiệp mở, chưa chạy diff_dump/editor-sync
 
-**Spec** (6)
+**Spec** (18)
 
-- `src/features/invitation/shell/specs/calla_lily_white/capabilities.json`
-- `src/features/invitation/shell/specs/calla_lily_white/cover.json`
-- `src/features/invitation/shell/specs/calla_lily_white/demo.json`
-- `src/features/invitation/shell/specs/calla_lily_white/gift.json`
-- `src/features/invitation/shell/specs/calla_lily_white/meta.json`
-- `src/features/invitation/shell/specs/calla_lily_white/theme.json`
+- `src/features/invitation/templates/calla_lily_white/blocks/Album.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/Banquet.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/Dress.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/Family.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/Footer.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/Gifts.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/Hero.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/index.ts`
+- `src/features/invitation/templates/calla_lily_white/blocks/Paper.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/Schedule.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/Venue.tsx`
+- `src/features/invitation/templates/calla_lily_white/capabilities.json`
+- `src/features/invitation/templates/calla_lily_white/cover.json`
+- `src/features/invitation/templates/calla_lily_white/demo.json`
+- `src/features/invitation/templates/calla_lily_white/gift.json`
+- `src/features/invitation/templates/calla_lily_white/meta.json`
+- `src/features/invitation/templates/calla_lily_white/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/calla_lily_white/Album.tsx`
-- `src/features/invitation/shell/blocks/calla_lily_white/Banquet.tsx`
-- `src/features/invitation/shell/blocks/calla_lily_white/Dress.tsx`
-- `src/features/invitation/shell/blocks/calla_lily_white/Family.tsx`
-- `src/features/invitation/shell/blocks/calla_lily_white/Footer.tsx`
-- `src/features/invitation/shell/blocks/calla_lily_white/Gifts.tsx`
-- `src/features/invitation/shell/blocks/calla_lily_white/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/calla_lily_white/Hero.tsx`
-- `src/features/invitation/shell/blocks/calla_lily_white/index.ts`
-- `src/features/invitation/shell/blocks/calla_lily_white/Paper.tsx`
-- `src/features/invitation/shell/blocks/calla_lily_white/Schedule.tsx`
-- `src/features/invitation/shell/blocks/calla_lily_white/Venue.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/Album.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/Banquet.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/Dress.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/Family.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/Footer.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/Gifts.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/Hero.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/index.ts`
+- `src/features/invitation/templates/calla_lily_white/blocks/Paper.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/Schedule.tsx`
+- `src/features/invitation/templates/calla_lily_white/blocks/Venue.tsx`
 
 **Ảnh theme** (8)
 
@@ -5078,33 +5854,45 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Nguồn: https://chungdoi.com/vi/mau-thiep/mandap-vang/demo
 - Họ khối: `mandap_yellow`
 - Bộ sinh: `scripts/clone/gen_mandap_yellow.cjs`
-- Bìa: `src/features/invitation/shell/specs/mandap_yellow/cover.json` → khóa `mandap_yellow`
+- Bìa: `src/features/invitation/templates/mandap_yellow/cover.json` → khóa `mandap_yellow`
 - Thư mục ảnh theme: `public/images/themes/mandap-yellow/` (20 file)
 - Ghi chú: Họ mới, dựng 2026-11-11; stWidth=min(100vw,900px); chưa chạy diff_dump/editor-sync
 
-**Spec** (6)
+**Spec** (18)
 
-- `src/features/invitation/shell/specs/mandap_yellow/capabilities.json`
-- `src/features/invitation/shell/specs/mandap_yellow/cover.json`
-- `src/features/invitation/shell/specs/mandap_yellow/demo.json`
-- `src/features/invitation/shell/specs/mandap_yellow/gift.json`
-- `src/features/invitation/shell/specs/mandap_yellow/meta.json`
-- `src/features/invitation/shell/specs/mandap_yellow/theme.json`
+- `src/features/invitation/templates/mandap_yellow/blocks/Album.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/Banquet.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/Dress.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/Family.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/Footer.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/Gifts.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/Hero.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/index.ts`
+- `src/features/invitation/templates/mandap_yellow/blocks/Paper.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/Schedule.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/Venue.tsx`
+- `src/features/invitation/templates/mandap_yellow/capabilities.json`
+- `src/features/invitation/templates/mandap_yellow/cover.json`
+- `src/features/invitation/templates/mandap_yellow/demo.json`
+- `src/features/invitation/templates/mandap_yellow/gift.json`
+- `src/features/invitation/templates/mandap_yellow/meta.json`
+- `src/features/invitation/templates/mandap_yellow/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/mandap_yellow/Album.tsx`
-- `src/features/invitation/shell/blocks/mandap_yellow/Banquet.tsx`
-- `src/features/invitation/shell/blocks/mandap_yellow/Dress.tsx`
-- `src/features/invitation/shell/blocks/mandap_yellow/Family.tsx`
-- `src/features/invitation/shell/blocks/mandap_yellow/Footer.tsx`
-- `src/features/invitation/shell/blocks/mandap_yellow/Gifts.tsx`
-- `src/features/invitation/shell/blocks/mandap_yellow/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/mandap_yellow/Hero.tsx`
-- `src/features/invitation/shell/blocks/mandap_yellow/index.ts`
-- `src/features/invitation/shell/blocks/mandap_yellow/Paper.tsx`
-- `src/features/invitation/shell/blocks/mandap_yellow/Schedule.tsx`
-- `src/features/invitation/shell/blocks/mandap_yellow/Venue.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/Album.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/Banquet.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/Dress.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/Family.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/Footer.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/Gifts.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/Hero.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/index.ts`
+- `src/features/invitation/templates/mandap_yellow/blocks/Paper.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/Schedule.tsx`
+- `src/features/invitation/templates/mandap_yellow/blocks/Venue.tsx`
 
 **Ảnh theme** (20)
 
@@ -5158,33 +5946,45 @@ Chỉ liệt kê mẫu đã có spec. Hash (16 ký tự đầu sha256) nằm tro
 - Nguồn: https://chungdoi.com/vi/mau-thiep/mahal-hong/demo
 - Họ khối: `mahal_pink`
 - Bộ sinh: `scripts/clone/gen_mahal_pink.cjs`
-- Bìa: `src/features/invitation/shell/specs/mahal_pink/cover.json` → khóa `mahal_pink`
+- Bìa: `src/features/invitation/templates/mahal_pink/cover.json` → khóa `mahal_pink`
 - Thư mục ảnh theme: `public/images/themes/mahal-pink/` (24 file)
 - Ghi chú: Họ mới, dựng 2026-11-11; chưa chạy diff_dump/editor-sync
 
-**Spec** (6)
+**Spec** (18)
 
-- `src/features/invitation/shell/specs/mahal_pink/capabilities.json`
-- `src/features/invitation/shell/specs/mahal_pink/cover.json`
-- `src/features/invitation/shell/specs/mahal_pink/demo.json`
-- `src/features/invitation/shell/specs/mahal_pink/gift.json`
-- `src/features/invitation/shell/specs/mahal_pink/meta.json`
-- `src/features/invitation/shell/specs/mahal_pink/theme.json`
+- `src/features/invitation/templates/mahal_pink/blocks/Album.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/Banquet.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/Dress.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/Family.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/Footer.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/Gifts.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/Hero.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/index.ts`
+- `src/features/invitation/templates/mahal_pink/blocks/Paper.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/Schedule.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/Venue.tsx`
+- `src/features/invitation/templates/mahal_pink/capabilities.json`
+- `src/features/invitation/templates/mahal_pink/cover.json`
+- `src/features/invitation/templates/mahal_pink/demo.json`
+- `src/features/invitation/templates/mahal_pink/gift.json`
+- `src/features/invitation/templates/mahal_pink/meta.json`
+- `src/features/invitation/templates/mahal_pink/theme.json`
 
 **Khối** (12)
 
-- `src/features/invitation/shell/blocks/mahal_pink/Album.tsx`
-- `src/features/invitation/shell/blocks/mahal_pink/Banquet.tsx`
-- `src/features/invitation/shell/blocks/mahal_pink/Dress.tsx`
-- `src/features/invitation/shell/blocks/mahal_pink/Family.tsx`
-- `src/features/invitation/shell/blocks/mahal_pink/Footer.tsx`
-- `src/features/invitation/shell/blocks/mahal_pink/Gifts.tsx`
-- `src/features/invitation/shell/blocks/mahal_pink/Guestbook.tsx`
-- `src/features/invitation/shell/blocks/mahal_pink/Hero.tsx`
-- `src/features/invitation/shell/blocks/mahal_pink/index.ts`
-- `src/features/invitation/shell/blocks/mahal_pink/Paper.tsx`
-- `src/features/invitation/shell/blocks/mahal_pink/Schedule.tsx`
-- `src/features/invitation/shell/blocks/mahal_pink/Venue.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/Album.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/Banquet.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/Dress.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/Family.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/Footer.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/Gifts.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/Guestbook.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/Hero.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/index.ts`
+- `src/features/invitation/templates/mahal_pink/blocks/Paper.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/Schedule.tsx`
+- `src/features/invitation/templates/mahal_pink/blocks/Venue.tsx`
 
 **Ảnh theme** (24)
 
@@ -5240,6 +6040,8 @@ _Không có thay đổi so với lần quét trước._
 
 ## Lịch sử các lần quét
 
+- 2026-11-17 11:07 — 0 thay đổi
+- 2026-11-17 06:34 — 184 thay đổi: minimalism_darkred: file mới; minimalism_darkred: file mất; minimalism_brown: file mới; minimalism_brown: file mất; song_hy_green: file mới; song_hy_green: file mất…
 - 2026-11-16 10:36 — 0 thay đổi
 - 2026-11-16 10:23 — 75 thay đổi: minimalism_darkred: file đã cập nhật; minimalism_brown: file đã cập nhật; song_hy_green: file đã cập nhật; boho_floral_green: file đã cập nhật; song_hy_v2_red: file đã cập nhật; song_hy_red: file đã cập nhật…
 - 2026-11-16 10:16 — 92 thay đổi: minimalism_darkred: file đã cập nhật; minimalism_brown: file đã cập nhật; song_hy_green: file đã cập nhật; boho_floral_green: file đã cập nhật; song_hy_v2_red: file đã cập nhật; song_hy_red: file đã cập nhật…
@@ -5258,4 +6060,3 @@ _Không có thay đổi so với lần quét trước._
 - 2026-11-11 08:35 — 3 thay đổi: calla_lily_white: file đã cập nhật; mandap_yellow: file đã cập nhật; mahal_pink: file đã cập nhật
 - 2026-11-11 08:35 — 0 thay đổi
 - 2026-11-11 08:35 — 0 thay đổi
-- 2026-11-11 08:35 — 91 thay đổi: minimalism_darkred: mẫu mới vào sổ; minimalism_brown: mẫu mới vào sổ; song_hy_green: mẫu mới vào sổ; boho_floral_green: mẫu mới vào sổ; song_hy_v2_red: mẫu mới vào sổ; song_hy_red: mẫu mới vào sổ…

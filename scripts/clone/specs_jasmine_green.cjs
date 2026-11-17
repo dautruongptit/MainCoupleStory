@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 
 const SRC = "docs/survey/blocks/jasmine_green/main";
-const DIR = "src/features/invitation/shell/specs/jasmine_green";
+const DIR = "src/features/invitation/templates/jasmine_green";
 const read = (n) => fs.readFileSync(path.join(SRC, n + ".jsx"), "utf8");
 fs.mkdirSync(DIR, { recursive: true });
 const write = (name, obj) => fs.writeFileSync(path.join(DIR, name), JSON.stringify(obj, null, 2) + "\n");

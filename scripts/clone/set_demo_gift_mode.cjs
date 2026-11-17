@@ -5,13 +5,11 @@
 const fs = require("fs");
 const path = require("path");
 const dry = process.argv.includes("--dry");
-const SPECS = "src/features/invitation/shell/specs";
-const BLOCKS = "src/features/invitation/shell/blocks";
+const { TEMPLATES_DIR: SPECS, blocksDirOf } = require("../lib/template_paths.cjs");
 
 // markup mặc định có trong họ khối: đọc các tệp .tsx của thư mục họ (hoặc thư mục gốc blocks cho họ minimalism)
 const kindOfFamily = (family) => {
-  const dirs = [path.join(BLOCKS, family)];
-  if (family === "minimalism") dirs.push(BLOCKS);
+  const dirs = [blocksDirOf(family)];
   let igb = false, ienv = false;
   for (const d of dirs) {
     if (!fs.existsSync(d)) continue;

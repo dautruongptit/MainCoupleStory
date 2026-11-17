@@ -6,7 +6,8 @@ const { J } = require("./jsxkit.cjs");
 
 const RIV = "docs/survey/blocks/jasmine_green/main";
 const ROOT = "docs/survey/blocks/jasmine_green";
-const OUT = "src/features/invitation/shell/blocks/jasmine_green";
+const { blocksDirOf } = require("../lib/template_paths.cjs");
+const OUT = blocksDirOf("jasmine_green"); // templates/<id>/blocks hoặc templates/_shared/<họ>
 const raw = (i) => fs.readFileSync(path.join(RIV, String(i).padStart(2, "0") + ".jsx"), "utf8");
 const rawRoot = (i) => fs.readFileSync(path.join(ROOT, String(i).padStart(2, "0") + ".jsx"), "utf8");
 
