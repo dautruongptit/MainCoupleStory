@@ -19,7 +19,7 @@ Dự án: **clone giao diện thiệp cưới chungdoi.com sang bản chạy loc
 
 ## 3. Lệnh
 ```
-npm run check            # bộ kiểm tra chung (tsc, chỉ mục spec, vitest, số đo so mốc, hộp quà, editor-sync); --full / --baseline xem scripts/README.md
+npm run check            # bộ kiểm tra chung (tsc, chỉ mục spec, vitest, số đo so mốc, bố cục trang + bìa, không gọi trang gốc, hộp quà, editor-sync); --full / --baseline xem scripts/README.md
 npm test                 # test đơn vị (Vitest): store — một nháp, đổi mẫu giữ dữ liệu, giữ kiểu hộp quà
 npm run gen:specs        # sinh lại chỉ mục sau khi thêm/sửa specs/<id>/*.json (--check: chỉ kiểm tra)
 node scripts/check/demo-data.mjs   --save|--compare <tệp>   # dữ liệu demo 92 mẫu trước/sau khi chuyển cấu hình (không cần trình duyệt)
@@ -65,5 +65,8 @@ Tiêu chí đạt một màn: lệch hình học **0** (dung sai 1px) và lệch
 7. Mẫu mới thêm họ khối: chạy `npm run css:inv` (class Tailwind arbitrary mới), tạo thư mục `blocks/<họ>/` có `index.ts` (tên thư mục = `capabilities.family`; không cần đăng ký tay), tạo `specs/<id>/{meta,theme,capabilities,demo}.json` rồi chạy `npm run gen:specs` (thay cho việc thêm tay vào `specs/index.ts` và `templates.ts`), kèm `cover.json` (cấu hình bìa); chưa chạy bộ sinh thì thiệp báo "chưa được hỗ trợ" và `npm run check` báo chỉ mục cũ.
 10. Kiểm tra bằng trình duyệt (`gift-modes`, `gift-geometry`, `dump-all`…) có thể **treo** nếu sửa file trong `src/` giữa lúc đang chạy (trang tự tải lại, lệnh đo không trả về). Đừng sửa `src/` khi đang chạy; nếu treo thì dừng tiến trình và chạy lại.
 11. Lệnh shell/`node -e` làm mất `\n`, `\r` trong chuỗi (giống bẫy 1): sửa file có ký tự thoát bằng công cụ sửa file.
+12. **Class Tailwind nằm trong `specs/<id>/*.json`** (ảnh trang trí bìa ở `cover.json`, markup hộp quà ở `gift.json`): `tailwind.config.js` phải quét cả `.json` của specs. Dev server giữ class đã sinh trong bộ nhớ, nên khi chuyển class sang tệp không được quét thì mọi thứ vẫn đúng cho tới lần khởi động lại / build. **Trước khi chốt một thay đổi về cấu hình hay CSS: khởi động lại dev server rồi mới chạy `npm run check`** (mục "bố cục trang app + bìa" bắt được lỗi này; số đo thiệp đã mở thì không).
+13. Ảnh tải từ trang gốc bằng công cụ không phải trình duyệt có thể là trang thách thức Cloudflare lưu dưới đuôi `.webp` (đã gặp: `giftbox/mini/marble_yellow.webp`, `images/logo.*`). Sau khi tải phải kiểm đầu tệp (`RIFF…WEBP`, PNG, JPEG), không chỉ kiểm mã 200.
+14. Máy từng bị ngắt đột ngột giữa lúc ghi nhiều tệp: các tệp vừa ghi biến thành toàn byte 0 (git báo "Binary files differ"). Bản đã commit không sao → `git checkout -- <tệp>` rồi làm lại; vì vậy commit sớm sau mỗi bước ghi hàng loạt.
 8. Thu dữ liệu từ trang gốc về `localhost:5199/5299` cần Chrome cho phép truy cập mạng nội bộ (chrome://settings/content/all); nếu `fetch` lỗi ngay lập tức, đó là chặn này. Dump không được chứa khóa API: che `AIzaSy…` thành `AIzaSy_REDACTED` trước khi commit.
 9. Font: gốc không nạp Libre Baskerville; thêm font vào `index.html` làm chữ rộng hơn gốc.

@@ -13,6 +13,9 @@ const base = args.includes("--base") ? args[args.indexOf("--base") + 1] : proces
 const full = args.includes("--full");
 const STD = ["minimalism_brown", "riviera_blue", "dragon_phoenix_v4_red"]; // 3 mẫu chuẩn
 const SPECS = ["open:390", "openfull:390", "open:768", "open:1280"];
+// Bố cục trang app + 3 màn bìa (page-prints): bắt lỗi bìa/trang mà số đo thiệp đã mở không thấy,
+// vd class Tailwind của ảnh trang trí trong cover.json không được sinh. Mốc: docs/survey/baseline/pages/
+const PAGES_DIR = "docs/survey/baseline/pages";
 const GIFT_SAMPLE = ["minimalism_brown", "minimalism_darkred", "dragon_phoenix_red", "jasmine_green", "mahal_pink", "royal_blue"];
 const SYNC_SAMPLE = ["minimalism_brown", "jasmine_green"];
 const BASE_DIR = "docs/survey/baseline";
@@ -40,6 +43,7 @@ if (args.includes("--baseline")) {
   dumpAll();
   for (const id of STD) for (const s of SPECS) { const [st, w] = s.split(":"); const f = `local_${id}_dump_${st}_${w}.json`; fs.copyFileSync(path.join("docs/survey/raw", f), path.join(dir, f)); }
   fs.writeFileSync(path.join(BASE_DIR, "LATEST"), day + "\n");
+  run("mốc bố cục trang app + bìa", "node", ["scripts/check/page-prints.mjs", "--save", PAGES_DIR]);
   console.log(`\nĐã chụp mốc: ${dir}`);
   process.exit(results.every((r) => r.ok) ? 0 : 1);
 }
@@ -57,6 +61,10 @@ else {
   dumpAll();
   for (const id of STD) run(`số đo ${id} so mốc ${latest}`, "node", ["scripts/check/cmp_dumps.mjs", path.join(BASE_DIR, latest), id, ...SPECS]);
 }
+
+// 2b. bố cục trang app + 3 màn bìa so với mốc
+if (fs.existsSync(PAGES_DIR)) run("bố cục trang app + bìa so mốc", "node", ["scripts/check/page-prints.mjs", "--compare", PAGES_DIR]);
+else { console.log("⚠ chưa có mốc bố cục trang — chạy: npm run check -- --baseline"); results.push({ name: "mốc bố cục trang", ok: false }); }
 
 // 3. hộp quà 3 kiểu
 run(full ? "hộp quà 3 kiểu (92 mẫu)" : "hộp quà 3 kiểu (mẫu đại diện)", "node", ["scripts/check/gift-modes.mjs", ...(full ? ["--all"] : GIFT_SAMPLE), "--base", base]);

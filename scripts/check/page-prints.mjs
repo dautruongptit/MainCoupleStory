@@ -71,7 +71,11 @@ for (const w of WIDTHS) {
     const old = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, "utf8")) : [];
     const a = new Map(); old.forEach((x) => a.set(x, (a.get(x) || 0) + 1));
     const onlyNew = []; for (const x of recs) { const n = a.get(x) || 0; if (n) a.set(x, n - 1); else onlyNew.push(x); }
-    const onlyOld = [...a].filter(([, n]) => n > 0).map(([x]) => x);
+    let onlyOld = [...a].flatMap(([x, n]) => Array(Math.max(n, 0)).fill(x));
+    // Dung sai 1px (tiêu chí chung của dự án): ghép phần tử cũ/mới giống hệt nhau trừ hình chữ nhật lệch ≤ 1px
+    // (vd dòng "ngày tạo" của thiệp nháp đổi theo ngày chạy nên chữ rộng/hẹp hơn 1px).
+    const near = (p, q) => { const A = p.split("|"), B = q.split("|"); return A.length === B.length && A.every((v, i) => (i >= 2 && i <= 5 ? Math.abs(+v - +B[i]) <= 1 : v === B[i])); };
+    for (let i = onlyNew.length - 1; i >= 0; i--) { const j = onlyOld.findIndex((o) => near(o, onlyNew[i])); if (j >= 0) { onlyOld.splice(j, 1); onlyNew.splice(i, 1); } }
     const ok = onlyNew.length === 0 && onlyOld.length === 0;
     if (!ok) bad++;
     console.log(`${ok ? "GIỐNG" : "KHÁC "} ${name} ${w}: ${old.length}→${recs.length} phần tử${ok ? "" : `, đổi ${onlyNew.length}/${onlyOld.length}`}`);
