@@ -1,6 +1,6 @@
 import React from "react";
 import type { InvitationCtx } from "@/features/invitation/shell/useInvitationCtx";
-import { GIFT_SPECS, type GiftSpec } from "./giftSpecs";
+import { useGiftSpec, type GiftSpec } from "./giftSpecs";
 import { giftKindToMode } from "./giftDefaults";
 import { AltGiftWidget, ENVELOPE_CSS, cssObj } from "./GiftWidgets";
 
@@ -52,7 +52,7 @@ function StandardDialog({ ctx, spec, title }: { ctx: InvitationCtx; spec: GiftSp
 
 export function GiftsGeneric({ ctx }: { ctx: InvitationCtx }) {
   const { d, t, giftModalOpen, setGiftModalOpen, giftTitle, saveQr } = ctx;
-  const spec = GIFT_SPECS[d.templateId];
+  const spec = useGiftSpec(d.templateId); // tải theo nhu cầu: undefined trong lúc tải
   if (!spec || !d.giftOn || d.gifts.length === 0) return null;
 
   const defMode = giftKindToMode(spec.kind);

@@ -91,13 +91,22 @@ const outMeta = [
 // Hộp quà tách tệp riêng (dữ liệu lớn ~700 KB, chỉ khối hộp quà dùng)
 const OUT_GIFT = path.join(ROOT, "gift.generated.ts");
 const giftRows = rows.filter((r) => r.gift);
+// Phần nhẹ (kiểu hộp, ảnh, giá trị `legacy`) ghi thẳng vào tệp sinh vì mã cần tra đồng bộ cho MỌI mẫu
+// (kiểu hộp quà mặc định khi tạo/đổi mẫu, hoa bìa bay, hộp nhỏ mượn của mẫu khác). Phần nặng (markup khối hộp quà +
+// cửa sổ QR) của mỗi mẫu là một import() động → chỉ tải khi mở thiệp của mẫu đó.
+const giftLight = (id) => { const g = JSON.parse(fs.readFileSync(path.join(ROOT, id, "gift.json"), "utf8")); return { kind: g.kind, ...(g.assets ? { assets: g.assets } : {}), ...(g.legacy ? { legacy: g.legacy } : {}) }; };
 const outGift = [
   "// TỆP SINH — không sửa tay. Chạy: node scripts/clone/gen_spec_index.mjs",
   "// Nguồn: specs/<id>/gift.json (sinh bởi scripts/clone/gen_gift_sections.cjs + gift_assets.mjs).",
-  ...giftRows.map(({ id }) => `import ${v(id)} from "./${id}/gift.json";`),
   "",
-  "export const RAW_GIFT: Record<string, unknown> = {",
-  ...giftRows.map(({ id }) => `  ${id}: ${v(id)},`),
+  "/** Phần nhẹ của gift.json (kind, assets, legacy) — tra đồng bộ cho mọi mẫu. */",
+  "export const GIFT_LIGHT: Record<string, unknown> = {",
+  ...giftRows.map(({ id }) => `  ${id}: ${JSON.stringify(giftLight(id))},`),
+  "};",
+  "",
+  "/** Toàn bộ gift.json của một mẫu (markup khối hộp quà, cửa sổ QR…) — tải theo nhu cầu. */",
+  "export const GIFT_LOADERS: Record<string, () => Promise<unknown>> = {",
+  ...giftRows.map(({ id }) => `  ${id}: () => import("./${id}/gift.json").then((m) => m.default),`),
   "};",
   "",
 ].join("\n");

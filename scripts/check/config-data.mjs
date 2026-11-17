@@ -15,22 +15,11 @@ if (!mode) { console.error("Cần --save <tệp> hoặc --compare <tệp>"); pro
 const file = args[args.indexOf("--" + mode) + 1];
 const abs = (p) => path.resolve(p).split(path.sep).join("/");
 
-// hộp quà: từ giai đoạn C nằm ở shared/giftSpecs.ts (đọc specs/<id>/gift.json); bản cũ là hai tệp *.generated.ts
+// hộp quà: shared/giftSpecs.ts — phần nhẹ tra đồng bộ, markup từng mẫu tải theo nhu cầu (loadGiftSpec)
 const GIFT_NEW = "src/features/invitation/shell/blocks/shared/giftSpecs.ts";
-const giftImports = fs.existsSync(GIFT_NEW)
-  ? `import { GIFT_SPECS, GIFT_ASSETS } from "${abs(GIFT_NEW)}";`
-  : `import { GIFT_SPECS } from "${abs("src/features/invitation/shell/blocks/shared/giftSpecs.generated.ts")}";
-import { GIFT_ASSETS } from "${abs("src/features/invitation/config/giftAssets.generated.ts")}";`;
-
-// phần còn dùng của bảng hộp quà cũ (hoa bìa bay khi mở, hộp nhỏ trang trí, ảnh hộp dự phòng):
-// bản cũ tính từ config/giftboxConfigs.ts; bản mới đọc khóa `legacy` của gift.json qua giftSpecs.ts
-const BOX_OLD = "src/features/invitation/config/giftboxConfigs.ts";
-const boxImports = fs.existsSync(BOX_OLD)
-  ? `import { getGiftboxConfig } from "${abs(BOX_OLD)}";
-const coverFlyDecor = (id) => getGiftboxConfig(id).giftboxType === "3d-box";
-const giftMiniImgs = (id) => { const c = getGiftboxConfig(id); return c.miniImgs && c.miniImgs.length ? c.miniImgs : (getGiftboxConfig("minimalism_brown").miniImgs ?? []); };
-const giftMainBoxFallback = (id) => getGiftboxConfig(id).mainBoxSrc || "/images/giftbox/minimalism_brown.webp";`
-  : `import { coverFlyDecor, giftMiniImgs, giftMainBoxFallback } from "${abs(GIFT_NEW)}";`;
+const giftImports = `import { GIFT_ASSETS, loadGiftSpec } from "${abs(GIFT_NEW)}";`;
+// phần còn dùng của bảng hộp quà cũ (hoa bìa bay khi mở, hộp nhỏ trang trí, ảnh hộp dự phòng): khóa `legacy` của gift.json
+const boxImports = `import { coverFlyDecor, giftMiniImgs, giftMainBoxFallback } from "${abs(GIFT_NEW)}";`;
 
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "config-data-"));
 fs.writeFileSync(path.join(tmp, "entry.ts"), `
@@ -43,6 +32,7 @@ import { editorSections, hasCoupleHero, albumCardAfter } from "${abs("src/featur
 import { COVER_CONFIGS } from "${abs("src/features/invitation/components/covers/coverConfigs.ts")}";
 import { getCoverComponent } from "${abs("src/features/invitation/components/covers/index.ts")}";
 import { loadBlocksForFamily } from "${abs("src/features/invitation/shell/blocks/index.ts")}";
+const GIFT_SPECS = Object.fromEntries(await Promise.all(TEMPLATES.map(async (t) => [t.id, await loadGiftSpec(t.id)])));
 const BLOCKS_OF = Object.fromEntries(await Promise.all(TEMPLATES.map(async (t) => [t.id, await loadBlocksForFamily(getCapabilities(t.id)?.family ?? "")])));
 import { getEditorSections, getCoupleHero, getCapabilities } from "${abs("src/features/invitation/shell/specs/index.ts")}";
 import { defaultDressColors, defaultGiftMode } from "${abs("src/services/storage/store.ts")}";

@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { TEMPLATES, TEMPLATE_ROW_BY_ID, introDefaultFor, templateByIdOrSlug } from "@/features/templates/data/templates";
 import { getCapabilities, getTemplateSpec } from "./index";
 import { loadBlocksForFamily } from "@/features/invitation/shell/blocks";
-import { GIFT_SPECS } from "@/features/invitation/shell/blocks/shared/giftSpecs";
+import { giftKindOf } from "@/features/invitation/shell/blocks/shared/giftSpecs";
 import { COVER_COMPONENTS, COVER_CONFIGS, getCoverComponent } from "@/features/invitation/components/covers";
 import { buildDemoInv } from "@/features/invitation/demo/buildDemoInv";
 
@@ -40,7 +40,7 @@ describe("specs/<id>/ — mỗi mẫu một thư mục", () => {
   });
 
   it("mẫu nào cũng có dữ liệu hộp quà đo từ trang gốc", () => {
-    for (const t of TEMPLATES) expect(["3d-box", "envelope"], t.id).toContain(GIFT_SPECS[t.id]?.kind);
+    for (const t of TEMPLATES) expect(["3d-box", "envelope"], t.id).toContain(giftKindOf(t.id));
   });
 
   it("dữ liệu demo dựng được cho mọi mẫu và mang đúng mẫu", () => {
