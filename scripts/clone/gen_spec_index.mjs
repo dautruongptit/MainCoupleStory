@@ -1,5 +1,8 @@
-// Sinh chỉ mục spec: quét src/features/invitation/shell/specs/<id>/ →
-//   specs/index.generated.ts  (theme + capabilities + demo + cover của từng mẫu; khuôn thiệp và engine bìa dùng)
+// Sinh chỉ mục mẫu: quét src/features/invitation/templates/<id>/ (mỗi mẫu một thư mục: *.json + blocks/ nếu có khối riêng;
+// họ khối dùng chung nhiều mẫu ở templates/_shared/<họ>/) →
+//   templates/index.generated.ts  (theme + capabilities + cover của từng mẫu, DEMO_LOADERS; khuôn thiệp và engine bìa dùng)
+//   templates/gift.generated.ts   (phần nhẹ + GIFT_LOADERS)
+//   shell/blocks/families.generated.ts  (FAMILY_LOADERS: capabilities.family → thư mục khối)
 //   src/features/templates/data/templates.generated.ts  (meta của từng mẫu, xếp theo meta.order; kho mẫu / bảng màu / điểm lấy nét dùng)
 // Thay cho ~275 dòng import + 92 dòng đăng ký tay trong specs/index.ts và mảng TEMPLATES viết tay.
 // Mỗi thư mục phải có meta.json + theme.json + capabilities.json (demo.json tùy chọn); capabilities.id phải trùng tên thư mục.
@@ -7,7 +10,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const ROOT = "src/features/invitation/shell/specs";
+const ROOT = "src/features/invitation/templates";
 const OUT = path.join(ROOT, "index.generated.ts");
 const OUT_META = "src/features/templates/data/templates.generated.ts";
 const check = process.argv.includes("--check");
@@ -22,7 +25,8 @@ const readJson = (id, f) => {
   try { return JSON.parse(fs.readFileSync(path.join(ROOT, id, f), "utf8")); }
   catch (e) { errors.push(`${id}: ${f} hỏng (${e.message})`); return null; }
 };
-const ids = fs.readdirSync(ROOT, { withFileTypes: true }).filter((e) => e.isDirectory()).map((e) => e.name).sort();
+// thư mục bắt đầu bằng "_" (vd _shared) không phải mẫu
+const ids = fs.readdirSync(ROOT, { withFileTypes: true }).filter((e) => e.isDirectory() && !e.name.startsWith("_")).map((e) => e.name).sort();
 const rows = [];
 for (const id of ids) {
   const has = (f) => fs.existsSync(path.join(ROOT, id, f));
@@ -115,26 +119,40 @@ const outGift = [
   "",
 ].join("\n");
 
-// Họ khối: mỗi thư mục shell/blocks/<họ>/ có index.ts là một họ (tên họ = tên thư mục = capabilities.family).
+// Họ khối (capabilities.family) nằm ở một trong hai chỗ:
+//   templates/<id>/blocks/index.ts   khối riêng của MỘT mẫu — tên họ = capabilities.family của mẫu đó
+//   templates/_shared/<họ>/index.ts  khối dùng chung cho nhiều mẫu — tên họ = tên thư mục
 // index.ts xuất hằng `<TÊN>_BLOCKS` (bản đồ tên khối → component) thì dùng hằng đó; không thì dùng mọi export của index.ts.
 const BLOCKS = "src/features/invitation/shell/blocks";
 const OUT_FAM = path.join(BLOCKS, "families.generated.ts");
-const families = fs.readdirSync(BLOCKS, { withFileTypes: true })
-  .filter((e) => e.isDirectory() && fs.existsSync(path.join(BLOCKS, e.name, "index.ts")))
-  .map((e) => {
-    const m = /export const ([A-Z0-9_]+_BLOCKS)\b/.exec(fs.readFileSync(path.join(BLOCKS, e.name, "index.ts"), "utf8"));
-    return { name: e.name, named: m ? m[1] : null };
-  })
-  .sort((a, b) => a.name.localeCompare(b.name));
+const famOfId = (id) => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, id, "capabilities.json"), "utf8")).family; } catch { return null; } };
+const famEntry = (name, dirRel) => {
+  const m = /export const ([A-Z0-9_]+_BLOCKS)\b/.exec(fs.readFileSync(path.join(ROOT, dirRel, "index.ts"), "utf8"));
+  return { name, dir: dirRel.split(path.sep).join("/"), named: m ? m[1] : null };
+};
+const famErrors = [];
+const families = [];
+const SHARED = path.join(ROOT, "_shared");
+if (fs.existsSync(SHARED)) for (const e of fs.readdirSync(SHARED, { withFileTypes: true })) {
+  if (e.isDirectory() && fs.existsSync(path.join(SHARED, e.name, "index.ts"))) families.push(famEntry(e.name, path.join("_shared", e.name)));
+}
+for (const id of ids) {
+  if (!fs.existsSync(path.join(ROOT, id, "blocks", "index.ts"))) continue;
+  const fam = famOfId(id);
+  if (families.some((f) => f.name === fam)) famErrors.push(`${id}: có blocks/ riêng nhưng họ "${fam}" đã có ở ${families.find((f) => f.name === fam).dir}`);
+  else families.push(famEntry(fam, path.join(id, "blocks")));
+}
+families.sort((a, b) => a.name.localeCompare(b.name));
 const famNames = new Set(families.map((f) => f.name));
 // "minimalism" là họ gốc nằm ngay trong shell/blocks/ (MINIMALISM_BLOCKS ở blocks/index.ts)
-const usedFamilies = new Set(ids.map((id) => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, id, "capabilities.json"), "utf8")).family; } catch { return null; } }));
-const famErrors = [...usedFamilies].filter((f) => f && f !== "minimalism" && !famNames.has(f)).map((f) => `họ khối "${f}" được dùng trong capabilities.json nhưng không có thư mục ${BLOCKS}/${f}/index.ts`);
+const usedFamilies = new Set(ids.map(famOfId));
+famErrors.push(...[...usedFamilies].filter((f) => f && f !== "minimalism" && !famNames.has(f)).map((f) => `họ khối "${f}" được dùng trong capabilities.json nhưng không có templates/<id>/blocks/index.ts hay templates/_shared/${f}/index.ts`));
 if (famErrors.length) { console.error("Spec lỗi:\n  " + famErrors.join("\n  ")); process.exit(1); }
 const fv = (n) => "f_" + n.replace(/[^A-Za-z0-9_]/g, "_");
 const outFam = [
   "// TỆP SINH — không sửa tay. Chạy: node scripts/clone/gen_spec_index.mjs",
-  "// Nguồn: các thư mục shell/blocks/<họ>/index.ts. Thêm họ khối mới = tạo thư mục + index.ts rồi chạy bộ sinh.",
+  "// Nguồn: templates/<id>/blocks/index.ts (khối riêng của một mẫu) và templates/_shared/<họ>/index.ts (khối dùng chung).",
+  "// Thêm họ khối mới = tạo thư mục + index.ts rồi chạy bộ sinh.",
   "// Mỗi họ là một import() động → trình đóng gói tách mỗi họ thành một tệp riêng, trang chỉ tải họ của mẫu đang xem.",
   'import type { BlockComponent } from "./index";',
   "",
@@ -142,8 +160,8 @@ const outFam = [
   "/** capabilities.family → hàm tải bản đồ tên khối → component của họ đó. */",
   "export const FAMILY_LOADERS: Record<string, () => Promise<BlockMap>> = {",
   ...families.map((f) => (f.named
-    ? `  ${f.name}: () => import("./${f.name}").then((m) => m.${f.named}),`
-    : `  ${f.name}: () => import("./${f.name}").then((m) => ({ ...m }) as unknown as BlockMap),`)),
+    ? `  ${f.name}: () => import("@/features/invitation/templates/${f.dir}").then((m) => m.${f.named}),`
+    : `  ${f.name}: () => import("@/features/invitation/templates/${f.dir}").then((m) => ({ ...m }) as unknown as BlockMap),`)),
   "};",
   "",
 ].join("\n");
