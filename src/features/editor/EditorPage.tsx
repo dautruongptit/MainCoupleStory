@@ -11,7 +11,7 @@ import { useAuth } from "@/features/auth/hooks/useAuth";
 import { BasicV2 } from "@/features/editor/components/v2/BasicV2";
 import AlbumV2 from "@/features/editor/components/v2/AlbumV2";
 import MusicV2 from "@/features/editor/components/v2/MusicV2";
-import { getCapabilities, getEditorSections } from "@/features/invitation/shell/specs";
+import { getCapabilities, getEditorSections } from "@/features/invitation/templates";
 import HeroPhoto from "@/features/editor/components/v2/HeroV2";
 import TutorialTour from "@/features/editor/components/TutorialTour";
 import ShareModal from "@/components/common/ShareModal";

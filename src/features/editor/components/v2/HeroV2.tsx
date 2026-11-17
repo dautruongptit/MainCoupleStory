@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import type { Inv } from "@/types/invitation";
 import { CropModal } from "@/components/common/CropModal";
-import { getCapabilities, getCoupleHero } from "@/features/invitation/shell/specs";
+import { getCapabilities, getCoupleHero } from "@/features/invitation/templates";
 import { CardV2 } from "@/features/editor/components/v2/CardV2";
 
 type P = { d: Inv; set: (p: Partial<Inv>) => void };

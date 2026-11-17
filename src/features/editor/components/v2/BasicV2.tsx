@@ -1,6 +1,6 @@
 import type { Inv } from "@/types/invitation";
 import { introDefaultFor } from "@/features/templates/data/templates";
-import { getEditorSections } from "@/features/invitation/shell/specs";
+import { getEditorSections } from "@/features/invitation/templates";
 import { CardV2 } from "@/features/editor/components/v2/CardV2";
 
 type P = { d: Inv; set: (p: Partial<Inv>) => void };

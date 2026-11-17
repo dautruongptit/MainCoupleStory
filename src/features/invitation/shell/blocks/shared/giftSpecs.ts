@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { GIFT_LIGHT, GIFT_LOADERS } from "@/features/invitation/shell/specs/gift.generated";
+import { GIFT_LIGHT, GIFT_LOADERS } from "@/features/invitation/templates/gift.generated";
 
 /**
  * Dữ liệu khối "Hộp Quà Mừng" của từng mẫu, đo thật từ trang gốc.

@@ -2,7 +2,7 @@ import type { Inv } from "@/types/invitation";
 import { useInvitationCtx } from "@/features/invitation/shell/useInvitationCtx";
 import { MusicPlayer } from "@/features/invitation/shell/blocks/MusicPlayer";
 import { useFamilyBlocks, type BlockMap } from "@/features/invitation/shell/blocks";
-import type { TemplateSpec } from "@/features/invitation/shell/specs";
+import type { TemplateSpec } from "@/features/invitation/templates";
 
 const NO_BLOCKS: BlockMap = {};
 

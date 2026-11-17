@@ -1,7 +1,7 @@
 import type { Inv } from "@/types/invitation";
 import { defaultInv } from "@/features/editor/data/defaultData";
 import { TPL_CDN, type Tpl } from "@/features/templates/data/templates";
-import { loadTemplateDemo } from "@/features/invitation/shell/specs";
+import { loadTemplateDemo } from "@/features/invitation/templates";
 
 /**
  * Dữ liệu thiệp của màn demo = dữ liệu chung dưới đây + `specs/<id>/demo.json` của mẫu (ghi đè).

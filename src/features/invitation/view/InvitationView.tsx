@@ -2,7 +2,7 @@ import { useState } from "react";
 import { TEMPLATE_THEMES } from "@/features/invitation/config/templateThemes";
 import { getCoverComponent } from "@/features/invitation/components/covers";
 import { InvitationShell } from "@/features/invitation/shell/InvitationShell";
-import { getTemplateSpec } from "@/features/invitation/shell/specs";
+import { getTemplateSpec } from "@/features/invitation/templates";
 import type { Inv } from "@/types/invitation";
 
 /**

@@ -6,6 +6,7 @@
   themes: halloween --default;
 }
 @source "../../invitation/shell";
+@source "../../invitation/templates";
 @source "../../../pages/Dashboard.tsx";
 @source "../../../pages/home";
 @source "../../../components/layout/TopNav.tsx";
