@@ -196,7 +196,14 @@ Khi A–D ổn định: chuyển phần app (trang, header, editor) từ Tailwin
 
 ## 6. Nhật ký thực hiện
 - **A (xong, đã gộp vào `fix/clone-match`)**: `npm run check` + mốc; xóa editor cũ/HeroPhoto/HoaMocXanh; sắp lại `scripts/`, `docs/`.
-- **C (xong trên `refactor/phase-c`, 2026-11-16; chờ duyệt gộp)** — đã làm:
+- **D (đang làm trên `refactor/phase-d`, từ 2026-11-17)** — làm phần tải theo nhu cầu (D3) trước vì lợi rõ và ít xáo trộn:
+  - D1 (đăng ký tự động): đã xong từ cuối giai đoạn C (`blocks/families.generated.ts`, `specs/index.generated.ts`, `templates.generated.ts`).
+  - D3 khối: `FAMILY_LOADERS` (import() động cho 75 họ) + `loadBlocksForFamily` / `useFamilyBlocks`; `InvitationShell` hiện khung trước, khối sau khi tải. Tệp JS chính 6,1 → 2,0 MB.
+  - D3 hộp quà: `gift.generated.ts` = `GIFT_LIGHT` (kind, assets, legacy; đồng bộ) + `GIFT_LOADERS` (markup từng mẫu) → `loadGiftSpec` / `useGiftSpec`. 2,0 → 1,31 MB.
+  - D3 demo: `DEMO_LOADERS` + `loadTemplateDemo`, `loadDemoInv`; trang Demo tải dữ liệu rồi mới dựng. 1,31 → 0,97 MB.
+  - Kiểm sau mỗi bước: bản đồ khối / cấu hình / dữ liệu demo 92 mẫu giống mốc (`config-data`, `demo-data`), `npm run check` 25/25; sau bước khối: `dump-all` 92 mẫu × open:390 không lệch hình học; sau bước hộp quà: `gift-geometry` 91/92 (chibi_red đã biết).
+  - **Chưa làm**: D2 (chuyển `shell/blocks/<họ>/` + `shell/specs/<id>/` về `templates/<id>/` — ~860 tệp, chỉ đổi chỗ, cần sửa bộ sinh ở D4); `theme/capabilities/cover.json` (~230 KB) và trang editor/trang chủ vẫn nằm trong tệp JS chính; CSS 1,3 MB chưa tách.
+- **C (xong trên `refactor/phase-c`, 2026-11-16; đã gộp)** — đã làm:
   - C2: `scripts/clone/gen_spec_index.mjs` sinh `specs/index.generated.ts` (thay 275 dòng import + 92 dòng đăng ký tay; `specs/index.ts` 435 → 81 dòng) và kiểm tra thiếu tệp/thiếu trường; `npm run gen:specs`, có trong `npm run check`.
   - B5 + C3 (dữ liệu demo): `demo/buildDemoInv.ts` = phần chung + `specs/<id>/demo.json`; `pages/Demo.tsx` 354 → 126 dòng, hết `if` theo mẫu; xóa `referenceCouples.ts`, `referenceCovers.ts`. Kiểm: `demo-data.mjs --compare` 92/92 giống mốc.
   - C3 (bảng mẫu, bảng màu, điểm lấy nét): `specs/<id>/meta.json` là nguồn; `templates.generated.ts` sinh tự động; `templates.ts`, `templateThemes.ts`, `previewFocal.ts` chỉ còn là lớp đọc. Kiểm: `config-data.mjs --compare` 92/92 giống mốc. 9 script đọc bảng mẫu chuyển sang tệp sinh.
